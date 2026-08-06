@@ -16,7 +16,7 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from evaluation.harness import PUBLIC_CACHE_DIR, analysis_pages_for, available_books
 from chapter_segmentation.ocr import detect_language

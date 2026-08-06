@@ -67,6 +67,12 @@ def generate(out_dir: Path) -> None:
 <style>table {{ border-collapse: collapse; }} td, th {{ border: 1px solid #ccc; padding: 4px 8px; }}</style>
 </head><body>
 <h1>chapter-segmentation: public-cache corpus results</h1>
+<p>Each book has a hand-verified <code>*.expected.json</code> ground truth (real chapter
+boundaries as exact PDF page ranges). "Found" is what <code>analyze_attachment()</code>
+detected on the same pages. A match requires the exact same page range -- no partial
+credit. Precision = correct / found; Recall = correct / expected.
+For per-book root-cause notes (why a given score is what it is), see
+<a href="https://github.com/cboulanger/chapter-segmentation/blob/main/evaluation/RESULTS.md">RESULTS.md</a>.</p>
 <table>
 <tr><th>Book</th><th>Precision</th><th>Recall</th><th>Found / Expected</th></tr>
 {"".join(rows)}

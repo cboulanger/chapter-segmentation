@@ -1,4 +1,4 @@
-"""Unit tests for backend.services.chapter_segmentation."""
+"""Unit tests for chapter_segmentation.segmentation."""
 
 import unittest
 import unittest.mock

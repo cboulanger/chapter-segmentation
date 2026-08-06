@@ -13,7 +13,7 @@ import io
 import json
 import logging
 from pathlib import Path
-from typing import Callable, Optional
+from typing import Optional, Protocol
 
 from langdetect import DetectorFactory, LangDetectException, detect
 from pypdf import PdfReader, PdfWriter
@@ -78,114 +78,31 @@ def slice_single_page_pdf(content: bytes, page_index: int) -> bytes:
     return buffer.getvalue()
 
 
+class OcrBackend(Protocol):
+    async def ocr_pdf_pages(self, content: bytes, *, language: Optional[str] = None) -> list[str]:
+        """Return one text string per physical page, 0-indexed. Implementations
+        own how they talk to their OCR engine -- per-page requests, a single
+        whole-document request split by page, etc."""
+        ...
+
+
 async def ocr_pdf_pages(
     content: bytes,
     *,
-    extractor,
+    backend: OcrBackend,
     cache_dir: Path,
     language: str,
-    on_page: Optional[Callable[[int, int], None]] = None,
 ) -> list[str]:
-    """OCR every page of `content` via the Kreuzberg sidecar, returning one
-    text string per physical page (index 0 = first page, matching pypdf's
-    indexing used throughout chapter_segmentation.py). Results are cached in
-    `cache_dir` keyed by the PDF's own content hash -- a later call with the
-    same bytes returns the cached pages without touching the extractor.
-    `on_page(pages_done, total_pages)` is called after each page for
-    progress reporting on long books.
+    """OCR `content` via `backend`, returning one text string per physical
+    page (index 0 = first page). Results are cached in `cache_dir` keyed by
+    the PDF's own content hash -- a later call with the same bytes returns
+    the cached pages without touching `backend` at all.
     """
     content_hash = hashlib.sha256(content).hexdigest()
     cached = load_cached_ocr(cache_dir, content_hash)
     if cached is not None:
         return cached["pages"]
 
-    reader = PdfReader(io.BytesIO(content))
-    total_pages = len(reader.pages)
-    page_texts: list[str] = []
-    for page_index in range(total_pages):
-        single_page_bytes = slice_single_page_pdf(content, page_index)
-        chunks = await extractor.extract_and_chunk(
-            single_page_bytes, "application/pdf", ocr_language=language
-        )
-        page_texts.append(" ".join(c.text for c in chunks))
-        if on_page is not None:
-            on_page(page_index + 1, total_pages)
-
+    page_texts = await backend.ocr_pdf_pages(content, language=language)
     save_ocr_cache(cache_dir, content_hash, detected_language=language, pages=page_texts)
     return page_texts
-
-
-async def run(
-    *,
-    zotero_client,
-    extractor,
-    library_id: str,
-    library_type: str,
-    attachment_specs: list[dict],
-    max_items: Optional[int],
-    cache_dir: Path,
-    progress_callback: Callable[[float, str], None],
-) -> dict:
-    """Core logic for script 2 (ocr_attachments). `attachment_specs` is
-    typically script 1's `needs_ocr: true` output list. See design spec §6.
-    """
-    specs = attachment_specs[:max_items] if max_items is not None else attachment_specs
-    results: list[dict] = []
-    total = len(specs) or 1
-
-    for i, spec in enumerate(specs):
-        item_key = spec["item_key"]
-        attachment_key = spec["attachment_key"]
-        progress_callback(i / total, f"OCR-ing {item_key} ({i + 1}/{total})")
-
-        # NOTE: get_attachment_file's URL is /items/{key}/file — it needs the
-        # PDF attachment's OWN key, not the containing book item's key (same
-        # bug pattern fixed in chapter_segmentation.run() for script 1).
-        file_bytes = await zotero_client.get_attachment_file(library_id, attachment_key, library_type=library_type)
-        if not file_bytes:
-            results.append({"item_key": item_key, "attachment_key": attachment_key, "ocr_succeeded": False})
-            continue
-
-        content_hash = hashlib.sha256(file_bytes).hexdigest()
-        cached = load_cached_ocr(cache_dir, content_hash)
-        if cached is not None:
-            results.append({
-                "item_key": item_key,
-                "attachment_key": attachment_key,
-                "detected_language": cached["detected_language"],
-                "ocr_succeeded": True,
-                "char_count": sum(len(p) for p in cached["pages"]),
-                "cache_path": str(cache_dir / f"{content_hash}.json"),
-            })
-            continue
-
-        try:
-            item = await zotero_client.get_item(library_id, item_key, library_type=library_type)
-            language = detect_language(item["data"].get("language"), item["data"].get("title", ""))
-
-            page_texts = await ocr_pdf_pages(
-                file_bytes, extractor=extractor, cache_dir=cache_dir, language=language,
-            )
-            cache_path = _cache_path(cache_dir, content_hash)
-            results.append({
-                "item_key": item_key,
-                "attachment_key": attachment_key,
-                "detected_language": language,
-                "ocr_succeeded": True,
-                "char_count": sum(len(p) for p in page_texts),
-                "cache_path": str(cache_path),
-            })
-        except Exception as exc:
-            # A failure on one attachment (e.g. a Kreuzberg sidecar timeout partway
-            # through a large scanned book) must not discard other already-cached
-            # results or abort the rest of the batch — see design spec §6.
-            logger.error(f"OCR failed for item {item_key} attachment {attachment_key}: {exc}")
-            results.append({
-                "item_key": item_key,
-                "attachment_key": attachment_key,
-                "ocr_succeeded": False,
-                "error": str(exc),
-            })
-
-    progress_callback(1.0, "Done")
-    return {"results": results}

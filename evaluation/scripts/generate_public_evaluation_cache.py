@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Generate backend/evaluation/book-segmentation/public-cache/ -- a
+"""Generate evaluation/public-cache/ -- a
 redacted, git-trackable corpus safe to commit and distribute (real
 navigational/bibliographic text kept verbatim, chapter prose replaced with
-random real words in the book's own language) -- see docs/superpowers/specs/
-2026-08-05-evaluation-corpus-redaction-design.md.
+random real words in the book's own language) -- see evaluation/README.md
+for the redaction rationale and workflow.
 
 Run by a maintainer who has the real books locally; not something a
 contributor without PDFs needs to run.
 
-    uv run python scripts/generate_public_evaluation_cache.py [--book <manifest-key>] [--no-verify]
+    uv run python evaluation/scripts/generate_public_evaluation_cache.py [--book <manifest-key>] [--no-verify]
 """
 
 import argparse

@@ -1,6 +1,6 @@
 """Identifies which spans of a book's page text are navigational/
 bibliographic material (table of contents, secondary listings, running
-headers, chapter headings) that backend/services/chapter_segmentation.py's
+headers, chapter headings) that chapter_segmentation/segmentation.py's
 heuristics actually key off -- see docs/superpowers/specs/
 2026-08-05-evaluation-corpus-redaction-design.md sections 3-4.
 

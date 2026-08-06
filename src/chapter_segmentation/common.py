@@ -1,5 +1,5 @@
-"""Helpers shared between backend/services/chapter_segmentation.py's
-PDF-internal heuristic and the backend/services/chapter_evidence/
+"""Helpers shared between chapter_segmentation/segmentation.py's
+PDF-internal heuristic and the chapter_segmentation/evidence/
 strategies (external/local metadata sources) -- kept in one place so
 "is this title a part-divider/back-matter section" and "what year does
 this date string represent" are answered identically everywhere. See

@@ -17,7 +17,7 @@ from evaluation.redaction.redact import (
 )
 from evaluation.redaction.wordlists import build_word_pool, locale_for_detected_language, pick_word
 
-# Same shape as backend/tests/test_chapter_segmentation.py's
+# Same shape as tests/test_segmentation.py's
 # TestAnalyzeAttachment._fake_book_pages() -- a proven-working minimal book
 # fixture (TOC page + two located chapters). Kept as a separate copy since
 # these two test files don't import from each other.

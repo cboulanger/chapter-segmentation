@@ -254,8 +254,7 @@ def extract_page_texts_from_pdf_bytes(content: bytes, layout: bool = False) -> l
     return texts
 
 
-# Calibrated against the 17-book evaluation set (see backend/evaluation/
-# book-segmentation/RESULTS.md): healthy books have >=90% "longish" pages
+# Calibrated against the 17-book evaluation set (see evaluation/# evaluation/RESULTS.md): healthy books have >=90% "longish" pages
 # (>500 stripped chars) and 0% of them degenerate (<3 newlines); un-OCR'd
 # scans have ~0% longish pages; the two known degenerate-text-layer books
 # (whole page extracted as one absolutely-positioned line) sit at 97-99%
@@ -293,7 +292,7 @@ def extract_page_texts_for_analysis(content: bytes) -> tuple[list[str], bool]:
     When it doesn't, the pages are re-extracted in layout mode and adopted
     if a TOC becomes detectable that way -- verified on real evaluation
     books whose two-column TOC the default mode scrambles beyond
-    recognition (see backend/evaluation/book-segmentation/RESULTS.md).
+    recognition (see evaluation/RESULTS.md).
     OCR-shaped input (see pages_need_ocr) skips the layout attempt: a book
     with no usable text layer cannot be rescued by a different text
     extraction mode, only by actual OCR.
@@ -903,7 +902,7 @@ def extract_authors_near(page_text: str, max_chars: int = 500) -> list[str]:
 # a part divider bounds its neighboring chapters' page ranges -- but never
 # emitted as chapters themselves. Forewords/prefaces/afterwords are NOT
 # here: they carry real authored content and the evaluation ground truth
-# counts them as chapters. See backend/services/chapter_common.py for
+# counts them as chapters. See chapter_segmentation/common.py for
 # _is_part_divider/_is_back_matter/_normalized_title (shared with the
 # chapter-evidence strategies).
 _ROMAN_PREFIX_RE = re.compile(r"^[IVXLCDM]+\.\s")

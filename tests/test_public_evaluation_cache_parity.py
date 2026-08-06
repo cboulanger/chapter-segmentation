@@ -1,5 +1,5 @@
 """Aggregate precision/recall parity check for the redacted public-cache
-corpus (backend/evaluation/book-segmentation/public-cache/) -- see
+corpus (evaluation/public-cache/) -- see
 docs/superpowers/specs/2026-08-05-evaluation-corpus-redaction-design.md
 section 9.
 
@@ -10,7 +10,7 @@ Marked "integration" so it's excluded from the default `uv run pytest` run
 (see pyproject.toml's addopts) -- reported, not gated, same as
 test_chapter_segmentation_accuracy.py.
 
-    uv run pytest backend/tests/test_public_evaluation_cache_parity.py -q -s
+    uv run pytest tests/test_public_evaluation_cache_parity.py -q -s
 """
 
 import json

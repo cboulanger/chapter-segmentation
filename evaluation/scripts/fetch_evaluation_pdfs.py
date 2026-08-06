@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Download the open-access book-segmentation evaluation PDFs on demand.
+"""Download the open-access chapter-segmentation evaluation PDFs on demand.
 
-The PDFs themselves are gitignored (backend/evaluation/book-segmentation/*.pdf)
-so they aren't shipped in the repo. This script reads
-backend/evaluation/book-segmentation/manifest.json (the single source of
-truth for this evaluation set — see that directory's README) and downloads
+The PDFs themselves are gitignored (evaluation/*.pdf) so they aren't shipped
+in the repo. This script reads evaluation/manifest.json (the single source of
+truth for this evaluation set — see evaluation/README.md) and downloads
 each entry with "oa": true into that same directory if not already present.
 
 Non-OA books ("oa": false) are perfectly welcome in the manifest — they just
@@ -13,8 +12,8 @@ DOI and the exact path to save it to, so you can fetch it manually through
 your institution's legal access and drop it in yourself.
 
 Usage:
-    uv run python scripts/fetch_evaluation_pdfs.py
-    uv run python scripts/fetch_evaluation_pdfs.py --force   # re-download even if present
+    uv run python evaluation/scripts/fetch_evaluation_pdfs.py
+    uv run python evaluation/scripts/fetch_evaluation_pdfs.py --force   # re-download even if present
 """
 
 import argparse
@@ -24,7 +23,7 @@ from pathlib import Path
 
 import httpx
 
-_EVAL_DIR = Path(__file__).resolve().parent.parent / "backend" / "evaluation" / "book-segmentation"
+_EVAL_DIR = Path(__file__).resolve().parent.parent
 
 
 def fetch_all(eval_dir: Path, force: bool) -> int:

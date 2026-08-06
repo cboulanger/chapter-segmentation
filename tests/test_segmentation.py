@@ -1050,7 +1050,7 @@ class TestExtractPageTextsForAnalysis(unittest.TestCase):
 
 class TestPagesNeedOcr(unittest.TestCase):
     """pages_need_ocr must catch three real failure shapes found in the
-    evaluation set (see backend/evaluation/book-segmentation/README.md):
+    evaluation set (see evaluation/README.md):
     scans with no text layer, scans with a trivial amount of stray text,
     and PDFs whose text layer extracts as one giant line per page."""
 

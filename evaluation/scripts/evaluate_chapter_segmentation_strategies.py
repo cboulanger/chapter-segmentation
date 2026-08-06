@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-# scripts/evaluate_chapter_segmentation_strategies.py
-"""Runs the chapter-segmentation evaluation set (see backend/evaluation/
-book-segmentation/) through analyze_attachment_with_strategies instead of
+# evaluation/scripts/evaluate_chapter_segmentation_strategies.py
+"""Runs the chapter-segmentation evaluation set (see evaluation/) through
+analyze_attachment_with_strategies instead of
 the pure-heuristic analyze_attachment, and prints the same precision/recall
-table format backend/tests/test_chapter_segmentation_accuracy.py already
+table format tests/test_segmentation_accuracy.py already
 uses, plus per-book strategies_used diagnostics.
 
 Not a pytest test -- makes real (free, cached) Crossref API calls per book:
@@ -57,7 +57,7 @@ async def _main(enable_crossref: bool) -> int:
                       f"uv run python scripts/ocr_evaluation_pdfs.py)")
                 continue
             # The evaluation manifest names each PDF after its own ISBN-13
-            # (see backend/evaluation/book-segmentation/README.md), so the
+            # (see evaluation/README.md), so the
             # filename stem doubles as the ISBN BookContext needs.
             isbn = Path(book["filename"]).stem
             context = BookContext(

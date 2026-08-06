@@ -64,7 +64,7 @@ _FILLER = "Unrelated body filler text, nothing chapter-related in this passage a
 # 20 pages, chapters starting at indices 5 and 12 -- deliberately well
 # outside _toc_scan_indices(pages)'s front/back exclusion zone (indices
 # {0,1,2,19} for a 20-page document), matching the same padding convention
-# backend/tests/test_chapter_segmentation.py's own
+# tests/test_segmentation.py's own
 # test_llm_toc_extraction_fires_when_heuristic_finds_nothing already uses
 # and explains: a chapter starting inside that scan zone can never be
 # content-search-located, since _locate_toc_entries excludes those pages

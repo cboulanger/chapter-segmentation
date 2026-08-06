@@ -1,6 +1,6 @@
 """Precision/recall scoring for chapter_segmentation.analyze_attachment
 against the real, hand-verified ground-truth books in
-backend/evaluation/book-segmentation/ (design spec §5, §12).
+evaluation/ (design spec §5, §12).
 
 The PDFs themselves are gitignored — run
 `uv run python scripts/fetch_evaluation_pdfs.py` first to download the
@@ -10,14 +10,14 @@ populated (run `uv run python scripts/ocr_evaluation_pdfs.py` with the
 Kreuzberg sidecar up) — both are real, checkable states, not placeholders.
 
 Pages are loaded exactly the way production's run() sees them (layout-mode
-fallback + OCR cache) via backend/evaluation/harness.py.
+fallback + OCR cache) via evaluation/harness.py.
 
 Marked "integration" so it's excluded from the default `uv run pytest` /
 `npm test` run (see pyproject.toml's addopts) -- this is a reported, not
 gated, benchmark (design spec §12: probabilistic, not pass/fail), not
 something that should ever block CI. Run it directly:
 
-    uv run pytest backend/tests/test_chapter_segmentation_accuracy.py -q -s
+    uv run pytest tests/test_segmentation_accuracy.py -q -s
 
 `-s` is required to see the per-book summary lines (pytest swallows `print`
 output by default).
@@ -67,7 +67,7 @@ class TestChapterSegmentationAccuracy(unittest.TestCase):
                 if book.get("heuristic_expected_zero", False):
                     # This book is a known, accepted heuristic limitation --
                     # zero recall even after the layout fallback and OCR
-                    # route (see book-segmentation/RESULTS.md) -- so zero is
+                    # route (see evaluation/RESULTS.md) -- so zero is
                     # the expected outcome here, not a regression.
                     continue
                 # Reported, not gated (design spec §12: probabilistic, not pass/fail) —

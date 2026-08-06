@@ -1,4 +1,4 @@
-"""Shared loading helpers for the book-segmentation evaluation set.
+"""Shared loading helpers for the chapter-segmentation evaluation set.
 
 Single home for the manifest-merging, PDF-availability, and page-loading
 logic that tests/test_segmentation_accuracy.py and the

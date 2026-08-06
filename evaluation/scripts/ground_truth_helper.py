@@ -4,14 +4,12 @@ and a hand-transcribed table of contents.
 
 This is a starting point, not an oracle: it locates each TOC entry's true
 chapter-OPENING page by content search (never by assuming
-pdf_index == printed_page_number -- see docs/superpowers/specs/
-2026-07-24-chapter-segmentation-linking-design.md section 2/5 for why that
-assumption breaks on real books), and separately tries to read the printed
-page number actually shown on that page for `citation_pages`. Always spot-check
-a handful of the output's pdf_start_index/pdf_end_index values by opening the
-PDF at those physical page indices before trusting them -- see
-backend/evaluation/book-segmentation/CLAUDE.md for the full workflow this
-script is one step of.
+pdf_index == printed_page_number -- real books routinely break that
+assumption), and separately tries to read the printed page number actually
+shown on that page for `citation_pages`. Always spot-check a handful of the
+output's pdf_start_index/pdf_end_index values by opening the PDF at those
+physical page indices before trusting them -- see evaluation/CLAUDE.md for
+the full workflow this script is one step of.
 
 Usage:
     1. Open the PDF and transcribe its table of contents into a small JSON
@@ -22,10 +20,10 @@ Usage:
        are still needed here to correctly bound their neighbors' ranges.
 
     2. Run:
-        uv run python scripts/ground_truth_helper.py \
-            --pdf backend/evaluation/book-segmentation/<name>.pdf \
+        uv run python evaluation/scripts/ground_truth_helper.py \
+            --pdf evaluation/<name>.pdf \
             --toc /tmp/<name>_toc.json \
-            --output backend/evaluation/book-segmentation/<name>.expected.json
+            --output evaluation/<name>.expected.json
 
     3. Open the output and manually verify every entry (this script has no
        way to know if it's wrong -- it found the best-scoring match, not

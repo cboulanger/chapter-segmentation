@@ -1,6 +1,6 @@
 # Building ground truth for a new evaluation book
 
-Read this when the chapter-segmentation heuristics (`chapter_segmentation.py`)
+Read this when the chapter-segmentation heuristics (`src/chapter_segmentation/segmentation.py`)
 score a real book with low confidence during live/empirical testing against a
 real Zotero library, and you want to add that book to the evaluation set so
 the regression is tracked instead of silently re-discovered later.
@@ -11,7 +11,7 @@ Three documents, three different lifetimes -- know which one to write to:
 
 - **`README.md`** — permanent reference: what the evaluation set is, its
   schema, how to fetch/add books, and how to run each evaluation
-  (`test_chapter_segmentation_accuracy.py`, the LLM-fallback script, the
+  (`test_segmentation_accuracy.py`, the LLM-fallback script, the
   strategy-pipeline script). Changes rarely, only when the *procedure*
   itself changes (a new evaluation script, a new page-loading mechanism,
   a new manifest field).
@@ -35,8 +35,8 @@ Three documents, three different lifetimes -- know which one to write to:
   page text (real navigational/bibliographic material verbatim, chapter
   prose replaced with random real words) — see
   `docs/superpowers/specs/2026-08-05-evaluation-corpus-redaction-design.md`.
-  Regenerate it with `uv run python scripts/generate_public_evaluation_cache.py`
-  whenever `chapter_segmentation.py` or `chapter_common.py` changes in a way
+  Regenerate it with `uv run python evaluation/scripts/generate_public_evaluation_cache.py`
+  whenever `src/chapter_segmentation/segmentation.py` or `src/chapter_segmentation/common.py` changes in a way
   that touches text-matching logic (a new heuristic could read page text
   outside what the redaction pipeline currently preserves) -- the tool's
   `--verify` step will refuse to write a stale/incorrect entry, so a clean
@@ -66,7 +66,7 @@ it's describing a specific run's outcome -- `RESULTS.md`.
   `"oa": false`, `"download_url": null`, and fill in `"doi"` (`null` if none).
   Either condition alone is enough: a DOI lets other developers acquire the
   PDF themselves via institutional access (see the DOI printed by
-  `scripts/fetch_evaluation_pdfs.py` when the file is missing) and use the
+  `evaluation/scripts/fetch_evaluation_pdfs.py` when the file is missing) and use the
   ground-truth JSON — which contains no copyrighted text, just page indices
   and titles — directly; a `public-cache/` entry lets them reproduce the
   accuracy signal via `test_public_evaluation_cache_parity.py` without the
@@ -83,9 +83,9 @@ it's describing a specific run's outcome -- `RESULTS.md`.
   → add it to `manifest.local.json` instead (create the file if it doesn't
   exist yet; same schema as `manifest.json`, see below). This file is
   gitignored — it never leaves your machine — but the test harness
-  (`backend/tests/test_chapter_segmentation_accuracy.py`) reads it exactly
+  (`tests/test_segmentation_accuracy.py`) reads it exactly
   like the committed manifest, so it still gets exercised in your own local
-  runs. Once `scripts/generate_public_evaluation_cache.py --verify` succeeds
+  runs. Once `evaluation/scripts/generate_public_evaluation_cache.py --verify` succeeds
   for such a book, move its entry to `manifest.json` in the same commit that
   adds its `public-cache/` file, so the two never drift apart.
 
@@ -109,7 +109,7 @@ it's describing a specific run's outcome -- `RESULTS.md`.
 }
 ```
 
-Place the PDF itself directly in this directory (`backend/evaluation/book-segmentation/<filename>`) — both `.gitignore` entries (`*.pdf`, `manifest.local.json`) mean neither the file nor its local-only metadata are ever committed.
+Place the PDF itself directly in this directory (`evaluation/<filename>`) — both `.gitignore` entries (`*.pdf`, `manifest.local.json`) mean neither the file nor its local-only metadata are ever committed.
 
 `"heuristic_expected_zero"` is optional (defaults to `false` when omitted).
 Set it to `true` only when the book scores exactly zero recall even after
@@ -117,9 +117,9 @@ every available recovery path has been tried and confirmed not to help:
 default extraction, the pypdf layout-mode extraction fallback (recovers a
 real printed TOC that default-mode extraction scrambled), and — for a book
 whose text layer is absent or degenerate (`pages_need_ocr`) — the
-evaluation OCR cache (`uv run python scripts/ocr_evaluation_pdfs.py`,
+evaluation OCR cache (`uv run python evaluation/scripts/ocr_evaluation_pdfs.py`,
 requires the Kreuzberg sidecar; see `README.md`'s "Running an evaluation").
-`backend/evaluation/harness.py`'s `analysis_pages_for` is what the test
+`evaluation/harness.py`'s `analysis_pages_for` is what the test
 harness actually uses to load pages, so it's what a book must fail through
 before the flag is justified. Do not set it just because
 `find_toc_candidates` returns empty on raw default-mode extraction — that
@@ -131,7 +131,7 @@ recoverable signal once the right extraction path was tried; only 3 remain
 genuinely at zero, each with a specific, traced root cause documented
 there — an OCR-quality issue, a back-matter false-positive cluster winning
 over a degraded real TOC, and a book with no TOC-line-density anywhere in
-the OCR'd text). `test_chapter_segmentation_accuracy.py` otherwise
+the OCR'd text). `test_segmentation_accuracy.py` otherwise
 hard-fails any book that scores exactly zero recall, on the assumption
 that's always a code regression — true for the curated, DOI-backed set, and
 now also true for most of the local, no-DOI set. Leave the flag
@@ -163,8 +163,8 @@ below).
 ## Step 2: Run the helper script to get a draft
 
 ```bash
-uv run python scripts/ground_truth_helper.py \
-  --pdf backend/evaluation/book-segmentation/<name>.pdf \
+uv run python evaluation/scripts/ground_truth_helper.py \
+  --pdf evaluation/<name>.pdf \
   --toc /tmp/<name>_toc.json \
   --output /tmp/<name>_draft.json
 ```
@@ -198,7 +198,7 @@ page range and eyeball them against expectation:
 ```bash
 uv run python -c "
 from pypdf import PdfReader
-r = PdfReader('backend/evaluation/book-segmentation/<name>.pdf')
+r = PdfReader('evaluation/<name>.pdf')
 for i in [<index>, <index>+1]:
     t = r.pages[i].extract_text() or ''
     lines = [l for l in t.splitlines() if l.strip()]
@@ -208,7 +208,7 @@ for i in [<index>, <index>+1]:
 
 ## Step 4: Write the final `.expected.json` and sanity-check it
 
-Save as `backend/evaluation/book-segmentation/<name>.expected.json`
+Save as `evaluation/<name>.expected.json`
 (schema: `{"chapters": [{"title", "authors", "pdf_start_index",
 "pdf_end_index", "citation_pages"}, ...]}` — see any existing `.expected.json`
 in this directory for a worked example). Then run the bounds/overlap sanity
@@ -219,8 +219,8 @@ uv run python -c "
 import json
 from pypdf import PdfReader
 book = '<name>'
-total = len(PdfReader(f'backend/evaluation/book-segmentation/{book}.pdf').pages)
-chapters = json.load(open(f'backend/evaluation/book-segmentation/{book}.expected.json'))['chapters']
+total = len(PdfReader(f'evaluation/{book}.pdf').pages)
+chapters = json.load(open(f'evaluation/{book}.expected.json'))['chapters']
 ranges = sorted((c['pdf_start_index'], c['pdf_end_index']) for c in chapters)
 for s, e in ranges:
     assert s <= e, f'start>end: {(s,e)}'

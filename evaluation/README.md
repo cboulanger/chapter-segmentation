@@ -27,7 +27,7 @@ evaluation set change.
 **Fetching the PDFs:**
 
 ```bash
-uv run python scripts/fetch_evaluation_pdfs.py
+uv run python evaluation/scripts/fetch_evaluation_pdfs.py
 ```
 
 Downloads every `oa: true` entry that isn't already present. Non-OA entries
@@ -39,7 +39,7 @@ and re-run the tests.
 **Adding a new evaluation book** (e.g. a "difficult" PDF the segmentation
 heuristics scored low-confidence on during live testing against a real
 Zotero library) — see `CLAUDE.md` in this directory for the full step-by-step
-workflow, including the `scripts/ground_truth_helper.py` draft-then-verify
+workflow, including the `evaluation/scripts/ground_truth_helper.py` draft-then-verify
 process and known failure modes. Short version:
 
 1. Has a DOI? Add an entry to the committed `manifest.json` (`"oa": false,
@@ -55,35 +55,35 @@ process and known failure modes. Short version:
 
 ## Running an evaluation
 
-The harness lives at `backend/tests/test_chapter_segmentation_accuracy.py`,
+The harness lives at `tests/test_segmentation_accuracy.py`,
 marked `@pytest.mark.integration` so it never runs as part of the default
 `uv run pytest` / `npm test` (see `pyproject.toml`'s `addopts`). Run it
 directly:
 
 ```bash
-uv run pytest backend/tests/test_chapter_segmentation_accuracy.py -q -s
+uv run pytest tests/test_segmentation_accuracy.py -q -s
 ```
 
 `-s` is required to see the per-book summary lines (`pytest` swallows `print`
 output by default). A book is silently skipped, not failed, if its PDF isn't
-present locally yet — run `uv run python scripts/fetch_evaluation_pdfs.py`
+present locally yet — run `uv run python evaluation/scripts/fetch_evaluation_pdfs.py`
 first for the open-access ones, or acquire non-OA books manually (see above)
 — or if it needs OCR and the evaluation OCR cache hasn't been populated yet
 (see below).
 
-Pages are loaded via `backend/evaluation/harness.py`'s `analysis_pages_for`,
+Pages are loaded via `evaluation/harness.py`'s `analysis_pages_for`,
 the same way production's `chapter_segmentation.run()` loads them: default
 pypdf extraction, falling back to pypdf's `layout` extraction mode when the
 default mode finds no table of contents (recovers books whose two-column
 TOC the default mode scrambles), and finally the evaluation OCR cache
-(`backend/evaluation/book-segmentation/.ocr-cache/`, gitignored,
+(`.ocr-cache/` in this directory, gitignored,
 content-hash keyed) for books whose text layer is absent or degenerate. A
 book that needs OCR and has no cache entry yet prints `SKIPPED (needs OCR
 ...)` and is excluded from that run rather than scored 0.00 -- populate the
 cache first with:
 
 ```bash
-uv run python scripts/ocr_evaluation_pdfs.py
+uv run python evaluation/scripts/ocr_evaluation_pdfs.py
 ```
 
 This requires the Kreuzberg sidecar container running (see root `CLAUDE.md`'s
@@ -116,7 +116,7 @@ and why.
 
 ### LLM-fallback evaluation
 
-`scripts/evaluate_chapter_segmentation_llm_fallback.py` runs the same
+`evaluation/scripts/evaluate_chapter_segmentation_llm_fallback.py` runs the same
 evaluation set through `analyze_attachment_with_llm_fallback` instead of
 the pure-heuristic `analyze_attachment` (see
 `docs/superpowers/specs/2026-07-25-llm-chapter-segmentation-fallback-design.md`).
@@ -125,7 +125,7 @@ app settings/API keys) and costs a paid API call per book, so it's a
 manual script, not a pytest test:
 
 ```bash
-uv run python scripts/evaluate_chapter_segmentation_llm_fallback.py
+uv run python evaluation/scripts/evaluate_chapter_segmentation_llm_fallback.py
 ```
 
 It prints the same precision/recall table format as the harness above, plus
@@ -136,7 +136,7 @@ real evaluation set -- record what you find in `RESULTS.md`.
 
 ### Strategy-pipeline evaluation
 
-`scripts/evaluate_chapter_segmentation_strategies.py` runs the same
+`evaluation/scripts/evaluate_chapter_segmentation_strategies.py` runs the same
 evaluation set through `analyze_attachment_with_strategies` (see
 `docs/superpowers/specs/2026-08-01-chapter-segmentation-strategy-pipeline-design.md`)
 instead of the pure-heuristic `analyze_attachment` -- i.e. with the PDF
@@ -146,7 +146,7 @@ this script passes in). Not a pytest test -- makes real, free, cached
 Crossref API calls:
 
 ```bash
-uv run python scripts/evaluate_chapter_segmentation_strategies.py
+uv run python evaluation/scripts/evaluate_chapter_segmentation_strategies.py
 ```
 
 Prints the same precision/recall table format as the harnesses above, plus

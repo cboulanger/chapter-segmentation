@@ -9,9 +9,11 @@ guarantee. For what the evaluation set is, how it's organized, and how to run
 each evaluation, see `README.md` in this directory instead; that document
 changes rarely and this one changes often.
 
+> **Always-current numbers:** https://cboulanger.github.io/chapter-segmentation/ (auto-published from `evaluation/generate_report.py`, no hand-written analysis). This file adds mechanism/root-cause commentary the published page deliberately omits, and is only updated by hand.
+
 ## Pure-heuristic results
 
-From `uv run pytest backend/tests/test_chapter_segmentation_accuracy.py -q -s`
+From `uv run pytest tests/test_segmentation_accuracy.py -q -s`
 (`chapter_segmentation.analyze_attachment`), one row per committed evaluation
 book:
 
@@ -32,7 +34,7 @@ real-library evaluation set" below -- their default-mode pypdf extraction
 already finds a usable TOC, so neither addition ever fires for them.
 
 The heuristic pipeline's main mechanisms, in the order they run
-(see `chapter_segmentation.py` for the full details on each):
+(see `src/chapter_segmentation/segmentation.py` for the full details on each):
 
 - `find_toc_candidates` counts only lines that survive the content filters
   (URL/DOI, implausible page numbers) toward the "does this page look like
@@ -105,10 +107,10 @@ went from 3 junk entries / near-zero detected chapters to 41 real TOC
 entries / 40 correctly detected chapters once a matching
 `_looks_like_imprint_line` filter (`© <year>`, `ISBN`, `Gedruckt`,
 `Printed in`) was added alongside the existing URL/DOI filter
-(`chapter_segmentation.py`).
+(`src/chapter_segmentation/segmentation.py`).
 
 **Zero regression on the rest of the evaluation set**: re-running
-`test_chapter_segmentation_accuracy.py` after the fix reproduces every
+`test_segmentation_accuracy.py` after the fix reproduces every
 number in the tables above and below exactly -- none of the other books'
 TOC pages happen to have copyright-page text shaped like this.
 `9783428042241.pdf` has no hand-verified ground truth yet (see
@@ -118,7 +120,7 @@ unscored, not a precision/recall number.
 
 ## Strategy-pipeline results
 
-From `uv run python scripts/evaluate_chapter_segmentation_strategies.py`
+From `uv run python evaluation/scripts/evaluate_chapter_segmentation_strategies.py`
 (`analyze_attachment_with_strategies`):
 
 | Book (filename) | Precision | Recall | Found / Expected | Strategies used |
@@ -141,16 +143,16 @@ above), never when it's merely wrong -- so a confidently-incomplete or
 imprecise outline/Crossref result is trusted over what the heuristic
 pipeline would have found instead. Root causes found and fixed so far (see
 `extract_outline_candidates` in
-`backend/services/chapter_evidence/outline_strategy.py`,
-`_is_non_chapter_structural_title` in `backend/services/chapter_common.py`,
+`src/chapter_segmentation/evidence/outline_strategy.py`,
+`_is_non_chapter_structural_title` in `src/chapter_segmentation/common.py`,
 `analyze_attachment_with_strategies`'s `exclude_indices` computation and
 `merge_metadata_sources`'s single-source sort in
-`backend/services/chapter_segmentation.py`/`fusion.py`, and
+`src/chapter_segmentation/segmentation.py`/`evidence/fusion.py`, and
 `_parse_crossref_item`'s subtitle handling in
-`backend/services/chapter_evidence/crossref_strategy.py` for the code,
-`backend/tests/test_chapter_evidence_outline.py` /
-`test_chapter_segmentation_strategies.py` /
-`test_chapter_evidence_fusion.py` / `test_chapter_evidence_crossref.py` for
+`src/chapter_segmentation/evidence/crossref_strategy.py` for the code,
+`tests/evidence/test_outline_strategy.py` /
+`tests/test_segmentation_strategies.py` /
+`tests/evidence/test_fusion.py` / `tests/evidence/test_crossref_strategy.py` for
 regression coverage):
 
 - **Real chapters nested one level under unlabeled "Part I/II/III" outline
@@ -280,7 +282,7 @@ and why they're in the set. They originally lived in the gitignored
 Aggregate (micro, these 10 books alone): **precision 0.47, recall 0.24**
 (44/94 found correctly, 44/185 expected chapters). These are the same
 numbers whether run through the pure heuristic (`analyze_attachment`,
-`test_chapter_segmentation_accuracy.py`) or the full strategy pipeline
+`test_segmentation_accuracy.py`) or the full strategy pipeline
 (`analyze_attachment_with_strategies`, `strategies_used: []` on all 10) --
 none of the 10 has a Crossref record or a usable PDF outline, so the
 strategy pipeline always falls straight back to the same heuristic result
@@ -300,7 +302,7 @@ artifact, not an absence of signal:
   the next title: `'7Vorwort'`, `'123III. Recht zwischen den
   Professionen'`), so `find_toc_candidates`'s `<title> ... <page number>`
   regex never matches a single physical line and reports zero candidates.
-  `extract_page_texts_for_analysis` (`chapter_segmentation.py`) now retries
+  `extract_page_texts_for_analysis` (`src/chapter_segmentation/segmentation.py`) now retries
   with pypdf's `layout` extraction mode -- which preserves column
   alignment -- whenever default-mode extraction finds no TOC, and adopts
   the layout-mode pages only if THAT finds one. This is a pure fallback:
@@ -316,19 +318,19 @@ artifact, not an absence of signal:
   layout-mode pypdf extraction (pypdf itself warns "Rotated text
   discovered" while reading them) -- no line-oriented heuristic can work on
   that shape of text regardless of extraction mode. `pages_need_ocr`
-  (`chapter_segmentation.py`) now detects this case (alongside an
+  (`src/chapter_segmentation/segmentation.py`) now detects this case (alongside an
   absent/near-absent text layer) and routes both books through OCR instead
   -- the same per-page Kreuzberg OCR path production uses for scans
-  (`chapter_ocr.ocr_pdf_pages`), cached by content hash in the gitignored
-  `backend/evaluation/book-segmentation/.ocr-cache/` and populated by
-  `uv run python scripts/ocr_evaluation_pdfs.py` (run once; re-runs are
+  (`src/chapter_segmentation/ocr.py`'s `ocr_pdf_pages`), cached by content hash in the gitignored
+  `evaluation/.ocr-cache/` and populated by
+  `uv run python evaluation/scripts/ocr_evaluation_pdfs.py` (run once; re-runs are
   instant cache hits). OCR recovers usable line structure for one of the
   two (`9780367439712.pdf`, 0.00 -> 0.42); the other
   (`9783789057366.pdf`) still scores 0.00 -- see "still 0" below.
 - **The 4 true scans** (`9783465016878.pdf`, `9781409403906.pdf`,
   `9783848704316.pdf`, `dnb-36942798X.pdf`) had no text layer at all and
   were never exercised by any evaluation script before this change (the
-  pytest harness and both `scripts/evaluate_chapter_segmentation_*.py`
+  pytest harness and both `evaluation/scripts/evaluate_chapter_segmentation_*.py`
   scripts fed raw pypdf text straight into analysis, with no OCR step --
   unlike production's `run()`, which already had one). They now go through
   the same OCR-cache route as the two degenerate-text books above. 2 of the
@@ -375,7 +377,7 @@ guard as the rest of the evaluation set.
 ## LLM-fallback results
 
 With the heuristics above, a full run of
-`scripts/evaluate_chapter_segmentation_llm_fallback.py --auto-select-model`
+`evaluation/scripts/evaluate_chapter_segmentation_llm_fallback.py --auto-select-model`
 (KISSKI-backed preset) reports **identical numbers to the pure-heuristic
 harness, with neither fallback path firing on any book**: TOC extraction
 never triggers because the regex path now finds a usable listing everywhere,

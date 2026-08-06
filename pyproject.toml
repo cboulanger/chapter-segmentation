@@ -6,9 +6,11 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "spacy>=3.8.0",
+    "click>=8.0",
     "pypdf>=5.1.0",
     "rapidfuzz>=3.10.0",
     "langdetect>=1.0.9",
+    "en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
 ]
 
 [project.optional-dependencies]
@@ -29,6 +31,9 @@ markers = [
     "integration: marks tests that need a real tesseract binary or the real evaluation PDFs",
 ]
 addopts = "-rs -m 'not integration'"
+
+[tool.hatch.metadata]
+allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/chapter_segmentation"]

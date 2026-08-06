@@ -19,8 +19,8 @@ import json
 from pathlib import Path
 from typing import Optional
 
-from backend.services.chapter_ocr import load_cached_ocr
-from backend.services.chapter_segmentation import (
+from chapter_segmentation.ocr import load_cached_ocr
+from chapter_segmentation.segmentation import (
     extract_page_texts_for_analysis,
     pages_need_ocr,
 )

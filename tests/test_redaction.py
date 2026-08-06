@@ -6,16 +6,16 @@ suite."""
 
 import unittest
 
-from backend.services.chapter_segmentation import _LISTING_PAGE_BODY_WINDOW
-from scripts.evaluation_redaction.region_classification import classify_regions, RegionMap
-from scripts.evaluation_redaction.redact import (
+from chapter_segmentation.segmentation import _LISTING_PAGE_BODY_WINDOW
+from evaluation.redaction.region_classification import classify_regions, RegionMap
+from evaluation.redaction.redact import (
     build_preserve_mask,
     redact_page,
     redact_book,
     redact_book_until_stable,
     _drifted_pages,
 )
-from scripts.evaluation_redaction.wordlists import build_word_pool, locale_for_detected_language, pick_word
+from evaluation.redaction.wordlists import build_word_pool, locale_for_detected_language, pick_word
 
 # Same shape as backend/tests/test_chapter_segmentation.py's
 # TestAnalyzeAttachment._fake_book_pages() -- a proven-working minimal book
@@ -76,7 +76,7 @@ class TestClassifyRegionsHeadingWindows(unittest.TestCase):
         # Consistency guard for the literal 200-char window mirrored from
         # chapter_segmentation.locate_chapter_start_candidates -- if that
         # literal ever changes, this test catches the drift.
-        from backend.services.chapter_segmentation import (
+        from chapter_segmentation.segmentation import (
             _running_header_lines,
             _strip_running_headers,
         )
@@ -256,7 +256,7 @@ class TestRedactBook(unittest.TestCase):
         self.assertTrue(redacted[2].endswith("\n\n2"))
 
     def test_boundary_detection_is_unchanged_by_redaction(self):
-        from backend.services.chapter_segmentation import analyze_attachment
+        from chapter_segmentation.segmentation import analyze_attachment
         redacted = redact_book(_FAKE_BOOK_PAGES, detected_language="eng", book_salt="9999999")
         real_result = analyze_attachment(_FAKE_BOOK_PAGES)
         redacted_result = analyze_attachment(redacted)
@@ -311,7 +311,7 @@ class TestRedactBookUntilStable(unittest.TestCase):
         self.assertEqual(redacted, redact_book(_FAKE_BOOK_PAGES, detected_language="eng", book_salt="9999999"))
 
     def test_boundary_detection_is_unchanged_by_redaction(self):
-        from backend.services.chapter_segmentation import analyze_attachment
+        from chapter_segmentation.segmentation import analyze_attachment
         redacted, _extra_preserved = redact_book_until_stable(
             _FAKE_BOOK_PAGES, detected_language="eng", book_salt="9999999",
         )

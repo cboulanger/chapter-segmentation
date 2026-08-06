@@ -27,7 +27,7 @@ from rapidfuzz import fuzz
 
 from backend.config.settings import get_settings
 from backend.services import review_queue_store
-from backend.services.chapter_common import (
+from chapter_segmentation.common import (
     _BACK_MATTER_TITLES,
     _PART_DIVIDER_RE,
     _is_back_matter,
@@ -36,14 +36,14 @@ from backend.services.chapter_common import (
     _normalized_title,
     year_from_date,
 )
-from backend.services.chapter_evidence.crossref_strategy import CrossrefMetadataStrategy
-from backend.services.chapter_evidence.fusion import merge_candidates, merge_metadata_sources
-from backend.services.chapter_evidence.outline_strategy import extract_outline_candidates
-from backend.services.chapter_evidence.crossref_strategy import normalize_isbn
-from backend.services.chapter_evidence.types import BookContext, ChapterCandidate, MetadataStrategy
-from backend.services.chapter_evidence.zotero_catalog_strategy import ZoteroCatalogMetadataStrategy
+from chapter_segmentation.evidence.crossref_strategy import CrossrefMetadataStrategy
+from chapter_segmentation.evidence.fusion import merge_candidates, merge_metadata_sources
+from chapter_segmentation.evidence.outline_strategy import extract_outline_candidates
+from chapter_segmentation.evidence.crossref_strategy import normalize_isbn
+from chapter_segmentation.evidence.types import BookContext, ChapterCandidate, MetadataStrategy
+from chapter_segmentation.evidence.zotero_catalog_strategy import ZoteroCatalogMetadataStrategy
 from backend.services.chapter_link_store import parse_links
-from backend.services.chapter_ocr import load_cached_ocr
+from chapter_segmentation.ocr import load_cached_ocr
 from backend.services.llm import LLMService
 from backend.utils.llm_json import parse_json_array, parse_json_object
 from backend.zotero.library_cache import ZoteroLibraryCache

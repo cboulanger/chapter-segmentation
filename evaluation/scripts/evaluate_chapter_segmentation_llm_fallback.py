@@ -29,8 +29,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from backend.dependencies import make_llm_service
-from backend.evaluation.harness import analysis_pages_for, available_books
-from backend.services.chapter_segmentation import analyze_attachment_with_llm_fallback
+from evaluation.harness import analysis_pages_for, available_books
+from chapter_segmentation.segmentation import analyze_attachment_with_llm_fallback
 
 
 async def _main(auto_select_model: bool) -> int:

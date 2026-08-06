@@ -7,15 +7,15 @@ import hashlib
 import re
 from dataclasses import replace
 
-from backend.services.chapter_segmentation import (
+from chapter_segmentation.segmentation import (
     _LISTING_PAGE_BODY_WINDOW,
     _locate_toc_entries,
     _normalize_header_line,
     _PAGE_NUMBER_TOKEN_RE,
     find_toc_candidates,
 )
-from scripts.evaluation_redaction.region_classification import RegionMap, _header_stripped_offset, classify_regions
-from scripts.evaluation_redaction.wordlists import pick_word, build_word_pool
+from evaluation.redaction.region_classification import RegionMap, _header_stripped_offset, classify_regions
+from evaluation.redaction.wordlists import pick_word, build_word_pool
 
 _TOKEN_RE = re.compile(r"(?P<word>\w+)|(?P<other>\W+)", re.UNICODE)
 

@@ -18,8 +18,8 @@ import unittest
 
 import pytest
 
-from backend.evaluation.harness import available_public_books, public_pages_for
-from backend.services.chapter_segmentation import analyze_attachment
+from evaluation.harness import available_public_books, public_pages_for
+from chapter_segmentation.segmentation import analyze_attachment
 
 pytestmark = pytest.mark.integration
 

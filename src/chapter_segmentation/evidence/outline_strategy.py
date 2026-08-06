@@ -8,8 +8,8 @@ import logging
 
 from pypdf import PdfReader
 
-from backend.services.chapter_common import _is_non_chapter_structural_title, _is_part_divider
-from backend.services.chapter_evidence.types import ChapterCandidate
+from chapter_segmentation.common import _is_non_chapter_structural_title, _is_part_divider
+from chapter_segmentation.evidence.types import ChapterCandidate
 
 logger = logging.getLogger(__name__)
 

@@ -12,13 +12,13 @@ from unittest.mock import AsyncMock, MagicMock
 
 from pypdf import PdfWriter
 
-from backend.services.chapter_ocr import (
+from chapter_segmentation.ocr import (
     detect_language,
     load_cached_ocr,
     ocr_pdf_pages,
     save_ocr_cache,
 )
-from backend.services.chapter_ocr import run as ocr_run
+from chapter_segmentation.ocr import run as ocr_run
 
 
 class TestDetectLanguage(unittest.TestCase):

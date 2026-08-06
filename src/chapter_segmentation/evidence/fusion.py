@@ -7,8 +7,8 @@ from dataclasses import replace
 
 from rapidfuzz import fuzz
 
-from backend.services.chapter_common import _is_back_matter, _is_part_divider
-from backend.services.chapter_evidence.types import ChapterCandidate
+from chapter_segmentation.common import _is_back_matter, _is_part_divider
+from chapter_segmentation.evidence.types import ChapterCandidate
 
 _ALIGN_SCORE_THRESHOLD = 70.0
 

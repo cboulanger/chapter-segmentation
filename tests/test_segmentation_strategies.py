@@ -9,8 +9,8 @@ import unittest
 
 from pypdf import PdfWriter
 
-from backend.services.chapter_evidence.types import BookContext, ChapterCandidate
-from backend.services.chapter_segmentation import (
+from chapter_segmentation.evidence.types import BookContext, ChapterCandidate
+from chapter_segmentation.segmentation import (
     analyze_attachment,
     analyze_attachment_with_strategies,
     build_book_context,

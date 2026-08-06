@@ -2,8 +2,8 @@
 
 import unittest
 
-from backend.services.chapter_evidence.types import BookContext
-from backend.services.chapter_evidence.zotero_catalog_strategy import (
+from chapter_segmentation.evidence.types import BookContext
+from chapter_segmentation.evidence.zotero_catalog_strategy import (
     ZoteroCatalogMetadataStrategy,
     find_zotero_catalog_candidates,
     score_zotero_catalog_candidate,

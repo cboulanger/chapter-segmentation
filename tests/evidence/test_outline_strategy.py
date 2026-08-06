@@ -6,7 +6,7 @@ from unittest.mock import MagicMock, patch
 
 from pypdf import PdfWriter
 
-from backend.services.chapter_evidence.outline_strategy import (
+from chapter_segmentation.evidence.outline_strategy import (
     OutlineStructureStrategy,
     extract_outline_candidates,
 )
@@ -167,7 +167,7 @@ class TestExtractOutlineCandidates(unittest.TestCase):
         mock_reader.get_destination_page_number.side_effect = [0, 10, 20]
 
         with patch(
-            "backend.services.chapter_evidence.outline_strategy.PdfReader",
+            "chapter_segmentation.evidence.outline_strategy.PdfReader",
             return_value=mock_reader,
         ):
             candidates = extract_outline_candidates(b"irrelevant -- reader is mocked")

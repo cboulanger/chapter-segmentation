@@ -14,7 +14,7 @@ from pypdf import PdfWriter as _PdfWriter
 
 from backend.config.settings import get_settings, reset_settings
 from backend.services.review_queue_store import get_entry
-from backend.services.chapter_segmentation import (
+from chapter_segmentation.segmentation import (
     TocEntry,
     extract_page_texts_from_pdf_bytes,
     extract_page_texts_for_analysis,
@@ -26,7 +26,7 @@ from backend.services.chapter_segmentation import (
     _toc_scan_indices,
     analyze_attachment_with_llm_fallback,
 )
-from backend.services.chapter_segmentation import (
+from chapter_segmentation.segmentation import (
     ChapterStartCandidate,
     ChapterStartMatch,
     extract_printed_page_number,
@@ -36,10 +36,10 @@ from backend.services.chapter_segmentation import (
     match_confidence,
     _LOCATE_MARGIN_REQUIRED,
 )
-from backend.services.chapter_segmentation import _chapters_from_located
-from backend.services.chapter_segmentation import extract_authors_near
-from backend.services.chapter_segmentation import analyze_attachment
-from backend.services.chapter_segmentation import run as analyze_run
+from chapter_segmentation.segmentation import _chapters_from_located
+from chapter_segmentation.segmentation import extract_authors_near
+from chapter_segmentation.segmentation import analyze_attachment
+from chapter_segmentation.segmentation import run as analyze_run
 
 
 def _blank_pdf(num_pages: int) -> bytes:

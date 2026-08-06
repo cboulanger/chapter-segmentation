@@ -2,7 +2,7 @@
 
 import unittest
 
-from backend.services.chapter_common import (
+from chapter_segmentation.common import (
     _is_back_matter,
     _is_part_divider,
     _normalized_title,

@@ -4,9 +4,9 @@ docs/superpowers/specs/2026-08-01-chapter-segmentation-strategy-pipeline-design.
 section 5.3.
 """
 
-from backend.services.chapter_common import year_from_date
-from backend.services.chapter_evidence.crossref_strategy import normalize_isbn
-from backend.services.chapter_evidence.types import BookContext, ChapterCandidate, _first_page_number
+from chapter_segmentation.common import year_from_date
+from chapter_segmentation.evidence.crossref_strategy import normalize_isbn
+from chapter_segmentation.evidence.types import BookContext, ChapterCandidate, _first_page_number
 
 _BASE_SCORE = 0.6
 _YEAR_BONUS = 0.15

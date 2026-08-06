@@ -10,7 +10,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from backend.evaluation.harness import analysis_pages_for, available_public_books, public_pages_for
+from evaluation.harness import analysis_pages_for, available_public_books, public_pages_for
 
 _HEALTHY_PAGES = ["Zeile\n" * 200] * 40
 _OCR_PAGES = ["ocr text\n" * 100] * 40

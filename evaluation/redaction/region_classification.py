@@ -13,7 +13,7 @@ from dataclasses import dataclass
 
 from rapidfuzz import fuzz
 
-from backend.services.chapter_segmentation import (
+from chapter_segmentation.segmentation import (
     _LOCATE_MIN_HEAD_CHARS,
     _LOCATE_SCORE_THRESHOLD,
     _RUNNING_HEADER_SCAN_LINES,

@@ -2,8 +2,8 @@
 
 import unittest
 
-from backend.services.chapter_evidence.fusion import merge_candidates, merge_metadata_sources
-from backend.services.chapter_evidence.types import ChapterCandidate
+from chapter_segmentation.evidence.fusion import merge_candidates, merge_metadata_sources
+from chapter_segmentation.evidence.types import ChapterCandidate
 
 
 class TestMergeMetadataSources(unittest.TestCase):

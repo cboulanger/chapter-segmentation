@@ -28,11 +28,11 @@ import httpx
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from backend.evaluation.harness import analysis_pages_for, available_books
-from backend.services.chapter_evidence.crossref_strategy import CrossrefMetadataStrategy
-from backend.services.chapter_evidence.types import BookContext
-from backend.services.chapter_evidence.zotero_catalog_strategy import ZoteroCatalogMetadataStrategy
-from backend.services.chapter_segmentation import analyze_attachment_with_strategies
+from evaluation.harness import analysis_pages_for, available_books
+from chapter_segmentation.evidence.crossref_strategy import CrossrefMetadataStrategy
+from chapter_segmentation.evidence.types import BookContext
+from chapter_segmentation.evidence.zotero_catalog_strategy import ZoteroCatalogMetadataStrategy
+from chapter_segmentation.segmentation import analyze_attachment_with_strategies
 
 
 async def _main(enable_crossref: bool) -> int:

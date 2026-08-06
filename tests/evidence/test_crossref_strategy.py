@@ -6,12 +6,12 @@ from tempfile import TemporaryDirectory
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock
 
-from backend.services.chapter_evidence.crossref_strategy import (
+from chapter_segmentation.evidence.crossref_strategy import (
     CrossrefMetadataStrategy,
     fetch_crossref_chapters,
     normalize_isbn,
 )
-from backend.services.chapter_evidence.types import BookContext
+from chapter_segmentation.evidence.types import BookContext
 
 
 class TestNormalizeIsbn(unittest.TestCase):

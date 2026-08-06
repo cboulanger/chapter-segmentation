@@ -18,14 +18,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from backend.evaluation.harness import PUBLIC_CACHE_DIR, analysis_pages_for, available_books
-from backend.services.chapter_ocr import detect_language
-from backend.services.chapter_segmentation import (
+from evaluation.harness import PUBLIC_CACHE_DIR, analysis_pages_for, available_books
+from chapter_segmentation.ocr import detect_language
+from chapter_segmentation.segmentation import (
     analyze_attachment,
     extract_page_texts_for_analysis,
     pages_need_ocr,
 )
-from scripts.evaluation_redaction.redact import redact_book_until_stable
+from evaluation.redaction.redact import redact_book_until_stable
 
 CIPHER_VERSION = 1
 

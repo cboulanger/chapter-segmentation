@@ -20,9 +20,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from backend.config.settings import get_settings
-from backend.evaluation.harness import OCR_CACHE_DIR, available_books
-from backend.services.chapter_ocr import detect_language, ocr_pdf_pages
-from backend.services.chapter_segmentation import (
+from evaluation.harness import OCR_CACHE_DIR, available_books
+from chapter_segmentation.ocr import detect_language, ocr_pdf_pages
+from chapter_segmentation.segmentation import (
     extract_page_texts_for_analysis,
     pages_need_ocr,
 )

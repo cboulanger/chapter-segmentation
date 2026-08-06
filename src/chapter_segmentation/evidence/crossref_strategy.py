@@ -13,7 +13,7 @@ from typing import Optional
 
 import httpx
 
-from backend.services.chapter_evidence.types import BookContext, ChapterCandidate, _first_page_number
+from chapter_segmentation.evidence.types import BookContext, ChapterCandidate, _first_page_number
 
 logger = logging.getLogger(__name__)
 

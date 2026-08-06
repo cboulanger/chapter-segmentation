@@ -18,6 +18,7 @@ import unittest
 
 import pytest
 
+from evaluation.generate_report import compute_precision_recall
 from evaluation.harness import available_public_books, public_pages_for
 from chapter_segmentation.segmentation import analyze_attachment
 
@@ -37,15 +38,9 @@ class TestPublicEvaluationCacheParity(unittest.TestCase):
                 pages = public_pages_for(manifest_key)
                 result = analyze_attachment(pages)
 
-                expected_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in expected}
-                found_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in result["chapters"]}
-                true_positives = expected_ranges & found_ranges
-
-                precision = len(true_positives) / len(found_ranges) if found_ranges else 0.0
-                recall = len(true_positives) / len(expected_ranges) if expected_ranges else 0.0
+                precision, recall, tp, found, exp = compute_precision_recall(expected, result["chapters"])
                 print(f"{manifest_key}: precision={precision:.2f} recall={recall:.2f} "
-                      f"({len(true_positives)}/{len(found_ranges)} found, "
-                      f"{len(true_positives)}/{len(expected_ranges)} expected)")
+                      f"({tp}/{found} found, {tp}/{exp} expected)")
 
 
 if __name__ == "__main__":

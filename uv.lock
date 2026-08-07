@@ -101,6 +101,7 @@ kreuzberg = [
     { name = "httpx" },
 ]
 llm-eval = [
+    { name = "httpx" },
     { name = "openai" },
 ]
 tesseract = [
@@ -121,6 +122,7 @@ requires-dist = [
     { name = "click", specifier = ">=8.0" },
     { name = "en-core-web-sm", url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" },
     { name = "httpx", marker = "extra == 'kreuzberg'", specifier = ">=0.27.0" },
+    { name = "httpx", marker = "extra == 'llm-eval'", specifier = ">=0.27.0" },
     { name = "langdetect", specifier = ">=1.0.9" },
     { name = "openai", marker = "extra == 'llm-eval'", specifier = ">=1.0.0" },
     { name = "pillow", marker = "extra == 'tesseract'", specifier = ">=10.0.0" },

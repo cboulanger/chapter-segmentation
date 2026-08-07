@@ -10,7 +10,15 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from evaluation.harness import analysis_pages_for, available_public_books, public_pages_for
+from chapter_segmentation.evidence.types import ChapterCandidate
+from evaluation.harness import (
+    analysis_pages_for,
+    available_public_books,
+    outline_candidate_from_dict,
+    outline_candidate_to_dict,
+    public_outline_candidates_for,
+    public_pages_for,
+)
 
 _HEALTHY_PAGES = ["Zeile\n" * 200] * 40
 _OCR_PAGES = ["ocr text\n" * 100] * 40
@@ -91,6 +99,42 @@ class TestPublicPagesFor(unittest.TestCase):
             public_cache_dir.mkdir()
             with patch("evaluation.harness.PUBLIC_CACHE_DIR", public_cache_dir):
                 self.assertIsNone(public_pages_for("9999999"))
+
+
+class TestOutlineCandidateSerialization(unittest.TestCase):
+    def test_round_trips_all_fields(self):
+        candidate = ChapterCandidate(
+            title="Introduction", authors=("Jane Author",), printed_page_number=1,
+            pdf_page_index=5, chapter_doi="10.1/x", source="outline", metadata_confidence=0.9,
+        )
+        restored = outline_candidate_from_dict(outline_candidate_to_dict(candidate))
+        self.assertEqual(restored, candidate)
+
+    def test_round_trips_defaults(self):
+        candidate = ChapterCandidate(title="Introduction", pdf_page_index=5)
+        restored = outline_candidate_from_dict(outline_candidate_to_dict(candidate))
+        self.assertEqual(restored, candidate)
+
+
+class TestPublicOutlineCandidatesFor(unittest.TestCase):
+    def test_returns_candidates_for_existing_entry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            public_cache_dir = Path(tmp) / "public-cache"
+            public_cache_dir.mkdir()
+            candidate = ChapterCandidate(title="Introduction", pdf_page_index=5, source="outline")
+            (public_cache_dir / "9999999.outline.json").write_text(
+                json.dumps({"candidates": [outline_candidate_to_dict(candidate)]}), encoding="utf-8",
+            )
+            with patch("evaluation.harness.PUBLIC_CACHE_DIR", public_cache_dir):
+                candidates = public_outline_candidates_for("9999999")
+            self.assertEqual(candidates, [candidate])
+
+    def test_returns_none_for_missing_entry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            public_cache_dir = Path(tmp) / "public-cache"
+            public_cache_dir.mkdir()
+            with patch("evaluation.harness.PUBLIC_CACHE_DIR", public_cache_dir):
+                self.assertIsNone(public_outline_candidates_for("9999999"))
 
 
 if __name__ == "__main__":

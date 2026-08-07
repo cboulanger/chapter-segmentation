@@ -19,6 +19,7 @@ import json
 from pathlib import Path
 from typing import Optional
 
+from chapter_segmentation.evidence.types import ChapterCandidate
 from chapter_segmentation.ocr import load_cached_ocr
 from chapter_segmentation.segmentation import (
     extract_page_texts_for_analysis,
@@ -28,6 +29,7 @@ from chapter_segmentation.segmentation import (
 EVAL_DIR = Path(__file__).resolve().parent
 OCR_CACHE_DIR = EVAL_DIR / ".ocr-cache"
 PUBLIC_CACHE_DIR = EVAL_DIR / "public-cache"
+LLM_CACHE_DIR = EVAL_DIR / "llm-cache"
 
 
 def load_manifest_books() -> list[dict]:
@@ -89,3 +91,39 @@ def analysis_pages_for(file_bytes: bytes) -> Optional[list[str]]:
     if cached is not None and not pages_need_ocr(cached["pages"]):
         return cached["pages"]
     return None
+
+
+def outline_candidate_to_dict(candidate: ChapterCandidate) -> dict:
+    return {
+        "title": candidate.title,
+        "authors": list(candidate.authors),
+        "printed_page_number": candidate.printed_page_number,
+        "pdf_page_index": candidate.pdf_page_index,
+        "chapter_doi": candidate.chapter_doi,
+        "source": candidate.source,
+        "metadata_confidence": candidate.metadata_confidence,
+    }
+
+
+def outline_candidate_from_dict(data: dict) -> ChapterCandidate:
+    return ChapterCandidate(
+        title=data["title"],
+        authors=tuple(data.get("authors", [])),
+        printed_page_number=data.get("printed_page_number"),
+        pdf_page_index=data.get("pdf_page_index"),
+        chapter_doi=data.get("chapter_doi"),
+        source=data.get("source", "outline"),
+        metadata_confidence=data.get("metadata_confidence", 1.0),
+    )
+
+
+def public_outline_candidates_for(manifest_key: str) -> Optional[list[ChapterCandidate]]:
+    """Cached outline-strategy candidates for one book from the committed
+    public-cache, or None if no entry exists yet (either the book's PDF
+    has no outline, or the cache hasn't been generated for it yet -- see
+    evaluation/scripts/generate_public_evaluation_cache.py)."""
+    cache_path = PUBLIC_CACHE_DIR / f"{manifest_key}.outline.json"
+    if not cache_path.exists():
+        return None
+    data = json.loads(cache_path.read_text(encoding="utf-8"))
+    return [outline_candidate_from_dict(c) for c in data["candidates"]]

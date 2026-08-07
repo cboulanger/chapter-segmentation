@@ -5,13 +5,9 @@ docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md
 "Metrics and rendering (shared code)".
 """
 
-from __future__ import annotations
-
-from typing import Union
-
 from evaluation.metrics import Metrics
 
-_TableCell = Union[tuple[Metrics, float], None]  # (metrics, elapsed_seconds), or None for "not run"
+_TableCell = tuple[Metrics, float] | None  # (metrics, elapsed_seconds), or None for "not run"
 
 
 def _cell_html(cell: _TableCell, is_best: bool) -> str:
@@ -70,23 +66,18 @@ def render_strategy_tables(
             f"{m.true_positives}/{m.expected_count} expected</td><td>{t:.2f}s</td></tr>"
         )
 
-    doc_section = ""
-    if per_document:
-        doc_header = "".join(f"<th>{s}</th>" for s in strategy_names)
-        doc_section = f"""<h2>Per document</h2>
-<table>
-<tr><th>Book</th>{doc_header}</tr>
-{"".join(doc_rows)}
-</table>
-"""
-
+    doc_header = "".join(f"<th>{s}</th>" for s in strategy_names)
     return f"""<!doctype html>
 <html><head><meta charset="utf-8"><title>{title}</title>
 <style>table {{ border-collapse: collapse; }} td, th {{ border: 1px solid #ccc; padding: 4px 8px; vertical-align: top; }}</style>
 </head><body>
 <h1>{title}</h1>
 {description_html}
-{doc_section}
+<h2>Per document</h2>
+<table>
+<tr><th>Book</th>{doc_header}</tr>
+{"".join(doc_rows)}
+</table>
 <h2>Per strategy (aggregate, ordered by F1)</h2>
 <table>
 <tr><th>Strategy</th><th>Precision</th><th>Recall</th><th>F1</th><th>Found / Expected</th><th>Total time</th></tr>

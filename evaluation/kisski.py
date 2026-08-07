@@ -67,3 +67,17 @@ def select_gap_fill(models: list[KisskiModel], covered_model_ids: set[str], limi
     in ascending-demand order."""
     eligible = [m for m in models if m.availability != "very busy" and m.id not in covered_model_ids]
     return sorted(eligible, key=lambda m: m.demand)[:limit]
+
+
+def select_full_regen(models: list[KisskiModel], cached_model_ids: set[str]) -> list[KisskiModel]:
+    """Full-regeneration selection: every model with at least one cached
+    entry in evaluation/llm-cache/ today (its full historical footprint --
+    see refresh_llm_cache.py's _all_cached_model_ids), regardless of
+    current busy/demand status. Unlike select_top5/select_gap_fill,
+    'very busy' models are NOT excluded here -- a deliberate full
+    regeneration (e.g. after an extraction-logic change makes every
+    existing entry potentially stale) should redo everything that's
+    cached, not skip whatever happens to be busy right now. No cap;
+    ascending-demand order is only for readable progress output."""
+    eligible = [m for m in models if m.id in cached_model_ids]
+    return sorted(eligible, key=lambda m: m.demand)

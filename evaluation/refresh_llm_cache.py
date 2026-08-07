@@ -20,6 +20,14 @@ unconditionally, even if already cached -- a quick manual sanity check.
 book in the current public corpus, and runs up to 5 of those -- how the
 cache grows to cover every model over time (see the nightly schedule in
 the workflow above).
+
+--mode full: re-runs EVERY model that already has at least one cached
+entry (its full historical footprint), across all books, regardless of
+current busy/demand status -- use after a change to the extraction logic
+itself (prompt, max_tokens, page selection, ...) makes every existing
+cache entry potentially stale, not just the 5 models --mode top5 happens
+to touch. A cached model no longer offered by KISSKI is skipped with a
+warning (nothing to run it against).
 """
 
 import argparse
@@ -36,7 +44,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from chapter_segmentation.segmentation import analyze_attachment_llm_only
 from evaluation.harness import LLM_CACHE_DIR, available_public_books, public_pages_for
-from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models, select_gap_fill, select_top5
+from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models, select_full_regen, select_gap_fill, select_top5
 
 
 class _OpenAICompatibleLLMClient:
@@ -75,6 +83,20 @@ def _fully_covered_model_ids(manifest_keys: list[str]) -> set[str]:
     return set.intersection(*per_book_model_ids) if per_book_model_ids else set()
 
 
+def _all_cached_model_ids(manifest_keys: list[str]) -> set[str]:
+    """Every model id with at least one cached entry across any book --
+    the "full regeneration" scope (a model's full historical footprint),
+    unlike _fully_covered_model_ids' intersection-based "covered
+    everywhere" definition used for gap-filling."""
+    ids: set[str] = set()
+    for manifest_key in manifest_keys:
+        cache_path = LLM_CACHE_DIR / f"{manifest_key}.json"
+        if not cache_path.exists():
+            continue
+        ids.update(json.loads(cache_path.read_text(encoding="utf-8")).get("models", {}))
+    return ids
+
+
 def _upsert_cache(manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:
     LLM_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache_path = LLM_CACHE_DIR / f"{manifest_key}.json"
@@ -95,11 +117,22 @@ async def _main(mode: str, base_url: str) -> int:
     all_models = fetch_kisski_models(base_url, api_key)
     if mode == "top5":
         selected = select_top5(all_models)
-    else:
+    elif mode == "fill-gaps":
         selected = select_gap_fill(all_models, _fully_covered_model_ids(manifest_keys))
+    else:
+        cached_ids = _all_cached_model_ids(manifest_keys)
+        selected = select_full_regen(all_models, cached_ids)
+        retired = sorted(cached_ids - {m.id for m in all_models})
+        if retired:
+            print(f"Skipping cached models no longer offered by KISSKI: {retired}")
 
     if not selected:
-        print("No models to run (fill-gaps: every non-busy model already fully covered).")
+        if mode == "fill-gaps":
+            print("No models to run (fill-gaps: every non-busy model already fully covered).")
+        elif mode == "full":
+            print("No models to run (full: no models are cached yet).")
+        else:
+            print("No models to run.")
         return 0
 
     print(f"Selected models: {[m.id for m in selected]}")
@@ -124,7 +157,7 @@ async def _main(mode: str, base_url: str) -> int:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--mode", choices=["top5", "fill-gaps"], default="top5")
+    parser.add_argument("--mode", choices=["top5", "fill-gaps", "full"], default="top5")
     parser.add_argument("--base-url", default=DEFAULT_KISSKI_BASE_URL)
     args = parser.parse_args()
     raise SystemExit(asyncio.run(_main(mode=args.mode, base_url=args.base_url)))

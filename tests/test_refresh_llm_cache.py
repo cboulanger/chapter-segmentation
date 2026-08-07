@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from evaluation.refresh_llm_cache import _fully_covered_model_ids, _upsert_cache
+from evaluation.refresh_llm_cache import _all_cached_model_ids, _fully_covered_model_ids, _upsert_cache
 
 
 class TestFullyCoveredModelIds(unittest.TestCase):
@@ -48,6 +48,50 @@ class TestFullyCoveredModelIds(unittest.TestCase):
             )
             with patch("evaluation.refresh_llm_cache.LLM_CACHE_DIR", cache_dir):
                 self.assertEqual(_fully_covered_model_ids(["book-a", "book-b"]), set())
+
+
+class TestAllCachedModelIds(unittest.TestCase):
+    def test_no_cache_files_means_no_ids(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch("evaluation.refresh_llm_cache.LLM_CACHE_DIR", Path(tmp)):
+                self.assertEqual(_all_cached_model_ids(["book-a", "book-b"]), set())
+
+    def test_unions_model_ids_across_books(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            (cache_dir / "book-a.json").write_text(
+                json.dumps({"models": {"model-x": {"chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0}}}),
+                encoding="utf-8",
+            )
+            (cache_dir / "book-b.json").write_text(
+                json.dumps({"models": {"model-y": {"chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0}}}),
+                encoding="utf-8",
+            )
+            with patch("evaluation.refresh_llm_cache.LLM_CACHE_DIR", cache_dir):
+                self.assertEqual(_all_cached_model_ids(["book-a", "book-b"]), {"model-x", "model-y"})
+
+    def test_model_present_in_only_one_book_still_counts(self):
+        # Unlike _fully_covered_model_ids (intersection), this is a union
+        # -- a model doesn't need to be cached for EVERY book to count.
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            (cache_dir / "book-a.json").write_text(
+                json.dumps({"models": {"model-x": {"chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0}}}),
+                encoding="utf-8",
+            )
+            (cache_dir / "book-b.json").write_text(json.dumps({"models": {}}), encoding="utf-8")
+            with patch("evaluation.refresh_llm_cache.LLM_CACHE_DIR", cache_dir):
+                self.assertEqual(_all_cached_model_ids(["book-a", "book-b"]), {"model-x"})
+
+    def test_a_book_with_no_cache_file_at_all_is_skipped_not_an_error(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            (cache_dir / "book-a.json").write_text(
+                json.dumps({"models": {"model-x": {"chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0}}}),
+                encoding="utf-8",
+            )
+            with patch("evaluation.refresh_llm_cache.LLM_CACHE_DIR", cache_dir):
+                self.assertEqual(_all_cached_model_ids(["book-a", "book-b"]), {"model-x"})
 
 
 class TestUpsertCache(unittest.TestCase):

@@ -6,7 +6,7 @@ docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md
 import unittest
 from unittest.mock import MagicMock, patch
 
-from evaluation.kisski import KisskiModel, fetch_kisski_models, select_gap_fill, select_top5
+from evaluation.kisski import KisskiModel, fetch_kisski_models, select_full_regen, select_gap_fill, select_top5
 
 
 class TestKisskiModelAvailability(unittest.TestCase):
@@ -96,6 +96,46 @@ class TestSelectGapFill(unittest.TestCase):
     def test_all_covered_returns_empty(self):
         models = [KisskiModel(id="a", name="A", demand=0)]
         self.assertEqual(select_gap_fill(models, covered_model_ids={"a"}), [])
+
+
+class TestSelectFullRegen(unittest.TestCase):
+    def test_selects_only_cached_models(self):
+        models = [
+            KisskiModel(id="cached-1", name="Cached 1", demand=0),
+            KisskiModel(id="uncached", name="Uncached", demand=0),
+        ]
+        selected = select_full_regen(models, cached_model_ids={"cached-1"})
+        self.assertEqual([m.id for m in selected], ["cached-1"])
+
+    def test_includes_very_busy_cached_models(self):
+        # Unlike select_top5/select_gap_fill, a deliberate full
+        # regeneration must not skip a cached model just because it's
+        # currently busy -- the whole point is to redo everything cached.
+        models = [KisskiModel(id="very-busy", name="Very Busy", demand=10)]
+        selected = select_full_regen(models, cached_model_ids={"very-busy"})
+        self.assertEqual([m.id for m in selected], ["very-busy"])
+
+    def test_no_cap_on_result_size(self):
+        models = [KisskiModel(id=f"m{i}", name=f"M{i}", demand=0) for i in range(8)]
+        selected = select_full_regen(models, cached_model_ids={m.id for m in models})
+        self.assertEqual(len(selected), 8)
+
+    def test_ascending_demand_order(self):
+        models = [
+            KisskiModel(id="m-demand-2", name="M2", demand=2),
+            KisskiModel(id="m-demand-1", name="M1", demand=1),
+        ]
+        selected = select_full_regen(models, cached_model_ids={"m-demand-1", "m-demand-2"})
+        self.assertEqual([m.id for m in selected], ["m-demand-1", "m-demand-2"])
+
+    def test_cached_model_no_longer_offered_is_silently_excluded(self):
+        # fetch_kisski_models only returns what KISSKI currently offers --
+        # a retired model can't appear in `models`, so it's naturally
+        # dropped here; refresh_llm_cache.py's _main is what prints a
+        # warning about it separately.
+        models = [KisskiModel(id="still-offered", name="Still", demand=0)]
+        selected = select_full_regen(models, cached_model_ids={"still-offered", "retired-model"})
+        self.assertEqual([m.id for m in selected], ["still-offered"])
 
 
 if __name__ == "__main__":

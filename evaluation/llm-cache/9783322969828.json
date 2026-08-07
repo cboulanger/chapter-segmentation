@@ -1,0 +1,30 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [],
+      "elapsed_seconds": 0.36471424996852875,
+      "demand_at_run": 0
+    },
+    "deepseek-v4-flash": {
+      "chapters": [],
+      "elapsed_seconds": 32.65838695806451,
+      "demand_at_run": 0
+    },
+    "glm-4.7": {
+      "chapters": [],
+      "elapsed_seconds": 27.132350208004937,
+      "demand_at_run": 0
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 55.9092384170508,
+      "demand_at_run": 0
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.3602485000155866,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-07T19:22:31.590880+00:00"
+}

@@ -183,7 +183,7 @@ Prints the same precision/recall table format as the harnesses above, plus
 each book's `strategies_used` diagnostic. Run after any change to the
 outline/Crossref/fusion logic to check whether the new strategies are
 net-helpful on the real evaluation set, the same operational pattern the
-LLM-fallback evaluation script above already established -- record what you
+LLM strategy evaluation above already established -- record what you
 find in `RESULTS.md`.
 
 (This script evaluates the *merged pipeline's* Crossref/Zotero-catalog

@@ -21,6 +21,7 @@ from chapter_segmentation.segmentation import (
     save_analysis_cache,
     _toc_scan_indices,
     analyze_attachment_with_llm_fallback,
+    analyze_attachment_outline_only,
 )
 from chapter_segmentation.segmentation import (
     ChapterStartCandidate,
@@ -35,6 +36,8 @@ from chapter_segmentation.segmentation import (
 from chapter_segmentation.segmentation import _chapters_from_located
 from chapter_segmentation.segmentation import extract_authors_near
 from chapter_segmentation.segmentation import analyze_attachment
+from chapter_segmentation.evidence.outline_strategy import extract_outline_candidates
+from chapter_segmentation.evidence.types import ChapterCandidate
 
 
 def _blank_pdf(num_pages: int) -> bytes:
@@ -1086,6 +1089,74 @@ class TestPagesNeedOcr(unittest.TestCase):
         # sideways) must not condemn a healthy book to OCR.
         pages = [self._healthy_page()] * 36 + ["Wort " * 400] * 4
         self.assertFalse(pages_need_ocr(pages))
+
+
+class TestAnalyzeAttachmentOutlineOnly(unittest.TestCase):
+    _TWO_CHAPTER_PAGES = [
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 0
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 1
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 2
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 3
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 4
+        "Introduction\nJane Author\n\nBody text opening the chapter.\n\n1",  # 5
+        "...continued introduction text with real body content here.\n\n2",  # 6
+        "...more continued introduction text with real body content.\n\n3",  # 7
+        "...final continued introduction text with real body content.\n\n4",  # 8
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 9
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 10
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 11
+        "Comparing Citation Styles\n\nJohn Smith\n\nBody text opening this chapter.\n\n5",  # 12
+        "...continued citation styles text with real body content here.\n\n6",  # 13
+        "...more continued citation styles text with real body content.\n\n7",  # 14
+        "...final continued citation styles text with real body content.\n\n8",  # 15
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 16
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 17
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 18
+        "Unrelated body filler text, nothing chapter-related in this passage at all.",  # 19
+    ]
+
+    def test_builds_chapters_directly_from_resolved_candidates(self):
+        candidates = [
+            ChapterCandidate(title="Introduction", authors=("Jane Author",), pdf_page_index=5, source="outline"),
+            ChapterCandidate(title="Comparing Citation Styles", authors=("John Smith",), pdf_page_index=12, source="outline"),
+        ]
+        result = analyze_attachment_outline_only(self._TWO_CHAPTER_PAGES, candidates)
+        chapters = sorted(result["chapters"], key=lambda c: c["pdf_start_index"])
+        self.assertEqual(len(chapters), 2)
+        self.assertEqual(chapters[0]["title"], "Introduction")
+        self.assertEqual(chapters[0]["pdf_start_index"], 5)
+        self.assertEqual(chapters[0]["source"], "outline")
+        self.assertEqual(chapters[0]["confidence"], 0.98)
+        self.assertEqual(chapters[1]["pdf_start_index"], 12)
+        self.assertEqual(result["diagnostics"]["outline_candidates_found"], 2)
+
+    def test_empty_candidates_yields_no_chapters(self):
+        result = analyze_attachment_outline_only(self._TWO_CHAPTER_PAGES, [])
+        self.assertEqual(result["chapters"], [])
+        self.assertEqual(result["segmentation_confidence"], "low")
+
+    def test_skips_candidate_missing_pdf_page_index(self):
+        # Should never happen for a real extract_outline_candidates() result
+        # (every entry it returns already has pdf_page_index resolved), but
+        # must not crash if it does -- skip rather than guess.
+        candidates = [
+            ChapterCandidate(title="Introduction", pdf_page_index=5, source="outline"),
+            ChapterCandidate(title="Undated", pdf_page_index=None, source="outline"),
+        ]
+        result = analyze_attachment_outline_only(self._TWO_CHAPTER_PAGES, candidates)
+        titles = [c["title"] for c in result["chapters"]]
+        self.assertEqual(titles, ["Introduction"])
+
+    def test_matches_strategies_pipeline_outline_only_result(self):
+        # Same fixture as
+        # TestAnalyzeAttachmentWithStrategiesOutlineOnly.test_outline_only_uses_direct_localization_and_fixed_confidence
+        # in tests/test_segmentation_strategies.py -- the standalone
+        # function must agree with the pipeline's own outline-only branch.
+        pdf_bytes = _pdf_with_outline(20, [("Introduction", 5), ("Comparing Citation Styles", 12)])
+        candidates = extract_outline_candidates(pdf_bytes)
+        result = analyze_attachment_outline_only(self._TWO_CHAPTER_PAGES, candidates)
+        chapters = sorted(result["chapters"], key=lambda c: c["pdf_start_index"])
+        self.assertEqual([c["pdf_start_index"] for c in chapters], [5, 12])
 
 
 if __name__ == "__main__":

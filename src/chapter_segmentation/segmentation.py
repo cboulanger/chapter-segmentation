@@ -1259,6 +1259,38 @@ _OUTLINE_CONFIDENCE = 0.98  # exceeds chapter_upload.py's calibrated
 _BOOK_TITLE_BOOKMARK_FUZZ_THRESHOLD = 90.0
 
 
+def analyze_attachment_outline_only(pages: list[str], outline_candidates: list[ChapterCandidate]) -> dict:
+    """Builds chapters directly from a PDF's embedded outline/bookmark
+    candidates (see extract_outline_candidates), standalone -- no metadata
+    merge, no LLM, no heuristic fallback. Every outline candidate already
+    carries a resolved pdf_page_index (see ChapterCandidate's docstring),
+    so this never needs content-search localization; a candidate that
+    somehow lacks one is skipped rather than guessed at. Mirrors the
+    "pre_located" branch analyze_attachment_with_strategies uses for
+    outline candidates, factored out so it can be measured on its own
+    (design spec 2026-08-07 "Production code changes").
+    """
+    pre_located = [c for c in outline_candidates if c.pdf_page_index is not None]
+    located = [
+        (
+            _candidate_to_toc_entry(candidate),
+            ChapterStartMatch(index=candidate.pdf_page_index, score=100.0, margin=_CONFIDENCE_MARGIN_SATURATION),
+        )
+        for candidate in pre_located
+    ]
+    located.sort(key=lambda pair: pair[1].index)
+    entry_source = {entry: "outline" for entry, _match in located}
+    chapters = _chapters_from_located(pages, located, entry_source=entry_source)
+    for chapter in chapters:
+        chapter["confidence"] = _OUTLINE_CONFIDENCE
+    return {
+        "total_pdf_pages": len(pages),
+        "segmentation_confidence": "high" if chapters else "low",
+        "chapters": chapters,
+        "diagnostics": {"outline_candidates_found": len(outline_candidates)},
+    }
+
+
 def build_book_context(book_data: dict) -> BookContext:
     """Builds a BookContext from a Zotero `book` item's `data` dict, for
     passing into analyze_attachment_with_strategies. See design spec

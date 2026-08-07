@@ -114,25 +114,55 @@ assertion (see `CLAUDE.md`'s "Step 0" for exactly when that flag applies and
 how to re-check it); `RESULTS.md` documents which books currently carry it
 and why.
 
-### LLM-fallback evaluation
+### Per-strategy evaluation report
 
-`evaluation/scripts/evaluate_chapter_segmentation_llm_fallback.py` runs the same
-evaluation set through `analyze_attachment_with_llm_fallback` instead of
-the pure-heuristic `analyze_attachment` (see
-`docs/superpowers/specs/2026-07-25-llm-chapter-segmentation-fallback-design.md`).
-Unlike the harness above, this requires a real, working LLM (reads normal
-app settings/API keys) and costs a paid API call per book, so it's a
-manual script, not a pytest test:
+`evaluation/generate_report.py` (published automatically to GitHub Pages
+on every push to `main` -- see `.github/workflows/publish-results.yml`)
+scores the heuristic and outline strategies independently against the
+public-cache corpus -- no pipeline merge/fallback decision is involved,
+so each strategy's own standalone accuracy is visible, not just which one
+a production run happened to pick. It costs no API calls and needs no
+PDFs; run it locally the same way CI does:
 
 ```bash
-uv run python evaluation/scripts/evaluate_chapter_segmentation_llm_fallback.py
+uv run python evaluation/generate_report.py --out public/
 ```
 
-It prints the same precision/recall table format as the harness above, plus
-per-book counts of how often each fallback path (`llm_toc_extraction_used`,
-`llm_disambiguation_used`) actually fired. Run it after any prompt or
-heuristic change to check whether the fallback is still net-helpful on the
-real evaluation set -- record what you find in `RESULTS.md`.
+Produces two pages, both using the same table format: `public/index.html`
+(one row per book x strategy, with precision/recall/F1/time, best-F1 cell
+per row marked, plus a per-strategy summary ordered by aggregate F1) and
+`public/llm/index.html` (see "LLM strategy evaluation" below).
+
+### LLM strategy evaluation
+
+Unlike the heuristic and outline strategies, evaluating the LLM strategy
+costs real KISSKI API budget, so it is decoupled from report generation:
+`evaluation/refresh_llm_cache.py` is the only script that calls an LLM,
+and it writes its results into `evaluation/llm-cache/<book>.json` (raw
+chapters found + timing per model, committed to git) rather than printing
+a report directly. `evaluation/generate_report.py` then reads that cache
+for free on every run -- folding the single best-performing cached model
+into the main report as an "LLM (\<model\>)" column, and rendering every
+cached model's full breakdown at `public/llm/index.html`.
+
+Run it manually, with `KISSKI_API_KEY` in the environment (locally, source
+it from `zotero-rag`'s `.env`):
+
+```bash
+export KISSKI_API_KEY=$(grep '^KISSKI_API_KEY=' ../zotero-rag/.env | cut -d= -f2-)
+uv run python evaluation/refresh_llm_cache.py --mode top5
+```
+
+`--mode top5` (the default) refreshes the 5 currently-least-busy KISSKI
+models. `--mode fill-gaps` instead finds non-busy models not yet cached
+for every book in the corpus and runs up to 5 of those -- this is what
+`.github/workflows/refresh-llm-cache.yml`'s nightly schedule uses, so the
+cache grows to cover every available/busy model over time without paying
+to re-run models it already has complete data for. The same workflow also
+exposes a manual `workflow_dispatch` trigger (using `--mode top5`) for an
+on-demand refresh, e.g. right after a prompt change, to sanity-check the
+current best models. Either trigger commits the updated cache files
+straight to `main`, which republishes the report automatically.
 
 ### Strategy-pipeline evaluation
 
@@ -155,6 +185,11 @@ outline/Crossref/fusion logic to check whether the new strategies are
 net-helpful on the real evaluation set, the same operational pattern the
 LLM-fallback evaluation script above already established -- record what you
 find in `RESULTS.md`.
+
+(This script evaluates the *merged pipeline's* Crossref/Zotero-catalog
+behavior specifically -- for the outline and LLM strategies evaluated
+independently of any pipeline decision, see "Per-strategy evaluation
+report" and "LLM strategy evaluation" above.)
 
 ## Evaluation set composition
 

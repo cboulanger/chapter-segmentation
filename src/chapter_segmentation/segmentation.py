@@ -506,12 +506,15 @@ def _llm_scan_indices(pages: list[str]) -> list[int]:
     (the regex heuristic) already located -- far less input text, and far
     less redacted/irrelevant body prose bleeding into the LLM's "authors"
     field, than the blind front/back-matter fraction. Falls back to the
-    blind fraction only when the heuristic found nothing -- the case that
-    matters most in practice: analyze_attachment_with_llm_fallback only
-    ever calls llm_extract_toc_entries when the heuristic already found
-    zero usable entries, so this narrowing is a no-op there; its full
-    effect is felt by the standalone analyze_attachment_llm_only strategy,
-    which always calls this function regardless of heuristic success.
+    blind fraction only when the heuristic found nothing.
+
+    This does not change analyze_attachment_with_llm_fallback's behavior
+    in its primary call path: it only invokes llm_extract_toc_entries when
+    find_toc_candidates already returned nothing (len(toc_entries) == 0),
+    in which case this falls back to the same blind fraction as today.
+    The secondary path (entries exist but heuristic_chapters == 0) and
+    analyze_attachment_llm_only (which always calls this function) both
+    get the narrower, cleaner input.
     """
     heuristic_entries = find_toc_candidates(pages)
     if not heuristic_entries:

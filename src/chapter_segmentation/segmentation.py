@@ -539,6 +539,31 @@ def _classify_llm_failure(exc: Exception) -> str:
     return "api_error"
 
 
+_LLM_TOC_RETRY_MAX_TOKENS = 8192
+
+
+async def _extract_with_retry(prompt: str, llm_client: LLMClient) -> list:
+    """Calls llm_client.generate for the TOC-extraction prompt, retrying
+    once with a much higher max_tokens if the first response doesn't parse
+    as a JSON array. A truncated array reliably fails parse_json_array (no
+    closing "]") regardless of the underlying cause, so JSON-parseability
+    alone is a sufficient, client-agnostic retry trigger -- no LLMClient
+    protocol changes needed. Does NOT retry when generate() itself raises
+    (e.g. a context-length error): a bigger max_tokens can't fix an input
+    that's already too large, so that exception propagates immediately.
+    """
+    last_error: Exception | None = None
+    for max_tokens in (1024, _LLM_TOC_RETRY_MAX_TOKENS):
+        raw = await llm_client.generate(
+            prompt=prompt, max_tokens=max_tokens, temperature=0.0, is_valid=_parses_as_json_array,
+        )
+        try:
+            return parse_json_array(raw)
+        except Exception as exc:
+            last_error = exc
+    raise last_error
+
+
 async def llm_extract_toc_entries(pages: list[str], llm_client: LLMClient) -> list[TocEntry]:
     """Reads the same front/back-matter page range find_toc_candidates
     already scans (_toc_scan_indices), sends their raw text verbatim to the

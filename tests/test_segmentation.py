@@ -22,6 +22,7 @@ from chapter_segmentation.segmentation import (
     _toc_scan_indices,
     _llm_scan_indices,
     _classify_llm_failure,
+    _extract_with_retry,
     analyze_attachment_with_llm_fallback,
     analyze_attachment_outline_only,
     analyze_attachment_llm_only,
@@ -446,6 +447,47 @@ class TestClassifyLlmFailure(unittest.TestCase):
     def test_classifies_unrecognized_message_as_api_error(self):
         exc = RuntimeError("connection reset by peer")
         self.assertEqual(_classify_llm_failure(exc), "api_error")
+
+
+class TestExtractWithRetry(unittest.IsolatedAsyncioTestCase):
+    def _fake_llm(self, *responses):
+        llm = MagicMock()
+        llm.generate = AsyncMock(side_effect=list(responses))
+        return llm
+
+    async def test_returns_parsed_result_on_first_success_without_retry(self):
+        llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": 1}]')
+        items = await _extract_with_retry("prompt", llm)
+        self.assertEqual(len(items), 1)
+        llm.generate.assert_called_once()
+        self.assertEqual(llm.generate.call_args.kwargs["max_tokens"], 1024)
+
+    async def test_retries_with_higher_max_tokens_on_truncated_first_response(self):
+        llm = self._fake_llm(
+            '[{"title": "Introduction", "authors": [], "printed_page_number": 1}',  # truncated, no closing ]
+            '[{"title": "Introduction", "authors": [], "printed_page_number": 1}]',  # valid
+        )
+        items = await _extract_with_retry("prompt", llm)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(llm.generate.call_count, 2)
+        self.assertEqual(llm.generate.call_args_list[0].kwargs["max_tokens"], 1024)
+        self.assertEqual(llm.generate.call_args_list[1].kwargs["max_tokens"], 8192)
+
+    async def test_raises_when_both_attempts_fail_to_parse(self):
+        llm = self._fake_llm("not json at all", "still not json")
+        with self.assertRaises(Exception):
+            await _extract_with_retry("prompt", llm)
+        self.assertEqual(llm.generate.call_count, 2)
+
+    async def test_does_not_retry_when_generate_itself_raises(self):
+        # A context-length error (or any other API-level failure) can't be
+        # fixed by asking for more output tokens -- only truncated-but-
+        # otherwise-successful responses should trigger the retry.
+        llm = MagicMock()
+        llm.generate = AsyncMock(side_effect=RuntimeError("maximum context length is 65536 tokens"))
+        with self.assertRaises(RuntimeError):
+            await _extract_with_retry("prompt", llm)
+        llm.generate.assert_called_once()
 
 
 class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):

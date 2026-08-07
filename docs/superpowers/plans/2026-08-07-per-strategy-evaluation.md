@@ -1762,6 +1762,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: refresh-llm-cache
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest

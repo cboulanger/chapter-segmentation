@@ -515,6 +515,19 @@ def _llm_scan_indices(pages: list[str]) -> list[int]:
     The secondary path (entries exist but heuristic_chapters == 0) and
     analyze_attachment_llm_only (which always calls this function) both
     get the narrower, cleaner input.
+
+    Accepted trade-off: in that secondary path, find_toc_candidates'
+    result is a real but WRONG cluster on some books (e.g. a back-matter
+    bibliography/citation list fuzzy-matching the TOC-line pattern -- see
+    RESULTS.md's "secondary listing wins over the real TOC" cases). Before
+    this narrowing existed, the LLM still saw the full blind fraction in
+    that case, which had some chance of also covering the real TOC
+    elsewhere in the front/back matter; narrowing to the wrong cluster's
+    pages removes that chance. Not yet observed in practice on this
+    evaluation corpus (analyze_attachment_llm_only, which this narrowing
+    was primarily built for, doesn't exercise this fallback-gating path at
+    all), but worth checking against a known false-cluster book if this
+    fallback path's own accuracy is evaluated directly in the future.
     """
     heuristic_entries = find_toc_candidates(pages)
     if not heuristic_entries:

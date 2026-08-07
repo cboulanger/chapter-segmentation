@@ -442,11 +442,13 @@ reproduce.
   recommendation to route production through it -- but the truncation/
   input-size bug that was previously suppressing its real accuracy is
   closed. The remaining zero-recall books
-  (`9783789057366.pdf`, `9783848704316.pdf`, `dnb-36942798X.pdf`) score
-  0.00 across every LLM model, but these are the same three books the
-  heuristic pipeline also can't recover any signal from (see "Diverse
-  real-library evaluation set" above -- degenerate/absent text layers,
-  OCR quality) -- not an LLM-specific gap, a shared data-quality problem
+  (`9783789057366.pdf`, `9783848704316.pdf`, `dnb-36942798X.pdf`) score at
+  or near 0.00 across every LLM model (one exception: `apertus` finds 1 of
+  56 expected chapters on `9783789057366.pdf`, recall 0.02), but these are
+  the same three books the heuristic pipeline also can't recover any
+  signal from (see "Diverse real-library evaluation set" above --
+  degenerate/absent text layers, OCR quality) -- not an LLM-specific gap,
+  a shared data-quality problem
   no text-based strategy can solve.
 - This is the second populated run of the LLM cache, and the first using
   the new `--mode full` (added specifically for this fix: `--mode top5`

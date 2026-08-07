@@ -1,0 +1,39 @@
+name: Refresh LLM cache
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - run: uv sync --extra llm-eval
+      - name: Select mode
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "MODE=fill-gaps" >> "$GITHUB_ENV"
+          else
+            echo "MODE=top5" >> "$GITHUB_ENV"
+          fi
+      - name: Refresh cache
+        run: uv run python evaluation/refresh_llm_cache.py --mode "$MODE"
+        env:
+          KISSKI_API_KEY: ${{ secrets.KISSKI_API_KEY }}
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add evaluation/llm-cache/
+          if git diff --cached --quiet; then
+            echo "No cache changes"
+          else
+            git commit -m "chore: refresh LLM evaluation cache ($MODE)"
+            git push
+          fi

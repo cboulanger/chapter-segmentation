@@ -21,6 +21,7 @@ from chapter_segmentation.segmentation import (
     save_analysis_cache,
     _toc_scan_indices,
     _llm_scan_indices,
+    _classify_llm_failure,
     analyze_attachment_with_llm_fallback,
     analyze_attachment_outline_only,
     analyze_attachment_llm_only,
@@ -427,6 +428,24 @@ class TestLlmScanIndices(unittest.TestCase):
 
     def test_returns_empty_list_for_empty_pages(self):
         self.assertEqual(_llm_scan_indices([]), [])
+
+
+class TestClassifyLlmFailure(unittest.TestCase):
+    def test_classifies_context_length_message(self):
+        exc = Exception("This model's maximum context length is 65536 tokens, however you requested 98213 tokens")
+        self.assertEqual(_classify_llm_failure(exc), "context_length_exceeded")
+
+    def test_classifies_no_json_array_found_message(self):
+        exc = ValueError("No JSON array found in LLM response: '...'")
+        self.assertEqual(_classify_llm_failure(exc), "invalid_or_truncated_json")
+
+    def test_classifies_json_decode_error_message(self):
+        exc = ValueError("Expecting ',' delimiter: line 1 column 50 (char 49)")
+        self.assertEqual(_classify_llm_failure(exc), "invalid_or_truncated_json")
+
+    def test_classifies_unrecognized_message_as_api_error(self):
+        exc = RuntimeError("connection reset by peer")
+        self.assertEqual(_classify_llm_failure(exc), "api_error")
 
 
 class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):

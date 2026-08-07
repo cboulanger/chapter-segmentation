@@ -525,6 +525,20 @@ def _llm_scan_indices(pages: list[str]) -> list[int]:
     return sorted(padded)
 
 
+def _classify_llm_failure(exc: Exception) -> str:
+    """Buckets a final (post-retry) llm_extract_toc_entries failure for
+    logging, without importing any provider-specific SDK -- LLMClient is a
+    structural Protocol (see llm.py), so segmentation.py can't assume which
+    concrete exception type a given implementation raises.
+    """
+    message = str(exc).lower()
+    if "context length" in message or "maximum context" in message:
+        return "context_length_exceeded"
+    if "json array found" in message or "expecting" in message:
+        return "invalid_or_truncated_json"
+    return "api_error"
+
+
 async def llm_extract_toc_entries(pages: list[str], llm_client: LLMClient) -> list[TocEntry]:
     """Reads the same front/back-matter page range find_toc_candidates
     already scans (_toc_scan_indices), sends their raw text verbatim to the

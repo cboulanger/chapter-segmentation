@@ -163,6 +163,47 @@ LLM-invocation pattern):
   times it, and upserts the result into that book's `llm-cache/*.json`.
 - Not a pytest test; run manually:
   `KISSKI_API_KEY=... uv run python evaluation/refresh_llm_cache.py`.
+- Supports two selection modes via `--mode {top5,fill-gaps}` (default
+  `top5`):
+  - `top5` (used by the on-demand trigger): today's behavior -- take the 5
+    least-busy models by current demand, unconditionally refresh them
+    (even if already cached), useful for a quick manual sanity check (e.g.
+    right after noticing a regression).
+  - `fill-gaps` (used by the nightly trigger): fetch the current model
+    list, filter to non-`very busy`, then drop any model that already has
+    a cached entry for *every* book currently in the public corpus (a
+    model is only "covered" once no book is missing it -- adding a new
+    evaluation book, or an interrupted prior run, re-opens the gap for
+    every model that book lacks). From the remaining not-yet-fully-covered
+    models, take up to 5 (ascending demand order), and run those. This is
+    how coverage grows to "every available/busy model, on every book"
+    over time without paying to re-run models that already have complete
+    data every single night.
+
+## Nightly gap-fill schedule
+
+In addition to the on-demand `workflow_dispatch` trigger, the same workflow
+gets a `schedule: cron` trigger (nightly, e.g. `0 3 * * *` UTC) that runs
+`refresh_llm_cache.py --mode fill-gaps`. The workflow step picks the mode
+from the triggering event rather than exposing it as a `workflow_dispatch`
+input, so a manual run always means "top 5 now" and the schedule always
+means "fill next gap batch":
+
+```yaml
+- run: |
+    MODE=top5
+    if [ "${{ github.event_name }}" = "schedule" ]; then MODE=fill-gaps; fi
+    uv run python evaluation/refresh_llm_cache.py --mode "$MODE"
+```
+
+Both modes upsert into the same `evaluation/llm-cache/`, commit, and push
+directly to `main` (per the existing "push, don't PR" decision), which
+triggers `publish-results.yml` to republish with whatever new data landed.
+A capped batch of 5 not-yet-fully-covered models per night means full
+coverage of N gap models takes `ceil(N/5)` nights; GitHub disables
+scheduled workflows after 60 days of repository inactivity, so an
+otherwise-quiet repo needs at least one push or manual trigger within that
+window to keep the nightly job alive.
 
 ## CI / workflows
 
@@ -170,13 +211,16 @@ LLM-invocation pattern):
   main). Its single step (`generate_report.py --out public/`) now also
   produces `public/llm/index.html` as part of the same run, from whatever
   is currently committed in `llm-cache/`.
-- New `.github/workflows/refresh-llm-cache.yml` -- `workflow_dispatch`
-  only. Requires a `KISSKI_API_KEY` repository secret (to be added
-  manually by a repo admin -- not something this change can do on its
-  own). Runs `refresh_llm_cache.py`, then commits and pushes the updated
+- New `.github/workflows/refresh-llm-cache.yml` -- two triggers,
+  `workflow_dispatch` (mode `top5`) and `schedule: cron` nightly (mode
+  `fill-gaps`; see "Nightly gap-fill schedule" below). Requires a
+  `KISSKI_API_KEY` repository secret (to be added manually by a repo admin
+  -- not something this change can do on its own). Runs
+  `refresh_llm_cache.py --mode ...`, then commits and pushes the updated
   `evaluation/llm-cache/*.json` files directly to `main`. That push
   triggers `publish-results.yml` normally, republishing with fresh LLM
-  numbers automatically.
+  numbers automatically. A run that finds zero gaps (fill-gaps mode, full
+  coverage already reached) makes no changes and skips the commit step.
 
 ## Testing
 
@@ -190,6 +234,11 @@ LLM-invocation pattern):
   precision/recall/F1 and micro-aggregation, and `evaluation/kisski.py`'s
   demand-classification and model-selection logic (available-first,
   fill-from-busy, skip-very-busy, dedupe).
+- New unit tests for `refresh_llm_cache.py`'s `fill-gaps` coverage
+  computation: a model absent from every book is a gap, a model present in
+  some but not all current corpus books is still a gap, a model present in
+  every current corpus book is not selected again, and adding a new book
+  re-opens the gap for every model that lacks it.
 - `evaluate_chapter_segmentation_strategies.py` (Crossref/Zotero-catalog,
   out of scope here) is left as-is.
 

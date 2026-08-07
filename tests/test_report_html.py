@@ -51,7 +51,13 @@ class TestRenderStrategyTables(unittest.TestCase):
             aggregates={"low": _metrics(0.3, 0.3, 0.3), "high": _metrics(0.9, 0.9, 0.9)},
             aggregate_times={"low": 1.0, "high": 1.0},
         )
-        self.assertLess(html.index(">high<"), html.index(">low<"))
+        # Scoped to the aggregate section, not the whole page: the
+        # per-document table's header row also renders "low"/"high" (from
+        # strategy_names, in caller-given order) regardless of whether
+        # per_document has any rows, which would otherwise contaminate a
+        # whole-page substring search with an unrelated ordering.
+        agg_section = html[html.index("Per strategy"):]
+        self.assertLess(agg_section.index(">high<"), agg_section.index(">low<"))
 
     def test_includes_document_keys_as_row_labels(self):
         html = render_strategy_tables(

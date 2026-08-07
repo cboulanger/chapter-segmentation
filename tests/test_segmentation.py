@@ -544,6 +544,26 @@ class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):
         self.assertTrue(is_valid('[{"title": "x"}]'))
         self.assertFalse(is_valid("I'll call a tool instead"))
 
+    async def test_recovers_via_retry_when_first_response_is_truncated(self):
+        llm = MagicMock()
+        llm.generate = AsyncMock(side_effect=[
+            '[{"title": "Introduction", "authors": [], "printed_page_number": 1}',  # truncated
+            '[{"title": "Introduction", "authors": [], "printed_page_number": 1}]',  # valid on retry
+        ])
+        entries = await llm_extract_toc_entries(["front matter"] * 20, llm)
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0].title, "Introduction")
+        self.assertEqual(llm.generate.call_count, 2)
+        self.assertEqual(llm.generate.call_args_list[0].kwargs["max_tokens"], 1024)
+        self.assertEqual(llm.generate.call_args_list[1].kwargs["max_tokens"], 8192)
+
+    async def test_logs_classified_reason_when_both_attempts_fail(self):
+        llm = self._fake_llm("not json at all")
+        with self.assertLogs("chapter_segmentation.segmentation", level="WARNING") as cm:
+            entries = await llm_extract_toc_entries(["front matter"] * 20, llm)
+        self.assertEqual(entries, [])
+        self.assertTrue(any("invalid_or_truncated_json" in message for message in cm.output))
+
 
 class TestLlmDisambiguateChapterStart(unittest.IsolatedAsyncioTestCase):
     def _fake_llm(self, response: str):

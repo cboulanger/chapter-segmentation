@@ -575,17 +575,18 @@ async def llm_extract_toc_entries(pages: list[str], llm_client: LLMClient) -> li
     so the result flows into the SAME locate_chapter_start content-search
     step used for every other TOC entry (design spec §4).
     """
-    scan_indices = sorted(_toc_scan_indices(pages))
+    scan_indices = _llm_scan_indices(pages)
     if not scan_indices:
         return []
     page_blocks = "\n\n".join(f"[PAGE {i}]\n{pages[i]}" for i in scan_indices)
     prompt = _LLM_TOC_EXTRACTION_PROMPT.format(page_blocks=page_blocks)
 
     try:
-        raw = await llm_client.generate(prompt=prompt, max_tokens=1024, temperature=0.0, is_valid=_parses_as_json_array)
-        items = parse_json_array(raw)
-    except Exception:
-        logger.warning("llm_extract_toc_entries: LLM call or JSON parse failed", exc_info=True)
+        items = await _extract_with_retry(prompt, llm_client)
+    except Exception as exc:
+        logger.warning(
+            "llm_extract_toc_entries: giving up (%s)", _classify_llm_failure(exc), exc_info=True,
+        )
         return []
 
     entries: list[TocEntry] = []

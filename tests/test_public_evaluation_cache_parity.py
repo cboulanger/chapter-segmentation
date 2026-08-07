@@ -18,8 +18,8 @@ import unittest
 
 import pytest
 
-from evaluation.generate_report import compute_precision_recall
 from evaluation.harness import available_public_books, public_pages_for
+from evaluation.metrics import precision_recall_f1
 from chapter_segmentation.segmentation import analyze_attachment
 
 pytestmark = pytest.mark.integration
@@ -38,9 +38,10 @@ class TestPublicEvaluationCacheParity(unittest.TestCase):
                 pages = public_pages_for(manifest_key)
                 result = analyze_attachment(pages)
 
-                precision, recall, tp, found, exp = compute_precision_recall(expected, result["chapters"])
-                print(f"{manifest_key}: precision={precision:.2f} recall={recall:.2f} "
-                      f"({tp}/{found} found, {tp}/{exp} expected)")
+                metrics = precision_recall_f1(expected, result["chapters"])
+                print(f"{manifest_key}: precision={metrics.precision:.2f} recall={metrics.recall:.2f} "
+                      f"({metrics.true_positives}/{metrics.found_count} found, "
+                      f"{metrics.true_positives}/{metrics.expected_count} expected)")
 
 
 if __name__ == "__main__":

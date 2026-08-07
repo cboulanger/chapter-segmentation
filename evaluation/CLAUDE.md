@@ -11,8 +11,9 @@ Three documents, three different lifetimes -- know which one to write to:
 
 - **`README.md`** — permanent reference: what the evaluation set is, its
   schema, how to fetch/add books, and how to run each evaluation
-  (`test_segmentation_accuracy.py`, the LLM-fallback script, the
-  strategy-pipeline script). Changes rarely, only when the *procedure*
+  (`test_segmentation_accuracy.py`, the per-strategy report, the LLM
+  cache refresh script, the strategy-pipeline script). Changes rarely,
+  only when the *procedure*
   itself changes (a new evaluation script, a new page-loading mechanism,
   a new manifest field).
 - **`RESULTS.md`** — a snapshot: current precision/recall numbers, per-book

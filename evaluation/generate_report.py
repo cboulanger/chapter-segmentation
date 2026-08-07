@@ -98,7 +98,15 @@ def generate(out_dir: Path) -> None:
         cells[HEURISTIC] = (heuristic_metrics, heuristic_elapsed)
 
         outline_candidates = public_outline_candidates_for(manifest_key)
-        if outline_candidates is not None:
+        if outline_candidates:
+            # Falsy also catches `[]` (a real, resolved cache entry for a
+            # book whose PDF genuinely has no embedded outline) -- not just
+            # `None` (no cache entry at all). Both mean "this strategy has
+            # nothing to contribute for this book," so both render as N/A
+            # and are excluded from the aggregate; folding `[]` into "ran
+            # and scored 0" would silently drag the outline strategy's
+            # aggregate F1 down by counting books it structurally can never
+            # help with as failures.
             start = time.perf_counter()
             outline_result = analyze_attachment_outline_only(pages, outline_candidates)
             outline_elapsed = time.perf_counter() - start

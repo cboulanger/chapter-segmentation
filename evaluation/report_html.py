@@ -51,7 +51,12 @@ def render_strategy_tables(
         row_cells = []
         for strategy in strategy_names:
             cell = cells.get(strategy)
-            is_best = cell is not None and best_f1 is not None and cell[0].f1 == best_f1
+            # best_f1 == 0.0 means every strategy found nothing for this
+            # book -- that's a shared failure, not a "win" for whichever
+            # strategy happens to be listed, so nothing gets highlighted.
+            is_best = (
+                cell is not None and best_f1 is not None and best_f1 > 0.0 and cell[0].f1 == best_f1
+            )
             row_cells.append(_cell_html(cell, is_best))
         doc_rows.append(f"<tr><td>{doc_key}</td>{''.join(row_cells)}</tr>")
 

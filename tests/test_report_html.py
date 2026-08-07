@@ -32,6 +32,29 @@ class TestRenderStrategyTables(unittest.TestCase):
         self.assertIn("font-weight:bold", html[max(0, outline_cell_start - 100):outline_cell_start])
         self.assertNotIn("font-weight:bold", html[max(0, heuristic_cell_start - 100):heuristic_cell_start])
 
+    def test_does_not_highlight_a_shared_zero_f1_as_best(self):
+        # Every strategy finding nothing for a book is a shared failure,
+        # not a "win" for whichever one happens to be listed -- found on
+        # the real corpus, where several books score F1=0.00 across every
+        # strategy and both cells lit up green as "best in row".
+        per_document = {
+            "book-a": {
+                "heuristic": (_metrics(0.0, 0.0, 0.0, tp=0, found=2, expected=5), 1.0),
+                "outline": (_metrics(0.0, 0.0, 0.0, tp=0, found=0, expected=5), 0.0),
+            },
+        }
+        html = render_strategy_tables(
+            title="Test report", description_html="",
+            strategy_names=["heuristic", "outline"],
+            per_document=per_document,
+            aggregates={
+                "heuristic": _metrics(0.0, 0.0, 0.0, tp=0, found=2, expected=5),
+                "outline": _metrics(0.0, 0.0, 0.0, tp=0, found=0, expected=5),
+            },
+            aggregate_times={"heuristic": 1.0, "outline": 0.0},
+        )
+        self.assertNotIn("font-weight:bold", html[: html.index("Per strategy")])
+
     def test_renders_na_for_missing_strategy_result(self):
         per_document = {"book-a": {"heuristic": (_metrics(1.0, 1.0, 1.0), 1.0), "outline": None}}
         html = render_strategy_tables(

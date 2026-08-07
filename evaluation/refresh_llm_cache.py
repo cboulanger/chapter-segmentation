@@ -106,12 +106,19 @@ async def _main(mode: str, base_url: str) -> int:
     for model in selected:
         llm_client = _OpenAICompatibleLLMClient(model=model.id, base_url=base_url, api_key=api_key)
         for manifest_key, _expected_path, _book in books:
-            pages = public_pages_for(manifest_key)
-            start = time.perf_counter()
-            result = await analyze_attachment_llm_only(pages, llm_client)
-            elapsed = time.perf_counter() - start
-            _upsert_cache(manifest_key, model.id, result["chapters"], elapsed, model.demand)
-            print(f"{manifest_key} / {model.id}: {len(result['chapters'])} chapters, {elapsed:.1f}s")
+            try:
+                pages = public_pages_for(manifest_key)
+                start = time.perf_counter()
+                result = await analyze_attachment_llm_only(pages, llm_client)
+                elapsed = time.perf_counter() - start
+                _upsert_cache(manifest_key, model.id, result["chapters"], elapsed, model.demand)
+                print(f"{manifest_key} / {model.id}: {len(result['chapters'])} chapters, {elapsed:.1f}s")
+            except Exception as exc:
+                # One book/model failure must not strand the whole batch or
+                # discard cache entries already written for other books/
+                # models in this same run -- same catch-log-continue
+                # convention as generate_public_evaluation_cache.py.
+                print(f"{manifest_key} / {model.id}: FAILED ({exc}) -- skipping")
     return 0
 
 

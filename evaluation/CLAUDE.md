@@ -35,6 +35,9 @@ Three documents, three different lifetimes -- know which one to write to:
   page text (real navigational/bibliographic material verbatim, chapter
   prose replaced with random real words) — see
   `docs/superpowers/specs/2026-08-05-evaluation-corpus-redaction-design.md`.
+  Also writes `<key>.outline.json` per book -- a resolved snapshot of
+  `extract_outline_candidates`' output (titles/authors/page indices only),
+  letting the outline strategy be evaluated in CI without the real PDF.
   Regenerate it with `uv run python evaluation/scripts/generate_public_evaluation_cache.py`
   whenever `src/chapter_segmentation/segmentation.py` or `src/chapter_segmentation/common.py` changes in a way
   that touches text-matching logic (a new heuristic could read page text

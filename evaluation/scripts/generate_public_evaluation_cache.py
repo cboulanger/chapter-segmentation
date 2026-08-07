@@ -2,8 +2,12 @@
 """Generate evaluation/public-cache/ -- a
 redacted, git-trackable corpus safe to commit and distribute (real
 navigational/bibliographic text kept verbatim, chapter prose replaced with
-random real words in the book's own language) -- see evaluation/README.md
-for the redaction rationale and workflow.
+random real words in the book's own language) plus, per book, a resolved
+outline-strategy candidate snapshot (<key>.outline.json -- titles/authors/
+page indices only, no prose) so the outline strategy is also testable
+without the real PDF -- see evaluation/README.md for the redaction
+rationale and workflow, and docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md
+for the outline-snapshot rationale.
 
 Run by a maintainer who has the real books locally; not something a
 contributor without PDFs needs to run.
@@ -19,6 +23,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from evaluation.harness import PUBLIC_CACHE_DIR, analysis_pages_for, available_books
+from chapter_segmentation.evidence.outline_strategy import extract_outline_candidates
+from evaluation.harness import outline_candidate_to_dict
 from chapter_segmentation.ocr import detect_language
 from chapter_segmentation.segmentation import (
     analyze_attachment,
@@ -98,6 +104,16 @@ def _main() -> int:
             encoding="utf-8",
         )
         print(f"{manifest_key}: OK, wrote {cache_path}")
+        outline_candidates = extract_outline_candidates(file_bytes)
+        outline_cache_path = PUBLIC_CACHE_DIR / f"{manifest_key}.outline.json"
+        outline_cache_path.write_text(
+            json.dumps(
+                {"candidates": [outline_candidate_to_dict(c) for c in outline_candidates]},
+                indent=2, ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+        print(f"{manifest_key}: wrote {len(outline_candidates)} outline candidate(s) to {outline_cache_path}")
     if failures:
         print(f"{failures} book(s) failed -- see above")
     return 1 if failures else 0

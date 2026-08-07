@@ -374,26 +374,79 @@ real evidence rather than the earlier blanket claim); the other seven of
 the ten are now `false` and are held to the same `recall > 0` regression
 guard as the rest of the evaluation set.
 
-## LLM-fallback results
+## Per-strategy standalone results (heuristic / outline / LLM)
 
-With the heuristics above, a full run of
-`evaluation/scripts/evaluate_chapter_segmentation_llm_fallback.py --auto-select-model`
-(KISSKI-backed preset) reports **identical numbers to the pure-heuristic
+From `uv run python evaluation/generate_report.py --out public/` (heuristic,
+outline) plus the first `uv run python evaluation/refresh_llm_cache.py
+--mode top5` run populating `evaluation/llm-cache/` (LLM) -- each strategy
+run independently via `analyze_attachment`, `analyze_attachment_outline_only`,
+`analyze_attachment_llm_only` against the full 17-book public-cache corpus,
+with no pipeline merge/fallback logic involved (see
+`docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md`).
+Live numbers (always current, no hand-written commentary):
+<https://cboulanger.github.io/chapter-segmentation/>;
+full per-model breakdown at its `llm/index.html`. See `README.md`'s
+"Per-strategy evaluation report" / "LLM strategy evaluation" for how to
+reproduce.
+
+| Strategy | Precision | Recall | F1 | Found / Expected | Total time | Applicable books |
+| --- | --- | --- | --- | --- | --- | --- |
+| outline | 0.79 | 0.89 | 0.84 | 31/39 found, 31/35 expected | 0.3s | 3/17 |
+| heuristic | 0.71 | 0.50 | 0.58 | 145/204 found, 145/292 expected | 7.5s | 17/17 |
+| LLM (`deepseek-v4-flash`, best of 5 cached models) | 0.52 | 0.20 | 0.29 | 58/111 found, 58/292 expected | 382.6s | 17/17 |
+
+- **Outline scores highest but applies narrowly.** Only 3 of the 17 corpus
+  books carry a real embedded PDF outline/bookmark catalog
+  (`9783031466373.pdf`, `9783907297285.pdf`, `9783907297339.pdf`) -- an
+  outline entry is already a resolved, book-order-correct chapter
+  reference, so once one exists it's nearly free signal (0.3s total across
+  all 3, no content search needed beyond confirming the mapped page). The
+  other 14 books have no outline to read at all
+  (`evaluation/public-cache/<key>.outline.json` is `{"candidates": []}`),
+  which is a property of the PDF, not a strategy failure -- those books
+  render `N/A` in the report rather than being scored as "found 0".
+- **Heuristic's 0.58 aggregate here is pulled down entirely by the 10
+  "diverse real-library" books** documented above -- restrict to the
+  original 7 well-behaved books and it's 0.91/0.91 (see "Pure-heuristic
+  results"); the other 10 (OCR/degenerate-text/layout-mode recoveries)
+  score 0.47/0.24 as their own aggregate (see "Diverse real-library
+  evaluation set" above). This table just confirms the same heuristic run
+  through the new standalone harness (`evaluation/metrics.py`) reproduces
+  identical per-book numbers.
+- **LLM standalone underperforms the heuristic on this corpus, and costs
+  roughly 50x the time** (382.6s vs. 7.5s aggregate, dominated by per-call
+  API latency rather than local computation). `analyze_attachment_llm_only`
+  never engages the heuristic at all (no fallback gating, by design) --
+  its lower recall traces to the LLM's TOC extraction missing entries the
+  regex-based heuristic reads directly off the printed table of contents,
+  especially on the noisier OCR'd/layout-fallback books. Of the 5 KISSKI
+  models run, `apertus-70b-instruct-2509` scores 0.00 across the entire
+  corpus: its 65K-token context window is smaller than several of these
+  books' TOC-extraction prompts (~98K tokens for the largest), and
+  `analyze_attachment_llm_only`'s fail-safe degrades this to "found
+  nothing" rather than raising -- the intended behavior for an
+  incompatible model, not a bug to fix.
+- This is the first populated run of the LLM cache. `evaluation/refresh_llm_cache.py
+  --mode fill-gaps`, wired to a nightly schedule in
+  `.github/workflows/refresh-llm-cache.yml`, will grow it to cover every
+  non-busy KISSKI model on every book over time, once a `KISSKI_API_KEY`
+  repository secret is configured.
+
+## LLM-fallback results (archived -- script removed)
+
+**Superseded by "Per-strategy standalone results" above, which measures
+what the LLM itself can find rather than whether a merge/fallback path
+fires.** `evaluation/scripts/evaluate_chapter_segmentation_llm_fallback.py`,
+referenced below, no longer exists; kept here only as a historical record
+of `analyze_attachment_with_llm_fallback`'s merged behavior at the time it
+was last run. If that merged pipeline needs dedicated evaluation again, a
+new script would need to be written -- none currently does this.
+
+With the heuristics above, a full run of that now-deleted script
+(KISSKI-backed preset) reported **identical numbers to the pure-heuristic
 harness, with neither fallback path firing on any book**: TOC extraction
-never triggers because the regex path now finds a usable listing everywhere,
-and per-entry ambiguity is resolved heuristically by the TOC-order
-constraints before the LLM would be consulted. The disambiguation fallback
-still exists for the case ordering genuinely cannot solve (all of an
-ambiguous entry's candidates conflicting with its located neighbors — a
-disordered TOC), and TOC extraction still covers books whose listing the
-regex can't parse at all; neither case occurs in the current evaluation
-set. Re-run after any prompt or heuristic change to check whether that is
-still true — if the heuristic path regresses, the fallback is the safety
-net that should catch it.
-
-**Note:** this LLM-fallback run predates the layout-mode fallback and OCR
-route described above and in `README.md` -- it was last run against only
-the 7 originally-committed books, not the 10 "diverse real-library" books
-(at the time still in `manifest.local.json`; now merged into `manifest.json`,
-see above). Re-run it against the full set (after populating the OCR
-cache) to get current numbers for those 10 books.
+never triggered because the regex path found a usable listing everywhere,
+and per-entry ambiguity was resolved heuristically by the TOC-order
+constraints before the LLM would be consulted. This run predated the
+layout-mode fallback and OCR route described above, and only covered the 7
+originally-committed books, not the 10 "diverse real-library" books.

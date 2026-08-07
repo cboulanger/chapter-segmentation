@@ -391,17 +391,17 @@ reproduce.
 
 | Strategy | Precision | Recall | F1 | Found / Expected | Total time | Applicable books |
 | --- | --- | --- | --- | --- | --- | --- |
-| outline | 0.79 | 0.89 | 0.84 | 31/39 found, 31/35 expected | 0.3s | 3/17 |
-| heuristic | 0.71 | 0.50 | 0.58 | 145/204 found, 145/292 expected | 7.5s | 17/17 |
-| LLM (`deepseek-v4-flash`, best of 5 cached models) | 0.52 | 0.20 | 0.29 | 58/111 found, 58/292 expected | 382.6s | 17/17 |
+| outline | 0.79 | 0.89 | 0.84 | 31/39 found, 31/35 expected | 0.6s | 3/17 |
+| heuristic | 0.71 | 0.50 | 0.58 | 145/204 found, 145/292 expected | 14.8s | 17/17 |
+| LLM (`glm-4.7`, best of 5 cached models) | 0.70 | 0.37 | 0.48 | 108/154 found, 108/292 expected | 306.8s | 17/17 |
 
 - **Outline scores highest but applies narrowly.** Only 3 of the 17 corpus
   books carry a real embedded PDF outline/bookmark catalog
   (`9783031466373.pdf`, `9783907297285.pdf`, `9783907297339.pdf`) -- an
   outline entry is already a resolved, book-order-correct chapter
-  reference, so once one exists it's nearly free signal (0.3s total across
-  all 3, no content search needed beyond confirming the mapped page). The
-  other 14 books have no outline to read at all
+  reference, so once one exists it's nearly free signal (well under a
+  second total across all 3, no content search needed beyond confirming
+  the mapped page). The other 14 books have no outline to read at all
   (`evaluation/public-cache/<key>.outline.json` is `{"candidates": []}`),
   which is a property of the PDF, not a strategy failure -- those books
   render `N/A` in the report rather than being scored as "found 0".
@@ -413,24 +413,51 @@ reproduce.
   evaluation set" above). This table just confirms the same heuristic run
   through the new standalone harness (`evaluation/metrics.py`) reproduces
   identical per-book numbers.
-- **LLM standalone underperforms the heuristic on this corpus, and costs
-  roughly 50x the time** (382.6s vs. 7.5s aggregate, dominated by per-call
-  API latency rather than local computation). `analyze_attachment_llm_only`
-  never engages the heuristic at all (no fallback gating, by design) --
-  its lower recall traces to the LLM's TOC extraction missing entries the
-  regex-based heuristic reads directly off the printed table of contents,
-  especially on the noisier OCR'd/layout-fallback books. Of the 5 KISSKI
-  models run, `apertus-70b-instruct-2509` scores 0.00 across the entire
-  corpus: its 65K-token context window is smaller than several of these
-  books' TOC-extraction prompts (~98K tokens for the largest), and
-  `analyze_attachment_llm_only`'s fail-safe degrades this to "found
-  nothing" rather than raising -- the intended behavior for an
-  incompatible model, not a bug to fix.
-- This is the first populated run of the LLM cache. `evaluation/refresh_llm_cache.py
+- **LLM standalone F1 improved from 0.29 to 0.48** after fixing two root
+  causes in `llm_extract_toc_entries` found by inspecting this table's
+  first run (see
+  `docs/superpowers/specs/2026-08-07-llm-toc-extraction-fix-design.md`):
+  a hardcoded `max_tokens=1024` output cap was silently truncating the
+  LLM's JSON chapter listing on large-TOC books (truncated JSON fails to
+  parse, and the failure was swallowed as "found nothing"), and the
+  extraction prompt sent the entire blind front-15%/back-5% page fraction
+  instead of the much narrower region `find_toc_candidates` can usually
+  already pinpoint. Both are now fixed: retry once at `max_tokens=8192` on
+  a parse failure, and narrow the scanned page range to the heuristic's
+  detected TOC page(s) (+/-1 page) whenever it finds one. The clearest
+  before/after evidence: the three books with 21-24 expected chapters that
+  previously scored exactly 0/0 across every one of the 5 models
+  (`9783322969828.pdf`, `9783847432364.pdf`, `9783848736829.pdf`) now
+  score F1 0.71-0.86 across all five models (see `llm/index.html`).
+  `apertus-70b-instruct-2509` -- previously 0.00 on literally every book
+  because its 65536-token context window was smaller than every book's
+  blind-fraction prompt (~98K tokens for the largest) -- is no longer
+  categorically incompatible: the narrower input now fits its context
+  window on most books, and it scores F1 0.42 overall (95/158 found), the
+  worst of the five but no longer zero. It remains far slower than the
+  other four (1759s total vs. 139-307s), consistent with it being a larger
+  model rather than anything this fix changed. LLM standalone still trails
+  the heuristic's 0.58 and costs roughly 20x the time (306.8s vs. 14.8s
+  aggregate best-model), so this remains informational, not a
+  recommendation to route production through it -- but the truncation/
+  input-size bug that was previously suppressing its real accuracy is
+  closed. The remaining zero-recall books
+  (`9783789057366.pdf`, `9783848704316.pdf`, `dnb-36942798X.pdf`) score
+  0.00 across every LLM model, but these are the same three books the
+  heuristic pipeline also can't recover any signal from (see "Diverse
+  real-library evaluation set" above -- degenerate/absent text layers,
+  OCR quality) -- not an LLM-specific gap, a shared data-quality problem
+  no text-based strategy can solve.
+- This is the second populated run of the LLM cache, and the first using
+  the new `--mode full` (added specifically for this fix: `--mode top5`
+  only touches the 5 currently-least-busy models, so a model that had
+  already been cached under the old, buggy extraction logic but wasn't
+  among the least-busy 5 this time would otherwise have kept its stale
+  pre-fix numbers indefinitely). `evaluation/refresh_llm_cache.py
   --mode fill-gaps`, wired to a nightly schedule in
-  `.github/workflows/refresh-llm-cache.yml`, will grow it to cover every
-  non-busy KISSKI model on every book over time, once a `KISSKI_API_KEY`
-  repository secret is configured.
+  `.github/workflows/refresh-llm-cache.yml`, will grow the cache to cover
+  every non-busy KISSKI model on every book over time, once a
+  `KISSKI_API_KEY` repository secret is configured.
 
 ## LLM-fallback results (archived -- script removed)
 

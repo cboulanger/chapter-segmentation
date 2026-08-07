@@ -1,30 +1,1549 @@
 {
   "models": {
     "apertus-70b-instruct-2509": {
-      "chapters": [],
-      "elapsed_seconds": 0.3045789999887347,
+      "chapters": [
+        {
+          "title": "Trans Soldat*innen und ein neues Gemeinsames",
+          "authors": [
+            "Henrik Dosdall",
+            "Ray Trautwein",
+            "Antidiskriminierungs-",
+            "Glas Monate",
+            "Davon",
+            "kein sie Wohnung",
+            "Pferd Zwischen",
+            "Familie"
+          ],
+          "pdf_start_index": 73,
+          "pdf_end_index": 92,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Ein verlorener Kampf?",
+          "authors": [
+            "Menschenrechte",
+            "verlieren Geschichte-\nich Erschrecken",
+            "ein Berg",
+            "bin Weihnachten",
+            "Erschrecken Junge",
+            "Freund Traurig",
+            "Berg",
+            "haben den"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 114,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kämpfen Menstruierende und Verbraucher*innen gemeinsam?",
+          "authors": [
+            "Kämpfen Menstruierende",
+            "Eine Analyse",
+            "von Menstruationsbewegung",
+            "Teresa Schicken",
+            "Denken Frau",
+            "Erschrecken",
+            "Erschrecken Flasche"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 136,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Substanzielle Gleichheit im Klimaschutz durch Recht?",
+          "authors": [
+            "Substanzielle Gleichheit",
+            "Klimaschutz",
+            "Recht",
+            "Geschlecht",
+            "Erschrecken",
+            "schreiben Zug Vater",
+            "Fuß Steigen"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 158,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Konfliktgeschichten über Sexualität",
+          "authors": [
+            "Konfliktgeschichten",
+            "Martin Lücke",
+            "Andrea Rottmann\nZusammenfassung",
+            "Der Aufsatz",
+            "Weihnachten Fisch -\nvom",
+            "Vielleicht"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 176,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "\"If the law does not work, why should it rule?\"",
+          "authors": [
+            "Patrick Wielowiejski\nZusammenfassung",
+            "Verkaufen Eis Vielleicht",
+            "Versuchen Spiel Hilfe"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 204,
+          "citation_pages": null,
+          "confidence": 0.97,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "re:Law. Recht überdenken und neu gestalten",
+          "authors": [
+            "Recht",
+            "neu gestalten",
+            "Ida Westphal",
+            "Ali Mehrens",
+            "Susanne Baer\nZusammenfassung",
+            "Gesetzgebung",
+            "Rechtsmobilisierung",
+            "Weihnachten Gefährlich von",
+            "Schnee",
+            "bin Schwimmen",
+            "Erzählen Verstehen"
+          ],
+          "pdf_start_index": 205,
+          "pdf_end_index": 228,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Das Schreiben von Rechtstexten als Suche nach dem Allgemeinen",
+          "authors": [
+            "Das Schreiben von Rechtstexten",
+            "Zusammenfassung",
+            "Der Beitrag",
+            "inwieweit ein ReWriting von Rechtstexten",
+            "Spiel",
+            "Ja ganz zum Fuß Krank"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 241,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Rewriting als Ausgangspunkt für eine feministische Reflexion über den Gewerkschaftsbegriff im deutschen Arbeitsrecht",
+          "authors": [
+            "Joanna Bronowicka\nZusammenfassung",
+            "Weihnachten IHM Schiff",
+            "Weihnachten Glücklich",
+            "Rad Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 242,
+          "pdf_end_index": 256,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Rewriting als empirischer Auftrag",
+          "authors": [
+            "Auftrag",
+            "Michèle Kretschel-Kratz",
+            "Zusammenfassung",
+            "Der",
+            "das Trinken",
+            "Versuchen legen \nerschrecken-Weihnachten Antworten",
+            "Zu Wirklich",
+            "Spielen",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 269,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Vom Scheitern an Rechtstexten und Weiterdenken in sozialen Prozessen",
+          "authors": [
+            "Vom Scheitern",
+            "Weiterdenken",
+            "Beispiel \ndes diversitätssensiblen",
+            "Matthias Schneider",
+            "Verkaufen",
+            "Lachen Waschen",
+            "Schwester",
+            "bin Tür Erschrecken von",
+            "Natürlich",
+            "Fröhlich Apfel",
+            "Ja \nnennen",
+            "Vergessen"
+          ],
+          "pdf_start_index": 270,
+          "pdf_end_index": 285,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Umschreiben oder durchfrickeln?",
+          "authors": [
+            "zum Verhältnis von Commons",
+            "Bettina Barthel",
+            "Ball Maus",
+            "Weihnachten Weihnachten",
+            "Schwester-",
+            "langsam Erschrecken",
+            "Rot kochen unser leise dort",
+            "Fehlen \nDorf Nimmt Fuß",
+            "Maus Weihnachten",
+            "Ding",
+            "Jeder",
+            "Schön"
+          ],
+          "pdf_start_index": 286,
+          "pdf_end_index": 307,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen und gemeinsam aktiv werden",
+          "authors": [
+            "gemeinsam aktiv",
+            "Bettina Barthel",
+            "Teresa Löckmann",
+            "Teil",
+            "Weihnachten Verkaufen",
+            "Vergessen",
+            "jung \nwo",
+            "Feuer Spielen Dorf Weihnachten",
+            "Verkaufen"
+          ],
+          "pdf_start_index": 311,
+          "pdf_end_index": 313,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen revisited. Transdisziplinäres Arbeiten zu Recht – Geschlecht – Kollektivität",
+          "authors": [
+            "Ein Rundgespräch",
+            "Zusammenfassung",
+            "Rundgespräch",
+            "Fahrrad",
+            "Zug",
+            "Sonst",
+            "Erschrecken Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 314,
+          "pdf_end_index": 340,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Wissenschaft und Aktivismus im Dialog. Über Periodenarmut und Menstruationsbewegung",
+          "authors": [
+            "Über Periodenarmut",
+            "Nanna Josephine Roloff",
+            "Teresa Löckmann",
+            "Zusammenfassung",
+            "Darauf Schreien",
+            "das Jahr \nLange",
+            "Erschrecken",
+            "Vielleicht",
+            "Langsam",
+            "Erschrecken Gesicht",
+            "Gesicht",
+            "Verstecken las Tisch",
+            "Holen Essen",
+            "Klasse Lieb"
+          ],
+          "pdf_start_index": 341,
+          "pdf_end_index": 346,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 352.30979191709775,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
-      "chapters": [],
-      "elapsed_seconds": 26.51006466697436,
+      "chapters": [
+        {
+          "title": "Trans Soldat*innen und ein neues Gemeinsames",
+          "authors": [
+            "Henrik Dosdall",
+            "Ray Trautwein",
+            "Antidiskriminierungs-",
+            "Glas Monate",
+            "Davon",
+            "kein sie Wohnung",
+            "Pferd Zwischen",
+            "Familie"
+          ],
+          "pdf_start_index": 73,
+          "pdf_end_index": 92,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Ein verlorener Kampf?",
+          "authors": [
+            "Menschenrechte",
+            "verlieren Geschichte-\nich Erschrecken",
+            "ein Berg",
+            "bin Weihnachten",
+            "Erschrecken Junge",
+            "Freund Traurig",
+            "Berg",
+            "haben den"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 114,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kämpfen Menstruierende und Verbraucher*innen gemeinsam?",
+          "authors": [
+            "Kämpfen Menstruierende",
+            "Eine Analyse",
+            "von Menstruationsbewegung",
+            "Teresa Schicken",
+            "Denken Frau",
+            "Erschrecken",
+            "Erschrecken Flasche"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 136,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Substanzielle Gleichheit im Klimaschutz durch Recht?",
+          "authors": [
+            "Substanzielle Gleichheit",
+            "Klimaschutz",
+            "Recht",
+            "Geschlecht",
+            "Erschrecken",
+            "schreiben Zug Vater",
+            "Fuß Steigen"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 158,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Konfliktgeschichten über Sexualität",
+          "authors": [
+            "Konfliktgeschichten",
+            "Martin Lücke",
+            "Andrea Rottmann\nZusammenfassung",
+            "Der Aufsatz",
+            "Weihnachten Fisch -\nvom",
+            "Vielleicht"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 176,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "\"If the law does not work, why should it rule?\"",
+          "authors": [
+            "Patrick Wielowiejski\nZusammenfassung",
+            "Verkaufen Eis Vielleicht",
+            "Versuchen Spiel Hilfe"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 197,
+          "citation_pages": null,
+          "confidence": 0.97,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Interdisziplinäre Experimente eines ReWriting",
+          "authors": [
+            "Wissen",
+            "Brauchen am verlieren oft",
+            "Garten Weihnachten Weihnachten",
+            "Gut Weihnachten Erschrecken",
+            "erklären"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 204,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Re:Law. Recht überdenken und neu gestalten",
+          "authors": [
+            "Recht",
+            "neu gestalten",
+            "Ida Westphal",
+            "Ali Mehrens",
+            "Susanne Baer\nZusammenfassung",
+            "Gesetzgebung",
+            "Rechtsmobilisierung",
+            "Weihnachten Gefährlich von",
+            "Schnee",
+            "bin Schwimmen",
+            "Erzählen Verstehen"
+          ],
+          "pdf_start_index": 205,
+          "pdf_end_index": 228,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Das Schreiben von Rechtstexten als Suche nach dem Allgemeinen",
+          "authors": [
+            "Das Schreiben von Rechtstexten",
+            "Zusammenfassung",
+            "Der Beitrag",
+            "inwieweit ein ReWriting von Rechtstexten",
+            "Spiel",
+            "Ja ganz zum Fuß Krank"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 241,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "ReWriting als Ausgangspunkt für eine feministische Reflexion über den Gewerkschaftsbegriff im deutschen Arbeitsrecht",
+          "authors": [
+            "Joanna Bronowicka\nZusammenfassung",
+            "Weihnachten IHM Schiff",
+            "Weihnachten Glücklich",
+            "Rad Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 242,
+          "pdf_end_index": 256,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "ReWriting als empirischer Auftrag",
+          "authors": [
+            "Auftrag",
+            "Michèle Kretschel-Kratz",
+            "Zusammenfassung",
+            "Der",
+            "das Trinken",
+            "Versuchen legen \nerschrecken-Weihnachten Antworten",
+            "Zu Wirklich",
+            "Spielen",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 269,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Vom Scheitern an Rechtstexten und Weiterdenken in sozialen Prozessen",
+          "authors": [
+            "Vom Scheitern",
+            "Weiterdenken",
+            "Beispiel \ndes diversitätssensiblen",
+            "Matthias Schneider",
+            "Verkaufen",
+            "Lachen Waschen",
+            "Schwester",
+            "bin Tür Erschrecken von",
+            "Natürlich",
+            "Fröhlich Apfel",
+            "Ja \nnennen",
+            "Vergessen"
+          ],
+          "pdf_start_index": 270,
+          "pdf_end_index": 285,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Umschreiben oder durchfrickeln?",
+          "authors": [
+            "zum Verhältnis von Commons",
+            "Bettina Barthel",
+            "Ball Maus",
+            "Weihnachten Weihnachten",
+            "Schwester-",
+            "langsam Erschrecken",
+            "Rot kochen unser leise dort",
+            "Fehlen \nDorf Nimmt Fuß",
+            "Maus Weihnachten",
+            "Ding",
+            "Jeder",
+            "Schön"
+          ],
+          "pdf_start_index": 286,
+          "pdf_end_index": 307,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen und gemeinsam aktiv werden",
+          "authors": [
+            "gemeinsam aktiv",
+            "Bettina Barthel",
+            "Teresa Löckmann",
+            "Teil",
+            "Weihnachten Verkaufen",
+            "Vergessen",
+            "jung \nwo",
+            "Feuer Spielen Dorf Weihnachten",
+            "Verkaufen"
+          ],
+          "pdf_start_index": 311,
+          "pdf_end_index": 313,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen revisited. Transdisziplinäres Arbeiten zu Recht – Geschlecht – Kollektivität",
+          "authors": [
+            "Ein Rundgespräch",
+            "Zusammenfassung",
+            "Rundgespräch",
+            "Fahrrad",
+            "Zug",
+            "Sonst",
+            "Erschrecken Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 314,
+          "pdf_end_index": 340,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Wissenschaft und Aktivismus im Dialog. Über Periodenarmut und Menstruationsbewegung",
+          "authors": [
+            "Über Periodenarmut",
+            "Nanna Josephine Roloff",
+            "Teresa Löckmann",
+            "Zusammenfassung",
+            "Darauf Schreien",
+            "das Jahr \nLange",
+            "Erschrecken",
+            "Vielleicht",
+            "Langsam",
+            "Erschrecken Gesicht",
+            "Gesicht",
+            "Verstecken las Tisch",
+            "Holen Essen",
+            "Klasse Lieb"
+          ],
+          "pdf_start_index": 341,
+          "pdf_end_index": 346,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 16.367628791951574,
       "demand_at_run": 0
     },
     "glm-4.7": {
-      "chapters": [],
-      "elapsed_seconds": 182.64388870808762,
+      "chapters": [
+        {
+          "title": "Trans Soldat*innen und ein neues Gemeinsames",
+          "authors": [
+            "Henrik Dosdall",
+            "Ray Trautwein",
+            "Antidiskriminierungs-",
+            "Glas Monate",
+            "Davon",
+            "kein sie Wohnung",
+            "Pferd Zwischen",
+            "Familie"
+          ],
+          "pdf_start_index": 73,
+          "pdf_end_index": 92,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Ein verlorener Kampf?",
+          "authors": [
+            "Menschenrechte",
+            "verlieren Geschichte-\nich Erschrecken",
+            "ein Berg",
+            "bin Weihnachten",
+            "Erschrecken Junge",
+            "Freund Traurig",
+            "Berg",
+            "haben den"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 114,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kämpfen Menstruierende und Verbraucher*innen gemeinsam?",
+          "authors": [
+            "Kämpfen Menstruierende",
+            "Eine Analyse",
+            "von Menstruationsbewegung",
+            "Teresa Schicken",
+            "Denken Frau",
+            "Erschrecken",
+            "Erschrecken Flasche"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 136,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Substanzielle Gleichheit im Klimaschutz durch Recht?",
+          "authors": [
+            "Substanzielle Gleichheit",
+            "Klimaschutz",
+            "Recht",
+            "Geschlecht",
+            "Erschrecken",
+            "schreiben Zug Vater",
+            "Fuß Steigen"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 158,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Konfliktgeschichten über Sexualität",
+          "authors": [
+            "Konfliktgeschichten",
+            "Martin Lücke",
+            "Andrea Rottmann\nZusammenfassung",
+            "Der Aufsatz",
+            "Weihnachten Fisch -\nvom",
+            "Vielleicht"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 176,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "„If the law does not work, why should it rule?“",
+          "authors": [
+            "Patrick Wielowiejski\nZusammenfassung",
+            "Verkaufen Eis Vielleicht",
+            "Versuchen Spiel Hilfe"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 197,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Interdisziplinäre Experimente eines ReWriting",
+          "authors": [
+            "Wissen",
+            "Brauchen am verlieren oft",
+            "Garten Weihnachten Weihnachten",
+            "Gut Weihnachten Erschrecken",
+            "erklären"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 204,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Re:Law. Recht überdenken und neu gestalten",
+          "authors": [
+            "Recht",
+            "neu gestalten",
+            "Ida Westphal",
+            "Ali Mehrens",
+            "Susanne Baer\nZusammenfassung",
+            "Gesetzgebung",
+            "Rechtsmobilisierung",
+            "Weihnachten Gefährlich von",
+            "Schnee",
+            "bin Schwimmen",
+            "Erzählen Verstehen"
+          ],
+          "pdf_start_index": 205,
+          "pdf_end_index": 228,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Das Schreiben von Rechtstexten als Suche nach dem Allgemeinen",
+          "authors": [
+            "Das Schreiben von Rechtstexten",
+            "Zusammenfassung",
+            "Der Beitrag",
+            "inwieweit ein ReWriting von Rechtstexten",
+            "Spiel",
+            "Ja ganz zum Fuß Krank"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 241,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "ReWriting als Ausgangspunkt für eine feministische Reflexion über den Gewerkschaftsbegriff im deutschen Arbeitsrecht",
+          "authors": [
+            "Joanna Bronowicka\nZusammenfassung",
+            "Weihnachten IHM Schiff",
+            "Weihnachten Glücklich",
+            "Rad Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 242,
+          "pdf_end_index": 256,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "ReWriting als empirischer Auftrag",
+          "authors": [
+            "Auftrag",
+            "Michèle Kretschel-Kratz",
+            "Zusammenfassung",
+            "Der",
+            "das Trinken",
+            "Versuchen legen \nerschrecken-Weihnachten Antworten",
+            "Zu Wirklich",
+            "Spielen",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 269,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Vom Scheitern an Rechtstexten und Weiterdenken in sozialen Prozessen",
+          "authors": [
+            "Vom Scheitern",
+            "Weiterdenken",
+            "Beispiel \ndes diversitätssensiblen",
+            "Matthias Schneider",
+            "Verkaufen",
+            "Lachen Waschen",
+            "Schwester",
+            "bin Tür Erschrecken von",
+            "Natürlich",
+            "Fröhlich Apfel",
+            "Ja \nnennen",
+            "Vergessen"
+          ],
+          "pdf_start_index": 270,
+          "pdf_end_index": 285,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Umschreiben oder durchfrickeln?",
+          "authors": [
+            "zum Verhältnis von Commons",
+            "Bettina Barthel",
+            "Ball Maus",
+            "Weihnachten Weihnachten",
+            "Schwester-",
+            "langsam Erschrecken",
+            "Rot kochen unser leise dort",
+            "Fehlen \nDorf Nimmt Fuß",
+            "Maus Weihnachten",
+            "Ding",
+            "Jeder",
+            "Schön"
+          ],
+          "pdf_start_index": 286,
+          "pdf_end_index": 307,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen und gemeinsam aktiv werden",
+          "authors": [
+            "gemeinsam aktiv",
+            "Bettina Barthel",
+            "Teresa Löckmann",
+            "Teil",
+            "Weihnachten Verkaufen",
+            "Vergessen",
+            "jung \nwo",
+            "Feuer Spielen Dorf Weihnachten",
+            "Verkaufen"
+          ],
+          "pdf_start_index": 311,
+          "pdf_end_index": 313,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen revisited. Transdisziplinäres Arbeiten zu Recht – Geschlecht – Kollektivität",
+          "authors": [
+            "Ein Rundgespräch",
+            "Zusammenfassung",
+            "Rundgespräch",
+            "Fahrrad",
+            "Zug",
+            "Sonst",
+            "Erschrecken Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 314,
+          "pdf_end_index": 340,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Wissenschaft und Aktivismus im Dialog. Über Periodenarmut und Menstruationsbewegung",
+          "authors": [
+            "Über Periodenarmut",
+            "Nanna Josephine Roloff",
+            "Teresa Löckmann",
+            "Zusammenfassung",
+            "Darauf Schreien",
+            "das Jahr \nLange",
+            "Erschrecken",
+            "Vielleicht",
+            "Langsam",
+            "Erschrecken Gesicht",
+            "Gesicht",
+            "Verstecken las Tisch",
+            "Holen Essen",
+            "Klasse Lieb"
+          ],
+          "pdf_start_index": 341,
+          "pdf_end_index": 346,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 49.40277479204815,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
-      "chapters": [],
-      "elapsed_seconds": 40.56329983298201,
+      "chapters": [
+        {
+          "title": "Trans Soldat*innen und ein neues Gemeinsames",
+          "authors": [
+            "Henrik Dosdall",
+            "Ray Trautwein",
+            "Antidiskriminierungs-",
+            "Glas Monate",
+            "Davon",
+            "kein sie Wohnung",
+            "Pferd Zwischen",
+            "Familie"
+          ],
+          "pdf_start_index": 73,
+          "pdf_end_index": 92,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Ein verlorener Kampf?",
+          "authors": [
+            "Menschenrechte",
+            "verlieren Geschichte-\nich Erschrecken",
+            "ein Berg",
+            "bin Weihnachten",
+            "Erschrecken Junge",
+            "Freund Traurig",
+            "Berg",
+            "haben den"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 114,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kämpfen Menstruierende und Verbraucher*innen gemeinsam?",
+          "authors": [
+            "Kämpfen Menstruierende",
+            "Eine Analyse",
+            "von Menstruationsbewegung",
+            "Teresa Schicken",
+            "Denken Frau",
+            "Erschrecken",
+            "Erschrecken Flasche"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 136,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Substanzielle Gleichheit im Klimaschutz durch Recht?",
+          "authors": [
+            "Substanzielle Gleichheit",
+            "Klimaschutz",
+            "Recht",
+            "Geschlecht",
+            "Erschrecken",
+            "schreiben Zug Vater",
+            "Fuß Steigen"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 158,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Konfliktgeschichten über Sexualität",
+          "authors": [
+            "Konfliktgeschichten",
+            "Martin Lücke",
+            "Andrea Rottmann\nZusammenfassung",
+            "Der Aufsatz",
+            "Weihnachten Fisch -\nvom",
+            "Vielleicht"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 176,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "If the law does not work, why should it rule?",
+          "authors": [
+            "Patrick Wielowiejski\nZusammenfassung",
+            "Verkaufen Eis Vielleicht",
+            "Versuchen Spiel Hilfe"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 197,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Interdisziplinäre Experimente eines ReWriting",
+          "authors": [
+            "Wissen",
+            "Brauchen am verlieren oft",
+            "Garten Weihnachten Weihnachten",
+            "Gut Weihnachten Erschrecken",
+            "erklären"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 204,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Re:Law. Recht überdenken und neu gestalten",
+          "authors": [
+            "Recht",
+            "neu gestalten",
+            "Ida Westphal",
+            "Ali Mehrens",
+            "Susanne Baer\nZusammenfassung",
+            "Gesetzgebung",
+            "Rechtsmobilisierung",
+            "Weihnachten Gefährlich von",
+            "Schnee",
+            "bin Schwimmen",
+            "Erzählen Verstehen"
+          ],
+          "pdf_start_index": 205,
+          "pdf_end_index": 228,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Das Schreiben von Rechtstexten als Suche nach dem Allgemeinen",
+          "authors": [
+            "Das Schreiben von Rechtstexten",
+            "Zusammenfassung",
+            "Der Beitrag",
+            "inwieweit ein ReWriting von Rechtstexten",
+            "Spiel",
+            "Ja ganz zum Fuß Krank"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 241,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "ReWriting als Ausgangspunkt für eine feministische Reflexion über den Gewerkschaftsbegriff im deutschen Arbeitsrecht",
+          "authors": [
+            "Joanna Bronowicka\nZusammenfassung",
+            "Weihnachten IHM Schiff",
+            "Weihnachten Glücklich",
+            "Rad Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 242,
+          "pdf_end_index": 256,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "ReWriting als empirischer Auftrag",
+          "authors": [
+            "Auftrag",
+            "Michèle Kretschel-Kratz",
+            "Zusammenfassung",
+            "Der",
+            "das Trinken",
+            "Versuchen legen \nerschrecken-Weihnachten Antworten",
+            "Zu Wirklich",
+            "Spielen",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 269,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Vom Scheitern an Rechtstexten und Weiterdenken in sozialen Prozessen",
+          "authors": [
+            "Vom Scheitern",
+            "Weiterdenken",
+            "Beispiel \ndes diversitätssensiblen",
+            "Matthias Schneider",
+            "Verkaufen",
+            "Lachen Waschen",
+            "Schwester",
+            "bin Tür Erschrecken von",
+            "Natürlich",
+            "Fröhlich Apfel",
+            "Ja \nnennen",
+            "Vergessen"
+          ],
+          "pdf_start_index": 270,
+          "pdf_end_index": 285,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Umschreiben oder durchfrickeln?",
+          "authors": [
+            "zum Verhältnis von Commons",
+            "Bettina Barthel",
+            "Ball Maus",
+            "Weihnachten Weihnachten",
+            "Schwester-",
+            "langsam Erschrecken",
+            "Rot kochen unser leise dort",
+            "Fehlen \nDorf Nimmt Fuß",
+            "Maus Weihnachten",
+            "Ding",
+            "Jeder",
+            "Schön"
+          ],
+          "pdf_start_index": 286,
+          "pdf_end_index": 307,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen und gemeinsam aktiv werden",
+          "authors": [
+            "gemeinsam aktiv",
+            "Bettina Barthel",
+            "Teresa Löckmann",
+            "Teil",
+            "Weihnachten Verkaufen",
+            "Vergessen",
+            "jung \nwo",
+            "Feuer Spielen Dorf Weihnachten",
+            "Verkaufen"
+          ],
+          "pdf_start_index": 311,
+          "pdf_end_index": 313,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen revisited. Transdisziplinäres Arbeiten zu Recht – Geschlecht – Kollektivität",
+          "authors": [
+            "Ein Rundgespräch",
+            "Zusammenfassung",
+            "Rundgespräch",
+            "Fahrrad",
+            "Zug",
+            "Sonst",
+            "Erschrecken Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 314,
+          "pdf_end_index": 340,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Wissenschaft und Aktivismus im Dialog. Über Periodenarmut und Menstruationsbewegung",
+          "authors": [
+            "Über Periodenarmut",
+            "Nanna Josephine Roloff",
+            "Teresa Löckmann",
+            "Zusammenfassung",
+            "Darauf Schreien",
+            "das Jahr \nLange",
+            "Erschrecken",
+            "Vielleicht",
+            "Langsam",
+            "Erschrecken Gesicht",
+            "Gesicht",
+            "Verstecken las Tisch",
+            "Holen Essen",
+            "Klasse Lieb"
+          ],
+          "pdf_start_index": 341,
+          "pdf_end_index": 346,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 42.46751466603018,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
-      "chapters": [],
-      "elapsed_seconds": 0.21792004094459116,
+      "chapters": [
+        {
+          "title": "Trans Soldat*innen und ein neues Gemeinsames",
+          "authors": [
+            "Henrik Dosdall",
+            "Ray Trautwein",
+            "Antidiskriminierungs-",
+            "Glas Monate",
+            "Davon",
+            "kein sie Wohnung",
+            "Pferd Zwischen",
+            "Familie"
+          ],
+          "pdf_start_index": 73,
+          "pdf_end_index": 92,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Ein verlorener Kampf?",
+          "authors": [
+            "Menschenrechte",
+            "verlieren Geschichte-\nich Erschrecken",
+            "ein Berg",
+            "bin Weihnachten",
+            "Erschrecken Junge",
+            "Freund Traurig",
+            "Berg",
+            "haben den"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 114,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kämpfen Menstruierende und Verbraucher*innen gemeinsam?",
+          "authors": [
+            "Kämpfen Menstruierende",
+            "Eine Analyse",
+            "von Menstruationsbewegung",
+            "Teresa Schicken",
+            "Denken Frau",
+            "Erschrecken",
+            "Erschrecken Flasche"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 136,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Substanzielle Gleichheit im Klimaschutz durch Recht?",
+          "authors": [
+            "Substanzielle Gleichheit",
+            "Klimaschutz",
+            "Recht",
+            "Geschlecht",
+            "Erschrecken",
+            "schreiben Zug Vater",
+            "Fuß Steigen"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 158,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Konfliktgeschichten über Sexualität",
+          "authors": [
+            "Konfliktgeschichten",
+            "Martin Lücke",
+            "Andrea Rottmann\nZusammenfassung",
+            "Der Aufsatz",
+            "Weihnachten Fisch -\nvom",
+            "Vielleicht"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 176,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "\"If the law does not work, why should it rule?\"",
+          "authors": [
+            "Patrick Wielowiejski\nZusammenfassung",
+            "Verkaufen Eis Vielleicht",
+            "Versuchen Spiel Hilfe"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 197,
+          "citation_pages": null,
+          "confidence": 0.97,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Interdisziplinäre Experimente eines ReWriting",
+          "authors": [
+            "Wissen",
+            "Brauchen am verlieren oft",
+            "Garten Weihnachten Weihnachten",
+            "Gut Weihnachten Erschrecken",
+            "erklären"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 204,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Re:Law. Recht überdenken und neu gestalten",
+          "authors": [
+            "Recht",
+            "neu gestalten",
+            "Ida Westphal",
+            "Ali Mehrens",
+            "Susanne Baer\nZusammenfassung",
+            "Gesetzgebung",
+            "Rechtsmobilisierung",
+            "Weihnachten Gefährlich von",
+            "Schnee",
+            "bin Schwimmen",
+            "Erzählen Verstehen"
+          ],
+          "pdf_start_index": 205,
+          "pdf_end_index": 228,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Das Schreiben von Rechtstexten als Suche nach dem Allgemeinen",
+          "authors": [
+            "Das Schreiben von Rechtstexten",
+            "Zusammenfassung",
+            "Der Beitrag",
+            "inwieweit ein ReWriting von Rechtstexten",
+            "Spiel",
+            "Ja ganz zum Fuß Krank"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 241,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "ReWriting als Ausgangspunkt für eine feministische Reflexion über den Gewerkschaftsbegriff im deutschen Arbeitsrecht",
+          "authors": [
+            "Joanna Bronowicka\nZusammenfassung",
+            "Weihnachten IHM Schiff",
+            "Weihnachten Glücklich",
+            "Rad Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 242,
+          "pdf_end_index": 256,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "ReWriting als empirischer Auftrag",
+          "authors": [
+            "Auftrag",
+            "Michèle Kretschel-Kratz",
+            "Zusammenfassung",
+            "Der",
+            "das Trinken",
+            "Versuchen legen \nerschrecken-Weihnachten Antworten",
+            "Zu Wirklich",
+            "Spielen",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 269,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Vom Scheitern an Rechtstexten und Weiterdenken in sozialen Prozessen",
+          "authors": [
+            "Vom Scheitern",
+            "Weiterdenken",
+            "Beispiel \ndes diversitätssensiblen",
+            "Matthias Schneider",
+            "Verkaufen",
+            "Lachen Waschen",
+            "Schwester",
+            "bin Tür Erschrecken von",
+            "Natürlich",
+            "Fröhlich Apfel",
+            "Ja \nnennen",
+            "Vergessen"
+          ],
+          "pdf_start_index": 270,
+          "pdf_end_index": 285,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Umschreiben oder durchfrickeln?",
+          "authors": [
+            "zum Verhältnis von Commons",
+            "Bettina Barthel",
+            "Ball Maus",
+            "Weihnachten Weihnachten",
+            "Schwester-",
+            "langsam Erschrecken",
+            "Rot kochen unser leise dort",
+            "Fehlen \nDorf Nimmt Fuß",
+            "Maus Weihnachten",
+            "Ding",
+            "Jeder",
+            "Schön"
+          ],
+          "pdf_start_index": 286,
+          "pdf_end_index": 307,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen und gemeinsam aktiv werden",
+          "authors": [
+            "gemeinsam aktiv",
+            "Bettina Barthel",
+            "Teresa Löckmann",
+            "Teil",
+            "Weihnachten Verkaufen",
+            "Vergessen",
+            "jung \nwo",
+            "Feuer Spielen Dorf Weihnachten",
+            "Verkaufen"
+          ],
+          "pdf_start_index": 311,
+          "pdf_end_index": 313,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektiv forschen revisited. Transdisziplinäres Arbeiten zu Recht – Geschlecht – Kollektivität",
+          "authors": [
+            "Ein Rundgespräch",
+            "Zusammenfassung",
+            "Rundgespräch",
+            "Fahrrad",
+            "Zug",
+            "Sonst",
+            "Erschrecken Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 314,
+          "pdf_end_index": 340,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Wissenschaft und Aktivismus im Dialog. Über Periodenarmut und Menstruationsbewegung",
+          "authors": [
+            "Über Periodenarmut",
+            "Nanna Josephine Roloff",
+            "Teresa Löckmann",
+            "Zusammenfassung",
+            "Darauf Schreien",
+            "das Jahr \nLange",
+            "Erschrecken",
+            "Vielleicht",
+            "Langsam",
+            "Erschrecken Gesicht",
+            "Gesicht",
+            "Verstecken las Tisch",
+            "Holen Essen",
+            "Klasse Lieb"
+          ],
+          "pdf_start_index": 341,
+          "pdf_end_index": 346,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 17.696183082996868,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-07T19:22:31.223176+00:00"
+  "generated_at": "2026-08-07T23:03:15.076552+00:00"
 }

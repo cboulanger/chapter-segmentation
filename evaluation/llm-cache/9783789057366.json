@@ -1,14 +1,324 @@
 {
   "models": {
     "apertus-70b-instruct-2509": {
-      "chapters": [],
-      "elapsed_seconds": 0.4244382920442149,
+      "chapters": [
+        {
+          "title": "Bein Anfangen",
+          "authors": [
+            "Tisch",
+            "Kopf Weihnachten",
+            "I. Gern",
+            "Verkaufen",
+            "Eigentlich",
+            "Schwimmen klettern Wirklich",
+            "Spielen",
+            "Bruder Glücklich"
+          ],
+          "pdf_start_index": 116,
+          "pdf_end_index": 217,
+          "citation_pages": "99-198",
+          "confidence": 0.67,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Gar Schwarz",
+          "authors": [
+            "Weihnachten Später",
+            "Schwarz",
+            "Nennen Himmel",
+            "Tür Oma Milch",
+            "Natürlich",
+            "Erschrecken Lehrerin",
+            "Minutenmir",
+            "Gefährlich von Zug Weihnachten Erschrecken",
+            "Zimmer"
+          ],
+          "pdf_start_index": 218,
+          "pdf_end_index": 310,
+          "citation_pages": null,
+          "confidence": 0.75,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "103",
+          "authors": [
+            "las Weihnachten Erschrecken",
+            "Weihnachten Schluss",
+            "bin Tag Name",
+            "Minutenmir",
+            "Natürlich"
+          ],
+          "pdf_start_index": 311,
+          "pdf_end_index": 350,
+          "citation_pages": null,
+          "confidence": 0.8,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "An. rot, Weihnachten Schreien",
+          "authors": [
+            "Laut",
+            "Erschrecken",
+            "Erde Weihnachten",
+            "Turnen",
+            "Geburtstag Tür Fußball",
+            "Weihnachten Fuß Machen Küche"
+          ],
+          "pdf_start_index": 351,
+          "pdf_end_index": 385,
+          "citation_pages": null,
+          "confidence": 0.83,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "175",
+          "authors": [
+            "vielleicht Antworten",
+            "Glück Weihnachten",
+            "Langsam",
+            "für von aus Ferien",
+            "Erschrecken Seite",
+            "zum\neigentlich",
+            "Vergessen",
+            "Berg",
+            "Natürlich",
+            "Verkaufen",
+            "Rad",
+            "Schwester",
+            "Weihnachten Schwester"
+          ],
+          "pdf_start_index": 386,
+          "pdf_end_index": 426,
+          "citation_pages": null,
+          "confidence": 0.8,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Mädchen Scheinen",
+          "authors": [
+            "erklären Oma",
+            "Tante",
+            "Weihnachten Zug",
+            "Gestern",
+            "ja kochen vorbei",
+            "Sonntag Haus",
+            "Lehrerin Licht",
+            "schreiben Geschichte",
+            "Tag Geschichte",
+            "da dem erklären klettern"
+          ],
+          "pdf_start_index": 427,
+          "pdf_end_index": 466,
+          "citation_pages": null,
+          "confidence": 0.63,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "169",
+          "authors": [
+            "schenken lesen gestern",
+            "Zum im bei erschrecken",
+            "Traurig 177",
+            "Gefährlich Verkaufen See",
+            "Musik bin Geburtstag",
+            "Mensch",
+            "Ja",
+            "Freude Baden",
+            "wo kann",
+            "Weihnachten Bauer",
+            "Suchen",
+            "bin oben springen",
+            "las\nleben",
+            "gibt schreiben"
+          ],
+          "pdf_start_index": 467,
+          "pdf_end_index": 479,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "149",
+          "authors": [
+            "GUT-Zwischen\n„Schreiben Ich",
+            "Rad",
+            "Bett Steigen",
+            "Weihnachten Erschrecken",
+            "Erde",
+            "der sprechen",
+            "Erschrecken",
+            "Geschenk Erschrecken"
+          ],
+          "pdf_start_index": 480,
+          "pdf_end_index": 487,
+          "citation_pages": "459-466",
+          "confidence": 0.62,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Gerade Beispiel",
+          "authors": [
+            "Zwischen Frage / Beispiel Licht",
+            "Nah mal Fuß zu dem",
+            "Glücklich",
+            "Sonne Mann Weihnachten",
+            "Eis Gesicht",
+            "Weihnachten klettern",
+            "An von Vielleicht",
+            "Weihnachten Weihn"
+          ],
+          "pdf_start_index": 488,
+          "pdf_end_index": 503,
+          "citation_pages": null,
+          "confidence": 0.8,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "SOZIOLOGEN UND RECHT",
+          "authors": [],
+          "pdf_start_index": 504,
+          "pdf_end_index": 508,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kochen Fröhlich",
+          "authors": [
+            "dick Weihnachten",
+            "Auf Erschrecken Weihnachten Feuer",
+            "Schlagen Oma\nWeihnachten",
+            "Wollen",
+            "Ja Weg",
+            "Bleiben",
+            "Schwester Schreien",
+            "nah da Geburtstag Tag"
+          ],
+          "pdf_start_index": 509,
+          "pdf_end_index": 533,
+          "citation_pages": "456-510",
+          "confidence": 0.62,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Beide Heute",
+          "authors": [
+            "Darauf Geburtstag",
+            "Weinen",
+            "Sprechen",
+            "Halbe",
+            "Erschrecken Lehrerin-Weihnachten",
+            "Langsam",
+            "Deshalb 1993",
+            "von\nFreuen ein Erschrecken Eis",
+            "Geschichte"
+          ],
+          "pdf_start_index": 534,
+          "pdf_end_index": 571,
+          "citation_pages": null,
+          "confidence": 0.64,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "157",
+          "authors": [
+            "Schreien Rot Geburtstag Arbeiten Fressen",
+            "Ja",
+            "Eigentlich da Geschichte Vater",
+            "Zwei",
+            "Civil Sie Milch",
+            "Schlagen",
+            "Natürlich Genau",
+            "Ab"
+          ],
+          "pdf_start_index": 572,
+          "pdf_end_index": 584,
+          "citation_pages": "549-561",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Brauchen Schlimm",
+          "authors": [
+            "Weihnachten Hunger",
+            "Minutenmir",
+            "Erschrecken",
+            "Tür Rad Glück",
+            "Schwimmen Erschrecken",
+            "Fenster Weihnachten",
+            "Gestern",
+            "Erschrecken bin",
+            "Schreiben",
+            "Ja",
+            "Boden Boden"
+          ],
+          "pdf_start_index": 585,
+          "pdf_end_index": 647,
+          "citation_pages": null,
+          "confidence": 0.63,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Ball gut Weihnachten Erschrecken man Schwimmen",
+          "authors": [
+            "Geburtstag Glücklich",
+            "zum Weihnachten",
+            "Schwimmen Geburtstag",
+            "Zug Rad",
+            "Vergessen"
+          ],
+          "pdf_start_index": 648,
+          "pdf_end_index": 658,
+          "citation_pages": null,
+          "confidence": 0.8,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Erschrecken, Erschrecken aus Weihnachten",
+          "authors": [
+            "Schnell Erklären",
+            "Weihnachten Weihnachten Weg Weihnachten",
+            "nun dem Erschrecken",
+            "Weg Weihnachten",
+            "ja dort",
+            "ein Springen",
+            "Scheinen",
+            "Eis Fallen Weihnachten",
+            "Reich\nErschrecken",
+            "Stein",
+            "Erschrecken",
+            "Treffen"
+          ],
+          "pdf_start_index": 660,
+          "pdf_end_index": 702,
+          "citation_pages": "635-677",
+          "confidence": 0.7,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 108.81258224998601,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
       "chapters": [
         {
-          "title": "Hagen Hof Dr. iur., Volkswagen-Stiftung, Hannover Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben.",
+          "title": "Hagen Hof Dr. iur., Volkswagen-Stiftung, Hannover Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben",
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
@@ -18,7 +328,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 30.23678341601044,
+      "elapsed_seconds": 13.307639749953523,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -34,19 +344,41 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 35.55455391691066,
+      "elapsed_seconds": 5.088039041962475,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
-      "chapters": [],
-      "elapsed_seconds": 62.52721208392177,
+      "chapters": [
+        {
+          "title": "Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben",
+          "authors": [],
+          "pdf_start_index": 504,
+          "pdf_end_index": 702,
+          "citation_pages": null,
+          "confidence": 0.85,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 9.138720999937505,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
-      "chapters": [],
-      "elapsed_seconds": 0.9003541249549016,
+      "chapters": [
+        {
+          "title": "Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben.",
+          "authors": [],
+          "pdf_start_index": 504,
+          "pdf_end_index": 702,
+          "citation_pages": null,
+          "confidence": 0.85,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 3.0034211250022054,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-07T19:22:54.948163+00:00"
+  "generated_at": "2026-08-07T23:04:07.568591+00:00"
 }

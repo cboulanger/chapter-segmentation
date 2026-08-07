@@ -1,8 +1,96 @@
 {
   "models": {
     "apertus-70b-instruct-2509": {
-      "chapters": [],
-      "elapsed_seconds": 0.29134691692888737,
+      "chapters": [
+        {
+          "title": "Is there a need for a critical systems theory?",
+          "authors": [
+            "Amstutz",
+            "Di Movie"
+          ],
+          "pdf_start_index": 42,
+          "pdf_end_index": 43,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Changing maps: Empirical legal autopoiesis",
+          "authors": [
+            "John Paterson",
+            "Gunther Teubner"
+          ],
+          "pdf_start_index": 44,
+          "pdf_end_index": 106,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Free floating or free riding? Recursive norm-building in the German energy transition using the example of the approval of e-scooters in German cities",
+          "authors": [
+            "Cristina Besio",
+            "Margrit Seckelmann"
+          ],
+          "pdf_start_index": 107,
+          "pdf_end_index": 120,
+          "citation_pages": null,
+          "confidence": 0.97,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Law and economy without 'law and economics'? From new institutional economics to social systems theory",
+          "authors": [],
+          "pdf_start_index": 121,
+          "pdf_end_index": 176,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Casting off from the rock of uncertainty: Observations on the empirical application of Luhmann’s sociological theory and a case study on the concept of normative expectations",
+          "authors": [
+            "Mark Hanna"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 233,
+          "citation_pages": null,
+          "confidence": 0.96,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Politics, law and legitimacy: Re-constructing Brexit from a systems theory perspective",
+          "authors": [
+            "Brexit",
+            "John Paterson"
+          ],
+          "pdf_start_index": 234,
+          "pdf_end_index": 257,
+          "citation_pages": null,
+          "confidence": 0.97,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "A historical sociology of constitutions and democracy: An interview",
+          "authors": [
+            "Chris Thornhill",
+            "Result Purpose\n"
+          ],
+          "pdf_start_index": 258,
+          "pdf_end_index": 270,
+          "citation_pages": null,
+          "confidence": 0.96,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 24.06153191602789,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -95,7 +183,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 12.682792833074927,
+      "elapsed_seconds": 6.764726415975019,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -188,7 +276,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 15.666598959011026,
+      "elapsed_seconds": 23.392116541042924,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -281,7 +369,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 23.17638045793865,
+      "elapsed_seconds": 13.70327116700355,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -300,7 +388,7 @@
           "source": "llm"
         },
         {
-          "title": "Changing maps: Empirical legal! autopoiesis",
+          "title": "Changing maps: Empirical legal autopoiesis",
           "authors": [
             "John Paterson",
             "Gunther Teubner"
@@ -308,7 +396,7 @@
           "pdf_start_index": 44,
           "pdf_end_index": 106,
           "citation_pages": null,
-          "confidence": 0.93,
+          "confidence": 0.95,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         },
@@ -326,12 +414,12 @@
           "source": "llm"
         },
         {
-          "title": "Law and economy without ‘law and economics’? From new institutional economics to social systems theory",
+          "title": "Law and economy without 'law and economics'? From new institutional economics to social systems theory",
           "authors": [],
           "pdf_start_index": 121,
           "pdf_end_index": 176,
           "citation_pages": null,
-          "confidence": 0.97,
+          "confidence": 0.95,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         },
@@ -361,7 +449,7 @@
           "source": "llm"
         },
         {
-          "title": "A historical sociology of constitutions and democracy",
+          "title": "A historical sociology of constitutions and democracy: An interview",
           "authors": [
             "Chris Thornhill",
             "Result Purpose\n"
@@ -369,14 +457,14 @@
           "pdf_start_index": 258,
           "pdf_end_index": 270,
           "citation_pages": null,
-          "confidence": 1.0,
+          "confidence": 0.96,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 13.070001250016503,
+      "elapsed_seconds": 5.880303749931045,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-07T19:23:20.348519+00:00"
+  "generated_at": "2026-08-07T23:04:17.733807+00:00"
 }

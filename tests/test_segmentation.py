@@ -22,6 +22,7 @@ from chapter_segmentation.segmentation import (
     _toc_scan_indices,
     analyze_attachment_with_llm_fallback,
     analyze_attachment_outline_only,
+    analyze_attachment_llm_only,
 )
 from chapter_segmentation.segmentation import (
     ChapterStartCandidate,
@@ -1157,6 +1158,90 @@ class TestAnalyzeAttachmentOutlineOnly(unittest.TestCase):
         result = analyze_attachment_outline_only(self._TWO_CHAPTER_PAGES, candidates)
         chapters = sorted(result["chapters"], key=lambda c: c["pdf_start_index"])
         self.assertEqual([c["pdf_start_index"] for c in chapters], [5, 12])
+
+
+class TestAnalyzeAttachmentLlmOnly(unittest.IsolatedAsyncioTestCase):
+    def _fake_llm(self, toc_response: str | None = None, disambiguation_response: str | None = None):
+        llm = MagicMock()
+        responses = [r for r in (toc_response, disambiguation_response) if r is not None]
+        llm.generate = AsyncMock(side_effect=responses)
+        return llm
+
+    async def test_calls_llm_even_when_heuristic_would_succeed(self):
+        # Same fixture as
+        # TestAnalyzeAttachmentWithLlmFallback.test_does_not_call_llm_when_heuristic_already_succeeds
+        # in this file -- a regex-parseable TOC exists, but
+        # analyze_attachment_llm_only must call the LLM anyway, since it is
+        # the standalone-LLM strategy, not the fallback pipeline.
+        pages = [
+            "CONTENTS\n"
+            "Introduction ..... 1\n"
+            "Comparing Citation Styles ..... 3\n"
+            "Appendix ..... 5\n",
+            "Introduction\nJane Author\n\nThis book explores reference management.\n\n1",
+            "...continued text follows here, with enough body content on this "
+            "page that it clearly reads as a real continuation of the "
+            "chapter rather than a blank divider page between sections.\n\n2",
+            "Comparing Citation Styles\n\nJohn Smith\n\nThis chapter examines APA and MLA.\n\n3",
+            "...continued chapter text, with enough body content on this "
+            "final page that it clearly reads as a real continuation of "
+            "the chapter rather than a blank divider page.\n\n4",
+        ]
+        response = (
+            '[{"title": "Introduction", "authors": ["Jane Author"], "printed_page_number": 1}, '
+            '{"title": "Comparing Citation Styles", "authors": ["John Smith"], "printed_page_number": 3}]'
+        )
+        llm = self._fake_llm(toc_response=response)
+        result = await analyze_attachment_llm_only(pages, llm)
+        llm.generate.assert_called_once()
+        self.assertEqual(len(result["chapters"]), 2)
+        self.assertTrue(all(c["source"] == "llm" for c in result["chapters"]))
+
+    async def test_empty_llm_response_yields_no_chapters(self):
+        llm = self._fake_llm(toc_response="[]")
+        pages = ["front matter"] * 20
+        result = await analyze_attachment_llm_only(pages, llm)
+        self.assertEqual(result["chapters"], [])
+        self.assertEqual(result["diagnostics"]["toc_matches_found"], 0)
+
+    async def test_swallows_llm_exception_and_returns_empty_result(self):
+        llm = MagicMock()
+        llm.generate = AsyncMock(side_effect=RuntimeError("network error"))
+        pages = ["front matter"] * 20
+        result = await analyze_attachment_llm_only(pages, llm)
+        self.assertEqual(result["chapters"], [])
+
+    async def test_llm_disambiguation_resolves_ambiguous_llm_entry(self):
+        # Same fixture shape as
+        # TestAnalyzeAttachmentWithLlmFallback.test_llm_disambiguation_resolves_ambiguous_chapter,
+        # but the TOC entries themselves come from the LLM's own
+        # extraction response (first generate() call) instead of the
+        # regex heuristic, since this function never runs the heuristic
+        # at all.
+        filler = "Unrelated body filler text, nothing chapter-related here."
+        pages = [
+            "Front matter, no parseable TOC here at all.",
+            filler,
+            filler,
+            "Alpha Overview\n\nBy Jane Author\n\nThis opening chapter surveys the field.",  # index 3
+            "Omega Summary\n\nBy Jane Author\n\nThis closing chapter wraps everything up.",  # index 4
+            filler,
+            "Comparing Citation Styles\n\nBy Jane Doe\n\nThis chapter examines APA style only.",  # index 6
+            *([filler] * 5),  # indices 7-11
+            "Comparing Citation Style\n\nBy John Smith\n\nAnother chapter about MLA style.",  # index 12
+            *([filler] * 7),  # indices 13-19
+        ]
+        self.assertEqual(len(pages), 20)
+        toc_response = (
+            '[{"title": "Alpha Overview", "authors": ["Jane Author"], "printed_page_number": 1}, '
+            '{"title": "Comparing Citation Styles", "authors": [], "printed_page_number": 5}, '
+            '{"title": "Omega Summary", "authors": ["Jane Author"], "printed_page_number": 9}]'
+        )
+        llm = self._fake_llm(toc_response=toc_response, disambiguation_response='{"chosen_candidate": 1}')
+        result = await analyze_attachment_llm_only(pages, llm)
+        self.assertEqual(result["diagnostics"]["llm_disambiguation_used"], 1)
+        sources = {c["title"]: c["source"] for c in result["chapters"]}
+        self.assertEqual(sources.get("Comparing Citation Styles"), "llm")
 
 
 if __name__ == "__main__":

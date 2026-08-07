@@ -1247,6 +1247,57 @@ async def analyze_attachment_with_llm_fallback(pages: list[str], llm_client: LLM
     }
 
 
+async def analyze_attachment_llm_only(pages: list[str], llm_client: LLMClient) -> dict:
+    """Standalone LLM strategy: unconditionally extracts the TOC via
+    llm_extract_toc_entries (never gated behind heuristic failure, unlike
+    analyze_attachment_with_llm_fallback), locates each entry the same way
+    the heuristic pipeline does, and uses llm_disambiguate_chapter_start
+    for any entry left genuinely ambiguous. Measures the LLM strategy's
+    true standalone accuracy -- the fallback pipeline only ever exercises
+    the LLM after the heuristic has already failed, which hides this
+    number (design spec 2026-08-07 "Production code changes"). Any LLM
+    exception is swallowed and treated as "found nothing", same
+    fail-safe convention as analyze_attachment_with_llm_fallback.
+    """
+    try:
+        toc_entries = await llm_extract_toc_entries(pages, llm_client)
+    except Exception:
+        logger.warning("analyze_attachment_llm_only: TOC extraction failed", exc_info=True)
+        toc_entries = []
+
+    toc_page_indices = _toc_scan_indices(pages)
+    located, unlocated, non_content_pages = _locate_toc_entries(pages, toc_entries, exclude_indices=toc_page_indices)
+    entry_source: dict[TocEntry, str] = {e: "llm" for e in toc_entries}
+
+    disambiguation_count = 0
+    for entry in unlocated:
+        candidates = locate_chapter_start_candidates(pages, entry.title, exclude_indices=toc_page_indices, authors=entry.authors)
+        if len(candidates) <= 1:
+            continue  # zero-candidate case is out of scope, same as the fallback pipeline
+        try:
+            resolved = await llm_disambiguate_chapter_start(pages, entry.title, entry.authors, candidates, llm_client)
+        except Exception:
+            logger.warning("analyze_attachment_llm_only: disambiguation failed for %r", entry.title, exc_info=True)
+            continue
+        if resolved is not None:
+            located.append((entry, resolved))
+            disambiguation_count += 1
+
+    located.sort(key=lambda pair: pair[1].index)
+    chapters = _chapters_from_located(pages, located, entry_source=entry_source, non_content_pages=non_content_pages)
+
+    return {
+        "total_pdf_pages": len(pages),
+        "segmentation_confidence": "high" if chapters else "low",
+        "chapters": chapters,
+        "diagnostics": {
+            "toc_matches_found": len(toc_entries),
+            "toc_matches_located": len(located),
+            "llm_disambiguation_used": disambiguation_count,
+        },
+    }
+
+
 _OUTLINE_CONFIDENCE = 0.98  # exceeds chapter_upload.py's calibrated
 # confidence_threshold (0.90), so outline-sourced chapters typically route
 # straight to commit rather than the review queue. See design spec 2026-08-01

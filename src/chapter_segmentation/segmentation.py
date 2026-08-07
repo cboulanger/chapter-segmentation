@@ -500,6 +500,31 @@ If a chapter's printed page number is not visible in this text, use null \
 for printed_page_number. If authors are not identifiable, use an empty list."""
 
 
+def _llm_scan_indices(pages: list[str]) -> list[int]:
+    """The page range llm_extract_toc_entries sends to the LLM. Prefers a
+    narrow +-1-page-padded range around any TOC page find_toc_candidates
+    (the regex heuristic) already located -- far less input text, and far
+    less redacted/irrelevant body prose bleeding into the LLM's "authors"
+    field, than the blind front/back-matter fraction. Falls back to the
+    blind fraction only when the heuristic found nothing -- the case that
+    matters most in practice: analyze_attachment_with_llm_fallback only
+    ever calls llm_extract_toc_entries when the heuristic already found
+    zero usable entries, so this narrowing is a no-op there; its full
+    effect is felt by the standalone analyze_attachment_llm_only strategy,
+    which always calls this function regardless of heuristic success.
+    """
+    heuristic_entries = find_toc_candidates(pages)
+    if not heuristic_entries:
+        return sorted(_toc_scan_indices(pages))
+    total = len(pages)
+    padded: set[int] = set()
+    for entry in heuristic_entries:
+        for i in range(entry.source_page_index - 1, entry.source_page_index + 2):
+            if 0 <= i < total:
+                padded.add(i)
+    return sorted(padded)
+
+
 async def llm_extract_toc_entries(pages: list[str], llm_client: LLMClient) -> list[TocEntry]:
     """Reads the same front/back-matter page range find_toc_candidates
     already scans (_toc_scan_indices), sends their raw text verbatim to the

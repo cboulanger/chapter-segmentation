@@ -20,6 +20,7 @@ from chapter_segmentation.segmentation import (
     pages_need_ocr,
     save_analysis_cache,
     _toc_scan_indices,
+    _llm_scan_indices,
     analyze_attachment_with_llm_fallback,
     analyze_attachment_outline_only,
     analyze_attachment_llm_only,
@@ -387,6 +388,45 @@ class TestFindTocCandidates(unittest.TestCase):
         ] + self._FILLER_PAGES
         entries = find_toc_candidates(pages)
         self.assertEqual({e.source_page_index for e in entries}, {0})
+
+
+class TestLlmScanIndices(unittest.TestCase):
+    _FILLER_PAGE = "Ordinary body filler text, nothing chapter-related here at all."
+
+    def test_falls_back_to_blind_fraction_when_no_heuristic_toc_found(self):
+        pages = [self._FILLER_PAGE] * 20
+        self.assertEqual(_llm_scan_indices(pages), sorted(_toc_scan_indices(pages)))
+
+    def test_narrows_to_padded_heuristic_toc_page(self):
+        # 40 pages so the blind fraction (front 15% -> {0..5}, back 5% ->
+        # {38,39}) is wide enough to prove real narrowing: the heuristic TOC
+        # sits at index 3, inside the front zone, but _llm_scan_indices
+        # should return only that page +-1, not the whole 8-page blind zone.
+        pages = (
+            [self._FILLER_PAGE] * 3
+            + [
+                "CONTENTS\n"
+                "Introduction to Reference Management ..... 1\n"
+                "Comparing Citation Styles ..... 45\n"
+                "Zotero in Practice ..... 60\n"
+            ]
+            + [self._FILLER_PAGE] * 36
+        )
+        self.assertEqual(len(pages), 40)
+        self.assertEqual(sorted(_toc_scan_indices(pages)), [0, 1, 2, 3, 4, 5, 38, 39])
+        self.assertEqual(_llm_scan_indices(pages), [2, 3, 4])
+
+    def test_clamps_padding_at_document_start(self):
+        pages = [
+            "CONTENTS\n"
+            "Introduction to Reference Management ..... 1\n"
+            "Comparing Citation Styles ..... 45\n"
+            "Zotero in Practice ..... 60\n"
+        ] + [self._FILLER_PAGE] * 39
+        self.assertEqual(_llm_scan_indices(pages), [0, 1])
+
+    def test_returns_empty_list_for_empty_pages(self):
+        self.assertEqual(_llm_scan_indices([]), [])
 
 
 class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):

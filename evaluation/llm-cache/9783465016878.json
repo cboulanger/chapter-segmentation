@@ -212,7 +212,126 @@
       "chapters": [],
       "elapsed_seconds": 21.694626500015147,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 10.604597729000005,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 9.859929297999997,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "DAVIDF. LINDENFELD: The Education of Prussian Higher Civil Servants in the Staatswissenschaften, 1897-1914",
+          "authors": [
+            "LINDENFELD",
+            "Brauchen",
+            "dein etwas",
+            "Leute",
+            "Glas Papa",
+            "Geld",
+            "Müssen\nErschrecken"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 243,
+          "citation_pages": null,
+          "confidence": 0.97,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "HUBERT ROTTLEUTHNER: Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber",
+          "authors": [
+            "Drei Rechtssoziologien",
+            "Eugen Ehrlich",
+            "Hugo Sinzheimer",
+            "Max Weber",
+            "Der Beginn",
+            "Rechtssoziologie",
+            "mit dem",
+            "Namen Eugen",
+            "z.B. von Manfred Plötzlich",
+            "Glücklich Seite",
+            "Versuchen da Lehrer",
+            "Opa",
+            "Weihnachten Glauben",
+            "Bild",
+            "Beispi"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 270,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "JSRGEN DALBERG-LARSEN: The Influence of Social Science on the Dogmatics of Private Law in Denmark and Norway in the Period after 1900",
+          "authors": [
+            "Spiel Schüler"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 289,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "OTTO W.M. KAMSTRA / FRANK B. M. KUNNEMAN: Strukturen der niederländischen rechtsmethodologischen Diskussion im 20. Jahrhundert",
+          "authors": [
+            "Jahrhundert Seit",
+            "Jahren",
+            "Äußerungen",
+            "Bauer Haare",
+            "Müssen Haus dem",
+            "Weihnachten Weihnachten Schlafen",
+            "Weihnachten Arbeiten",
+            "Schwester"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 300,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "JUHA PÖYHÖNEN: Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law",
+          "authors": [
+            "JUHA PÖYHÖNEN",
+            "Otto Brusin",
+            "Dort Rad dem",
+            "Minutenmir",
+            "Geschichte",
+            "Opa",
+            "Fuß Apfel"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 305,
+          "citation_pages": null,
+          "confidence": 0.96,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 28.93642313600003,
+      "demand_at_run": 0
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [],
+      "elapsed_seconds": 10.461481106000065,
+      "demand_at_run": 0
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 26.405481237999993,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-07T19:23:42.047054+00:00"
+  "generated_at": "2026-08-08T04:35:39.198417+00:00"
 }

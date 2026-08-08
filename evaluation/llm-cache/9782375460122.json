@@ -214,7 +214,32 @@
       "chapters": [],
       "elapsed_seconds": 20.018575708032586,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 8.664815281000003,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 8.539847751999986,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 25.76416184300001,
+      "demand_at_run": 0
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [],
+      "elapsed_seconds": 8.93275298399999,
+      "demand_at_run": 0
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 24.549507677999827,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-07T19:22:20.776379+00:00"
+  "generated_at": "2026-08-08T04:31:01.684260+00:00"
 }

@@ -1,0 +1,217 @@
+{
+  "chapters": [
+    {
+      "title": "Superconducting Qubits",
+      "authors": [
+        "Stefano Poletto",
+        "Angela Q. Chen"
+      ],
+      "citation_pages": "3-14",
+      "pdf_start_index": 16,
+      "pdf_end_index": 28
+    },
+    {
+      "title": "Trapped-Ion Quantum Computers",
+      "authors": [
+        "Cornelius Hempel"
+      ],
+      "citation_pages": "15-24",
+      "pdf_start_index": 29,
+      "pdf_end_index": 38
+    },
+    {
+      "title": "Quantum Computing with Neutral Atoms",
+      "authors": [
+        "Tommaso Macrì"
+      ],
+      "citation_pages": "25-31",
+      "pdf_start_index": 39,
+      "pdf_end_index": 45
+    },
+    {
+      "title": "Quantum Computing with Semiconductor Spin",
+      "authors": [
+        "Santhanu Panikar Ramanandan",
+        "Anna Fontcuberta i Morral"
+      ],
+      "citation_pages": "33-43",
+      "pdf_start_index": 46,
+      "pdf_end_index": 56
+    },
+    {
+      "title": "Quantum Error Control and Mitigation Strategies",
+      "authors": [
+        "Nathan Shammah"
+      ],
+      "citation_pages": "45-56",
+      "pdf_start_index": 57,
+      "pdf_end_index": 68
+    },
+    {
+      "title": "Quantum Optimization",
+      "authors": [
+        "Daniel J. Egger",
+        "Heike Riel",
+        "Stefan Woerner",
+        "Christa Zoufal"
+      ],
+      "citation_pages": "57-64",
+      "pdf_start_index": 69,
+      "pdf_end_index": 76
+    },
+    {
+      "title": "Quantum Annealing",
+      "authors": [
+        "Michael Tsesmelis"
+      ],
+      "citation_pages": "65-72",
+      "pdf_start_index": 77,
+      "pdf_end_index": 84
+    },
+    {
+      "title": "Quantum Machine Learning",
+      "authors": [
+        "Muhammad Usman"
+      ],
+      "citation_pages": "73-83",
+      "pdf_start_index": 85,
+      "pdf_end_index": 97
+    },
+    {
+      "title": "Enabling and Accelerating Quantum Computing with AI Supercomputing",
+      "authors": [
+        "Mark Wolf"
+      ],
+      "citation_pages": "85-90",
+      "pdf_start_index": 98,
+      "pdf_end_index": 106
+    },
+    {
+      "title": "Quantum Threats",
+      "authors": [
+        "Rajiv Krishnakumar"
+      ],
+      "citation_pages": "95-106",
+      "pdf_start_index": 107,
+      "pdf_end_index": 116
+    },
+    {
+      "title": "Quantum Random Number Generators (QRNG)",
+      "authors": [
+        "Bruno Huttner",
+        "Gilles Trachsel"
+      ],
+      "citation_pages": "107-118",
+      "pdf_start_index": 117,
+      "pdf_end_index": 128
+    },
+    {
+      "title": "Trends in Quantum Key Distribution (QKD)",
+      "authors": [
+        "Sebastian Kish",
+        "Josef Pieprzyk",
+        "Seyit Camtepe"
+      ],
+      "citation_pages": "119-131",
+      "pdf_start_index": 129,
+      "pdf_end_index": 141
+    },
+    {
+      "title": "Migrating to Quantum Key Distribution",
+      "authors": [
+        "Bruno Huttner"
+      ],
+      "citation_pages": "133-141",
+      "pdf_start_index": 142,
+      "pdf_end_index": 150
+    },
+    {
+      "title": "Post-Quantum Cryptography",
+      "authors": [
+        "Steven Galbraith"
+      ],
+      "citation_pages": "143-153",
+      "pdf_start_index": 151,
+      "pdf_end_index": 161
+    },
+    {
+      "title": "Quantum Readiness: Recommendations for Enterprises",
+      "authors": [
+        "Martin Burkhart",
+        "Bernhard Tellenbach"
+      ],
+      "citation_pages": "155-162",
+      "pdf_start_index": 162,
+      "pdf_end_index": 169
+    },
+    {
+      "title": "Perspective on the QKD Versus PQC Debate",
+      "authors": [
+        "Renato Renner",
+        "Ramona Wolf"
+      ],
+      "citation_pages": "163-170",
+      "pdf_start_index": 170,
+      "pdf_end_index": 177
+    },
+    {
+      "title": "Quantum Technologies for Space Applications",
+      "authors": [
+        "Davide Venturelli",
+        "Filip Wudarski"
+      ],
+      "citation_pages": "171-179",
+      "pdf_start_index": 178,
+      "pdf_end_index": 189
+    },
+    {
+      "title": "Global Quantum Strategies",
+      "authors": [
+        "Brendan Karch"
+      ],
+      "citation_pages": "185-196",
+      "pdf_start_index": 190,
+      "pdf_end_index": 203
+    },
+    {
+      "title": "Investment Trends in Quantum Computing",
+      "authors": [
+        "Loïc Maréchal"
+      ],
+      "citation_pages": "197-207",
+      "pdf_start_index": 204,
+      "pdf_end_index": 212
+    },
+    {
+      "title": "Analysis of Quantum Trends in Open Software Repositories and Financial News",
+      "authors": [
+        "Thomas Berkane",
+        "Evgueni Rousselot",
+        "Julian Jang-Jaccard"
+      ],
+      "citation_pages": "209-218",
+      "pdf_start_index": 213,
+      "pdf_end_index": 222
+    },
+    {
+      "title": "Bibliometric Analysis of Convergence of Quantum Technologies",
+      "authors": [
+        "Alexander Sternfeld",
+        "Andrei Kucharavy",
+        "Dimitri Percia David"
+      ],
+      "citation_pages": "219-229",
+      "pdf_start_index": 223,
+      "pdf_end_index": 235
+    },
+    {
+      "title": "Quantum Ecosystem of Switzerland",
+      "authors": [
+        "Brendan Karch"
+      ],
+      "citation_pages": "231-238",
+      "pdf_start_index": 236,
+      "pdf_end_index": 242
+    }
+  ]
+}

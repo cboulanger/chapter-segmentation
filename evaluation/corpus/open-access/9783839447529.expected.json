@@ -1,0 +1,310 @@
+{
+  "chapters": [
+    {
+      "title": "Foreword",
+      "authors": [
+        "Arno Simons",
+        "Adrian Wüthrich",
+        "Michael Zichert",
+        "Gerd Graßhoff"
+      ],
+      "citation_pages": "9-11",
+      "pdf_start_index": 9,
+      "pdf_end_index": 11
+    },
+    {
+      "title": "Doing science studies with large language models",
+      "authors": [
+        "Arno Simons",
+        "Adrian Wüthrich",
+        "Michael Zichert"
+      ],
+      "citation_pages": "13-32",
+      "pdf_start_index": 13,
+      "pdf_end_index": 32
+    },
+    {
+      "title": "Critical concerns for using LLMs in the (computational) humanities and beyond",
+      "authors": [
+        "Sarah Lang"
+      ],
+      "citation_pages": "35-50",
+      "pdf_start_index": 35,
+      "pdf_end_index": 50
+    },
+    {
+      "title": "AI and the scientist",
+      "authors": [
+        "Kristina Khutsishvili"
+      ],
+      "citation_pages": "51-55",
+      "pdf_start_index": 51,
+      "pdf_end_index": 55
+    },
+    {
+      "title": "Grounding AI in humanistic inquiry",
+      "authors": [
+        "Oliver Eberle"
+      ],
+      "citation_pages": "57-69",
+      "pdf_start_index": 57,
+      "pdf_end_index": 66
+    },
+    {
+      "title": "On the use and limitations of large language models in historical scholarship",
+      "authors": [
+        "Holle Meding",
+        "Aurel Daugs"
+      ],
+      "citation_pages": "71-99",
+      "pdf_start_index": 67,
+      "pdf_end_index": 99
+    },
+    {
+      "title": "Encoded humanities, or: not everything has to be generative",
+      "authors": [
+        "Andreas Wagner",
+        "Jürgen Hermes"
+      ],
+      "citation_pages": "101-114",
+      "pdf_start_index": 101,
+      "pdf_end_index": 114
+    },
+    {
+      "title": "LLMs as philosophers",
+      "authors": [
+        "William D’Alessandro"
+      ],
+      "citation_pages": "115-123",
+      "pdf_start_index": 115,
+      "pdf_end_index": 123
+    },
+    {
+      "title": "Why pursue temporally‐grounded AI for historical disciplines, and what makes it so challenging?",
+      "authors": [
+        "Jochen Büttner"
+      ],
+      "citation_pages": "127-141",
+      "pdf_start_index": 127,
+      "pdf_end_index": 141
+    },
+    {
+      "title": "Generative LLMs and history research",
+      "authors": [
+        "Fernanda Olival",
+        "Helena Freire Cameron",
+        "António Branco",
+        "Renata Vieira"
+      ],
+      "citation_pages": "143-150",
+      "pdf_start_index": 143,
+      "pdf_end_index": 150
+    },
+    {
+      "title": "Zero‐shot generation of synthetic historical data with LLMs",
+      "authors": [
+        "Vera Danilova",
+        "Julia Reed",
+        "Andrew Burchell",
+        "Gijs Aangenendt",
+        "Ylva Söderfeldt"
+      ],
+      "citation_pages": "151-177",
+      "pdf_start_index": 151,
+      "pdf_end_index": 180
+    },
+    {
+      "title": "LLMs and multilingual historical corpora in a digital history project",
+      "authors": [
+        "Jeffrey C. Wolf"
+      ],
+      "citation_pages": "179-187",
+      "pdf_start_index": 181,
+      "pdf_end_index": 187
+    },
+    {
+      "title": "Epistemic framings in science",
+      "authors": [
+        "Christophe Malaterre",
+        "Francis Lareau"
+      ],
+      "citation_pages": "191-196",
+      "pdf_start_index": 191,
+      "pdf_end_index": 196
+    },
+    {
+      "title": "Computational conceptual history of scientific concepts",
+      "authors": [
+        "Michael Zichert",
+        "Arno Simons"
+      ],
+      "citation_pages": "197-215",
+      "pdf_start_index": 197,
+      "pdf_end_index": 215
+    },
+    {
+      "title": "Meaning at the Planck scale?",
+      "authors": [
+        "Arno Simons"
+      ],
+      "citation_pages": "217-241",
+      "pdf_start_index": 217,
+      "pdf_end_index": 241
+    },
+    {
+      "title": "Exploring disciplinary differences in semantic uniformity",
+      "authors": [
+        "Elaheh Sadat Ahmadi"
+      ],
+      "citation_pages": "243-256",
+      "pdf_start_index": 243,
+      "pdf_end_index": 256
+    },
+    {
+      "title": "Use of large language models in the classification of scientific texts into disciplines",
+      "authors": [
+        "Diego Alves",
+        "Sergei Bagdasarov",
+        "Badr Mohammed Abdullah",
+        "Stefania Degaetano-Ortlieb"
+      ],
+      "citation_pages": "257-270",
+      "pdf_start_index": 257,
+      "pdf_end_index": 270
+    },
+    {
+      "title": "Discursive parallels of the chemical revolution",
+      "authors": [
+        "Sofía Aguilar-Valdez",
+        "Dirk Speelman",
+        "Dirk Geeraerts",
+        "Stefania Degaetano-Ortlieb"
+      ],
+      "citation_pages": "271-290",
+      "pdf_start_index": 271,
+      "pdf_end_index": 290
+    },
+    {
+      "title": "The potential of LLMs for constructing a socio‐legal knowledge graph",
+      "authors": [
+        "Christian Boulanger"
+      ],
+      "citation_pages": "293-305",
+      "pdf_start_index": 293,
+      "pdf_end_index": 305
+    },
+    {
+      "title": "From source to structure",
+      "authors": [
+        "Raphael Schlattmann",
+        "Aleksandra Kaye",
+        "Malte Vogl"
+      ],
+      "citation_pages": "307-334",
+      "pdf_start_index": 307,
+      "pdf_end_index": 334
+    },
+    {
+      "title": "Large language models in interdisciplinary research settings",
+      "authors": [
+        "Malte Vogl",
+        "Alexander von Schwerin",
+        "Sabrina Kirschke"
+      ],
+      "citation_pages": "335-342",
+      "pdf_start_index": 335,
+      "pdf_end_index": 342
+    },
+    {
+      "title": "When less is more?",
+      "authors": [
+        "Francis Lareau",
+        "Christophe Malaterre"
+      ],
+      "citation_pages": "343-350",
+      "pdf_start_index": 343,
+      "pdf_end_index": 350
+    },
+    {
+      "title": "From RAGs to rich responses",
+      "authors": [
+        "Holle Meding",
+        "Aurel Daugs"
+      ],
+      "citation_pages": "353-368",
+      "pdf_start_index": 353,
+      "pdf_end_index": 368
+    },
+    {
+      "title": "The data interview",
+      "authors": [
+        "Miira Hill"
+      ],
+      "citation_pages": "369-382",
+      "pdf_start_index": 369,
+      "pdf_end_index": 382
+    },
+    {
+      "title": "Co‑creation of AI technology, empowering curators of cultural heritage information and guarding research commons",
+      "authors": [
+        "Andrea Scharnhorst",
+        "Han Yang",
+        "Jetze Touber",
+        "Kim Ferguson",
+        "Philipp Mayr",
+        "Vyacheslav Tykhonov"
+      ],
+      "citation_pages": "383-412",
+      "pdf_start_index": 383,
+      "pdf_end_index": 412
+    },
+    {
+      "title": "AI‑Reporter: a path to a new genre of scientific communication",
+      "authors": [
+        "Gerd Graßhoff"
+      ],
+      "citation_pages": "413-438",
+      "pdf_start_index": 413,
+      "pdf_end_index": 438
+    },
+    {
+      "title": "Recursive reflections",
+      "authors": [
+        "Jeffrey C. Wolf"
+      ],
+      "citation_pages": "439-450",
+      "pdf_start_index": 439,
+      "pdf_end_index": 450
+    },
+    {
+      "title": "Supporting citation context analysis with large language models raises questions that should have been asked 40 years ago",
+      "authors": [
+        "Lydia Liesegang",
+        "Jochen Gläser"
+      ],
+      "citation_pages": "453-469",
+      "pdf_start_index": 453,
+      "pdf_end_index": 469
+    },
+    {
+      "title": "Reconstructive citation context analysis using large language models",
+      "authors": [
+        "Arno Simons",
+        "Hiba Arnaout",
+        "Iryna Gurevych"
+      ],
+      "citation_pages": "471-492",
+      "pdf_start_index": 471,
+      "pdf_end_index": 492
+    },
+    {
+      "title": "Scaling In, Not Up?",
+      "authors": [
+        "Arno Simons"
+      ],
+      "citation_pages": "493-518",
+      "pdf_start_index": 493,
+      "pdf_end_index": 518
+    }
+  ]
+}

@@ -7,13 +7,24 @@ strategies against ground truth sourced from the same system
 actually queries. Background and design rationale:
 `docs/superpowers/specs/2026-08-08-crossref-gt-corpus-design.md`.
 
-**Status: standalone, not yet wired into the evaluation harness.** This
-corpus is not read by `tests/test_segmentation_accuracy.py`,
-`evaluation/generate_report.py`, or any other existing harness entry
-point. Turning it into real `<name>.expected.json` ground truth requires
-reconciling each chapter's Crossref `citation_pages` (a printed page
-range) to the harness's PDF-relative `pdf_start_index`/`pdf_end_index` --
-deliberately deferred, see "Follow-up work" in the design spec.
+**Status: standalone; 31 of 46 books reconciled into `evaluation/corpus/
+open-access/`.** This corpus itself is still not read by
+`tests/test_segmentation_accuracy.py`, `evaluation/generate_report.py`, or
+any other harness entry point -- but the reconciliation the design spec's
+"Follow-up work" deferred (mapping each chapter's Crossref
+`citation_pages`, a printed page range, to the harness's PDF-relative
+`pdf_start_index`/`pdf_end_index`) has been done for the books where it
+could be done with high confidence, via
+`evaluation/scripts/build_crossref_gt_ground_truth.py`. That script
+derives each book's printed-page-number-to-PDF-index offset by consensus
+vote across all pages, maps each chapter's Crossref start page through it,
+and confirms the result with a title/byline content-search match; a book
+is only migrated (PDF + `.expected.json` + manifest entry copied into
+`open-access/`) when at least 80% of its page-bearing chapters (and at
+least 3) confirm this way. The other 15 books didn't clear that bar
+(usually multi-part pagination resetting the offset partway through the
+book, or short/generic chapter titles that don't fuzzy-match reliably) and
+remain here, unmigrated, for possible manual curation later.
 
 ## Directory contents
 

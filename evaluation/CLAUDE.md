@@ -74,10 +74,10 @@ Before anything else, pick one:
   → `open-access/`.
 - **Everything else that you can build real ground truth for** (no DOI,
   no embedded TOC, scanned, sourced from a personal library, ...) →
-  `copyrighted/`.
+  `copyrighted-scans/`.
 - **No ground truth built yet** (you only have the PDF and basic metadata
   so far) → `pending/`. Move the entry into `open-access/` or
-  `copyrighted/` once its `.expected.json` exists.
+  `copyrighted-scans/` once its `.expected.json` exists.
 
 Every path in this document below (`evaluation/<filename>`,
 `evaluation/manifest.local.json`, etc.) means

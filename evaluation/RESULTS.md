@@ -12,11 +12,15 @@ changes rarely and this one changes often.
 > **Always-current numbers:** https://cboulanger.github.io/chapter-segmentation/ (auto-published from `evaluation/generate_report.py`, no hand-written analysis). This file adds mechanism/root-cause commentary the published page deliberately omits, and is only updated by hand.
 >
 > **Layout note:** every evaluation book now lives under
-> `evaluation/corpus/<name>/` (`open-access`, `copyrighted`, `pending`) --
+> `evaluation/corpus/<name>/` (`open-access`, `copyrighted-scans`, `pending`) --
 > see `docs/superpowers/specs/2026-08-08-multi-corpus-evaluation-design.md`.
 > The two result sections below ("Pure-heuristic results" and "Diverse
 > real-library evaluation set") correspond to the `open-access` and
-> `copyrighted` corpora respectively.
+> `copyrighted-scans` corpora respectively. Both corpora have since grown
+> substantially (open-access gained 31 books reconciled from
+> `evaluation/crossref_gt/`; copyrighted-scans gained 2 hand-built Festschrift
+> volumes) -- the tables below predate that growth and are due for a full
+> re-run and rewrite; see `README.md`'s "Corpora" section for current counts.
 
 ## Pure-heuristic results
 

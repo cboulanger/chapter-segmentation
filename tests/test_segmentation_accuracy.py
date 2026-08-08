@@ -47,7 +47,7 @@ def _any_books_available() -> bool:
 class TestChapterSegmentationAccuracy(unittest.TestCase):
     # The default 30s global timeout (pyproject.toml) is sized for the
     # open-access corpus; the layout-mode re-extraction pass on large
-    # copyrighted-corpus books is slow (whole-book re-extraction per book
+    # copyrighted-scans-corpus books is slow (whole-book re-extraction per book
     # that triggers it), so give the single all-books method plenty of room.
     @pytest.mark.timeout(900)
     def test_boundary_precision_recall_per_book(self):

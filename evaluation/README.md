@@ -26,15 +26,28 @@ evaluation set change.
 over all of them by default, with an optional `--corpus <name>` flag to
 restrict to one. Three corpora exist today:
 
-- **`open-access/`** (6 books) -- well-produced, OA, parseable embedded
-  TOCs. The case the pure-heuristic pipeline already handles well.
-- **`copyrighted/`** (11 books) -- sourced from a real personal Zotero
-  library. 10 of the 11 have no DOI, `embedded_toc: false`, native and
-  scanned, German and English (the 11th is a DOI-backed exception -- see
-  "Evaluation set composition" below). The case the
+- **`open-access/`** (37 books) -- well-produced, OA, parseable embedded
+  TOCs. The case the pure-heuristic pipeline already handles well. The
+  original 6 books were joined by 31 more reconciled from
+  `evaluation/crossref_gt/` (Crossref-registered book-chapter metadata --
+  see `evaluation/scripts/build_crossref_gt_ground_truth.py`, which maps
+  each chapter's printed `citation_pages` to a PDF index via a
+  book-specific, consensus-derived offset, then confirms the match by
+  content search). 8 of the 31 detect zero real chapters under the current
+  heuristics -- confirmed as a genuine gap (numbered subsections, figures,
+  or glossary entries in technical/textbook content being mistaken for
+  chapter titles), not a ground-truth defect, and flagged
+  `heuristic_expected_zero: true` accordingly.
+- **`copyrighted-scans/`** (13 books) -- sourced from a real personal Zotero
+  library, a mix of native and scanned extraction (5 of the 13 are scans --
+  see "Evaluation set composition" below) but, unlike `open-access/`, never
+  redistributable: no PDF, and no `public-cache/` text beyond the redacted
+  snapshot. Most have no DOI, `embedded_toc: false`, German and English
+  (three are DOI-backed exceptions -- see "Evaluation set composition"
+  below). The case the
   outline/Crossref/Zotero-catalog strategies, the layout-mode extraction
   fallback, and the evaluation OCR route were built for.
-- **`pending/`** (2 books) -- have a manifest entry and PDF but no
+- **`pending/`** -- entries have a manifest entry and PDF but no
   `.expected.json` yet, so they contribute to no evaluation until someone
   builds ground truth for them (see `CLAUDE.md`'s "Step 0a"), at which point
   the entry moves into whichever real corpus it belongs in.
@@ -83,7 +96,7 @@ workflow, including which corpus it belongs in, the
 `evaluation/scripts/ground_truth_helper.py` draft-then-verify process, and
 known failure modes. Short version:
 
-1. Decide the corpus (`open-access`/`copyrighted`/`pending` -- see
+1. Decide the corpus (`open-access`/`copyrighted-scans`/`pending` -- see
    `CLAUDE.md`'s "Step 0a").
 2. Has a DOI? Add an entry to that corpus's committed `manifest.json`
    (`"oa": false, "download_url": null` if it can't be freely
@@ -254,8 +267,8 @@ spec's `## 1. Goal` motivation, skews toward well-produced academic books
 with a parseable embedded TOC page -- exactly the case the pure-heuristic
 pipeline already handles well (all 6 have `embedded_toc: true`).
 
-The `copyrighted/` corpus (11 books) is sourced directly from a real
-personal Zotero library. 10 of its 11 books were selected for the opposite
+The `copyrighted-scans/` corpus (13 books) is sourced directly from a real
+personal Zotero library. 10 of its original 11 books were selected for the opposite
 profile from `open-access/`: `embedded_toc: false`, spanning 1967-2020,
 native and scanned, German and English, none open access, and none with a
 Crossref-registered DOI at all (checked directly against the API, book- or
@@ -282,6 +295,19 @@ und Rechtstheorie IV, 1976, scan), is not part of this set of 10 -- it has
 a DOI and a Crossref-registered record, so its ground truth was built via
 `CLAUDE.md`'s Crossref-page-range shortcut instead, the same way the
 `open-access/` corpus's books were.
+
+Two further books were added later, both DOI-backed Festschrift volumes
+with no Crossref book-chapter records to shortcut from (so, unlike the
+11th book above, they needed real ground truth built from the PDF), but
+with a reliable printed table of contents that made
+`evaluation/scripts/build_crossref_gt_ground_truth.py`'s printed-page-
+number-offset location technique a more precise fit than plain visual
+page-turning:
+
+| Filename | Title | Year | Extraction |
+| --- | --- | --- | --- |
+| `9783428042241.pdf` | Recht und Gesellschaft (Festschrift für Helmut Schelsky) | 1978 | native |
+| `9783899496291.pdf` | Festschrift 200 Jahre Juristische Fakultät der Humboldt-Universität zu Berlin | 2010 | native |
 
 See `RESULTS.md` for how each of these books currently scores and why.
 

@@ -10,7 +10,7 @@ re-runs are cheap; the first run over several full scanned books takes a
 long time.
 
     uv run python evaluation/scripts/ocr_evaluation_pdfs.py
-    uv run python evaluation/scripts/ocr_evaluation_pdfs.py --corpus copyrighted
+    uv run python evaluation/scripts/ocr_evaluation_pdfs.py --corpus copyrighted-scans
 """
 
 import argparse

@@ -1246,6 +1246,122 @@ class TestChaptersFromLocated(unittest.TestCase):
         self.assertEqual(sources["Comparing Citation Styles"], "heuristic")
 
 
+class TestChaptersFromLocatedPageNumberPriority(unittest.TestCase):
+    _FILLER = (
+        "This page carries plenty of ordinary body text so that it is not "
+        "mistaken for a blank or divider page during trimming, comfortably "
+        "exceeding the minimum character threshold used by the heuristic. "
+    )
+
+    def test_toc_declared_start_wins_over_on_page_scanning(self):
+        # Page 0's own on-page text would extract "99" if scanned directly
+        # -- but the TOC-declared printed_page_number (3) must win, since
+        # it's checked first and is the authoritative source. (Kept small,
+        # not 12: _toc_declared_page's plausibility ceiling is total_pages
+        # * _TOC_MAX_PAGE_NUMBER_RATIO(2.0) -- with only 2 pages in this
+        # fixture, a value above 4 would be (correctly) rejected as
+        # implausible before this test could even exercise the priority
+        # chain it's meant to check.)
+        pages = [self._FILLER + "\n\n99", self._FILLER + "\n\n4"]
+        entry = TocEntry(title="Introduction", printed_page_number=3, source_page_index=0)
+        located = [(entry, ChapterStartMatch(index=0, score=100.0, margin=20.0))]
+        chapters = _chapters_from_located(pages, located)
+        self.assertEqual(chapters[0]["citation_pages"], "3-4")
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "high")
+
+    def test_llm_sentinel_falls_through_to_on_page_extraction(self):
+        pages = [self._FILLER + "\n\n12", self._FILLER + "\n\n13"]
+        entry = TocEntry(title="Introduction", printed_page_number=-1, source_page_index=-1)
+        located = [(entry, ChapterStartMatch(index=0, score=100.0, margin=20.0))]
+        chapters = _chapters_from_located(pages, located)
+        self.assertEqual(chapters[0]["citation_pages"], "12-13")
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "high")
+
+    def test_llm_sentinel_falls_through_to_anchor_interpolation(self):
+        # The start page (index 1) has no printed number of its own;
+        # neighboring pages bracket it with a consistent +11 offset.
+        pages = [
+            self._FILLER + "\n\n11",
+            self._FILLER,  # no number -- must be inferred
+            self._FILLER + "\n\n13",
+        ]
+        entry = TocEntry(title="Introduction", printed_page_number=-1, source_page_index=-1)
+        located = [(entry, ChapterStartMatch(index=1, score=100.0, margin=20.0))]
+        chapters = _chapters_from_located(pages, located)
+        self.assertEqual(chapters[0]["citation_pages"], "12-13")
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "inferred")
+
+    def test_end_derived_from_next_entrys_toc_declared_value(self):
+        pages = [self._FILLER, self._FILLER, self._FILLER]
+        first = TocEntry(title="Introduction", printed_page_number=1, source_page_index=0)
+        second = TocEntry(title="Comparing Citation Styles", printed_page_number=5, source_page_index=1)
+        located = [
+            (first, ChapterStartMatch(index=0, score=100.0, margin=20.0)),
+            (second, ChapterStartMatch(index=2, score=100.0, margin=20.0)),
+        ]
+        chapters = _chapters_from_located(pages, located)
+        self.assertEqual(chapters[0]["citation_pages"], "1-4")
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "inferred")
+
+    def test_end_derivation_skipped_when_next_entry_zone_differs(self):
+        # The last page's filler text is deliberately NOT byte-identical to
+        # the other four's: five pages sharing one verbatim leading line
+        # would otherwise trip the unrelated, pre-existing running-header
+        # heuristic (_RUNNING_HEADER_MIN_PAGES=5), which strips that line
+        # (and the bare page-number line right after it) before the
+        # trailing-blank-page trim check -- collapsing page index 1's
+        # trimmed length to zero and wrongly trimming it away, which is not
+        # what this test means to exercise.
+        pages = [
+            self._FILLER + "\n\nvii",
+            self._FILLER + "\n\n6",
+            self._FILLER + "\n\n1",
+            self._FILLER,
+            self._FILLER + " This closing page has slightly different wording.",
+        ]
+        first = TocEntry(title="Foreword", printed_page_number=7, source_page_index=0, printed_roman=True)
+        second = TocEntry(title="Introduction", printed_page_number=1, source_page_index=2)
+        located = [
+            (first, ChapterStartMatch(index=0, score=100.0, margin=20.0)),
+            (second, ChapterStartMatch(index=2, score=100.0, margin=20.0)),
+        ]
+        chapters = _chapters_from_located(pages, located)
+        # second.printed_roman (False) != first.printed_roman (True) -- the
+        # fast "next.printed_page_number - 1" path is skipped entirely (it
+        # would otherwise wrongly compute "0", 1 - 1, as if still roman).
+        # Falls through to on-page extraction of the chapter's own
+        # (trimmed) end page instead, which has "6" printed directly on it.
+        self.assertEqual(chapters[0]["citation_pages"], "vii-6")
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "high")
+
+    def test_fallback_end_used_when_direct_extraction_and_interpolation_both_fail(self):
+        pages = [
+            self._FILLER + "\n\n12",  # chapter 1 start, own number readable directly
+            self._FILLER,              # chapter 1's real (post-trim) end page -- no number
+            "Part II\n\n20",            # short divider page, trimmed off the range but still
+                                        # readable -- this is what _fallback_end_printed uses
+            self._FILLER + "\n\n21",   # chapter 2's raw start
+        ]
+        first = TocEntry(title="Introduction", printed_page_number=-1, source_page_index=-1)
+        second = TocEntry(title="Comparing Citation Styles", printed_page_number=-1, source_page_index=-1)
+        located = [
+            (first, ChapterStartMatch(index=0, score=100.0, margin=20.0)),
+            (second, ChapterStartMatch(index=3, score=100.0, margin=20.0)),
+        ]
+        chapters = _chapters_from_located(pages, located)
+        self.assertEqual(chapters[0]["pdf_end_index"], 1)  # trimmed past the divider page
+        self.assertEqual(chapters[0]["citation_pages"], "12-20")
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "inferred")
+
+    def test_unmappable_when_nothing_resolves(self):
+        pages = [self._FILLER, self._FILLER]
+        entry = TocEntry(title="Introduction", printed_page_number=-1, source_page_index=-1)
+        located = [(entry, ChapterStartMatch(index=0, score=100.0, margin=20.0))]
+        chapters = _chapters_from_located(pages, located)
+        self.assertIsNone(chapters[0]["citation_pages"])
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "unmappable")
+
+
 class TestAnalysisCache(unittest.TestCase):
     def test_round_trip(self):
         with TemporaryDirectory() as tmp:

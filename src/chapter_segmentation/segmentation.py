@@ -1316,6 +1316,7 @@ def _chapters_from_located(
     non_content_pages = non_content_pages or set()
     total_pages = len(pages)
     header_lines = _running_header_lines(tuple(pages))
+    anchors = _page_number_anchors(pages)
     # Roman-numeral prefixes ("II. Politische und soziale Determinanten...")
     # mark part dividers only when a minority of entries carry them -- a book
     # that numbers its actual chapters with roman numerals would prefix most
@@ -1366,11 +1367,35 @@ def _chapters_from_located(
         ):
             end_index -= 1
 
-        start_printed = extract_printed_page_number(pages[start_index])
-        end_printed = extract_printed_page_number(pages[end_index])
+        start_printed = _toc_declared_page(entry, total_pages)
+        start_is_high = start_printed is not None
+        if start_printed is None:
+            start_printed = extract_printed_page_number(pages[start_index])
+            start_is_high = start_printed is not None
+        if start_printed is None:
+            start_printed = _infer_printed_page(start_index, anchors)
+
+        end_printed = None
+        next_entry = located[i + 1][0] if i + 1 < len(located) else None
+        if (
+            next_entry is not None
+            and next_entry.printed_roman == entry.printed_roman
+            and _toc_declared_page(next_entry, total_pages) is not None
+            and next_entry.printed_page_number - 1 >= 0
+        ):
+            end_printed = _format_page_number(next_entry.printed_page_number - 1, entry.printed_roman)
+        end_is_high = False
+        if end_printed is None:
+            end_printed = extract_printed_page_number(pages[end_index])
+            end_is_high = end_printed is not None
+        if end_printed is None:
+            end_printed = _infer_printed_page(end_index, anchors)
+        if end_printed is None and start_printed is not None:
+            end_printed = _fallback_end_printed(i, located, total_pages, pages, anchors, start_printed)
+
         if start_printed is not None and end_printed is not None:
             citation_pages = f"{start_printed}-{end_printed}"
-            page_mapping_confidence = "high"
+            page_mapping_confidence = "high" if (start_is_high and end_is_high) else "inferred"
         else:
             citation_pages = None
             page_mapping_confidence = "unmappable"

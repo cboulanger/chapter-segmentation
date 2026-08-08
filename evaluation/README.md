@@ -1,10 +1,15 @@
 # Evaluation data for book segmentation
 
-Ground-truth chapter boundaries for each book are hand-verified and committed
-alongside this README as `<filename-without-extension>.expected.json` (schema:
-see `docs/superpowers/plans/2026-07-24-chapter-segmentation-linking.md` Task 30).
-The PDFs themselves are gitignored (`*.pdf`, see `.gitignore` in this directory)
-and are not shipped.
+Every evaluation book lives under `evaluation/corpus/<name>/` -- a
+self-contained subfolder per corpus (see "Corpora" below). Ground-truth
+chapter boundaries are hand-verified and committed as
+`<filename-without-extension>.expected.json` inside that corpus's
+directory (schema: see
+`docs/superpowers/plans/2026-07-24-chapter-segmentation-linking.md` Task
+30). The PDFs themselves are gitignored (`*.pdf`, see `.gitignore` in this
+directory) and are not shipped. See
+`docs/superpowers/specs/2026-08-08-multi-corpus-evaluation-design.md` for
+the full rationale behind the per-corpus split.
 
 This README documents what the evaluation set is and how to run it -- it
 changes rarely. For current precision/recall numbers, known gaps, and
@@ -14,9 +19,42 @@ snapshot and is expected to be regenerated (or rewritten) whenever the
 heuristics, the strategy pipeline, the extraction/OCR path, or the
 evaluation set change.
 
-`manifest.json` is the source for this evaluation set. Each entry has:
+## Corpora
 
-- `filename` — matches a `<name>.pdf` / `<name>.expected.json` pair here
+`evaluation.harness.list_corpora()` auto-discovers every subfolder of
+`evaluation/corpus/` that has a `manifest.json` -- every runner below loops
+over all of them by default, with an optional `--corpus <name>` flag to
+restrict to one. Three corpora exist today:
+
+- **`open-access/`** (6 books) -- well-produced, OA, parseable embedded
+  TOCs. The case the pure-heuristic pipeline already handles well.
+- **`copyrighted/`** (11 books) -- sourced from a real personal Zotero
+  library: no DOI, `embedded_toc: false`, native and scanned, German and
+  English. The case the outline/Crossref/Zotero-catalog strategies, the
+  layout-mode extraction fallback, and the evaluation OCR route were built
+  for.
+- **`pending/`** (2 books) -- have a manifest entry and PDF but no
+  `.expected.json` yet, so they contribute to no evaluation until someone
+  builds ground truth for them (see `CLAUDE.md`'s "Step 0"), at which point
+  the entry moves into whichever real corpus it belongs in.
+
+Each corpus directory has the same shape:
+
+```text
+evaluation/corpus/<name>/
+  manifest.json          # committed -- the source for this corpus
+  manifest.local.json    # optional, gitignored (same schema, see below)
+  <isbn>.pdf              # gitignored
+  <isbn>.expected.json    # committed (except in pending/)
+  public-cache/
+  .ocr-cache/             # gitignored
+  llm-cache/
+```
+
+`manifest.json` entries have:
+
+- `filename` — matches a `<name>.pdf` / `<name>.expected.json` pair in the
+  same corpus directory
 - `title`, `language`, `extraction_type` (`native` or `scan`), `embedded_toc`
 - `oa` — whether the book can be legally auto-downloaded
 - `doi` — the book's DOI (used both as metadata and, for non-OA books, as
@@ -28,30 +66,36 @@ evaluation set change.
 
 ```bash
 uv run python evaluation/scripts/fetch_evaluation_pdfs.py
+uv run python evaluation/scripts/fetch_evaluation_pdfs.py --corpus open-access   # just one corpus
 ```
 
 Downloads every `oa: true` entry that isn't already present. Non-OA entries
 are never touched by this script — if one is missing, it prints the DOI and
 the exact path to save the file to. Get that book through your institution's
-legal access (library subscription, interlibrary loan, etc.), save it there,
-and re-run the tests.
+legal access (library subscription, interlibrary loan, etc.), save it at the
+printed path, and re-run the tests.
 
 **Adding a new evaluation book** (e.g. a "difficult" PDF the segmentation
 heuristics scored low-confidence on during live testing against a real
 Zotero library) — see `CLAUDE.md` in this directory for the full step-by-step
-workflow, including the `evaluation/scripts/ground_truth_helper.py` draft-then-verify
-process and known failure modes. Short version:
+workflow, including which corpus it belongs in, the
+`evaluation/scripts/ground_truth_helper.py` draft-then-verify process, and
+known failure modes. Short version:
 
-1. Has a DOI? Add an entry to the committed `manifest.json` (`"oa": false,
-   "download_url": null` if it can't be freely redistributed — that's fully
-   supported, it just means `fetch_evaluation_pdfs.py` won't auto-download
-   it, only print the DOI for manual acquisition). No DOI, or can't be
-   identified/shared at all? Add it to `manifest.local.json` instead (same
-   schema, gitignored, never committed — see `CLAUDE.md`) so it's still
-   exercised by your own local test runs.
-2. Place (or fetch) the PDF at `<filename>` here.
-3. Build `<name>.expected.json` by actually inspecting the real PDF — never
-   guessed or extrapolated from the TOC alone (`CLAUDE.md` explains why).
+1. Decide the corpus (`open-access`/`copyrighted`/`pending` -- see
+   `CLAUDE.md`'s "Step 0").
+2. Has a DOI? Add an entry to that corpus's committed `manifest.json`
+   (`"oa": false, "download_url": null` if it can't be freely
+   redistributed — that's fully supported, it just means
+   `fetch_evaluation_pdfs.py` won't auto-download it, only print the DOI
+   for manual acquisition). No DOI, or can't be identified/shared at all?
+   Add it to that corpus's `manifest.local.json` instead (same schema,
+   gitignored, never committed — see `CLAUDE.md`) so it's still exercised
+   by your own local test runs.
+3. Place (or fetch) the PDF at `evaluation/corpus/<corpus>/<filename>`.
+4. Build `evaluation/corpus/<corpus>/<name>.expected.json` by actually
+   inspecting the real PDF — never guessed or extrapolated from the TOC
+   alone (`CLAUDE.md` explains why).
 
 ## Running an evaluation
 
@@ -128,17 +172,18 @@ PDFs; run it locally the same way CI does:
 uv run python evaluation/generate_report.py --out public/
 ```
 
-Produces two pages, both using the same table format: `public/index.html`
-(one row per book x strategy, with precision/recall/F1/time, best-F1 cell
-per row marked, plus a per-strategy summary ordered by aggregate F1) and
-`public/llm/index.html` (see "LLM strategy evaluation" below).
+Produces a `public/index.html` landing page linking to one report per
+corpus (`public/<corpus>/index.html`, one row per book x strategy, with
+precision/recall/F1/time, best-F1 cell per row marked, plus a per-strategy
+summary ordered by aggregate F1) and `public/<corpus>/llm/index.html` per
+corpus (see "LLM strategy evaluation" below).
 
 ### LLM strategy evaluation
 
 Unlike the heuristic and outline strategies, evaluating the LLM strategy
 costs real KISSKI API budget, so it is decoupled from report generation:
 `evaluation/refresh_llm_cache.py` is the only script that calls an LLM,
-and it writes its results into `evaluation/llm-cache/<book>.json` (raw
+and it writes its results into `evaluation/corpus/<corpus>/llm-cache/<book>.json` (raw
 chapters found + timing per model, committed to git) rather than printing
 a report directly. `evaluation/generate_report.py` then reads that cache
 for free on every run -- folding the single best-performing cached model
@@ -202,14 +247,14 @@ yet wired into any of the harnesses documented above -- see
 
 ## Evaluation set composition
 
-The committed `manifest.json` set (7 books) is small and, per the design
+The `open-access/` corpus (6 books) is small and, per the design
 spec's `## 1. Goal` motivation, skews toward well-produced academic books
 with a parseable embedded TOC page -- exactly the case the pure-heuristic
 pipeline already handles well (6 of 7 have `embedded_toc: true`; the 7th, a
 scan, still has a regex-detectable printed TOC).
 
-`manifest.local.json` (gitignored, per `CLAUDE.md`'s "no DOI" rule above)
-adds 10 more books sourced directly from a real personal Zotero library,
+The `copyrighted/` corpus (11 books) is sourced directly from a real
+personal Zotero library,
 selected for the opposite profile: `embedded_toc: false`, spanning
 1967-2020, native and scanned, German and English, none open access, and
 none with a Crossref-registered DOI at all (checked directly against the

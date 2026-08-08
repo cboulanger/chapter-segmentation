@@ -829,6 +829,10 @@ class TestExtractPrintedPageNumber(unittest.TestCase):
         text = long_line + "\nBody text follows."
         self.assertIsNone(extract_printed_page_number(text))
 
+    def test_does_not_match_number_glued_directly_to_adjacent_text(self):
+        self.assertIsNone(extract_printed_page_number("Section12\nBody text follows."))
+        self.assertIsNone(extract_printed_page_number("12Comparing Citation Styles\nBody text follows."))
+
 
 class TestExtractAuthorsNear(unittest.TestCase):
     def test_finds_person_entities_at_chapter_start(self):

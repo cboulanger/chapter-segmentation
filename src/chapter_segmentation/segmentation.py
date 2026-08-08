@@ -688,8 +688,9 @@ _PAGE_NUMBER_TOKEN_RE = re.compile(r"^[0-9]{1,4}$|^[ivxlcdm]{1,7}$", re.IGNORECA
 # (e.g. "Afterword", "Index") never false-positives as a roman numeral --
 # see evaluation/CLAUDE.md's "Known failure modes", this ports the fix
 # already proven there (evaluation/scripts/ground_truth_helper.py).
-_TRAILING_PAGE_NUM_RE = re.compile(r"(?<![A-Za-z])(\d{1,4}|[ivxlcdm]{1,7})\s*$", re.IGNORECASE)
-_LEADING_PAGE_NUM_RE = re.compile(r"^(\d{1,4}|[ivxlcdm]{1,7})(?![A-Za-z])", re.IGNORECASE)
+# Requires genuine boundaries (whitespace or string edge), not just absence of letters.
+_TRAILING_PAGE_NUM_RE = re.compile(r"(?:^|\s)(\d{1,4}|[ivxlcdm]{1,7})\s*$", re.IGNORECASE)
+_LEADING_PAGE_NUM_RE = re.compile(r"^(\d{1,4}|[ivxlcdm]{1,7})(?:\s|$)", re.IGNORECASE)
 
 _LOCATE_SCORE_THRESHOLD = 80.0  # rapidfuzz partial_ratio, 0-100
 # rapidfuzz partial_ratio is unreliable on very short strings (a near-blank

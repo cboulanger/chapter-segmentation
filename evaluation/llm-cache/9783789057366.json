@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T10:35:09.288943+00:00",
+  "generated_at": "2026-08-08T15:49:51.275255+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -36,67 +36,10 @@
             "Zimmer"
           ],
           "pdf_start_index": 218,
-          "pdf_end_index": 310,
-          "citation_pages": null,
-          "confidence": 0.75,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "103",
-          "authors": [
-            "las Weihnachten Erschrecken",
-            "Weihnachten Schluss",
-            "bin Tag Name",
-            "Minutenmir",
-            "Natürlich"
-          ],
-          "pdf_start_index": 311,
-          "pdf_end_index": 350,
-          "citation_pages": null,
-          "confidence": 0.8,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "An. rot, Weihnachten Schreien",
-          "authors": [
-            "Laut",
-            "Erschrecken",
-            "Erde Weihnachten",
-            "Turnen",
-            "Geburtstag Tür Fußball",
-            "Weihnachten Fuß Machen Küche"
-          ],
-          "pdf_start_index": 351,
-          "pdf_end_index": 385,
-          "citation_pages": null,
-          "confidence": 0.83,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "175",
-          "authors": [
-            "vielleicht Antworten",
-            "Glück Weihnachten",
-            "Langsam",
-            "für von aus Ferien",
-            "Erschrecken Seite",
-            "zum\neigentlich",
-            "Vergessen",
-            "Berg",
-            "Natürlich",
-            "Verkaufen",
-            "Rad",
-            "Schwester",
-            "Weihnachten Schwester"
-          ],
-          "pdf_start_index": 386,
           "pdf_end_index": 426,
-          "citation_pages": null,
-          "confidence": 0.8,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "199-405",
+          "confidence": 0.75,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -114,53 +57,9 @@
             "da dem erklären klettern"
           ],
           "pdf_start_index": 427,
-          "pdf_end_index": 466,
-          "citation_pages": null,
-          "confidence": 0.63,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "169",
-          "authors": [
-            "schenken lesen gestern",
-            "Zum im bei erschrecken",
-            "Traurig 177",
-            "Gefährlich Verkaufen See",
-            "Musik bin Geburtstag",
-            "Mensch",
-            "Ja",
-            "Freude Baden",
-            "wo kann",
-            "Weihnachten Bauer",
-            "Suchen",
-            "bin oben springen",
-            "las\nleben",
-            "gibt schreiben"
-          ],
-          "pdf_start_index": 467,
-          "pdf_end_index": 479,
-          "citation_pages": null,
-          "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "149",
-          "authors": [
-            "GUT-Zwischen\n„Schreiben Ich",
-            "Rad",
-            "Bett Steigen",
-            "Weihnachten Erschrecken",
-            "Erde",
-            "der sprechen",
-            "Erschrecken",
-            "Geschenk Erschrecken"
-          ],
-          "pdf_start_index": 480,
           "pdf_end_index": 487,
-          "citation_pages": "459-466",
-          "confidence": 0.62,
+          "citation_pages": "406-466",
+          "confidence": 0.63,
           "page_mapping_confidence": "high",
           "source": "llm"
         },
@@ -184,12 +83,12 @@
           "source": "llm"
         },
         {
-          "title": "SOZIOLOGEN UND RECHT",
+          "title": "SOZIOLOGIE UND RECHT",
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 508,
           "citation_pages": null,
-          "confidence": 0.95,
+          "confidence": 1.0,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         },
@@ -226,29 +125,10 @@
             "Geschichte"
           ],
           "pdf_start_index": 534,
-          "pdf_end_index": 571,
-          "citation_pages": null,
-          "confidence": 0.64,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "157",
-          "authors": [
-            "Schreien Rot Geburtstag Arbeiten Fressen",
-            "Ja",
-            "Eigentlich da Geschichte Vater",
-            "Zwei",
-            "Civil Sie Milch",
-            "Schlagen",
-            "Natürlich Genau",
-            "Ab"
-          ],
-          "pdf_start_index": 572,
           "pdf_end_index": 584,
-          "citation_pages": "549-561",
-          "confidence": 1.0,
-          "page_mapping_confidence": "high",
+          "citation_pages": "511-561",
+          "confidence": 0.64,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -268,9 +148,9 @@
           ],
           "pdf_start_index": 585,
           "pdf_end_index": 647,
-          "citation_pages": null,
+          "citation_pages": "562-622",
           "confidence": 0.63,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -284,9 +164,9 @@
           ],
           "pdf_start_index": 648,
           "pdf_end_index": 658,
-          "citation_pages": null,
+          "citation_pages": "623-78",
           "confidence": 0.8,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -307,30 +187,30 @@
           ],
           "pdf_start_index": 660,
           "pdf_end_index": 702,
-          "citation_pages": "635-677",
+          "citation_pages": "79-677",
           "confidence": 0.7,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 108.53195270802826,
+      "elapsed_seconds": 112.51044883392751,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
       "chapters": [
         {
-          "title": "Hagen Hof Dr. iur., Volkswagen-Stiftung, Hannover Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben",
+          "title": "Hagen Hof Dr. iur., Volkswagen-Stiftung, Hannover Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben.",
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
-          "citation_pages": null,
+          "citation_pages": "65-677",
           "confidence": 0.85,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 6.277567791985348,
-      "demand_at_run": 0
+      "elapsed_seconds": 8.693540500011295,
+      "demand_at_run": 1
     },
     "glm-4.7": {
       "chapters": [
@@ -339,13 +219,13 @@
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
-          "citation_pages": null,
+          "citation_pages": "65-677",
           "confidence": 0.85,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 8.585458165965974,
+      "elapsed_seconds": 4.758060459047556,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -355,13 +235,13 @@
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
-          "citation_pages": null,
+          "citation_pages": "65-677",
           "confidence": 0.85,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 12.186208624974824,
+      "elapsed_seconds": 9.368631749995984,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -371,18 +251,29 @@
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
-          "citation_pages": null,
+          "citation_pages": "65-677",
           "confidence": 0.85,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.9563560830429196,
+      "elapsed_seconds": 3.049731042003259,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
-      "chapters": [],
-      "elapsed_seconds": 63.34556712489575,
+      "chapters": [
+        {
+          "title": "Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben.",
+          "authors": [],
+          "pdf_start_index": 504,
+          "pdf_end_index": 702,
+          "citation_pages": "65-677",
+          "confidence": 0.85,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 65.88042104197666,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
@@ -392,13 +283,13 @@
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
-          "citation_pages": null,
+          "citation_pages": "65-677",
           "confidence": 0.85,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.8340629159938544,
+      "elapsed_seconds": 2.9658486250555143,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
@@ -408,29 +299,18 @@
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
-          "citation_pages": null,
+          "citation_pages": "65-677",
           "confidence": 0.85,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 7.601857207948342,
-      "demand_at_run": 0
+      "elapsed_seconds": 7.872879458009265,
+      "demand_at_run": 1
     },
     "qwen3.6-35b-a3b": {
-      "chapters": [
-        {
-          "title": "Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben.",
-          "authors": [],
-          "pdf_start_index": 504,
-          "pdf_end_index": 702,
-          "citation_pages": null,
-          "confidence": 0.85,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 79.84930208302103,
+      "chapters": [],
+      "elapsed_seconds": 84.54255437501706,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
@@ -440,14 +320,14 @@
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
-          "citation_pages": null,
+          "citation_pages": "65-677",
           "confidence": 0.85,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 125.20197929209098,
-      "demand_at_run": 2
+      "elapsed_seconds": 116.96220750000793,
+      "demand_at_run": 1
     }
   }
 }

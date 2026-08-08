@@ -377,9 +377,9 @@ guard as the rest of the evaluation set.
 ## Per-strategy standalone results (heuristic / outline / LLM)
 
 From `uv run python evaluation/generate_report.py --out public/` (heuristic,
-outline) plus the first `uv run python evaluation/refresh_llm_cache.py
---mode top5` run populating `evaluation/llm-cache/` (LLM) -- each strategy
-run independently via `analyze_attachment`, `analyze_attachment_outline_only`,
+outline) plus `uv run python evaluation/refresh_llm_cache.py --mode full`
+populating `evaluation/llm-cache/` (LLM) -- each strategy run independently
+via `analyze_attachment`, `analyze_attachment_outline_only`,
 `analyze_attachment_llm_only` against the full 17-book public-cache corpus,
 with no pipeline merge/fallback logic involved (see
 `docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md`).
@@ -389,11 +389,20 @@ full per-model breakdown at its `llm/index.html`. See `README.md`'s
 "Per-strategy evaluation report" / "LLM strategy evaluation" for how to
 reproduce.
 
-| Strategy | Precision | Recall | F1 | Found / Expected | Total time | Applicable books |
-| --- | --- | --- | --- | --- | --- | --- |
-| outline | 0.79 | 0.89 | 0.84 | 31/39 found, 31/35 expected | 0.6s | 3/17 |
-| heuristic | 0.71 | 0.50 | 0.58 | 145/204 found, 145/292 expected | 14.7s | 17/17 |
-| LLM (`qwen3.6-27b`, best of 10 cached models) | 0.72 | 0.37 | 0.49 | 107/148 found, 107/292 expected | 1922.5s | 17/17 |
+"Start accuracy"/"End accuracy" (added by
+`docs/superpowers/plans/2026-08-08-citation-pages-mapping.md`, see that
+section below) score `citation_pages` -- the printed-page-number metadata
+attached to each chapter -- restricted to chapters whose located PDF page
+range exactly matches ground truth AND whose expected `citation_pages` is
+non-null. Start requires an exact match (unmappable counts as wrong); end
+tolerates being up to 3 printed pages over-inclusive (see
+`evaluation/metrics.py`'s `citation_pages_metrics`).
+
+| Strategy | Precision | Recall | F1 | Found / Expected | Total time | Start accuracy | End accuracy | Applicable books |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| outline | 0.79 | 0.89 | 0.84 | 31/39 found, 31/35 expected | 0.6s | 0.16 | 0.48 | 3/17 |
+| heuristic | 0.71 | 0.50 | 0.58 | 145/204 found, 145/292 expected | 14.8s | 0.99 | 0.99 | 17/17 |
+| LLM (`glm-4.7`, best of 10 cached models) | 0.71 | 0.37 | 0.48 | 107/150 found, 107/292 expected | 239.7s | 0.99 | 0.99 | 17/17 |
 
 - **Outline scores highest but applies narrowly.** Only 3 of the 17 corpus
   books carry a real embedded PDF outline/bookmark catalog
@@ -448,17 +457,49 @@ reproduce.
   signal from (see "Diverse real-library evaluation set" above --
   degenerate/absent text layers, OCR quality) -- not an LLM-specific gap,
   a shared data-quality problem no text-based strategy can solve.
-- **The "best" model by F1 is now a clear time-cost outlier.** All ten
-  cached models cluster tightly on accuracy (F1 0.32-0.49; nine of the ten
-  land within 0.42-0.49), but `qwen3.6-27b` -- the highest-F1 model at
-  0.49 -- took 1922.5s total, 4-14x longer than the other nine (134.7s-
-  1158.0s). This is presumably model-serving latency, not anything this
-  fix affects, but it means the report's "best model" pick (highest F1,
-  ties broken by lower time -- see `evaluation/generate_report.py`'s
-  `_best_llm_model()`) is choosing accuracy over speed here; a
-  deployment decision would likely prefer `mistral-medium-3.5-128b` or
-  `devstral-2-123b-instruct-2512` (F1 0.48, both under 420s total)
-  instead.
+- **The "best" model by F1 changes between runs, and one model's own time
+  swung by more than an order of magnitude.** After the full cache
+  regeneration below, nine of the ten cached models cluster tightly at F1
+  0.43-0.48 (`qwen3.5-122b-a10b` remains a clear outlier at 0.19, the
+  weakest model overall); the top four (`glm-4.7`, `deepseek-v4-flash`,
+  `mistral-medium-3.5-128b`, `devstral-2-123b-instruct-2512`) all land at
+  F1 0.48, and `evaluation/generate_report.py`'s `_best_llm_model()`
+  (highest F1, ties broken by lower time) currently picks `glm-4.7`
+  (239.7s total). `qwen3.6-27b` -- the previous snapshot's pick at F1 0.49
+  and 1922.5s -- dropped to F1 0.43 at 2388.6s this run, on the same
+  prompt and the same corpus: real KISSKI model-serving variance (latency
+  and occasional zero-chapter responses on individual book/model pairs,
+  logged as `giving up (invalid_or_truncated_json)`) is large enough to
+  reorder the "best model" pick run over run. Treat any single run's "best
+  model" as noisy, not a stable ranking; a deployment decision would look
+  at the tightly-clustered F1 0.43-0.48 group as roughly equivalent and
+  pick among them on time/cost instead.
+- **`citation_pages` mapping accuracy is now measured, and the fix works.**
+  Before `docs/superpowers/plans/2026-08-08-citation-pages-mapping.md`,
+  `_chapters_from_located` re-derived a chapter's printed start/end pages
+  by scanning body-page text, ignoring the printed page number already
+  parsed off the table of contents (`TocEntry.printed_page_number`) --
+  fragile, and with no metric tracking how often it worked. The fix
+  prefers that TOC-declared value first, falls back to cross-page anchor
+  interpolation, and (for chapter ends) to reading the page before the
+  next chapter's raw start or the book's last page. Measured on the
+  full corpus (restricted to chapters whose located PDF range exactly
+  matches ground truth and whose expected `citation_pages` is non-null,
+  via `citation_pages_metrics`): **heuristic scores 142/144 exact start
+  matches (98.6%) and 143/144 end matches within tolerance (99.3%)**;
+  the best LLM model scores 105/106 on both (99.1%) -- the LLM strategy's
+  own printed-page-number field was blind to roman numerals before Task 6
+  of that plan fixed the extraction schema, which this run's numbers now
+  reflect. **Outline scores far lower** (5/31 start, 15/31 end, 16%/48%)
+  because `extract_outline_candidates` never populates a TOC-declared
+  page number at all (a PDF outline/bookmark has no printed-page-number
+  field to read) -- every outline-sourced chapter falls through to the
+  weaker inference/scan fallbacks, and roughly half don't resolve a page
+  at all (`start_coverage`/`end_coverage` both 0.48). This is a real,
+  currently-accepted gap in the outline strategy, not a measurement
+  artifact; closing it would mean giving `extract_outline_candidates` a
+  way to read a printed page number where one is visible near the
+  bookmark's target page, not yet attempted.
 - The LLM cache now covers 10 distinct KISSKI models, up from the initial
   5: the nightly `fill-gaps` GitHub Actions job added 5 more
   (`qwen3.5-122b-a10b`, `qwen3-coder-next`, `qwen3.6-27b`,

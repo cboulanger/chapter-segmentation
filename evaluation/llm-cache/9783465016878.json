@@ -1,9 +1,103 @@
 {
-  "generated_at": "2026-08-08T10:40:23.571351+00:00",
+  "generated_at": "2026-08-08T15:58:15.922677+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
-      "chapters": [],
-      "elapsed_seconds": 11.045913249952719,
+      "chapters": [
+        {
+          "title": "I. DAVIDF. LINDENFELD: The Education of Prussian Higher Civil Servants ın the Staatswissenschaften, 1897-1914",
+          "authors": [
+            "LINDENFELD",
+            "Brauchen",
+            "dein etwas",
+            "Leute",
+            "Glas Papa",
+            "Geld",
+            "Müssen\nErschrecken"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 243,
+          "citation_pages": "23-226",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "II. HUBERT ROTTLEUTHNER: Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber",
+          "authors": [
+            "Drei Rechtssoziologien",
+            "Eugen Ehrlich",
+            "Hugo Sinzheimer",
+            "Max Weber",
+            "Der Beginn",
+            "Rechtssoziologie",
+            "mit dem",
+            "Namen Eugen",
+            "z.B. von Manfred Plötzlich",
+            "Glücklich Seite",
+            "Versuchen da Lehrer",
+            "Opa",
+            "Weihnachten Glauben",
+            "Bild",
+            "Beispi"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 270,
+          "citation_pages": "227-252",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "III. JSRGEN DALBERG-LARSEN: The Influence of Social Science on the Dogmatics of Private Law ın Denmark and Norway ın the Period after 1900",
+          "authors": [
+            "Spiel Schüler"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 289,
+          "citation_pages": "253-272",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "IV. OTTO W.M. KAMSTRA / FRANK B. M. KUNNEMAN: Strukturen der niederländischen rechtsmethodologischen Diskussion ım 20. Jahrhundert",
+          "authors": [
+            "Jahrhundert Seit",
+            "Jahren",
+            "Äußerungen",
+            "Bauer Haare",
+            "Müssen Haus dem",
+            "Weihnachten Weihnachten Schlafen",
+            "Weihnachten Arbeiten",
+            "Schwester"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 300,
+          "citation_pages": "273-282",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "V. JUHA PÖYHÖNEN: Socıal Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law",
+          "authors": [
+            "JUHA PÖYHÖNEN",
+            "Otto Brusin",
+            "Dort Rad dem",
+            "Minutenmir",
+            "Geschichte",
+            "Opa",
+            "Fuß Apfel"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 305,
+          "citation_pages": "283-287",
+          "confidence": 0.94,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 31.53836466697976,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -20,9 +114,9 @@
           ],
           "pdf_start_index": 53,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "ix-197",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -38,9 +132,9 @@
           ],
           "pdf_start_index": 219,
           "pdf_end_index": 243,
-          "citation_pages": null,
+          "citation_pages": "201-226",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -64,9 +158,9 @@
           ],
           "pdf_start_index": 245,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "227-252",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -76,9 +170,9 @@
           ],
           "pdf_start_index": 271,
           "pdf_end_index": 289,
-          "citation_pages": null,
+          "citation_pages": "253-272",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -95,9 +189,9 @@
           ],
           "pdf_start_index": 291,
           "pdf_end_index": 300,
-          "citation_pages": null,
+          "citation_pages": "273-282",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -113,14 +207,14 @@
           ],
           "pdf_start_index": 301,
           "pdf_end_index": 305,
-          "citation_pages": null,
+          "citation_pages": "283-287",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 9.109023042023182,
-      "demand_at_run": 0
+      "elapsed_seconds": 11.534293874981813,
+      "demand_at_run": 1
     },
     "glm-4.7": {
       "chapters": [
@@ -137,9 +231,9 @@
           ],
           "pdf_start_index": 219,
           "pdf_end_index": 243,
-          "citation_pages": null,
+          "citation_pages": "201-226",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -163,9 +257,9 @@
           ],
           "pdf_start_index": 245,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "227-252",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -175,9 +269,9 @@
           ],
           "pdf_start_index": 271,
           "pdf_end_index": 289,
-          "citation_pages": null,
+          "citation_pages": "253-272",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -194,9 +288,9 @@
           ],
           "pdf_start_index": 291,
           "pdf_end_index": 300,
-          "citation_pages": null,
+          "citation_pages": "273-282",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -212,13 +306,13 @@
           ],
           "pdf_start_index": 301,
           "pdf_end_index": 305,
-          "citation_pages": null,
+          "citation_pages": "283-287",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 5.252189167076722,
+      "elapsed_seconds": 3.76587549992837,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -236,9 +330,9 @@
           ],
           "pdf_start_index": 219,
           "pdf_end_index": 243,
-          "citation_pages": null,
+          "citation_pages": "201-226",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -262,9 +356,9 @@
           ],
           "pdf_start_index": 245,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "227-252",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -274,9 +368,9 @@
           ],
           "pdf_start_index": 271,
           "pdf_end_index": 289,
-          "citation_pages": null,
+          "citation_pages": "253-272",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -293,9 +387,9 @@
           ],
           "pdf_start_index": 291,
           "pdf_end_index": 300,
-          "citation_pages": null,
+          "citation_pages": "273-282",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -311,13 +405,13 @@
           ],
           "pdf_start_index": 301,
           "pdf_end_index": 305,
-          "citation_pages": null,
+          "citation_pages": "283-287",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 5.831466709030792,
+      "elapsed_seconds": 5.561434000032023,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -335,9 +429,9 @@
           ],
           "pdf_start_index": 219,
           "pdf_end_index": 243,
-          "citation_pages": null,
+          "citation_pages": "201-226",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -361,9 +455,9 @@
           ],
           "pdf_start_index": 245,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "227-252",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -373,9 +467,9 @@
           ],
           "pdf_start_index": 271,
           "pdf_end_index": 289,
-          "citation_pages": null,
+          "citation_pages": "253-272",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -392,9 +486,9 @@
           ],
           "pdf_start_index": 291,
           "pdf_end_index": 300,
-          "citation_pages": null,
+          "citation_pages": "273-282",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -410,112 +504,18 @@
           ],
           "pdf_start_index": 301,
           "pdf_end_index": 305,
-          "citation_pages": null,
+          "citation_pages": "283-287",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.5311658330028877,
+      "elapsed_seconds": 2.5448589170118794,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
-      "chapters": [
-        {
-          "title": "The Education of Prussian Higher Civil Servants in the Staatswissenschaften, 1897-1914.",
-          "authors": [
-            "LINDENFELD",
-            "Brauchen",
-            "dein etwas",
-            "Leute",
-            "Glas Papa",
-            "Geld",
-            "Müssen\nErschrecken"
-          ],
-          "pdf_start_index": 219,
-          "pdf_end_index": 243,
-          "citation_pages": null,
-          "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber.",
-          "authors": [
-            "Drei Rechtssoziologien",
-            "Eugen Ehrlich",
-            "Hugo Sinzheimer",
-            "Max Weber",
-            "Der Beginn",
-            "Rechtssoziologie",
-            "mit dem",
-            "Namen Eugen",
-            "z.B. von Manfred Plötzlich",
-            "Glücklich Seite",
-            "Versuchen da Lehrer",
-            "Opa",
-            "Weihnachten Glauben",
-            "Bild",
-            "Beispi"
-          ],
-          "pdf_start_index": 245,
-          "pdf_end_index": 270,
-          "citation_pages": null,
-          "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "The Influence of Social Science on the Dogmatics of Private Law in Denmark and Norway in the Period after 1900",
-          "authors": [
-            "Spiel Schüler"
-          ],
-          "pdf_start_index": 271,
-          "pdf_end_index": 289,
-          "citation_pages": null,
-          "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Strukturen der niederländischen rechtsmethodologischen Diskussion im 20. Jahrhundert.",
-          "authors": [
-            "Jahrhundert Seit",
-            "Jahren",
-            "Äußerungen",
-            "Bauer Haare",
-            "Müssen Haus dem",
-            "Weihnachten Weihnachten Schlafen",
-            "Weihnachten Arbeiten",
-            "Schwester"
-          ],
-          "pdf_start_index": 291,
-          "pdf_end_index": 300,
-          "citation_pages": null,
-          "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law.",
-          "authors": [
-            "JUHA PÖYHÖNEN",
-            "Otto Brusin",
-            "Dort Rad dem",
-            "Minutenmir",
-            "Geschichte",
-            "Opa",
-            "Fuß Apfel"
-          ],
-          "pdf_start_index": 301,
-          "pdf_end_index": 305,
-          "citation_pages": null,
-          "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 57.72931237495504,
+      "chapters": [],
+      "elapsed_seconds": 64.02244583307765,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
@@ -533,9 +533,9 @@
           ],
           "pdf_start_index": 219,
           "pdf_end_index": 243,
-          "citation_pages": null,
+          "citation_pages": "201-226",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -559,9 +559,9 @@
           ],
           "pdf_start_index": 245,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "227-252",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -571,9 +571,9 @@
           ],
           "pdf_start_index": 271,
           "pdf_end_index": 289,
-          "citation_pages": null,
+          "citation_pages": "253-272",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -590,9 +590,9 @@
           ],
           "pdf_start_index": 291,
           "pdf_end_index": 300,
-          "citation_pages": null,
+          "citation_pages": "273-282",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -608,13 +608,13 @@
           ],
           "pdf_start_index": 301,
           "pdf_end_index": 305,
-          "citation_pages": null,
+          "citation_pages": "283-287",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.3849542080424726,
+      "elapsed_seconds": 2.282774333958514,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
@@ -632,9 +632,9 @@
           ],
           "pdf_start_index": 219,
           "pdf_end_index": 243,
-          "citation_pages": null,
+          "citation_pages": "201-226",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -658,9 +658,9 @@
           ],
           "pdf_start_index": 245,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "227-252",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -670,9 +670,9 @@
           ],
           "pdf_start_index": 271,
           "pdf_end_index": 289,
-          "citation_pages": null,
+          "citation_pages": "253-272",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -689,9 +689,9 @@
           ],
           "pdf_start_index": 291,
           "pdf_end_index": 300,
-          "citation_pages": null,
+          "citation_pages": "273-282",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -707,14 +707,14 @@
           ],
           "pdf_start_index": 301,
           "pdf_end_index": 305,
-          "citation_pages": null,
+          "citation_pages": "283-287",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 5.739895750069991,
-      "demand_at_run": 0
+      "elapsed_seconds": 5.609648208948784,
+      "demand_at_run": 1
     },
     "qwen3.6-35b-a3b": {
       "chapters": [
@@ -731,9 +731,9 @@
           ],
           "pdf_start_index": 219,
           "pdf_end_index": 243,
-          "citation_pages": null,
+          "citation_pages": "201-226",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -757,9 +757,9 @@
           ],
           "pdf_start_index": 245,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "227-252",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -769,9 +769,9 @@
           ],
           "pdf_start_index": 271,
           "pdf_end_index": 289,
-          "citation_pages": null,
+          "citation_pages": "253-272",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -788,9 +788,9 @@
           ],
           "pdf_start_index": 291,
           "pdf_end_index": 300,
-          "citation_pages": null,
+          "citation_pages": "273-282",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -806,13 +806,13 @@
           ],
           "pdf_start_index": 301,
           "pdf_end_index": 305,
-          "citation_pages": null,
+          "citation_pages": "283-287",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 84.26127041701693,
+      "elapsed_seconds": 28.33263145806268,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
@@ -830,9 +830,9 @@
           ],
           "pdf_start_index": 219,
           "pdf_end_index": 243,
-          "citation_pages": null,
+          "citation_pages": "201-226",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -856,9 +856,9 @@
           ],
           "pdf_start_index": 245,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "227-252",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -868,9 +868,9 @@
           ],
           "pdf_start_index": 271,
           "pdf_end_index": 289,
-          "citation_pages": null,
+          "citation_pages": "253-272",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -887,9 +887,9 @@
           ],
           "pdf_start_index": 291,
           "pdf_end_index": 300,
-          "citation_pages": null,
+          "citation_pages": "273-282",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -905,14 +905,14 @@
           ],
           "pdf_start_index": 301,
           "pdf_end_index": 305,
-          "citation_pages": null,
+          "citation_pages": "283-287",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 83.7771282910835,
-      "demand_at_run": 2
+      "elapsed_seconds": 86.19864312501159,
+      "demand_at_run": 1
     }
   }
 }

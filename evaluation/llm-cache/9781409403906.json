@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T10:41:43.439428+00:00",
+  "generated_at": "2026-08-08T16:00:25.313151+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -8,9 +8,9 @@
           "authors": [],
           "pdf_start_index": 65,
           "pdf_end_index": 184,
-          "citation_pages": null,
+          "citation_pages": "13-72",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -18,9 +18,9 @@
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
+          "citation_pages": "177-200",
           "confidence": 0.81,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -31,9 +31,9 @@
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -43,9 +43,9 @@
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
+          "citation_pages": "219-254",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -53,9 +53,9 @@
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -65,13 +65,13 @@
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 13.530623583937995,
+      "elapsed_seconds": 13.331038207979873,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -81,32 +81,19 @@
           "authors": [],
           "pdf_start_index": 65,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "vii-63",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
           "title": "Particularly",
           "authors": [],
           "pdf_start_index": 74,
-          "pdf_end_index": 79,
-          "citation_pages": null,
-          "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "‘Administration’",
-          "authors": [
-            "I. Improve",
-            "A. Nature"
-          ],
-          "pdf_start_index": 80,
           "pdf_end_index": 192,
-          "citation_pages": null,
+          "citation_pages": "13-176",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -114,9 +101,9 @@
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
+          "citation_pages": "177-200",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -127,9 +114,9 @@
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -139,9 +126,9 @@
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
+          "citation_pages": "219-254",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -149,9 +136,9 @@
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -161,14 +148,14 @@
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 8.944181458093226,
-      "demand_at_run": 0
+      "elapsed_seconds": 6.2552937919972464,
+      "demand_at_run": 1
     },
     "glm-4.7": {
       "chapters": [
@@ -177,9 +164,9 @@
           "authors": [],
           "pdf_start_index": 65,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "vii-63",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -187,9 +174,9 @@
           "authors": [],
           "pdf_start_index": 74,
           "pdf_end_index": 192,
-          "citation_pages": null,
+          "citation_pages": "13-176",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -197,9 +184,9 @@
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
+          "citation_pages": "177-200",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -210,9 +197,9 @@
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -222,9 +209,9 @@
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
+          "citation_pages": "219-254",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -232,9 +219,9 @@
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -244,25 +231,65 @@
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 6.415986999985762,
+      "elapsed_seconds": 6.802371125086211,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
       "chapters": [
         {
+          "title": "Shoulder",
+          "authors": [],
+          "pdf_start_index": 65,
+          "pdf_end_index": 73,
+          "citation_pages": "4-3",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Particularly",
+          "authors": [],
+          "pdf_start_index": 74,
+          "pdf_end_index": 90,
+          "citation_pages": "4-3",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "'Administration'",
+          "authors": [],
+          "pdf_start_index": 91,
+          "pdf_end_index": 95,
+          "citation_pages": "4-85",
+          "confidence": 0.75,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Central and Eastern Europe After Transition",
+          "authors": [],
+          "pdf_start_index": 96,
+          "pdf_end_index": 192,
+          "citation_pages": "vi-182",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
           "title": "The Democratization and Modernization of Post-communist Judiciaries",
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
+          "citation_pages": "177-200",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -273,9 +300,9 @@
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -285,9 +312,9 @@
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
+          "citation_pages": "219-254",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -295,9 +322,9 @@
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -307,13 +334,13 @@
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 4.459196584066376,
+      "elapsed_seconds": 15.560951667022891,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -323,9 +350,9 @@
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
+          "citation_pages": "177-200",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -336,9 +363,9 @@
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -348,9 +375,9 @@
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
+          "citation_pages": "219-254",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -358,9 +385,9 @@
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -370,13 +397,13 @@
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.100002208026126,
+      "elapsed_seconds": 2.0259555829688907,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
@@ -386,9 +413,9 @@
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
+          "citation_pages": "177-200",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -399,9 +426,9 @@
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -411,9 +438,9 @@
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
+          "citation_pages": "219-254",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -421,9 +448,9 @@
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -433,86 +460,119 @@
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 42.00345566694159,
+      "elapsed_seconds": 59.135420624981634,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
       "chapters": [
         {
+          "title": "Shoulder",
+          "authors": [],
+          "pdf_start_index": 65,
+          "pdf_end_index": 73,
+          "citation_pages": "13-72",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Particularly",
+          "authors": [],
+          "pdf_start_index": 74,
+          "pdf_end_index": 79,
+          "citation_pages": "73-69",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘Administration’",
+          "authors": [
+            "I. Improve",
+            "A. Nature"
+          ],
+          "pdf_start_index": 80,
+          "pdf_end_index": 95,
+          "citation_pages": "70-85",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
           "title": "Central and Eastern Europe After Transition",
           "authors": [],
           "pdf_start_index": 96,
           "pdf_end_index": 192,
-          "citation_pages": null,
+          "citation_pages": "vi-182",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
-          "title": "The Democratization and Modernization of Post-communist Judiciaries",
+          "title": "7 The Democratization and Modernization of Post-communist Judiciaries",
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
-          "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "177-200",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Bureaucratic and Managerial Cultures in Central Eastern European Courts",
+          "title": "8 Bureaucratic and Managerial Cultures in Central Eastern European Courts",
           "authors": [
             "Managerial Cultures",
             "Daniela Piana"
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Polish Prosecutors, Political Corruption, and Legal Culture",
+          "title": "9 Polish Prosecutors, Political Corruption, and Legal Culture",
           "authors": [
             "David Nelken"
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
-          "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "219-254",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Notaries in Central Europe: From State Employment to Professional Independence — A Rocky Path",
+          "title": "10 Notaries in Central Europe: From State Employment to Professional Independence — A Rocky Path",
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Multiple Transitions to the EU Constitutional Project: The Case of Eastern European Legal Professions",
+          "title": "11 Multiple Transitions to the EU Constitutional Project: The Case of Eastern European Legal Professions",
           "authors": [
             "Vittorio Olgiati"
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.04683629097417,
+      "elapsed_seconds": 5.896753582987003,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
@@ -522,9 +582,9 @@
           "authors": [],
           "pdf_start_index": 96,
           "pdf_end_index": 192,
-          "citation_pages": null,
+          "citation_pages": "vi-182",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -532,9 +592,9 @@
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
+          "citation_pages": "177-200",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -545,9 +605,9 @@
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -557,9 +617,9 @@
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
+          "citation_pages": "219-254",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -567,9 +627,9 @@
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -579,14 +639,14 @@
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 4.969303292105906,
-      "demand_at_run": 0
+      "elapsed_seconds": 8.396359375095926,
+      "demand_at_run": 1
     },
     "qwen3.6-35b-a3b": {
       "chapters": [
@@ -595,9 +655,9 @@
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
+          "citation_pages": "177-200",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -608,9 +668,9 @@
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -620,9 +680,9 @@
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
+          "citation_pages": "219-254",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -630,9 +690,9 @@
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -642,13 +702,13 @@
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 32.243426167056896,
+      "elapsed_seconds": 39.02934483299032,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
@@ -658,9 +718,9 @@
           "authors": [],
           "pdf_start_index": 193,
           "pdf_end_index": 210,
-          "citation_pages": null,
+          "citation_pages": "177-200",
           "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -671,9 +731,9 @@
           ],
           "pdf_start_index": 211,
           "pdf_end_index": 228,
-          "citation_pages": null,
+          "citation_pages": "201-218",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -683,9 +743,9 @@
           ],
           "pdf_start_index": 229,
           "pdf_end_index": 263,
-          "citation_pages": null,
+          "citation_pages": "219-254",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -693,9 +753,9 @@
           "authors": [],
           "pdf_start_index": 265,
           "pdf_end_index": 283,
-          "citation_pages": null,
+          "citation_pages": "255-276",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -705,14 +765,14 @@
           ],
           "pdf_start_index": 285,
           "pdf_end_index": 353,
-          "citation_pages": null,
+          "citation_pages": "277-345",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 79.86239829205442,
-      "demand_at_run": 2
+      "elapsed_seconds": 129.38127212505788,
+      "demand_at_run": 1
     }
   }
 }

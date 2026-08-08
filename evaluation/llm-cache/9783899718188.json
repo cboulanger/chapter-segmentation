@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T10:37:08.320978+00:00",
+  "generated_at": "2026-08-08T15:53:03.651916+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -15,9 +15,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -35,9 +35,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -53,9 +53,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -70,9 +70,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -91,9 +91,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -108,9 +108,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -126,9 +126,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -139,13 +139,13 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 20.87686920899432,
+      "elapsed_seconds": 20.772479375009425,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -162,9 +162,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -182,9 +182,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -200,9 +200,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -217,9 +217,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -238,9 +238,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -255,9 +255,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -273,9 +273,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -286,14 +286,14 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 5.291172249941155,
-      "demand_at_run": 0
+      "elapsed_seconds": 7.878735792008229,
+      "demand_at_run": 1
     },
     "glm-4.7": {
       "chapters": [
@@ -309,9 +309,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -329,9 +329,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -347,9 +347,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -364,9 +364,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -385,9 +385,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -402,9 +402,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -420,9 +420,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -433,13 +433,13 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 7.930464250035584,
+      "elapsed_seconds": 8.862026832997799,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -456,9 +456,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -476,9 +476,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -494,9 +494,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -511,9 +511,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -532,9 +532,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -549,9 +549,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -567,9 +567,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -580,13 +580,13 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 10.45279070804827,
+      "elapsed_seconds": 9.866045292001218,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -603,9 +603,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -623,9 +623,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -641,9 +641,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -658,9 +658,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -679,9 +679,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -696,9 +696,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -714,9 +714,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -727,13 +727,13 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 4.224287208053283,
+      "elapsed_seconds": 4.27949708304368,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
@@ -750,9 +750,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -770,9 +770,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -788,9 +788,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -805,9 +805,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -826,9 +826,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -843,9 +843,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -861,9 +861,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -874,13 +874,13 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 45.84558108402416,
+      "elapsed_seconds": 47.89389912493061,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
@@ -897,9 +897,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -917,9 +917,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -935,9 +935,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -952,9 +952,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -973,9 +973,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -990,9 +990,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1008,9 +1008,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1021,13 +1021,13 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 3.6329064579913393,
+      "elapsed_seconds": 3.635166791966185,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
@@ -1044,9 +1044,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1064,9 +1064,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1082,9 +1082,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1099,9 +1099,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1120,9 +1120,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1137,9 +1137,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1155,9 +1155,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1168,14 +1168,14 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 12.000739292008802,
-      "demand_at_run": 0
+      "elapsed_seconds": 9.954896667040884,
+      "demand_at_run": 1
     },
     "qwen3.6-35b-a3b": {
       "chapters": [
@@ -1191,9 +1191,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1211,9 +1211,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1229,9 +1229,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1246,9 +1246,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1267,9 +1267,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1284,9 +1284,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1302,9 +1302,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1315,13 +1315,13 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 49.52364245895296,
+      "elapsed_seconds": 31.615447791060433,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
@@ -1338,9 +1338,9 @@
           ],
           "pdf_start_index": 49,
           "pdf_end_index": 73,
-          "citation_pages": null,
+          "citation_pages": "53-78",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1358,9 +1358,9 @@
           ],
           "pdf_start_index": 75,
           "pdf_end_index": 76,
-          "citation_pages": null,
+          "citation_pages": "79-98",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1376,9 +1376,9 @@
           ],
           "pdf_start_index": 77,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "99-124",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1393,9 +1393,9 @@
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 147,
-          "citation_pages": null,
+          "citation_pages": "125-152",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1414,9 +1414,9 @@
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 167,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1431,9 +1431,9 @@
           ],
           "pdf_start_index": 169,
           "pdf_end_index": 195,
-          "citation_pages": null,
+          "citation_pages": "173-200",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1449,9 +1449,9 @@
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 208,
-          "citation_pages": null,
+          "citation_pages": "201-212",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1462,14 +1462,14 @@
           ],
           "pdf_start_index": 209,
           "pdf_end_index": 215,
-          "citation_pages": null,
+          "citation_pages": "213-219",
           "confidence": 0.99,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 119.02600537496619,
-      "demand_at_run": 2
+      "elapsed_seconds": 192.36871687497478,
+      "demand_at_run": 1
     }
   }
 }

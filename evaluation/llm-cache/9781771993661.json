@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T10:15:37.182265+00:00",
+  "generated_at": "2026-08-08T15:27:46.983522+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -12,9 +12,9 @@
           ],
           "pdf_start_index": 48,
           "pdf_end_index": 70,
-          "citation_pages": null,
+          "citation_pages": "35-58",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -25,9 +25,9 @@
           ],
           "pdf_start_index": 72,
           "pdf_end_index": 91,
-          "citation_pages": null,
+          "citation_pages": "59-80",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -40,9 +40,9 @@
           ],
           "pdf_start_index": 94,
           "pdf_end_index": 119,
-          "citation_pages": null,
+          "citation_pages": "81-106",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -56,9 +56,9 @@
           ],
           "pdf_start_index": 120,
           "pdf_end_index": 143,
-          "citation_pages": null,
+          "citation_pages": "107-130",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -68,9 +68,9 @@
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 162,
-          "citation_pages": null,
+          "citation_pages": "131-152",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -81,9 +81,9 @@
           ],
           "pdf_start_index": 166,
           "pdf_end_index": 184,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.94,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -93,9 +93,9 @@
           ],
           "pdf_start_index": 186,
           "pdf_end_index": 217,
-          "citation_pages": null,
+          "citation_pages": "173-204",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -111,7 +111,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 19.433733290992677,
+      "elapsed_seconds": 19.776400040951557,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -125,9 +125,9 @@
           ],
           "pdf_start_index": 48,
           "pdf_end_index": 70,
-          "citation_pages": null,
+          "citation_pages": "35-58",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -138,9 +138,9 @@
           ],
           "pdf_start_index": 72,
           "pdf_end_index": 91,
-          "citation_pages": null,
+          "citation_pages": "59-80",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -153,9 +153,9 @@
           ],
           "pdf_start_index": 94,
           "pdf_end_index": 119,
-          "citation_pages": null,
+          "citation_pages": "81-106",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -169,9 +169,9 @@
           ],
           "pdf_start_index": 120,
           "pdf_end_index": 143,
-          "citation_pages": null,
+          "citation_pages": "107-130",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -181,9 +181,9 @@
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 162,
-          "citation_pages": null,
+          "citation_pages": "131-152",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -194,9 +194,9 @@
           ],
           "pdf_start_index": 166,
           "pdf_end_index": 184,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.94,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -206,9 +206,9 @@
           ],
           "pdf_start_index": 186,
           "pdf_end_index": 217,
-          "citation_pages": null,
+          "citation_pages": "173-204",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -224,8 +224,8 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 5.92228483397048,
-      "demand_at_run": 0
+      "elapsed_seconds": 6.404106999980286,
+      "demand_at_run": 1
     },
     "glm-4.7": {
       "chapters": [
@@ -238,9 +238,9 @@
           ],
           "pdf_start_index": 48,
           "pdf_end_index": 70,
-          "citation_pages": null,
+          "citation_pages": "35-58",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -251,9 +251,9 @@
           ],
           "pdf_start_index": 72,
           "pdf_end_index": 91,
-          "citation_pages": null,
+          "citation_pages": "59-80",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -266,9 +266,9 @@
           ],
           "pdf_start_index": 94,
           "pdf_end_index": 119,
-          "citation_pages": null,
+          "citation_pages": "81-106",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -282,9 +282,9 @@
           ],
           "pdf_start_index": 120,
           "pdf_end_index": 143,
-          "citation_pages": null,
+          "citation_pages": "107-130",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -294,9 +294,9 @@
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 162,
-          "citation_pages": null,
+          "citation_pages": "131-152",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -307,9 +307,9 @@
           ],
           "pdf_start_index": 166,
           "pdf_end_index": 184,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -319,9 +319,9 @@
           ],
           "pdf_start_index": 186,
           "pdf_end_index": 217,
-          "citation_pages": null,
+          "citation_pages": "173-204",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -337,7 +337,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 7.196710624964908,
+      "elapsed_seconds": 9.437032083049417,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -351,9 +351,9 @@
           ],
           "pdf_start_index": 48,
           "pdf_end_index": 70,
-          "citation_pages": null,
+          "citation_pages": "35-58",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -364,9 +364,9 @@
           ],
           "pdf_start_index": 72,
           "pdf_end_index": 91,
-          "citation_pages": null,
+          "citation_pages": "59-80",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -379,9 +379,9 @@
           ],
           "pdf_start_index": 94,
           "pdf_end_index": 119,
-          "citation_pages": null,
+          "citation_pages": "81-106",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -395,9 +395,9 @@
           ],
           "pdf_start_index": 120,
           "pdf_end_index": 143,
-          "citation_pages": null,
+          "citation_pages": "107-130",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -407,9 +407,9 @@
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 162,
-          "citation_pages": null,
+          "citation_pages": "131-152",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -420,9 +420,9 @@
           ],
           "pdf_start_index": 166,
           "pdf_end_index": 184,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.94,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -432,9 +432,9 @@
           ],
           "pdf_start_index": 186,
           "pdf_end_index": 217,
-          "citation_pages": null,
+          "citation_pages": "173-204",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -450,123 +450,10 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 11.072612082934938,
+      "elapsed_seconds": 8.993321583024226,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
-      "chapters": [
-        {
-          "title": "Race and Colonialism in Socio-legal Studies in Canada",
-          "authors": [
-            "Carmela Murdocca",
-            "Shaira Vadasaria",
-            "Timothy Bryan"
-          ],
-          "pdf_start_index": 48,
-          "pdf_end_index": 70,
-          "citation_pages": null,
-          "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Jurisfiction and Other Settler-Colonial Legal Imaginaries",
-          "authors": [
-            "Stacy Douglas",
-            "Stephen Harper"
-          ],
-          "pdf_start_index": 72,
-          "pdf_end_index": 79,
-          "citation_pages": null,
-          "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Making Terrorism: Security Practices and the Production of Terror Activities in Canada",
-          "authors": [
-            "Yavar Hameed",
-            "Jeffrey Monaghan",
-            "Richard Ericson",
-            "Skill"
-          ],
-          "pdf_start_index": 94,
-          "pdf_end_index": 119,
-          "citation_pages": null,
-          "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Law, Gendered Violence, and Justice: Critically Engaging #MeToo",
-          "authors": [
-            "Gendered Violence",
-            "MeToo",
-            "Emily Lockhart",
-            "Katrin Roots",
-            "Heather Tasker\nLaw"
-          ],
-          "pdf_start_index": 120,
-          "pdf_end_index": 143,
-          "citation_pages": null,
-          "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Through Different Lenses: Legality, Humanitarianism, and the Western Gaze",
-          "authors": [
-            "Humanitarianism"
-          ],
-          "pdf_start_index": 144,
-          "pdf_end_index": 162,
-          "citation_pages": null,
-          "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Practicing Freedom of Information as “Feral Law” and Advancing Research Methods in Socio-legal Studies",
-          "authors": [
-            "Alex Luscombe",
-            "Kevin Walby"
-          ],
-          "pdf_start_index": 166,
-          "pdf_end_index": 184,
-          "citation_pages": null,
-          "confidence": 0.94,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Far from the Madding Crowds: Redefining the Field of Socio-legal Studies from Within",
-          "authors": [
-            "Nergis Canefe\nFar"
-          ],
-          "pdf_start_index": 186,
-          "pdf_end_index": 217,
-          "citation_pages": null,
-          "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Afterword: Toward the Law of Anti-laws: Notes on Prefigurative Politics and Radical Imaginations",
-          "authors": [
-            "Irina Ceric"
-          ],
-          "pdf_start_index": 218,
-          "pdf_end_index": 218,
-          "citation_pages": "205-205",
-          "confidence": 0.96,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 5.02168541692663,
-      "demand_at_run": 0
-    },
-    "qwen3.5-122b-a10b": {
       "chapters": [
         {
           "title": "Race and Colonialism in Socio- legal Studies in Canada",
@@ -577,9 +464,9 @@
           ],
           "pdf_start_index": 48,
           "pdf_end_index": 70,
-          "citation_pages": null,
+          "citation_pages": "35-58",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -589,10 +476,10 @@
             "Stephen Harper"
           ],
           "pdf_start_index": 72,
-          "pdf_end_index": 91,
-          "citation_pages": null,
+          "pdf_end_index": 79,
+          "citation_pages": "59-66",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -605,9 +492,9 @@
           ],
           "pdf_start_index": 94,
           "pdf_end_index": 119,
-          "citation_pages": null,
+          "citation_pages": "81-106",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -621,9 +508,9 @@
           ],
           "pdf_start_index": 120,
           "pdf_end_index": 143,
-          "citation_pages": null,
+          "citation_pages": "107-130",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -633,9 +520,9 @@
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 162,
-          "citation_pages": null,
+          "citation_pages": "131-152",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -646,9 +533,9 @@
           ],
           "pdf_start_index": 166,
           "pdf_end_index": 184,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -657,20 +544,32 @@
             "Nergis Canefe\nFar"
           ],
           "pdf_start_index": 186,
-          "pdf_end_index": 218,
-          "citation_pages": "173-205",
+          "pdf_end_index": 217,
+          "citation_pages": "173-204",
           "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Afterword: Toward the Law of Anti- laws: Notes on Prefigurative Politics and Radical Imaginations",
+          "authors": [
+            "Irina Ceric"
+          ],
+          "pdf_start_index": 218,
+          "pdf_end_index": 218,
+          "citation_pages": "205-205",
+          "confidence": 0.97,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 51.2441792919999,
+      "elapsed_seconds": 3.871946541010402,
       "demand_at_run": 0
     },
-    "qwen3-coder-next": {
+    "qwen3.5-122b-a10b": {
       "chapters": [
         {
-          "title": "Race and Colonialism in Socio-legal Studies in Canada",
+          "title": "1. Race and Colonialism in Socio- legal Studies in Canada",
           "authors": [
             "Carmela Murdocca",
             "Shaira Vadasaria",
@@ -678,22 +577,135 @@
           ],
           "pdf_start_index": 48,
           "pdf_end_index": 70,
-          "citation_pages": null,
-          "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "35-58",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Jurisfiction and Other Settler-Colonial Legal Imaginaries",
+          "title": "2. Jurisfiction and Other Settler- Colonial Legal Imaginaries",
           "authors": [
             "Stacy Douglas",
             "Stephen Harper"
           ],
           "pdf_start_index": 72,
           "pdf_end_index": 91,
-          "citation_pages": null,
+          "citation_pages": "59-80",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Making Terrorism: Security Practices and the Production of Terror Activities in Canada",
+          "authors": [
+            "Yavar Hameed",
+            "Jeffrey Monaghan",
+            "Richard Ericson",
+            "Skill"
+          ],
+          "pdf_start_index": 94,
+          "pdf_end_index": 119,
+          "citation_pages": "81-106",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Law, Gendered Violence, and Justice: Critically Engaging #MeToo",
+          "authors": [
+            "Gendered Violence",
+            "MeToo",
+            "Emily Lockhart",
+            "Katrin Roots",
+            "Heather Tasker\nLaw"
+          ],
+          "pdf_start_index": 120,
+          "pdf_end_index": 143,
+          "citation_pages": "107-130",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Through Different Lenses: Legality, Humanitarianism, and the Western Gaze",
+          "authors": [
+            "Humanitarianism"
+          ],
+          "pdf_start_index": 144,
+          "pdf_end_index": 162,
+          "citation_pages": "131-152",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. Practicing Freedom of Information as “Feral Law” and Advancing Research Methods in Socio- legal Studies",
+          "authors": [
+            "Alex Luscombe",
+            "Kevin Walby"
+          ],
+          "pdf_start_index": 166,
+          "pdf_end_index": 184,
+          "citation_pages": "153-172",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Far from the Madding Crowds: Redefining the Field of Socio- legal Studies from Within",
+          "authors": [
+            "Nergis Canefe\nFar"
+          ],
+          "pdf_start_index": 186,
+          "pdf_end_index": 217,
+          "citation_pages": "173-204",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Afterword: Toward the Law of Anti- laws: Notes on Prefigurative Politics and Radical Imaginations",
+          "authors": [
+            "Irina Ceric"
+          ],
+          "pdf_start_index": 218,
+          "pdf_end_index": 218,
+          "citation_pages": "205-205",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 51.22661866701674,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Race and Colonialism in Socio- legal Studies in Canada",
+          "authors": [
+            "Carmela Murdocca",
+            "Shaira Vadasaria",
+            "Timothy Bryan"
+          ],
+          "pdf_start_index": 48,
+          "pdf_end_index": 70,
+          "citation_pages": "35-58",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Jurisfiction and Other Settler- Colonial Legal Imaginaries",
+          "authors": [
+            "Stacy Douglas",
+            "Stephen Harper"
+          ],
+          "pdf_start_index": 72,
+          "pdf_end_index": 91,
+          "citation_pages": "59-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -706,9 +718,9 @@
           ],
           "pdf_start_index": 94,
           "pdf_end_index": 119,
-          "citation_pages": null,
+          "citation_pages": "81-106",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -722,9 +734,9 @@
           ],
           "pdf_start_index": 120,
           "pdf_end_index": 143,
-          "citation_pages": null,
+          "citation_pages": "107-130",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -734,50 +746,50 @@
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 162,
-          "citation_pages": null,
+          "citation_pages": "131-152",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Practicing Freedom of Information as “Feral Law” and Advancing Research Methods in Socio-legal Studies",
+          "title": "Practicing Freedom of Information as “Feral Law” and Advancing Research Methods in Socio- legal Studies",
           "authors": [
             "Alex Luscombe",
             "Kevin Walby"
           ],
           "pdf_start_index": 166,
           "pdf_end_index": 184,
-          "citation_pages": null,
-          "confidence": 0.94,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "153-172",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Far from the Madding Crowds: Redefining the Field of Socio-legal Studies from Within",
+          "title": "Far from the Madding Crowds: Redefining the Field of Socio- legal Studies from Within",
           "authors": [
             "Nergis Canefe\nFar"
           ],
           "pdf_start_index": 186,
           "pdf_end_index": 217,
-          "citation_pages": null,
-          "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "173-204",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Toward the Law of Anti-laws: Notes on Prefigurative Politics and Radical Imaginations",
+          "title": "Afterword: Toward the Law of Anti- laws: Notes on Prefigurative Politics and Radical Imaginations",
           "authors": [
             "Irina Ceric"
           ],
           "pdf_start_index": 218,
           "pdf_end_index": 218,
           "citation_pages": "205-205",
-          "confidence": 0.96,
+          "confidence": 0.97,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.9253213750198483,
+      "elapsed_seconds": 15.933259499957785,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
@@ -791,9 +803,9 @@
           ],
           "pdf_start_index": 48,
           "pdf_end_index": 70,
-          "citation_pages": null,
+          "citation_pages": "35-58",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -804,9 +816,9 @@
           ],
           "pdf_start_index": 72,
           "pdf_end_index": 91,
-          "citation_pages": null,
+          "citation_pages": "59-80",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -819,9 +831,9 @@
           ],
           "pdf_start_index": 94,
           "pdf_end_index": 119,
-          "citation_pages": null,
+          "citation_pages": "81-106",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -835,9 +847,9 @@
           ],
           "pdf_start_index": 120,
           "pdf_end_index": 143,
-          "citation_pages": null,
+          "citation_pages": "107-130",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -847,9 +859,9 @@
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 162,
-          "citation_pages": null,
+          "citation_pages": "131-152",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -860,9 +872,9 @@
           ],
           "pdf_start_index": 166,
           "pdf_end_index": 184,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.94,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -872,9 +884,9 @@
           ],
           "pdf_start_index": 186,
           "pdf_end_index": 217,
-          "citation_pages": null,
+          "citation_pages": "173-204",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -890,8 +902,8 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 9.327242166968063,
-      "demand_at_run": 0
+      "elapsed_seconds": 9.377510917023756,
+      "demand_at_run": 1
     },
     "qwen3.6-35b-a3b": {
       "chapters": [
@@ -904,9 +916,9 @@
           ],
           "pdf_start_index": 48,
           "pdf_end_index": 70,
-          "citation_pages": null,
+          "citation_pages": "35-58",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -917,9 +929,9 @@
           ],
           "pdf_start_index": 72,
           "pdf_end_index": 91,
-          "citation_pages": null,
+          "citation_pages": "59-80",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -932,9 +944,9 @@
           ],
           "pdf_start_index": 94,
           "pdf_end_index": 119,
-          "citation_pages": null,
+          "citation_pages": "81-106",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -948,9 +960,9 @@
           ],
           "pdf_start_index": 120,
           "pdf_end_index": 143,
-          "citation_pages": null,
+          "citation_pages": "107-130",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -960,9 +972,9 @@
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 162,
-          "citation_pages": null,
+          "citation_pages": "131-152",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -973,9 +985,9 @@
           ],
           "pdf_start_index": 166,
           "pdf_end_index": 184,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -985,9 +997,9 @@
           ],
           "pdf_start_index": 186,
           "pdf_end_index": 217,
-          "citation_pages": null,
+          "citation_pages": "173-204",
           "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1003,13 +1015,13 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 76.43578137503937,
+      "elapsed_seconds": 51.44571712508332,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
       "chapters": [
         {
-          "title": "Race and Colonialism in Socio- legal Studies in Canada",
+          "title": "1. Race and Colonialism in Socio- legal Studies in Canada",
           "authors": [
             "Carmela Murdocca",
             "Shaira Vadasaria",
@@ -1017,26 +1029,26 @@
           ],
           "pdf_start_index": 48,
           "pdf_end_index": 70,
-          "citation_pages": null,
-          "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "35-58",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Jurisfiction and Other Settler- Colonial Legal Imaginaries",
+          "title": "2. Jurisfiction and Other Settler- Colonial Legal Imaginaries",
           "authors": [
             "Stacy Douglas",
             "Stephen Harper"
           ],
           "pdf_start_index": 72,
           "pdf_end_index": 91,
-          "citation_pages": null,
-          "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "59-80",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Making Terrorism: Security Practices and the Production of Terror Activities in Canada",
+          "title": "3. Making Terrorism: Security Practices and the Production of Terror Activities in Canada",
           "authors": [
             "Yavar Hameed",
             "Jeffrey Monaghan",
@@ -1045,13 +1057,13 @@
           ],
           "pdf_start_index": 94,
           "pdf_end_index": 119,
-          "citation_pages": null,
-          "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "81-106",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Law, Gendered Violence, and Justice: Critically Engaging #MeToo",
+          "title": "4. Law, Gendered Violence, and Justice: Critically Engaging #MeToo",
           "authors": [
             "Gendered Violence",
             "MeToo",
@@ -1061,46 +1073,46 @@
           ],
           "pdf_start_index": 120,
           "pdf_end_index": 143,
-          "citation_pages": null,
+          "citation_pages": "107-130",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Through Different Lenses: Legality, Humanitarianism, and the Western Gaze",
+          "title": "5. Through Different Lenses: Legality, Humanitarianism, and the Western Gaze",
           "authors": [
             "Humanitarianism"
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 162,
-          "citation_pages": null,
-          "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "131-152",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Practicing Freedom of Information as “Feral Law” and Advancing Research Methods in Socio- legal Studies",
+          "title": "6. Practicing Freedom of Information as “Feral Law” and Advancing Research Methods in Socio- legal Studies",
           "authors": [
             "Alex Luscombe",
             "Kevin Walby"
           ],
           "pdf_start_index": 166,
           "pdf_end_index": 184,
-          "citation_pages": null,
+          "citation_pages": "153-172",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Far from the Madding Crowds: Redefining the Field of Socio- legal Studies from Within",
+          "title": "7. Far from the Madding Crowds: Redefining the Field of Socio- legal Studies from Within",
           "authors": [
             "Nergis Canefe\nFar"
           ],
           "pdf_start_index": 186,
           "pdf_end_index": 217,
-          "citation_pages": null,
-          "confidence": 0.98,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "173-204",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -1116,8 +1128,8 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 109.89121870801318,
-      "demand_at_run": 2
+      "elapsed_seconds": 102.1434057499282,
+      "demand_at_run": 1
     }
   }
 }

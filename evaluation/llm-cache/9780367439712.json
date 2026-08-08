@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T10:38:59.788120+00:00",
+  "generated_at": "2026-08-08T15:56:49.712820+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -11,9 +11,9 @@
           ],
           "pdf_start_index": 42,
           "pdf_end_index": 43,
-          "citation_pages": null,
+          "citation_pages": "23-32",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -24,9 +24,9 @@
           ],
           "pdf_start_index": 44,
           "pdf_end_index": 106,
-          "citation_pages": null,
+          "citation_pages": "33-95",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -37,9 +37,9 @@
           ],
           "pdf_start_index": 107,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "96-109",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -47,9 +47,9 @@
           "authors": [],
           "pdf_start_index": 121,
           "pdf_end_index": 176,
-          "citation_pages": null,
+          "citation_pages": "110-165",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -59,9 +59,9 @@
           ],
           "pdf_start_index": 177,
           "pdf_end_index": 233,
-          "citation_pages": null,
+          "citation_pages": "166-222",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -72,9 +72,9 @@
           ],
           "pdf_start_index": 234,
           "pdf_end_index": 257,
-          "citation_pages": null,
+          "citation_pages": "223-246",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -85,13 +85,13 @@
           ],
           "pdf_start_index": 258,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "247-259",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 23.72641724999994,
+      "elapsed_seconds": 23.519302708096802,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -104,9 +104,9 @@
           ],
           "pdf_start_index": 42,
           "pdf_end_index": 43,
-          "citation_pages": null,
+          "citation_pages": "23-32",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -117,9 +117,9 @@
           ],
           "pdf_start_index": 44,
           "pdf_end_index": 106,
-          "citation_pages": null,
+          "citation_pages": "33-95",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -130,31 +130,31 @@
           ],
           "pdf_start_index": 107,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "96-109",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Law and economy without 'law and economics'? From new institutional economics to social systems theory",
+          "title": "Law and economy without ‘law and economics’? From new institutional economics to social systems theory",
           "authors": [],
           "pdf_start_index": 121,
           "pdf_end_index": 176,
-          "citation_pages": null,
-          "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "110-165",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Casting off from the rock of uncertainty: Observations on the empirical application of Luhmann's sociological theory and a case study on the concept of normative expectations",
+          "title": "Casting off from the rock of uncertainty: Observations on the empirical application of Luhmann’s sociological theory and a case study on the concept of normative expectations",
           "authors": [
             "Mark Hanna"
           ],
           "pdf_start_index": 177,
           "pdf_end_index": 233,
-          "citation_pages": null,
-          "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "166-222",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -165,9 +165,9 @@
           ],
           "pdf_start_index": 234,
           "pdf_end_index": 257,
-          "citation_pages": null,
+          "citation_pages": "223-246",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -178,14 +178,14 @@
           ],
           "pdf_start_index": 258,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "247-259",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 7.03792191692628,
-      "demand_at_run": 0
+      "elapsed_seconds": 10.32707954198122,
+      "demand_at_run": 1
     },
     "glm-4.7": {
       "chapters": [
@@ -197,9 +197,9 @@
           ],
           "pdf_start_index": 42,
           "pdf_end_index": 43,
-          "citation_pages": null,
+          "citation_pages": "23-32",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -210,9 +210,9 @@
           ],
           "pdf_start_index": 44,
           "pdf_end_index": 106,
-          "citation_pages": null,
+          "citation_pages": "33-95",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -223,9 +223,9 @@
           ],
           "pdf_start_index": 107,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "96-109",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -233,9 +233,9 @@
           "authors": [],
           "pdf_start_index": 121,
           "pdf_end_index": 176,
-          "citation_pages": null,
+          "citation_pages": "110-165",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -245,9 +245,9 @@
           ],
           "pdf_start_index": 177,
           "pdf_end_index": 233,
-          "citation_pages": null,
+          "citation_pages": "166-222",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -258,9 +258,9 @@
           ],
           "pdf_start_index": 234,
           "pdf_end_index": 257,
-          "citation_pages": null,
+          "citation_pages": "223-246",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -271,13 +271,13 @@
           ],
           "pdf_start_index": 258,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "247-259",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 8.462201582966372,
+      "elapsed_seconds": 21.072317000012845,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -290,9 +290,9 @@
           ],
           "pdf_start_index": 42,
           "pdf_end_index": 43,
-          "citation_pages": null,
+          "citation_pages": "23-32",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -303,9 +303,9 @@
           ],
           "pdf_start_index": 44,
           "pdf_end_index": 106,
-          "citation_pages": null,
+          "citation_pages": "33-95",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -316,9 +316,9 @@
           ],
           "pdf_start_index": 107,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "96-109",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -326,9 +326,9 @@
           "authors": [],
           "pdf_start_index": 121,
           "pdf_end_index": 176,
-          "citation_pages": null,
+          "citation_pages": "110-165",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -338,9 +338,9 @@
           ],
           "pdf_start_index": 177,
           "pdf_end_index": 233,
-          "citation_pages": null,
+          "citation_pages": "166-222",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -351,9 +351,9 @@
           ],
           "pdf_start_index": 234,
           "pdf_end_index": 257,
-          "citation_pages": null,
+          "citation_pages": "223-246",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -364,13 +364,13 @@
           ],
           "pdf_start_index": 258,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "247-259",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 13.441317290998995,
+      "elapsed_seconds": 13.112003208952956,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -383,9 +383,9 @@
           ],
           "pdf_start_index": 42,
           "pdf_end_index": 43,
-          "citation_pages": null,
+          "citation_pages": "23-32",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -396,9 +396,9 @@
           ],
           "pdf_start_index": 44,
           "pdf_end_index": 106,
-          "citation_pages": null,
+          "citation_pages": "33-95",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -409,9 +409,9 @@
           ],
           "pdf_start_index": 107,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "96-109",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -419,9 +419,9 @@
           "authors": [],
           "pdf_start_index": 121,
           "pdf_end_index": 176,
-          "citation_pages": null,
+          "citation_pages": "110-165",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -431,9 +431,9 @@
           ],
           "pdf_start_index": 177,
           "pdf_end_index": 233,
-          "citation_pages": null,
+          "citation_pages": "166-222",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -444,9 +444,9 @@
           ],
           "pdf_start_index": 234,
           "pdf_end_index": 257,
-          "citation_pages": null,
+          "citation_pages": "223-246",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -457,106 +457,18 @@
           ],
           "pdf_start_index": 258,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "247-259",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 4.638373041991144,
+      "elapsed_seconds": 4.732095583924092,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
-      "chapters": [
-        {
-          "title": "Is there a need for a critical systems theory?",
-          "authors": [
-            "Amstutz",
-            "Di Movie"
-          ],
-          "pdf_start_index": 42,
-          "pdf_end_index": 43,
-          "citation_pages": null,
-          "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Changing maps: Empirical legal autopoiesis",
-          "authors": [
-            "John Paterson",
-            "Gunther Teubner"
-          ],
-          "pdf_start_index": 44,
-          "pdf_end_index": 106,
-          "citation_pages": null,
-          "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Free floating or free riding? Recursive norm-building in the German energy transition using the example of the approval of e-scooters in German cities",
-          "authors": [
-            "Cristina Besio",
-            "Margrit Seckelmann"
-          ],
-          "pdf_start_index": 107,
-          "pdf_end_index": 120,
-          "citation_pages": null,
-          "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Law and economy without 'law and economics'? From new institutional economics to social systems theory",
-          "authors": [],
-          "pdf_start_index": 121,
-          "pdf_end_index": 176,
-          "citation_pages": null,
-          "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Casting off from the rock of uncertainty: Observations on the empirical application of Luhmann's sociological theory and a case study on the concept of normative expectations",
-          "authors": [
-            "Mark Hanna"
-          ],
-          "pdf_start_index": 177,
-          "pdf_end_index": 233,
-          "citation_pages": null,
-          "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Politics, law and legitimacy: Re-constructing Brexit from a systems theory perspective",
-          "authors": [
-            "Brexit",
-            "John Paterson"
-          ],
-          "pdf_start_index": 234,
-          "pdf_end_index": 257,
-          "citation_pages": null,
-          "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "A historical sociology of constitutions and democracy: An interview",
-          "authors": [
-            "Chris Thornhill",
-            "Result Purpose\n"
-          ],
-          "pdf_start_index": 258,
-          "pdf_end_index": 270,
-          "citation_pages": null,
-          "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 45.74617075000424,
+      "chapters": [],
+      "elapsed_seconds": 65.89409812504891,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
@@ -569,9 +481,9 @@
           ],
           "pdf_start_index": 42,
           "pdf_end_index": 43,
-          "citation_pages": null,
+          "citation_pages": "23-32",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -582,9 +494,9 @@
           ],
           "pdf_start_index": 44,
           "pdf_end_index": 106,
-          "citation_pages": null,
+          "citation_pages": "33-95",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -595,9 +507,9 @@
           ],
           "pdf_start_index": 107,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "96-109",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -605,9 +517,9 @@
           "authors": [],
           "pdf_start_index": 121,
           "pdf_end_index": 176,
-          "citation_pages": null,
+          "citation_pages": "110-165",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -617,9 +529,9 @@
           ],
           "pdf_start_index": 177,
           "pdf_end_index": 233,
-          "citation_pages": null,
+          "citation_pages": "166-222",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -630,9 +542,9 @@
           ],
           "pdf_start_index": 234,
           "pdf_end_index": 257,
-          "citation_pages": null,
+          "citation_pages": "223-246",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -643,13 +555,13 @@
           ],
           "pdf_start_index": 258,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "247-259",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 4.222157708951272,
+      "elapsed_seconds": 3.8228146670153365,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
@@ -662,9 +574,9 @@
           ],
           "pdf_start_index": 42,
           "pdf_end_index": 43,
-          "citation_pages": null,
+          "citation_pages": "23-32",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -675,9 +587,9 @@
           ],
           "pdf_start_index": 44,
           "pdf_end_index": 106,
-          "citation_pages": null,
+          "citation_pages": "33-95",
           "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -688,9 +600,9 @@
           ],
           "pdf_start_index": 107,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "96-109",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -698,9 +610,9 @@
           "authors": [],
           "pdf_start_index": 121,
           "pdf_end_index": 176,
-          "citation_pages": null,
+          "citation_pages": "110-165",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -710,9 +622,9 @@
           ],
           "pdf_start_index": 177,
           "pdf_end_index": 233,
-          "citation_pages": null,
+          "citation_pages": "166-222",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -723,9 +635,9 @@
           ],
           "pdf_start_index": 234,
           "pdf_end_index": 257,
-          "citation_pages": null,
+          "citation_pages": "223-246",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -736,106 +648,18 @@
           ],
           "pdf_start_index": 258,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "247-259",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 13.289101833011955,
-      "demand_at_run": 0
+      "elapsed_seconds": 11.931235915981233,
+      "demand_at_run": 1
     },
     "qwen3.6-35b-a3b": {
-      "chapters": [
-        {
-          "title": "Is there a need for a critical systems theory?",
-          "authors": [
-            "Amstutz",
-            "Di Movie"
-          ],
-          "pdf_start_index": 42,
-          "pdf_end_index": 43,
-          "citation_pages": null,
-          "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Changing maps: Empirical legal! autopoiesis",
-          "authors": [
-            "John Paterson",
-            "Gunther Teubner"
-          ],
-          "pdf_start_index": 44,
-          "pdf_end_index": 106,
-          "citation_pages": null,
-          "confidence": 0.93,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Free floating or free riding? Recursive norm-building in the German energy transition using the example of the approval of e-scooters in German cities",
-          "authors": [
-            "Cristina Besio",
-            "Margrit Seckelmann"
-          ],
-          "pdf_start_index": 107,
-          "pdf_end_index": 120,
-          "citation_pages": null,
-          "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Law and economy without ‘law and economics’? From new institutional economics to social systems theory",
-          "authors": [],
-          "pdf_start_index": 121,
-          "pdf_end_index": 176,
-          "citation_pages": null,
-          "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Casting off from the rock of uncertainty: Observations on the empirical application of Luhmann’s sociological theory and a case study on the concept of normative expectations",
-          "authors": [
-            "Mark Hanna"
-          ],
-          "pdf_start_index": 177,
-          "pdf_end_index": 233,
-          "citation_pages": null,
-          "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Politics, law and legitimacy: Re-constructing Brexit from a systems theory perspective",
-          "authors": [
-            "Brexit",
-            "John Paterson"
-          ],
-          "pdf_start_index": 234,
-          "pdf_end_index": 257,
-          "citation_pages": null,
-          "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "A historical sociology of constitutions and democracy: An interview",
-          "authors": [
-            "Chris Thornhill",
-            "Result Purpose\n"
-          ],
-          "pdf_start_index": 258,
-          "pdf_end_index": 270,
-          "citation_pages": null,
-          "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 80.59216104191728,
+      "chapters": [],
+      "elapsed_seconds": 50.38978479197249,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
@@ -848,22 +672,22 @@
           ],
           "pdf_start_index": 42,
           "pdf_end_index": 43,
-          "citation_pages": null,
+          "citation_pages": "23-32",
           "confidence": 1.0,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Changing maps: Empirical legal autopoiesis",
+          "title": "Changing maps: Empirical legal! autopoiesis",
           "authors": [
             "John Paterson",
             "Gunther Teubner"
           ],
           "pdf_start_index": 44,
           "pdf_end_index": 106,
-          "citation_pages": null,
-          "confidence": 0.95,
-          "page_mapping_confidence": "unmappable",
+          "citation_pages": "33-95",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -874,9 +698,9 @@
           ],
           "pdf_start_index": 107,
           "pdf_end_index": 120,
-          "citation_pages": null,
+          "citation_pages": "96-109",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -884,9 +708,9 @@
           "authors": [],
           "pdf_start_index": 121,
           "pdf_end_index": 176,
-          "citation_pages": null,
+          "citation_pages": "110-165",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -896,9 +720,9 @@
           ],
           "pdf_start_index": 177,
           "pdf_end_index": 233,
-          "citation_pages": null,
+          "citation_pages": "166-222",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -909,9 +733,9 @@
           ],
           "pdf_start_index": 234,
           "pdf_end_index": 257,
-          "citation_pages": null,
+          "citation_pages": "223-246",
           "confidence": 0.97,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -922,14 +746,14 @@
           ],
           "pdf_start_index": 258,
           "pdf_end_index": 270,
-          "citation_pages": null,
+          "citation_pages": "247-259",
           "confidence": 0.96,
-          "page_mapping_confidence": "unmappable",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 111.46066566708032,
-      "demand_at_run": 2
+      "elapsed_seconds": 226.0506521250354,
+      "demand_at_run": 1
     }
   }
 }

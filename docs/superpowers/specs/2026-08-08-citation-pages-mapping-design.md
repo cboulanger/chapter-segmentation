@@ -13,7 +13,7 @@ two pages. `extract_printed_page_number` (line 937) only recognizes an
 digits or roman numerals — it ignores a number appearing alongside other
 text on the same line, and it never looks at any other page in the document.
 
-Two consequences, confirmed empirically:
+Three consequences, confirmed empirically:
 
 1. **Narrow per-page matching.** A running header/footer of the form `"12
    Chapter Title"` or `"Some Author  12"` is invisible to the isolated-line
@@ -30,6 +30,18 @@ Two consequences, confirmed empirically:
    `page_mapping_confidence` to `"unmappable"` even though neighboring pages
    make the true printed-page offset obvious.
 
+3. **TOC-declared page numbers are already parsed and thrown away.**
+   `TocEntry.printed_page_number` (line 211) is populated by both TOC-entry
+   sources: the heuristic regex parser (`find_toc_candidates`, always a
+   valid, plausibility-checked int whenever a TOC line matches at all — see
+   `_TOC_MAX_PAGE_NUMBER_RATIO`) and the LLM (`llm_extract_toc_entries`
+   explicitly prompts for it, sentinel `-1` when it can't identify one; see
+   line 625). This value is exactly the printed page number a reader would
+   use to navigate to that chapter — read from the TOC's own (clean, never
+   redaction-corrupted) text, not the located body page's running header —
+   yet `_chapters_from_located` never looks at it, re-deriving everything
+   from body-page text scanning instead.
+
 Hand-verified ground truth (`evaluation/*.expected.json`) shows only 27/292
 (9%) of real chapters are legitimately unmappable — no printed number visible
 anywhere near either boundary. Production is doing substantially worse than
@@ -44,7 +56,7 @@ invisible to the evaluation score even as it degrades production usability.
 
 ## Fix
 
-Production changes (§1-3b) are all in `src/chapter_segmentation/
+Production changes (§1-3c) are all in `src/chapter_segmentation/
 segmentation.py`, isolated to the printed-page-number extraction path called
 from `_chapters_from_located`. No signature changes to
 `_chapters_from_located` itself or to any `analyze_attachment*` entry point —
@@ -189,51 +201,61 @@ def _to_roman(value: int) -> str:
     return "".join(result)
 ```
 
-### 3. Wire into `_chapters_from_located`, add the "inferred" tier
+### 3. Prefer the TOC-declared page number over body-page scanning
+
+`TocEntry.printed_page_number` (heuristic: always valid when the entry
+exists at all; LLM: `-1` sentinel when it couldn't identify one) is exactly
+the number a reader would use to find this chapter, read from the TOC's own
+text rather than the located body page's running header. It should be tried
+*before* any of the page-scanning/interpolation machinery in §1-2, not
+instead of it — §1-2 remain the fallback for whichever end this doesn't
+cover (routinely the LLM's `-1` case, and always the very last chapter's end,
+since there's no "next entry" to derive it from).
 
 ```python
-anchors = _page_number_anchors(pages)
-...
-for i, (entry, match) in enumerate(located):
-    ...
-    start_printed = extract_printed_page_number(pages[start_index])
-    end_printed = extract_printed_page_number(pages[end_index])
-    inferred = False
-    if start_printed is None:
-        start_printed = _infer_printed_page(start_index, anchors)
-        inferred = inferred or start_printed is not None
-    if end_printed is None:
-        end_printed = _infer_printed_page(end_index, anchors)
-        inferred = inferred or end_printed is not None
-    if start_printed is not None and end_printed is None:
-        end_printed = _fallback_end_printed(i, located, total_pages, pages, anchors, start_printed)
-        inferred = inferred or end_printed is not None
-    if start_printed is not None and end_printed is not None:
-        citation_pages = f"{start_printed}-{end_printed}"
-        page_mapping_confidence = "inferred" if inferred else "high"
-    else:
-        citation_pages = None
-        page_mapping_confidence = "unmappable"
+def _format_page_number(value: int, is_roman: bool) -> str:
+    return _to_roman(value) if is_roman else str(value)
+
+
+def _toc_declared_page(entry: TocEntry, total_pages: int) -> str | None:
+    """entry's own printed_page_number, formatted, when the TOC (heuristic
+    or LLM) supplied a plausible one. The plausibility ceiling mirrors
+    find_toc_candidates' own guard (_TOC_MAX_PAGE_NUMBER_RATIO) -- the LLM
+    path has no equivalent check of its own, and an LLM could hallucinate
+    an implausible value where the heuristic regex parser structurally
+    cannot.
+    """
+    value = entry.printed_page_number
+    if value is None or value <= 0 or value > total_pages * _TOC_MAX_PAGE_NUMBER_RATIO:
+        return None
+    return _format_page_number(value, entry.printed_roman)
 ```
 
-`_page_number_anchors(pages)` is computed once per `_chapters_from_located`
-call (hoisted above the `for i, (entry, match) in enumerate(located)` loop,
-alongside the existing `header_lines` computation), not once per chapter —
-it does not depend on `entry`/`match`.
+The end page is derived the same way from the *next* located entry (which
+may itself be a structural marker like a part divider — it still carries a
+real, correctly-parsed `printed_page_number`, so no special-casing needed):
+`next_entry.printed_page_number - 1`, only when `next_entry.printed_roman ==
+entry.printed_roman` (guards against subtracting 1 across a roman-to-arabic
+reset at a front-matter/body boundary — the two numbering schemes don't
+share an arithmetic relationship, so a mismatch here means don't use this
+path, fall through to §1-2/§3b instead). This is always tagged `"inferred"`
+in step 3c below, never `"high"` — unlike the start, the end page's own
+printed number is never independently observed here, only computed.
 
-### 3b. Fallback end page, when only the start resolves
+### 3b. Fallback end page, when neither the TOC nor the chapter's own page resolves
 
 A chapter's own end page (blank/divider trimmed) is disproportionately
-likely to be the one boundary with no anchor nearby — trailing pages are
-often blank or divider pages that suppress the running header, and
-`_PAGE_NUMBER_INFERENCE_MAX_GAP` may not reach past them to the next real
-anchor. Discarding a perfectly good start page just because the end can't be
-pinned down loses information a consumer building "good enough" split/
-citation metadata could still use — the true aim is splitting book PDFs and
-producing usable citation ranges, not exact per-page precision on every
-boundary (see clarifying discussion in this spec's revision — the start page
-is load-bearing; the end page can reasonably be approximated by where the
-*next* chapter begins, or the end of the book for the last chapter).
+likely to be the one boundary with no on-page number and no nearby anchor —
+trailing pages are often blank or divider pages that suppress the running
+header, and `_PAGE_NUMBER_INFERENCE_MAX_GAP` may not reach past them to the
+next real anchor. This is the last fallback in the chain (after §3's
+TOC-derived next-entry value, §1's direct extraction, and §2's anchor
+interpolation have all failed for the end — typically because the *next*
+entry's own `printed_page_number` was itself `-1` or zone-mismatched).
+Discarding a perfectly good start page just because the end can't be pinned
+down loses information a consumer building "good enough" split/citation
+metadata could still use — the true aim is splitting book PDFs and producing
+usable citation ranges, not exact per-page precision on every boundary.
 
 ```python
 def _fallback_end_printed(
@@ -268,6 +290,58 @@ def _fallback_end_printed(
         return None
     return raw
 ```
+
+### 3c. Wire it all together in `_chapters_from_located`
+
+Full priority chain, combining §1-3b. `start_is_high`/`end_is_high` track
+whether that side came from an *observed* source (TOC-declared, or read
+directly off its own page) as opposed to a *derived* one (anchor
+interpolation, or the next-entry/next-page fallbacks) — `page_mapping_
+confidence` is `"high"` only when both sides are observed.
+
+```python
+anchors = _page_number_anchors(pages)
+...
+for i, (entry, match) in enumerate(located):
+    ...
+    start_printed = _toc_declared_page(entry, total_pages)
+    start_is_high = start_printed is not None
+    if start_printed is None:
+        start_printed = extract_printed_page_number(pages[start_index])
+        start_is_high = start_printed is not None
+    if start_printed is None:
+        start_printed = _infer_printed_page(start_index, anchors)
+
+    end_printed = None
+    next_entry = located[i + 1][0] if i + 1 < len(located) else None
+    if (
+        next_entry is not None
+        and next_entry.printed_roman == entry.printed_roman
+        and _toc_declared_page(next_entry, total_pages) is not None  # validates plausibility
+        and next_entry.printed_page_number - 1 >= 0
+    ):
+        end_printed = _format_page_number(next_entry.printed_page_number - 1, entry.printed_roman)
+    end_is_high = False
+    if end_printed is None:
+        end_printed = extract_printed_page_number(pages[end_index])
+        end_is_high = end_printed is not None
+    if end_printed is None:
+        end_printed = _infer_printed_page(end_index, anchors)
+    if end_printed is None and start_printed is not None:
+        end_printed = _fallback_end_printed(i, located, total_pages, pages, anchors, start_printed)
+
+    if start_printed is not None and end_printed is not None:
+        citation_pages = f"{start_printed}-{end_printed}"
+        page_mapping_confidence = "high" if (start_is_high and end_is_high) else "inferred"
+    else:
+        citation_pages = None
+        page_mapping_confidence = "unmappable"
+```
+
+`_page_number_anchors(pages)` is computed once per `_chapters_from_located`
+call (hoisted above the `for i, (entry, match) in enumerate(located)` loop,
+alongside the existing `header_lines` computation), not once per chapter —
+it does not depend on `entry`/`match`.
 
 ### 4. Evaluation: score start/end printed-page accuracy separately
 
@@ -368,11 +442,26 @@ implemented and re-run — same validation pattern as the LLM-fix spec.
   (unmappable), roman anchor before / arabic anchor after straddling a
   scheme change (unmappable via the natural offset-mismatch, not a
   roman/arabic special case).
-- `_chapters_from_located`: a case where the start page has no on-page
-  number but is bracketed by anchors -> `page_mapping_confidence ==
-  "inferred"`, `citation_pages` populated; a case with anchors on both
-  sides for both endpoints -> `"high"`; a case with no usable anchors at
-  all -> `"unmappable"` (unchanged from today).
+- `_toc_declared_page`: valid heuristic value formats correctly (arabic and
+  roman); LLM's `-1` sentinel returns `None`; a value exceeding
+  `total_pages * _TOC_MAX_PAGE_NUMBER_RATIO` (simulating an LLM
+  hallucination) returns `None` even though it's a positive int.
+- `_chapters_from_located`, priority order: entry has a valid
+  `printed_page_number` -> used directly for the start regardless of what
+  on-page scanning would have found, tagged `"high"` (this is the
+  "silently trust the TOC-declared value" behavior — no cross-check against
+  the on-page scan); entry's value is `-1` -> falls through to on-page
+  extraction, then anchor interpolation; next entry has a valid
+  `printed_page_number` in the *same* `printed_roman` zone -> end derived
+  as `next.printed_page_number - 1`, tagged `"inferred"` even though the
+  start in the same chapter is `"high"`; next entry's zone differs
+  (`printed_roman` mismatch, e.g. this chapter is the last one before a
+  roman-to-arabic transition) -> the derived-end path is skipped entirely,
+  falls through to on-page extraction of the chapter's own end page; a case
+  where the start page has no on-page number but is bracketed by anchors ->
+  `page_mapping_confidence == "inferred"`, `citation_pages` populated; a
+  case with anchors on both sides for both endpoints -> `"high"`; a case
+  with no usable anchors at all -> `"unmappable"` (unchanged from today).
 - `_fallback_end_printed`: start resolved, own end page unresolvable, next
   chapter's start-1 page has a printed number -> that number used, tagged
   `"inferred"`; last chapter in the book -> falls back to the last page's
@@ -416,3 +505,17 @@ too, since `_chapters_from_located` is shared by every strategy.
 - Handling more than two numbering zones per document (e.g. a book with a
   separately-paginated appendix) beyond what nearest-anchor interpolation
   already handles naturally — not observed in the current evaluation corpus.
+- Teaching `llm_extract_toc_entries`'s prompt/schema to represent roman
+  numerals (it asks for a plain int `printed_page_number`, so a front-matter
+  entry the LLM reads as "vii" either gets misrepresented as arabic `7` or
+  routed to the `-1` sentinel, and `TocEntry.printed_roman` is never set
+  `True` for an LLM-sourced entry regardless). Pre-existing limitation of
+  the LLM extraction schema, not introduced or worsened by this fix — this
+  fix only changes how `printed_page_number`/`printed_roman` are *consumed*,
+  never how they're produced. `_toc_declared_page`'s plausibility ceiling
+  guards against the arabic-misread case producing an absurd value, but a
+  plausible-looking wrong one (e.g. front matter page "vii" misread as
+  arabic `7`, colliding with a real body page 7) would not be caught.
+- Cross-validating the TOC-declared value against the on-page scan when both
+  are available — this round always trusts the TOC-declared value, per this
+  spec's revision discussion.

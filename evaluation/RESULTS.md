@@ -10,6 +10,13 @@ each evaluation, see `README.md` in this directory instead; that document
 changes rarely and this one changes often.
 
 > **Always-current numbers:** https://cboulanger.github.io/chapter-segmentation/ (auto-published from `evaluation/generate_report.py`, no hand-written analysis). This file adds mechanism/root-cause commentary the published page deliberately omits, and is only updated by hand.
+>
+> **Layout note:** every evaluation book now lives under
+> `evaluation/corpus/<name>/` (`open-access`, `copyrighted`, `pending`) --
+> see `docs/superpowers/specs/2026-08-08-multi-corpus-evaluation-design.md`.
+> The two result sections below ("Pure-heuristic results" and "Diverse
+> real-library evaluation set") correspond to the `open-access` and
+> `copyrighted` corpora respectively.
 
 ## Pure-heuristic results
 
@@ -322,7 +329,7 @@ artifact, not an absence of signal:
   absent/near-absent text layer) and routes both books through OCR instead
   -- the same per-page Kreuzberg OCR path production uses for scans
   (`src/chapter_segmentation/ocr.py`'s `ocr_pdf_pages`), cached by content hash in the gitignored
-  `evaluation/.ocr-cache/` and populated by
+  each corpus's `evaluation/corpus/<name>/.ocr-cache/` and populated by
   `uv run python evaluation/scripts/ocr_evaluation_pdfs.py` (run once; re-runs are
   instant cache hits). OCR recovers usable line structure for one of the
   two (`9780367439712.pdf`, 0.00 -> 0.42); the other
@@ -378,7 +385,7 @@ guard as the rest of the evaluation set.
 
 From `uv run python evaluation/generate_report.py --out public/` (heuristic,
 outline) plus `uv run python evaluation/refresh_llm_cache.py --mode full`
-populating `evaluation/llm-cache/` (LLM) -- each strategy run independently
+populating each corpus's `evaluation/corpus/<name>/llm-cache/` (LLM) -- each strategy run independently
 via `analyze_attachment`, `analyze_attachment_outline_only`,
 `analyze_attachment_llm_only` against the full 17-book public-cache corpus,
 with no pipeline merge/fallback logic involved (see
@@ -411,7 +418,7 @@ tolerates being up to 3 printed pages over-inclusive (see
   reference, so once one exists it's nearly free signal (well under a
   second total across all 3, no content search needed beyond confirming
   the mapped page). The other 14 books have no outline to read at all
-  (`evaluation/public-cache/<key>.outline.json` is `{"candidates": []}`),
+  (`evaluation/corpus/<name>/public-cache/<key>.outline.json` is `{"candidates": []}`),
   which is a property of the PDF, not a strategy failure -- those books
   render `N/A` in the report rather than being scored as "found 0".
 - **Heuristic's 0.58 aggregate here is pulled down entirely by the 10

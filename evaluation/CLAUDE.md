@@ -32,9 +32,10 @@ Three documents, three different lifetimes -- know which one to write to:
   new evaluation book by hand (ground-truth transcription, the helper
   script, verification steps, known failure modes in that *process*, not
   in the heuristics' results).
-- **`public-cache/`** — a redacted, git-tracked snapshot of each book's
-  page text (real navigational/bibliographic material verbatim, chapter
-  prose replaced with random real words) — see
+- **`public-cache/`** (per corpus, i.e.
+  `evaluation/corpus/<corpus>/public-cache/`) — a redacted, git-tracked
+  snapshot of each book's page text (real navigational/bibliographic
+  material verbatim, chapter prose replaced with random real words) — see
   `docs/superpowers/specs/2026-08-05-evaluation-corpus-redaction-design.md`.
   Also writes `<key>.outline.json` per book -- a resolved snapshot of
   `extract_outline_candidates`' output (titles/authors/page indices only),
@@ -63,7 +64,27 @@ if no evaluation book changed? If yes, `README.md` or `CLAUDE.md`
 (depending on whether it's "what/how" vs. "how to add a book"). If no --
 it's describing a specific run's outcome -- `RESULTS.md`.
 
-## Step 0: Decide where the book's metadata goes
+## Step 0a: Decide which corpus the book belongs in
+
+Every evaluation book lives under `evaluation/corpus/<corpus>/` -- see
+`docs/superpowers/specs/2026-08-08-multi-corpus-evaluation-design.md`.
+Before anything else, pick one:
+
+- **OA, or otherwise well-produced with a parseable embedded/printed TOC**
+  → `open-access/`.
+- **Everything else that you can build real ground truth for** (no DOI,
+  no embedded TOC, scanned, sourced from a personal library, ...) →
+  `copyrighted/`.
+- **No ground truth built yet** (you only have the PDF and basic metadata
+  so far) → `pending/`. Move the entry into `open-access/` or
+  `copyrighted/` once its `.expected.json` exists.
+
+Every path in this document below (`evaluation/<filename>`,
+`evaluation/manifest.local.json`, etc.) means
+`evaluation/corpus/<corpus>/<filename>` for whichever corpus you picked
+here.
+
+## Step 0b: Decide where the book's metadata goes
 
 - **Has a DOI, OR already has a `public-cache/` entry?** → Add it to the
   committed `manifest.json`, even if the book is not open access. Set
@@ -113,7 +134,10 @@ it's describing a specific run's outcome -- `RESULTS.md`.
 }
 ```
 
-Place the PDF itself directly in this directory (`evaluation/<filename>`) — both `.gitignore` entries (`*.pdf`, `manifest.local.json`) mean neither the file nor its local-only metadata are ever committed.
+Place the PDF itself directly in that corpus's directory
+(`evaluation/corpus/<corpus>/<filename>`) — both `.gitignore` entries
+(`*.pdf`, `manifest.local.json`) mean neither the file nor its local-only
+metadata are ever committed.
 
 `"heuristic_expected_zero"` is optional (defaults to `false` when omitted).
 Set it to `true` only when the book scores exactly zero recall even after

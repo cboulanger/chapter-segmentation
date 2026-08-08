@@ -1,4 +1,5 @@
 {
+  "generated_at": "2026-08-08T04:36:10.566655+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -377,7 +378,220 @@
       ],
       "elapsed_seconds": 2.203398375073448,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 11.037951407999998,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Types of lustration",
+          "authors": [
+            "Legal Cultures"
+          ],
+          "pdf_start_index": 60,
+          "pdf_end_index": 62,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Intersystemic connections of the first transition",
+          "authors": [
+            "Legal Cultures"
+          ],
+          "pdf_start_index": 63,
+          "pdf_end_index": 68,
+          "citation_pages": null,
+          "confidence": 0.85,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Intersystemic connections of the second transition",
+          "authors": [
+            "Legal Cultures"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 192,
+          "citation_pages": null,
+          "confidence": 0.85,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "The Democratization and Modernization of Post-communist Judiciaries",
+          "authors": [],
+          "pdf_start_index": 193,
+          "pdf_end_index": 210,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Bureaucratic and Managerial Cultures in Central Eastern European Courts",
+          "authors": [
+            "Managerial Cultures",
+            "Daniela Piana"
+          ],
+          "pdf_start_index": 211,
+          "pdf_end_index": 225,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Central and Eastern Europe After Transition",
+          "authors": [
+            "Use Large",
+            "M. People"
+          ],
+          "pdf_start_index": 226,
+          "pdf_end_index": 228,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Polish Prosecutors, Political Corruption, and Legal Culture",
+          "authors": [
+            "David Nelken"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 263,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Multiple Transitions to the EU Constitutional Project: The Case of Eastern European Legal Professions",
+          "authors": [
+            "Vittorio Olgiati"
+          ],
+          "pdf_start_index": 285,
+          "pdf_end_index": 314,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Selected International Bibliography 1989-2009",
+          "authors": [
+            "Librarian"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 353,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 8.52244060199996,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Central and Eastern Europe After Transition",
+          "authors": [],
+          "pdf_start_index": 96,
+          "pdf_end_index": 192,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "The Democratization and Modernization of Post-communist Judiciaries",
+          "authors": [],
+          "pdf_start_index": 193,
+          "pdf_end_index": 210,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Bureaucratic and Managerial Cultures in Central Eastern European Courts",
+          "authors": [
+            "Managerial Cultures",
+            "Daniela Piana"
+          ],
+          "pdf_start_index": 211,
+          "pdf_end_index": 228,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Polish Prosecutors, Political Corruption, and Legal Culture",
+          "authors": [
+            "David Nelken"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 263,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Notaries in Central Europe: From State Employment to Professional Independence — A Rocky Path",
+          "authors": [],
+          "pdf_start_index": 265,
+          "pdf_end_index": 283,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Multiple Transitions to the EU Constitutional Project: The Case of Eastern European Legal Professions",
+          "authors": [
+            "Vittorio Olgiati"
+          ],
+          "pdf_start_index": 285,
+          "pdf_end_index": 314,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Selected International Bibliography 1989-2009",
+          "authors": [
+            "Librarian"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 353,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 23.004950943999916,
+      "demand_at_run": 0
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [],
+      "elapsed_seconds": 11.464266803999863,
+      "demand_at_run": 0
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 31.36471512800017,
+      "demand_at_run": 0
     }
-  },
-  "generated_at": "2026-08-07T23:04:22.492560+00:00"
+  }
 }

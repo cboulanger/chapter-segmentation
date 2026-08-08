@@ -1,4 +1,5 @@
 {
+  "generated_at": "2026-08-08T04:32:26.659696+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -1768,7 +1769,31 @@
       ],
       "elapsed_seconds": 18.582278958056122,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 12.94286349699999,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 12.20936722800002,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 53.77098406299996,
+      "demand_at_run": 0
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [],
+      "elapsed_seconds": 14.431323796000015,
+      "demand_at_run": 0
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 33.34835131199998,
+      "demand_at_run": 0
     }
-  },
-  "generated_at": "2026-08-07T23:03:33.667546+00:00"
+  }
 }

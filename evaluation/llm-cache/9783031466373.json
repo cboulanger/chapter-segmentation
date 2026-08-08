@@ -1,4 +1,5 @@
 {
+  "generated_at": "2026-08-08T04:29:49.178335+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -629,7 +630,273 @@
       ],
       "elapsed_seconds": 5.384942124946974,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 10.190135738000002,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Claim and Blame: How Welfare Law institutionalises Deservingness",
+          "authors": [],
+          "pdf_start_index": 33,
+          "pdf_end_index": 47,
+          "citation_pages": null,
+          "confidence": 0.87,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "What Is the Function of Welfare Law Today? Consequences of the Work-Line Policy",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 48,
+          "pdf_end_index": 66,
+          "citation_pages": null,
+          "confidence": 0.97,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "The Penal Voluntary Sector’s Role in the Nordic Countries: A Shadow State?",
+          "authors": [
+            "Annette Olesen",
+            "Maija Helminen",
+            "Emy Bäcklin"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 86,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "A Double Helix: The Intertwined History of the Marginalisation of Welfare Clients and Their Activist Lawyers and Advisers in the Transformation of the Welfare State in England and Wales",
+          "authors": [
+            "Pete Sanderson",
+            "Happen Structure \nOrganization \nIdentify"
+          ],
+          "pdf_start_index": 88,
+          "pdf_end_index": 106,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "The Paradoxical Reality of Welfare Professionals: Encounters Between Welfare Professionals and Citizens Within Social Security in the Netherlands",
+          "authors": [],
+          "pdf_start_index": 107,
+          "pdf_end_index": 127,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Asylum Case Adjudication in Sweden, Country of Origin Information and Epistemic Violence",
+          "authors": [
+            "Martin Joormann \nIntroduction \nDuring",
+            "Mrs"
+          ],
+          "pdf_start_index": 128,
+          "pdf_end_index": 147,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Access to Justice and Social Rights for Victims of Trafficking and Labour Exploitation in Sweden",
+          "authors": [
+            "Schoultz",
+            "Polina Smiragina-Ingelström \nIntroduction \n",
+            "Believe"
+          ],
+          "pdf_start_index": 149,
+          "pdf_end_index": 169,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Welfare Clients’ Relational Legal Consciousness: An Empirical Perspective from the Netherlands",
+          "authors": [
+            "Marc Hertogh"
+          ],
+          "pdf_start_index": 170,
+          "pdf_end_index": 186,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Youth Homelessness in the Danish Welfare State: How Do Young Persons in Homelessness Mobilise Rights?",
+          "authors": [
+            "Ole Hammerslev"
+          ],
+          "pdf_start_index": 187,
+          "pdf_end_index": 205,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Conclusion: Transformations of European Welfare States and Social Rights",
+          "authors": [],
+          "pdf_start_index": 206,
+          "pdf_end_index": 214,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 6.802136690999987,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Claim and Blame: How Welfare Law institutionalises Deservingness",
+          "authors": [],
+          "pdf_start_index": 33,
+          "pdf_end_index": 47,
+          "citation_pages": null,
+          "confidence": 0.87,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "What Is the Function of Welfare Law Today? Consequences of the Work-Line Policy",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 48,
+          "pdf_end_index": 66,
+          "citation_pages": null,
+          "confidence": 0.97,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "The Penal Voluntary Sector’s Role in the Nordic Countries: A Shadow State?",
+          "authors": [
+            "Annette Olesen",
+            "Maija Helminen",
+            "Emy Bäcklin"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 86,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "A Double Helix: The Intertwined History of the Marginalisation of Welfare Clients and Their Activist Lawyers and Advisers in the Transformation of the Welfare State in England and Wales",
+          "authors": [
+            "Pete Sanderson",
+            "Happen Structure \nOrganization \nIdentify"
+          ],
+          "pdf_start_index": 88,
+          "pdf_end_index": 106,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "The Paradoxical Reality of Welfare Professionals: Encounters Between Welfare Professionals and Citizens Within Social Security in the Netherlands",
+          "authors": [],
+          "pdf_start_index": 107,
+          "pdf_end_index": 127,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Asylum Case Adjudication in Sweden, Country of Origin Information and Epistemic Violence",
+          "authors": [
+            "Martin Joormann \nIntroduction \nDuring",
+            "Mrs"
+          ],
+          "pdf_start_index": 128,
+          "pdf_end_index": 147,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Access to Justice and Social Rights for Victims of Trafficking and Labour Exploitation in Sweden",
+          "authors": [
+            "Schoultz",
+            "Polina Smiragina-Ingelström \nIntroduction \n",
+            "Believe"
+          ],
+          "pdf_start_index": 149,
+          "pdf_end_index": 169,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Welfare Clients’ Relational Legal Consciousness: An Empirical Perspective from the Netherlands",
+          "authors": [
+            "Marc Hertogh"
+          ],
+          "pdf_start_index": 170,
+          "pdf_end_index": 186,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Youth Homelessness in the Danish Welfare State: How Do Young Persons in Homelessness Mobilise Rights?",
+          "authors": [
+            "Ole Hammerslev"
+          ],
+          "pdf_start_index": 187,
+          "pdf_end_index": 205,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Conclusion: Transformations of European Welfare States and Social Rights",
+          "authors": [],
+          "pdf_start_index": 206,
+          "pdf_end_index": 214,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 20.01764997800001,
+      "demand_at_run": 0
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [],
+      "elapsed_seconds": 8.396193512000082,
+      "demand_at_run": 0
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 23.12689162000015,
+      "demand_at_run": 0
     }
-  },
-  "generated_at": "2026-08-07T23:02:10.272794+00:00"
+  }
 }

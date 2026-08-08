@@ -1,0 +1,1665 @@
+{
+  "isbn": "9783839457924",
+  "fetched_at": "2026-08-08T16:37:46.597004+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839457924-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Viola B.",
+          "family": "Georgi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Lücke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Johannes",
+          "family": "Meyer-Hamme",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-013",
+      "type": "book-chapter",
+      "page": "331-348",
+      "title": [
+        "5.1 Kolonialismus und Rassismus im Geschichtsunterricht"
+      ],
+      "author": [
+        {
+          "given": "Viola B.",
+          "family": "Georgi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0288-866X",
+          "authenticated-orcid": true,
+          "given": "Sina Isabel",
+          "family": "Freund",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "subtitle": [
+        "Lehrer:innen zwischen Kritik und Affirmation"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-005",
+      "type": "book-chapter",
+      "page": "129-176",
+      "title": [
+        "3.2 Akteur:innen in Gedenkstätten und Museen und ihre Perspektiven auf geschichtskulturellen Wandel in der Migrationsgesellschaft"
+      ],
+      "author": [
+        {
+          "given": "Cornelia",
+          "family": "Chmiel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Lücke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alina",
+          "family": "Welp",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-001",
+      "type": "book-chapter",
+      "page": "9-10",
+      "title": [
+        "Dank"
+      ],
+      "author": [
+        {
+          "given": "Viola B.",
+          "family": "Georgi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Lücke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Johannes",
+          "family": "Meyer-Hamme",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-006",
+      "type": "book-chapter",
+      "page": "177-226",
+      "title": [
+        "3.3 Geschichtskultureller Wandel aus der Perspektive von Akteur:innen non-formaler Bildung"
+      ],
+      "author": [
+        {
+          "given": "Johannes",
+          "family": "Meyer-Hamme",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sebastian",
+          "family": "Bischoff",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jana",
+          "family": "Völkel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mert",
+          "family": "Erdemir",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jessica",
+          "family": "Melo-Reimer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michelle",
+          "family": "Giera",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-007",
+      "type": "book-chapter",
+      "page": "227-278",
+      "title": [
+        "3.4 Geschichtskultureller Wandel, Migrationsgesellschaft und historisches Lernen aus der Perspektive von Akteur:innen der Bildungsmedienproduktion"
+      ],
+      "author": [
+        {
+          "given": "Christine",
+          "family": "Chiriac",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-004",
+      "type": "book-chapter",
+      "page": "61-128",
+      "title": [
+        "3.1 Perspektiven von Lehrkräften"
+      ],
+      "author": [
+        {
+          "given": "Viola B.",
+          "family": "Georgi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lena",
+          "family": "Kahle",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0288-866X",
+          "authenticated-orcid": true,
+          "given": "Sina Isabel",
+          "family": "Freund",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Agata",
+          "family": "Wiezorek",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "subtitle": [
+        "Migrationsgesellschaft, geschichtskultureller Wandel und historisches Lernen"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-015",
+      "type": "book-chapter",
+      "page": "361-372",
+      "title": [
+        "5.3 Vom Getrennten und Gemeinsamen"
+      ],
+      "author": [
+        {
+          "given": "Sina",
+          "family": "Arnold",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sebastian",
+          "family": "Bischoff",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joseph",
+          "family": "Wilson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "subtitle": [
+        "Bedingungen multidirektionalen Erinnerns in der Migrationsgesellschaft"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-017",
+      "type": "book-chapter",
+      "page": "385-402",
+      "title": [
+        "5.5 »Wenn man politisch was reißen will« - Agency im geschichtskulturellen Wandel"
+      ],
+      "author": [
+        {
+          "given": "Cornelia",
+          "family": "Chmiel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1442-5662",
+          "authenticated-orcid": true,
+          "given": "Lale",
+          "family": "Yildirim",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-014",
+      "type": "book-chapter",
+      "page": "349-360",
+      "title": [
+        "5.2 Perspektiven, Narrative, Zwischentöne - Impulse für den schulischen Geschichtsunterricht"
+      ],
+      "author": [
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Carolin",
+          "family": "Bätge",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Imke",
+          "family": "Rath",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-012",
+      "type": "book-chapter",
+      "page": "323-330",
+      "title": [
+        "4.4 Fallbeschreibungen im Vergleich: Ähnlichkeiten, Widersprüche, Spannungsfelder"
+      ],
+      "author": [
+        {
+          "given": "Johannes",
+          "family": "Meyer-Hamme",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cornelia",
+          "family": "Chmiel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-008",
+      "type": "book-chapter",
+      "page": "279-282",
+      "title": [
+        "Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Viola B.",
+          "family": "Georgi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Lücke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Johannes",
+          "family": "Meyer-Hamme",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-016",
+      "type": "book-chapter",
+      "page": "373-384",
+      "title": [
+        "5.4 »Hinter uns kann keiner mehr zurück«"
+      ],
+      "author": [
+        {
+          "given": "Sebastian",
+          "family": "Bischoff",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cornelia",
+          "family": "Chmiel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jennifer",
+          "family": "Farber",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jens",
+          "family": "Hecker",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "subtitle": [
+        "Die Etablierung der NS-Gedenkstätten als eine unendlich(e) deutsche Erfolgsgeschichte - und wie sie trotzdem als kritischer Handlungsraum dienen können"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-010",
+      "type": "book-chapter",
+      "page": "297-310",
+      "title": [
+        "4.2 Wie migrationsgesellschaftliche Realität zur Sprache kommt"
+      ],
+      "author": [
+        {
+          "given": "Viola B.",
+          "family": "Georgi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christine",
+          "family": "Chiriac",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0288-866X",
+          "authenticated-orcid": true,
+          "given": "Sina Isabel",
+          "family": "Freund",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-002",
+      "type": "book-chapter",
+      "page": "11-46",
+      "title": [
+        "1 Geschichten im Wandel"
+      ],
+      "author": [
+        {
+          "given": "Viola B.",
+          "family": "Georgi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Lücke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Johannes",
+          "family": "Meyer-Hamme",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "subtitle": [
+        "Neue Perspektiven für die Erinnerungskultur in der Migrationsgesellschaft - Problemaufriss und Konzeption des Bandes"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-toc",
+      "type": "book-chapter",
+      "page": "5-8",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Viola B.",
+          "family": "Georgi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Lücke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Johannes",
+          "family": "Meyer-Hamme",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-009",
+      "type": "book-chapter",
+      "page": "283-296",
+      "title": [
+        "4.1 Geschichtskultureller Wandel im Vergleich"
+      ],
+      "author": [
+        {
+          "given": "Sebastian",
+          "family": "Bischoff",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lena",
+          "family": "Kahle",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Lücke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-003",
+      "type": "book-chapter",
+      "page": "47-60",
+      "title": [
+        "2 Methodisches Vorgehen"
+      ],
+      "author": [
+        {
+          "given": "Johannes",
+          "family": "Meyer-Hamme",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Riem",
+          "family": "Spielhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Viola B.",
+          "family": "Georgi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Lücke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sebastian",
+          "family": "Bischoff",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christine",
+          "family": "Chiriac",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cornelia",
+          "family": "Chmiel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0288-866X",
+          "authenticated-orcid": true,
+          "given": "Sina Isabel",
+          "family": "Freund",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lena",
+          "family": "Kahle",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839457924-011",
+      "type": "book-chapter",
+      "page": "311-322",
+      "title": [
+        "4.3 Erinnerungspraktiken und historisches Lernen"
+      ],
+      "author": [
+        {
+          "given": "Cornelia",
+          "family": "Chmiel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Johannes",
+          "family": "Meyer-Hamme",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Hildesheim, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Public History - Angewandte Geschichte",
+        "Geschichten im Wandel"
+      ],
+      "ISBN": [
+        "9783837657920",
+        "9783839457924"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            18
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Viola B. Georgi",
+        "Martin Lücke",
+        "Johannes Meyer-Hamme",
+        "Riem Spielhaus"
+      ],
+      "chapter_doi": "10.14361/9783839457924-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "5.1 Kolonialismus und Rassismus im Geschichtsunterricht Lehrer:innen zwischen Kritik und Affirmation",
+      "authors": [
+        "Viola B. Georgi",
+        "Sina Isabel Freund"
+      ],
+      "chapter_doi": "10.14361/9783839457924-013",
+      "citation_pages": "331-348"
+    },
+    {
+      "title": "3.2 Akteur:innen in Gedenkstätten und Museen und ihre Perspektiven auf geschichtskulturellen Wandel in der Migrationsgesellschaft",
+      "authors": [
+        "Cornelia Chmiel",
+        "Martin Lücke",
+        "Alina Welp"
+      ],
+      "chapter_doi": "10.14361/9783839457924-005",
+      "citation_pages": "129-176"
+    },
+    {
+      "title": "Dank",
+      "authors": [
+        "Viola B. Georgi",
+        "Martin Lücke",
+        "Johannes Meyer-Hamme",
+        "Riem Spielhaus"
+      ],
+      "chapter_doi": "10.14361/9783839457924-001",
+      "citation_pages": "9-10"
+    },
+    {
+      "title": "3.3 Geschichtskultureller Wandel aus der Perspektive von Akteur:innen non-formaler Bildung",
+      "authors": [
+        "Johannes Meyer-Hamme",
+        "Sebastian Bischoff",
+        "Jana Völkel",
+        "Mert Erdemir",
+        "Jessica Melo-Reimer",
+        "Michelle Giera"
+      ],
+      "chapter_doi": "10.14361/9783839457924-006",
+      "citation_pages": "177-226"
+    },
+    {
+      "title": "3.4 Geschichtskultureller Wandel, Migrationsgesellschaft und historisches Lernen aus der Perspektive von Akteur:innen der Bildungsmedienproduktion",
+      "authors": [
+        "Christine Chiriac",
+        "Riem Spielhaus"
+      ],
+      "chapter_doi": "10.14361/9783839457924-007",
+      "citation_pages": "227-278"
+    },
+    {
+      "title": "3.1 Perspektiven von Lehrkräften Migrationsgesellschaft, geschichtskultureller Wandel und historisches Lernen",
+      "authors": [
+        "Viola B. Georgi",
+        "Lena Kahle",
+        "Sina Isabel Freund",
+        "Agata Wiezorek"
+      ],
+      "chapter_doi": "10.14361/9783839457924-004",
+      "citation_pages": "61-128"
+    },
+    {
+      "title": "5.3 Vom Getrennten und Gemeinsamen Bedingungen multidirektionalen Erinnerns in der Migrationsgesellschaft",
+      "authors": [
+        "Sina Arnold",
+        "Sebastian Bischoff",
+        "Joseph Wilson"
+      ],
+      "chapter_doi": "10.14361/9783839457924-015",
+      "citation_pages": "361-372"
+    },
+    {
+      "title": "5.5 »Wenn man politisch was reißen will« - Agency im geschichtskulturellen Wandel",
+      "authors": [
+        "Cornelia Chmiel",
+        "Lale Yildirim"
+      ],
+      "chapter_doi": "10.14361/9783839457924-017",
+      "citation_pages": "385-402"
+    },
+    {
+      "title": "5.2 Perspektiven, Narrative, Zwischentöne - Impulse für den schulischen Geschichtsunterricht",
+      "authors": [
+        "Riem Spielhaus",
+        "Carolin Bätge",
+        "Imke Rath"
+      ],
+      "chapter_doi": "10.14361/9783839457924-014",
+      "citation_pages": "349-360"
+    },
+    {
+      "title": "4.4 Fallbeschreibungen im Vergleich: Ähnlichkeiten, Widersprüche, Spannungsfelder",
+      "authors": [
+        "Johannes Meyer-Hamme",
+        "Cornelia Chmiel",
+        "Riem Spielhaus"
+      ],
+      "chapter_doi": "10.14361/9783839457924-012",
+      "citation_pages": "323-330"
+    },
+    {
+      "title": "Einleitung",
+      "authors": [
+        "Viola B. Georgi",
+        "Martin Lücke",
+        "Johannes Meyer-Hamme",
+        "Riem Spielhaus"
+      ],
+      "chapter_doi": "10.14361/9783839457924-008",
+      "citation_pages": "279-282"
+    },
+    {
+      "title": "5.4 »Hinter uns kann keiner mehr zurück« Die Etablierung der NS-Gedenkstätten als eine unendlich(e) deutsche Erfolgsgeschichte - und wie sie trotzdem als kritischer Handlungsraum dienen können",
+      "authors": [
+        "Sebastian Bischoff",
+        "Cornelia Chmiel",
+        "Jennifer Farber",
+        "Jens Hecker"
+      ],
+      "chapter_doi": "10.14361/9783839457924-016",
+      "citation_pages": "373-384"
+    },
+    {
+      "title": "4.2 Wie migrationsgesellschaftliche Realität zur Sprache kommt",
+      "authors": [
+        "Viola B. Georgi",
+        "Christine Chiriac",
+        "Sina Isabel Freund"
+      ],
+      "chapter_doi": "10.14361/9783839457924-010",
+      "citation_pages": "297-310"
+    },
+    {
+      "title": "1 Geschichten im Wandel Neue Perspektiven für die Erinnerungskultur in der Migrationsgesellschaft - Problemaufriss und Konzeption des Bandes",
+      "authors": [
+        "Viola B. Georgi",
+        "Martin Lücke",
+        "Johannes Meyer-Hamme",
+        "Riem Spielhaus"
+      ],
+      "chapter_doi": "10.14361/9783839457924-002",
+      "citation_pages": "11-46"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Viola B. Georgi",
+        "Martin Lücke",
+        "Johannes Meyer-Hamme",
+        "Riem Spielhaus"
+      ],
+      "chapter_doi": "10.14361/9783839457924-toc",
+      "citation_pages": "5-8"
+    },
+    {
+      "title": "4.1 Geschichtskultureller Wandel im Vergleich",
+      "authors": [
+        "Sebastian Bischoff",
+        "Lena Kahle",
+        "Martin Lücke",
+        "Riem Spielhaus"
+      ],
+      "chapter_doi": "10.14361/9783839457924-009",
+      "citation_pages": "283-296"
+    },
+    {
+      "title": "2 Methodisches Vorgehen",
+      "authors": [
+        "Johannes Meyer-Hamme",
+        "Riem Spielhaus",
+        "Viola B. Georgi",
+        "Martin Lücke",
+        "Sebastian Bischoff",
+        "Christine Chiriac",
+        "Cornelia Chmiel",
+        "Sina Isabel Freund",
+        "Lena Kahle"
+      ],
+      "chapter_doi": "10.14361/9783839457924-003",
+      "citation_pages": "47-60"
+    },
+    {
+      "title": "4.3 Erinnerungspraktiken und historisches Lernen",
+      "authors": [
+        "Cornelia Chmiel",
+        "Johannes Meyer-Hamme"
+      ],
+      "chapter_doi": "10.14361/9783839457924-011",
+      "citation_pages": "311-322"
+    }
+  ]
+}

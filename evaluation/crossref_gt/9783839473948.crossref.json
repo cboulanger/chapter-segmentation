@@ -1,0 +1,736 @@
+{
+  "isbn": "9783839473948",
+  "fetched_at": "2026-08-08T16:37:38.057402+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839473948-005",
+      "type": "book-chapter",
+      "page": "101-126",
+      "title": [
+        "Subjektivierung und (Re-)Objektivierung von Gesundheit am Beispiel des Self-Trackings"
+      ],
+      "author": [
+        {
+          "given": "Thomas",
+          "family": "Zoglauer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-009",
+      "type": "book-chapter",
+      "page": "211-236",
+      "title": [
+        "Ungewollte Kinderlosigkeit in Zeiten digitaler Informations-, Kommunikationsund Interaktionsangebote"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8399-6151",
+          "authenticated-orcid": true,
+          "given": "Sonja",
+          "family": "Haug",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8875-2386",
+          "authenticated-orcid": true,
+          "given": "Karsten",
+          "family": "Weber",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Ostbayerische Technische Hochschule Regensburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-001",
+      "type": "book-chapter",
+      "page": "7-20",
+      "title": [
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8875-2386",
+          "authenticated-orcid": true,
+          "given": "Karsten",
+          "family": "Weber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Ostbayerische Technische Hochschule Regensburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Zoglauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "subtitle": [
+        "Markierung, Verschiebung oder Überwindung einer umstrittenen Grenzziehung"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-008",
+      "type": "book-chapter",
+      "page": "189-210",
+      "title": [
+        "Das verflixte Problem mit Klassifikationen"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7131-5005",
+          "authenticated-orcid": true,
+          "given": "Diana",
+          "family": "Schneider",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "subtitle": [
+        "Zum Einfluss der Digitalisierung auf die Soziale Diagnostik in der Sozialen Arbeit"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8875-2386",
+          "authenticated-orcid": true,
+          "given": "Karsten",
+          "family": "Weber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Ostbayerische Technische Hochschule Regensburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Zoglauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-007",
+      "type": "book-chapter",
+      "page": "155-188",
+      "title": [
+        "Szenarien des KI-Einsatzes zur Sterbevorhersage"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8875-2386",
+          "authenticated-orcid": true,
+          "given": "Karsten",
+          "family": "Weber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Ostbayerische Technische Hochschule Regensburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "subtitle": [
+        "Ethische und professionsbezogene Überlegungen zu den Kriterien letzter Entscheidungen"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-010",
+      "type": "book-chapter",
+      "page": "237-240",
+      "title": [
+        "Autor*innen"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8875-2386",
+          "authenticated-orcid": true,
+          "given": "Karsten",
+          "family": "Weber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Ostbayerische Technische Hochschule Regensburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Zoglauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-004",
+      "type": "book-chapter",
+      "page": "83-100",
+      "title": [
+        "Die Apologie der Heilkunst im Kontext des digitalen Gesundheitssystems"
+      ],
+      "author": [
+        {
+          "given": "Hans",
+          "family": "Friesen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Karin",
+          "family": "Mittelstädt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "subtitle": [
+        "Theorie, Technik und Praxis in der gegenwärtigen Medizin"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8875-2386",
+          "authenticated-orcid": true,
+          "given": "Karsten",
+          "family": "Weber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Ostbayerische Technische Hochschule Regensburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Zoglauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-003",
+      "type": "book-chapter",
+      "page": "57-82",
+      "title": [
+        "Krankheit als Widerständigkeitserfahrung und die Frage nach der Selbstbehauptung"
+      ],
+      "author": [
+        {
+          "given": "Klaus",
+          "family": "Wiegerling",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-002",
+      "type": "book-chapter",
+      "page": "21-56",
+      "title": [
+        "Streit um die Begriffe »Gesundheit« und »Krankheit«"
+      ],
+      "author": [
+        {
+          "given": "Ulrich",
+          "family": "Schneider",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5143-849X",
+          "authenticated-orcid": true,
+          "given": "Nikolaus",
+          "family": "Knoepffler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "subtitle": [
+        "Ist er pathologisch?"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839473948-006",
+      "type": "book-chapter",
+      "page": "127-154",
+      "title": [
+        "Normierung durch künstliche Intelligenz in der Medizin"
+      ],
+      "author": [
+        {
+          "given": "Mandy",
+          "family": "Stake",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bert",
+          "family": "Heinrichs",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Regensburger Beiträge zur Digitalisierung des Gesundheitswesens",
+        "Gesundheit und Krankheit im Zeitalter der Digitalisierung"
+      ],
+      "subtitle": [
+        "Die Herausforderung des evaluativen Konservativismus"
+      ],
+      "ISBN": [
+        "9783837673944",
+        "9783839473948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            9
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Subjektivierung und (Re-)Objektivierung von Gesundheit am Beispiel des Self-Trackings",
+      "authors": [
+        "Thomas Zoglauer"
+      ],
+      "chapter_doi": "10.14361/9783839473948-005",
+      "citation_pages": "101-126"
+    },
+    {
+      "title": "Ungewollte Kinderlosigkeit in Zeiten digitaler Informations-, Kommunikationsund Interaktionsangebote",
+      "authors": [
+        "Sonja Haug",
+        "Karsten Weber"
+      ],
+      "chapter_doi": "10.14361/9783839473948-009",
+      "citation_pages": "211-236"
+    },
+    {
+      "title": "Gesundheit und Krankheit im Zeitalter der Digitalisierung Markierung, Verschiebung oder Überwindung einer umstrittenen Grenzziehung",
+      "authors": [
+        "Karsten Weber",
+        "Thomas Zoglauer"
+      ],
+      "chapter_doi": "10.14361/9783839473948-001",
+      "citation_pages": "7-20"
+    },
+    {
+      "title": "Das verflixte Problem mit Klassifikationen Zum Einfluss der Digitalisierung auf die Soziale Diagnostik in der Sozialen Arbeit",
+      "authors": [
+        "Diana Schneider"
+      ],
+      "chapter_doi": "10.14361/9783839473948-008",
+      "citation_pages": "189-210"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Karsten Weber",
+        "Thomas Zoglauer"
+      ],
+      "chapter_doi": "10.14361/9783839473948-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Szenarien des KI-Einsatzes zur Sterbevorhersage Ethische und professionsbezogene Überlegungen zu den Kriterien letzter Entscheidungen",
+      "authors": [
+        "Karsten Weber"
+      ],
+      "chapter_doi": "10.14361/9783839473948-007",
+      "citation_pages": "155-188"
+    },
+    {
+      "title": "Autor*innen",
+      "authors": [
+        "Karsten Weber",
+        "Thomas Zoglauer"
+      ],
+      "chapter_doi": "10.14361/9783839473948-010",
+      "citation_pages": "237-240"
+    },
+    {
+      "title": "Die Apologie der Heilkunst im Kontext des digitalen Gesundheitssystems Theorie, Technik und Praxis in der gegenwärtigen Medizin",
+      "authors": [
+        "Hans Friesen",
+        "Karin Mittelstädt"
+      ],
+      "chapter_doi": "10.14361/9783839473948-004",
+      "citation_pages": "83-100"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Karsten Weber",
+        "Thomas Zoglauer"
+      ],
+      "chapter_doi": "10.14361/9783839473948-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Krankheit als Widerständigkeitserfahrung und die Frage nach der Selbstbehauptung",
+      "authors": [
+        "Klaus Wiegerling"
+      ],
+      "chapter_doi": "10.14361/9783839473948-003",
+      "citation_pages": "57-82"
+    },
+    {
+      "title": "Streit um die Begriffe »Gesundheit« und »Krankheit« Ist er pathologisch?",
+      "authors": [
+        "Ulrich Schneider",
+        "Nikolaus Knoepffler"
+      ],
+      "chapter_doi": "10.14361/9783839473948-002",
+      "citation_pages": "21-56"
+    },
+    {
+      "title": "Normierung durch künstliche Intelligenz in der Medizin Die Herausforderung des evaluativen Konservativismus",
+      "authors": [
+        "Mandy Stake",
+        "Bert Heinrichs"
+      ],
+      "chapter_doi": "10.14361/9783839473948-006",
+      "citation_pages": "127-154"
+    }
+  ]
+}

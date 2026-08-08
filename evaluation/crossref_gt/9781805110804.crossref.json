@@ -1,0 +1,896 @@
+{
+  "isbn": "9781805110804",
+  "fetched_at": "2026-08-08T16:37:41.337022+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0354.02",
+      "type": "book-chapter",
+      "page": "17-68",
+      "title": [
+        "2. Tener demasiado"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2893-1814",
+          "authenticated-orcid": false,
+          "given": "Ingrid",
+          "family": "Robeyns",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.10",
+      "type": "book-chapter",
+      "page": "277-302",
+      "title": [
+        "10. Un argumento neorrepublicano a favor del limitarismo"
+      ],
+      "author": [
+        {
+          "given": "Elena",
+          "family": "Icardi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00wjc7c48",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Milan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.06",
+      "type": "book-chapter",
+      "page": "171-196",
+      "title": [
+        "6. Los límites del limitarismo"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3252-8059",
+          "authenticated-orcid": false,
+          "given": "Robert",
+          "family": "Huseby",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xtthb56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oslo"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.03",
+      "type": "book-chapter",
+      "page": "69-102",
+      "title": [
+        "3. Los límites a la riqueza en la historia de la filosofía occidental"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2021-989X",
+          "authenticated-orcid": false,
+          "given": "Matthias",
+          "family": "Kramm",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qw24q55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Wageningen University & Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2893-1814",
+          "authenticated-orcid": false,
+          "given": "Ingrid",
+          "family": "Robeyns",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.04",
+      "type": "book-chapter",
+      "page": "103-146",
+      "title": [
+        "4. Razones basadas en la autonomía a favor del limitarismo"
+      ],
+      "author": [
+        {
+          "given": "Danielle",
+          "family": "Zwarthoed",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.12",
+      "type": "book-chapter",
+      "page": "331-372",
+      "title": [
+        "12. Cambio climático, justicia distributiva y límites “preinstitucionales” a la apropiación de recursos"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2275-8130",
+          "authenticated-orcid": false,
+          "given": "Colin",
+          "family": "Hickey",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.09",
+      "type": "book-chapter",
+      "page": "245-276",
+      "title": [
+        "9. Suficiencia, límites y perspectivas de umbrales múltiples"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2275-8130",
+          "authenticated-orcid": false,
+          "given": "Colin",
+          "family": "Hickey",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.13",
+      "type": "book-chapter",
+      "page": "373-400",
+      "title": [
+        "13. Límites ecológicos"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5317-6016",
+          "authenticated-orcid": false,
+          "given": "Fergus",
+          "family": "Green",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "subtitle": [
+        "Ciencia, justicia, políticas y la vida buena"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.11",
+      "type": "book-chapter",
+      "page": "303-330",
+      "title": [
+        "11. El argumento del autorrespeto a favor del limitarismo"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3439-6088",
+          "authenticated-orcid": false,
+          "given": "Christian",
+          "family": "Neuhäuser",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01k97gp34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "TU Dortmund University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.05",
+      "type": "book-chapter",
+      "page": "147-170",
+      "title": [
+        "5. Limitarismo"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0337-3369",
+          "authenticated-orcid": false,
+          "given": "Dick",
+          "family": "Timmer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01k97gp34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "TU Dortmund University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "subtitle": [
+        "¿Patrón, principio o presunción?"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.14",
+      "type": "book-chapter",
+      "page": "401-434",
+      "title": [
+        "14. Limitarismo y generaciones futuras"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0457-2044",
+          "authenticated-orcid": false,
+          "given": "Tim",
+          "family": "Meijers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027bh9e22",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leiden University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.07",
+      "type": "book-chapter",
+      "page": "197-226",
+      "title": [
+        "7. ¿Por qué el limitarismo?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2893-1814",
+          "authenticated-orcid": false,
+          "given": "Ingrid",
+          "family": "Robeyns",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.01",
+      "type": "book-chapter",
+      "page": "1-16",
+      "title": [
+        "1. Introducción a la filosofía del limitarismo"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2893-1814",
+          "authenticated-orcid": false,
+          "given": "Ingrid",
+          "family": "Robeyns",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0354.08",
+      "type": "book-chapter",
+      "page": "227-244",
+      "title": [
+        "8. Limitarismo presuntivo"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0337-3369",
+          "authenticated-orcid": false,
+          "given": "Dick",
+          "family": "Timmer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01k97gp34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "TU Dortmund University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tener Demasiado"
+      ],
+      "subtitle": [
+        "Una respuesta a Robert Huseby"
+      ],
+      "ISBN": [
+        "9781805110804",
+        "9781805110811",
+        "9781805110828",
+        "9781805110866",
+        "9781805110835"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            19
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "2. Tener demasiado",
+      "authors": [
+        "Ingrid Robeyns"
+      ],
+      "chapter_doi": "10.11647/obp.0354.02",
+      "citation_pages": "17-68"
+    },
+    {
+      "title": "10. Un argumento neorrepublicano a favor del limitarismo",
+      "authors": [
+        "Elena Icardi"
+      ],
+      "chapter_doi": "10.11647/obp.0354.10",
+      "citation_pages": "277-302"
+    },
+    {
+      "title": "6. Los límites del limitarismo",
+      "authors": [
+        "Robert Huseby"
+      ],
+      "chapter_doi": "10.11647/obp.0354.06",
+      "citation_pages": "171-196"
+    },
+    {
+      "title": "3. Los límites a la riqueza en la historia de la filosofía occidental",
+      "authors": [
+        "Matthias Kramm",
+        "Ingrid Robeyns"
+      ],
+      "chapter_doi": "10.11647/obp.0354.03",
+      "citation_pages": "69-102"
+    },
+    {
+      "title": "4. Razones basadas en la autonomía a favor del limitarismo",
+      "authors": [
+        "Danielle Zwarthoed"
+      ],
+      "chapter_doi": "10.11647/obp.0354.04",
+      "citation_pages": "103-146"
+    },
+    {
+      "title": "12. Cambio climático, justicia distributiva y límites “preinstitucionales” a la apropiación de recursos",
+      "authors": [
+        "Colin Hickey"
+      ],
+      "chapter_doi": "10.11647/obp.0354.12",
+      "citation_pages": "331-372"
+    },
+    {
+      "title": "9. Suficiencia, límites y perspectivas de umbrales múltiples",
+      "authors": [
+        "Colin Hickey"
+      ],
+      "chapter_doi": "10.11647/obp.0354.09",
+      "citation_pages": "245-276"
+    },
+    {
+      "title": "13. Límites ecológicos Ciencia, justicia, políticas y la vida buena",
+      "authors": [
+        "Fergus Green"
+      ],
+      "chapter_doi": "10.11647/obp.0354.13",
+      "citation_pages": "373-400"
+    },
+    {
+      "title": "11. El argumento del autorrespeto a favor del limitarismo",
+      "authors": [
+        "Christian Neuhäuser"
+      ],
+      "chapter_doi": "10.11647/obp.0354.11",
+      "citation_pages": "303-330"
+    },
+    {
+      "title": "5. Limitarismo ¿Patrón, principio o presunción?",
+      "authors": [
+        "Dick Timmer"
+      ],
+      "chapter_doi": "10.11647/obp.0354.05",
+      "citation_pages": "147-170"
+    },
+    {
+      "title": "14. Limitarismo y generaciones futuras",
+      "authors": [
+        "Tim Meijers"
+      ],
+      "chapter_doi": "10.11647/obp.0354.14",
+      "citation_pages": "401-434"
+    },
+    {
+      "title": "7. ¿Por qué el limitarismo?",
+      "authors": [
+        "Ingrid Robeyns"
+      ],
+      "chapter_doi": "10.11647/obp.0354.07",
+      "citation_pages": "197-226"
+    },
+    {
+      "title": "1. Introducción a la filosofía del limitarismo",
+      "authors": [
+        "Ingrid Robeyns"
+      ],
+      "chapter_doi": "10.11647/obp.0354.01",
+      "citation_pages": "1-16"
+    },
+    {
+      "title": "8. Limitarismo presuntivo Una respuesta a Robert Huseby",
+      "authors": [
+        "Dick Timmer"
+      ],
+      "chapter_doi": "10.11647/obp.0354.08",
+      "citation_pages": "227-244"
+    }
+  ]
+}

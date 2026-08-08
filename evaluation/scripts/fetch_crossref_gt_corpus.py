@@ -23,6 +23,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
+from urllib.parse import urlsplit
 
 import httpx
 
@@ -34,6 +35,30 @@ from chapter_segmentation.evidence.crossref_strategy import (
 
 _CORPUS_DIR = Path(__file__).resolve().parent.parent / "crossref_gt"
 _DEFAULT_CONTACT_EMAIL = "boulanger@lhlt.mpg.de"
+
+# httpx's default User-Agent ("python-httpx/x.y.z") gets blocklisted by
+# more than one publisher's bot-management layer -- found empirically while
+# curating the manifest (see docs/superpowers/plans/
+# 2026-08-08-crossref-gt-corpus.md Task 3):
+# - Open Book Publishers' host sits behind an AWS WAF that serves an HTTP
+#   202 "challenge" page unless the request carries a browser-like UA.
+# - Springer serves a JS "Client Challenge" page specifically to requests
+#   whose UA identifies a known HTTP library (httpx, requests, ...) --
+#   but, unlike OBP, a *browser* UA triggers the exact same challenge
+#   there (it looks like a real browser that can't run JS, which is even
+#   more suspicious to that check). A `curl`-style UA is what actually
+#   clears it, and also works cleanly against every other host in this
+#   manifest (OpenEdition, transcript Verlag, UCL Discovery, Zenodo,
+#   Athabasca University Press, archive.org).
+# So: OBP gets the browser UA, everything else gets the curl UA -- neither
+# is applied to the Crossref API calls, which identify themselves honestly
+# via --contact-email instead.
+_OBP_HOST = "books.openbookpublishers.com"
+_OBP_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
+_DEFAULT_DOWNLOAD_USER_AGENT = "curl/8.4.0"
 
 
 def _crossref_book_chapters(isbn: str, client: httpx.Client, contact_email: Optional[str]) -> list[dict]:
@@ -130,8 +155,10 @@ def _download_pdf(book: dict, client: httpx.Client, target: Path, force: bool) -
     download for one book must not abort the batch."""
     if target.exists() and not force:
         return "skip"
+    is_obp = urlsplit(book["download_url"]).hostname == _OBP_HOST
+    headers = {"User-Agent": _OBP_USER_AGENT if is_obp else _DEFAULT_DOWNLOAD_USER_AGENT}
     try:
-        response = client.get(book["download_url"], timeout=120)
+        response = client.get(book["download_url"], timeout=120, headers=headers)
         response.raise_for_status()
     except httpx.HTTPError as exc:
         print(f"  [warn] failed to download PDF for {book['isbn']}: {exc}")

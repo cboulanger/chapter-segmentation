@@ -1,0 +1,1515 @@
+{
+  "isbn": "9781783741953",
+  "fetched_at": "2026-08-08T16:38:05.344355+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0085.07",
+      "type": "book-chapter",
+      "page": "253-260",
+      "title": [
+        "7. Conclusions"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7766-6773",
+          "authenticated-orcid": false,
+          "given": "Bhaskar",
+          "family": "Vira",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ramni",
+          "family": "Jamnadass",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniela",
+          "family": "Kleinschmit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stepha",
+          "family": "McMullin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephanie",
+          "family": "Mansourian",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henry",
+          "family": "Neufeldt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "John A.",
+          "family": "Parrotta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Terry",
+          "family": "Sunderland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christoph",
+          "family": "Wildburger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Forests and Food"
+      ],
+      "ISBN": [
+        "9781783741939",
+        "9781783741946",
+        "9781783741953",
+        "9781800645059",
+        "9781783746385",
+        "9781783741960",
+        "9781783741977"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0085.04",
+      "type": "book-chapter",
+      "page": "135-180",
+      "title": [
+        "4. Drivers of Forests and Tree-based Systems for Food Security and Nutrition"
+      ],
+      "author": [
+        {
+          "given": "Daniela",
+          "family": "Kleinschmit",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bimbika",
+          "family": "Sijapati Basnett",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adrian",
+          "family": "Martin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nitin D.",
+          "family": "Rai",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Carsten",
+          "family": "Smith-Hall",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Neil M.",
+          "family": "Dawson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gordon",
+          "family": "Hickey",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henry",
+          "family": "Neufeldt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hemant R.",
+          "family": "Ojha",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Solomon",
+          "family": "Zena Walelign",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Forests and Food"
+      ],
+      "ISBN": [
+        "9781783741939",
+        "9781783741946",
+        "9781783741953",
+        "9781800645059",
+        "9781783746385",
+        "9781783741960",
+        "9781783741977"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0085.05",
+      "type": "book-chapter",
+      "page": "181-208",
+      "title": [
+        "5. Response Options Across the Landscape"
+      ],
+      "author": [
+        {
+          "given": "Terry",
+          "family": "Sunderland",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Frédéric",
+          "family": "Baudron",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amy",
+          "family": "Ickowitz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christine",
+          "family": "Padoch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mirjam",
+          "family": "Ros-Tonen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chris",
+          "family": "Sandbrook",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7766-6773",
+          "authenticated-orcid": false,
+          "given": "Bhaskar",
+          "family": "Vira",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Josephine",
+          "family": "Chambers",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elizabeth",
+          "family": "Deakin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Samson",
+          "family": "Foli",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katy",
+          "family": "Jeary",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "John A.",
+          "family": "Parrotta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bronwen",
+          "family": "Powell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "James",
+          "family": "Reed",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Ayeri Ogalleh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henry",
+          "family": "Neufeldt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anca",
+          "family": "Serban",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Forests and Food"
+      ],
+      "ISBN": [
+        "9781783741939",
+        "9781783741946",
+        "9781783741953",
+        "9781800645059",
+        "9781783746385",
+        "9781783741960",
+        "9781783741977"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0085.03",
+      "type": "book-chapter",
+      "page": "71-134",
+      "title": [
+        "3. The Historical, Environmental and Socio-Economic Context of Forests and Tree-Based Systems for Food Security and Nutrition"
+      ],
+      "author": [
+        {
+          "given": "John A.",
+          "family": "Parrotta",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jennie Dey",
+          "family": "de Pryck",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Beatrice",
+          "family": "Darko Obiri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christine",
+          "family": "Padoch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bronwen",
+          "family": "Powell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chris",
+          "family": "Sandbrook",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bina",
+          "family": "Agarwal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amy",
+          "family": "Ickowitz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katy",
+          "family": "Jeary",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anca",
+          "family": "Serban",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Terry",
+          "family": "Sunderland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tran",
+          "family": "Nam Tu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Forests and Food"
+      ],
+      "ISBN": [
+        "9781783741939",
+        "9781783741946",
+        "9781783741953",
+        "9781800645059",
+        "9781783746385",
+        "9781783741960",
+        "9781783741977"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0085.02",
+      "type": "book-chapter",
+      "page": "27-70",
+      "title": [
+        "2. Understanding the Roles of Forests and Tree-based Systems in Food Provision"
+      ],
+      "author": [
+        {
+          "given": "Ramni",
+          "family": "Jamnadass",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stepha",
+          "family": "McMullin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Miyuki",
+          "family": "Iiyama",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ian K.",
+          "family": "Dawson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bronwen",
+          "family": "Powell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Celine",
+          "family": "Termote",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amy",
+          "family": "Ickowitz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katja",
+          "family": "Kehlenbeck",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Barbara",
+          "family": "Vinceti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nathalie",
+          "family": "van Vliet",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gudrun",
+          "family": "Keding",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Barbara",
+          "family": "Stadlmayr",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick",
+          "family": "Van Damme",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sammy",
+          "family": "Carsan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Terry",
+          "family": "Sunderland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mary",
+          "family": "Njenga",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amos",
+          "family": "Gyau",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paolo",
+          "family": "Cerutti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jolien",
+          "family": "Schure",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christophe",
+          "family": "Kouame",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Beatrice",
+          "family": "Darko Obiri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Ofori",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bina",
+          "family": "Agarwal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henry",
+          "family": "Neufeldt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ann",
+          "family": "Degrande",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anca",
+          "family": "Serban",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Forests and Food"
+      ],
+      "ISBN": [
+        "9781783741939",
+        "9781783741946",
+        "9781783741953",
+        "9781800645059",
+        "9781783746385",
+        "9781783741960",
+        "9781783741977"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0085.01",
+      "type": "book-chapter",
+      "page": "9-26",
+      "title": [
+        "1. Forests, Trees and Landscapes for Food Security and Nutrition"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7766-6773",
+          "authenticated-orcid": false,
+          "given": "Bhaskar",
+          "family": "Vira",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bina",
+          "family": "Agarwal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ramni",
+          "family": "Jamnadass",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniela",
+          "family": "Kleinschmit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stepha",
+          "family": "McMullin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephanie",
+          "family": "Mansourian",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henry",
+          "family": "Neufeldt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "John A.",
+          "family": "Parrotta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Terry",
+          "family": "Sunderland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christoph",
+          "family": "Wildburger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Forests and Food"
+      ],
+      "ISBN": [
+        "9781783741939",
+        "9781783741946",
+        "9781783741953",
+        "9781800645059",
+        "9781783746385",
+        "9781783741960",
+        "9781783741977"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0085.06",
+      "type": "book-chapter",
+      "page": "209-252",
+      "title": [
+        "6. Public Sector, Private Sector and Socio-Cultural Response Options"
+      ],
+      "author": [
+        {
+          "given": "Henry",
+          "family": "Neufeldt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pablo",
+          "family": "Pacheco",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hemant R.",
+          "family": "Ojha",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Ayeri Ogalleh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jason",
+          "family": "Donovan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lisa",
+          "family": "Fuchs",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniela",
+          "family": "Kleinschmit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patti",
+          "family": "Kristjanson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Godwin",
+          "family": "Kowero",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vincent O.",
+          "family": "Oeba",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bronwen",
+          "family": "Powell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Forests and Food"
+      ],
+      "ISBN": [
+        "9781783741939",
+        "9781783741946",
+        "9781783741953",
+        "9781800645059",
+        "9781783746385",
+        "9781783741960",
+        "9781783741977"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            15
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "7. Conclusions",
+      "authors": [
+        "Bhaskar Vira",
+        "Ramni Jamnadass",
+        "Daniela Kleinschmit",
+        "Stepha McMullin",
+        "Stephanie Mansourian",
+        "Henry Neufeldt",
+        "John A. Parrotta",
+        "Terry Sunderland",
+        "Christoph Wildburger"
+      ],
+      "chapter_doi": "10.11647/obp.0085.07",
+      "citation_pages": "253-260"
+    },
+    {
+      "title": "4. Drivers of Forests and Tree-based Systems for Food Security and Nutrition",
+      "authors": [
+        "Daniela Kleinschmit",
+        "Bimbika Sijapati Basnett",
+        "Adrian Martin",
+        "Nitin D. Rai",
+        "Carsten Smith-Hall",
+        "Neil M. Dawson",
+        "Gordon Hickey",
+        "Henry Neufeldt",
+        "Hemant R. Ojha",
+        "Solomon Zena Walelign"
+      ],
+      "chapter_doi": "10.11647/obp.0085.04",
+      "citation_pages": "135-180"
+    },
+    {
+      "title": "5. Response Options Across the Landscape",
+      "authors": [
+        "Terry Sunderland",
+        "Frédéric Baudron",
+        "Amy Ickowitz",
+        "Christine Padoch",
+        "Mirjam Ros-Tonen",
+        "Chris Sandbrook",
+        "Bhaskar Vira",
+        "Josephine Chambers",
+        "Elizabeth Deakin",
+        "Samson Foli",
+        "Katy Jeary",
+        "John A. Parrotta",
+        "Bronwen Powell",
+        "James Reed",
+        "Sarah Ayeri Ogalleh",
+        "Henry Neufeldt",
+        "Anca Serban"
+      ],
+      "chapter_doi": "10.11647/obp.0085.05",
+      "citation_pages": "181-208"
+    },
+    {
+      "title": "3. The Historical, Environmental and Socio-Economic Context of Forests and Tree-Based Systems for Food Security and Nutrition",
+      "authors": [
+        "John A. Parrotta",
+        "Jennie Dey de Pryck",
+        "Beatrice Darko Obiri",
+        "Christine Padoch",
+        "Bronwen Powell",
+        "Chris Sandbrook",
+        "Bina Agarwal",
+        "Amy Ickowitz",
+        "Katy Jeary",
+        "Anca Serban",
+        "Terry Sunderland",
+        "Tran Nam Tu"
+      ],
+      "chapter_doi": "10.11647/obp.0085.03",
+      "citation_pages": "71-134"
+    },
+    {
+      "title": "2. Understanding the Roles of Forests and Tree-based Systems in Food Provision",
+      "authors": [
+        "Ramni Jamnadass",
+        "Stepha McMullin",
+        "Miyuki Iiyama",
+        "Ian K. Dawson",
+        "Bronwen Powell",
+        "Celine Termote",
+        "Amy Ickowitz",
+        "Katja Kehlenbeck",
+        "Barbara Vinceti",
+        "Nathalie van Vliet",
+        "Gudrun Keding",
+        "Barbara Stadlmayr",
+        "Patrick Van Damme",
+        "Sammy Carsan",
+        "Terry Sunderland",
+        "Mary Njenga",
+        "Amos Gyau",
+        "Paolo Cerutti",
+        "Jolien Schure",
+        "Christophe Kouame",
+        "Beatrice Darko Obiri",
+        "Daniel Ofori",
+        "Bina Agarwal",
+        "Henry Neufeldt",
+        "Ann Degrande",
+        "Anca Serban"
+      ],
+      "chapter_doi": "10.11647/obp.0085.02",
+      "citation_pages": "27-70"
+    },
+    {
+      "title": "1. Forests, Trees and Landscapes for Food Security and Nutrition",
+      "authors": [
+        "Bhaskar Vira",
+        "Bina Agarwal",
+        "Ramni Jamnadass",
+        "Daniela Kleinschmit",
+        "Stepha McMullin",
+        "Stephanie Mansourian",
+        "Henry Neufeldt",
+        "John A. Parrotta",
+        "Terry Sunderland",
+        "Christoph Wildburger"
+      ],
+      "chapter_doi": "10.11647/obp.0085.01",
+      "citation_pages": "9-26"
+    },
+    {
+      "title": "6. Public Sector, Private Sector and Socio-Cultural Response Options",
+      "authors": [
+        "Henry Neufeldt",
+        "Pablo Pacheco",
+        "Hemant R. Ojha",
+        "Sarah Ayeri Ogalleh",
+        "Jason Donovan",
+        "Lisa Fuchs",
+        "Daniela Kleinschmit",
+        "Patti Kristjanson",
+        "Godwin Kowero",
+        "Vincent O. Oeba",
+        "Bronwen Powell"
+      ],
+      "chapter_doi": "10.11647/obp.0085.06",
+      "citation_pages": "209-252"
+    }
+  ]
+}

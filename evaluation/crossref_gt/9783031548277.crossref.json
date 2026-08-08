@@ -1,0 +1,1430 @@
+{
+  "isbn": "9783031548277",
+  "fetched_at": "2026-08-08T16:36:55.637455+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.1007/978-3-031-54827-7_11",
+      "type": "book-chapter",
+      "page": "105-112",
+      "title": [
+        "LLM-Aided Social Media Influence Operations"
+      ],
+      "author": [
+        {
+          "given": "Raphael",
+          "family": "Meier",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_13",
+      "type": "book-chapter",
+      "page": "121-128",
+      "title": [
+        "LLM Adoption Trends and Associated Risks"
+      ],
+      "author": [
+        {
+          "given": "Zachary",
+          "family": "Schillaci",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_27",
+      "type": "book-chapter",
+      "page": "243-247",
+      "title": [
+        "Towards Safe LLMs Integration"
+      ],
+      "author": [
+        {
+          "given": "Subhabrata",
+          "family": "Majumdar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Terry",
+          "family": "Vogelsang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_3",
+      "type": "book-chapter",
+      "page": "31-44",
+      "title": [
+        "Overview of Existing LLM Families"
+      ],
+      "author": [
+        {
+          "given": "Andrei",
+          "family": "Kucharavy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_6",
+      "type": "book-chapter",
+      "page": "65-72",
+      "title": [
+        "Tasks for LLMs and Their Evaluation"
+      ],
+      "author": [
+        {
+          "given": "Natalia",
+          "family": "Ostapuk",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Julien",
+          "family": "Audiffren",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_26",
+      "type": "book-chapter",
+      "page": "235-242",
+      "title": [
+        "Exploring the Dual Role of LLMs in Cybersecurity: Threats and Defenses"
+      ],
+      "author": [
+        {
+          "given": "Ciarán",
+          "family": "Bryce",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexandros",
+          "family": "Kalousis",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ilan",
+          "family": "Leroux",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hélène",
+          "family": "Madinier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Pasche",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick",
+          "family": "Ruch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_19",
+      "type": "book-chapter",
+      "page": "175-179",
+      "title": [
+        "Towards Privacy Preserving LLMs Training"
+      ],
+      "author": [
+        {
+          "given": "Beat",
+          "family": "Buesser",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_20",
+      "type": "book-chapter",
+      "page": "181-188",
+      "title": [
+        "Adversarial Evasion on LLMs"
+      ],
+      "author": [
+        {
+          "given": "Rachid",
+          "family": "Guerraoui",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Rafael",
+          "family": "Pinot",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_25",
+      "type": "book-chapter",
+      "page": "225-231",
+      "title": [
+        "Standards for LLM Security"
+      ],
+      "author": [
+        {
+          "given": "Subhabrata",
+          "family": "Majumdar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_16",
+      "type": "book-chapter",
+      "page": "145-152",
+      "title": [
+        "Copyright-Related Risks in the Creation and Use of ML/AI Systems"
+      ],
+      "author": [
+        {
+          "given": "Daniel M.",
+          "family": "German",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_15",
+      "type": "book-chapter",
+      "page": "137-144",
+      "title": [
+        "Insurance Outlook for LLM-Induced Risk"
+      ],
+      "author": [
+        {
+          "given": "Loïc",
+          "family": "Maréchal",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Celeny",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_7",
+      "type": "book-chapter",
+      "page": "75-79",
+      "title": [
+        "Private Information Leakage in LLMs"
+      ],
+      "author": [
+        {
+          "given": "Beat",
+          "family": "Buesser",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_2",
+      "type": "book-chapter",
+      "page": "19-29",
+      "title": [
+        "Adapting LLMs to Downstream Applications"
+      ],
+      "author": [
+        {
+          "given": "Andrei",
+          "family": "Kucharavy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_18",
+      "type": "book-chapter",
+      "page": "165-173",
+      "title": [
+        "Enhancing Security Awareness and Education for LLMs"
+      ],
+      "author": [
+        {
+          "given": "Sebastiano",
+          "family": "Panichella",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_14",
+      "type": "book-chapter",
+      "page": "129-135",
+      "title": [
+        "The Flow of Investments in the LLM Space"
+      ],
+      "author": [
+        {
+          "given": "Loïc",
+          "family": "Maréchal",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_22",
+      "type": "book-chapter",
+      "page": "197-204",
+      "title": [
+        "LLM Detectors"
+      ],
+      "author": [
+        {
+          "given": "Henrique",
+          "family": "Da Silva Gameiro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_17",
+      "type": "book-chapter",
+      "page": "153-161",
+      "title": [
+        "Monitoring Emerging Trends in LLM Research"
+      ],
+      "author": [
+        {
+          "given": "Maxime",
+          "family": "Würsch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Dimitri Percia",
+          "family": "David",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Alain",
+          "family": "Mermoud",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_12",
+      "type": "book-chapter",
+      "page": "113-118",
+      "title": [
+        "Deep(er) Web Indexing with LLMs"
+      ],
+      "author": [
+        {
+          "given": "Aidan",
+          "family": "Holland",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_10",
+      "type": "book-chapter",
+      "page": "99-104",
+      "title": [
+        "LLM Controls Execution Flow Hijacking"
+      ],
+      "author": [
+        {
+          "given": "Terry",
+          "family": "Vogelsang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_4",
+      "type": "book-chapter",
+      "page": "45-53",
+      "title": [
+        "Conversational Agents"
+      ],
+      "author": [
+        {
+          "given": "Ljiljana",
+          "family": "Dolamic",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_5",
+      "type": "book-chapter",
+      "page": "55-64",
+      "title": [
+        "Fundamental Limitations of Generative LLMs"
+      ],
+      "author": [
+        {
+          "given": "Andrei",
+          "family": "Kucharavy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_24",
+      "type": "book-chapter",
+      "page": "213-223",
+      "title": [
+        "LLMs Red Teaming"
+      ],
+      "author": [
+        {
+          "given": "Dragos",
+          "family": "Ruiu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_23",
+      "type": "book-chapter",
+      "page": "205-211",
+      "title": [
+        "On-Site Deployment of LLMs"
+      ],
+      "author": [
+        {
+          "given": "Zachary",
+          "family": "Schillaci",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_1",
+      "type": "book-chapter",
+      "page": "3-17",
+      "title": [
+        "From Deep Neural Language Models to LLMs"
+      ],
+      "author": [
+        {
+          "given": "Andrei",
+          "family": "Kucharavy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_8",
+      "type": "book-chapter",
+      "page": "81-86",
+      "title": [
+        "Phishing and Social Engineering in the Age of LLMs"
+      ],
+      "author": [
+        {
+          "given": "Sean",
+          "family": "Gallagher",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ben",
+          "family": "Gelman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Salma",
+          "family": "Taoufiq",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tamás",
+          "family": "Vörös",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Younghoo",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adarsh",
+          "family": "Kyadige",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sean",
+          "family": "Bergeron",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_21",
+      "type": "book-chapter",
+      "page": "189-196",
+      "title": [
+        "Robust and Private Federated Learning on LLMs"
+      ],
+      "author": [
+        {
+          "given": "Rachid",
+          "family": "Guerraoui",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Nirupam",
+          "family": "Gupta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7_9",
+      "type": "book-chapter",
+      "page": "87-97",
+      "title": [
+        "Vulnerabilities Introduced by LLMs Through Code Suggestions"
+      ],
+      "author": [
+        {
+          "given": "Sebastiano",
+          "family": "Panichella",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "LLM-Aided Social Media Influence Operations",
+      "authors": [
+        "Raphael Meier"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_11",
+      "citation_pages": "105-112"
+    },
+    {
+      "title": "LLM Adoption Trends and Associated Risks",
+      "authors": [
+        "Zachary Schillaci"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_13",
+      "citation_pages": "121-128"
+    },
+    {
+      "title": "Towards Safe LLMs Integration",
+      "authors": [
+        "Subhabrata Majumdar",
+        "Terry Vogelsang"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_27",
+      "citation_pages": "243-247"
+    },
+    {
+      "title": "Overview of Existing LLM Families",
+      "authors": [
+        "Andrei Kucharavy"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_3",
+      "citation_pages": "31-44"
+    },
+    {
+      "title": "Tasks for LLMs and Their Evaluation",
+      "authors": [
+        "Natalia Ostapuk",
+        "Julien Audiffren"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_6",
+      "citation_pages": "65-72"
+    },
+    {
+      "title": "Exploring the Dual Role of LLMs in Cybersecurity: Threats and Defenses",
+      "authors": [
+        "Ciarán Bryce",
+        "Alexandros Kalousis",
+        "Ilan Leroux",
+        "Hélène Madinier",
+        "Thomas Pasche",
+        "Patrick Ruch"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_26",
+      "citation_pages": "235-242"
+    },
+    {
+      "title": "Towards Privacy Preserving LLMs Training",
+      "authors": [
+        "Beat Buesser"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_19",
+      "citation_pages": "175-179"
+    },
+    {
+      "title": "Adversarial Evasion on LLMs",
+      "authors": [
+        "Rachid Guerraoui",
+        "Rafael Pinot"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_20",
+      "citation_pages": "181-188"
+    },
+    {
+      "title": "Standards for LLM Security",
+      "authors": [
+        "Subhabrata Majumdar"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_25",
+      "citation_pages": "225-231"
+    },
+    {
+      "title": "Copyright-Related Risks in the Creation and Use of ML/AI Systems",
+      "authors": [
+        "Daniel M. German"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_16",
+      "citation_pages": "145-152"
+    },
+    {
+      "title": "Insurance Outlook for LLM-Induced Risk",
+      "authors": [
+        "Loïc Maréchal",
+        "Daniel Celeny"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_15",
+      "citation_pages": "137-144"
+    },
+    {
+      "title": "Private Information Leakage in LLMs",
+      "authors": [
+        "Beat Buesser"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_7",
+      "citation_pages": "75-79"
+    },
+    {
+      "title": "Adapting LLMs to Downstream Applications",
+      "authors": [
+        "Andrei Kucharavy"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_2",
+      "citation_pages": "19-29"
+    },
+    {
+      "title": "Enhancing Security Awareness and Education for LLMs",
+      "authors": [
+        "Sebastiano Panichella"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_18",
+      "citation_pages": "165-173"
+    },
+    {
+      "title": "The Flow of Investments in the LLM Space",
+      "authors": [
+        "Loïc Maréchal"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_14",
+      "citation_pages": "129-135"
+    },
+    {
+      "title": "LLM Detectors",
+      "authors": [
+        "Henrique Da Silva Gameiro"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_22",
+      "citation_pages": "197-204"
+    },
+    {
+      "title": "Monitoring Emerging Trends in LLM Research",
+      "authors": [
+        "Maxime Würsch",
+        "Dimitri Percia David",
+        "Alain Mermoud"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_17",
+      "citation_pages": "153-161"
+    },
+    {
+      "title": "Deep(er) Web Indexing with LLMs",
+      "authors": [
+        "Aidan Holland"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_12",
+      "citation_pages": "113-118"
+    },
+    {
+      "title": "LLM Controls Execution Flow Hijacking",
+      "authors": [
+        "Terry Vogelsang"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_10",
+      "citation_pages": "99-104"
+    },
+    {
+      "title": "Conversational Agents",
+      "authors": [
+        "Ljiljana Dolamic"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_4",
+      "citation_pages": "45-53"
+    },
+    {
+      "title": "Fundamental Limitations of Generative LLMs",
+      "authors": [
+        "Andrei Kucharavy"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_5",
+      "citation_pages": "55-64"
+    },
+    {
+      "title": "LLMs Red Teaming",
+      "authors": [
+        "Dragos Ruiu"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_24",
+      "citation_pages": "213-223"
+    },
+    {
+      "title": "On-Site Deployment of LLMs",
+      "authors": [
+        "Zachary Schillaci"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_23",
+      "citation_pages": "205-211"
+    },
+    {
+      "title": "From Deep Neural Language Models to LLMs",
+      "authors": [
+        "Andrei Kucharavy"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_1",
+      "citation_pages": "3-17"
+    },
+    {
+      "title": "Phishing and Social Engineering in the Age of LLMs",
+      "authors": [
+        "Sean Gallagher",
+        "Ben Gelman",
+        "Salma Taoufiq",
+        "Tamás Vörös",
+        "Younghoo Lee",
+        "Adarsh Kyadige",
+        "Sean Bergeron"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_8",
+      "citation_pages": "81-86"
+    },
+    {
+      "title": "Robust and Private Federated Learning on LLMs",
+      "authors": [
+        "Rachid Guerraoui",
+        "Nirupam Gupta"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_21",
+      "citation_pages": "189-196"
+    },
+    {
+      "title": "Vulnerabilities Introduced by LLMs Through Code Suggestions",
+      "authors": [
+        "Sebastiano Panichella"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_9",
+      "citation_pages": "87-97"
+    }
+  ]
+}

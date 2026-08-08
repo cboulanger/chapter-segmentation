@@ -1,0 +1,2978 @@
+{
+  "isbn": "9781805111290",
+  "fetched_at": "2026-08-08T16:38:15.244002+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0363.20",
+      "type": "book-chapter",
+      "page": "473-490",
+      "title": [
+        "20. One-one coco full basket — on the value of critical pedagogy of caring for learning and teaching in higher education"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5744-7231",
+          "authenticated-orcid": false,
+          "given": "Carol",
+          "family": "Hordatt Gentles",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03fkc8c64",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the West Indies"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.08",
+      "type": "book-chapter",
+      "page": "199-238",
+      "title": [
+        "8. A meditation on global further education, in haiku form"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9064-1474",
+          "authenticated-orcid": false,
+          "given": "Jess",
+          "family": "Auerbach",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03p74gp79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cape Town"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.27",
+      "type": "book-chapter",
+      "page": "603-622",
+      "title": [
+        "27. Who cares about procurement?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4769-1577",
+          "authenticated-orcid": false,
+          "given": "Anne-Marie",
+          "family": "Scott",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Apereo"
+            },
+            {
+              "name": "Open Source Initiative"
+            },
+            {
+              "name": "OpenETC"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6079-0484",
+          "authenticated-orcid": false,
+          "given": "Brenna Clarke",
+          "family": "Gray",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01v9wj339",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Thompson Rivers University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.23",
+      "type": "book-chapter",
+      "page": "533-554",
+      "title": [
+        "23. The only way is ethics: A dialogue of assessment and social good"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5014-2662",
+          "authenticated-orcid": false,
+          "given": "Tim",
+          "family": "Fawns",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02bfwt286",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Monash University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3087-8933",
+          "authenticated-orcid": false,
+          "given": "Juuso Henrik",
+          "family": "Nieminen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02zhqgq86",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Hong Kong"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02czsnj07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Deakin University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.28",
+      "type": "book-chapter",
+      "page": "35-52",
+      "title": [
+        "Higher education for good"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9266-7598",
+          "authenticated-orcid": false,
+          "given": "Catherine",
+          "family": "Cronin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1239-7493",
+          "authenticated-orcid": false,
+          "given": "Laura",
+          "family": "Czerniewicz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03p74gp79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cape Town"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.12",
+      "type": "book-chapter",
+      "page": "303-316",
+      "title": [
+        "12. Visioning futures of higher education for the common good"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4192-1781",
+          "authenticated-orcid": false,
+          "given": "Mpine",
+          "family": "Makoe",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/048cwvf49",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of South Africa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.13",
+      "type": "book-chapter",
+      "page": "317-334",
+      "title": [
+        "13. Speculative futures for higher education: weaving perspectives for good"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2654-1705",
+          "authenticated-orcid": false,
+          "given": "Elizabeth",
+          "family": "Childs",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05w4ste42",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Royal Roads University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6579-9576",
+          "authenticated-orcid": false,
+          "given": "George",
+          "family": "Veletsianos",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05w4ste42",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Royal Roads University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amber",
+          "family": "Donahue",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-4112-9748",
+          "authenticated-orcid": false,
+          "given": "Tamara",
+          "family": "Leary",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05w4ste42",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Royal Roads University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kyla",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05w4ste42",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Royal Roads University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4769-1577",
+          "authenticated-orcid": false,
+          "given": "Anne-Marie",
+          "family": "Scott",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Apereo"
+            },
+            {
+              "name": "Open Source Initiative"
+            },
+            {
+              "name": "OpenETC"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.16",
+      "type": "book-chapter",
+      "page": "371-396",
+      "title": [
+        "16. A design justice approach to Universal Design for Learning"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2871-1907",
+          "authenticated-orcid": false,
+          "given": "Aleya",
+          "family": "Ramparsad Banwari",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03p74gp79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cape Town"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0571-2667",
+          "authenticated-orcid": false,
+          "given": "Philip",
+          "family": "Mbulalina Dambisya",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03p74gp79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cape Town"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Benedict",
+          "family": "Khumalo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03p74gp79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cape Town"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3709-5838",
+          "authenticated-orcid": false,
+          "given": "Kristin",
+          "family": "van Tonder",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03p74gp79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cape Town"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "Perspectives from the Global South"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.04",
+      "type": "book-chapter",
+      "page": "111-136",
+      "title": [
+        "4. Imagining higher education as infrastructures of care"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7779-2059",
+          "authenticated-orcid": false,
+          "given": "Leslie",
+          "family": "Chan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03dbr7087",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mona",
+          "family": "Ghali",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1838-540X",
+          "authenticated-orcid": false,
+          "given": "Paul",
+          "family": "Prinsloo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/048cwvf49",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of South Africa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.05",
+      "type": "book-chapter",
+      "page": "137-160",
+      "title": [
+        "5. Why decolonising “knowledge” matters"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4005-0160",
+          "authenticated-orcid": false,
+          "given": "Dina Zoe",
+          "family": "Belluigi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00hswnk62",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Queen's University Belfast"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03r1jm528",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nelson Mandela University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "Deliberations for educators on that made fragile"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.09",
+      "type": "book-chapter",
+      "page": "239-266",
+      "title": [
+        "9. Artificial intelligence for good?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6997-6974",
+          "authenticated-orcid": false,
+          "given": "Ekaterina (Katya)",
+          "family": "Pechenkina",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/031rekg67",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Swinburne University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "Challenges and possibilities of AI in higher education from a data justice perspective"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.22",
+      "type": "book-chapter",
+      "page": "509-532",
+      "title": [
+        "22. Collaboratively reimagining teaching and learning"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4880-1021",
+          "authenticated-orcid": false,
+          "given": "Flora",
+          "family": "Masumbuo Fabian",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/009n8zh45",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Dodoma"
+            },
+            {
+              "name": "Mwanza University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6804-2969",
+          "authenticated-orcid": false,
+          "given": "Jonathan",
+          "family": "Harle",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05qm91k56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "International Network for Advancing Science and Policy"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Perpetua Joseph",
+          "family": "Kalimasi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02qrvdj69",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Mzumbe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rehema",
+          "family": "Kilonzo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/009n8zh45",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Dodoma"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gloria",
+          "family": "Lamaro",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/042vepq05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Gulu University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4276-3682",
+          "authenticated-orcid": false,
+          "given": "Albert",
+          "family": "Luswata",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04v4swe56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Uganda Martyrs University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9178-6576",
+          "authenticated-orcid": false,
+          "given": "David",
+          "family": "Monk",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/042vepq05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Gulu University"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04xyxjd90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nottingham Trent University"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04s5mat29",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Victoria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3655-8973",
+          "authenticated-orcid": false,
+          "given": "Edwin",
+          "family": "Ngowi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00jdryp44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sokoine University of Agriculture"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2208-4498",
+          "authenticated-orcid": false,
+          "given": "Femi",
+          "family": "Nzegwu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00a0jsq62",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "London School of Hygiene & Tropical Medicine"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3953-5024",
+          "authenticated-orcid": false,
+          "given": "Damary",
+          "family": "Sikalieh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05qj64q37",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "United States International University Africa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.03",
+      "type": "book-chapter",
+      "page": "89-110",
+      "title": [
+        "3. On public goods, cursing, and finding hope in the (neoliberal) twilight zone"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8346-3913",
+          "authenticated-orcid": false,
+          "given": "Su-Ming",
+          "family": "Khoo",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03bea9k73",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Galway"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.14",
+      "type": "book-chapter",
+      "page": "335-352",
+      "title": [
+        "14. “Vibrant, open and accessible”"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5755-7147",
+          "authenticated-orcid": false,
+          "given": "Sharon",
+          "family": "Flynn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5913-1158",
+          "authenticated-orcid": false,
+          "given": "Julie",
+          "family": "Byrne",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Maeve A.",
+          "family": "Devoy",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jonny",
+          "family": "Johnston",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8866-4367",
+          "authenticated-orcid": false,
+          "given": "Rob",
+          "family": "Lowney",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04a1a1e81",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Dublin City University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eimer",
+          "family": "Magee",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tc32w13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Irish Universities Association"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3544-3170",
+          "authenticated-orcid": false,
+          "given": "Kate",
+          "family": "Molloy",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0458dap48",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Atlantic Technological University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-5763-3778",
+          "authenticated-orcid": false,
+          "given": "David",
+          "family": "Moloney",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00a0n9e72",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Limerick"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3131-8981",
+          "authenticated-orcid": false,
+          "given": "Morag",
+          "family": "Munro",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/048nfjm95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National University of Ireland, Maynooth"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fernandos",
+          "family": "Ongolly",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05m7pjf47",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jasmine",
+          "family": "Ryan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00a0n9e72",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Limerick"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Suzanne",
+          "family": "Stone",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michaela",
+          "family": "Waters",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kyle",
+          "family": "Wright",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "Students’ visions of higher education futures"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.19",
+      "type": "book-chapter",
+      "page": "445-472",
+      "title": [
+        "19. Imagination and justice"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2828-4127",
+          "authenticated-orcid": false,
+          "given": "Felicitas",
+          "family": "Macgilchrist",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/033n9gh91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oldenburg"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2775-6006",
+          "authenticated-orcid": false,
+          "given": "Eamon",
+          "family": "Costello",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04a1a1e81",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Dublin City University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "Teaching the future(s) of higher education through Africanfuturist speculative fiction"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.07",
+      "type": "book-chapter",
+      "page": "183-198",
+      "title": [
+        "7. Fostering the gift"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4680-6670",
+          "authenticated-orcid": false,
+          "given": "Andreas",
+          "family": "Wittel",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04xyxjd90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nottingham Trent University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "On property regimes and teaching pedagogies in higher education"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.06",
+      "type": "book-chapter",
+      "page": "161-182",
+      "title": [
+        "6. Closing the factory"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8584-4442",
+          "authenticated-orcid": false,
+          "given": "Jim",
+          "family": "Luke",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02nwxzm09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Lansing Community College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "Reimagining higher education as commons"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.11",
+      "type": "book-chapter",
+      "page": "291-302",
+      "title": [
+        "11. Calm in the storm"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8506-7148",
+          "authenticated-orcid": false,
+          "given": "Paola",
+          "family": "Corti",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nffqt88",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Politecnico di Milano"
+            },
+            {
+              "name": "European Network of Open Education Librarians (ENOEL)"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7145-1800",
+          "authenticated-orcid": false,
+          "given": "Chrissi",
+          "family": "Nerantzi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/024mrxd33",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Leeds"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.25",
+      "type": "book-chapter",
+      "page": "575-590",
+      "title": [
+        "25. Making higher education institutions as open knowledge institutions"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9164-6071",
+          "authenticated-orcid": false,
+          "given": "Pradeep Kumar",
+          "family": "Misra",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03mj1nk45",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National University of Educational Planning and Administration"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3291-2410",
+          "authenticated-orcid": false,
+          "given": "Sanjaya",
+          "family": "Mishra",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Commonwealth of Learning"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.15",
+      "type": "book-chapter",
+      "page": "353-370",
+      "title": [
+        "15. Vulnerability and generosity"
+      ],
+      "author": [
+        {
+          "given": "Kate",
+          "family": "Bowles",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00jtmb277",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Wollongong"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "The good future for Australian higher education"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.10",
+      "type": "book-chapter",
+      "page": "267-290",
+      "title": [
+        "10. HE4Good assemblages"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7543-6832",
+          "authenticated-orcid": false,
+          "given": "Frances",
+          "family": "Bell",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01tmqtf75",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Salford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lorna",
+          "family": "Campbell",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9669-9706",
+          "authenticated-orcid": false,
+          "given": "Giulia",
+          "family": "Forsythe",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/056am2717",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Brock University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lou",
+          "family": "Mycroft",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4769-1577",
+          "authenticated-orcid": false,
+          "given": "Anne-Marie",
+          "family": "Scott",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Apereo"
+            },
+            {
+              "name": "Open Source Initiative"
+            },
+            {
+              "name": "OpenETC"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "FemEdTech Quilt of Care and Justice in Open Education"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.01",
+      "type": "book-chapter",
+      "page": "53-80",
+      "title": [
+        "1. Writing from the wreckage"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4375-3307",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "DeRosa",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00fpz4c36",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Plymouth State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "Austerity and the public university"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.17",
+      "type": "book-chapter",
+      "page": "397-420",
+      "title": [
+        "17. Humanising learning design with digital pragmatism"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3544-3170",
+          "authenticated-orcid": false,
+          "given": "Kate",
+          "family": "Molloy",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0458dap48",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Atlantic Technological University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8608-4801",
+          "authenticated-orcid": false,
+          "given": "Clare",
+          "family": "Thomson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04mghma93",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Heriot-Watt University"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.21",
+      "type": "book-chapter",
+      "page": "491-508",
+      "title": [
+        "21. Critical data literacies for good"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0393-6093",
+          "authenticated-orcid": false,
+          "given": "Caroline",
+          "family": "Kuhn",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0038jbq24",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Bath Spa University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0971-5945",
+          "authenticated-orcid": false,
+          "given": "Judith",
+          "family": "Pete",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tangaza University College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8753-6478",
+          "authenticated-orcid": false,
+          "given": "Juliana Elisa",
+          "family": "Raffaghelli",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00240q980",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Padua"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.02",
+      "type": "book-chapter",
+      "page": "81-88",
+      "title": [
+        "2. Counters to despair"
+      ],
+      "author": [
+        {
+          "given": "Sherri",
+          "family": "Spelic",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.24",
+      "type": "book-chapter",
+      "page": "555-574",
+      "title": [
+        "24. Cultivating sustainable blended and open learning ecosystems"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4452-9283",
+          "authenticated-orcid": false,
+          "given": "Patricia",
+          "family": "Arinto",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of the Philippines Tacloban College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8693-3746",
+          "authenticated-orcid": false,
+          "given": "Primo G.",
+          "family": "Garcia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00k27aj44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Philippines Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6744-3023",
+          "authenticated-orcid": false,
+          "given": "Ana Katrina",
+          "family": "Marcial",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00k27aj44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Philippines Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.18",
+      "type": "book-chapter",
+      "page": "421-444",
+      "title": [
+        "18. Advancing ‘openness’ as a strategy against platformisation in education"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1775-1148",
+          "authenticated-orcid": false,
+          "given": "Tel",
+          "family": "Amiel",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02xfp8v59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Brasília"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00mw0tw28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Nova Gorica"
+            },
+            {
+              "name": "Open Education Initiative"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7993-5447",
+          "authenticated-orcid": false,
+          "given": "Janaina",
+          "family": "do Rozário Diniz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05c84j393",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Minas Gerais State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0363.26",
+      "type": "book-chapter",
+      "page": "591-602",
+      "title": [
+        "26. “It’s about transforming lives!”"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7050-099X",
+          "authenticated-orcid": false,
+          "given": "Vicki",
+          "family": "Trowler",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05t1h8f27",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Huddersfield"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "Supporting students in post pandemic higher education"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "20. One-one coco full basket — on the value of critical pedagogy of caring for learning and teaching in higher education",
+      "authors": [
+        "Carol Hordatt Gentles"
+      ],
+      "chapter_doi": "10.11647/obp.0363.20",
+      "citation_pages": "473-490"
+    },
+    {
+      "title": "8. A meditation on global further education, in haiku form",
+      "authors": [
+        "Jess Auerbach"
+      ],
+      "chapter_doi": "10.11647/obp.0363.08",
+      "citation_pages": "199-238"
+    },
+    {
+      "title": "27. Who cares about procurement?",
+      "authors": [
+        "Anne-Marie Scott",
+        "Brenna Clarke Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0363.27",
+      "citation_pages": "603-622"
+    },
+    {
+      "title": "23. The only way is ethics: A dialogue of assessment and social good",
+      "authors": [
+        "Tim Fawns",
+        "Juuso Henrik Nieminen"
+      ],
+      "chapter_doi": "10.11647/obp.0363.23",
+      "citation_pages": "533-554"
+    },
+    {
+      "title": "Higher education for good",
+      "authors": [
+        "Catherine Cronin",
+        "Laura Czerniewicz"
+      ],
+      "chapter_doi": "10.11647/obp.0363.28",
+      "citation_pages": "35-52"
+    },
+    {
+      "title": "12. Visioning futures of higher education for the common good",
+      "authors": [
+        "Mpine Makoe"
+      ],
+      "chapter_doi": "10.11647/obp.0363.12",
+      "citation_pages": "303-316"
+    },
+    {
+      "title": "13. Speculative futures for higher education: weaving perspectives for good",
+      "authors": [
+        "Elizabeth Childs",
+        "George Veletsianos",
+        "Amber Donahue",
+        "Tamara Leary",
+        "Kyla McLeod",
+        "Anne-Marie Scott"
+      ],
+      "chapter_doi": "10.11647/obp.0363.13",
+      "citation_pages": "317-334"
+    },
+    {
+      "title": "16. A design justice approach to Universal Design for Learning Perspectives from the Global South",
+      "authors": [
+        "Aleya Ramparsad Banwari",
+        "Philip Mbulalina Dambisya",
+        "Benedict Khumalo",
+        "Kristin van Tonder"
+      ],
+      "chapter_doi": "10.11647/obp.0363.16",
+      "citation_pages": "371-396"
+    },
+    {
+      "title": "4. Imagining higher education as infrastructures of care",
+      "authors": [
+        "Leslie Chan",
+        "Mona Ghali",
+        "Paul Prinsloo"
+      ],
+      "chapter_doi": "10.11647/obp.0363.04",
+      "citation_pages": "111-136"
+    },
+    {
+      "title": "5. Why decolonising “knowledge” matters Deliberations for educators on that made fragile",
+      "authors": [
+        "Dina Zoe Belluigi"
+      ],
+      "chapter_doi": "10.11647/obp.0363.05",
+      "citation_pages": "137-160"
+    },
+    {
+      "title": "9. Artificial intelligence for good? Challenges and possibilities of AI in higher education from a data justice perspective",
+      "authors": [
+        "Ekaterina (Katya) Pechenkina"
+      ],
+      "chapter_doi": "10.11647/obp.0363.09",
+      "citation_pages": "239-266"
+    },
+    {
+      "title": "22. Collaboratively reimagining teaching and learning",
+      "authors": [
+        "Flora Masumbuo Fabian",
+        "Jonathan Harle",
+        "Perpetua Joseph Kalimasi",
+        "Rehema Kilonzo",
+        "Gloria Lamaro",
+        "Albert Luswata",
+        "David Monk",
+        "Edwin Ngowi",
+        "Femi Nzegwu",
+        "Damary Sikalieh"
+      ],
+      "chapter_doi": "10.11647/obp.0363.22",
+      "citation_pages": "509-532"
+    },
+    {
+      "title": "3. On public goods, cursing, and finding hope in the (neoliberal) twilight zone",
+      "authors": [
+        "Su-Ming Khoo"
+      ],
+      "chapter_doi": "10.11647/obp.0363.03",
+      "citation_pages": "89-110"
+    },
+    {
+      "title": "14. “Vibrant, open and accessible” Students’ visions of higher education futures",
+      "authors": [
+        "Sharon Flynn",
+        "Julie Byrne",
+        "Maeve A. Devoy",
+        "Jonny Johnston",
+        "Rob Lowney",
+        "Eimer Magee",
+        "Kate Molloy",
+        "David Moloney",
+        "Morag Munro",
+        "Fernandos Ongolly",
+        "Jasmine Ryan",
+        "Suzanne Stone",
+        "Michaela Waters",
+        "Kyle Wright"
+      ],
+      "chapter_doi": "10.11647/obp.0363.14",
+      "citation_pages": "335-352"
+    },
+    {
+      "title": "19. Imagination and justice Teaching the future(s) of higher education through Africanfuturist speculative fiction",
+      "authors": [
+        "Felicitas Macgilchrist",
+        "Eamon Costello"
+      ],
+      "chapter_doi": "10.11647/obp.0363.19",
+      "citation_pages": "445-472"
+    },
+    {
+      "title": "7. Fostering the gift On property regimes and teaching pedagogies in higher education",
+      "authors": [
+        "Andreas Wittel"
+      ],
+      "chapter_doi": "10.11647/obp.0363.07",
+      "citation_pages": "183-198"
+    },
+    {
+      "title": "6. Closing the factory Reimagining higher education as commons",
+      "authors": [
+        "Jim Luke"
+      ],
+      "chapter_doi": "10.11647/obp.0363.06",
+      "citation_pages": "161-182"
+    },
+    {
+      "title": "11. Calm in the storm",
+      "authors": [
+        "Paola Corti",
+        "Chrissi Nerantzi"
+      ],
+      "chapter_doi": "10.11647/obp.0363.11",
+      "citation_pages": "291-302"
+    },
+    {
+      "title": "25. Making higher education institutions as open knowledge institutions",
+      "authors": [
+        "Pradeep Kumar Misra",
+        "Sanjaya Mishra"
+      ],
+      "chapter_doi": "10.11647/obp.0363.25",
+      "citation_pages": "575-590"
+    },
+    {
+      "title": "15. Vulnerability and generosity The good future for Australian higher education",
+      "authors": [
+        "Kate Bowles"
+      ],
+      "chapter_doi": "10.11647/obp.0363.15",
+      "citation_pages": "353-370"
+    },
+    {
+      "title": "10. HE4Good assemblages FemEdTech Quilt of Care and Justice in Open Education",
+      "authors": [
+        "Frances Bell",
+        "Lorna Campbell",
+        "Giulia Forsythe",
+        "Lou Mycroft",
+        "Anne-Marie Scott"
+      ],
+      "chapter_doi": "10.11647/obp.0363.10",
+      "citation_pages": "267-290"
+    },
+    {
+      "title": "1. Writing from the wreckage Austerity and the public university",
+      "authors": [
+        "Robin DeRosa"
+      ],
+      "chapter_doi": "10.11647/obp.0363.01",
+      "citation_pages": "53-80"
+    },
+    {
+      "title": "17. Humanising learning design with digital pragmatism",
+      "authors": [
+        "Kate Molloy",
+        "Clare Thomson"
+      ],
+      "chapter_doi": "10.11647/obp.0363.17",
+      "citation_pages": "397-420"
+    },
+    {
+      "title": "21. Critical data literacies for good",
+      "authors": [
+        "Caroline Kuhn",
+        "Judith Pete",
+        "Juliana Elisa Raffaghelli"
+      ],
+      "chapter_doi": "10.11647/obp.0363.21",
+      "citation_pages": "491-508"
+    },
+    {
+      "title": "2. Counters to despair",
+      "authors": [
+        "Sherri Spelic"
+      ],
+      "chapter_doi": "10.11647/obp.0363.02",
+      "citation_pages": "81-88"
+    },
+    {
+      "title": "24. Cultivating sustainable blended and open learning ecosystems",
+      "authors": [
+        "Patricia Arinto",
+        "Primo G. Garcia",
+        "Ana Katrina Marcial"
+      ],
+      "chapter_doi": "10.11647/obp.0363.24",
+      "citation_pages": "555-574"
+    },
+    {
+      "title": "18. Advancing ‘openness’ as a strategy against platformisation in education",
+      "authors": [
+        "Tel Amiel",
+        "Janaina do Rozário Diniz"
+      ],
+      "chapter_doi": "10.11647/obp.0363.18",
+      "citation_pages": "421-444"
+    },
+    {
+      "title": "26. “It’s about transforming lives!” Supporting students in post pandemic higher education",
+      "authors": [
+        "Vicki Trowler"
+      ],
+      "chapter_doi": "10.11647/obp.0363.26",
+      "citation_pages": "591-602"
+    }
+  ]
+}

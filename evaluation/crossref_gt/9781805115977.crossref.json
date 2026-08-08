@@ -1,0 +1,512 @@
+{
+  "isbn": "9781805115977",
+  "fetched_at": "2026-08-08T16:37:04.212009+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0467.03",
+      "type": "book-chapter",
+      "page": "37-50",
+      "title": [
+        "3. Morphological Processes"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2440-6139",
+          "authenticated-orcid": false,
+          "given": "Chikelu I.",
+          "family": "Ezenwafor-Afuecheta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02r6pfc06",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nnamdi Azikiwe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Grammar of Etulo"
+      ],
+      "ISBN": [
+        "9781805115977",
+        "9781805115984",
+        "9781805115991",
+        "9781805116011",
+        "9781805116004"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0467.08",
+      "type": "book-chapter",
+      "page": "243-244",
+      "title": [
+        "8. General Conclusion"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2440-6139",
+          "authenticated-orcid": false,
+          "given": "Chikelu I.",
+          "family": "Ezenwafor-Afuecheta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02r6pfc06",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nnamdi Azikiwe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Grammar of Etulo"
+      ],
+      "ISBN": [
+        "9781805115977",
+        "9781805115984",
+        "9781805115991",
+        "9781805116011",
+        "9781805116004"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0467.02",
+      "type": "book-chapter",
+      "page": "9-36",
+      "title": [
+        "2. The Phonology of Etulo"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2440-6139",
+          "authenticated-orcid": false,
+          "given": "Chikelu I.",
+          "family": "Ezenwafor-Afuecheta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02r6pfc06",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nnamdi Azikiwe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Grammar of Etulo"
+      ],
+      "ISBN": [
+        "9781805115977",
+        "9781805115984",
+        "9781805115991",
+        "9781805116011",
+        "9781805116004"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0467.01",
+      "type": "book-chapter",
+      "page": "1-8",
+      "title": [
+        "1. General Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2440-6139",
+          "authenticated-orcid": false,
+          "given": "Chikelu I.",
+          "family": "Ezenwafor-Afuecheta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02r6pfc06",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nnamdi Azikiwe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Grammar of Etulo"
+      ],
+      "ISBN": [
+        "9781805115977",
+        "9781805115984",
+        "9781805115991",
+        "9781805116011",
+        "9781805116004"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0467.06",
+      "type": "book-chapter",
+      "page": "189-222",
+      "title": [
+        "6. Valency, Transitivity and Serialization"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2440-6139",
+          "authenticated-orcid": false,
+          "given": "Chikelu I.",
+          "family": "Ezenwafor-Afuecheta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02r6pfc06",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nnamdi Azikiwe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Grammar of Etulo"
+      ],
+      "ISBN": [
+        "9781805115977",
+        "9781805115984",
+        "9781805115991",
+        "9781805116011",
+        "9781805116004"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0467.05",
+      "type": "book-chapter",
+      "page": "141-188",
+      "title": [
+        "5. Aspects of Etulo Syntax"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2440-6139",
+          "authenticated-orcid": false,
+          "given": "Chikelu I.",
+          "family": "Ezenwafor-Afuecheta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02r6pfc06",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nnamdi Azikiwe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Grammar of Etulo"
+      ],
+      "ISBN": [
+        "9781805115977",
+        "9781805115984",
+        "9781805115991",
+        "9781805116011",
+        "9781805116004"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0467.07",
+      "type": "book-chapter",
+      "page": "223-242",
+      "title": [
+        "7. Tense, Aspect and Modality"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2440-6139",
+          "authenticated-orcid": false,
+          "given": "Chikelu I.",
+          "family": "Ezenwafor-Afuecheta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02r6pfc06",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nnamdi Azikiwe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Grammar of Etulo"
+      ],
+      "ISBN": [
+        "9781805115977",
+        "9781805115984",
+        "9781805115991",
+        "9781805116011",
+        "9781805116004"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0467.04",
+      "type": "book-chapter",
+      "page": "51-140",
+      "title": [
+        "4. Word Classes"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2440-6139",
+          "authenticated-orcid": false,
+          "given": "Chikelu I.",
+          "family": "Ezenwafor-Afuecheta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02r6pfc06",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Nnamdi Azikiwe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Grammar of Etulo"
+      ],
+      "ISBN": [
+        "9781805115977",
+        "9781805115984",
+        "9781805115991",
+        "9781805116011",
+        "9781805116004"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            20
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "3. Morphological Processes",
+      "authors": [
+        "Chikelu I. Ezenwafor-Afuecheta"
+      ],
+      "chapter_doi": "10.11647/obp.0467.03",
+      "citation_pages": "37-50"
+    },
+    {
+      "title": "8. General Conclusion",
+      "authors": [
+        "Chikelu I. Ezenwafor-Afuecheta"
+      ],
+      "chapter_doi": "10.11647/obp.0467.08",
+      "citation_pages": "243-244"
+    },
+    {
+      "title": "2. The Phonology of Etulo",
+      "authors": [
+        "Chikelu I. Ezenwafor-Afuecheta"
+      ],
+      "chapter_doi": "10.11647/obp.0467.02",
+      "citation_pages": "9-36"
+    },
+    {
+      "title": "1. General Introduction",
+      "authors": [
+        "Chikelu I. Ezenwafor-Afuecheta"
+      ],
+      "chapter_doi": "10.11647/obp.0467.01",
+      "citation_pages": "1-8"
+    },
+    {
+      "title": "6. Valency, Transitivity and Serialization",
+      "authors": [
+        "Chikelu I. Ezenwafor-Afuecheta"
+      ],
+      "chapter_doi": "10.11647/obp.0467.06",
+      "citation_pages": "189-222"
+    },
+    {
+      "title": "5. Aspects of Etulo Syntax",
+      "authors": [
+        "Chikelu I. Ezenwafor-Afuecheta"
+      ],
+      "chapter_doi": "10.11647/obp.0467.05",
+      "citation_pages": "141-188"
+    },
+    {
+      "title": "7. Tense, Aspect and Modality",
+      "authors": [
+        "Chikelu I. Ezenwafor-Afuecheta"
+      ],
+      "chapter_doi": "10.11647/obp.0467.07",
+      "citation_pages": "223-242"
+    },
+    {
+      "title": "4. Word Classes",
+      "authors": [
+        "Chikelu I. Ezenwafor-Afuecheta"
+      ],
+      "chapter_doi": "10.11647/obp.0467.04",
+      "citation_pages": "51-140"
+    }
+  ]
+}

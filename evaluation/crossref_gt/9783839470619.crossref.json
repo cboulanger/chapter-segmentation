@@ -1,0 +1,600 @@
+{
+  "isbn": "9783839470619",
+  "fetched_at": "2026-08-08T16:37:13.945957+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839470619-009",
+      "type": "book-chapter",
+      "page": "213-252",
+      "title": [
+        "Sprache-Sprechen, Hören, Sehen, Fühlen"
+      ],
+      "author": [
+        {
+          "given": "Cornelia",
+          "family": "Müller",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "subtitle": [
+        "Eine medienästhetische Perspektive auf die Multimodalität des Sprechens in audiovisuellen Medien"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839470619-006",
+      "type": "book-chapter",
+      "page": "105-138",
+      "title": [
+        "»Man hat schon so einen Austausch irgendwie«"
+      ],
+      "author": [
+        {
+          "given": "Rita Tamara",
+          "family": "Vallentin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "subtitle": [
+        "Konzepte von Kommunikation und Interaktion zwischen Mensch und Maschine im Diabetesmanagement"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839470619-003",
+      "type": "book-chapter",
+      "page": "19-46",
+      "title": [
+        "»Es ist vor allen Dingen dieser Ton«"
+      ],
+      "author": [
+        {
+          "given": "Britta",
+          "family": "Schneider",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "subtitle": [
+        "Sprechen mit Alexa, die vergessene Macht der Laute und warum Sprache kein abstraktes System ist"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839470619-fm",
+      "title": [
+        "Frontmatter"
+      ],
+      "page": "1-1",
+      "type": "book-chapter",
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ]
+    },
+    {
+      "DOI": "10.14361/9783839470619-toc",
+      "title": [
+        "Inhalt"
+      ],
+      "page": "5-6",
+      "type": "book-chapter",
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ]
+    },
+    {
+      "DOI": "10.14361/9783839470619-001",
+      "title": [
+        "Editorial"
+      ],
+      "page": "2-4",
+      "type": "book-chapter",
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ]
+    },
+    {
+      "DOI": "10.14361/9783839470619-004",
+      "type": "book-chapter",
+      "page": "47-74",
+      "title": [
+        "Einstimmen mit Sprachassistenten"
+      ],
+      "author": [
+        {
+          "given": "Didem",
+          "family": "Leblebici",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "subtitle": [
+        "Einblicke in monolinguale Bias in mehrsprachigen Settings"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839470619-005",
+      "type": "book-chapter",
+      "page": "75-104",
+      "title": [
+        "Die Heterogenität der Sprechenden"
+      ],
+      "author": [
+        {
+          "given": "Marie-Theres",
+          "family": "Fester-Seeger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "subtitle": [
+        "Die Entgrenzung von Zeit und Raum in Mensch-Maschine-Kommunikation"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839470619-002",
+      "type": "book-chapter",
+      "page": "7-16",
+      "title": [
+        "Sprache entgrenzen"
+      ],
+      "author": [
+        {
+          "given": "Dorothea",
+          "family": "Horst",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rita Tamara",
+          "family": "Vallentin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839470619-010",
+      "type": "book-chapter",
+      "page": "253-290",
+      "title": [
+        "Sprechen in audiovisuellen Medien"
+      ],
+      "author": [
+        {
+          "given": "Clara",
+          "family": "Kindler-Mathôt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cornelia",
+          "family": "Müller",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jana Katharina",
+          "family": "Junge",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katerina",
+          "family": "Papadopoulou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "subtitle": [
+        "Systematik für eine medienästhetische Analyse multimodaler Kommunikation"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839470619-007",
+      "type": "book-chapter",
+      "page": "141-178",
+      "title": [
+        "Kommunikationspraktiken mit Vertreter*innen der Spezies Oktopus"
+      ],
+      "author": [
+        {
+          "given": "Konstanze",
+          "family": "Jungbluth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "subtitle": [
+        "Filmische, literarische und naturwissenschaftliche Evidenz"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839470619-008",
+      "type": "book-chapter",
+      "page": "179-212",
+      "title": [
+        "Die Stimme als Interface"
+      ],
+      "author": [
+        {
+          "given": "Dorothea",
+          "family": "Horst",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studien der Kulturwissenschaftlichen Gesellschaft",
+        "Sprache entgrenzen"
+      ],
+      "subtitle": [
+        "Entgrenzungen von Mensch und Maschine anhand von Spike Jonzes Film Her"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            25
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Sprache-Sprechen, Hören, Sehen, Fühlen Eine medienästhetische Perspektive auf die Multimodalität des Sprechens in audiovisuellen Medien",
+      "authors": [
+        "Cornelia Müller"
+      ],
+      "chapter_doi": "10.14361/9783839470619-009",
+      "citation_pages": "213-252"
+    },
+    {
+      "title": "»Man hat schon so einen Austausch irgendwie« Konzepte von Kommunikation und Interaktion zwischen Mensch und Maschine im Diabetesmanagement",
+      "authors": [
+        "Rita Tamara Vallentin"
+      ],
+      "chapter_doi": "10.14361/9783839470619-006",
+      "citation_pages": "105-138"
+    },
+    {
+      "title": "»Es ist vor allen Dingen dieser Ton« Sprechen mit Alexa, die vergessene Macht der Laute und warum Sprache kein abstraktes System ist",
+      "authors": [
+        "Britta Schneider"
+      ],
+      "chapter_doi": "10.14361/9783839470619-003",
+      "citation_pages": "19-46"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [],
+      "chapter_doi": "10.14361/9783839470619-fm",
+      "citation_pages": "1-1"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [],
+      "chapter_doi": "10.14361/9783839470619-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Editorial",
+      "authors": [],
+      "chapter_doi": "10.14361/9783839470619-001",
+      "citation_pages": "2-4"
+    },
+    {
+      "title": "Einstimmen mit Sprachassistenten Einblicke in monolinguale Bias in mehrsprachigen Settings",
+      "authors": [
+        "Didem Leblebici"
+      ],
+      "chapter_doi": "10.14361/9783839470619-004",
+      "citation_pages": "47-74"
+    },
+    {
+      "title": "Die Heterogenität der Sprechenden Die Entgrenzung von Zeit und Raum in Mensch-Maschine-Kommunikation",
+      "authors": [
+        "Marie-Theres Fester-Seeger"
+      ],
+      "chapter_doi": "10.14361/9783839470619-005",
+      "citation_pages": "75-104"
+    },
+    {
+      "title": "Sprache entgrenzen",
+      "authors": [
+        "Dorothea Horst",
+        "Rita Tamara Vallentin"
+      ],
+      "chapter_doi": "10.14361/9783839470619-002",
+      "citation_pages": "7-16"
+    },
+    {
+      "title": "Sprechen in audiovisuellen Medien Systematik für eine medienästhetische Analyse multimodaler Kommunikation",
+      "authors": [
+        "Clara Kindler-Mathôt",
+        "Cornelia Müller",
+        "Jana Katharina Junge",
+        "Katerina Papadopoulou"
+      ],
+      "chapter_doi": "10.14361/9783839470619-010",
+      "citation_pages": "253-290"
+    },
+    {
+      "title": "Kommunikationspraktiken mit Vertreter*innen der Spezies Oktopus Filmische, literarische und naturwissenschaftliche Evidenz",
+      "authors": [
+        "Konstanze Jungbluth"
+      ],
+      "chapter_doi": "10.14361/9783839470619-007",
+      "citation_pages": "141-178"
+    },
+    {
+      "title": "Die Stimme als Interface Entgrenzungen von Mensch und Maschine anhand von Spike Jonzes Film Her",
+      "authors": [
+        "Dorothea Horst"
+      ],
+      "chapter_doi": "10.14361/9783839470619-008",
+      "citation_pages": "179-212"
+    }
+  ]
+}

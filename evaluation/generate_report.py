@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Generates a prose-free static results page from the committed
-public-cache corpus -- see design spec
-docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md.
+"""Generates a prose-free static results page per evaluation corpus from
+the committed public-cache data -- see design specs
+docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md and
+docs/superpowers/specs/2026-08-08-multi-corpus-evaluation-design.md.
 Runs the heuristic and outline strategies live (no network/API calls); if
-evaluation/llm-cache/ has cached LLM results, folds in the single
-best-performing cached model too. Also regenerates public/llm/index.html,
-a full breakdown of every cached LLM model. No LLM call anywhere in this
-path; a plain f-string template, no templating-engine dependency.
+a corpus's llm-cache/ has cached LLM results, folds in the single
+best-performing cached model too. Writes public/<corpus>/index.html and
+public/<corpus>/llm/index.html for every corpus with at least one
+scorable book, plus a public/index.html landing page linking to each. No
+LLM call anywhere in this path; a plain f-string template, no
+templating-engine dependency.
 
     uv run python evaluation/generate_report.py --out public/
 """
@@ -22,8 +25,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from chapter_segmentation.segmentation import analyze_attachment, analyze_attachment_outline_only
 from evaluation.harness import (
-    LLM_CACHE_DIR,
     available_public_books,
+    list_corpora,
+    llm_cache_dir,
     public_outline_candidates_for,
     public_pages_for,
 )
@@ -41,23 +45,23 @@ def _git_sha() -> str:
         return "unknown"
 
 
-def _load_llm_cache(manifest_key: str) -> dict:
-    cache_path = LLM_CACHE_DIR / f"{manifest_key}.json"
+def _load_llm_cache(corpus: str, manifest_key: str) -> dict:
+    cache_path = llm_cache_dir(corpus) / f"{manifest_key}.json"
     if not cache_path.exists():
         return {}
     return json.loads(cache_path.read_text(encoding="utf-8")).get("models", {})
 
 
-def _best_llm_model(books: list[tuple[str, list[dict]]]) -> str | None:
+def _best_llm_model(corpus: str, books: list[tuple[str, list[dict]]]) -> str | None:
     """books: [(manifest_key, expected_chapters)]. Picks the cached model
-    with the highest micro-F1 aggregated across every book that has a
-    cache entry for it (a model with partial corpus coverage is still
-    scored, on however many books it has -- see design spec's "LLM
+    with the highest micro-F1 aggregated across every book in this corpus
+    that has a cache entry for it (a model with partial corpus coverage is
+    still scored, on however many books it has -- see design spec's "LLM
     results cache"), ties broken by lower total time. Returns None if no
     book has any cached LLM result at all."""
     per_model_aggregate: dict[str, MicroAggregate] = {}
     for manifest_key, expected in books:
-        for model_id, entry in _load_llm_cache(manifest_key).items():
+        for model_id, entry in _load_llm_cache(corpus, manifest_key).items():
             agg = per_model_aggregate.setdefault(model_id, MicroAggregate())
             agg.add(precision_recall_f1(expected, entry["chapters"]), entry["elapsed_seconds"])
     if not per_model_aggregate:
@@ -71,14 +75,20 @@ def _best_llm_model(books: list[tuple[str, list[dict]]]) -> str | None:
     )
 
 
-def generate(out_dir: Path) -> None:
-    books = available_public_books()
+def generate_corpus(corpus: str, out_dir: Path) -> bool:
+    """Writes out_dir/index.html and out_dir/llm/index.html for one
+    corpus. Returns False (and writes nothing) if the corpus has no
+    scorable book yet, so callers can skip linking to it from the landing
+    page."""
+    books = available_public_books(corpus)
+    if not books:
+        return False
     expected_by_key = {
         key: json.loads(expected_path.read_text(encoding="utf-8"))["chapters"]
         for key, expected_path, _book in books
     }
 
-    best_llm_model = _best_llm_model(list(expected_by_key.items()))
+    best_llm_model = _best_llm_model(corpus, list(expected_by_key.items()))
     llm_strategy_name = f"LLM ({best_llm_model})" if best_llm_model else None
     strategy_names = [HEURISTIC, OUTLINE] + ([llm_strategy_name] if llm_strategy_name else [])
 
@@ -89,7 +99,7 @@ def generate(out_dir: Path) -> None:
     )
 
     for manifest_key, _expected_path, _book in books:
-        pages = public_pages_for(manifest_key)
+        pages = public_pages_for(corpus, manifest_key)
         expected = expected_by_key[manifest_key]
         cells: dict = {}
 
@@ -101,7 +111,7 @@ def generate(out_dir: Path) -> None:
         heuristic_citation_agg.add(citation_pages_metrics(expected, heuristic_result["chapters"]))
         cells[HEURISTIC] = (heuristic_metrics, heuristic_elapsed)
 
-        outline_candidates = public_outline_candidates_for(manifest_key)
+        outline_candidates = public_outline_candidates_for(corpus, manifest_key)
         if outline_candidates:
             # Falsy also catches `[]` (a real, resolved cache entry for a
             # book whose PDF genuinely has no embedded outline) -- not just
@@ -122,7 +132,7 @@ def generate(out_dir: Path) -> None:
             cells[OUTLINE] = None
 
         if llm_strategy_name:
-            llm_entry = _load_llm_cache(manifest_key).get(best_llm_model)
+            llm_entry = _load_llm_cache(corpus, manifest_key).get(best_llm_model)
             if llm_entry:
                 llm_metrics = precision_recall_f1(expected, llm_entry["chapters"])
                 llm_agg.add(llm_metrics, llm_entry["elapsed_seconds"])
@@ -141,7 +151,8 @@ def generate(out_dir: Path) -> None:
         aggregate_times[llm_strategy_name] = llm_agg.total_elapsed_seconds
         citation_aggregates[llm_strategy_name] = llm_citation_agg.compute()
 
-    description = """<p>Each book has a hand-verified <code>*.expected.json</code> ground truth (real
+    description = f"""<p>Corpus: <code>{corpus}</code> (see the <a href="../index.html">corpus index</a>
+for the others). Each book has a hand-verified <code>*.expected.json</code> ground truth (real
 chapter boundaries as exact PDF page ranges). Each strategy below is run
 independently against the same pages -- no pipeline merge/fallback logic
 is involved, so this reflects each strategy's own standalone accuracy, not
@@ -152,7 +163,7 @@ The full breakdown of every LLM model ever evaluated (not just the best)
 is at <a href="llm/index.html">llm/index.html</a>.</p>"""
 
     html = render_strategy_tables(
-        title="chapter-segmentation: public-cache corpus results",
+        title=f"chapter-segmentation: {corpus} corpus results",
         description_html=description,
         strategy_names=strategy_names,
         per_document=per_document,
@@ -168,19 +179,20 @@ is at <a href="llm/index.html">llm/index.html</a>.</p>"""
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
 
-    _generate_llm_detail_page(out_dir, list(expected_by_key.items()))
+    _generate_llm_detail_page(corpus, out_dir, list(expected_by_key.items()))
+    return True
 
 
-def _generate_llm_detail_page(out_dir: Path, books: list[tuple[str, list[dict]]]) -> None:
+def _generate_llm_detail_page(corpus: str, out_dir: Path, books: list[tuple[str, list[dict]]]) -> None:
     model_ids: set[str] = set()
     for manifest_key, _expected in books:
-        model_ids.update(_load_llm_cache(manifest_key).keys())
+        model_ids.update(_load_llm_cache(corpus, manifest_key).keys())
 
     if not model_ids:
         html = (
             '<!doctype html><html><head><meta charset="utf-8">'
-            "<title>chapter-segmentation LLM results</title></head><body>"
-            "<h1>chapter-segmentation: LLM strategy results</h1>"
+            f"<title>chapter-segmentation {corpus} LLM results</title></head><body>"
+            f"<h1>chapter-segmentation: {corpus} LLM strategy results</h1>"
             "<p>No cached LLM results yet -- run "
             "<code>evaluation/refresh_llm_cache.py</code>.</p></body></html>"
         )
@@ -189,7 +201,7 @@ def _generate_llm_detail_page(out_dir: Path, books: list[tuple[str, list[dict]]]
         aggregates_acc = {model_id: MicroAggregate() for model_id in model_ids}
         citation_aggregates_acc = {model_id: CitationPageAggregate() for model_id in model_ids}
         for manifest_key, expected in books:
-            cache = _load_llm_cache(manifest_key)
+            cache = _load_llm_cache(corpus, manifest_key)
             cells: dict = {}
             for model_id in model_ids:
                 entry = cache.get(model_id)
@@ -206,10 +218,11 @@ def _generate_llm_detail_page(out_dir: Path, books: list[tuple[str, list[dict]]]
         aggregate_times = {model_id: acc.total_elapsed_seconds for model_id, acc in aggregates_acc.items()}
         citation_aggregates = {model_id: acc.compute() for model_id, acc in citation_aggregates_acc.items()}
         html = render_strategy_tables(
-            title="chapter-segmentation: LLM strategy results (all cached models)",
+            title=f"chapter-segmentation: {corpus} LLM strategy results (all cached models)",
             description_html=(
                 "<p>Every KISSKI model ever evaluated by "
-                "<code>evaluation/refresh_llm_cache.py</code>, run standalone via "
+                "<code>evaluation/refresh_llm_cache.py</code> against the "
+                f"<code>{corpus}</code> corpus, run standalone via "
                 "<code>analyze_attachment_llm_only</code> (no heuristic fallback). "
                 'See <a href="../index.html">the main report</a> for how the single '
                 "best-performing model compares against the heuristic and outline "
@@ -225,6 +238,30 @@ def _generate_llm_detail_page(out_dir: Path, books: list[tuple[str, list[dict]]]
     llm_dir = out_dir / "llm"
     llm_dir.mkdir(parents=True, exist_ok=True)
     (llm_dir / "index.html").write_text(html, encoding="utf-8")
+
+
+def _write_landing_page(out_dir: Path, scored_corpora: list[str]) -> None:
+    links = "".join(f'<li><a href="{corpus}/index.html">{corpus}</a></li>' for corpus in scored_corpora)
+    html = f"""<!doctype html>
+<html><head><meta charset="utf-8"><title>chapter-segmentation evaluation results</title></head>
+<body>
+<h1>chapter-segmentation evaluation results</h1>
+<p>One report per evaluation corpus -- see
+<a href="https://github.com/cboulanger/chapter-segmentation/blob/main/evaluation/README.md">evaluation/README.md</a>
+for what distinguishes them.</p>
+<ul>
+{links}
+</ul>
+<p>Generated from commit {_git_sha()}.</p>
+</body></html>
+"""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "index.html").write_text(html, encoding="utf-8")
+
+
+def generate(out_dir: Path) -> None:
+    scored_corpora = [corpus for corpus in list_corpora() if generate_corpus(corpus, out_dir / corpus)]
+    _write_landing_page(out_dir, scored_corpora)
 
 
 if __name__ == "__main__":

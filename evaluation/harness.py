@@ -6,6 +6,14 @@ evaluation/scripts/evaluate_chapter_segmentation_*.py scripts previously each
 carried their own copy of. Lives under evaluation/ (not tests/) because
 evaluation/scripts/ must not depend on the test tree.
 
+Every evaluation book lives under evaluation/corpus/<corpus>/ -- a
+self-contained subfolder (manifest.json, optional manifest.local.json,
+PDFs, ground truth, and caches) per corpus -- see
+docs/superpowers/specs/2026-08-08-multi-corpus-evaluation-design.md.
+list_corpora() is the single source of truth for "what corpora exist";
+every function below takes a corpus name so callers can target one corpus
+or loop list_corpora() to cover all of them.
+
 Page loading mirrors production's chapter_segmentation.run(): default
 extraction with the layout-mode fallback, then -- for books whose text
 layer is absent or degenerate (pages_need_ocr) -- the content-hash-keyed
@@ -27,67 +35,99 @@ from chapter_segmentation.segmentation import (
 )
 
 EVAL_DIR = Path(__file__).resolve().parent
-OCR_CACHE_DIR = EVAL_DIR / ".ocr-cache"
-PUBLIC_CACHE_DIR = EVAL_DIR / "public-cache"
-LLM_CACHE_DIR = EVAL_DIR / "llm-cache"
+CORPUS_ROOT = EVAL_DIR / "corpus"
 
 
-def load_manifest_books() -> list[dict]:
-    """Merge the committed manifest.json with the gitignored, optional
-    manifest.local.json (see evaluation/CLAUDE.md) -- the latter
+def list_corpora() -> list[str]:
+    """Sorted names of every subfolder under evaluation/corpus/ that has a
+    manifest.json -- the single source of truth for "what corpora exist"
+    that every runner iterates over."""
+    if not CORPUS_ROOT.is_dir():
+        return []
+    return sorted(
+        p.name for p in CORPUS_ROOT.iterdir()
+        if p.is_dir() and (p / "manifest.json").exists()
+    )
+
+
+def corpus_dir(corpus: str) -> Path:
+    return CORPUS_ROOT / corpus
+
+
+def public_cache_dir(corpus: str) -> Path:
+    return corpus_dir(corpus) / "public-cache"
+
+
+def ocr_cache_dir(corpus: str) -> Path:
+    return corpus_dir(corpus) / ".ocr-cache"
+
+
+def llm_cache_dir(corpus: str) -> Path:
+    return corpus_dir(corpus) / "llm-cache"
+
+
+def load_manifest_books(corpus: str) -> list[dict]:
+    """Merge a corpus's committed manifest.json with its gitignored,
+    optional manifest.local.json (see evaluation/CLAUDE.md) -- the latter
     holds books that have no DOI or otherwise can't be shared, still
     exercised in local runs on the machine that added them."""
-    books = json.loads((EVAL_DIR / "manifest.json").read_text(encoding="utf-8"))["books"]
-    local_manifest_path = EVAL_DIR / "manifest.local.json"
+    cdir = corpus_dir(corpus)
+    books = json.loads((cdir / "manifest.json").read_text(encoding="utf-8"))["books"]
+    local_manifest_path = cdir / "manifest.local.json"
     if local_manifest_path.exists():
         books = books + json.loads(local_manifest_path.read_text(encoding="utf-8"))["books"]
     return books
 
 
-def available_books() -> list[tuple[Path, Path, dict]]:
-    """(pdf_path, expected_json_path, manifest_entry) for every manifest
-    book whose PDF and ground truth are both present locally right now."""
+def available_books(corpus: str) -> list[tuple[Path, Path, dict]]:
+    """(pdf_path, expected_json_path, manifest_entry) for every book in
+    this corpus whose PDF and ground truth are both present locally right
+    now."""
+    cdir = corpus_dir(corpus)
     triples = []
-    for book in load_manifest_books():
-        pdf_path = EVAL_DIR / book["filename"]
-        expected_path = EVAL_DIR / (Path(book["filename"]).stem + ".expected.json")
+    for book in load_manifest_books(corpus):
+        pdf_path = cdir / book["filename"]
+        expected_path = cdir / (Path(book["filename"]).stem + ".expected.json")
         if pdf_path.exists() and expected_path.exists():
             triples.append((pdf_path, expected_path, book))
     return triples
 
 
-def available_public_books() -> list[tuple[str, Path, dict]]:
-    """(manifest_key, expected_json_path, manifest_entry) for every manifest
-    book with a public-cache entry -- no PDF or .ocr-cache required."""
+def available_public_books(corpus: str) -> list[tuple[str, Path, dict]]:
+    """(manifest_key, expected_json_path, manifest_entry) for every book in
+    this corpus with a public-cache entry -- no PDF or .ocr-cache
+    required."""
+    cdir = corpus_dir(corpus)
+    cache_dir = public_cache_dir(corpus)
     triples = []
-    for book in load_manifest_books():
+    for book in load_manifest_books(corpus):
         manifest_key = Path(book["filename"]).stem
-        expected_path = EVAL_DIR / f"{manifest_key}.expected.json"
-        cache_path = PUBLIC_CACHE_DIR / f"{manifest_key}.pages.json"
+        expected_path = cdir / f"{manifest_key}.expected.json"
+        cache_path = cache_dir / f"{manifest_key}.pages.json"
         if cache_path.exists() and expected_path.exists():
             triples.append((manifest_key, expected_path, book))
     return triples
 
 
-def public_pages_for(manifest_key: str) -> Optional[list[str]]:
-    """Redacted pages for one book from the committed public-cache, or None
-    if no entry exists yet for this key."""
-    cache_path = PUBLIC_CACHE_DIR / f"{manifest_key}.pages.json"
+def public_pages_for(corpus: str, manifest_key: str) -> Optional[list[str]]:
+    """Redacted pages for one book from this corpus's committed
+    public-cache, or None if no entry exists yet for this key."""
+    cache_path = public_cache_dir(corpus) / f"{manifest_key}.pages.json"
     if not cache_path.exists():
         return None
     return json.loads(cache_path.read_text(encoding="utf-8"))["pages"]
 
 
-def analysis_pages_for(file_bytes: bytes) -> Optional[list[str]]:
+def analysis_pages_for(corpus: str, file_bytes: bytes) -> Optional[list[str]]:
     """Page texts for this PDF the same way production run() would see
-    them, or None when the book needs OCR and the eval OCR cache has no
-    usable entry yet (run evaluation/scripts/ocr_evaluation_pdfs.py to
-    populate it)."""
+    them, or None when the book needs OCR and this corpus's eval OCR cache
+    has no usable entry yet (run evaluation/scripts/ocr_evaluation_pdfs.py
+    to populate it)."""
     pages, _layout_used = extract_page_texts_for_analysis(file_bytes)
     if not pages_need_ocr(pages):
         return pages
     content_hash = hashlib.sha256(file_bytes).hexdigest()
-    cached = load_cached_ocr(OCR_CACHE_DIR, content_hash)
+    cached = load_cached_ocr(ocr_cache_dir(corpus), content_hash)
     if cached is not None and not pages_need_ocr(cached["pages"]):
         return cached["pages"]
     return None
@@ -117,12 +157,12 @@ def outline_candidate_from_dict(data: dict) -> ChapterCandidate:
     )
 
 
-def public_outline_candidates_for(manifest_key: str) -> Optional[list[ChapterCandidate]]:
-    """Cached outline-strategy candidates for one book from the committed
-    public-cache, or None if no entry exists yet (either the book's PDF
-    has no outline, or the cache hasn't been generated for it yet -- see
-    evaluation/scripts/generate_public_evaluation_cache.py)."""
-    cache_path = PUBLIC_CACHE_DIR / f"{manifest_key}.outline.json"
+def public_outline_candidates_for(corpus: str, manifest_key: str) -> Optional[list[ChapterCandidate]]:
+    """Cached outline-strategy candidates for one book from this corpus's
+    committed public-cache, or None if no entry exists yet (either the
+    book's PDF has no outline, or the cache hasn't been generated for it
+    yet -- see evaluation/scripts/generate_public_evaluation_cache.py)."""
+    cache_path = public_cache_dir(corpus) / f"{manifest_key}.outline.json"
     if not cache_path.exists():
         return None
     data = json.loads(cache_path.read_text(encoding="utf-8"))

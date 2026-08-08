@@ -69,6 +69,34 @@ class TestGenerate(unittest.TestCase):
             llm_html = (out_dir / "llm" / "index.html").read_text(encoding="utf-8")
             self.assertIn("No cached LLM results yet", llm_html)
 
+    def test_main_report_includes_citation_accuracy_columns(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            eval_dir = tmp_path / "evaluation"
+            public_cache_dir = eval_dir / "public-cache"
+            llm_cache_dir = eval_dir / "llm-cache"
+            public_cache_dir.mkdir(parents=True)
+            llm_cache_dir.mkdir(parents=True)
+            out_dir = tmp_path / "public"
+
+            chapters = [{"pdf_start_index": 0, "pdf_end_index": 3, "citation_pages": "1-4"}]
+            (eval_dir / "book-a.expected.json").write_text(_expected_json(chapters), encoding="utf-8")
+            (public_cache_dir / "book-a.pages.json").write_text(
+                json.dumps({"pages": ["Introduction\nBody text.\n\n1", "2", "3", "4"]}), encoding="utf-8",
+            )
+            book = {"filename": "book-a.pdf", "title": "Book A"}
+
+            with patch("evaluation.harness.EVAL_DIR", eval_dir), \
+                 patch("evaluation.harness.PUBLIC_CACHE_DIR", public_cache_dir), \
+                 patch("evaluation.harness.load_manifest_books", return_value=[book]), \
+                 patch("evaluation.generate_report.LLM_CACHE_DIR", llm_cache_dir), \
+                 patch("evaluation.generate_report.public_outline_candidates_for", return_value=None):
+                generate(out_dir)
+
+            main_html = (out_dir / "index.html").read_text(encoding="utf-8")
+            self.assertIn("Start accuracy", main_html)
+            self.assertIn("End accuracy", main_html)
+
 
 if __name__ == "__main__":
     unittest.main()

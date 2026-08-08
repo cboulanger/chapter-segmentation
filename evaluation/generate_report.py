@@ -27,7 +27,7 @@ from evaluation.harness import (
     public_outline_candidates_for,
     public_pages_for,
 )
-from evaluation.metrics import MicroAggregate, precision_recall_f1
+from evaluation.metrics import CitationPageAggregate, MicroAggregate, citation_pages_metrics, precision_recall_f1
 from evaluation.report_html import render_strategy_tables
 
 HEURISTIC = "heuristic"
@@ -84,6 +84,9 @@ def generate(out_dir: Path) -> None:
 
     per_document: dict[str, dict] = {}
     heuristic_agg, outline_agg, llm_agg = MicroAggregate(), MicroAggregate(), MicroAggregate()
+    heuristic_citation_agg, outline_citation_agg, llm_citation_agg = (
+        CitationPageAggregate(), CitationPageAggregate(), CitationPageAggregate(),
+    )
 
     for manifest_key, _expected_path, _book in books:
         pages = public_pages_for(manifest_key)
@@ -95,6 +98,7 @@ def generate(out_dir: Path) -> None:
         heuristic_elapsed = time.perf_counter() - start
         heuristic_metrics = precision_recall_f1(expected, heuristic_result["chapters"])
         heuristic_agg.add(heuristic_metrics, heuristic_elapsed)
+        heuristic_citation_agg.add(citation_pages_metrics(expected, heuristic_result["chapters"]))
         cells[HEURISTIC] = (heuristic_metrics, heuristic_elapsed)
 
         outline_candidates = public_outline_candidates_for(manifest_key)
@@ -112,6 +116,7 @@ def generate(out_dir: Path) -> None:
             outline_elapsed = time.perf_counter() - start
             outline_metrics = precision_recall_f1(expected, outline_result["chapters"])
             outline_agg.add(outline_metrics, outline_elapsed)
+            outline_citation_agg.add(citation_pages_metrics(expected, outline_result["chapters"]))
             cells[OUTLINE] = (outline_metrics, outline_elapsed)
         else:
             cells[OUTLINE] = None
@@ -121,6 +126,7 @@ def generate(out_dir: Path) -> None:
             if llm_entry:
                 llm_metrics = precision_recall_f1(expected, llm_entry["chapters"])
                 llm_agg.add(llm_metrics, llm_entry["elapsed_seconds"])
+                llm_citation_agg.add(citation_pages_metrics(expected, llm_entry["chapters"]))
                 cells[llm_strategy_name] = (llm_metrics, llm_entry["elapsed_seconds"])
             else:
                 cells[llm_strategy_name] = None
@@ -129,9 +135,11 @@ def generate(out_dir: Path) -> None:
 
     aggregates = {HEURISTIC: heuristic_agg.compute(), OUTLINE: outline_agg.compute()}
     aggregate_times = {HEURISTIC: heuristic_agg.total_elapsed_seconds, OUTLINE: outline_agg.total_elapsed_seconds}
+    citation_aggregates = {HEURISTIC: heuristic_citation_agg.compute(), OUTLINE: outline_citation_agg.compute()}
     if llm_strategy_name:
         aggregates[llm_strategy_name] = llm_agg.compute()
         aggregate_times[llm_strategy_name] = llm_agg.total_elapsed_seconds
+        citation_aggregates[llm_strategy_name] = llm_citation_agg.compute()
 
     description = """<p>Each book has a hand-verified <code>*.expected.json</code> ground truth (real
 chapter boundaries as exact PDF page ranges). Each strategy below is run
@@ -150,6 +158,7 @@ is at <a href="llm/index.html">llm/index.html</a>.</p>"""
         per_document=per_document,
         aggregates=aggregates,
         aggregate_times=aggregate_times,
+        citation_aggregates=citation_aggregates,
     )
     html = html.replace(
         "</body></html>",
@@ -178,6 +187,7 @@ def _generate_llm_detail_page(out_dir: Path, books: list[tuple[str, list[dict]]]
     else:
         per_document: dict[str, dict] = {}
         aggregates_acc = {model_id: MicroAggregate() for model_id in model_ids}
+        citation_aggregates_acc = {model_id: CitationPageAggregate() for model_id in model_ids}
         for manifest_key, expected in books:
             cache = _load_llm_cache(manifest_key)
             cells: dict = {}
@@ -188,11 +198,13 @@ def _generate_llm_detail_page(out_dir: Path, books: list[tuple[str, list[dict]]]
                     continue
                 metrics = precision_recall_f1(expected, entry["chapters"])
                 aggregates_acc[model_id].add(metrics, entry["elapsed_seconds"])
+                citation_aggregates_acc[model_id].add(citation_pages_metrics(expected, entry["chapters"]))
                 cells[model_id] = (metrics, entry["elapsed_seconds"])
             per_document[manifest_key] = cells
 
         aggregates = {model_id: acc.compute() for model_id, acc in aggregates_acc.items()}
         aggregate_times = {model_id: acc.total_elapsed_seconds for model_id, acc in aggregates_acc.items()}
+        citation_aggregates = {model_id: acc.compute() for model_id, acc in citation_aggregates_acc.items()}
         html = render_strategy_tables(
             title="chapter-segmentation: LLM strategy results (all cached models)",
             description_html=(
@@ -207,6 +219,7 @@ def _generate_llm_detail_page(out_dir: Path, books: list[tuple[str, list[dict]]]
             per_document=per_document,
             aggregates=aggregates,
             aggregate_times=aggregate_times,
+            citation_aggregates=citation_aggregates,
         )
 
     llm_dir = out_dir / "llm"

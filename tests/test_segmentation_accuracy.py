@@ -1,6 +1,7 @@
 """Precision/recall scoring for chapter_segmentation.analyze_attachment
 against the real, hand-verified ground-truth books in
-evaluation/ (design spec §5, §12).
+evaluation/corpus/ (design spec §5, §12; see also
+docs/superpowers/specs/2026-08-08-multi-corpus-evaluation-design.md).
 
 The PDFs themselves are gitignored — run
 `uv run python scripts/fetch_evaluation_pdfs.py` first to download the
@@ -10,7 +11,8 @@ populated (run `uv run python scripts/ocr_evaluation_pdfs.py` with the
 Kreuzberg sidecar up) — both are real, checkable states, not placeholders.
 
 Pages are loaded exactly the way production's run() sees them (layout-mode
-fallback + OCR cache) via evaluation/harness.py.
+fallback + OCR cache) via evaluation/harness.py. Every corpus under
+evaluation/corpus/ is exercised in the same test method.
 
 Marked "integration" so it's excluded from the default `uv run pytest` /
 `npm test` run (see pyproject.toml's addopts) -- this is a reported, not
@@ -28,51 +30,55 @@ import unittest
 
 import pytest
 
-from evaluation.harness import analysis_pages_for, available_books
+from evaluation.harness import analysis_pages_for, available_books, list_corpora
 from chapter_segmentation.segmentation import analyze_attachment
 
 pytestmark = pytest.mark.integration
 
 
+def _any_books_available() -> bool:
+    return any(available_books(corpus) for corpus in list_corpora())
+
+
 @unittest.skipUnless(
-    available_books(),
+    _any_books_available(),
     "No evaluation PDFs present — run: uv run python scripts/fetch_evaluation_pdfs.py",
 )
 class TestChapterSegmentationAccuracy(unittest.TestCase):
     # The default 30s global timeout (pyproject.toml) is sized for the
-    # original 7-book committed set; the layout-mode re-extraction pass on
-    # large manifest.local.json books is slow (whole-book re-extraction per
-    # book that triggers it), so give the single all-books method plenty of
-    # room.
+    # open-access corpus; the layout-mode re-extraction pass on large
+    # copyrighted-corpus books is slow (whole-book re-extraction per book
+    # that triggers it), so give the single all-books method plenty of room.
     @pytest.mark.timeout(900)
     def test_boundary_precision_recall_per_book(self):
-        for pdf_path, expected_path, book in available_books():
-            with self.subTest(book=pdf_path.name):
-                expected = json.loads(expected_path.read_text(encoding="utf-8"))["chapters"]
-                pages = analysis_pages_for(pdf_path.read_bytes())
-                if pages is None:
-                    print(f"{pdf_path.name}: SKIPPED (needs OCR — populate the cache with: "
-                          f"uv run python scripts/ocr_evaluation_pdfs.py)")
-                    continue
-                result = analyze_attachment(pages)
+        for corpus in list_corpora():
+            for pdf_path, expected_path, book in available_books(corpus):
+                with self.subTest(book=f"{corpus}/{pdf_path.name}"):
+                    expected = json.loads(expected_path.read_text(encoding="utf-8"))["chapters"]
+                    pages = analysis_pages_for(corpus, pdf_path.read_bytes())
+                    if pages is None:
+                        print(f"{corpus}/{pdf_path.name}: SKIPPED (needs OCR — populate the cache with: "
+                              f"uv run python scripts/ocr_evaluation_pdfs.py)")
+                        continue
+                    result = analyze_attachment(pages)
 
-                expected_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in expected}
-                found_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in result["chapters"]}
-                true_positives = expected_ranges & found_ranges
+                    expected_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in expected}
+                    found_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in result["chapters"]}
+                    true_positives = expected_ranges & found_ranges
 
-                precision = len(true_positives) / len(found_ranges) if found_ranges else 0.0
-                recall = len(true_positives) / len(expected_ranges) if expected_ranges else 0.0
-                print(f"{pdf_path.name}: precision={precision:.2f} recall={recall:.2f} "
-                      f"({len(true_positives)}/{len(found_ranges)} found, {len(true_positives)}/{len(expected_ranges)} expected)")
-                if book.get("heuristic_expected_zero", False):
-                    # This book is a known, accepted heuristic limitation --
-                    # zero recall even after the layout fallback and OCR
-                    # route (see evaluation/RESULTS.md) -- so zero is
-                    # the expected outcome here, not a regression.
-                    continue
-                # Reported, not gated (design spec §12: probabilistic, not pass/fail) —
-                # this assertion only catches a total regression to zero detection.
-                self.assertGreater(recall, 0.0, f"{pdf_path.name}: detected zero of {len(expected_ranges)} known chapters")
+                    precision = len(true_positives) / len(found_ranges) if found_ranges else 0.0
+                    recall = len(true_positives) / len(expected_ranges) if expected_ranges else 0.0
+                    print(f"{corpus}/{pdf_path.name}: precision={precision:.2f} recall={recall:.2f} "
+                          f"({len(true_positives)}/{len(found_ranges)} found, {len(true_positives)}/{len(expected_ranges)} expected)")
+                    if book.get("heuristic_expected_zero", False):
+                        # This book is a known, accepted heuristic limitation --
+                        # zero recall even after the layout fallback and OCR
+                        # route (see evaluation/RESULTS.md) -- so zero is
+                        # the expected outcome here, not a regression.
+                        continue
+                    # Reported, not gated (design spec §12: probabilistic, not pass/fail) —
+                    # this assertion only catches a total regression to zero detection.
+                    self.assertGreater(recall, 0.0, f"{corpus}/{pdf_path.name}: detected zero of {len(expected_ranges)} known chapters")
 
 
 if __name__ == "__main__":

@@ -26,7 +26,7 @@ large, mostly untapped source of free ground truth for open-access books.
 ## Goal
 
 A script that builds a new, separate corpus of ~40-50 open-access books,
-spanning diverse academic domains, by downloading each book's PDF and its
+spanning diverse academic domains and languages, by downloading each book's PDF and its
 Crossref-registered chapter metadata. This corpus is not wired into the
 existing evaluation harness yet — that's future work, once it's clear how
 Crossref's citation page ranges should be reconciled with the harness's
@@ -90,6 +90,22 @@ during curation, not added with placeholder fields (unlike
 `evaluation/manifest.json`, which deliberately supports non-OA entries this
 corpus has no use for).
 
+**Language mix.** The existing evaluation set is either all-German
+(`manifest.local.json`) or all-English (`manifest.json`) per book, never
+mixed, and this corpus should not default to English-only just because
+English-language OA chapter metadata is the easiest to find. Target: at
+least ~25% non-English, drawn from German, French, and Spanish for this
+round (opportunistic per domain/language combination — some pairings have
+far more available OA Crossref-chapter books than others, so this is a
+target to aim for during curation, not a strict per-language quota).
+Nothing in the script needs to change to support this: the manifest's
+existing `language` field (schema above) already carries it per book, and
+the fetch/download logic is language-agnostic. The only artifact this
+requires is documentation — `evaluation/crossref_gt/README.md` (see below)
+records which languages the corpus currently covers as a plain list, so a
+future curation round can extend it (add Italian, Portuguese, etc.) by
+just adding entries and updating that list, with no code changes.
+
 ### `<isbn>.crossref.json` schema
 
 ```json
@@ -145,9 +161,12 @@ plus a Crossref fetch step:
 
 ### `evaluation/crossref_gt/README.md`
 
-Short — schema description (mirroring this doc's two JSON shapes) plus an
-explicit statement that this corpus is standalone and not yet consumed by
-`test_segmentation_accuracy.py` or `generate_report.py`.
+Short — schema description (mirroring this doc's two JSON shapes), the
+list of languages and domains the corpus currently covers (so a future
+curation round knows what to extend rather than guessing from the
+manifest), and an explicit statement that this corpus is standalone and
+not yet consumed by `test_segmentation_accuracy.py` or
+`generate_report.py`.
 
 ## Testing
 

@@ -26,6 +26,7 @@ from chapter_segmentation.segmentation import (
     _page_number_anchors,
     _infer_printed_page,
     _to_roman,
+    _toc_declared_page,
     analyze_attachment_with_llm_fallback,
     analyze_attachment_outline_only,
     analyze_attachment_llm_only,
@@ -888,6 +889,28 @@ class TestToRoman(unittest.TestCase):
     def test_round_trips_through_parse_toc_page_number(self):
         for n in range(1, 50):
             self.assertEqual(_parse_toc_page_number(_to_roman(n)), n)
+
+
+class TestTocDeclaredPage(unittest.TestCase):
+    def test_valid_heuristic_value_formats_as_arabic(self):
+        entry = TocEntry(title="Introduction", printed_page_number=12, source_page_index=0)
+        self.assertEqual(_toc_declared_page(entry, total_pages=200), "12")
+
+    def test_valid_roman_value_formats_as_roman(self):
+        entry = TocEntry(title="Foreword", printed_page_number=7, source_page_index=0, printed_roman=True)
+        self.assertEqual(_toc_declared_page(entry, total_pages=200), "vii")
+
+    def test_llm_sentinel_returns_none(self):
+        entry = TocEntry(title="Introduction", printed_page_number=-1, source_page_index=-1)
+        self.assertIsNone(_toc_declared_page(entry, total_pages=200))
+
+    def test_implausibly_large_value_returns_none(self):
+        # Simulates an LLM hallucination -- a positive int the heuristic
+        # regex parser could never produce (find_toc_candidates enforces
+        # this same ceiling at parse time), so _toc_declared_page must
+        # enforce it independently for LLM-sourced entries.
+        entry = TocEntry(title="Introduction", printed_page_number=5000, source_page_index=-1)
+        self.assertIsNone(_toc_declared_page(entry, total_pages=200))
 
 
 class TestExtractAuthorsNear(unittest.TestCase):

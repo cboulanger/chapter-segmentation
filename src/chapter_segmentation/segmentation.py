@@ -1046,6 +1046,28 @@ def _infer_printed_page(index: int, anchors: list[tuple[int, int, bool]]) -> str
     return _to_roman(value) if before_roman else str(value)
 
 
+def _format_page_number(value: int, is_roman: bool) -> str:
+    return _to_roman(value) if is_roman else str(value)
+
+
+def _toc_declared_page(entry: TocEntry, total_pages: int) -> str | None:
+    """entry's own printed_page_number, formatted, when the TOC (heuristic
+    or LLM) supplied a plausible one. -1 is the sentinel both sources use
+    for "not identified" (a regex-found entry always has a real, valid
+    value -- find_toc_candidates never constructs one otherwise; an
+    LLM-found entry uses -1 when it couldn't read one, see
+    llm_extract_toc_entries). The plausibility ceiling mirrors
+    find_toc_candidates' own guard (_TOC_MAX_PAGE_NUMBER_RATIO) -- the LLM
+    path has no equivalent check of its own, and an LLM could hallucinate
+    an implausible value where the heuristic regex parser structurally
+    cannot.
+    """
+    value = entry.printed_page_number
+    if value <= 0 or value > total_pages * _TOC_MAX_PAGE_NUMBER_RATIO:
+        return None
+    return _format_page_number(value, entry.printed_roman)
+
+
 _NLP = None
 
 

@@ -5,7 +5,7 @@ docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md
 "Metrics and rendering (shared code)".
 """
 
-from evaluation.metrics import Metrics
+from evaluation.metrics import CitationPageMetrics, Metrics
 
 _TableCell = tuple[Metrics, float] | None  # (metrics, elapsed_seconds), or None for "not run"
 
@@ -30,6 +30,7 @@ def render_strategy_tables(
     per_document: dict[str, dict[str, _TableCell]],
     aggregates: dict[str, Metrics],
     aggregate_times: dict[str, float],
+    citation_aggregates: dict[str, CitationPageMetrics] | None = None,
 ) -> str:
     """
     strategy_names: column order for the per-document table.
@@ -39,6 +40,11 @@ def render_strategy_tables(
     aggregates: {strategy_name: Metrics} -- micro-aggregate across every
         document that strategy actually ran on.
     aggregate_times: {strategy_name: total_elapsed_seconds}.
+    citation_aggregates: optional {strategy_name: CitationPageMetrics} --
+        when given, adds "Start accuracy"/"End accuracy" columns to the
+        aggregate table (see design spec 2026-08-08). Omitted entirely
+        (no extra columns) when not given, so existing callers/tests are
+        unaffected.
     Returns a full <html> document string.
     """
     doc_rows = []
@@ -65,13 +71,20 @@ def render_strategy_tables(
     for strategy in ranked_strategies:
         m = aggregates[strategy]
         t = aggregate_times.get(strategy, 0.0)
+        citation_cells = ""
+        if citation_aggregates is not None:
+            c = citation_aggregates.get(strategy)
+            citation_cells = (
+                f"<td>{c.start_accuracy:.2f}</td><td>{c.end_accuracy:.2f}</td>" if c else "<td>N/A</td><td>N/A</td>"
+            )
         agg_rows.append(
             f"<tr><td>{strategy}</td><td>{m.precision:.2f}</td><td>{m.recall:.2f}</td>"
             f"<td>{m.f1:.2f}</td><td>{m.true_positives}/{m.found_count} found, "
-            f"{m.true_positives}/{m.expected_count} expected</td><td>{t:.2f}s</td></tr>"
+            f"{m.true_positives}/{m.expected_count} expected</td><td>{t:.2f}s</td>{citation_cells}</tr>"
         )
 
     doc_header = "".join(f"<th>{s}</th>" for s in strategy_names)
+    citation_header = "<th>Start accuracy</th><th>End accuracy</th>" if citation_aggregates is not None else ""
     return f"""<!doctype html>
 <html><head><meta charset="utf-8"><title>{title}</title>
 <style>table {{ border-collapse: collapse; }} td, th {{ border: 1px solid #ccc; padding: 4px 8px; vertical-align: top; }}</style>
@@ -85,7 +98,7 @@ def render_strategy_tables(
 </table>
 <h2>Per strategy (aggregate, ordered by F1)</h2>
 <table>
-<tr><th>Strategy</th><th>Precision</th><th>Recall</th><th>F1</th><th>Found / Expected</th><th>Total time</th></tr>
+<tr><th>Strategy</th><th>Precision</th><th>Recall</th><th>F1</th><th>Found / Expected</th><th>Total time</th>{citation_header}</tr>
 {"".join(agg_rows)}
 </table>
 </body></html>

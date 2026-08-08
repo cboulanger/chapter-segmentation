@@ -3,7 +3,7 @@ used by both generate_report.py's main report and its LLM detail page."""
 
 import unittest
 
-from evaluation.metrics import Metrics
+from evaluation.metrics import CitationPageMetrics, Metrics
 from evaluation.report_html import render_strategy_tables
 
 
@@ -98,6 +98,31 @@ class TestRenderStrategyTables(unittest.TestCase):
             strategy_names=[], per_document={}, aggregates={}, aggregate_times={},
         )
         self.assertIn("My Special Report Title", html)
+
+    def test_renders_citation_accuracy_columns_when_provided(self):
+        html = render_strategy_tables(
+            title="Test report", description_html="",
+            strategy_names=["heuristic"],
+            per_document={},
+            aggregates={"heuristic": _metrics(1.0, 1.0, 1.0)},
+            aggregate_times={"heuristic": 1.0},
+            citation_aggregates={"heuristic": CitationPageMetrics(0.9, 0.8, 0.7, 0.6, 10)},
+        )
+        agg_section = html[html.index("Per strategy"):]
+        self.assertIn("Start accuracy", agg_section)
+        self.assertIn("End accuracy", agg_section)
+        self.assertIn("0.80", agg_section)  # start_accuracy
+        self.assertIn("0.60", agg_section)  # end_accuracy
+
+    def test_omits_citation_accuracy_columns_when_not_provided(self):
+        html = render_strategy_tables(
+            title="Test report", description_html="",
+            strategy_names=["heuristic"],
+            per_document={},
+            aggregates={"heuristic": _metrics(1.0, 1.0, 1.0)},
+            aggregate_times={"heuristic": 1.0},
+        )
+        self.assertNotIn("Start accuracy", html)
 
 
 if __name__ == "__main__":

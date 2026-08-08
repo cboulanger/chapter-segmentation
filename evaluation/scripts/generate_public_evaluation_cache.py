@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""Generate evaluation/public-cache/ -- a
-redacted, git-trackable corpus safe to commit and distribute (real
-navigational/bibliographic text kept verbatim, chapter prose replaced with
-random real words in the book's own language) plus, per book, a resolved
-outline-strategy candidate snapshot (<key>.outline.json -- titles/authors/
-page indices only, no prose) so the outline strategy is also testable
-without the real PDF -- see evaluation/README.md for the redaction
-rationale and workflow, and docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md
+"""Generate each corpus's public-cache/ -- a redacted, git-trackable
+corpus safe to commit and distribute (real navigational/bibliographic text
+kept verbatim, chapter prose replaced with random real words in the book's
+own language) plus, per book, a resolved outline-strategy candidate
+snapshot (<key>.outline.json -- titles/authors/page indices only, no
+prose) so the outline strategy is also testable without the real PDF --
+see evaluation/README.md for the redaction rationale and workflow, and
+docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md
 for the outline-snapshot rationale.
 
 Run by a maintainer who has the real books locally; not something a
 contributor without PDFs needs to run.
 
-    uv run python evaluation/scripts/generate_public_evaluation_cache.py [--book <manifest-key>] [--no-verify]
+    uv run python evaluation/scripts/generate_public_evaluation_cache.py [--book <manifest-key>] [--corpus <name>] [--no-verify]
 """
 
 import argparse
@@ -30,10 +30,11 @@ from chapter_segmentation.segmentation import (
     pages_need_ocr,
 )
 from evaluation.harness import (
-    PUBLIC_CACHE_DIR,
     analysis_pages_for,
     available_books,
+    list_corpora,
     outline_candidate_to_dict,
+    public_cache_dir,
 )
 from evaluation.redaction.redact import redact_book_until_stable
 
@@ -58,66 +59,70 @@ def _verify(real_pages: list[str], redacted_pages: list[str]) -> list[str]:
 def _main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--book", help="Only regenerate this manifest key (filename stem)")
+    parser.add_argument("--corpus", help="Only regenerate this corpus (default: every corpus under evaluation/corpus/)")
     parser.add_argument("--no-verify", action="store_true", help="Skip the exact-boundary-match check")
     args = parser.parse_args()
 
-    PUBLIC_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     failures = 0
-    for pdf_path, _expected_path, book in available_books():
-        manifest_key = Path(book["filename"]).stem
-        if args.book and manifest_key != args.book:
-            continue
-        file_bytes = pdf_path.read_bytes()
-        real_pages = analysis_pages_for(file_bytes)
-        if real_pages is None:
-            print(f"{manifest_key}: SKIPPED (needs OCR -- run scripts/ocr_evaluation_pdfs.py first)")
-            continue
-        try:
-            raw_pages, _layout_used = extract_page_texts_for_analysis(file_bytes)
-            source = "ocr" if pages_need_ocr(raw_pages) else "extracted"
-            language = detect_language(book.get("language"), book.get("title", ""))
-            redacted_pages, extra_preserved = redact_book_until_stable(
-                real_pages, detected_language=language, book_salt=manifest_key,
+    corpora = [args.corpus] if args.corpus else list_corpora()
+    for corpus in corpora:
+        cache_dir = public_cache_dir(corpus)
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        for pdf_path, _expected_path, book in available_books(corpus):
+            manifest_key = Path(book["filename"]).stem
+            if args.book and manifest_key != args.book:
+                continue
+            file_bytes = pdf_path.read_bytes()
+            real_pages = analysis_pages_for(corpus, file_bytes)
+            if real_pages is None:
+                print(f"{corpus}/{manifest_key}: SKIPPED (needs OCR -- run scripts/ocr_evaluation_pdfs.py first)")
+                continue
+            try:
+                raw_pages, _layout_used = extract_page_texts_for_analysis(file_bytes)
+                source = "ocr" if pages_need_ocr(raw_pages) else "extracted"
+                language = detect_language(book.get("language"), book.get("title", ""))
+                redacted_pages, extra_preserved = redact_book_until_stable(
+                    real_pages, detected_language=language, book_salt=manifest_key,
+                )
+                if extra_preserved:
+                    print(f"{corpus}/{manifest_key}: self-corrected -- forced {len(extra_preserved)} extra page(s) "
+                          f"fully verbatim to resolve a redaction-induced boundary drift: {sorted(extra_preserved)}")
+                if not args.no_verify:
+                    # Defense in depth: redact_book_until_stable already verifies
+                    # internally on every attempt, so this only fires if
+                    # max_attempts was exhausted without full convergence.
+                    diff = _verify(real_pages, redacted_pages)
+                    if diff:
+                        print(f"{corpus}/{manifest_key}: VERIFY FAILED -- redaction changed detected chapter boundaries "
+                              f"even after self-correction")
+                        print("\n".join(diff))
+                        failures += 1
+                        continue
+            except Exception as exc:
+                # One book's failure must not strand the rest of the batch --
+                # same catch-log-continue shape as scripts/ocr_evaluation_pdfs.py.
+                print(f"{corpus}/{manifest_key}: FAILED ({exc}) -- skipping")
+                failures += 1
+                continue
+            cache_path = cache_dir / f"{manifest_key}.pages.json"
+            cache_path.write_text(
+                json.dumps(
+                    {"cipher_version": CIPHER_VERSION, "source": source, "pages": redacted_pages},
+                    indent=2, ensure_ascii=False,
+                ),
+                encoding="utf-8",
             )
-            if extra_preserved:
-                print(f"{manifest_key}: self-corrected -- forced {len(extra_preserved)} extra page(s) "
-                      f"fully verbatim to resolve a redaction-induced boundary drift: {sorted(extra_preserved)}")
-            if not args.no_verify:
-                # Defense in depth: redact_book_until_stable already verifies
-                # internally on every attempt, so this only fires if
-                # max_attempts was exhausted without full convergence.
-                diff = _verify(real_pages, redacted_pages)
-                if diff:
-                    print(f"{manifest_key}: VERIFY FAILED -- redaction changed detected chapter boundaries "
-                          f"even after self-correction")
-                    print("\n".join(diff))
-                    failures += 1
-                    continue
-        except Exception as exc:
-            # One book's failure must not strand the rest of the batch --
-            # same catch-log-continue shape as scripts/ocr_evaluation_pdfs.py.
-            print(f"{manifest_key}: FAILED ({exc}) -- skipping")
-            failures += 1
-            continue
-        cache_path = PUBLIC_CACHE_DIR / f"{manifest_key}.pages.json"
-        cache_path.write_text(
-            json.dumps(
-                {"cipher_version": CIPHER_VERSION, "source": source, "pages": redacted_pages},
-                indent=2, ensure_ascii=False,
-            ),
-            encoding="utf-8",
-        )
-        print(f"{manifest_key}: OK, wrote {cache_path}")
-        outline_candidates = extract_outline_candidates(file_bytes)
-        outline_cache_path = PUBLIC_CACHE_DIR / f"{manifest_key}.outline.json"
-        outline_cache_path.write_text(
-            json.dumps(
-                {"candidates": [outline_candidate_to_dict(c) for c in outline_candidates]},
-                indent=2, ensure_ascii=False,
-            ),
-            encoding="utf-8",
-        )
-        print(f"{manifest_key}: wrote {len(outline_candidates)} outline candidate(s) to {outline_cache_path}")
+            print(f"{corpus}/{manifest_key}: OK, wrote {cache_path}")
+            outline_candidates = extract_outline_candidates(file_bytes)
+            outline_cache_path = cache_dir / f"{manifest_key}.outline.json"
+            outline_cache_path.write_text(
+                json.dumps(
+                    {"candidates": [outline_candidate_to_dict(c) for c in outline_candidates]},
+                    indent=2, ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            print(f"{corpus}/{manifest_key}: wrote {len(outline_candidates)} outline candidate(s) to {outline_cache_path}")
     if failures:
         print(f"{failures} book(s) failed -- see above")
     return 1 if failures else 0

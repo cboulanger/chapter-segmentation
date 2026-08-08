@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # evaluation/scripts/evaluate_chapter_segmentation_strategies.py
-"""Runs the chapter-segmentation evaluation set (see evaluation/) through
-analyze_attachment_with_strategies instead of
-the pure-heuristic analyze_attachment, and prints the same precision/recall
-table format tests/test_segmentation_accuracy.py already
-uses, plus per-book strategies_used diagnostics.
+"""Runs every evaluation corpus (see evaluation/corpus/) through
+analyze_attachment_with_strategies instead of the pure-heuristic
+analyze_attachment, and prints the same precision/recall table format
+tests/test_segmentation_accuracy.py already uses, grouped by corpus, plus
+per-book strategies_used diagnostics.
 
 Not a pytest test -- makes real (free, cached) Crossref API calls per book:
 
@@ -28,7 +28,7 @@ import httpx
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from evaluation.harness import analysis_pages_for, available_books
+from evaluation.harness import analysis_pages_for, available_books, list_corpora
 from chapter_segmentation.evidence.crossref_strategy import CrossrefMetadataStrategy
 from chapter_segmentation.evidence.types import BookContext
 from chapter_segmentation.evidence.zotero_catalog_strategy import ZoteroCatalogMetadataStrategy
@@ -36,8 +36,8 @@ from chapter_segmentation.segmentation import analyze_attachment_with_strategies
 
 
 async def _main(enable_crossref: bool) -> int:
-    triples = available_books()
-    if not triples:
+    corpora = list_corpora()
+    if not any(available_books(corpus) for corpus in corpora):
         print("No evaluation PDFs present -- run: uv run python scripts/fetch_evaluation_pdfs.py")
         return 1
 
@@ -48,39 +48,44 @@ async def _main(enable_crossref: bool) -> int:
             CrossrefMetadataStrategy(http_client, cache_dir=Path("data/crossref_cache"), contact_email=None)
             if enable_crossref else None
         )
-        for pdf_path, expected_path, book in triples:
-            expected = json.loads(expected_path.read_text(encoding="utf-8"))["chapters"]
-            file_bytes = pdf_path.read_bytes()
-            pages = analysis_pages_for(file_bytes)
-            if pages is None:
-                print(f"{pdf_path.name}: SKIPPED (needs OCR — populate the cache with: "
-                      f"uv run python scripts/ocr_evaluation_pdfs.py)")
+        for corpus in corpora:
+            triples = available_books(corpus)
+            if not triples:
                 continue
-            # The evaluation manifest names each PDF after its own ISBN-13
-            # (see evaluation/README.md), so the
-            # filename stem doubles as the ISBN BookContext needs.
-            isbn = Path(book["filename"]).stem
-            context = BookContext(
-                item_key=book["filename"], isbn=isbn, title=book["title"],
-                editors=(), publisher=None, year=None,
-            )
-            result = await analyze_attachment_with_strategies(
-                pages, file_bytes, context, zotero_catalog_strategy,
-                crossref_strategy=crossref_strategy,
-            )
+            print(f"=== {corpus} ===")
+            for pdf_path, expected_path, book in triples:
+                expected = json.loads(expected_path.read_text(encoding="utf-8"))["chapters"]
+                file_bytes = pdf_path.read_bytes()
+                pages = analysis_pages_for(corpus, file_bytes)
+                if pages is None:
+                    print(f"{pdf_path.name}: SKIPPED (needs OCR — populate the cache with: "
+                          f"uv run python scripts/ocr_evaluation_pdfs.py)")
+                    continue
+                # The evaluation manifest names each PDF after its own ISBN-13
+                # (see evaluation/README.md), so the
+                # filename stem doubles as the ISBN BookContext needs.
+                isbn = Path(book["filename"]).stem
+                context = BookContext(
+                    item_key=book["filename"], isbn=isbn, title=book["title"],
+                    editors=(), publisher=None, year=None,
+                )
+                result = await analyze_attachment_with_strategies(
+                    pages, file_bytes, context, zotero_catalog_strategy,
+                    crossref_strategy=crossref_strategy,
+                )
 
-            expected_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in expected}
-            found_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in result["chapters"]}
-            true_positives = expected_ranges & found_ranges
+                expected_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in expected}
+                found_ranges = {(c["pdf_start_index"], c["pdf_end_index"]) for c in result["chapters"]}
+                true_positives = expected_ranges & found_ranges
 
-            precision = len(true_positives) / len(found_ranges) if found_ranges else 0.0
-            recall = len(true_positives) / len(expected_ranges) if expected_ranges else 0.0
-            diag = result["diagnostics"]
-            print(
-                f"{pdf_path.name}: precision={precision:.2f} recall={recall:.2f} "
-                f"({len(true_positives)}/{len(found_ranges)} found, {len(true_positives)}/{len(expected_ranges)} expected) "
-                f"strategies_used={diag.get('strategies_used')}"
-            )
+                precision = len(true_positives) / len(found_ranges) if found_ranges else 0.0
+                recall = len(true_positives) / len(expected_ranges) if expected_ranges else 0.0
+                diag = result["diagnostics"]
+                print(
+                    f"{pdf_path.name}: precision={precision:.2f} recall={recall:.2f} "
+                    f"({len(true_positives)}/{len(found_ranges)} found, {len(true_positives)}/{len(expected_ranges)} expected) "
+                    f"strategies_used={diag.get('strategies_used')}"
+                )
     return 0
 
 

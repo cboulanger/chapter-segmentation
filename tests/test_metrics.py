@@ -3,11 +3,15 @@ micro-aggregation shared by generate_report.py and refresh_llm_cache.py."""
 
 import unittest
 
-from evaluation.metrics import MicroAggregate, precision_recall_f1
+from evaluation.metrics import CitationPageAggregate, MicroAggregate, citation_pages_metrics, precision_recall_f1
 
 
 def _chapter(start: int, end: int) -> dict:
     return {"pdf_start_index": start, "pdf_end_index": end}
+
+
+def _chapter_with_citation(start: int, end: int, citation_pages: str | None) -> dict:
+    return {"pdf_start_index": start, "pdf_end_index": end, "citation_pages": citation_pages}
 
 
 class TestPrecisionRecallF1(unittest.TestCase):
@@ -65,6 +69,96 @@ class TestMicroAggregate(unittest.TestCase):
         result = MicroAggregate().compute()
         self.assertEqual((result.precision, result.recall, result.f1), (0.0, 0.0, 0.0))
         self.assertEqual(MicroAggregate().total_elapsed_seconds, 0.0)
+
+
+class TestCitationPagesMetrics(unittest.TestCase):
+    def test_correct_start_and_exact_end(self):
+        expected = [_chapter_with_citation(0, 5, "12-20")]
+        found = [_chapter_with_citation(0, 5, "12-20")]
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.checked_count, 1)
+        self.assertEqual((m.start_coverage, m.start_accuracy), (1.0, 1.0))
+        self.assertEqual((m.end_coverage, m.end_accuracy), (1.0, 1.0))
+
+    def test_wrong_start_counts_as_incorrect(self):
+        expected = [_chapter_with_citation(0, 5, "12-20")]
+        found = [_chapter_with_citation(0, 5, "13-20")]
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.start_accuracy, 0.0)
+        self.assertEqual(m.start_coverage, 1.0)  # a (wrong) value was still found
+
+    def test_end_over_inclusive_within_tolerance_counts_as_correct(self):
+        expected = [_chapter_with_citation(0, 5, "12-20")]
+        found = [_chapter_with_citation(0, 5, "12-23")]  # +3, at the tolerance boundary
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.end_accuracy, 1.0)
+
+    def test_end_over_inclusive_beyond_tolerance_counts_as_incorrect(self):
+        expected = [_chapter_with_citation(0, 5, "12-20")]
+        found = [_chapter_with_citation(0, 5, "12-24")]  # +4, past the tolerance
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.end_accuracy, 0.0)
+
+    def test_end_under_inclusive_by_one_page_counts_as_incorrect(self):
+        expected = [_chapter_with_citation(0, 5, "12-20")]
+        found = [_chapter_with_citation(0, 5, "12-19")]  # -1, real content cut off
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.end_accuracy, 0.0)
+
+    def test_null_found_citation_pages_counts_as_uncovered(self):
+        expected = [_chapter_with_citation(0, 5, "12-20")]
+        found = [_chapter_with_citation(0, 5, None)]
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual((m.start_coverage, m.start_accuracy), (0.0, 0.0))
+        self.assertEqual((m.end_coverage, m.end_accuracy), (0.0, 0.0))
+
+    def test_expected_chapter_with_null_citation_pages_excluded_from_denominator(self):
+        expected = [_chapter_with_citation(0, 5, None), _chapter_with_citation(6, 10, "1-4")]
+        found = [_chapter_with_citation(0, 5, None), _chapter_with_citation(6, 10, "1-4")]
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.checked_count, 1)
+
+    def test_expected_chapter_with_no_matching_found_range_excluded_from_denominator(self):
+        expected = [_chapter_with_citation(0, 5, "12-20")]
+        found = [_chapter_with_citation(0, 6, "12-20")]  # different range -- not a match at all
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.checked_count, 0)
+
+    def test_handles_roman_numeral_pages(self):
+        expected = [_chapter_with_citation(0, 5, "vii-x")]
+        found = [_chapter_with_citation(0, 5, "vii-xi")]  # end +1 (x=10 -> xi=11), within tolerance
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.start_accuracy, 1.0)
+        self.assertEqual(m.end_accuracy, 1.0)
+
+    def test_no_checked_chapters_returns_all_zero(self):
+        m = citation_pages_metrics([], [])
+        self.assertEqual(
+            (m.start_coverage, m.start_accuracy, m.end_coverage, m.end_accuracy, m.checked_count),
+            (0.0, 0.0, 0.0, 0.0, 0),
+        )
+
+
+class TestCitationPageAggregate(unittest.TestCase):
+    def test_pools_counts_across_documents_before_computing_rates(self):
+        agg = CitationPageAggregate()
+        # Book A: 1 of 1 checked, start correct, end wrong (under-inclusive)
+        agg.add(citation_pages_metrics(
+            [_chapter_with_citation(0, 5, "12-20")], [_chapter_with_citation(0, 5, "12-19")],
+        ))
+        # Book B: 1 of 1 checked, both correct
+        agg.add(citation_pages_metrics(
+            [_chapter_with_citation(0, 5, "1-4")], [_chapter_with_citation(0, 5, "1-4")],
+        ))
+        result = agg.compute()
+        self.assertEqual(result.checked_count, 2)
+        self.assertEqual(result.start_accuracy, 1.0)
+        self.assertEqual(result.end_accuracy, 0.5)
+
+    def test_empty_aggregate_is_all_zero(self):
+        result = CitationPageAggregate().compute()
+        self.assertEqual(result.checked_count, 0)
+        self.assertEqual((result.start_accuracy, result.end_accuracy), (0.0, 0.0))
 
 
 if __name__ == "__main__":

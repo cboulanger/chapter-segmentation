@@ -683,6 +683,14 @@ def _strip_running_headers(text: str, header_lines: frozenset[str]) -> str:
 
 
 _PAGE_NUMBER_TOKEN_RE = re.compile(r"^[0-9]{1,4}$|^[ivxlcdm]{1,7}$", re.IGNORECASE)
+
+# Boundary-guarded so a bare trailing/leading letter of an ordinary word
+# (e.g. "Afterword", "Index") never false-positives as a roman numeral --
+# see evaluation/CLAUDE.md's "Known failure modes", this ports the fix
+# already proven there (evaluation/scripts/ground_truth_helper.py).
+_TRAILING_PAGE_NUM_RE = re.compile(r"(?<![A-Za-z])(\d{1,4}|[ivxlcdm]{1,7})\s*$", re.IGNORECASE)
+_LEADING_PAGE_NUM_RE = re.compile(r"^(\d{1,4}|[ivxlcdm]{1,7})(?![A-Za-z])", re.IGNORECASE)
+
 _LOCATE_SCORE_THRESHOLD = 80.0  # rapidfuzz partial_ratio, 0-100
 # rapidfuzz partial_ratio is unreliable on very short strings (a near-blank
 # page's head can trivially "perfectly align" with a short substring of the
@@ -935,10 +943,15 @@ def match_confidence(score: float, margin: float) -> float:
 
 
 def extract_printed_page_number(page_text: str) -> str | None:
-    """Read the printed page number actually shown on a page, by looking for
-    an isolated numeral/roman-numeral line near the top or bottom of the
-    page's text (a running header/footer). Returns None if no such line is
-    found — callers must treat this as "unknown", never guess.
+    """Read the printed page number actually shown on a page: first an
+    isolated numeral/roman-numeral header/footer line near the top or
+    bottom of the page, then (if that finds nothing) a number embedded at
+    either end of the page's first non-URL/DOI line -- running headers
+    alternate between "<num> <author>" and "<title> ... <num>" depending on
+    recto/verso convention (reuses the existing _looks_like_url_or_doi
+    filter, the same one find_toc_candidates uses, rather than duplicating
+    a URL check). Returns None if neither check finds anything -- callers
+    must treat this as "unknown", never guess.
     """
     lines = [ln.strip() for ln in page_text.splitlines() if ln.strip()]
     if not lines:
@@ -947,6 +960,14 @@ def extract_printed_page_number(page_text: str) -> str | None:
     for line in candidates:
         if _PAGE_NUMBER_TOKEN_RE.match(line):
             return line
+    first_line = next((ln for ln in lines if not _looks_like_url_or_doi(ln)), None)
+    if first_line is not None and len(first_line) < 120:
+        match = _TRAILING_PAGE_NUM_RE.search(first_line)
+        if match:
+            return match.group(1)
+        match = _LEADING_PAGE_NUM_RE.match(first_line)
+        if match:
+            return match.group(1)
     return None
 
 

@@ -807,6 +807,28 @@ class TestExtractPrintedPageNumber(unittest.TestCase):
         text = "Just a page of prose with no isolated numeral line at all here."
         self.assertIsNone(extract_printed_page_number(text))
 
+    def test_finds_embedded_trailing_number_on_first_line(self):
+        text = "Comparing Citation Styles 12\nBody text of this page follows here."
+        self.assertEqual(extract_printed_page_number(text), "12")
+
+    def test_finds_embedded_leading_number_on_first_line(self):
+        text = "12 Comparing Citation Styles\nBody text of this page follows here."
+        self.assertEqual(extract_printed_page_number(text), "12")
+
+    def test_does_not_misread_trailing_letter_of_ordinary_word_as_roman_numeral(self):
+        text = "Afterword\nBody text of this page follows here, with no real page number."
+        self.assertIsNone(extract_printed_page_number(text))
+
+    def test_skips_url_line_when_looking_for_embedded_number(self):
+        text = "https://doi.org/10.1007/978-3-030-12345-6\nComparing Citation Styles 12\nBody text follows."
+        self.assertEqual(extract_printed_page_number(text), "12")
+
+    def test_does_not_match_embedded_number_on_an_overly_long_first_line(self):
+        long_line = "A very long running header line that goes on and on and on and on and on and on and on and on and on and continues further 12"
+        self.assertTrue(len(long_line) >= 120)
+        text = long_line + "\nBody text follows."
+        self.assertIsNone(extract_printed_page_number(text))
+
 
 class TestExtractAuthorsNear(unittest.TestCase):
     def test_finds_person_entities_at_chapter_start(self):

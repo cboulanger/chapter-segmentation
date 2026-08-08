@@ -254,14 +254,14 @@ with a parseable embedded TOC page -- exactly the case the pure-heuristic
 pipeline already handles well (all 6 have `embedded_toc: true`).
 
 The `copyrighted/` corpus (11 books) is sourced directly from a real
-personal Zotero library,
-selected for the opposite profile: `embedded_toc: false`, spanning
-1967-2020, native and scanned, German and English, none open access, and
-none with a Crossref-registered DOI at all (checked directly against the
-API, book- or chapter-level). This set exercises the case the
-outline/Crossref/Zotero-catalog strategies were built for, and the case the
-layout-mode extraction fallback and evaluation OCR route (see "Running an
-evaluation" above) were built for:
+personal Zotero library. 10 of its 11 books were selected for the opposite
+profile from `open-access/`: `embedded_toc: false`, spanning 1967-2020,
+native and scanned, German and English, none open access, and none with a
+Crossref-registered DOI at all (checked directly against the API, book- or
+chapter-level). This set exercises the case the outline/Crossref/
+Zotero-catalog strategies were built for, and the case the layout-mode
+extraction fallback and evaluation OCR route (see "Running an evaluation"
+above) were built for:
 
 | Filename | Title | Year | Extraction |
 | --- | --- | --- | --- |
@@ -276,18 +276,26 @@ evaluation" above) were built for:
 | `9783848704316.pdf` | Constitutional Jurisprudence | 2016 | scan |
 | `dnb-36942798X.pdf` | Studien und Materialien zur Rechtssoziologie | 1967 | scan |
 
+The corpus's 11th book, `9783322969828.pdf` (Jahrbuch für Rechtssoziologie
+und Rechtstheorie IV, 1976, scan), is not part of this set of 10 -- it has
+a DOI and a Crossref-registered record, so its ground truth was built via
+`CLAUDE.md`'s Crossref-page-range shortcut instead, the same way the
+`open-access/` corpus's books were.
+
 See `RESULTS.md` for how each of these books currently scores and why.
 
-Ground truth for these 10 books was built directly from the PDFs via
+Ground truth for the other 10 books was built directly from the PDFs via
 multimodal reading (visually locating each chapter's opening/closing page
 and transcribing its table of contents) rather than `CLAUDE.md`'s
 Crossref-page-range shortcut for OA books, since none of the 10 has any
-Crossref record to shortcut from. Because none has a DOI, all 10 entries
-(and their PDFs) live only in the gitignored `manifest.local.json`/`*.pdf`
--- but the 10 `.expected.json` ground-truth files themselves (titles,
-authors, and page indices only, no copyrighted text) are committed here, so
-anyone who acquires the same PDFs by ISBN (see filenames) can reuse them
-directly without rebuilding ground truth from scratch.
+Crossref record to shortcut from. All 10 entries were originally added to
+the gitignored `manifest.local.json` for that reason (see `CLAUDE.md`'s
+"Step 0b"), then moved into this corpus's committed `manifest.json` once
+each gained a `public-cache/` entry -- but the 10 `.expected.json`
+ground-truth files themselves (titles, authors, and page indices only, no
+copyrighted text) were committed from the start, so anyone who acquires
+the same PDFs by ISBN (see filenames) can reuse them directly without
+rebuilding ground truth from scratch.
 
 Two other personal-library PDFs were found and rejected as candidates
 before landing on this set of 10: both turned out to be heavily abridged

@@ -1,0 +1,1215 @@
+{
+  "isbn": "9783031907272",
+  "fetched_at": "2026-08-08T16:36:54.780541+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.1007/978-3-031-90727-2_18",
+      "type": "book-chapter",
+      "page": "185-196",
+      "title": [
+        "Global Quantum Strategies"
+      ],
+      "author": [
+        {
+          "given": "Brendan",
+          "family": "Karch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_7",
+      "type": "book-chapter",
+      "page": "65-72",
+      "title": [
+        "Quantum Annealing"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Tsesmelis",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_5",
+      "type": "book-chapter",
+      "page": "45-56",
+      "title": [
+        "Quantum Error Control and Mitigation Strategies"
+      ],
+      "author": [
+        {
+          "given": "Nathan",
+          "family": "Shammah",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_10",
+      "type": "book-chapter",
+      "page": "95-106",
+      "title": [
+        "Quantum Threats"
+      ],
+      "author": [
+        {
+          "given": "Rajiv",
+          "family": "Krishnakumar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_17",
+      "type": "book-chapter",
+      "page": "171-179",
+      "title": [
+        "Quantum Technologies for Space Applications"
+      ],
+      "author": [
+        {
+          "given": "Davide",
+          "family": "Venturelli",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Filip",
+          "family": "Wudarski",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_6",
+      "type": "book-chapter",
+      "page": "57-64",
+      "title": [
+        "Quantum Optimization"
+      ],
+      "author": [
+        {
+          "given": "Daniel J.",
+          "family": "Egger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Heike",
+          "family": "Riel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Stefan",
+          "family": "Woerner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Christa",
+          "family": "Zoufal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_21",
+      "type": "book-chapter",
+      "page": "219-229",
+      "title": [
+        "Bibliometric Analysis of Convergence of Quantum Technologies"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Sternfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Andrei",
+          "family": "Kucharavy",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Dimitri Percia",
+          "family": "David",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_9",
+      "type": "book-chapter",
+      "page": "85-90",
+      "title": [
+        "Enabling and Accelerating Quantum Computing with AI Supercomputing"
+      ],
+      "author": [
+        {
+          "given": "Mark",
+          "family": "Wolf",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_12",
+      "type": "book-chapter",
+      "page": "119-131",
+      "title": [
+        "Trends in Quantum Key Distribution (QKD)"
+      ],
+      "author": [
+        {
+          "given": "Sebastian",
+          "family": "Kish",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Josef",
+          "family": "Pieprzyk",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Seyit",
+          "family": "Camtepe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_13",
+      "type": "book-chapter",
+      "page": "133-141",
+      "title": [
+        "Migrating to Quantum Key Distribution"
+      ],
+      "author": [
+        {
+          "given": "Bruno",
+          "family": "Huttner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_19",
+      "type": "book-chapter",
+      "page": "197-207",
+      "title": [
+        "Investment Trends in Quantum Computing"
+      ],
+      "author": [
+        {
+          "given": "Loïc",
+          "family": "Maréchal",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_15",
+      "type": "book-chapter",
+      "page": "155-162",
+      "title": [
+        "Quantum Readiness: Recommendations for Enterprises"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Burkhart",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bernhard",
+          "family": "Tellenbach",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_4",
+      "type": "book-chapter",
+      "page": "33-43",
+      "title": [
+        "Quantum Computing with Semiconductor Spin"
+      ],
+      "author": [
+        {
+          "given": "Santhanu Panikar",
+          "family": "Ramanandan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Anna Fontcuberta i",
+          "family": "Morral",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_8",
+      "type": "book-chapter",
+      "page": "73-83",
+      "title": [
+        "Quantum Machine Learning"
+      ],
+      "author": [
+        {
+          "given": "Muhammad",
+          "family": "Usman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_20",
+      "type": "book-chapter",
+      "page": "209-218",
+      "title": [
+        "Analysis of Quantum Trends in Open Software Repositories and Financial News"
+      ],
+      "author": [
+        {
+          "given": "Thomas",
+          "family": "Berkane",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Evgueni",
+          "family": "Rousselot",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Julian",
+          "family": "Jang-Jaccard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_22",
+      "type": "book-chapter",
+      "page": "231-238",
+      "title": [
+        "Quantum Ecosystem of Switzerland"
+      ],
+      "author": [
+        {
+          "given": "Brendan",
+          "family": "Karch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_2",
+      "type": "book-chapter",
+      "page": "15-24",
+      "title": [
+        "Trapped-Ion Quantum Computers"
+      ],
+      "author": [
+        {
+          "given": "Cornelius",
+          "family": "Hempel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_11",
+      "type": "book-chapter",
+      "page": "107-118",
+      "title": [
+        "Quantum Random Number Generators (QRNG)"
+      ],
+      "author": [
+        {
+          "given": "Bruno",
+          "family": "Huttner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gilles",
+          "family": "Trachsel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_14",
+      "type": "book-chapter",
+      "page": "143-153",
+      "title": [
+        "Post-Quantum Cryptography"
+      ],
+      "author": [
+        {
+          "given": "Steven",
+          "family": "Galbraith",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_16",
+      "type": "book-chapter",
+      "page": "163-170",
+      "title": [
+        "Perspective on the QKD Versus PQC Debate"
+      ],
+      "author": [
+        {
+          "given": "Renato",
+          "family": "Renner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ramona",
+          "family": "Wolf",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_3",
+      "type": "book-chapter",
+      "page": "25-31",
+      "title": [
+        "Quantum Computing with Neutral Atoms"
+      ],
+      "author": [
+        {
+          "given": "Tommaso",
+          "family": "Macrì",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-90727-2_1",
+      "type": "book-chapter",
+      "page": "3-14",
+      "title": [
+        "Superconducting Qubits"
+      ],
+      "author": [
+        {
+          "given": "Stefano",
+          "family": "Poletto",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Angela Q.",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Quantum Technologies"
+      ],
+      "ISBN": [
+        "9783031907265",
+        "9783031907272"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Global Quantum Strategies",
+      "authors": [
+        "Brendan Karch"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_18",
+      "citation_pages": "185-196"
+    },
+    {
+      "title": "Quantum Annealing",
+      "authors": [
+        "Michael Tsesmelis"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_7",
+      "citation_pages": "65-72"
+    },
+    {
+      "title": "Quantum Error Control and Mitigation Strategies",
+      "authors": [
+        "Nathan Shammah"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_5",
+      "citation_pages": "45-56"
+    },
+    {
+      "title": "Quantum Threats",
+      "authors": [
+        "Rajiv Krishnakumar"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_10",
+      "citation_pages": "95-106"
+    },
+    {
+      "title": "Quantum Technologies for Space Applications",
+      "authors": [
+        "Davide Venturelli",
+        "Filip Wudarski"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_17",
+      "citation_pages": "171-179"
+    },
+    {
+      "title": "Quantum Optimization",
+      "authors": [
+        "Daniel J. Egger",
+        "Heike Riel",
+        "Stefan Woerner",
+        "Christa Zoufal"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_6",
+      "citation_pages": "57-64"
+    },
+    {
+      "title": "Bibliometric Analysis of Convergence of Quantum Technologies",
+      "authors": [
+        "Alexander Sternfeld",
+        "Andrei Kucharavy",
+        "Dimitri Percia David"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_21",
+      "citation_pages": "219-229"
+    },
+    {
+      "title": "Enabling and Accelerating Quantum Computing with AI Supercomputing",
+      "authors": [
+        "Mark Wolf"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_9",
+      "citation_pages": "85-90"
+    },
+    {
+      "title": "Trends in Quantum Key Distribution (QKD)",
+      "authors": [
+        "Sebastian Kish",
+        "Josef Pieprzyk",
+        "Seyit Camtepe"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_12",
+      "citation_pages": "119-131"
+    },
+    {
+      "title": "Migrating to Quantum Key Distribution",
+      "authors": [
+        "Bruno Huttner"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_13",
+      "citation_pages": "133-141"
+    },
+    {
+      "title": "Investment Trends in Quantum Computing",
+      "authors": [
+        "Loïc Maréchal"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_19",
+      "citation_pages": "197-207"
+    },
+    {
+      "title": "Quantum Readiness: Recommendations for Enterprises",
+      "authors": [
+        "Martin Burkhart",
+        "Bernhard Tellenbach"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_15",
+      "citation_pages": "155-162"
+    },
+    {
+      "title": "Quantum Computing with Semiconductor Spin",
+      "authors": [
+        "Santhanu Panikar Ramanandan",
+        "Anna Fontcuberta i Morral"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_4",
+      "citation_pages": "33-43"
+    },
+    {
+      "title": "Quantum Machine Learning",
+      "authors": [
+        "Muhammad Usman"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_8",
+      "citation_pages": "73-83"
+    },
+    {
+      "title": "Analysis of Quantum Trends in Open Software Repositories and Financial News",
+      "authors": [
+        "Thomas Berkane",
+        "Evgueni Rousselot",
+        "Julian Jang-Jaccard"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_20",
+      "citation_pages": "209-218"
+    },
+    {
+      "title": "Quantum Ecosystem of Switzerland",
+      "authors": [
+        "Brendan Karch"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_22",
+      "citation_pages": "231-238"
+    },
+    {
+      "title": "Trapped-Ion Quantum Computers",
+      "authors": [
+        "Cornelius Hempel"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_2",
+      "citation_pages": "15-24"
+    },
+    {
+      "title": "Quantum Random Number Generators (QRNG)",
+      "authors": [
+        "Bruno Huttner",
+        "Gilles Trachsel"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_11",
+      "citation_pages": "107-118"
+    },
+    {
+      "title": "Post-Quantum Cryptography",
+      "authors": [
+        "Steven Galbraith"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_14",
+      "citation_pages": "143-153"
+    },
+    {
+      "title": "Perspective on the QKD Versus PQC Debate",
+      "authors": [
+        "Renato Renner",
+        "Ramona Wolf"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_16",
+      "citation_pages": "163-170"
+    },
+    {
+      "title": "Quantum Computing with Neutral Atoms",
+      "authors": [
+        "Tommaso Macrì"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_3",
+      "citation_pages": "25-31"
+    },
+    {
+      "title": "Superconducting Qubits",
+      "authors": [
+        "Stefano Poletto",
+        "Angela Q. Chen"
+      ],
+      "chapter_doi": "10.1007/978-3-031-90727-2_1",
+      "citation_pages": "3-14"
+    }
+  ]
+}

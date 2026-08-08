@@ -1,0 +1,1428 @@
+{
+  "isbn": "9781783749201",
+  "fetched_at": "2026-08-08T16:37:40.311860+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0204.15",
+      "type": "book-chapter",
+      "page": "217-248",
+      "title": [
+        "Strategic games"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.18",
+      "type": "book-chapter",
+      "page": "289-300",
+      "title": [
+        "Matching"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.09",
+      "type": "book-chapter",
+      "page": "121-136",
+      "title": [
+        "A market"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.13",
+      "type": "book-chapter",
+      "page": "187-202",
+      "title": [
+        "Equilibrium with prices and expectations"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.06",
+      "type": "book-chapter",
+      "page": "75-88",
+      "title": [
+        "Producer behavior"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.03",
+      "type": "book-chapter",
+      "page": "31-44",
+      "title": [
+        "Preferences under uncertainty"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.08",
+      "type": "book-chapter",
+      "page": "105-120",
+      "title": [
+        "A jungle"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.16",
+      "type": "book-chapter",
+      "page": "249-278",
+      "title": [
+        "Extensive games"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.02",
+      "type": "book-chapter",
+      "page": "17-30",
+      "title": [
+        "Choice"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.19",
+      "type": "book-chapter",
+      "page": "301-312",
+      "title": [
+        "Socialism"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.20",
+      "type": "book-chapter",
+      "page": "313-328",
+      "title": [
+        "Aggregating preferences"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.01",
+      "type": "book-chapter",
+      "page": "3-16",
+      "title": [
+        "Preferences and utility"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.14",
+      "type": "book-chapter",
+      "page": "203-214",
+      "title": [
+        "A market with asymmetric information"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.12",
+      "type": "book-chapter",
+      "page": "175-186",
+      "title": [
+        "A market with consumers and producers"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.10",
+      "type": "book-chapter",
+      "page": "137-156",
+      "title": [
+        "An exchange economy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.11",
+      "type": "book-chapter",
+      "page": "157-174",
+      "title": [
+        "Variants of an exchange economy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.04",
+      "type": "book-chapter",
+      "page": "45-56",
+      "title": [
+        "Consumer preferences"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.17",
+      "type": "book-chapter",
+      "page": "281-288",
+      "title": [
+        "Mechanism design"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.07",
+      "type": "book-chapter",
+      "page": "89-102",
+      "title": [
+        "Monopoly"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0204.05",
+      "type": "book-chapter",
+      "page": "57-74",
+      "title": [
+        "Consumer behavior"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8584-6176",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Osborne",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1574-2659",
+          "authenticated-orcid": true,
+          "given": "Ariel",
+          "family": "Rubinstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Models in Microeconomic Theory"
+      ],
+      "ISBN": [
+        "9781783749201",
+        "9781783749218",
+        "9781783749225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Strategic games",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.15",
+      "citation_pages": "217-248"
+    },
+    {
+      "title": "Matching",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.18",
+      "citation_pages": "289-300"
+    },
+    {
+      "title": "A market",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.09",
+      "citation_pages": "121-136"
+    },
+    {
+      "title": "Equilibrium with prices and expectations",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.13",
+      "citation_pages": "187-202"
+    },
+    {
+      "title": "Producer behavior",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.06",
+      "citation_pages": "75-88"
+    },
+    {
+      "title": "Preferences under uncertainty",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.03",
+      "citation_pages": "31-44"
+    },
+    {
+      "title": "A jungle",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.08",
+      "citation_pages": "105-120"
+    },
+    {
+      "title": "Extensive games",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.16",
+      "citation_pages": "249-278"
+    },
+    {
+      "title": "Choice",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.02",
+      "citation_pages": "17-30"
+    },
+    {
+      "title": "Socialism",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.19",
+      "citation_pages": "301-312"
+    },
+    {
+      "title": "Aggregating preferences",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.20",
+      "citation_pages": "313-328"
+    },
+    {
+      "title": "Preferences and utility",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.01",
+      "citation_pages": "3-16"
+    },
+    {
+      "title": "A market with asymmetric information",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.14",
+      "citation_pages": "203-214"
+    },
+    {
+      "title": "A market with consumers and producers",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.12",
+      "citation_pages": "175-186"
+    },
+    {
+      "title": "An exchange economy",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.10",
+      "citation_pages": "137-156"
+    },
+    {
+      "title": "Variants of an exchange economy",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.11",
+      "citation_pages": "157-174"
+    },
+    {
+      "title": "Consumer preferences",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.04",
+      "citation_pages": "45-56"
+    },
+    {
+      "title": "Mechanism design",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.17",
+      "citation_pages": "281-288"
+    },
+    {
+      "title": "Monopoly",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.07",
+      "citation_pages": "89-102"
+    },
+    {
+      "title": "Consumer behavior",
+      "authors": [
+        "Martin Osborne",
+        "Ariel Rubinstein"
+      ],
+      "chapter_doi": "10.11647/obp.0204.05",
+      "citation_pages": "57-74"
+    }
+  ]
+}

@@ -1,0 +1,1316 @@
+{
+  "isbn": "9781805114383",
+  "fetched_at": "2026-08-08T16:37:44.725210+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0434.02",
+      "type": "book-chapter",
+      "page": "13-30",
+      "title": [
+        "1. Public Investment and Industrial Policy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6917-4194",
+          "authenticated-orcid": false,
+          "given": "Andrea",
+          "family": "Brasili",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6940-380X",
+          "authenticated-orcid": false,
+          "given": "Tuna",
+          "family": "Dökmeci",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0031wrj91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European University Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Atanas",
+          "family": "Kolev",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8193-9399",
+          "authenticated-orcid": false,
+          "given": "Debora",
+          "family": "Revoltella",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7006-7740",
+          "authenticated-orcid": false,
+          "given": "Jochen",
+          "family": "Schanz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-7544-0400",
+          "authenticated-orcid": false,
+          "given": "Annamaria",
+          "family": "Tueske",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9510-8991",
+          "authenticated-orcid": false,
+          "given": "Wouter",
+          "family": "Van Der Wielen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "subtitle": [
+        "A Case for More European Union Coordination"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.09",
+      "type": "book-chapter",
+      "page": "135-148",
+      "title": [
+        "8. Industrial Policy and Security"
+      ],
+      "author": [
+        {
+          "given": "Paolo",
+          "family": "Guerrieri",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05fe7ax82",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sciences Po, Paris"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pier Carlo",
+          "family": "Padoan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02be6w209",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sapienza University of Rome"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "subtitle": [
+        "The European Union and the Double Challenge: Strengthening Competitiveness and Enhancing Economic Security"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.08",
+      "type": "book-chapter",
+      "page": "109-134",
+      "title": [
+        "7. A “True” Industrial Policy for Europe Is a Technology and Innovation Policy"
+      ],
+      "author": [
+        {
+          "given": "Reda",
+          "family": "Cherif",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05m4rmw09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "International Monetary Fund"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2023-4547",
+          "authenticated-orcid": false,
+          "given": "Fuad",
+          "family": "Hasanov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05m4rmw09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "International Monetary Fund"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05vzafd60",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Georgetown University"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1979-4731",
+          "authenticated-orcid": false,
+          "given": "Xun",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05m4rmw09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "International Monetary Fund"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.06",
+      "type": "book-chapter",
+      "page": "77-95",
+      "title": [
+        "5. Public Investment and Structural Transformation in Spain"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2801-3447",
+          "authenticated-orcid": false,
+          "given": "Ignacio",
+          "family": "Alvarez",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01cby8j38",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Autónoma de Madrid"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2218-1004",
+          "authenticated-orcid": false,
+          "given": "Jorge",
+          "family": "Uxó",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02p0gd045",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Complutense de Madrid"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.01",
+      "type": "book-chapter",
+      "page": "3-9",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9972-716X",
+          "authenticated-orcid": false,
+          "given": "Floriana",
+          "family": "Cerniglia",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0121-4329",
+          "authenticated-orcid": false,
+          "given": "Francesco",
+          "family": "Saraceno",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05fe7ax82",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sciences Po, Paris"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.03",
+      "type": "book-chapter",
+      "page": "31-44",
+      "title": [
+        "2. Public Investment and Industrial Policy in France"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-7978-5667",
+          "authenticated-orcid": false,
+          "given": "Vincent",
+          "family": "Charlet",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mathieu",
+          "family": "Plane",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05fe7ax82",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sciences Po, Paris"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0121-4329",
+          "authenticated-orcid": false,
+          "given": "Francesco",
+          "family": "Saraceno",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05fe7ax82",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sciences Po, Paris"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.00",
+      "type": "book-chapter",
+      "page": "1-2",
+      "title": [
+        "Preface"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7832-7458",
+          "authenticated-orcid": false,
+          "given": "Alberto",
+          "family": "Quadrio Curzio",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Xavier",
+          "family": "Ragot",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.07",
+      "type": "book-chapter",
+      "page": "99-108",
+      "title": [
+        "6. A New Industrial Policy as the Key to the Green Transition"
+      ],
+      "author": [
+        {
+          "given": "Karl",
+          "family": "Aiginger",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yn8s215",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vienna University of Economics and Business"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052r2xn60",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Johannes Kepler University of Linz"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.12",
+      "type": "book-chapter",
+      "page": "181-186",
+      "title": [
+        "11. Financing Structural Investment after 2027"
+      ],
+      "author": [
+        {
+          "given": "Sophie",
+          "family": "Barbier",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Helmut",
+          "family": "von Glasenapp",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.11",
+      "type": "book-chapter",
+      "page": "169-180",
+      "title": [
+        "10. Sustainable Mobility and Industrial Policy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2748-6472",
+          "authenticated-orcid": false,
+          "given": "Dario",
+          "family": "Guarascio",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02be6w209",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sapienza University of Rome"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8861-5090",
+          "authenticated-orcid": false,
+          "given": "Annamaria",
+          "family": "Simonazzi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02be6w209",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sapienza University of Rome"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.04",
+      "type": "book-chapter",
+      "page": "45-58",
+      "title": [
+        "3. Germany"
+      ],
+      "author": [
+        {
+          "given": "Katja",
+          "family": "Rietzler",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/022b5tw91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hans-Böckler Foundation"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Watt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00r5yyv69",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Trade Union Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "subtitle": [
+        "Additional Investment Needs Require Reform of the Debt Brake"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.05",
+      "type": "book-chapter",
+      "page": "59-76",
+      "title": [
+        "4. Italy, NRRP, and Industrial Policy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0221-8057",
+          "authenticated-orcid": false,
+          "given": "Giovanni",
+          "family": "Barbieri",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9972-716X",
+          "authenticated-orcid": false,
+          "given": "Floriana",
+          "family": "Cerniglia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Franco",
+          "family": "Mosconi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02k7wn190",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università di Parma"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0434.10",
+      "type": "book-chapter",
+      "page": "149-168",
+      "title": [
+        "9. Trends in Defence Spending in the European Union"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7706-3868",
+          "authenticated-orcid": false,
+          "given": "Alessandra",
+          "family": "Cepparulo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5350-8834",
+          "authenticated-orcid": false,
+          "given": "Paolo",
+          "family": "Pasimeni",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006e5kg04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije Universiteit Brussel"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Investing in the Structural Transformation"
+      ],
+      "ISBN": [
+        "9781805114383",
+        "9781805114390",
+        "9781805114406",
+        "9781805114420",
+        "9781805114413"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            11
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "1. Public Investment and Industrial Policy A Case for More European Union Coordination",
+      "authors": [
+        "Andrea Brasili",
+        "Tuna Dökmeci",
+        "Atanas Kolev",
+        "Debora Revoltella",
+        "Jochen Schanz",
+        "Annamaria Tueske",
+        "Wouter Van Der Wielen"
+      ],
+      "chapter_doi": "10.11647/obp.0434.02",
+      "citation_pages": "13-30"
+    },
+    {
+      "title": "8. Industrial Policy and Security The European Union and the Double Challenge: Strengthening Competitiveness and Enhancing Economic Security",
+      "authors": [
+        "Paolo Guerrieri",
+        "Pier Carlo Padoan"
+      ],
+      "chapter_doi": "10.11647/obp.0434.09",
+      "citation_pages": "135-148"
+    },
+    {
+      "title": "7. A “True” Industrial Policy for Europe Is a Technology and Innovation Policy",
+      "authors": [
+        "Reda Cherif",
+        "Fuad Hasanov",
+        "Xun Li"
+      ],
+      "chapter_doi": "10.11647/obp.0434.08",
+      "citation_pages": "109-134"
+    },
+    {
+      "title": "5. Public Investment and Structural Transformation in Spain",
+      "authors": [
+        "Ignacio Alvarez",
+        "Jorge Uxó"
+      ],
+      "chapter_doi": "10.11647/obp.0434.06",
+      "citation_pages": "77-95"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Floriana Cerniglia",
+        "Francesco Saraceno"
+      ],
+      "chapter_doi": "10.11647/obp.0434.01",
+      "citation_pages": "3-9"
+    },
+    {
+      "title": "2. Public Investment and Industrial Policy in France",
+      "authors": [
+        "Vincent Charlet",
+        "Mathieu Plane",
+        "Francesco Saraceno"
+      ],
+      "chapter_doi": "10.11647/obp.0434.03",
+      "citation_pages": "31-44"
+    },
+    {
+      "title": "Preface",
+      "authors": [
+        "Alberto Quadrio Curzio",
+        "Xavier Ragot"
+      ],
+      "chapter_doi": "10.11647/obp.0434.00",
+      "citation_pages": "1-2"
+    },
+    {
+      "title": "6. A New Industrial Policy as the Key to the Green Transition",
+      "authors": [
+        "Karl Aiginger"
+      ],
+      "chapter_doi": "10.11647/obp.0434.07",
+      "citation_pages": "99-108"
+    },
+    {
+      "title": "11. Financing Structural Investment after 2027",
+      "authors": [
+        "Sophie Barbier",
+        "Helmut von Glasenapp"
+      ],
+      "chapter_doi": "10.11647/obp.0434.12",
+      "citation_pages": "181-186"
+    },
+    {
+      "title": "10. Sustainable Mobility and Industrial Policy",
+      "authors": [
+        "Dario Guarascio",
+        "Annamaria Simonazzi"
+      ],
+      "chapter_doi": "10.11647/obp.0434.11",
+      "citation_pages": "169-180"
+    },
+    {
+      "title": "3. Germany Additional Investment Needs Require Reform of the Debt Brake",
+      "authors": [
+        "Katja Rietzler",
+        "Andrew Watt"
+      ],
+      "chapter_doi": "10.11647/obp.0434.04",
+      "citation_pages": "45-58"
+    },
+    {
+      "title": "4. Italy, NRRP, and Industrial Policy",
+      "authors": [
+        "Giovanni Barbieri",
+        "Floriana Cerniglia",
+        "Franco Mosconi"
+      ],
+      "chapter_doi": "10.11647/obp.0434.05",
+      "citation_pages": "59-76"
+    },
+    {
+      "title": "9. Trends in Defence Spending in the European Union",
+      "authors": [
+        "Alessandra Cepparulo",
+        "Paolo Pasimeni"
+      ],
+      "chapter_doi": "10.11647/obp.0434.10",
+      "citation_pages": "149-168"
+    }
+  ]
+}

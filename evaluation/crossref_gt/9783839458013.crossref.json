@@ -1,0 +1,886 @@
+{
+  "isbn": "9783839458013",
+  "fetched_at": "2026-08-08T16:37:48.183603+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839458013-010",
+      "type": "book-chapter",
+      "page": "249-298",
+      "title": [
+        "7 Belege und Inspiration aus der Praxis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Historiker*innen als Produzent*innen digitaler Hypertexte"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-007",
+      "type": "book-chapter",
+      "page": "137-206",
+      "title": [
+        "4 In medias res - ein analytischer Blick auf Hypertext und Typografie"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Medienästhetische und epistemische Unterschiede, die sich für die Historiografie nutzen lassen"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-014",
+      "type": "book-chapter",
+      "page": "343-348",
+      "title": [
+        "11 Abbildungsverzeichnis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-009",
+      "type": "book-chapter",
+      "page": "233-248",
+      "title": [
+        "6 Sprachlogische Fundierung"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Mit Hypertexten können Historiker*innen eine explizite Sprache sprechen"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-005",
+      "type": "book-chapter",
+      "page": "77-120",
+      "title": [
+        "2 Medientheoretische Grundlegung"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Überführung von historischem Knowledge Design in ein adäquates historiografisches Mediendesign"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-013",
+      "type": "book-chapter",
+      "page": "323-342",
+      "title": [
+        "10 Literatur- und Website-Verzeichnis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-002",
+      "type": "book-chapter",
+      "page": "13-16",
+      "title": [
+        "Vorbemerkungen zu formalen Angaben"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-011",
+      "type": "book-chapter",
+      "page": "299-316",
+      "title": [
+        "8 Fazit"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Multilinearer, multimodaler Hypertext erweitert die historische Erkenntnisvermittlung konstruktiv"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-012",
+      "type": "book-chapter",
+      "page": "317-322",
+      "title": [
+        "9 Ausblick"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Medienkulturelle Konsequenzen für die Vermittlung von Geschichte"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-008",
+      "type": "book-chapter",
+      "page": "207-232",
+      "title": [
+        "5 Konsequenzen aus den Medienanalysen"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Hypertext ersetzt den Drucktext nicht, erweitert aber konstruktiv die historiografischen Ausdrucksmöglichkeiten"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-006",
+      "type": "book-chapter",
+      "page": "121-136",
+      "title": [
+        "3 Warum nun Hypertext?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Non-linear gestaltete Geschichte(n) durch ein non-lineares, multimodales Medium"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-toc",
+      "type": "book-chapter",
+      "page": "5-8",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-003",
+      "type": "book-chapter",
+      "page": "17-44",
+      "title": [
+        "0 Einleitung"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Historiografie wird durch ihre mediale Form inhaltlich geprägt"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-001",
+      "type": "book-chapter",
+      "page": "9-12",
+      "title": [
+        "Vorwort"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839458013-004",
+      "type": "book-chapter",
+      "page": "45-76",
+      "title": [
+        "1 Epistemologische Grundlegung"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2937-0868",
+          "authenticated-orcid": true,
+          "given": "Christian",
+          "family": "Wachter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Georg-August-Universität Göttingen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Geschichtstheorie",
+        "Geschichte digital schreiben"
+      ],
+      "subtitle": [
+        "Was für Art von Wissen soll vermittelt werden? Geschichtsforschung zwischen Rekonstruktion und Konstruktion?"
+      ],
+      "ISBN": [
+        "9783837658019",
+        "9783839458013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "7 Belege und Inspiration aus der Praxis Historiker*innen als Produzent*innen digitaler Hypertexte",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-010",
+      "citation_pages": "249-298"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "4 In medias res - ein analytischer Blick auf Hypertext und Typografie Medienästhetische und epistemische Unterschiede, die sich für die Historiografie nutzen lassen",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-007",
+      "citation_pages": "137-206"
+    },
+    {
+      "title": "11 Abbildungsverzeichnis",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-014",
+      "citation_pages": "343-348"
+    },
+    {
+      "title": "6 Sprachlogische Fundierung Mit Hypertexten können Historiker*innen eine explizite Sprache sprechen",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-009",
+      "citation_pages": "233-248"
+    },
+    {
+      "title": "2 Medientheoretische Grundlegung Überführung von historischem Knowledge Design in ein adäquates historiografisches Mediendesign",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-005",
+      "citation_pages": "77-120"
+    },
+    {
+      "title": "10 Literatur- und Website-Verzeichnis",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-013",
+      "citation_pages": "323-342"
+    },
+    {
+      "title": "Vorbemerkungen zu formalen Angaben",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-002",
+      "citation_pages": "13-16"
+    },
+    {
+      "title": "8 Fazit Multilinearer, multimodaler Hypertext erweitert die historische Erkenntnisvermittlung konstruktiv",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-011",
+      "citation_pages": "299-316"
+    },
+    {
+      "title": "9 Ausblick Medienkulturelle Konsequenzen für die Vermittlung von Geschichte",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-012",
+      "citation_pages": "317-322"
+    },
+    {
+      "title": "5 Konsequenzen aus den Medienanalysen Hypertext ersetzt den Drucktext nicht, erweitert aber konstruktiv die historiografischen Ausdrucksmöglichkeiten",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-008",
+      "citation_pages": "207-232"
+    },
+    {
+      "title": "3 Warum nun Hypertext? Non-linear gestaltete Geschichte(n) durch ein non-lineares, multimodales Medium",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-006",
+      "citation_pages": "121-136"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-toc",
+      "citation_pages": "5-8"
+    },
+    {
+      "title": "0 Einleitung Historiografie wird durch ihre mediale Form inhaltlich geprägt",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-003",
+      "citation_pages": "17-44"
+    },
+    {
+      "title": "Vorwort",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-001",
+      "citation_pages": "9-12"
+    },
+    {
+      "title": "1 Epistemologische Grundlegung Was für Art von Wissen soll vermittelt werden? Geschichtsforschung zwischen Rekonstruktion und Konstruktion?",
+      "authors": [
+        "Christian Wachter"
+      ],
+      "chapter_doi": "10.14361/9783839458013-004",
+      "citation_pages": "45-76"
+    }
+  ]
+}

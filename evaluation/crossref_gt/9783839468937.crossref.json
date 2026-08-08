@@ -1,0 +1,1125 @@
+{
+  "isbn": "9783839468937",
+  "fetched_at": "2026-08-08T16:38:12.646400+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839468937-012",
+      "type": "book-chapter",
+      "page": "209-210",
+      "title": [
+        "Drei Fragen an die Praxis - Intermezzo 3"
+      ],
+      "author": [
+        {
+          "given": "Eike",
+          "family": "Völker",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "authenticated-orcid": true,
+          "given": "Sigrid",
+          "family": "Hartong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-014",
+      "type": "book-chapter",
+      "page": "231-250",
+      "title": [
+        "Der EdTechReflektor"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "authenticated-orcid": true,
+          "given": "Sigrid",
+          "family": "Hartong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Ein Instrument für den reflektierten Einsatz digitaler Bildungsmedien"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-006",
+      "type": "book-chapter",
+      "page": "87-110",
+      "title": [
+        "Was wird wie vermittelt?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6444-962X",
+          "authenticated-orcid": true,
+          "given": "Sieglinde",
+          "family": "Jornitz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Eine kritische Analyse zum inhaltlich-didaktischen Kern digitaler Lernplattformen am Beispiel sofatutor"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-007",
+      "type": "book-chapter",
+      "page": "111-128",
+      "title": [
+        "EdTech oder AdTech?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "authenticated-orcid": true,
+          "given": "Sigrid",
+          "family": "Hartong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Untersuchungen zu Problemen datengetriebener Bildungsapplikationen"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-003",
+      "type": "book-chapter",
+      "page": "41-42",
+      "title": [
+        "Drei Fragen an die Praxis - Intermezzo 1"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "authenticated-orcid": true,
+          "given": "Sigrid",
+          "family": "Hartong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Ein Interview mit Patricia Ullrich"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/9783839468937-002",
+      "type": "book-chapter",
+      "page": "23-40",
+      "title": [
+        "Debatten um EdTech im Wandel"
+      ],
+      "author": [
+        {
+          "given": "André",
+          "family": "Renz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Eine Analyse des Zeitraums 1993–2022"
+      ],
+      "ISBN": [
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-015",
+      "type": "book-chapter",
+      "page": "251-260",
+      "title": [
+        "›Die Verunsicherung im eigenen Expertentum ist stark‹"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "authenticated-orcid": true,
+          "given": "Sigrid",
+          "family": "Hartong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Ein Gespräch zu Pädagogik und EdTech im Projekt SMASCH mit Iza Czarnojan"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-005",
+      "type": "book-chapter",
+      "page": "63-86",
+      "title": [
+        "Was steckt in Lernmanagementsystemen und welche Implikationen ergeben sich hieraus für eine digital mündige Gestaltung im Schulkontext?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1563-8456",
+          "authenticated-orcid": true,
+          "given": "Nina",
+          "family": "Brandau",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Eine Studie zu LMS.lernen.hamburg"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-010",
+      "type": "book-chapter",
+      "page": "161-186",
+      "title": [
+        "Die KI-Verordnung"
+      ],
+      "author": [
+        {
+          "given": "Nina",
+          "family": "Galla",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Der zukünftige Rechtsrahmen für EdTech an Schulen"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-001",
+      "type": "book-chapter",
+      "page": "7-22",
+      "title": [
+        "Von Mystifizierung zu reflektierter Gestaltung von EdTech"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "authenticated-orcid": true,
+          "given": "Sigrid",
+          "family": "Hartong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Was Sie zum Einstieg in dieses Buch wissen sollten"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-009",
+      "type": "book-chapter",
+      "page": "131-160",
+      "title": [
+        "KI in der Bildung"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nina",
+          "family": "Galla",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Viel mehr als eine Utopie - Dystopie - Dualismus?"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-008",
+      "type": "book-chapter",
+      "page": "129-130",
+      "title": [
+        "Drei Fragen an die Praxis - Intermezzo 2"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "authenticated-orcid": true,
+          "given": "Sigrid",
+          "family": "Hartong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Ein Interview mit Imke Erdbrink"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "authenticated-orcid": true,
+          "given": "Sigrid",
+          "family": "Hartong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-013",
+      "type": "book-chapter",
+      "page": "211-230",
+      "title": [
+        "Medienreflexion mit Methode"
+      ],
+      "author": [
+        {
+          "given": "Philipp",
+          "family": "Deny",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Weich",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Medienkonstellationsanalyse als Verbindung von Medienwissenschaft und Bildungspraxis"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-002",
+      "type": "book-chapter",
+      "page": "23-40",
+      "title": [
+        "Debatten um EdTech im Wandel"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Eine Analyse des Zeitraums 1993-2022"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-004",
+      "type": "book-chapter",
+      "page": "43-62",
+      "title": [
+        "Nicht determinierend, aber doch stark regulierend"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "authenticated-orcid": true,
+          "given": "Sigrid",
+          "family": "Hartong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Eine Studie zu Design und pädagogischen Wirkungen der Antolin-Leselernplattform"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839468937-011",
+      "type": "book-chapter",
+      "page": "187-208",
+      "title": [
+        "Der Design-Justice-Ansatz mit einer Anwendung im Bereich der KI"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2828-4127",
+          "authenticated-orcid": true,
+          "given": "Felicitas",
+          "family": "Macgilchrist",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Drei Fragen an die Praxis - Intermezzo 3",
+      "authors": [
+        "Eike Völker"
+      ],
+      "chapter_doi": "10.14361/9783839468937-012",
+      "citation_pages": "209-210"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Sigrid Hartong",
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Der EdTechReflektor Ein Instrument für den reflektierten Einsatz digitaler Bildungsmedien",
+      "authors": [
+        "Sigrid Hartong"
+      ],
+      "chapter_doi": "10.14361/9783839468937-014",
+      "citation_pages": "231-250"
+    },
+    {
+      "title": "Was wird wie vermittelt? Eine kritische Analyse zum inhaltlich-didaktischen Kern digitaler Lernplattformen am Beispiel sofatutor",
+      "authors": [
+        "Sieglinde Jornitz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-006",
+      "citation_pages": "87-110"
+    },
+    {
+      "title": "EdTech oder AdTech? Untersuchungen zu Problemen datengetriebener Bildungsapplikationen",
+      "authors": [
+        "Sigrid Hartong",
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-007",
+      "citation_pages": "111-128"
+    },
+    {
+      "title": "Drei Fragen an die Praxis - Intermezzo 1 Ein Interview mit Patricia Ullrich",
+      "authors": [
+        "Sigrid Hartong",
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-003",
+      "citation_pages": "41-42"
+    },
+    {
+      "title": "Debatten um EdTech im Wandel Eine Analyse des Zeitraums 1993–2022",
+      "authors": [
+        "André Renz"
+      ],
+      "chapter_doi": "10.1515/9783839468937-002",
+      "citation_pages": "23-40"
+    },
+    {
+      "title": "›Die Verunsicherung im eigenen Expertentum ist stark‹ Ein Gespräch zu Pädagogik und EdTech im Projekt SMASCH mit Iza Czarnojan",
+      "authors": [
+        "Sigrid Hartong",
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-015",
+      "citation_pages": "251-260"
+    },
+    {
+      "title": "Was steckt in Lernmanagementsystemen und welche Implikationen ergeben sich hieraus für eine digital mündige Gestaltung im Schulkontext? Eine Studie zu LMS.lernen.hamburg",
+      "authors": [
+        "Nina Brandau"
+      ],
+      "chapter_doi": "10.14361/9783839468937-005",
+      "citation_pages": "63-86"
+    },
+    {
+      "title": "Die KI-Verordnung Der zukünftige Rechtsrahmen für EdTech an Schulen",
+      "authors": [
+        "Nina Galla"
+      ],
+      "chapter_doi": "10.14361/9783839468937-010",
+      "citation_pages": "161-186"
+    },
+    {
+      "title": "Von Mystifizierung zu reflektierter Gestaltung von EdTech Was Sie zum Einstieg in dieses Buch wissen sollten",
+      "authors": [
+        "Sigrid Hartong",
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-001",
+      "citation_pages": "7-22"
+    },
+    {
+      "title": "KI in der Bildung Viel mehr als eine Utopie - Dystopie - Dualismus?",
+      "authors": [
+        "André Renz",
+        "Nina Galla"
+      ],
+      "chapter_doi": "10.14361/9783839468937-009",
+      "citation_pages": "131-160"
+    },
+    {
+      "title": "Drei Fragen an die Praxis - Intermezzo 2 Ein Interview mit Imke Erdbrink",
+      "authors": [
+        "Sigrid Hartong",
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-008",
+      "citation_pages": "129-130"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Sigrid Hartong",
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Medienreflexion mit Methode Medienkonstellationsanalyse als Verbindung von Medienwissenschaft und Bildungspraxis",
+      "authors": [
+        "Philipp Deny",
+        "Andreas Weich"
+      ],
+      "chapter_doi": "10.14361/9783839468937-013",
+      "citation_pages": "211-230"
+    },
+    {
+      "title": "Debatten um EdTech im Wandel Eine Analyse des Zeitraums 1993-2022",
+      "authors": [
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-002",
+      "citation_pages": "23-40"
+    },
+    {
+      "title": "Nicht determinierend, aber doch stark regulierend Eine Studie zu Design und pädagogischen Wirkungen der Antolin-Leselernplattform",
+      "authors": [
+        "Sigrid Hartong"
+      ],
+      "chapter_doi": "10.14361/9783839468937-004",
+      "citation_pages": "43-62"
+    },
+    {
+      "title": "Der Design-Justice-Ansatz mit einer Anwendung im Bereich der KI",
+      "authors": [
+        "Felicitas Macgilchrist"
+      ],
+      "chapter_doi": "10.14361/9783839468937-011",
+      "citation_pages": "187-208"
+    }
+  ]
+}

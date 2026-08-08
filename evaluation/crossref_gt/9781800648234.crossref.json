@@ -1,0 +1,1322 @@
+{
+  "isbn": "9781800648234",
+  "fetched_at": "2026-08-08T16:38:19.219923+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0316.01",
+      "type": "book-chapter",
+      "page": "1-20",
+      "title": [
+        "1. Entering Landscapes of Investigation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0458-275X",
+          "authenticated-orcid": false,
+          "given": "Miriam",
+          "family": "Godoy Penteado",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1528-796X",
+          "authenticated-orcid": false,
+          "given": "Ole",
+          "family": "Skovsmose",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.12",
+      "type": "book-chapter",
+      "page": "197-210",
+      "title": [
+        "12. Meetings amongst Deaf and Hearing Students in the Mathematics Classroom"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9472-3773",
+          "authenticated-orcid": false,
+          "given": "Amanda",
+          "family": "Queiroz Moura",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0458-275X",
+          "authenticated-orcid": false,
+          "given": "Miriam",
+          "family": "Godoy Penteado",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.08",
+      "type": "book-chapter",
+      "page": "133-148",
+      "title": [
+        "8. Global Citizenship"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5879-7652",
+          "authenticated-orcid": false,
+          "given": "Manuella Heloisa",
+          "family": "de Souza Carrijo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.16",
+      "type": "book-chapter",
+      "page": "257-272",
+      "title": [
+        "16. Opening an Exercise"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2015-7641",
+          "authenticated-orcid": false,
+          "given": "Raquel",
+          "family": "Milani",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "subtitle": [
+        "Prospective Mathematics Teachers Entering into Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.18",
+      "type": "book-chapter",
+      "page": "295-322",
+      "title": [
+        "18. Critical Mathematics Education in Action"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1421-2189",
+          "authenticated-orcid": false,
+          "given": "Paula Andrea Grawieski",
+          "family": "Civiero",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9114-8611",
+          "authenticated-orcid": false,
+          "given": "Fátima",
+          "family": "Peres Zago de Oliveira",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "subtitle": [
+        "To Be or Not to Be"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.07",
+      "type": "book-chapter",
+      "page": "115-132",
+      "title": [
+        "7. Collaborative Learning within Critical Mathematics Education"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0544-5899",
+          "authenticated-orcid": false,
+          "given": "Bülent",
+          "family": "Avcı",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.05",
+      "type": "book-chapter",
+      "page": "69-94",
+      "title": [
+        "5. Mathematics Embedded in Community-Based Practices"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2209-2092",
+          "authenticated-orcid": false,
+          "given": "Arindam",
+          "family": "Bose",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "subtitle": [
+        "Landscape of Investigation for Examining Social (In)Justice?"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.19",
+      "type": "book-chapter",
+      "page": "ix-xii",
+      "title": [
+        "Preface"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0458-275X",
+          "authenticated-orcid": false,
+          "given": "Miriam",
+          "family": "Godoy Penteado",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1528-796X",
+          "authenticated-orcid": false,
+          "given": "Ole",
+          "family": "Skovsmose",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.09",
+      "type": "book-chapter",
+      "page": "149-162",
+      "title": [
+        "9. About Unfinishedness, Dreams and Landscapes of Investigation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4527-1184",
+          "authenticated-orcid": false,
+          "given": "Daniela",
+          "family": "Alves Soares",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.15",
+      "type": "book-chapter",
+      "page": "247-256",
+      "title": [
+        "15. The Investigative Approach to Talking about Inclusion in Mathematics Teacher Education"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8108-022X",
+          "authenticated-orcid": false,
+          "given": "Denner",
+          "family": "Dias Barros",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.11",
+      "type": "book-chapter",
+      "page": "185-196",
+      "title": [
+        "11. Inclusive Landscapes of Investigation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1528-796X",
+          "authenticated-orcid": false,
+          "given": "Ole",
+          "family": "Skovsmose",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.14",
+      "type": "book-chapter",
+      "page": "223-246",
+      "title": [
+        "14. Landscapes of Investigation with Seniors"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4166-2663",
+          "authenticated-orcid": false,
+          "given": "Guilherme Henrique Gomes",
+          "family": "da Silva",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3248-800X",
+          "authenticated-orcid": false,
+          "given": "Rejane",
+          "family": "Siqueira Julio",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2880-9437",
+          "authenticated-orcid": false,
+          "given": "Rafaela",
+          "family": "Nascimento da Silva",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.10",
+      "type": "book-chapter",
+      "page": "163-184",
+      "title": [
+        "10. Dialogue in Eternity"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2059-9466",
+          "authenticated-orcid": false,
+          "given": "Ana Carolina",
+          "family": "Carolina Faustino",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "subtitle": [
+        "Children, Mathematics, and Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.13",
+      "type": "book-chapter",
+      "page": "211-222",
+      "title": [
+        "13. Inclusion and Landscapes of Investigation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4751-3412",
+          "authenticated-orcid": false,
+          "given": "Íria",
+          "family": "Bonfim Gaviolli",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0458-275X",
+          "authenticated-orcid": false,
+          "given": "Miriam",
+          "family": "Godoy Penteado",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "subtitle": [
+        "A Case of Elementary Education"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.04",
+      "type": "book-chapter",
+      "page": "57-68",
+      "title": [
+        "4. Bringing the Debate over Marijuana Legalisation into the Mathematics Classroom"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2268-1949",
+          "authenticated-orcid": false,
+          "given": "Agustín",
+          "family": "Méndez Andrade",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1391-9388",
+          "authenticated-orcid": false,
+          "given": "Mario",
+          "family": "Sánchez Aguilar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.02",
+      "type": "book-chapter",
+      "page": "21-38",
+      "title": [
+        "2. Let’s Go Shopping"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3970-1421",
+          "authenticated-orcid": false,
+          "given": "Fanny",
+          "family": "Gutiérrez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6356-7483",
+          "authenticated-orcid": false,
+          "given": "Yael",
+          "family": "Rodríguez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.17",
+      "type": "book-chapter",
+      "page": "273-294",
+      "title": [
+        "17. The Impact of Income Tax on the Teaching Profession"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4120-8994",
+          "authenticated-orcid": false,
+          "given": "Renato",
+          "family": "Douglas Ribeiro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4527-1184",
+          "authenticated-orcid": false,
+          "given": "Daniela",
+          "family": "Alves Soares",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5970-362X",
+          "authenticated-orcid": false,
+          "given": "Adriana",
+          "family": "de Souza Lima",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2791-3398",
+          "authenticated-orcid": false,
+          "given": "Lucicleide",
+          "family": "Bezerra",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7865-1135",
+          "authenticated-orcid": false,
+          "given": "Edyenis",
+          "family": "Frango",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "subtitle": [
+        "A Debate Involving Social Justice"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.06",
+      "type": "book-chapter",
+      "page": "95-114",
+      "title": [
+        "6. Aspects of Democracy in Different Contexts of Mathematics Classes"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2015-7641",
+          "authenticated-orcid": false,
+          "given": "Raquel",
+          "family": "Milani",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2059-9466",
+          "authenticated-orcid": false,
+          "given": "Ana Carolina",
+          "family": "Carolina Faustino",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1926-4925",
+          "authenticated-orcid": false,
+          "given": "Lessandra Marcelly Sousa",
+          "family": "da Silva",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5137-0883",
+          "authenticated-orcid": false,
+          "given": "Débora Vieira",
+          "family": "de Souza Carneiro",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3894-566X",
+          "authenticated-orcid": false,
+          "given": "Jeimy Marcela",
+          "family": "Cortés Suaréz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2957-7511",
+          "authenticated-orcid": false,
+          "given": "Reginaldo Ramos",
+          "family": "de Britto",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0316.03",
+      "type": "book-chapter",
+      "page": "39-56",
+      "title": [
+        "3. Media and Racism"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2957-7511",
+          "authenticated-orcid": false,
+          "given": "Reginaldo Ramos",
+          "family": "de Britto",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "1. Entering Landscapes of Investigation",
+      "authors": [
+        "Miriam Godoy Penteado",
+        "Ole Skovsmose"
+      ],
+      "chapter_doi": "10.11647/obp.0316.01",
+      "citation_pages": "1-20"
+    },
+    {
+      "title": "12. Meetings amongst Deaf and Hearing Students in the Mathematics Classroom",
+      "authors": [
+        "Amanda Queiroz Moura",
+        "Miriam Godoy Penteado"
+      ],
+      "chapter_doi": "10.11647/obp.0316.12",
+      "citation_pages": "197-210"
+    },
+    {
+      "title": "8. Global Citizenship",
+      "authors": [
+        "Manuella Heloisa de Souza Carrijo"
+      ],
+      "chapter_doi": "10.11647/obp.0316.08",
+      "citation_pages": "133-148"
+    },
+    {
+      "title": "16. Opening an Exercise Prospective Mathematics Teachers Entering into Landscapes of Investigation",
+      "authors": [
+        "Raquel Milani"
+      ],
+      "chapter_doi": "10.11647/obp.0316.16",
+      "citation_pages": "257-272"
+    },
+    {
+      "title": "18. Critical Mathematics Education in Action To Be or Not to Be",
+      "authors": [
+        "Paula Andrea Grawieski Civiero",
+        "Fátima Peres Zago de Oliveira"
+      ],
+      "chapter_doi": "10.11647/obp.0316.18",
+      "citation_pages": "295-322"
+    },
+    {
+      "title": "7. Collaborative Learning within Critical Mathematics Education",
+      "authors": [
+        "Bülent Avcı"
+      ],
+      "chapter_doi": "10.11647/obp.0316.07",
+      "citation_pages": "115-132"
+    },
+    {
+      "title": "5. Mathematics Embedded in Community-Based Practices Landscape of Investigation for Examining Social (In)Justice?",
+      "authors": [
+        "Arindam Bose"
+      ],
+      "chapter_doi": "10.11647/obp.0316.05",
+      "citation_pages": "69-94"
+    },
+    {
+      "title": "Preface",
+      "authors": [
+        "Miriam Godoy Penteado",
+        "Ole Skovsmose"
+      ],
+      "chapter_doi": "10.11647/obp.0316.19",
+      "citation_pages": "ix-xii"
+    },
+    {
+      "title": "9. About Unfinishedness, Dreams and Landscapes of Investigation",
+      "authors": [
+        "Daniela Alves Soares"
+      ],
+      "chapter_doi": "10.11647/obp.0316.09",
+      "citation_pages": "149-162"
+    },
+    {
+      "title": "15. The Investigative Approach to Talking about Inclusion in Mathematics Teacher Education",
+      "authors": [
+        "Denner Dias Barros"
+      ],
+      "chapter_doi": "10.11647/obp.0316.15",
+      "citation_pages": "247-256"
+    },
+    {
+      "title": "11. Inclusive Landscapes of Investigation",
+      "authors": [
+        "Ole Skovsmose"
+      ],
+      "chapter_doi": "10.11647/obp.0316.11",
+      "citation_pages": "185-196"
+    },
+    {
+      "title": "14. Landscapes of Investigation with Seniors",
+      "authors": [
+        "Guilherme Henrique Gomes da Silva",
+        "Rejane Siqueira Julio",
+        "Rafaela Nascimento da Silva"
+      ],
+      "chapter_doi": "10.11647/obp.0316.14",
+      "citation_pages": "223-246"
+    },
+    {
+      "title": "10. Dialogue in Eternity Children, Mathematics, and Landscapes of Investigation",
+      "authors": [
+        "Ana Carolina Carolina Faustino"
+      ],
+      "chapter_doi": "10.11647/obp.0316.10",
+      "citation_pages": "163-184"
+    },
+    {
+      "title": "13. Inclusion and Landscapes of Investigation A Case of Elementary Education",
+      "authors": [
+        "Íria Bonfim Gaviolli",
+        "Miriam Godoy Penteado"
+      ],
+      "chapter_doi": "10.11647/obp.0316.13",
+      "citation_pages": "211-222"
+    },
+    {
+      "title": "4. Bringing the Debate over Marijuana Legalisation into the Mathematics Classroom",
+      "authors": [
+        "Agustín Méndez Andrade",
+        "Mario Sánchez Aguilar"
+      ],
+      "chapter_doi": "10.11647/obp.0316.04",
+      "citation_pages": "57-68"
+    },
+    {
+      "title": "2. Let’s Go Shopping",
+      "authors": [
+        "Fanny Gutiérrez",
+        "Yael Rodríguez"
+      ],
+      "chapter_doi": "10.11647/obp.0316.02",
+      "citation_pages": "21-38"
+    },
+    {
+      "title": "17. The Impact of Income Tax on the Teaching Profession A Debate Involving Social Justice",
+      "authors": [
+        "Renato Douglas Ribeiro",
+        "Daniela Alves Soares",
+        "Adriana de Souza Lima",
+        "Lucicleide Bezerra",
+        "Edyenis Frango"
+      ],
+      "chapter_doi": "10.11647/obp.0316.17",
+      "citation_pages": "273-294"
+    },
+    {
+      "title": "6. Aspects of Democracy in Different Contexts of Mathematics Classes",
+      "authors": [
+        "Raquel Milani",
+        "Ana Carolina Carolina Faustino",
+        "Lessandra Marcelly Sousa da Silva",
+        "Débora Vieira de Souza Carneiro",
+        "Jeimy Marcela Cortés Suaréz",
+        "Reginaldo Ramos de Britto"
+      ],
+      "chapter_doi": "10.11647/obp.0316.06",
+      "citation_pages": "95-114"
+    },
+    {
+      "title": "3. Media and Racism",
+      "authors": [
+        "Reginaldo Ramos de Britto"
+      ],
+      "chapter_doi": "10.11647/obp.0316.03",
+      "citation_pages": "39-56"
+    }
+  ]
+}

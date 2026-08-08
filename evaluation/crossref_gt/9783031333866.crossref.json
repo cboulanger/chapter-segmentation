@@ -1,0 +1,2142 @@
+{
+  "isbn": "9783031333866",
+  "fetched_at": "2026-08-08T16:36:54.549099+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.1007/978-3-031-33386-6_20",
+      "type": "book-chapter",
+      "page": "109-114",
+      "title": [
+        "Hardware Acceleration"
+      ],
+      "author": [
+        {
+          "given": "Dina",
+          "family": "Mahmoud",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_36",
+      "type": "book-chapter",
+      "page": "221-225",
+      "title": [
+        "Email Security"
+      ],
+      "author": [
+        {
+          "given": "Emilia",
+          "family": "Nunes",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_29",
+      "type": "book-chapter",
+      "page": "171-176",
+      "title": [
+        "Authentication"
+      ],
+      "author": [
+        {
+          "given": "Belinda",
+          "family": "Müller",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_26",
+      "type": "book-chapter",
+      "page": "149-154",
+      "title": [
+        "Tunneling and VPN"
+      ],
+      "author": [
+        {
+          "given": "Weyde",
+          "family": "Lin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_8",
+      "type": "book-chapter",
+      "page": "35-39",
+      "title": [
+        "Homomorphic Encryption"
+      ],
+      "author": [
+        {
+          "given": "Jean-Pierre",
+          "family": "Hubaux",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_37",
+      "type": "book-chapter",
+      "page": "227-231",
+      "title": [
+        "Secure Messaging"
+      ],
+      "author": [
+        {
+          "given": "Emilia",
+          "family": "Nunes",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_2",
+      "type": "book-chapter",
+      "page": "7-10",
+      "title": [
+        "Symmetric Cryptography"
+      ],
+      "author": [
+        {
+          "given": "François",
+          "family": "Weissbaum",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Lugrin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_24",
+      "type": "book-chapter",
+      "page": "135-139",
+      "title": [
+        "Data in Transit Security"
+      ],
+      "author": [
+        {
+          "given": "Roland",
+          "family": "Meier",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_17",
+      "type": "book-chapter",
+      "page": "89-92",
+      "title": [
+        "Secure Multi-Party Computation"
+      ],
+      "author": [
+        {
+          "given": "Louis-Henri",
+          "family": "Merino",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "José",
+          "family": "Cabrero-Holgueras",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_14",
+      "type": "book-chapter",
+      "page": "71-75",
+      "title": [
+        "Searchable Symmetric Encryption"
+      ],
+      "author": [
+        {
+          "given": "Cyrill",
+          "family": "Krähenbühl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Adrian",
+          "family": "Perrig",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_39",
+      "type": "book-chapter",
+      "page": "243-252",
+      "title": [
+        "Scientometric and Wikipedia Pageview Analysis"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Glavackij",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Ismail",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Dimitri Percia",
+          "family": "David",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_5",
+      "type": "book-chapter",
+      "page": "21-24",
+      "title": [
+        "Hash Functions"
+      ],
+      "author": [
+        {
+          "given": "Urs",
+          "family": "Wagner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Lugrin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_40",
+      "type": "book-chapter",
+      "page": "253-259",
+      "title": [
+        "Trends in Open Source Software for Data Protection and Encryption Technologies"
+      ],
+      "author": [
+        {
+          "given": "Lucía Gómez",
+          "family": "Teijeiro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Maillart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_9",
+      "type": "book-chapter",
+      "page": "41-45",
+      "title": [
+        "Quantum Key Distribution"
+      ],
+      "author": [
+        {
+          "given": "Jasper",
+          "family": "Rödiger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_32",
+      "type": "book-chapter",
+      "page": "193-199",
+      "title": [
+        "Secure Payment"
+      ],
+      "author": [
+        {
+          "given": "Sophia",
+          "family": "Ding",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_28",
+      "type": "book-chapter",
+      "page": "163-169",
+      "title": [
+        "Digital Rights Management"
+      ],
+      "author": [
+        {
+          "given": "Sophia",
+          "family": "Ding",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_7",
+      "type": "book-chapter",
+      "page": "31-34",
+      "title": [
+        "Random Number Generator"
+      ],
+      "author": [
+        {
+          "given": "Thomas",
+          "family": "Lugrin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_16",
+      "type": "book-chapter",
+      "page": "83-87",
+      "title": [
+        "Hardware Security Module"
+      ],
+      "author": [
+        {
+          "given": "Maria",
+          "family": "Sommerhalder",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_38",
+      "type": "book-chapter",
+      "page": "233-240",
+      "title": [
+        "Secure Smartphone"
+      ],
+      "author": [
+        {
+          "given": "Yann",
+          "family": "Donon",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Fabien",
+          "family": "Künzler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Pawel",
+          "family": "Jasinski",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Carl",
+          "family": "Piening",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Arnaud",
+          "family": "Savary",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_25",
+      "type": "book-chapter",
+      "page": "141-147",
+      "title": [
+        "Blockchain"
+      ],
+      "author": [
+        {
+          "given": "Linus",
+          "family": "Gasser",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jean-Pierre",
+          "family": "Hubaux",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_11",
+      "type": "book-chapter",
+      "page": "55-58",
+      "title": [
+        "Functional Encryption"
+      ],
+      "author": [
+        {
+          "given": "Romain",
+          "family": "Gay",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_34",
+      "type": "book-chapter",
+      "page": "209-213",
+      "title": [
+        "WEB3"
+      ],
+      "author": [
+        {
+          "given": "Linus",
+          "family": "Gasser",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_10",
+      "type": "book-chapter",
+      "page": "47-52",
+      "title": [
+        "Post-quantum Cryptography"
+      ],
+      "author": [
+        {
+          "given": "Linus",
+          "family": "Gasser",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_31",
+      "type": "book-chapter",
+      "page": "187-192",
+      "title": [
+        "Secure Positioning and Localization"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Strohmeier",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_6",
+      "type": "book-chapter",
+      "page": "25-30",
+      "title": [
+        "Zero-Knowledge Proof"
+      ],
+      "author": [
+        {
+          "given": "Imad",
+          "family": "Aad",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_1",
+      "type": "book-chapter",
+      "page": "3-6",
+      "title": [
+        "One-Time Pad"
+      ],
+      "author": [
+        {
+          "given": "Thomas",
+          "family": "Lugrin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_19",
+      "type": "book-chapter",
+      "page": "103-107",
+      "title": [
+        "Confidential Computing"
+      ],
+      "author": [
+        {
+          "given": "Yacine",
+          "family": "Felk",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_23",
+      "type": "book-chapter",
+      "page": "129-133",
+      "title": [
+        "Electronic Voting"
+      ],
+      "author": [
+        {
+          "given": "Louis-Henri",
+          "family": "Merino",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_15",
+      "type": "book-chapter",
+      "page": "77-81",
+      "title": [
+        "Digital Signature"
+      ],
+      "author": [
+        {
+          "given": "Weyde",
+          "family": "Lin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_12",
+      "type": "book-chapter",
+      "page": "59-64",
+      "title": [
+        "Identity-Based Cryptography"
+      ],
+      "author": [
+        {
+          "given": "Bernhard",
+          "family": "Tellenbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_35",
+      "type": "book-chapter",
+      "page": "215-220",
+      "title": [
+        "5G"
+      ],
+      "author": [
+        {
+          "given": "Weyde",
+          "family": "Lin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_27",
+      "type": "book-chapter",
+      "page": "157-161",
+      "title": [
+        "Differential Privacy"
+      ],
+      "author": [
+        {
+          "given": "Valentin",
+          "family": "Mulder",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mathias",
+          "family": "Humbert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_42",
+      "type": "book-chapter",
+      "page": "C1-C2",
+      "title": [
+        "Correction to: Scientometric and Wikipedia Pageview Analysis"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Glavackij",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Ismail",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Dimitri Percia",
+          "family": "David",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_3",
+      "type": "book-chapter",
+      "page": "11-14",
+      "title": [
+        "Asymmetric Encryption"
+      ],
+      "author": [
+        {
+          "given": "Christian",
+          "family": "Stohrer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Lugrin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_21",
+      "type": "book-chapter",
+      "page": "115-120",
+      "title": [
+        "Secure Operating System"
+      ],
+      "author": [
+        {
+          "given": "Llorenç",
+          "family": "Romá",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bernard",
+          "family": "Tellenbach",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_13",
+      "type": "book-chapter",
+      "page": "65-69",
+      "title": [
+        "Multi-Party Threshold Cryptography"
+      ],
+      "author": [
+        {
+          "given": "Christian",
+          "family": "Cachin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_4",
+      "type": "book-chapter",
+      "page": "15-20",
+      "title": [
+        "Key Management"
+      ],
+      "author": [
+        {
+          "given": "Cyrill",
+          "family": "Krähenbühl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Adrian",
+          "family": "Perrig",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_22",
+      "type": "book-chapter",
+      "page": "121-128",
+      "title": [
+        "Biometrics"
+      ],
+      "author": [
+        {
+          "given": "Sophia",
+          "family": "Ding",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Emilia",
+          "family": "Nunes",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Pascal",
+          "family": "Bettendorff",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Weyde",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_18",
+      "type": "book-chapter",
+      "page": "95-101",
+      "title": [
+        "Trusted Execution Environment"
+      ],
+      "author": [
+        {
+          "given": "Maria",
+          "family": "Sommerhalder",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_30",
+      "type": "book-chapter",
+      "page": "179-185",
+      "title": [
+        "Secure Media"
+      ],
+      "author": [
+        {
+          "given": "Touradj",
+          "family": "Ebrahimi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_41",
+      "type": "book-chapter",
+      "page": "261-262",
+      "title": [
+        "Conclusion"
+      ],
+      "author": [
+        {
+          "given": "Valentin",
+          "family": "Mulder",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1007/978-3-031-33386-6_33",
+      "type": "book-chapter",
+      "page": "201-207",
+      "title": [
+        "Disk, File and Database Encryption"
+      ],
+      "author": [
+        {
+          "given": "Linus",
+          "family": "Gasser",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Imad",
+          "family": "Aad",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Trends in Data Protection and Encryption Technologies"
+      ],
+      "ISBN": [
+        "9783031333859",
+        "9783031333866"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Hardware Acceleration",
+      "authors": [
+        "Dina Mahmoud"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_20",
+      "citation_pages": "109-114"
+    },
+    {
+      "title": "Email Security",
+      "authors": [
+        "Emilia Nunes"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_36",
+      "citation_pages": "221-225"
+    },
+    {
+      "title": "Authentication",
+      "authors": [
+        "Belinda Müller"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_29",
+      "citation_pages": "171-176"
+    },
+    {
+      "title": "Tunneling and VPN",
+      "authors": [
+        "Weyde Lin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_26",
+      "citation_pages": "149-154"
+    },
+    {
+      "title": "Homomorphic Encryption",
+      "authors": [
+        "Jean-Pierre Hubaux"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_8",
+      "citation_pages": "35-39"
+    },
+    {
+      "title": "Secure Messaging",
+      "authors": [
+        "Emilia Nunes"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_37",
+      "citation_pages": "227-231"
+    },
+    {
+      "title": "Symmetric Cryptography",
+      "authors": [
+        "François Weissbaum",
+        "Thomas Lugrin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_2",
+      "citation_pages": "7-10"
+    },
+    {
+      "title": "Data in Transit Security",
+      "authors": [
+        "Roland Meier"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_24",
+      "citation_pages": "135-139"
+    },
+    {
+      "title": "Secure Multi-Party Computation",
+      "authors": [
+        "Louis-Henri Merino",
+        "José Cabrero-Holgueras"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_17",
+      "citation_pages": "89-92"
+    },
+    {
+      "title": "Searchable Symmetric Encryption",
+      "authors": [
+        "Cyrill Krähenbühl",
+        "Adrian Perrig"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_14",
+      "citation_pages": "71-75"
+    },
+    {
+      "title": "Scientometric and Wikipedia Pageview Analysis",
+      "authors": [
+        "Alexander Glavackij",
+        "Sarah Ismail",
+        "Dimitri Percia David"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_39",
+      "citation_pages": "243-252"
+    },
+    {
+      "title": "Hash Functions",
+      "authors": [
+        "Urs Wagner",
+        "Thomas Lugrin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_5",
+      "citation_pages": "21-24"
+    },
+    {
+      "title": "Trends in Open Source Software for Data Protection and Encryption Technologies",
+      "authors": [
+        "Lucía Gómez Teijeiro",
+        "Thomas Maillart"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_40",
+      "citation_pages": "253-259"
+    },
+    {
+      "title": "Quantum Key Distribution",
+      "authors": [
+        "Jasper Rödiger"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_9",
+      "citation_pages": "41-45"
+    },
+    {
+      "title": "Secure Payment",
+      "authors": [
+        "Sophia Ding"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_32",
+      "citation_pages": "193-199"
+    },
+    {
+      "title": "Digital Rights Management",
+      "authors": [
+        "Sophia Ding"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_28",
+      "citation_pages": "163-169"
+    },
+    {
+      "title": "Random Number Generator",
+      "authors": [
+        "Thomas Lugrin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_7",
+      "citation_pages": "31-34"
+    },
+    {
+      "title": "Hardware Security Module",
+      "authors": [
+        "Maria Sommerhalder"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_16",
+      "citation_pages": "83-87"
+    },
+    {
+      "title": "Secure Smartphone",
+      "authors": [
+        "Yann Donon",
+        "Fabien Künzler",
+        "Pawel Jasinski",
+        "Carl Piening",
+        "Arnaud Savary"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_38",
+      "citation_pages": "233-240"
+    },
+    {
+      "title": "Blockchain",
+      "authors": [
+        "Linus Gasser",
+        "Jean-Pierre Hubaux"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_25",
+      "citation_pages": "141-147"
+    },
+    {
+      "title": "Functional Encryption",
+      "authors": [
+        "Romain Gay"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_11",
+      "citation_pages": "55-58"
+    },
+    {
+      "title": "WEB3",
+      "authors": [
+        "Linus Gasser"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_34",
+      "citation_pages": "209-213"
+    },
+    {
+      "title": "Post-quantum Cryptography",
+      "authors": [
+        "Linus Gasser"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_10",
+      "citation_pages": "47-52"
+    },
+    {
+      "title": "Secure Positioning and Localization",
+      "authors": [
+        "Martin Strohmeier"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_31",
+      "citation_pages": "187-192"
+    },
+    {
+      "title": "Zero-Knowledge Proof",
+      "authors": [
+        "Imad Aad"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_6",
+      "citation_pages": "25-30"
+    },
+    {
+      "title": "One-Time Pad",
+      "authors": [
+        "Thomas Lugrin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_1",
+      "citation_pages": "3-6"
+    },
+    {
+      "title": "Confidential Computing",
+      "authors": [
+        "Yacine Felk"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_19",
+      "citation_pages": "103-107"
+    },
+    {
+      "title": "Electronic Voting",
+      "authors": [
+        "Louis-Henri Merino"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_23",
+      "citation_pages": "129-133"
+    },
+    {
+      "title": "Digital Signature",
+      "authors": [
+        "Weyde Lin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_15",
+      "citation_pages": "77-81"
+    },
+    {
+      "title": "Identity-Based Cryptography",
+      "authors": [
+        "Bernhard Tellenbach"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_12",
+      "citation_pages": "59-64"
+    },
+    {
+      "title": "5G",
+      "authors": [
+        "Weyde Lin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_35",
+      "citation_pages": "215-220"
+    },
+    {
+      "title": "Differential Privacy",
+      "authors": [
+        "Valentin Mulder",
+        "Mathias Humbert"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_27",
+      "citation_pages": "157-161"
+    },
+    {
+      "title": "Correction to: Scientometric and Wikipedia Pageview Analysis",
+      "authors": [
+        "Alexander Glavackij",
+        "Sarah Ismail",
+        "Dimitri Percia David"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_42",
+      "citation_pages": "C1-C2"
+    },
+    {
+      "title": "Asymmetric Encryption",
+      "authors": [
+        "Christian Stohrer",
+        "Thomas Lugrin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_3",
+      "citation_pages": "11-14"
+    },
+    {
+      "title": "Secure Operating System",
+      "authors": [
+        "Llorenç Romá",
+        "Bernard Tellenbach"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_21",
+      "citation_pages": "115-120"
+    },
+    {
+      "title": "Multi-Party Threshold Cryptography",
+      "authors": [
+        "Christian Cachin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_13",
+      "citation_pages": "65-69"
+    },
+    {
+      "title": "Key Management",
+      "authors": [
+        "Cyrill Krähenbühl",
+        "Adrian Perrig"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_4",
+      "citation_pages": "15-20"
+    },
+    {
+      "title": "Biometrics",
+      "authors": [
+        "Sophia Ding",
+        "Emilia Nunes",
+        "Pascal Bettendorff",
+        "Weyde Lin"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_22",
+      "citation_pages": "121-128"
+    },
+    {
+      "title": "Trusted Execution Environment",
+      "authors": [
+        "Maria Sommerhalder"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_18",
+      "citation_pages": "95-101"
+    },
+    {
+      "title": "Secure Media",
+      "authors": [
+        "Touradj Ebrahimi"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_30",
+      "citation_pages": "179-185"
+    },
+    {
+      "title": "Conclusion",
+      "authors": [
+        "Valentin Mulder"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_41",
+      "citation_pages": "261-262"
+    },
+    {
+      "title": "Disk, File and Database Encryption",
+      "authors": [
+        "Linus Gasser",
+        "Imad Aad"
+      ],
+      "chapter_doi": "10.1007/978-3-031-33386-6_33",
+      "citation_pages": "201-207"
+    }
+  ]
+}

@@ -1,0 +1,1938 @@
+{
+  "isbn": "9781783748532",
+  "fetched_at": "2026-08-08T16:38:18.162986+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0203.17",
+      "type": "book-chapter",
+      "page": "383-402",
+      "title": [
+        "17. Examining a Kazakh Student’s Biographical Narrative and the Discourses She Lives By"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1168-4121",
+          "authenticated-orcid": false,
+          "given": "Rob",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.19",
+      "type": "book-chapter",
+      "page": "425-444",
+      "title": [
+        "19. Uncovering Habitus in Life Stories of Muslim Converts"
+      ],
+      "author": [
+        {
+          "given": "Simone R.",
+          "family": "Rasmussen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.21",
+      "type": "book-chapter",
+      "page": "465-484",
+      "title": [
+        "21. Decolonizing and Indigenizing Discourses in a Canadian Context"
+      ],
+      "author": [
+        {
+          "given": "Adrienne S.",
+          "family": "Chan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.18",
+      "type": "book-chapter",
+      "page": "403-424",
+      "title": [
+        "18. The Needs of Low-Literate Migrants When Learning the English Language"
+      ],
+      "author": [
+        {
+          "given": "Monica",
+          "family": "Mascarenhas",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.09",
+      "type": "book-chapter",
+      "page": "211-224",
+      "title": [
+        "9. Punishment Discourses in Everyday Life"
+      ],
+      "author": [
+        {
+          "given": "Khum Raj",
+          "family": "Pathak",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.02",
+      "type": "book-chapter",
+      "page": "53-72",
+      "title": [
+        "2. From Experience to Language in Narrative Practices in Therapeutic Education in France"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3536-566X",
+          "authenticated-orcid": false,
+          "given": "Hervé",
+          "family": "Breton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02wwzvj46",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Tours"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.23",
+      "type": "book-chapter",
+      "page": "501-516",
+      "title": [
+        "23. From Defender to Offender"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9103-4625",
+          "authenticated-orcid": false,
+          "given": "Linda",
+          "family": "Cooper",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0009t4v78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Anglia Ruskin University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "British Female Ex-Military Re-Joining Civilian Society"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.10",
+      "type": "book-chapter",
+      "page": "225-244",
+      "title": [
+        "10. Irish Students Turning First-Year Transition Obstacles into Successful Progression"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9694-8220",
+          "authenticated-orcid": false,
+          "given": "Vera",
+          "family": "Sheridan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04a1a1e81",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Dublin City University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.22",
+      "type": "book-chapter",
+      "page": "485-500",
+      "title": [
+        "22. Embedding Feminist Pedagogies of Care in Research to Better Support San Youth in South Africa"
+      ],
+      "author": [
+        {
+          "given": "Outi",
+          "family": "Ylitapio-Mäntylä",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mari",
+          "family": "Mäkiranta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.29",
+      "type": "book-chapter",
+      "page": "621-632",
+      "title": [
+        "Learning from Narratives, Discourses and Biographical Research"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3594-9780",
+          "authenticated-orcid": false,
+          "given": "Hazel R.",
+          "family": "Wright",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0009t4v78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Anglia Ruskin University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5042-6024",
+          "authenticated-orcid": false,
+          "given": "Marianne",
+          "family": "Høyen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01aj84f44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Aarhus University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "An Afterword"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.20",
+      "type": "book-chapter",
+      "page": "445-459",
+      "title": [
+        "20. Participatory Approaches in Critical Migration Research"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0962-7160",
+          "authenticated-orcid": false,
+          "given": "Annette",
+          "family": "Sprung",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01faaaf77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Graz"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "The Example of an Austrian Documentary Film"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.16",
+      "type": "book-chapter",
+      "page": "353-377",
+      "title": [
+        "16. Adult Education as a Means to Enable Polish Citizens to Question Media Coverage of Political Messages"
+      ],
+      "author": [
+        {
+          "given": "Marta",
+          "family": "Zientek",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.12",
+      "type": "book-chapter",
+      "page": "269-283",
+      "title": [
+        "12. What Game Are We Playing? Narrative Work that Supports Gamblers"
+      ],
+      "author": [
+        {
+          "given": "Micaela",
+          "family": "Castiglioni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Carola",
+          "family": "Girotti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.11",
+      "type": "book-chapter",
+      "page": "245-268",
+      "title": [
+        "11. Care Leavers in Italy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2237-7648",
+          "authenticated-orcid": false,
+          "given": "Laura",
+          "family": "Formenti",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ynf4891",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Milano-Bicocca"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6883-7355",
+          "authenticated-orcid": false,
+          "given": "Andrea",
+          "family": "Galimberti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ynf4891",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Milano-Bicocca"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mirella",
+          "family": "Ferrari",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "From ‘Vulnerable’ Children to ‘Autonomous’ Adults?"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.30",
+      "type": "book-chapter",
+      "page": "1-21",
+      "title": [
+        "Narrative, Discourse, and Biography"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3594-9780",
+          "authenticated-orcid": false,
+          "given": "Hazel R.",
+          "family": "Wright",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0009t4v78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Anglia Ruskin University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5042-6024",
+          "authenticated-orcid": false,
+          "given": "Marianne",
+          "family": "Høyen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01aj84f44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Aarhus University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "An Introductory Story"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.14",
+      "type": "book-chapter",
+      "page": "311-332",
+      "title": [
+        "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0172-0101",
+          "authenticated-orcid": false,
+          "given": "Miguel Alberto",
+          "family": "González González",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/031n6w191",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad de Manizales"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.06",
+      "type": "book-chapter",
+      "page": "141-162",
+      "title": [
+        "6. Shaping ‘the Good Teacher’ in Danish and Kenyan Teacher Education"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9345-5036",
+          "authenticated-orcid": false,
+          "given": "Kari Kragh Blume",
+          "family": "Dahl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01aj84f44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Aarhus University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.13",
+      "type": "book-chapter",
+      "page": "289-310",
+      "title": [
+        "13. A Danish Prisoner Narrative"
+      ],
+      "author": [
+        {
+          "given": "Charlotte",
+          "family": "Mathiassen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "The Tension from a Multifaceted Identity During (Re-)Entry to Society"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.15",
+      "type": "book-chapter",
+      "page": "333-352",
+      "title": [
+        "15. Navigating Grades and Learning in the Swedish Upper Secondary School Where Neoliberal Values Prevail"
+      ],
+      "author": [
+        {
+          "given": "Patric",
+          "family": "Wallin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.03",
+      "type": "book-chapter",
+      "page": "73-90",
+      "title": [
+        "3. Narratives of Fundamentalism, Negative Capability and the Democratic Imperative"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7783-7747",
+          "authenticated-orcid": false,
+          "given": "Alan",
+          "family": "Bainbridge",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0489ggv38",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Canterbury Christ Church University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5701-6861",
+          "authenticated-orcid": false,
+          "given": "Linden",
+          "family": "West",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0489ggv38",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Canterbury Christ Church University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.08",
+      "type": "book-chapter",
+      "page": "185-205",
+      "title": [
+        "8. Nurture Groups"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8111-3856",
+          "authenticated-orcid": false,
+          "given": "Tristan",
+          "family": "Middleton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00wygct11",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Gloucestershire"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "Perspectives from Teaching Assistants Who Lead Them in Britain"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.26",
+      "type": "book-chapter",
+      "page": "569-586",
+      "title": [
+        "26. Using Journaling and Autoethnography to Create Counter-Narratives of School Exclusion in Britain"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7773-8375",
+          "authenticated-orcid": false,
+          "given": "Helen",
+          "family": "Woodley",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.25",
+      "type": "book-chapter",
+      "page": "549-568",
+      "title": [
+        "25. Diversifying Discourses of Progression to UK Higher Education Through Narrative Approaches"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9391-6613",
+          "authenticated-orcid": false,
+          "given": "Laura",
+          "family": "Mazzoli Smith",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01v29qb04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Durham University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.24",
+      "type": "book-chapter",
+      "page": "517-543",
+      "title": [
+        "24. UK Senior Citizens Learn Filmmaking as a Creative Pathway to Reflection and Fulfilment"
+      ],
+      "author": [
+        {
+          "given": "Teresa",
+          "family": "Brayshaw",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jenny",
+          "family": "Granville",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.28",
+      "type": "book-chapter",
+      "page": "609-619",
+      "title": [
+        "28. Discourses, Cultural narratives, and Genre in Biographical Narratives"
+      ],
+      "author": [
+        {
+          "given": "Marianne",
+          "family": "Horsdal",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "A Personal Overview"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.27",
+      "type": "book-chapter",
+      "page": "587-608",
+      "title": [
+        "27. Reflections on a Creative Arts Project to Explore the Resilience of Young Adults with a Muslim Background in Finland"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8812-1218",
+          "authenticated-orcid": false,
+          "given": "Helena",
+          "family": "Oikarinen-Jabai",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.05",
+      "type": "book-chapter",
+      "page": "119-140",
+      "title": [
+        "5. Opposing Cultures"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5042-6024",
+          "authenticated-orcid": false,
+          "given": "Marianne",
+          "family": "Høyen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01aj84f44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Aarhus University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mumiah",
+          "family": "Rasmusen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "Science and Humanities Teaching in Danish Schools"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.01",
+      "type": "book-chapter",
+      "page": "27-52",
+      "title": [
+        "1. Truth and Narrative"
+      ],
+      "author": [
+        {
+          "given": "Janet",
+          "family": "Dyson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "How and Why Stories Matter"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.04",
+      "type": "book-chapter",
+      "page": "91-113",
+      "title": [
+        "4. Understandings of the Natural World from a Generational Perspective"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3594-9780",
+          "authenticated-orcid": false,
+          "given": "Hazel R.",
+          "family": "Wright",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0009t4v78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Anglia Ruskin University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0203.07",
+      "type": "book-chapter",
+      "page": "163-184",
+      "title": [
+        "7. Irish Adult Educators Find Fulfilment amid Poor Employment Conditions"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5932-9247",
+          "authenticated-orcid": false,
+          "given": "Sarah",
+          "family": "Bates Evoy",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04k9e4w52",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Waterford Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "17. Examining a Kazakh Student’s Biographical Narrative and the Discourses She Lives By",
+      "authors": [
+        "Rob Evans"
+      ],
+      "chapter_doi": "10.11647/obp.0203.17",
+      "citation_pages": "383-402"
+    },
+    {
+      "title": "19. Uncovering Habitus in Life Stories of Muslim Converts",
+      "authors": [
+        "Simone R. Rasmussen"
+      ],
+      "chapter_doi": "10.11647/obp.0203.19",
+      "citation_pages": "425-444"
+    },
+    {
+      "title": "21. Decolonizing and Indigenizing Discourses in a Canadian Context",
+      "authors": [
+        "Adrienne S. Chan"
+      ],
+      "chapter_doi": "10.11647/obp.0203.21",
+      "citation_pages": "465-484"
+    },
+    {
+      "title": "18. The Needs of Low-Literate Migrants When Learning the English Language",
+      "authors": [
+        "Monica Mascarenhas"
+      ],
+      "chapter_doi": "10.11647/obp.0203.18",
+      "citation_pages": "403-424"
+    },
+    {
+      "title": "9. Punishment Discourses in Everyday Life",
+      "authors": [
+        "Khum Raj Pathak"
+      ],
+      "chapter_doi": "10.11647/obp.0203.09",
+      "citation_pages": "211-224"
+    },
+    {
+      "title": "2. From Experience to Language in Narrative Practices in Therapeutic Education in France",
+      "authors": [
+        "Hervé Breton"
+      ],
+      "chapter_doi": "10.11647/obp.0203.02",
+      "citation_pages": "53-72"
+    },
+    {
+      "title": "23. From Defender to Offender British Female Ex-Military Re-Joining Civilian Society",
+      "authors": [
+        "Linda Cooper"
+      ],
+      "chapter_doi": "10.11647/obp.0203.23",
+      "citation_pages": "501-516"
+    },
+    {
+      "title": "10. Irish Students Turning First-Year Transition Obstacles into Successful Progression",
+      "authors": [
+        "Vera Sheridan"
+      ],
+      "chapter_doi": "10.11647/obp.0203.10",
+      "citation_pages": "225-244"
+    },
+    {
+      "title": "22. Embedding Feminist Pedagogies of Care in Research to Better Support San Youth in South Africa",
+      "authors": [
+        "Outi Ylitapio-Mäntylä",
+        "Mari Mäkiranta"
+      ],
+      "chapter_doi": "10.11647/obp.0203.22",
+      "citation_pages": "485-500"
+    },
+    {
+      "title": "Learning from Narratives, Discourses and Biographical Research An Afterword",
+      "authors": [
+        "Hazel R. Wright",
+        "Marianne Høyen"
+      ],
+      "chapter_doi": "10.11647/obp.0203.29",
+      "citation_pages": "621-632"
+    },
+    {
+      "title": "20. Participatory Approaches in Critical Migration Research The Example of an Austrian Documentary Film",
+      "authors": [
+        "Annette Sprung"
+      ],
+      "chapter_doi": "10.11647/obp.0203.20",
+      "citation_pages": "445-459"
+    },
+    {
+      "title": "16. Adult Education as a Means to Enable Polish Citizens to Question Media Coverage of Political Messages",
+      "authors": [
+        "Marta Zientek"
+      ],
+      "chapter_doi": "10.11647/obp.0203.16",
+      "citation_pages": "353-377"
+    },
+    {
+      "title": "12. What Game Are We Playing? Narrative Work that Supports Gamblers",
+      "authors": [
+        "Micaela Castiglioni",
+        "Carola Girotti"
+      ],
+      "chapter_doi": "10.11647/obp.0203.12",
+      "citation_pages": "269-283"
+    },
+    {
+      "title": "11. Care Leavers in Italy From ‘Vulnerable’ Children to ‘Autonomous’ Adults?",
+      "authors": [
+        "Laura Formenti",
+        "Andrea Galimberti",
+        "Mirella Ferrari"
+      ],
+      "chapter_doi": "10.11647/obp.0203.11",
+      "citation_pages": "245-268"
+    },
+    {
+      "title": "Narrative, Discourse, and Biography An Introductory Story",
+      "authors": [
+        "Hazel R. Wright",
+        "Marianne Høyen"
+      ],
+      "chapter_doi": "10.11647/obp.0203.30",
+      "citation_pages": "1-21"
+    },
+    {
+      "title": "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories",
+      "authors": [
+        "Miguel Alberto González González"
+      ],
+      "chapter_doi": "10.11647/obp.0203.14",
+      "citation_pages": "311-332"
+    },
+    {
+      "title": "6. Shaping ‘the Good Teacher’ in Danish and Kenyan Teacher Education",
+      "authors": [
+        "Kari Kragh Blume Dahl"
+      ],
+      "chapter_doi": "10.11647/obp.0203.06",
+      "citation_pages": "141-162"
+    },
+    {
+      "title": "13. A Danish Prisoner Narrative The Tension from a Multifaceted Identity During (Re-)Entry to Society",
+      "authors": [
+        "Charlotte Mathiassen"
+      ],
+      "chapter_doi": "10.11647/obp.0203.13",
+      "citation_pages": "289-310"
+    },
+    {
+      "title": "15. Navigating Grades and Learning in the Swedish Upper Secondary School Where Neoliberal Values Prevail",
+      "authors": [
+        "Patric Wallin"
+      ],
+      "chapter_doi": "10.11647/obp.0203.15",
+      "citation_pages": "333-352"
+    },
+    {
+      "title": "3. Narratives of Fundamentalism, Negative Capability and the Democratic Imperative",
+      "authors": [
+        "Alan Bainbridge",
+        "Linden West"
+      ],
+      "chapter_doi": "10.11647/obp.0203.03",
+      "citation_pages": "73-90"
+    },
+    {
+      "title": "8. Nurture Groups Perspectives from Teaching Assistants Who Lead Them in Britain",
+      "authors": [
+        "Tristan Middleton"
+      ],
+      "chapter_doi": "10.11647/obp.0203.08",
+      "citation_pages": "185-205"
+    },
+    {
+      "title": "26. Using Journaling and Autoethnography to Create Counter-Narratives of School Exclusion in Britain",
+      "authors": [
+        "Helen Woodley"
+      ],
+      "chapter_doi": "10.11647/obp.0203.26",
+      "citation_pages": "569-586"
+    },
+    {
+      "title": "25. Diversifying Discourses of Progression to UK Higher Education Through Narrative Approaches",
+      "authors": [
+        "Laura Mazzoli Smith"
+      ],
+      "chapter_doi": "10.11647/obp.0203.25",
+      "citation_pages": "549-568"
+    },
+    {
+      "title": "24. UK Senior Citizens Learn Filmmaking as a Creative Pathway to Reflection and Fulfilment",
+      "authors": [
+        "Teresa Brayshaw",
+        "Jenny Granville"
+      ],
+      "chapter_doi": "10.11647/obp.0203.24",
+      "citation_pages": "517-543"
+    },
+    {
+      "title": "28. Discourses, Cultural narratives, and Genre in Biographical Narratives A Personal Overview",
+      "authors": [
+        "Marianne Horsdal"
+      ],
+      "chapter_doi": "10.11647/obp.0203.28",
+      "citation_pages": "609-619"
+    },
+    {
+      "title": "27. Reflections on a Creative Arts Project to Explore the Resilience of Young Adults with a Muslim Background in Finland",
+      "authors": [
+        "Helena Oikarinen-Jabai"
+      ],
+      "chapter_doi": "10.11647/obp.0203.27",
+      "citation_pages": "587-608"
+    },
+    {
+      "title": "5. Opposing Cultures Science and Humanities Teaching in Danish Schools",
+      "authors": [
+        "Marianne Høyen",
+        "Mumiah Rasmusen"
+      ],
+      "chapter_doi": "10.11647/obp.0203.05",
+      "citation_pages": "119-140"
+    },
+    {
+      "title": "1. Truth and Narrative How and Why Stories Matter",
+      "authors": [
+        "Janet Dyson"
+      ],
+      "chapter_doi": "10.11647/obp.0203.01",
+      "citation_pages": "27-52"
+    },
+    {
+      "title": "4. Understandings of the Natural World from a Generational Perspective",
+      "authors": [
+        "Hazel R. Wright"
+      ],
+      "chapter_doi": "10.11647/obp.0203.04",
+      "citation_pages": "91-113"
+    },
+    {
+      "title": "7. Irish Adult Educators Find Fulfilment amid Poor Employment Conditions",
+      "authors": [
+        "Sarah Bates Evoy"
+      ],
+      "chapter_doi": "10.11647/obp.0203.07",
+      "citation_pages": "163-184"
+    }
+  ]
+}

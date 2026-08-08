@@ -1,0 +1,1972 @@
+{
+  "isbn": "9783839447529",
+  "fetched_at": "2026-08-08T16:36:47.268040+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839447529-493",
+      "type": "book-chapter",
+      "page": "493-518",
+      "title": [
+        "Scaling In, Not Up?"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Simons",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-471",
+      "type": "book-chapter",
+      "page": "471-492",
+      "title": [
+        "Reconstructive citation context analysis using large language models"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Simons",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hiba",
+          "family": "Arnaout",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Iryna",
+          "family": "Gurevych",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-001",
+      "type": "book-chapter",
+      "page": "1-8",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Simons",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adrian",
+          "family": "Wüthrich",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Zichert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gerd",
+          "family": "Graßhoff",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-115",
+      "type": "book-chapter",
+      "page": "115-123",
+      "title": [
+        "LLMs as philosophers"
+      ],
+      "author": [
+        {
+          "given": "William",
+          "family": "D’Alessandro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-035",
+      "type": "book-chapter",
+      "page": "35-50",
+      "title": [
+        "Critical concerns for using LLMs in the (computational) humanities and beyond"
+      ],
+      "author": [
+        {
+          "given": "Sarah",
+          "family": "Lang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-383",
+      "type": "book-chapter",
+      "page": "383-412",
+      "title": [
+        "Co‑creation of AI technology, empowering curators of cultural heritage information and guarding research commons"
+      ],
+      "author": [
+        {
+          "given": "Andrea",
+          "family": "Scharnhorst",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Han",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jetze",
+          "family": "Touber",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kim",
+          "family": "Ferguson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Philipp",
+          "family": "Mayr",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vyacheslav",
+          "family": "Tykhonov",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-179",
+      "type": "book-chapter",
+      "page": "179-187",
+      "title": [
+        "LLMs and multilingual historical corpora in a digital history project"
+      ],
+      "author": [
+        {
+          "given": "Jeffrey C.",
+          "family": "Wolf",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-335",
+      "type": "book-chapter",
+      "page": "335-342",
+      "title": [
+        "Large language models in interdisciplinary research settings"
+      ],
+      "author": [
+        {
+          "given": "Malte",
+          "family": "Vogl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexander von",
+          "family": "Schwerin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sabrina",
+          "family": "Kirschke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-439",
+      "type": "book-chapter",
+      "page": "439-450",
+      "title": [
+        "Recursive reflections"
+      ],
+      "author": [
+        {
+          "given": "Jeffrey C.",
+          "family": "Wolf",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-013",
+      "type": "book-chapter",
+      "page": "13-32",
+      "title": [
+        "Doing science studies with large language models"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Simons",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adrian",
+          "family": "Wüthrich",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Zichert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-151",
+      "type": "book-chapter",
+      "page": "151-177",
+      "title": [
+        "Zero‐shot generation of synthetic historical data with LLMs"
+      ],
+      "author": [
+        {
+          "given": "Vera",
+          "family": "Danilova",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Julia",
+          "family": "Reed",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Burchell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gijs",
+          "family": "Aangenendt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ylva",
+          "family": "Söderfeldt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-127",
+      "type": "book-chapter",
+      "page": "127-141",
+      "title": [
+        "Why pursue temporally‐grounded AI for historical disciplines, and what makes it so challenging?"
+      ],
+      "author": [
+        {
+          "given": "Jochen",
+          "family": "Büttner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-307",
+      "type": "book-chapter",
+      "page": "307-334",
+      "title": [
+        "From source to structure"
+      ],
+      "author": [
+        {
+          "given": "Raphael",
+          "family": "Schlattmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aleksandra",
+          "family": "Kaye",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Malte",
+          "family": "Vogl",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-453",
+      "type": "book-chapter",
+      "page": "453-469",
+      "title": [
+        "Supporting citation context analysis with large language models raises questions that should have been asked 40 years ago"
+      ],
+      "author": [
+        {
+          "given": "Lydia",
+          "family": "Liesegang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jochen",
+          "family": "Gläser",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-143",
+      "type": "book-chapter",
+      "page": "143-150",
+      "title": [
+        "Generative LLMs and history research"
+      ],
+      "author": [
+        {
+          "given": "Fernanda",
+          "family": "Olival",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Helena Freire",
+          "family": "Cameron",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "António",
+          "family": "Branco",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Renata",
+          "family": "Vieira",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-101",
+      "type": "book-chapter",
+      "page": "101-114",
+      "title": [
+        "Encoded humanities, or: not everything has to be generative"
+      ],
+      "author": [
+        {
+          "given": "Andreas",
+          "family": "Wagner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Hermes",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-217",
+      "type": "book-chapter",
+      "page": "217-241",
+      "title": [
+        "Meaning at the Planck scale?"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Simons",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-051",
+      "type": "book-chapter",
+      "page": "51-55",
+      "title": [
+        "AI and the scientist"
+      ],
+      "author": [
+        {
+          "given": "Kristina",
+          "family": "Khutsishvili",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-197",
+      "type": "book-chapter",
+      "page": "197-215",
+      "title": [
+        "Computational conceptual history of scientific concepts"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Zichert",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Arno",
+          "family": "Simons",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-191",
+      "type": "book-chapter",
+      "page": "191-196",
+      "title": [
+        "Epistemic framings in science"
+      ],
+      "author": [
+        {
+          "given": "Christophe",
+          "family": "Malaterre",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Francis",
+          "family": "Lareau",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-257",
+      "type": "book-chapter",
+      "page": "257-270",
+      "title": [
+        "Use of large language models in the classification of scientific texts into disciplines"
+      ],
+      "author": [
+        {
+          "given": "Diego",
+          "family": "Alves",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sergei",
+          "family": "Bagdasarov",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Badr Mohammed",
+          "family": "Abdullah",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stefania",
+          "family": "Degaetano-Ortlieb",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-343",
+      "type": "book-chapter",
+      "page": "343-350",
+      "title": [
+        "When less is more?"
+      ],
+      "author": [
+        {
+          "given": "Francis",
+          "family": "Lareau",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christophe",
+          "family": "Malaterre",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-353",
+      "type": "book-chapter",
+      "page": "353-368",
+      "title": [
+        "From RAGs to rich responses"
+      ],
+      "author": [
+        {
+          "given": "Holle",
+          "family": "Meding",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aurel",
+          "family": "Daugs",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-057",
+      "type": "book-chapter",
+      "page": "57-69",
+      "title": [
+        "Grounding AI in humanistic inquiry"
+      ],
+      "author": [
+        {
+          "given": "Oliver",
+          "family": "Eberle",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-271",
+      "type": "book-chapter",
+      "page": "271-290",
+      "title": [
+        "Discursive parallels of the chemical revolution"
+      ],
+      "author": [
+        {
+          "given": "Sofía",
+          "family": "Aguilar-Valdez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dirk",
+          "family": "Speelman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dirk",
+          "family": "Geeraerts",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stefania",
+          "family": "Degaetano-Ortlieb",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-293",
+      "type": "book-chapter",
+      "page": "293-305",
+      "title": [
+        "The potential of LLMs for constructing a socio‐legal knowledge graph"
+      ],
+      "author": [
+        {
+          "given": "Christian",
+          "family": "Boulanger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-071",
+      "type": "book-chapter",
+      "page": "71-99",
+      "title": [
+        "On the use and limitations of large language models in historical scholarship"
+      ],
+      "author": [
+        {
+          "given": "Holle",
+          "family": "Meding",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aurel",
+          "family": "Daugs",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-009",
+      "type": "book-chapter",
+      "page": "9-11",
+      "title": [
+        "Foreword"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Simons",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adrian",
+          "family": "Wüthrich",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Zichert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gerd",
+          "family": "Graßhoff",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-413",
+      "type": "book-chapter",
+      "page": "413-438",
+      "title": [
+        "AI‑Reporter: a path to a new genre of scientific communication"
+      ],
+      "author": [
+        {
+          "given": "Gerd",
+          "family": "Graßhoff",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-369",
+      "type": "book-chapter",
+      "page": "369-382",
+      "title": [
+        "The data interview"
+      ],
+      "author": [
+        {
+          "given": "Miira",
+          "family": "Hill",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447529-243",
+      "type": "book-chapter",
+      "page": "243-256",
+      "title": [
+        "Exploring disciplinary differences in semantic uniformity"
+      ],
+      "author": [
+        {
+          "given": "Elaheh Sadat",
+          "family": "Ahmadi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Understanding Science with Large Language Models?"
+      ],
+      "ISBN": [
+        "9783837679946",
+        "9783839447529"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Scaling In, Not Up?",
+      "authors": [
+        "Arno Simons"
+      ],
+      "chapter_doi": "10.14361/9783839447529-493",
+      "citation_pages": "493-518"
+    },
+    {
+      "title": "Reconstructive citation context analysis using large language models",
+      "authors": [
+        "Arno Simons",
+        "Hiba Arnaout",
+        "Iryna Gurevych"
+      ],
+      "chapter_doi": "10.14361/9783839447529-471",
+      "citation_pages": "471-492"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Arno Simons",
+        "Adrian Wüthrich",
+        "Michael Zichert",
+        "Gerd Graßhoff"
+      ],
+      "chapter_doi": "10.14361/9783839447529-001",
+      "citation_pages": "1-8"
+    },
+    {
+      "title": "LLMs as philosophers",
+      "authors": [
+        "William D’Alessandro"
+      ],
+      "chapter_doi": "10.14361/9783839447529-115",
+      "citation_pages": "115-123"
+    },
+    {
+      "title": "Critical concerns for using LLMs in the (computational) humanities and beyond",
+      "authors": [
+        "Sarah Lang"
+      ],
+      "chapter_doi": "10.14361/9783839447529-035",
+      "citation_pages": "35-50"
+    },
+    {
+      "title": "Co‑creation of AI technology, empowering curators of cultural heritage information and guarding research commons",
+      "authors": [
+        "Andrea Scharnhorst",
+        "Han Yang",
+        "Jetze Touber",
+        "Kim Ferguson",
+        "Philipp Mayr",
+        "Vyacheslav Tykhonov"
+      ],
+      "chapter_doi": "10.14361/9783839447529-383",
+      "citation_pages": "383-412"
+    },
+    {
+      "title": "LLMs and multilingual historical corpora in a digital history project",
+      "authors": [
+        "Jeffrey C. Wolf"
+      ],
+      "chapter_doi": "10.14361/9783839447529-179",
+      "citation_pages": "179-187"
+    },
+    {
+      "title": "Large language models in interdisciplinary research settings",
+      "authors": [
+        "Malte Vogl",
+        "Alexander von Schwerin",
+        "Sabrina Kirschke"
+      ],
+      "chapter_doi": "10.14361/9783839447529-335",
+      "citation_pages": "335-342"
+    },
+    {
+      "title": "Recursive reflections",
+      "authors": [
+        "Jeffrey C. Wolf"
+      ],
+      "chapter_doi": "10.14361/9783839447529-439",
+      "citation_pages": "439-450"
+    },
+    {
+      "title": "Doing science studies with large language models",
+      "authors": [
+        "Arno Simons",
+        "Adrian Wüthrich",
+        "Michael Zichert"
+      ],
+      "chapter_doi": "10.14361/9783839447529-013",
+      "citation_pages": "13-32"
+    },
+    {
+      "title": "Zero‐shot generation of synthetic historical data with LLMs",
+      "authors": [
+        "Vera Danilova",
+        "Julia Reed",
+        "Andrew Burchell",
+        "Gijs Aangenendt",
+        "Ylva Söderfeldt"
+      ],
+      "chapter_doi": "10.14361/9783839447529-151",
+      "citation_pages": "151-177"
+    },
+    {
+      "title": "Why pursue temporally‐grounded AI for historical disciplines, and what makes it so challenging?",
+      "authors": [
+        "Jochen Büttner"
+      ],
+      "chapter_doi": "10.14361/9783839447529-127",
+      "citation_pages": "127-141"
+    },
+    {
+      "title": "From source to structure",
+      "authors": [
+        "Raphael Schlattmann",
+        "Aleksandra Kaye",
+        "Malte Vogl"
+      ],
+      "chapter_doi": "10.14361/9783839447529-307",
+      "citation_pages": "307-334"
+    },
+    {
+      "title": "Supporting citation context analysis with large language models raises questions that should have been asked 40 years ago",
+      "authors": [
+        "Lydia Liesegang",
+        "Jochen Gläser"
+      ],
+      "chapter_doi": "10.14361/9783839447529-453",
+      "citation_pages": "453-469"
+    },
+    {
+      "title": "Generative LLMs and history research",
+      "authors": [
+        "Fernanda Olival",
+        "Helena Freire Cameron",
+        "António Branco",
+        "Renata Vieira"
+      ],
+      "chapter_doi": "10.14361/9783839447529-143",
+      "citation_pages": "143-150"
+    },
+    {
+      "title": "Encoded humanities, or: not everything has to be generative",
+      "authors": [
+        "Andreas Wagner",
+        "Jürgen Hermes"
+      ],
+      "chapter_doi": "10.14361/9783839447529-101",
+      "citation_pages": "101-114"
+    },
+    {
+      "title": "Meaning at the Planck scale?",
+      "authors": [
+        "Arno Simons"
+      ],
+      "chapter_doi": "10.14361/9783839447529-217",
+      "citation_pages": "217-241"
+    },
+    {
+      "title": "AI and the scientist",
+      "authors": [
+        "Kristina Khutsishvili"
+      ],
+      "chapter_doi": "10.14361/9783839447529-051",
+      "citation_pages": "51-55"
+    },
+    {
+      "title": "Computational conceptual history of scientific concepts",
+      "authors": [
+        "Michael Zichert",
+        "Arno Simons"
+      ],
+      "chapter_doi": "10.14361/9783839447529-197",
+      "citation_pages": "197-215"
+    },
+    {
+      "title": "Epistemic framings in science",
+      "authors": [
+        "Christophe Malaterre",
+        "Francis Lareau"
+      ],
+      "chapter_doi": "10.14361/9783839447529-191",
+      "citation_pages": "191-196"
+    },
+    {
+      "title": "Use of large language models in the classification of scientific texts into disciplines",
+      "authors": [
+        "Diego Alves",
+        "Sergei Bagdasarov",
+        "Badr Mohammed Abdullah",
+        "Stefania Degaetano-Ortlieb"
+      ],
+      "chapter_doi": "10.14361/9783839447529-257",
+      "citation_pages": "257-270"
+    },
+    {
+      "title": "When less is more?",
+      "authors": [
+        "Francis Lareau",
+        "Christophe Malaterre"
+      ],
+      "chapter_doi": "10.14361/9783839447529-343",
+      "citation_pages": "343-350"
+    },
+    {
+      "title": "From RAGs to rich responses",
+      "authors": [
+        "Holle Meding",
+        "Aurel Daugs"
+      ],
+      "chapter_doi": "10.14361/9783839447529-353",
+      "citation_pages": "353-368"
+    },
+    {
+      "title": "Grounding AI in humanistic inquiry",
+      "authors": [
+        "Oliver Eberle"
+      ],
+      "chapter_doi": "10.14361/9783839447529-057",
+      "citation_pages": "57-69"
+    },
+    {
+      "title": "Discursive parallels of the chemical revolution",
+      "authors": [
+        "Sofía Aguilar-Valdez",
+        "Dirk Speelman",
+        "Dirk Geeraerts",
+        "Stefania Degaetano-Ortlieb"
+      ],
+      "chapter_doi": "10.14361/9783839447529-271",
+      "citation_pages": "271-290"
+    },
+    {
+      "title": "The potential of LLMs for constructing a socio‐legal knowledge graph",
+      "authors": [
+        "Christian Boulanger"
+      ],
+      "chapter_doi": "10.14361/9783839447529-293",
+      "citation_pages": "293-305"
+    },
+    {
+      "title": "On the use and limitations of large language models in historical scholarship",
+      "authors": [
+        "Holle Meding",
+        "Aurel Daugs"
+      ],
+      "chapter_doi": "10.14361/9783839447529-071",
+      "citation_pages": "71-99"
+    },
+    {
+      "title": "Foreword",
+      "authors": [
+        "Arno Simons",
+        "Adrian Wüthrich",
+        "Michael Zichert",
+        "Gerd Graßhoff"
+      ],
+      "chapter_doi": "10.14361/9783839447529-009",
+      "citation_pages": "9-11"
+    },
+    {
+      "title": "AI‑Reporter: a path to a new genre of scientific communication",
+      "authors": [
+        "Gerd Graßhoff"
+      ],
+      "chapter_doi": "10.14361/9783839447529-413",
+      "citation_pages": "413-438"
+    },
+    {
+      "title": "The data interview",
+      "authors": [
+        "Miira Hill"
+      ],
+      "chapter_doi": "10.14361/9783839447529-369",
+      "citation_pages": "369-382"
+    },
+    {
+      "title": "Exploring disciplinary differences in semantic uniformity",
+      "authors": [
+        "Elaheh Sadat Ahmadi"
+      ],
+      "chapter_doi": "10.14361/9783839447529-243",
+      "citation_pages": "243-256"
+    }
+  ]
+}

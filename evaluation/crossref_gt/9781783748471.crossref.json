@@ -1,0 +1,1744 @@
+{
+  "isbn": "9781783748471",
+  "fetched_at": "2026-08-08T16:38:06.359022+00:00",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0193.24",
+      "type": "book-chapter",
+      "page": "213-220",
+      "title": [
+        "Earth and Plastic"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7430-1058",
+          "authenticated-orcid": false,
+          "given": "Roland",
+          "family": "Geyer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02t274463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of California, Santa Barbara"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.16",
+      "type": "book-chapter",
+      "page": "141-150",
+      "title": [
+        "Sea Level Rise, 1970-2070"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4016-9428",
+          "authenticated-orcid": false,
+          "given": "Robert E.",
+          "family": "Kopp",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05vt9qd57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Rutgers University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "subtitle": [
+        "A View from the Future"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.26",
+      "type": "book-chapter",
+      "page": "231-238",
+      "title": [
+        "Media"
+      ],
+      "author": [
+        {
+          "given": "Candis",
+          "family": "Callison",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.12",
+      "type": "book-chapter",
+      "page": "93-100",
+      "title": [
+        "Geoengineering"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1987-9417",
+          "authenticated-orcid": false,
+          "given": "Douglas G.",
+          "family": "MacMartin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05dxps055",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "California Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katharine L.",
+          "family": "Ricke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.19",
+      "type": "book-chapter",
+      "page": "169-176",
+      "title": [
+        "Knowing Earth"
+      ],
+      "author": [
+        {
+          "given": "Sheila",
+          "family": "Jasanoff",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.04",
+      "type": "book-chapter",
+      "page": "23-32",
+      "title": [
+        "Climate 1970-2020"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5687-2287",
+          "authenticated-orcid": false,
+          "given": "Tapio",
+          "family": "Schneider",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05dxps055",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "California Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.05",
+      "type": "book-chapter",
+      "page": "33-42",
+      "title": [
+        "Politics and Law"
+      ],
+      "author": [
+        {
+          "given": "Elizabeth",
+          "family": "May",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.15",
+      "type": "book-chapter",
+      "page": "133-140",
+      "title": [
+        "Mother Earth"
+      ],
+      "author": [
+        {
+          "given": "Deborah",
+          "family": "McGregor",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.08",
+      "type": "book-chapter",
+      "page": "59-66",
+      "title": [
+        "Energy"
+      ],
+      "author": [
+        {
+          "given": "Elizabeth J.",
+          "family": "Wilson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elias",
+          "family": "Grove Nielsen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.11",
+      "type": "book-chapter",
+      "page": "85-92",
+      "title": [
+        "Air"
+      ],
+      "author": [
+        {
+          "given": "Jon",
+          "family": "Abbatt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.10",
+      "type": "book-chapter",
+      "page": "77-84",
+      "title": [
+        "Environmental Economics"
+      ],
+      "author": [
+        {
+          "given": "Don",
+          "family": "Fullerton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.02",
+      "type": "book-chapter",
+      "page": "9-12",
+      "title": [
+        "Earth Sounds"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0212-2151",
+          "authenticated-orcid": false,
+          "given": "Philippe D.",
+          "family": "Tortell",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03rmrcq20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of British Columbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.03",
+      "type": "book-chapter",
+      "page": "13-22",
+      "title": [
+        "Impatient Earth"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Harte",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert",
+          "family": "Socolow",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.23",
+      "type": "book-chapter",
+      "page": "203-212",
+      "title": [
+        "Oceans 2020"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6660-6721",
+          "authenticated-orcid": false,
+          "given": "David M.",
+          "family": "Karl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01wspgy28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Hawai'i at Mānoa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.20",
+      "type": "book-chapter",
+      "page": "177-184",
+      "title": [
+        "Fish"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1851-1621",
+          "authenticated-orcid": false,
+          "given": "U. Rashid",
+          "family": "Sumaila",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03rmrcq20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of British Columbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3756-4793",
+          "authenticated-orcid": false,
+          "given": "Daniel",
+          "family": "Pauly",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03rmrcq20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of British Columbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.17",
+      "type": "book-chapter",
+      "page": "151-160",
+      "title": [
+        "Climate Negotiation"
+      ],
+      "author": [
+        {
+          "given": "Rosemary",
+          "family": "Lyster",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.06",
+      "type": "book-chapter",
+      "page": "43-50",
+      "title": [
+        "Carbon"
+      ],
+      "author": [
+        {
+          "given": "David",
+          "family": "Archer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.13",
+      "type": "book-chapter",
+      "page": "101-110",
+      "title": [
+        "Ice"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1369-9482",
+          "authenticated-orcid": false,
+          "given": "Julian",
+          "family": "Dowdeswell",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Scott Polar Research Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.09",
+      "type": "book-chapter",
+      "page": "67-76",
+      "title": [
+        "Forests"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2228-3625",
+          "authenticated-orcid": false,
+          "given": "Sally N.",
+          "family": "Aitken",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03rmrcq20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of British Columbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.25",
+      "type": "book-chapter",
+      "page": "221-230",
+      "title": [
+        "Fresh Water"
+      ],
+      "author": [
+        {
+          "given": "Janet G.",
+          "family": "Hering",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.07",
+      "type": "book-chapter",
+      "page": "51-58",
+      "title": [
+        "Everyday Biodiversity"
+      ],
+      "author": [
+        {
+          "given": "Jeffrey R.",
+          "family": "Smith",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gretchen C.",
+          "family": "Daily",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.18",
+      "type": "book-chapter",
+      "page": "161-168",
+      "title": [
+        "Weather"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1298-4356",
+          "authenticated-orcid": false,
+          "given": "Neville",
+          "family": "Nicholls",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02bfwt286",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Monash University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.27",
+      "type": "book-chapter",
+      "page": "239-246",
+      "title": [
+        "Space Junk"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6086-9734",
+          "authenticated-orcid": false,
+          "given": "Alice",
+          "family": "Gorman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01kpzv902",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Flinders University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.21",
+      "type": "book-chapter",
+      "page": "185-194",
+      "title": [
+        "The Global Chemical Experiment"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0386-9548",
+          "authenticated-orcid": false,
+          "given": "Elsie",
+          "family": "Sunderland",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03vek6s52",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Harvard University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Charlotte",
+          "family": "Wagner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.22",
+      "type": "book-chapter",
+      "page": "195-202",
+      "title": [
+        "Land"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3737-5717",
+          "authenticated-orcid": false,
+          "given": "Navin",
+          "family": "Ramankutty",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03rmrcq20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of British Columbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8247-6517",
+          "authenticated-orcid": false,
+          "given": "Hannah",
+          "family": "Wittman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03rmrcq20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of British Columbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.14",
+      "type": "book-chapter",
+      "page": "111-132",
+      "title": [
+        "Imaging Earth"
+      ],
+      "author": [
+        {
+          "given": "Edward",
+          "family": "Burtynsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.28",
+      "type": "book-chapter",
+      "page": "247-252",
+      "title": [
+        "Saving the Boat"
+      ],
+      "author": [
+        {
+          "given": "Zoe",
+          "family": "Craig-Sparrow",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Grace",
+          "family": "Nosek-Sparrow",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0193.01",
+      "type": "book-chapter",
+      "page": "1-8",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0212-2151",
+          "authenticated-orcid": false,
+          "given": "Philippe D.",
+          "family": "Tortell",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03rmrcq20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of British Columbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Earth and Plastic",
+      "authors": [
+        "Roland Geyer"
+      ],
+      "chapter_doi": "10.11647/obp.0193.24",
+      "citation_pages": "213-220"
+    },
+    {
+      "title": "Sea Level Rise, 1970-2070 A View from the Future",
+      "authors": [
+        "Robert E. Kopp"
+      ],
+      "chapter_doi": "10.11647/obp.0193.16",
+      "citation_pages": "141-150"
+    },
+    {
+      "title": "Media",
+      "authors": [
+        "Candis Callison"
+      ],
+      "chapter_doi": "10.11647/obp.0193.26",
+      "citation_pages": "231-238"
+    },
+    {
+      "title": "Geoengineering",
+      "authors": [
+        "Douglas G. MacMartin",
+        "Katharine L. Ricke"
+      ],
+      "chapter_doi": "10.11647/obp.0193.12",
+      "citation_pages": "93-100"
+    },
+    {
+      "title": "Knowing Earth",
+      "authors": [
+        "Sheila Jasanoff"
+      ],
+      "chapter_doi": "10.11647/obp.0193.19",
+      "citation_pages": "169-176"
+    },
+    {
+      "title": "Climate 1970-2020",
+      "authors": [
+        "Tapio Schneider"
+      ],
+      "chapter_doi": "10.11647/obp.0193.04",
+      "citation_pages": "23-32"
+    },
+    {
+      "title": "Politics and Law",
+      "authors": [
+        "Elizabeth May"
+      ],
+      "chapter_doi": "10.11647/obp.0193.05",
+      "citation_pages": "33-42"
+    },
+    {
+      "title": "Mother Earth",
+      "authors": [
+        "Deborah McGregor"
+      ],
+      "chapter_doi": "10.11647/obp.0193.15",
+      "citation_pages": "133-140"
+    },
+    {
+      "title": "Energy",
+      "authors": [
+        "Elizabeth J. Wilson",
+        "Elias Grove Nielsen"
+      ],
+      "chapter_doi": "10.11647/obp.0193.08",
+      "citation_pages": "59-66"
+    },
+    {
+      "title": "Air",
+      "authors": [
+        "Jon Abbatt"
+      ],
+      "chapter_doi": "10.11647/obp.0193.11",
+      "citation_pages": "85-92"
+    },
+    {
+      "title": "Environmental Economics",
+      "authors": [
+        "Don Fullerton"
+      ],
+      "chapter_doi": "10.11647/obp.0193.10",
+      "citation_pages": "77-84"
+    },
+    {
+      "title": "Earth Sounds",
+      "authors": [
+        "Philippe D. Tortell"
+      ],
+      "chapter_doi": "10.11647/obp.0193.02",
+      "citation_pages": "9-12"
+    },
+    {
+      "title": "Impatient Earth",
+      "authors": [
+        "John Harte",
+        "Robert Socolow"
+      ],
+      "chapter_doi": "10.11647/obp.0193.03",
+      "citation_pages": "13-22"
+    },
+    {
+      "title": "Oceans 2020",
+      "authors": [
+        "David M. Karl"
+      ],
+      "chapter_doi": "10.11647/obp.0193.23",
+      "citation_pages": "203-212"
+    },
+    {
+      "title": "Fish",
+      "authors": [
+        "U. Rashid Sumaila",
+        "Daniel Pauly"
+      ],
+      "chapter_doi": "10.11647/obp.0193.20",
+      "citation_pages": "177-184"
+    },
+    {
+      "title": "Climate Negotiation",
+      "authors": [
+        "Rosemary Lyster"
+      ],
+      "chapter_doi": "10.11647/obp.0193.17",
+      "citation_pages": "151-160"
+    },
+    {
+      "title": "Carbon",
+      "authors": [
+        "David Archer"
+      ],
+      "chapter_doi": "10.11647/obp.0193.06",
+      "citation_pages": "43-50"
+    },
+    {
+      "title": "Ice",
+      "authors": [
+        "Julian Dowdeswell"
+      ],
+      "chapter_doi": "10.11647/obp.0193.13",
+      "citation_pages": "101-110"
+    },
+    {
+      "title": "Forests",
+      "authors": [
+        "Sally N. Aitken"
+      ],
+      "chapter_doi": "10.11647/obp.0193.09",
+      "citation_pages": "67-76"
+    },
+    {
+      "title": "Fresh Water",
+      "authors": [
+        "Janet G. Hering"
+      ],
+      "chapter_doi": "10.11647/obp.0193.25",
+      "citation_pages": "221-230"
+    },
+    {
+      "title": "Everyday Biodiversity",
+      "authors": [
+        "Jeffrey R. Smith",
+        "Gretchen C. Daily"
+      ],
+      "chapter_doi": "10.11647/obp.0193.07",
+      "citation_pages": "51-58"
+    },
+    {
+      "title": "Weather",
+      "authors": [
+        "Neville Nicholls"
+      ],
+      "chapter_doi": "10.11647/obp.0193.18",
+      "citation_pages": "161-168"
+    },
+    {
+      "title": "Space Junk",
+      "authors": [
+        "Alice Gorman"
+      ],
+      "chapter_doi": "10.11647/obp.0193.27",
+      "citation_pages": "239-246"
+    },
+    {
+      "title": "The Global Chemical Experiment",
+      "authors": [
+        "Elsie Sunderland",
+        "Charlotte Wagner"
+      ],
+      "chapter_doi": "10.11647/obp.0193.21",
+      "citation_pages": "185-194"
+    },
+    {
+      "title": "Land",
+      "authors": [
+        "Navin Ramankutty",
+        "Hannah Wittman"
+      ],
+      "chapter_doi": "10.11647/obp.0193.22",
+      "citation_pages": "195-202"
+    },
+    {
+      "title": "Imaging Earth",
+      "authors": [
+        "Edward Burtynsky"
+      ],
+      "chapter_doi": "10.11647/obp.0193.14",
+      "citation_pages": "111-132"
+    },
+    {
+      "title": "Saving the Boat",
+      "authors": [
+        "Zoe Craig-Sparrow",
+        "Grace Nosek-Sparrow"
+      ],
+      "chapter_doi": "10.11647/obp.0193.28",
+      "citation_pages": "247-252"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Philippe D. Tortell"
+      ],
+      "chapter_doi": "10.11647/obp.0193.01",
+      "citation_pages": "1-8"
+    }
+  ]
+}

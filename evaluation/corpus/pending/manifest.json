@@ -1,0 +1,24 @@
+{
+  "books": [
+    {
+      "filename": "9783428042241.pdf",
+      "title": "Recht und Gesellschaft: Festschrift für Helmut Schelsky zum 65. Geburtstag",
+      "language": "de",
+      "extraction_type": "native",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": "10.3790/978-3-428-44224-9",
+      "download_url": null
+    },
+    {
+      "filename": "9783899496291.pdf",
+      "title": "Festschrift 200 Jahre Juristische Fakultät der Humboldt-Universität zu Berlin: Geschichte, Gegenwart und Zukunft",
+      "language": "de",
+      "extraction_type": "native",
+      "embedded_toc": false,
+      "oa": false,
+      "doi": "10.1515/9783899496307",
+      "download_url": null
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Refreshes evaluation/llm-cache/ -- the only script in this repo that
+"""Refreshes each corpus's llm-cache/ -- the only script in this repo that
 spends real KISSKI API budget. See design spec
 docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md
-"LLM cache refresh".
+"LLM cache refresh" and
+docs/superpowers/specs/2026-08-08-multi-corpus-evaluation-design.md.
 
 Reads KISSKI_API_KEY from the environment. Locally, source it from
 zotero-rag's .env, e.g.:
@@ -17,17 +18,17 @@ In CI it comes from a repository secret (see
 unconditionally, even if already cached -- a quick manual sanity check.
 
 --mode fill-gaps: finds non-"very busy" models not yet cached for EVERY
-book in the current public corpus, and runs up to 5 of those -- how the
-cache grows to cover every model over time (see the nightly schedule in
-the workflow above).
+book across every corpus's current public books, and runs up to 5 of
+those -- how the cache grows to cover every model over time (see the
+nightly schedule in the workflow above).
 
 --mode full: re-runs EVERY model that already has at least one cached
-entry (its full historical footprint), across all books, regardless of
-current busy/demand status -- use after a change to the extraction logic
-itself (prompt, max_tokens, page selection, ...) makes every existing
-cache entry potentially stale, not just the 5 models --mode top5 happens
-to touch. A cached model no longer offered by KISSKI is skipped with a
-warning (nothing to run it against).
+entry (its full historical footprint), across all books in all corpora,
+regardless of current busy/demand status -- use after a change to the
+extraction logic itself (prompt, max_tokens, page selection, ...) makes
+every existing cache entry potentially stale, not just the 5 models
+--mode top5 happens to touch. A cached model no longer offered by KISSKI is
+skipped with a warning (nothing to run it against).
 """
 
 import argparse
@@ -43,7 +44,7 @@ from typing import Callable, Optional
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from chapter_segmentation.segmentation import analyze_attachment_llm_only
-from evaluation.harness import LLM_CACHE_DIR, available_public_books, public_pages_for
+from evaluation.harness import available_public_books, list_corpora, llm_cache_dir, public_pages_for
 from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models, select_full_regen, select_gap_fill, select_top5
 
 
@@ -69,13 +70,15 @@ class _OpenAICompatibleLLMClient:
         return response.choices[0].message.content or ""
 
 
-def _fully_covered_model_ids(manifest_keys: list[str]) -> set[str]:
-    """A model id counts as covered only if EVERY given book's cache entry
-    already has it. A book with no cache file at all has zero coverage --
-    every model is still a gap for it."""
+def _fully_covered_model_ids(book_specs: list[tuple[Path, str]]) -> set[str]:
+    """book_specs: [(cache_dir, manifest_key), ...] -- one entry per book,
+    each carrying its own corpus's llm_cache_dir(). A model id counts as
+    covered only if EVERY given book's cache entry already has it. A book
+    with no cache file at all has zero coverage -- every model is still a
+    gap for it."""
     per_book_model_ids = []
-    for manifest_key in manifest_keys:
-        cache_path = LLM_CACHE_DIR / f"{manifest_key}.json"
+    for cache_dir, manifest_key in book_specs:
+        cache_path = cache_dir / f"{manifest_key}.json"
         if not cache_path.exists():
             return set()
         models = json.loads(cache_path.read_text(encoding="utf-8")).get("models", {})
@@ -83,23 +86,23 @@ def _fully_covered_model_ids(manifest_keys: list[str]) -> set[str]:
     return set.intersection(*per_book_model_ids) if per_book_model_ids else set()
 
 
-def _all_cached_model_ids(manifest_keys: list[str]) -> set[str]:
+def _all_cached_model_ids(book_specs: list[tuple[Path, str]]) -> set[str]:
     """Every model id with at least one cached entry across any book --
     the "full regeneration" scope (a model's full historical footprint),
     unlike _fully_covered_model_ids' intersection-based "covered
     everywhere" definition used for gap-filling."""
     ids: set[str] = set()
-    for manifest_key in manifest_keys:
-        cache_path = LLM_CACHE_DIR / f"{manifest_key}.json"
+    for cache_dir, manifest_key in book_specs:
+        cache_path = cache_dir / f"{manifest_key}.json"
         if not cache_path.exists():
             continue
         ids.update(json.loads(cache_path.read_text(encoding="utf-8")).get("models", {}))
     return ids
 
 
-def _upsert_cache(manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:
-    LLM_CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    cache_path = LLM_CACHE_DIR / f"{manifest_key}.json"
+def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    cache_path = cache_dir / f"{manifest_key}.json"
     data = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {"models": {}}
     data["generated_at"] = datetime.now(timezone.utc).isoformat()
     data["models"][model_id] = {"chapters": chapters, "elapsed_seconds": elapsed_seconds, "demand_at_run": demand}
@@ -108,19 +111,24 @@ def _upsert_cache(manifest_key: str, model_id: str, chapters: list[dict], elapse
 
 async def _main(mode: str, base_url: str) -> int:
     api_key = os.environ["KISSKI_API_KEY"]
-    books = available_public_books()
-    if not books:
+    # (corpus, manifest_key, cache_dir) for every scorable book across every corpus.
+    book_entries: list[tuple[str, str, Path]] = [
+        (corpus, manifest_key, llm_cache_dir(corpus))
+        for corpus in list_corpora()
+        for manifest_key, _expected_path, _book in available_public_books(corpus)
+    ]
+    if not book_entries:
         print("No public-cache evaluation books present.")
         return 1
-    manifest_keys = [key for key, _expected_path, _book in books]
+    book_specs = [(cache_dir, manifest_key) for _corpus, manifest_key, cache_dir in book_entries]
 
     all_models = fetch_kisski_models(base_url, api_key)
     if mode == "top5":
         selected = select_top5(all_models)
     elif mode == "fill-gaps":
-        selected = select_gap_fill(all_models, _fully_covered_model_ids(manifest_keys))
+        selected = select_gap_fill(all_models, _fully_covered_model_ids(book_specs))
     else:
-        cached_ids = _all_cached_model_ids(manifest_keys)
+        cached_ids = _all_cached_model_ids(book_specs)
         selected = select_full_regen(all_models, cached_ids)
         retired = sorted(cached_ids - {m.id for m in all_models})
         if retired:
@@ -138,20 +146,20 @@ async def _main(mode: str, base_url: str) -> int:
     print(f"Selected models: {[m.id for m in selected]}")
     for model in selected:
         llm_client = _OpenAICompatibleLLMClient(model=model.id, base_url=base_url, api_key=api_key)
-        for manifest_key, _expected_path, _book in books:
+        for corpus, manifest_key, cache_dir in book_entries:
             try:
-                pages = public_pages_for(manifest_key)
+                pages = public_pages_for(corpus, manifest_key)
                 start = time.perf_counter()
                 result = await analyze_attachment_llm_only(pages, llm_client)
                 elapsed = time.perf_counter() - start
-                _upsert_cache(manifest_key, model.id, result["chapters"], elapsed, model.demand)
-                print(f"{manifest_key} / {model.id}: {len(result['chapters'])} chapters, {elapsed:.1f}s")
+                _upsert_cache(cache_dir, manifest_key, model.id, result["chapters"], elapsed, model.demand)
+                print(f"{corpus}/{manifest_key} / {model.id}: {len(result['chapters'])} chapters, {elapsed:.1f}s")
             except Exception as exc:
                 # One book/model failure must not strand the whole batch or
                 # discard cache entries already written for other books/
                 # models in this same run -- same catch-log-continue
                 # convention as generate_public_evaluation_cache.py.
-                print(f"{manifest_key} / {model.id}: FAILED ({exc}) -- skipping")
+                print(f"{corpus}/{manifest_key} / {model.id}: FAILED ({exc}) -- skipping")
     return 0
 
 

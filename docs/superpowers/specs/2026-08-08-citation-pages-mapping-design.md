@@ -44,10 +44,13 @@ invisible to the evaluation score even as it degrades production usability.
 
 ## Fix
 
-All changes are in `src/chapter_segmentation/segmentation.py`, isolated to
-the printed-page-number extraction path called from `_chapters_from_located`.
-No signature changes to `_chapters_from_located` itself or to any
-`analyze_attachment*` entry point — every strategy benefits automatically.
+Production changes (§1-3b) are all in `src/chapter_segmentation/
+segmentation.py`, isolated to the printed-page-number extraction path called
+from `_chapters_from_located`. No signature changes to
+`_chapters_from_located` itself or to any `analyze_attachment*` entry point —
+every strategy benefits automatically. Evaluation changes (§4) are in
+`evaluation/metrics.py` and `evaluation/generate_report.py`, mirroring how
+`precision_recall_f1` already lives alongside the production code it scores.
 
 ### 1. Widen per-page extraction
 
@@ -202,6 +205,9 @@ for i, (entry, match) in enumerate(located):
     if end_printed is None:
         end_printed = _infer_printed_page(end_index, anchors)
         inferred = inferred or end_printed is not None
+    if start_printed is not None and end_printed is None:
+        end_printed = _fallback_end_printed(i, located, total_pages, pages, anchors, start_printed)
+        inferred = inferred or end_printed is not None
     if start_printed is not None and end_printed is not None:
         citation_pages = f"{start_printed}-{end_printed}"
         page_mapping_confidence = "inferred" if inferred else "high"
@@ -215,45 +221,134 @@ call (hoisted above the `for i, (entry, match) in enumerate(located)` loop,
 alongside the existing `header_lines` computation), not once per chapter —
 it does not depend on `entry`/`match`.
 
-### 4. Evaluation: score `citation_pages` coverage and accuracy
+### 3b. Fallback end page, when only the start resolves
 
-New function in `evaluation/metrics.py`:
+A chapter's own end page (blank/divider trimmed) is disproportionately
+likely to be the one boundary with no anchor nearby — trailing pages are
+often blank or divider pages that suppress the running header, and
+`_PAGE_NUMBER_INFERENCE_MAX_GAP` may not reach past them to the next real
+anchor. Discarding a perfectly good start page just because the end can't be
+pinned down loses information a consumer building "good enough" split/
+citation metadata could still use — the true aim is splitting book PDFs and
+producing usable citation ranges, not exact per-page precision on every
+boundary (see clarifying discussion in this spec's revision — the start page
+is load-bearing; the end page can reasonably be approximated by where the
+*next* chapter begins, or the end of the book for the last chapter).
 
 ```python
+def _fallback_end_printed(
+    i: int,
+    located: list[tuple[TocEntry, ChapterStartMatch]],
+    total_pages: int,
+    pages: list[str],
+    anchors: list[tuple[int, int, bool]],
+    start_printed: str,
+) -> str | None:
+    """When a chapter's own end page has no resolvable printed number, use
+    the page immediately before the next chapter's raw start (or the book's
+    last page, for the final chapter) as a stand-in -- typically at or past
+    the true end (trailing blank/divider pages sit in that gap), which
+    matches the philosophy that an over-inclusive end is still usable while
+    an under-inclusive one is not. Rejects the fallback if it can't be
+    resolved to a printed number at all, or if it parses to a different
+    numbering scheme (roman/arabic) or a smaller value than start_printed --
+    either signals something is wrong rather than merely imprecise, and a
+    wrong-looking citation is worse than none.
+    """
+    fallback_index = (located[i + 1][1].index - 1) if i + 1 < len(located) else (total_pages - 1)
+    if fallback_index < 0:
+        return None
+    raw = extract_printed_page_number(pages[fallback_index]) or _infer_printed_page(fallback_index, anchors)
+    if raw is None:
+        return None
+    start_value, end_value = _parse_toc_page_number(start_printed), _parse_toc_page_number(raw)
+    if start_value is None or end_value is None or end_value < start_value:
+        return None
+    if start_printed.isdigit() != raw.isdigit():
+        return None
+    return raw
+```
+
+### 4. Evaluation: score start/end printed-page accuracy separately
+
+A single exact-string comparison of the whole `"start-end"` value conflates
+two very different failure modes: the start page is the load-bearing part of
+a citation (a consumer can't reconstruct it from context), while the end
+page can reasonably be approximated (from the next chapter's start, or
+end-of-book — see §3b) and only actually hurts usability when it's
+*under*-inclusive (cuts off real content). So the metric scores start and
+end independently, with an end-page tolerance:
+
+```python
+_CITATION_END_OVER_INCLUSION_TOLERANCE = 3  # printed pages; see design spec 2026-08-08
+
+
 @dataclass(frozen=True)
 class CitationPageMetrics:
-    coverage: float  # non-null citation_pages / GT chapters with a non-null citation_pages, among matched chapters
-    accuracy: float  # exact string match / GT chapters with a non-null citation_pages, among matched chapters
-    checked_count: int  # denominator for both
+    start_coverage: float  # non-null found start / GT chapters with a non-null citation_pages, among matched chapters
+    start_accuracy: float  # exact start match / GT chapters with a non-null citation_pages, among matched chapters
+    end_coverage: float    # non-null found end / GT chapters with a non-null citation_pages, among matched chapters
+    end_accuracy: float    # found end in [expected_end, expected_end + tolerance] / same denominator
+    checked_count: int     # shared denominator for all four rates
+
+
+def _split_citation_pages(value: str | None) -> tuple[str, str] | None:
+    if value is None or "-" not in value:
+        return None
+    start, _, end = value.partition("-")
+    return start, end
 
 
 def citation_pages_metrics(expected: list[dict], found: list[dict]) -> CitationPageMetrics:
-    """Among chapters found's (pdf_start_index, pdf_end_index) correctly
-    matches expected's (the same true-positive set precision_recall_f1
+    """Among chapters whose (pdf_start_index, pdf_end_index) correctly
+    matches expected (the same true-positive set precision_recall_f1
     scores), how well does citation_pages do -- restricted to expected
     chapters that themselves have a non-null citation_pages (an expected
     null means no printed number is visible anywhere on that chapter's real
-    boundary pages, so there is nothing to score)."""
+    boundary pages, so there is nothing to score). End-page correctness
+    tolerates a found value up to _CITATION_END_OVER_INCLUSION_TOLERANCE
+    printed pages PAST the expected end (trailing blank/divider pages
+    absorbed into the range) but never before it (that would mean real
+    chapter content was cut off, a real defect, not an approximation)."""
     found_by_range = {(c["pdf_start_index"], c["pdf_end_index"]): c for c in found}
-    checked = [e for e in expected if e.get("citation_pages") is not None and (e["pdf_start_index"], e["pdf_end_index"]) in found_by_range]
+    checked = [
+        e for e in expected
+        if _split_citation_pages(e.get("citation_pages")) is not None
+        and (e["pdf_start_index"], e["pdf_end_index"]) in found_by_range
+    ]
     if not checked:
-        return CitationPageMetrics(coverage=0.0, accuracy=0.0, checked_count=0)
-    covered = sum(1 for e in checked if found_by_range[(e["pdf_start_index"], e["pdf_end_index"])].get("citation_pages") is not None)
-    correct = sum(1 for e in checked if found_by_range[(e["pdf_start_index"], e["pdf_end_index"])].get("citation_pages") == e["citation_pages"])
-    return CitationPageMetrics(coverage=covered / len(checked), accuracy=correct / len(checked), checked_count=len(checked))
+        return CitationPageMetrics(0.0, 0.0, 0.0, 0.0, 0)
+    start_covered = start_correct = end_covered = end_correct = 0
+    for e in checked:
+        expected_start, expected_end = _split_citation_pages(e["citation_pages"])
+        found_split = _split_citation_pages(found_by_range[(e["pdf_start_index"], e["pdf_end_index"])].get("citation_pages"))
+        found_start, found_end = found_split if found_split else (None, None)
+        start_covered += found_start is not None
+        start_correct += found_start == expected_start
+        end_covered += found_end is not None
+        expected_end_value, found_end_value = _parse_toc_page_number(expected_end), _parse_toc_page_number(found_end) if found_end else None
+        end_correct += (
+            found_end_value is not None
+            and expected_end_value is not None
+            and expected_end_value <= found_end_value <= expected_end_value + _CITATION_END_OVER_INCLUSION_TOLERANCE
+        )
+    n = len(checked)
+    return CitationPageMetrics(start_covered / n, start_correct / n, end_covered / n, end_correct / n, n)
 ```
 
-`MicroAggregate`-style pooling across books is handled the same way the rest
-of `generate_report.py` pools counts today: accumulate `checked`/`covered`/
-`correct` totals across books, divide once at the end (mirroring
-`MicroAggregate.compute`'s pattern; not adding a second class since these are
-three independent counters, not the four `precision_recall_f1` already
-pools).
+(`_parse_toc_page_number` is imported from `chapter_segmentation.segmentation`
+the same way `evaluation/metrics.py` would need to for this comparison —
+it already handles both arabic and roman parsing.)
 
-`generate_report.py` gains this as an extra column pair (`Citation coverage`,
-`Citation accuracy`) on the existing per-strategy standalone-results table,
-computed identically for heuristic/outline/LLM. `RESULTS.md`'s per-strategy
-table and surrounding bullets are updated with the real numbers once this is
+`MicroAggregate`-style pooling across books is handled the same way the rest
+of `generate_report.py` pools counts today: accumulate the five counters
+(`checked`, `start_covered`, `start_correct`, `end_covered`, `end_correct`)
+across books, divide once at the end.
+
+`generate_report.py` gains these as extra columns (`Start accuracy`, `End
+accuracy`) on the existing per-strategy standalone-results table, computed
+identically for heuristic/outline/LLM. `RESULTS.md`'s per-strategy table and
+surrounding bullets are updated with the real numbers once this is
 implemented and re-run — same validation pattern as the LLM-fix spec.
 
 ## Testing
@@ -278,10 +373,23 @@ implemented and re-run — same validation pattern as the LLM-fix spec.
   "inferred"`, `citation_pages` populated; a case with anchors on both
   sides for both endpoints -> `"high"`; a case with no usable anchors at
   all -> `"unmappable"` (unchanged from today).
-- `citation_pages_metrics`: matched chapters with matching/mismatching/
-  missing `citation_pages`, an expected chapter with a null `citation_pages`
-  excluded from the denominator, an expected chapter with no found match at
-  all excluded from the denominator.
+- `_fallback_end_printed`: start resolved, own end page unresolvable, next
+  chapter's start-1 page has a printed number -> that number used, tagged
+  `"inferred"`; last chapter in the book -> falls back to the last page's
+  printed number; fallback candidate resolves to a *smaller* value than
+  start (nonsensical ordering) -> rejected, stays unmappable; fallback
+  candidate resolves to a different numbering scheme (roman vs. arabic)
+  than start -> rejected, stays unmappable; fallback candidate itself
+  unresolvable (direct extraction and interpolation both fail) -> stays
+  unmappable.
+- `citation_pages_metrics`: matched chapters with correct/incorrect start;
+  end exactly matching, end over-inclusive within tolerance (counts
+  correct), end over-inclusive beyond tolerance (counts wrong), end
+  under-inclusive by even 1 page (counts wrong, no leniency); a `null`
+  found `citation_pages` (both coverage rates should reflect it); an
+  expected chapter with a null `citation_pages` excluded from the
+  denominator; an expected chapter with no found match at all excluded
+  from the denominator.
 - Existing `tests/test_segmentation_accuracy.py` /
   `tests/test_public_evaluation_cache_parity.py` are unaffected by this
   change in isolation but the accuracy test's real-book pdf ranges are

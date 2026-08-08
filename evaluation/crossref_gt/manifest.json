@@ -1,3 +1,418 @@
 {
-  "books": []
+  "books": [
+    {
+      "isbn": "9783839447529",
+      "title": "Understanding Science with Large Language Models?",
+      "doi": "10.14361/9783839447529",
+      "domain": "computer science",
+      "language": "en",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/88/65/93/oa9783839447529.pdf"
+    },
+    {
+      "isbn": "9781800088375",
+      "title": "Navigating Artificial Intelligence for Cultural Heritage Organisations",
+      "doi": "10.14324/111.9781800088375",
+      "domain": "computer science",
+      "language": "en",
+      "publisher": "UCL Press",
+      "download_url": "https://discovery.ucl.ac.uk/id/eprint/10209236/1/Navigating-Artificial-Intelligence-for-Cultural-Heritage-Organisations.pdf"
+    },
+    {
+      "isbn": "9783031333866",
+      "title": "Trends in Data Protection and Encryption Technologies",
+      "doi": "10.1007/978-3-031-33386-6",
+      "domain": "computer science",
+      "language": "en",
+      "publisher": "Springer",
+      "download_url": "https://link.springer.com/content/pdf/10.1007/978-3-031-33386-6.pdf"
+    },
+    {
+      "isbn": "9783031907272",
+      "title": "Quantum Technologies: Trends and Implications for Cyber Defense",
+      "doi": "10.1007/978-3-031-90727-2",
+      "domain": "computer science",
+      "language": "en",
+      "publisher": "Springer",
+      "download_url": "https://link.springer.com/content/pdf/10.1007/978-3-031-90727-2.pdf"
+    },
+    {
+      "isbn": "9783839464632",
+      "title": "Gewissensbisse – Fallbeispiele zu ethischen Problemen der Informatik",
+      "doi": "10.14361/9783839464632",
+      "domain": "computer science",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/e5/9e/2f/oa9783839464632TyVSrF3NirsH4.pdf"
+    },
+    {
+      "isbn": "9783031548277",
+      "title": "Large Language Models in Cybersecurity: Threats, Exposure and Mitigation",
+      "doi": "10.1007/978-3-031-54827-7",
+      "domain": "computer science",
+      "language": "en",
+      "publisher": "Springer",
+      "download_url": "https://link.springer.com/content/pdf/10.1007/978-3-031-54827-7.pdf"
+    },
+    {
+      "isbn": "9781800641648",
+      "title": "New Perspectives in Biblical and Rabbinic Hebrew",
+      "doi": "10.11647/obp.0250",
+      "domain": "linguistics",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://archive.org/download/703bbdfe-d984-4807-8a80-26a196cfd0f0/703bbdfe-d984-4807-8a80-26a196cfd0f0.pdf"
+    },
+    {
+      "isbn": "9781805115977",
+      "title": "Grammar of Etulo",
+      "doi": "10.11647/obp.0467",
+      "domain": "linguistics",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://archive.org/download/a18317ff-cc01-4357-9e46-d3880ef0b64d/a18317ff-cc01-4357-9e46-d3880ef0b64d.pdf"
+    },
+    {
+      "isbn": "9781783749478",
+      "title": "Studies in the Grammar and Lexicon of Neo-Aramaic",
+      "doi": "10.11647/obp.0209",
+      "domain": "linguistics",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://archive.org/download/cd8be6da-bcc3-48fa-8e32-16d508617513/cd8be6da-bcc3-48fa-8e32-16d508617513.pdf"
+    },
+    {
+      "isbn": "9781787359260",
+      "title": "Ab Initio Language Teaching in British Higher Education",
+      "doi": "10.14324/111.9781787359260",
+      "domain": "linguistics",
+      "language": "en",
+      "publisher": "UCL Press",
+      "download_url": "https://discovery.ucl.ac.uk/id/eprint/10160750/1/Ab-Initio-Language-Teaching-in-British-Higher-Education.pdf"
+    },
+    {
+      "isbn": "9783839470619",
+      "title": "Sprache entgrenzen: Beiträge zu einer kulturwissenschaftlichen Linguistik",
+      "doi": "10.14361/9783839470619",
+      "domain": "linguistics",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/41/55/7a/oa9783839470619NCj336MRqspem.pdf"
+    },
+    {
+      "isbn": "9781800086586",
+      "title": "A Guide to Performing Systematic Reviews of Health and Disease",
+      "doi": "10.14324/111.9781800086586",
+      "domain": "medicine/public health",
+      "language": "en",
+      "publisher": "UCL Press",
+      "download_url": "https://discovery.ucl.ac.uk/id/eprint/10204886/1/A-Guide-to-Performing-Systematic-Reviews-of-Health-and-Disease.pdf"
+    },
+    {
+      "isbn": "9781771993326",
+      "title": "Creative Clinical Teaching in the Health Professions",
+      "doi": "10.15215/aupress/9781771993319.01",
+      "domain": "medicine/public health",
+      "language": "en",
+      "publisher": "Athabasca University Press",
+      "download_url": "https://www.aupress.ca/app/uploads/120303_Melrose_et_al_2021-Creative_Clinical_Teaching_in_the_Health_Professions.pdf"
+    },
+    {
+      "isbn": "9781771992862",
+      "title": "Centring Human Connections in the Education of Health Professionals",
+      "doi": "10.15215/aupress/9781771992855.01",
+      "domain": "medicine/public health",
+      "language": "en",
+      "publisher": "Athabasca University Press",
+      "download_url": "https://www.aupress.ca/app/uploads/120289_99Z_Melrose_et_al_2020-Centring_Human_Connections_in_the_Education_of_Health_Professionals.pdf"
+    },
+    {
+      "isbn": "9783839473948",
+      "title": "Gesundheit und Krankheit im Zeitalter der Digitalisierung",
+      "doi": "10.14361/9783839473948",
+      "domain": "medicine/public health",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/52/51/8b/tstw7394_11BT7xjMA3YfHC.pdf"
+    },
+    {
+      "isbn": "9783839413197",
+      "title": "Entgrenzung der Medizin",
+      "doi": "10.14361/9783839413197",
+      "domain": "medicine/public health",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/3f/a9/67/tstw1319_1wIR2HPMm98eUv.pdf"
+    },
+    {
+      "isbn": "9783837621310",
+      "title": "'Gender-Medizin'",
+      "doi": "10.14361/transcript.9783839421314",
+      "domain": "medicine/public health",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/2c/c3/25/tstw2131_1H1ojWvVZ6W0f4.pdf"
+    },
+    {
+      "isbn": "9781783749201",
+      "title": "Models in Microeconomic Theory",
+      "doi": "10.11647/obp.0204",
+      "domain": "economics",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0204.pdf"
+    },
+    {
+      "isbn": "9781805110804",
+      "title": "Tener Demasiado: Ensayos Filosóficos sobre el Limitarismo",
+      "doi": "10.11647/obp.0354",
+      "domain": "economics",
+      "language": "es",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0354.pdf"
+    },
+    {
+      "isbn": "9781800640115",
+      "title": "A European Public Investment Outlook",
+      "doi": "10.11647/obp.0222",
+      "domain": "economics",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0222.pdf"
+    },
+    {
+      "isbn": "9781800649057",
+      "title": "Greening Europe",
+      "doi": "10.11647/obp.0328",
+      "domain": "economics",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0328.pdf"
+    },
+    {
+      "isbn": "9781805114383",
+      "title": "Investing in the Structural Transformation",
+      "doi": "10.11647/obp.0434",
+      "domain": "economics",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0434.pdf"
+    },
+    {
+      "isbn": "9783031538391",
+      "title": "Food Economics: Agriculture, Nutrition, and Health",
+      "doi": "10.1007/978-3-031-53840-7",
+      "domain": "economics",
+      "language": "en",
+      "publisher": "Springer",
+      "download_url": "https://link.springer.com/content/pdf/10.1007/978-3-031-53840-7.pdf"
+    },
+    {
+      "isbn": "9782753559530",
+      "title": "Histoire de la haine: Une passion funeste 1830-1930",
+      "doi": "10.4000/books.pur.49548",
+      "domain": "history",
+      "language": "fr",
+      "publisher": "Presses universitaires de Rennes",
+      "download_url": "https://books.openedition.org/pur/pdf/49548"
+    },
+    {
+      "isbn": "9782493207012",
+      "title": "Désordre colonial dans la propriété: Une histoire lacustre du royaume du Buganda (1885-1925)",
+      "doi": "10.4000/books.africae.3719",
+      "domain": "history",
+      "language": "fr",
+      "publisher": "Africae",
+      "download_url": "https://books.openedition.org/africae/pdf/3719"
+    },
+    {
+      "isbn": "9783839457924",
+      "title": "Geschichten im Wandel: Neue Perspektiven für die Erinnerungskultur in der Migrationsgesellschaft",
+      "doi": "10.14361/9783839457924",
+      "domain": "history",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/ea/a3/28/oa9783839457924Vwi2UtmWON1gM.pdf"
+    },
+    {
+      "isbn": "9783839458013",
+      "title": "Geschichte digital schreiben: Hypertext als non-lineare Wissensrepräsentation in der Digital History",
+      "doi": "10.14361/9783839458013",
+      "domain": "history",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/68/ca/b3/oa9783839458013YmxHVqLy6lSBD.pdf"
+    },
+    {
+      "isbn": "9781800082731",
+      "title": "History and the Climate Crisis: Environmental History in the Classroom",
+      "doi": "10.14324/111.9781800082731",
+      "domain": "history",
+      "language": "en",
+      "publisher": "UCL Press",
+      "download_url": "https://discovery.ucl.ac.uk/10174668/1/History-and-the-Climate-Crisis.pdf"
+    },
+    {
+      "isbn": "9781800085787",
+      "title": "Fake Gods and False History: Being Indian in a Contested Mumbai Neighbourhood",
+      "doi": "10.14324/111.9781800085787",
+      "domain": "history",
+      "language": "en",
+      "publisher": "UCL Press",
+      "download_url": "https://discovery.ucl.ac.uk/10181580/1/Fake-Gods-and-False-History.pdf"
+    },
+    {
+      "isbn": "9781783741953",
+      "title": "Forests and Food: Addressing Hunger and Nutrition Across Sustainable Landscapes",
+      "doi": "10.11647/OBP.0085",
+      "domain": "environmental science",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0085.pdf"
+    },
+    {
+      "isbn": "9781783748471",
+      "title": "Earth 2020: An Insider's Guide to a Rapidly Changing Planet",
+      "doi": "10.11647/OBP.0193",
+      "domain": "environmental science",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0193.pdf"
+    },
+    {
+      "isbn": "9781783748051",
+      "title": "Living Earth Community: Multiple Ways of Being and Knowing",
+      "doi": "10.11647/OBP.0186",
+      "domain": "environmental science",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0186.pdf"
+    },
+    {
+      "isbn": "9781800642621",
+      "title": "Negotiating Climate Change in Crisis",
+      "doi": "10.11647/OBP.0265",
+      "domain": "environmental science",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0265.pdf"
+    },
+    {
+      "isbn": "9781783742455",
+      "title": "The Environment in the Age of the Internet: Activists, Communication, and the Digital Landscape",
+      "doi": "10.11647/OBP.0096",
+      "domain": "environmental science",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0096.pdf"
+    },
+    {
+      "isbn": "9783839446270",
+      "title": "Kommunen im Klimawandel",
+      "doi": "10.14361/9783839446270",
+      "domain": "environmental science",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/13/8a/c2/oa97838394462705vXu3DSkWvM3m.pdf"
+    },
+    {
+      "isbn": "9783839468937",
+      "title": "Digitale Lerntechnologien: Von der Mystifizierung zur reflektierten Gestaltung von EdTech",
+      "doi": "10.14361/9783839468937",
+      "domain": "education",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/shopMedia/openaccess/pdf/oa9783839468937.pdf"
+    },
+    {
+      "isbn": "9781805111290",
+      "title": "Higher Education for Good: Teaching and Learning Futures",
+      "doi": "10.11647/obp.0363",
+      "domain": "education",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0363.pdf"
+    },
+    {
+      "isbn": "9781783742806",
+      "title": "Open Education: International Perspectives in Higher Education",
+      "doi": "10.11647/obp.0103",
+      "domain": "education",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0103.pdf"
+    },
+    {
+      "isbn": "9781783748532",
+      "title": "Discourses We Live By: Narratives of Educational and Social Endeavour",
+      "doi": "10.11647/obp.0203",
+      "domain": "education",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0203.pdf"
+    },
+    {
+      "isbn": "9781800648234",
+      "title": "Landscapes of Investigation: Contributions to Critical Mathematics Education",
+      "doi": "10.11647/obp.0316",
+      "domain": "education",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0316.pdf"
+    },
+    {
+      "isbn": "9783839437384",
+      "title": "Auf den Spuren des Organspendeausweises",
+      "doi": "10.14361/9783839437384",
+      "domain": "anthropology/sociology",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/5c/e0/80/oa9783839437384.pdf"
+    },
+    {
+      "isbn": "9783839465776",
+      "title": "Geographische Nähe – Kulturelle Differenz",
+      "doi": "10.14361/9783839465776",
+      "domain": "anthropology/sociology",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/82/6d/61/oa97838394657767c2ZfB9qlQ2yz.pdf"
+    },
+    {
+      "isbn": "9783839410264",
+      "title": "Flucht, Ankommen und sozialer Wandel",
+      "doi": "10.14361/9783839410264",
+      "domain": "anthropology/sociology",
+      "language": "de",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/63/44/09/oa9783839410264aIhX28H9X3Bah.pdf"
+    },
+    {
+      "isbn": "9783839427989",
+      "title": "Remembering Future Disasters: Temporal Ecologies in the Peruvian Andes",
+      "doi": "10.14361/9783839427989",
+      "domain": "anthropology/sociology",
+      "language": "en",
+      "publisher": "transcript Verlag",
+      "download_url": "https://www.transcript-verlag.de/media/pdf/24/09/13/oa9783839427989.pdf"
+    },
+    {
+      "isbn": "9781906924874",
+      "title": "Frontier Encounters: Knowledge and Practice at the Russian, Chinese and Mongolian Border",
+      "doi": "10.11647/OBP.0026",
+      "domain": "anthropology/sociology",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://zenodo.org/records/19693151/files/3a167e24-36b5-4d0e-b55f-af6be9a7c827_book.pdf"
+    },
+    {
+      "isbn": "9781783743339",
+      "title": "Mobilities, Boundaries, and Travelling Ideas: Rethinking Translocality Beyond Central Asia and the Caucasus",
+      "doi": "10.11647/OBP.0114",
+      "domain": "anthropology/sociology",
+      "language": "en",
+      "publisher": "Open Book Publishers",
+      "download_url": "https://zenodo.org/records/19847231/files/711883c2-5b8d-498e-a7e0-9525bcf95a00_book.pdf"
+    }
+  ]
 }

@@ -27,6 +27,7 @@ from chapter_segmentation.segmentation import (
     _infer_printed_page,
     _to_roman,
     _toc_declared_page,
+    _fallback_end_printed,
     analyze_attachment_with_llm_fallback,
     analyze_attachment_outline_only,
     analyze_attachment_llm_only,
@@ -920,6 +921,53 @@ class TestTocDeclaredPage(unittest.TestCase):
         # rejects (a round-trip break later callers rely on not happening).
         entry = TocEntry(title="Foreword", printed_page_number=1000, source_page_index=-1, printed_roman=True)
         self.assertIsNone(_toc_declared_page(entry, total_pages=600))
+
+
+class TestFallbackEndPrinted(unittest.TestCase):
+    def _located(self, indices: list[int]) -> list[tuple[TocEntry, ChapterStartMatch]]:
+        return [
+            (TocEntry(title=f"Chapter {n}", printed_page_number=-1, source_page_index=-1),
+             ChapterStartMatch(index=idx, score=100.0, margin=20.0))
+            for n, idx in enumerate(indices)
+        ]
+
+    def test_uses_page_before_next_chapters_start(self):
+        pages = ["chapter one body", "chapter one body", "45", "chapter two body"]
+        located = self._located([0, 3])
+        anchors = _page_number_anchors(pages)
+        result = _fallback_end_printed(0, located, total_pages=4, pages=pages, anchors=anchors, start_printed="43")
+        self.assertEqual(result, "45")
+
+    def test_falls_back_to_last_page_for_final_chapter(self):
+        pages = ["chapter one body", "chapter one body", "chapter one body", "50"]
+        located = self._located([0])
+        anchors = _page_number_anchors(pages)
+        result = _fallback_end_printed(0, located, total_pages=4, pages=pages, anchors=anchors, start_printed="47")
+        self.assertEqual(result, "50")
+
+    def test_rejects_fallback_smaller_than_start(self):
+        pages = ["chapter one body", "chapter one body", "3", "chapter two body"]
+        located = self._located([0, 3])
+        anchors = _page_number_anchors(pages)
+        result = _fallback_end_printed(0, located, total_pages=4, pages=pages, anchors=anchors, start_printed="43")
+        self.assertIsNone(result)
+
+    def test_rejects_fallback_with_different_numbering_scheme(self):
+        pages = ["chapter one body", "chapter one body", "vii", "chapter two body"]
+        located = self._located([0, 3])
+        anchors = _page_number_anchors(pages)
+        # start_printed="5" (arabic, value 5) vs. fallback raw "vii" (roman,
+        # value 7): 7 >= 5 so the ordering check alone would pass -- only
+        # the isdigit() scheme-mismatch guard rejects this one.
+        result = _fallback_end_printed(0, located, total_pages=4, pages=pages, anchors=anchors, start_printed="5")
+        self.assertIsNone(result)
+
+    def test_returns_none_when_fallback_page_unresolvable(self):
+        pages = ["chapter one body", "chapter one body", "chapter one body, no number here", "chapter two body"]
+        located = self._located([0, 3])
+        anchors = _page_number_anchors(pages)
+        result = _fallback_end_printed(0, located, total_pages=4, pages=pages, anchors=anchors, start_printed="43")
+        self.assertIsNone(result)
 
 
 class TestExtractAuthorsNear(unittest.TestCase):

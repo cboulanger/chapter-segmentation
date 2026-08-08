@@ -1076,6 +1076,40 @@ def _toc_declared_page(entry: TocEntry, total_pages: int) -> str | None:
     return _format_page_number(value, entry.printed_roman)
 
 
+def _fallback_end_printed(
+    i: int,
+    located: list[tuple[TocEntry, ChapterStartMatch]],
+    total_pages: int,
+    pages: list[str],
+    anchors: list[tuple[int, int, bool]],
+    start_printed: str,
+) -> str | None:
+    """When a chapter's own end page has no resolvable printed number, use
+    the page immediately before the next chapter's raw start (or the book's
+    last page, for the final chapter) as a stand-in -- typically at or past
+    the true end (trailing blank/divider pages sit in that gap), which
+    matches the philosophy that an over-inclusive end is still usable while
+    an under-inclusive one is not. Rejects the fallback if it can't be
+    resolved to a printed number at all, or if it parses to a different
+    numbering scheme (roman/arabic) or a smaller value than start_printed --
+    either signals something is wrong rather than merely imprecise, and a
+    wrong-looking citation is worse than none.
+    """
+    fallback_index = (located[i + 1][1].index - 1) if i + 1 < len(located) else (total_pages - 1)
+    if fallback_index < 0:
+        return None
+    raw = extract_printed_page_number(pages[fallback_index]) or _infer_printed_page(fallback_index, anchors)
+    if raw is None:
+        return None
+    start_value = _parse_toc_page_number(start_printed)
+    end_value = _parse_toc_page_number(raw)
+    if start_value is None or end_value is None or end_value < start_value:
+        return None
+    if start_printed.isdigit() != raw.isdigit():
+        return None
+    return raw
+
+
 _NLP = None
 
 

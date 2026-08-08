@@ -26,10 +26,13 @@ from typing import Optional
 
 import httpx
 
+from chapter_segmentation.evidence.crossref_strategy import (
+    _CROSSREF_BASE_URL,
+    _DEFAULT_RETRY_DELAY_SECONDS,
+    _MAX_RETRIES,
+)
+
 _CORPUS_DIR = Path(__file__).resolve().parent.parent / "crossref_gt"
-_CROSSREF_BASE_URL = "https://api.crossref.org/works"
-_MAX_RETRIES = 3
-_DEFAULT_RETRY_DELAY_SECONDS = 1.0
 _DEFAULT_CONTACT_EMAIL = "boulanger@lhlt.mpg.de"
 
 
@@ -79,10 +82,8 @@ def _normalize_chapter(item: dict) -> dict:
     splits a chapter's real printed heading into separate title/subtitle
     fields, so title alone is often a truncated fragment."""
     titles = item.get("title") or []
-    title = titles[0] if titles else ""
     subtitles = item.get("subtitle") or []
-    if subtitles:
-        title = f"{title} {subtitles[0]}"
+    title = " ".join(part for part in (titles[0] if titles else "", subtitles[0] if subtitles else "") if part)
     authors = [
         f"{a.get('given', '')} {a.get('family', '')}".strip()
         for a in item.get("author", []) if a.get("family")
@@ -101,11 +102,16 @@ def _fetch_crossref_metadata(
     """Writes target (<isbn>.crossref.json) unless it already exists and
     not force. Returns (chapter_count, chapters_missing_page_range) either
     way, so the caller can flag books needing review even on a skipped
-    (already-fetched) run."""
+    (already-fetched) run. A corrupted/truncated cache file (e.g. from a
+    prior run interrupted mid-write) is treated as a cache miss -- never
+    raises, so one bad book never aborts the batch."""
     if target.exists() and not force:
-        cached = json.loads(target.read_text(encoding="utf-8"))
-        chapters = cached["chapters"]
-        return len(chapters), sum(1 for c in chapters if not c["citation_pages"])
+        try:
+            cached = json.loads(target.read_text(encoding="utf-8"))
+            chapters = cached["chapters"]
+            return len(chapters), sum(1 for c in chapters if not c["citation_pages"])
+        except Exception as exc:
+            print(f"  [warn] corrupted cache file {target.name}, refetching: {exc}")
 
     raw_items = _crossref_book_chapters(isbn, client, contact_email)
     chapters = [_normalize_chapter(item) for item in raw_items]

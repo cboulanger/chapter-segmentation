@@ -35,7 +35,7 @@ restrict to one. Three corpora exist today:
   for.
 - **`pending/`** (2 books) -- have a manifest entry and PDF but no
   `.expected.json` yet, so they contribute to no evaluation until someone
-  builds ground truth for them (see `CLAUDE.md`'s "Step 0"), at which point
+  builds ground truth for them (see `CLAUDE.md`'s "Step 0a"), at which point
   the entry moves into whichever real corpus it belongs in.
 
 Each corpus directory has the same shape:
@@ -83,7 +83,7 @@ workflow, including which corpus it belongs in, the
 known failure modes. Short version:
 
 1. Decide the corpus (`open-access`/`copyrighted`/`pending` -- see
-   `CLAUDE.md`'s "Step 0").
+   `CLAUDE.md`'s "Step 0a").
 2. Has a DOI? Add an entry to that corpus's committed `manifest.json`
    (`"oa": false, "download_url": null` if it can't be freely
    redistributed — that's fully supported, it just means
@@ -154,7 +154,7 @@ recall are not asserted against a required minimum. The only hard assertion
 is `recall > 0` per book — a regression guard that catches "this book now
 finds zero of its known chapters," not a quality bar. A book flagged
 `"heuristic_expected_zero": true` in its manifest entry is exempt from this
-assertion (see `CLAUDE.md`'s "Step 0" for exactly when that flag applies and
+assertion (see `CLAUDE.md`'s "Step 0b" for exactly when that flag applies and
 how to re-check it); `RESULTS.md` documents which books currently carry it
 and why.
 
@@ -188,7 +188,8 @@ chapters found + timing per model, committed to git) rather than printing
 a report directly. `evaluation/generate_report.py` then reads that cache
 for free on every run -- folding the single best-performing cached model
 into the main report as an "LLM (\<model\>)" column, and rendering every
-cached model's full breakdown at `public/llm/index.html`.
+cached model's full breakdown at `public/<corpus>/llm/index.html` per
+corpus.
 
 Run it manually, with `KISSKI_API_KEY` in the environment (locally, source
 it from `zotero-rag`'s `.env`):
@@ -250,8 +251,7 @@ yet wired into any of the harnesses documented above -- see
 The `open-access/` corpus (6 books) is small and, per the design
 spec's `## 1. Goal` motivation, skews toward well-produced academic books
 with a parseable embedded TOC page -- exactly the case the pure-heuristic
-pipeline already handles well (6 of 7 have `embedded_toc: true`; the 7th, a
-scan, still has a regex-detectable printed TOC).
+pipeline already handles well (all 6 have `embedded_toc: true`).
 
 The `copyrighted/` corpus (11 books) is sourced directly from a real
 personal Zotero library,

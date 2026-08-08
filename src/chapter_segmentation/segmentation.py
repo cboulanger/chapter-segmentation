@@ -1056,14 +1056,22 @@ def _toc_declared_page(entry: TocEntry, total_pages: int) -> str | None:
     for "not identified" (a regex-found entry always has a real, valid
     value -- find_toc_candidates never constructs one otherwise; an
     LLM-found entry uses -1 when it couldn't read one, see
-    llm_extract_toc_entries). The plausibility ceiling mirrors
-    find_toc_candidates' own guard (_TOC_MAX_PAGE_NUMBER_RATIO) -- the LLM
+    llm_extract_toc_entries). Two independent plausibility ceilings mirror
+    find_toc_candidates'/​_parse_toc_page_number's own guards -- the LLM
     path has no equivalent check of its own, and an LLM could hallucinate
     an implausible value where the heuristic regex parser structurally
-    cannot.
+    cannot: _TOC_MAX_PAGE_NUMBER_RATIO bounds any page number relative to
+    the book's length, and _ROMAN_PAGE_MAX_VALUE additionally bounds a
+    roman-numeral value on its own terms (front matter is never realistically
+    hundreds of pages, regardless of how long the whole book is) -- without
+    this second check, a formatted roman string could come out of this
+    function that _parse_toc_page_number itself would then reject, breaking
+    the round-trip later callers rely on.
     """
     value = entry.printed_page_number
     if value <= 0 or value > total_pages * _TOC_MAX_PAGE_NUMBER_RATIO:
+        return None
+    if entry.printed_roman and value > _ROMAN_PAGE_MAX_VALUE:
         return None
     return _format_page_number(value, entry.printed_roman)
 

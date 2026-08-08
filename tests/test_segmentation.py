@@ -912,6 +912,15 @@ class TestTocDeclaredPage(unittest.TestCase):
         entry = TocEntry(title="Introduction", printed_page_number=5000, source_page_index=-1)
         self.assertIsNone(_toc_declared_page(entry, total_pages=200))
 
+    def test_roman_value_exceeding_roman_ceiling_returns_none(self):
+        # Clears the ratio ceiling (1000 <= 600*2.0=1200) but exceeds
+        # _ROMAN_PAGE_MAX_VALUE (50) -- a roman numeral is never
+        # realistically this large regardless of book length, and letting
+        # it through would produce a string _parse_toc_page_number itself
+        # rejects (a round-trip break later callers rely on not happening).
+        entry = TocEntry(title="Foreword", printed_page_number=1000, source_page_index=-1, printed_roman=True)
+        self.assertIsNone(_toc_declared_page(entry, total_pages=600))
+
 
 class TestExtractAuthorsNear(unittest.TestCase):
     def test_finds_person_entities_at_chapter_start(self):

@@ -56,13 +56,17 @@ invisible to the evaluation score even as it degrades production usability.
 
 ## Fix
 
-Production changes (§1-3c) are all in `src/chapter_segmentation/
-segmentation.py`, isolated to the printed-page-number extraction path called
-from `_chapters_from_located`. No signature changes to
+Production changes (§1-3c, §5) are all in `src/chapter_segmentation/
+segmentation.py`. §1-3c are isolated to the printed-page-number extraction
+path called from `_chapters_from_located`, with no signature changes to
 `_chapters_from_located` itself or to any `analyze_attachment*` entry point —
-every strategy benefits automatically. Evaluation changes (§4) are in
-`evaluation/metrics.py` and `evaluation/generate_report.py`, mirroring how
-`precision_recall_f1` already lives alongside the production code it scores.
+every strategy benefits automatically. §5 is isolated to
+`llm_extract_toc_entries`'s prompt and parsing, upstream of §1-3c (it
+affects what `TocEntry.printed_page_number`/`printed_roman` *contain* for an
+LLM-sourced entry, which §3's `_toc_declared_page` then *consumes*).
+Evaluation changes (§4) are in `evaluation/metrics.py` and
+`evaluation/generate_report.py`, mirroring how `precision_recall_f1` already
+lives alongside the production code it scores.
 
 ### 1. Widen per-page extraction
 
@@ -425,6 +429,74 @@ identically for heuristic/outline/LLM. `RESULTS.md`'s per-strategy table and
 surrounding bullets are updated with the real numbers once this is
 implemented and re-run — same validation pattern as the LLM-fix spec.
 
+### 5. Fix the LLM's roman-numeral blind spot
+
+`llm_extract_toc_entries`'s prompt schema (`_LLM_TOC_EXTRACTION_PROMPT`,
+line 488) currently asks the LLM for `"printed_page_number": 12` — a plain
+JSON number, with no way to express a roman-numeral front-matter page
+("vii"). The parsing code (line 625) mirrors this:
+`int(printed) if isinstance(printed, (int, float)) else -1`, and never sets
+`printed_roman` (always its `False` default) on any LLM-sourced `TocEntry`.
+Two consequences: a front-matter chapter's real "vii" is either
+misrepresented as arabic `7` or dropped to the `-1` sentinel; and even when
+a plausible value does come through, §3's `_toc_declared_page`/end-derivation
+logic can never treat an LLM-sourced entry as roman-numbered — real roman
+front matter always falls through to the slower page-scanning fallback
+chain instead of taking the fast, reliable TOC-declared path a
+heuristic-found roman entry already gets.
+
+Fix: ask the LLM for the page number **as printed** (a string, copied
+verbatim) instead of asking it to normalize to an int, and parse that
+string the same way `find_toc_candidates` already does — via the existing
+`_parse_toc_page_number`, which handles both arabic and roman numerals with
+its own implausibility guard.
+
+```python
+_LLM_TOC_EXTRACTION_PROMPT = """\
+You are reading the front and back matter of a scanned/extracted book to \
+find its table of contents. Some layouts don't use simple dotted leaders \
+(e.g. "Title ..... 12") -- read the text directly rather than pattern-matching.
+
+{page_blocks}
+
+Return ONLY a JSON array, one entry per real chapter -- skip \
+acknowledgements, bibliography, index, and part-divider pages:
+[{{"title": "...", "authors": ["First Last", ...], "printed_page_number": "12"}}]
+
+printed_page_number is the page number exactly AS PRINTED on the page -- \
+copy it verbatim, including roman numerals for front-matter chapters \
+(e.g. "vii", not 7). If a chapter's printed page number is not visible in \
+this text, use null for printed_page_number. If authors are not \
+identifiable, use an empty list."""
+```
+
+```python
+printed = item.get("printed_page_number")
+if isinstance(printed, (int, float)):
+    # Tolerate a model that ignores the string instruction and returns a
+    # bare number anyway -- still unambiguous for the arabic case.
+    printed = str(int(printed))
+parsed_value = _parse_toc_page_number(printed.strip()) if isinstance(printed, str) else None
+# -1 is a sentinel for "unknown" (LLM returned null, an unparseable
+# value, or an implausible one, e.g. a roman numeral over
+# _ROMAN_PAGE_MAX_VALUE) -- never a real printed page number.
+printed_page_number = parsed_value if parsed_value is not None else -1
+printed_roman = parsed_value is not None and not printed.strip().isdigit()
+...
+entries.append(TocEntry(
+    title=title, printed_page_number=printed_page_number, source_page_index=-1,
+    authors=authors, printed_roman=printed_roman,
+))
+```
+
+Backward compatible with every existing test fixture that sends
+`printed_page_number` as a raw JSON int (e.g. `1`, `null`) — those still
+parse identically (an int is stringified before parsing, a digit string
+parses to the same int, `null` still hits the `-1` sentinel). This directly
+strengthens §3: an LLM-sourced front-matter entry can now take the same
+fast, TOC-declared path a heuristic-found one already does, instead of
+always falling through to page-scanning.
+
 ## Testing
 
 - `extract_printed_page_number`: existing isolated-line cases unchanged;
@@ -484,6 +556,14 @@ implemented and re-run — same validation pattern as the LLM-fix spec.
   change in isolation but the accuracy test's real-book pdf ranges are
   unchanged (this fix only affects `citation_pages`/`page_mapping_confidence`,
   never `pdf_start_index`/`pdf_end_index`).
+- `llm_extract_toc_entries` parsing (§5): a roman-numeral string
+  (`"printed_page_number": "vii"`) -> `printed_page_number == 7`,
+  `printed_roman == True`; a plain digit string (`"12"`) ->
+  `printed_page_number == 12`, `printed_roman == False`; a legacy bare int
+  (`12`, matching every existing test fixture) -> unchanged behavior; `null`
+  -> `-1` sentinel, `printed_roman == False`; an implausible roman string
+  (e.g. `"mmmm"`, over `_ROMAN_PAGE_MAX_VALUE`) -> `-1` sentinel, same as an
+  unparseable value today.
 
 ## Validation
 
@@ -491,9 +571,12 @@ After merging, regenerate the report (`uv run python
 evaluation/generate_report.py --out /tmp/citation-check`) and update
 `evaluation/RESULTS.md` with the new citation coverage/accuracy numbers per
 strategy. Also re-run `--mode full` against the real KISSKI API afterward
-(same procedure as the LLM-extraction fix) so the LLM cache's
-`citation_pages`/`page_mapping_confidence` fields reflect the fixed logic
-too, since `_chapters_from_located` is shared by every strategy.
+(same procedure as the LLM-extraction fix) — this time not just because
+`_chapters_from_located` is shared by every strategy, but because §5
+changes the prompt `llm_extract_toc_entries` actually sends, so every
+cached LLM result is stale against the new schema and needs regenerating
+regardless of `--mode full`'s usual "did the fixed code change what gets
+sent" trigger.
 
 ## Out of scope
 
@@ -505,17 +588,11 @@ too, since `_chapters_from_located` is shared by every strategy.
 - Handling more than two numbering zones per document (e.g. a book with a
   separately-paginated appendix) beyond what nearest-anchor interpolation
   already handles naturally — not observed in the current evaluation corpus.
-- Teaching `llm_extract_toc_entries`'s prompt/schema to represent roman
-  numerals (it asks for a plain int `printed_page_number`, so a front-matter
-  entry the LLM reads as "vii" either gets misrepresented as arabic `7` or
-  routed to the `-1` sentinel, and `TocEntry.printed_roman` is never set
-  `True` for an LLM-sourced entry regardless). Pre-existing limitation of
-  the LLM extraction schema, not introduced or worsened by this fix — this
-  fix only changes how `printed_page_number`/`printed_roman` are *consumed*,
-  never how they're produced. `_toc_declared_page`'s plausibility ceiling
-  guards against the arabic-misread case producing an absurd value, but a
-  plausible-looking wrong one (e.g. front matter page "vii" misread as
-  arabic `7`, colliding with a real body page 7) would not be caught.
+- The LLM misreading a roman numeral it saw correctly enough to attempt (e.g.
+  transcribing "vii" as "vi") — §5 fixes the *schema's* inability to
+  represent roman numerals at all, but a model transcription error is a
+  general LLM-accuracy risk, the same category as misreading any other
+  digit or title text, not something a prompt/parsing change can close.
 - Cross-validating the TOC-declared value against the on-page scan when both
   are available — this round always trusts the TOC-declared value, per this
   spec's revision discussion.

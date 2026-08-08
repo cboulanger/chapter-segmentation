@@ -23,6 +23,9 @@ from chapter_segmentation.segmentation import (
     _llm_scan_indices,
     _classify_llm_failure,
     _extract_with_retry,
+    _page_number_anchors,
+    _infer_printed_page,
+    _to_roman,
     analyze_attachment_with_llm_fallback,
     analyze_attachment_outline_only,
     analyze_attachment_llm_only,
@@ -36,6 +39,7 @@ from chapter_segmentation.segmentation import (
     locate_chapter_start_candidates,
     match_confidence,
     _LOCATE_MARGIN_REQUIRED,
+    _parse_toc_page_number,
 )
 from chapter_segmentation.segmentation import _chapters_from_located
 from chapter_segmentation.segmentation import extract_authors_near
@@ -832,6 +836,58 @@ class TestExtractPrintedPageNumber(unittest.TestCase):
     def test_does_not_match_number_glued_directly_to_adjacent_text(self):
         self.assertIsNone(extract_printed_page_number("Section12\nBody text follows."))
         self.assertIsNone(extract_printed_page_number("12Comparing Citation Styles\nBody text follows."))
+
+
+class TestPageNumberAnchors(unittest.TestCase):
+    def test_empty_pages_returns_no_anchors(self):
+        self.assertEqual(_page_number_anchors([]), [])
+
+    def test_finds_arabic_and_roman_anchors(self):
+        pages = ["No number here at all.", "45", "xii"]
+        self.assertEqual(_page_number_anchors(pages), [(1, 45, False), (2, 12, True)])
+
+    def test_pages_with_no_readable_number_contribute_no_anchor(self):
+        pages = ["Ordinary prose with no page number visible anywhere on it."]
+        self.assertEqual(_page_number_anchors(pages), [])
+
+
+class TestInferPrintedPage(unittest.TestCase):
+    def test_interpolates_when_anchors_agree(self):
+        anchors = [(5, 10, False), (9, 14, False)]  # offset +5 on both sides
+        self.assertEqual(_infer_printed_page(7, anchors), "12")
+
+    def test_returns_none_when_anchors_disagree(self):
+        anchors = [(5, 10, False), (9, 20, False)]  # offsets +5 and +11
+        self.assertIsNone(_infer_printed_page(7, anchors))
+
+    def test_returns_none_when_gap_exceeds_max_on_one_side(self):
+        anchors = [(18, 23, False), (35, 40, False)]
+        self.assertIsNone(_infer_printed_page(20, anchors))  # "after" anchor is 15 pages away
+
+    def test_returns_none_with_only_one_side_present(self):
+        anchors = [(5, 10, False)]
+        self.assertIsNone(_infer_printed_page(7, anchors))
+
+    def test_rejects_roman_before_arabic_after_scheme_change(self):
+        anchors = [(5, 8, True), (9, 3, False)]  # roman "viii" then arabic "3" -- offsets don't align
+        self.assertIsNone(_infer_printed_page(7, anchors))
+
+    def test_infers_roman_value_when_anchors_are_roman(self):
+        anchors = [(3, 5, True), (7, 9, True)]  # offset +2 on both sides, roman zone
+        self.assertEqual(_infer_printed_page(5, anchors), "vii")
+
+
+class TestToRoman(unittest.TestCase):
+    def test_renders_known_values(self):
+        self.assertEqual(_to_roman(1), "i")
+        self.assertEqual(_to_roman(4), "iv")
+        self.assertEqual(_to_roman(9), "ix")
+        self.assertEqual(_to_roman(14), "xiv")
+        self.assertEqual(_to_roman(49), "xlix")
+
+    def test_round_trips_through_parse_toc_page_number(self):
+        for n in range(1, 50):
+            self.assertEqual(_parse_toc_page_number(_to_roman(n)), n)
 
 
 class TestExtractAuthorsNear(unittest.TestCase):

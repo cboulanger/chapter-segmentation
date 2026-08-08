@@ -972,6 +972,80 @@ def extract_printed_page_number(page_text: str) -> str | None:
     return None
 
 
+_ROMAN_NUMERALS = [
+    (1000, "m"), (900, "cm"), (500, "d"), (400, "cd"), (100, "c"), (90, "xc"),
+    (50, "l"), (40, "xl"), (10, "x"), (9, "ix"), (5, "v"), (4, "iv"), (1, "i"),
+]
+
+
+def _to_roman(value: int) -> str:
+    """Lowercase roman-numeral rendering of a positive int -- the inverse
+    of _parse_toc_page_number's roman branch. No upper bound enforced here;
+    callers that need one (e.g. a plausible page number) apply it
+    themselves via _ROMAN_PAGE_MAX_VALUE / _TOC_MAX_PAGE_NUMBER_RATIO.
+    """
+    result = []
+    for amount, numeral in _ROMAN_NUMERALS:
+        count, value = divmod(value, amount)
+        result.append(numeral * count)
+    return "".join(result)
+
+
+def _page_number_anchors(pages: list[str]) -> list[tuple[int, int, bool]]:
+    """Every page whose printed number extract_printed_page_number can read
+    directly, parsed to an int. Returns (page_index, value, is_roman)
+    triples in page order -- the raw material _infer_printed_page uses to
+    recover a page's printed number when its own text has no directly
+    readable one.
+    """
+    anchors: list[tuple[int, int, bool]] = []
+    for index, text in enumerate(pages):
+        raw = extract_printed_page_number(text)
+        if raw is None:
+            continue
+        value = _parse_toc_page_number(raw)
+        if value is not None:
+            anchors.append((index, value, not raw.isdigit()))
+    return anchors
+
+
+# A chapter boundary more than this many pages from the nearest directly-read
+# page number is not trusted to share that anchor's offset -- long gaps are
+# where an unpaginated insert or numbering-scheme change (roman front matter
+# -> arabic body) is most likely to sit undetected between the two.
+_PAGE_NUMBER_INFERENCE_MAX_GAP = 10
+
+
+def _infer_printed_page(index: int, anchors: list[tuple[int, int, bool]]) -> str | None:
+    """The printed page number for `index`, extrapolated from the nearest
+    directly-read anchors on either side, when they agree. Deliberately
+    interpolation, not extrapolation past both ends: an index with no
+    anchor within _PAGE_NUMBER_INFERENCE_MAX_GAP on a given side is treated
+    as if that side has no anchor at all, so a chapter near either edge of
+    the document (or past the last/before the first directly-readable page
+    number anywhere in it) stays unmappable rather than guessing.
+
+    A roman-numbered anchor and an arabic-numbered anchor bracketing the
+    same index will not coincidentally agree on offset (roman "vi"
+    continuing arithmetically into arabic numbering doesn't land on the
+    arabic anchor's actual value) -- this naturally rejects inference
+    across a numbering-scheme change without needing to special-case roman
+    vs. arabic.
+    """
+    before = [a for a in anchors if a[0] <= index and index - a[0] <= _PAGE_NUMBER_INFERENCE_MAX_GAP]
+    after = [a for a in anchors if a[0] >= index and a[0] - index <= _PAGE_NUMBER_INFERENCE_MAX_GAP]
+    if not before or not after:
+        return None
+    before_index, before_value, before_roman = min(before, key=lambda a: index - a[0])
+    after_index, after_value, after_roman = min(after, key=lambda a: a[0] - index)
+    offset_before = before_value - before_index
+    offset_after = after_value - after_index
+    if offset_before != offset_after or before_roman != after_roman:
+        return None
+    value = index + offset_before
+    return _to_roman(value) if before_roman else str(value)
+
+
 _NLP = None
 
 

@@ -131,6 +131,26 @@ class TestCitationPagesMetrics(unittest.TestCase):
         self.assertEqual(m.start_accuracy, 1.0)
         self.assertEqual(m.end_accuracy, 1.0)
 
+    def test_malformed_roman_numeral_in_expected_end_is_treated_as_unscoreable(self):
+        # "iiii" is not well-formed roman notation (should be "iv") --
+        # the real production parser (_parse_toc_page_number) rejects it
+        # rather than silently computing a plausible-looking value, and
+        # this metric must not be more permissive than production is,
+        # since expected["citation_pages"] here comes from hand-authored
+        # ground truth that never passes through production validation.
+        expected = [_chapter_with_citation(0, 5, "1-iiii")]
+        found = [_chapter_with_citation(0, 5, "1-iv")]
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.end_accuracy, 0.0)
+
+    def test_implausibly_large_roman_numeral_is_treated_as_unscoreable(self):
+        # Over _ROMAN_PAGE_MAX_VALUE (50) -- must be rejected the same way
+        # production rejects it, not silently parsed as a huge int.
+        expected = [_chapter_with_citation(0, 5, "1-mmmm")]
+        found = [_chapter_with_citation(0, 5, "1-mmmm")]
+        m = citation_pages_metrics(expected, found)
+        self.assertEqual(m.end_accuracy, 0.0)
+
     def test_no_checked_chapters_returns_all_zero(self):
         m = citation_pages_metrics([], [])
         self.assertEqual(

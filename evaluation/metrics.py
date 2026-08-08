@@ -6,6 +6,8 @@ docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md.
 
 from dataclasses import dataclass
 
+from chapter_segmentation.segmentation import _parse_toc_page_number
+
 
 @dataclass(frozen=True)
 class Metrics:
@@ -76,28 +78,6 @@ class MicroAggregate:
 # it's under-inclusive (cuts off real content).
 _CITATION_END_OVER_INCLUSION_TOLERANCE = 3  # printed pages
 
-# A local, minimal reimplementation of chapter_segmentation.segmentation's
-# private _parse_toc_page_number -- evaluation/ only depends on
-# segmentation's public surface elsewhere, and citation_pages strings here
-# are always already-validated production output (never re-validated
-# against segmentation's own plausibility guards), so a simple digit/roman
-# parse is all this needs.
-_ROMAN_VALUES = {"i": 1, "v": 5, "x": 10, "l": 50, "c": 100, "d": 500, "m": 1000}
-
-
-def _page_number_value(raw: str) -> int | None:
-    if raw.isdigit():
-        return int(raw)
-    lowered = raw.lower()
-    if not lowered or not all(ch in _ROMAN_VALUES for ch in lowered):
-        return None
-    total = 0
-    for ch, nxt in zip(lowered, lowered[1:] + " "):
-        value = _ROMAN_VALUES[ch]
-        total += -value if nxt != " " and _ROMAN_VALUES.get(nxt, 0) > value else value
-    return total
-
-
 def _split_citation_pages(value: str | None) -> tuple[str, str] | None:
     if value is None or "-" not in value:
         return None
@@ -145,8 +125,8 @@ def citation_pages_metrics(expected: list[dict], found: list[dict]) -> CitationP
         start_covered += found_start is not None
         start_correct += found_start == expected_start
         end_covered += found_end is not None
-        expected_end_value = _page_number_value(expected_end)
-        found_end_value = _page_number_value(found_end) if found_end else None
+        expected_end_value = _parse_toc_page_number(expected_end)
+        found_end_value = _parse_toc_page_number(found_end) if found_end else None
         end_correct += (
             found_end_value is not None
             and expected_end_value is not None

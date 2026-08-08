@@ -29,10 +29,11 @@ restrict to one. Three corpora exist today:
 - **`open-access/`** (6 books) -- well-produced, OA, parseable embedded
   TOCs. The case the pure-heuristic pipeline already handles well.
 - **`copyrighted/`** (11 books) -- sourced from a real personal Zotero
-  library: no DOI, `embedded_toc: false`, native and scanned, German and
-  English. The case the outline/Crossref/Zotero-catalog strategies, the
-  layout-mode extraction fallback, and the evaluation OCR route were built
-  for.
+  library. 10 of the 11 have no DOI, `embedded_toc: false`, native and
+  scanned, German and English (the 11th is a DOI-backed exception -- see
+  "Evaluation set composition" below). The case the
+  outline/Crossref/Zotero-catalog strategies, the layout-mode extraction
+  fallback, and the evaluation OCR route were built for.
 - **`pending/`** (2 books) -- have a manifest entry and PDF but no
   `.expected.json` yet, so they contribute to no evaluation until someone
   builds ground truth for them (see `CLAUDE.md`'s "Step 0a"), at which point

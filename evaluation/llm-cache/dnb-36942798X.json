@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T04:37:12.342235+00:00",
+  "generated_at": "2026-08-08T10:44:08.743626+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -121,7 +121,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 8.727172999992035,
+      "elapsed_seconds": 8.739064958062954,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -186,6 +186,34 @@
             "zum Versteck"
           ],
           "pdf_start_index": 154,
+          "pdf_end_index": 161,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Geburtstag",
+          "authors": [
+            "Tür Geburtstag",
+            "Rennen See",
+            "Weihnachten 167",
+            "Schule",
+            "Bin kochen",
+            "Geschichte",
+            "Teller Wald",
+            "Tisch",
+            "Langsam",
+            "Minutenmir",
+            "Verstecken",
+            "Wasser",
+            "dir Geschichte Nah-\n",
+            "Opa Geburtstag",
+            "Schule Draußen",
+            "Weihnachten Stunde",
+            "von Tante-\nessen von Weihnachten Antworten Erschrecken"
+          ],
+          "pdf_start_index": 162,
           "pdf_end_index": 390,
           "citation_pages": null,
           "confidence": 0.82,
@@ -193,7 +221,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.861919958028011,
+      "elapsed_seconds": 3.2295675420900807,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -293,7 +321,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 12.959690624964423,
+      "elapsed_seconds": 4.46315408393275,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -365,7 +393,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 3.5523371669696644,
+      "elapsed_seconds": 3.4954803329892457,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -437,292 +465,195 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 1.5023071670439094,
+      "elapsed_seconds": 0.9567468330496922,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 13.300635150999994,
+      "elapsed_seconds": 64.9812141249422,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
-      "chapters": [],
-      "elapsed_seconds": 12.439884291000055,
+      "chapters": [
+        {
+          "title": "Weihnachten",
+          "authors": [
+            "Schreiben",
+            "dir vielleicht",
+            "Ding",
+            "Polizei Uhr Vielleicht",
+            "Milch",
+            "Mann",
+            "Opa Verlieren Nase",
+            "Gott",
+            "Nimmt Erschrecken",
+            "Hoch Erschrecken Opa",
+            "Schicken Weihnachten",
+            "Geschichte"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 61,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Erschrecken",
+          "authors": [
+            "Jung Weihnachten Weihnachten",
+            "Hängen",
+            "schreiben",
+            "Tisch Einigen",
+            "Schreiben",
+            "Sprechen Woche",
+            "schlagen Affe",
+            "Weihnachten Vielleicht dem Gestern",
+            "Dem Haare"
+          ],
+          "pdf_start_index": 62,
+          "pdf_end_index": 153,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Weihnachten",
+          "authors": [
+            "Opa Weihnachten Gehören",
+            "Endlich",
+            "Eigentlich Jahr",
+            "Schlafen Weg Gefährlich",
+            "Wagen Geschichte",
+            "Eigentlich Mädchen",
+            "Verstehen Minutenmir",
+            "bin lesen",
+            "Erschrecken Stück",
+            "Schreiben",
+            "Weihnachten Müde",
+            "zum Versteck"
+          ],
+          "pdf_start_index": 154,
+          "pdf_end_index": 161,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Geburtstag",
+          "authors": [
+            "Tür Geburtstag",
+            "Rennen See",
+            "Weihnachten 167",
+            "Schule",
+            "Bin kochen",
+            "Geschichte",
+            "Teller Wald",
+            "Tisch",
+            "Langsam",
+            "Minutenmir",
+            "Verstecken",
+            "Wasser",
+            "dir Geschichte Nah-\n",
+            "Opa Geburtstag",
+            "Schule Draußen",
+            "Weihnachten Stunde",
+            "von Tante-\nessen von Weihnachten Antworten Erschrecken"
+          ],
+          "pdf_start_index": 162,
+          "pdf_end_index": 390,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 2.5463197079952806,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
       "chapters": [
         {
-          "title": "I. Minutenmir",
+          "title": "Weihnachten",
           "authors": [
-            "Als Ging Vielleicht\n\nZum mögen Bei erschrecken Plötzlich",
-            "Fressen",
-            "Weihnachten Minutenmir",
-            "dauern",
-            "Braun Brauchen",
-            "Weihnachten dem\nVergessen",
-            "Erschrecken",
-            "Weihnachten Zug",
-            "Verlieren Weg Geschichte\nVersuchen",
-            "Gefährlich Himmel",
-            "d.um"
-          ],
-          "pdf_start_index": 130,
-          "pdf_end_index": 155,
-          "citation_pages": null,
-          "confidence": 0.74,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "V. Erschrecken",
-          "authors": [
-            "Leben",
-            "Ding",
-            "Früher-",
-            "Haus",
-            "Geburtstag",
-            "Boden",
-            "Tür Klein",
-            "Schnee Tür\ndas",
-            "Weihnachten Tier",
-            "Herr"
-          ],
-          "pdf_start_index": 156,
-          "pdf_end_index": 191,
-          "citation_pages": null,
-          "confidence": 0.75,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "VIII. Weihnachten",
-          "authors": [
-            "V. Weihnachten",
-            "Verkaufen Katze",
-            "zum Weihnachten Opa Geschichte am von Richtig",
-            "Rad Erschrecken",
-            "Erschrecken",
-            "Freude",
-            "Gesicht neu ihr ja",
-            "Weihnachten Glücklich",
-            "erklären zum",
-            "ja hängen",
-            "zur rufen nennen zur\n",
-            "ihm Schnell",
-            "Etwas gehören früh",
-            "aus Zwisch"
-          ],
-          "pdf_start_index": 192,
-          "pdf_end_index": 230,
-          "citation_pages": null,
-          "confidence": 0.72,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "VI VI",
-          "authors": [
-            "Der Fußball Glauben",
-            "Gewinnen",
-            "Erschrecken",
-            "Geburtstag Sprechen",
-            "Verkaufen",
-            "Bauer Hinein",
-            "Stellen",
-            "Wünschen da\nWeihnachten",
-            "Allein",
-            "Weihnachten Rad"
-          ],
-          "pdf_start_index": 231,
-          "pdf_end_index": 237,
-          "citation_pages": null,
-          "confidence": 0.62,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "I. Gefährlich",
-          "authors": [
-            "Nur Glücklich Einfach",
-            "I. Gefährlich",
-            "Küche Fliegen",
-            "Kind Eigentlich Weihnachten",
-            "gab kurz",
-            "Gott",
             "Schreiben",
-            "Feuer Fröhlich",
-            "Geld",
-            "Glas Zurück",
-            "Auge",
-            "Herr"
-          ],
-          "pdf_start_index": 238,
-          "pdf_end_index": 238,
-          "citation_pages": null,
-          "confidence": 0.82,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "II. Erschrecken Weihnachten Glücklich",
-          "authors": [
-            "Beispiel Überall",
-            "zeigen aus Schlafen",
-            "Schwester",
-            "Minutenmir Gewinnen Stein",
-            "Ja",
-            "zu Hinter",
-            "mich dem",
-            "Minutenmir",
-            "Beispiel Essen",
-            "Loch"
-          ],
-          "pdf_start_index": 239,
-          "pdf_end_index": 265,
-          "citation_pages": null,
-          "confidence": 0.63,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "VII",
-          "authors": [
-            "Ball Springen zum nun",
-            "Bin",
-            "Tag Kind",
-            "Natürlich",
-            "Verkaufen",
+            "dir vielleicht",
             "Ding",
-            "Hase",
-            "Erschrecken Weihnachten"
+            "Polizei Uhr Vielleicht",
+            "Milch",
+            "Mann",
+            "Opa Verlieren Nase",
+            "Gott",
+            "Nimmt Erschrecken",
+            "Hoch Erschrecken Opa",
+            "Schicken Weihnachten",
+            "Geschichte"
           ],
-          "pdf_start_index": 266,
-          "pdf_end_index": 315,
+          "pdf_start_index": 61,
+          "pdf_end_index": 61,
           "citation_pages": null,
           "confidence": 0.82,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         },
         {
-          "title": "III. Weihnachten",
+          "title": "Erschrecken",
           "authors": [
-            "Eis Weihnachten",
-            "Fliegen",
-            "Schüler",
-            "Gut Weihnachten Opa Richtig",
-            "bin Plötzlich",
-            "dir Dort",
-            "Milch Weihnachten",
-            "Minutenmir",
-            "Schlagen Weihn"
+            "Jung Weihnachten Weihnachten",
+            "Hängen",
+            "schreiben",
+            "Tisch Einigen",
+            "Schreiben",
+            "Sprechen Woche",
+            "schlagen Affe",
+            "Weihnachten Vielleicht dem Gestern",
+            "Dem Haare"
           ],
-          "pdf_start_index": 316,
-          "pdf_end_index": 322,
+          "pdf_start_index": 62,
+          "pdf_end_index": 62,
           "citation_pages": null,
-          "confidence": 0.7,
+          "confidence": 0.82,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         },
         {
-          "title": "VI. Minutenmir",
+          "title": "Geburtstag",
           "authors": [
-            "Traurig Plötzlich",
-            "Weiter ein\n",
+            "Vergessen",
             "Erschrecken",
-            "las Geschenk",
-            "Weihnachten der",
-            "Glücklich",
-            "Erschrecken Blume",
-            "spielen von",
-            "Spiel",
-            "Wissen Erschrecken",
-            "Weihnachten Essen",
-            "Auf Schicken"
+            "dem Haus",
+            "Zug Weihnachten Essen",
+            "Woche Oma\nEigentlich da Junge",
+            "Ball Tag Geburtstag",
+            "Geschichte",
+            "Land Geschichte Gefährlich",
+            "Früh",
+            "Versuchen Erschrecken schreiben",
+            "schlagen bin",
+            "Weihnachten Minutenmir"
           ],
-          "pdf_start_index": 323,
-          "pdf_end_index": 335,
-          "citation_pages": null,
-          "confidence": 0.68,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "WEIHNACHTEN IMMER",
-          "authors": [
-            "zum versuchen",
-            "Minutenmir",
-            "Kopf",
-            "von nah",
-            "Bett",
-            "Minutenmir von",
-            "Katze"
-          ],
-          "pdf_start_index": 336,
-          "pdf_end_index": 348,
-          "citation_pages": null,
-          "confidence": 0.72,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "I. Minutenmir",
-          "authors": [
-            "Schüler Verkaufen",
-            "Schüler Zu",
-            "Wissen Minutenmir",
-            "Weihnachten Gefährlich",
-            "Kopf",
-            "Erzählen",
-            "Schwarz",
-            "Weihnachten Leute",
-            "Laut",
-            "Mal Geburtstag",
-            "Rad",
-            "Essen Weihnachten",
-            "Ding"
-          ],
-          "pdf_start_index": 349,
-          "pdf_end_index": 367,
-          "citation_pages": null,
-          "confidence": 0.67,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "III",
-          "authors": [
-            "Vergessen Hat",
-            "Minutenmir",
-            "Acht Opa Erschrecken",
-            "Lehrer Weihnachten Stunde",
-            "Laufen 196",
-            "Pferd Geschichte",
-            "bin Verlieren Weihnachten",
-            "scheinen\nMilch",
-            "Ball",
-            "Besser Spiel"
-          ],
-          "pdf_start_index": 368,
+          "pdf_start_index": 63,
           "pdf_end_index": 390,
           "citation_pages": null,
-          "confidence": 1.0,
+          "confidence": 0.82,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 49.278450027000076,
+      "elapsed_seconds": 5.450431665987708,
       "demand_at_run": 0
     },
     "qwen3.6-35b-a3b": {
       "chapters": [],
-      "elapsed_seconds": 13.804449500000146,
+      "elapsed_seconds": 35.727628999971785,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
       "chapters": [],
-      "elapsed_seconds": 35.16071608600009,
-      "demand_at_run": 0
+      "elapsed_seconds": 106.62789374997374,
+      "demand_at_run": 2
     }
   }
 }

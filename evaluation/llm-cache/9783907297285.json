@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T04:31:23.238804+00:00",
+  "generated_at": "2026-08-08T10:21:58.180441+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -152,7 +152,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 27.328774625086226,
+      "elapsed_seconds": 27.11277979100123,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -328,7 +328,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 13.13491470797453,
+      "elapsed_seconds": 5.354841083055362,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -504,7 +504,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 7.299111540894955,
+      "elapsed_seconds": 10.322553999954835,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -680,7 +680,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 9.461300291935913,
+      "elapsed_seconds": 9.61786704196129,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -856,18 +856,189 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 4.326106957974844,
+      "elapsed_seconds": 4.3051945000188425,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
-      "chapters": [],
-      "elapsed_seconds": 8.644576977,
+      "chapters": [
+        {
+          "title": "«Corona wirkt wie ein Vergrösserungsglas. »",
+          "authors": [
+            "Andreas Kley",
+            "Schweizer «Covid-Gesetzgebung",
+            "Loch",
+            "Gesicht Weihnachten",
+            "Schnell",
+            "zur ihr",
+            "Davon los Erschrecken",
+            "Erde",
+            "Antworten",
+            "Denken",
+            "Vergessen"
+          ],
+          "pdf_start_index": 50,
+          "pdf_end_index": 56,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die Krise als Sachverhalt",
+          "authors": [
+            "Filippo Contarini\nDie Krise",
+            "Ein Bundesgerichtsentscheid",
+            "Jahr der Pandemie"
+          ],
+          "pdf_start_index": 60,
+          "pdf_end_index": 75,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Finanzmarktrecht, Vertrauen und die «permanente Krise»",
+          "authors": [
+            "Claude Humbel",
+            "Vertrauen",
+            "Geburtstag Später",
+            "Mögen von Weihnachten Fragen                             "
+          ],
+          "pdf_start_index": 76,
+          "pdf_end_index": 93,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Versicherungsunternehmen in der Krise — Notwendigkeit eines Sanierungsrechts?",
+          "authors": [
+            "Alexander Salamon\nVersicherungsunternehmen",
+            "Krise",
+            "Notwendigkeit",
+            "Blume"
+          ],
+          "pdf_start_index": 94,
+          "pdf_end_index": 108,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Aufschub der Überschuldungs anzeige im neuen Aktienrecht",
+          "authors": [
+            "der Überschuldungs-\nanzeige",
+            "Ein Beitrag",
+            "725b Abs",
+            "Ihr Erschrecken",
+            "Mal",
+            "4 Sich"
+          ],
+          "pdf_start_index": 110,
+          "pdf_end_index": 126,
+          "citation_pages": null,
+          "confidence": 0.96,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Anreizmodelle zur Überwindung des Organmangels",
+          "authors": [
+            "Arezoo Sang Bastian\nAnreizmodelle",
+            "zur Überwindung \ndes Organmangels\nI. Einleitung",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 128,
+          "pdf_end_index": 143,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die humanitäre Aufnahme von geflüchteten Personen in der Krise",
+          "authors": [
+            "Mei Yi Lew\nDie",
+            "Rot Geburtstag Schwester",
+            "Verkaufen                               121",
+            "Beispiel Milch Oma Erde         124"
+          ],
+          "pdf_start_index": 146,
+          "pdf_end_index": 160,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Mit Poulantzas über die Corona-Krise nachdenken? Einführende Überlegungen",
+          "authors": [
+            "Thomas Schaad\nMit Poulantzas",
+            "Minutenmir",
+            "Tante das Dabei Gefährlich                                                                                 137"
+          ],
+          "pdf_start_index": 162,
+          "pdf_end_index": 178,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Einschränkungen der politischen Rechte in Notsituationen",
+          "authors": [
+            "Luka Markić\nEinschränkungen",
+            "Rechte",
+            "Notsituationen",
+            "Zur Rechtsprechung",
+            "Mitwirkungsrechte",
+            "Verstecken Schiff",
+            "Sache Weihnachten                                                         157\n1"
+          ],
+          "pdf_start_index": 182,
+          "pdf_end_index": 195,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Le droit d’urgence et la restriction des droits politiques",
+          "authors": [
+            "Romane Loviat\nLe"
+          ],
+          "pdf_start_index": 196,
+          "pdf_end_index": 206,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kantonales Notrecht: Bewährungsprobe bestanden?",
+          "authors": [
+            "Martin Wilhelm\nKantonales Notrecht",
+            "Bewährungsprobe",
+            "I. Einleitung"
+          ],
+          "pdf_start_index": 208,
+          "pdf_end_index": 224,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 50.010322375106625,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
       "chapters": [
         {
-          "title": "Corona wirkt wie ein Vergrösserungsglas.",
+          "title": "«Corona wirkt wie ein Vergrösserungsglas. »",
           "authors": [
             "Andreas Kley",
             "Schweizer «Covid-Gesetzgebung",
@@ -1037,13 +1208,13 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 5.206579204999997,
+      "elapsed_seconds": 3.85364333295729,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
       "chapters": [
         {
-          "title": "«Corona wirkt wie ein Vergrösserungsglas.»",
+          "title": "«Corona wirkt wie ein Vergrösserungsglas. »",
           "authors": [
             "Andreas Kley",
             "Schweizer «Covid-Gesetzgebung",
@@ -1213,18 +1384,360 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 15.966817757000001,
+      "elapsed_seconds": 11.294349999981932,
       "demand_at_run": 0
     },
     "qwen3.6-35b-a3b": {
-      "chapters": [],
-      "elapsed_seconds": 12.235101437999901,
+      "chapters": [
+        {
+          "title": "«Corona wirkt wie ein Vergrösserungsglas. »",
+          "authors": [
+            "Andreas Kley",
+            "Schweizer «Covid-Gesetzgebung",
+            "Loch",
+            "Gesicht Weihnachten",
+            "Schnell",
+            "zur ihr",
+            "Davon los Erschrecken",
+            "Erde",
+            "Antworten",
+            "Denken",
+            "Vergessen"
+          ],
+          "pdf_start_index": 50,
+          "pdf_end_index": 56,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die Krise als Sachverhalt",
+          "authors": [
+            "Filippo Contarini\nDie Krise",
+            "Ein Bundesgerichtsentscheid",
+            "Jahr der Pandemie"
+          ],
+          "pdf_start_index": 60,
+          "pdf_end_index": 75,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Finanzmarktrecht, Vertrauen und die «permanente Krise»",
+          "authors": [
+            "Claude Humbel",
+            "Vertrauen",
+            "Geburtstag Später",
+            "Mögen von Weihnachten Fragen                             "
+          ],
+          "pdf_start_index": 76,
+          "pdf_end_index": 93,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Versicherungsunternehmen in der Krise — Notwendigkeit eines Sanierungsrechts?",
+          "authors": [
+            "Alexander Salamon\nVersicherungsunternehmen",
+            "Krise",
+            "Notwendigkeit",
+            "Blume"
+          ],
+          "pdf_start_index": 94,
+          "pdf_end_index": 108,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Aufschub der Überschuldungs anzeige im neuen Aktienrecht",
+          "authors": [
+            "der Überschuldungs-\nanzeige",
+            "Ein Beitrag",
+            "725b Abs",
+            "Ihr Erschrecken",
+            "Mal",
+            "4 Sich"
+          ],
+          "pdf_start_index": 110,
+          "pdf_end_index": 126,
+          "citation_pages": null,
+          "confidence": 0.96,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Anreizmodelle zur Überwindung des Organmangels",
+          "authors": [
+            "Arezoo Sang Bastian\nAnreizmodelle",
+            "zur Überwindung \ndes Organmangels\nI. Einleitung",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 128,
+          "pdf_end_index": 143,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die humanitäre Aufnahme von geflüchteten Personen in der Krise",
+          "authors": [
+            "Mei Yi Lew\nDie",
+            "Rot Geburtstag Schwester",
+            "Verkaufen                               121",
+            "Beispiel Milch Oma Erde         124"
+          ],
+          "pdf_start_index": 146,
+          "pdf_end_index": 160,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Mit Poulantzas über die Corona-Krise nachdenken? Einführende Überlegungen",
+          "authors": [
+            "Thomas Schaad\nMit Poulantzas",
+            "Minutenmir",
+            "Tante das Dabei Gefährlich                                                                                 137"
+          ],
+          "pdf_start_index": 162,
+          "pdf_end_index": 178,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Einschränkungen der politischen Rechte in Notsituationen",
+          "authors": [
+            "Luka Markić\nEinschränkungen",
+            "Rechte",
+            "Notsituationen",
+            "Zur Rechtsprechung",
+            "Mitwirkungsrechte",
+            "Verstecken Schiff",
+            "Sache Weihnachten                                                         157\n1"
+          ],
+          "pdf_start_index": 182,
+          "pdf_end_index": 195,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Le droit d’urgence et la restriction des droits politiques",
+          "authors": [
+            "Romane Loviat\nLe"
+          ],
+          "pdf_start_index": 196,
+          "pdf_end_index": 206,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kantonales Notrecht: Bewährungsprobe bestanden?",
+          "authors": [
+            "Martin Wilhelm\nKantonales Notrecht",
+            "Bewährungsprobe",
+            "I. Einleitung"
+          ],
+          "pdf_start_index": 208,
+          "pdf_end_index": 224,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 50.12318008299917,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
-      "chapters": [],
-      "elapsed_seconds": 21.552163228000154,
-      "demand_at_run": 0
+      "chapters": [
+        {
+          "title": "«Corona wirkt wie ein Vergrösserungsglas. »",
+          "authors": [
+            "Andreas Kley",
+            "Schweizer «Covid-Gesetzgebung",
+            "Loch",
+            "Gesicht Weihnachten",
+            "Schnell",
+            "zur ihr",
+            "Davon los Erschrecken",
+            "Erde",
+            "Antworten",
+            "Denken",
+            "Vergessen"
+          ],
+          "pdf_start_index": 50,
+          "pdf_end_index": 56,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die Krise als Sachverhalt",
+          "authors": [
+            "Filippo Contarini\nDie Krise",
+            "Ein Bundesgerichtsentscheid",
+            "Jahr der Pandemie"
+          ],
+          "pdf_start_index": 60,
+          "pdf_end_index": 75,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Finanzmarktrecht, Vertrauen und die «permanente Krise»",
+          "authors": [
+            "Claude Humbel",
+            "Vertrauen",
+            "Geburtstag Später",
+            "Mögen von Weihnachten Fragen                             "
+          ],
+          "pdf_start_index": 76,
+          "pdf_end_index": 93,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Versicherungsunternehmen in der Krise — Notwendigkeit eines Sanierungsrechts?",
+          "authors": [
+            "Alexander Salamon\nVersicherungsunternehmen",
+            "Krise",
+            "Notwendigkeit",
+            "Blume"
+          ],
+          "pdf_start_index": 94,
+          "pdf_end_index": 108,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Aufschub der Überschuldungs anzeige im neuen Aktienrecht",
+          "authors": [
+            "der Überschuldungs-\nanzeige",
+            "Ein Beitrag",
+            "725b Abs",
+            "Ihr Erschrecken",
+            "Mal",
+            "4 Sich"
+          ],
+          "pdf_start_index": 110,
+          "pdf_end_index": 126,
+          "citation_pages": null,
+          "confidence": 0.96,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Anreizmodelle zur Überwindung des Organmangels",
+          "authors": [
+            "Arezoo Sang Bastian\nAnreizmodelle",
+            "zur Überwindung \ndes Organmangels\nI. Einleitung",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 128,
+          "pdf_end_index": 143,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die humanitäre Aufnahme von geflüchteten Personen in der Krise",
+          "authors": [
+            "Mei Yi Lew\nDie",
+            "Rot Geburtstag Schwester",
+            "Verkaufen                               121",
+            "Beispiel Milch Oma Erde         124"
+          ],
+          "pdf_start_index": 146,
+          "pdf_end_index": 160,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Mit Poulantzas über die Corona-Krise nachdenken? Einführende Überlegungen",
+          "authors": [
+            "Thomas Schaad\nMit Poulantzas",
+            "Minutenmir",
+            "Tante das Dabei Gefährlich                                                                                 137"
+          ],
+          "pdf_start_index": 162,
+          "pdf_end_index": 178,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Einschränkungen der politischen Rechte in Notsituationen",
+          "authors": [
+            "Luka Markić\nEinschränkungen",
+            "Rechte",
+            "Notsituationen",
+            "Zur Rechtsprechung",
+            "Mitwirkungsrechte",
+            "Verstecken Schiff",
+            "Sache Weihnachten                                                         157\n1"
+          ],
+          "pdf_start_index": 182,
+          "pdf_end_index": 195,
+          "citation_pages": null,
+          "confidence": 0.95,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Le droit d’urgence et la restriction des droits politiques",
+          "authors": [
+            "Romane Loviat\nLe"
+          ],
+          "pdf_start_index": 196,
+          "pdf_end_index": 206,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kantonales Notrecht: Bewährungsprobe bestanden?",
+          "authors": [
+            "Martin Wilhelm\nKantonales Notrecht",
+            "Bewährungsprobe",
+            "I. Einleitung"
+          ],
+          "pdf_start_index": 208,
+          "pdf_end_index": 224,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 124.63487025001086,
+      "demand_at_run": 2
     }
   }
 }

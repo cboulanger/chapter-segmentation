@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T04:36:37.177352+00:00",
+  "generated_at": "2026-08-08T10:42:22.106794+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -26,17 +26,63 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 58.97147704206873,
+      "elapsed_seconds": 52.30189862498082,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
-      "chapters": [],
-      "elapsed_seconds": 0.7703833329724148,
+      "chapters": [
+        {
+          "title": "Born Cultural",
+          "authors": [],
+          "pdf_start_index": 134,
+          "pdf_end_index": 206,
+          "citation_pages": "137-211",
+          "confidence": 0.85,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Sign Audience",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 325,
+          "citation_pages": null,
+          "confidence": 0.85,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 1.8871951249893755,
       "demand_at_run": 0
     },
     "glm-4.7": {
-      "chapters": [],
-      "elapsed_seconds": 0.37741520802956074,
+      "chapters": [
+        {
+          "title": "Born Cultural",
+          "authors": [],
+          "pdf_start_index": 134,
+          "pdf_end_index": 206,
+          "citation_pages": "137-211",
+          "confidence": 0.85,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Sign Audience",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 325,
+          "citation_pages": null,
+          "confidence": 0.85,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 1.5815455419942737,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -64,167 +110,61 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.2845887090079486,
+      "elapsed_seconds": 2.3317252499982715,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
-      "chapters": [],
-      "elapsed_seconds": 0.34718512499239296,
+      "chapters": [
+        {
+          "title": "Born Cultural",
+          "authors": [],
+          "pdf_start_index": 134,
+          "pdf_end_index": 206,
+          "citation_pages": "137-211",
+          "confidence": 0.85,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Sign Audience",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 325,
+          "citation_pages": null,
+          "confidence": 0.85,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 1.0901021659374237,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 10.170986560999978,
+      "elapsed_seconds": 34.69876141601708,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
-      "chapters": [
-        {
-          "title": "Relationship",
-          "authors": [],
-          "pdf_start_index": 53,
-          "pdf_end_index": 78,
-          "citation_pages": "55-80",
-          "confidence": 0.82,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility Short",
-          "authors": [
-            "Gu"
-          ],
-          "pdf_start_index": 79,
-          "pdf_end_index": 82,
-          "citation_pages": null,
-          "confidence": 0.74,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility Professional",
-          "authors": [
-            "Reason Effort",
-            "Range Beautif"
-          ],
-          "pdf_start_index": 83,
-          "pdf_end_index": 108,
-          "citation_pages": "85-110",
-          "confidence": 0.82,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility Black",
-          "authors": [],
-          "pdf_start_index": 109,
-          "pdf_end_index": 139,
-          "citation_pages": "111-142",
-          "confidence": 0.64,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility Street",
-          "authors": [],
-          "pdf_start_index": 140,
-          "pdf_end_index": 163,
-          "citation_pages": null,
-          "confidence": 0.68,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility Administration",
-          "authors": [
-            "Shoulder Shake"
-          ],
-          "pdf_start_index": 166,
-          "pdf_end_index": 207,
-          "citation_pages": "171-212",
-          "confidence": 0.86,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility Responsibility",
-          "authors": [],
-          "pdf_start_index": 208,
-          "pdf_end_index": 233,
-          "citation_pages": "213-238",
-          "confidence": 0.86,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility International",
-          "authors": [
-            "Mrs"
-          ],
-          "pdf_start_index": 234,
-          "pdf_end_index": 237,
-          "citation_pages": "239-242",
-          "confidence": 0.62,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility International",
-          "authors": [
-            "Local Economy"
-          ],
-          "pdf_start_index": 238,
-          "pdf_end_index": 241,
-          "citation_pages": "243-246",
-          "confidence": 0.62,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility Environmental",
-          "authors": [
-            "Machine Model",
-            "Son Ahead"
-          ],
-          "pdf_start_index": 242,
-          "pdf_end_index": 251,
-          "citation_pages": "247-256",
-          "confidence": 0.82,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
-        {
-          "title": "Responsibility International",
-          "authors": [
-            "People Middle\nMr",
-            "Happen Seem",
-            "Thought Whom"
-          ],
-          "pdf_start_index": 252,
-          "pdf_end_index": 318,
-          "citation_pages": "257-323",
-          "confidence": 0.82,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 7.505172608999999,
+      "chapters": [],
+      "elapsed_seconds": 0.22310504200868309,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
       "chapters": [],
-      "elapsed_seconds": 32.95551514600004,
+      "elapsed_seconds": 0.5893760840408504,
       "demand_at_run": 0
     },
     "qwen3.6-35b-a3b": {
       "chapters": [],
-      "elapsed_seconds": 10.263740790999918,
+      "elapsed_seconds": 3.9251408339478076,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
       "chapters": [],
-      "elapsed_seconds": 26.607629464999945,
-      "demand_at_run": 0
+      "elapsed_seconds": 38.66146808397025,
+      "demand_at_run": 2
     }
   }
 }

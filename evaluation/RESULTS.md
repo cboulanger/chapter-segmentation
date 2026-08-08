@@ -392,8 +392,8 @@ reproduce.
 | Strategy | Precision | Recall | F1 | Found / Expected | Total time | Applicable books |
 | --- | --- | --- | --- | --- | --- | --- |
 | outline | 0.79 | 0.89 | 0.84 | 31/39 found, 31/35 expected | 0.6s | 3/17 |
-| heuristic | 0.71 | 0.50 | 0.58 | 145/204 found, 145/292 expected | 14.8s | 17/17 |
-| LLM (`glm-4.7`, best of 5 cached models) | 0.70 | 0.37 | 0.48 | 108/154 found, 108/292 expected | 306.8s | 17/17 |
+| heuristic | 0.71 | 0.50 | 0.58 | 145/204 found, 145/292 expected | 14.7s | 17/17 |
+| LLM (`qwen3.6-27b`, best of 10 cached models) | 0.72 | 0.37 | 0.49 | 107/148 found, 107/292 expected | 1922.5s | 17/17 |
 
 - **Outline scores highest but applies narrowly.** Only 3 of the 17 corpus
   books carry a real embedded PDF outline/bookmark catalog
@@ -413,7 +413,7 @@ reproduce.
   evaluation set" above). This table just confirms the same heuristic run
   through the new standalone harness (`evaluation/metrics.py`) reproduces
   identical per-book numbers.
-- **LLM standalone F1 improved from 0.29 to 0.48** after fixing two root
+- **LLM standalone F1 improved from 0.29 to 0.49** after fixing two root
   causes in `llm_extract_toc_entries` found by inspecting this table's
   first run (see
   `docs/superpowers/specs/2026-08-07-llm-toc-extraction-fix-design.md`):
@@ -426,39 +426,51 @@ reproduce.
   a parse failure, and narrow the scanned page range to the heuristic's
   detected TOC page(s) (+/-1 page) whenever it finds one. The clearest
   before/after evidence: the three books with 21-24 expected chapters that
-  previously scored exactly 0/0 across every one of the 5 models
+  previously scored exactly 0/0 across every one of the (then 5) models
   (`9783322969828.pdf`, `9783847432364.pdf`, `9783848736829.pdf`) now
-  score F1 0.71-0.86 across all five models (see `llm/index.html`).
-  `apertus-70b-instruct-2509` -- previously 0.00 on literally every book
-  because its 65536-token context window was smaller than every book's
-  blind-fraction prompt (~98K tokens for the largest) -- is no longer
-  categorically incompatible: the narrower input now fits its context
-  window on most books, and it scores F1 0.42 overall (95/158 found), the
-  worst of the five but no longer zero. It remains far slower than the
-  other four (1759s total vs. 139-307s), consistent with it being a larger
-  model rather than anything this fix changed. LLM standalone still trails
-  the heuristic's 0.58 and costs roughly 20x the time (306.8s vs. 14.8s
-  aggregate best-model), so this remains informational, not a
-  recommendation to route production through it -- but the truncation/
-  input-size bug that was previously suppressing its real accuracy is
-  closed. The remaining zero-recall books
+  score F1 0.71-0.86 across 9 of the current 10 cached models (see
+  `llm/index.html`) -- the sole holdout, `qwen3.5-122b-a10b`, still scores
+  0/0 on two of the three, consistent with it being the weakest model
+  overall (F1 0.32, lowest of the ten). `apertus-70b-instruct-2509` --
+  previously 0.00 on literally every book because its 65536-token context
+  window was smaller than every book's blind-fraction prompt (~98K tokens
+  for the largest) -- is no longer categorically incompatible: the
+  narrower input now fits its context window on most books, and it scores
+  F1 0.42 overall (95/158 found), no longer zero. LLM standalone still
+  trails the heuristic's 0.58 and costs far more time, so this remains
+  informational, not a recommendation to route production through it --
+  but the truncation/input-size bug that was previously suppressing its
+  real accuracy is closed. The remaining zero-recall books
   (`9783789057366.pdf`, `9783848704316.pdf`, `dnb-36942798X.pdf`) score at
   or near 0.00 across every LLM model (one exception: `apertus` finds 1 of
   56 expected chapters on `9783789057366.pdf`, recall 0.02), but these are
   the same three books the heuristic pipeline also can't recover any
   signal from (see "Diverse real-library evaluation set" above --
   degenerate/absent text layers, OCR quality) -- not an LLM-specific gap,
-  a shared data-quality problem
-  no text-based strategy can solve.
-- This is the second populated run of the LLM cache, and the first using
-  the new `--mode full` (added specifically for this fix: `--mode top5`
-  only touches the 5 currently-least-busy models, so a model that had
-  already been cached under the old, buggy extraction logic but wasn't
-  among the least-busy 5 this time would otherwise have kept its stale
-  pre-fix numbers indefinitely). `evaluation/refresh_llm_cache.py
-  --mode fill-gaps`, wired to a nightly schedule in
-  `.github/workflows/refresh-llm-cache.yml`, will grow the cache to cover
-  every non-busy KISSKI model on every book over time, once a
+  a shared data-quality problem no text-based strategy can solve.
+- **The "best" model by F1 is now a clear time-cost outlier.** All ten
+  cached models cluster tightly on accuracy (F1 0.32-0.49; nine of the ten
+  land within 0.42-0.49), but `qwen3.6-27b` -- the highest-F1 model at
+  0.49 -- took 1922.5s total, 4-14x longer than the other nine (134.7s-
+  1158.0s). This is presumably model-serving latency, not anything this
+  fix affects, but it means the report's "best model" pick (highest F1,
+  ties broken by lower time -- see `evaluation/generate_report.py`'s
+  `_best_llm_model()`) is choosing accuracy over speed here; a
+  deployment decision would likely prefer `mistral-medium-3.5-128b` or
+  `devstral-2-123b-instruct-2512` (F1 0.48, both under 420s total)
+  instead.
+- The LLM cache now covers 10 distinct KISSKI models, up from the initial
+  5: the nightly `fill-gaps` GitHub Actions job added 5 more
+  (`qwen3.5-122b-a10b`, `qwen3-coder-next`, `qwen3.6-27b`,
+  `qwen3.6-35b-a3b`, `mistral-medium-3.5-128b`) under the *old, buggy*
+  extraction code before this fix reached `main`; merging that commit in
+  and re-running the new `evaluation/refresh_llm_cache.py --mode full`
+  (added specifically for this situation -- `--mode top5`/`--mode
+  fill-gaps` alone never force a re-run of an already-cached model)
+  regenerated all ten under the fixed code, which is what this table
+  reports. `--mode fill-gaps`'s nightly schedule
+  (`.github/workflows/refresh-llm-cache.yml`) will keep growing coverage
+  to every non-busy KISSKI model on every book over time, once a
   `KISSKI_API_KEY` repository secret is configured.
 
 ## LLM-fallback results (archived -- script removed)

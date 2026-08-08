@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T04:34:23.993759+00:00",
+  "generated_at": "2026-08-08T10:35:09.288943+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -313,7 +313,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 108.81258224998601,
+      "elapsed_seconds": 108.53195270802826,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -329,7 +329,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 13.307639749953523,
+      "elapsed_seconds": 6.277567791985348,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -345,7 +345,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 5.088039041962475,
+      "elapsed_seconds": 8.585458165965974,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -361,7 +361,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 9.138720999937505,
+      "elapsed_seconds": 12.186208624974824,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -377,18 +377,18 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 3.0034211250022054,
+      "elapsed_seconds": 2.9563560830429196,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 15.565042694999988,
+      "elapsed_seconds": 63.34556712489575,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
       "chapters": [
         {
-          "title": "Hagen Hof: Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben",
+          "title": "Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben",
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
@@ -398,13 +398,13 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 11.906525949999946,
+      "elapsed_seconds": 2.8340629159938544,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
       "chapters": [
         {
-          "title": "Hagen Hof: Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben",
+          "title": "Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben",
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
@@ -414,18 +414,40 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 59.88231930799998,
+      "elapsed_seconds": 7.601857207948342,
       "demand_at_run": 0
     },
     "qwen3.6-35b-a3b": {
-      "chapters": [],
-      "elapsed_seconds": 13.60191746800001,
+      "chapters": [
+        {
+          "title": "Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben.",
+          "authors": [],
+          "pdf_start_index": 504,
+          "pdf_end_index": 702,
+          "citation_pages": null,
+          "confidence": 0.85,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 79.84930208302103,
       "demand_at_run": 0
     },
     "qwen3.6-27b": {
-      "chapters": [],
-      "elapsed_seconds": 40.18823881100002,
-      "demand_at_run": 0
+      "chapters": [
+        {
+          "title": "Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben.",
+          "authors": [],
+          "pdf_start_index": 504,
+          "pdf_end_index": 702,
+          "citation_pages": null,
+          "confidence": 0.85,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 125.20197929209098,
+      "demand_at_run": 2
     }
   }
 }

@@ -494,10 +494,13 @@ find its table of contents. Some layouts don't use simple dotted leaders \
 
 Return ONLY a JSON array, one entry per real chapter -- skip \
 acknowledgements, bibliography, index, and part-divider pages:
-[{{"title": "...", "authors": ["First Last", ...], "printed_page_number": 12}}]
+[{{"title": "...", "authors": ["First Last", ...], "printed_page_number": "12"}}]
 
-If a chapter's printed page number is not visible in this text, use null \
-for printed_page_number. If authors are not identifiable, use an empty list."""
+printed_page_number is the page number exactly AS PRINTED on the page -- \
+copy it verbatim, including roman numerals for front-matter chapters \
+(e.g. "vii", not 7). If a chapter's printed page number is not visible in \
+this text, use null for printed_page_number. If authors are not \
+identifiable, use an empty list."""
 
 
 def _llm_scan_indices(pages: list[str]) -> list[int]:
@@ -619,15 +622,25 @@ async def llm_extract_toc_entries(pages: list[str], llm_client: LLMClient) -> li
         # author-aware disambiguation downstream.
         authors = tuple(str(a).strip() for a in raw_authors if str(a).strip()) if isinstance(raw_authors, list) else ()
         printed = item.get("printed_page_number")
-        # -1 is a sentinel for "unknown" (LLM returned null or an
-        # unparseable value) -- never a real printed page number, and
-        # currently unread by any downstream consumer (see TocEntry).
-        printed_page_number = int(printed) if isinstance(printed, (int, float)) else -1
+        if isinstance(printed, (int, float)):
+            # Tolerate a model that ignores the string instruction and
+            # returns a bare number anyway -- still unambiguous for the
+            # arabic case.
+            printed = str(int(printed))
+        parsed_value = _parse_toc_page_number(printed.strip()) if isinstance(printed, str) else None
+        # -1 is a sentinel for "unknown" (LLM returned null, an unparseable
+        # value, or an implausible one, e.g. a roman numeral over
+        # _ROMAN_PAGE_MAX_VALUE) -- never a real printed page number.
+        printed_page_number = parsed_value if parsed_value is not None else -1
+        printed_roman = parsed_value is not None and not printed.strip().isdigit()
         # source_page_index is a sentinel here -- unlike a regex-found entry,
         # an LLM-extracted entry has no single "the TOC line was on this
         # page" origin; the orchestration layer excludes the whole scanned
         # front/back-matter range instead (see _toc_scan_indices).
-        entries.append(TocEntry(title=title, printed_page_number=printed_page_number, source_page_index=-1, authors=authors))
+        entries.append(TocEntry(
+            title=title, printed_page_number=printed_page_number, source_page_index=-1,
+            authors=authors, printed_roman=printed_roman,
+        ))
     return entries
 
 

@@ -570,6 +570,38 @@ class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(entries, [])
         self.assertTrue(any("invalid_or_truncated_json" in message for message in cm.output))
 
+    async def test_parses_roman_numeral_page_string(self):
+        llm = self._fake_llm('[{"title": "Foreword", "authors": [], "printed_page_number": "vii"}]')
+        entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
+        self.assertEqual(entries[0].printed_page_number, 7)
+        self.assertTrue(entries[0].printed_roman)
+
+    async def test_parses_arabic_page_string(self):
+        llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": "12"}]')
+        entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
+        self.assertEqual(entries[0].printed_page_number, 12)
+        self.assertFalse(entries[0].printed_roman)
+
+    async def test_tolerates_legacy_bare_int_page_number(self):
+        llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": 12}]')
+        entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
+        self.assertEqual(entries[0].printed_page_number, 12)
+        self.assertFalse(entries[0].printed_roman)
+
+    async def test_null_page_number_still_uses_sentinel(self):
+        llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": null}]')
+        entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
+        self.assertEqual(entries[0].printed_page_number, -1)
+        self.assertFalse(entries[0].printed_roman)
+
+    async def test_implausible_roman_string_uses_sentinel(self):
+        # Over _ROMAN_PAGE_MAX_VALUE (50) -- _parse_toc_page_number rejects
+        # it as an implausible roman numeral, same as a heuristic-found one.
+        llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": "mmmm"}]')
+        entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
+        self.assertEqual(entries[0].printed_page_number, -1)
+        self.assertFalse(entries[0].printed_roman)
+
 
 class TestLlmDisambiguateChapterStart(unittest.IsolatedAsyncioTestCase):
     def _fake_llm(self, response: str):

@@ -1381,7 +1381,7 @@ def _chapters_from_located(
             next_entry is not None
             and next_entry.printed_roman == entry.printed_roman
             and _toc_declared_page(next_entry, total_pages) is not None
-            and next_entry.printed_page_number - 1 >= 0
+            and next_entry.printed_page_number - 1 > 0
         ):
             end_printed = _format_page_number(next_entry.printed_page_number - 1, entry.printed_roman)
         end_is_high = False

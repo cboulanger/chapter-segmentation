@@ -1334,6 +1334,31 @@ class TestChaptersFromLocatedPageNumberPriority(unittest.TestCase):
         self.assertEqual(chapters[0]["citation_pages"], "vii-6")
         self.assertEqual(chapters[0]["page_mapping_confidence"], "high")
 
+    def test_end_derivation_skipped_when_next_entry_is_page_one(self):
+        # next_entry.printed_page_number - 1 == 0 must not produce an empty
+        # roman string ("") that then silently slips past every "is None"
+        # fallback check downstream. The fixture needs a real gap between
+        # the two located entries (second's raw start at index 2, not 1) so
+        # that the first chapter's trimmed end_index (1) lands on a
+        # distinct page from its own start_index (0) -- otherwise the
+        # fallthrough would just re-read the start page's own number and
+        # the test couldn't tell a correct fallthrough from the bug
+        # producing the same start/end value by coincidence.
+        pages = [
+            self._FILLER + "\n\niii",
+            self._FILLER + "\n\nii",
+            self._FILLER + "\n\ni",
+        ]
+        first = TocEntry(title="Foreword", printed_page_number=3, source_page_index=0, printed_roman=True)
+        second = TocEntry(title="Preface", printed_page_number=1, source_page_index=1, printed_roman=True)
+        located = [
+            (first, ChapterStartMatch(index=0, score=100.0, margin=20.0)),
+            (second, ChapterStartMatch(index=2, score=100.0, margin=20.0)),
+        ]
+        chapters = _chapters_from_located(pages, located)
+        self.assertEqual(chapters[0]["citation_pages"], "iii-ii")
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "high")
+
     def test_fallback_end_used_when_direct_extraction_and_interpolation_both_fail(self):
         pages = [
             self._FILLER + "\n\n12",  # chapter 1 start, own number readable directly

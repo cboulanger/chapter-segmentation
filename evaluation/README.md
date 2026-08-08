@@ -191,6 +191,15 @@ behavior specifically -- for the outline and LLM strategies evaluated
 independently of any pipeline decision, see "Per-strategy evaluation
 report" and "LLM strategy evaluation" above.)
 
+## Related: Crossref-sourced ground-truth corpus
+
+`evaluation/crossref_gt/` holds a separate, standalone corpus of 46
+open-access books with their Crossref-registered chapter metadata,
+sourced specifically to eventually evaluate `CrossrefMetadataStrategy`
+against ground truth pulled from the same system it queries. It is not
+yet wired into any of the harnesses documented above -- see
+`evaluation/crossref_gt/README.md` for its own schema and status.
+
 ## Evaluation set composition
 
 The committed `manifest.json` set (7 books) is small and, per the design

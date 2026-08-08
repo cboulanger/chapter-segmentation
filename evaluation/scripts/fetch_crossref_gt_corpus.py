@@ -38,8 +38,8 @@ _DEFAULT_CONTACT_EMAIL = "boulanger@lhlt.mpg.de"
 
 # httpx's default User-Agent ("python-httpx/x.y.z") gets blocklisted by
 # more than one publisher's bot-management layer -- found empirically while
-# curating the manifest (see docs/superpowers/plans/
-# 2026-08-08-crossref-gt-corpus.md Task 3):
+# curating the manifest (see evaluation/crossref_gt/README.md's "Downloading:
+# host-specific quirks" section for the full writeup):
 # - Open Book Publishers' host sits behind an AWS WAF that serves an HTTP
 #   202 "challenge" page unless the request carries a browser-like UA.
 # - Springer serves a JS "Client Challenge" page specifically to requests
@@ -99,16 +99,22 @@ def _crossref_book_chapters(isbn: str, client: httpx.Client, contact_email: Opti
     return [item for item in items if item.get("type") == "book-chapter"]
 
 
-def _normalize_chapter(item: dict) -> dict:
+def _normalize_chapter(item: dict) -> Optional[dict]:
     """Projects a raw Crossref book-chapter item to {title, authors,
-    chapter_doi, citation_pages}. title follows the same title+subtitle
-    join convention as CrossrefMetadataStrategy's _parse_crossref_item
-    (src/chapter_segmentation/evidence/crossref_strategy.py) -- Crossref
-    splits a chapter's real printed heading into separate title/subtitle
-    fields, so title alone is often a truncated fragment."""
+    chapter_doi, citation_pages}, or None if the item has no title at all
+    -- matching CrossrefMetadataStrategy's _parse_crossref_item
+    (src/chapter_segmentation/evidence/crossref_strategy.py), which drops
+    such items rather than emit a placeholder. Untitled items still appear
+    verbatim in raw_items; only the normalized chapters projection drops
+    them. When a title is present, title follows the same title+subtitle
+    join convention as _parse_crossref_item -- Crossref splits a chapter's
+    real printed heading into separate title/subtitle fields, so title
+    alone is often a truncated fragment."""
     titles = item.get("title") or []
+    if not titles:
+        return None
     subtitles = item.get("subtitle") or []
-    title = " ".join(part for part in (titles[0] if titles else "", subtitles[0] if subtitles else "") if part)
+    title = " ".join(part for part in (titles[0], subtitles[0] if subtitles else "") if part)
     authors = [
         f"{a.get('given', '')} {a.get('family', '')}".strip()
         for a in item.get("author", []) if a.get("family")
@@ -139,7 +145,7 @@ def _fetch_crossref_metadata(
             print(f"  [warn] corrupted cache file {target.name}, refetching: {exc}")
 
     raw_items = _crossref_book_chapters(isbn, client, contact_email)
-    chapters = [_normalize_chapter(item) for item in raw_items]
+    chapters = [c for item in raw_items if (c := _normalize_chapter(item)) is not None]
     payload = {
         "isbn": isbn,
         "fetched_at": datetime.now(timezone.utc).isoformat(),
@@ -152,7 +158,12 @@ def _fetch_crossref_metadata(
 
 def _download_pdf(book: dict, client: httpx.Client, target: Path, force: bool) -> str:
     """Returns 'skip', 'downloaded', or 'failed'. Never raises -- a failed
-    download for one book must not abort the batch."""
+    download for one book must not abort the batch. The User-Agent is
+    chosen from the manifest's download_url host, not any host a redirect
+    may land on -- a host-specific bot wall could still serve an HTML
+    challenge page as an HTTP 200/202 "success", so the magic-byte check
+    below is what actually catches that, not the UA choice or status code
+    alone."""
     if target.exists() and not force:
         return "skip"
     is_obp = urlsplit(book["download_url"]).hostname == _OBP_HOST
@@ -162,6 +173,9 @@ def _download_pdf(book: dict, client: httpx.Client, target: Path, force: bool) -
         response.raise_for_status()
     except httpx.HTTPError as exc:
         print(f"  [warn] failed to download PDF for {book['isbn']}: {exc}")
+        return "failed"
+    if not response.content.startswith(b"%PDF-"):
+        print(f"  [warn] response for {book['isbn']} is not a PDF (bot-wall challenge page?), not writing it")
         return "failed"
     target.write_bytes(response.content)
     return "downloaded"

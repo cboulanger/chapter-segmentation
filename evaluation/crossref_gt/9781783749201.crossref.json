@@ -1,8 +1,27 @@
 {
   "isbn": "9781783749201",
-  "fetched_at": "2026-08-08T16:37:40.311860+00:00",
+  "fetched_at": "2026-08-09T12:57:24.893597+00:00",
+  "license": "http://creativecommons.org/licenses/by-nc-nd/4.0",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.15",
       "type": "book-chapter",
       "page": "217-248",
@@ -65,6 +84,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.18",
       "type": "book-chapter",
       "page": "289-300",
@@ -127,6 +164,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.09",
       "type": "book-chapter",
       "page": "121-136",
@@ -189,6 +244,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.13",
       "type": "book-chapter",
       "page": "187-202",
@@ -251,6 +324,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.06",
       "type": "book-chapter",
       "page": "75-88",
@@ -313,6 +404,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.03",
       "type": "book-chapter",
       "page": "31-44",
@@ -375,6 +484,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.08",
       "type": "book-chapter",
       "page": "105-120",
@@ -437,6 +564,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.16",
       "type": "book-chapter",
       "page": "249-278",
@@ -499,6 +644,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.02",
       "type": "book-chapter",
       "page": "17-30",
@@ -561,6 +724,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.19",
       "type": "book-chapter",
       "page": "301-312",
@@ -623,6 +804,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.20",
       "type": "book-chapter",
       "page": "313-328",
@@ -685,6 +884,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.01",
       "type": "book-chapter",
       "page": "3-16",
@@ -747,6 +964,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.14",
       "type": "book-chapter",
       "page": "203-214",
@@ -809,6 +1044,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.12",
       "type": "book-chapter",
       "page": "175-186",
@@ -871,6 +1124,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.10",
       "type": "book-chapter",
       "page": "137-156",
@@ -933,6 +1204,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.11",
       "type": "book-chapter",
       "page": "157-174",
@@ -995,6 +1284,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.04",
       "type": "book-chapter",
       "page": "45-56",
@@ -1057,6 +1364,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.17",
       "type": "book-chapter",
       "page": "281-288",
@@ -1119,6 +1444,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.07",
       "type": "book-chapter",
       "page": "89-102",
@@ -1181,6 +1524,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2020-04-01T00:00:00Z",
+            "timestamp": 1585699200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0204.05",
       "type": "book-chapter",
       "page": "57-74",

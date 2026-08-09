@@ -1,8 +1,27 @@
 {
   "isbn": "9781800642621",
-  "fetched_at": "2026-08-08T16:38:09.382114+00:00",
+  "fetched_at": "2026-08-09T12:57:28.273008+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.09",
       "type": "book-chapter",
       "page": "113-126",
@@ -61,6 +80,112 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0265.17",
+      "type": "book-chapter",
+      "page": "225-230",
+      "title": [
+        "17. Inside Out COPs"
+      ],
+      "author": [
+        {
+          "given": "Shahrin",
+          "family": "Mannan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Saleemul",
+          "family": "Huq",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mizan R.",
+          "family": "Khan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Negotiating Climate Change in Crisis"
+      ],
+      "subtitle": [
+        "Turning Climate Negotiations Upside Down"
+      ],
+      "ISBN": [
+        "9781800642607",
+        "9781800642614",
+        "9781800642621",
+        "9781800646568",
+        "9781800642652",
+        "9781800642638",
+        "9781800642645"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.10",
       "type": "book-chapter",
       "page": "127-138",
@@ -107,6 +232,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.05",
       "type": "book-chapter",
       "page": "53-62",
@@ -186,76 +329,24 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0265.17",
-      "type": "book-chapter",
-      "page": "225-230",
-      "title": [
-        "17. Inside Out COPs"
-      ],
-      "author": [
+      "license": [
         {
-          "given": "Shahrin",
-          "family": "Mannan",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Saleemul",
-          "family": "Huq",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Mizan R.",
-          "family": "Khan",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "container-title": [
-        "Negotiating Climate Change in Crisis"
-      ],
-      "subtitle": [
-        "Turning Climate Negotiations Upside Down"
-      ],
-      "ISBN": [
-        "9781800642607",
-        "9781800642614",
-        "9781800642621",
-        "9781800646568",
-        "9781800642652",
-        "9781800642638",
-        "9781800642645"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2021,
-            9,
-            28
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.11647/obp.0265.23",
       "type": "book-chapter",
       "page": "303-312",
@@ -299,6 +390,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.16",
       "type": "book-chapter",
       "page": "217-224",
@@ -357,6 +466,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.04",
       "type": "book-chapter",
       "page": "39-52",
@@ -426,6 +553,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.24",
       "type": "book-chapter",
       "page": "313-322",
@@ -472,6 +617,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.21",
       "type": "book-chapter",
       "page": "277-288",
@@ -527,6 +690,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.11",
       "type": "book-chapter",
       "page": "139-156",
@@ -575,6 +756,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.07",
       "type": "book-chapter",
       "page": "83-96",
@@ -618,6 +817,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.02",
       "type": "book-chapter",
       "page": "13-24",
@@ -796,6 +1013,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.01",
       "type": "book-chapter",
       "page": "3-12",
@@ -839,6 +1074,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.15",
       "type": "book-chapter",
       "page": "209-216",
@@ -882,6 +1135,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.27",
       "type": "book-chapter",
       "page": "353-366",
@@ -925,6 +1196,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.19",
       "type": "book-chapter",
       "page": "243-252",
@@ -971,6 +1260,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.06",
       "type": "book-chapter",
       "page": "63-82",
@@ -1170,6 +1477,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.03",
       "type": "book-chapter",
       "page": "25-36",
@@ -1215,6 +1540,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.26",
       "type": "book-chapter",
       "page": "335-352",
@@ -1261,6 +1604,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.20",
       "type": "book-chapter",
       "page": "255-276",
@@ -1304,6 +1665,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.14",
       "type": "book-chapter",
       "page": "189-206",
@@ -1352,6 +1731,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.12",
       "type": "book-chapter",
       "page": "159-172",
@@ -1421,6 +1818,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.22",
       "type": "book-chapter",
       "page": "291-302",
@@ -1464,6 +1879,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.08",
       "type": "book-chapter",
       "page": "97-110",
@@ -1507,6 +1940,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.13",
       "type": "book-chapter",
       "page": "173-188",
@@ -1579,6 +2030,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.29",
       "type": "book-chapter",
       "page": "xxxiii-lxx",
@@ -1641,6 +2110,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.28",
       "type": "book-chapter",
       "page": "367-378",
@@ -1699,6 +2186,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.18",
       "type": "book-chapter",
       "page": "231-242",
@@ -1745,6 +2250,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0265.25",
       "type": "book-chapter",
       "page": "323-334",
@@ -1802,6 +2325,16 @@
       "citation_pages": "113-126"
     },
     {
+      "title": "17. Inside Out COPs Turning Climate Negotiations Upside Down",
+      "authors": [
+        "Shahrin Mannan",
+        "Saleemul Huq",
+        "Mizan R. Khan"
+      ],
+      "chapter_doi": "10.11647/obp.0265.17",
+      "citation_pages": "225-230"
+    },
+    {
       "title": "10. End the ‘Green’ Delusions Industrial-Scale Renewable Energy is Fossil Fuel+",
       "authors": [
         "Alexander Dunlap"
@@ -1819,16 +2352,6 @@
       ],
       "chapter_doi": "10.11647/obp.0265.05",
       "citation_pages": "53-62"
-    },
-    {
-      "title": "17. Inside Out COPs Turning Climate Negotiations Upside Down",
-      "authors": [
-        "Shahrin Mannan",
-        "Saleemul Huq",
-        "Mizan R. Khan"
-      ],
-      "chapter_doi": "10.11647/obp.0265.17",
-      "citation_pages": "225-230"
     },
     {
       "title": "23. Climate Politics between Conflict and Complexity",

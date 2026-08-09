@@ -59,9 +59,15 @@ warning currently present in this corpus.
   "domain": "linguistics",
   "language": "en",
   "publisher": "Language Science Press",
-  "download_url": "https://.../book.pdf"
+  "download_url": "https://.../book.pdf",
+  "license": "https://creativecommons.org/licenses/by/4.0"
 }
 ```
+
+`license` is the book's registered OA license URL, filled in by
+`fetch_crossref_gt_corpus.py` from Crossref's own `license` metadata (see
+below) -- `null` for the rare book with no license registered there (see
+"Known gaps").
 
 ## `<isbn>.crossref.json` schema
 
@@ -69,6 +75,7 @@ warning currently present in this corpus.
 {
   "isbn": "9783961102546",
   "fetched_at": "2026-08-08T12:00:00+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0",
   "raw_items": [ /* verbatim Crossref message.items entries, type=="book-chapter" only */ ],
   "chapters": [
     {"title": "...", "authors": ["..."], "chapter_doi": "10...", "citation_pages": "19-39"}
@@ -77,11 +84,19 @@ warning currently present in this corpus.
 ```
 
 `raw_items` is the untouched Crossref API response for whatever a later
-integration pass might need beyond the normalized view. In `chapters`,
-`title` follows `CrossrefMetadataStrategy`'s title+subtitle join
-convention (Crossref splits a chapter's real printed heading into
-separate `title`/`subtitle` fields); `citation_pages` is the raw Crossref
-`page` string as-is (e.g. `"19-39"`), not split or parsed.
+integration pass might need beyond the normalized view (each item now also
+carries Crossref's raw `license` array, since `license` is now part of the
+`select` fetch). In `chapters`, `title` follows `CrossrefMetadataStrategy`'s
+title+subtitle join convention (Crossref splits a chapter's real printed
+heading into separate `title`/`subtitle` fields); `citation_pages` is the
+raw Crossref `page` string as-is (e.g. `"19-39"`), not split or parsed.
+
+The top-level `license` field is derived by majority vote across every
+chapter's own registered license (in practice unanimous -- Crossref
+license metadata is registered once per book and inherited by each
+chapter), preferring each chapter's version-of-record entry
+(`content-version=="vor"`, `delay-in-days==0`) over an embargoed variant
+that may be registered alongside it.
 
 ## Coverage
 
@@ -120,6 +135,18 @@ any non-browser client.
   de l'ouvrage" -- a funding-acknowledgment blurb, not a real chapter) has
   no `page` value. Expected Crossref registration noise, not a defect in
   this corpus; the other 14 chapters are complete.
+- 10 books have `"license": null` -- Crossref has no `license` metadata
+  registered for any of their chapters, even though every one of these
+  books is genuinely OA (its PDF is downloaded directly from the
+  publisher's own OA repository/mirror, same as every other book here).
+  This is a publisher-side Crossref registration gap, not a curation
+  error: 5 from UCL Press (`9781800088375`, `9781787359260`,
+  `9781800086586`, `9781800082731`, `9781800085787`), 2 from Athabasca
+  University Press (`9781771993326`, `9781771992862`), and 3 from
+  transcript Verlag (`9783839473948`, `9783839413197`, `9783837621310`).
+  A human would need to look up each book's actual license by hand (its
+  publisher landing page) to fill this in; `fetch_crossref_gt_corpus.py`
+  only ever reports what Crossref has registered.
 
 ## Downloading: host-specific quirks
 

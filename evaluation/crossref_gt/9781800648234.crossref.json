@@ -1,8 +1,27 @@
 {
   "isbn": "9781800648234",
-  "fetched_at": "2026-08-08T16:38:19.219923+00:00",
+  "fetched_at": "2026-08-09T12:57:30.381049+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.01",
       "type": "book-chapter",
       "page": "1-20",
@@ -63,6 +82,88 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0316.08",
+      "type": "book-chapter",
+      "page": "133-148",
+      "title": [
+        "8. Global Citizenship"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5879-7652",
+          "authenticated-orcid": false,
+          "given": "Manuella Heloisa",
+          "family": "de Souza Carrijo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.12",
       "type": "book-chapter",
       "page": "197-210",
@@ -123,52 +224,24 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0316.08",
-      "type": "book-chapter",
-      "page": "133-148",
-      "title": [
-        "8. Global Citizenship"
-      ],
-      "author": [
+      "license": [
         {
-          "ORCID": "https://orcid.org/0000-0002-5879-7652",
-          "authenticated-orcid": false,
-          "given": "Manuella Heloisa",
-          "family": "de Souza Carrijo",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
       ],
-      "container-title": [
-        "Studies on Mathematics Education and Society",
-        "Landscapes of Investigation"
-      ],
-      "ISBN": [
-        "9781800648210",
-        "9781800648227",
-        "9781800648234",
-        "9781800648272",
-        "9781800648265",
-        "9781800648241",
-        "9781800648258"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2022,
-            12,
-            9
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.11647/obp.0316.16",
       "type": "book-chapter",
       "page": "257-272",
@@ -218,6 +291,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.18",
       "type": "book-chapter",
       "page": "295-322",
@@ -281,6 +372,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.07",
       "type": "book-chapter",
       "page": "115-132",
@@ -327,6 +436,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.05",
       "type": "book-chapter",
       "page": "69-94",
@@ -376,6 +503,88 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0316.09",
+      "type": "book-chapter",
+      "page": "149-162",
+      "title": [
+        "9. About Unfinishedness, Dreams and Landscapes of Investigation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4527-1184",
+          "authenticated-orcid": false,
+          "given": "Daniela",
+          "family": "Alves Soares",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.19",
       "type": "book-chapter",
       "page": "ix-xii",
@@ -436,52 +645,24 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0316.09",
-      "type": "book-chapter",
-      "page": "149-162",
-      "title": [
-        "9. About Unfinishedness, Dreams and Landscapes of Investigation"
-      ],
-      "author": [
+      "license": [
         {
-          "ORCID": "https://orcid.org/0000-0002-4527-1184",
-          "authenticated-orcid": false,
-          "given": "Daniela",
-          "family": "Alves Soares",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
       ],
-      "container-title": [
-        "Studies on Mathematics Education and Society",
-        "Landscapes of Investigation"
-      ],
-      "ISBN": [
-        "9781800648210",
-        "9781800648227",
-        "9781800648234",
-        "9781800648272",
-        "9781800648265",
-        "9781800648241",
-        "9781800648258"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2022,
-            12,
-            9
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.11647/obp.0316.15",
       "type": "book-chapter",
       "page": "247-256",
@@ -528,52 +709,24 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0316.11",
-      "type": "book-chapter",
-      "page": "185-196",
-      "title": [
-        "11. Inclusive Landscapes of Investigation"
-      ],
-      "author": [
+      "license": [
         {
-          "ORCID": "https://orcid.org/0000-0002-1528-796X",
-          "authenticated-orcid": false,
-          "given": "Ole",
-          "family": "Skovsmose",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/legalcode"
         }
       ],
-      "container-title": [
-        "Studies on Mathematics Education and Society",
-        "Landscapes of Investigation"
-      ],
-      "ISBN": [
-        "9781800648210",
-        "9781800648227",
-        "9781800648234",
-        "9781800648272",
-        "9781800648265",
-        "9781800648241",
-        "9781800648258"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2022,
-            12,
-            9
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.11647/obp.0316.14",
       "type": "book-chapter",
       "page": "223-246",
@@ -648,6 +801,88 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0316.11",
+      "type": "book-chapter",
+      "page": "185-196",
+      "title": [
+        "11. Inclusive Landscapes of Investigation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1528-796X",
+          "authenticated-orcid": false,
+          "given": "Ole",
+          "family": "Skovsmose",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Studies on Mathematics Education and Society",
+        "Landscapes of Investigation"
+      ],
+      "ISBN": [
+        "9781800648210",
+        "9781800648227",
+        "9781800648234",
+        "9781800648272",
+        "9781800648265",
+        "9781800648241",
+        "9781800648258"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.10",
       "type": "book-chapter",
       "page": "163-184",
@@ -697,6 +932,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.13",
       "type": "book-chapter",
       "page": "211-222",
@@ -760,6 +1013,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.04",
       "type": "book-chapter",
       "page": "57-68",
@@ -820,6 +1091,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.02",
       "type": "book-chapter",
       "page": "21-38",
@@ -880,6 +1169,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/legalcode"
+        }
+      ],
       "DOI": "10.11647/obp.0316.17",
       "type": "book-chapter",
       "page": "273-294",
@@ -985,6 +1292,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.06",
       "type": "book-chapter",
       "page": "95-114",
@@ -1101,6 +1426,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                9
+              ]
+            ],
+            "date-time": "2022-12-09T00:00:00Z",
+            "timestamp": 1670544000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0316.03",
       "type": "book-chapter",
       "page": "39-56",
@@ -1158,6 +1501,14 @@
       "citation_pages": "1-20"
     },
     {
+      "title": "8. Global Citizenship",
+      "authors": [
+        "Manuella Heloisa de Souza Carrijo"
+      ],
+      "chapter_doi": "10.11647/obp.0316.08",
+      "citation_pages": "133-148"
+    },
+    {
       "title": "12. Meetings amongst Deaf and Hearing Students in the Mathematics Classroom",
       "authors": [
         "Amanda Queiroz Moura",
@@ -1165,14 +1516,6 @@
       ],
       "chapter_doi": "10.11647/obp.0316.12",
       "citation_pages": "197-210"
-    },
-    {
-      "title": "8. Global Citizenship",
-      "authors": [
-        "Manuella Heloisa de Souza Carrijo"
-      ],
-      "chapter_doi": "10.11647/obp.0316.08",
-      "citation_pages": "133-148"
     },
     {
       "title": "16. Opening an Exercise Prospective Mathematics Teachers Entering into Landscapes of Investigation",
@@ -1208,6 +1551,14 @@
       "citation_pages": "69-94"
     },
     {
+      "title": "9. About Unfinishedness, Dreams and Landscapes of Investigation",
+      "authors": [
+        "Daniela Alves Soares"
+      ],
+      "chapter_doi": "10.11647/obp.0316.09",
+      "citation_pages": "149-162"
+    },
+    {
       "title": "Preface",
       "authors": [
         "Miriam Godoy Penteado",
@@ -1215,14 +1566,6 @@
       ],
       "chapter_doi": "10.11647/obp.0316.19",
       "citation_pages": "ix-xii"
-    },
-    {
-      "title": "9. About Unfinishedness, Dreams and Landscapes of Investigation",
-      "authors": [
-        "Daniela Alves Soares"
-      ],
-      "chapter_doi": "10.11647/obp.0316.09",
-      "citation_pages": "149-162"
     },
     {
       "title": "15. The Investigative Approach to Talking about Inclusion in Mathematics Teacher Education",
@@ -1233,14 +1576,6 @@
       "citation_pages": "247-256"
     },
     {
-      "title": "11. Inclusive Landscapes of Investigation",
-      "authors": [
-        "Ole Skovsmose"
-      ],
-      "chapter_doi": "10.11647/obp.0316.11",
-      "citation_pages": "185-196"
-    },
-    {
       "title": "14. Landscapes of Investigation with Seniors",
       "authors": [
         "Guilherme Henrique Gomes da Silva",
@@ -1249,6 +1584,14 @@
       ],
       "chapter_doi": "10.11647/obp.0316.14",
       "citation_pages": "223-246"
+    },
+    {
+      "title": "11. Inclusive Landscapes of Investigation",
+      "authors": [
+        "Ole Skovsmose"
+      ],
+      "chapter_doi": "10.11647/obp.0316.11",
+      "citation_pages": "185-196"
     },
     {
       "title": "10. Dialogue in Eternity Children, Mathematics, and Landscapes of Investigation",

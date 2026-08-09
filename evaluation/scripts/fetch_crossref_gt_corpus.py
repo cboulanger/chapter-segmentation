@@ -3,10 +3,13 @@
 
 Reads evaluation/crossref_gt/manifest.json (the curated list of open-access
 books — see evaluation/crossref_gt/README.md) and, for each book, downloads
-its PDF and its Crossref-registered book-chapter metadata into that same
-directory. Both steps are independently skipped if their target file
-already exists, so a partial prior run resumes cleanly; --force refetches
-everything.
+its PDF and its Crossref-registered book-chapter metadata (including each
+chapter's registered OA license) into that same directory. Both steps are
+independently skipped if their target file already exists, so a partial
+prior run resumes cleanly; --force refetches everything. The book's OA
+license URL (majority vote across its chapters' individually-registered
+licenses) is written to both <isbn>.crossref.json and back into
+manifest.json's "license" field.
 
 This corpus is standalone -- it is not yet consumed by
 tests/test_segmentation_accuracy.py or evaluation/generate_report.py.
@@ -14,12 +17,14 @@ tests/test_segmentation_accuracy.py or evaluation/generate_report.py.
 Usage:
     uv run python evaluation/scripts/fetch_crossref_gt_corpus.py
     uv run python evaluation/scripts/fetch_crossref_gt_corpus.py --force
+    uv run python evaluation/scripts/fetch_crossref_gt_corpus.py --force-metadata
     uv run python evaluation/scripts/fetch_crossref_gt_corpus.py --contact-email you@example.org
 """
 
 import argparse
 import json
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
@@ -67,7 +72,7 @@ def _crossref_book_chapters(isbn: str, client: httpx.Client, contact_email: Opti
     result -- never raises, so one bad book never aborts the batch."""
     params: dict[str, str | int] = {
         "filter": f"isbn:{isbn}",
-        "select": "DOI,title,subtitle,author,page,type,container-title,published,ISBN",
+        "select": "DOI,title,subtitle,author,page,type,container-title,published,ISBN,license",
         "rows": 100,
     }
     if contact_email:
@@ -127,33 +132,60 @@ def _normalize_chapter(item: dict) -> Optional[dict]:
     }
 
 
+def _item_license_url(item: dict) -> Optional[str]:
+    """The registered OA license URL for one Crossref item, preferring the
+    version-of-record entry (content-version=="vor", delay-in-days==0) --
+    the license that actually applies to the publicly available PDF, not
+    an embargoed accepted-manuscript variant Crossref may register
+    alongside it."""
+    licenses = item.get("license") or []
+    for entry in licenses:
+        if entry.get("content-version") == "vor" and entry.get("delay-in-days", 0) == 0:
+            return entry.get("URL")
+    return licenses[0].get("URL") if licenses else None
+
+
+def _book_license_url(raw_items: list[dict]) -> Optional[str]:
+    """The book's OA license URL, by majority vote across its chapters'
+    individually-registered licenses -- in practice unanimous, since
+    Crossref licenses are registered once per book and inherited by every
+    chapter, but a vote is cheap insurance against one mis-registered
+    chapter. None if no chapter has a registered license at all."""
+    urls = [url for item in raw_items if (url := _item_license_url(item)) is not None]
+    if not urls:
+        return None
+    return Counter(urls).most_common(1)[0][0]
+
+
 def _fetch_crossref_metadata(
     isbn: str, client: httpx.Client, contact_email: Optional[str], target: Path, force: bool
-) -> tuple[int, int]:
+) -> tuple[int, int, Optional[str]]:
     """Writes target (<isbn>.crossref.json) unless it already exists and
-    not force. Returns (chapter_count, chapters_missing_page_range) either
-    way, so the caller can flag books needing review even on a skipped
-    (already-fetched) run. A corrupted/truncated cache file (e.g. from a
-    prior run interrupted mid-write) is treated as a cache miss -- never
-    raises, so one bad book never aborts the batch."""
+    not force. Returns (chapter_count, chapters_missing_page_range,
+    license_url) either way, so the caller can flag books needing review
+    even on a skipped (already-fetched) run. A corrupted/truncated cache
+    file (e.g. from a prior run interrupted mid-write) is treated as a
+    cache miss -- never raises, so one bad book never aborts the batch."""
     if target.exists() and not force:
         try:
             cached = json.loads(target.read_text(encoding="utf-8"))
             chapters = cached["chapters"]
-            return len(chapters), sum(1 for c in chapters if not c["citation_pages"])
+            return len(chapters), sum(1 for c in chapters if not c["citation_pages"]), cached.get("license")
         except Exception as exc:
             print(f"  [warn] corrupted cache file {target.name}, refetching: {exc}")
 
     raw_items = _crossref_book_chapters(isbn, client, contact_email)
     chapters = [c for item in raw_items if (c := _normalize_chapter(item)) is not None]
+    license_url = _book_license_url(raw_items)
     payload = {
         "isbn": isbn,
         "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "license": license_url,
         "raw_items": raw_items,
         "chapters": chapters,
     }
     target.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    return len(chapters), sum(1 for c in chapters if not c["citation_pages"])
+    return len(chapters), sum(1 for c in chapters if not c["citation_pages"]), license_url
 
 
 def _download_pdf(book: dict, client: httpx.Client, target: Path, force: bool) -> str:
@@ -181,12 +213,14 @@ def _download_pdf(book: dict, client: httpx.Client, target: Path, force: bool) -
     return "downloaded"
 
 
-def fetch_all(corpus_dir: Path, force: bool, contact_email: Optional[str]) -> int:
-    manifest = json.loads((corpus_dir / "manifest.json").read_text(encoding="utf-8"))
+def fetch_all(corpus_dir: Path, force: bool, force_metadata: bool, contact_email: Optional[str]) -> int:
+    manifest_path = corpus_dir / "manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     books = manifest["books"]
     flagged: list[tuple[str, str]] = []
     total_chapters = 0
     downloaded = 0
+    manifest_changed = False
 
     with httpx.Client(follow_redirects=True) as client:
         for book in books:
@@ -198,15 +232,29 @@ def fetch_all(corpus_dir: Path, force: bool, contact_email: Optional[str]) -> in
             if pdf_status == "downloaded":
                 downloaded += 1
 
-            n_chapters, n_missing_page = _fetch_crossref_metadata(
-                isbn, client, contact_email, corpus_dir / f"{isbn}.crossref.json", force
+            n_chapters, n_missing_page, license_url = _fetch_crossref_metadata(
+                isbn, client, contact_email, corpus_dir / f"{isbn}.crossref.json", force or force_metadata
             )
-            print(f"  crossref: {n_chapters} chapter(s), {n_missing_page} missing page range")
+            print(f"  crossref: {n_chapters} chapter(s), {n_missing_page} missing page range, "
+                  f"license: {license_url or 'NONE'}")
             total_chapters += n_chapters
             if n_chapters == 0:
                 flagged.append((isbn, "zero book-chapter records"))
             elif n_missing_page:
                 flagged.append((isbn, f"{n_missing_page} chapter(s) missing page range"))
+            if license_url is None:
+                flagged.append((isbn, "no registered Crossref license"))
+            if "license" not in book or book["license"] != license_url:
+                # "license" not in book distinguishes "never checked" from
+                # "checked, Crossref has none" (license_url is None either
+                # way) -- book.get("license") != license_url alone would
+                # treat both as equal and never write the explicit null.
+                book["license"] = license_url
+                manifest_changed = True
+
+    if manifest_changed:
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"\nupdated {manifest_path} with license URLs")
 
     print(f"\n{len(books)} book(s) processed, {downloaded} PDF(s) newly downloaded, {total_chapters} chapter(s) fetched")
     if flagged:
@@ -220,9 +268,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--corpus-dir", default=str(_CORPUS_DIR), help="Directory containing manifest.json")
     parser.add_argument("--force", action="store_true", help="Refetch PDFs and Crossref metadata even if present")
+    parser.add_argument(
+        "--force-metadata", action="store_true",
+        help="Refetch only the Crossref metadata (not PDFs) even if present -- e.g. after a select-field change",
+    )
     parser.add_argument("--contact-email", default=_DEFAULT_CONTACT_EMAIL, help="Crossref polite-pool contact email")
     args = parser.parse_args()
-    return fetch_all(Path(args.corpus_dir), args.force, args.contact_email)
+    return fetch_all(Path(args.corpus_dir), args.force, args.force_metadata, args.contact_email)
 
 
 if __name__ == "__main__":

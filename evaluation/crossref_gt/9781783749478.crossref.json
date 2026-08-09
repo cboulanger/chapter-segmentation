@@ -1,8 +1,27 @@
 {
   "isbn": "9781783749478",
-  "fetched_at": "2026-08-08T16:37:08.306507+00:00",
+  "fetched_at": "2026-08-09T12:57:22.145070+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.16",
       "type": "book-chapter",
       "page": "469-486",
@@ -47,6 +66,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.18",
       "type": "book-chapter",
       "page": "xvii-xx",
@@ -93,6 +130,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.01",
       "type": "book-chapter",
       "page": "1-28",
@@ -152,6 +207,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.03",
       "type": "book-chapter",
       "page": "95-142",
@@ -199,6 +272,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.15",
       "type": "book-chapter",
       "page": "443-468",
@@ -243,6 +334,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.12",
       "type": "book-chapter",
       "page": "353-388",
@@ -299,6 +408,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.07",
       "type": "book-chapter",
       "page": "235-286",
@@ -343,6 +470,86 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0209.10",
+      "type": "book-chapter",
+      "page": "319-334",
+      "title": [
+        "Modelling Variation in the Neo-Aramaic Dialect of Azran with Articulatory Phonology"
+      ],
+      "author": [
+        {
+          "given": "Lidia",
+          "family": "Napiorkowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Grammar and Lexicon of Neo-Aramaic"
+      ],
+      "ISBN": [
+        "9781783749478",
+        "9781783749485",
+        "9781783749492",
+        "9781800646179",
+        "9781783749522",
+        "9781783749508",
+        "9781783749515"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.05",
       "type": "book-chapter",
       "page": "195-220",
@@ -400,97 +607,24 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0209.10",
-      "type": "book-chapter",
-      "page": "319-334",
-      "title": [
-        "Modelling Variation in the Neo-Aramaic Dialect of Azran with Articulatory Phonology"
-      ],
-      "author": [
+      "license": [
         {
-          "given": "Lidia",
-          "family": "Napiorkowska",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "container-title": [
-        "Semitic Languages and Cultures",
-        "Studies in the Grammar and Lexicon of Neo-Aramaic"
-      ],
-      "ISBN": [
-        "9781783749478",
-        "9781783749485",
-        "9781783749492",
-        "9781800646179",
-        "9781783749522",
-        "9781783749508",
-        "9781783749515"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2021,
-            1,
-            15
-          ]
-        ]
-      }
-    },
-    {
-      "DOI": "10.11647/obp.0209.06",
-      "type": "book-chapter",
-      "page": "221-234",
-      "title": [
-        "Language Contact and Ṭuroyo"
-      ],
-      "author": [
-        {
-          "given": "Michael",
-          "family": "Waltisberg",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Semitic Languages and Cultures",
-        "Studies in the Grammar and Lexicon of Neo-Aramaic"
-      ],
-      "subtitle": [
-        "The Case of the Circumstantial Clause"
-      ],
-      "ISBN": [
-        "9781783749478",
-        "9781783749485",
-        "9781783749492",
-        "9781800646179",
-        "9781783749522",
-        "9781783749508",
-        "9781783749515"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2021,
-            1,
-            15
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.11647/obp.0209.08",
       "type": "book-chapter",
       "page": "287-300",
@@ -546,6 +680,89 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0209.06",
+      "type": "book-chapter",
+      "page": "221-234",
+      "title": [
+        "Language Contact and Ṭuroyo"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Waltisberg",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Grammar and Lexicon of Neo-Aramaic"
+      ],
+      "subtitle": [
+        "The Case of the Circumstantial Clause"
+      ],
+      "ISBN": [
+        "9781783749478",
+        "9781783749485",
+        "9781783749492",
+        "9781800646179",
+        "9781783749522",
+        "9781783749508",
+        "9781783749515"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.17",
       "type": "book-chapter",
       "page": "487-504",
@@ -590,6 +807,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.09",
       "type": "book-chapter",
       "page": "301-318",
@@ -634,6 +869,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.13",
       "type": "book-chapter",
       "page": "389-314",
@@ -691,6 +944,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.14",
       "type": "book-chapter",
       "page": "415-442",
@@ -735,6 +1006,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0209.02",
       "type": "book-chapter",
       "page": "29-94",
@@ -795,16 +1084,36 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0209.11",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0209.04",
       "type": "book-chapter",
-      "page": "335-352",
+      "page": "143-194",
       "title": [
-        "On the Origin of Some Plant Names in Ṣūrayt/Ṭūrōyo in Ṭūr ʿAbdīn"
+        "Verbal Forms Expressing Discourse Dependency in North-Eastern Neo-Aramaic"
       ],
       "author": [
         {
-          "given": "Aziz",
-          "family": "Tezel",
+          "ORCID": "https://orcid.org/0000-0002-2550-9896",
+          "authenticated-orcid": false,
+          "given": "Geoffrey",
+          "family": "Khan",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -839,18 +1148,34 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0209.04",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2021-01-15T00:00:00Z",
+            "timestamp": 1610668800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0209.11",
       "type": "book-chapter",
-      "page": "143-194",
+      "page": "335-352",
       "title": [
-        "Verbal Forms Expressing Discourse Dependency in North-Eastern Neo-Aramaic"
+        "On the Origin of Some Plant Names in Ṣūrayt/Ṭūrōyo in Ṭūr ʿAbdīn"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-2550-9896",
-          "authenticated-orcid": false,
-          "given": "Geoffrey",
-          "family": "Khan",
+          "given": "Aziz",
+          "family": "Tezel",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -945,14 +1270,6 @@
       "citation_pages": "235-286"
     },
     {
-      "title": "Conditional Patterns in the Jewish Neo-Aramaic Dialect of Zakho",
-      "authors": [
-        "Eran Cohen"
-      ],
-      "chapter_doi": "10.11647/obp.0209.05",
-      "citation_pages": "195-220"
-    },
-    {
       "title": "Modelling Variation in the Neo-Aramaic Dialect of Azran with Articulatory Phonology",
       "authors": [
         "Lidia Napiorkowska"
@@ -961,12 +1278,12 @@
       "citation_pages": "319-334"
     },
     {
-      "title": "Language Contact and Ṭuroyo The Case of the Circumstantial Clause",
+      "title": "Conditional Patterns in the Jewish Neo-Aramaic Dialect of Zakho",
       "authors": [
-        "Michael Waltisberg"
+        "Eran Cohen"
       ],
-      "chapter_doi": "10.11647/obp.0209.06",
-      "citation_pages": "221-234"
+      "chapter_doi": "10.11647/obp.0209.05",
+      "citation_pages": "195-220"
     },
     {
       "title": "On the Afel Stem in Western Neo-Aramaic",
@@ -975,6 +1292,14 @@
       ],
       "chapter_doi": "10.11647/obp.0209.08",
       "citation_pages": "287-300"
+    },
+    {
+      "title": "Language Contact and Ṭuroyo The Case of the Circumstantial Clause",
+      "authors": [
+        "Michael Waltisberg"
+      ],
+      "chapter_doi": "10.11647/obp.0209.06",
+      "citation_pages": "221-234"
     },
     {
       "title": "Language Loss in the Ṣūrayt/Ṭūrōyo-speaking Communities of the Diaspora in Sweden",
@@ -1017,20 +1342,20 @@
       "citation_pages": "29-94"
     },
     {
-      "title": "On the Origin of Some Plant Names in Ṣūrayt/Ṭūrōyo in Ṭūr ʿAbdīn",
-      "authors": [
-        "Aziz Tezel"
-      ],
-      "chapter_doi": "10.11647/obp.0209.11",
-      "citation_pages": "335-352"
-    },
-    {
       "title": "Verbal Forms Expressing Discourse Dependency in North-Eastern Neo-Aramaic",
       "authors": [
         "Geoffrey Khan"
       ],
       "chapter_doi": "10.11647/obp.0209.04",
       "citation_pages": "143-194"
+    },
+    {
+      "title": "On the Origin of Some Plant Names in Ṣūrayt/Ṭūrōyo in Ṭūr ʿAbdīn",
+      "authors": [
+        "Aziz Tezel"
+      ],
+      "chapter_doi": "10.11647/obp.0209.11",
+      "citation_pages": "335-352"
     }
   ]
 }

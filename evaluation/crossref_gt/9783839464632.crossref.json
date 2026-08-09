@@ -1,16 +1,38 @@
 {
   "isbn": "9783839464632",
-  "fetched_at": "2026-08-08T16:36:55.366665+00:00",
+  "fetched_at": "2026-08-09T12:57:21.518568+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-034",
+      "type": "book-chapter",
+      "page": "108-111",
       "title": [
         "3.27 Manipulationen"
       ],
-      "page": "108-111",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -20,20 +42,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-017",
+      "type": "book-chapter",
+      "page": "55-57",
       "title": [
         "3.10 Die üblichen Verdächtigen"
       ],
-      "page": "55-57",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -43,20 +83,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-010",
+      "type": "book-chapter",
+      "page": "31-33",
       "title": [
         "3.3 Assistenzsystem als Killbot?"
       ],
-      "page": "31-33",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -66,20 +124,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-056",
+      "type": "book-chapter",
+      "page": "182-188",
       "title": [
         "3.49 Zukunftsvisionen – oder wie sieht Demokratie aus, wenn …?"
       ],
-      "page": "182-188",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -89,20 +165,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-008",
+      "type": "book-chapter",
+      "page": "235-240",
       "title": [
         "Die Herausgeberinnen und Herausgeber"
       ],
-      "page": "235-240",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -112,20 +206,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-046",
+      "type": "book-chapter",
+      "page": "145-148",
       "title": [
         "3.39 Smoke &amp; Mirrors ."
       ],
-      "page": "145-148",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -135,20 +247,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-044",
+      "type": "book-chapter",
+      "page": "139-141",
       "title": [
         "3.37 Sensible Gesundheitsdaten"
       ],
-      "page": "139-141",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -158,20 +288,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-059",
+      "type": "book-chapter",
+      "page": "193-203",
       "title": [
         "A Kein Problem! Alles klar, oder …? Aufbereitung ethischer Konflikte in Dialogen"
       ],
-      "page": "193-203",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -181,20 +329,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-012",
+      "type": "book-chapter",
+      "page": "37-40",
       "title": [
         "3.5 Das Assoziationsmodul"
       ],
-      "page": "37-40",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -204,20 +370,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-028",
+      "type": "book-chapter",
+      "page": "91-94",
       "title": [
         "3.21 Identitätsdiebstahl"
       ],
-      "page": "91-94",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -227,20 +411,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-075",
+      "type": "book-chapter",
+      "page": "230-230",
       "title": [
         "Waffen, Krieg und Gewalt"
       ],
-      "page": "230-230",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -250,20 +452,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-063",
+      "type": "book-chapter",
+      "page": "215-216",
       "title": [
         "E Hackerethik des Chaos Computer Clubs"
       ],
-      "page": "215-216",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -273,20 +493,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-024",
+      "type": "book-chapter",
+      "page": "79-82",
       "title": [
         "3.17 Gesunde Neugier?"
       ],
-      "page": "79-82",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -296,20 +534,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-065",
+      "type": "book-chapter",
+      "page": "225-225",
       "title": [
         "Assistenz und Robotik"
       ],
-      "page": "225-225",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -319,20 +575,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-068",
+      "type": "book-chapter",
+      "page": "227-227",
       "title": [
         "Entwickeln, Testen und Auditieren"
       ],
-      "page": "227-227",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -342,20 +616,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-062",
+      "type": "book-chapter",
+      "page": "210-214",
       "title": [
         "D Die Forderungen der Bits &amp; Bäume-Konferenz für Digitalisierung und Nachhaltigkeit 2022"
       ],
-      "page": "210-214",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -365,20 +657,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-013",
+      "type": "book-chapter",
+      "page": "41-44",
       "title": [
         "3.6 Das selbstfahrende Auto"
       ],
-      "page": "41-44",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -388,20 +698,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-035",
+      "type": "book-chapter",
+      "page": "112-114",
       "title": [
         "3.28 Maschinelle Hausarbeiten"
       ],
-      "page": "112-114",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -411,20 +739,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-030",
+      "type": "book-chapter",
+      "page": "98-100",
       "title": [
         "3.23 IT-Sicherheit: changeme"
       ],
-      "page": "98-100",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -434,20 +780,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-051",
+      "type": "book-chapter",
+      "page": "162-164",
       "title": [
         "3.44 Verhaltenserkennung"
       ],
-      "page": "162-164",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -457,20 +821,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-021",
+      "type": "book-chapter",
+      "page": "69-73",
       "title": [
         "3.14 Ethisches Reinwaschen"
       ],
-      "page": "69-73",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -480,20 +862,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-053",
+      "type": "book-chapter",
+      "page": "168-172",
       "title": [
         "3.46 Was ist wahr? Daten, Grafiken, Wahrheiten"
       ],
-      "page": "168-172",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -503,20 +903,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-042",
+      "type": "book-chapter",
+      "page": "132-135",
       "title": [
         "3.35 Profiling"
       ],
-      "page": "132-135",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -526,20 +944,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-038",
+      "type": "book-chapter",
+      "page": "122-125",
       "title": [
         "3.31 Panoptikum vs. Zivilcourage"
       ],
-      "page": "122-125",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -549,20 +985,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-071",
+      "type": "book-chapter",
+      "page": "228-228",
       "title": [
         "KI und automatisiertes Entscheiden"
       ],
-      "page": "228-228",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -572,20 +1026,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-070",
+      "type": "book-chapter",
+      "page": "227-228",
       "title": [
         "IT-Sicherheit und öffentliche Sicherheit"
       ],
-      "page": "227-228",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -595,20 +1067,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-045",
+      "type": "book-chapter",
+      "page": "141-144",
       "title": [
         "3.38 Smarte Armbänder"
       ],
-      "page": "141-144",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -618,20 +1108,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-007",
+      "type": "book-chapter",
+      "page": "231-234",
       "title": [
         "Literatur"
       ],
-      "page": "231-234",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -641,20 +1149,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-039",
+      "type": "book-chapter",
+      "page": "125-127",
       "title": [
         "3.32 Pfade des Lernens"
       ],
-      "page": "125-127",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -664,20 +1190,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-069",
+      "type": "book-chapter",
+      "page": "227-227",
       "title": [
         "Forschung, Bildung und Lehre"
       ],
-      "page": "227-227",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -687,20 +1231,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-037",
+      "type": "book-chapter",
+      "page": "119-122",
       "title": [
         "3.30 Open Data"
       ],
-      "page": "119-122",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -710,12 +1272,27 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-toc",
       "type": "book-chapter",
       "page": "5-8",
@@ -841,6 +1418,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-fm",
       "type": "book-chapter",
       "page": "1-4",
@@ -966,14 +1561,35 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-048",
+      "type": "book-chapter",
+      "page": "153-155",
       "title": [
         "3.41 SuperGrade"
       ],
-      "page": "153-155",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -983,12 +1599,27 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-001",
       "type": "book-chapter",
       "page": "9-10",
@@ -1114,14 +1745,35 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-027",
+      "type": "book-chapter",
+      "page": "88-91",
       "title": [
         "3.20 Ich will überwacht werden!"
       ],
-      "page": "88-91",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1131,20 +1783,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-078",
+      "type": "book-chapter",
+      "page": "235-240",
       "title": [
         "Die Herausgeberinnen und Herausgeber"
       ],
-      "page": "235-240",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1154,20 +1824,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-041",
+      "type": "book-chapter",
+      "page": "130-132",
       "title": [
         "3.34 Planungen"
       ],
-      "page": "130-132",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1177,20 +1865,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-016",
+      "type": "book-chapter",
+      "page": "52-55",
       "title": [
         "3.9 Der Assistent"
       ],
-      "page": "52-55",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1200,20 +1906,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-025",
+      "type": "book-chapter",
+      "page": "83-85",
       "title": [
         "3.18 Ghostwriter"
       ],
-      "page": "83-85",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1223,20 +1947,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-061",
+      "type": "book-chapter",
+      "page": "208-209",
       "title": [
         "C Die 10 Werte des Forums InformatikerInnen für Frieden und gesellschaftliche Verantwortung"
       ],
-      "page": "208-209",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1246,20 +1988,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-050",
+      "type": "book-chapter",
+      "page": "158-162",
       "title": [
         "3.43 Unachtsamkeiten"
       ],
-      "page": "158-162",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1269,20 +2029,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-067",
+      "type": "book-chapter",
+      "page": "226-226",
       "title": [
         "Datenschutz und Privatsphäre"
       ],
-      "page": "226-226",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1292,20 +2070,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-066",
+      "type": "book-chapter",
+      "page": "225-226",
       "title": [
         "Big Data, Vermessen und Bewerten"
       ],
-      "page": "225-226",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1315,20 +2111,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-019",
+      "type": "book-chapter",
+      "page": "60-65",
       "title": [
         "3.12 Eine verlockende Perspektive"
       ],
-      "page": "60-65",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1338,20 +2152,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-014",
+      "type": "book-chapter",
+      "page": "44-47",
       "title": [
         "3.7 Data Mining für Public Health"
       ],
-      "page": "44-47",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1361,20 +2193,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-026",
+      "type": "book-chapter",
+      "page": "85-88",
       "title": [
         "3.19 HackerZero"
       ],
-      "page": "85-88",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1384,20 +2234,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-064",
+      "type": "book-chapter",
+      "page": "217-224",
       "title": [
         "F Die Menschenrechtserklärung der Vereinten Nationen"
       ],
-      "page": "217-224",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1407,20 +2275,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-072",
+      "type": "book-chapter",
+      "page": "229-229",
       "title": [
         "Politik, Gesellschaft und Demokratie"
       ],
-      "page": "229-229",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1430,12 +2316,27 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-004",
       "type": "book-chapter",
       "page": "25-190",
@@ -1561,6 +2462,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-002",
       "type": "book-chapter",
       "page": "11-16",
@@ -1686,6 +2605,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-006",
       "type": "book-chapter",
       "page": "225-230",
@@ -1811,14 +2748,35 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-018",
+      "type": "book-chapter",
+      "page": "57-60",
       "title": [
         "3.11 Drohnen"
       ],
-      "page": "57-60",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1828,20 +2786,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-036",
+      "type": "book-chapter",
+      "page": "114-118",
       "title": [
         "3.29 Nachhaltigkeit im digitalen Wettbewerb"
       ],
-      "page": "114-118",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1851,20 +2827,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-060",
+      "type": "book-chapter",
+      "page": "204-207",
       "title": [
         "B Ethischer Kompass der Gesellschaft für Informatik"
       ],
-      "page": "204-207",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1874,20 +2868,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-031",
+      "type": "book-chapter",
+      "page": "100-102",
       "title": [
         "3.24 Kollateralschaden"
       ],
-      "page": "100-102",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -1897,12 +2909,27 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-005",
       "type": "book-chapter",
       "page": "191-224",
@@ -2028,14 +3055,35 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-057",
+      "type": "book-chapter",
+      "page": "188-190",
       "title": [
         "3.50 Zusammenwachsen"
       ],
-      "page": "188-190",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2045,20 +3093,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-055",
+      "type": "book-chapter",
+      "page": "179-182",
       "title": [
         "3.48 Zeitkritisch"
       ],
-      "page": "179-182",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2068,20 +3134,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-040",
+      "type": "book-chapter",
+      "page": "128-130",
       "title": [
         "3.33 Plagiatssoftware-Opfer"
       ],
-      "page": "128-130",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2091,20 +3175,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-043",
+      "type": "book-chapter",
+      "page": "136-138",
       "title": [
         "3.36 Safety First"
       ],
-      "page": "136-138",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2114,12 +3216,27 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-007",
       "type": "book-chapter",
       "page": "231-234",
@@ -2245,14 +3362,35 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-049",
+      "type": "book-chapter",
+      "page": "155-158",
       "title": [
         "3.42 The Hunt is On(line)"
       ],
-      "page": "155-158",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2262,20 +3400,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-011",
+      "type": "book-chapter",
+      "page": "34-37",
       "title": [
         "3.4 Blockchain Disruption?"
       ],
-      "page": "34-37",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2285,20 +3441,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-022",
+      "type": "book-chapter",
+      "page": "73-77",
       "title": [
         "3.15 Faites vos jeux"
       ],
-      "page": "73-77",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2308,20 +3482,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-009",
+      "type": "book-chapter",
+      "page": "28-31",
       "title": [
         "3.2 Anonymizer"
       ],
-      "page": "28-31",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2331,20 +3523,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-074",
+      "type": "book-chapter",
+      "page": "229-229",
       "title": [
         "Verwaltung und Organisation"
       ],
-      "page": "229-229",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2354,20 +3564,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-076",
+      "type": "book-chapter",
+      "page": "230-230",
       "title": [
         "Wirtschaft"
       ],
-      "page": "230-230",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2377,20 +3605,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-054",
+      "type": "book-chapter",
+      "page": "172-179",
       "title": [
         "3.47 Wieder eine App – es geht voran mit der Digitalisierung"
       ],
-      "page": "172-179",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2400,12 +3646,27 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-008",
       "type": "book-chapter",
       "page": "235-240",
@@ -2531,14 +3792,35 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-052",
+      "type": "book-chapter",
+      "page": "165-167",
       "title": [
         "3.45 Virtual Reality"
       ],
-      "page": "165-167",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2548,20 +3830,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-033",
+      "type": "book-chapter",
+      "page": "106-108",
       "title": [
         "3.26 Leistungsgrenzen"
       ],
-      "page": "106-108",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2571,12 +3871,27 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2023-06-29T00:00:00Z",
+            "timestamp": 1687996800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839464632-003",
       "type": "book-chapter",
       "page": "17-24",
@@ -2702,14 +4017,35 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-073",
+      "type": "book-chapter",
+      "page": "229-229",
       "title": [
         "Smartphone und Mobiles"
       ],
-      "page": "229-229",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2719,20 +4055,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-023",
+      "type": "book-chapter",
+      "page": "77-79",
       "title": [
         "3.16 Freiwillige DNA-Sammlung"
       ],
-      "page": "77-79",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2742,20 +4096,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-020",
+      "type": "book-chapter",
+      "page": "65-68",
       "title": [
         "3.13 Energieintensives Energiesparen?"
       ],
-      "page": "65-68",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2765,20 +4137,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-047",
+      "type": "book-chapter",
+      "page": "149-153",
       "title": [
         "3.40 Statistische Irrungen"
       ],
-      "page": "149-153",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2788,20 +4178,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-029",
+      "type": "book-chapter",
+      "page": "94-98",
       "title": [
         "3.22 Inspiration"
       ],
-      "page": "94-98",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2811,20 +4219,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-058",
+      "type": "book-chapter",
+      "page": "191-192",
       "title": [
         "Einleitung"
       ],
-      "page": "191-192",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2834,20 +4260,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-032",
+      "type": "book-chapter",
+      "page": "103-106",
       "title": [
         "3.25 Kompetenzgefälle"
       ],
-      "page": "103-106",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2857,20 +4301,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-077",
+      "type": "book-chapter",
+      "page": "231-234",
       "title": [
         "Literatur"
       ],
-      "page": "231-234",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2880,20 +4342,38 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2023-12-31T00:00:00Z",
+            "timestamp": 1703980800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839464632-015",
+      "type": "book-chapter",
+      "page": "47-52",
       "title": [
         "3.8 Der Albtraum"
       ],
-      "page": "47-52",
-      "type": "book-chapter",
       "container-title": [
         "Gewissensbisse - Fallbeispiele zu ethischen Problemen der Informatik"
+      ],
+      "ISBN": [
+        "9783839464632"
       ],
       "published": {
         "date-parts": [
@@ -2903,10 +4383,7 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839464632"
-      ]
+      }
     }
   ],
   "chapters": [

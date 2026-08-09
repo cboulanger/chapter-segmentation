@@ -1,8 +1,27 @@
 {
   "isbn": "9783839468937",
-  "fetched_at": "2026-08-08T16:38:12.646400+00:00",
+  "fetched_at": "2026-08-09T12:57:28.675157+00:00",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-012",
       "type": "book-chapter",
       "page": "209-210",
@@ -42,6 +61,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-toc",
       "type": "book-chapter",
       "page": "5-6",
@@ -105,6 +142,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-014",
       "type": "book-chapter",
       "page": "231-250",
@@ -153,6 +208,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-006",
       "type": "book-chapter",
       "page": "87-110",
@@ -197,6 +270,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-007",
       "type": "book-chapter",
       "page": "111-128",
@@ -263,6 +354,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-003",
       "type": "book-chapter",
       "page": "41-42",
@@ -329,6 +438,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2024-12-31T00:00:00Z",
+            "timestamp": 1735603200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839468937-002",
       "type": "book-chapter",
       "page": "23-40",
@@ -369,6 +496,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-015",
       "type": "book-chapter",
       "page": "251-260",
@@ -435,6 +580,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-005",
       "type": "book-chapter",
       "page": "63-86",
@@ -479,6 +642,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-010",
       "type": "book-chapter",
       "page": "161-186",
@@ -521,6 +702,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-001",
       "type": "book-chapter",
       "page": "7-22",
@@ -587,6 +786,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-009",
       "type": "book-chapter",
       "page": "131-160",
@@ -647,6 +864,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-008",
       "type": "book-chapter",
       "page": "129-130",
@@ -713,6 +948,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-fm",
       "type": "book-chapter",
       "page": "1-4",
@@ -776,6 +1029,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-013",
       "type": "book-chapter",
       "page": "211-230",
@@ -830,54 +1101,24 @@
       }
     },
     {
-      "DOI": "10.14361/9783839468937-002",
-      "type": "book-chapter",
-      "page": "23-40",
-      "title": [
-        "Debatten um EdTech im Wandel"
-      ],
-      "author": [
+      "license": [
         {
-          "ORCID": "https://orcid.org/0000-0002-5791-3586",
-          "authenticated-orcid": true,
-          "given": "André",
-          "family": "Renz",
-          "sequence": "first",
-          "affiliation": [
-            {
-              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
-            }
-          ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
         }
       ],
-      "container-title": [
-        "Bildungsforschung",
-        "Digitale Lerntechnologien"
-      ],
-      "subtitle": [
-        "Eine Analyse des Zeitraums 1993-2022"
-      ],
-      "ISBN": [
-        "9783837668933",
-        "9783839468937"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2024,
-            4,
-            2
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.14361/9783839468937-004",
       "type": "book-chapter",
       "page": "43-62",
@@ -926,6 +1167,90 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839468937-002",
+      "type": "book-chapter",
+      "page": "23-40",
+      "title": [
+        "Debatten um EdTech im Wandel"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "authenticated-orcid": true,
+          "given": "André",
+          "family": "Renz",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Helmut-Schmidt-Universität Hamburg, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bildungsforschung",
+        "Digitale Lerntechnologien"
+      ],
+      "subtitle": [
+        "Eine Analyse des Zeitraums 1993-2022"
+      ],
+      "ISBN": [
+        "9783837668933",
+        "9783839468937"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2024-04-02T00:00:00Z",
+            "timestamp": 1712016000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839468937-011",
       "type": "book-chapter",
       "page": "187-208",
@@ -1098,20 +1423,20 @@
       "citation_pages": "211-230"
     },
     {
-      "title": "Debatten um EdTech im Wandel Eine Analyse des Zeitraums 1993-2022",
-      "authors": [
-        "André Renz"
-      ],
-      "chapter_doi": "10.14361/9783839468937-002",
-      "citation_pages": "23-40"
-    },
-    {
       "title": "Nicht determinierend, aber doch stark regulierend Eine Studie zu Design und pädagogischen Wirkungen der Antolin-Leselernplattform",
       "authors": [
         "Sigrid Hartong"
       ],
       "chapter_doi": "10.14361/9783839468937-004",
       "citation_pages": "43-62"
+    },
+    {
+      "title": "Debatten um EdTech im Wandel Eine Analyse des Zeitraums 1993-2022",
+      "authors": [
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-002",
+      "citation_pages": "23-40"
     },
     {
       "title": "Der Design-Justice-Ansatz mit einer Anwendung im Bereich der KI",

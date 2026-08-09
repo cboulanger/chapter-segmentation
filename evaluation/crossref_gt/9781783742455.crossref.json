@@ -1,8 +1,27 @@
 {
   "isbn": "9781783742455",
-  "fetched_at": "2026-08-08T16:38:10.040067+00:00",
+  "fetched_at": "2026-08-09T12:57:28.404481+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                18
+              ]
+            ],
+            "date-time": "2016-07-18T00:00:00Z",
+            "timestamp": 1468800000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0096.05",
       "type": "book-chapter",
       "page": "105-136",
@@ -46,6 +65,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                18
+              ]
+            ],
+            "date-time": "2016-07-18T00:00:00Z",
+            "timestamp": 1468800000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0096.01",
       "type": "book-chapter",
       "page": "1-20",
@@ -89,6 +126,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                18
+              ]
+            ],
+            "date-time": "2016-07-18T00:00:00Z",
+            "timestamp": 1468800000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0096.04",
       "type": "book-chapter",
       "page": "75-104",
@@ -144,6 +199,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                18
+              ]
+            ],
+            "date-time": "2016-07-18T00:00:00Z",
+            "timestamp": 1468800000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0096.02",
       "type": "book-chapter",
       "page": "21-52",
@@ -187,6 +260,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                18
+              ]
+            ],
+            "date-time": "2016-07-18T00:00:00Z",
+            "timestamp": 1468800000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0096.03",
       "type": "book-chapter",
       "page": "53-74",
@@ -230,6 +321,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                18
+              ]
+            ],
+            "date-time": "2016-07-18T00:00:00Z",
+            "timestamp": 1468800000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0096.06",
       "type": "book-chapter",
       "page": "137-170",

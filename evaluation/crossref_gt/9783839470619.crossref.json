@@ -1,8 +1,27 @@
 {
   "isbn": "9783839470619",
-  "fetched_at": "2026-08-08T16:37:13.945957+00:00",
+  "fetched_at": "2026-08-09T12:57:23.598257+00:00",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-009",
       "type": "book-chapter",
       "page": "213-252",
@@ -45,6 +64,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-006",
       "type": "book-chapter",
       "page": "105-138",
@@ -87,6 +124,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-003",
       "type": "book-chapter",
       "page": "19-46",
@@ -129,15 +184,37 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-fm",
+      "type": "book-chapter",
+      "page": "1-1",
       "title": [
         "Frontmatter"
       ],
-      "page": "1-1",
-      "type": "book-chapter",
       "container-title": [
         "Studien der Kulturwissenschaftlichen Gesellschaft",
         "Sprache entgrenzen"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
       ],
       "published": {
         "date-parts": [
@@ -147,22 +224,40 @@
             25
           ]
         ]
-      },
-      "ISBN": [
-        "9783837670615",
-        "9783839470619"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-toc",
+      "type": "book-chapter",
+      "page": "5-6",
       "title": [
         "Inhalt"
       ],
-      "page": "5-6",
-      "type": "book-chapter",
       "container-title": [
         "Studien der Kulturwissenschaftlichen Gesellschaft",
         "Sprache entgrenzen"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
       ],
       "published": {
         "date-parts": [
@@ -172,22 +267,40 @@
             25
           ]
         ]
-      },
-      "ISBN": [
-        "9783837670615",
-        "9783839470619"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-001",
+      "type": "book-chapter",
+      "page": "2-4",
       "title": [
         "Editorial"
       ],
-      "page": "2-4",
-      "type": "book-chapter",
       "container-title": [
         "Studien der Kulturwissenschaftlichen Gesellschaft",
         "Sprache entgrenzen"
+      ],
+      "ISBN": [
+        "9783837670615",
+        "9783839470619"
       ],
       "published": {
         "date-parts": [
@@ -197,13 +310,27 @@
             25
           ]
         ]
-      },
-      "ISBN": [
-        "9783837670615",
-        "9783839470619"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-004",
       "type": "book-chapter",
       "page": "47-74",
@@ -246,6 +373,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-005",
       "type": "book-chapter",
       "page": "75-104",
@@ -288,6 +433,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-002",
       "type": "book-chapter",
       "page": "7-16",
@@ -339,6 +502,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-010",
       "type": "book-chapter",
       "page": "253-290",
@@ -417,6 +598,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-007",
       "type": "book-chapter",
       "page": "141-178",
@@ -459,6 +658,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2025-02-25T00:00:00Z",
+            "timestamp": 1740441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839470619-008",
       "type": "book-chapter",
       "page": "179-212",

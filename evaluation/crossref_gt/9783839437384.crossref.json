@@ -1,8 +1,27 @@
 {
   "isbn": "9783839437384",
-  "fetched_at": "2026-08-08T16:38:20.261960+00:00",
+  "fetched_at": "2026-08-09T12:57:30.542105+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-007",
       "type": "book-chapter",
       "page": "59-80",
@@ -54,6 +73,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-013",
       "type": "book-chapter",
       "page": "297-314",
@@ -105,6 +142,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-008",
       "type": "book-chapter",
       "page": "81-108",
@@ -156,6 +211,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-009",
       "type": "book-chapter",
       "page": "109-162",
@@ -207,6 +280,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-016",
       "type": "book-chapter",
       "page": "345-372",
@@ -258,6 +349,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-001",
       "type": "book-chapter",
       "page": "2-4",
@@ -309,6 +418,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-002",
       "type": "book-chapter",
       "page": "7-8",
@@ -360,6 +487,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-003",
       "type": "book-chapter",
       "page": "9-10",
@@ -411,6 +556,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-fm",
       "type": "book-chapter",
       "page": "1-1",
@@ -462,6 +625,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-015",
       "type": "book-chapter",
       "page": "323-344",
@@ -513,57 +694,24 @@
       }
     },
     {
-      "DOI": "10.14361/9783839437384-006",
-      "type": "book-chapter",
-      "page": "15-58",
-      "title": [
-        "1. Einleitung"
-      ],
-      "author": [
+      "license": [
         {
-          "given": "Sybilla",
-          "family": "Nikolow",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Christoph",
-          "family": "Asmuth",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "container-title": [
-        "Kultur und soziale Praxis",
-        "Auf den Spuren des Organspendeausweises"
-      ],
-      "ISBN": [
-        "9783837679434",
-        "9783839437384"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2025,
-            12,
-            19
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.14361/9783839437384-010",
       "type": "book-chapter",
       "page": "163-212",
@@ -615,6 +763,93 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839437384-006",
+      "type": "book-chapter",
+      "page": "15-58",
+      "title": [
+        "1. Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Sybilla",
+          "family": "Nikolow",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christoph",
+          "family": "Asmuth",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Auf den Spuren des Organspendeausweises"
+      ],
+      "ISBN": [
+        "9783837679434",
+        "9783839437384"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-toc",
       "type": "book-chapter",
       "page": "5-6",
@@ -666,6 +901,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-005",
       "type": "book-chapter",
       "page": "13-14",
@@ -717,6 +970,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-011",
       "type": "book-chapter",
       "page": "213-254",
@@ -768,6 +1039,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-014",
       "type": "book-chapter",
       "page": "315-322",
@@ -819,6 +1108,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-012",
       "type": "book-chapter",
       "page": "255-296",
@@ -870,6 +1177,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                19
+              ]
+            ],
+            "date-time": "2025-12-19T00:00:00Z",
+            "timestamp": 1766102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.14361/9783839437384-004",
       "type": "book-chapter",
       "page": "11-12",
@@ -1013,15 +1338,6 @@
       "citation_pages": "323-344"
     },
     {
-      "title": "1. Einleitung",
-      "authors": [
-        "Sybilla Nikolow",
-        "Christoph Asmuth"
-      ],
-      "chapter_doi": "10.14361/9783839437384-006",
-      "citation_pages": "15-58"
-    },
-    {
       "title": "6. Kollektiv &amp; Solidarität – Einblicke in die Transplantationsgemeinschaft",
       "authors": [
         "Sybilla Nikolow",
@@ -1029,6 +1345,15 @@
       ],
       "chapter_doi": "10.14361/9783839437384-010",
       "citation_pages": "163-212"
+    },
+    {
+      "title": "1. Einleitung",
+      "authors": [
+        "Sybilla Nikolow",
+        "Christoph Asmuth"
+      ],
+      "chapter_doi": "10.14361/9783839437384-006",
+      "citation_pages": "15-58"
     },
     {
       "title": "Inhalt",

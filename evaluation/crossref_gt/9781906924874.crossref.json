@@ -1,8 +1,27 @@
 {
   "isbn": "9781906924874",
-  "fetched_at": "2026-08-08T16:38:23.391709+00:00",
+  "fetched_at": "2026-08-09T12:57:31.093907+00:00",
+  "license": "https://creativecommons.org/licenses/by/3.0/",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.12",
       "type": "book-chapter",
       "page": "211-233",
@@ -45,6 +64,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.11",
       "type": "book-chapter",
       "page": "199-210",
@@ -87,6 +124,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.01",
       "type": "book-chapter",
       "page": "1-17",
@@ -129,6 +184,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.04",
       "type": "book-chapter",
       "page": "55-70",
@@ -171,6 +244,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.03",
       "type": "book-chapter",
       "page": "33-53",
@@ -213,6 +304,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.09",
       "type": "book-chapter",
       "page": "165-181",
@@ -255,6 +364,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.13",
       "type": "book-chapter",
       "page": "235-243",
@@ -297,6 +424,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.10",
       "type": "book-chapter",
       "page": "183-198",
@@ -339,6 +484,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.07",
       "type": "book-chapter",
       "page": "111-135",
@@ -381,6 +544,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.08",
       "type": "book-chapter",
       "page": "137-163",
@@ -425,48 +606,24 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0026.06",
-      "type": "book-chapter",
-      "page": "89-110",
-      "title": [
-        "The Case of the Amur as a Cross-Border Zone of Illegality"
-      ],
-      "author": [
+      "license": [
         {
-          "given": "Natalia",
-          "family": "Ryzhova",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "role": "author",
-              "vocabulary": "crossref"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
         }
       ],
-      "container-title": [
-        "Frontier Encounters"
-      ],
-      "ISBN": [
-        "9781906924874",
-        "9781906924881",
-        "9781906924898",
-        "9781800644533",
-        "9781906924904",
-        "9781906924911"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2012,
-            8,
-            1
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.11647/obp.0026.05",
       "type": "book-chapter",
       "page": "71-87",
@@ -509,6 +666,84 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0026.06",
+      "type": "book-chapter",
+      "page": "89-110",
+      "title": [
+        "The Case of the Amur as a Cross-Border Zone of Illegality"
+      ],
+      "author": [
+        {
+          "given": "Natalia",
+          "family": "Ryzhova",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Frontier Encounters"
+      ],
+      "ISBN": [
+        "9781906924874",
+        "9781906924881",
+        "9781906924898",
+        "9781800644533",
+        "9781906924904",
+        "9781906924911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2012-08-01T00:00:00Z",
+            "timestamp": 1343779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0026.02",
       "type": "book-chapter",
       "page": "19-32",
@@ -635,20 +870,20 @@
       "citation_pages": "137-163"
     },
     {
-      "title": "The Case of the Amur as a Cross-Border Zone of Illegality",
-      "authors": [
-        "Natalia Ryzhova"
-      ],
-      "chapter_doi": "10.11647/obp.0026.06",
-      "citation_pages": "89-110"
-    },
-    {
       "title": "Chinese Migrants and Anti-Chinese Sentiments in Russian Society",
       "authors": [
         "Viktor Dyatlov"
       ],
       "chapter_doi": "10.11647/obp.0026.05",
       "citation_pages": "71-87"
+    },
+    {
+      "title": "The Case of the Amur as a Cross-Border Zone of Illegality",
+      "authors": [
+        "Natalia Ryzhova"
+      ],
+      "chapter_doi": "10.11647/obp.0026.06",
+      "citation_pages": "89-110"
     },
     {
       "title": "On Ideas of the Border in the Russian and Chinese Social Imaginaries",

@@ -1,8 +1,27 @@
 {
   "isbn": "9783839446270",
-  "fetched_at": "2026-08-08T16:38:11.780079+00:00",
+  "fetched_at": "2026-08-09T12:57:28.541548+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-007",
       "type": "book-chapter",
       "page": "141-188",
@@ -42,6 +61,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-009",
       "type": "book-chapter",
       "page": "235-274",
@@ -81,6 +118,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-006",
       "type": "book-chapter",
       "page": "115-140",
@@ -120,6 +175,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-toc",
       "type": "book-chapter",
       "page": "5-6",
@@ -159,6 +232,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-008",
       "type": "book-chapter",
       "page": "189-234",
@@ -198,6 +289,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-002",
       "type": "book-chapter",
       "page": "9-10",
@@ -237,6 +346,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-003",
       "type": "book-chapter",
       "page": "11-24",
@@ -276,6 +403,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-fm",
       "type": "book-chapter",
       "page": "1-4",
@@ -315,6 +460,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-010",
       "type": "book-chapter",
       "page": "275-314",
@@ -354,6 +517,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-011",
       "type": "book-chapter",
       "page": "315-322",
@@ -393,14 +574,35 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2018-12-31T00:00:00Z",
+            "timestamp": 1546214400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
       "DOI": "10.1515/9783839446270-009",
+      "type": "book-chapter",
+      "page": "235-274",
       "title": [
         "„Best Practice ist eine Geschichte“"
       ],
-      "page": "235-274",
-      "type": "book-chapter",
       "container-title": [
         "Kommunen im Klimawandel"
+      ],
+      "ISBN": [
+        "9783839446270"
       ],
       "published": {
         "date-parts": [
@@ -410,12 +612,27 @@
             31
           ]
         ]
-      },
-      "ISBN": [
-        "9783839446270"
-      ]
+      }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-004",
       "type": "book-chapter",
       "page": "25-70",
@@ -455,6 +672,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-001",
       "type": "book-chapter",
       "page": "7-8",
@@ -494,6 +729,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                8
+              ]
+            ],
+            "date-time": "2018-11-08T00:00:00Z",
+            "timestamp": 1541635200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839446270-005",
       "type": "book-chapter",
       "page": "71-114",

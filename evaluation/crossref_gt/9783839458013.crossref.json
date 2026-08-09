@@ -1,8 +1,27 @@
 {
   "isbn": "9783839458013",
-  "fetched_at": "2026-08-08T16:37:48.183603+00:00",
+  "fetched_at": "2026-08-09T12:57:26.246044+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-010",
       "type": "book-chapter",
       "page": "249-298",
@@ -51,6 +70,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-fm",
       "type": "book-chapter",
       "page": "1-4",
@@ -96,6 +133,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-007",
       "type": "book-chapter",
       "page": "137-206",
@@ -144,6 +199,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-014",
       "type": "book-chapter",
       "page": "343-348",
@@ -189,6 +262,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-009",
       "type": "book-chapter",
       "page": "233-248",
@@ -237,6 +328,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-005",
       "type": "book-chapter",
       "page": "77-120",
@@ -285,6 +394,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-013",
       "type": "book-chapter",
       "page": "323-342",
@@ -330,6 +457,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-002",
       "type": "book-chapter",
       "page": "13-16",
@@ -375,6 +520,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-011",
       "type": "book-chapter",
       "page": "299-316",
@@ -423,6 +586,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-012",
       "type": "book-chapter",
       "page": "317-322",
@@ -471,6 +652,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-008",
       "type": "book-chapter",
       "page": "207-232",
@@ -519,6 +718,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-006",
       "type": "book-chapter",
       "page": "121-136",
@@ -567,6 +784,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-toc",
       "type": "book-chapter",
       "page": "5-8",
@@ -612,6 +847,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-003",
       "type": "book-chapter",
       "page": "17-44",
@@ -660,6 +913,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-001",
       "type": "book-chapter",
       "page": "9-12",
@@ -705,6 +976,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2021-09-30T00:00:00Z",
+            "timestamp": 1632960000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
       "DOI": "10.14361/9783839458013-004",
       "type": "book-chapter",
       "page": "45-76",

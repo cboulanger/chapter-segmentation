@@ -1,8 +1,27 @@
 {
   "isbn": "9781783748532",
-  "fetched_at": "2026-08-08T16:38:18.162986+00:00",
+  "fetched_at": "2026-08-09T12:57:30.225179+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.17",
       "type": "book-chapter",
       "page": "383-402",
@@ -48,6 +67,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.19",
       "type": "book-chapter",
       "page": "425-444",
@@ -91,6 +128,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.21",
       "type": "book-chapter",
       "page": "465-484",
@@ -134,6 +189,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.18",
       "type": "book-chapter",
       "page": "403-424",
@@ -177,49 +250,24 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0203.09",
-      "type": "book-chapter",
-      "page": "211-224",
-      "title": [
-        "9. Punishment Discourses in Everyday Life"
-      ],
-      "author": [
+      "license": [
         {
-          "given": "Khum Raj",
-          "family": "Pathak",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "container-title": [
-        "Discourses We Live By"
-      ],
-      "ISBN": [
-        "9781783748518",
-        "9781783748525",
-        "9781783748532",
-        "9781800646148",
-        "9781783748563",
-        "9781783748549",
-        "9781783748556"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2020,
-            7,
-            3
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.11647/obp.0203.02",
       "type": "book-chapter",
       "page": "53-72",
@@ -276,6 +324,85 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0203.09",
+      "type": "book-chapter",
+      "page": "211-224",
+      "title": [
+        "9. Punishment Discourses in Everyday Life"
+      ],
+      "author": [
+        {
+          "given": "Khum Raj",
+          "family": "Pathak",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.23",
       "type": "book-chapter",
       "page": "501-516",
@@ -335,6 +462,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.10",
       "type": "book-chapter",
       "page": "225-244",
@@ -391,61 +536,24 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0203.22",
-      "type": "book-chapter",
-      "page": "485-500",
-      "title": [
-        "22. Embedding Feminist Pedagogies of Care in Research to Better Support San Youth in South Africa"
-      ],
-      "author": [
+      "license": [
         {
-          "given": "Outi",
-          "family": "Ylitapio-Mäntylä",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Mari",
-          "family": "Mäkiranta",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "container-title": [
-        "Discourses We Live By"
-      ],
-      "ISBN": [
-        "9781783748518",
-        "9781783748525",
-        "9781783748532",
-        "9781800646148",
-        "9781783748563",
-        "9781783748549",
-        "9781783748556"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2020,
-            7,
-            3
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.11647/obp.0203.29",
       "type": "book-chapter",
       "page": "621-632",
@@ -530,6 +638,97 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0203.22",
+      "type": "book-chapter",
+      "page": "485-500",
+      "title": [
+        "22. Embedding Feminist Pedagogies of Care in Research to Better Support San Youth in South Africa"
+      ],
+      "author": [
+        {
+          "given": "Outi",
+          "family": "Ylitapio-Mäntylä",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mari",
+          "family": "Mäkiranta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.20",
       "type": "book-chapter",
       "page": "445-459",
@@ -589,6 +788,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.16",
       "type": "book-chapter",
       "page": "353-377",
@@ -632,6 +849,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.12",
       "type": "book-chapter",
       "page": "269-283",
@@ -687,6 +922,200 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0203.14",
+      "type": "book-chapter",
+      "page": "311-332",
+      "title": [
+        "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0172-0101",
+          "authenticated-orcid": false,
+          "given": "Miguel Alberto",
+          "family": "González González",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/031n6w191",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad de Manizales"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0203.30",
+      "type": "book-chapter",
+      "page": "1-21",
+      "title": [
+        "Narrative, Discourse, and Biography"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3594-9780",
+          "authenticated-orcid": false,
+          "given": "Hazel R.",
+          "family": "Wright",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0009t4v78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Anglia Ruskin University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5042-6024",
+          "authenticated-orcid": false,
+          "given": "Marianne",
+          "family": "Høyen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01aj84f44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Aarhus University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "An Introductory Story"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.11",
       "type": "book-chapter",
       "page": "245-268",
@@ -783,146 +1212,24 @@
       }
     },
     {
-      "DOI": "10.11647/obp.0203.30",
-      "type": "book-chapter",
-      "page": "1-21",
-      "title": [
-        "Narrative, Discourse, and Biography"
-      ],
-      "author": [
+      "license": [
         {
-          "ORCID": "https://orcid.org/0000-0002-3594-9780",
-          "authenticated-orcid": false,
-          "given": "Hazel R.",
-          "family": "Wright",
-          "sequence": "first",
-          "affiliation": [
-            {
-              "id": [
-                {
-                  "id": "https://ror.org/0009t4v78",
-                  "id-type": "ROR",
-                  "asserted-by": "publisher"
-                }
-              ],
-              "name": "Anglia Ruskin University"
-            }
-          ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "ORCID": "https://orcid.org/0000-0001-5042-6024",
-          "authenticated-orcid": false,
-          "given": "Marianne",
-          "family": "Høyen",
-          "sequence": "additional",
-          "affiliation": [
-            {
-              "id": [
-                {
-                  "id": "https://ror.org/01aj84f44",
-                  "id-type": "ROR",
-                  "asserted-by": "publisher"
-                }
-              ],
-              "name": "Aarhus University"
-            }
-          ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "container-title": [
-        "Discourses We Live By"
-      ],
-      "subtitle": [
-        "An Introductory Story"
-      ],
-      "ISBN": [
-        "9781783748518",
-        "9781783748525",
-        "9781783748532",
-        "9781800646148",
-        "9781783748563",
-        "9781783748549",
-        "9781783748556"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2020,
-            7,
-            3
-          ]
-        ]
-      }
-    },
-    {
-      "DOI": "10.11647/obp.0203.14",
-      "type": "book-chapter",
-      "page": "311-332",
-      "title": [
-        "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories"
-      ],
-      "author": [
-        {
-          "ORCID": "https://orcid.org/0000-0002-0172-0101",
-          "authenticated-orcid": false,
-          "given": "Miguel Alberto",
-          "family": "González González",
-          "sequence": "first",
-          "affiliation": [
-            {
-              "id": [
-                {
-                  "id": "https://ror.org/031n6w191",
-                  "id-type": "ROR",
-                  "asserted-by": "publisher"
-                }
-              ],
-              "name": "Universidad de Manizales"
-            }
-          ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Discourses We Live By"
-      ],
-      "ISBN": [
-        "9781783748518",
-        "9781783748525",
-        "9781783748532",
-        "9781800646148",
-        "9781783748563",
-        "9781783748549",
-        "9781783748556"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2020,
-            7,
-            3
-          ]
-        ]
-      }
-    },
-    {
       "DOI": "10.11647/obp.0203.06",
       "type": "book-chapter",
       "page": "141-162",
@@ -979,6 +1286,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.13",
       "type": "book-chapter",
       "page": "289-310",
@@ -1025,6 +1350,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.15",
       "type": "book-chapter",
       "page": "333-352",
@@ -1068,6 +1411,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.03",
       "type": "book-chapter",
       "page": "73-90",
@@ -1149,6 +1510,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.08",
       "type": "book-chapter",
       "page": "185-205",
@@ -1208,6 +1587,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.26",
       "type": "book-chapter",
       "page": "569-586",
@@ -1253,6 +1650,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.25",
       "type": "book-chapter",
       "page": "549-568",
@@ -1309,6 +1724,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.24",
       "type": "book-chapter",
       "page": "517-543",
@@ -1364,6 +1797,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.28",
       "type": "book-chapter",
       "page": "609-619",
@@ -1410,6 +1861,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.27",
       "type": "book-chapter",
       "page": "587-608",
@@ -1455,6 +1924,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.05",
       "type": "book-chapter",
       "page": "119-140",
@@ -1526,6 +2013,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.01",
       "type": "book-chapter",
       "page": "27-52",
@@ -1572,6 +2077,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.04",
       "type": "book-chapter",
       "page": "91-113",
@@ -1628,6 +2151,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.07",
       "type": "book-chapter",
       "page": "163-184",
@@ -1718,20 +2259,20 @@
       "citation_pages": "403-424"
     },
     {
-      "title": "9. Punishment Discourses in Everyday Life",
-      "authors": [
-        "Khum Raj Pathak"
-      ],
-      "chapter_doi": "10.11647/obp.0203.09",
-      "citation_pages": "211-224"
-    },
-    {
       "title": "2. From Experience to Language in Narrative Practices in Therapeutic Education in France",
       "authors": [
         "Hervé Breton"
       ],
       "chapter_doi": "10.11647/obp.0203.02",
       "citation_pages": "53-72"
+    },
+    {
+      "title": "9. Punishment Discourses in Everyday Life",
+      "authors": [
+        "Khum Raj Pathak"
+      ],
+      "chapter_doi": "10.11647/obp.0203.09",
+      "citation_pages": "211-224"
     },
     {
       "title": "23. From Defender to Offender British Female Ex-Military Re-Joining Civilian Society",
@@ -1750,15 +2291,6 @@
       "citation_pages": "225-244"
     },
     {
-      "title": "22. Embedding Feminist Pedagogies of Care in Research to Better Support San Youth in South Africa",
-      "authors": [
-        "Outi Ylitapio-Mäntylä",
-        "Mari Mäkiranta"
-      ],
-      "chapter_doi": "10.11647/obp.0203.22",
-      "citation_pages": "485-500"
-    },
-    {
       "title": "Learning from Narratives, Discourses and Biographical Research An Afterword",
       "authors": [
         "Hazel R. Wright",
@@ -1766,6 +2298,15 @@
       ],
       "chapter_doi": "10.11647/obp.0203.29",
       "citation_pages": "621-632"
+    },
+    {
+      "title": "22. Embedding Feminist Pedagogies of Care in Research to Better Support San Youth in South Africa",
+      "authors": [
+        "Outi Ylitapio-Mäntylä",
+        "Mari Mäkiranta"
+      ],
+      "chapter_doi": "10.11647/obp.0203.22",
+      "citation_pages": "485-500"
     },
     {
       "title": "20. Participatory Approaches in Critical Migration Research The Example of an Austrian Documentary Film",
@@ -1793,14 +2334,12 @@
       "citation_pages": "269-283"
     },
     {
-      "title": "11. Care Leavers in Italy From ‘Vulnerable’ Children to ‘Autonomous’ Adults?",
+      "title": "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories",
       "authors": [
-        "Laura Formenti",
-        "Andrea Galimberti",
-        "Mirella Ferrari"
+        "Miguel Alberto González González"
       ],
-      "chapter_doi": "10.11647/obp.0203.11",
-      "citation_pages": "245-268"
+      "chapter_doi": "10.11647/obp.0203.14",
+      "citation_pages": "311-332"
     },
     {
       "title": "Narrative, Discourse, and Biography An Introductory Story",
@@ -1812,12 +2351,14 @@
       "citation_pages": "1-21"
     },
     {
-      "title": "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories",
+      "title": "11. Care Leavers in Italy From ‘Vulnerable’ Children to ‘Autonomous’ Adults?",
       "authors": [
-        "Miguel Alberto González González"
+        "Laura Formenti",
+        "Andrea Galimberti",
+        "Mirella Ferrari"
       ],
-      "chapter_doi": "10.11647/obp.0203.14",
-      "citation_pages": "311-332"
+      "chapter_doi": "10.11647/obp.0203.11",
+      "citation_pages": "245-268"
     },
     {
       "title": "6. Shaping ‘the Good Teacher’ in Danish and Kenyan Teacher Education",

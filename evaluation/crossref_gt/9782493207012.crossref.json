@@ -1,8 +1,27 @@
 {
   "isbn": "9782493207012",
-  "fetched_at": "2026-08-08T16:37:45.608852+00:00",
+  "fetched_at": "2026-08-09T12:57:25.950161+00:00",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "raw_items": [
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3769",
       "type": "book-chapter",
       "page": "55-98",
@@ -39,6 +58,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3794",
       "type": "book-chapter",
       "page": "333-340",
@@ -75,6 +112,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3754",
       "type": "book-chapter",
       "page": "5-5",
@@ -111,6 +166,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3779",
       "type": "book-chapter",
       "page": "151-203",
@@ -147,6 +220,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3759",
       "type": "book-chapter",
       "page": "7-10",
@@ -183,6 +274,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3799",
       "type": "book-chapter",
       "page": "341-357",
@@ -219,6 +328,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3789",
       "type": "book-chapter",
       "page": "319-331",
@@ -255,6 +382,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3764",
       "type": "book-chapter",
       "page": "11-53",
@@ -291,6 +436,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3774",
       "type": "book-chapter",
       "page": "151-203",
@@ -327,6 +490,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3804",
       "type": "book-chapter",
       "page": "359-360",
@@ -363,6 +544,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3821",
       "type": "book-chapter",
       "page": "263-317",
@@ -399,6 +598,24 @@
       }
     },
     {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
       "DOI": "10.4000/books.africae.3784",
       "type": "book-chapter",
       "page": "205-261",

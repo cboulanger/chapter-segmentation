@@ -270,7 +270,7 @@ report" and "LLM strategy evaluation" above.)
 
 ## Related: Crossref-sourced ground-truth corpus
 
-`evaluation/crossref_gt/` holds a separate, standalone corpus of 46
+`evaluation/crossref_gt/` holds a separate, standalone corpus of 43
 open-access books with their Crossref-registered chapter metadata,
 sourced specifically to eventually evaluate `CrossrefMetadataStrategy`
 against ground truth pulled from the same system it queries. It is not

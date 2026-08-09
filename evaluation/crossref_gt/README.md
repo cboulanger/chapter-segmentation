@@ -1,13 +1,13 @@
 # Crossref-sourced ground-truth corpus
 
-A corpus of 46 open-access books, each with its Crossref-registered
+A corpus of 43 open-access books, each with its Crossref-registered
 `book-chapter` metadata, built for evaluating chapter-segmentation
 strategies against ground truth sourced from the same system
 `CrossrefMetadataStrategy` (`src/chapter_segmentation/evidence/crossref_strategy.py`)
 actually queries. Background and design rationale:
 `docs/superpowers/specs/2026-08-08-crossref-gt-corpus-design.md`.
 
-**Status: standalone; 31 of 46 books reconciled into `evaluation/corpus/
+**Status: standalone; 31 of 43 books reconciled into `evaluation/corpus/
 open-access/`.** This corpus itself is still not read by
 `tests/test_segmentation_accuracy.py`, `evaluation/generate_report.py`, or
 any other harness entry point -- but the reconciliation the design spec's
@@ -122,7 +122,7 @@ records which one actually answered.
 
 ## Coverage
 
-46 books, 896 chapters total, across 8 domains (5-6 books each) --
+43 books, 851 chapters total, across 8 domains (3-6 books each) --
 deliberately non-overlapping with the existing evaluation set's
 socio-legal-studies skew:
 
@@ -135,10 +135,10 @@ socio-legal-studies skew:
 | Environmental science | 6 | 5 English, 1 German |
 | History | 6 | 2 English, 2 German, 2 French |
 | Linguistics | 5 | 4 English, 1 German |
-| Medicine/public health | 6 | 3 English, 3 German |
+| Medicine/public health | 3 | 3 English |
 
-**Languages currently covered:** English (31), German (12), French (2),
-Spanish (1) -- 32.6% non-English, exceeding the ~25% target set in the
+**Languages currently covered:** English (31), German (9), French (2),
+Spanish (1) -- 27.9% non-English, exceeding the ~25% target set in the
 design spec. Extending to more languages (Italian, Portuguese, etc.) in
 a future curation round needs no code changes: add manifest entries with
 the new `language` value and update this table.
@@ -162,23 +162,23 @@ any non-browser client.
   `9781800082731`, `9781800085787`), 2 from Athabasca University Press
   (`9781771993326`, `9781771992862`). Publisher-side Crossref registration
   gap, not a curation error -- `license_source: "unpaywall"` on these.
-- **3 transcript Verlag books likely aren't actually open access:**
-  `9783839473948`, `9783839413197`, `9783837621310`. Neither Crossref nor
-  Unpaywall (`is_oa: false`) has any license for them, DOAB has no record
-  of them either, and their PDF text contains no license statement
-  anywhere (every genuinely-OA transcript Verlag book in this corpus does
-  state one). Their `download_url` filenames also stand out: every other
-  transcript Verlag PDF here is named `oa<isbn>...pdf`; these three are
-  named `tstw<n>_...pdf` instead -- consistent with transcript Verlag's
-  free "Leseprobe" (reading sample) excerpt, which every book gets
-  regardless of OA status, not the full open-access edition. Their page
-  counts back this up too (13-44 pages for a multi-chapter edited volume).
-  These three were very likely miscurated into this corpus as if they
-  were OA when they are not. **None of the three were migrated into
-  `evaluation/corpus/open-access/`**, so this hasn't caused a
-  redistribution problem yet, but they should probably be removed from
-  `manifest.json` (or re-sourced from a real OA edition, if one exists)
-  rather than left here looking like the other 43 open-access entries.
+- **Removed: 3 transcript Verlag books that turned out not to be open
+  access.** `9783839473948` (*Gesundheit und Krankheit im Zeitalter der
+  Digitalisierung*), `9783839413197` (*Entgrenzung der Medizin*), and
+  `9783837621310` (*'Gender-Medizin'*) were originally curated into this
+  corpus as OA, but had no license on Crossref, Unpaywall (`is_oa:
+  false`), or DOAB, and no license statement anywhere in their PDF text.
+  Their `download_url` filenames also broke pattern: every other
+  transcript Verlag PDF here is named `oa<isbn>...pdf`; these three were
+  `tstw<n>_...pdf` -- transcript Verlag's free "Leseprobe" (reading
+  sample) excerpt, offered on every book regardless of OA status, not the
+  full edition (13-44 pages for what should be a multi-chapter volume).
+  Confirmed directly on transcript-verlag.de: all three list a real price
+  (26,99-40,00 €) with no Open Access badge or CC license -- genuinely
+  paywalled books, not OA. None had been migrated into
+  `evaluation/corpus/open-access/`, so removing them here caused no
+  redistribution problem; they were simply deleted (manifest entry, PDF,
+  `.crossref.json`) rather than left in as if they were OA.
 
 ## Downloading: host-specific quirks
 

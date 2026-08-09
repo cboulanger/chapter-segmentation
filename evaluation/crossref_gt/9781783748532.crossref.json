@@ -1,7 +1,8 @@
 {
   "isbn": "9781783748532",
-  "fetched_at": "2026-08-09T12:57:30.225179+00:00",
+  "fetched_at": "2026-08-09T13:15:16.992112+00:00",
   "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
   "raw_items": [
     {
       "license": [
@@ -940,31 +941,68 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0203.14",
+      "DOI": "10.11647/obp.0203.11",
       "type": "book-chapter",
-      "page": "311-332",
+      "page": "245-268",
       "title": [
-        "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories"
+        "11. Care Leavers in Italy"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-0172-0101",
+          "ORCID": "https://orcid.org/0000-0002-2237-7648",
           "authenticated-orcid": false,
-          "given": "Miguel Alberto",
-          "family": "González González",
+          "given": "Laura",
+          "family": "Formenti",
           "sequence": "first",
           "affiliation": [
             {
               "id": [
                 {
-                  "id": "https://ror.org/031n6w191",
+                  "id": "https://ror.org/01ynf4891",
                   "id-type": "ROR",
                   "asserted-by": "publisher"
                 }
               ],
-              "name": "Universidad de Manizales"
+              "name": "University of Milano-Bicocca"
             }
           ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6883-7355",
+          "authenticated-orcid": false,
+          "given": "Andrea",
+          "family": "Galimberti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ynf4891",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Milano-Bicocca"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mirella",
+          "family": "Ferrari",
+          "sequence": "additional",
+          "affiliation": [],
           "role": [
             {
               "vocabulary": "crossref",
@@ -975,6 +1013,9 @@
       ],
       "container-title": [
         "Discourses We Live By"
+      ],
+      "subtitle": [
+        "From ‘Vulnerable’ Children to ‘Autonomous’ Adults?"
       ],
       "ISBN": [
         "9781783748518",
@@ -1116,68 +1157,31 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0203.11",
+      "DOI": "10.11647/obp.0203.14",
       "type": "book-chapter",
-      "page": "245-268",
+      "page": "311-332",
       "title": [
-        "11. Care Leavers in Italy"
+        "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-2237-7648",
+          "ORCID": "https://orcid.org/0000-0002-0172-0101",
           "authenticated-orcid": false,
-          "given": "Laura",
-          "family": "Formenti",
+          "given": "Miguel Alberto",
+          "family": "González González",
           "sequence": "first",
           "affiliation": [
             {
               "id": [
                 {
-                  "id": "https://ror.org/01ynf4891",
+                  "id": "https://ror.org/031n6w191",
                   "id-type": "ROR",
                   "asserted-by": "publisher"
                 }
               ],
-              "name": "University of Milano-Bicocca"
+              "name": "Universidad de Manizales"
             }
           ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "ORCID": "https://orcid.org/0000-0002-6883-7355",
-          "authenticated-orcid": false,
-          "given": "Andrea",
-          "family": "Galimberti",
-          "sequence": "additional",
-          "affiliation": [
-            {
-              "id": [
-                {
-                  "id": "https://ror.org/01ynf4891",
-                  "id-type": "ROR",
-                  "asserted-by": "publisher"
-                }
-              ],
-              "name": "University of Milano-Bicocca"
-            }
-          ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Mirella",
-          "family": "Ferrari",
-          "sequence": "additional",
-          "affiliation": [],
           "role": [
             {
               "vocabulary": "crossref",
@@ -1188,9 +1192,6 @@
       ],
       "container-title": [
         "Discourses We Live By"
-      ],
-      "subtitle": [
-        "From ‘Vulnerable’ Children to ‘Autonomous’ Adults?"
       ],
       "ISBN": [
         "9781783748518",
@@ -1942,6 +1943,70 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
+      "DOI": "10.11647/obp.0203.01",
+      "type": "book-chapter",
+      "page": "27-52",
+      "title": [
+        "1. Truth and Narrative"
+      ],
+      "author": [
+        {
+          "given": "Janet",
+          "family": "Dyson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discourses We Live By"
+      ],
+      "subtitle": [
+        "How and Why Stories Matter"
+      ],
+      "ISBN": [
+        "9781783748518",
+        "9781783748525",
+        "9781783748532",
+        "9781800646148",
+        "9781783748563",
+        "9781783748549",
+        "9781783748556"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2020-07-03T00:00:00Z",
+            "timestamp": 1593734400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.11647/obp.0203.05",
       "type": "book-chapter",
       "page": "119-140",
@@ -1992,70 +2057,6 @@
       ],
       "subtitle": [
         "Science and Humanities Teaching in Danish Schools"
-      ],
-      "ISBN": [
-        "9781783748518",
-        "9781783748525",
-        "9781783748532",
-        "9781800646148",
-        "9781783748563",
-        "9781783748549",
-        "9781783748556"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2020,
-            7,
-            3
-          ]
-        ]
-      }
-    },
-    {
-      "license": [
-        {
-          "start": {
-            "date-parts": [
-              [
-                2020,
-                7,
-                3
-              ]
-            ],
-            "date-time": "2020-07-03T00:00:00Z",
-            "timestamp": 1593734400000
-          },
-          "content-version": "unspecified",
-          "delay-in-days": 0,
-          "URL": "http://creativecommons.org/licenses/by/4.0"
-        }
-      ],
-      "DOI": "10.11647/obp.0203.01",
-      "type": "book-chapter",
-      "page": "27-52",
-      "title": [
-        "1. Truth and Narrative"
-      ],
-      "author": [
-        {
-          "given": "Janet",
-          "family": "Dyson",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Discourses We Live By"
-      ],
-      "subtitle": [
-        "How and Why Stories Matter"
       ],
       "ISBN": [
         "9781783748518",
@@ -2334,12 +2335,14 @@
       "citation_pages": "269-283"
     },
     {
-      "title": "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories",
+      "title": "11. Care Leavers in Italy From ‘Vulnerable’ Children to ‘Autonomous’ Adults?",
       "authors": [
-        "Miguel Alberto González González"
+        "Laura Formenti",
+        "Andrea Galimberti",
+        "Mirella Ferrari"
       ],
-      "chapter_doi": "10.11647/obp.0203.14",
-      "citation_pages": "311-332"
+      "chapter_doi": "10.11647/obp.0203.11",
+      "citation_pages": "245-268"
     },
     {
       "title": "Narrative, Discourse, and Biography An Introductory Story",
@@ -2351,14 +2354,12 @@
       "citation_pages": "1-21"
     },
     {
-      "title": "11. Care Leavers in Italy From ‘Vulnerable’ Children to ‘Autonomous’ Adults?",
+      "title": "14. Inclusion and Exclusion in Colombian Education, Captured through Life Stories",
       "authors": [
-        "Laura Formenti",
-        "Andrea Galimberti",
-        "Mirella Ferrari"
+        "Miguel Alberto González González"
       ],
-      "chapter_doi": "10.11647/obp.0203.11",
-      "citation_pages": "245-268"
+      "chapter_doi": "10.11647/obp.0203.14",
+      "citation_pages": "311-332"
     },
     {
       "title": "6. Shaping ‘the Good Teacher’ in Danish and Kenyan Teacher Education",
@@ -2443,6 +2444,14 @@
       "citation_pages": "587-608"
     },
     {
+      "title": "1. Truth and Narrative How and Why Stories Matter",
+      "authors": [
+        "Janet Dyson"
+      ],
+      "chapter_doi": "10.11647/obp.0203.01",
+      "citation_pages": "27-52"
+    },
+    {
       "title": "5. Opposing Cultures Science and Humanities Teaching in Danish Schools",
       "authors": [
         "Marianne Høyen",
@@ -2450,14 +2459,6 @@
       ],
       "chapter_doi": "10.11647/obp.0203.05",
       "citation_pages": "119-140"
-    },
-    {
-      "title": "1. Truth and Narrative How and Why Stories Matter",
-      "authors": [
-        "Janet Dyson"
-      ],
-      "chapter_doi": "10.11647/obp.0203.01",
-      "citation_pages": "27-52"
     },
     {
       "title": "4. Understandings of the Natural World from a Generational Perspective",

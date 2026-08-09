@@ -60,14 +60,18 @@ warning currently present in this corpus.
   "language": "en",
   "publisher": "Language Science Press",
   "download_url": "https://.../book.pdf",
-  "license": "https://creativecommons.org/licenses/by/4.0"
+  "license": "https://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref"
 }
 ```
 
-`license` is the book's registered OA license URL, filled in by
-`fetch_crossref_gt_corpus.py` from Crossref's own `license` metadata (see
-below) -- `null` for the rare book with no license registered there (see
-"Known gaps").
+`license` is the book's OA license URL, filled in by
+`fetch_crossref_gt_corpus.py` from Crossref's own `license` metadata first;
+if Crossref has none registered, it falls back to Unpaywall's
+`best_oa_location.license` (a different, independent data source -- see
+"Crossref vs. Unpaywall" below) before giving up. `license_source` records
+which one actually supplied it: `"crossref"`, `"unpaywall"`, or `null` for
+the rare book neither source has one for (see "Known gaps").
 
 ## `<isbn>.crossref.json` schema
 
@@ -76,6 +80,7 @@ below) -- `null` for the rare book with no license registered there (see
   "isbn": "9783961102546",
   "fetched_at": "2026-08-08T12:00:00+00:00",
   "license": "https://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
   "raw_items": [ /* verbatim Crossref message.items entries, type=="book-chapter" only */ ],
   "chapters": [
     {"title": "...", "authors": ["..."], "chapter_doi": "10...", "citation_pages": "19-39"}
@@ -97,6 +102,23 @@ license metadata is registered once per book and inherited by each
 chapter), preferring each chapter's version-of-record entry
 (`content-version=="vor"`, `delay-in-days==0`) over an embargoed variant
 that may be registered alongside it.
+
+### Crossref vs. Unpaywall: not the same data
+
+Crossref's `license` field is *self-reported by the publisher* at
+metadata-deposit time -- it's whatever the publisher chose to register
+alongside the DOI, and plenty of publishers simply don't bother. Unpaywall
+doesn't read that field at all; it independently aggregates OA status and
+license information from institutional repositories, publisher landing
+pages, and other registries, then reports its own best-guess
+`best_oa_location.license` (a short code like `"cc-by-nc"`, not a URL).
+The two systems can and do disagree about coverage: in this corpus,
+Unpaywall recovers a license for 7 of the 10 books Crossref has none for
+(every UCL Press and Athabasca University Press book), by finding it on
+the publisher's own site even though it was never deposited with
+Crossref. `fetch_crossref_gt_corpus.py` tries Crossref first and falls
+back to Unpaywall only when Crossref comes back empty; `license_source`
+records which one actually answered.
 
 ## Coverage
 
@@ -135,18 +157,28 @@ any non-browser client.
   de l'ouvrage" -- a funding-acknowledgment blurb, not a real chapter) has
   no `page` value. Expected Crossref registration noise, not a defect in
   this corpus; the other 14 chapters are complete.
-- 10 books have `"license": null` -- Crossref has no `license` metadata
-  registered for any of their chapters, even though every one of these
-  books is genuinely OA (its PDF is downloaded directly from the
-  publisher's own OA repository/mirror, same as every other book here).
-  This is a publisher-side Crossref registration gap, not a curation
-  error: 5 from UCL Press (`9781800088375`, `9781787359260`,
-  `9781800086586`, `9781800082731`, `9781800085787`), 2 from Athabasca
-  University Press (`9781771993326`, `9781771992862`), and 3 from
-  transcript Verlag (`9783839473948`, `9783839413197`, `9783837621310`).
-  A human would need to look up each book's actual license by hand (its
-  publisher landing page) to fill this in; `fetch_crossref_gt_corpus.py`
-  only ever reports what Crossref has registered.
+- 7 books have no license registered on Crossref, but Unpaywall recovers
+  one: 5 from UCL Press (`9781800088375`, `9781787359260`, `9781800086586`,
+  `9781800082731`, `9781800085787`), 2 from Athabasca University Press
+  (`9781771993326`, `9781771992862`). Publisher-side Crossref registration
+  gap, not a curation error -- `license_source: "unpaywall"` on these.
+- **3 transcript Verlag books likely aren't actually open access:**
+  `9783839473948`, `9783839413197`, `9783837621310`. Neither Crossref nor
+  Unpaywall (`is_oa: false`) has any license for them, DOAB has no record
+  of them either, and their PDF text contains no license statement
+  anywhere (every genuinely-OA transcript Verlag book in this corpus does
+  state one). Their `download_url` filenames also stand out: every other
+  transcript Verlag PDF here is named `oa<isbn>...pdf`; these three are
+  named `tstw<n>_...pdf` instead -- consistent with transcript Verlag's
+  free "Leseprobe" (reading sample) excerpt, which every book gets
+  regardless of OA status, not the full open-access edition. Their page
+  counts back this up too (13-44 pages for a multi-chapter edited volume).
+  These three were very likely miscurated into this corpus as if they
+  were OA when they are not. **None of the three were migrated into
+  `evaluation/corpus/open-access/`**, so this hasn't caused a
+  redistribution problem yet, but they should probably be removed from
+  `manifest.json` (or re-sourced from a real OA edition, if one exists)
+  rather than left here looking like the other 43 open-access entries.
 
 ## Downloading: host-specific quirks
 

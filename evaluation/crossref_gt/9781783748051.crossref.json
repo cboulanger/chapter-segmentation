@@ -1,7 +1,8 @@
 {
   "isbn": "9781783748051",
-  "fetched_at": "2026-08-09T12:57:28.103539+00:00",
+  "fetched_at": "2026-08-09T13:15:15.776791+00:00",
   "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_source": "crossref",
   "raw_items": [
     {
       "license": [
@@ -1039,6 +1040,107 @@
           },
           "content-version": "unspecified",
           "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0186.17",
+      "type": "book-chapter",
+      "page": "193-202",
+      "title": [
+        "17. Unsettling the Land"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9895-8062",
+          "authenticated-orcid": false,
+          "given": "Paul Berne",
+          "family": "Burow",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v76x132",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Yale University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Samara",
+          "family": "Brock",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael R.",
+          "family": "Dove",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Living Earth Community"
+      ],
+      "subtitle": [
+        "Indigeneity, Ontology, and Hybridity"
+      ],
+      "ISBN": [
+        "9781783748037",
+        "9781783748044",
+        "9781783748051",
+        "9781800645981",
+        "9781783748082",
+        "9781783748068",
+        "9781783748075"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                7
+              ]
+            ],
+            "date-time": "2020-05-07T00:00:00Z",
+            "timestamp": 1588809600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
@@ -1140,107 +1242,6 @@
       ],
       "container-title": [
         "Living Earth Community"
-      ],
-      "ISBN": [
-        "9781783748037",
-        "9781783748044",
-        "9781783748051",
-        "9781800645981",
-        "9781783748082",
-        "9781783748068",
-        "9781783748075"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2020,
-            5,
-            7
-          ]
-        ]
-      }
-    },
-    {
-      "license": [
-        {
-          "start": {
-            "date-parts": [
-              [
-                2020,
-                5,
-                7
-              ]
-            ],
-            "date-time": "2020-05-07T00:00:00Z",
-            "timestamp": 1588809600000
-          },
-          "content-version": "unspecified",
-          "delay-in-days": 0,
-          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-        }
-      ],
-      "DOI": "10.11647/obp.0186.17",
-      "type": "book-chapter",
-      "page": "193-202",
-      "title": [
-        "17. Unsettling the Land"
-      ],
-      "author": [
-        {
-          "ORCID": "https://orcid.org/0000-0001-9895-8062",
-          "authenticated-orcid": false,
-          "given": "Paul Berne",
-          "family": "Burow",
-          "sequence": "first",
-          "affiliation": [
-            {
-              "id": [
-                {
-                  "id": "https://ror.org/03v76x132",
-                  "id-type": "ROR",
-                  "asserted-by": "publisher"
-                }
-              ],
-              "name": "Yale University"
-            }
-          ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Samara",
-          "family": "Brock",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Michael R.",
-          "family": "Dove",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Living Earth Community"
-      ],
-      "subtitle": [
-        "Indigeneity, Ontology, and Hybridity"
       ],
       "ISBN": [
         "9781783748037",
@@ -1575,6 +1576,16 @@
       "citation_pages": "67-74"
     },
     {
+      "title": "17. Unsettling the Land Indigeneity, Ontology, and Hybridity",
+      "authors": [
+        "Paul Berne Burow",
+        "Samara Brock",
+        "Michael R. Dove"
+      ],
+      "chapter_doi": "10.11647/obp.0186.17",
+      "citation_pages": "193-202"
+    },
+    {
       "title": "Introduction Ways of Knowing, Ways of Valuing Nature",
       "authors": [
         "John Grim",
@@ -1590,16 +1601,6 @@
       ],
       "chapter_doi": "10.11647/obp.0186.10",
       "citation_pages": "123-132"
-    },
-    {
-      "title": "17. Unsettling the Land Indigeneity, Ontology, and Hybridity",
-      "authors": [
-        "Paul Berne Burow",
-        "Samara Brock",
-        "Michael R. Dove"
-      ],
-      "chapter_doi": "10.11647/obp.0186.17",
-      "citation_pages": "193-202"
     },
     {
       "title": "Preface",

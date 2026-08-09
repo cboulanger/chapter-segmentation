@@ -76,6 +76,12 @@ evaluation/corpus/<name>/
   the pointer a human follows to acquire it)
 - `download_url` — direct PDF URL, only meaningful when `oa: true`; `null`
   otherwise
+- `license` (open-access/ only) — the book's OA license URL, `null` if
+  none could be found; `license_source` records where it came from
+  (`"crossref"`, `"unpaywall"`, or `"pdf"` for the handful verified
+  directly from the book's own printed colophon) -- see
+  `evaluation/crossref_gt/README.md`'s "Crossref vs. Unpaywall" for why
+  these two sources don't always agree on coverage
 
 `public-cache/<key>.pages.json` holds `oa: true` books' page text VERBATIM
 (the PDF is already legally redistributable, so there's nothing to

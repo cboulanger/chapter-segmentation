@@ -9,7 +9,12 @@ independently skipped if their target file already exists, so a partial
 prior run resumes cleanly; --force refetches everything. The book's OA
 license URL (majority vote across its chapters' individually-registered
 licenses) is written to both <isbn>.crossref.json and back into
-manifest.json's "license" field.
+manifest.json's "license" field, alongside "license_source" ("crossref" or
+"unpaywall"). When Crossref has no license registered, falls back to
+Unpaywall's best_oa_location.license -- a different data source (OA status
+aggregated from institutional repositories and publisher landing pages,
+not Crossref's own self-reported deposit metadata), so it recovers a
+license for some books Crossref alone can't answer.
 
 This corpus is standalone -- it is not yet consumed by
 tests/test_segmentation_accuracy.py or evaluation/generate_report.py.
@@ -157,35 +162,89 @@ def _book_license_url(raw_items: list[dict]) -> Optional[str]:
     return Counter(urls).most_common(1)[0][0]
 
 
+_UNPAYWALL_BASE_URL = "https://api.unpaywall.org/v2"
+
+# Unpaywall reports a short SPDX-ish code (e.g. "cc-by-nc"), not a URL --
+# mapped to the CC 4.0 URL, since every book in this corpus is a 2020s
+# publication and 4.0 is the only version any of its publishers use for
+# new titles (found empirically: every Crossref-registered license in
+# this same corpus that DOES carry an explicit version is 4.0).
+_UNPAYWALL_LICENSE_URLS = {
+    "cc-by": "https://creativecommons.org/licenses/by/4.0/",
+    "cc-by-sa": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "cc-by-nc": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "cc-by-nc-sa": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "cc-by-nc-nd": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "cc-by-nd": "https://creativecommons.org/licenses/by-nd/4.0/",
+    "cc0": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "pd": "https://creativecommons.org/publicdomain/mark/1.0/",
+}
+
+
+def _unpaywall_license_url(doi: Optional[str], client: httpx.Client, contact_email: Optional[str]) -> Optional[str]:
+    """Fallback license lookup via Unpaywall, tried only when Crossref has
+    no license registered for a book. Crossref's license field is
+    self-reported by the publisher at metadata-deposit time and often left
+    blank; Unpaywall aggregates OA status from institutional repositories
+    and publisher landing pages instead, so it is NOT the same data --
+    found empirically: it recovers a license for every UCL Press /
+    Athabasca University Press book in this corpus that Crossref has none
+    for. Returns None if there's no DOI, no Unpaywall OA record, no
+    license, or the request fails -- never raises, so one bad lookup never
+    aborts the batch."""
+    if not doi:
+        return None
+    email = contact_email or _DEFAULT_CONTACT_EMAIL
+    try:
+        response = client.get(f"{_UNPAYWALL_BASE_URL}/{doi}", params={"email": email}, timeout=10.0)
+        response.raise_for_status()
+        location = response.json().get("best_oa_location")
+    except Exception as exc:
+        print(f"  [warn] Unpaywall lookup failed for {doi}: {exc}")
+        return None
+    code = location.get("license") if location else None
+    return _UNPAYWALL_LICENSE_URLS.get(code)
+
+
 def _fetch_crossref_metadata(
-    isbn: str, client: httpx.Client, contact_email: Optional[str], target: Path, force: bool
-) -> tuple[int, int, Optional[str]]:
+    isbn: str, doi: Optional[str], client: httpx.Client, contact_email: Optional[str], target: Path, force: bool
+) -> tuple[int, int, Optional[str], Optional[str]]:
     """Writes target (<isbn>.crossref.json) unless it already exists and
     not force. Returns (chapter_count, chapters_missing_page_range,
-    license_url) either way, so the caller can flag books needing review
-    even on a skipped (already-fetched) run. A corrupted/truncated cache
-    file (e.g. from a prior run interrupted mid-write) is treated as a
-    cache miss -- never raises, so one bad book never aborts the batch."""
+    license_url, license_source) either way, so the caller can flag books
+    needing review even on a skipped (already-fetched) run. license_source
+    is "crossref", "unpaywall" (fallback used because Crossref had none),
+    or None (neither source has one). A corrupted/truncated cache file
+    (e.g. from a prior run interrupted mid-write) is treated as a cache
+    miss -- never raises, so one bad book never aborts the batch."""
     if target.exists() and not force:
         try:
             cached = json.loads(target.read_text(encoding="utf-8"))
             chapters = cached["chapters"]
-            return len(chapters), sum(1 for c in chapters if not c["citation_pages"]), cached.get("license")
+            return (
+                len(chapters), sum(1 for c in chapters if not c["citation_pages"]),
+                cached.get("license"), cached.get("license_source"),
+            )
         except Exception as exc:
             print(f"  [warn] corrupted cache file {target.name}, refetching: {exc}")
 
     raw_items = _crossref_book_chapters(isbn, client, contact_email)
     chapters = [c for item in raw_items if (c := _normalize_chapter(item)) is not None]
     license_url = _book_license_url(raw_items)
+    license_source = "crossref" if license_url else None
+    if license_url is None:
+        license_url = _unpaywall_license_url(doi, client, contact_email)
+        license_source = "unpaywall" if license_url else None
     payload = {
         "isbn": isbn,
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "license": license_url,
+        "license_source": license_source,
         "raw_items": raw_items,
         "chapters": chapters,
     }
     target.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    return len(chapters), sum(1 for c in chapters if not c["citation_pages"]), license_url
+    return len(chapters), sum(1 for c in chapters if not c["citation_pages"]), license_url, license_source
 
 
 def _download_pdf(book: dict, client: httpx.Client, target: Path, force: bool) -> str:
@@ -232,24 +291,35 @@ def fetch_all(corpus_dir: Path, force: bool, force_metadata: bool, contact_email
             if pdf_status == "downloaded":
                 downloaded += 1
 
-            n_chapters, n_missing_page, license_url = _fetch_crossref_metadata(
-                isbn, client, contact_email, corpus_dir / f"{isbn}.crossref.json", force or force_metadata
+            n_chapters, n_missing_page, license_url, license_source = _fetch_crossref_metadata(
+                isbn, book.get("doi"), client, contact_email,
+                corpus_dir / f"{isbn}.crossref.json", force or force_metadata,
             )
             print(f"  crossref: {n_chapters} chapter(s), {n_missing_page} missing page range, "
-                  f"license: {license_url or 'NONE'}")
+                  f"license: {license_url or 'NONE'}"
+                  f"{f' (via {license_source})' if license_source == 'unpaywall' else ''}")
             total_chapters += n_chapters
             if n_chapters == 0:
                 flagged.append((isbn, "zero book-chapter records"))
             elif n_missing_page:
                 flagged.append((isbn, f"{n_missing_page} chapter(s) missing page range"))
             if license_url is None:
-                flagged.append((isbn, "no registered Crossref license"))
-            if "license" not in book or book["license"] != license_url:
+                flagged.append((isbn, "no license found on Crossref or Unpaywall"))
+            if (
+                "license" not in book or book["license"] != license_url
+                or "license_source" not in book or book["license_source"] != license_source
+            ):
                 # "license" not in book distinguishes "never checked" from
-                # "checked, Crossref has none" (license_url is None either
-                # way) -- book.get("license") != license_url alone would
-                # treat both as equal and never write the explicit null.
+                # "checked, found none" (license_url is None either way) --
+                # book.get("license") != license_url alone would treat both
+                # as equal and never write the explicit null. Comparing
+                # license_source too catches the case where the URL was
+                # already correct from a prior run but license_source
+                # didn't exist yet (found empirically: without this, 36
+                # already-correct books never got their license_source
+                # backfilled on a later re-run).
                 book["license"] = license_url
+                book["license_source"] = license_source
                 manifest_changed = True
 
     if manifest_changed:

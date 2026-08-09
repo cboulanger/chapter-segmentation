@@ -1,7 +1,8 @@
 {
   "isbn": "9783839437384",
-  "fetched_at": "2026-08-09T12:57:30.542105+00:00",
+  "fetched_at": "2026-08-09T13:15:17.266196+00:00",
   "license": "https://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
   "raw_items": [
     {
       "license": [
@@ -712,11 +713,11 @@
           "URL": "https://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.14361/9783839437384-010",
+      "DOI": "10.14361/9783839437384-006",
       "type": "book-chapter",
-      "page": "163-212",
+      "page": "15-58",
       "title": [
-        "6. Kollektiv &amp; Solidarität – Einblicke in die Transplantationsgemeinschaft"
+        "1. Einleitung"
       ],
       "author": [
         {
@@ -781,11 +782,11 @@
           "URL": "https://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.14361/9783839437384-006",
+      "DOI": "10.14361/9783839437384-010",
       "type": "book-chapter",
-      "page": "15-58",
+      "page": "163-212",
       "title": [
-        "1. Einleitung"
+        "6. Kollektiv &amp; Solidarität – Einblicke in die Transplantationsgemeinschaft"
       ],
       "author": [
         {
@@ -1338,15 +1339,6 @@
       "citation_pages": "323-344"
     },
     {
-      "title": "6. Kollektiv &amp; Solidarität – Einblicke in die Transplantationsgemeinschaft",
-      "authors": [
-        "Sybilla Nikolow",
-        "Christoph Asmuth"
-      ],
-      "chapter_doi": "10.14361/9783839437384-010",
-      "citation_pages": "163-212"
-    },
-    {
       "title": "1. Einleitung",
       "authors": [
         "Sybilla Nikolow",
@@ -1354,6 +1346,15 @@
       ],
       "chapter_doi": "10.14361/9783839437384-006",
       "citation_pages": "15-58"
+    },
+    {
+      "title": "6. Kollektiv &amp; Solidarität – Einblicke in die Transplantationsgemeinschaft",
+      "authors": [
+        "Sybilla Nikolow",
+        "Christoph Asmuth"
+      ],
+      "chapter_doi": "10.14361/9783839437384-010",
+      "citation_pages": "163-212"
     },
     {
       "title": "Inhalt",

@@ -1,7 +1,8 @@
 {
   "isbn": "9781783742806",
-  "fetched_at": "2026-08-09T12:57:30.071852+00:00",
+  "fetched_at": "2026-08-09T13:15:16.835686+00:00",
   "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
   "raw_items": [
     {
       "license": [
@@ -959,16 +960,16 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0103.03",
+      "DOI": "10.11647/obp.0103.13",
       "type": "book-chapter",
-      "page": "51-72",
+      "page": "257-280",
       "title": [
-        "3. Technology Strategies for Open Educational Resource Dissemination"
+        "13. Open Assessment Resources for Deeper Learning"
       ],
       "author": [
         {
-          "given": "Phil",
-          "family": "Barker",
+          "given": "David",
+          "family": "Gibson",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -979,10 +980,20 @@
           ]
         },
         {
-          "ORCID": "https://orcid.org/0000-0001-6767-856X",
-          "authenticated-orcid": false,
-          "given": "Lorna M.",
-          "family": "Campbell",
+          "given": "Dirk",
+          "family": "Ifenthaler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Davor",
+          "family": "Orlic",
           "sequence": "additional",
           "affiliation": [],
           "role": [
@@ -1034,16 +1045,16 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0103.13",
+      "DOI": "10.11647/obp.0103.03",
       "type": "book-chapter",
-      "page": "257-280",
+      "page": "51-72",
       "title": [
-        "13. Open Assessment Resources for Deeper Learning"
+        "3. Technology Strategies for Open Educational Resource Dissemination"
       ],
       "author": [
         {
-          "given": "David",
-          "family": "Gibson",
+          "given": "Phil",
+          "family": "Barker",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -1054,20 +1065,10 @@
           ]
         },
         {
-          "given": "Dirk",
-          "family": "Ifenthaler",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Davor",
-          "family": "Orlic",
+          "ORCID": "https://orcid.org/0000-0001-6767-856X",
+          "authenticated-orcid": false,
+          "given": "Lorna M.",
+          "family": "Campbell",
           "sequence": "additional",
           "affiliation": [],
           "role": [
@@ -1495,15 +1496,6 @@
       "citation_pages": "321-342"
     },
     {
-      "title": "3. Technology Strategies for Open Educational Resource Dissemination",
-      "authors": [
-        "Phil Barker",
-        "Lorna M. Campbell"
-      ],
-      "chapter_doi": "10.11647/obp.0103.03",
-      "citation_pages": "51-72"
-    },
-    {
       "title": "13. Open Assessment Resources for Deeper Learning",
       "authors": [
         "David Gibson",
@@ -1512,6 +1504,15 @@
       ],
       "chapter_doi": "10.11647/obp.0103.13",
       "citation_pages": "257-280"
+    },
+    {
+      "title": "3. Technology Strategies for Open Educational Resource Dissemination",
+      "authors": [
+        "Phil Barker",
+        "Lorna M. Campbell"
+      ],
+      "chapter_doi": "10.11647/obp.0103.03",
+      "citation_pages": "51-72"
     },
     {
       "title": "Preface",

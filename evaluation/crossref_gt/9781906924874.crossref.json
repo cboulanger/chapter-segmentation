@@ -1,7 +1,8 @@
 {
   "isbn": "9781906924874",
-  "fetched_at": "2026-08-09T12:57:31.093907+00:00",
+  "fetched_at": "2026-08-09T13:15:18.039241+00:00",
   "license": "https://creativecommons.org/licenses/by/3.0/",
+  "license_source": "crossref",
   "raw_items": [
     {
       "license": [
@@ -624,16 +625,16 @@
           "URL": "https://creativecommons.org/licenses/by/3.0/"
         }
       ],
-      "DOI": "10.11647/obp.0026.05",
+      "DOI": "10.11647/obp.0026.06",
       "type": "book-chapter",
-      "page": "71-87",
+      "page": "89-110",
       "title": [
-        "Chinese Migrants and Anti-Chinese Sentiments in Russian Society"
+        "The Case of the Amur as a Cross-Border Zone of Illegality"
       ],
       "author": [
         {
-          "given": "Viktor",
-          "family": "Dyatlov",
+          "given": "Natalia",
+          "family": "Ryzhova",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -684,16 +685,16 @@
           "URL": "https://creativecommons.org/licenses/by/3.0/"
         }
       ],
-      "DOI": "10.11647/obp.0026.06",
+      "DOI": "10.11647/obp.0026.05",
       "type": "book-chapter",
-      "page": "89-110",
+      "page": "71-87",
       "title": [
-        "The Case of the Amur as a Cross-Border Zone of Illegality"
+        "Chinese Migrants and Anti-Chinese Sentiments in Russian Society"
       ],
       "author": [
         {
-          "given": "Natalia",
-          "family": "Ryzhova",
+          "given": "Viktor",
+          "family": "Dyatlov",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -870,20 +871,20 @@
       "citation_pages": "137-163"
     },
     {
-      "title": "Chinese Migrants and Anti-Chinese Sentiments in Russian Society",
-      "authors": [
-        "Viktor Dyatlov"
-      ],
-      "chapter_doi": "10.11647/obp.0026.05",
-      "citation_pages": "71-87"
-    },
-    {
       "title": "The Case of the Amur as a Cross-Border Zone of Illegality",
       "authors": [
         "Natalia Ryzhova"
       ],
       "chapter_doi": "10.11647/obp.0026.06",
       "citation_pages": "89-110"
+    },
+    {
+      "title": "Chinese Migrants and Anti-Chinese Sentiments in Russian Society",
+      "authors": [
+        "Viktor Dyatlov"
+      ],
+      "chapter_doi": "10.11647/obp.0026.05",
+      "citation_pages": "71-87"
     },
     {
       "title": "On Ideas of the Border in the Russian and Chinese Social Imaginaries",

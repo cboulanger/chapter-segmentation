@@ -1,7 +1,8 @@
 {
   "isbn": "9781800642621",
-  "fetched_at": "2026-08-09T12:57:28.273008+00:00",
+  "fetched_at": "2026-08-09T13:15:15.963433+00:00",
   "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
   "raw_items": [
     {
       "license": [
@@ -59,94 +60,6 @@
       ],
       "subtitle": [
         "The Social and Political Influence of the Fossil Fuel Industry"
-      ],
-      "ISBN": [
-        "9781800642607",
-        "9781800642614",
-        "9781800642621",
-        "9781800646568",
-        "9781800642652",
-        "9781800642638",
-        "9781800642645"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2021,
-            9,
-            28
-          ]
-        ]
-      }
-    },
-    {
-      "license": [
-        {
-          "start": {
-            "date-parts": [
-              [
-                2021,
-                9,
-                28
-              ]
-            ],
-            "date-time": "2021-09-28T00:00:00Z",
-            "timestamp": 1632787200000
-          },
-          "content-version": "unspecified",
-          "delay-in-days": 0,
-          "URL": "http://creativecommons.org/licenses/by/4.0"
-        }
-      ],
-      "DOI": "10.11647/obp.0265.17",
-      "type": "book-chapter",
-      "page": "225-230",
-      "title": [
-        "17. Inside Out COPs"
-      ],
-      "author": [
-        {
-          "given": "Shahrin",
-          "family": "Mannan",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Saleemul",
-          "family": "Huq",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Mizan R.",
-          "family": "Khan",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Negotiating Climate Change in Crisis"
-      ],
-      "subtitle": [
-        "Turning Climate Negotiations Upside Down"
       ],
       "ISBN": [
         "9781800642607",
@@ -308,6 +221,94 @@
       ],
       "container-title": [
         "Negotiating Climate Change in Crisis"
+      ],
+      "ISBN": [
+        "9781800642607",
+        "9781800642614",
+        "9781800642621",
+        "9781800646568",
+        "9781800642652",
+        "9781800642638",
+        "9781800642645"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                28
+              ]
+            ],
+            "date-time": "2021-09-28T00:00:00Z",
+            "timestamp": 1632787200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0265.17",
+      "type": "book-chapter",
+      "page": "225-230",
+      "title": [
+        "17. Inside Out COPs"
+      ],
+      "author": [
+        {
+          "given": "Shahrin",
+          "family": "Mannan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Saleemul",
+          "family": "Huq",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mizan R.",
+          "family": "Khan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Negotiating Climate Change in Crisis"
+      ],
+      "subtitle": [
+        "Turning Climate Negotiations Upside Down"
       ],
       "ISBN": [
         "9781800642607",
@@ -2325,16 +2326,6 @@
       "citation_pages": "113-126"
     },
     {
-      "title": "17. Inside Out COPs Turning Climate Negotiations Upside Down",
-      "authors": [
-        "Shahrin Mannan",
-        "Saleemul Huq",
-        "Mizan R. Khan"
-      ],
-      "chapter_doi": "10.11647/obp.0265.17",
-      "citation_pages": "225-230"
-    },
-    {
       "title": "10. End the ‘Green’ Delusions Industrial-Scale Renewable Energy is Fossil Fuel+",
       "authors": [
         "Alexander Dunlap"
@@ -2352,6 +2343,16 @@
       ],
       "chapter_doi": "10.11647/obp.0265.05",
       "citation_pages": "53-62"
+    },
+    {
+      "title": "17. Inside Out COPs Turning Climate Negotiations Upside Down",
+      "authors": [
+        "Shahrin Mannan",
+        "Saleemul Huq",
+        "Mizan R. Khan"
+      ],
+      "chapter_doi": "10.11647/obp.0265.17",
+      "citation_pages": "225-230"
     },
     {
       "title": "23. Climate Politics between Conflict and Complexity",

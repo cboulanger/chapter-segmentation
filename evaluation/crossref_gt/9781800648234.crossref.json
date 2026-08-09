@@ -1,7 +1,8 @@
 {
   "isbn": "9781800648234",
-  "fetched_at": "2026-08-09T12:57:30.381049+00:00",
+  "fetched_at": "2026-08-09T13:15:17.137826+00:00",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
   "raw_items": [
     {
       "license": [
@@ -100,19 +101,33 @@
           "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
       ],
-      "DOI": "10.11647/obp.0316.08",
+      "DOI": "10.11647/obp.0316.12",
       "type": "book-chapter",
-      "page": "133-148",
+      "page": "197-210",
       "title": [
-        "8. Global Citizenship"
+        "12. Meetings amongst Deaf and Hearing Students in the Mathematics Classroom"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-5879-7652",
+          "ORCID": "https://orcid.org/0000-0002-9472-3773",
           "authenticated-orcid": false,
-          "given": "Manuella Heloisa",
-          "family": "de Souza Carrijo",
+          "given": "Amanda",
+          "family": "Queiroz Moura",
           "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0458-275X",
+          "authenticated-orcid": false,
+          "given": "Miriam",
+          "family": "Godoy Penteado",
+          "sequence": "additional",
           "affiliation": [],
           "role": [
             {
@@ -164,33 +179,19 @@
           "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
       ],
-      "DOI": "10.11647/obp.0316.12",
+      "DOI": "10.11647/obp.0316.08",
       "type": "book-chapter",
-      "page": "197-210",
+      "page": "133-148",
       "title": [
-        "12. Meetings amongst Deaf and Hearing Students in the Mathematics Classroom"
+        "8. Global Citizenship"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-9472-3773",
+          "ORCID": "https://orcid.org/0000-0002-5879-7652",
           "authenticated-orcid": false,
-          "given": "Amanda",
-          "family": "Queiroz Moura",
+          "given": "Manuella Heloisa",
+          "family": "de Souza Carrijo",
           "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "ORCID": "https://orcid.org/0000-0003-0458-275X",
-          "authenticated-orcid": false,
-          "given": "Miriam",
-          "family": "Godoy Penteado",
-          "sequence": "additional",
           "affiliation": [],
           "role": [
             {
@@ -521,19 +522,33 @@
           "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
       ],
-      "DOI": "10.11647/obp.0316.09",
+      "DOI": "10.11647/obp.0316.19",
       "type": "book-chapter",
-      "page": "149-162",
+      "page": "ix-xii",
       "title": [
-        "9. About Unfinishedness, Dreams and Landscapes of Investigation"
+        "Preface"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-4527-1184",
+          "ORCID": "https://orcid.org/0000-0003-0458-275X",
           "authenticated-orcid": false,
-          "given": "Daniela",
-          "family": "Alves Soares",
+          "given": "Miriam",
+          "family": "Godoy Penteado",
           "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1528-796X",
+          "authenticated-orcid": false,
+          "given": "Ole",
+          "family": "Skovsmose",
+          "sequence": "additional",
           "affiliation": [],
           "role": [
             {
@@ -585,33 +600,19 @@
           "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
       ],
-      "DOI": "10.11647/obp.0316.19",
+      "DOI": "10.11647/obp.0316.09",
       "type": "book-chapter",
-      "page": "ix-xii",
+      "page": "149-162",
       "title": [
-        "Preface"
+        "9. About Unfinishedness, Dreams and Landscapes of Investigation"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0003-0458-275X",
+          "ORCID": "https://orcid.org/0000-0002-4527-1184",
           "authenticated-orcid": false,
-          "given": "Miriam",
-          "family": "Godoy Penteado",
+          "given": "Daniela",
+          "family": "Alves Soares",
           "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "ORCID": "https://orcid.org/0000-0002-1528-796X",
-          "authenticated-orcid": false,
-          "given": "Ole",
-          "family": "Skovsmose",
-          "sequence": "additional",
           "affiliation": [],
           "role": [
             {
@@ -724,50 +725,22 @@
           },
           "content-version": "unspecified",
           "delay-in-days": 0,
-          "URL": "https://creativecommons.org/licenses/by-nc/4.0/legalcode"
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
       ],
-      "DOI": "10.11647/obp.0316.14",
+      "DOI": "10.11647/obp.0316.11",
       "type": "book-chapter",
-      "page": "223-246",
+      "page": "185-196",
       "title": [
-        "14. Landscapes of Investigation with Seniors"
+        "11. Inclusive Landscapes of Investigation"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-4166-2663",
+          "ORCID": "https://orcid.org/0000-0002-1528-796X",
           "authenticated-orcid": false,
-          "given": "Guilherme Henrique Gomes",
-          "family": "da Silva",
+          "given": "Ole",
+          "family": "Skovsmose",
           "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "ORCID": "https://orcid.org/0000-0002-3248-800X",
-          "authenticated-orcid": false,
-          "given": "Rejane",
-          "family": "Siqueira Julio",
-          "sequence": "additional",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "ORCID": "https://orcid.org/0000-0003-2880-9437",
-          "authenticated-orcid": false,
-          "given": "Rafaela",
-          "family": "Nascimento da Silva",
-          "sequence": "additional",
           "affiliation": [],
           "role": [
             {
@@ -816,22 +789,50 @@
           },
           "content-version": "unspecified",
           "delay-in-days": 0,
-          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/legalcode"
         }
       ],
-      "DOI": "10.11647/obp.0316.11",
+      "DOI": "10.11647/obp.0316.14",
       "type": "book-chapter",
-      "page": "185-196",
+      "page": "223-246",
       "title": [
-        "11. Inclusive Landscapes of Investigation"
+        "14. Landscapes of Investigation with Seniors"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-1528-796X",
+          "ORCID": "https://orcid.org/0000-0002-4166-2663",
           "authenticated-orcid": false,
-          "given": "Ole",
-          "family": "Skovsmose",
+          "given": "Guilherme Henrique Gomes",
+          "family": "da Silva",
           "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3248-800X",
+          "authenticated-orcid": false,
+          "given": "Rejane",
+          "family": "Siqueira Julio",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2880-9437",
+          "authenticated-orcid": false,
+          "given": "Rafaela",
+          "family": "Nascimento da Silva",
+          "sequence": "additional",
           "affiliation": [],
           "role": [
             {
@@ -1501,14 +1502,6 @@
       "citation_pages": "1-20"
     },
     {
-      "title": "8. Global Citizenship",
-      "authors": [
-        "Manuella Heloisa de Souza Carrijo"
-      ],
-      "chapter_doi": "10.11647/obp.0316.08",
-      "citation_pages": "133-148"
-    },
-    {
       "title": "12. Meetings amongst Deaf and Hearing Students in the Mathematics Classroom",
       "authors": [
         "Amanda Queiroz Moura",
@@ -1516,6 +1509,14 @@
       ],
       "chapter_doi": "10.11647/obp.0316.12",
       "citation_pages": "197-210"
+    },
+    {
+      "title": "8. Global Citizenship",
+      "authors": [
+        "Manuella Heloisa de Souza Carrijo"
+      ],
+      "chapter_doi": "10.11647/obp.0316.08",
+      "citation_pages": "133-148"
     },
     {
       "title": "16. Opening an Exercise Prospective Mathematics Teachers Entering into Landscapes of Investigation",
@@ -1551,14 +1552,6 @@
       "citation_pages": "69-94"
     },
     {
-      "title": "9. About Unfinishedness, Dreams and Landscapes of Investigation",
-      "authors": [
-        "Daniela Alves Soares"
-      ],
-      "chapter_doi": "10.11647/obp.0316.09",
-      "citation_pages": "149-162"
-    },
-    {
       "title": "Preface",
       "authors": [
         "Miriam Godoy Penteado",
@@ -1566,6 +1559,14 @@
       ],
       "chapter_doi": "10.11647/obp.0316.19",
       "citation_pages": "ix-xii"
+    },
+    {
+      "title": "9. About Unfinishedness, Dreams and Landscapes of Investigation",
+      "authors": [
+        "Daniela Alves Soares"
+      ],
+      "chapter_doi": "10.11647/obp.0316.09",
+      "citation_pages": "149-162"
     },
     {
       "title": "15. The Investigative Approach to Talking about Inclusion in Mathematics Teacher Education",
@@ -1576,6 +1577,14 @@
       "citation_pages": "247-256"
     },
     {
+      "title": "11. Inclusive Landscapes of Investigation",
+      "authors": [
+        "Ole Skovsmose"
+      ],
+      "chapter_doi": "10.11647/obp.0316.11",
+      "citation_pages": "185-196"
+    },
+    {
       "title": "14. Landscapes of Investigation with Seniors",
       "authors": [
         "Guilherme Henrique Gomes da Silva",
@@ -1584,14 +1593,6 @@
       ],
       "chapter_doi": "10.11647/obp.0316.14",
       "citation_pages": "223-246"
-    },
-    {
-      "title": "11. Inclusive Landscapes of Investigation",
-      "authors": [
-        "Ole Skovsmose"
-      ],
-      "chapter_doi": "10.11647/obp.0316.11",
-      "citation_pages": "185-196"
     },
     {
       "title": "10. Dialogue in Eternity Children, Mathematics, and Landscapes of Investigation",

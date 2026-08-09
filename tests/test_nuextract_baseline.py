@@ -103,6 +103,13 @@ class TestMatchTocEntries(unittest.TestCase):
         expected = [{"title": "Introduction", "citation_pages": "1-31"}]
         self.assertEqual(match_toc_entries(predicted, expected), 1)
 
+    def test_matches_bare_page_number_citation_pages_with_no_dash(self):
+        # Some real ground-truth books record citation_pages as a single
+        # page ("1") rather than a range ("1-31") -- must still match.
+        predicted = [{"title": "Introduction", "printed_page_number": "1"}]
+        expected = [{"title": "Introduction", "citation_pages": "1"}]
+        self.assertEqual(match_toc_entries(predicted, expected), 1)
+
 
 class TestScoreBook(unittest.TestCase):
     def test_computes_precision_and_recall(self):

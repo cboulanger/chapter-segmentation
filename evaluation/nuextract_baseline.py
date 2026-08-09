@@ -56,11 +56,15 @@ def parse_response(raw: str) -> list[dict]:
 
 def _expected_start_page(citation_pages) -> int | None:
     """The chapter's own start page from an expected.json entry's
-    "citation_pages" field (e.g. "1-31" -> 1, "vii-ix" -> 7). None if the
-    field is null or has no "-" separator."""
-    if not citation_pages or "-" not in citation_pages:
+    "citation_pages" field. Handles both a range ("1-31" -> 1, "vii-ix" ->
+    7) and a bare single page number with no range ("1" -> 1, "XIII" ->
+    13) -- some real ground-truth books (e.g. 9783428042241.expected.json,
+    9783899496291.expected.json) record every chapter's citation_pages as
+    a single page rather than a start-end range. None if the field is
+    null/empty or not a parseable page number either way."""
+    if not citation_pages:
         return None
-    start, _, _ = citation_pages.partition("-")
+    start = citation_pages.partition("-")[0] if "-" in citation_pages else citation_pages
     return _parse_toc_page_number(start.strip())
 
 

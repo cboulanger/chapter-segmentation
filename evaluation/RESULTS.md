@@ -543,3 +543,82 @@ and per-entry ambiguity was resolved heuristically by the TOC-order
 constraints before the LLM would be consulted. This run predated the
 layout-mode fallback and OCR route described above, and only covered the 7
 originally-committed books, not the 10 "diverse real-library" books.
+
+## NuExtract-1.5-tiny zero-shot baseline (2026-08-09)
+
+`evaluation/scripts/evaluate_nuextract_baseline.py` against Ollama serving
+`hf.co/QuantFactory/NuExtract-1.5-tiny-GGUF:Q8_0` (the script's documented
+default -- see
+`docs/superpowers/specs/2026-08-09-nuextract-baseline-evaluation-design.md`).
+Scores only TOC-listing extraction (title + printed_page_number), not full
+chapter-boundary localization.
+
+| Corpus | Books | Expected chapters | Precision | Recall | F1 |
+| --- | --- | --- | --- | --- | --- |
+| open-access | 37 | 601 | 0.00 | 0.00 | 0.00 |
+| copyrighted-scans | 13 | 312 | 0.00 | 0.00 | 0.00 |
+| **Total** | **50** | **913** | **0.00** | **0.00** | **0.00** |
+
+**Decision (per the spec's "Decision criteria"): do not conclude
+NuExtract-1.5-tiny performs poorly zero-shot -- this result measures a
+broken serving path, not the model's real capability, and the companion
+spec's production wiring should wait on a retest via a different path (see
+"Recommended next step" below), not proceed on this number.**
+
+**Root cause: the model stops generating almost immediately (empty output)
+on real book front-matter text, independent of this project's code.**
+Investigated directly against Ollama's `/api/generate` endpoint, bypassing
+`evaluation/nuextract_baseline.py` entirely, to rule out a bug in this
+repo's prompt-building or response-parsing:
+
+- A short, clean synthetic example (`<|input|>/### Template/### Text/
+  <|output|>` with `"My name is John."` as the text) works correctly --
+  the model fills the template as expected (`{"name": "John"}`), and a
+  short synthetic TOC snippet ("Introduction ... 1 / Chapter One:
+  Foundations ... 12") also produces syntactically valid, mostly-correct
+  JSON.
+- The *same* template against a real book's front-matter text (a ~1,300-
+  token excerpt of `9781771993661.pdf`'s copyright/title-page text, well
+  under the 16,384-token `num_ctx` budget -- see `call_ollama`'s
+  docstring) reliably produces **zero generated tokens**
+  (`eval_count: 1, done_reason: "stop"`, i.e. the very first sampled
+  token is an end-of-sequence token) at `temperature=0`. Binary-searching
+  truncations of that same text (2,500 / 3,000 / 3,500 / 3,800 / 4,000 /
+  4,200 / 4,400 / 4,600 / 4,800 / 4,971 characters) shows this isn't a
+  fixed length threshold -- pass/fail flips unpredictably between nearby
+  cutoffs, which points to greedy-decoding brittleness on this specific
+  (quantized, community-converted) checkpoint rather than a clean
+  context-length cliff.
+- Raising `temperature` to 0.3 avoids the immediate stop but the model
+  then **echoes the input text back verbatim** instead of extracting a
+  template -- also not usable output, just a different failure mode.
+- This reproduces **identically across two independently-produced
+  third-party GGUF conversions** -- `QuantFactory/NuExtract-1.5-tiny-GGUF`
+  (this script's default) and `mradermacher/NuExtract-1.5-tiny-GGUF` --
+  ruling out a single bad upload. `ollama show <model> --modelfile` on
+  both shows Ollama auto-detected a **generic Qwen2 ChatML template**
+  (`<|im_start|>`/`<|im_end|>`, with FIM/tool-call scaffolding), not
+  NuExtract's own fine-tuned `<|input|>`/`<|output|>` format -- consistent
+  with (though not proven to be the sole cause of) the conversion not
+  faithfully carrying over whatever made the original HF checkpoint
+  reliably respond to that format. (`raw: true` bypasses Ollama's own
+  templating for the actual generate call either way -- this is a signal
+  about the conversion, not evidence the wrong template was applied to
+  our requests.)
+- The full 50-book run above is the direct consequence: 44 of 50 books
+  return zero predicted entries outright (immediate-stop failure on every
+  scanned page range), and the other 6 return exactly one spurious,
+  non-matching entry -- none of the 913 expected chapters across either
+  corpus are recovered.
+
+**Recommended next step, before writing off NuExtract-1.5-tiny:** retest
+via the original Hugging Face checkpoint (`numind/NuExtract-1.5-tiny`)
+loaded directly through `transformers`, per the model card's own usage
+example, rather than through any third-party GGUF conversion. That path
+is the one genuinely unmeasured possibility left -- if it also fails on
+the same real text, that's real evidence against the model itself; if it
+works, the problem is specifically GGUF-conversion fidelity for this
+model's fine-tuned format, worth escalating upstream (e.g. requesting an
+official NuMind-published GGUF, or converting from the original checkpoint
+directly with an explicit special-tokens mapping) rather than a reason to
+abandon the local-model approach outlined in the companion spec.

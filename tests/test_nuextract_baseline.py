@@ -5,7 +5,7 @@ docs/superpowers/specs/2026-08-09-nuextract-baseline-evaluation-design.md."""
 import unittest
 from unittest.mock import MagicMock, patch
 
-from evaluation.nuextract_baseline import build_prompt, match_toc_entries, parse_response
+from evaluation.nuextract_baseline import build_prompt, match_toc_entries, parse_response, score_book
 
 
 class TestBuildPrompt(unittest.TestCase):
@@ -98,6 +98,26 @@ class TestMatchTocEntries(unittest.TestCase):
         predicted = ["not a dict", {"title": "Introduction", "printed_page_number": "1"}]
         expected = [{"title": "Introduction", "citation_pages": "1-31"}]
         self.assertEqual(match_toc_entries(predicted, expected), 1)
+
+
+class TestScoreBook(unittest.TestCase):
+    def test_computes_precision_and_recall(self):
+        predicted = [
+            {"title": "Introduction", "printed_page_number": "1"},
+            {"title": "Spurious Entry", "printed_page_number": "99"},
+        ]
+        expected = [{"title": "Introduction", "citation_pages": "1-31"}]
+        metrics = score_book(predicted, expected)
+        self.assertEqual(metrics.true_positives, 1)
+        self.assertEqual(metrics.found_count, 2)
+        self.assertEqual(metrics.expected_count, 1)
+        self.assertAlmostEqual(metrics.precision, 0.5)
+        self.assertAlmostEqual(metrics.recall, 1.0)
+
+    def test_empty_predicted_scores_zero_precision_and_recall(self):
+        metrics = score_book([], [{"title": "Introduction", "citation_pages": "1-31"}])
+        self.assertEqual(metrics.precision, 0.0)
+        self.assertEqual(metrics.recall, 0.0)
 
 
 if __name__ == "__main__":

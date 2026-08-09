@@ -116,3 +116,21 @@ def match_toc_entries(predicted: list[dict], expected: list[dict]) -> int:
             matched += 1
             last_j = best_j
     return matched
+
+
+def score_book(predicted: list[dict], expected_chapters: list[dict]) -> Metrics:
+    """Precision/recall/F1 over TOC-listing entries (title +
+    printed_page_number), NOT chapter-boundary ranges -- a narrower
+    metric than precision_recall_f1 (evaluation/metrics.py), which scores
+    (pdf_start_index, pdf_end_index) exact matches instead. This spike
+    never produces pdf indices at all (see module docstring)."""
+    tp = match_toc_entries(predicted, expected_chapters)
+    found_count = len(predicted)
+    expected_count = len(expected_chapters)
+    precision = tp / found_count if found_count else 0.0
+    recall = tp / expected_count if expected_count else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
+    return Metrics(
+        precision=precision, recall=recall, f1=f1,
+        true_positives=tp, found_count=found_count, expected_count=expected_count,
+    )

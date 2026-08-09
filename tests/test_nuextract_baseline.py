@@ -5,7 +5,7 @@ docs/superpowers/specs/2026-08-09-nuextract-baseline-evaluation-design.md."""
 import unittest
 from unittest.mock import MagicMock, patch
 
-from evaluation.nuextract_baseline import build_prompt
+from evaluation.nuextract_baseline import build_prompt, parse_response
 
 
 class TestBuildPrompt(unittest.TestCase):
@@ -26,6 +26,25 @@ class TestBuildPrompt(unittest.TestCase):
         self.assertTrue(text_section.startswith("p0"))
         self.assertIn("p2", text_section)
         self.assertNotIn("p1", text_section)
+
+
+class TestParseResponse(unittest.TestCase):
+    def test_extracts_chapters_list(self):
+        raw = '{"chapters": [{"title": "Intro", "authors": ["A"], "printed_page_number": "1"}]}'
+        self.assertEqual(
+            parse_response(raw),
+            [{"title": "Intro", "authors": ["A"], "printed_page_number": "1"}],
+        )
+
+    def test_strips_code_fence(self):
+        raw = '```json\n{"chapters": []}\n```'
+        self.assertEqual(parse_response(raw), [])
+
+    def test_returns_empty_on_malformed_json(self):
+        self.assertEqual(parse_response("not json at all"), [])
+
+    def test_returns_empty_when_chapters_not_a_list(self):
+        self.assertEqual(parse_response('{"chapters": "oops"}'), [])
 
 
 if __name__ == "__main__":

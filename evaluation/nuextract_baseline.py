@@ -39,3 +39,16 @@ def build_prompt(pages: list[str], scan_indices: list[int]) -> str:
     text = "\n\n".join(pages[i] for i in scan_indices)
     template_json = json.dumps(NUEXTRACT_TEMPLATE)
     return f"<|input|>\n### Template:\n{template_json}\n### Text:\n{text}\n\n<|output|>"
+
+
+def parse_response(raw: str) -> list[dict]:
+    """Parses NuExtract's filled-template output into the "chapters" list.
+    Returns [] for empty/unparseable output or a malformed "chapters"
+    field -- treated as "no signal", mirroring llm_extract_toc_entries'
+    own failure handling (segmentation.py) rather than raising."""
+    try:
+        data = parse_json_object(raw)
+    except ValueError:
+        return []
+    chapters = data.get("chapters")
+    return chapters if isinstance(chapters, list) else []

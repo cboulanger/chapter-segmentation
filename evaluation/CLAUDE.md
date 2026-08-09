@@ -33,30 +33,31 @@ Three documents, three different lifetimes -- know which one to write to:
   script, verification steps, known failure modes in that *process*, not
   in the heuristics' results).
 - **`public-cache/`** (per corpus, i.e.
-  `evaluation/corpus/<corpus>/public-cache/`) — a redacted, git-tracked
-  snapshot of each book's page text (real navigational/bibliographic
-  material verbatim, chapter prose replaced with random real words) — see
-  `docs/superpowers/specs/2026-08-05-evaluation-corpus-redaction-design.md`.
-  Also writes `<key>.outline.json` per book -- a resolved snapshot of
-  `extract_outline_candidates`' output (titles/authors/page indices only),
-  letting the outline strategy be evaluated in CI without the real PDF.
-  Regenerate it with `uv run python evaluation/scripts/generate_public_evaluation_cache.py`
+  `evaluation/corpus/<corpus>/public-cache/`) — a git-tracked snapshot of
+  each book's page text. For `oa: true` books this is the real extracted
+  text VERBATIM -- the PDF itself is already legally redistributable, so
+  there's nothing to redact and no redaction-induced parity risk. Every
+  other book gets a redacted snapshot instead (real navigational/
+  bibliographic material verbatim, chapter prose replaced with random real
+  words). Also writes `<key>.outline.json` per book -- a resolved snapshot
+  of `extract_outline_candidates`' output (titles/authors/page indices
+  only), letting the outline strategy be evaluated in CI without the real
+  PDF. Regenerate it with `uv run python evaluation/scripts/generate_public_evaluation_cache.py`
   whenever `src/chapter_segmentation/segmentation.py` or `src/chapter_segmentation/common.py` changes in a way
   that touches text-matching logic (a new heuristic could read page text
-  outside what the redaction pipeline currently preserves) -- the tool's
-  `--verify` step will refuse to write a stale/incorrect entry, so a clean
-  run is the confirmation that a change didn't need any redaction-pipeline
-  updates. One book in the current evaluation set (`9783031466373`) fails
-  `--verify` permanently: its TOC has an "Index" entry, and per this file's
-  "Known failure modes" section short/generic titles like "Index" are
-  already a known bad fuzzy-match target -- in this specific book, the
-  redacted text on the page before "Index" happens to coincidentally
-  fuzzy-match the word "index" itself just enough to shift where
-  `locate_chapter_start` places it by one page (see spec section 10.3,
-  which anticipated exactly this risk category). No `public-cache/` entry
-  exists for this book; a human would need to decide how to handle it
-  (e.g. a different redaction strategy for that one book) before it could
-  be included.
+  outside what the redaction pipeline currently preserves) -- for
+  non-OA books, the tool's `--verify` step will refuse to write a
+  stale/incorrect entry, so a clean run is the confirmation that a change
+  didn't need any redaction-pipeline updates. (OA books skip `--verify`
+  entirely since there's no redacted/real divergence possible.) A prior
+  redacted revision of this corpus had 13 open-access books permanently
+  fail `--verify` -- root-caused to two redaction-pipeline gaps (TOC-page
+  selection being sensitive to word substitution when a book has a
+  competing index/bibliography page with the same line shape, and the
+  Faker word pool having no long enough real word for PDF-extraction-glued
+  tokens, shrinking a page below the trailing-blank-page threshold) --
+  which is exactly why OA books are no longer redacted at all: real text
+  has no such failure mode.
 
 If you're unsure which document a change belongs in, ask: would this
 sentence still be true after the next code change to the heuristics, even

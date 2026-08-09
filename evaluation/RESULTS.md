@@ -781,3 +781,122 @@ MLX, Apple's native array framework, instead of PyTorch's `mps` backend.
 **Decision: use `numind/NuExtract3-mlx-4bits` via `mlx-vlm` as the runner
 for the full-corpus run** -- same architecture, same accuracy class, ~3x
 less wall-clock time, and a much smaller download.
+
+### Full 50-book, two-corpus run (2026-08-09)
+
+Same conditions as the NuExtract-1.5-tiny table at the top of this
+document -- `numind/NuExtract3-mlx-4bits`, no `instructions` kwarg (this
+is the zero-shot baseline; instructions weren't re-added here to keep the
+comparison to 1.5-tiny apples-to-apples), `max_tokens=2000`, both
+corpora, real scan windows via `_llm_scan_indices`. Ad hoc script, not
+committed. Total wall-clock: 3,180s (~53 minutes) for 50 books.
+
+| Corpus | Books | Expected chapters | Precision | Recall | F1 |
+| --- | --- | --- | --- | --- | --- |
+| open-access | 37 | 601 | 0.64 | 0.73 | 0.69 |
+| copyrighted-scans | 13 | 312 | 0.49 | 0.32 | 0.39 |
+| **Total** | **50** | **913** | **0.61** | **0.59** | **0.60** |
+
+(A third `evaluation/corpus/pending/` directory exists with an empty
+book list -- `available_books()` correctly returns nothing for it, not a
+bug.)
+
+**This is the headline result of the whole NuExtract investigation:
+0.00/0.00/0.00 -> 0.61/0.59/0.60**, on the same 50 books, same metric,
+same TOC-listing-only scope, just a newer/larger model in the same
+family. Two things stand out in the breakdown:
+
+- **`copyrighted-scans` (f1=0.39) trails `open-access` (f1=0.69)
+  substantially** -- this corpus is OCR'd (see `evaluation/harness.py`'s
+  `analysis_pages_for`), and several books logged `Rotated text
+  discovered. Output will be incomplete.` during page extraction, a
+  pre-existing OCR-pipeline limitation, not a NuExtract3 issue.
+- **The worst-scoring books overlap exactly with an independently
+  diagnosed, pre-existing data-quality problem.** `9783789057366.pdf`
+  (0/56), `9783848704316.pdf` (0/15), and `dnb-36942798X.pdf` (0/9) all
+  score zero here -- and per "Per-strategy standalone results" above,
+  these are the *same three books* that score at or near 0.00 across
+  **every** cloud LLM model and the heuristic pipeline too, attributed
+  there to "degenerate/absent text layers, OCR quality" shared across
+  every text-based strategy. NuExtract3 hits the same wall, which is
+  reassuring rather than concerning -- it's not a new, NuExtract-specific
+  failure, it's the same known corpus limitation every other strategy
+  already hits.
+- **Two more failure clusters, consistent with what the smaller samples
+  already found:** the French-language miss (`9782375460122.pdf`,
+  0/17) and the deeply-nested-ToC granularity mismatch
+  (`9781783741953.pdf`, 1/7, extracting sub-headings as if they were
+  top-level chapters) both reproduce at full scale. A third, new-at-this-
+  scale pattern: several books show **long generation times paired with
+  zero valid entries** (`9783848704316.pdf` 211s/0 found,
+  `9781800649057.pdf` 110s/0 found, `9783839458013.pdf` 113s/0 found,
+  `9781783742806.pdf` 109s/0 found) -- consistent with the truncation
+  failure mode already root-caused on `9781783741953.pdf` above (output
+  budget exhausted before valid JSON completes), suggesting
+  `max_tokens=2000` is still too low for a meaningful minority of books
+  and a production version of this would need either a larger cap or a
+  retry-on-truncation strategy (mirroring the fix already applied to the
+  cloud-LLM path's `llm_extract_toc_entries`, per "Per-strategy
+  standalone results" above).
+
+**Directional comparison to the cloud-LLM baseline** (caveat: different
+corpus -- the LLM standalone table above runs on the 17-book
+public-cache corpus, not these 50 books, so this is not a strict
+apples-to-apples number): the cloud-LLM cluster there scores F1
+0.43-0.48 across its top models. NuExtract3's zero-shot 0.60 overall (and
+0.69 on the clean-text `open-access` corpus alone) is in the same range
+or better, using a free, local, 4-bit-quantized 4B model with **no
+fine-tuning and no `instructions` prompt tuning** -- there's real headroom
+left untapped. That's a genuinely striking result for what started this
+spike as a "does the tiny model work zero-shot" check.
+
+**Updated recommendation:** this result is strong enough to justify
+wiring NuExtract3 into `evaluation/scripts/evaluate_nuextract_baseline.py`
+as a first-class, committed option (via `mlx-vlm`, matching the runner
+used here) rather than treating it as a dead end -- with two concrete
+follow-ups before that: add an `instructions` string scoping extraction
+to top-level entries only (already shown above to fix the over-extraction
+case without hurting the good case), and raise/retry the output token
+budget for the truncation cluster identified above.
+
+### CPU-only deployment check: NuExtract3 vs. NuExtract-2.0-4B (2026-08-09)
+
+MLX is Apple-Silicon-only. A real deployment target under consideration
+is a no-GPU, 16 GB RAM, 4-vCPU Linux box (AMD EPYC, KVM-virtualized) --
+MLX cannot run there at all, and Ollama currently cannot serve NuExtract3's
+Qwen3.5-architecture GGUF either (a known gap: separate `mmproj`
+vision-file handling not yet supported in Ollama for this architecture;
+`llama.cpp`'s own server/CLI does support it). To get a same-machine,
+same-backend comparison isolated from Apple's GPU, both `numind/
+NuExtract3-GGUF` (Q4_K_M, 2.71 GB) and `numind/NuExtract-2.0-4B-GGUF`
+(Q4_K_M, 1.93 GB, the previous generation, built on the much more
+mature/optimized Qwen2.5-VL architecture) were run through `llama-cpp-
+python` with `n_gpu_layers=0` and `n_threads=4` (matching the target
+box's vCPU count) on this same M4 machine, over a 5-book sample. Ad hoc
+script, not committed.
+
+| | NuExtract3 | NuExtract-2.0-4B |
+| --- | --- | --- |
+| Total time (5-book sample) | 955.6s | 675.0s (**1.42x faster**) |
+| Aggregate precision / recall / f1 | 0.97 / 0.94 / 0.96 | 0.99 / 0.96 / 0.97 |
+| Model load time | 31.5s | 4.0s |
+| Per-book tokens/sec range | 2.0-3.8 | 2.3-6.3 |
+
+NuExtract-2.0-4B was faster on every book in the sample (1.1x-2.2x per
+book) and matched or slightly exceeded NuExtract3's accuracy on every one
+of them, consistent with `llama.cpp`'s CPU kernels for the older,
+standard Qwen2.5-VL transformer architecture being far more mature than
+its very recent support for Qwen3.5's hybrid linear-attention layers (the
+same gap seen earlier as a missing `flash-linear-attention`/
+`causal-conv1d` fast path on the GPU/`transformers` side).
+
+**Caveat:** this ran on the M4's CPU cores, not the target AMD EPYC
+vCPUs -- absolute throughput will differ on the real host (their
+single-thread performance and memory bandwidth are unknowns from here),
+so treat the *relative* result (2.0-4B ~1.4x faster, equal-or-better
+accuracy) as the reliable takeaway, not the absolute tokens/sec.
+
+**Recommendation for a no-GPU deployment specifically:**
+`numind/NuExtract-2.0-4B` over `NuExtract3` -- faster, smaller download,
+equal or better accuracy in this test, and it already has mature Ollama
+support today, avoiding the Qwen3.5/Ollama gap entirely.

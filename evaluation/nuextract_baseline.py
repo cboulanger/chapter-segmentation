@@ -134,3 +134,30 @@ def score_book(predicted: list[dict], expected_chapters: list[dict]) -> Metrics:
         precision=precision, recall=recall, f1=f1,
         true_positives=tp, found_count=found_count, expected_count=expected_count,
     )
+
+
+def call_ollama(base_url: str, model: str, prompt: str, timeout: float = 300.0) -> str:
+    """POSTs to Ollama's /api/generate in raw mode -- bypasses Ollama's
+    own chat templating so NuExtract's own <|input|>/<|output|> format
+    (see build_prompt) reaches the model verbatim. num_ctx is set to 16384
+    to accommodate NuExtract-1.5-tiny's documented ~10k-token max input
+    (including sliding-window extension) plus this repo's blind page-scan
+    fallback which can span dozens of OCR pages; num_predict/temperature
+    follow the model card's own documented generation config
+    (max_new_tokens=4000, temperature at/near 0). Raises on a network/HTTP
+    error (e.g. httpx.HTTPStatusError, httpx.ConnectError) -- the caller
+    is expected to catch and report per-book rather than this function
+    swallowing failures."""
+    response = httpx.post(
+        f"{base_url.rstrip('/')}/api/generate",
+        json={
+            "model": model,
+            "prompt": prompt,
+            "raw": True,
+            "stream": False,
+            "options": {"temperature": 0, "num_predict": 4000, "num_ctx": 16384},
+        },
+        timeout=timeout,
+    )
+    response.raise_for_status()
+    return response.json()["response"]

@@ -5,7 +5,11 @@ docs/superpowers/specs/2026-08-09-nuextract-baseline-evaluation-design.md."""
 import unittest
 from unittest.mock import MagicMock, patch
 
-from evaluation.nuextract_baseline import build_prompt, match_toc_entries, parse_response, score_book
+import httpx
+
+from evaluation.nuextract_baseline import (
+    build_prompt, call_ollama, match_toc_entries, parse_response, score_book,
+)
 
 
 class TestBuildPrompt(unittest.TestCase):
@@ -118,6 +122,41 @@ class TestScoreBook(unittest.TestCase):
         metrics = score_book([], [{"title": "Introduction", "citation_pages": "1-31"}])
         self.assertEqual(metrics.precision, 0.0)
         self.assertEqual(metrics.recall, 0.0)
+
+
+class TestCallOllama(unittest.TestCase):
+    def test_posts_raw_mode_request_to_generate_endpoint(self):
+        response = MagicMock()
+        response.json.return_value = {"response": '{"chapters": []}'}
+        response.raise_for_status.return_value = None
+        with patch("evaluation.nuextract_baseline.httpx.post", return_value=response) as mock_post:
+            result = call_ollama("http://localhost:11434", "hf.co/example:Q8_0", "prompt-text")
+        self.assertEqual(result, '{"chapters": []}')
+        args, kwargs = mock_post.call_args
+        self.assertEqual(args[0], "http://localhost:11434/api/generate")
+        self.assertIs(kwargs["json"]["raw"], True)
+        self.assertEqual(kwargs["json"]["prompt"], "prompt-text")
+        self.assertEqual(kwargs["json"]["model"], "hf.co/example:Q8_0")
+        self.assertIs(kwargs["json"]["stream"], False)
+        self.assertEqual(kwargs["json"]["options"], {"temperature": 0, "num_predict": 4000, "num_ctx": 16384})
+        self.assertEqual(kwargs["timeout"], 300.0)
+
+    def test_strips_trailing_slash_on_base_url(self):
+        response = MagicMock()
+        response.json.return_value = {"response": ""}
+        response.raise_for_status.return_value = None
+        with patch("evaluation.nuextract_baseline.httpx.post", return_value=response) as mock_post:
+            call_ollama("http://localhost:11434/", "model", "prompt")
+        self.assertEqual(mock_post.call_args[0][0], "http://localhost:11434/api/generate")
+
+    def test_raises_on_http_error(self):
+        response = MagicMock()
+        response.raise_for_status.side_effect = httpx.HTTPStatusError(
+            "server error", request=MagicMock(), response=MagicMock()
+        )
+        with patch("evaluation.nuextract_baseline.httpx.post", return_value=response):
+            with self.assertRaises(httpx.HTTPStatusError):
+                call_ollama("http://localhost:11434", "model", "prompt")
 
 
 if __name__ == "__main__":

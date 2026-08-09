@@ -666,9 +666,85 @@ the table of contents," unlike the instruction-following cloud LLMs
 it as a local replacement for. Because real scan windows always carry
 that noise, and because even the noise-free best case scores far below
 useful (f1=0.09 on the one book tested), NuExtract-1.5-tiny at the "tiny"
-size is not a viable zero-shot drop-in for this task. A larger NuExtract
-variant (e.g. NuExtract-2.0's larger checkpoints) or a preprocessing step
-that isolates ToC text before extraction (which would undercut the
-"zero-shot, no preprocessing" value proposition this spike was testing for)
-would be the next things to try if a local-model path is still wanted --
-neither is in scope for this spike.
+size is not a viable zero-shot drop-in for this task. See the next section
+for a retest against a larger, newer model in the same family, which
+closes most of this gap.
+
+## NuExtract3 (4B): a larger, newer model closes the gap (2026-08-09)
+
+This machine (Apple M4, 32 GB unified memory) can comfortably run
+NuExtract's newer, larger models locally -- checked actual download sizes
+via the Hugging Face API: `numind/NuExtract-2.0-4B` (7.5 GB fp16),
+`numind/NuExtract-2.0-8B` (16.6 GB fp16), `numind/NuExtract3` (9.3 GB
+fp16, the current flagship, released after this spike's original design
+and built on `Qwen3.5-4B` rather than 1.5-tiny's `Qwen2.5-0.5B`). Retested
+using `numind/NuExtract3` -- a materially different, more capable
+generation, not just a scaled-up copy of the same weak checkpoint. Ad hoc
+scripts, not committed; loaded via `transformers`
+(`AutoModelForImageTextToText`/`AutoProcessor`, fp16, greedy decoding,
+`mps`), reusing this repo's `NUEXTRACT_TEMPLATE`/`parse_response`/
+`score_book`/`evaluation/harness.py` for direct comparability with the
+tables above. NuExtract3 uses a proper chat template (`apply_chat_template`
+with `template`/`instructions`/`enable_thinking` kwargs) rather than
+1.5-tiny's raw `<|input|>`/`<|output|>` convention.
+
+- **Single-book check, same noisy window that broke NuExtract-1.5-tiny**
+  (`9781771993661.pdf`, pages 3-6, front-matter + ToC + start of Foreword,
+  no `instructions` kwarg used): **precision=0.91, recall=1.00, f1=0.95**
+  (10/10 expected chapters correctly matched, correct titles, correct
+  authors, correct page numbers; one spurious extra entry). Adding an
+  `instructions` string ("extract only the table-of-contents entries...
+  ignore copyright notices... and body/prose text") or hand-cleaning the
+  window down to ToC-only text both produced the same result
+  (f1=0.91, one additional spurious "Contributors" entry) -- unlike
+  1.5-tiny, this model doesn't need the noise removed to work.
+- **10-book random sample from the open-access corpus** (seeded,
+  `evaluation/metrics.py`'s `MicroAggregate`, real scan windows via
+  `_llm_scan_indices`, no OCR-only books in the sample): **aggregate
+  precision=0.95, recall=0.73, f1=0.83** -- 8 of 10 books scored f1
+  between 0.72 and 1.00 (four of them exactly 1.00); the other 2 scored
+  0.00 and were investigated individually rather than averaged over
+  blindly:
+  - `9782375460122.pdf` (French-language, a "SOMMAIRE" spanning 6 dense
+    pages with many nested sub-headings): a genuine extraction miss, not
+    a budget issue -- confirmed by rerunning with the output budget raised
+    from 1,500 to 3,500 tokens, which changed nothing (still only 46
+    tokens generated). The model latched onto the book's own
+    cataloging-in-publication bibliographic entry on the noise page before
+    the ToC and extracted that as a single spurious "chapter," never
+    reaching the actual SOMMAIRE on the following pages.
+  - `9781783741953.pdf` (a deeply hierarchical ToC -- top-level chapters
+    each with many numbered sub-sections, e.g. "4.1", "4.2", "4.2.1"):
+    **this one was a genuine truncation** at the original 1,500-token
+    output budget (0 parseable entries). Raised to 3,500 tokens, the model
+    completed cleanly (2,973 output tokens) and correctly extracted the
+    *entire* hierarchy -- all top-level chapters and every numbered
+    sub-section, with correct titles and page numbers throughout. But the
+    ground truth only counts 7 top-level chapters, so the 89 extracted
+    entries score precision=0.01 -- **a template/instructions mismatch
+    (we never told it to extract top-level entries only), not a
+    comprehension failure.** The model demonstrably parsed this book's
+    full multi-level structure correctly.
+
+**Decision: NuExtract3 (4B) is a credible local zero-shot candidate for
+this task, unlike NuExtract-1.5-tiny, and is worth a full-corpus run and
+production-wiring spike before deciding against a local-model approach.**
+Both zero-score books point at fixable gaps rather than a hard capability
+ceiling: the French-language miss suggests either a prompt-language
+adjustment or accepting some recall loss on non-English ToCs, and the
+over-extraction case is resolved by adding an `instructions` string that
+scopes extraction to top-level entries (already shown above not to hurt
+the good case) and/or raising the output token budget for long books.
+Trade-offs versus the cloud-LLM baseline this spike was benchmarking
+against: **speed** (70-250 seconds per book on this machine's `mps`
+backend vs. a cloud API call) and **setup cost** (9.3 GB download, 32 GB
+RAM headroom, ~20-90 second model load even from local disk cache) are
+real costs a production decision would need to weigh against not
+depending on a paid API.
+
+**Recommended next step:** run the full two-corpus, 50-book baseline
+(mirroring the table at the top of this document) against NuExtract3 with
+an `instructions` string added, and compare against the existing cloud-LLM
+strategy numbers before deciding whether to wire this into
+`evaluation/scripts/evaluate_nuextract_baseline.py` as a first-class,
+committed option.

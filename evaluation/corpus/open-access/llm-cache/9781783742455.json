@@ -1,0 +1,86 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "1. Introduction",
+          "authors": [],
+          "pdf_start_index": 29,
+          "pdf_end_index": 35,
+          "citation_pages": "1-20",
+          "confidence": 0.9,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2. The Environment in Disguise: Insurgency and Digital Media in the Southern Cone",
+          "authors": [
+            "Ulrich Beck",
+            "Manuel Castells"
+          ],
+          "pdf_start_index": 37,
+          "pdf_end_index": 68,
+          "citation_pages": "21-52",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Exploitation or Preservation? Your Choice! Digital Modes of Expressing Perceptions of Nature and the Land",
+          "authors": [
+            "Preservation"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 90,
+          "citation_pages": "53-74",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Natural Ecology Meets Media Ecology: Indigenous Climate Change Activists’ Views on Nature and Media",
+          "authors": [
+            "Anna Roosvall",
+            "Matthew Tegelberg",
+            "Traditional Ecolo"
+          ],
+          "pdf_start_index": 91,
+          "pdf_end_index": 120,
+          "citation_pages": "75-104",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. The Culture of Nature: The Environmental Communication of Gardening Bloggers",
+          "authors": [
+            "Heike Graf"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 152,
+          "citation_pages": "105-136",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. The Militant Media of Neo-Nazi Environmentalism",
+          "authors": [
+            "Madeleine Hurd",
+            "Steffen Werther",
+            "Neo-Nazi"
+          ],
+          "pdf_start_index": 153,
+          "pdf_end_index": 186,
+          "citation_pages": "137-170",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 13.28422870899999,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-09T14:39:03.093401+00:00"
+}

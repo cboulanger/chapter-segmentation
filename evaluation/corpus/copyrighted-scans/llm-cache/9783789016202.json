@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T05:09:07.087578+00:00",
+  "generated_at": "2026-08-09T15:03:44.561827+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -40,7 +40,7 @@
           "source": "llm"
         },
         {
-          "title": "Hoffnung auf - Furcht vor dem Recht",
+          "title": "Hoffnung auf - Furcht vor dem Recht - Zur Semi-Professionalisierung des Lehrerberufs",
           "authors": [
             "Recht\nZur Semi-Professionalisierung des Lehrerberufs",
             "Der Lehrer",
@@ -56,7 +56,7 @@
           "pdf_start_index": 138,
           "pdf_end_index": 150,
           "citation_pages": "141-154",
-          "confidence": 0.89,
+          "confidence": 0.92,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -185,7 +185,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 25.18596685999995,
+      "elapsed_seconds": 25.426209545999995,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -372,7 +372,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 11.755693355999938,
+      "elapsed_seconds": 98.04366641600018,
       "demand_at_run": 0
     },
     "glm-4.7": {

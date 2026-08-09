@@ -2,7 +2,7 @@
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [],
-      "elapsed_seconds": 109.54176173500002,
+      "elapsed_seconds": 110.314795216,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -27,7 +27,7 @@
           "source": "llm"
         },
         {
-          "title": "\"Funktionale Theorie\" und kirchliche Praxis - Zum Verarbeitungsprozeß von sozialwissenschaftliehen Theoriefragmenten in gesellschaftlichen Institutionen",
+          "title": "\"Funktionale Theorie\" und kirchliche Praxis - Zum Verarbeitungsprozeß von sozialwissenschaftlichen Theoriefragmenten in gesellschaftlichen Institutionen",
           "authors": [
             "Zum Verarbeitungsprozeß von sozialwissenschaftliehen",
             "Theorie",
@@ -405,7 +405,7 @@
           "source": "llm"
         },
         {
-          "title": "über außervertragliche Voraussetzungen des Vertrages",
+          "title": "Über außervertragliche Voraussetzungen des Vertrages",
           "authors": [
             "von Emile Durkheim",
             "bin von",
@@ -443,7 +443,7 @@
           "source": "llm"
         },
         {
-          "title": "über einige Zusammenhänge und Differenzen von Recht und Erziehung in der Gesellschaftstheorie, unter besonderer Berücksichtigung von Emile Durkheim und Max Weber",
+          "title": "Über einige Zusammenhänge und Differenzen von Recht und Erziehung in der Gesellschaftstheorie, unter besonderer Berücksichtigung von Emile Durkheim und Max Weber",
           "authors": [
             "Gesellschaftstheorie",
             "Berücksichtigung von \n",
@@ -609,7 +609,7 @@
           "source": "llm"
         },
         {
-          "title": "über die Anonymisierung von Verantwortung",
+          "title": "Über die Anonymisierung von Verantwortung",
           "authors": [
             "Anonymisierung von Verantwortung",
             "Von Paul Trappe",
@@ -727,9 +727,9 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 297.9950224950003,
+      "elapsed_seconds": 43.01181371699977,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T05:15:58.434235+00:00"
+  "generated_at": "2026-08-09T15:05:23.100397+00:00"
 }

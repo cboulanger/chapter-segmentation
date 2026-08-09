@@ -3,10 +3,24 @@
     "apertus-70b-instruct-2509": {
       "chapters": [
         {
+          "title": "Introduction",
+          "authors": [
+            "mieux connu",
+            "terrien de \nmaîtriser",
+            "moment de t"
+          ],
+          "pdf_start_index": 57,
+          "pdf_end_index": 57,
+          "citation_pages": "11-54",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
           "title": "Chapitre 1. Le grand partage de 1900",
           "authors": [
             "de départ de ce",
-            "Il voisin"
+            "Comme"
           ],
           "pdf_start_index": 59,
           "pdf_end_index": 102,
@@ -23,9 +37,41 @@
             "sein de la"
           ],
           "pdf_start_index": 103,
-          "pdf_end_index": 154,
-          "citation_pages": "99-150",
+          "pdf_end_index": 109,
+          "citation_pages": "99-6",
           "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mesures",
+          "authors": [
+            "l’épidémie"
+          ],
+          "pdf_start_index": 110,
+          "pdf_end_index": 135,
+          "citation_pages": "7-6",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nota",
+          "authors": [
+            "de Joswa",
+            "Kate Damulira Mugema et de",
+            "James Miti",
+            "secrétaires de la fédération",
+            "Yuda Musoke Kasa",
+            "Daudi \nBasude",
+            "Serwano Kulubya61",
+            "Joswa Kate Damulira Mugema",
+            "il se convertit"
+          ],
+          "pdf_start_index": 136,
+          "pdf_end_index": 154,
+          "citation_pages": "7-150",
+          "confidence": 0.82,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -34,25 +80,55 @@
           "authors": [
             "Comme",
             "John Roscoe1",
-            "Médard H. 2007b"
+            "Médard H. 2007b",
+            "Jensen",
+            "Reid",
+            "Kenny 1977a",
+            "Schoenbrun",
+            "terrien qui est"
           ],
           "pdf_start_index": 155,
-          "pdf_end_index": 207,
-          "citation_pages": "151-204",
+          "pdf_end_index": 162,
+          "citation_pages": "151-158",
           "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Des marins sans les dieux ?",
+          "authors": [
+            "l’entretien de"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 207,
+          "citation_pages": "159-204",
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
           "title": "Chapitre 4. Densification du pouvoir et conflits religieux (1886-1907)",
           "authors": [
-            "Ensuite",
-            "Joli"
+            "Gabunga"
           ],
           "pdf_start_index": 209,
-          "pdf_end_index": 265,
-          "citation_pages": "205-262",
+          "pdf_end_index": 251,
+          "citation_pages": "205-247",
           "confidence": 0.73,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La conversion de Bussi : de l’enthousiasme à l’hécatombe",
+          "authors": [
+            "Les",
+            "Médard H. 2007b",
+            "compris les Bataka"
+          ],
+          "pdf_start_index": 252,
+          "pdf_end_index": 265,
+          "citation_pages": "248-262",
+          "confidence": 0.96,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -61,23 +137,104 @@
           "authors": [
             "La",
             "l’accord de 1900",
-            "Clair Colon",
-            "ordre d’si cela chair",
-            "Hier Penser",
-            "Sang Installer",
-            "réfléchir"
+            "Apolo Kagwa",
+            "d’un mile",
+            "Yona Magera",
+            "Yona Nsubuga"
           ],
           "pdf_start_index": 267,
-          "pdf_end_index": 365,
-          "citation_pages": "263-361",
+          "pdf_end_index": 287,
+          "citation_pages": "263-283",
           "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La contestation des Bataka",
+          "authors": [
+            "Yona Magera",
+            "Butaka",
+            "Kagwa",
+            "Yosiya Kasozi"
+          ],
+          "pdf_start_index": 288,
+          "pdf_end_index": 299,
+          "citation_pages": "284-12",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Contexte",
+          "authors": [
+            "Zedi Zirimenya",
+            "Kagwa",
+            "Hormis"
+          ],
+          "pdf_start_index": 300,
+          "pdf_end_index": 321,
+          "citation_pages": "13-91",
+          "confidence": 0.89,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Conclusion",
+          "authors": [
+            "Mais",
+            "sur l’accord de \n1900"
+          ],
+          "pdf_start_index": 323,
+          "pdf_end_index": 325,
+          "citation_pages": "319-321",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kagwa le honni",
+          "authors": [
+            "de maintenir",
+            "Kagwa"
+          ],
+          "pdf_start_index": 326,
+          "pdf_end_index": 335,
+          "citation_pages": "322-332",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sources",
+          "authors": [
+            "Entretiens\nDeux",
+            "héritier de John Nsubuga",
+            "Entretien",
+            "Edward"
+          ],
+          "pdf_start_index": 337,
+          "pdf_end_index": 344,
+          "citation_pages": "30-340",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Index des noms",
+          "authors": [
+            "Abdurrahman Muyanja"
+          ],
+          "pdf_start_index": 365,
+          "pdf_end_index": 365,
+          "citation_pages": "361-361",
+          "confidence": 1.0,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 10.238087822000125,
+      "elapsed_seconds": 105.78854995400002,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T04:55:47.601586+00:00"
+  "generated_at": "2026-08-09T14:32:55.607423+00:00"
 }

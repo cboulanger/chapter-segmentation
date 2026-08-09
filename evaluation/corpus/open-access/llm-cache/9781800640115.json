@@ -90,9 +90,21 @@
             "Edoardo"
           ],
           "pdf_start_index": 137,
-          "pdf_end_index": 181,
-          "citation_pages": "115-160",
+          "pdf_end_index": 156,
+          "citation_pages": "115-134",
           "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. From Trans-European (Ten-T) to Trans-Global (Twn-T) Transport Infrastructure Networks. A Conceptual Framework",
+          "authors": [
+            "Roberto"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 181,
+          "citation_pages": "135-160",
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -112,19 +124,19 @@
         {
           "title": "10. The Contribution of European Cohesion Policy to Public Investment",
           "authors": [
-            "Question Ready"
+            "Viesti"
           ],
           "pdf_start_index": 197,
           "pdf_end_index": 214,
           "citation_pages": null,
-          "confidence": 0.89,
+          "confidence": 0.93,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 31.174631761,
+      "elapsed_seconds": 27.128470605000075,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T04:54:38.248145+00:00"
+  "generated_at": "2026-08-09T14:30:06.944779+00:00"
 }

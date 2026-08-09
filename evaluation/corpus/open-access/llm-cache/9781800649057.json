@@ -23,7 +23,7 @@
           "authors": [
             "Katja Rietzler",
             "Andrew Watt",
-            "Respon"
+            "Rietzler"
           ],
           "pdf_start_index": 67,
           "pdf_end_index": 79,
@@ -65,7 +65,8 @@
             "Mario Di Serio",
             "Fragetta",
             "Giovanni Melina",
-            "Anthony Waldron\nIntroduction\n Fixing"
+            "Anthony Waldron\nIntroduction\n Fixing",
+            "Georgieva 2020"
           ],
           "pdf_start_index": 113,
           "pdf_end_index": 122,
@@ -79,8 +80,7 @@
           "authors": [
             "Klaas Lenaerts",
             "Simone Tagliapietra",
-            "Guntram B. Wolff\nIntroduction\nPolicymakers",
-            "Forget’a"
+            "Guntram B. Wolff\nIntroduction\nPolicymakers"
           ],
           "pdf_start_index": 123,
           "pdf_end_index": 131,
@@ -110,7 +110,7 @@
           "pdf_start_index": 155,
           "pdf_end_index": 168,
           "citation_pages": "129-144",
-          "confidence": 1.0,
+          "confidence": 0.93,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -118,8 +118,7 @@
           "title": "10. Public Spending for Future Generations: Recent Trends in EU Countries",
           "authors": [
             "Lorenzo Ferrari",
-            "Valentina Meliciani",
-            "Identify Blood"
+            "Valentina Meliciani"
           ],
           "pdf_start_index": 171,
           "pdf_end_index": 190,
@@ -167,9 +166,9 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 34.86572921400011,
+      "elapsed_seconds": 34.906340365999995,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T04:55:13.115716+00:00"
+  "generated_at": "2026-08-09T14:30:41.853561+00:00"
 }

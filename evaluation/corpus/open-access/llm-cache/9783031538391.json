@@ -1,0 +1,21 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Introduction",
+          "authors": [],
+          "pdf_start_index": 97,
+          "pdf_end_index": 473,
+          "citation_pages": "1-451",
+          "confidence": 0.65,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 3.6979440519999116,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-09T14:31:09.814539+00:00"
+}

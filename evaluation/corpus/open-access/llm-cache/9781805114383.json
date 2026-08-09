@@ -89,8 +89,7 @@
         {
           "title": "Trends in Defence Spending in the European Union",
           "authors": [
-            "Alessandra",
-            "Mrs"
+            "Alessandra"
           ],
           "pdf_start_index": 161,
           "pdf_end_index": 180,
@@ -102,8 +101,7 @@
         {
           "title": "Sustainable Mobility and Industrial Policy",
           "authors": [
-            "Mobility",
-            "Mrs"
+            "Mobility"
           ],
           "pdf_start_index": 181,
           "pdf_end_index": 192,
@@ -125,9 +123,9 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 24.24259499899972,
+      "elapsed_seconds": 24.255883180999945,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T04:55:37.360018+00:00"
+  "generated_at": "2026-08-09T14:31:06.111713+00:00"
 }

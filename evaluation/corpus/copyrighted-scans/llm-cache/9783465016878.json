@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T05:10:42.569208+00:00",
+  "generated_at": "2026-08-09T15:04:29.981557+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -97,7 +97,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 28.186274768999965,
+      "elapsed_seconds": 28.70023222399999,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -195,7 +195,7 @@
           "source": "llm"
         },
         {
-          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law.",
+          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law",
           "authors": [
             "JUHA PÖYHÖNEN",
             "Otto Brusin",
@@ -208,12 +208,12 @@
           "pdf_start_index": 301,
           "pdf_end_index": 305,
           "citation_pages": "283-287",
-          "confidence": 0.97,
+          "confidence": 0.98,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 11.541826373999811,
+      "elapsed_seconds": 12.576246282999819,
       "demand_at_run": 0
     },
     "glm-4.7": {

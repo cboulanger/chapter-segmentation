@@ -5,7 +5,7 @@
         {
           "title": "On public goods, cursing, and finding hope in the (neoliberal) twilight zone",
           "authors": [
-            "A. Key Together Issue"
+            "Bataille"
           ],
           "pdf_start_index": 101,
           "pdf_end_index": 119,
@@ -19,8 +19,7 @@
           "authors": [
             "Leslie Chan",
             "Mona Ghali",
-            "Paul Prinsloo\nUniversities",
-            "Son STILL-19"
+            "Paul Prinsloo\nUniversities"
           ],
           "pdf_start_index": 121,
           "pdf_end_index": 146,
@@ -103,7 +102,8 @@
         {
           "title": "Calm in the storm",
           "authors": [
-            "Chrissi Nerantzi\nNote"
+            "Chrissi Nerantzi\nNote",
+            "Chrissi"
           ],
           "pdf_start_index": 303,
           "pdf_end_index": 312,
@@ -127,7 +127,8 @@
         {
           "title": "Afterword: Higher education for good",
           "authors": [
-            "Learning Futures"
+            "Learning Futures",
+            "Cinderella"
           ],
           "pdf_start_index": 314,
           "pdf_end_index": 326,
@@ -162,8 +163,12 @@
             "Eimer Magee",
             "Kate Molloy",
             "David \nMoloney",
-            "Morag Along",
-            "Mean Toward\nProfessional\nHour"
+            "Morag Munro",
+            "Fernandos Ongolly",
+            "Jasmine Ryan",
+            "Suzanne Stone",
+            "Michaela Waters",
+            "Kyle Wright"
           ],
           "pdf_start_index": 345,
           "pdf_end_index": 362,
@@ -175,7 +180,8 @@
         {
           "title": "Vulnerability and generosity: The good future for Australian higher education",
           "authors": [
-            "Kate Bowles"
+            "Kate Bowles",
+            "Davidson"
           ],
           "pdf_start_index": 363,
           "pdf_end_index": 382,
@@ -189,9 +195,7 @@
           "authors": [
             "Philip Dambisya",
             "Benedict",
-            "Kristin van Tonder",
-            "Agreement Speech",
-            "Choose Th"
+            "Kristin van Tonder"
           ],
           "pdf_start_index": 383,
           "pdf_end_index": 405,
@@ -204,8 +208,7 @@
           "title": "Humanising learning design with digital pragmatism",
           "authors": [
             "Kate Molloy",
-            "Clare Thomson",
-            "Mrs kitchen"
+            "Clare Thomson"
           ],
           "pdf_start_index": 407,
           "pdf_end_index": 430,
@@ -219,7 +222,7 @@
           "authors": [
             "Tel Amiel",
             "Rozário Diniz",
-            "Allow Sister"
+            "Paulo Freire"
           ],
           "pdf_start_index": 431,
           "pdf_end_index": 454,
@@ -276,7 +279,8 @@
             "Gloria Lamaro",
             "Albert Luswata",
             "David Monk",
-            "Edwin Ngowi"
+            "Edwin Ngowi",
+            "Damary Sikalieh"
           ],
           "pdf_start_index": 519,
           "pdf_end_index": 542,
@@ -313,9 +317,7 @@
         },
         {
           "title": "Making higher education institutions as open knowledge institutions",
-          "authors": [
-            "Girl"
-          ],
+          "authors": [],
           "pdf_start_index": 585,
           "pdf_end_index": 600,
           "citation_pages": "575-590",
@@ -324,14 +326,14 @@
           "source": "llm"
         },
         {
-          "title": "It’s about transforming lives!: Supporting students in post pandemic higher education",
+          "title": "\"It’s about transforming lives!\": Supporting students in post pandemic higher education",
           "authors": [
             "Vicki Trowler"
           ],
           "pdf_start_index": 601,
           "pdf_end_index": 612,
           "citation_pages": "591-602",
-          "confidence": 0.96,
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -349,9 +351,9 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 105.27324435800028,
+      "elapsed_seconds": 105.84611253000003,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T05:01:37.105340+00:00"
+  "generated_at": "2026-08-09T14:42:55.479286+00:00"
 }

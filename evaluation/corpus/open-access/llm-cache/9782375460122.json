@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-09T04:31:07.898634+00:00",
+  "generated_at": "2026-08-09T15:06:54.771465+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [],
-      "elapsed_seconds": 19.38335443699998,
+      "elapsed_seconds": 17.80849889199999,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -12,7 +12,8 @@
           "title": "FRANCE, SOCIÉTÉ MULTICULTURELLE",
           "authors": [
             "Patrick Simon\nIl",
-            "que l’ampleur de la diversité"
+            "que l’ampleur de la diversité",
+            "cadre de la"
           ],
           "pdf_start_index": 29,
           "pdf_end_index": 37,
@@ -24,7 +25,8 @@
         {
           "title": "LANGUES ET POLITIQUES PUBLIQUES : LE PAYSAGE FRANÇAIS",
           "authors": [
-            "Alexandra"
+            "Alexandra",
+            "ainsi de \nmieux"
           ],
           "pdf_start_index": 38,
           "pdf_end_index": 47,
@@ -37,7 +39,8 @@
           "title": "ATELIERS EN BIBLIOTHÈQUE : QUELLE VALEUR AJOUTÉE POUR DES ADULTES EN APPRENTISSAGE LINGUISTIQUE ? L’EXEMPLE DE VÉNISSIEUX",
           "authors": [
             "Julie Peugeot",
-            "Vénissieux"
+            "Vénissieux",
+            "d’abord"
           ],
           "pdf_start_index": 50,
           "pdf_end_index": 59,
@@ -82,7 +85,8 @@
         {
           "title": "ÉLABORER UN PROJET AVEC DES MINEURS ISOLÉS ÉTRANGERS : UNE CARTE COLLABORATIVE À LA GAÎTÉ LYRIQUE",
           "authors": [
-            "Catherine  \nDi Sciullo"
+            "Catherine  \nDi Sciullo",
+            "Bien"
           ],
           "pdf_start_index": 86,
           "pdf_end_index": 89,
@@ -94,7 +98,8 @@
         {
           "title": "SITUATIONS D’ACCUEIL EXCEPTIONNELLES : DEUX TÉMOIGNAGES",
           "authors": [
-            "Bénédicte \nFrocaut \net"
+            "Bénédicte \nFrocaut \net",
+            "réseau de Plaine Commune"
           ],
           "pdf_start_index": 90,
           "pdf_end_index": 100,
@@ -106,9 +111,7 @@
         {
           "title": "DÉVELOPPER UNE OFFRE SPÉCIFIQUE ET FAVORISER L’INCLUSION, LE DOUBLE ENJEU DE L’ACCUEIL DES MIGRANTS À LA BIBLIOTHÈQUE VÁCLAV HAVEL",
           "authors": [
-            "Ennemi Doigt",
-            "Beau",
-            "ciel de six"
+            "Václav Havel"
           ],
           "pdf_start_index": 101,
           "pdf_end_index": 108,
@@ -119,9 +122,7 @@
         },
         {
           "title": "CHANGER LES REGARDS : LES APPORTS DU MUSÉE NATIONAL DE L’HISTOIRE DE L’IMMIGRATION ET DE LA MÉDIATHÈQUE ABDELMALEK SAYAD",
-          "authors": [
-            "mais l’attacher le Marché"
-          ],
+          "authors": [],
           "pdf_start_index": 109,
           "pdf_end_index": 116,
           "citation_pages": "109-116",
@@ -147,7 +148,9 @@
           "title": "UNE BIBLIOTHÈQUE 100 % INTERCULTURELLE : L’EXEMPLE DE GLOBLIVRES",
           "authors": [
             "Monica Prodon\nInstitution",
-            "Globlivres"
+            "Globlivres",
+            "Renens",
+            "ancienne banlieue"
           ],
           "pdf_start_index": 124,
           "pdf_end_index": 131,
@@ -161,7 +164,7 @@
           "authors": [
             "MONDE",
             "UNE EXPÉRIENCE \nMULTILINGUE",
-            "Haut"
+            "de Lyon"
           ],
           "pdf_start_index": 132,
           "pdf_end_index": 140,
@@ -174,9 +177,7 @@
           "title": "LA DIVERSITÉ CULTURELLE DANS LES MÉDIATHÈQUES DE PLAINE COMMUNE, UNE APPROCHE PAR LES LANGUES",
           "authors": [
             "LANGUES",
-            "Genre Geste",
-            "Départ",
-            "Ou Longtemps"
+            "Épinay"
           ],
           "pdf_start_index": 141,
           "pdf_end_index": 150,
@@ -198,8 +199,8 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 30.092765707988292,
-      "demand_at_run": 1
+      "elapsed_seconds": 26.848068210999827,
+      "demand_at_run": 0
     },
     "glm-4.7": {
       "chapters": [

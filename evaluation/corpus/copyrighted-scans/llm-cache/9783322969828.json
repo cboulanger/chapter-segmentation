@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T05:07:49.877953+00:00",
+  "generated_at": "2026-08-09T14:56:13.558554+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -193,28 +193,8 @@
             "Fußball Weihnachten Weihnachte"
           ],
           "pdf_start_index": 280,
-          "pdf_end_index": 293,
-          "citation_pages": "286-300",
-          "confidence": 0.98,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Zdenek Krystufek: The function of the lay judge in Czechoslovakia",
-          "authors": [
-            "Zdenek Krystufek \n",
-            "Fröhlich",
-            "Kind",
-            "Erschrecken",
-            "Tante",
-            "mein unser",
-            "Bringen von Sicher",
-            "Weihnachten",
-            "Erschrecken Plötzlich"
-          ],
-          "pdf_start_index": 294,
           "pdf_end_index": 299,
-          "citation_pages": "301-306",
+          "citation_pages": "286-306",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -342,7 +322,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 101.68944711099999,
+      "elapsed_seconds": 99.26106083799999,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -444,7 +424,7 @@
           "source": "llm"
         },
         {
-          "title": "Jeffrey Jowell: Judicial decision-making and administrative tasks",
+          "title": "Jeffrey J owell: Judicial decision-making and administrative tasks",
           "authors": [
             "Jeffrey J",
             "Auge",
@@ -457,7 +437,7 @@
           "pdf_start_index": 182,
           "pdf_end_index": 202,
           "citation_pages": "185-206",
-          "confidence": 0.97,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -686,7 +666,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 36.27177796800015,
+      "elapsed_seconds": 254.22552611899982,
       "demand_at_run": 0
     },
     "glm-4.7": {

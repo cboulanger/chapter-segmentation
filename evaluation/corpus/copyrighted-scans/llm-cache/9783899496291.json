@@ -22,9 +22,615 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 29.663330562000056,
+      "elapsed_seconds": 29.609762590999935,
+      "demand_at_run": 0
+    },
+    "deepseek-v4-flash": {
+      "chapters": [
+        {
+          "title": "Friedrich Julius Stahl (1802–1861)",
+          "authors": [
+            "Jens Kersten",
+            "Natürlich Sicher Daran",
+            "Opa Beispiel Erzählen",
+            "zum Erschrecken"
+          ],
+          "pdf_start_index": 224,
+          "pdf_end_index": 246,
+          "citation_pages": "205-228",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Georg Friedrich Puchta (1798–1846)",
+          "authors": [
+            "Georg Friedrich Puchta",
+            "Friedrich Puchta",
+            "Hans-Peter Haferkamp",
+            "HANS -P ETER HAFERKAMP  \n \n \nGeorg Friedrich Puchta  wurde",
+            "Schlagen Mutter",
+            "Antworten Mann Stadt",
+            "das Erschrecken",
+            "Langsam",
+            "Licht Verkaufen  Junge Sonntag"
+          ],
+          "pdf_start_index": 248,
+          "pdf_end_index": 258,
+          "citation_pages": "229-240",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rudolf von Gneist (1816–1895)",
+          "authors": [
+            "Rudolf von Gneist",
+            "Christoph Schönberger",
+            "Rechtsstaat",
+            "Stelle",
+            "Geschichte",
+            "Eigentlich"
+          ],
+          "pdf_start_index": 260,
+          "pdf_end_index": 279,
+          "citation_pages": "241-260",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Albert Berner (1818–1907)",
+          "authors": [
+            "Albert Berner",
+            "Der",
+            "I. Gab Hören",
+            "zum Erschrecken  .......  "
+          ],
+          "pdf_start_index": 280,
+          "pdf_end_index": 295,
+          "citation_pages": "261-276",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Theodor Mommsen (1817–1903)",
+          "authors": [
+            "Theodor Mommsen",
+            "J. Michael Rainer",
+            "J.  MICHAEL",
+            "I. Leben",
+            "Mommsen der Wissenschaftler  .....................  ",
+            "Der Politiker",
+            "Mommsen  wurde",
+            "Sohn",
+            "Jens Mommsen",
+            "Frau Sophie"
+          ],
+          "pdf_start_index": 296,
+          "pdf_end_index": 345,
+          "citation_pages": "277-326",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Levin Goldschmidt (1829–1897)",
+          "authors": [
+            "Levin Goldschmidt",
+            "Karsten Schmidt",
+            "Eine Skizze",
+            "Berliner Universitätsjahre",
+            "I. Vielleicht"
+          ],
+          "pdf_start_index": 346,
+          "pdf_end_index": 361,
+          "citation_pages": "327-342",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Otto von Gierke (1841–1921)",
+          "authors": [
+            "Otto von Gierke",
+            "Rechtsgeschichte",
+            "Briefen",
+            "Verkaufen",
+            "Geld",
+            "Feuer",
+            "Gewinnen es Dunkel",
+            "Meer Öffnen",
+            "I. Minutenmir",
+            "Schwarz"
+          ],
+          "pdf_start_index": 362,
+          "pdf_end_index": 421,
+          "citation_pages": "343-374",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Josef Kohler (1849–1919)",
+          "authors": [
+            "Josef Kohler",
+            "Fülle",
+            "Stelle",
+            "Hans Wollen",
+            "Weihnachten von",
+            "zum am",
+            "Rad Neben Polizei",
+            "Fröhlich"
+          ],
+          "pdf_start_index": 422,
+          "pdf_end_index": 422,
+          "citation_pages": "375-404",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wilhelm Kahl (1849–1932)",
+          "authors": [
+            "Wilhelm Kahl",
+            "Michael Hettinger",
+            "Seele",
+            "MICHAEL",
+            "I. Einleitung",
+            "Der Sonst gar Erzählen"
+          ],
+          "pdf_start_index": 424,
+          "pdf_end_index": 459,
+          "citation_pages": "405-438",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Franz von Liszt (1851–1919)",
+          "authors": [
+            "Franz von Liszt",
+            "Kriminologie",
+            "Verdacht",
+            "das Strafrecht",
+            "Daran",
+            "Rechnen",
+            "Reich",
+            "Wie Eigentlich von gab",
+            "Weihnachten Zwischen Oma Erklären",
+            "Erschrecken",
+            "langsam auf"
+          ],
+          "pdf_start_index": 460,
+          "pdf_end_index": 525,
+          "citation_pages": "439-496",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Heinrich Triepel (1868–1946)",
+          "authors": [
+            "Gefüge ein zentrales",
+            "Verfassungsgerichtsbarkeit",
+            "Reichsaufsicht",
+            "Gestern",
+            "Spiel schreiben da vergessen",
+            "dein schwer Oma",
+            "dick neu",
+            "Gefährlich Zug",
+            "Ers"
+          ],
+          "pdf_start_index": 526,
+          "pdf_end_index": 540,
+          "citation_pages": "497-522",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Eduard Kohlrausch (1874–1948)",
+          "authors": [
+            "Eduard Kohlrausch",
+            "Thomas Vormbaum",
+            "Kontinuität",
+            "I. Einleitung",
+            "Mit Suchen",
+            "V. Weihnachten"
+          ],
+          "pdf_start_index": 542,
+          "pdf_end_index": 591,
+          "citation_pages": "523-560",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Martin Wolff (1872–1953)",
+          "authors": [
+            "Martin Wolff",
+            "zum Sachenrecht",
+            "das über",
+            "Jahrhundert lang Wissenschaft",
+            "Bett 3",
+            "Früher Verstecken",
+            "Richtig Haus",
+            "Zurück Blume",
+            "Schüler",
+            "Führen Vorbei",
+            "Dir",
+            "Eigentlich"
+          ],
+          "pdf_start_index": 592,
+          "pdf_end_index": 613,
+          "citation_pages": "561-582",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rudolf Smend (1882–1975)",
+          "authors": [
+            "Rudolf Smend",
+            "Smends Gegenentwurf",
+            "Lebensphilosophie von Theodor",
+            "Sicht",
+            "Ruhig Kurz Gefährlich",
+            "Geburtstag",
+            "Geschichte",
+            "Davon",
+            "Katze"
+          ],
+          "pdf_start_index": 614,
+          "pdf_end_index": 672,
+          "citation_pages": "583-654",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Max Alsberg (1877–1933)",
+          "authors": [
+            "Max Alsberg",
+            "Alexander Ignor",
+            "Stelle",
+            "I. Tief gestern Sind",
+            "V. Erschrecken"
+          ],
+          "pdf_start_index": 674,
+          "pdf_end_index": 737,
+          "citation_pages": "655-700",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hugo Preuß (1860–1925)",
+          "authors": [
+            "Hugo Preuß",
+            "Kollegheft",
+            "Brot Eltern Weg Zug Weihnachten Schlecht",
+            "Rad Geschichte",
+            "Minutenmir",
+            "Erschrecken",
+            "schreiben",
+            "Stadt Davon Bild Schüler",
+            "in.in",
+            "Lange",
+            "Überall"
+          ],
+          "pdf_start_index": 738,
+          "pdf_end_index": 750,
+          "citation_pages": "701-732",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Carl Schmitt (1888–1985)",
+          "authors": [
+            "Carl Schmitt",
+            "Volker Neumann",
+            "I. Rezeption",
+            "Arbeitsweise",
+            "Schwester",
+            "Sie Helfen  ..................................  ",
+            "Arbeiten"
+          ],
+          "pdf_start_index": 752,
+          "pdf_end_index": 790,
+          "citation_pages": "733-772",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Öffentliche Recht an der Berliner Juristischen Fakultät 1933–1945",
+          "authors": [
+            "Öffentliche Recht",
+            "Berliner Juristischen Fakultät",
+            "Berliner Erschrecken",
+            "Bett",
+            "Antworten Nase",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 792,
+          "pdf_end_index": 814,
+          "citation_pages": "773-796",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Juristische Fakultät in der DDR",
+          "authors": [
+            "Rosemarie Will",
+            "Vater",
+            "Lehrer",
+            "Eigentlich",
+            "Wünsche"
+          ],
+          "pdf_start_index": 816,
+          "pdf_end_index": 866,
+          "citation_pages": "797-848",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die juristische Fakultät in den Jahren 1990 bis 1993 – Erinnerungen nach Aktenlage",
+          "authors": [
+            "Jahren",
+            "Hans Meyer",
+            "I. Gab Geburtstag",
+            "Erschrecken",
+            "Zug Weihnachten Nämlich",
+            "Weihnachten Erschrecken",
+            "Stelle Weihnachten",
+            "Erde"
+          ],
+          "pdf_start_index": 868,
+          "pdf_end_index": 917,
+          "citation_pages": "849-898",
+          "confidence": 0.9,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtssoziologisches Denken an der Berliner juristischen Fakultät",
+          "authors": [
+            "Rechtssoziologisches Denken",
+            "Fakultät 899",
+            "Fakultät Thomas",
+            "I. Geburtstag"
+          ],
+          "pdf_start_index": 918,
+          "pdf_end_index": 934,
+          "citation_pages": "899-916",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Interdisziplinäre Rechtsforschung. Was uns bewegt.",
+          "authors": [
+            "Interdisziplinäre Rechtsforschung",
+            "Susanne Baer",
+            "Verstehen-\nheraus",
+            "Legen"
+          ],
+          "pdf_start_index": 936,
+          "pdf_end_index": 955,
+          "citation_pages": "917-936",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Privatrechtsmethodik: ökonomische und transnationale Ansätze",
+          "authors": [
+            "Ansätze",
+            "Ansätze Christian Kirchner",
+            "SCHREIBEN",
+            "I. Gefährlich",
+            "Schaffen",
+            "Singen"
+          ],
+          "pdf_start_index": 956,
+          "pdf_end_index": 977,
+          "citation_pages": "937-958",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtsphilosophische Forschung: Reminiszenz, Bilanz und Perspektive",
+          "authors": [
+            "Christoph",
+            "I. Weihnachten",
+            "Hängen"
+          ],
+          "pdf_start_index": 978,
+          "pdf_end_index": 1017,
+          "citation_pages": "959-980",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Sozialmodell des Bürgerlichen Gesetzbuchs im Wandel",
+          "authors": [
+            "Wandel 999",
+            "Gedanken",
+            "Vorschrif-",
+            "Verh ältnis",
+            "zwischen Arbeitnehmern",
+            "Wie"
+          ],
+          "pdf_start_index": 1018,
+          "pdf_end_index": 1032,
+          "citation_pages": "981-1014",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zukunft des Vertragsrechts",
+          "authors": [
+            "Stefan Grundmann",
+            "I. Einleitung",
+            "Singen",
+            "Will Stehen",
+            "ja ja",
+            "Einfach Waschen"
+          ],
+          "pdf_start_index": 1034,
+          "pdf_end_index": 1097,
+          "citation_pages": "1015-1078",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zukunft des Gesellschaftsrechts: Orientierungen für die kapitalmarktorientierte Aktiengesellschaft",
+          "authors": [
+            "Christine Windbichler",
+            "I. Schwester",
+            "Opa Verlieren",
+            "Nämlich"
+          ],
+          "pdf_start_index": 1098,
+          "pdf_end_index": 1117,
+          "citation_pages": "1079-1098",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gehalt und Zukunft des Kapitalmarktrechts",
+          "authors": [
+            "I. Grundlagen",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 1118,
+          "pdf_end_index": 1148,
+          "citation_pages": "1099-1130",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Joseph Kohler und die Entwicklung des modernen Insolvenzrechts",
+          "authors": [
+            "Josef Kohler",
+            "Entwicklung",
+            "Insolvenzrechts Christoph G. Paulus",
+            "VERKAUFEN Ob",
+            "I. Drehen",
+            "Wichtig Weihnachten  ............................  "
+          ],
+          "pdf_start_index": 1150,
+          "pdf_end_index": 1169,
+          "citation_pages": "1131-1148",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Recht der Alternden Gesellschaft",
+          "authors": [
+            "Anwaltsdichte",
+            "Flut",
+            "Gesetze Jahr",
+            "Jahr zu.5 Sie",
+            "Teller",
+            "Weihnachten Opa",
+            "Lustig-",
+            "Zug Kochen",
+            "Glauben"
+          ],
+          "pdf_start_index": 1170,
+          "pdf_end_index": 1236,
+          "citation_pages": "1149-1218",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft des Völkerstrafrechts",
+          "authors": [
+            "I. Einführung",
+            "Als Erschrecken",
+            "Unter",
+            "Rad Weihnachten",
+            "Schaffe"
+          ],
+          "pdf_start_index": 1238,
+          "pdf_end_index": 1283,
+          "citation_pages": "1219-1264",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Strafrecht und Rechtsphilosophie: Traditionen und Perspektiven",
+          "authors": [
+            "Traditionen",
+            "I. Gefährlich",
+            "Weihnachten ......................  ",
+            "Nie Verlieren war Weihnachten",
+            "Eis Vielleicht ....  "
+          ],
+          "pdf_start_index": 1284,
+          "pdf_end_index": 1300,
+          "citation_pages": "1265-1282",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft des Staatsrechts",
+          "authors": [
+            "I. Das Staatsrecht",
+            "Bedeutung \n \nAls",
+            "Vergessen-Schluss III",
+            "vielleicht Lesen-\nihr",
+            "Vater",
+            "Geschichte",
+            "Sohn",
+            "Von Spielen Springen Hilfe",
+            "Uhr Treffen",
+            "Weihnachten Rechnen"
+          ],
+          "pdf_start_index": 1302,
+          "pdf_end_index": 1333,
+          "citation_pages": "1283-1314",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft des Verwaltungsrechts",
+          "authors": [
+            "I. Grundannahmen",
+            "Erschrecken Hase",
+            "Zwischen Weihnachten ......................  ",
+            "V. Eigentlich",
+            "Rad Wei"
+          ],
+          "pdf_start_index": 1334,
+          "pdf_end_index": 1369,
+          "citation_pages": "1315-1350",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 45.666850965999856,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T04:29:39.134816+00:00"
+  "generated_at": "2026-08-09T15:06:08.782793+00:00"
 }

@@ -241,6 +241,35 @@ on-demand refresh, e.g. right after a prompt change, to sanity-check the
 current best models. Either trigger commits the updated cache files
 straight to `main`, which republishes the report automatically.
 
+### NuExtract baseline spike
+
+`evaluation/scripts/evaluate_nuextract_baseline.py` measures
+NuExtract-1.5-tiny's zero-shot accuracy at the TOC-*listing* extraction
+step `llm_extract_toc_entries` (segmentation.py) performs today via a
+cloud LLM -- title + printed_page_number pairs only, not full
+chapter-boundary localization. See
+`docs/superpowers/specs/2026-08-09-nuextract-baseline-evaluation-design.md`
+for the full rationale and decision criteria.
+
+One-time setup -- pull the model into a local Ollama server (no official
+Ollama tag exists for NuExtract-1.5-tiny; Ollama's own `nuextract` tag is
+a different, older, larger model):
+
+```bash
+ollama pull hf.co/QuantFactory/NuExtract-1.5-tiny-GGUF:Q8_0
+```
+
+Then run, with the evaluation PDFs present (see "Fetching the PDFs"
+above) and Ollama serving locally:
+
+```bash
+uv run python evaluation/scripts/evaluate_nuextract_baseline.py
+```
+
+Not a pytest test and not part of any CI workflow -- a manual, one-off
+measurement, same operational pattern as the LLM strategy evaluation
+above but with no API cost.
+
 ### Strategy-pipeline evaluation
 
 `evaluation/scripts/evaluate_chapter_segmentation_strategies.py` runs the same

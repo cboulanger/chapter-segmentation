@@ -1,0 +1,83 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Chapitre 1. Le grand partage de 1900",
+          "authors": [
+            "de départ de ce",
+            "Il voisin"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 102,
+          "citation_pages": "55-98",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Chapitre 2. La crise des années 1920",
+          "authors": [
+            "Chapitre 2\nLa",
+            "Guerre",
+            "sein de la"
+          ],
+          "pdf_start_index": 103,
+          "pdf_end_index": 154,
+          "citation_pages": "99-150",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Chapitre 3. Bussi : une île du royaume du Buganda (1800-1885)",
+          "authors": [
+            "Comme",
+            "John Roscoe1",
+            "Médard H. 2007b"
+          ],
+          "pdf_start_index": 155,
+          "pdf_end_index": 207,
+          "citation_pages": "151-204",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Chapitre 4. Densification du pouvoir et conflits religieux (1886-1907)",
+          "authors": [
+            "Ensuite",
+            "Joli"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 265,
+          "citation_pages": "205-262",
+          "confidence": 0.73,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Chapitre 5. L’accord de 1900 et le bouleversement de la propriété dans l’île (1900-1907)",
+          "authors": [
+            "La",
+            "l’accord de 1900",
+            "Clair Colon",
+            "ordre d’si cela chair",
+            "Hier Penser",
+            "Sang Installer",
+            "réfléchir"
+          ],
+          "pdf_start_index": 267,
+          "pdf_end_index": 365,
+          "citation_pages": "263-361",
+          "confidence": 0.91,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 10.238087822000125,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-09T04:55:47.601586+00:00"
+}

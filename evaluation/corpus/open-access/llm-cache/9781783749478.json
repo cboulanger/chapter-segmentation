@@ -1,0 +1,79 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Dorota Molin",
+          "authors": [],
+          "pdf_start_index": 121,
+          "pdf_end_index": 259,
+          "citation_pages": "95-234",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivri Bunis",
+          "authors": [
+            "Ivri Bunis"
+          ],
+          "pdf_start_index": 261,
+          "pdf_end_index": 344,
+          "citation_pages": "235-318",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Lidia Napiorkowska",
+          "authors": [],
+          "pdf_start_index": 345,
+          "pdf_end_index": 439,
+          "citation_pages": "319-414",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Alexey Lyavdansky",
+          "authors": [
+            "Neo-Aramaic"
+          ],
+          "pdf_start_index": 441,
+          "pdf_end_index": 468,
+          "citation_pages": "415-442",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Aziz Emmanuel Eliya Al-Zebari (in collaboration with Anjuman M. Sabir)",
+          "authors": [
+            "Aziz Emmanuel Eliya Al-Zebari  \n",
+            "M. Sabir",
+            "Drop"
+          ],
+          "pdf_start_index": 469,
+          "pdf_end_index": 511,
+          "citation_pages": "443-486",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sina Tezel",
+          "authors": [],
+          "pdf_start_index": 513,
+          "pdf_end_index": 514,
+          "citation_pages": "487-488",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 25.52877827700013,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-09T04:48:24.378020+00:00"
+}

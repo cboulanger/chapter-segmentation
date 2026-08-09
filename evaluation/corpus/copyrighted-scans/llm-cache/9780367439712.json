@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T15:56:49.712820+00:00",
+  "generated_at": "2026-08-09T05:10:31.023820+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -91,7 +91,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 23.519302708096802,
+      "elapsed_seconds": 28.660476527000014,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -184,8 +184,8 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 10.32707954198122,
-      "demand_at_run": 1
+      "elapsed_seconds": 8.607368609000332,
+      "demand_at_run": 0
     },
     "glm-4.7": {
       "chapters": [

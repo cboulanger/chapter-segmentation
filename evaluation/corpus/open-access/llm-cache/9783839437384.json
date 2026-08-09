@@ -1,0 +1,528 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "2. Forschungsstand & Forschungsfrage – Organspende in den Sozialwissenschaften",
+          "authors": [
+            "zum einen",
+            "Kopf",
+            "doch los Verlieren Rad",
+            "Deshalb Vogel",
+            "Mann",
+            "Endlich"
+          ],
+          "pdf_start_index": 55,
+          "pdf_end_index": 58,
+          "citation_pages": "19-58",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Theoretische Rahmung: Objekte in der Praxis – eine Spurensuche",
+          "authors": [
+            "Rahmung",
+            "Objekte",
+            "Betrachtet",
+            "Bruno Latour",
+            "Wohnung Oma",
+            "Der",
+            "dein schnell",
+            "Möglich",
+            "gar Überall tun Eigentlich Glauben",
+            "mal Antworten Das",
+            "Groß Kennen",
+            "Deshalb Oma"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 65,
+          "citation_pages": "59-65",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.2 Praxeografie, Multiplizität, Fluidität",
+          "authors": [
+            "Der Praxisbegriff von Mol",
+            "Punkten von den",
+            "Positionen",
+            "Schmidt",
+            "Erschrecken Haare",
+            "Halbe",
+            "Möglich",
+            "Schwester Weihna"
+          ],
+          "pdf_start_index": 66,
+          "pdf_end_index": 75,
+          "citation_pages": "66-75",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.3 Operationalisierung der theoretischen Rahmung: Vier Erfahrungsdimensionen",
+          "authors": [
+            "Annerose Böhrer: Auf",
+            "Rahmung",
+            "methodisch-konzeptionellen",
+            "Schmidt",
+            "Mol",
+            "Schreiben",
+            "Weg Berg",
+            "Eigentlich früh",
+            "Garten",
+            "Weihnachten Verstehen",
+            "Rad"
+          ],
+          "pdf_start_index": 76,
+          "pdf_end_index": 79,
+          "citation_pages": "76-80",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Material und Methoden",
+          "authors": [
+            "Rahmung dar",
+            "Zum Licht",
+            "Weihnachten kein",
+            "Meer Zug Weihnachten \nWeihnachten",
+            "Fressen",
+            "kann Weihnachten-gefährlich",
+            "Minutenmir",
+            "Wie"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 87,
+          "citation_pages": "81-20",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.1 Ethnografien",
+          "authors": [
+            "zu Anfang",
+            "Breidenstein et al.",
+            "Verstehen Sohn",
+            "Unser Weihnachten",
+            "Verstecken Lehrerin"
+          ],
+          "pdf_start_index": 88,
+          "pdf_end_index": 107,
+          "citation_pages": "21-108",
+          "confidence": 0.63,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Körperlichkeit & Mortalität: Organspende und der Tod des Menschen",
+          "authors": [
+            "Tod",
+            "Steigen Ball",
+            "Erschrecken",
+            "Weihnachten Werden",
+            "Opa Fuß Freude Leise",
+            "schreiben",
+            "Geschichte Erschrecken"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 143,
+          "citation_pages": "109-143",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.4 Die Bestandteile des Körpers selbst: Organe und ihr Eigenleben",
+          "authors": [
+            "von der Praxis des Zerteilens",
+            "Bestandteilen des Kör-",
+            "zu spenden",
+            "zur Erschrecken",
+            "Zug Nämlich",
+            "Dunkel",
+            "Merken",
+            "Vergessen Fahrrad",
+            "Ein Arbeiten"
+          ],
+          "pdf_start_index": 144,
+          "pdf_end_index": 157,
+          "citation_pages": "144-157",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.6 Reflexion: Der Organspendeausweis als informed consent?",
+          "authors": [
+            "Annerose Böhrer",
+            "Ebene",
+            "5.5 Reflexionen",
+            "Memento Haus",
+            "Weihnachten Weihnachten",
+            "Familie Musik",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 161,
+          "citation_pages": "250-162",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. Kollektiv & Solidarität – Einblicke in die Transplantationsgemeinschaft",
+          "authors": [
+            "Einblicke",
+            "ausweis ausgefüllt",
+            "Fenster Fehlen",
+            "Hinter ob Erschrecken",
+            "Weihnachten Arzt",
+            "Werfen",
+            "gar Helfen",
+            "Schaffen groß",
+            "über ab",
+            "los hier",
+            "Bringen",
+            "Weihnachten Sohn"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 164,
+          "citation_pages": "163-164",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.1 Begriffe und Konzepte: Sozialfiguren und Gaben",
+          "authors": [
+            "Einblicke",
+            "Sozialfiguren",
+            "Als\n ",
+            "Langsam",
+            "Erschrecken",
+            "Weihnachten Seite Erde",
+            "Ding",
+            "Weihnachten Eis"
+          ],
+          "pdf_start_index": 165,
+          "pdf_end_index": 170,
+          "citation_pages": "165-4",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.3 Gaben der Organspende",
+          "authors": [
+            "Einblicke",
+            "Praxisfeld der",
+            "Sprechen",
+            "Geschichte",
+            "Schwimmen",
+            "bin Erschrecken \ndas"
+          ],
+          "pdf_start_index": 199,
+          "pdf_end_index": 211,
+          "citation_pages": "199-212",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Wissen, Glauben, Vermuten: Organspende als Information",
+          "authors": [
+            "Wissen",
+            "Glauben",
+            "von Teilen des Körpers",
+            "Schauen",
+            "Minutenmir",
+            "Sei"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 253,
+          "citation_pages": "213-254",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. Dokument & Materialität: Der Organspendeausweis im Erfahrungsraum der Bürgerkratie",
+          "authors": [
+            "Der",
+            "Organspendeausweis",
+            "Bürokratie",
+            "ein völlig",
+            "Mühe",
+            "Drei",
+            "Weihnachten Zwischen",
+            "Schwester",
+            "zur Weihnachten",
+            "Fenster Stunde",
+            "Erschrecken",
+            "holen w"
+          ],
+          "pdf_start_index": 255,
+          "pdf_end_index": 263,
+          "citation_pages": "255-263",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.2 Die materiellen Zeitalter des Organspendeausweises",
+          "authors": [
+            "Annerose Böhrer: Auf",
+            "der differenzierte Einblicke",
+            "Zeitalter d",
+            "Schwester",
+            "Nacht",
+            "Stück",
+            "Opa",
+            "Weihnachten Opa"
+          ],
+          "pdf_start_index": 264,
+          "pdf_end_index": 270,
+          "citation_pages": "264-270",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.3 Der Organspendeausweis als statistisches Datum",
+          "authors": [
+            "Der",
+            "Organspendeausweis",
+            "Schwester",
+            "Mein",
+            "Weihnachten Klettern",
+            "Rad",
+            "Kind Opa",
+            "Tag Weihnachten Vorbei",
+            "fliegen kein dir"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 280,
+          "citation_pages": "271-280",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.4 Die ‘offizielle’ Wirkung des Organspendeausweises",
+          "authors": [
+            "Der",
+            "Organspendeausweis",
+            "Bürokratie",
+            "Materialität",
+            "Quantität von Organspendeausweisen",
+            "Schaffen Opa",
+            "Erschrecken",
+            "Weihnachten Monate",
+            "Stück",
+            "Neben Opa Weihnachten Weihnachten",
+            "Vergessen"
+          ],
+          "pdf_start_index": 281,
+          "pdf_end_index": 286,
+          "citation_pages": "281-286",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.5 Kartenspiele",
+          "authors": [
+            "Der",
+            "Organspendeausweis",
+            "Der Organspendeausweis",
+            "zum Teil",
+            "Erschrecken",
+            "Hinter",
+            "Später",
+            "Fertig Kind",
+            "Wohnung schreiben",
+            "Geld Affe",
+            "Schön",
+            "bin Freu"
+          ],
+          "pdf_start_index": 287,
+          "pdf_end_index": 293,
+          "citation_pages": "287-207",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.7 Reflexion: Der Organspendeausweis als Ausweis",
+          "authors": [
+            "Annerose Böhrer: Auf",
+            "Organspendeausweis",
+            "Geburtstag Sitzen",
+            "las Tragen",
+            "›gab‹. Oft",
+            "Rad",
+            "Rad Richtig",
+            "Rad Weihnachten",
+            "Vergessen Sprechen Weihnachten"
+          ],
+          "pdf_start_index": 294,
+          "pdf_end_index": 296,
+          "citation_pages": "294-296",
+          "confidence": 0.89,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9. Materielle Metaphern – Eine theoretisch-methodologische Reflexion",
+          "authors": [
+            "Materielle Metaphern",
+            "kennengelernt haben",
+            "Stein",
+            "Weihnachten Erschrecken",
+            "Gibt Boden",
+            "Antworten",
+            "Erschrecken Weihnachten",
+            "Opa Erschrecken",
+            "Hören Weihnachten \nWeihnachten jung",
+            "Ruhig Geschenk",
+            "Weihnachten Opa"
+          ],
+          "pdf_start_index": 297,
+          "pdf_end_index": 300,
+          "citation_pages": "297-300",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9.2 Metaphern und Objekte",
+          "authors": [
+            "Materielle Metaphern",
+            "Objekte",
+            "Bedeutung",
+            "Phänomene",
+            "Alt zu gehören",
+            "Weihnachten Erschrecken",
+            "Nein",
+            "Geburtstag Herz",
+            "gar Mädchen",
+            "Bett ob Stück Spiel",
+            "Himmel-\nDing Unten",
+            "Ding Herz Kennen Haus",
+            "Wetter",
+            "Vielleicht"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 303,
+          "citation_pages": "301-303",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9.3 Objekte als materielle Metaphern",
+          "authors": [
+            "Annerose Böhrer: Auf",
+            "vielschichtige Phänomene",
+            "Expertisen",
+            "Danach",
+            "lernen bin mit",
+            "Wetter Tante-",
+            "Vielleicht",
+            "Weihnachten zum vielleicht",
+            "Davon",
+            "Wirklich"
+          ],
+          "pdf_start_index": 304,
+          "pdf_end_index": 314,
+          "citation_pages": "304-314",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10. Zusammenfassung und science-fiktionaler Blick in die Zukunft",
+          "authors": [
+            "Zusammenfassung",
+            "Beobachtung von Organspende",
+            "Tag Weihnachten Leicht",
+            "Weihnachten Eis",
+            "Endlich",
+            "Wald",
+            "Katze aus U"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 316,
+          "citation_pages": "315-55",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.4 Fragestellung",
+          "authors": [
+            "Zusammenfassung",
+            "richte ich",
+            "Fragestellung des Projekts",
+            "dir Holen",
+            "Mann",
+            "Wald Weihnachten Oma Erschrecken"
+          ],
+          "pdf_start_index": 317,
+          "pdf_end_index": 319,
+          "citation_pages": "56-297",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9.1 Objekte in der Praxis",
+          "authors": [
+            "Praxis",
+            "Schwester Weg schreiben",
+            "Weihnachten Erschrecken",
+            "Tisch Erschrecken",
+            "Wald",
+            "ab zwei"
+          ],
+          "pdf_start_index": 320,
+          "pdf_end_index": 321,
+          "citation_pages": "298-322",
+          "confidence": 0.84,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Anhang",
+          "authors": [
+            "Anhang \nInterviews",
+            "Beruf Organspendeausweis",
+            "Maria 56 Hauptschule/",
+            "Fenster-",
+            "Minutenmir Vielleicht",
+            "Verstehen Schwimmen",
+            "Geschichte Vielleicht \nAlle \nBall 33",
+            "Sprechen Natürlich",
+            "gab Lustig-",
+            "Bett Haus",
+            "Wahr"
+          ],
+          "pdf_start_index": 345,
+          "pdf_end_index": 354,
+          "citation_pages": "345-354",
+          "confidence": 0.95,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 132.84004068500008,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-09T05:04:58.065536+00:00"
+}

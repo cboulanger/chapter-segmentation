@@ -1,0 +1,165 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Introduction: Ways of Knowing, Ways of Valuing Nature",
+          "authors": [
+            "Daughter"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 103,
+          "citation_pages": "1-66",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reanimating the World: Amazonian Shamanism",
+          "authors": [
+            "Frédérique Apffel-Marglin"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 111,
+          "citation_pages": "67-74",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Obligations of a Biologist and Eden No More",
+          "authors": [
+            "Thomas E. Lovejoy",
+            "Leave Around"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 138,
+          "citation_pages": "75-100",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Affectual Insight: Love as a Way of Being and Knowing",
+          "authors": [
+            "David L. Haberman"
+          ],
+          "pdf_start_index": 139,
+          "pdf_end_index": 159,
+          "citation_pages": "101-122",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Contemplative Studies of the 'Natural' World",
+          "authors": [
+            "David Haskell"
+          ],
+          "pdf_start_index": 161,
+          "pdf_end_index": 178,
+          "citation_pages": "123-140",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Listening for Coastal Futures: The Conservatory Project",
+          "authors": [],
+          "pdf_start_index": 179,
+          "pdf_end_index": 190,
+          "citation_pages": "141-152",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Imaginal Ecology",
+          "authors": [],
+          "pdf_start_index": 191,
+          "pdf_end_index": 199,
+          "citation_pages": "153-162",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "An Okanogan Worldview of Society",
+          "authors": [
+            "Jeannette Armstrong",
+            "Okanagan"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 222,
+          "citation_pages": "163-184",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sensing, Minding, and Creating",
+          "authors": [
+            "Minding",
+            "John Grim\nSensing"
+          ],
+          "pdf_start_index": 223,
+          "pdf_end_index": 229,
+          "citation_pages": "185-192",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Land, Indigeneity, and Hybrid Ontologies",
+          "authors": [
+            "Paul Berne Burow",
+            "Samara Brock",
+            "Michael R. Dove1"
+          ],
+          "pdf_start_index": 231,
+          "pdf_end_index": 241,
+          "citation_pages": "193-204",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gaia and a Second Axial Age",
+          "authors": [],
+          "pdf_start_index": 243,
+          "pdf_end_index": 253,
+          "citation_pages": "205-216",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Human Quest to Live in a Cosmos",
+          "authors": [
+            "Heather Eaton",
+            "Carl Sagan).2\nIntroduction\nThroughout"
+          ],
+          "pdf_start_index": 255,
+          "pdf_end_index": 265,
+          "citation_pages": "217-228",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Learning to Weave Earth and Cosmos",
+          "authors": [],
+          "pdf_start_index": 267,
+          "pdf_end_index": 273,
+          "citation_pages": "229-83",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 34.34263227600013,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-09T04:57:29.222956+00:00"
+}

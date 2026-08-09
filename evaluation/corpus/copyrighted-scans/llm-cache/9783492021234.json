@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T15:45:27.332798+00:00",
+  "generated_at": "2026-08-09T05:08:55.328313+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -18,27 +18,8 @@
             "Fröhlich"
           ],
           "pdf_start_index": 79,
-          "pdf_end_index": 97,
-          "citation_pages": "77-96",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Das Interview",
-          "authors": [
-            "das Interview",
-            "Formen",
-            "praktischen Sozial­\nforschung",
-            "Daran Erschrecken",
-            "Geburtstag Minutenmir",
-            "Minutenmir",
-            "los Weihnachten Geburtstag",
-            "Schenken­\nRad"
-          ],
-          "pdf_start_index": 99,
           "pdf_end_index": 104,
-          "citation_pages": "97-102",
+          "citation_pages": "77-102",
           "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -193,7 +174,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 28.188424124964513,
+      "elapsed_seconds": 26.29300658899996,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -214,9 +195,9 @@
           ],
           "pdf_start_index": 79,
           "pdf_end_index": 97,
-          "citation_pages": "23-96",
+          "citation_pages": "77-95",
           "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -326,9 +307,9 @@
           ],
           "pdf_start_index": 175,
           "pdf_end_index": 193,
-          "citation_pages": "173-192",
+          "citation_pages": "173-191",
           "confidence": 0.98,
-          "page_mapping_confidence": "inferred",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -407,8 +388,8 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 12.10183975007385,
-      "demand_at_run": 1
+      "elapsed_seconds": 30.299059563000355,
+      "demand_at_run": 0
     },
     "glm-4.7": {
       "chapters": [

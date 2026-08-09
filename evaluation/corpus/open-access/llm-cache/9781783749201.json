@@ -1,0 +1,801 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "3 Preferences under uncertainty",
+          "authors": [
+            "Bernoulli"
+          ],
+          "pdf_start_index": 54,
+          "pdf_end_index": 54,
+          "citation_pages": "31-34",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.3 Expected utility",
+          "authors": [],
+          "pdf_start_index": 55,
+          "pdf_end_index": 56,
+          "citation_pages": "35-38",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.5 Risk aversion",
+          "authors": [],
+          "pdf_start_index": 57,
+          "pdf_end_index": 58,
+          "citation_pages": "39-12",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Problems",
+          "authors": [
+            "Bernoulli",
+            "Jensen"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 61,
+          "citation_pages": "326-16",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4 Consumer preferences",
+          "authors": [],
+          "pdf_start_index": 63,
+          "pdf_end_index": 64,
+          "citation_pages": "45-45",
+          "confidence": 0.77,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.2 Preferences over bundles",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 65,
+          "pdf_end_index": 66,
+          "citation_pages": "46-48",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.4 Continuity",
+          "authors": [],
+          "pdf_start_index": 67,
+          "pdf_end_index": 68,
+          "citation_pages": "49-49",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.5 Convexity",
+          "authors": [],
+          "pdf_start_index": 69,
+          "pdf_end_index": 70,
+          "citation_pages": "50-52",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "1.4 Utility functions",
+          "authors": [],
+          "pdf_start_index": 71,
+          "pdf_end_index": 74,
+          "citation_pages": "9-56",
+          "confidence": 0.68,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5 Consumer behavior",
+          "authors": [],
+          "pdf_start_index": 75,
+          "pdf_end_index": 76,
+          "citation_pages": "57-58",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.3 Rational consumer",
+          "authors": [
+            "λw)= x((p",
+            "λw)= B((p\n1\n"
+          ],
+          "pdf_start_index": 77,
+          "pdf_end_index": 78,
+          "citation_pages": "59-60",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.4 Diﬀerentiable preferences",
+          "authors": [],
+          "pdf_start_index": 79,
+          "pdf_end_index": 81,
+          "citation_pages": "61-63",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.5 Rationalizing a demand function",
+          "authors": [],
+          "pdf_start_index": 82,
+          "pdf_end_index": 86,
+          "citation_pages": "64-67",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.6 Properties of demand functions",
+          "authors": [
+            "Kitchen-"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 92,
+          "citation_pages": "68-74",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6 Producer behavior",
+          "authors": [],
+          "pdf_start_index": 93,
+          "pdf_end_index": 94,
+          "citation_pages": "75-76",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.2 Output maximization",
+          "authors": [],
+          "pdf_start_index": 95,
+          "pdf_end_index": 96,
+          "citation_pages": "77-78",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.3 Proﬁt maximization",
+          "authors": [
+            "slope= w"
+          ],
+          "pdf_start_index": 97,
+          "pdf_end_index": 98,
+          "citation_pages": "79-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.4 Cost function",
+          "authors": [],
+          "pdf_start_index": 99,
+          "pdf_end_index": 103,
+          "citation_pages": "81-14",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Notes",
+          "authors": [
+            "Producer",
+            "Robinson Crusoe"
+          ],
+          "pdf_start_index": 104,
+          "pdf_end_index": 105,
+          "citation_pages": "328-88",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.1 Basic model",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 107,
+          "pdf_end_index": 107,
+          "citation_pages": "89-74",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.2 Uniform-price monopolistic market",
+          "authors": [
+            "k andπis",
+            "s proﬁt"
+          ],
+          "pdf_start_index": 108,
+          "pdf_end_index": 112,
+          "citation_pages": "90-93",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.3 Discriminatory monopoly",
+          "authors": [],
+          "pdf_start_index": 113,
+          "pdf_end_index": 114,
+          "citation_pages": "94-95",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.4 Implicit discrimination",
+          "authors": [
+            "add(1"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 120,
+          "citation_pages": "96-186",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "13 Equilibrium with prices and expectations",
+          "authors": [],
+          "pdf_start_index": 121,
+          "pdf_end_index": 121,
+          "citation_pages": "187-104",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8 A jungle",
+          "authors": [],
+          "pdf_start_index": 123,
+          "pdf_end_index": 124,
+          "citation_pages": "105-104",
+          "confidence": 0.9,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.1 Model",
+          "authors": [],
+          "pdf_start_index": 125,
+          "pdf_end_index": 125,
+          "citation_pages": "105-107",
+          "confidence": 0.87,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.2 Equilibrium",
+          "authors": [],
+          "pdf_start_index": 126,
+          "pdf_end_index": 128,
+          "citation_pages": "108-109",
+          "confidence": 0.87,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.3 Pareto stability",
+          "authors": [],
+          "pdf_start_index": 129,
+          "pdf_end_index": 133,
+          "citation_pages": "110-115",
+          "confidence": 0.85,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.6 Externalities",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 134,
+          "pdf_end_index": 139,
+          "citation_pages": "116-120",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9 A market",
+          "authors": [],
+          "pdf_start_index": 140,
+          "pdf_end_index": 140,
+          "citation_pages": "121-120",
+          "confidence": 0.72,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10.1 Model",
+          "authors": [],
+          "pdf_start_index": 141,
+          "pdf_end_index": 144,
+          "citation_pages": "137-56",
+          "confidence": 0.66,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9.2 Existence and construction of a market equilibrium",
+          "authors": [
+            "k−1",
+            "≥"
+          ],
+          "pdf_start_index": 145,
+          "pdf_end_index": 150,
+          "citation_pages": "127-131",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9.4 Uniqueness of market equilibrium",
+          "authors": [],
+          "pdf_start_index": 151,
+          "pdf_end_index": 156,
+          "citation_pages": "132-138",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10.2 Competitive equilibrium",
+          "authors": [],
+          "pdf_start_index": 157,
+          "pdf_end_index": 162,
+          "citation_pages": "139-144",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10.4 Reopening trade",
+          "authors": [
+            "−I"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 163,
+          "citation_pages": "145-136",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10 An exchange economy",
+          "authors": [],
+          "pdf_start_index": 164,
+          "pdf_end_index": 164,
+          "citation_pages": "137-111",
+          "confidence": 0.77,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10.5 Equilibrium and Pareto stability",
+          "authors": [],
+          "pdf_start_index": 165,
+          "pdf_end_index": 165,
+          "citation_pages": "146-147",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10.6 The core",
+          "authors": [],
+          "pdf_start_index": 166,
+          "pdf_end_index": 166,
+          "citation_pages": "148-57",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.2 Demand functions",
+          "authors": [
+            "S⊆N"
+          ],
+          "pdf_start_index": 167,
+          "pdf_end_index": 168,
+          "citation_pages": "58-149",
+          "confidence": 0.67,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10.9 Edgeworth box",
+          "authors": [],
+          "pdf_start_index": 169,
+          "pdf_end_index": 173,
+          "citation_pages": "150-156",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "11 Variants of an exchange economy",
+          "authors": [],
+          "pdf_start_index": 175,
+          "pdf_end_index": 178,
+          "citation_pages": "157-156",
+          "confidence": 0.79,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "11.1 Market with indivisible good and money",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 179,
+          "pdf_end_index": 191,
+          "citation_pages": "157-174",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "12 A market with consumers and producers",
+          "authors": [],
+          "pdf_start_index": 193,
+          "pdf_end_index": 194,
+          "citation_pages": "175-174",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "12.1 Production economy",
+          "authors": [],
+          "pdf_start_index": 195,
+          "pdf_end_index": 195,
+          "citation_pages": "175-102",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "12.2 An economy with capital and labor",
+          "authors": [],
+          "pdf_start_index": 199,
+          "pdf_end_index": 206,
+          "citation_pages": "180-186",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "13.1 Distributing customers among bank branches",
+          "authors": [],
+          "pdf_start_index": 207,
+          "pdf_end_index": 209,
+          "citation_pages": "187-191",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "13.2 Asymmetric information and adverse selection",
+          "authors": [],
+          "pdf_start_index": 211,
+          "pdf_end_index": 214,
+          "citation_pages": "192-195",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "13.3 A ﬁshing economy",
+          "authors": [],
+          "pdf_start_index": 215,
+          "pdf_end_index": 219,
+          "citation_pages": "196-202",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "14 A market with asymmetric information",
+          "authors": [],
+          "pdf_start_index": 221,
+          "pdf_end_index": 222,
+          "citation_pages": "203-203",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "14.2 Labor market with education",
+          "authors": [],
+          "pdf_start_index": 223,
+          "pdf_end_index": 231,
+          "citation_pages": "204-214",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "16 Extensive games",
+          "authors": [],
+          "pdf_start_index": 233,
+          "pdf_end_index": 236,
+          "citation_pages": "249-217",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15.2 Basic examples",
+          "authors": [],
+          "pdf_start_index": 237,
+          "pdf_end_index": 240,
+          "citation_pages": "218-222",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15.3 Economic examples",
+          "authors": [],
+          "pdf_start_index": 241,
+          "pdf_end_index": 246,
+          "citation_pages": "223-228",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15.4 Existence of Nash equilibrium",
+          "authors": [],
+          "pdf_start_index": 247,
+          "pdf_end_index": 250,
+          "citation_pages": "229-231",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15.5 Strictly competitive games",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 251,
+          "pdf_end_index": 252,
+          "citation_pages": "232-234",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15.7 Mixed strategies",
+          "authors": [],
+          "pdf_start_index": 253,
+          "pdf_end_index": 255,
+          "citation_pages": "235-216",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15.1 Strategic games and Nash equilibrium",
+          "authors": [],
+          "pdf_start_index": 256,
+          "pdf_end_index": 258,
+          "citation_pages": "217-240",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15.8 Interpreting Nash equilibrium",
+          "authors": [
+            "Interpreting Nash"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 264,
+          "citation_pages": "241-233",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15.6 Kantian equilibrium",
+          "authors": [
+            "Roemer",
+            "Subject Learn",
+            "PM Determin"
+          ],
+          "pdf_start_index": 265,
+          "pdf_end_index": 268,
+          "citation_pages": "234-249",
+          "confidence": 0.65,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "16.1 Extensive games and subgame perfect equilibrium",
+          "authors": [],
+          "pdf_start_index": 269,
+          "pdf_end_index": 274,
+          "citation_pages": "250-256",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "16.3 Backward induction",
+          "authors": [],
+          "pdf_start_index": 275,
+          "pdf_end_index": 280,
+          "citation_pages": "257-262",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "16.4 Bargaining",
+          "authors": [],
+          "pdf_start_index": 281,
+          "pdf_end_index": 296,
+          "citation_pages": "263-280",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "20 Aggregating preferences",
+          "authors": [],
+          "pdf_start_index": 297,
+          "pdf_end_index": 300,
+          "citation_pages": "313-281",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "17.2 Strategy-proof mechanisms",
+          "authors": [
+            "i−1"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 302,
+          "citation_pages": "282-283",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "17.3 The Vickrey-Clarke-Groves mechanism",
+          "authors": [],
+          "pdf_start_index": 303,
+          "pdf_end_index": 308,
+          "citation_pages": "284-289",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "18.3 The Gale-Shapley algorithm and stability",
+          "authors": [
+            "Learn 2\n1\n2",
+            "Left-History"
+          ],
+          "pdf_start_index": 309,
+          "pdf_end_index": 320,
+          "citation_pages": "295-300",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "19.1 Model",
+          "authors": [],
+          "pdf_start_index": 321,
+          "pdf_end_index": 322,
+          "citation_pages": "301-303",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "19.2 Properties of economic systems",
+          "authors": [],
+          "pdf_start_index": 323,
+          "pdf_end_index": 324,
+          "citation_pages": "304-306",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.3 Monotonicity",
+          "authors": [],
+          "pdf_start_index": 325,
+          "pdf_end_index": 332,
+          "citation_pages": "48-313",
+          "confidence": 0.7,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "20.3 Properties of preference aggregation functions",
+          "authors": [],
+          "pdf_start_index": 333,
+          "pdf_end_index": 334,
+          "citation_pages": "316-20",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.3 Property α",
+          "authors": [
+            "n−1"
+          ],
+          "pdf_start_index": 335,
+          "pdf_end_index": 335,
+          "citation_pages": "21-312",
+          "confidence": 0.85,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "20.1 Social preferences",
+          "authors": [],
+          "pdf_start_index": 336,
+          "pdf_end_index": 336,
+          "citation_pages": "313-318",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "20.4 Arrow’s impossibility theorem",
+          "authors": [],
+          "pdf_start_index": 337,
+          "pdf_end_index": 340,
+          "citation_pages": "319-322",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "20.5 Gibbard-Satterthwaite theorem",
+          "authors": [],
+          "pdf_start_index": 341,
+          "pdf_end_index": 345,
+          "citation_pages": "323-327",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 316.588432645,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-09T04:54:07.071309+00:00"
+}

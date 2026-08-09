@@ -1,0 +1,220 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Drei Fragen an die Praxis – Intermezzo 1",
+          "authors": [
+            "Drei Fragen",
+            "Ein Interview",
+            "Patricia Ullrich",
+            "Sigrid Hartong",
+            "André Renz\nAnunterschiedlichenStellenfindenSieindiesemBuchPerspektivenvonPrak-\ntiker*innenausdemBereichSchulezumThemaPädagogikundEdTech",
+            "Frau Ullrich",
+            "wann"
+          ],
+          "pdf_start_index": 41,
+          "pdf_end_index": 42,
+          "citation_pages": "41-42",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nicht determinierend, aber doch stark regulierend",
+          "authors": [
+            "Eine Studie zu Design",
+            "Sigrid Hartong",
+            "Der Fall Antolin",
+            "Nacht Weihnachten Hilfe",
+            "Schicken Wenig",
+            "zeigen das Rad Weihnachten",
+            "Arzt Minutenmir",
+            "Zur Kind Loch",
+            "schreiben"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 61,
+          "citation_pages": "43-62",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Was steckt in Lernmanagementsystemen und welche Implikationen ergeben sich hieraus für eine digital mündige Gestaltung im Schulkontext?",
+          "authors": [
+            "Implikationen",
+            "Schulkontext",
+            "Eine Studie",
+            "Nina Brandau",
+            "hoch aus Schlimm",
+            "bin Trinken Kind"
+          ],
+          "pdf_start_index": 63,
+          "pdf_end_index": 85,
+          "citation_pages": "63-86",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Was wird wie vermittelt?",
+          "authors": [
+            "Sieglinde Jornitz\n1 Einleitung\nZu",
+            "Erschrecken",
+            "Wald",
+            "Weihnachten Weihnachten",
+            "Klasse",
+            "Weihnachten Geschichte",
+            "Lernen",
+            "Geschichte",
+            "daran kennen"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 96,
+          "citation_pages": "87-4",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "EdTech oder AdTech?",
+          "authors": [
+            "Bildungsapplikationen",
+            "kommt",
+            "Zwar",
+            "Berg",
+            "Musik"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 128,
+          "citation_pages": "111-128",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Drei Fragen an die Praxis – Intermezzo 2",
+          "authors": [
+            "Drei Fragen",
+            "Sigrid Hartong",
+            "André Renz\nDasfolgendeKurzinterviewhabenwirmitImkeErdbrinkgeführt"
+          ],
+          "pdf_start_index": 129,
+          "pdf_end_index": 130,
+          "citation_pages": "129-130",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "KI in der Bildung",
+          "authors": [
+            "Bildung\nViel",
+            "André Renz",
+            "Nina Galla",
+            "Milch",
+            "Werden Uhr",
+            "Mensch"
+          ],
+          "pdf_start_index": 131,
+          "pdf_end_index": 159,
+          "citation_pages": "131-160",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die KI-Verordnung",
+          "authors": [
+            "Künstliche Intelligenz",
+            "Bildung",
+            "Gut Erde",
+            "Fuß",
+            "Glas",
+            "Erschrecken von Beisp"
+          ],
+          "pdf_start_index": 161,
+          "pdf_end_index": 185,
+          "citation_pages": "161-186",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Design-Justice-Ansatz mit einer Anwendung im Bereich der KI",
+          "authors": [
+            "Anwendung",
+            "Bereich der KI",
+            "Weihnachten Weihnachte"
+          ],
+          "pdf_start_index": 187,
+          "pdf_end_index": 207,
+          "citation_pages": "187-208",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Drei Fragen an die Praxis – Intermezzo 3",
+          "authors": [
+            "Drei Fragen",
+            "Ein Interview",
+            "Eike Völker\nSigrid Hartong",
+            "André Renz",
+            "Herr Völker",
+            "alsoseit2006"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 210,
+          "citation_pages": "209-210",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Medienreflexion mit Methode",
+          "authors": [
+            "Medienkonstellationsanalyse",
+            "Verbindung\nvon",
+            "Der Bedarf",
+            "Schreiben",
+            "Weihnachten Natürlich Junge",
+            "Kind"
+          ],
+          "pdf_start_index": 211,
+          "pdf_end_index": 230,
+          "citation_pages": "211-230",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der EdTechReflektor",
+          "authors": [
+            "Sigrid Hartong",
+            "Weihnachten(BEIM",
+            "Traurig Alt Rad Treffen-Natürlich",
+            "Etwas Welt\n",
+            "Wasser",
+            "Nämlich",
+            "Versuchen Geschichte Garten-Antworten",
+            "-Vielleicht",
+            "zum Erschrecken",
+            "Erschrecken",
+            "Fiel 2019"
+          ],
+          "pdf_start_index": 231,
+          "pdf_end_index": 247,
+          "citation_pages": "231-247",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 38.557288870999855,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-09T04:59:51.828038+00:00"
+}

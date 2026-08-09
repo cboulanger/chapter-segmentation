@@ -1,27 +1,8 @@
 {
-  "generated_at": "2026-08-08T15:49:51.275255+00:00",
+  "generated_at": "2026-08-09T05:09:18.467774+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
-        {
-          "title": "Bein Anfangen",
-          "authors": [
-            "Tisch",
-            "Kopf Weihnachten",
-            "I. Gern",
-            "Verkaufen",
-            "Eigentlich",
-            "Schwimmen klettern Wirklich",
-            "Spielen",
-            "Bruder Glücklich"
-          ],
-          "pdf_start_index": 116,
-          "pdf_end_index": 217,
-          "citation_pages": "99-198",
-          "confidence": 0.67,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
         {
           "title": "Gar Schwarz",
           "authors": [
@@ -37,7 +18,7 @@
           ],
           "pdf_start_index": 218,
           "pdf_end_index": 426,
-          "citation_pages": "199-405",
+          "citation_pages": "149-88",
           "confidence": 0.75,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -58,9 +39,9 @@
           ],
           "pdf_start_index": 427,
           "pdf_end_index": 487,
-          "citation_pages": "406-466",
+          "citation_pages": "89-174",
           "confidence": 0.63,
-          "page_mapping_confidence": "high",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -76,19 +57,38 @@
             "Weihnachten Weihn"
           ],
           "pdf_start_index": 488,
+          "pdf_end_index": 493,
+          "citation_pages": "175-174",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bein Anfangen",
+          "authors": [
+            "Helfen Tisch",
+            "Geschichte",
+            "Allein",
+            "Vielleicht",
+            "Ruhig",
+            "Erschrecken Hinter",
+            "Erschrecken",
+            "Boden"
+          ],
+          "pdf_start_index": 494,
           "pdf_end_index": 503,
           "citation_pages": null,
-          "confidence": 0.8,
+          "confidence": 0.67,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         },
         {
-          "title": "SOZIOLOGIE UND RECHT",
+          "title": "SOZIOLOGEN UND RECHT",
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 508,
           "citation_pages": null,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "page_mapping_confidence": "unmappable",
           "source": "llm"
         },
@@ -106,9 +106,9 @@
           ],
           "pdf_start_index": 509,
           "pdf_end_index": 533,
-          "citation_pages": "456-510",
+          "citation_pages": "175-174",
           "confidence": 0.62,
-          "page_mapping_confidence": "high",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -126,7 +126,7 @@
           ],
           "pdf_start_index": 534,
           "pdf_end_index": 584,
-          "citation_pages": "511-561",
+          "citation_pages": "175-174",
           "confidence": 0.64,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -148,7 +148,7 @@
           ],
           "pdf_start_index": 585,
           "pdf_end_index": 647,
-          "citation_pages": "562-622",
+          "citation_pages": "175-128",
           "confidence": 0.63,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -164,7 +164,7 @@
           ],
           "pdf_start_index": 648,
           "pdf_end_index": 658,
-          "citation_pages": "623-78",
+          "citation_pages": "129-174",
           "confidence": 0.8,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -187,13 +187,13 @@
           ],
           "pdf_start_index": 660,
           "pdf_end_index": 702,
-          "citation_pages": "79-677",
+          "citation_pages": "175-677",
           "confidence": 0.7,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 112.51044883392751,
+      "elapsed_seconds": 95.89638306300003,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -209,8 +209,8 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 8.693540500011295,
-      "demand_at_run": 1
+      "elapsed_seconds": 11.373539665999942,
+      "demand_at_run": 0
     },
     "glm-4.7": {
       "chapters": [

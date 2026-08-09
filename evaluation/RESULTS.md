@@ -559,11 +559,15 @@ chapter-boundary localization.
 | copyrighted-scans | 13 | 312 | 0.00 | 0.00 | 0.00 |
 | **Total** | **50** | **913** | **0.00** | **0.00** | **0.00** |
 
-**Decision (per the spec's "Decision criteria"): do not conclude
-NuExtract-1.5-tiny performs poorly zero-shot -- this result measures a
-broken serving path, not the model's real capability, and the companion
-spec's production wiring should wait on a retest via a different path (see
-"Recommended next step" below), not proceed on this number.**
+**Decision (per the spec's "Decision criteria"): NuExtract-1.5-tiny does
+not clear the bar for the companion spec's production wiring.** The
+initial 0.00/0.00 result (via Ollama/GGUF) turned out to be a real but
+*partial* explanation -- a follow-up retest via the original `transformers`
+checkpoint (see "Follow-up" below) rules out GGUF-conversion fidelity as
+the sole cause and shows the model has a genuine, load-bearing capability
+gap on this task: it cannot reliably extract structured chapter data from
+scan-window text that includes any surrounding non-TOC content, which is
+exactly what this project's scan-window selection always produces.
 
 **Root cause: the model stops generating almost immediately (empty output)
 on real book front-matter text, independent of this project's code.**
@@ -611,14 +615,60 @@ repo's prompt-building or response-parsing:
   non-matching entry -- none of the 913 expected chapters across either
   corpus are recovered.
 
-**Recommended next step, before writing off NuExtract-1.5-tiny:** retest
-via the original Hugging Face checkpoint (`numind/NuExtract-1.5-tiny`)
-loaded directly through `transformers`, per the model card's own usage
-example, rather than through any third-party GGUF conversion. That path
-is the one genuinely unmeasured possibility left -- if it also fails on
-the same real text, that's real evidence against the model itself; if it
-works, the problem is specifically GGUF-conversion fidelity for this
-model's fine-tuned format, worth escalating upstream (e.g. requesting an
-official NuMind-published GGUF, or converting from the original checkpoint
-directly with an explicit special-tokens mapping) rather than a reason to
-abandon the local-model approach outlined in the companion spec.
+### Follow-up: original Hugging Face checkpoint (2026-08-09)
+
+Retested by loading `numind/NuExtract-1.5-tiny` directly through
+`transformers` (`AutoModelForCausalLM`/`AutoTokenizer`, fp32, greedy
+decoding, run on this machine's Apple Silicon GPU via `mps`), bypassing
+GGUF conversion and Ollama entirely -- the one genuinely unmeasured
+possibility identified above. Ad hoc script, not committed (probe only);
+used `evaluation/nuextract_baseline.py`'s own `build_prompt`/
+`parse_response`/`score_book` against real pages loaded via
+`evaluation/harness.py`, so results are directly comparable to the table
+above.
+
+- **The immediate-EOS failure does not reproduce.** On the exact same real
+  front-matter text that produced `eval_count: 1` under Ollama, the
+  original checkpoint generates fluently for hundreds of tokens. This
+  rules out "GGUF conversion broke the model's stopping behavior" as a
+  complete explanation.
+- **But it does not extract, either -- it echoes.** Given a scan window
+  that mixes the actual table of contents with surrounding noise (the
+  book's copyright/front-matter page before it, or the start of the
+  Foreword body text after it -- i.e. exactly what
+  `chapter_segmentation.segmentation._llm_scan_indices` selects for every
+  real book, by design, since it can't know in advance which lines are
+  the ToC), the model does not fill the JSON template at all. It falls
+  into a degenerate mode: copying the input text back verbatim (with
+  occasional token substitutions, e.g. quote-mark hallucinations), then
+  looping on a repeated phrase until the token budget runs out. This
+  reproduced on all three tested windows (page 3+4+5, page 4+5+6, and the
+  original 4-page window) for `9781771993661.pdf`.
+- **Given a hand-curated, TOC-only window (no noise), the model does
+  attempt genuine extraction** -- it emits syntactically valid JSON
+  matching the template, and gets several `printed_page_number` values
+  right. But entity binding is unreliable: it collapses numbered chapters
+  (e.g. "1. Race and Colonialism in Socio-legal Studies in Canada") down
+  to their enclosing part labels ("Part I"), losing the actual chapter
+  titles, and it misattributes authors -- reusing chapter 1's author list
+  ("Carmela Murdocca, Shaira Vadasaria, Timothy Bryan") for several
+  unrelated later entries instead of each entry's real contributors.
+  Scored against `9781771993661.expected.json` via `score_book`, this
+  best-case, hand-cleaned input still only reaches **precision=0.08,
+  recall=0.10, f1=0.09** (1 of 10 expected chapters correctly matched).
+
+**Conclusion: this is a genuine model-capability limit, not a serving-path
+artifact.** NuExtract-1.5-tiny's "template-fill" paradigm assumes the
+input text is already close to the target structure -- it has no
+instruction channel to say "ignore the surrounding noise and extract only
+the table of contents," unlike the instruction-following cloud LLMs
+(`llm_extract_toc_entries` in `segmentation.py`) this spike was evaluating
+it as a local replacement for. Because real scan windows always carry
+that noise, and because even the noise-free best case scores far below
+useful (f1=0.09 on the one book tested), NuExtract-1.5-tiny at the "tiny"
+size is not a viable zero-shot drop-in for this task. A larger NuExtract
+variant (e.g. NuExtract-2.0's larger checkpoints) or a preprocessing step
+that isolates ToC text before extraction (which would undercut the
+"zero-shot, no preprocessing" value proposition this spike was testing for)
+would be the next things to try if a local-model path is still wanted --
+neither is in scope for this spike.

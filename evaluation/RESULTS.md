@@ -748,3 +748,36 @@ an `instructions` string added, and compare against the existing cloud-LLM
 strategy numbers before deciding whether to wire this into
 `evaluation/scripts/evaluate_nuextract_baseline.py` as a first-class,
 committed option.
+
+### Optimization: MLX vs. `transformers`+`mps` (2026-08-09)
+
+Before running the full corpus, checked whether the serving path used
+above (`transformers`, fp16, `mps`) was leaving speed on the table. It
+was: the model load explicitly warned `The fast path is not available
+because one of the required library is not installed` (`flash-linear-
+attention`/`causal-conv1d` -- both CUDA/Triton-only, not installable on
+Apple Silicon), meaning Qwen3.5's hybrid linear-attention layers were
+running through a slow generic fallback rather than a fused kernel.
+Retested with `mlx-vlm` against `numind/NuExtract3-mlx-4bits` -- the
+NuMind-published 4-bit quantization (3.0 GB vs. 9.3 GB fp16) run through
+MLX, Apple's native array framework, instead of PyTorch's `mps` backend.
+
+- **Single-book check** (`9781771993661.pdf`, same window as above):
+  **25.3s vs. 69.6s** (2.75x faster), 27 tokens/sec vs. ~8.6 tokens/sec,
+  for essentially the same output (f1=0.95 both ways).
+- **10-book sample** (same seeded sample as the `transformers` run
+  above): total raw generation time **323s vs. 1,080s (3.3x faster)**;
+  aggregate **precision=0.82, recall=0.74, f1=0.78** vs. the fp16 run's
+  **precision=0.95, recall=0.73, f1=0.83** -- a modest precision dip
+  consistent with 4-bit quantization noise, recall essentially unchanged.
+  The same two previously-diagnosed problem books (the French-language
+  miss and the deeply-nested-ToC over-extraction) show the same failure
+  modes, not new ones -- nothing about switching to MLX changed *what*
+  fails, only *how fast* the successful cases run.
+- Model load is also far cheaper once weights are cached locally: 2.5s
+  (MLX, warm) vs. 18.8-381.8s observed for `transformers` (dependent on OS
+  disk-cache state).
+
+**Decision: use `numind/NuExtract3-mlx-4bits` via `mlx-vlm` as the runner
+for the full-corpus run** -- same architecture, same accuracy class, ~3x
+less wall-clock time, and a much smaller download.

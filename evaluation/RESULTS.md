@@ -900,3 +900,73 @@ accuracy) as the reliable takeaway, not the absolute tokens/sec.
 `numind/NuExtract-2.0-4B` over `NuExtract3` -- faster, smaller download,
 equal or better accuracy in this test, and it already has mature Ollama
 support today, avoiding the Qwen3.5/Ollama gap entirely.
+
+## NuExtract3 dropped; NuExtract-2.0-4B full-corpus zero-shot baseline (2026-08-10)
+
+Following the CPU-deployment comparison above, NuExtract3 was dropped from
+consideration entirely (deleted its `transformers`/GGUF/MLX weight caches,
+13.8GB total -- no production code ever referenced it, so nothing else to
+remove). All further work targets `numind/NuExtract-2.0-4B` only.
+
+### Backend-dependent bug: `transformers`/MPS silently drops `printed_page_number`
+
+Before trusting a full-corpus number for NuExtract-2.0-4B, a zero-shot run
+was attempted via the same `transformers`+`mps`+fp16 path used earlier for
+NuExtract3, for consistency. It scored **precision=0.12 recall=0.12
+f1=0.12** -- far below the model's own 5-book CPU/`llama.cpp` sample
+(f1=0.97) using the *same* five books. Investigation (single-book replay,
+`evaluation/corpus/open-access/9781771993661.pdf`) found the root cause:
+on `transformers`/MPS, at both fp16 and bf16, the model reliably emits
+`"printed_page_number": null` for every chapter entry, even though the
+scanned page text plainly contains the printed page numbers (verified by
+printing the raw scan window) and the model correctly extracts every
+title/author. `match_toc_entries` (`evaluation/nuextract_baseline.py`)
+requires a non-null page-number match, so this alone drives recall to
+near zero regardless of title-extraction quality. Ruled out tokenization
+as the cause (`add_special_tokens=True` vs `False` produced identical
+token IDs and identical -- still-null -- output). The same prompt run
+through `llama.cpp` (GGUF Q4_K_M, both CPU-only and Metal-offloaded)
+correctly filled in every page number and scored f1=0.95 on that book,
+reproduced twice. This is a genuine backend-dependent decoding
+difference for this model, not a fluke, a tokenization bug, or noise --
+likely something in how `llama.cpp`'s own prompt tokenization or KV/RoPE
+handling differs subtly from the `transformers` path for this specific
+architecture. Since the deployment target is `llama.cpp` on a no-GPU
+Linux host anyway, this is moot for production, but it means **any
+zero-shot/fine-tuning comparison must go through `llama.cpp`, not
+`transformers`/MPS** -- the two backends are not interchangeable for this
+model's structured-output behavior.
+
+### Full 50-book, two-corpus run (GGUF Q4_K_M, Metal-offloaded)
+
+Re-ran the full corpus through `llama.cpp` with `n_gpu_layers=-1` (Metal
+offload for speed) and `n_ctx=40960` (raised from 8192 after one book's
+noisy scan window exceeded it):
+
+| Corpus | Books | Chapters | Precision | Recall | F1 |
+| --- | --- | --- | --- | --- | --- |
+| copyrighted-scans | 13 | 312 | 0.30 | 0.12 | 0.17 |
+| open-access | 37 | 601 | 0.48 | 0.46 | 0.47 |
+| **Total** | **50** | **913** | **0.45** | **0.35** | **0.39** |
+
+Total wall time: 4156s (~69 min). This is NuExtract-2.0-4B's real
+zero-shot ceiling on this corpus, through the same backend the target
+deployment will use. It is noticeably below NuExtract3's own full-corpus
+number on this same corpus (f1=0.60, see above) -- the smaller/older
+model is less accurate zero-shot, which was already expected going in;
+the CPU-comparison's f1=0.97 was a 5-book best-case sample, not
+representative. A recurring failure pattern is visible again: several
+books return `0/0 found` (empty parseable output) despite having real
+chapters to extract, several with generation times of 200-500s -- the
+same truncation-cluster pattern documented for NuExtract3's full-corpus
+run (long generation, then no valid JSON), suggesting the 1500-token
+output budget is too tight for these books' larger TOCs.
+
+**This f1=0.39 is the baseline number a fine-tuning pilot needs to beat.**
+
+### Next: fine-tuning feasibility
+
+Before investing in a bigger ground-truth set, the plan is to check
+whether LoRA fine-tuning actually moves this number, using a held-out
+split of the existing 50-book corpus (see design notes below) as a cheap
+pilot rather than committing to more ground-truth curation first.

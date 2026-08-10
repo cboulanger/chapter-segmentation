@@ -99,6 +99,24 @@ pulls other MPCDF examples warn about). `--fakeroot` is required here
 (unlike most other blueprints in `ai_containers`) because this container
 also runs `apt-get install` and `cmake --build` in `%post`.
 
+> [!note]
+> `%post` runs with no GPU attached and, on a login node, a capped
+> per-user process count -- `nuextract.def` accounts for both: it pins
+> `CMAKE_CUDA_ARCHITECTURES` to `80;90` (A100/H100/H200) instead of
+> relying on runtime GPU detection (which finds nothing at build time),
+> and caps build parallelism to 4 instead of letting the CUDA build
+> spawn one `nvcc` process per core. If the build still fails with
+> repeated `fork: retry: Resource temporarily unavailable` (a process/
+> `ulimit -u` limit, not a fakeroot problem -- ignore Apptainer's generic
+> fakeroot troubleshooting hint in that case), the login node is likely
+> under load from other users; build inside a short job on a compute
+> node instead:
+>
+> ```bash
+> srun --time=00:45:00 --cpus-per-task=8 --mem=32G \
+>     apptainer build --fakeroot nuextract.sif nuextract.def
+> ```
+
 Sanity-check the build:
 
 ```bash

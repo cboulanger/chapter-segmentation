@@ -34,7 +34,23 @@ From: nvcr.io/nvidia/pytorch:25.01-py3
 
     # CUDA-accelerated build -- the base image ships the full CUDA
     # toolkit (nvcc etc.), so this picks up GPU offload automatically.
-    CMAKE_ARGS="-DGGML_CUDA=on" pip3 install --no-cache-dir --force-reinstall --no-deps "llama-cpp-python>=0.3.0"
+    #
+    # Two things this build environment can't have, both handled below:
+    #   - No GPU is attached during `%post` (this runs on a login node, or
+    #     at best a CPU-only build step) -- leaving CMAKE_CUDA_ARCHITECTURES
+    #     unset makes ggml's build try to autodetect via a live device
+    #     ("-arch=native"), which finds nothing and silently falls back to
+    #     nvcc's own default arch, possibly not matching the GPU this
+    #     actually runs on later. Pin it explicitly instead: sm_80 (A100,
+    #     Raven) and sm_90 (H100/H200, MPCDF's DAIS partition).
+    #   - Login nodes cap the per-user process count (ulimit -u) well
+    #     below what `nproc` parallel nvcc invocations spawn (each nvcc
+    #     forks several sub-processes) -- an unbounded parallel build
+    #     reliably exhausts that limit ("fork: retry: Resource temporarily
+    #     unavailable"). Cap it explicitly rather than trusting nproc.
+    export CMAKE_BUILD_PARALLEL_LEVEL=4
+    CMAKE_ARGS="-DGGML_CUDA=on -DCMAKE_CUDA_ARCHITECTURES=80;90" \
+        pip3 install --no-cache-dir --force-reinstall --no-deps "llama-cpp-python>=0.3.0"
 
     # llama.cpp itself, for convert_hf_to_gguf.py + the llama-quantize
     # binary -- neither ships as a pip package. Building the full
@@ -46,8 +62,9 @@ From: nvcr.io/nvidia/pytorch:25.01-py3
     # rather than assuming a fixed path for the same reason.
     git clone --depth 1 https://github.com/ggml-org/llama.cpp /opt/llama.cpp
     pip3 install --no-cache-dir gguf sentencepiece protobuf
-    cmake -S /opt/llama.cpp -B /opt/llama.cpp/build -DGGML_CUDA=ON -DLLAMA_CURL=OFF -DCMAKE_BUILD_TYPE=Release
-    cmake --build /opt/llama.cpp/build -j"$(nproc)"
+    cmake -S /opt/llama.cpp -B /opt/llama.cpp/build \
+        -DGGML_CUDA=ON -DLLAMA_CURL=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_ARCHITECTURES="80;90"
+    cmake --build /opt/llama.cpp/build -j4
 
 %environment
     export LLAMA_CPP_DIR=/opt/llama.cpp

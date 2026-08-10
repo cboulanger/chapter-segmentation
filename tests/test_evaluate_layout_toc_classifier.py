@@ -13,9 +13,11 @@ from unittest.mock import Mock, patch
 
 from evaluation.scripts.evaluate_layout_toc_classifier import (
     build_feature_table,
+    evaluate_leave_one_book_out,
     load_book_corpus,
     select_threshold,
 )
+from evaluation.scripts.layout_features import FEATURE_NAMES
 
 
 class TestSelectThreshold(unittest.TestCase):
@@ -174,6 +176,29 @@ class TestLoadBookCorpus(unittest.TestCase):
         self.assertEqual(books[0]["corpus"], "open-access")
         self.assertEqual(books[0]["pdf_path"], oa_dir / "book-a.pdf")
         self.assertEqual(len(books[0]["labels"]), 5)
+
+
+def _feature_row(book_key: str, label: str, value: float) -> dict:
+    return {"book_key": book_key, "features": {name: value for name in FEATURE_NAMES}, "label": label}
+
+
+class TestEvaluateLeaveOneBookOut(unittest.TestCase):
+    def test_perfectly_separable_data_gets_full_recall(self):
+        # Three synthetic books, each with 5 pages: page 0 is "toc"
+        # (features all 5.0), page 1 is "chapter_first" (features all
+        # -5.0), pages 2-4 are "other" (features all 0.0) -- identical,
+        # trivially separable pattern across every book.
+        rows = []
+        for book_key in ("book-a", "book-b", "book-c"):
+            rows.append(_feature_row(book_key, "toc", 5.0))
+            rows.append(_feature_row(book_key, "chapter_first", -5.0))
+            rows.extend(_feature_row(book_key, "other", 0.0) for _ in range(3))
+
+        summary = evaluate_leave_one_book_out(rows)
+
+        self.assertEqual(summary["full_recall_fraction"], 1.0)
+        self.assertLessEqual(summary["avg_candidate_fraction"], 0.45)
+        self.assertEqual(len(summary["per_book"]), 3)
 
 
 if __name__ == "__main__":

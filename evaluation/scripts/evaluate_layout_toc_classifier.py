@@ -21,9 +21,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 import json
 
 from pypdf import PdfReader
+from sklearn.ensemble import HistGradientBoostingClassifier
 
-from evaluation.scripts.layout_features import extract_page_features
-from evaluation.scripts.layout_labels import page_labels
+from evaluation.scripts.layout_features import FEATURE_NAMES, extract_page_features
+from evaluation.scripts.layout_labels import LABEL_CHAPTER_FIRST, LABEL_TOC, page_labels
 from evaluation.scripts.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_binary
 
 _CORPUS_DIR = Path(__file__).resolve().parent.parent / "corpus"
@@ -111,3 +112,114 @@ def build_feature_table(books: list[dict], cache_dir_for, pdfalto_bin: str) -> l
             file=sys.stderr,
         )
     return rows
+
+
+def evaluate_leave_one_book_out(rows: list[dict]) -> dict:
+    """Runs leave-one-book-out cross-validation, returns per-book results
+    and an aggregate summary matching the design spec's decision criteria."""
+    book_keys = sorted({row["book_key"] for row in rows})
+    per_book_results = []
+
+    for held_out in book_keys:
+        train_rows = [r for r in rows if r["book_key"] != held_out]
+        test_rows = [r for r in rows if r["book_key"] == held_out]
+
+        X_train = [[r["features"][name] for name in FEATURE_NAMES] for r in train_rows]
+        X_test = [[r["features"][name] for name in FEATURE_NAMES] for r in test_rows]
+
+        result: dict = {"book_key": held_out, "total_pages": len(test_rows)}
+        candidate_pages: set[int] = set()
+
+        for label in (LABEL_TOC, LABEL_CHAPTER_FIRST):
+            y_train = [r["label"] == label for r in train_rows]
+            if sum(y_train) == 0:
+                continue
+            # min_samples_leaf's default of 20 can't split at all on a
+            # handful of training rows (as in this module's own unit
+            # tests, or an early-development corpus) -- every prediction
+            # collapses to one constant, which then flags 100% of pages
+            # as candidates. 1 keeps splits available at any corpus size;
+            # with thousands of real training rows this trades a little
+            # overfitting resistance for that -- acceptable since
+            # select_threshold's recall calibration (and the held-out-book
+            # generalization check that *is* the leave-one-book-out loop)
+            # is what actually guards against a useless model, not this
+            # hyperparameter.
+            clf = HistGradientBoostingClassifier(
+                class_weight="balanced", random_state=0, min_samples_leaf=1
+            )
+            clf.fit(X_train, y_train)
+            train_probs = [p[1] for p in clf.predict_proba(X_train)]
+            threshold = select_threshold(train_probs, y_train, _RECALL_TARGET)
+
+            test_probs = [p[1] for p in clf.predict_proba(X_test)]
+            true_positive_indices = {i for i, r in enumerate(test_rows) if r["label"] == label}
+            predicted_indices = {i for i, p in enumerate(test_probs) if p >= threshold}
+
+            result[f"{label}_recall"] = (
+                len(true_positive_indices & predicted_indices) / len(true_positive_indices)
+                if true_positive_indices
+                else None
+            )
+            candidate_pages |= predicted_indices
+
+        result["candidate_fraction"] = len(candidate_pages) / result["total_pages"]
+        per_book_results.append(result)
+
+    n_books = len(per_book_results)
+    n_full_recall = sum(
+        1
+        for r in per_book_results
+        if r.get(f"{LABEL_TOC}_recall") in (None, 1.0)
+        and r.get(f"{LABEL_CHAPTER_FIRST}_recall") in (None, 1.0)
+    )
+    avg_candidate_fraction = sum(r["candidate_fraction"] for r in per_book_results) / n_books
+
+    return {
+        "per_book": per_book_results,
+        "full_recall_fraction": n_full_recall / n_books,
+        "avg_candidate_fraction": avg_candidate_fraction,
+    }
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    parser.add_argument("--pdfalto-bin", default=None)
+    args = parser.parse_args()
+    pdfalto_bin = resolve_pdfalto_binary(args.pdfalto_bin)
+
+    books = load_book_corpus()
+    if not books:
+        print("No books with a 'toc' field found -- run add_toc_ground_truth.py first.")
+        return 1
+
+    def cache_dir_for(corpus: str) -> Path:
+        return _CORPUS_DIR / corpus / ".layout-cache"
+
+    rows = build_feature_table(books, cache_dir_for, pdfalto_bin)
+    summary = evaluate_leave_one_book_out(rows)
+
+    print(f"Books evaluated: {len(books)}")
+    print(
+        f"Books with full recall (toc + all chapter-first pages retained): "
+        f"{summary['full_recall_fraction']:.0%}"
+    )
+    print(f"Average candidate-page fraction: {summary['avg_candidate_fraction']:.1%}")
+    print()
+    for r in summary["per_book"]:
+        print(
+            f"  {r['book_key']}: toc_recall={r.get('toc_recall')}, "
+            f"chapter_first_recall={r.get('chapter_first_recall')}, "
+            f"candidate_fraction={r['candidate_fraction']:.1%}"
+        )
+
+    meets_bar = summary["full_recall_fraction"] >= 0.90 and summary["avg_candidate_fraction"] <= 0.15
+    print(
+        f"\nDecision bar (>=90% full recall, <=15% avg candidate fraction): "
+        f"{'MET' if meets_bar else 'NOT MET'}"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

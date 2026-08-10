@@ -533,10 +533,14 @@ leave-one-book-out (LOBO) classifier on ten geometric layout features
 scores whether it can identify table-of-contents pages and chapter-opening
 pages purely from page layout, no text content -- see
 `docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md`
-for the pilot's design and decision bar (≥90% `full_recall_fraction`, ≤15%
-`avg_candidate_fraction`). The original pilot run came back **NOT MET**:
-16% `full_recall_fraction` against a comfortably-cleared 5.3%
-`avg_candidate_fraction`.
+for the pilot's design and decision bar. `full_recall_fraction` is the
+share of books, across LOBO folds, whose predicted candidate pages include
+every true chapter-opening page and at least one true TOC page (bar: ≥90%);
+`avg_candidate_fraction` is the average share of a book's pages that end up
+in that candidate set at all -- how much the classifier actually narrows
+the page list down (bar: ≤15%, smaller is better). The original pilot run
+came back **NOT MET**: 16% `full_recall_fraction` against a
+comfortably-cleared 5.3% `avg_candidate_fraction`.
 
 A follow-up investigation
 (`docs/superpowers/specs/2026-08-10-layout-toc-classifier-feature-normalization-design.md`)

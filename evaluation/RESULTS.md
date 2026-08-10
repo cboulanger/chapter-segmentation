@@ -1011,11 +1011,56 @@ Before the fine-tuning pilot above, cleared the cheaper explanation
 first: the failure-mode breakdown's truncation cluster (10 books, 20%)
 used `max_tokens=1500`, and several of those books' generation times
 (200-500s) are consistent with hitting that cap rather than reaching a
-natural stop. Re-running the full 50-book corpus with `max_tokens=6000`
+natural stop. Re-ran the full 50-book corpus with `max_tokens=6000`
 (everything else identical: `llama.cpp`, Metal-offloaded, `n_ctx=40960`)
 to see how much of the f1=0.39 baseline was an artifact of an
-under-provisioned output budget rather than a genuine capability gap --
-this is a free fix (no training involved) and, if it closes most of the
-truncation cluster, changes what "baseline to beat" means for the
-fine-tuning pilot above. Results pending -- see the next update to this
-document once the rerun completes.
+under-provisioned output budget rather than a genuine capability gap.
+
+| Corpus | precision | recall | F1 (1500 tok) | F1 (6000 tok) |
+| --- | --- | --- | --- | --- |
+| copyrighted-scans | 0.57 | 0.42 | 0.17 | **0.48** |
+| open-access | 0.39 | 0.46 | 0.47 | 0.42 |
+| **Total** | **0.43** | **0.45** | **0.39** | **0.44** |
+
+**A real but partial fix: f1=0.39 -> f1=0.44, driven by 2 of the 10
+originally-truncated books recovering completely, not by the cluster
+closing.** Tracing all 10 originally-flagged books individually:
+
+- **2 books recovered to strong scores**, confirming the budget really
+  was the cause for these: `9783428042241.pdf` (0/0 found -> 38/41
+  found, f1 0.00 -> 0.94) and `9783899496291.pdf` (0/0 -> 53/58 found,
+  f1 0.00 -> 0.91). Both are large Festschrift-style
+  `copyrighted-scans` books with big TOCs -- exactly the shape of book
+  the 1500-token cap was too small for -- and both now score
+  essentially as well as the corpus's best books, which is why
+  `copyrighted-scans`' aggregate f1 nearly tripled (0.17 -> 0.48).
+- **4 books still hit the new, 4x-larger cap and still produce zero**:
+  `dnb-36942798X.pdf`, `9783839458013.pdf`, `9781783742806.pdf`,
+  `9781783743339.pdf` (all logged `[HIT_MAX_TOKENS]`, taking 220-630s
+  each). These have TOCs large/complex enough that even 6000 tokens
+  isn't enough, or the model enters a repetition loop that never
+  reaches valid JSON regardless of budget -- not distinguished further
+  here.
+- **1 book (`9783848704316.pdf`) took 979s and still produced 0/0
+  without hitting the cap** -- it stopped generating on its own before
+  6000 tokens, just never produced valid/matching JSON. A different
+  failure shape than budget exhaustion.
+- **3 books stopped truncating but now produce wrong content instead of
+  no content** -- `9782375460122.pdf` (0/0 -> 0/78 found, still 0 true
+  positives -- this is the already-documented French-language/
+  cataloging-page miss, see the NuExtract3 section above, not a
+  truncation artifact at all), `9783839446270.pdf` (0/0 -> 0/0 found in
+  29.5s, a fast empty result, not budget-related), and
+  `9783839465776.pdf` (0/0 -> 0/59 found, still 0 true positives). Where
+  more output budget just means more room to generate spurious entries,
+  it doesn't help.
+
+So raising the token budget is a real, worthwhile, free fix -- worth
+keeping in whatever configuration the fine-tuning pilot's evaluation
+script uses (`evaluate_nuextract_finetune.py` already defaults to
+`--max-tokens 6000`) -- but it only fully resolved 2 of 10 originally-
+truncated books; the rest were already, or became once budget was no
+longer the bottleneck, cases of the model producing wrong or repetitive
+output rather than running out of room. **f1=0.44 (this retest), not
+f1=0.39, is the correct "baseline to beat" for the fine-tuning pilot**
+per its design spec's decision criteria.

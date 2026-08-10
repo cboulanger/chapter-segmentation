@@ -21,6 +21,7 @@ evaluation.nuextract_baseline rather than duplicating them here.
 
 import json
 import random
+from typing import Callable
 
 from evaluation.nuextract_baseline import _expected_start_page
 
@@ -32,7 +33,7 @@ DEFAULT_SPLIT_SEED = 42
 DEFAULT_EVAL_COUNTS = {"open-access": 8, "copyrighted-scans": 3}
 
 
-def build_chat_prompt(text: str, template: dict, apply_chat_template) -> str:
+def build_chat_prompt(text: str, template: dict, apply_chat_template: Callable[..., str]) -> str:
     """Builds the chat-template prompt NuExtract-2.0-4B expects: a single
     user turn holding the scan-window text, with `template`
     (NUEXTRACT_TEMPLATE-shaped) passed through apply_chat_template's own
@@ -77,7 +78,10 @@ def stratified_split(
     flat (corpus, stem) lists. Deterministic for a given seed -- sorting
     before shuffling means the result depends only on the input sets and
     the seed, not filesystem iteration order. A corpus absent from
-    eval_counts contributes 0 books to eval (all of it goes to train)."""
+    eval_counts contributes 0 books to eval (all of it goes to train). If
+    eval_counts[corpus] exceeds that corpus's own book count, the
+    `stems[:n_eval]`/`stems[n_eval:]` slicing degrades gracefully: all of
+    that corpus's books go to eval and none to train."""
     rng = random.Random(seed)
     train: list[tuple[str, str]] = []
     eval_: list[tuple[str, str]] = []
@@ -93,8 +97,8 @@ def stratified_split(
 def tokenize_training_example(
     text: str,
     target: dict,
-    apply_chat_template,
-    encode,
+    apply_chat_template: Callable[..., str],
+    encode: Callable[[str], list[int]],
     eos_token_id: int,
 ) -> dict:
     """Builds one training example's input_ids/labels/attention_mask as
@@ -131,7 +135,9 @@ def pad_batch(examples: list[dict], pad_token_id: int) -> dict[str, list[list[in
     """Right-pads a batch of tokenize_training_example outputs to the
     longest example's length -- plain nested lists, not tensors, so this
     stays torch-free and unit-testable; the training script wraps each
-    field in torch.tensor(...) itself."""
+    field in torch.tensor(...) itself. Expects a non-empty `examples`
+    list -- its only caller is finetune_nuextract.py's Trainer data
+    collator, whose DataLoader never yields an empty batch."""
     max_len = max(len(ex["input_ids"]) for ex in examples)
     batch: dict[str, list[list[int]]] = {"input_ids": [], "labels": [], "attention_mask": []}
     for ex in examples:

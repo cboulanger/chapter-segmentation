@@ -1001,5 +1001,21 @@ reasonable target for LoRA fine-tuning to move.
 
 Before investing in a bigger ground-truth set, the plan is to check
 whether LoRA fine-tuning actually moves this number, using a held-out
-split of the existing 50-book corpus (see design notes below) as a cheap
-pilot rather than committing to more ground-truth curation first.
+split of the existing 50-book corpus as a cheap pilot rather than
+committing to more ground-truth curation first. Design and implementation
+plan: `docs/superpowers/specs/2026-08-10-nuextract2-finetuning-pilot-design.md`.
+
+### Output-token-limit retest (2026-08-10)
+
+Before the fine-tuning pilot above, cleared the cheaper explanation
+first: the failure-mode breakdown's truncation cluster (10 books, 20%)
+used `max_tokens=1500`, and several of those books' generation times
+(200-500s) are consistent with hitting that cap rather than reaching a
+natural stop. Re-running the full 50-book corpus with `max_tokens=6000`
+(everything else identical: `llama.cpp`, Metal-offloaded, `n_ctx=40960`)
+to see how much of the f1=0.39 baseline was an artifact of an
+under-provisioned output budget rather than a genuine capability gap --
+this is a free fix (no training involved) and, if it closes most of the
+truncation cluster, changes what "baseline to beat" means for the
+fine-tuning pilot above. Results pending -- see the next update to this
+document once the rerun completes.

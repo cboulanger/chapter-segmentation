@@ -123,8 +123,17 @@ Sanity-check the build:
 apptainer test nuextract.sif
 ```
 
-Expected: `python deps ok`, `llama-quantize built ok`,
-`convert_hf_to_gguf.py present ok`.
+Expected: `python deps ok (excl. llama_cpp ...)`, `llama_cpp shared
+library built ok`, `llama-quantize built ok`, `convert_hf_to_gguf.py
+present ok`. `llama_cpp` itself is deliberately not imported by this
+test -- its compiled library needs a real GPU driver (`--nv`), not
+available at build time. Do that check once for real, on a GPU node
+(e.g. inside an interactive `srun --gres=gpu:a100:1 --pty bash`
+session), before trusting the container for the actual job:
+
+```bash
+apptainer exec --nv nuextract.sif python3 -c "import llama_cpp; print('llama_cpp CUDA import ok')"
+```
 
 ## 4. Pre-fetch model weights (login node -- compute nodes have no internet)
 

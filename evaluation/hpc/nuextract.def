@@ -70,7 +70,15 @@ From: nvcr.io/nvidia/pytorch:25.01-py3
     export LLAMA_CPP_DIR=/opt/llama.cpp
 
 %test
-    python3 -c "import torch, transformers, peft, huggingface_hub, llama_cpp; print('python deps ok')"
+    # llama_cpp is deliberately NOT imported here: its compiled libllama.so
+    # is linked against libcuda.so.1, which only exists on a host with a
+    # real NVIDIA driver, bind-mounted in via `--nv` -- neither is present
+    # during `apptainer build`/`%test` (no GPU is attached at build time),
+    # so `import llama_cpp` fails here unconditionally regardless of
+    # whether the build itself succeeded. Verify it for real once, at job
+    # runtime: `apptainer exec --nv nuextract.sif python3 -c "import llama_cpp"`.
+    python3 -c "import torch, transformers, peft, huggingface_hub; print('python deps ok (excl. llama_cpp -- see comment above)')"
+    find / -xdev -name "libllama.so" -path "*llama_cpp*" 2>/dev/null | grep -q . && echo "llama_cpp shared library built ok"
     find /opt/llama.cpp/build -name "llama-quantize" -type f | grep -q . && echo "llama-quantize built ok"
     test -f /opt/llama.cpp/convert_hf_to_gguf.py && echo "convert_hf_to_gguf.py present ok"
 

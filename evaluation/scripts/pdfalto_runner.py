@@ -39,6 +39,7 @@ def ensure_alto_xml(pdf_path: Path, cache_dir: Path, pdfalto_bin: str) -> Path:
         text=True,
     )
     if result.returncode != 0 or not output_path.exists():
+        output_path.unlink(missing_ok=True)
         raise RuntimeError(
             f"pdfalto failed on {pdf_path} (exit {result.returncode}): {result.stderr}"
         )

@@ -69,6 +69,30 @@ class TestEnsureAltoXml(unittest.TestCase):
                 with self.assertRaises(RuntimeError):
                     ensure_alto_xml(pdf_path, cache_dir, "pdfalto")
 
+    def test_deletes_partial_output_on_failure(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf_path = Path(tmp) / "book.pdf"
+            pdf_path.write_bytes(b"%PDF-fake")
+            cache_dir = Path(tmp) / "cache"
+
+            def fake_run(cmd, capture_output, text):
+                # Simulate pdfalto writing a truncated file before crashing.
+                Path(cmd[-1]).write_text("<alto trunc", encoding="utf-8")
+                return subprocess.CompletedProcess(cmd, 1, stdout="", stderr="boom")
+
+            with patch(
+                "evaluation.scripts.pdfalto_runner.subprocess.run", side_effect=fake_run
+            ):
+                with self.assertRaises(RuntimeError):
+                    ensure_alto_xml(pdf_path, cache_dir, "pdfalto")
+
+            output_path = cache_dir / "book.alto.xml"
+            self.assertFalse(
+                output_path.exists(),
+                "partial output must be deleted so a later call re-runs pdfalto "
+                "instead of silently reusing a corrupt cache entry",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -49,8 +49,12 @@ From: nvcr.io/nvidia/pytorch:25.01-py3
     #     reliably exhausts that limit ("fork: retry: Resource temporarily
     #     unavailable"). Cap it explicitly rather than trusting nproc.
     export CMAKE_BUILD_PARALLEL_LEVEL=4
+    # No --no-deps: llama-cpp-python's own runtime deps (diskcache,
+    # jinja2, typing-extensions, ...) aren't in the base image, and
+    # skipping them here only fails later at import time, inside the
+    # actual training job, not during this build.
     CMAKE_ARGS="-DGGML_CUDA=on -DCMAKE_CUDA_ARCHITECTURES=80;90" \
-        pip3 install --no-cache-dir --force-reinstall --no-deps "llama-cpp-python>=0.3.0"
+        pip3 install --no-cache-dir "llama-cpp-python>=0.3.0"
 
     # llama.cpp itself, for convert_hf_to_gguf.py + the llama-quantize
     # binary -- neither ships as a pip package. Building the full

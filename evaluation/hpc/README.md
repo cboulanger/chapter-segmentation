@@ -56,14 +56,25 @@ output:**
 uv run python evaluation/scripts/prepare_nuextract_finetune_data.py
 
 rsync -av evaluation/finetune/data/ \
-    cboul@viper.mpcdf.mpg.de:/u/cboul/projects/chapter-segmentation/evaluation/finetune/data/
+    cboul@raven.mpcdf.mpg.de:/u/cboul/projects/chapter-segmentation/evaluation/finetune/data/
 ```
+
+This whole package targets **Raven** specifically (NVIDIA/A100 -- see
+`nuextract.def`'s CUDA base image and `run_pilot.slurm`'s `--gres=gpu:a100:1`
+and `--nv`), not Viper (AMD/ROCm, which needs a different base image,
+`-DGGML_HIP=ON` instead of `-DGGML_CUDA=ON`, `--rocm` instead of `--nv`,
+and Viper's own `--constraint`/`--gres` syntax -- none of that is done
+here). Double-check `raven.mpcdf.mpg.de` above, not `viper.mpcdf.mpg.de`.
 
 (Swap in your actual remote username/host/path -- and note the `:`
 immediately after the host: `rsync` treats anything without it as a
 second local path, which silently recreates the whole destination as a
 nested local directory instead of transferring anywhere, so double-check
-this before running it for real.)
+this before running it for real. If MPCDF's `$HOME`/project filesystem is
+shared across Raven and Viper for your account -- check with `ssh
+raven.mpcdf.mpg.de 'ls ~/projects/chapter-segmentation'` -- you may not
+need to re-clone/re-transfer anything at all, just log into Raven instead
+of Viper and pick up from step 3 below.)
 
 The existing `evaluation/.gitignore` rule (`finetune/`) means this
 directory is never committed to git on either machine -- transfer it out

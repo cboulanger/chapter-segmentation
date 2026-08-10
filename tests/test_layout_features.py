@@ -72,10 +72,10 @@ class TestExtractPageFeatures(unittest.TestCase):
     def test_toc_like_page_features(self):
         f = self.features[0]
         self.assertEqual(f["line_count"], 3.0)
-        self.assertAlmostEqual(f["width_mean"], 120.0)
-        self.assertAlmostEqual(f["width_var"], 400.0)
-        self.assertAlmostEqual(f["left_margin_mean"], 50.0)
-        self.assertAlmostEqual(f["left_margin_var"], 0.0)
+        self.assertAlmostEqual(f["width_mean"], 120.0 / 500)
+        self.assertAlmostEqual(f["width_var"], 400.0 / 500**2)
+        self.assertAlmostEqual(f["left_margin_mean"], 50.0 / 500)
+        self.assertAlmostEqual(f["left_margin_var"], 0.0 / 500**2)
         self.assertEqual(f["trailing_number_fraction"], 1.0)
         self.assertAlmostEqual(f["font_size_max_ratio"], 1.0)
         self.assertEqual(f["top_block_is_large_font"], 0.0)
@@ -85,10 +85,10 @@ class TestExtractPageFeatures(unittest.TestCase):
     def test_chapter_opening_page_features(self):
         f = self.features[1]
         self.assertEqual(f["line_count"], 3.0)
-        self.assertAlmostEqual(f["width_mean"], 830 / 3)
-        self.assertAlmostEqual(f["width_var"], 12033.333333333334, places=2)
-        self.assertAlmostEqual(f["left_margin_mean"], 296 / 3)
-        self.assertAlmostEqual(f["left_margin_var"], 7701.333333333333, places=2)
+        self.assertAlmostEqual(f["width_mean"], (830 / 3) / 500)
+        self.assertAlmostEqual(f["width_var"], 12033.333333333334 / 500**2, places=6)
+        self.assertAlmostEqual(f["left_margin_mean"], (296 / 3) / 500)
+        self.assertAlmostEqual(f["left_margin_var"], 7701.333333333333 / 500**2, places=6)
         self.assertEqual(f["trailing_number_fraction"], 0.0)
         self.assertAlmostEqual(f["font_size_max_ratio"], 2.4)
         self.assertEqual(f["top_block_is_large_font"], 1.0)

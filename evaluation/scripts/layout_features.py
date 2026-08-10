@@ -99,14 +99,15 @@ def extract_page_features(alto_xml_path: str) -> dict[int, dict[str, float]]:
     for page in root.iter(_ALTO_NS + "Page"):
         page_index = int(page.get("PHYSICAL_IMG_NR")) - 1
         page_height = float(page.get("HEIGHT"))
+        page_width = float(page.get("WIDTH"))
         lines = list(page.iter(_ALTO_NS + "TextLine"))
 
         if not lines:
             features[page_index] = {name: 0.0 for name in FEATURE_NAMES}
             continue
 
-        widths = [float(line.get("WIDTH")) for line in lines]
-        left_margins = [float(line.get("HPOS")) for line in lines]
+        widths = [float(line.get("WIDTH")) / page_width for line in lines]
+        left_margins = [float(line.get("HPOS")) / page_width for line in lines]
         vpositions = [float(line.get("VPOS")) for line in lines]
 
         trailing_hits = 0

@@ -525,6 +525,68 @@ tolerates being up to 3 printed pages over-inclusive (see
   to every non-busy KISSKI model on every book over time, once a
   `KISSKI_API_KEY` repository secret is configured.
 
+## Layout-based TOC/chapter-first-page classifier pilot
+
+`evaluation/scripts/evaluate_layout_toc_classifier.py` trains a
+leave-one-book-out (LOBO) classifier on ten geometric layout features
+(`evaluation/scripts/layout_features.py`, derived from cached ALTO XML) and
+scores whether it can identify table-of-contents pages and chapter-opening
+pages purely from page layout, no text content -- see
+`docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md`
+for the pilot's design and decision bar (≥90% `full_recall_fraction`, ≤15%
+`avg_candidate_fraction`). The original pilot run came back **NOT MET**:
+16% `full_recall_fraction` against a comfortably-cleared 5.3%
+`avg_candidate_fraction`.
+
+A follow-up investigation
+(`docs/superpowers/specs/2026-08-10-layout-toc-classifier-feature-normalization-design.md`)
+root-caused most of the shortfall to 4 of the 10 features --
+`width_mean`, `width_var`, `left_margin_mean`, `left_margin_var` -- being
+raw, unnormalized ALTO point coordinates rather than fractions of page
+width, unlike the other position-derived features
+(`first_text_vpos_fraction`, `line_density`), which already divide by page
+height. This tracked almost exactly with the corpus split: page width
+varies far more in `copyrighted-scans` (304-991pt) than `open-access`
+(420-595pt), and the original run's 8-book cluster stuck at exactly 0%
+`chapter_first` recall was entirely `copyrighted-scans` books:
+
+| corpus | books | avg `chapter_first` recall | books at 0% recall | books at 100% recall |
+| --- | --- | --- | --- | --- |
+| open-access (original) | 37 | 83% | 0 | 9 |
+| copyrighted-scans (original) | 13 | 20% | 8 | 1 |
+
+`extract_page_features` was fixed to divide these four features by page
+width before computing statistics on them (Task 1 of the normalization
+follow-up), and the pilot was re-run against the same cached ALTO XML with
+no other changes. The fresh result is still **NOT MET**, but slightly
+better: 18% `full_recall_fraction` (vs. 16% before) and 5.4%
+`avg_candidate_fraction` (vs. 5.3% before, still comfortably under the 15%
+bar). The per-corpus `chapter_first`-recall breakdown, re-computed the same
+way as the original diagnosis, shows the corpus split itself is
+essentially unchanged by the fix:
+
+| corpus | books | avg `chapter_first` recall | books at 0% recall | books at 100% recall |
+| --- | --- | --- | --- | --- |
+| open-access (fresh) | 37 | 81% | 1 | 9 |
+| copyrighted-scans (fresh) | 13 | 19% | 8 | 0 |
+
+So the width-normalization fix did what it set out to do (the four
+previously-unnormalized features are now genuinely comparable across
+books of different page widths) without meaningfully closing the gap
+between the two corpora, or the overall `full_recall_fraction` bar. This
+matches the normalization spec's own root-cause writeup, which named the
+unnormalized features as the *dominant* factor but not the only one: it
+separately quantified a secondary, compounding issue -- the decision bar's
+requirement of literal 100% `chapter_first` recall per book -- and found
+that even relaxing it to an 80% tolerance only lifted `full_recall_fraction`
+to 34% on the original (pre-normalization) run, still well short of the
+90% bar. That bar-strictness finding is the next-most-likely place to look
+if this pilot is picked up again; scoping or implementing a fix for it is
+explicitly out of scope for both this run and the normalization follow-up
+that produced it
+(`docs/superpowers/specs/2026-08-10-layout-toc-classifier-feature-normalization-design.md`'s
+"Out of scope" section).
+
 ## LLM-fallback results (archived -- script removed)
 
 **Superseded by "Per-strategy standalone results" above, which measures

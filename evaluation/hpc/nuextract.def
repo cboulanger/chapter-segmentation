@@ -1,0 +1,69 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/pytorch:25.01-py3
+
+# Apptainer container for the NuExtract-2.0-4B LoRA fine-tuning pilot on
+# MPCDF HPC (Raven, NVIDIA GPUs). See ../README.md's "NuExtract-2.0-4B
+# fine-tuning pilot" section for what this pilot does, and this
+# directory's README.md for how to build/run this container.
+#
+# Bundles everything the pyproject.toml "nuextract-finetune" optional
+# dependency group needs (torch ships with the base image already) plus
+# a from-source llama.cpp build -- the pilot's design explicitly requires
+# scoring accuracy only through llama.cpp/GGUF, never transformers'
+# generation path (see evaluation/RESULTS.md's transformers/MPS-vs-
+# llama.cpp finding), so convert_hf_to_gguf.py and llama-quantize must be
+# available inside the container that runs evaluate_nuextract_finetune.py.
+#
+# Build (from a login node, needs --fakeroot to install apt/pip packages
+# and compile llama.cpp -- see ../README.md):
+#
+#   module load apptainer/1.4.3
+#   apptainer build --fakeroot nuextract.sif nuextract.def
+
+%post
+    set -e
+    apt-get update
+    apt-get install -y --no-install-recommends cmake git
+    rm -rf /var/lib/apt/lists/*
+
+    pip3 install --no-cache-dir \
+        "transformers>=4.46.0" \
+        "peft>=0.13.0" \
+        "accelerate>=0.34.0" \
+        "huggingface-hub>=0.25.0"
+
+    # CUDA-accelerated build -- the base image ships the full CUDA
+    # toolkit (nvcc etc.), so this picks up GPU offload automatically.
+    CMAKE_ARGS="-DGGML_CUDA=on" pip3 install --no-cache-dir --force-reinstall --no-deps "llama-cpp-python>=0.3.0"
+
+    # llama.cpp itself, for convert_hf_to_gguf.py + the llama-quantize
+    # binary -- neither ships as a pip package. Building the full
+    # default target (not just a single named target) is deliberate:
+    # llama.cpp's internal target names/layout shift between releases,
+    # so this trades a slightly longer build for not hardcoding a name
+    # that may not exist in whatever revision is checked out at build
+    # time. run_pilot.slurm locates the resulting binary with `find`
+    # rather than assuming a fixed path for the same reason.
+    git clone --depth 1 https://github.com/ggml-org/llama.cpp /opt/llama.cpp
+    pip3 install --no-cache-dir gguf sentencepiece protobuf
+    cmake -S /opt/llama.cpp -B /opt/llama.cpp/build -DGGML_CUDA=ON -DLLAMA_CURL=OFF -DCMAKE_BUILD_TYPE=Release
+    cmake --build /opt/llama.cpp/build -j"$(nproc)"
+
+%environment
+    export LLAMA_CPP_DIR=/opt/llama.cpp
+
+%test
+    python3 -c "import torch, transformers, peft, huggingface_hub, llama_cpp; print('python deps ok')"
+    find /opt/llama.cpp/build -name "llama-quantize" -type f | grep -q . && echo "llama-quantize built ok"
+    test -f /opt/llama.cpp/convert_hf_to_gguf.py && echo "convert_hf_to_gguf.py present ok"
+
+%labels
+    author chapter-segmentation NuExtract-2.0-4B fine-tuning pilot
+    version 1.0
+
+%help
+    Container for the NuExtract-2.0-4B LoRA fine-tuning pilot
+    (docs/superpowers/specs/2026-08-10-nuextract2-finetuning-pilot-design.md).
+    Built on NVIDIA's PyTorch image; adds transformers/peft/accelerate,
+    a CUDA-enabled llama-cpp-python, and a from-source llama.cpp build
+    for GGUF conversion/quantization. See evaluation/hpc/README.md.

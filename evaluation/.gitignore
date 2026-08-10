@@ -2,3 +2,6 @@
 manifest.local.json
 .ocr-cache/
 finetune/
+hpc/*.sif
+hpc/job.out.*
+hpc/job.err.*

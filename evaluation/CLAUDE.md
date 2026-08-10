@@ -75,7 +75,17 @@ Before anything else, pick one:
   → `open-access/`.
 - **Everything else that you can build real ground truth for** (no DOI,
   no embedded TOC, scanned, sourced from a personal library, ...) →
-  `copyrighted-scans/`.
+  `copyrighted-scans/`. **A scanned PDF must already have a real, usable
+  embedded text layer before it goes in** -- check with `pages_need_ocr`
+  (`extract_page_texts_for_analysis(pdf_bytes)` then `pages_need_ocr(pages)`,
+  both in `src/chapter_segmentation/segmentation.py`); if it returns `True`,
+  OCR the PDF itself first (e.g. `ocrmypdf --force-ocr -l <lang> in.pdf
+  out.pdf`) and add the OCR'ed version, not the raw scan. `.ocr-cache/`
+  (`evaluation/scripts/ocr_evaluation_pdfs.py`) only caches extracted text
+  for the accuracy harness -- it does not touch the PDF the layout-based
+  TOC/chapter-first-page classifier pilot reads directly (`pdfalto`, via
+  `evaluation/scripts/pdfalto_runner.py`), so a text-layer-less PDF silently
+  starves that pilot of signal no matter what the text-based harness sees.
 - **No ground truth built yet** (you only have the PDF and basic metadata
   so far) → `pending/`. Move the entry into `open-access/` or
   `copyrighted-scans/` once its `.expected.json` exists.

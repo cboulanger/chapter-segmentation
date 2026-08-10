@@ -591,6 +591,86 @@ that produced it
 (`docs/superpowers/specs/2026-08-10-layout-toc-classifier-feature-normalization-design.md`'s
 "Out of scope" section).
 
+### Follow-up: replacing textless/degenerate-text corpus PDFs with OCR'ed versions
+
+A closer look at the 8-book cluster still stuck at exactly 0%
+`chapter_first` recall after the normalization fix found a second, larger
+root cause for 6 of the 8: `pdfalto` (the pilot's only extraction tool,
+`evaluation/scripts/pdfalto_runner.py`) reads a PDF's own embedded
+text/layout directly and has no OCR fallback of its own -- unlike
+`chapter_segmentation`'s own text-based pipeline, which recovers usable
+text for these exact books via a dedicated OCR pass
+(`src/chapter_segmentation/ocr.py`, `.ocr-cache/`, see "Diverse
+real-library evaluation set" above: `9781409403906.pdf`,
+`9783465016878.pdf`, `9783848704316.pdf`, `dnb-36942798X.pdf` had "no text
+layer at all"; `9780367439712.pdf`, `9783789057366.pdf` had a "degenerate
+text layer"). On these 6 books, `pdfalto` extracted zero text lines at all
+on many pages (an all-zero feature vector) or near-uniform, unresolvable
+font-size data -- no amount of feature normalization can recover a signal
+that was never extracted in the first place.
+
+Per this project's evaluation philosophy (production code should OCR at
+run time; the *evaluation corpus* should already contain suitable data, so
+a pipeline bug and a data-quality gap are never conflated), the fix was to
+replace the 6 affected PDFs in the shared corpus
+(`evaluation/corpus/copyrighted-scans/`, gitignored, symlinked identically
+into every worktree) with OCR'ed versions, not to teach `pdfalto_runner.py`
+to run OCR itself. `evaluation/scripts/ocr_evaluation_pdfs.py`'s existing
+OCR path only produces cached plain text (`list[str]`), not a new PDF with
+an embedded text layer, so it can't be reused for this -- `ocrmypdf`
+(installed via `brew install ocrmypdf`, plus `tesseract-lang` for German)
+was used instead: `ocrmypdf --force-ocr -l <lang> <original> <output>`,
+with each original preserved alongside as `<key>.original.pdf`. Verified
+before re-running the pilot: page count unchanged for all 6 (pypdf), and
+`pages_need_ocr` (`src/chapter_segmentation/segmentation.py`) now returns
+`False` for all 6, where it previously returned `True`.
+
+Re-running the pilot (same cached ALTO XML for the other 44 books; the 6
+fixed books' `.layout-cache/` entries were deleted so `pdfalto` re-ran on
+the new PDFs) shows real, measurable per-book improvement on 4 of the 6:
+
+| book | chapter_first recall before | chapter_first recall after |
+| --- | --- | --- |
+| `9783848704316` | 0% | 73% |
+| `9781409403906` | 0% | 42% |
+| `9783465016878` | 0% | 23% |
+| `dnb-36942798X` | 0% | 6% |
+| `9780367439712` | 0% | 0% (unchanged) |
+| `9783789057366` | 0% | 0% (unchanged) |
+
+The two unchanged books fail for two different, already-diagnosed reasons,
+not a leftover OCR problem: `9780367439712`'s chapter-opening pages have
+clean, strong font-size signal both before *and* after OCR (12/12 pages
+cross the title-detection threshold either way) -- this is a LOBO
+model-generalization gap (its true positives top out around probability
+0.45 against a 0.68 threshold calibrated from other books), unrelated to
+data quality. `9783789057366` still shows weak font-size differentiation
+even with real OCR'd text (only 2 of 56 chapter-opening pages cross the
+threshold) -- plausibly because this scan's low average image DPI (~91,
+per `ocrmypdf`'s own logged warnings) is too coarse for Tesseract's
+per-line font-size estimation to reliably separate title-sized from
+body-sized text.
+
+Despite that per-book progress, the overall `full_recall_fraction` stayed
+flat at **18%** (was 18% after normalization, 16% originally) -- still
+**NOT MET**. `avg_candidate_fraction` improved slightly, 5.4% to 4.4%,
+still comfortably under the 15% bar. The corpus-wide number held flat
+because every held-out book's classifier is trained on all *other* books'
+rows in this leave-one-book-out setup: swapping degenerate rows for real
+ones in 6 books measurably shifted many *other*, untouched books' scores
+too (both up and down), roughly canceling out in the aggregate. This is
+further evidence, on top of the normalization follow-up's own finding,
+that the decision bar's literal "100% `chapter_first` recall per book"
+requirement -- not any single data-quality or feature issue -- is this
+pilot's dominant remaining blocker: most of the corpus already sits in a
+60-95% per-book recall band, comfortably real signal, just short of the
+all-or-nothing bar.
+
+`evaluation/CLAUDE.md`'s "Step 0a" now requires a real, usable embedded
+text layer (checked with `pages_need_ocr`) before any scanned PDF is added
+to `copyrighted-scans/` going forward, so this gap doesn't recur silently
+for future books.
+
 ## LLM-fallback results (archived -- script removed)
 
 **Superseded by "Per-strategy standalone results" above, which measures

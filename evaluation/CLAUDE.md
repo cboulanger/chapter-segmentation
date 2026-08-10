@@ -260,6 +260,35 @@ print(f'{book}: {len(chapters)} chapters, {total} pages -> OK')
 "
 ```
 
+## Step 5: TOC ground truth
+
+`.expected.json` also carries an optional `"toc"` field, sibling to
+`"chapters"`, used by the layout-based TOC-classifier pilot (see
+`docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md`):
+
+```json
+{"toc_start_index": 7, "toc_end_index": 8}
+```
+
+Same 0-based-physical-page convention as `pdf_start_index`/`pdf_end_index`.
+Three states, not interchangeable:
+
+- **Key absent**: not yet retrofitted for this field.
+- **`"toc": null`**: confirmed -- this book has no locatable printed TOC page.
+- **`"toc": {"toc_start_index": ..., "toc_end_index": ...}`**: TOC located
+  at this contiguous physical-page range.
+
+For a book you're adding by hand, run
+`evaluation/scripts/add_toc_ground_truth.py` after finishing Step 4 -- it
+reuses the same structural TOC-page detection (`find_toc_pages`) the
+chapter-locating step already excludes TOC pages with, so it costs nothing
+extra to run. It writes automatically when the detected TOC pages form one
+contiguous block; otherwise it leaves the book alone and reports it as
+needing manual review (open the PDF, find the real range, write the field
+by hand). Spot-check any auto-written range before trusting it, same
+discipline as the chapter-boundary draft in Step 2/3 -- this script also
+finds the best structural match, not necessarily the correct one.
+
 ## Known failure modes (found the hard way while building this evaluation set)
 
 - **PDF-index ≠ printed page number, and the offset is often not constant.**

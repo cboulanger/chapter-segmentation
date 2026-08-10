@@ -179,7 +179,8 @@ def _evaluate_label(
         print(
             f"WARNING: evaluate_leave_one_book_out: {held_out} lost {lost} of "
             f"{ground_truth_count} ground-truth {label!r} page(s) upstream -- "
-            f"recall measured against the reduced set, not the true ground truth",
+            f"recall measured against the true ground-truth count, not the reduced "
+            f"set that survived",
             file=sys.stderr,
         )
 

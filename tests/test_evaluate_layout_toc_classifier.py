@@ -4,8 +4,10 @@ run is exercised manually -- see
 docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md."""
 
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
-from evaluation.scripts.evaluate_layout_toc_classifier import select_threshold
+from evaluation.scripts.evaluate_layout_toc_classifier import build_feature_table, select_threshold
 
 
 class TestSelectThreshold(unittest.TestCase):
@@ -34,6 +36,51 @@ class TestSelectThreshold(unittest.TestCase):
         probs = [0.9, 0.8, 0.7, 0.6, 0.5, 0.4]
         labels = [True, True, True, True, True, True]
         self.assertEqual(select_threshold(probs, labels, recall_target=0.90), 0.4)
+
+
+class TestBuildFeatureTable(unittest.TestCase):
+    def test_joins_features_with_labels_per_page(self):
+        books = [
+            {"key": "book-a", "corpus": "open-access", "pdf_path": Path("/fake/book-a.pdf"),
+             "labels": ["toc", "chapter_first", "other"]},
+        ]
+
+        fake_features = {0: {"line_count": 1.0}, 1: {"line_count": 2.0}, 2: {"line_count": 3.0}}
+
+        with patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.ensure_alto_xml",
+            return_value=Path("/fake/book-a.alto.xml"),
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.extract_page_features",
+            return_value=fake_features,
+        ):
+            rows = build_feature_table(books, lambda corpus: Path("/fake/cache"), "pdfalto")
+
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(rows[0], {"book_key": "book-a", "features": {"line_count": 1.0}, "label": "toc"})
+        self.assertEqual(
+            rows[1], {"book_key": "book-a", "features": {"line_count": 2.0}, "label": "chapter_first"}
+        )
+        self.assertEqual(rows[2], {"book_key": "book-a", "features": {"line_count": 3.0}, "label": "other"})
+
+    def test_skips_pages_pdfalto_did_not_extract(self):
+        books = [
+            {"key": "book-a", "corpus": "open-access", "pdf_path": Path("/fake/book-a.pdf"),
+             "labels": ["toc", "other"]},
+        ]
+        # pdfalto only produced a feature vector for page 0.
+        fake_features = {0: {"line_count": 1.0}}
+
+        with patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.ensure_alto_xml",
+            return_value=Path("/fake/book-a.alto.xml"),
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.extract_page_features",
+            return_value=fake_features,
+        ):
+            rows = build_feature_table(books, lambda corpus: Path("/fake/cache"), "pdfalto")
+
+        self.assertEqual(len(rows), 1)
 
 
 if __name__ == "__main__":

@@ -85,8 +85,13 @@ def build_feature_table(books: list[dict], cache_dir_for, pdfalto_bin: str) -> l
     book and returns one row per page with an extracted feature vector:
     {"book_key", "features": {...}, "label": "toc"|"chapter_first"|"other"}.
     Pages pdfalto didn't produce a feature vector for (should not normally
-    happen) are silently skipped rather than crashing the whole run."""
+    happen, but has been observed for malformed/oversized scanned pages)
+    are skipped rather than crashing the whole run -- skip counts are
+    tallied per label and, since a dropped "toc" or "chapter_first" row
+    silently erodes the very recall this pilot exists to measure, printed
+    as a warning once the whole table has been built."""
     rows = []
+    skipped_by_label: dict[str, int] = {}
     for book in books:
         cache_dir = cache_dir_for(book["corpus"])
         alto_path = ensure_alto_xml(book["pdf_path"], cache_dir, pdfalto_bin)
@@ -94,6 +99,15 @@ def build_feature_table(books: list[dict], cache_dir_for, pdfalto_bin: str) -> l
         for page_index, label in enumerate(book["labels"]):
             features = page_features.get(page_index)
             if features is None:
+                skipped_by_label[label] = skipped_by_label.get(label, 0) + 1
                 continue
             rows.append({"book_key": book["key"], "features": features, "label": label})
+    if skipped_by_label:
+        total_skipped = sum(skipped_by_label.values())
+        breakdown = ", ".join(f"{label}={count}" for label, count in sorted(skipped_by_label.items()))
+        print(
+            f"WARNING: build_feature_table skipped {total_skipped} page(s) with no "
+            f"pdfalto feature vector ({breakdown})",
+            file=sys.stderr,
+        )
     return rows

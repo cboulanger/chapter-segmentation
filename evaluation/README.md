@@ -270,6 +270,83 @@ Not a pytest test and not part of any CI workflow -- a manual, one-off
 measurement, same operational pattern as the LLM strategy evaluation
 above but with no API cost.
 
+### NuExtract-2.0-4B fine-tuning pilot
+
+A go/no-go check on whether LoRA fine-tuning closes NuExtract-2.0-4B's
+dominant zero-shot failure mode (titles/authors correct,
+`printed_page_number` null -- see `RESULTS.md`'s failure-mode
+breakdown), using only the existing ~50-book corpus, no new ground
+truth. See
+`docs/superpowers/specs/2026-08-10-nuextract2-finetuning-pilot-design.md`
+for the full rationale and decision criteria.
+
+One-time setup -- install the fine-tuning dependency group:
+
+```bash
+uv pip install --python .venv -e ".[nuextract-finetune]"
+```
+
+1. **Prepare data** (needs the evaluation PDFs -- see "Fetching the PDFs"
+   above; no ML dependencies needed for this step):
+
+   ```bash
+   uv run python evaluation/scripts/prepare_nuextract_finetune_data.py
+   ```
+
+   Writes `evaluation/finetune/data/{train,eval}.jsonl` and `split.json`
+   -- all gitignored (copyrighted-scans books' scan-window text can't be
+   redistributed, same reason `*.pdf` is gitignored).
+
+2. **Train the LoRA adapter** (`transformers`+`peft`; `--device mps` on
+   Apple Silicon, `--device cuda` on an NVIDIA GPU):
+
+   ```bash
+   uv run python evaluation/scripts/finetune_nuextract.py \
+       --output-dir evaluation/finetune/adapter
+   ```
+
+3. **Merge the adapter into a standalone checkpoint**:
+
+   ```bash
+   uv run python evaluation/scripts/merge_nuextract_lora.py \
+       --adapter-dir evaluation/finetune/adapter \
+       --output-dir evaluation/finetune/merged
+   ```
+
+4. **Convert to GGUF and quantize**, via a local `llama.cpp` checkout
+   (not a dependency of this repo -- clone it separately):
+
+   ```bash
+   python /path/to/llama.cpp/convert_hf_to_gguf.py \
+       evaluation/finetune/merged \
+       --outfile evaluation/finetune/merged.fp16.gguf
+   /path/to/llama.cpp/llama-quantize \
+       evaluation/finetune/merged.fp16.gguf \
+       evaluation/finetune/merged.Q4_K_M.gguf \
+       Q4_K_M
+   ```
+
+5. **Score the held-out split** and compare against the base model:
+
+   ```bash
+   # fine-tuned
+   uv run python evaluation/scripts/evaluate_nuextract_finetune.py \
+       --gguf-path evaluation/finetune/merged.Q4_K_M.gguf
+
+   # base model, same split, same code -- the number to beat
+   uv run python evaluation/scripts/evaluate_nuextract_finetune.py
+   ```
+
+Not a pytest test and not part of any CI workflow -- a manual, one-off
+pilot, same operational pattern as the NuExtract baseline spike above.
+Record the result (both f1 numbers, and whether the null-page-number
+rate dropped on the held-out books) in `RESULTS.md`.
+
+**Running this on MPCDF HPC instead of locally:** see
+[`evaluation/hpc/README.md`](hpc/README.md) for an Apptainer/SLURM
+package that runs the same five steps above on a GPU node (Raven),
+including a container definition and a ready-to-submit batch script.
+
 ### Strategy-pipeline evaluation
 
 `evaluation/scripts/evaluate_chapter_segmentation_strategies.py` runs the same

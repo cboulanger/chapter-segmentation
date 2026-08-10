@@ -114,65 +114,106 @@ def build_feature_table(books: list[dict], cache_dir_for, pdfalto_bin: str) -> l
     return rows
 
 
-def evaluate_leave_one_book_out(rows: list[dict]) -> dict:
+def evaluate_leave_one_book_out(rows: list[dict], books: list[dict]) -> dict:
     """Runs leave-one-book-out cross-validation, returns per-book results
-    and an aggregate summary matching the design spec's decision criteria."""
+    and an aggregate summary matching the design spec's decision criteria.
+
+    The per-book "full recall" bar is asymmetric, per the design spec: a
+    book passes only if the candidate set contains *every* true
+    chapter_first page (missing even one loses a whole chapter) but only
+    *at least one* true toc-range page (locating the section is enough --
+    the point of catching a toc page at all is to find that section of
+    the book, not to reproduce every one of its physical pages). `books`
+    (the same list `build_feature_table` was given -- each entry has
+    "key" and a "labels" list of ground-truth labels, independent of
+    whatever pdfalto did or didn't manage to extract) is what lets this
+    tell "this book genuinely has no pages of this label" (both labels'
+    recall is vacuously satisfied) apart from "ground truth has such
+    pages but every single one of them was dropped before reaching
+    `rows`" (a real data-loss bug, not something to reward -- see
+    build_feature_table's own skip-warning) -- relying on `rows` alone,
+    post-filtering, can't distinguish the two."""
+    books_by_key = {book["key"]: book for book in books}
     book_keys = sorted({row["book_key"] for row in rows})
     per_book_results = []
 
     for held_out in book_keys:
         train_rows = [r for r in rows if r["book_key"] != held_out]
         test_rows = [r for r in rows if r["book_key"] == held_out]
+        ground_truth_labels = books_by_key[held_out]["labels"]
 
         X_train = [[r["features"][name] for name in FEATURE_NAMES] for r in train_rows]
         X_test = [[r["features"][name] for name in FEATURE_NAMES] for r in test_rows]
 
         result: dict = {"book_key": held_out, "total_pages": len(test_rows)}
         candidate_pages: set[int] = set()
+        label_pass: dict[str, bool] = {}
 
         for label in (LABEL_TOC, LABEL_CHAPTER_FIRST):
             y_train = [r["label"] == label for r in train_rows]
-            if sum(y_train) == 0:
-                continue
-            # min_samples_leaf's default of 20 can't split at all on a
-            # handful of training rows (as in this module's own unit
-            # tests, or an early-development corpus) -- every prediction
-            # collapses to one constant, which then flags 100% of pages
-            # as candidates. 1 keeps splits available at any corpus size;
-            # with thousands of real training rows this trades a little
-            # overfitting resistance for that -- acceptable since
-            # select_threshold's recall calibration (and the held-out-book
-            # generalization check that *is* the leave-one-book-out loop)
-            # is what actually guards against a useless model, not this
-            # hyperparameter.
-            clf = HistGradientBoostingClassifier(
-                class_weight="balanced", random_state=0, min_samples_leaf=1
-            )
-            clf.fit(X_train, y_train)
-            train_probs = [p[1] for p in clf.predict_proba(X_train)]
-            threshold = select_threshold(train_probs, y_train, _RECALL_TARGET)
-
-            test_probs = [p[1] for p in clf.predict_proba(X_test)]
             true_positive_indices = {i for i, r in enumerate(test_rows) if r["label"] == label}
-            predicted_indices = {i for i, p in enumerate(test_probs) if p >= threshold}
+            ground_truth_count = ground_truth_labels.count(label)
 
-            result[f"{label}_recall"] = (
-                len(true_positive_indices & predicted_indices) / len(true_positive_indices)
-                if true_positive_indices
-                else None
-            )
-            candidate_pages |= predicted_indices
+            predicted_indices: set[int] = set()
+            if sum(y_train) > 0:
+                # min_samples_leaf's default of 20 can't split at all on a
+                # handful of training rows (as in this module's own unit
+                # tests, or an early-development corpus) -- every
+                # prediction collapses to one constant, which then flags
+                # 100% of pages as candidates. 1 keeps splits available at
+                # any corpus size; with thousands of real training rows
+                # this trades a little overfitting resistance for that --
+                # acceptable since select_threshold's recall calibration
+                # (and the held-out-book generalization check that *is*
+                # the leave-one-book-out loop) is what actually guards
+                # against a useless model, not this hyperparameter.
+                clf = HistGradientBoostingClassifier(
+                    class_weight="balanced", random_state=0, min_samples_leaf=1
+                )
+                clf.fit(X_train, y_train)
+                train_probs = [p[1] for p in clf.predict_proba(X_train)]
+                threshold = select_threshold(train_probs, y_train, _RECALL_TARGET)
+                test_probs = [p[1] for p in clf.predict_proba(X_test)]
+                predicted_indices = {i for i, p in enumerate(test_probs) if p >= threshold}
+                candidate_pages |= predicted_indices
+
+            if ground_truth_count == 0:
+                # Confirmed by ground truth, not just by an empty test
+                # set: this book has no pages of this label at all.
+                # Nothing to recall -- vacuously satisfied.
+                result[f"{label}_recall"] = None
+                label_pass[label] = True
+            elif not true_positive_indices:
+                # Ground truth says this book HAS ground_truth_count
+                # page(s) of this label, but none of them made it into
+                # `rows` -- e.g. dropped by build_feature_table's
+                # pdfalto-extraction-skip path. Recall is unmeasurable,
+                # and silently treating that as a vacuous pass would mask
+                # real data loss, so surface it and count it as a miss.
+                print(
+                    f"WARNING: evaluate_leave_one_book_out: {held_out} has "
+                    f"{ground_truth_count} ground-truth {label!r} page(s) but none "
+                    f"survived to the feature table -- counting as a recall miss, "
+                    f"not a vacuous pass",
+                    file=sys.stderr,
+                )
+                result[f"{label}_recall"] = 0.0
+                label_pass[label] = False
+            else:
+                hit_indices = true_positive_indices & predicted_indices
+                recall = len(hit_indices) / len(true_positive_indices)
+                result[f"{label}_recall"] = recall
+                # chapter_first needs every page; toc only needs one hit
+                # to have located the section -- see the design spec's
+                # decision-criteria section.
+                label_pass[label] = recall == 1.0 if label == LABEL_CHAPTER_FIRST else bool(hit_indices)
 
         result["candidate_fraction"] = len(candidate_pages) / result["total_pages"]
+        result["full_recall"] = label_pass[LABEL_TOC] and label_pass[LABEL_CHAPTER_FIRST]
         per_book_results.append(result)
 
     n_books = len(per_book_results)
-    n_full_recall = sum(
-        1
-        for r in per_book_results
-        if r.get(f"{LABEL_TOC}_recall") in (None, 1.0)
-        and r.get(f"{LABEL_CHAPTER_FIRST}_recall") in (None, 1.0)
-    )
+    n_full_recall = sum(1 for r in per_book_results if r["full_recall"])
     avg_candidate_fraction = sum(r["candidate_fraction"] for r in per_book_results) / n_books
 
     return {
@@ -197,19 +238,23 @@ def main() -> int:
         return _CORPUS_DIR / corpus / ".layout-cache"
 
     rows = build_feature_table(books, cache_dir_for, pdfalto_bin)
-    summary = evaluate_leave_one_book_out(rows)
+    summary = evaluate_leave_one_book_out(rows, books)
 
     print(f"Books evaluated: {len(books)}")
     print(
-        f"Books with full recall (toc + all chapter-first pages retained): "
+        f"Books with full recall (>=1 toc page + all chapter-first pages retained): "
         f"{summary['full_recall_fraction']:.0%}"
     )
     print(f"Average candidate-page fraction: {summary['avg_candidate_fraction']:.1%}")
     print()
+
+    def fmt_recall(value: float | None) -> str:
+        return "n/a" if value is None else f"{value:.0%}"
+
     for r in summary["per_book"]:
         print(
-            f"  {r['book_key']}: toc_recall={r.get('toc_recall')}, "
-            f"chapter_first_recall={r.get('chapter_first_recall')}, "
+            f"  {r['book_key']}: toc_recall={fmt_recall(r.get('toc_recall'))}, "
+            f"chapter_first_recall={fmt_recall(r.get('chapter_first_recall'))}, "
             f"candidate_fraction={r['candidate_fraction']:.1%}"
         )
 

@@ -182,6 +182,19 @@ def _feature_row(book_key: str, label: str, value: float) -> dict:
     return {"book_key": book_key, "features": {name: value for name in FEATURE_NAMES}, "label": label}
 
 
+def _clean_book(key: str) -> tuple[list[dict], dict]:
+    """A background/training book with one obviously-separable page of
+    each kind: toc pages score 5.0, chapter_first pages score -5.0, other
+    pages score 0.0. Used as the well-behaved training population that
+    the scenario-under-test's held-out book gets evaluated against."""
+    rows = [
+        _feature_row(key, "toc", 5.0),
+        _feature_row(key, "chapter_first", -5.0),
+    ] + [_feature_row(key, "other", 0.0) for _ in range(3)]
+    labels = ["toc", "chapter_first", "other", "other", "other"]
+    return rows, {"key": key, "labels": labels}
+
+
 class TestEvaluateLeaveOneBookOut(unittest.TestCase):
     def test_perfectly_separable_data_gets_full_recall(self):
         # Three synthetic books, each with 5 pages: page 0 is "toc"
@@ -189,16 +202,189 @@ class TestEvaluateLeaveOneBookOut(unittest.TestCase):
         # -5.0), pages 2-4 are "other" (features all 0.0) -- identical,
         # trivially separable pattern across every book.
         rows = []
+        books = []
         for book_key in ("book-a", "book-b", "book-c"):
-            rows.append(_feature_row(book_key, "toc", 5.0))
-            rows.append(_feature_row(book_key, "chapter_first", -5.0))
-            rows.extend(_feature_row(book_key, "other", 0.0) for _ in range(3))
+            book_rows, book = _clean_book(book_key)
+            rows.extend(book_rows)
+            books.append(book)
 
-        summary = evaluate_leave_one_book_out(rows)
+        summary = evaluate_leave_one_book_out(rows, books)
 
         self.assertEqual(summary["full_recall_fraction"], 1.0)
         self.assertLessEqual(summary["avg_candidate_fraction"], 0.45)
         self.assertEqual(len(summary["per_book"]), 3)
+
+    def test_catching_only_some_of_a_multi_page_toc_range_still_counts_as_full_recall(self):
+        # The design spec's bar is asymmetric: chapter_first needs every
+        # page caught, toc only needs one. Held-out book "partial" has a
+        # 4-page toc range where 3 pages score strongly (5.0, same as
+        # what the two clean training books' single toc page look like)
+        # and one page scores weakly (0.5, much closer to "other"'s 0.0)
+        # -- calibrated (empirically, not just in theory) to reliably get
+        # caught on the 3 strong pages and missed on the weak one, while
+        # its single chapter_first page (a strong -5.0, matching the
+        # clean books' pattern) is still fully recalled.
+        rows = []
+        books = []
+        for book_key in ("clean-a", "clean-b"):
+            book_rows, book = _clean_book(book_key)
+            rows.extend(book_rows)
+            books.append(book)
+
+        rows.extend(
+            [
+                _feature_row("partial", "toc", 5.0),
+                _feature_row("partial", "toc", 5.0),
+                _feature_row("partial", "toc", 5.0),
+                _feature_row("partial", "toc", 0.5),
+                _feature_row("partial", "chapter_first", -5.0),
+                _feature_row("partial", "other", 0.0),
+                _feature_row("partial", "other", 0.0),
+            ]
+        )
+        books.append(
+            {
+                "key": "partial",
+                "labels": ["toc", "toc", "toc", "toc", "chapter_first", "other", "other"],
+            }
+        )
+
+        summary = evaluate_leave_one_book_out(rows, books)
+
+        partial_result = next(r for r in summary["per_book"] if r["book_key"] == "partial")
+        self.assertLess(partial_result["toc_recall"], 1.0)
+        self.assertGreater(partial_result["toc_recall"], 0.0)
+        self.assertEqual(partial_result["chapter_first_recall"], 1.0)
+        self.assertTrue(partial_result["full_recall"])
+
+    def test_missing_every_toc_page_does_not_count_as_full_recall(self):
+        # Held-out book "missall"'s toc pages score -2.0 -- nowhere near
+        # the clean training books' toc pattern (5.0) -- so the
+        # classifier should catch none of them, even though its
+        # chapter_first page (a strong -5.0) is still fully recalled.
+        # Catching zero toc pages must NOT satisfy the "at least one" bar.
+        rows = []
+        books = []
+        for book_key in ("clean-a", "clean-b"):
+            book_rows, book = _clean_book(book_key)
+            rows.extend(book_rows)
+            books.append(book)
+
+        rows.extend(
+            [
+                _feature_row("missall", "toc", -2.0),
+                _feature_row("missall", "toc", -2.0),
+                _feature_row("missall", "chapter_first", -5.0),
+                _feature_row("missall", "other", 0.0),
+                _feature_row("missall", "other", 0.0),
+            ]
+        )
+        books.append({"key": "missall", "labels": ["toc", "toc", "chapter_first", "other", "other"]})
+
+        summary = evaluate_leave_one_book_out(rows, books)
+
+        missall_result = next(r for r in summary["per_book"] if r["book_key"] == "missall")
+        self.assertEqual(missall_result["toc_recall"], 0.0)
+        self.assertEqual(missall_result["chapter_first_recall"], 1.0)
+        self.assertFalse(missall_result["full_recall"])
+
+    def test_missing_any_chapter_first_page_does_not_count_as_full_recall(self):
+        # Held-out book "misschap"'s chapter_first page scores 0.4 --
+        # nowhere near the clean training books' chapter_first pattern
+        # (-5.0) -- so the classifier should miss it, even though its
+        # single toc page (a strong 5.0) is fully recalled. Unlike toc,
+        # chapter_first has no "at least one is enough" exception, so
+        # this must NOT count as full recall.
+        rows = []
+        books = []
+        for book_key in ("clean-a", "clean-b"):
+            book_rows, book = _clean_book(book_key)
+            rows.extend(book_rows)
+            books.append(book)
+
+        rows.extend(
+            [
+                _feature_row("misschap", "toc", 5.0),
+                _feature_row("misschap", "chapter_first", 0.4),
+                _feature_row("misschap", "other", 0.0),
+                _feature_row("misschap", "other", 0.0),
+            ]
+        )
+        books.append({"key": "misschap", "labels": ["toc", "chapter_first", "other", "other"]})
+
+        summary = evaluate_leave_one_book_out(rows, books)
+
+        misschap_result = next(r for r in summary["per_book"] if r["book_key"] == "misschap")
+        self.assertEqual(misschap_result["toc_recall"], 1.0)
+        self.assertEqual(misschap_result["chapter_first_recall"], 0.0)
+        self.assertFalse(misschap_result["full_recall"])
+
+    def test_toc_pages_dropped_before_the_feature_table_are_a_miss_not_a_vacuous_pass(self):
+        # Held-out book "dropped" has 2 toc pages in its ground-truth
+        # labels, but neither made it into `rows` -- simulating
+        # build_feature_table's pdfalto-extraction-skip path silently
+        # dropping every toc-labeled page for a book. This must be
+        # distinguished from a book that genuinely has no toc pages: it
+        # should count as a recall miss (not a vacuous pass) and should
+        # print a warning rather than failing silently.
+        rows = []
+        books = []
+        for book_key in ("clean-a", "clean-b"):
+            book_rows, book = _clean_book(book_key)
+            rows.extend(book_rows)
+            books.append(book)
+
+        rows.extend(
+            [
+                _feature_row("dropped", "chapter_first", -5.0),
+                _feature_row("dropped", "other", 0.0),
+                _feature_row("dropped", "other", 0.0),
+            ]
+        )
+        books.append({"key": "dropped", "labels": ["toc", "toc", "chapter_first", "other", "other"]})
+
+        stderr = io.StringIO()
+        with contextlib.redirect_stderr(stderr):
+            summary = evaluate_leave_one_book_out(rows, books)
+
+        dropped_result = next(r for r in summary["per_book"] if r["book_key"] == "dropped")
+        self.assertEqual(dropped_result["toc_recall"], 0.0)
+        self.assertEqual(dropped_result["chapter_first_recall"], 1.0)
+        self.assertFalse(dropped_result["full_recall"])
+        self.assertIn("dropped", stderr.getvalue())
+        self.assertIn("toc", stderr.getvalue())
+
+    def test_book_with_no_toc_at_all_is_a_vacuous_pass(self):
+        # Held-out book "notoc" genuinely has no toc pages at all
+        # ("toc": null in the source .expected.json, i.e. ground truth
+        # confirms there's nothing to recall) -- this is the legitimate
+        # vacuous-pass case and must NOT print a warning or count as a
+        # miss, unlike the "dropped" scenario above.
+        rows = []
+        books = []
+        for book_key in ("clean-a", "clean-b"):
+            book_rows, book = _clean_book(book_key)
+            rows.extend(book_rows)
+            books.append(book)
+
+        rows.extend(
+            [
+                _feature_row("notoc", "chapter_first", -5.0),
+                _feature_row("notoc", "other", 0.0),
+                _feature_row("notoc", "other", 0.0),
+            ]
+        )
+        books.append({"key": "notoc", "labels": ["chapter_first", "other", "other"]})
+
+        stderr = io.StringIO()
+        with contextlib.redirect_stderr(stderr):
+            summary = evaluate_leave_one_book_out(rows, books)
+
+        notoc_result = next(r for r in summary["per_book"] if r["book_key"] == "notoc")
+        self.assertIsNone(notoc_result["toc_recall"])
+        self.assertEqual(notoc_result["chapter_first_recall"], 1.0)
+        self.assertTrue(notoc_result["full_recall"])
+        self.assertEqual(stderr.getvalue(), "")
 
 
 if __name__ == "__main__":

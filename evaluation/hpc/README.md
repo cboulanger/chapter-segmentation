@@ -26,24 +26,48 @@ Files in this directory:
   CUDA-enabled `llama-cpp-python` + a from-source `llama.cpp` build (for
   `convert_hf_to_gguf.py` and `llama-quantize`, neither of which ships as
   a pip package).
-- `run_pilot.slurm` -- a single batch job running all five pipeline steps
-  in order: prepare data, train, merge, convert+quantize, score (both the
-  fine-tuned and base checkpoints, on the same held-out split).
+- `run_pilot.slurm` -- a single batch job running the four remaining
+  pipeline steps in order: train, merge, convert+quantize, score (both
+  the fine-tuned and base checkpoints, on the same held-out split).
 
 Nothing under this directory needs `--nv`/GPU access except the training
-and scoring steps -- data prep and GGUF conversion/quantization are CPU
-work and run without it, so they don't waste GPU allocation time.
+and scoring steps -- GGUF conversion/quantization is CPU work and runs
+without it, so it doesn't waste GPU allocation time.
 
-## 0. Data governance note
+## 0. Data transfer: ship the extracted text, not the PDFs
 
-Since this HPC node is private, PDFs and ground truth for
-`copyrighted-scans/` books can be uploaded directly (see step 2) rather
-than only shipping pre-extracted text -- there's no need to run
-`prepare_nuextract_finetune_data.py` locally first and ship just the
-JSONL, the way you'd want to on a shared/less-trusted machine. The
-existing `evaluation/.gitignore` rules (`*.pdf`, `manifest.local.json`,
-`finetune/`) still apply here: none of that data is ever committed to
-git, on either machine.
+`prepare_nuextract_finetune_data.py` is the *only* pipeline step that
+touches the PDFs -- it reads each one just to extract its TOC-scan-window
+text (the same `analysis_pages_for` pypdf/OCR-cache path the rest of the
+evaluation suite uses), then writes that text plus the target JSON (built
+from the already-committed `.expected.json` files) into
+`evaluation/finetune/data/{train,eval}.jsonl`. Nothing downstream --
+training, merging, GGUF conversion, or scoring -- ever opens a PDF again;
+they only read those two JSONL files.
+
+That makes the ~800MB PDF corpus itself the wrong thing to transfer,
+independent of whether the HPC node is trusted with copyrighted data:
+`train.jsonl`/`eval.jsonl` are orders of magnitude smaller (a few MB, not
+hundreds) and are all `run_pilot.slurm` needs. **Run the prepare step
+locally, where the PDFs and any OCR cache already sit, and rsync only its
+output:**
+
+```bash
+uv run python evaluation/scripts/prepare_nuextract_finetune_data.py
+
+rsync -av evaluation/finetune/data/ \
+    cboul@viper.mpcdf.mpg.de:/u/cboul/projects/chapter-segmentation/evaluation/finetune/data/
+```
+
+(Swap in your actual remote username/host/path -- and note the `:`
+immediately after the host: `rsync` treats anything without it as a
+second local path, which silently recreates the whole destination as a
+nested local directory instead of transferring anywhere, so double-check
+this before running it for real.)
+
+The existing `evaluation/.gitignore` rule (`finetune/`) means this
+directory is never committed to git on either machine -- transfer it out
+of band, the same way the PDFs themselves already are.
 
 ## 1. Clone the branch on the HPC login node
 
@@ -55,23 +79,11 @@ cd chapter-segmentation
 
 (Or `git pull` if you already have a checkout there.)
 
-## 2. Upload the evaluation corpus
+## 2. Upload the prepared training/eval data
 
-From your local machine, copy the PDFs and any local-only manifest files
-into the matching `evaluation/corpus/<corpus>/` directory on the HPC
-side (adjust paths/host to your actual setup):
-
-```bash
-rsync -av --include="*.pdf" --include="manifest.local.json" --include="*/" --exclude="*" \
-    evaluation/corpus/ \
-    hpc:/path/to/chapter-segmentation/evaluation/corpus/
-```
-
-Books already in the committed `manifest.json` only need their PDF
-uploaded (the ground-truth `.expected.json` is already in the git
-checkout); books that only exist in a local `manifest.local.json` need
-both. See `evaluation/CLAUDE.md` if you're unsure which category a given
-book falls into.
+See step 0 above -- run `prepare_nuextract_finetune_data.py` locally
+first, then `rsync` just `evaluation/finetune/data/` to the same path
+inside your HPC checkout.
 
 ## 3. Build the container (login node)
 
@@ -124,15 +136,16 @@ cd /path/to/chapter-segmentation   # repo root, not evaluation/hpc
 sbatch evaluation/hpc/run_pilot.slurm
 ```
 
-`run_pilot.slurm` assumes it's submitted from the repo root and that
-`evaluation/hpc/nuextract.sif` already exists (step 3). It runs all five
-pipeline steps as one job:
+`run_pilot.slurm` assumes it's submitted from the repo root, that
+`evaluation/hpc/nuextract.sif` already exists (step 3), and that
+`evaluation/finetune/data/{train,eval}.jsonl` are already present (step
+2 -- it fails fast with a clear message if they're missing). It runs the
+remaining four pipeline steps as one job:
 
-1. `prepare_nuextract_finetune_data.py` (CPU only)
-2. `finetune_nuextract.py --device cuda` (GPU)
-3. `merge_nuextract_lora.py` (GPU node, but CPU-bound work)
-4. `convert_hf_to_gguf.py` + `llama-quantize` (CPU only)
-5. `evaluate_nuextract_finetune.py`, twice -- fine-tuned checkpoint, then
+1. `finetune_nuextract.py --device cuda` (GPU)
+2. `merge_nuextract_lora.py` (GPU node, but CPU-bound work)
+3. `convert_hf_to_gguf.py` + `llama-quantize` (CPU only)
+4. `evaluate_nuextract_finetune.py`, twice -- fine-tuned checkpoint, then
    the unmodified base model on the same split (GPU, via `llama.cpp`)
 
 Default `--gres=gpu:a100:1` and `--time=02:00:00` -- generous margins for

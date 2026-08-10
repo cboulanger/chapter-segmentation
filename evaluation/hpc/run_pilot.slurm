@@ -21,8 +21,10 @@
 #SBATCH --time=02:00:00
 
 # See evaluation/hpc/README.md for the full setup this script assumes:
-# repo cloned at $REPO_DIR, evaluation PDFs + manifest.local.json already
-# uploaded into evaluation/corpus/<corpus>/, the container built at
+# repo cloned at $REPO_DIR, evaluation/finetune/data/{train,eval}.jsonl
+# already rsynced over from a local run of prepare_nuextract_finetune_data.py
+# (this script never touches the PDFs themselves -- see the README's "Data
+# transfer" section for why), the container built at
 # $REPO_DIR/evaluation/hpc/nuextract.sif, and the model weights + base
 # GGUF already pre-fetched into $HF_HOME from a login node (compute nodes
 # have no internet -- see llms-meet-mpcdf/sft_with_fsdp/README.md).
@@ -48,21 +50,27 @@ mkdir -p "${PTMP}/nuextract-pilot"
 
 cd "$REPO_DIR"
 
-echo "=== [1/6] prepare-data ($(date)) ==="
-srun apptainer exec -B "$BIND" "$SIF" \
-    python evaluation/scripts/prepare_nuextract_finetune_data.py
+TRAIN_JSONL="${REPO_DIR}/evaluation/finetune/data/train.jsonl"
+EVAL_JSONL="${REPO_DIR}/evaluation/finetune/data/eval.jsonl"
+if [[ ! -f "$TRAIN_JSONL" || ! -f "$EVAL_JSONL" ]]; then
+    echo "Missing $TRAIN_JSONL and/or $EVAL_JSONL." >&2
+    echo "This job never runs prepare_nuextract_finetune_data.py itself --" >&2
+    echo "run it locally and rsync evaluation/finetune/data/ over first" >&2
+    echo "(see evaluation/hpc/README.md's 'Data transfer' section)." >&2
+    exit 1
+fi
 
-echo "=== [2/6] train LoRA adapter ($(date)) ==="
+echo "=== [1/5] train LoRA adapter ($(date)) ==="
 srun apptainer exec --nv -B "$BIND" "$SIF" \
     python evaluation/scripts/finetune_nuextract.py \
         --output-dir "$ADAPTER_DIR" --device cuda
 
-echo "=== [3/6] merge adapter into base weights ($(date)) ==="
+echo "=== [2/5] merge adapter into base weights ($(date)) ==="
 srun apptainer exec --nv -B "$BIND" "$SIF" \
     python evaluation/scripts/merge_nuextract_lora.py \
         --adapter-dir "$ADAPTER_DIR" --output-dir "$MERGED_DIR"
 
-echo "=== [4/6] convert + quantize to GGUF ($(date)) ==="
+echo "=== [3/5] convert + quantize to GGUF ($(date)) ==="
 QUANTIZE_BIN=$(srun apptainer exec -B "$BIND" "$SIF" \
     find /opt/llama.cpp/build -name "llama-quantize" -type f | head -n1)
 echo "Using llama-quantize at: $QUANTIZE_BIN"
@@ -72,12 +80,12 @@ srun apptainer exec -B "$BIND" "$SIF" \
 srun apptainer exec -B "$BIND" "$SIF" \
     "$QUANTIZE_BIN" "$FP16_GGUF" "$Q4_GGUF" Q4_K_M
 
-echo "=== [5/6] score fine-tuned checkpoint on held-out split ($(date)) ==="
+echo "=== [4/5] score fine-tuned checkpoint on held-out split ($(date)) ==="
 srun apptainer exec --nv -B "$BIND" "$SIF" \
     python evaluation/scripts/evaluate_nuextract_finetune.py --gguf-path "$Q4_GGUF" \
     | tee "${PTMP}/nuextract-pilot/eval-finetuned.txt"
 
-echo "=== [6/6] score base checkpoint on the same split -- the number to beat ($(date)) ==="
+echo "=== [5/5] score base checkpoint on the same split -- the number to beat ($(date)) ==="
 srun apptainer exec --nv -B "$BIND" "$SIF" \
     python evaluation/scripts/evaluate_nuextract_finetune.py \
     | tee "${PTMP}/nuextract-pilot/eval-base.txt"

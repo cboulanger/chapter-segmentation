@@ -1,3 +1,4 @@
 *.pdf
 manifest.local.json
 .ocr-cache/
+.layout-cache/

@@ -45,7 +45,7 @@ from pypdf import PdfReader
 from rapidfuzz import fuzz
 
 from chapter_segmentation.segmentation import _parse_toc_page_number
-from evaluation.scripts.ground_truth_helper import extract_printed_number, find_toc_pages
+from evaluation.scripts.ground_truth_helper import extract_printed_number, find_toc_pages, toc_page_range
 
 _CROSSREF_DIR = Path(__file__).resolve().parent.parent / "crossref_gt"
 _OPEN_ACCESS_DIR = Path(__file__).resolve().parent.parent / "corpus" / "open-access"
@@ -205,8 +205,13 @@ def process_book(book: dict, dry_run: bool) -> tuple[str, str]:
 
     _OPEN_ACCESS_DIR.mkdir(parents=True, exist_ok=True)
     shutil.copy2(pdf_path, target_pdf)
+    toc_range = toc_page_range(toc_pages)
+    toc_field = (
+        {"toc_start_index": toc_range[0], "toc_end_index": toc_range[1]} if toc_range else None
+    )
     target_expected.write_text(
-        json.dumps({"chapters": confirmed}, indent=2, ensure_ascii=False), encoding="utf-8"
+        json.dumps({"chapters": confirmed, "toc": toc_field}, indent=2, ensure_ascii=False),
+        encoding="utf-8",
     )
 
     manifest_path = _OPEN_ACCESS_DIR / "manifest.json"

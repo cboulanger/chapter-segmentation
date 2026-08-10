@@ -7,7 +7,17 @@ import statistics
 import xml.etree.ElementTree as ET
 
 _ALTO_NS = "{http://www.loc.gov/standards/alto/ns-v3#}"
-_TRAILING_NUMERAL_RE = re.compile(r"^[0-9]{1,4}$|^[ivxlcdm]{1,7}$", re.IGNORECASE)
+# Digit branch: a plain page number. Roman-numeral branch: a proper
+# roman-numeral grammar (not just "made of the right letters" -- that
+# would also match ordinary English words like "mix", "did", "civic",
+# "mild", "vivid", "livid"). The thousands/"cm" (900) group is
+# deliberately omitted: real book front matter is never numbered past the
+# low hundreds in roman numerals, and keeping it would let "mix" parse as
+# the technically-valid-but-nonsensical M+IX (1009) and pass anyway.
+_TRAILING_NUMERAL_RE = re.compile(
+    r"^[0-9]{1,4}$|^(?=.)(cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3})$",
+    re.IGNORECASE,
+)
 
 FEATURE_NAMES = [
     "line_count",
@@ -46,6 +56,37 @@ def _line_font_size(line: ET.Element, font_sizes: dict[str, float]) -> float | N
     return font_sizes.get(style_ref.split()[0])
 
 
+def _font_ratio_and_top_block_flag(
+    lines: list[ET.Element], font_sizes: dict[str, float], page_height: float
+) -> tuple[float, float]:
+    """Ratio of the page's largest resolvable font size to its modal
+    (most common, i.e. body-text) font size, and whether the line with
+    that largest font size sits in the top fifth of the page (title-block
+    signal). Defaults to (1.0, 0.0) when no line has a resolvable font
+    size.
+
+    Font size and VPOS are tracked together per line (rather than as two
+    separately filtered/unfiltered parallel lists) so that a line with no
+    resolvable font size -- no String child, no STYLEREFS, or an unknown
+    style ID -- can't desynchronize the two and cause the max-font line's
+    VPOS to be read from the wrong line."""
+    resolvable = [
+        (size, float(line.get("VPOS")))
+        for line, size in ((line, _line_font_size(line, font_sizes)) for line in lines)
+        if size is not None
+    ]
+    if not resolvable:
+        return 1.0, 0.0
+
+    modal_size = statistics.mode(size for size, _ in resolvable)
+    max_size, max_size_vpos = max(resolvable, key=lambda pair: pair[0])
+    font_size_max_ratio = max_size / modal_size if modal_size else 1.0
+    top_block_is_large_font = float(
+        font_size_max_ratio > 1.3 and max_size_vpos < page_height / 5
+    )
+    return font_size_max_ratio, top_block_is_large_font
+
+
 def extract_page_features(alto_xml_path: str) -> dict[int, dict[str, float]]:
     """Parses a pdfalto ALTO XML file into a per-page feature dict, keyed by
     0-based PDF page index (ALTO's PHYSICAL_IMG_NR is 1-based). A page with
@@ -74,20 +115,9 @@ def extract_page_features(alto_xml_path: str) -> dict[int, dict[str, float]]:
             if strings and _TRAILING_NUMERAL_RE.match(strings[-1].get("CONTENT", "").strip()):
                 trailing_hits += 1
 
-        line_sizes = [
-            s for s in (_line_font_size(line, font_sizes) for line in lines) if s is not None
-        ]
-        if line_sizes:
-            modal_size = statistics.mode(line_sizes)
-            max_size = max(line_sizes)
-            font_size_max_ratio = max_size / modal_size if modal_size else 1.0
-            max_size_line_index = line_sizes.index(max_size)
-            top_block_is_large_font = float(
-                font_size_max_ratio > 1.3 and vpositions[max_size_line_index] < page_height / 5
-            )
-        else:
-            font_size_max_ratio = 1.0
-            top_block_is_large_font = 0.0
+        font_size_max_ratio, top_block_is_large_font = _font_ratio_and_top_block_flag(
+            lines, font_sizes, page_height
+        )
 
         features[page_index] = {
             "line_count": float(len(lines)),

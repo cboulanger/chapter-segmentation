@@ -354,6 +354,52 @@ class TestEvaluateLeaveOneBookOut(unittest.TestCase):
         self.assertIn("dropped", stderr.getvalue())
         self.assertIn("toc", stderr.getvalue())
 
+    def test_partially_dropped_chapter_first_pages_lower_recall_not_hide_it(self):
+        # Held-out book "partial_chapter" has 3 ground-truth chapter_first
+        # pages, but only 2 of them made it into `rows` -- e.g. one
+        # chapter-opening page got dropped by build_feature_table's
+        # pdfalto-extraction-skip path while the other two survived. The
+        # classifier catches both surviving pages perfectly. Scoring
+        # recall against the survived count (2) rather than the true
+        # ground-truth count (3) would wrongly report 2/2 == 1.0 full
+        # recall; it must instead be 2/3, which fails the strict
+        # chapter_first bar (unlike toc, chapter_first has no "at least
+        # one is enough" exception) and prints a warning about the loss.
+        rows = []
+        books = []
+        for book_key in ("clean-a", "clean-b"):
+            book_rows, book = _clean_book(book_key)
+            rows.extend(book_rows)
+            books.append(book)
+
+        rows.extend(
+            [
+                _feature_row("partial_chapter", "toc", 5.0),
+                _feature_row("partial_chapter", "chapter_first", -5.0),
+                _feature_row("partial_chapter", "chapter_first", -5.0),
+                _feature_row("partial_chapter", "other", 0.0),
+                _feature_row("partial_chapter", "other", 0.0),
+            ]
+        )
+        books.append(
+            {
+                "key": "partial_chapter",
+                "labels": ["toc", "chapter_first", "chapter_first", "chapter_first", "other", "other"],
+            }
+        )
+
+        stderr = io.StringIO()
+        with contextlib.redirect_stderr(stderr):
+            summary = evaluate_leave_one_book_out(rows, books)
+
+        partial_chapter_result = next(
+            r for r in summary["per_book"] if r["book_key"] == "partial_chapter"
+        )
+        self.assertAlmostEqual(partial_chapter_result["chapter_first_recall"], 2 / 3)
+        self.assertFalse(partial_chapter_result["full_recall"])
+        self.assertIn("partial_chapter", stderr.getvalue())
+        self.assertIn("chapter_first", stderr.getvalue())
+
     def test_book_with_no_toc_at_all_is_a_vacuous_pass(self):
         # Held-out book "notoc" genuinely has no toc pages at all
         # ("toc": null in the source .expected.json, i.e. ground truth

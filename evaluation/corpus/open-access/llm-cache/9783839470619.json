@@ -129,7 +129,243 @@
       ],
       "elapsed_seconds": 15.807467029999998,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash": {
+      "chapters": [
+        {
+          "title": "Einstimmen mit Sprachassistenten Einblicke in monolinguale Bias in mehrsprachigen Settings",
+          "authors": [
+            "Sprachassistenten\nEinblicke",
+            "Bias",
+            "Didem Leblebici",
+            "Intelligenz",
+            "Erforschung von Mensch-\nMaschine-InteraktioneninderLinguistikzunehmendanAufmerksamkeit",
+            "türkischsprachigen Migrant*innen"
+          ],
+          "pdf_start_index": 47,
+          "pdf_end_index": 74,
+          "citation_pages": "47-74",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Heterogenität der Sprechenden Die Entgrenzung von Zeit und Raum in Mensch-Maschine-Kommunikation",
+          "authors": [
+            "Menschen getrennt zu betrachten",
+            "Aktivität"
+          ],
+          "pdf_start_index": 75,
+          "pdf_end_index": 104,
+          "citation_pages": "75-104",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "›Man hat schon so einen Austausch irgendwie‹ Konzepte von Kommunikation und Interaktion zwischen Mensch und Maschine im Diabetesmanagement",
+          "authors": [
+            "Mensch",
+            "Diabetesmanagement\nRita"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 138,
+          "citation_pages": "105-140",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kommunikationspraktiken mit Vertreter*innen der Spezies Oktopus Filmische, literarische und naturwissenschaftliche Evidenz",
+          "authors": [
+            "Kommunikationspraktiken",
+            "Konstanze Jungbluth\n",
+            "Aufbau der Paarbeziehung zwischen",
+            "Foster",
+            "01:06:10",
+            "einem flüssigen",
+            "Weichtier",
+            "hohen Intelligenz"
+          ],
+          "pdf_start_index": 141,
+          "pdf_end_index": 178,
+          "citation_pages": "141-178",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Stimme als Interface Entgrenzungen von Mensch und Maschine anhand von Spike Jonzes Film Her",
+          "authors": [
+            "Interface",
+            "Entgrenzungen von Mensch",
+            "von\nSpike",
+            "Dorothea Horst",
+            "Der Beitrag",
+            "von Spike",
+            "kommunikativer Verschränkungen"
+          ],
+          "pdf_start_index": 179,
+          "pdf_end_index": 212,
+          "citation_pages": "179-6",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sprache-Sprechen, Hören, Sehen, Fühlen Eine medienästhetische Perspektive auf die Multimodalität des Sprechens in audiovisuellen Medien",
+          "authors": [
+            "Hören",
+            "Fühlen\nEine",
+            "Multimodalität des Sprechens",
+            "Medien",
+            "Cornelia Müller\nAbstract"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 251,
+          "citation_pages": "213-252",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sprechen in audiovisuellen Medien Systematik für eine medienästhetische Analyse multimodaler Kommunikation",
+          "authors": [
+            "Sprechen",
+            "Medien",
+            "Kommunikation\nClara Kindler-Mathôt",
+            "Cornelia Müller",
+            "Jana Katharina Junge"
+          ],
+          "pdf_start_index": 253,
+          "pdf_end_index": 276,
+          "citation_pages": "253-276",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 6.095611527000017,
+      "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Einstimmen mit Sprachassistenten Einblicke in monolinguale Bias in mehrsprachigen Settings",
+          "authors": [
+            "Sprachassistenten\nEinblicke",
+            "Bias",
+            "Didem Leblebici",
+            "Intelligenz",
+            "Erforschung von Mensch-\nMaschine-InteraktioneninderLinguistikzunehmendanAufmerksamkeit",
+            "türkischsprachigen Migrant*innen"
+          ],
+          "pdf_start_index": 47,
+          "pdf_end_index": 74,
+          "citation_pages": "47-74",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Heterogenität der Sprechenden Die Entgrenzung von Zeit und Raum in Mensch-Maschine-Kommunikation",
+          "authors": [
+            "Menschen getrennt zu betrachten",
+            "Aktivität"
+          ],
+          "pdf_start_index": 75,
+          "pdf_end_index": 104,
+          "citation_pages": "75-104",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "›Man hat schon so einen Austausch irgendwie‹ Konzepte von Kommunikation und Interaktion zwischen Mensch und Maschine im Diabetesmanagement",
+          "authors": [
+            "Mensch",
+            "Diabetesmanagement\nRita"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 138,
+          "citation_pages": "105-140",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kommunikationspraktiken mit Vertreter*innen der Spezies Oktopus Filmische, literarische und naturwissenschaftliche Evidenz",
+          "authors": [
+            "Kommunikationspraktiken",
+            "Konstanze Jungbluth\n",
+            "Aufbau der Paarbeziehung zwischen",
+            "Foster",
+            "01:06:10",
+            "einem flüssigen",
+            "Weichtier",
+            "hohen Intelligenz"
+          ],
+          "pdf_start_index": 141,
+          "pdf_end_index": 178,
+          "citation_pages": "141-178",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Stimme als Interface Entgrenzungen von Mensch und Maschine anhand von Spike Jonzes Film Her",
+          "authors": [
+            "Interface",
+            "Entgrenzungen von Mensch",
+            "von\nSpike",
+            "Dorothea Horst",
+            "Der Beitrag",
+            "von Spike",
+            "kommunikativer Verschränkungen"
+          ],
+          "pdf_start_index": 179,
+          "pdf_end_index": 212,
+          "citation_pages": "179-6",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sprache-Sprechen, Hören, Sehen, Fühlen Eine medienästhetische Perspektive auf die Multimodalität des Sprechens in audiovisuellen Medien",
+          "authors": [
+            "Hören",
+            "Fühlen\nEine",
+            "Multimodalität des Sprechens",
+            "Medien",
+            "Cornelia Müller\nAbstract"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 251,
+          "citation_pages": "213-252",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sprechen in audiovisuellen Medien Systematik für eine medienästhetische Analyse multimodaler Kommunikation",
+          "authors": [
+            "Sprechen",
+            "Medien",
+            "Kommunikation\nClara Kindler-Mathôt",
+            "Cornelia Müller",
+            "Jana Katharina Junge"
+          ],
+          "pdf_start_index": 253,
+          "pdf_end_index": 276,
+          "citation_pages": "253-276",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 60.675638488999994,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T14:28:24.679543+00:00"
+  "generated_at": "2026-08-10T05:30:28.518220+00:00"
 }

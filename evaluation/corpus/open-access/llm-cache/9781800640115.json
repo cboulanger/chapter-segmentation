@@ -136,7 +136,149 @@
       ],
       "elapsed_seconds": 27.128470605000075,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash": {
+      "chapters": [
+        {
+          "title": "Introduction",
+          "authors": [],
+          "pdf_start_index": 33,
+          "pdf_end_index": 35,
+          "citation_pages": "1-16",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "1. Europe Needs More Public Investment",
+          "authors": [
+            "Debora"
+          ],
+          "pdf_start_index": 39,
+          "pdf_end_index": 53,
+          "citation_pages": "17-32",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2. Public Investment and Capital in France",
+          "authors": [
+            "Francesco"
+          ],
+          "pdf_start_index": 55,
+          "pdf_end_index": 69,
+          "citation_pages": "33-11",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Public Investment in Germany: The Need for a Big Push",
+          "authors": [
+            "Sebastian"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 84,
+          "citation_pages": "49-62",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Public Investment Trends across Levels of Government in Italy",
+          "authors": [
+            "Federica"
+          ],
+          "pdf_start_index": 85,
+          "pdf_end_index": 103,
+          "citation_pages": "63-82",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Trends and Patterns in Public Investment in Spain: A Medium- and Long-Run Perspective",
+          "authors": [],
+          "pdf_start_index": 105,
+          "pdf_end_index": 117,
+          "citation_pages": "83-98",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. In Search of a Strategy for Public Investment in Research and Innovation",
+          "authors": [
+            "Daniela",
+            "Alessandra Maria Stilo3\n"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 135,
+          "citation_pages": "99-114",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Social Investment and Infrastructure",
+          "authors": [
+            "Anton Hemerijck,1 Mariana",
+            "Edoardo"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 156,
+          "citation_pages": "115-134",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. From Trans-European (Ten-T) to Trans-Global (Twn-T) Transport Infrastructure Networks. A Conceptual Framework",
+          "authors": [
+            "Roberto"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 181,
+          "citation_pages": "135-160",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9. Ecological Transition",
+          "authors": [
+            "Roberto Cardinale,2",
+            "Zhifu Mi4\nIntroduction\nAnthropogenic"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 196,
+          "citation_pages": "161-174",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10. The Contribution of European Cohesion Policy to Public Investment",
+          "authors": [
+            "Viesti"
+          ],
+          "pdf_start_index": 197,
+          "pdf_end_index": 214,
+          "citation_pages": null,
+          "confidence": 0.93,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 5.5499070849999725,
+      "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 77.568932701,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T14:30:06.944779+00:00"
+  "generated_at": "2026-08-10T05:33:44.625501+00:00"
 }

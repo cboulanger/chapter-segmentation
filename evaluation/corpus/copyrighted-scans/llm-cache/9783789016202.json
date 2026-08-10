@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T15:03:44.561827+00:00",
+  "generated_at": "2026-08-10T04:56:17.565523+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -372,7 +372,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 98.04366641600018,
+      "elapsed_seconds": 7.391996110999997,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -938,7 +938,7 @@
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 68.5299713750137,
+      "elapsed_seconds": 94.87211047400001,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {

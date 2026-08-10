@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T15:04:40.077616+00:00",
+  "generated_at": "2026-08-10T05:10:18.019437+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -135,14 +135,42 @@
             "zum Versteck"
           ],
           "pdf_start_index": 154,
+          "pdf_end_index": 161,
+          "citation_pages": "400-401",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Geburtstag",
+          "authors": [
+            "Tür Geburtstag",
+            "Rennen See",
+            "Weihnachten 167",
+            "Schule",
+            "Bin kochen",
+            "Geschichte",
+            "Teller Wald",
+            "Tisch",
+            "Langsam",
+            "Minutenmir",
+            "Verstecken",
+            "Wasser",
+            "dir Geschichte Nah-\n",
+            "Opa Geburtstag",
+            "Schule Draußen",
+            "Weihnachten Stunde",
+            "von Tante-\nessen von Weihnachten Antworten Erschrecken"
+          ],
+          "pdf_start_index": 162,
           "pdf_end_index": 390,
-          "citation_pages": "400-395",
+          "citation_pages": "402-395",
           "confidence": 0.82,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 2.001602762999937,
+      "elapsed_seconds": 1.8773618359999773,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -298,7 +326,7 @@
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 48.953720916993916,
+      "elapsed_seconds": 77.57933395099985,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {

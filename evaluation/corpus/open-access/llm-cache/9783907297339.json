@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T15:06:27.920347+00:00",
+  "generated_at": "2026-08-10T05:16:40.802775+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -184,7 +184,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 4.738595649000217,
+      "elapsed_seconds": 5.8953924779999625,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -487,7 +487,7 @@
           "title": "La LIPAD et la bonne foi Un principe essentiel lors de la requête d’accès à un document",
           "authors": [
             "David Hofmann",
-            "chien cri                   "
+            "foi                "
           ],
           "pdf_start_index": 62,
           "pdf_end_index": 90,
@@ -500,8 +500,7 @@
           "title": "Droit d’accès aux documents officiels et protection des intérêts privés Synthèse après 20 ans de pratique à Genève",
           "authors": [
             "Aurélie Gavillet \nDroit",
-            "Synthèse",
-            "Y. En"
+            "Synthèse"
           ],
           "pdf_start_index": 92,
           "pdf_end_index": 120,
@@ -526,10 +525,7 @@
           "title": "Zugang zu Prüfungsunterlagen Anspruch nach Öffentlichkeitsprinzip unter Berücksichtigung des Datenschutzrechts und des Verfahrensrechts",
           "authors": [
             "Julian Powell",
-            "I. Fragestellung",
-            "Départ",
-            "Extraordinaire                                                                                         132",
-            "Y. Extraordinaire"
+            "I. Fragestellung"
           ],
           "pdf_start_index": 144,
           "pdf_end_index": 161,
@@ -540,9 +536,7 @@
         },
         {
           "title": "Principes de procédure poussés dans les cordes par celui de la transparence ?",
-          "authors": [
-            "Y. Habitant"
-          ],
+          "authors": [],
           "pdf_start_index": 162,
           "pdf_end_index": 184,
           "citation_pages": "149-172",
@@ -566,7 +560,8 @@
           "title": "Les 20 ans de la LIPAD — Période de 2001–2009",
           "authors": [
             "Christine Sayegh\nLes",
-            "Période"
+            "Période",
+            "A. Objectifs"
           ],
           "pdf_start_index": 216,
           "pdf_end_index": 227,
@@ -576,7 +571,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 65.44168558297679,
+      "elapsed_seconds": 60.171383692999825,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {

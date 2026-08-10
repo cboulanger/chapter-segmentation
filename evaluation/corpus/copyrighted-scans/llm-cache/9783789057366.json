@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T15:03:59.622027+00:00",
+  "generated_at": "2026-08-10T04:57:46.021687+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -199,7 +199,7 @@
     "deepseek-v4-flash": {
       "chapters": [
         {
-          "title": "Hagen Hof Dr. iur., Volkswagen-Stiftung, Hannover Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben",
+          "title": "Hagen Hof Dr. iur., Volkswagen-Stiftung, Hannover Soziologie, Rechtssoziologie und Rechtsethologie - Gemeinsamkeiten, Unterschiede und neue Aufgaben.",
           "authors": [],
           "pdf_start_index": 504,
           "pdf_end_index": 702,
@@ -209,7 +209,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 15.05225723500007,
+      "elapsed_seconds": 5.601021787999997,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -273,7 +273,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 65.88042104197666,
+      "elapsed_seconds": 88.44823796499986,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {

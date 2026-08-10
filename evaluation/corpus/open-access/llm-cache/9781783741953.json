@@ -130,7 +130,138 @@
       ],
       "elapsed_seconds": 37.86893168200004,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash": {
+      "chapters": [
+        {
+          "title": "2 Understanding the Roles of Forests and Tree-based Systems in Food Provision",
+          "authors": [
+            "Box 2.2",
+            "Allanblackia"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 80,
+          "citation_pages": "29-72",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3 The Historical, Environmental and Socio-economic Context of Forests and Tree-based Systems for Food Security and Nutrition",
+          "authors": [
+            "Socio",
+            "John A. Parrotta",
+            "Jennie Dey de Pryck",
+            "Christine Padoch",
+            "Bronwen Powell",
+            "Chris Sandbrook",
+            "Bina Agarwal",
+            "Amy Ickowitz",
+            "Katy Jeary",
+            "Anca Serban",
+            "Terry Sunderland",
+            "Tran Nam Tu\nForests"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 144,
+          "citation_pages": "73-136",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4 Drivers of Forests and Tree-based Systems for Food Security and Nutrition",
+          "authors": [
+            "Daniela Kleinschmit",
+            "Bimbika Sijapati Basnett",
+            "Adrian Martin",
+            "Nitin D. Rai  \n",
+            "Carsten Smith-Hall  \nContributing",
+            "Neil M. Dawson",
+            "Gordon Hickey",
+            "Henry Neufeldt",
+            "Hemant R. Ojha",
+            "Solomon Zena"
+          ],
+          "pdf_start_index": 145,
+          "pdf_end_index": 190,
+          "citation_pages": "137-182",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5 Response Options Across the Landscape",
+          "authors": [
+            "Terry Sunderland",
+            "Amy Ickowitz",
+            "Christine Padoch",
+            "Mirjam Ros-Tonen",
+            "Chris Sandbrook",
+            "Bhaskar Vira",
+            "Josephine Chambers",
+            "Elizabeth Deakin",
+            "Samson Foli",
+            "Katy Jeary",
+            "John A. Parrotta",
+            "Bronwen Powell",
+            "James Reed",
+            "Sarah Ayeri Ogalleh",
+            "Henry Neufeldt"
+          ],
+          "pdf_start_index": 191,
+          "pdf_end_index": 217,
+          "citation_pages": "183-210",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6 Public Sector, Private Sector and Socio-cultural Response Options",
+          "authors": [
+            "Socio",
+            "Henry Neufeldt",
+            "Pablo Pacheco",
+            "Hemant R. Ojha",
+            "Sarah Ayeri Ogalleh",
+            "Jason Donovan",
+            "Lisa Fuchs \nContributing",
+            "Daniela Kleinschmit",
+            "Patti Kristjanson",
+            "Godwin Kowero",
+            "Vincent O. Oeba",
+            "Bronwen Powell"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 262,
+          "citation_pages": "211-254",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7 Conclusions",
+          "authors": [
+            "Bhaskar Vira",
+            "Daniela Kleinschmit",
+            "Stepha McMullin",
+            "Stephanie Mansourian",
+            "Henry Neufeldt",
+            "John A. Parrotta",
+            "Terry Sunderland  \n",
+            "Christoph Wildburger"
+          ],
+          "pdf_start_index": 263,
+          "pdf_end_index": 275,
+          "citation_pages": "255-267",
+          "confidence": 0.85,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 10.930372403999968,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T14:36:23.845411+00:00"
+  "generated_at": "2026-08-10T04:45:15.724106+00:00"
 }

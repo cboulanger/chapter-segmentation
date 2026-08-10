@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T14:56:13.558554+00:00",
+  "generated_at": "2026-08-10T04:51:37.556026+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -328,7 +328,7 @@
     "deepseek-v4-flash": {
       "chapters": [
         {
-          "title": "Erhard Blankenburg: Der Anteil gerichtlicher Verfahren bei der Austragung sozialer Konflikte",
+          "title": "Der Anteil gerichtlicher Verfahren bei der Austragung sozialer Konflikte",
           "authors": [
             "Erhard Blankenburg \nDer Anteil",
             "Verfahren",
@@ -343,12 +343,12 @@
           "pdf_start_index": 83,
           "pdf_end_index": 96,
           "citation_pages": "84-98",
-          "confidence": 0.99,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Joel B. Grossman: Political justice and system maintenance: An overview of some major variables",
+          "title": "Political justice and system maintenance: An overview of some major variables",
           "authors": [
             "Joel B. Grossman",
             "Spiel",
@@ -360,12 +360,12 @@
           "pdf_start_index": 97,
           "pdf_end_index": 119,
           "citation_pages": "99-122",
-          "confidence": 0.98,
+          "confidence": 0.99,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Thomas Raiser: Zum Problem der Klassenjustiz",
+          "title": "Zum Problem der Klassenjustiz",
           "authors": [
             "Thomas Raiser \n",
             "Zum Problem",
@@ -384,12 +384,12 @@
           "pdf_start_index": 120,
           "pdf_end_index": 133,
           "citation_pages": "123-136",
-          "confidence": 0.98,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Herbert Jacob: Criminal courts as organizational phenomena",
+          "title": "Criminal courts as organizational phenomena",
           "authors": [
             "Herbert Jacob \n",
             "einigen da gegen",
@@ -399,12 +399,12 @@
           "pdf_start_index": 152,
           "pdf_end_index": 169,
           "citation_pages": "155-172",
-          "confidence": 0.98,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Britt-Mari Blegvad: The choice between litigation and arbitration",
+          "title": "The choice between litigation and arbitration",
           "authors": [
             "Britt-Mari Blegvad",
             "früh Wort",
@@ -419,12 +419,12 @@
           "pdf_start_index": 171,
           "pdf_end_index": 181,
           "citation_pages": "174-184",
-          "confidence": 0.98,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Jeffrey J owell: Judicial decision-making and administrative tasks",
+          "title": "Judicial decision-making and administrative tasks",
           "authors": [
             "Jeffrey J",
             "Auge",
@@ -437,12 +437,12 @@
           "pdf_start_index": 182,
           "pdf_end_index": 202,
           "citation_pages": "185-206",
-          "confidence": 0.98,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Ernesto Ugo Savona: Civil trial and social justice in Italy. A sociological analysis of the proceedings under art. 28 of the Workers' Statute",
+          "title": "Civil trial and social justice in Italy. A sociological analysis of the proceedings under art. 28 of the Workers' Statute",
           "authors": [
             "Ernesto Ugo Savona \nCivil Trial",
             "bin unser",
@@ -458,7 +458,7 @@
           "source": "llm"
         },
         {
-          "title": "Joel F. Handler: Social reform groups and the legal system: Enforcement problems",
+          "title": "Social reform groups and the legal system: Enforcement problems",
           "authors": [
             "Joel F. Handler",
             "McCarthy",
@@ -472,12 +472,12 @@
           "pdf_start_index": 213,
           "pdf_end_index": 238,
           "citation_pages": "218-244",
-          "confidence": 0.97,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Marc Galanter: The distribution of advantages in the litigation process",
+          "title": "The distribution of advantages in the litigation process",
           "authors": [
             "Marc Galanter",
             "Haus",
@@ -490,12 +490,12 @@
           "pdf_start_index": 239,
           "pdf_end_index": 264,
           "citation_pages": "245-270",
-          "confidence": 0.99,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "P.S.C. Lewis: Defamation : Reputation and encounter",
+          "title": "Defamation : Reputation and encounter",
           "authors": [
             "Philip Lewis* \n",
             "Jahr da Weihnachten",
@@ -504,12 +504,12 @@
           "pdf_start_index": 265,
           "pdf_end_index": 278,
           "citation_pages": "271-284",
-          "confidence": 0.86,
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Maria Borucka-Arctowa: Citizen participation in the administration of justice: Research and policy in Poland",
+          "title": "Citizen participation in the administration of justice: Research and policy in Poland",
           "authors": [
             "Maria Borucka-Arctowa",
             "Freude",
@@ -519,12 +519,12 @@
           "pdf_start_index": 280,
           "pdf_end_index": 293,
           "citation_pages": "286-300",
-          "confidence": 0.98,
+          "confidence": 0.99,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Zdenek Krystufek: The function of the lay judge in Czechoslovakia",
+          "title": "The function of the lay judge in Czechoslovakia",
           "authors": [
             "Zdenek Krystufek \n",
             "Fröhlich",
@@ -539,12 +539,12 @@
           "pdf_start_index": 294,
           "pdf_end_index": 299,
           "citation_pages": "301-306",
-          "confidence": 0.98,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Jutta Limbach: Die rechtliche Erheblichkeit gesellschaftlicher Unwissenheit",
+          "title": "Die rechtliche Erheblichkeit gesellschaftlicher Unwissenheit",
           "authors": [
             "Jutta Limbach",
             "Unwissenheit",
@@ -561,12 +561,12 @@
           "pdf_start_index": 300,
           "pdf_end_index": 312,
           "citation_pages": "307-320",
-          "confidence": 0.99,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Helmut Pieper: Sachverstandigengutachten und Urteilsfindung im ZivilprozeB",
+          "title": "Sachverstandigengutachten und Urteilsfindung im ZivilprozeB",
           "authors": [
             "Urteilsfindung",
             "I. Ausgangspunkte \nDie",
@@ -586,7 +586,7 @@
           "source": "llm"
         },
         {
-          "title": "Peter Arens: Das Problem des Musterprozesses",
+          "title": "Das Problem des Musterprozesses",
           "authors": [
             "Peter Arens",
             "Abgrenzung von anderen",
@@ -602,12 +602,12 @@
           "pdf_start_index": 336,
           "pdf_end_index": 347,
           "citation_pages": "344-356",
-          "confidence": 0.98,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Franz von Benda-Beckmann: Das rechtliche Verfahren in der Rechtsethnologie: Versuch zu einem interkulturell anwendbaren Bezugsrahmen",
+          "title": "Das rechtliche Verfahren in der Rechtsethnologie: Versuch zu einem interkulturell anwendbaren Bezugsrahmen",
           "authors": [
             "Franz von Benda-Beckmann \nDas",
             "Verfahren",
@@ -624,12 +624,12 @@
           "pdf_start_index": 348,
           "pdf_end_index": 367,
           "citation_pages": "357-376",
-          "confidence": 0.98,
+          "confidence": 0.99,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Rolf Bender/Christoph Strecker: Zugangsbarrieren zur Justiz",
+          "title": "Zugangsbarrieren zur Justiz",
           "authors": [
             "Rolf Bender",
             "Christoph Strecker",
@@ -645,12 +645,12 @@
           "pdf_start_index": 368,
           "pdf_end_index": 385,
           "citation_pages": "377-394",
-          "confidence": 0.9,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Manfred Rehbinder: Die Kosten der Rechtsverfolgung als Zugangsbarriere der Rechtspflege",
+          "title": "Die Kosten der Rechtsverfolgung als Zugangsbarriere der Rechtspflege",
           "authors": [
             "Bundesrepublik Deutschland",
             "vielleicht Himmel",
@@ -661,12 +661,12 @@
           "pdf_start_index": 386,
           "pdf_end_index": 398,
           "citation_pages": "395-407",
-          "confidence": 0.99,
+          "confidence": 1.0,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 254.22552611899982,
+      "elapsed_seconds": 22.302578487999995,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -1772,7 +1772,7 @@
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 67.70636016700882,
+      "elapsed_seconds": 161.450376937,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {

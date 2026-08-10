@@ -25,6 +25,16 @@ class TestSelectThreshold(unittest.TestCase):
         labels = [True, True, True, True]
         self.assertEqual(select_threshold(probs, labels, recall_target=0.75), 0.7)
 
+    def test_rounds_up_not_to_nearest(self):
+        # Six positives targeting 90% recall: 0.9*6=5.4, which must round UP
+        # to 6 (all of them), not to the nearest integer (5) -- rounding to
+        # nearest would only guarantee 5/6 = 83.3% recall, undershooting the
+        # 90% target. The correct cutoff is therefore the lowest positive
+        # probability, 0.4.
+        probs = [0.9, 0.8, 0.7, 0.6, 0.5, 0.4]
+        labels = [True, True, True, True, True, True]
+        self.assertEqual(select_threshold(probs, labels, recall_target=0.90), 0.4)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -8,16 +8,24 @@
 #SBATCH --constraint="gpu"
 #SBATCH --gres=gpu:a100:1
 #SBATCH --cpus-per-task=18
-#SBATCH --mem=0
+#SBATCH --mem=125000
 #
 #SBATCH --mail-type=none
 #
 # A single A100 is comfortably enough for a 4B-param LoRA job on ~39
 # training examples -- no multi-node/torchrun complexity needed (unlike
-# every multi-GPU example in ai_containers/llms-meet-mpcdf). If your
-# account only has access to a different GPU type (H100, RTX6000, ...),
-# change --gres above -- see `sinfo` or the MPCDF docs for what's
-# available under your account/partition.
+# every multi-GPU example in ai_containers/llms-meet-mpcdf). Raven's GPU
+# nodes have 4x A100 (40GB each) + 512GB RAM total; requesting 1 of 4
+# GPUs caps you to a proportional share of the node (--cpus-per-task=18
+# = 72/4, --mem=125000 = ~512000/4 minus overhead) -- per
+# https://docs.mpcdf.mpg.de/doc/computing/raven-user-guide.html.
+# Asking for more memory than your GPU share entitles you to (e.g.
+# --mem=0, which means "the whole node") fails with "requested only 1
+# of four gpus but more than 1/4 of memory of the node". If your account
+# only has access to a different GPU type (H100, RTX6000, ...), change
+# --gres above and re-derive --cpus-per-task/--mem the same way -- see
+# `sinfo` or the MPCDF docs for what's available under your account/
+# partition.
 #SBATCH --time=02:00:00
 
 # See evaluation/hpc/README.md for the full setup this script assumes:

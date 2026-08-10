@@ -138,9 +138,18 @@ Expected: `python deps ok (excl. llama_cpp ...)`, `llama_cpp shared
 library built ok`, `llama-quantize built ok`, `convert_hf_to_gguf.py
 present ok`. `llama_cpp` itself is deliberately not imported by this
 test -- its compiled library needs a real GPU driver (`--nv`), not
-available at build time. Do that check once for real, on a GPU node
-(e.g. inside an interactive `srun --gres=gpu:a100:1 --pty bash`
-session), before trusting the container for the actual job:
+available at build time. Do that check once for real, on a GPU node:
+
+```bash
+srun --gres=gpu:a100:1 --cpus-per-task=18 --mem=125000 --constraint="gpu" \
+    --time=00:05:00 --pty bash
+```
+
+(`--mem` must be a proportional share of the node's 512GB when you
+request fewer than all 4 GPUs -- see `run_pilot.slurm`'s comment on this;
+omitting it, or passing `--mem=0`, fails with "requested only 1 of four
+gpus but more than 1/4 of memory of the node".) Then, inside that
+session:
 
 ```bash
 apptainer exec --nv nuextract.sif python3 -c "import llama_cpp; print('llama_cpp CUDA import ok')"

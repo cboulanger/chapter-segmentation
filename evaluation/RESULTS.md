@@ -1064,3 +1064,31 @@ longer the bottleneck, cases of the model producing wrong or repetitive
 output rather than running out of room. **f1=0.44 (this retest), not
 f1=0.39, is the correct "baseline to beat" for the fine-tuning pilot**
 per its design spec's decision criteria.
+
+**Follow-up: raising the cap further (12000 tokens) does not rescue the
+remaining 4 `[HIT_MAX_TOKENS]` books either.** Retried just those four
+(the only ones where more budget could plausibly still be the
+bottleneck -- the other zero-scoring books were already ruled out above
+as language/content misses, not budget) at `max_tokens=12000`, same
+`llama.cpp`/Metal/`n_ctx=40960` setup:
+
+| Book | 6000 tok | 12000 tok |
+| --- | --- | --- |
+| `dnb-36942798X.pdf` | 288s, `[HIT_MAX_TOKENS]`, 0/0 | 677s, stopped on its own, 0/0 |
+| `9783839458013.pdf` | 223s, `[HIT_MAX_TOKENS]`, 0/0 | 545s, `[HIT_MAX_TOKENS]`, 0/0 |
+| `9781783742806.pdf` | 419s, `[HIT_MAX_TOKENS]`, 0/0 | 860s, `[HIT_MAX_TOKENS]`, 0/0 |
+| `9781783743339.pdf` | 628s, `[HIT_MAX_TOKENS]`, 0/0 | 888s, `[HIT_MAX_TOKENS]`, 0/0 |
+
+All four still score 0/0. Three still hit the (now doubled) cap, and the
+fourth ran even longer (677s, up from 288s) before finally stopping on
+its own -- still with no valid output. Doubling the budget roughly
+doubled the wall-clock time these four burn without moving their score
+at all, which is the signature of a genuine repetition/malformed-
+generation failure, not a legitimate long-TOC book that just needs more
+room. **Not worth raising the cap further** -- these four need a
+different fix entirely (e.g. repetition-penalty sampling, detecting and
+truncating a repeating n-gram mid-generation, or accepting them as a
+known zero-recall cluster) rather than a bigger `max_tokens`. `f1=0.44`
+at `max_tokens=6000` stands as the baseline; raising it beyond 6000 buys
+nothing further on this corpus and should not be adopted as the
+production/evaluation default.

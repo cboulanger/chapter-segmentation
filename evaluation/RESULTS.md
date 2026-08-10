@@ -955,12 +955,45 @@ deployment will use. It is noticeably below NuExtract3's own full-corpus
 number on this same corpus (f1=0.60, see above) -- the smaller/older
 model is less accurate zero-shot, which was already expected going in;
 the CPU-comparison's f1=0.97 was a 5-book best-case sample, not
-representative. A recurring failure pattern is visible again: several
-books return `0/0 found` (empty parseable output) despite having real
-chapters to extract, several with generation times of 200-500s -- the
-same truncation-cluster pattern documented for NuExtract3's full-corpus
-run (long generation, then no valid JSON), suggesting the 1500-token
-output budget is too tight for these books' larger TOCs.
+representative.
+
+**Failure-mode breakdown.** Categorizing all 50 books by outcome:
+
+| Failure type | Books | Share |
+| --- | --- | --- |
+| True truncation (empty/unparseable output) | 10 | 20% |
+| Titles/authors correct, `printed_page_number` null on every entry | 14 | 28% |
+| Low but nonzero | 7 | 14% |
+| Good (f1 > 0.5) | 19 | 38% |
+
+Truncation (10 books, several with 200-500s generation times before
+producing no valid JSON -- the 1500-token output budget is too tight for
+these books' larger TOCs) is real but is *not* the dominant cause of the
+low aggregate. The larger group (14 books, 28%) is a different, more
+specific failure: the model extracts titles and authors **verbatim
+correctly** but leaves `printed_page_number` `null` for every entry, even
+when the number is plainly present in the scan text next to the title.
+Inspected two examples directly:
+
+- `9783847432364.pdf` (German, clean extracted text): titles/authors
+  match ground truth exactly; scan text clearly shows `"...das neue
+  Gemeinsame   7"`, `"...gekämpft wird   15"` right next to each title,
+  yet every predicted `printed_page_number` is `null`.
+- `9780367439712.pdf` (English, but a badly OCR-scrambled multi-column
+  contents page -- `"l"` for `"1"`, garbled column bleed): same pattern,
+  titles correct, page numbers all `null`.
+
+Since `match_toc_entries` requires an exact page-number match to count a
+true positive, these 14 books score exactly 0 recall despite mostly-
+correct extraction -- title-only accuracy is substantially better than
+the f1=0.39 headline suggests. Two candidate sub-causes, not yet
+disentangled: a likely non-English weakness (echoes the French-language
+miss documented earlier for NuExtract3) and OCR-scrambled TOC layouts.
+Unlike the truncation cluster or the earlier `transformers`/MPS bug, this
+looks like a fixable extraction-formatting habit rather than a
+fundamental capability gap -- the model already has the right
+information, it just isn't attaching it to the record -- which is a
+reasonable target for LoRA fine-tuning to move.
 
 **This f1=0.39 is the baseline number a fine-tuning pilot needs to beat.**
 

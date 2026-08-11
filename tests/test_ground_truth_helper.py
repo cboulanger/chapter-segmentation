@@ -1,5 +1,6 @@
-"""Unit tests for evaluation/scripts/ground_truth_helper.py's
-toc_page_range()."""
+"""Unit tests for evaluation/scripts/ground_truth_helper.py's toc_page_range(),
+find_toc_pages(), and extract_printed_number(), including language-agnosticism
+regression coverage for the latter two."""
 
 import unittest
 
@@ -50,9 +51,13 @@ class TestLanguageAgnosticPatternMatching(unittest.TestCase):
         text = "Einleitung\n\nDies ist der erste Absatz der Einleitung.\n\n7"
         self.assertEqual(extract_printed_number(text), "7")
 
-    def test_extracts_french_footer_page_number(self):
-        text = "Introduction\n\nCeci est le premier paragraphe.\n\n7"
-        self.assertEqual(extract_printed_number(text), "7")
+    def test_extracts_roman_numeral_footer_page_number_in_german_context(self):
+        # Roman-numeral page numbers are common in front matter (Vorwort,
+        # Préface, etc.) regardless of the book's language -- this guards
+        # against a regex change that only recognizes arabic digits, or
+        # that gets confused by non-English surrounding words.
+        text = "Vorwort\n\nDies ist das Vorwort zum Buch.\n\nvii"
+        self.assertEqual(extract_printed_number(text), "vii")
 
 
 if __name__ == "__main__":

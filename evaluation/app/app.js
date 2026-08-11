@@ -10,6 +10,7 @@ import {
 } from './lib.js';
 
 const THUMBNAIL_TARGET_WIDTH = 600;
+const LIGHTBOX_TARGET_WIDTH = 1400;
 
 const state = {
   corpus: null,
@@ -88,6 +89,33 @@ function goPrev() {
   render();
 }
 
+async function openLightbox(pdf, pdfIndex) {
+  const page = await pdf.getPage(pdfIndex + 1);
+  const viewport = page.getViewport({ scale: 1 });
+  const scale = computeScale(viewport.width, LIGHTBOX_TARGET_WIDTH);
+  const scaledViewport = page.getViewport({ scale });
+
+  const canvas = document.createElement('canvas');
+  canvas.width = scaledViewport.width;
+  canvas.height = scaledViewport.height;
+  const ctx = canvas.getContext('2d');
+  await page.render({ canvasContext: ctx, viewport: scaledViewport }).promise;
+
+  const overlay = document.createElement('div');
+  overlay.id = 'lightbox';
+  overlay.appendChild(canvas);
+  function onKey(e) {
+    if (e.key === 'Escape') close();
+  }
+  function close() {
+    overlay.remove();
+    document.removeEventListener('keydown', onKey);
+  }
+  overlay.addEventListener('click', close);
+  document.addEventListener('keydown', onKey);
+  document.body.appendChild(overlay);
+}
+
 async function renderPageThumb(pdf, pdfIndex, label, cssClass) {
   const page = await pdf.getPage(pdfIndex + 1);
   const viewport = page.getViewport({ scale: 1 });
@@ -99,6 +127,7 @@ async function renderPageThumb(pdf, pdfIndex, label, cssClass) {
   canvas.height = scaledViewport.height;
   const ctx = canvas.getContext('2d');
   await page.render({ canvasContext: ctx, viewport: scaledViewport }).promise;
+  canvas.addEventListener('click', () => openLightbox(pdf, pdfIndex));
 
   const figure = document.createElement('figure');
   figure.className = `thumb ${cssClass}`;

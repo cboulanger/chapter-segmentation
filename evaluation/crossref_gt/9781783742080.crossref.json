@@ -1,0 +1,1844 @@
+{
+  "isbn": "9781783742080",
+  "fetched_at": "2026-08-11T15:09:03.235770+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.11",
+      "type": "book-chapter",
+      "page": "189-196",
+      "title": [
+        "11. Fertility, Parenting and Views on Parenting"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.02",
+      "type": "book-chapter",
+      "page": "55-68",
+      "title": [
+        "2. Designing a Study on, with and for People with Intersex Variations"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.09",
+      "type": "book-chapter",
+      "page": "155-170",
+      "title": [
+        "9. Social Support for People with Intersex Variations"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.01",
+      "type": "book-chapter",
+      "page": "11-54",
+      "title": [
+        "1. Introducing Intersex Studies: New Theory for New Research"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.04",
+      "type": "book-chapter",
+      "page": "81-98",
+      "title": [
+        "4. Discovering, Experiencing and Discussing Intersex Variations"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.03",
+      "type": "book-chapter",
+      "page": "69-80",
+      "title": [
+        "3. Basic Demographics for People with Intersex Variations"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.06",
+      "type": "book-chapter",
+      "page": "119-128",
+      "title": [
+        "6. People with Intersex Variations, Wellbeing and Mental Health Services"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.07",
+      "type": "book-chapter",
+      "page": "129-144",
+      "title": [
+        "7. People with Intersex Variations and Education"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.13",
+      "type": "book-chapter",
+      "page": "209-226",
+      "title": [
+        "13. Conclusion and Recommendations"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.12",
+      "type": "book-chapter",
+      "page": "197-208",
+      "title": [
+        "12. Representation in Media, Activism and Research"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.05",
+      "type": "book-chapter",
+      "page": "99-118",
+      "title": [
+        "5. People with Intersex Variations, Health and Medical Services"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.08",
+      "type": "book-chapter",
+      "page": "145-154",
+      "title": [
+        "8. People with Intersex Variations and Employment"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.10",
+      "type": "book-chapter",
+      "page": "171-188",
+      "title": [
+        "10. Sexuality, Romance and Relationships"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0089.14",
+      "type": "book-chapter",
+      "page": "1-10",
+      "title": [
+        "Executive Summary"
+      ],
+      "author": [
+        {
+          "given": "Tiffany",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bonnie",
+          "family": "Hart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Morgan",
+          "family": "Carpenter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gavi",
+          "family": "Ansara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Leonard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jayne",
+          "family": "Lucke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Intersex: Stories and Statistics from Australia"
+      ],
+      "ISBN": [
+        "9781783742080",
+        "9781783742097",
+        "9781783742103",
+        "9781783742110",
+        "9781783742127"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "11. Fertility, Parenting and Views on Parenting",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.11",
+      "citation_pages": "189-196"
+    },
+    {
+      "title": "2. Designing a Study on, with and for People with Intersex Variations",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.02",
+      "citation_pages": "55-68"
+    },
+    {
+      "title": "9. Social Support for People with Intersex Variations",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.09",
+      "citation_pages": "155-170"
+    },
+    {
+      "title": "1. Introducing Intersex Studies: New Theory for New Research",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.01",
+      "citation_pages": "11-54"
+    },
+    {
+      "title": "4. Discovering, Experiencing and Discussing Intersex Variations",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.04",
+      "citation_pages": "81-98"
+    },
+    {
+      "title": "3. Basic Demographics for People with Intersex Variations",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.03",
+      "citation_pages": "69-80"
+    },
+    {
+      "title": "6. People with Intersex Variations, Wellbeing and Mental Health Services",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.06",
+      "citation_pages": "119-128"
+    },
+    {
+      "title": "7. People with Intersex Variations and Education",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.07",
+      "citation_pages": "129-144"
+    },
+    {
+      "title": "13. Conclusion and Recommendations",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.13",
+      "citation_pages": "209-226"
+    },
+    {
+      "title": "12. Representation in Media, Activism and Research",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.12",
+      "citation_pages": "197-208"
+    },
+    {
+      "title": "5. People with Intersex Variations, Health and Medical Services",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.05",
+      "citation_pages": "99-118"
+    },
+    {
+      "title": "8. People with Intersex Variations and Employment",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.08",
+      "citation_pages": "145-154"
+    },
+    {
+      "title": "10. Sexuality, Romance and Relationships",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.10",
+      "citation_pages": "171-188"
+    },
+    {
+      "title": "Executive Summary",
+      "authors": [
+        "Tiffany Jones",
+        "Bonnie Hart",
+        "Morgan Carpenter",
+        "Gavi Ansara",
+        "William Leonard",
+        "Jayne Lucke"
+      ],
+      "chapter_doi": "10.11647/obp.0089.14",
+      "citation_pages": "1-10"
+    }
+  ]
+}

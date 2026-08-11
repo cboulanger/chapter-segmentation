@@ -1,0 +1,49 @@
+{
+  "chapters": [
+    {
+      "title": "Introduction",
+      "authors": [
+        "Roger Paulin"
+      ],
+      "citation_pages": "ix-xv",
+      "pdf_start_index": 3,
+      "pdf_end_index": 5
+    },
+    {
+      "title": "Translator’s Note",
+      "authors": [
+        "Flora Kimmich"
+      ],
+      "citation_pages": "vii-viii",
+      "pdf_start_index": 7,
+      "pdf_end_index": 11
+    },
+    {
+      "title": "Maria Stuart",
+      "authors": [
+        "Friedrich Schiller"
+      ],
+      "citation_pages": "1-112",
+      "pdf_start_index": 12,
+      "pdf_end_index": 127
+    },
+    {
+      "title": "Short Life of Mary Stuart",
+      "authors": [
+        "Flora Kimmich"
+      ],
+      "citation_pages": "113-114",
+      "pdf_start_index": 129,
+      "pdf_end_index": 130
+    },
+    {
+      "title": "Endnotes",
+      "authors": [
+        "Flora Kimmich"
+      ],
+      "citation_pages": "115-120",
+      "pdf_start_index": 131,
+      "pdf_end_index": 141
+    }
+  ]
+}

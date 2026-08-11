@@ -1,0 +1,444 @@
+{
+  "isbn": "9782821895065",
+  "fetched_at": "2026-08-11T14:26:53.010909+00:00",
+  "license": "https://www.openedition.org/12554",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2015-01-01T00:00:00Z",
+            "timestamp": 1420070400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.2486",
+      "type": "book-chapter",
+      "page": "7-19",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Yan",
+          "family": "Rucar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La littérature électronique"
+      ],
+      "ISBN": [
+        "9782821895065",
+        "9782760635531"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2015-01-01T00:00:00Z",
+            "timestamp": 1420070400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.2488",
+      "type": "book-chapter",
+      "page": "111-181",
+      "title": [
+        "Chapitre 2. De la procédure écrite à son interprétation visuelle et dynamique"
+      ],
+      "author": [
+        {
+          "given": "Yan",
+          "family": "Rucar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La littérature électronique"
+      ],
+      "ISBN": [
+        "9782821895065",
+        "9782760635531"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2015-01-01T00:00:00Z",
+            "timestamp": 1420070400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.2491",
+      "type": "book-chapter",
+      "page": "271-277",
+      "title": [
+        "Annexe"
+      ],
+      "author": [
+        {
+          "given": "Yan",
+          "family": "Rucar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La littérature électronique"
+      ],
+      "ISBN": [
+        "9782821895065",
+        "9782760635531"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2015-01-01T00:00:00Z",
+            "timestamp": 1420070400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.2492",
+      "type": "book-chapter",
+      "page": "279-287",
+      "title": [
+        "Références bibliographiques"
+      ],
+      "author": [
+        {
+          "given": "Yan",
+          "family": "Rucar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La littérature électronique"
+      ],
+      "ISBN": [
+        "9782821895065",
+        "9782760635531"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2015-01-01T00:00:00Z",
+            "timestamp": 1420070400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.2490",
+      "type": "book-chapter",
+      "page": "245-270",
+      "title": [
+        "Conclusion"
+      ],
+      "author": [
+        {
+          "given": "Yan",
+          "family": "Rucar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La littérature électronique"
+      ],
+      "ISBN": [
+        "9782821895065",
+        "9782760635531"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2015-01-01T00:00:00Z",
+            "timestamp": 1420070400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.2489",
+      "type": "book-chapter",
+      "page": "183-243",
+      "title": [
+        "Chapitre 3. Procédures algorithmiques et appropriation textuelle"
+      ],
+      "author": [
+        {
+          "given": "Yan",
+          "family": "Rucar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La littérature électronique"
+      ],
+      "ISBN": [
+        "9782821895065",
+        "9782760635531"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2015-01-01T00:00:00Z",
+            "timestamp": 1420070400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.2487",
+      "type": "book-chapter",
+      "page": "21-109",
+      "title": [
+        "Chapitre 1. Les régulations de l’écriture : procédures, contraintes et algorithmes"
+      ],
+      "author": [
+        {
+          "given": "Yan",
+          "family": "Rucar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La littérature électronique"
+      ],
+      "ISBN": [
+        "9782821895065",
+        "9782760635531"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Introduction",
+      "authors": [
+        "Yan Rucar"
+      ],
+      "chapter_doi": "10.4000/books.pum.2486",
+      "citation_pages": "7-19"
+    },
+    {
+      "title": "Chapitre 2. De la procédure écrite à son interprétation visuelle et dynamique",
+      "authors": [
+        "Yan Rucar"
+      ],
+      "chapter_doi": "10.4000/books.pum.2488",
+      "citation_pages": "111-181"
+    },
+    {
+      "title": "Annexe",
+      "authors": [
+        "Yan Rucar"
+      ],
+      "chapter_doi": "10.4000/books.pum.2491",
+      "citation_pages": "271-277"
+    },
+    {
+      "title": "Références bibliographiques",
+      "authors": [
+        "Yan Rucar"
+      ],
+      "chapter_doi": "10.4000/books.pum.2492",
+      "citation_pages": "279-287"
+    },
+    {
+      "title": "Conclusion",
+      "authors": [
+        "Yan Rucar"
+      ],
+      "chapter_doi": "10.4000/books.pum.2490",
+      "citation_pages": "245-270"
+    },
+    {
+      "title": "Chapitre 3. Procédures algorithmiques et appropriation textuelle",
+      "authors": [
+        "Yan Rucar"
+      ],
+      "chapter_doi": "10.4000/books.pum.2489",
+      "citation_pages": "183-243"
+    },
+    {
+      "title": "Chapitre 1. Les régulations de l’écriture : procédures, contraintes et algorithmes",
+      "authors": [
+        "Yan Rucar"
+      ],
+      "chapter_doi": "10.4000/books.pum.2487",
+      "citation_pages": "21-109"
+    }
+  ]
+}

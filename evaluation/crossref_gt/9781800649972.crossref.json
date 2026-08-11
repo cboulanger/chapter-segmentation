@@ -1,0 +1,969 @@
+{
+  "isbn": "9781800649972",
+  "fetched_at": "2026-08-11T14:27:03.073627+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.00",
+      "type": "book-chapter",
+      "page": "1-10",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Robert",
+          "family": "Brym",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03dbr7087",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Toronto"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03dbr7087",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.13",
+      "type": "book-chapter",
+      "page": "165-172",
+      "title": [
+        "13. Jews flee Poland"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.06",
+      "type": "book-chapter",
+      "page": "115-120",
+      "title": [
+        "6. The first ghetto bench in the universities"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.10",
+      "type": "book-chapter",
+      "page": "147-152",
+      "title": [
+        "10. Old-fashioned methods in new times"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.09",
+      "type": "book-chapter",
+      "page": "133-146",
+      "title": [
+        "9. Protests against pogroms"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.12",
+      "type": "book-chapter",
+      "page": "159-164",
+      "title": [
+        "12. Is emigration a solution?"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.08",
+      "type": "book-chapter",
+      "page": "127-132",
+      "title": [
+        "8. Jewish self-defence"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.03",
+      "type": "book-chapter",
+      "page": "83-88",
+      "title": [
+        "3. The Minsk-Mazovyetsk pogrom"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.01",
+      "type": "book-chapter",
+      "page": "15-74",
+      "title": [
+        "1. The pogroms in Poland, 1935–37"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.05",
+      "type": "book-chapter",
+      "page": "109-114",
+      "title": [
+        "5. Government antisemitism"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.02",
+      "type": "book-chapter",
+      "page": "75-82",
+      "title": [
+        "2. Pogrom gunpowder"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.04",
+      "type": "book-chapter",
+      "page": "89-106",
+      "title": [
+        "4. The Pshitik pogrom"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.07",
+      "type": "book-chapter",
+      "page": "121-124",
+      "title": [
+        "7. Ghetto benches"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                16
+              ]
+            ],
+            "date-time": "2024-09-16T00:00:00Z",
+            "timestamp": 1726444800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0342.11",
+      "type": "book-chapter",
+      "page": "153-158",
+      "title": [
+        "11. Suicides"
+      ],
+      "author": [
+        {
+          "given": "Yankev",
+          "family": "Leshchinsky",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Last Years of Polish Jewry"
+      ],
+      "ISBN": [
+        "9781800649972",
+        "9781800649989",
+        "9781800649996",
+        "9781805110033",
+        "9781805110002"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            16
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Introduction",
+      "authors": [
+        "Robert Brym"
+      ],
+      "chapter_doi": "10.11647/obp.0342.00",
+      "citation_pages": "1-10"
+    },
+    {
+      "title": "13. Jews flee Poland",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.13",
+      "citation_pages": "165-172"
+    },
+    {
+      "title": "6. The first ghetto bench in the universities",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.06",
+      "citation_pages": "115-120"
+    },
+    {
+      "title": "10. Old-fashioned methods in new times",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.10",
+      "citation_pages": "147-152"
+    },
+    {
+      "title": "9. Protests against pogroms",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.09",
+      "citation_pages": "133-146"
+    },
+    {
+      "title": "12. Is emigration a solution?",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.12",
+      "citation_pages": "159-164"
+    },
+    {
+      "title": "8. Jewish self-defence",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.08",
+      "citation_pages": "127-132"
+    },
+    {
+      "title": "3. The Minsk-Mazovyetsk pogrom",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.03",
+      "citation_pages": "83-88"
+    },
+    {
+      "title": "1. The pogroms in Poland, 1935–37",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.01",
+      "citation_pages": "15-74"
+    },
+    {
+      "title": "5. Government antisemitism",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.05",
+      "citation_pages": "109-114"
+    },
+    {
+      "title": "2. Pogrom gunpowder",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.02",
+      "citation_pages": "75-82"
+    },
+    {
+      "title": "4. The Pshitik pogrom",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.04",
+      "citation_pages": "89-106"
+    },
+    {
+      "title": "7. Ghetto benches",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.07",
+      "citation_pages": "121-124"
+    },
+    {
+      "title": "11. Suicides",
+      "authors": [
+        "Yankev Leshchinsky"
+      ],
+      "chapter_doi": "10.11647/obp.0342.11",
+      "citation_pages": "153-158"
+    }
+  ]
+}

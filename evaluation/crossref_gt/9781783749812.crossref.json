@@ -1,0 +1,362 @@
+{
+  "isbn": "9781783749812",
+  "fetched_at": "2026-08-11T15:09:01.756944+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                11,
+                13
+              ]
+            ],
+            "date-time": "2020-11-13T00:00:00Z",
+            "timestamp": 1605225600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0217.01",
+      "type": "book-chapter",
+      "page": "1-112",
+      "title": [
+        "Maria Stuart"
+      ],
+      "author": [
+        {
+          "given": "Friedrich",
+          "family": "Schiller",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Book Classics",
+        "Maria Stuart"
+      ],
+      "ISBN": [
+        "9781783749812",
+        "9781783749829",
+        "9781783749836",
+        "9781800646223",
+        "9781783749867",
+        "9781783749843",
+        "9781783749850"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                11,
+                13
+              ]
+            ],
+            "date-time": "2020-11-13T00:00:00Z",
+            "timestamp": 1605225600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0217.05",
+      "type": "book-chapter",
+      "page": "ix-xv",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4928-4513",
+          "authenticated-orcid": false,
+          "given": "Roger",
+          "family": "Paulin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Book Classics",
+        "Maria Stuart"
+      ],
+      "ISBN": [
+        "9781783749812",
+        "9781783749829",
+        "9781783749836",
+        "9781800646223",
+        "9781783749867",
+        "9781783749843",
+        "9781783749850"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                11,
+                13
+              ]
+            ],
+            "date-time": "2020-11-13T00:00:00Z",
+            "timestamp": 1605225600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0217.03",
+      "type": "book-chapter",
+      "page": "115-120",
+      "title": [
+        "Endnotes"
+      ],
+      "author": [
+        {
+          "given": "Flora",
+          "family": "Kimmich",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Book Classics",
+        "Maria Stuart"
+      ],
+      "ISBN": [
+        "9781783749812",
+        "9781783749829",
+        "9781783749836",
+        "9781800646223",
+        "9781783749867",
+        "9781783749843",
+        "9781783749850"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                11,
+                13
+              ]
+            ],
+            "date-time": "2020-11-13T00:00:00Z",
+            "timestamp": 1605225600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0217.04",
+      "type": "book-chapter",
+      "page": "vii-viii",
+      "title": [
+        "Translator’s Note"
+      ],
+      "author": [
+        {
+          "given": "Flora",
+          "family": "Kimmich",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Book Classics",
+        "Maria Stuart"
+      ],
+      "ISBN": [
+        "9781783749812",
+        "9781783749829",
+        "9781783749836",
+        "9781800646223",
+        "9781783749867",
+        "9781783749843",
+        "9781783749850"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                11,
+                13
+              ]
+            ],
+            "date-time": "2020-11-13T00:00:00Z",
+            "timestamp": 1605225600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0217.02",
+      "type": "book-chapter",
+      "page": "113-114",
+      "title": [
+        "Short Life of Mary Stuart"
+      ],
+      "author": [
+        {
+          "given": "Flora",
+          "family": "Kimmich",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Book Classics",
+        "Maria Stuart"
+      ],
+      "ISBN": [
+        "9781783749812",
+        "9781783749829",
+        "9781783749836",
+        "9781800646223",
+        "9781783749867",
+        "9781783749843",
+        "9781783749850"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            13
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Maria Stuart",
+      "authors": [
+        "Friedrich Schiller"
+      ],
+      "chapter_doi": "10.11647/obp.0217.01",
+      "citation_pages": "1-112"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Roger Paulin"
+      ],
+      "chapter_doi": "10.11647/obp.0217.05",
+      "citation_pages": "ix-xv"
+    },
+    {
+      "title": "Endnotes",
+      "authors": [
+        "Flora Kimmich"
+      ],
+      "chapter_doi": "10.11647/obp.0217.03",
+      "citation_pages": "115-120"
+    },
+    {
+      "title": "Translator’s Note",
+      "authors": [
+        "Flora Kimmich"
+      ],
+      "chapter_doi": "10.11647/obp.0217.04",
+      "citation_pages": "vii-viii"
+    },
+    {
+      "title": "Short Life of Mary Stuart",
+      "authors": [
+        "Flora Kimmich"
+      ],
+      "chapter_doi": "10.11647/obp.0217.02",
+      "citation_pages": "113-114"
+    }
+  ]
+}

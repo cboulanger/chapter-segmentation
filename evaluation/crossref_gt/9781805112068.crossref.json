@@ -1,0 +1,655 @@
+{
+  "isbn": "9781805112068",
+  "fetched_at": "2026-08-11T14:26:59.202876+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T00:00:00Z",
+            "timestamp": 1709596800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0387.05",
+      "type": "book-chapter",
+      "page": "152-173",
+      "title": [
+        "5. New Initiatives within Tradition"
+      ],
+      "author": [
+        {
+          "given": "Kathleen Ann",
+          "family": "Myers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02k40bc56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Indiana University Bloomington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Country of Shepherds"
+      ],
+      "subtitle": [
+        "Ernestine Lüdeke and the Dehesa San Francsico and the “Fundación Monte Mediterráneo” (Santa Olalla del Cala [Huelva])"
+      ],
+      "ISBN": [
+        "9781805112068",
+        "9781805112075",
+        "9781805112082",
+        "9781805112112",
+        "9781805112099"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T00:00:00Z",
+            "timestamp": 1709596800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0387.04",
+      "type": "book-chapter",
+      "page": "128-151",
+      "title": [
+        "4. Inheriting a Farm"
+      ],
+      "author": [
+        {
+          "given": "Kathleen Ann",
+          "family": "Myers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02k40bc56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Indiana University Bloomington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Country of Shepherds"
+      ],
+      "subtitle": [
+        "Marta Moya Espinosa, Castillo de las Guardas (Seville)"
+      ],
+      "ISBN": [
+        "9781805112068",
+        "9781805112075",
+        "9781805112082",
+        "9781805112112",
+        "9781805112099"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T00:00:00Z",
+            "timestamp": 1709596800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0387.02",
+      "type": "book-chapter",
+      "page": "70-95",
+      "title": [
+        "2. Teacher of Tradition"
+      ],
+      "author": [
+        {
+          "given": "Kathleen Ann",
+          "family": "Myers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02k40bc56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Indiana University Bloomington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Country of Shepherds"
+      ],
+      "subtitle": [
+        "Pepe Millán and Family (Zahara de la Sierra, Parque Natural Sierra de Grazalema, Cádiz)"
+      ],
+      "ISBN": [
+        "9781805112068",
+        "9781805112075",
+        "9781805112082",
+        "9781805112112",
+        "9781805112099"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T00:00:00Z",
+            "timestamp": 1709596800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0387.00",
+      "type": "book-chapter",
+      "page": "2-43",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Kathleen Ann",
+          "family": "Myers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02k40bc56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Indiana University Bloomington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Country of Shepherds"
+      ],
+      "ISBN": [
+        "9781805112068",
+        "9781805112075",
+        "9781805112082",
+        "9781805112112",
+        "9781805112099"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T00:00:00Z",
+            "timestamp": 1709596800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0387.01",
+      "type": "book-chapter",
+      "page": "44-69",
+      "title": [
+        "1. New Directions in the Sierra Norte de Sevilla"
+      ],
+      "author": [
+        {
+          "given": "Kathleen Ann",
+          "family": "Myers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02k40bc56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Indiana University Bloomington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Country of Shepherds"
+      ],
+      "subtitle": [
+        "Juan Vázquez Morán and Family (Constantina, Sevilla)"
+      ],
+      "ISBN": [
+        "9781805112068",
+        "9781805112075",
+        "9781805112082",
+        "9781805112112",
+        "9781805112099"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T00:00:00Z",
+            "timestamp": 1709596800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0387.07",
+      "type": "book-chapter",
+      "page": "200-219",
+      "title": [
+        "Conclusions"
+      ],
+      "author": [
+        {
+          "given": "Kathleen Ann",
+          "family": "Myers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02k40bc56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Indiana University Bloomington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Country of Shepherds"
+      ],
+      "subtitle": [
+        "Challenges and Opportunities"
+      ],
+      "ISBN": [
+        "9781805112068",
+        "9781805112075",
+        "9781805112082",
+        "9781805112112",
+        "9781805112099"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T00:00:00Z",
+            "timestamp": 1709596800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0387.06",
+      "type": "book-chapter",
+      "page": "174-199",
+      "title": [
+        "6. The Scaffolding for the Future of Pastoralism"
+      ],
+      "author": [
+        {
+          "given": "Kathleen Ann",
+          "family": "Myers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02k40bc56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Indiana University Bloomington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Country of Shepherds"
+      ],
+      "subtitle": [
+        "Collectives and Training"
+      ],
+      "ISBN": [
+        "9781805112068",
+        "9781805112075",
+        "9781805112082",
+        "9781805112112",
+        "9781805112099"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T00:00:00Z",
+            "timestamp": 1709596800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0387.03",
+      "type": "book-chapter",
+      "page": "96-127",
+      "title": [
+        "3. Transhumance, Diversification, and New Collaborations"
+      ],
+      "author": [
+        {
+          "given": "Kathleen Ann",
+          "family": "Myers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02k40bc56",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Indiana University Bloomington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Country of Shepherds"
+      ],
+      "subtitle": [
+        "Fortunato Guerrero Lara (Sierra de Cardeña y Montoro [Córdoba] and Sierra de Segura [Jaén])"
+      ],
+      "ISBN": [
+        "9781805112068",
+        "9781805112075",
+        "9781805112082",
+        "9781805112112",
+        "9781805112099"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "5. New Initiatives within Tradition Ernestine Lüdeke and the Dehesa San Francsico and the “Fundación Monte Mediterráneo” (Santa Olalla del Cala [Huelva])",
+      "authors": [
+        "Kathleen Ann Myers"
+      ],
+      "chapter_doi": "10.11647/obp.0387.05",
+      "citation_pages": "152-173"
+    },
+    {
+      "title": "4. Inheriting a Farm Marta Moya Espinosa, Castillo de las Guardas (Seville)",
+      "authors": [
+        "Kathleen Ann Myers"
+      ],
+      "chapter_doi": "10.11647/obp.0387.04",
+      "citation_pages": "128-151"
+    },
+    {
+      "title": "2. Teacher of Tradition Pepe Millán and Family (Zahara de la Sierra, Parque Natural Sierra de Grazalema, Cádiz)",
+      "authors": [
+        "Kathleen Ann Myers"
+      ],
+      "chapter_doi": "10.11647/obp.0387.02",
+      "citation_pages": "70-95"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Kathleen Ann Myers"
+      ],
+      "chapter_doi": "10.11647/obp.0387.00",
+      "citation_pages": "2-43"
+    },
+    {
+      "title": "1. New Directions in the Sierra Norte de Sevilla Juan Vázquez Morán and Family (Constantina, Sevilla)",
+      "authors": [
+        "Kathleen Ann Myers"
+      ],
+      "chapter_doi": "10.11647/obp.0387.01",
+      "citation_pages": "44-69"
+    },
+    {
+      "title": "Conclusions Challenges and Opportunities",
+      "authors": [
+        "Kathleen Ann Myers"
+      ],
+      "chapter_doi": "10.11647/obp.0387.07",
+      "citation_pages": "200-219"
+    },
+    {
+      "title": "6. The Scaffolding for the Future of Pastoralism Collectives and Training",
+      "authors": [
+        "Kathleen Ann Myers"
+      ],
+      "chapter_doi": "10.11647/obp.0387.06",
+      "citation_pages": "174-199"
+    },
+    {
+      "title": "3. Transhumance, Diversification, and New Collaborations Fortunato Guerrero Lara (Sierra de Cardeña y Montoro [Córdoba] and Sierra de Segura [Jaén])",
+      "authors": [
+        "Kathleen Ann Myers"
+      ],
+      "chapter_doi": "10.11647/obp.0387.03",
+      "citation_pages": "96-127"
+    }
+  ]
+}

@@ -1,0 +1,1572 @@
+{
+  "isbn": "9781783742134",
+  "fetched_at": "2026-08-11T14:54:31.234892+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.01",
+      "type": "book-chapter",
+      "page": "15-30",
+      "title": [
+        "1. Music Journalism in Early Victorian London"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.15",
+      "type": "book-chapter",
+      "page": "233-246",
+      "title": [
+        "15. The Late 1860s and Wagner’sL’Olandese dannato(1870)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.20",
+      "type": "book-chapter",
+      "page": "297-308",
+      "title": [
+        "20.Falstaffat Covent Garden (1894)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.14",
+      "type": "book-chapter",
+      "page": "217-232",
+      "title": [
+        "14.Don CarlosandLa forza del destino(1867)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.11",
+      "type": "book-chapter",
+      "page": "181-190",
+      "title": [
+        "11.I vespri siciliani(1859)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.10",
+      "type": "book-chapter",
+      "page": "171-180",
+      "title": [
+        "10.Luisa Miller(1858)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.02",
+      "type": "book-chapter",
+      "page": "31-44",
+      "title": [
+        "2.Ernani(1845)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.07",
+      "type": "book-chapter",
+      "page": "113-126",
+      "title": [
+        "7.Rigoletto(1853)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.09",
+      "type": "book-chapter",
+      "page": "139-170",
+      "title": [
+        "9. A Moral Case: The Outburst ofLa traviata(1856)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.17",
+      "type": "book-chapter",
+      "page": "257-266",
+      "title": [
+        "17. Aida (1876)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.03",
+      "type": "book-chapter",
+      "page": "45-56",
+      "title": [
+        "3.NabuccoandI Lombardi(1846)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.22",
+      "type": "book-chapter",
+      "page": "1-14",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.08",
+      "type": "book-chapter",
+      "page": "127-138",
+      "title": [
+        "8.Il trovatore(1855)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.12",
+      "type": "book-chapter",
+      "page": "191-208",
+      "title": [
+        "12. The Years 1860 and 1861:Un ballo in maschera"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.13",
+      "type": "book-chapter",
+      "page": "209-216",
+      "title": [
+        "13.Inno delle nazioni(1862)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.16",
+      "type": "book-chapter",
+      "page": "247-256",
+      "title": [
+        "16. Verdi’sRequiemand Wagner’sLohengrin(1875)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.19",
+      "type": "book-chapter",
+      "page": "285-296",
+      "title": [
+        "19.Otelloat the Royal Lyceum (1889)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.18",
+      "type": "book-chapter",
+      "page": "267-284",
+      "title": [
+        "18. Music Journalism in London: The Late 1870s and 1880s"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.06",
+      "type": "book-chapter",
+      "page": "95-112",
+      "title": [
+        "6. Uneventful Years: 1849–1852"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.21",
+      "type": "book-chapter",
+      "page": "309-320",
+      "title": [
+        "Conclusions"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.05",
+      "type": "book-chapter",
+      "page": "77-94",
+      "title": [
+        "5.Attila(1848)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2016-07-11T00:00:00Z",
+            "timestamp": 1468195200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0090.04",
+      "type": "book-chapter",
+      "page": "57-76",
+      "title": [
+        "4.I due FoscariandI masnadieri(1847)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6884-4697",
+          "authenticated-orcid": false,
+          "given": "Massimo",
+          "family": "Zicari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Verdi in Victorian London"
+      ],
+      "ISBN": [
+        "9781783742134",
+        "9781783742141",
+        "9781783742158",
+        "9781800645097",
+        "9781783746309",
+        "9781783742165",
+        "9781783742172"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            11
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "1. Music Journalism in Early Victorian London",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.01",
+      "citation_pages": "15-30"
+    },
+    {
+      "title": "15. The Late 1860s and Wagner’sL’Olandese dannato(1870)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.15",
+      "citation_pages": "233-246"
+    },
+    {
+      "title": "20.Falstaffat Covent Garden (1894)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.20",
+      "citation_pages": "297-308"
+    },
+    {
+      "title": "14.Don CarlosandLa forza del destino(1867)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.14",
+      "citation_pages": "217-232"
+    },
+    {
+      "title": "11.I vespri siciliani(1859)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.11",
+      "citation_pages": "181-190"
+    },
+    {
+      "title": "10.Luisa Miller(1858)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.10",
+      "citation_pages": "171-180"
+    },
+    {
+      "title": "2.Ernani(1845)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.02",
+      "citation_pages": "31-44"
+    },
+    {
+      "title": "7.Rigoletto(1853)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.07",
+      "citation_pages": "113-126"
+    },
+    {
+      "title": "9. A Moral Case: The Outburst ofLa traviata(1856)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.09",
+      "citation_pages": "139-170"
+    },
+    {
+      "title": "17. Aida (1876)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.17",
+      "citation_pages": "257-266"
+    },
+    {
+      "title": "3.NabuccoandI Lombardi(1846)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.03",
+      "citation_pages": "45-56"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.22",
+      "citation_pages": "1-14"
+    },
+    {
+      "title": "8.Il trovatore(1855)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.08",
+      "citation_pages": "127-138"
+    },
+    {
+      "title": "12. The Years 1860 and 1861:Un ballo in maschera",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.12",
+      "citation_pages": "191-208"
+    },
+    {
+      "title": "13.Inno delle nazioni(1862)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.13",
+      "citation_pages": "209-216"
+    },
+    {
+      "title": "16. Verdi’sRequiemand Wagner’sLohengrin(1875)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.16",
+      "citation_pages": "247-256"
+    },
+    {
+      "title": "19.Otelloat the Royal Lyceum (1889)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.19",
+      "citation_pages": "285-296"
+    },
+    {
+      "title": "18. Music Journalism in London: The Late 1870s and 1880s",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.18",
+      "citation_pages": "267-284"
+    },
+    {
+      "title": "6. Uneventful Years: 1849–1852",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.06",
+      "citation_pages": "95-112"
+    },
+    {
+      "title": "Conclusions",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.21",
+      "citation_pages": "309-320"
+    },
+    {
+      "title": "5.Attila(1848)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.05",
+      "citation_pages": "77-94"
+    },
+    {
+      "title": "4.I due FoscariandI masnadieri(1847)",
+      "authors": [
+        "Massimo Zicari"
+      ],
+      "chapter_doi": "10.11647/obp.0090.04",
+      "citation_pages": "57-76"
+    }
+  ]
+}

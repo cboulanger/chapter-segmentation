@@ -1,0 +1,527 @@
+{
+  "isbn": "9783899428988",
+  "fetched_at": "2026-08-11T14:54:29.091887+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839408988-001",
+      "type": "book-chapter",
+      "page": "11-24",
+      "title": [
+        "Ornament &amp;amp; Entwurf. Vom Ornament zum Ornamentalen"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-004",
+      "type": "book-chapter",
+      "page": "79-96",
+      "title": [
+        "Ornament &amp;amp; Kalkül. Zur Formulierung des Ornamentalen"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-005",
+      "type": "book-chapter",
+      "page": "97-112",
+      "title": [
+        "Ornament &amp;amp; Geometrie. Zur Form des Ornamentalen"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-ref",
+      "type": "book-chapter",
+      "page": "145-154",
+      "title": [
+        "Literatur"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-007",
+      "type": "book-chapter",
+      "page": "131-144",
+      "title": [
+        "Ornament &amp;amp; Theorie"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-bm",
+      "type": "book-chapter",
+      "page": "155-160",
+      "title": [
+        "Backmatter"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-002",
+      "type": "book-chapter",
+      "page": "27-52",
+      "title": [
+        "Systemtheorie &amp;amp; Architektur. Von einer kategorialen zu einer operativen Architekturtheorie"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-toc",
+      "type": "book-chapter",
+      "page": "5-8",
+      "title": [
+        "INHALT"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-003",
+      "type": "book-chapter",
+      "page": "55-78",
+      "title": [
+        "Ornament &amp;amp; Wahrnehmung Zur Fundierung des Ornamentalen"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839408988-006",
+      "type": "book-chapter",
+      "page": "113-128",
+      "title": [
+        "Ornament &amp;amp; Struktur. Zur Funktion des Ornamentalen"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Dürfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Das Ornamentale und die architektonische Form"
+      ],
+      "ISBN": [
+        "9783899428988",
+        "9783839408988"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            27
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Ornament &amp;amp; Entwurf. Vom Ornament zum Ornamentalen",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-001",
+      "citation_pages": "11-24"
+    },
+    {
+      "title": "Ornament &amp;amp; Kalkül. Zur Formulierung des Ornamentalen",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-004",
+      "citation_pages": "79-96"
+    },
+    {
+      "title": "Ornament &amp;amp; Geometrie. Zur Form des Ornamentalen",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-005",
+      "citation_pages": "97-112"
+    },
+    {
+      "title": "Literatur",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-ref",
+      "citation_pages": "145-154"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Ornament &amp;amp; Theorie",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-007",
+      "citation_pages": "131-144"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-bm",
+      "citation_pages": "155-160"
+    },
+    {
+      "title": "Systemtheorie &amp;amp; Architektur. Von einer kategorialen zu einer operativen Architekturtheorie",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-002",
+      "citation_pages": "27-52"
+    },
+    {
+      "title": "INHALT",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-toc",
+      "citation_pages": "5-8"
+    },
+    {
+      "title": "Ornament &amp;amp; Wahrnehmung Zur Fundierung des Ornamentalen",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-003",
+      "citation_pages": "55-78"
+    },
+    {
+      "title": "Ornament &amp;amp; Struktur. Zur Funktion des Ornamentalen",
+      "authors": [
+        "Michael Dürfeld"
+      ],
+      "chapter_doi": "10.14361/9783839408988-006",
+      "citation_pages": "113-128"
+    }
+  ]
+}

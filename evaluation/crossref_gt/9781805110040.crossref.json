@@ -1,0 +1,412 @@
+{
+  "isbn": "9781805110040",
+  "fetched_at": "2026-08-11T14:40:43.858553+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                13
+              ]
+            ],
+            "date-time": "2023-07-13T00:00:00Z",
+            "timestamp": 1689206400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0315.03",
+      "type": "book-chapter",
+      "page": "121-174",
+      "title": [
+        "3. Giving an Account of Herself"
+      ],
+      "author": [
+        {
+          "given": "Lee",
+          "family": "Haring",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/019k4jq75",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Brooklyn College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Folktales of Mayotte, an African Island"
+      ],
+      "ISBN": [
+        "9781805110040",
+        "9781805110057",
+        "9781805110064",
+        "9781805110101",
+        "9781805110095",
+        "9781805110071"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                13
+              ]
+            ],
+            "date-time": "2023-07-13T00:00:00Z",
+            "timestamp": 1689206400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0315.04",
+      "type": "book-chapter",
+      "page": "1-2",
+      "title": [
+        "Foreword"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2262-0986",
+          "authenticated-orcid": false,
+          "given": "Mark",
+          "family": "Turin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03rmrcq20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of British Columbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Folktales of Mayotte, an African Island"
+      ],
+      "ISBN": [
+        "9781805110040",
+        "9781805110057",
+        "9781805110064",
+        "9781805110101",
+        "9781805110095",
+        "9781805110071"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                13
+              ]
+            ],
+            "date-time": "2023-07-13T00:00:00Z",
+            "timestamp": 1689206400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0315.01",
+      "type": "book-chapter",
+      "page": "11-48",
+      "title": [
+        "1. Mayotte Is Ours"
+      ],
+      "author": [
+        {
+          "given": "Lee",
+          "family": "Haring",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/019k4jq75",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Brooklyn College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Folktales of Mayotte, an African Island"
+      ],
+      "ISBN": [
+        "9781805110040",
+        "9781805110057",
+        "9781805110064",
+        "9781805110101",
+        "9781805110095",
+        "9781805110071"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                13
+              ]
+            ],
+            "date-time": "2023-07-13T00:00:00Z",
+            "timestamp": 1689206400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0315.05",
+      "type": "book-chapter",
+      "page": "3-8",
+      "title": [
+        "Preface"
+      ],
+      "author": [
+        {
+          "given": "Lee",
+          "family": "Haring",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/019k4jq75",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Brooklyn College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Folktales of Mayotte, an African Island"
+      ],
+      "ISBN": [
+        "9781805110040",
+        "9781805110057",
+        "9781805110064",
+        "9781805110101",
+        "9781805110095",
+        "9781805110071"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                13
+              ]
+            ],
+            "date-time": "2023-07-13T00:00:00Z",
+            "timestamp": 1689206400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0315.02",
+      "type": "book-chapter",
+      "page": "49-120",
+      "title": [
+        "2. Varieties of Performing"
+      ],
+      "author": [
+        {
+          "given": "Lee",
+          "family": "Haring",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/019k4jq75",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Brooklyn College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Folktales of Mayotte, an African Island"
+      ],
+      "ISBN": [
+        "9781805110040",
+        "9781805110057",
+        "9781805110064",
+        "9781805110101",
+        "9781805110095",
+        "9781805110071"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            13
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "3. Giving an Account of Herself",
+      "authors": [
+        "Lee Haring"
+      ],
+      "chapter_doi": "10.11647/obp.0315.03",
+      "citation_pages": "121-174"
+    },
+    {
+      "title": "Foreword",
+      "authors": [
+        "Mark Turin"
+      ],
+      "chapter_doi": "10.11647/obp.0315.04",
+      "citation_pages": "1-2"
+    },
+    {
+      "title": "1. Mayotte Is Ours",
+      "authors": [
+        "Lee Haring"
+      ],
+      "chapter_doi": "10.11647/obp.0315.01",
+      "citation_pages": "11-48"
+    },
+    {
+      "title": "Preface",
+      "authors": [
+        "Lee Haring"
+      ],
+      "chapter_doi": "10.11647/obp.0315.05",
+      "citation_pages": "3-8"
+    },
+    {
+      "title": "2. Varieties of Performing",
+      "authors": [
+        "Lee Haring"
+      ],
+      "chapter_doi": "10.11647/obp.0315.02",
+      "citation_pages": "49-120"
+    }
+  ]
+}

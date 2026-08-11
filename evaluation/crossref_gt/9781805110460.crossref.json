@@ -1,0 +1,563 @@
+{
+  "isbn": "9781805110460",
+  "fetched_at": "2026-08-11T15:22:55.103495+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2023-10-17T00:00:00Z",
+            "timestamp": 1697500800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0348.04",
+      "type": "book-chapter",
+      "page": "45-64",
+      "title": [
+        "4. The Alien, the Artificial, and the Extended"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Matthews",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02nwg5t34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the West of England"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Transparent Minds in Science Fiction"
+      ],
+      "ISBN": [
+        "9781805110460",
+        "9781805110477",
+        "9781805110484",
+        "9781805110521",
+        "9781805110514",
+        "9781805110491"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2023-10-17T00:00:00Z",
+            "timestamp": 1697500800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0348.02",
+      "type": "book-chapter",
+      "page": "13-26",
+      "title": [
+        "2. Authorial Approaches"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Matthews",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02nwg5t34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the West of England"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Transparent Minds in Science Fiction"
+      ],
+      "ISBN": [
+        "9781805110460",
+        "9781805110477",
+        "9781805110484",
+        "9781805110521",
+        "9781805110514",
+        "9781805110491"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2023-10-17T00:00:00Z",
+            "timestamp": 1697500800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0348.05",
+      "type": "book-chapter",
+      "page": "65-84",
+      "title": [
+        "5. Hive and Distributed Mind"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Matthews",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02nwg5t34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the West of England"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Transparent Minds in Science Fiction"
+      ],
+      "ISBN": [
+        "9781805110460",
+        "9781805110477",
+        "9781805110484",
+        "9781805110521",
+        "9781805110514",
+        "9781805110491"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2023-10-17T00:00:00Z",
+            "timestamp": 1697500800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0348.07",
+      "type": "book-chapter",
+      "page": "103-110",
+      "title": [
+        "7. Conclusion"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Matthews",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02nwg5t34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the West of England"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Transparent Minds in Science Fiction"
+      ],
+      "ISBN": [
+        "9781805110460",
+        "9781805110477",
+        "9781805110484",
+        "9781805110521",
+        "9781805110514",
+        "9781805110491"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2023-10-17T00:00:00Z",
+            "timestamp": 1697500800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0348.06",
+      "type": "book-chapter",
+      "page": "85-102",
+      "title": [
+        "6. Supercedure: Into the Posthuman"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Matthews",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02nwg5t34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the West of England"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Transparent Minds in Science Fiction"
+      ],
+      "ISBN": [
+        "9781805110460",
+        "9781805110477",
+        "9781805110484",
+        "9781805110521",
+        "9781805110514",
+        "9781805110491"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2023-10-17T00:00:00Z",
+            "timestamp": 1697500800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0348.01",
+      "type": "book-chapter",
+      "page": "1-12",
+      "title": [
+        "1. Introduction"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Matthews",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02nwg5t34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the West of England"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Transparent Minds in Science Fiction"
+      ],
+      "ISBN": [
+        "9781805110460",
+        "9781805110477",
+        "9781805110484",
+        "9781805110521",
+        "9781805110514",
+        "9781805110491"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2023-10-17T00:00:00Z",
+            "timestamp": 1697500800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0348.03",
+      "type": "book-chapter",
+      "page": "27-44",
+      "title": [
+        "3. Awakenings"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Matthews",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02nwg5t34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the West of England"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Transparent Minds in Science Fiction"
+      ],
+      "ISBN": [
+        "9781805110460",
+        "9781805110477",
+        "9781805110484",
+        "9781805110521",
+        "9781805110514",
+        "9781805110491"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            17
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "4. The Alien, the Artificial, and the Extended",
+      "authors": [
+        "Paul Matthews"
+      ],
+      "chapter_doi": "10.11647/obp.0348.04",
+      "citation_pages": "45-64"
+    },
+    {
+      "title": "2. Authorial Approaches",
+      "authors": [
+        "Paul Matthews"
+      ],
+      "chapter_doi": "10.11647/obp.0348.02",
+      "citation_pages": "13-26"
+    },
+    {
+      "title": "5. Hive and Distributed Mind",
+      "authors": [
+        "Paul Matthews"
+      ],
+      "chapter_doi": "10.11647/obp.0348.05",
+      "citation_pages": "65-84"
+    },
+    {
+      "title": "7. Conclusion",
+      "authors": [
+        "Paul Matthews"
+      ],
+      "chapter_doi": "10.11647/obp.0348.07",
+      "citation_pages": "103-110"
+    },
+    {
+      "title": "6. Supercedure: Into the Posthuman",
+      "authors": [
+        "Paul Matthews"
+      ],
+      "chapter_doi": "10.11647/obp.0348.06",
+      "citation_pages": "85-102"
+    },
+    {
+      "title": "1. Introduction",
+      "authors": [
+        "Paul Matthews"
+      ],
+      "chapter_doi": "10.11647/obp.0348.01",
+      "citation_pages": "1-12"
+    },
+    {
+      "title": "3. Awakenings",
+      "authors": [
+        "Paul Matthews"
+      ],
+      "chapter_doi": "10.11647/obp.0348.03",
+      "citation_pages": "27-44"
+    }
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "isbn": "9783837620948",
+  "fetched_at": "2026-08-11T15:22:51.728825+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/transcript.9783839420942.373",
+      "type": "book-chapter",
+      "page": "373-374",
+      "title": [
+        "8 Schluss"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839420942.bm",
+      "title": [
+        "Backmatter"
+      ],
+      "page": "426-430",
+      "type": "book-chapter",
+      "container-title": [
+        "Neues Landschaftstheater"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837620948"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.bm",
+      "type": "book-chapter",
+      "page": "426-430",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.103",
+      "type": "book-chapter",
+      "page": "103-132",
+      "title": [
+        "3 Die Raumwende"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.ref",
+      "type": "book-chapter",
+      "page": "391-425",
+      "title": [
+        "Bibliographie"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.21",
+      "type": "book-chapter",
+      "page": "21-100",
+      "title": [
+        "2 Vier Stücke von Schauplatz International"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839420942.fm",
+      "title": [
+        "Frontmatter"
+      ],
+      "page": "1-4",
+      "type": "book-chapter",
+      "container-title": [
+        "Neues Landschaftstheater"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837620948"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.133",
+      "type": "book-chapter",
+      "page": "133-274",
+      "title": [
+        "4 Historische Landschaftstheorien"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.385",
+      "type": "book-chapter",
+      "page": "385-390",
+      "title": [
+        "Anhang"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.275",
+      "type": "book-chapter",
+      "page": "275-300",
+      "title": [
+        "5 Zeitgenössische Landschaftstheorien"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.375",
+      "type": "book-chapter",
+      "page": "375-384",
+      "title": [
+        "Abbildungen"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.301",
+      "type": "book-chapter",
+      "page": "301-334",
+      "title": [
+        "6 Traditionelles Landschaftstheater"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.intro",
+      "type": "book-chapter",
+      "page": "7-18",
+      "title": [
+        "1 Einführung"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839420942.337",
+      "type": "book-chapter",
+      "page": "337-372",
+      "title": [
+        "7 Neues Landschaftstheater - Neue Landschaften"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Bieri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Theater",
+        "Neues Landschaftstheater"
+      ],
+      "ISBN": [
+        "9783837620948",
+        "9783839420942"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "8 Schluss",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.373",
+      "citation_pages": "373-374"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839420942.bm",
+      "citation_pages": "426-430"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.bm",
+      "citation_pages": "426-430"
+    },
+    {
+      "title": "",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "3 Die Raumwende",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.103",
+      "citation_pages": "103-132"
+    },
+    {
+      "title": "Bibliographie",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.ref",
+      "citation_pages": "391-425"
+    },
+    {
+      "title": "2 Vier Stücke von Schauplatz International",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.21",
+      "citation_pages": "21-100"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839420942.fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "4 Historische Landschaftstheorien",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.133",
+      "citation_pages": "133-274"
+    },
+    {
+      "title": "Anhang",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.385",
+      "citation_pages": "385-390"
+    },
+    {
+      "title": "5 Zeitgenössische Landschaftstheorien",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.275",
+      "citation_pages": "275-300"
+    },
+    {
+      "title": "Abbildungen",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.375",
+      "citation_pages": "375-384"
+    },
+    {
+      "title": "6 Traditionelles Landschaftstheater",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.301",
+      "citation_pages": "301-334"
+    },
+    {
+      "title": "1 Einführung",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.intro",
+      "citation_pages": "7-18"
+    },
+    {
+      "title": "7 Neues Landschaftstheater - Neue Landschaften",
+      "authors": [
+        "Martin Bieri"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839420942.337",
+      "citation_pages": "337-372"
+    }
+  ]
+}

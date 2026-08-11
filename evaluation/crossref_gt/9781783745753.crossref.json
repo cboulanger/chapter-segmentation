@@ -1,0 +1,683 @@
+{
+  "isbn": "9781783745753",
+  "fetched_at": "2026-08-11T15:09:04.450515+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.10",
+      "type": "book-chapter",
+      "page": "332-366",
+      "title": [
+        "Bavarian B, clm 14482c"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.01",
+      "type": "book-chapter",
+      "page": "1-9",
+      "title": [
+        "1. Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.04",
+      "type": "book-chapter",
+      "page": "50-111",
+      "title": [
+        "4. Form and Function"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.05",
+      "type": "book-chapter",
+      "page": "112-167",
+      "title": [
+        "5. Clm 4610 and the Commentary Tradition"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.02",
+      "type": "book-chapter",
+      "page": "10-29",
+      "title": [
+        "2. The Fate of Ovid Until the Twelfth Century"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.08",
+      "type": "book-chapter",
+      "page": "190-321",
+      "title": [
+        "Edition and Translation of clm 4610"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.09",
+      "type": "book-chapter",
+      "page": "324-331",
+      "title": [
+        "Bavarian B—experimental edition of Book 1 from clm 14482c"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.07",
+      "type": "book-chapter",
+      "page": "170-189",
+      "title": [
+        "Part II: THE TEXT"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.03",
+      "type": "book-chapter",
+      "page": "30-49",
+      "title": [
+        "3. Situating the Commentary"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2020-09-29T00:00:00Z",
+            "timestamp": 1601337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0154.06",
+      "type": "book-chapter",
+      "page": "168-169",
+      "title": [
+        "General Conclusions"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3285-7493",
+          "authenticated-orcid": false,
+          "given": "Robin",
+          "family": "Wahlsten Böckerman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Bavarian Commentary and Ovid"
+      ],
+      "subtitle": [
+        "Clm 4610, Contexts and Connections"
+      ],
+      "ISBN": [
+        "9781783745753",
+        "9781783745760",
+        "9781783745777"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Bavarian B, clm 14482c",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.10",
+      "citation_pages": "332-366"
+    },
+    {
+      "title": "1. Introduction",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.01",
+      "citation_pages": "1-9"
+    },
+    {
+      "title": "4. Form and Function",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.04",
+      "citation_pages": "50-111"
+    },
+    {
+      "title": "5. Clm 4610 and the Commentary Tradition",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.05",
+      "citation_pages": "112-167"
+    },
+    {
+      "title": "2. The Fate of Ovid Until the Twelfth Century",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.02",
+      "citation_pages": "10-29"
+    },
+    {
+      "title": "Edition and Translation of clm 4610",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.08",
+      "citation_pages": "190-321"
+    },
+    {
+      "title": "Bavarian B—experimental edition of Book 1 from clm 14482c",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.09",
+      "citation_pages": "324-331"
+    },
+    {
+      "title": "Part II: THE TEXT",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.07",
+      "citation_pages": "170-189"
+    },
+    {
+      "title": "3. Situating the Commentary",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.03",
+      "citation_pages": "30-49"
+    },
+    {
+      "title": "General Conclusions Clm 4610, Contexts and Connections",
+      "authors": [
+        "Robin Wahlsten Böckerman"
+      ],
+      "chapter_doi": "10.11647/obp.0154.06",
+      "citation_pages": "168-169"
+    }
+  ]
+}

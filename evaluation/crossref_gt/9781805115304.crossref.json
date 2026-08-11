@@ -1,0 +1,2764 @@
+{
+  "isbn": "9781805115304",
+  "fetched_at": "2026-08-11T14:54:30.736563+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.06",
+      "type": "book-chapter",
+      "page": "51-58",
+      "title": [
+        "6. Threat"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "subtitle": [
+        "Biological resource use"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.10",
+      "type": "book-chapter",
+      "page": "103-104",
+      "title": [
+        "10. Threat"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "subtitle": [
+        "Climate change and severe weather"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.14",
+      "type": "book-chapter",
+      "page": "357-358",
+      "title": [
+        "14. Education and awareness"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.09",
+      "type": "book-chapter",
+      "page": "81-102",
+      "title": [
+        "9. Threat"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "subtitle": [
+        "Pollution"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.08",
+      "type": "book-chapter",
+      "page": "65-80",
+      "title": [
+        "8. Invasive alien and other problematic species"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.13",
+      "type": "book-chapter",
+      "page": "207-356",
+      "title": [
+        "13. Species management"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.04",
+      "type": "book-chapter",
+      "page": "33-42",
+      "title": [
+        "4. Threat"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "subtitle": [
+        "Energy production and mining"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.07",
+      "type": "book-chapter",
+      "page": "59-64",
+      "title": [
+        "7. Threat"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "subtitle": [
+        "Human intrusions and disturbances"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.12",
+      "type": "book-chapter",
+      "page": "171-206",
+      "title": [
+        "12. Habitat restoration and creation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.15",
+      "type": "book-chapter",
+      "page": "359-390",
+      "title": [
+        "References"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.03",
+      "type": "book-chapter",
+      "page": "31-32",
+      "title": [
+        "3. Threat"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "subtitle": [
+        "Aquaculture &amp; agriculture"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.11",
+      "type": "book-chapter",
+      "page": "105-170",
+      "title": [
+        "11. Habitat protection"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.01",
+      "type": "book-chapter",
+      "page": "1-26",
+      "title": [
+        "1. About this book"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.05",
+      "type": "book-chapter",
+      "page": "43-50",
+      "title": [
+        "5. Threat"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "subtitle": [
+        "Transportation and service corridors"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2025-04-22T00:00:00Z",
+            "timestamp": 1745280000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0453.02",
+      "type": "book-chapter",
+      "page": "27-30",
+      "title": [
+        "2. Threat"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7448-8497",
+          "authenticated-orcid": false,
+          "given": "Ann",
+          "family": "Thornton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7594-6453",
+          "authenticated-orcid": false,
+          "given": "William H.",
+          "family": "Morgan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eleanor",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Coral Conservation"
+      ],
+      "subtitle": [
+        "Residential and commercial development"
+      ],
+      "ISBN": [
+        "9781805115304",
+        "9781805115311",
+        "9781805115328",
+        "9781805115342",
+        "9781805115335"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            22
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "6. Threat Biological resource use",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.06",
+      "citation_pages": "51-58"
+    },
+    {
+      "title": "10. Threat Climate change and severe weather",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.10",
+      "citation_pages": "103-104"
+    },
+    {
+      "title": "14. Education and awareness",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.14",
+      "citation_pages": "357-358"
+    },
+    {
+      "title": "9. Threat Pollution",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.09",
+      "citation_pages": "81-102"
+    },
+    {
+      "title": "8. Invasive alien and other problematic species",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.08",
+      "citation_pages": "65-80"
+    },
+    {
+      "title": "13. Species management",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.13",
+      "citation_pages": "207-356"
+    },
+    {
+      "title": "4. Threat Energy production and mining",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.04",
+      "citation_pages": "33-42"
+    },
+    {
+      "title": "7. Threat Human intrusions and disturbances",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.07",
+      "citation_pages": "59-64"
+    },
+    {
+      "title": "12. Habitat restoration and creation",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.12",
+      "citation_pages": "171-206"
+    },
+    {
+      "title": "References",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.15",
+      "citation_pages": "359-390"
+    },
+    {
+      "title": "3. Threat Aquaculture &amp; agriculture",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.03",
+      "citation_pages": "31-32"
+    },
+    {
+      "title": "11. Habitat protection",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.11",
+      "citation_pages": "105-170"
+    },
+    {
+      "title": "1. About this book",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.01",
+      "citation_pages": "1-26"
+    },
+    {
+      "title": "5. Threat Transportation and service corridors",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.05",
+      "citation_pages": "43-50"
+    },
+    {
+      "title": "2. Threat Residential and commercial development",
+      "authors": [
+        "Ann Thornton",
+        "William H. Morgan",
+        "Eleanor Bladon",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0453.02",
+      "citation_pages": "27-30"
+    }
+  ]
+}

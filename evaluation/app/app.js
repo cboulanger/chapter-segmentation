@@ -204,7 +204,11 @@ async function render(fromDecision = false) {
     return;
   }
 
-  await renderBook(book, isbn, expected, pdf);
+  try {
+    await renderBook(book, isbn, expected, pdf);
+  } catch (err) {
+    renderSkippable(book, isbn, `Failed to render pages: ${err.message}`);
+  }
 }
 
 async function init() {

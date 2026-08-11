@@ -90,20 +90,8 @@ function goPrev() {
 }
 
 async function openLightbox(pdf, pdfIndex) {
-  const page = await pdf.getPage(pdfIndex + 1);
-  const viewport = page.getViewport({ scale: 1 });
-  const scale = computeScale(viewport.width, LIGHTBOX_TARGET_WIDTH);
-  const scaledViewport = page.getViewport({ scale });
-
-  const canvas = document.createElement('canvas');
-  canvas.width = scaledViewport.width;
-  canvas.height = scaledViewport.height;
-  const ctx = canvas.getContext('2d');
-  await page.render({ canvasContext: ctx, viewport: scaledViewport }).promise;
-
   const overlay = document.createElement('div');
   overlay.id = 'lightbox';
-  overlay.appendChild(canvas);
   function onKey(e) {
     if (e.key === 'Escape') close();
   }
@@ -113,6 +101,25 @@ async function openLightbox(pdf, pdfIndex) {
   }
   overlay.addEventListener('click', close);
   document.addEventListener('keydown', onKey);
+
+  try {
+    const page = await pdf.getPage(pdfIndex + 1);
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = computeScale(viewport.width, LIGHTBOX_TARGET_WIDTH);
+    const scaledViewport = page.getViewport({ scale });
+    const canvas = document.createElement('canvas');
+    canvas.width = scaledViewport.width;
+    canvas.height = scaledViewport.height;
+    const ctx = canvas.getContext('2d');
+    await page.render({ canvasContext: ctx, viewport: scaledViewport }).promise;
+    overlay.appendChild(canvas);
+  } catch (err) {
+    const message = document.createElement('p');
+    message.className = 'error';
+    message.textContent = `Failed to render page: ${err.message}`;
+    overlay.appendChild(message);
+  }
+
   document.body.appendChild(overlay);
 }
 

@@ -11,11 +11,14 @@ see docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.m
 """
 
 import unittest
+from unittest.mock import Mock
 
 from evaluation.scripts.build_crossref_gt_ground_truth import (
+    _flatten_outline,
     _is_novel,
     _nearest_neighbor_distance,
     _novelty_threshold,
+    _outline_agreement_report,
     _toc_field_for,
 )
 
@@ -82,6 +85,61 @@ class TestIsNovel(unittest.TestCase):
         # First candidate page is close (not novel alone); second is far.
         # Keep-if-at-least-one-page-is-novel per the design spec.
         self.assertTrue(_is_novel([[0.5], [10.0]], self.existing, threshold=1.5))
+
+
+class _FakeDestination:
+    def __init__(self, title: str):
+        self.title = title
+
+
+class TestFlattenOutline(unittest.TestCase):
+    def test_flattens_nested_outline_in_order(self):
+        outline = [
+            _FakeDestination("Part I"),
+            [_FakeDestination("Chapter 1"), _FakeDestination("Chapter 2")],
+        ]
+        reader = Mock()
+        reader.get_destination_page_number.side_effect = [0, 5, 12]
+        result = _flatten_outline(outline, reader)
+        self.assertEqual(result, [("Part I", 0), ("Chapter 1", 5), ("Chapter 2", 12)])
+
+    def test_skips_entries_with_no_title(self):
+        outline = [_FakeDestination("")]
+        reader = Mock()
+        result = _flatten_outline(outline, reader)
+        self.assertEqual(result, [])
+        reader.get_destination_page_number.assert_not_called()
+
+    def test_skips_entries_pypdf_cannot_resolve_a_page_for(self):
+        outline = [_FakeDestination("Broken Entry")]
+        reader = Mock()
+        reader.get_destination_page_number.side_effect = Exception("unresolvable")
+        result = _flatten_outline(outline, reader)
+        self.assertEqual(result, [])
+
+
+class TestOutlineAgreementReport(unittest.TestCase):
+    def test_no_outline_returns_empty(self):
+        chapters = [{"title": "Introduction", "pdf_start_index": 5}]
+        self.assertEqual(_outline_agreement_report([], chapters), [])
+
+    def test_agreement_produces_no_log_line(self):
+        outline_entries = [("Introduction", 5)]
+        chapters = [{"title": "Introduction", "pdf_start_index": 5}]
+        self.assertEqual(_outline_agreement_report(outline_entries, chapters), [])
+
+    def test_disagreement_logs_a_line(self):
+        outline_entries = [("Introduction", 7)]
+        chapters = [{"title": "Introduction", "pdf_start_index": 5}]
+        lines = _outline_agreement_report(outline_entries, chapters)
+        self.assertEqual(len(lines), 1)
+        self.assertIn("outline=7", lines[0])
+        self.assertIn("content-search=5", lines[0])
+
+    def test_low_confidence_match_is_ignored(self):
+        outline_entries = [("Completely Unrelated Text About Something Else", 99)]
+        chapters = [{"title": "Introduction", "pdf_start_index": 5}]
+        self.assertEqual(_outline_agreement_report(outline_entries, chapters), [])
 
 
 if __name__ == "__main__":

@@ -91,6 +91,58 @@ def _is_novel(
     )
 
 
+def _flatten_outline(outline: list, reader: PdfReader) -> list[tuple[str, int]]:
+    """Flattens a (possibly nested) pypdf outline -- a list where nested
+    lists represent nesting -- into (title, page_index) pairs in reading
+    order. Skips entries with no title, or whose page pypdf can't resolve
+    (get_destination_page_number raising means the destination is
+    malformed or points outside this PDF -- skip it, don't crash the
+    whole reconciliation over one bad bookmark)."""
+    entries: list[tuple[str, int]] = []
+    for item in outline:
+        if isinstance(item, list):
+            entries.extend(_flatten_outline(item, reader))
+            continue
+        title = getattr(item, "title", None)
+        if not title:
+            continue
+        try:
+            page_index = reader.get_destination_page_number(item)
+        except Exception:
+            continue
+        entries.append((title, page_index))
+    return entries
+
+
+def _outline_agreement_report(
+    outline_entries: list[tuple[str, int]], confirmed_chapters: list[dict]
+) -> list[str]:
+    """Diagnostic-only cross-check (see design spec's "Outline scope"
+    decision): for each confirmed chapter, fuzzy-matches its title against
+    outline_entries and logs a line when the best confident match (score
+    >= _MIN_MATCH_SCORE, the same bar the content-search confirmation
+    itself uses) disagrees with the content-search-confirmed
+    pdf_start_index. Returns an empty list when there's no outline, or
+    when everything agrees -- this has zero effect on the migration
+    decision, purely evidence for a future decision on whether outline
+    agreement should be allowed to rescue failed confirmations."""
+    if not outline_entries:
+        return []
+    lines = []
+    for chapter in confirmed_chapters:
+        best_page, best_score = None, 0.0
+        for title, page_index in outline_entries:
+            score = fuzz.partial_ratio(chapter["title"].lower(), title.lower())
+            if score > best_score:
+                best_page, best_score = page_index, score
+        if best_score >= _MIN_MATCH_SCORE and best_page != chapter["pdf_start_index"]:
+            lines.append(
+                f'outline disagreement: chapter "{chapter["title"]}" '
+                f"outline={best_page} content-search={chapter['pdf_start_index']}"
+            )
+    return lines
+
+
 def _citation_start(citation_pages: str | None) -> str | None:
     if not citation_pages:
         return None

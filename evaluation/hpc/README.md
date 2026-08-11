@@ -166,15 +166,23 @@ GGUF into `$HF_HOME` from the login node *before* submitting the job:
 export HF_HOME=/ptmp/$USER/huggingface
 mkdir -p "$HF_HOME"
 
-apptainer exec evaluation/hpc/nuextract.sif \
-    huggingface-cli download numind/NuExtract-2.0-4B
-apptainer exec evaluation/hpc/nuextract.sif \
-    huggingface-cli download numind/NuExtract-2.0-4B-GGUF NuExtract-2.0-4B-Q4_K_M.gguf
+cd evaluation/hpc
+apptainer exec -B /ptmp/$USER nuextract.sif hf download numind/NuExtract-2.0-4B
+apptainer exec -B /ptmp/$USER nuextract.sif hf download numind/NuExtract-2.0-4B-GGUF NuExtract-2.0-4B-Q4_K_M.gguf
 ```
+
+`-B /ptmp/$USER` is required, not optional -- Apptainer's default bind
+set doesn't include `/ptmp`, so without it `/ptmp` is visible inside the
+container but read-only, and `hf download` fails trying to write its
+cache there (`OSError: [Errno 30] Read-only file system: '/ptmp'`). This
+matches every other MPCDF example that writes to `/ptmp` (e.g.
+`llms-meet-mpcdf/sft_with_fsdp`'s download step) -- they all bind it
+explicitly rather than relying on it being writable by default.
 
 Both repos are public as of this writing, so no `HF_TOKEN` should be
 needed; if you hit a gated-repo error, request access on Hugging Face and
-re-run with `HF_TOKEN=<your token>` prefixed.
+re-run with `HF_TOKEN=<your token>` prefixed (note: `HF_TOKEN`, the
+variable `huggingface_hub` actually reads -- not `HT_TOKEN`).
 
 ## 5. Submit the job
 

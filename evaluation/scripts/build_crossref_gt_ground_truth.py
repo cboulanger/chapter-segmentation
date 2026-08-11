@@ -119,16 +119,17 @@ def _outline_agreement_report(
 ) -> list[str]:
     """Diagnostic-only cross-check (see design spec's "Outline scope"
     decision): for each confirmed chapter, fuzzy-matches its title against
-    outline_entries and logs a line when the best confident match (score
+    outline_entries, and if the best confident match (score
     >= _MIN_MATCH_SCORE, the same bar the content-search confirmation
     itself uses) disagrees with the content-search-confirmed
-    pdf_start_index. Returns an empty list when there's no outline, or
-    when everything agrees -- this has zero effect on the migration
-    decision, purely evidence for a future decision on whether outline
-    agreement should be allowed to rescue failed confirmations."""
+    pdf_start_index, includes a line for it in the returned list. Returns
+    an empty list when there's no outline, or when everything agrees --
+    this has zero effect on the migration decision, purely evidence for a
+    future decision on whether outline agreement should be allowed to
+    rescue failed confirmations."""
     if not outline_entries:
         return []
-    lines = []
+    lines: list[str] = []
     for chapter in confirmed_chapters:
         best_page, best_score = None, 0.0
         for title, page_index in outline_entries:
@@ -138,7 +139,7 @@ def _outline_agreement_report(
         if best_score >= _MIN_MATCH_SCORE and best_page != chapter["pdf_start_index"]:
             lines.append(
                 f'outline disagreement: chapter "{chapter["title"]}" '
-                f"outline={best_page} content-search={chapter['pdf_start_index']}"
+                f"outline={best_page} content-search={chapter["pdf_start_index"]}"
             )
     return lines
 

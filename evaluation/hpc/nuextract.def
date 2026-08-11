@@ -26,6 +26,21 @@ From: nvcr.io/nvidia/pytorch:25.01-py3
     apt-get install -y --no-install-recommends cmake git
     rm -rf /var/lib/apt/lists/*
 
+    # Base project dependencies -- run_pilot.slurm bind-mounts the repo
+    # checkout itself at job runtime (so chapter_segmentation/evaluation
+    # don't need a proper `pip install -e .` here), but everything THOSE
+    # modules import still has to already be present in the container.
+    # Mirrors pyproject.toml's [project.dependencies] -- keep in sync if
+    # that list changes.
+    pip3 install --no-cache-dir \
+        "spacy>=3.8.0" \
+        "click>=8.0" \
+        "pypdf>=5.1.0" \
+        "rapidfuzz>=3.10.0" \
+        "langdetect>=1.0.9" \
+        "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
+
+    # pyproject.toml's "nuextract-finetune" optional-dependency group.
     pip3 install --no-cache-dir \
         "transformers>=4.46.0" \
         "peft>=0.13.0" \
@@ -81,7 +96,8 @@ From: nvcr.io/nvidia/pytorch:25.01-py3
     # so `import llama_cpp` fails here unconditionally regardless of
     # whether the build itself succeeded. Verify it for real once, at job
     # runtime: `apptainer exec --nv nuextract.sif python3 -c "import llama_cpp"`.
-    python3 -c "import torch, transformers, peft, huggingface_hub; print('python deps ok (excl. llama_cpp -- see comment above)')"
+    python3 -c "import torch, transformers, peft, huggingface_hub, spacy, click, pypdf, rapidfuzz, langdetect; print('python deps ok (excl. llama_cpp -- see comment above)')"
+    python3 -c "import spacy; spacy.load('en_core_web_sm'); print('en_core_web_sm loads ok')"
     find / -xdev -name "libllama.so" -path "*llama_cpp*" 2>/dev/null | grep -q . && echo "llama_cpp shared library built ok"
     find /opt/llama.cpp/build -name "llama-quantize" -type f | grep -q . && echo "llama-quantize built ok"
     test -f /opt/llama.cpp/convert_hf_to_gguf.py && echo "convert_hf_to_gguf.py present ok"

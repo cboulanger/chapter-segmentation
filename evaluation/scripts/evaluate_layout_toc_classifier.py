@@ -10,6 +10,7 @@ Usage:
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --pdfalto-bin /path/to/pdfalto
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --recall-target 0.95
+    uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --corpora open-access,pending
 """
 
 import argparse
@@ -86,8 +87,7 @@ def load_book_corpus(corpora: list[str] | None = None) -> list[dict]:
     flagged for manual review), per the design spec. `corpora` defaults
     to every corpus this pilot normally scores against (_CORPORA);
     pass an explicit subset (e.g. ["open-access"]) to restrict it, e.g.
-    to evaluate evaluation/corpus/pending/ candidates before promotion,
-    or to compute a novelty baseline from open-access alone."""
+    to evaluate evaluation/corpus/pending/ candidates before promotion."""
     books = []
     for corpus in corpora if corpora is not None else _CORPORA:
         corpus_dir = _CORPUS_DIR / corpus
@@ -318,7 +318,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--corpora",
-        default=",".join(_CORPORA),
+        default=None,
         help=(
             "Comma-separated list of evaluation/corpus/ subdirectories to load books "
             "from (e.g. 'open-access,pending' to include unreviewed candidates). "
@@ -328,7 +328,15 @@ def main() -> int:
     args = parser.parse_args()
     pdfalto_bin = resolve_pdfalto_binary(args.pdfalto_bin)
 
-    books = load_book_corpus(corpora=[c.strip() for c in args.corpora.split(",") if c.strip()])
+    corpora = None
+    if args.corpora is not None:
+        corpora = [c.strip() for c in args.corpora.split(",") if c.strip()]
+        for corpus in corpora:
+            if not (_CORPUS_DIR / corpus).is_dir():
+                print(f"Unknown corpus {corpus!r} ({_CORPUS_DIR / corpus} does not exist)")
+                return 1
+
+    books = load_book_corpus(corpora=corpora)
     if not books:
         print("No books with a 'toc' field found -- run add_toc_ground_truth.py first.")
         return 1

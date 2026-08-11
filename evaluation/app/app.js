@@ -3,9 +3,13 @@ import {
   isbnFromFilename,
   decisionsStorageKey,
   rejectedListText,
+  tocPageRange,
+  computeScale,
   isComplete,
   normalizeIndex,
 } from './lib.js';
+
+const THUMBNAIL_TARGET_WIDTH = 600;
 
 const state = {
   corpus: null,
@@ -84,17 +88,64 @@ function goPrev() {
   render();
 }
 
-function renderBookPlaceholder(book, isbn, expected) {
+async function renderPageThumb(pdf, pdfIndex, label, cssClass) {
+  const page = await pdf.getPage(pdfIndex + 1);
+  const viewport = page.getViewport({ scale: 1 });
+  const scale = computeScale(viewport.width, THUMBNAIL_TARGET_WIDTH);
+  const scaledViewport = page.getViewport({ scale });
+
+  const canvas = document.createElement('canvas');
+  canvas.width = scaledViewport.width;
+  canvas.height = scaledViewport.height;
+  const ctx = canvas.getContext('2d');
+  await page.render({ canvasContext: ctx, viewport: scaledViewport }).promise;
+
+  const figure = document.createElement('figure');
+  figure.className = `thumb ${cssClass}`;
+  figure.appendChild(canvas);
+  const caption = document.createElement('figcaption');
+  caption.textContent = label;
+  figure.appendChild(caption);
+  return figure;
+}
+
+async function renderBook(book, isbn, expected, pdf) {
   $('app').innerHTML = `
     <header>${headerHtml(book, isbn)}</header>
-    <p>toc: ${expected.toc ? JSON.stringify(expected.toc) : 'none'}</p>
-    <p>${expected.chapters.length} chapters (thumbnails land in a later task)</p>
+    <section id="toc-section" class="section toc-section">
+      <h2>Table of contents</h2>
+      <div id="toc-grid" class="grid"></div>
+    </section>
+    <section class="section chapters-section">
+      <h2>Chapters</h2>
+      <div id="chapters-grid" class="grid"></div>
+    </section>
     <div class="controls">
       <button id="prev" ${state.index === 0 ? 'disabled' : ''}>Prev</button>
       <button id="reject" class="reject">Reject</button>
       <button id="accept" class="accept">Accept</button>
     </div>
   `;
+
+  const tocPages = tocPageRange(expected.toc);
+  if (tocPages.length === 0) {
+    $('toc-section').classList.add('hidden');
+  } else {
+    const tocGrid = $('toc-grid');
+    for (const pdfIndex of tocPages) {
+      tocGrid.appendChild(await renderPageThumb(pdf, pdfIndex, `TOC — p.${pdfIndex}`, 'toc-thumb'));
+    }
+  }
+
+  const chaptersGrid = $('chapters-grid');
+  for (const chapter of expected.chapters) {
+    const authors = (chapter.authors || []).join(', ');
+    const label = `${chapter.title} — ${authors} (${chapter.citation_pages ?? '?'})`;
+    chaptersGrid.appendChild(
+      await renderPageThumb(pdf, chapter.pdf_start_index, label, 'chapter-thumb')
+    );
+  }
+
   highlightDecision(isbn);
   $('prev').addEventListener('click', goPrev);
   $('accept').addEventListener('click', () => decide(isbn, 'accepted'));
@@ -145,7 +196,15 @@ async function render(fromDecision = false) {
     return;
   }
 
-  renderBookPlaceholder(book, isbn, expected);
+  let pdf;
+  try {
+    pdf = await window.pdfjsLib.getDocument(`../corpus/${state.corpus}/${isbn}.pdf`).promise;
+  } catch (err) {
+    renderSkippable(book, isbn, `PDF not available: ${err.message}`);
+    return;
+  }
+
+  await renderBook(book, isbn, expected, pdf);
 }
 
 async function init() {

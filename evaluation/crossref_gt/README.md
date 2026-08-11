@@ -203,3 +203,48 @@ future manifest addition needs the same treatment:
   wall too, but only in front of "Freemium"-restricted titles (HTTP 401
   when denied). Genuinely open-access OpenEdition titles serve the PDF
   directly with a plain request.
+
+## Automated discovery
+
+`evaluation/scripts/discover_crossref_candidates.py` finds new candidates
+automatically, seeded from the OA publishers already in this manifest
+(Crossref member IDs recorded in the script itself), resolving each
+candidate's PDF URL via Crossref's own registered link, then Unpaywall,
+then OpenAlex. New entries get `"discovery_source": "auto"` (existing
+curated entries are `"manual"`). Candidates in currently-underrepresented
+languages are prioritized; `--max-per-language` (default 5) caps how many
+of one language get added per run.
+
+```bash
+uv run python evaluation/scripts/discover_crossref_candidates.py
+uv run python evaluation/scripts/discover_crossref_candidates.py --dry-run
+```
+
+Run `fetch_crossref_gt_corpus.py` afterwards to download the new entries,
+then `build_crossref_gt_ground_truth.py` to reconcile them. Since
+`build_crossref_gt_ground_truth.py` now also gates migration on a
+layout-feature **novelty check** (in addition to the existing
+offset-consensus/content-search confirmation), confirmed candidates land
+in `evaluation/corpus/pending/`, not `open-access/` -- see
+`docs/superpowers/specs/2026-08-11-crossref-gt-corpus-expansion-design.md`.
+Promoting a `pending/` book into `open-access/` (after reviewing it, or
+evaluating it in isolation via `evaluate_layout_toc_classifier.py
+--corpora open-access,pending`) is still the manual step
+`evaluation/CLAUDE.md` already documents.
+
+The novelty check requires a working `pdfalto` binary (see
+`evaluation/scripts/pdfalto_runner.py`) -- it's only invoked for a
+candidate that has *already* cleared the offset-consensus/content-search
+confirmation gate, so an environment without `pdfalto` installed can still
+run discovery and fetching end-to-end, and will even get partway through
+reconciliation (every book that fails confirmation first prints its own
+`SKIP` line normally), but `build_crossref_gt_ground_truth.py` itself
+raises an uncaught `FileNotFoundError` the first time a confirmed
+candidate reaches the novelty step -- it does not continue past that
+book. In a first live run of this pipeline, one `discover_crossref_candidates.py`
+pass found 15 new candidates (6 of which downloaded a PDF; the other 9
+hit a publisher bot-wall); reconciliation printed a normal `SKIP` line for
+all 43 pre-existing books first, then crashed this way on the very first
+newly-fetched candidate it reached that had actually cleared confirmation
+-- install `pdfalto` to get past that point and reach the remaining
+newly-fetched candidates.

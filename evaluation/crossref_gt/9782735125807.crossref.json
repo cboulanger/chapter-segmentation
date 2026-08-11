@@ -1,0 +1,940 @@
+{
+  "isbn": "9782735125807",
+  "fetched_at": "2026-08-11T13:50:13.375662+00:00",
+  "license": "https://www.openedition.org/12554",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36350",
+      "type": "book-chapter",
+      "page": "13‑28-13‑28",
+      "title": [
+        "Chapitre 1. L’archéologue et les amphores : 1867 à 1907"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36365",
+      "type": "book-chapter",
+      "page": "45‑127-45‑127",
+      "title": [
+        "Chapitre 4. Le catalogue des marques"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36400",
+      "type": "book-chapter",
+      "page": "146-146",
+      "title": [
+        "Résumé"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36380",
+      "type": "book-chapter",
+      "page": "138-138",
+      "title": [
+        "Annexe 1. Index du mot amphore dans Bulliot I et Déchelette 1904"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36375",
+      "type": "book-chapter",
+      "page": "137-137",
+      "title": [
+        "Postface. Les amphores de Bibracte, passé et futur"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36360",
+      "type": "book-chapter",
+      "page": "35‑43-35‑43",
+      "title": [
+        "Chapitre 3. L’élaboration du catalogue"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36355",
+      "type": "book-chapter",
+      "page": "29‑34-29‑34",
+      "title": [
+        "Chapitre 2. La constitution des collections"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36410",
+      "type": "book-chapter",
+      "page": "148-148",
+      "title": [
+        "Zusammenfassung"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36345",
+      "type": "book-chapter",
+      "page": "11‑12-11‑12",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36385",
+      "type": "book-chapter",
+      "page": "139-139",
+      "title": [
+        "Annexe 2. Liste des timbres"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36390",
+      "type": "book-chapter",
+      "page": "141‑144-141‑144",
+      "title": [
+        "Bibliographie"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36370",
+      "type": "book-chapter",
+      "page": "129‑136-129‑136",
+      "title": [
+        "Chapitre 5. Réflexions sur les données du matériel timbré"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36405",
+      "type": "book-chapter",
+      "page": "147-147",
+      "title": [
+        "Abstract"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36395",
+      "type": "book-chapter",
+      "page": "145-145",
+      "title": [
+        "Index thématique"
+      ],
+      "author": [
+        {
+          "given": "Fanette",
+          "family": "Laubenheimer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1991,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1991-01-01T00:00:00Z",
+            "timestamp": 662688000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.editionsmsh.36335",
+      "type": "book-chapter",
+      "page": "9-10",
+      "title": [
+        "Préface"
+      ],
+      "author": [
+        {
+          "given": "Jack",
+          "family": "Lang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les amphores de Bibracte"
+      ],
+      "ISBN": [
+        "9782735125807",
+        "9782735103911"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Chapitre 1. L’archéologue et les amphores : 1867 à 1907",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36350",
+      "citation_pages": "13‑28-13‑28"
+    },
+    {
+      "title": "Chapitre 4. Le catalogue des marques",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36365",
+      "citation_pages": "45‑127-45‑127"
+    },
+    {
+      "title": "Résumé",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36400",
+      "citation_pages": "146-146"
+    },
+    {
+      "title": "Annexe 1. Index du mot amphore dans Bulliot I et Déchelette 1904",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36380",
+      "citation_pages": "138-138"
+    },
+    {
+      "title": "Postface. Les amphores de Bibracte, passé et futur",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36375",
+      "citation_pages": "137-137"
+    },
+    {
+      "title": "Chapitre 3. L’élaboration du catalogue",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36360",
+      "citation_pages": "35‑43-35‑43"
+    },
+    {
+      "title": "Chapitre 2. La constitution des collections",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36355",
+      "citation_pages": "29‑34-29‑34"
+    },
+    {
+      "title": "Zusammenfassung",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36410",
+      "citation_pages": "148-148"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36345",
+      "citation_pages": "11‑12-11‑12"
+    },
+    {
+      "title": "Annexe 2. Liste des timbres",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36385",
+      "citation_pages": "139-139"
+    },
+    {
+      "title": "Bibliographie",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36390",
+      "citation_pages": "141‑144-141‑144"
+    },
+    {
+      "title": "Chapitre 5. Réflexions sur les données du matériel timbré",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36370",
+      "citation_pages": "129‑136-129‑136"
+    },
+    {
+      "title": "Abstract",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36405",
+      "citation_pages": "147-147"
+    },
+    {
+      "title": "Index thématique",
+      "authors": [
+        "Fanette Laubenheimer"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36395",
+      "citation_pages": "145-145"
+    },
+    {
+      "title": "Préface",
+      "authors": [
+        "Jack Lang"
+      ],
+      "chapter_doi": "10.4000/books.editionsmsh.36335",
+      "citation_pages": "9-10"
+    }
+  ]
+}

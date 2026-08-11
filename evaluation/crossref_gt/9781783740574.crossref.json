@@ -1,0 +1,538 @@
+{
+  "isbn": "9781783740574",
+  "fetched_at": "2026-08-11T13:50:25.922053+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "unpaywall",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0042.12",
+      "type": "book-chapter",
+      "page": "1-61",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.03",
+      "type": "book-chapter",
+      "page": "81-89",
+      "title": [
+        "Reigns of Peter II (1727-1730), Anna Ivanovna (1730-1740), Ivan VI (1740-1741), and Elizabeth (1741-1762)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.10",
+      "type": "book-chapter",
+      "page": "273-308",
+      "title": [
+        "Reign of Alexander III (1881-1894)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.08",
+      "type": "book-chapter",
+      "page": "185-225",
+      "title": [
+        "The Crimean War (28 March 1854-27 April 1856)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.11",
+      "type": "book-chapter",
+      "page": "311-403",
+      "title": [
+        "Reign of Nicholas II (1894-1917)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.09",
+      "type": "book-chapter",
+      "page": "227-271",
+      "title": [
+        "Reign of Alexander II (1855-1881)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.01",
+      "type": "book-chapter",
+      "page": "63-68",
+      "title": [
+        "Reigns of the First Romanovs: Mikhail Fedorovich (1613-1645), Aleksei Mikhailovich (1645-1676), and Fedor Alekseevich (1676-1682)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.05",
+      "type": "book-chapter",
+      "page": "115-117",
+      "title": [
+        "Reign of Paul I (1796-1801)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.06",
+      "type": "book-chapter",
+      "page": "119-147",
+      "title": [
+        "Reign of Alexander I (1801-1825)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.02",
+      "type": "book-chapter",
+      "page": "71-79",
+      "title": [
+        "Reigns of Peter I (1682-1725), including joint reign with Ivan V (1682-1696) and regency of Sophia (1686-1689), and Catherine I (1725-1727)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.04",
+      "type": "book-chapter",
+      "page": "91-113",
+      "title": [
+        "Reigns of Peter III (1762) and Catherine II (1762-1796)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0042.07",
+      "type": "book-chapter",
+      "page": "149-183",
+      "title": [
+        "Reign of Nicholas I (1825-1855)"
+      ],
+      "author": [
+        {
+          "given": "Anthony",
+          "family": "Cross",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "In the Land of the Romanovs: An Annotated Bibliography of First-hand English-language Accounts of the Russian Empire (1613-1917)"
+      ],
+      "ISBN": [
+        "9781783740574"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Introduction",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.12",
+      "citation_pages": "1-61"
+    },
+    {
+      "title": "Reigns of Peter II (1727-1730), Anna Ivanovna (1730-1740), Ivan VI (1740-1741), and Elizabeth (1741-1762)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.03",
+      "citation_pages": "81-89"
+    },
+    {
+      "title": "Reign of Alexander III (1881-1894)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.10",
+      "citation_pages": "273-308"
+    },
+    {
+      "title": "The Crimean War (28 March 1854-27 April 1856)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.08",
+      "citation_pages": "185-225"
+    },
+    {
+      "title": "Reign of Nicholas II (1894-1917)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.11",
+      "citation_pages": "311-403"
+    },
+    {
+      "title": "Reign of Alexander II (1855-1881)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.09",
+      "citation_pages": "227-271"
+    },
+    {
+      "title": "Reigns of the First Romanovs: Mikhail Fedorovich (1613-1645), Aleksei Mikhailovich (1645-1676), and Fedor Alekseevich (1676-1682)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.01",
+      "citation_pages": "63-68"
+    },
+    {
+      "title": "Reign of Paul I (1796-1801)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.05",
+      "citation_pages": "115-117"
+    },
+    {
+      "title": "Reign of Alexander I (1801-1825)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.06",
+      "citation_pages": "119-147"
+    },
+    {
+      "title": "Reigns of Peter I (1682-1725), including joint reign with Ivan V (1682-1696) and regency of Sophia (1686-1689), and Catherine I (1725-1727)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.02",
+      "citation_pages": "71-79"
+    },
+    {
+      "title": "Reigns of Peter III (1762) and Catherine II (1762-1796)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.04",
+      "citation_pages": "91-113"
+    },
+    {
+      "title": "Reign of Nicholas I (1825-1855)",
+      "authors": [
+        "Anthony Cross"
+      ],
+      "chapter_doi": "10.11647/obp.0042.07",
+      "citation_pages": "149-183"
+    }
+  ]
+}

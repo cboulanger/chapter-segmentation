@@ -79,13 +79,17 @@ def select_threshold(
     return positive_probs[n_needed - 1]
 
 
-def load_book_corpus() -> list[dict]:
+def load_book_corpus(corpora: list[str] | None = None) -> list[dict]:
     """Returns one entry per book with a usable "toc" field: {"key",
     "corpus", "pdf_path", "labels"} -- books whose .expected.json has no
     "toc" key at all are excluded entirely (not yet retrofitted, or
-    flagged for manual review), per the design spec."""
+    flagged for manual review), per the design spec. `corpora` defaults
+    to every corpus this pilot normally scores against (_CORPORA);
+    pass an explicit subset (e.g. ["open-access"]) to restrict it, e.g.
+    to evaluate evaluation/corpus/pending/ candidates before promotion,
+    or to compute a novelty baseline from open-access alone."""
     books = []
-    for corpus in _CORPORA:
+    for corpus in corpora if corpora is not None else _CORPORA:
         corpus_dir = _CORPUS_DIR / corpus
         for expected_path in sorted(corpus_dir.glob("*.expected.json")):
             key = expected_path.name.removesuffix(".expected.json")
@@ -312,10 +316,19 @@ def main() -> int:
             f"pages are produced. Default: {_CHAPTER_FIRST_RECALL_TOLERANCE}."
         ),
     )
+    parser.add_argument(
+        "--corpora",
+        default=",".join(_CORPORA),
+        help=(
+            "Comma-separated list of evaluation/corpus/ subdirectories to load books "
+            "from (e.g. 'open-access,pending' to include unreviewed candidates). "
+            f"Default: {','.join(_CORPORA)}."
+        ),
+    )
     args = parser.parse_args()
     pdfalto_bin = resolve_pdfalto_binary(args.pdfalto_bin)
 
-    books = load_book_corpus()
+    books = load_book_corpus(corpora=[c.strip() for c in args.corpora.split(",") if c.strip()])
     if not books:
         print("No books with a 'toc' field found -- run add_toc_ground_truth.py first.")
         return 1

@@ -177,6 +177,38 @@ class TestLoadBookCorpus(unittest.TestCase):
         self.assertEqual(books[0]["pdf_path"], oa_dir / "book-a.pdf")
         self.assertEqual(len(books[0]["labels"]), 5)
 
+    def test_corpora_param_restricts_which_directories_are_scanned(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            oa_dir = tmp_path / "open-access"
+            cs_dir = tmp_path / "copyrighted-scans"
+            oa_dir.mkdir()
+            cs_dir.mkdir()
+
+            (oa_dir / "book-a.expected.json").write_text(
+                json.dumps({"toc": None, "chapters": []}), encoding="utf-8"
+            )
+            (oa_dir / "book-a.pdf").write_bytes(b"%PDF-fake")
+
+            (cs_dir / "book-c.expected.json").write_text(
+                json.dumps({"toc": None, "chapters": []}), encoding="utf-8"
+            )
+            (cs_dir / "book-c.pdf").write_bytes(b"%PDF-fake")
+
+            fake_reader = Mock()
+            fake_reader.pages = [Mock()] * 5
+
+            with patch(
+                "evaluation.scripts.evaluate_layout_toc_classifier._CORPUS_DIR", tmp_path
+            ), patch(
+                "evaluation.scripts.evaluate_layout_toc_classifier.PdfReader",
+                return_value=fake_reader,
+            ):
+                books = load_book_corpus(corpora=["open-access"])
+
+        self.assertEqual(len(books), 1)
+        self.assertEqual(books[0]["key"], "book-a")
+
 
 def _feature_row(book_key: str, label: str, value: float) -> dict:
     return {"book_key": book_key, "features": {name: value for name in FEATURE_NAMES}, "label": label}

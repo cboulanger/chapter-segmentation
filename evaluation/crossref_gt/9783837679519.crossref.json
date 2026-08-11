@@ -1,0 +1,595 @@
+{
+  "isbn": "9783837679519",
+  "fetched_at": "2026-08-11T21:25:47.886047+00:00",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2026-03-10T00:00:00Z",
+            "timestamp": 1773100800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839439449-201",
+      "type": "book-chapter",
+      "page": "201-228",
+      "title": [
+        "Literaturverzeichnis"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Hille",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Biohacking und kybernetische Biopolitik"
+      ],
+      "ISBN": [
+        "9783837679519",
+        "9783839439449"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2026-03-10T00:00:00Z",
+            "timestamp": 1773100800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839439449-115",
+      "type": "book-chapter",
+      "page": "115-150",
+      "title": [
+        "4. Symptome des Lebens"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Hille",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Biohacking und kybernetische Biopolitik"
+      ],
+      "ISBN": [
+        "9783837679519",
+        "9783839439449"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2026-03-10T00:00:00Z",
+            "timestamp": 1773100800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839439449-001",
+      "type": "book-chapter",
+      "page": "1-6",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Hille",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Biohacking und kybernetische Biopolitik"
+      ],
+      "ISBN": [
+        "9783837679519",
+        "9783839439449"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2026-03-10T00:00:00Z",
+            "timestamp": 1773100800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839439449-007",
+      "type": "book-chapter",
+      "page": "7-8",
+      "title": [
+        "Danksagung"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Hille",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Biohacking und kybernetische Biopolitik"
+      ],
+      "ISBN": [
+        "9783837679519",
+        "9783839439449"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2026-03-10T00:00:00Z",
+            "timestamp": 1773100800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839439449-183",
+      "type": "book-chapter",
+      "page": "183-200",
+      "title": [
+        "6. Zukünftige Leben"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Hille",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Biohacking und kybernetische Biopolitik"
+      ],
+      "ISBN": [
+        "9783837679519",
+        "9783839439449"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2026-03-10T00:00:00Z",
+            "timestamp": 1773100800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839439449-029",
+      "type": "book-chapter",
+      "page": "29-74",
+      "title": [
+        "2. Geheimnisse des Lebens"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Hille",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Biohacking und kybernetische Biopolitik"
+      ],
+      "ISBN": [
+        "9783837679519",
+        "9783839439449"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2026-03-10T00:00:00Z",
+            "timestamp": 1773100800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839439449-009",
+      "type": "book-chapter",
+      "page": "9-27",
+      "title": [
+        "1. »We have always been Biohackers«"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Hille",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Biohacking und kybernetische Biopolitik"
+      ],
+      "ISBN": [
+        "9783837679519",
+        "9783839439449"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2026-03-10T00:00:00Z",
+            "timestamp": 1773100800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839439449-075",
+      "type": "book-chapter",
+      "page": "75-113",
+      "title": [
+        "3. Vermessungen des Lebens"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Hille",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Biohacking und kybernetische Biopolitik"
+      ],
+      "ISBN": [
+        "9783837679519",
+        "9783839439449"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2026-03-10T00:00:00Z",
+            "timestamp": 1773100800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839439449-151",
+      "type": "book-chapter",
+      "page": "151-181",
+      "title": [
+        "5. Zuschnitte des Lebens"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Hille",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Biohacking und kybernetische Biopolitik"
+      ],
+      "ISBN": [
+        "9783837679519",
+        "9783839439449"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Literaturverzeichnis",
+      "authors": [
+        "Laura Hille"
+      ],
+      "chapter_doi": "10.14361/9783839439449-201",
+      "citation_pages": "201-228"
+    },
+    {
+      "title": "4. Symptome des Lebens",
+      "authors": [
+        "Laura Hille"
+      ],
+      "chapter_doi": "10.14361/9783839439449-115",
+      "citation_pages": "115-150"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Laura Hille"
+      ],
+      "chapter_doi": "10.14361/9783839439449-001",
+      "citation_pages": "1-6"
+    },
+    {
+      "title": "Danksagung",
+      "authors": [
+        "Laura Hille"
+      ],
+      "chapter_doi": "10.14361/9783839439449-007",
+      "citation_pages": "7-8"
+    },
+    {
+      "title": "6. Zukünftige Leben",
+      "authors": [
+        "Laura Hille"
+      ],
+      "chapter_doi": "10.14361/9783839439449-183",
+      "citation_pages": "183-200"
+    },
+    {
+      "title": "2. Geheimnisse des Lebens",
+      "authors": [
+        "Laura Hille"
+      ],
+      "chapter_doi": "10.14361/9783839439449-029",
+      "citation_pages": "29-74"
+    },
+    {
+      "title": "1. »We have always been Biohackers«",
+      "authors": [
+        "Laura Hille"
+      ],
+      "chapter_doi": "10.14361/9783839439449-009",
+      "citation_pages": "9-27"
+    },
+    {
+      "title": "3. Vermessungen des Lebens",
+      "authors": [
+        "Laura Hille"
+      ],
+      "chapter_doi": "10.14361/9783839439449-075",
+      "citation_pages": "75-113"
+    },
+    {
+      "title": "5. Zuschnitte des Lebens",
+      "authors": [
+        "Laura Hille"
+      ],
+      "chapter_doi": "10.14361/9783839439449-151",
+      "citation_pages": "151-181"
+    }
+  ]
+}

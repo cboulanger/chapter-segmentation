@@ -187,6 +187,23 @@ reflected in the table above.
   `evaluation/corpus/open-access/`, so removing them here caused no
   redistribution problem; they were simply deleted (manifest entry, PDF,
   `.crossref.json`) rather than left in as if they were OA.
+- **Removed: 14 single-authored books that had migrated into
+  `evaluation/corpus/pending/`.** `discover_crossref_candidates.py`
+  originally queried Crossref's `monograph` work type alongside
+  `edited-book`; a monograph's individual sections/chapters still get their
+  own Crossref `book-chapter` records, all crediting the same one author,
+  which isn't the "editors + distinct chapter authors" case this corpus
+  and `evaluation/corpus/pending/` are meant to exercise. Removed:
+  `9781783745753`, `9781783748570`, `9781783749812`, `9781800641266`,
+  `9781800642522`, `9781800643000`, `9781800643208`, `9781800647565`,
+  `9781805110040`, `9781805110187`, `9781805110460`, `9781805114093`,
+  `9781805115304`, `9782821895065` -- manifest entry, PDF, `.crossref.json`,
+  and their `evaluation/corpus/pending/` PDF/`.expected.json`/manifest
+  entry all deleted together. `discover_crossref_candidates.py` now only
+  queries `edited-book`, and `build_crossref_gt_ground_truth.py` gates
+  migration on at least 2 distinct chapter authors as a second check
+  (Crossref's own type classification isn't perfectly reliable either
+  way), so a future reconciliation run won't just re-add these.
 
 ## Downloading: host-specific quirks
 

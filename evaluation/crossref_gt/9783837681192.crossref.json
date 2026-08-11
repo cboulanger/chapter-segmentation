@@ -1,0 +1,971 @@
+{
+  "isbn": "9783837681192",
+  "fetched_at": "2026-08-11T21:25:47.653229+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-001",
+      "type": "book-chapter",
+      "page": "1-6",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Böhler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Susanne Valerie",
+          "family": "Granzer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-215",
+      "type": "book-chapter",
+      "page": "215-242",
+      "title": [
+        "Along Each Other. On Shown and Told by Meg Stuart and Tim Etchells"
+      ],
+      "author": [
+        {
+          "given": "Krassimira",
+          "family": "Kruschkova",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-089",
+      "type": "book-chapter",
+      "page": "89-109",
+      "title": [
+        "A Melancholic's Survival Kit"
+      ],
+      "author": [
+        {
+          "given": "Avital",
+          "family": "Ronell",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-199",
+      "type": "book-chapter",
+      "page": "199-214",
+      "title": [
+        "Nothing to Fix"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Noeth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-157",
+      "type": "book-chapter",
+      "page": "157-177",
+      "title": [
+        "Thinking, Evaluating, Enjoying"
+      ],
+      "author": [
+        {
+          "given": "Soumyabrata",
+          "family": "Choudhury",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-007",
+      "type": "book-chapter",
+      "page": "7-42",
+      "title": [
+        "Introduction: Arts-Based-Philosophy"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Böhler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-291",
+      "type": "book-chapter",
+      "page": "291-291",
+      "title": [
+        "About mdw"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Böhler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Susanne Valerie",
+          "family": "Granzer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-243",
+      "type": "book-chapter",
+      "page": "243-258",
+      "title": [
+        "The Feeling of Thinking"
+      ],
+      "author": [
+        {
+          "given": "Veronika",
+          "family": "Reichl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-285",
+      "type": "book-chapter",
+      "page": "285-286",
+      "title": [
+        "List of Illustrations"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Böhler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Susanne Valerie",
+          "family": "Granzer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-259",
+      "type": "book-chapter",
+      "page": "259-284",
+      "title": [
+        "Gay Troublemakers"
+      ],
+      "author": [
+        {
+          "given": "Susanne Valerie",
+          "family": "Granzer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-043",
+      "type": "book-chapter",
+      "page": "43-87",
+      "title": [
+        "Poets of the Heart"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Böhler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-111",
+      "type": "book-chapter",
+      "page": "111-156",
+      "title": [
+        "Hölderlin’s ‘Celebration of Peace’ and Kant’s Treaty ‘Toward Perpetual Peace’"
+      ],
+      "author": [
+        {
+          "given": "Violetta L.",
+          "family": "Waibel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-287",
+      "type": "book-chapter",
+      "page": "287-289",
+      "title": [
+        "List of Contributors"
+      ],
+      "author": [
+        {
+          "given": "Arno",
+          "family": "Böhler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Susanne Valerie",
+          "family": "Granzer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T00:00:00Z",
+            "timestamp": 1770076800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839472118-179",
+      "type": "book-chapter",
+      "page": "179-198",
+      "title": [
+        "The Balloon Universe"
+      ],
+      "author": [
+        {
+          "given": "Tanja",
+          "family": "Traxler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Reinhold A.",
+          "family": "Bertlmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Flavor of Thinking"
+      ],
+      "ISBN": [
+        "9783837681192",
+        "9783839472118"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Arno Böhler",
+        "Susanne Valerie Granzer"
+      ],
+      "chapter_doi": "10.14361/9783839472118-001",
+      "citation_pages": "1-6"
+    },
+    {
+      "title": "Along Each Other. On Shown and Told by Meg Stuart and Tim Etchells",
+      "authors": [
+        "Krassimira Kruschkova"
+      ],
+      "chapter_doi": "10.14361/9783839472118-215",
+      "citation_pages": "215-242"
+    },
+    {
+      "title": "A Melancholic's Survival Kit",
+      "authors": [
+        "Avital Ronell"
+      ],
+      "chapter_doi": "10.14361/9783839472118-089",
+      "citation_pages": "89-109"
+    },
+    {
+      "title": "Nothing to Fix",
+      "authors": [
+        "Sandra Noeth"
+      ],
+      "chapter_doi": "10.14361/9783839472118-199",
+      "citation_pages": "199-214"
+    },
+    {
+      "title": "Thinking, Evaluating, Enjoying",
+      "authors": [
+        "Soumyabrata Choudhury"
+      ],
+      "chapter_doi": "10.14361/9783839472118-157",
+      "citation_pages": "157-177"
+    },
+    {
+      "title": "Introduction: Arts-Based-Philosophy",
+      "authors": [
+        "Arno Böhler"
+      ],
+      "chapter_doi": "10.14361/9783839472118-007",
+      "citation_pages": "7-42"
+    },
+    {
+      "title": "About mdw",
+      "authors": [
+        "Arno Böhler",
+        "Susanne Valerie Granzer"
+      ],
+      "chapter_doi": "10.14361/9783839472118-291",
+      "citation_pages": "291-291"
+    },
+    {
+      "title": "The Feeling of Thinking",
+      "authors": [
+        "Veronika Reichl"
+      ],
+      "chapter_doi": "10.14361/9783839472118-243",
+      "citation_pages": "243-258"
+    },
+    {
+      "title": "List of Illustrations",
+      "authors": [
+        "Arno Böhler",
+        "Susanne Valerie Granzer"
+      ],
+      "chapter_doi": "10.14361/9783839472118-285",
+      "citation_pages": "285-286"
+    },
+    {
+      "title": "Gay Troublemakers",
+      "authors": [
+        "Susanne Valerie Granzer"
+      ],
+      "chapter_doi": "10.14361/9783839472118-259",
+      "citation_pages": "259-284"
+    },
+    {
+      "title": "Poets of the Heart",
+      "authors": [
+        "Arno Böhler"
+      ],
+      "chapter_doi": "10.14361/9783839472118-043",
+      "citation_pages": "43-87"
+    },
+    {
+      "title": "Hölderlin’s ‘Celebration of Peace’ and Kant’s Treaty ‘Toward Perpetual Peace’",
+      "authors": [
+        "Violetta L. Waibel"
+      ],
+      "chapter_doi": "10.14361/9783839472118-111",
+      "citation_pages": "111-156"
+    },
+    {
+      "title": "List of Contributors",
+      "authors": [
+        "Arno Böhler",
+        "Susanne Valerie Granzer"
+      ],
+      "chapter_doi": "10.14361/9783839472118-287",
+      "citation_pages": "287-289"
+    },
+    {
+      "title": "The Balloon Universe",
+      "authors": [
+        "Tanja Traxler",
+        "Reinhold A. Bertlmann"
+      ],
+      "chapter_doi": "10.14361/9783839472118-179",
+      "citation_pages": "179-198"
+    }
+  ]
+}

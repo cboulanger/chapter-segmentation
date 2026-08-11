@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """One-time reconciliation: turn evaluation/crossref_gt/ (Crossref-sourced
 book-chapter metadata -- printed citation_pages ranges only, no PDF-relative
-indices) into real evaluation/corpus/open-access/ ground truth, completing
+indices) into real evaluation/corpus/pending/ ground truth, completing
 the "Follow-up work" explicitly deferred in
 docs/superpowers/specs/2026-08-08-crossref-gt-corpus-design.md.
 
@@ -38,6 +38,8 @@ docs/superpowers/specs/2026-08-11-crossref-gt-corpus-expansion-design.md.
 Usage:
     uv run python evaluation/scripts/build_crossref_gt_ground_truth.py --dry-run
     uv run python evaluation/scripts/build_crossref_gt_ground_truth.py
+    uv run python evaluation/scripts/build_crossref_gt_ground_truth.py --pdfalto-bin /path/to/pdfalto
+    uv run python evaluation/scripts/build_crossref_gt_ground_truth.py --novelty-percentile 95
 """
 
 import argparse
@@ -197,6 +199,23 @@ def _load_novelty_baseline(pdfalto_bin: str, novelty_percentile: float) -> Novel
     return NoveltyBaseline(pdfalto_bin, scaler, chapter_first_vectors, threshold)
 
 
+def _candidate_is_novel(pdf_path: Path, confirmed: list[dict], baseline: NoveltyBaseline) -> bool | None:
+    """True/False if novelty could be evaluated; None if no confirmed
+    chapter-first page had an extractable layout-feature vector at all
+    (distinct from "evaluated and found not novel")."""
+    alto_path = ensure_alto_xml(pdf_path, _ALTO_CACHE_DIR, baseline.pdfalto_bin)
+    page_features = extract_page_features(str(alto_path))
+    candidate_rows = [
+        [page_features[c["pdf_start_index"]][name] for name in FEATURE_NAMES]
+        for c in confirmed
+        if c["pdf_start_index"] in page_features
+    ]
+    if not candidate_rows:
+        return None
+    candidate_vectors = baseline.scaler.transform(candidate_rows).tolist()
+    return _is_novel(candidate_vectors, baseline.chapter_first_vectors, baseline.threshold)
+
+
 def _citation_start(citation_pages: str | None) -> str | None:
     if not citation_pages:
         return None
@@ -291,8 +310,8 @@ def process_book(book: dict, dry_run: bool, novelty_baseline: NoveltyBaseline) -
         return isbn, "SKIP: no PDF (fetch_crossref_gt_corpus.py first)"
     if not crossref_path.exists():
         return isbn, "SKIP: no crossref.json"
-    if target_expected.exists():
-        return isbn, "SKIP: already migrated (evaluation/corpus/pending/*.expected.json exists)"
+    if target_expected.exists() or (_OPEN_ACCESS_DIR / f"{isbn}.expected.json").exists():
+        return isbn, "SKIP: already migrated (open-access/ or pending/)"
 
     chapters = json.loads(crossref_path.read_text(encoding="utf-8"))["chapters"]
     if not chapters:
@@ -358,17 +377,10 @@ def process_book(book: dict, dry_run: bool, novelty_baseline: NoveltyBaseline) -
     if error:
         return isbn, f"SKIP: sanity check failed after reconciliation: {error}"
 
-    alto_path = ensure_alto_xml(pdf_path, _ALTO_CACHE_DIR, novelty_baseline.pdfalto_bin)
-    page_features = extract_page_features(str(alto_path))
-    candidate_rows = [
-        [page_features[c["pdf_start_index"]][name] for name in FEATURE_NAMES]
-        for c in confirmed
-        if c["pdf_start_index"] in page_features
-    ]
-    if not candidate_rows:
+    is_novel = _candidate_is_novel(pdf_path, confirmed, novelty_baseline)
+    if is_novel is None:
         return isbn, "SKIP: no layout features extracted for confirmed chapter-first pages"
-    candidate_vectors = novelty_baseline.scaler.transform(candidate_rows).tolist()
-    if not _is_novel(candidate_vectors, novelty_baseline.chapter_first_vectors, novelty_baseline.threshold):
+    if not is_novel:
         return isbn, (
             f"SKIP: not novel (no confirmed chapter-first page's nearest-neighbor "
             f"distance reaches the {novelty_baseline.threshold:.3f} threshold)"

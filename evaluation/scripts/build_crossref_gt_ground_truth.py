@@ -34,10 +34,13 @@ Usage:
 
 import argparse
 import json
+import math
 import shutil
 import sys
 from collections import Counter
 from pathlib import Path
+
+import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
@@ -55,6 +58,37 @@ _WINDOW = 6  # +/- pages searched around each offset-derived candidate index
 _MIN_MATCH_SCORE = 85.0
 _MIN_CONFIRMED_FRACTION = 0.8
 _MIN_CONFIRMED_CHAPTERS = 3
+
+
+def _nearest_neighbor_distance(vector: list[float], others: list[list[float]]) -> float:
+    """Euclidean distance from `vector` to the closest point in `others`."""
+    return min(math.dist(vector, other) for other in others)
+
+
+def _novelty_threshold(vectors: list[list[float]], percentile: float) -> float:
+    """The `percentile`-th percentile of `vectors`' own leave-one-out
+    nearest-neighbor distances -- pages farther than this from the
+    existing corpus sit outside how tightly that corpus already clusters.
+    `vectors` must have at least 2 entries (a single vector has no
+    leave-one-out neighbor to measure against)."""
+    loo_distances = [
+        _nearest_neighbor_distance(vector, vectors[:i] + vectors[i + 1 :])
+        for i, vector in enumerate(vectors)
+    ]
+    return float(np.percentile(loo_distances, percentile))
+
+
+def _is_novel(
+    candidate_vectors: list[list[float]], existing_vectors: list[list[float]], threshold: float
+) -> bool:
+    """True if at least one candidate page's nearest-neighbor distance to
+    the existing corpus meets or exceeds `threshold` -- the design spec's
+    "keep if at least one page is novel" rule, since a book that's mostly
+    ordinary but has one unusual chapter-opening is still worth keeping."""
+    return any(
+        _nearest_neighbor_distance(vector, existing_vectors) >= threshold
+        for vector in candidate_vectors
+    )
 
 
 def _citation_start(citation_pages: str | None) -> str | None:

@@ -12,7 +12,12 @@ see docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.m
 
 import unittest
 
-from evaluation.scripts.build_crossref_gt_ground_truth import _toc_field_for
+from evaluation.scripts.build_crossref_gt_ground_truth import (
+    _is_novel,
+    _nearest_neighbor_distance,
+    _novelty_threshold,
+    _toc_field_for,
+)
 
 
 class TestTocFieldFor(unittest.TestCase):
@@ -38,6 +43,45 @@ class TestTocFieldFor(unittest.TestCase):
         field, write_key, status = _toc_field_for({4})
         self.assertEqual(field, {"toc_start_index": 4, "toc_end_index": 4})
         self.assertTrue(write_key)
+
+
+class TestNearestNeighborDistance(unittest.TestCase):
+    def test_returns_distance_to_closest_point(self):
+        # Distance to [1.0, 0.0] is 1.0; to [3.0, 4.0] is 5.0 -- the
+        # nearer one wins.
+        distance = _nearest_neighbor_distance([0.0, 0.0], [[3.0, 4.0], [1.0, 0.0]])
+        self.assertAlmostEqual(distance, 1.0)
+
+    def test_single_other_point(self):
+        distance = _nearest_neighbor_distance([0.0], [[5.0]])
+        self.assertAlmostEqual(distance, 5.0)
+
+
+class TestNoveltyThreshold(unittest.TestCase):
+    def test_percentile_of_leave_one_out_distances(self):
+        # 1-D vectors [0, 1, 2, 3, 10]. Leave-one-out nearest-neighbor
+        # distance is 1.0 for every point except 10.0 (nearest is 3.0,
+        # distance 7.0): [1, 1, 1, 1, 7]. numpy's default linear-
+        # interpolation 90th percentile of that sorted list is 4.6.
+        vectors = [[0.0], [1.0], [2.0], [3.0], [10.0]]
+        threshold = _novelty_threshold(vectors, percentile=90)
+        self.assertAlmostEqual(threshold, 4.6)
+
+
+class TestIsNovel(unittest.TestCase):
+    def setUp(self):
+        self.existing = [[0.0], [1.0], [2.0]]
+
+    def test_candidate_close_to_existing_is_not_novel(self):
+        self.assertFalse(_is_novel([[0.5]], self.existing, threshold=1.5))
+
+    def test_candidate_far_from_existing_is_novel(self):
+        self.assertTrue(_is_novel([[10.0]], self.existing, threshold=1.5))
+
+    def test_novel_if_any_candidate_page_qualifies(self):
+        # First candidate page is close (not novel alone); second is far.
+        # Keep-if-at-least-one-page-is-novel per the design spec.
+        self.assertTrue(_is_novel([[0.5], [10.0]], self.existing, threshold=1.5))
 
 
 if __name__ == "__main__":

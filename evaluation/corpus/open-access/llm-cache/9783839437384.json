@@ -846,7 +846,163 @@
       ],
       "elapsed_seconds": 28.033312887999955,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "2. Forschungsstand & Forschungsfrage – Organspende in den Sozialwissenschaften",
+          "authors": [
+            "zum einen",
+            "zum anderen",
+            "das Unbehagen",
+            "Diskurs",
+            "Bereich"
+          ],
+          "pdf_start_index": 55,
+          "pdf_end_index": 58,
+          "citation_pages": "19-58",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Theoretische Rahmung: Objekte in der Praxis – eine Spurensuche",
+          "authors": [
+            "Rahmung",
+            "Objekte",
+            "Betrachtet",
+            "Bruno Latour",
+            "Praxisbegriff",
+            "Bedeutung von Objekten",
+            "Zentrum",
+            "Ansätze",
+            "von Annemarie Mol"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 79,
+          "citation_pages": "59-80",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Material und Methoden",
+          "authors": [
+            "Rahmung dar",
+            "Transplantation von Organen",
+            "Rückbindung",
+            "Zustimmung der All-\ngemeinbevölkerung",
+            "erfah-\nren muss"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 107,
+          "citation_pages": "81-108",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Körperlichkeit & Mortalität: Organspende und der Tod des Menschen",
+          "authors": [
+            "Tod",
+            "Auseinandersetzung",
+            "Sterben",
+            "nicht zuletzt  die"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 161,
+          "citation_pages": "109-162",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. Kollektiv & Solidarität – Einblicke in die Transplantationsgemeinschaft",
+          "authors": [
+            "Einblicke",
+            "ausweis ausgefüllt",
+            "Entscheidung über",
+            "Umgang",
+            "Konzept der \n",
+            "zu einem Akt d"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 211,
+          "citation_pages": "163-212",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Wissen, Glauben, Vermuten: Organspende als Information",
+          "authors": [
+            "Wissen",
+            "Glauben",
+            "von Teilen des Körpers",
+            "Idee von Gemeinschaft",
+            "Wissens",
+            "Richtigkeit"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 253,
+          "citation_pages": "213-254",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. Dokument & Materialität: Der Organspendeausweis im Erfahrungsraum der Bürokratie",
+          "authors": [
+            "Der",
+            "Organspendeausweis",
+            "Bürokratie",
+            "ein völlig",
+            "Mühe",
+            "Deutungszusammenh"
+          ],
+          "pdf_start_index": 255,
+          "pdf_end_index": 296,
+          "citation_pages": "255-296",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9. Materielle Metaphern – Eine theoretisch-methodologische Reflexion",
+          "authors": [
+            "Materielle Metaphern",
+            "kennengelernt haben",
+            "Organspendeausweis",
+            "Brille‹ der Praxisforschung"
+          ],
+          "pdf_start_index": 297,
+          "pdf_end_index": 314,
+          "citation_pages": "297-314",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10. Zusammenfassung und science-fiktionaler Blick in die Zukunft",
+          "authors": [
+            "Zusammenfassung",
+            "Beobachtung von Organspende",
+            "von Operationssälen",
+            "Intensivstationen",
+            "Der \nFokus lag auf",
+            "Zuge der Beobachtung"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 354,
+          "citation_pages": "315-354",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 58.10699045499996,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-10T04:47:51.822973+00:00"
+  "generated_at": "2026-08-11T05:07:18.271637+00:00"
 }

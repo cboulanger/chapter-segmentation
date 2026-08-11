@@ -1,0 +1,106 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 1rem 2rem 4rem;
+}
+
+header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #444;
+}
+
+.section.hidden {
+  display: none;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.thumb {
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: 6px;
+  max-width: 360px;
+}
+
+.thumb canvas {
+  display: block;
+  max-width: 100%;
+  cursor: zoom-in;
+  border: 1px solid #ccc;
+}
+
+.thumb figcaption {
+  font-size: 0.7rem;
+  margin-top: 0.4rem;
+  max-width: 360px;
+}
+
+.toc-thumb {
+  background: #eaf4ff;
+}
+
+.chapter-thumb {
+  background: #eefaf0;
+}
+
+.controls {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.controls button {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+.accept {
+  background: #d7f7dd;
+}
+
+.reject {
+  background: #ffe0e0;
+}
+
+.current-choice {
+  outline: 3px solid #333;
+}
+
+.error {
+  color: #a00;
+}
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  z-index: 10;
+}
+
+#lightbox canvas {
+  max-width: 95vw;
+  max-height: 95vh;
+}

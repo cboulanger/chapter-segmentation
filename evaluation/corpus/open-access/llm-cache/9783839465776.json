@@ -801,7 +801,156 @@
       ],
       "elapsed_seconds": 50.566376289999994,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "3 Methodisches Vorgehen",
+          "authors": [
+            "Statistiken",
+            "Gruppe \nvon Teilnehmenden",
+            "Schweiz",
+            "Die Bezeichnung",
+            "von der Staatsbürger-\nschaft",
+            "das Herkunftsland",
+            "Einfachheit"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 72,
+          "citation_pages": "55-72",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4 Darstellung des Samples",
+          "authors": [
+            "Schritt",
+            "Schweizer Sample",
+            "entlang der",
+            "zentralen Kategorien",
+            "Migrations-\nmotiv",
+            "zum Zeitpunkt"
+          ],
+          "pdf_start_index": 73,
+          "pdf_end_index": 84,
+          "citation_pages": "73-84",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5 Migrationsgründe: Die Suche nach dem besseren Leben?",
+          "authors": [
+            "Leben",
+            "viel komplexer",
+            "kann",
+            "ben bewussten"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 128,
+          "citation_pages": "89-128",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6 Wahrnehmung des Heimat- und Ziellandes: Vom ersten Eindruck zu gelebter Realität",
+          "authors": [
+            "Realität",
+            "Detail",
+            "Strich",
+            "Der Fokus",
+            "Kapitels",
+            "Wahrnehmung",
+            "Die Wahrnehmung des Heimat-",
+            "eng verbunden mit",
+            "Migrations-",
+            "Bleibegründen von \nMigrant*innen",
+            "Bild des Ziellandes",
+            "Sicht"
+          ],
+          "pdf_start_index": 133,
+          "pdf_end_index": 187,
+          "citation_pages": "133-188",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7 Lebensgestaltung: Aushandlung des scheinbar Unspektakulären",
+          "authors": [
+            "Unspektakulären",
+            "Der Lebensstil",
+            "Vorstellung"
+          ],
+          "pdf_start_index": 193,
+          "pdf_end_index": 241,
+          "citation_pages": "193-242",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8 Zugehörigkeit: Netze spannen und Wurzeln schlagen",
+          "authors": [
+            "Netze",
+            "mir letztens",
+            "Jahr",
+            "Einbürgerung",
+            "das zu sagen",
+            "hatte längst",
+            "Wohnung",
+            "das Gefühl",
+            "Besucherin bin",
+            "Quatsch"
+          ],
+          "pdf_start_index": 247,
+          "pdf_end_index": 300,
+          "citation_pages": "247-300",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9 Zukunftswünsche und -pläne: Optimistische Perspektiven",
+          "authors": [
+            "wissen tatsächlich nicht",
+            "Schweiz",
+            "Gibt",
+            "ein Zurück",
+            "doch nicht",
+            "Jahren",
+            "Sophies Aussage",
+            "Zukunftsgestaltung insbe-"
+          ],
+          "pdf_start_index": 305,
+          "pdf_end_index": 334,
+          "citation_pages": "305-334",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10 Zwischen Nähe und Differenz: Erkenntnisse aus dem deutsch-schweizerischen Kontext",
+          "authors": [
+            "Zwischen Nähe",
+            "kulturelle",
+            "ein Phänomen",
+            "Vergleich",
+            "Formen"
+          ],
+          "pdf_start_index": 339,
+          "pdf_end_index": 371,
+          "citation_pages": "339-371",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 61.178826714000024,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-10T04:48:42.394697+00:00"
+  "generated_at": "2026-08-11T05:08:19.455921+00:00"
 }

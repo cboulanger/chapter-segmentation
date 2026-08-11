@@ -21,6 +21,7 @@ layout-classifier = ["scikit-learn>=1.4.0"]
 
 [project.scripts]
 chapter-segmentation = "chapter_segmentation.cli:main"
+review = "evaluation.scripts.review_app:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -38,7 +39,7 @@ addopts = "-rs -m 'not integration'"
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/chapter_segmentation"]
+packages = ["src/chapter_segmentation", "evaluation"]
 
 [build-system]
 requires = ["hatchling"]

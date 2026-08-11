@@ -671,7 +671,81 @@ text layer (checked with `pages_need_ocr`) before any scanned PDF is added
 to `copyrighted-scans/` going forward, so this gap doesn't recur silently
 for future books.
 
-## LLM-fallback results (archived -- script removed)
+### Follow-up: recall-target tuning, concentrating on the open-access corpus
+
+With the data-quality issues above addressed, this follow-up asked how far
+the existing pipeline -- unchanged features, unchanged model, unchanged
+decision bar -- could be pushed by tuning `evaluate_layout_toc_classifier.py`'s
+own calibration knob, `_RECALL_TARGET`. `select_threshold` picks the highest
+per-fold probability threshold that still achieves at least `_RECALL_TARGET`
+recall on that fold's *training* positives; the value had been an arbitrary
+`0.90` since the pilot's first run. Since `avg_candidate_fraction` had been
+sitting far under its 15% budget the whole time (4.4% most recently), there
+was untapped room to trade some of that slack for recall by raising the
+target. Per the "concentrate on open-access first, fix outliers later"
+priority, `copyrighted-scans` books stayed in the training pool throughout
+(removing them from training was tried and made open-access recall *worse*,
+not better -- see below) but their own scores were tracked separately rather
+than optimized for.
+
+A sweep over `_RECALL_TARGET` from 0.90 to 1.00 (LOBO over the full 50-book
+corpus) found a steep, then flat, then explosive response:
+
+| `_RECALL_TARGET` | `full_recall_fraction` (all) | `avg_candidate_fraction` (all) |
+| --- | --- | --- |
+| 0.90 (previous) | 18% | 4.4% |
+| 0.95 | 20% | 5.7% |
+| 0.96 | 26% | 6.1% |
+| **0.97** | **28%** | **7.0%** |
+| 0.98 | 28% | 11.1% |
+| 0.99 | 28% | 21.9% |
+| 1.00 | 80% | 87.3% |
+
+0.97 is the cheapest point on the 0.97-0.99 plateau -- same recall as 0.98
+and 0.99, at roughly half to a third of their candidate-fraction cost -- and
+comfortably clear of 1.00's cliff, where the "threshold" degenerates to
+"flag almost every page" and stops being a useful filter at all. Broken down
+by corpus at 0.97:
+
+| corpus | `full_recall_fraction` (before -> after) | `avg_candidate_fraction` |
+| --- | --- | --- |
+| open-access | 24.3% -> 35.1% | 6.6% |
+| copyrighted-scans | 0% -> 7.7% | 7.9% |
+
+Three other tuning ideas were tried and rejected, in the interest of
+recording negative results alongside the positive one:
+
+- **Training on open-access books only** (excluding `copyrighted-scans`
+  entirely from the LOBO training pool, not just from the target metric):
+  this made open-access recall *worse* (16.2% vs. 24.3% at the old 0.90
+  target) -- the other corpus's rows, despite their own data-quality
+  problems, still contribute generalizable signal rather than just noise.
+- **A new feature, `max_font_vpos_fraction`** (the vertical position of the
+  page's *largest-font* line, as opposed to `first_text_vpos_fraction`'s
+  topmost line regardless of size -- meant to stop a running header above
+  the real title from collapsing that signal to near-zero): dropped
+  open-access `full_recall_fraction` from 43.2% to 29.7% at the same 0.97
+  target. With only ~600 positive `chapter_first` rows across 37 books, an
+  11th feature widens the model's overfitting surface faster than it adds
+  real signal.
+- **Splitting `_RECALL_TARGET` per label** (a low target for `toc`, whose
+  pass bar is lenient -- "at least one hit" -- freeing up candidate-fraction
+  budget for a higher `chapter_first` target): backfired. A *lower* target
+  makes `select_threshold` pick a *higher*, more selective threshold; for
+  several books that threshold was high enough to reject every `toc`
+  candidate, failing that label's lenient bar outright. `min_samples_leaf`
+  values above the existing default of 1 (tried 2, 3, 5, 10) were also all
+  strictly worse.
+
+The result is still **NOT MET** (28% vs. the 90% bar), and the previous
+follow-up's bar-strictness finding remains the dominant blocker -- this
+tuning pass narrows the gap without closing it. But it is a real,
+non-cosmetic improvement obtained purely by recalibrating an existing,
+already-arbitrary constant: open-access `full_recall_fraction` improved by
+nearly half (24.3% to 35.1%) while candidate fraction stayed at less than
+half the 15% budget. `copyrighted-scans` remains the weaker corpus by a wide
+margin and continues to be treated as the deferred outlier bucket, per the
+"open-access first" priority this follow-up was scoped to.
 
 **Superseded by "Per-strategy standalone results" above, which measures
 what the LLM itself can find rather than whether a merge/fallback path

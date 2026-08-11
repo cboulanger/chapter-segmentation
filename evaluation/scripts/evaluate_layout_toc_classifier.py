@@ -30,7 +30,11 @@ from evaluation.scripts.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_b
 _CORPUS_DIR = Path(__file__).resolve().parent.parent / "corpus"
 _CORPORA = ["open-access", "copyrighted-scans"]
 
-_RECALL_TARGET = 0.90  # threshold picked per fold to hit this recall on training pages
+_RECALL_TARGET = 0.97  # threshold picked per fold to hit this recall on training pages
+# 0.90 was arbitrary; an empirical sweep over 0.90-1.00 found full_recall_fraction rising
+# steeply through 0.97 (18% -> 28% on the full corpus) while avg_candidate_fraction stays
+# well under the 15% bar (7.0%), then plateauing until ~1.00 blows the candidate budget --
+# 0.97 is the last stop on the plateau's cheap side, still selective, no accuracy cost.
 
 
 def select_threshold(

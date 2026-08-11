@@ -3,7 +3,7 @@ toc_page_range()."""
 
 import unittest
 
-from evaluation.scripts.ground_truth_helper import toc_page_range
+from evaluation.scripts.ground_truth_helper import extract_printed_number, find_toc_pages, toc_page_range
 
 
 class TestTocPageRange(unittest.TestCase):
@@ -21,6 +21,38 @@ class TestTocPageRange(unittest.TestCase):
 
     def test_two_adjacent_singletons_with_gap_returns_none(self):
         self.assertIsNone(toc_page_range({5, 7}))
+
+
+class TestLanguageAgnosticPatternMatching(unittest.TestCase):
+    """Guards find_toc_pages/extract_printed_number against a future change
+    that silently introduces an English-only assumption (e.g. a
+    keyword-based "Contents" search) -- both currently key off page-number
+    *shape* (digits/roman numerals), not language-specific words, so they
+    must work identically on German and French TOC/page-number text."""
+
+    def test_finds_german_toc_page(self):
+        pages = [
+            "Vorwort\n\n\nSeite 3",
+            "Inhaltsverzeichnis\n\nEinleitung .......... 7\nKapitel 1 .......... 15\nKapitel 2 .......... 42\n",
+            "Einleitung\n\nDies ist der erste Absatz.",
+        ]
+        self.assertEqual(find_toc_pages(pages), {1})
+
+    def test_finds_french_toc_page(self):
+        pages = [
+            "Préface\n\n\nPage 3",
+            "Table des matières\n\nIntroduction .......... 7\nChapitre 1 .......... 15\nChapitre 2 .......... 42\n",
+            "Introduction\n\nCeci est le premier paragraphe.",
+        ]
+        self.assertEqual(find_toc_pages(pages), {1})
+
+    def test_extracts_german_footer_page_number(self):
+        text = "Einleitung\n\nDies ist der erste Absatz der Einleitung.\n\n7"
+        self.assertEqual(extract_printed_number(text), "7")
+
+    def test_extracts_french_footer_page_number(self):
+        text = "Introduction\n\nCeci est le premier paragraphe.\n\n7"
+        self.assertEqual(extract_printed_number(text), "7")
 
 
 if __name__ == "__main__":

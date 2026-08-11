@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T05:09:00.435345+00:00",
+  "generated_at": "2026-08-11T05:17:59.046458+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -58,8 +58,31 @@
       "demand_at_run": 0
     },
     "glm-4.7": {
-      "chapters": [],
-      "elapsed_seconds": 0.33899145806208253,
+      "chapters": [
+        {
+          "title": "Born Cultural",
+          "authors": [],
+          "pdf_start_index": 134,
+          "pdf_end_index": 206,
+          "citation_pages": "331-328",
+          "confidence": 0.85,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sign Audience",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 325,
+          "citation_pages": "329-330",
+          "confidence": 0.85,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 3.9517493719999948,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -120,7 +143,7 @@
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 133.57726267399994,
+      "elapsed_seconds": 42.17056596200007,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {

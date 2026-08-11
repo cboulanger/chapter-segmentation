@@ -419,7 +419,211 @@
       ],
       "elapsed_seconds": 7.1492671280000195,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Media and Racism",
+          "authors": [],
+          "pdf_start_index": 55,
+          "pdf_end_index": 68,
+          "citation_pages": "39-56",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bringing the Debate over Marijuana Legalisation into the Mathematics Classroom",
+          "authors": [
+            "Marijuana Legalisation",
+            "Agustín Méndez",
+            "Mario Sánchez Aguilar"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 80,
+          "citation_pages": "57-68",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mathematics Embedded in Community-Based Practices: Landscape of Investigation for Examining Social (In)Justice?",
+          "authors": [
+            "Arindam Bose\nLow",
+            "Ou"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 105,
+          "citation_pages": "69-94",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Aspects of Democracy in Different Contexts of Mathematics Classes",
+          "authors": [
+            "Raquel Milani",
+            "Carolina Faustino",
+            "Lessandra Marcelly Sousa da Silva",
+            "Débora \nVieira de Souza-Carneiro",
+            "Jeimy Cortés",
+            "Reginaldo Ramos de Britto"
+          ],
+          "pdf_start_index": 107,
+          "pdf_end_index": 126,
+          "citation_pages": "95-114",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Collaborative Learning within Critical Mathematics Education",
+          "authors": [],
+          "pdf_start_index": 127,
+          "pdf_end_index": 144,
+          "citation_pages": "115-132",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Global Citizenship",
+          "authors": [],
+          "pdf_start_index": 145,
+          "pdf_end_index": 159,
+          "citation_pages": "133-148",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "About Unfinishedness, Dreams and Landscapes of Investigation",
+          "authors": [],
+          "pdf_start_index": 161,
+          "pdf_end_index": 173,
+          "citation_pages": "149-162",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Dialogue in Eternity: Children, Mathematics, and Landscapes of Investigation",
+          "authors": [
+            "Skovsmose"
+          ],
+          "pdf_start_index": 175,
+          "pdf_end_index": 196,
+          "citation_pages": "163-184",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inclusive Landscapes of Investigation",
+          "authors": [
+            "Inclusive Landscapes"
+          ],
+          "pdf_start_index": 197,
+          "pdf_end_index": 207,
+          "citation_pages": "185-196",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Meetings amongst Deaf and Hearing Students in the Mathematics Classroom",
+          "authors": [
+            "Queiroz Moura",
+            "Miriam Godoy Penteado"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 222,
+          "citation_pages": "197-210",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inclusion and Landscape of Investigation: A Case of Elementary Education",
+          "authors": [
+            "Bonfim Gaviolli",
+            "Miriam Godoy Penteado"
+          ],
+          "pdf_start_index": 223,
+          "pdf_end_index": 233,
+          "citation_pages": "211-222",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Landscapes of Investigation with Seniors",
+          "authors": [
+            "Rejane Siqueira Julio"
+          ],
+          "pdf_start_index": 235,
+          "pdf_end_index": 258,
+          "citation_pages": "223-246",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Investigative Approach to Talking about Inclusion in Mathematics Teacher Education",
+          "authors": [
+            "Denner Dias Barros"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 268,
+          "citation_pages": "247-256",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Opening an Exercise: Prospective Mathematics Teachers Entering into Landscapes of Investigation",
+          "authors": [
+            "Raquel Milani",
+            "Skovsmose"
+          ],
+          "pdf_start_index": 269,
+          "pdf_end_index": 284,
+          "citation_pages": "257-272",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Impact of Income Tax on the Teaching Profession: A Debate Involving Social Justice",
+          "authors": [
+            "Lorenzetto Ribeiro",
+            "Lucicleide Bezerra",
+            "Eric \nGutstein"
+          ],
+          "pdf_start_index": 285,
+          "pdf_end_index": 305,
+          "citation_pages": "273-294",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Critical Mathematics Education in Action: To Be or Not to Be",
+          "authors": [
+            "Paula Andrea Grawieski Civiero",
+            "Peres Zago de Oliveira\nSociety"
+          ],
+          "pdf_start_index": 307,
+          "pdf_end_index": 343,
+          "citation_pages": "295-331",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 46.75736535799979,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-10T04:47:23.785255+00:00"
+  "generated_at": "2026-08-11T05:06:20.159884+00:00"
 }

@@ -530,7 +530,264 @@
       ],
       "elapsed_seconds": 9.391771196000036,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Introduction: Ways of Knowing, Ways of Valuing Nature",
+          "authors": [],
+          "pdf_start_index": 43,
+          "pdf_end_index": 47,
+          "citation_pages": "1-10",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Creaturely Migrations on a Breathing Planet: Some Reflections",
+          "authors": [
+            "David Abram"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 56,
+          "citation_pages": "11-18",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Learning a Dead Birdsong: Hopes’ echoEscape.1 in ‘The Place Where You Go to Listen’",
+          "authors": [
+            "Julianne Lutz Warren\nPrelude"
+          ],
+          "pdf_start_index": 57,
+          "pdf_end_index": 78,
+          "citation_pages": "19-18",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Humilities, Animalities, and Self-Actualizations in a Living Earth Community",
+          "authors": [
+            "Paul Waldau"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 91,
+          "citation_pages": "19-54",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Anthropology as Cosmic Diplomacy: Toward an Ecological Ethics for Times of Environmental Fragmentation",
+          "authors": [
+            "Eduardo Kohn"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 103,
+          "citation_pages": "55-66",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reanimating the World: Amazonian Shamanism",
+          "authors": [
+            "Frédérique Apffel-Marglin"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 111,
+          "citation_pages": "67-74",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Obligations of a Biologist and Eden No More",
+          "authors": [
+            "Thomas E. Lovejoy"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 121,
+          "citation_pages": "75-84",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Fluid Histories: Oceans as Metaphor and the Nature of History",
+          "authors": [],
+          "pdf_start_index": 123,
+          "pdf_end_index": 138,
+          "citation_pages": "85-100",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Affectual Insight: Love as a Way of Being and Knowing",
+          "authors": [
+            "David L. Haberman"
+          ],
+          "pdf_start_index": 139,
+          "pdf_end_index": 145,
+          "citation_pages": "101-108",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Confucian Cosmology and Ecological Ethics: Qi, Li, and the Role of the Human",
+          "authors": [
+            "Li",
+            "Mary Evelyn Tucker"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 159,
+          "citation_pages": "109-122",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Contemplative Studies of the ‘Natural’ World",
+          "authors": [
+            "David Haskell"
+          ],
+          "pdf_start_index": 161,
+          "pdf_end_index": 169,
+          "citation_pages": "123-132",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Science, Storytelling, and Students: The National Geographic Society’s On Campus Initiative",
+          "authors": [
+            "Timothy Brown",
+            "Gilbert Grosvenor"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 178,
+          "citation_pages": "133-140",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Listening for Coastal Futures: The Conservatory Project",
+          "authors": [],
+          "pdf_start_index": 179,
+          "pdf_end_index": 190,
+          "citation_pages": "141-152",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Imaginal Ecology",
+          "authors": [
+            "Henry David Thoreau",
+            "Wildness",
+            "Carl Jung"
+          ],
+          "pdf_start_index": 191,
+          "pdf_end_index": 199,
+          "citation_pages": "153-162",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "An Okanogan Worldview of Society",
+          "authors": [
+            "Jeannette Armstrong",
+            "Okanagan"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 208,
+          "citation_pages": "163-170",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Indigenous Language Resurgence and the Living Earth Community",
+          "authors": [
+            "Indigenous Language \nResurgence"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 222,
+          "citation_pages": "171-184",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sensing, Minding, and Creating",
+          "authors": [
+            "Minding",
+            "John Grim\nSensing"
+          ],
+          "pdf_start_index": 223,
+          "pdf_end_index": 229,
+          "citation_pages": "185-192",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Land, Indigeneity, and Hybrid Ontologies",
+          "authors": [
+            "Paul Berne Burow",
+            "Samara Brock",
+            "Michael R. Dove1"
+          ],
+          "pdf_start_index": 231,
+          "pdf_end_index": 241,
+          "citation_pages": "193-204",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gaia and a Second Axial Age",
+          "authors": [],
+          "pdf_start_index": 243,
+          "pdf_end_index": 253,
+          "citation_pages": "205-216",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Human Quest to Live in a Cosmos",
+          "authors": [
+            "Heather Eaton",
+            "Carl Sagan).2\nIntroduction\nThroughout"
+          ],
+          "pdf_start_index": 255,
+          "pdf_end_index": 265,
+          "citation_pages": "217-228",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Learning to Weave Earth and Cosmos",
+          "authors": [],
+          "pdf_start_index": 267,
+          "pdf_end_index": 273,
+          "citation_pages": "229-83",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 57.372283341000184,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-10T04:45:39.333796+00:00"
+  "generated_at": "2026-08-11T04:59:01.610340+00:00"
 }

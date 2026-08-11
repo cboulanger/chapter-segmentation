@@ -20,7 +20,12 @@
       "chapters": [],
       "elapsed_seconds": 2.7796844359999113,
       "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 38.27456466900003,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-10T04:48:56.082456+00:00"
+  "generated_at": "2026-08-11T05:10:57.973231+00:00"
 }

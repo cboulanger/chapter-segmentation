@@ -24,7 +24,12 @@ function showError(message) {
 
 function loadDecisions(corpus) {
   const raw = localStorage.getItem(decisionsStorageKey(corpus));
-  return raw ? JSON.parse(raw) : {};
+  if (!raw) return {};
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return {};
+  }
 }
 
 function saveDecisions(corpus, decisions) {
@@ -71,7 +76,7 @@ function decide(isbn, verdict) {
   state.decisions[isbn] = verdict;
   saveDecisions(state.corpus, state.decisions);
   state.index += 1;
-  render();
+  render(true);
 }
 
 function goPrev() {
@@ -108,7 +113,7 @@ function downloadRejected(text) {
   URL.revokeObjectURL(url);
 }
 
-function renderComplete(total) {
+function renderComplete(total, fromDecision) {
   const rejectedText = rejectedListText(state.decisions);
   const rejectedCount = rejectedText ? rejectedText.split('\n').length : 0;
   const acceptedCount = Object.values(state.decisions).filter((v) => v === 'accepted').length;
@@ -118,14 +123,14 @@ function renderComplete(total) {
     <button id="download">Download rejected list</button>
   `;
   $('download').addEventListener('click', () => downloadRejected(rejectedText));
-  if (rejectedCount > 0) downloadRejected(rejectedText);
+  if (fromDecision && rejectedCount > 0) downloadRejected(rejectedText);
 }
 
-async function render() {
+async function render(fromDecision = false) {
   const total = state.manifest.length;
   updateUrl(state.corpus, state.index);
   if (isComplete(state.index, total)) {
-    renderComplete(total);
+    renderComplete(total, fromDecision);
     return;
   }
 

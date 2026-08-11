@@ -34,8 +34,9 @@ Automate both discovery and admission:
    resolving each candidate's direct PDF URL via Crossref/Unpaywall/
    OpenAlex, with no manual searching.
 2. **Admission**: after the existing offset-consensus/content-search
-   confirmation succeeds, gate migration into `evaluation/corpus/
-   open-access/` on a new **novelty check** -- a candidate's confirmed
+   confirmation succeeds, gate migration into `evaluation/corpus/pending/`
+   (not `open-access/` -- see "Landing in `pending/`, not `open-access/`"
+   below) on a new **novelty check** -- a candidate's confirmed
    chapter-first pages must include at least one page whose layout
    features sit meaningfully outside the region the current corpus already
    covers. Books that pass confirmation but bring nothing new are left
@@ -59,12 +60,13 @@ Latin-typeset volumes because those are easiest to find and match.
   fallback path. Both remain available as manual options if a future
   discovery run's yield turns out too low to be worth automating further;
   neither is built in this round.
-- Wiring anything new into the evaluation harness. A migrated book lands in
-  `evaluation/corpus/open-access/` exactly like any hand-curated one, and
-  `evaluate_layout_toc_classifier.py` already picks up every book there via
-  `load_book_corpus()` -- no separate integration step needed.
-- Re-deriving or hand-verifying any of the 31 already-migrated books. This
-  work only affects newly discovered candidates.
+- Auto-promoting a book from `pending/` to `open-access/`. That stays a
+  manual step (same promotion `evaluation/CLAUDE.md` already documents for
+  hand-built `pending/` entries), made once a human has actually reviewed/
+  tested the book -- this round only gets it into `pending/` automatically.
+- Re-deriving or hand-verifying any of the 31 already-migrated
+  `open-access/` books. This work only affects newly discovered candidates,
+  and never touches anything already in `open-access/`.
 
 ## Design
 
@@ -182,13 +184,17 @@ either constant or to `_derive_offset`/`_locate_near`):
    (default 90th, `--novelty-percentile` CLI flag) of the existing corpus's
    own leave-one-out nearest-neighbor distances -- pages farther than that
    sit outside how tightly the current corpus already clusters.
-4. **Migrate only if at least one candidate chapter-first page's distance
-   exceeds the threshold.** Otherwise skip with a new
-   `"SKIP: not novel (nearest chapter-first distance <threshold>)"` message
-   (distinct from the existing confirmation-failure message so the two
-   rejection reasons are never conflated in the report), leaving the PDF
-   and `.crossref.json` in `crossref_gt/` for visibility -- exactly like a
-   confirmation-failure skip today.
+4. **Migrate into `evaluation/corpus/pending/` (not `open-access/`) only if
+   at least one candidate chapter-first page's distance exceeds the
+   threshold.** Otherwise skip with a new `"SKIP: not novel (nearest
+   chapter-first distance <threshold>)"` message (distinct from the
+   existing confirmation-failure message so the two rejection reasons are
+   never conflated in the report), leaving the PDF and `.crossref.json` in
+   `crossref_gt/` for visibility -- exactly like a confirmation-failure
+   skip today. The migrated manifest entry (appended to
+   `evaluation/corpus/pending/manifest.json`, same schema
+   `process_book` already writes) additionally carries `"embedded_toc"`
+   from `bool(reader.outline)` exactly as it does for `open-access/` today.
 5. **Diagnostic-only outline cross-check**: flatten `reader.outline`
    (nested `Destination` entries) into `(title, page_index)` pairs via
    `reader.get_destination_page_number`. For each confirmed chapter,
@@ -206,6 +212,32 @@ either constant or to `_derive_offset`/`_locate_near`):
 `_toc_field_for` already handles this inline via the same structural
 `find_toc_pages`/`toc_page_range` functions confirmed language-agnostic
 above.
+
+### Landing in `pending/`, not `open-access/`
+
+`evaluation/corpus/pending/` already exists as a defined tier
+(`evaluation/CLAUDE.md` step 0a: "no ground truth built yet... move into
+`open-access/` once its `.expected.json` exists") -- this reuses it exactly
+as designed, just with the `.expected.json` arriving automatically instead
+of by hand. Confirmation + novelty already give high GT confidence, but
+`open-access/` is what the pilot's canonical numbers (`evaluation/
+RESULTS.md`) are measured against; landing new books there straight from
+an unreviewed automated run would make every future pilot re-run
+unreviewable-by-diff. `pending/` gives a human a chance to spot-check a
+book (or run the pilot against it in isolation) before it affects the
+numbers everyone already relies on.
+
+`evaluate_layout_toc_classifier.py` gets a new `--corpora` CLI flag
+(comma-separated, default `"open-access,copyrighted-scans"`, replacing the
+hardcoded module-level `_CORPORA` list as the default) so a book in
+`pending/` can actually be evaluated before promotion --
+`--corpora open-access,pending` runs the full LOBO pilot with the
+candidate included; `--corpora pending` (if more than one pending book
+exists) isolates just the new arrivals. Promotion itself
+(move PDF + `.expected.json`, merge the manifest entry into
+`open-access/manifest.json`) stays the manual step
+`evaluation/CLAUDE.md` already documents -- not automated in this round
+(see "Non-goals").
 
 ## Testing
 
@@ -225,6 +257,10 @@ above.
   and French-labeled text (e.g. `"Einleitung .......... 7"`,
   `"Introduction .......... 7"`) -- guards the "already language-agnostic"
   claim above against future regressions.
+- `evaluate_layout_toc_classifier.py`'s new `--corpora` flag: a unit test
+  confirming it parses a comma-separated list and that `load_book_corpus`
+  restricts itself to exactly those corpus directories (using the existing
+  synthetic-fixture style in `tests/test_evaluate_layout_toc_classifier.py`).
 - No live-network end-to-end test, consistent with every other script in
   this pipeline (`fetch_crossref_gt_corpus.py` has none either).
 

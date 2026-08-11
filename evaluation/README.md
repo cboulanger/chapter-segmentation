@@ -128,6 +128,26 @@ known failure modes. Short version:
    inspecting the real PDF — never guessed or extrapolated from the TOC
    alone (`CLAUDE.md` explains why).
 
+## Reviewing ground truth visually
+
+`evaluation/app/` is a small, local, backend-free web app for spot-checking
+already-committed `.expected.json` ground truth against the real PDF pages
+-- useful for re-verifying an existing corpus (e.g. after a schema change
+like the `toc` field) without re-opening every PDF by hand the way `CLAUDE.md`'s
+Step 3 describes for a brand-new book. It pages through a corpus one book at
+a time, renders thumbnails of the ground-truth TOC pages (if any) and every
+chapter's opening page, and lets you Accept/Reject each book; at the end it
+downloads a `<corpus>-rejected.txt` listing the ISBNs that need a second look.
+
+```bash
+uv run review open-access   # macOS: starts the server and opens the browser
+```
+
+See `evaluation/app/README.md` for the full usage (URL/`localStorage`
+resume behavior, keyboard/click controls) and
+`docs/superpowers/specs/2026-08-11-ground-truth-review-app-design.md` for
+the design.
+
 ## Running an evaluation
 
 The harness lives at `tests/test_segmentation_accuracy.py`,

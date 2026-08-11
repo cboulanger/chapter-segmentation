@@ -150,6 +150,14 @@ mirror), avoiding OAPEN's `library.oapen.org` bitstream host, which now
 sits behind an Anubis JS proof-of-work bot-wall that returns HTTP 403 to
 any non-browser client.
 
+This table describes the 43 manually-curated (`discovery_source: "manual"`)
+books above only. `discover_crossref_candidates.py` (see "Automated
+discovery" below) has since added 15 more entries with
+`discovery_source: "auto"`, bringing the manifest to 58 total; those don't
+carry a `domain` value (no reliable Crossref subject-classification signal
+exists to backfill it automatically -- see that section), so they're not
+reflected in the table above.
+
 ## Known gaps
 
 - `9782753559530` (*Histoire de la haine*, OpenEdition): one of its 15
@@ -238,13 +246,20 @@ candidate that has *already* cleared the offset-consensus/content-search
 confirmation gate, so an environment without `pdfalto` installed can still
 run discovery and fetching end-to-end, and will even get partway through
 reconciliation (every book that fails confirmation first prints its own
-`SKIP` line normally), but `build_crossref_gt_ground_truth.py` itself
+`SKIP` line normally); without it, `build_crossref_gt_ground_truth.py`
 raises an uncaught `FileNotFoundError` the first time a confirmed
-candidate reaches the novelty step -- it does not continue past that
-book. In a first live run of this pipeline, one `discover_crossref_candidates.py`
-pass found 15 new candidates (6 of which downloaded a PDF; the other 9
-hit a publisher bot-wall); reconciliation printed a normal `SKIP` line for
-all 43 pre-existing books first, then crashed this way on the very first
-newly-fetched candidate it reached that had actually cleared confirmation
--- install `pdfalto` to get past that point and reach the remaining
-newly-fetched candidates.
+candidate reaches the novelty step.
+
+In a first live run of this pipeline, one `discover_crossref_candidates.py`
+pass found 15 new candidates (6 of which downloaded a PDF; the other 9 hit
+a publisher bot-wall). Reconciliation, run with `pdfalto` available,
+printed a normal `SKIP` line for all 43 pre-existing books, then for the 6
+newly-fetched candidates: 2 failed confirmation outright, and 4 confirmed
+and cleared the novelty gate, landing in `evaluation/corpus/pending/`
+(`9782821895607`, `9781805116431`, `9781805111825`, `9781805119616`). All
+four also tripped the outline-diagnostic's "NEEDS REVIEW" flag (a
+non-contiguous set of TOC-shaped pages detected outside the confirmed TOC
+range) -- expected for books with a long structural front-matter section
+(dedications, lists of figures, etc.) that also happens to look TOC-shaped
+to the page-density heuristic; run `add_toc_ground_truth.py` by hand on
+each before promoting it out of `pending/`.

@@ -1,3 +1,44 @@
 {
-  "books": []
+  "books": [
+    {
+      "filename": "9782821895607.pdf",
+      "title": "L'économie circulaire",
+      "language": "fr",
+      "extraction_type": "native",
+      "embedded_toc": false,
+      "oa": true,
+      "doi": "10.4000/books.pum.4151",
+      "download_url": "http://books.openedition.org/pum/pdf/4151"
+    },
+    {
+      "filename": "9781805116431.pdf",
+      "title": "Hylo Narrans",
+      "language": "en",
+      "extraction_type": "native",
+      "embedded_toc": true,
+      "oa": true,
+      "doi": "10.11647/obp.0476",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0476.pdf"
+    },
+    {
+      "filename": "9781805111825.pdf",
+      "title": "The Standard Language Ideology of the Hebrew and Arabic Grammarians of the ʿAbbasid Period",
+      "language": "en",
+      "extraction_type": "native",
+      "embedded_toc": false,
+      "oa": true,
+      "doi": "10.11647/obp.0382",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0382.pdf"
+    },
+    {
+      "filename": "9781805119616.pdf",
+      "title": "The Philosophy of Julia Wedgwood",
+      "language": "en",
+      "extraction_type": "native",
+      "embedded_toc": true,
+      "oa": true,
+      "doi": "10.11647/obp.0543",
+      "download_url": "https://books.openbookpublishers.com/10.11647/obp.0543.pdf"
+    }
+  ]
 }

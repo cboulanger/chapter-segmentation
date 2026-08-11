@@ -15,6 +15,7 @@ from evaluation.scripts.evaluate_layout_toc_classifier import (
     build_feature_table,
     evaluate_leave_one_book_out,
     load_book_corpus,
+    main,
     select_threshold,
 )
 from evaluation.scripts.layout_features import FEATURE_NAMES
@@ -463,6 +464,25 @@ class TestEvaluateLeaveOneBookOut(unittest.TestCase):
         self.assertEqual(notoc_result["chapter_first_recall"], 1.0)
         self.assertTrue(notoc_result["full_recall"])
         self.assertEqual(stderr.getvalue(), "")
+
+
+class TestMainCorporaValidation(unittest.TestCase):
+    def test_unknown_corpus_name_errors_clearly_instead_of_silent_fallthrough(self):
+        # A typo'd --corpora value must fail loudly, before ever reaching
+        # load_book_corpus -- not silently glob zero books and fall through
+        # to the unrelated "No books with a 'toc' field found" message.
+        stderr = io.StringIO()
+        with patch(
+            "sys.argv",
+            ["evaluate_layout_toc_classifier.py", "--corpora", "nonexistent-corpus"],
+        ), contextlib.redirect_stderr(stderr):
+            exit_code = main()
+
+        self.assertEqual(exit_code, 1)
+        message = stderr.getvalue()
+        self.assertIn("Unknown corpus", message)
+        self.assertIn("nonexistent-corpus", message)
+        self.assertNotIn("No books with a 'toc' field found", message)
 
 
 if __name__ == "__main__":

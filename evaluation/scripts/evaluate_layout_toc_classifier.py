@@ -86,8 +86,8 @@ def load_book_corpus(corpora: list[str] | None = None) -> list[dict]:
     "toc" key at all are excluded entirely (not yet retrofitted, or
     flagged for manual review), per the design spec. `corpora` defaults
     to every corpus this pilot normally scores against (_CORPORA);
-    pass an explicit subset (e.g. ["open-access"]) to restrict it, e.g.
-    to evaluate evaluation/corpus/pending/ candidates before promotion."""
+    pass an explicit subset (e.g. ["open-access"]) to restrict it -- to
+    evaluate evaluation/corpus/pending/ candidates before promotion."""
     books = []
     for corpus in corpora if corpora is not None else _CORPORA:
         corpus_dir = _CORPUS_DIR / corpus
@@ -333,7 +333,10 @@ def main() -> int:
         corpora = [c.strip() for c in args.corpora.split(",") if c.strip()]
         for corpus in corpora:
             if not (_CORPUS_DIR / corpus).is_dir():
-                print(f"Unknown corpus {corpus!r} ({_CORPUS_DIR / corpus} does not exist)")
+                print(
+                    f"Unknown corpus {corpus!r} ({_CORPUS_DIR / corpus} does not exist)",
+                    file=sys.stderr,
+                )
                 return 1
 
     books = load_book_corpus(corpora=corpora)

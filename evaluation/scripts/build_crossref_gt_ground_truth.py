@@ -22,10 +22,14 @@ printed page number -- is what stands in for the hand-verification
 evaluation/CLAUDE.md normally requires for 896 chapters across 46 books.
 
 A book where the offset can't be derived (too few pages carry a printed
-number pypdf/extract_printed_number can read), or where too few chapters
-land a confident content match at their candidate page, is left untouched
--- its crossref_gt/ files stay put for manual curation later, rather than
-polluting the harness with unverified chapter boundaries.
+number pypdf/extract_printed_number can read), where too few chapters
+land a confident content match at their candidate page, or where Crossref
+registers fewer than two distinct chapter authors (a single-authored book,
+not an edited volume with distinct chapter authors -- see
+evaluation/crossref_gt/README.md's "Known gaps" for 14 such books removed
+from a first reconciliation pass), is left untouched -- its crossref_gt/
+files stay put for manual curation later, rather than polluting the
+harness with unverified chapter boundaries.
 
 Migrated books land in evaluation/corpus/pending/, not open-access/ --
 confirmation + novelty give high GT confidence, but open-access/ is what
@@ -76,6 +80,7 @@ _WINDOW = 6  # +/- pages searched around each offset-derived candidate index
 _MIN_MATCH_SCORE = 85.0
 _MIN_CONFIRMED_FRACTION = 0.8
 _MIN_CONFIRMED_CHAPTERS = 3
+_MIN_DISTINCT_CHAPTER_AUTHORS = 2  # below this, it reads as a single-authored book, not an edited volume
 _DEFAULT_NOVELTY_PERCENTILE = 90.0  # see design spec's "Novelty metric" decision
 
 
@@ -316,6 +321,14 @@ def process_book(book: dict, dry_run: bool, novelty_baseline: NoveltyBaseline) -
     chapters = json.loads(crossref_path.read_text(encoding="utf-8"))["chapters"]
     if not chapters:
         return isbn, "SKIP: zero chapters"
+
+    distinct_authors = {a for chapter in chapters for a in chapter.get("authors", []) if a.strip()}
+    if len(distinct_authors) < _MIN_DISTINCT_CHAPTER_AUTHORS:
+        return isbn, (
+            f"SKIP: only {len(distinct_authors)} distinct chapter author(s) registered on Crossref "
+            f"(need >={_MIN_DISTINCT_CHAPTER_AUTHORS}) -- looks like a single-authored book, not an "
+            "edited volume with distinct chapter authors"
+        )
 
     reader = PdfReader(str(pdf_path))
     total_pages = len(reader.pages)

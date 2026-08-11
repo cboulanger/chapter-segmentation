@@ -1,7 +1,18 @@
 #!/usr/bin/env python3
-"""Discovers new open-access book candidates (monographs and edited
-volumes) for evaluation/crossref_gt/manifest.json, seeded from Crossref
-publishers already represented there.
+"""Discovers new open-access edited-volume candidates for
+evaluation/crossref_gt/manifest.json, seeded from Crossref publishers
+already represented there.
+
+Only queries Crossref's `edited-book` work type -- an earlier version also
+queried `monograph`, which is how 14 single-authored books ended up in
+evaluation/corpus/pending/ (a monograph's front/back matter and chapters
+still get individual Crossref `book-chapter` records, all crediting the
+same one author, which is not what this evaluation set's ground-truth
+"chapter authors distinct from the book editor(s)" case is meant to
+exercise). `build_crossref_gt_ground_truth.py` additionally gates
+migration on chapter-author diversity as a second check, since Crossref's
+own `edited-book` classification isn't itself a reliable enough signal
+(some real edited volumes are misclassified, and vice versa).
 
 Resolves each candidate's direct PDF URL from three independent sources,
 tried in order (Crossref's own registered link, then Unpaywall, then
@@ -50,7 +61,7 @@ _OPEN_ACCESS_DIR = Path(__file__).resolve().parent.parent / "corpus" / "open-acc
 
 _OPENALEX_BASE_URL = "https://api.openalex.org/works"
 
-_WORK_TYPES = ["monograph", "edited-book"]
+_WORK_TYPES = ["edited-book"]
 _DEFAULT_MAX_PER_LANGUAGE = 5
 _DEFAULT_MAX_RESULTS_PER_QUERY = 300
 

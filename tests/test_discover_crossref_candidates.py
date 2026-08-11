@@ -5,9 +5,14 @@ orchestration (discover()/main()) is exercised manually, matching
 fetch_crossref_gt_corpus.py's existing convention of no pytest coverage for
 its own network-calling main() entry point."""
 
+import json
+import tempfile
 import unittest
 from collections import Counter
-from unittest.mock import Mock
+from pathlib import Path
+from unittest.mock import Mock, patch
+
+import httpx
 
 from evaluation.scripts.discover_crossref_candidates import (
     _crossref_link_pdf_url,
@@ -15,6 +20,7 @@ from evaluation.scripts.discover_crossref_candidates import (
     _is_new_candidate,
     _item_isbn,
     _item_title,
+    _language_counts,
     _language_priority,
     _openalex_pdf_url,
     _select_candidates,
@@ -185,13 +191,55 @@ class TestCrossrefPublisherWorks(unittest.TestCase):
         self.assertEqual(client.get.call_count, 2)
 
     def test_network_error_returns_partial_results_without_raising(self):
-        import httpx
-
         client = Mock()
         page1 = _json_response({"message": {"items": [{"DOI": "10.1/a"}, {"DOI": "10.1/b"}]}})
         client.get.side_effect = [page1, httpx.ConnectError("boom")]
         result = _crossref_publisher_works("4923", "monograph", client, None, rows=2)
         self.assertEqual(len(result), 2)
+
+    def test_stops_once_max_results_reached_even_with_full_pages(self):
+        client = Mock()
+        page1 = _json_response({"message": {"items": [{"DOI": "10.1/a"}, {"DOI": "10.1/b"}]}})
+        page2 = _json_response({"message": {"items": [{"DOI": "10.1/c"}, {"DOI": "10.1/d"}]}})
+        client.get.side_effect = [page1, page2]
+        result = _crossref_publisher_works("4923", "monograph", client, None, rows=2, max_results=3)
+        self.assertEqual(len(result), 3)
+        self.assertEqual(client.get.call_count, 2)
+
+    @patch("evaluation.scripts.discover_crossref_candidates.time.sleep")
+    def test_retries_after_429_then_succeeds(self, mock_sleep):
+        client = Mock()
+        rate_limited = Mock()
+        rate_limited.status_code = 429
+        rate_limited.headers = {"Retry-After": "1"}
+        success = _json_response({"message": {"items": [{"DOI": "10.1/a"}]}})
+        client.get.side_effect = [rate_limited, success]
+        result = _crossref_publisher_works("4923", "monograph", client, None, rows=100)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(client.get.call_count, 2)
+        mock_sleep.assert_called_once_with(1.0)
+
+
+class TestLanguageCounts(unittest.TestCase):
+    def test_tallies_language_across_manifests_and_skips_missing_path(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            manifest_a = tmp_path / "a.json"
+            manifest_b = tmp_path / "b.json"
+            missing = tmp_path / "does-not-exist.json"
+
+            manifest_a.write_text(
+                json.dumps({"books": [{"language": "en"}, {"language": "de"}, {"language": "en"}]}),
+                encoding="utf-8",
+            )
+            manifest_b.write_text(
+                json.dumps({"books": [{"language": "en"}, {"language": None}]}),
+                encoding="utf-8",
+            )
+
+            counts = _language_counts(manifest_a, manifest_b, missing)
+
+        self.assertEqual(counts, Counter({"en": 3, "de": 1}))
 
 
 if __name__ == "__main__":

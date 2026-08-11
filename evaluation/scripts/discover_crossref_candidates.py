@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Discovers new open-access edited-volume candidates for
-evaluation/crossref_gt/manifest.json, seeded from Crossref publishers
-already represented there.
+"""Discovers new open-access book candidates (monographs and edited
+volumes) for evaluation/crossref_gt/manifest.json, seeded from Crossref
+publishers already represented there.
 
 Resolves each candidate's direct PDF URL from three independent sources,
 tried in order (Crossref's own registered link, then Unpaywall, then
@@ -40,6 +40,7 @@ from chapter_segmentation.evidence.crossref_strategy import (
 )
 from evaluation.scripts.fetch_crossref_gt_corpus import (
     _DEFAULT_CONTACT_EMAIL,
+    _UNPAYWALL_BASE_URL,
     _item_license_url,
     _unpaywall_license_url,
 )
@@ -47,7 +48,6 @@ from evaluation.scripts.fetch_crossref_gt_corpus import (
 _CROSSREF_DIR = Path(__file__).resolve().parent.parent / "crossref_gt"
 _OPEN_ACCESS_DIR = Path(__file__).resolve().parent.parent / "corpus" / "open-access"
 
-_UNPAYWALL_BASE_URL = "https://api.unpaywall.org/v2"
 _OPENALEX_BASE_URL = "https://api.openalex.org/works"
 
 _WORK_TYPES = ["monograph", "edited-book"]
@@ -240,6 +240,25 @@ def _crossref_publisher_works(
     return items[:max_results]
 
 
+def _build_candidate(
+    item: dict, seed: dict, download_url: str, license_url: Optional[str], license_source: Optional[str]
+) -> dict:
+    """Assembles one manifest-shaped candidate entry from a Crossref work
+    item, its seed publisher, and its already-resolved download URL/license."""
+    return {
+        "isbn": _item_isbn(item),
+        "title": _item_title(item),
+        "doi": item.get("DOI"),
+        "domain": None,
+        "language": item.get("language") or seed["default_language"],
+        "publisher": seed["publisher"],
+        "download_url": download_url,
+        "license": license_url,
+        "license_source": license_source,
+        "discovery_source": "auto",
+    }
+
+
 def discover(max_per_language: int, dry_run: bool, contact_email: Optional[str]) -> int:
     manifest_path = _CROSSREF_DIR / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -267,20 +286,8 @@ def discover(max_per_language: int, dry_run: bool, contact_email: Optional[str])
                     if license_url is None:
                         license_url = _unpaywall_license_url(doi, client, contact_email)
                         license_source = "unpaywall" if license_url else None
-                    language = item.get("language") or seed["default_language"]
-                    candidate = {
-                        "isbn": isbn,
-                        "title": _item_title(item),
-                        "doi": doi,
-                        "domain": None,
-                        "language": language,
-                        "publisher": seed["publisher"],
-                        "download_url": download_url,
-                        "license": license_url,
-                        "license_source": license_source,
-                        "discovery_source": "auto",
-                    }
-                    candidates_by_language.setdefault(language, []).append(candidate)
+                    candidate = _build_candidate(item, seed, download_url, license_url, license_source)
+                    candidates_by_language.setdefault(candidate["language"], []).append(candidate)
                     existing_isbns.add(isbn)
                     if doi:
                         existing_dois.add(doi)

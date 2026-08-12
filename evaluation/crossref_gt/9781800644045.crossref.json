@@ -1,0 +1,1269 @@
+{
+  "isbn": "9781800644045",
+  "fetched_at": "2026-08-11T22:58:24.073977+00:00",
+  "license": "http://creativecommons.org/licenses/by-nc-nd/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.06",
+      "type": "book-chapter",
+      "page": "145-178",
+      "title": [
+        "4. Collective Agency Freedom as the Engine of a Common Good Dynamic"
+      ],
+      "author": [
+        {
+          "given": "Oscar",
+          "family": "Garza-Vázquez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "subtitle": [
+        "A Conceptual Proposal for Measurement"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.04",
+      "type": "book-chapter",
+      "page": "103-140",
+      "title": [
+        "3. Design and Reflection on the Metric of Common Dynamics"
+      ],
+      "author": [
+        {
+          "given": "Oscar",
+          "family": "Garza-Vázquez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Viviana",
+          "family": "Ramírez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.16",
+      "type": "book-chapter",
+      "page": "1-24",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1718-2608",
+          "authenticated-orcid": false,
+          "given": "Mathias",
+          "family": "Nebel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oscar",
+          "family": "Garza-Vázquez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.01",
+      "type": "book-chapter",
+      "page": "27-28",
+      "title": [
+        "Introduction to Part I"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1718-2608",
+          "authenticated-orcid": false,
+          "given": "Mathias",
+          "family": "Nebel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oscar",
+          "family": "Garza-Vázquez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Clemens",
+          "family": "Sedmak",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.02",
+      "type": "book-chapter",
+      "page": "29-56",
+      "title": [
+        "1. The Theoretical Framework"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1718-2608",
+          "authenticated-orcid": false,
+          "given": "Mathias",
+          "family": "Nebel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "subtitle": [
+        "Common Goods and Systems of Common Goods"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.03",
+      "type": "book-chapter",
+      "page": "57-102",
+      "title": [
+        "2. From Theory to Practice"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1718-2608",
+          "authenticated-orcid": false,
+          "given": "Mathias",
+          "family": "Nebel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jorge",
+          "family": "Medina Delgadillo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "subtitle": [
+        "A Matrix of Common Good Dynamics"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.13",
+      "type": "book-chapter",
+      "page": "293-320",
+      "title": [
+        "10. Bangsamoro"
+      ],
+      "author": [
+        {
+          "given": "Patrick",
+          "family": "Riordan S.J.",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "subtitle": [
+        "A Case Study in Governing for the Common Good"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.11",
+      "type": "book-chapter",
+      "page": "275-276",
+      "title": [
+        "Introduction to Part III"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1718-2608",
+          "authenticated-orcid": false,
+          "given": "Mathias",
+          "family": "Nebel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oscar",
+          "family": "Garza-Vázquez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.10",
+      "type": "book-chapter",
+      "page": "251-272",
+      "title": [
+        "8. Development and Stability"
+      ],
+      "author": [
+        {
+          "given": "Flavio",
+          "family": "Comim",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.12",
+      "type": "book-chapter",
+      "page": "277-292",
+      "title": [
+        "9. Do We Need a Common Good Approach to Development?"
+      ],
+      "author": [
+        {
+          "given": "Helen",
+          "family": "Alford",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.09",
+      "type": "book-chapter",
+      "page": "219-250",
+      "title": [
+        "7. Organising Common Good Dynamics"
+      ],
+      "author": [
+        {
+          "given": "Rodolfo",
+          "family": "De la Torre",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "subtitle": [
+        "Justice"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.05",
+      "type": "book-chapter",
+      "page": "143-144",
+      "title": [
+        "Introduction to Part II"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1718-2608",
+          "authenticated-orcid": false,
+          "given": "Mathias",
+          "family": "Nebel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oscar",
+          "family": "Garza-Vázquez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.14",
+      "type": "book-chapter",
+      "page": "321-346",
+      "title": [
+        "11. Assessing the Nexus of the Common Good"
+      ],
+      "author": [
+        {
+          "given": "Valente",
+          "family": "Tallabs",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1718-2608",
+          "authenticated-orcid": false,
+          "given": "Mathias",
+          "family": "Nebel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "subtitle": [
+        "The Case of the Municipality of Atlixco, Mexico"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.08",
+      "type": "book-chapter",
+      "page": "201-218",
+      "title": [
+        "6. Governance, Commoning and the Unequal Terms of Recognition"
+      ],
+      "author": [
+        {
+          "given": "Tom",
+          "family": "De Herdt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Denis Augustin",
+          "family": "Samnick",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.15",
+      "type": "book-chapter",
+      "page": "347-378",
+      "title": [
+        "12. Assessing the Transformative Impact of Love-Based Microsocial Communities"
+      ],
+      "author": [
+        {
+          "given": "Simona",
+          "family": "Beretta",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "subtitle": [
+        "From Existential Peripheries into the Nexus of the Common Good"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                26
+              ]
+            ],
+            "date-time": "2022-04-26T00:00:00Z",
+            "timestamp": 1650931200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0290.07",
+      "type": "book-chapter",
+      "page": "179-200",
+      "title": [
+        "5. The Systemic Outcome of Common Good Dynamics"
+      ],
+      "author": [
+        {
+          "given": "Clemens",
+          "family": "Sedmak",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Common Good Approach to Development"
+      ],
+      "subtitle": [
+        "Humanity"
+      ],
+      "ISBN": [
+        "9781800644045",
+        "9781800644052",
+        "9781800644069",
+        "9781800646742",
+        "9781800644090",
+        "9781800644076",
+        "9781800644083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            26
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "4. Collective Agency Freedom as the Engine of a Common Good Dynamic A Conceptual Proposal for Measurement",
+      "authors": [
+        "Oscar Garza-Vázquez"
+      ],
+      "chapter_doi": "10.11647/obp.0290.06",
+      "citation_pages": "145-178"
+    },
+    {
+      "title": "3. Design and Reflection on the Metric of Common Dynamics",
+      "authors": [
+        "Oscar Garza-Vázquez",
+        "Viviana Ramírez"
+      ],
+      "chapter_doi": "10.11647/obp.0290.04",
+      "citation_pages": "103-140"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Mathias Nebel",
+        "Oscar Garza-Vázquez"
+      ],
+      "chapter_doi": "10.11647/obp.0290.16",
+      "citation_pages": "1-24"
+    },
+    {
+      "title": "Introduction to Part I",
+      "authors": [
+        "Mathias Nebel",
+        "Oscar Garza-Vázquez",
+        "Clemens Sedmak"
+      ],
+      "chapter_doi": "10.11647/obp.0290.01",
+      "citation_pages": "27-28"
+    },
+    {
+      "title": "1. The Theoretical Framework Common Goods and Systems of Common Goods",
+      "authors": [
+        "Mathias Nebel"
+      ],
+      "chapter_doi": "10.11647/obp.0290.02",
+      "citation_pages": "29-56"
+    },
+    {
+      "title": "2. From Theory to Practice A Matrix of Common Good Dynamics",
+      "authors": [
+        "Mathias Nebel",
+        "Jorge Medina Delgadillo"
+      ],
+      "chapter_doi": "10.11647/obp.0290.03",
+      "citation_pages": "57-102"
+    },
+    {
+      "title": "10. Bangsamoro A Case Study in Governing for the Common Good",
+      "authors": [
+        "Patrick Riordan S.J."
+      ],
+      "chapter_doi": "10.11647/obp.0290.13",
+      "citation_pages": "293-320"
+    },
+    {
+      "title": "Introduction to Part III",
+      "authors": [
+        "Mathias Nebel",
+        "Oscar Garza-Vázquez"
+      ],
+      "chapter_doi": "10.11647/obp.0290.11",
+      "citation_pages": "275-276"
+    },
+    {
+      "title": "8. Development and Stability",
+      "authors": [
+        "Flavio Comim"
+      ],
+      "chapter_doi": "10.11647/obp.0290.10",
+      "citation_pages": "251-272"
+    },
+    {
+      "title": "9. Do We Need a Common Good Approach to Development?",
+      "authors": [
+        "Helen Alford"
+      ],
+      "chapter_doi": "10.11647/obp.0290.12",
+      "citation_pages": "277-292"
+    },
+    {
+      "title": "7. Organising Common Good Dynamics Justice",
+      "authors": [
+        "Rodolfo De la Torre"
+      ],
+      "chapter_doi": "10.11647/obp.0290.09",
+      "citation_pages": "219-250"
+    },
+    {
+      "title": "Introduction to Part II",
+      "authors": [
+        "Mathias Nebel",
+        "Oscar Garza-Vázquez"
+      ],
+      "chapter_doi": "10.11647/obp.0290.05",
+      "citation_pages": "143-144"
+    },
+    {
+      "title": "11. Assessing the Nexus of the Common Good The Case of the Municipality of Atlixco, Mexico",
+      "authors": [
+        "Valente Tallabs",
+        "Mathias Nebel"
+      ],
+      "chapter_doi": "10.11647/obp.0290.14",
+      "citation_pages": "321-346"
+    },
+    {
+      "title": "6. Governance, Commoning and the Unequal Terms of Recognition",
+      "authors": [
+        "Tom De Herdt",
+        "Denis Augustin Samnick"
+      ],
+      "chapter_doi": "10.11647/obp.0290.08",
+      "citation_pages": "201-218"
+    },
+    {
+      "title": "12. Assessing the Transformative Impact of Love-Based Microsocial Communities From Existential Peripheries into the Nexus of the Common Good",
+      "authors": [
+        "Simona Beretta"
+      ],
+      "chapter_doi": "10.11647/obp.0290.15",
+      "citation_pages": "347-378"
+    },
+    {
+      "title": "5. The Systemic Outcome of Common Good Dynamics Humanity",
+      "authors": [
+        "Clemens Sedmak"
+      ],
+      "chapter_doi": "10.11647/obp.0290.07",
+      "citation_pages": "179-200"
+    }
+  ]
+}

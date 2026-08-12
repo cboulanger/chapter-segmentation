@@ -1,0 +1,1778 @@
+{
+  "isbn": "9781805117438",
+  "fetched_at": "2026-08-11T22:58:14.193602+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.12",
+      "type": "book-chapter",
+      "page": "191-204",
+      "title": [
+        "12. The Power of Energy Communities for a Just Transition in Europe"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-6318-1052",
+          "authenticated-orcid": false,
+          "given": "Francesc",
+          "family": "Cots",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2379-4662",
+          "authenticated-orcid": false,
+          "given": "Jérémie",
+          "family": "Fosse",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0640-1871",
+          "authenticated-orcid": false,
+          "given": "Diana",
+          "family": "Mangalagiu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.02",
+      "type": "book-chapter",
+      "page": "29-44",
+      "title": [
+        "2. France"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0362-9050",
+          "authenticated-orcid": false,
+          "given": "Paul",
+          "family": "Malliet",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mathieu",
+          "family": "Plane",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05fe7ax82",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sciences Po, Paris"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0121-4329",
+          "authenticated-orcid": false,
+          "given": "Francesco",
+          "family": "Saraceno",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05fe7ax82",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sciences Po, Paris"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-0241-3660",
+          "authenticated-orcid": false,
+          "given": "Anissa",
+          "family": "Saumtally",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05fe7ax82",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sciences Po, Paris"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "subtitle": [
+        "Preserving Investment in the Energy Transition in an Unstable Policy Environment"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.14",
+      "type": "book-chapter",
+      "page": "223-242",
+      "title": [
+        "14. (How) Can the Energy Transition in Europe be a Just Transition?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7256-9322",
+          "authenticated-orcid": false,
+          "given": "Bela",
+          "family": "Galgóczi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00r5yyv69",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Trade Union Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Watt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/022b5tw91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hans-Böckler Foundation"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.09",
+      "type": "book-chapter",
+      "page": "143-156",
+      "title": [
+        "9. On Grids"
+      ],
+      "author": [
+        {
+          "given": "Antonella",
+          "family": "Battaglini",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-6893-9259",
+          "authenticated-orcid": false,
+          "given": "Katharina",
+          "family": "Sikow-Magny",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0031wrj91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European University Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "subtitle": [
+        "The Backbone of the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.04",
+      "type": "book-chapter",
+      "page": "59-76",
+      "title": [
+        "4. Energy Transition and Public Investment in Italy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0221-8057",
+          "authenticated-orcid": false,
+          "given": "Giovanni",
+          "family": "Barbieri",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9972-716X",
+          "authenticated-orcid": false,
+          "given": "Floriana",
+          "family": "Cerniglia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8781-3714",
+          "authenticated-orcid": false,
+          "given": "Andrea",
+          "family": "Pronti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.11",
+      "type": "book-chapter",
+      "page": "177-190",
+      "title": [
+        "11. The EU Strategy for Green Hydrogen"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0602-4233",
+          "authenticated-orcid": false,
+          "given": "Rafael",
+          "family": "Fernández",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4677-6352",
+          "authenticated-orcid": false,
+          "given": "Clara",
+          "family": "García",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02p0gd045",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Complutense de Madrid"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "subtitle": [
+        "More with Less (Public Investment)?"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.00",
+      "type": "book-chapter",
+      "page": "1-12",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9972-716X",
+          "authenticated-orcid": false,
+          "given": "Floriana",
+          "family": "Cerniglia",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0121-4329",
+          "authenticated-orcid": false,
+          "given": "Francesco",
+          "family": "Saraceno",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05fe7ax82",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sciences Po, Paris"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "subtitle": [
+        "Energy Transition in the EU—The Need for a Governance Revolution"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.03",
+      "type": "book-chapter",
+      "page": "45-58",
+      "title": [
+        "3. The Role of Public Support for the Energy Transition in Germany"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9798-9270",
+          "authenticated-orcid": false,
+          "given": "Tom",
+          "family": "Bauermann",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/022b5tw91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hans-Böckler Foundation"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "subtitle": [
+        "Past and Future Tasks"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.01",
+      "type": "book-chapter",
+      "page": "13-28",
+      "title": [
+        "1. An EU-wide Perspective on Public Investment in the Energy Transition"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6917-4194",
+          "authenticated-orcid": false,
+          "given": "Andrea",
+          "family": "Brasili",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bertrand",
+          "family": "Magné",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ege",
+          "family": "Öndeş",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8193-9399",
+          "authenticated-orcid": false,
+          "given": "Debora",
+          "family": "Revoltella",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-7544-0400",
+          "authenticated-orcid": false,
+          "given": "Annamaria",
+          "family": "Tueske",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zxry661",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European Investment Bank"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.05",
+      "type": "book-chapter",
+      "page": "77-92",
+      "title": [
+        "5. Investment in the Energy Transition in Spain"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2801-3447",
+          "authenticated-orcid": false,
+          "given": "Ignacio",
+          "family": "Alvarez",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01cby8j38",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Autónoma de Madrid"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2218-1004",
+          "authenticated-orcid": false,
+          "given": "Jorge",
+          "family": "Uxó",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02p0gd045",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Complutense de Madrid"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.15",
+      "type": "book-chapter",
+      "page": "xv-xv",
+      "title": [
+        "Preface"
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.06",
+      "type": "book-chapter",
+      "page": "93-114",
+      "title": [
+        "6. Tackling the Drawbacks of Past and Current EU Energy Transition Policies"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0004-2480-9434",
+          "authenticated-orcid": false,
+          "given": "Francesco",
+          "family": "Gracceva",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02an8es95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Agenzia nazionale per le nuove tecnologie, l’energia e lo sviluppo economico sostenibile"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-3654-4237",
+          "authenticated-orcid": false,
+          "given": "Daniela",
+          "family": "Palma",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02an8es95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Agenzia nazionale per le nuove tecnologie, l’energia e lo sviluppo economico sostenibile"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "subtitle": [
+        "The Need for a Cooperative, Mission-oriented Industrial Strategy"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.08",
+      "type": "book-chapter",
+      "page": "125-142",
+      "title": [
+        "8. Research and Innovation Policy for the Energy Transition in the EU"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4255-2180",
+          "authenticated-orcid": false,
+          "given": "Francesco",
+          "family": "Pasimeni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02c2kyt77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Eindhoven University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1317-4547",
+          "authenticated-orcid": false,
+          "given": "Willem",
+          "family": "Klok",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02c2kyt77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Eindhoven University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2231-1913",
+          "authenticated-orcid": false,
+          "given": "Floor",
+          "family": "Alkemade",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02c2kyt77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Eindhoven University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.13",
+      "type": "book-chapter",
+      "page": "205-222",
+      "title": [
+        "13. Making the ETS2 Socially Acceptable through Carbon Revenue Redistribution and Investments"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1916-2873",
+          "authenticated-orcid": false,
+          "given": "Andreas",
+          "family": "Eisl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05s6qms04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institut Jacques Delors"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05fe7ax82",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sciences Po, Paris"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Phuc-Vinh",
+          "family": "Nguyen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05s6qms04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institut Jacques Delors"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.10",
+      "type": "book-chapter",
+      "page": "157-176",
+      "title": [
+        "10. Investing in Critical Raw Materials for the Clean-Tech Transition in the EU"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4662-5949",
+          "authenticated-orcid": false,
+          "given": "Roberto",
+          "family": "Zoboli",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03h7r5v07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università Cattolica del Sacro Cuore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                8
+              ]
+            ],
+            "date-time": "2025-12-08T00:00:00Z",
+            "timestamp": 1765152000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0499.07",
+      "type": "book-chapter",
+      "page": "115-124",
+      "title": [
+        "7. Energy Transition and Industrial Competitiveness in the EU"
+      ],
+      "author": [
+        {
+          "given": "Mirko",
+          "family": "Armiento",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052fdp564",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Enel (Italy)"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Villa",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "More with More: Investing in the Energy Transition"
+      ],
+      "ISBN": [
+        "9781805117438",
+        "9781805117445",
+        "9781805117452",
+        "9781805117476",
+        "9781805117469"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "12. The Power of Energy Communities for a Just Transition in Europe",
+      "authors": [
+        "Francesc Cots",
+        "Jérémie Fosse",
+        "Diana Mangalagiu"
+      ],
+      "chapter_doi": "10.11647/obp.0499.12",
+      "citation_pages": "191-204"
+    },
+    {
+      "title": "2. France Preserving Investment in the Energy Transition in an Unstable Policy Environment",
+      "authors": [
+        "Paul Malliet",
+        "Mathieu Plane",
+        "Francesco Saraceno",
+        "Anissa Saumtally"
+      ],
+      "chapter_doi": "10.11647/obp.0499.02",
+      "citation_pages": "29-44"
+    },
+    {
+      "title": "14. (How) Can the Energy Transition in Europe be a Just Transition?",
+      "authors": [
+        "Bela Galgóczi",
+        "Andrew Watt"
+      ],
+      "chapter_doi": "10.11647/obp.0499.14",
+      "citation_pages": "223-242"
+    },
+    {
+      "title": "9. On Grids The Backbone of the Energy Transition",
+      "authors": [
+        "Antonella Battaglini",
+        "Katharina Sikow-Magny"
+      ],
+      "chapter_doi": "10.11647/obp.0499.09",
+      "citation_pages": "143-156"
+    },
+    {
+      "title": "4. Energy Transition and Public Investment in Italy",
+      "authors": [
+        "Giovanni Barbieri",
+        "Floriana Cerniglia",
+        "Andrea Pronti"
+      ],
+      "chapter_doi": "10.11647/obp.0499.04",
+      "citation_pages": "59-76"
+    },
+    {
+      "title": "11. The EU Strategy for Green Hydrogen More with Less (Public Investment)?",
+      "authors": [
+        "Rafael Fernández",
+        "Clara García"
+      ],
+      "chapter_doi": "10.11647/obp.0499.11",
+      "citation_pages": "177-190"
+    },
+    {
+      "title": "Introduction Energy Transition in the EU—The Need for a Governance Revolution",
+      "authors": [
+        "Floriana Cerniglia",
+        "Francesco Saraceno"
+      ],
+      "chapter_doi": "10.11647/obp.0499.00",
+      "citation_pages": "1-12"
+    },
+    {
+      "title": "3. The Role of Public Support for the Energy Transition in Germany Past and Future Tasks",
+      "authors": [
+        "Tom Bauermann"
+      ],
+      "chapter_doi": "10.11647/obp.0499.03",
+      "citation_pages": "45-58"
+    },
+    {
+      "title": "1. An EU-wide Perspective on Public Investment in the Energy Transition",
+      "authors": [
+        "Andrea Brasili",
+        "Bertrand Magné",
+        "Ege Öndeş",
+        "Debora Revoltella",
+        "Annamaria Tueske"
+      ],
+      "chapter_doi": "10.11647/obp.0499.01",
+      "citation_pages": "13-28"
+    },
+    {
+      "title": "5. Investment in the Energy Transition in Spain",
+      "authors": [
+        "Ignacio Alvarez",
+        "Jorge Uxó"
+      ],
+      "chapter_doi": "10.11647/obp.0499.05",
+      "citation_pages": "77-92"
+    },
+    {
+      "title": "Preface",
+      "authors": [],
+      "chapter_doi": "10.11647/obp.0499.15",
+      "citation_pages": "xv-xv"
+    },
+    {
+      "title": "6. Tackling the Drawbacks of Past and Current EU Energy Transition Policies The Need for a Cooperative, Mission-oriented Industrial Strategy",
+      "authors": [
+        "Francesco Gracceva",
+        "Daniela Palma"
+      ],
+      "chapter_doi": "10.11647/obp.0499.06",
+      "citation_pages": "93-114"
+    },
+    {
+      "title": "8. Research and Innovation Policy for the Energy Transition in the EU",
+      "authors": [
+        "Francesco Pasimeni",
+        "Willem Klok",
+        "Floor Alkemade"
+      ],
+      "chapter_doi": "10.11647/obp.0499.08",
+      "citation_pages": "125-142"
+    },
+    {
+      "title": "13. Making the ETS2 Socially Acceptable through Carbon Revenue Redistribution and Investments",
+      "authors": [
+        "Andreas Eisl",
+        "Phuc-Vinh Nguyen"
+      ],
+      "chapter_doi": "10.11647/obp.0499.13",
+      "citation_pages": "205-222"
+    },
+    {
+      "title": "10. Investing in Critical Raw Materials for the Clean-Tech Transition in the EU",
+      "authors": [
+        "Roberto Zoboli"
+      ],
+      "chapter_doi": "10.11647/obp.0499.10",
+      "citation_pages": "157-176"
+    },
+    {
+      "title": "7. Energy Transition and Industrial Competitiveness in the EU",
+      "authors": [
+        "Mirko Armiento",
+        "Andrea Villa"
+      ],
+      "chapter_doi": "10.11647/obp.0499.07",
+      "citation_pages": "115-124"
+    }
+  ]
+}

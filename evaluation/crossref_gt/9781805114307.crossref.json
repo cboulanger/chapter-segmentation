@@ -1,0 +1,1224 @@
+{
+  "isbn": "9781805114307",
+  "fetched_at": "2026-08-11T22:58:22.122110+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.05",
+      "type": "book-chapter",
+      "page": "117-130",
+      "title": [
+        "5. ‘Very Seldom Are Messages Properly Given’"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6810-7881",
+          "authenticated-orcid": false,
+          "given": "Chris",
+          "family": "Morash",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Teresa Deevy’s Dark Matter"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.07",
+      "type": "book-chapter",
+      "page": "155-172",
+      "title": [
+        "7. ‘It Is Myself I Seen in Her’"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5185-1639",
+          "authenticated-orcid": false,
+          "given": "Willy",
+          "family": "Maley",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Points of Departure in Teresa Deevy’s The King of Spain’s Daughter (1935)"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.12",
+      "type": "book-chapter",
+      "page": "263-288",
+      "title": [
+        "12. Teresa Deevy and Contemporary Performance Practice"
+      ],
+      "author": [
+        {
+          "given": "Jonathan",
+          "family": "Bank",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Caroline",
+          "family": "Byrne",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amanda",
+          "family": "Coogan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-0729-3656",
+          "authenticated-orcid": false,
+          "given": "Lianne",
+          "family": "Quigley",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Edited Transcript of Teresa Deevy Practitioner Panel Discussion"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.01",
+      "type": "book-chapter",
+      "page": "41-56",
+      "title": [
+        "1. ‘Why Would Anyone Be Interested in My Old Aunt Teresa?’"
+      ],
+      "author": [
+        {
+          "given": "Eileen",
+          "family": "Kearney",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Illuminating Teresa Deevy’s Legacy"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.06",
+      "type": "book-chapter",
+      "page": "131-154",
+      "title": [
+        "6. ‘I Must Just Make an Opening Elsewhere’"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4660-2838",
+          "authenticated-orcid": false,
+          "given": "Úna",
+          "family": "Kealy",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03fgx6868",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "South East Technological University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5095-0344",
+          "authenticated-orcid": false,
+          "given": "Kate",
+          "family": "McCarthy",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03fgx6868",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "South East Technological University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Teresa Deevy’s Involvement with Studio Theatre Practice, 1934–1958"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.08",
+      "type": "book-chapter",
+      "page": "175-200",
+      "title": [
+        "8. Finding Money in the Walls"
+      ],
+      "author": [
+        {
+          "given": "Ann M.",
+          "family": "Shanahan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Uncovering the Feminist Power of Teresa Deevy’s Dramaturgy through an Embodied, Practice-Based Approach"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.11",
+      "type": "book-chapter",
+      "page": "243-262",
+      "title": [
+        "11. Teresa Deevy’s Katie Roche"
+      ],
+      "author": [
+        {
+          "given": "Cathy",
+          "family": "Leeney",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05m7pjf47",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Art, Culture, and Performance"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.13",
+      "type": "book-chapter",
+      "page": "289-318",
+      "title": [
+        "13. ‘You Can Feel the Change in the Air’"
+      ],
+      "author": [
+        {
+          "given": "Amanda",
+          "family": "Coogan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alvean",
+          "family": "Jones",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-0729-3656",
+          "authenticated-orcid": false,
+          "given": "Lianne",
+          "family": "Quigley",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Reflecting on Talk Real Fine, Just Like a Lady, a Shapeshifting of Teresa Deevy’s The King of Spain’s Daughter"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.02",
+      "type": "book-chapter",
+      "page": "57-76",
+      "title": [
+        "2. The Teresa Deevy Archive and the Development of Collections and Curation in Maynooth University Library"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0597-6742",
+          "authenticated-orcid": false,
+          "given": "Hugh",
+          "family": "Murphy",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/048nfjm95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National University of Ireland, Maynooth"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.03",
+      "type": "book-chapter",
+      "page": "77-90",
+      "title": [
+        "3. TSI"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-9892-3959",
+          "authenticated-orcid": false,
+          "given": "Shelley",
+          "family": "Troupe",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Teresa Deevy, or What Do We Know about [The] Reapers?"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.04",
+      "type": "book-chapter",
+      "page": "91-114",
+      "title": [
+        "4. Mysteries of the Teresa Deevy Archive"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3451-9428",
+          "authenticated-orcid": false,
+          "given": "Caoilfhionn",
+          "family": "Ní Bheacháin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00a0n9e72",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Limerick"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Reconsidering the plays of D.V. Goode"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.10",
+      "type": "book-chapter",
+      "page": "227-240",
+      "title": [
+        "10. The Liminal Space of Widowhood in Teresa Deevy’s Wife to James Whelan (1937)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5014-1758",
+          "authenticated-orcid": false,
+          "given": "Christa",
+          "family": "de Brún",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03fgx6868",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "South East Technological University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.09",
+      "type": "book-chapter",
+      "page": "201-226",
+      "title": [
+        "9. Becoming a Domesticated Irish Woman"
+      ],
+      "author": [
+        {
+          "given": "Dayna",
+          "family": "Killen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4660-2838",
+          "authenticated-orcid": false,
+          "given": "Úna",
+          "family": "Kealy",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03fgx6868",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "South East Technological University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Teresa Deevy’s Critique of Idealised Representations of Womanhood in Katie Roche"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2025-04-07T00:00:00Z",
+            "timestamp": 1743984000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0432.00",
+      "type": "book-chapter",
+      "page": "1-38",
+      "title": [
+        "Teresa Deevy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4660-2838",
+          "authenticated-orcid": false,
+          "given": "Úna",
+          "family": "Kealy",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03fgx6868",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "South East Technological University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5095-0344",
+          "authenticated-orcid": false,
+          "given": "Kate",
+          "family": "McCarthy",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03fgx6868",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "South East Technological University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Active Speech"
+      ],
+      "subtitle": [
+        "Life, Scholarship, Practice"
+      ],
+      "ISBN": [
+        "9781805114307",
+        "9781805114314",
+        "9781805114321",
+        "9781805114345",
+        "9781805114338"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            7
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "5. ‘Very Seldom Are Messages Properly Given’ Teresa Deevy’s Dark Matter",
+      "authors": [
+        "Chris Morash"
+      ],
+      "chapter_doi": "10.11647/obp.0432.05",
+      "citation_pages": "117-130"
+    },
+    {
+      "title": "7. ‘It Is Myself I Seen in Her’ Points of Departure in Teresa Deevy’s The King of Spain’s Daughter (1935)",
+      "authors": [
+        "Willy Maley"
+      ],
+      "chapter_doi": "10.11647/obp.0432.07",
+      "citation_pages": "155-172"
+    },
+    {
+      "title": "12. Teresa Deevy and Contemporary Performance Practice Edited Transcript of Teresa Deevy Practitioner Panel Discussion",
+      "authors": [
+        "Jonathan Bank",
+        "Caroline Byrne",
+        "Amanda Coogan",
+        "Lianne Quigley"
+      ],
+      "chapter_doi": "10.11647/obp.0432.12",
+      "citation_pages": "263-288"
+    },
+    {
+      "title": "1. ‘Why Would Anyone Be Interested in My Old Aunt Teresa?’ Illuminating Teresa Deevy’s Legacy",
+      "authors": [
+        "Eileen Kearney"
+      ],
+      "chapter_doi": "10.11647/obp.0432.01",
+      "citation_pages": "41-56"
+    },
+    {
+      "title": "6. ‘I Must Just Make an Opening Elsewhere’ Teresa Deevy’s Involvement with Studio Theatre Practice, 1934–1958",
+      "authors": [
+        "Úna Kealy",
+        "Kate McCarthy"
+      ],
+      "chapter_doi": "10.11647/obp.0432.06",
+      "citation_pages": "131-154"
+    },
+    {
+      "title": "8. Finding Money in the Walls Uncovering the Feminist Power of Teresa Deevy’s Dramaturgy through an Embodied, Practice-Based Approach",
+      "authors": [
+        "Ann M. Shanahan"
+      ],
+      "chapter_doi": "10.11647/obp.0432.08",
+      "citation_pages": "175-200"
+    },
+    {
+      "title": "11. Teresa Deevy’s Katie Roche Art, Culture, and Performance",
+      "authors": [
+        "Cathy Leeney"
+      ],
+      "chapter_doi": "10.11647/obp.0432.11",
+      "citation_pages": "243-262"
+    },
+    {
+      "title": "13. ‘You Can Feel the Change in the Air’ Reflecting on Talk Real Fine, Just Like a Lady, a Shapeshifting of Teresa Deevy’s The King of Spain’s Daughter",
+      "authors": [
+        "Amanda Coogan",
+        "Alvean Jones",
+        "Lianne Quigley"
+      ],
+      "chapter_doi": "10.11647/obp.0432.13",
+      "citation_pages": "289-318"
+    },
+    {
+      "title": "2. The Teresa Deevy Archive and the Development of Collections and Curation in Maynooth University Library",
+      "authors": [
+        "Hugh Murphy"
+      ],
+      "chapter_doi": "10.11647/obp.0432.02",
+      "citation_pages": "57-76"
+    },
+    {
+      "title": "3. TSI Teresa Deevy, or What Do We Know about [The] Reapers?",
+      "authors": [
+        "Shelley Troupe"
+      ],
+      "chapter_doi": "10.11647/obp.0432.03",
+      "citation_pages": "77-90"
+    },
+    {
+      "title": "4. Mysteries of the Teresa Deevy Archive Reconsidering the plays of D.V. Goode",
+      "authors": [
+        "Caoilfhionn Ní Bheacháin"
+      ],
+      "chapter_doi": "10.11647/obp.0432.04",
+      "citation_pages": "91-114"
+    },
+    {
+      "title": "10. The Liminal Space of Widowhood in Teresa Deevy’s Wife to James Whelan (1937)",
+      "authors": [
+        "Christa de Brún"
+      ],
+      "chapter_doi": "10.11647/obp.0432.10",
+      "citation_pages": "227-240"
+    },
+    {
+      "title": "9. Becoming a Domesticated Irish Woman Teresa Deevy’s Critique of Idealised Representations of Womanhood in Katie Roche",
+      "authors": [
+        "Dayna Killen",
+        "Úna Kealy"
+      ],
+      "chapter_doi": "10.11647/obp.0432.09",
+      "citation_pages": "201-226"
+    },
+    {
+      "title": "Teresa Deevy Life, Scholarship, Practice",
+      "authors": [
+        "Úna Kealy",
+        "Kate McCarthy"
+      ],
+      "chapter_doi": "10.11647/obp.0432.00",
+      "citation_pages": "1-38"
+    }
+  ]
+}

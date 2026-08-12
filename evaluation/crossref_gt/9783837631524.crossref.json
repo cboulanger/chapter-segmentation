@@ -1,0 +1,1550 @@
+{
+  "isbn": "9783837631524",
+  "fetched_at": "2026-08-11T22:40:51.081757+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839431528-016",
+      "type": "book-chapter",
+      "page": "293-306",
+      "title": [
+        "Körperbilder im Schulsport: Konstruktion, Kontrastierung, Kommentar"
+      ],
+      "author": [
+        {
+          "given": "Eckart",
+          "family": "Balz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Volker",
+          "family": "Schürmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Mittag",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Günter",
+          "family": "Stibbe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jörg-Uwe",
+          "family": "Nieland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jan",
+          "family": "Haut",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-013",
+      "type": "book-chapter",
+      "page": "225-250",
+      "title": [
+        "Olympische Prinzipien und gesellschaftliche Werte in der Printberichterstattung"
+      ],
+      "author": [
+        {
+          "given": "Simon",
+          "family": "Rehbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3806-773X",
+          "authenticated-orcid": true,
+          "given": "Holger",
+          "family": "Ihle",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jörg-Uwe",
+          "family": "Nieland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "subtitle": [
+        "Ausgewählte Befunde einer Pilotstudie"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-006",
+      "type": "book-chapter",
+      "page": "89-104",
+      "title": [
+        "Die Medialität des Agon. Sport und Spiel in der klassischen Antike"
+      ],
+      "author": [
+        {
+          "given": "Andreas",
+          "family": "Hetzel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-004",
+      "type": "book-chapter",
+      "page": "65-72",
+      "title": [
+        "Kann man sagen \"Die bessere Mannschaft hat verloren\" (José Mourinho)?"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Roth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "subtitle": [
+        "Response zu Simon Johnen: Leistung und Erfolg in Sport und Ökonomie"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-019",
+      "type": "book-chapter",
+      "page": "339-352",
+      "title": [
+        "Der Wandel des Sports und das Problem seiner gesellschaftstheoretischen Einordnung"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Haut",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-008",
+      "type": "book-chapter",
+      "page": "131-150",
+      "title": [
+        "Was ist ein Sportverein \"wert\"?"
+      ],
+      "author": [
+        {
+          "given": "Pia",
+          "family": "Klems",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "subtitle": [
+        "Vereine als Seismographen der Werteforschung"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-015",
+      "type": "book-chapter",
+      "page": "271-292",
+      "title": [
+        "Instrumentalisieren und Entdecken - Körperbilder in Sportlehrplänen 1980-2011"
+      ],
+      "author": [
+        {
+          "given": "Sebastian",
+          "family": "Ruin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-002",
+      "type": "book-chapter",
+      "page": "27-44",
+      "title": [
+        "Warum Gesellschaftstheorie und warum diese? Zu den Grundlagen von Mediale Moderne"
+      ],
+      "author": [
+        {
+          "given": "Volker",
+          "family": "Schürmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-020",
+      "type": "book-chapter",
+      "page": "353-362",
+      "title": [
+        "Anmerkungen zum Projekt \"Sport der Medialen Moderne\" aus politikwissenschaftlicher Perspektive"
+      ],
+      "author": [
+        {
+          "given": "Ralf",
+          "family": "Kleinfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-024",
+      "type": "book-chapter",
+      "page": "395-396",
+      "title": [
+        "Backmatter"
+      ],
+      "author": [
+        {
+          "given": "Volker",
+          "family": "Schürmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Mittag",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Günter",
+          "family": "Stibbe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jörg-Uwe",
+          "family": "Nieland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jan",
+          "family": "Haut",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-017",
+      "type": "book-chapter",
+      "page": "307-322",
+      "title": [
+        "Zum Wandel gesellschaftlicher Erwartungen an Wissenserwerb in Sportlehrplänen"
+      ],
+      "author": [
+        {
+          "given": "Ingo",
+          "family": "Wagner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-012",
+      "type": "book-chapter",
+      "page": "205-224",
+      "title": [
+        "Der Medialisierungsgrad des Spitzensports - eine Typologie"
+      ],
+      "author": [
+        {
+          "given": "Stephanie",
+          "family": "Heinecke",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-005",
+      "type": "book-chapter",
+      "page": "73-88",
+      "title": [
+        "Natur und Leben aus moderner Sicht"
+      ],
+      "author": [
+        {
+          "given": "Janine",
+          "family": "Böckelmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "subtitle": [
+        "Die gesellschaftliche Stellung naturwissenschaftlichen Wissens am Beispiel der Biologie in der Theorie Mediale Moderne"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-toc",
+      "type": "book-chapter",
+      "page": "5-8",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Volker",
+          "family": "Schürmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Mittag",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Günter",
+          "family": "Stibbe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jörg-Uwe",
+          "family": "Nieland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jan",
+          "family": "Haut",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-010",
+      "type": "book-chapter",
+      "page": "169-182",
+      "title": [
+        "Fußball und die Regulierung kollektiver Emotionen"
+      ],
+      "author": [
+        {
+          "given": "Timm",
+          "family": "Beichelt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-001",
+      "type": "book-chapter",
+      "page": "9-24",
+      "title": [
+        "Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Jörg-Uwe",
+          "family": "Nieland",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Volker",
+          "family": "Schürmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Günter",
+          "family": "Stibbe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jan",
+          "family": "Haut",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-014",
+      "type": "book-chapter",
+      "page": "251-268",
+      "title": [
+        "Kommunikationswissenschaftliche Perspektiven auf Werte in Zeiten des Medienund Gesellschaftswandels"
+      ],
+      "author": [
+        {
+          "given": "Kathrin Friederike",
+          "family": "Müller",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-011",
+      "type": "book-chapter",
+      "page": "185-204",
+      "title": [
+        "Medialisierung des Sports - ein Untersuchungsmodell"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3806-773X",
+          "authenticated-orcid": true,
+          "given": "Holger",
+          "family": "Ihle",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jörg-Uwe",
+          "family": "Nieland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Simon",
+          "family": "Rehbach",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-009",
+      "type": "book-chapter",
+      "page": "151-168",
+      "title": [
+        "Alive and Kicking?"
+      ],
+      "author": [
+        {
+          "given": "Daniel",
+          "family": "Ziesche",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "subtitle": [
+        "Fußballvereine in Deutschland und England als Orte von Vergemeinschaftung und Vergesellschaftung"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-021",
+      "type": "book-chapter",
+      "page": "363-376",
+      "title": [
+        "Mediale Moderne - systemtheoretisch beobachtet"
+      ],
+      "author": [
+        {
+          "given": "Swen",
+          "family": "Körner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-022",
+      "type": "book-chapter",
+      "page": "377-390",
+      "title": [
+        "Sport und Gesellschaftstheorie - Plädoyer für ein kritisches Update"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Gessmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-003",
+      "type": "book-chapter",
+      "page": "47-64",
+      "title": [
+        "Leistung und Erfolg in Sport und Ökonomie"
+      ],
+      "author": [
+        {
+          "given": "Simon",
+          "family": "Johnen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-023",
+      "type": "book-chapter",
+      "page": "391-394",
+      "title": [
+        "Autorinnen und Autoren"
+      ],
+      "author": [
+        {
+          "given": "Volker",
+          "family": "Schürmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Mittag",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Günter",
+          "family": "Stibbe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jörg-Uwe",
+          "family": "Nieland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jan",
+          "family": "Haut",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-018",
+      "type": "book-chapter",
+      "page": "323-336",
+      "title": [
+        "Handlungsfähigkeit im Sport - transversal und reflexiv"
+      ],
+      "author": [
+        {
+          "given": "André",
+          "family": "Gogoll",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839431528-007",
+      "type": "book-chapter",
+      "page": "107-130",
+      "title": [
+        "Was bedeuten Werte und Wertewandel im Sport?"
+      ],
+      "author": [
+        {
+          "given": "Sven",
+          "family": "Güldenpfennig",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "KörperKulturen",
+        "Bewegungskulturen im Wandel"
+      ],
+      "ISBN": [
+        "9783837631524",
+        "9783839431528"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Körperbilder im Schulsport: Konstruktion, Kontrastierung, Kommentar",
+      "authors": [
+        "Eckart Balz"
+      ],
+      "chapter_doi": "10.14361/9783839431528-016",
+      "citation_pages": "293-306"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Volker Schürmann",
+        "Jürgen Mittag",
+        "Günter Stibbe",
+        "Jörg-Uwe Nieland",
+        "Jan Haut"
+      ],
+      "chapter_doi": "10.14361/9783839431528-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Olympische Prinzipien und gesellschaftliche Werte in der Printberichterstattung Ausgewählte Befunde einer Pilotstudie",
+      "authors": [
+        "Simon Rehbach",
+        "Holger Ihle",
+        "Jörg-Uwe Nieland"
+      ],
+      "chapter_doi": "10.14361/9783839431528-013",
+      "citation_pages": "225-250"
+    },
+    {
+      "title": "Die Medialität des Agon. Sport und Spiel in der klassischen Antike",
+      "authors": [
+        "Andreas Hetzel"
+      ],
+      "chapter_doi": "10.14361/9783839431528-006",
+      "citation_pages": "89-104"
+    },
+    {
+      "title": "Kann man sagen \"Die bessere Mannschaft hat verloren\" (José Mourinho)? Response zu Simon Johnen: Leistung und Erfolg in Sport und Ökonomie",
+      "authors": [
+        "Michael Roth"
+      ],
+      "chapter_doi": "10.14361/9783839431528-004",
+      "citation_pages": "65-72"
+    },
+    {
+      "title": "Der Wandel des Sports und das Problem seiner gesellschaftstheoretischen Einordnung",
+      "authors": [
+        "Jan Haut"
+      ],
+      "chapter_doi": "10.14361/9783839431528-019",
+      "citation_pages": "339-352"
+    },
+    {
+      "title": "Was ist ein Sportverein \"wert\"? Vereine als Seismographen der Werteforschung",
+      "authors": [
+        "Pia Klems"
+      ],
+      "chapter_doi": "10.14361/9783839431528-008",
+      "citation_pages": "131-150"
+    },
+    {
+      "title": "Instrumentalisieren und Entdecken - Körperbilder in Sportlehrplänen 1980-2011",
+      "authors": [
+        "Sebastian Ruin"
+      ],
+      "chapter_doi": "10.14361/9783839431528-015",
+      "citation_pages": "271-292"
+    },
+    {
+      "title": "Warum Gesellschaftstheorie und warum diese? Zu den Grundlagen von Mediale Moderne",
+      "authors": [
+        "Volker Schürmann"
+      ],
+      "chapter_doi": "10.14361/9783839431528-002",
+      "citation_pages": "27-44"
+    },
+    {
+      "title": "Anmerkungen zum Projekt \"Sport der Medialen Moderne\" aus politikwissenschaftlicher Perspektive",
+      "authors": [
+        "Ralf Kleinfeld"
+      ],
+      "chapter_doi": "10.14361/9783839431528-020",
+      "citation_pages": "353-362"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [
+        "Volker Schürmann",
+        "Jürgen Mittag",
+        "Günter Stibbe",
+        "Jörg-Uwe Nieland",
+        "Jan Haut"
+      ],
+      "chapter_doi": "10.14361/9783839431528-024",
+      "citation_pages": "395-396"
+    },
+    {
+      "title": "Zum Wandel gesellschaftlicher Erwartungen an Wissenserwerb in Sportlehrplänen",
+      "authors": [
+        "Ingo Wagner"
+      ],
+      "chapter_doi": "10.14361/9783839431528-017",
+      "citation_pages": "307-322"
+    },
+    {
+      "title": "Der Medialisierungsgrad des Spitzensports - eine Typologie",
+      "authors": [
+        "Stephanie Heinecke"
+      ],
+      "chapter_doi": "10.14361/9783839431528-012",
+      "citation_pages": "205-224"
+    },
+    {
+      "title": "Natur und Leben aus moderner Sicht Die gesellschaftliche Stellung naturwissenschaftlichen Wissens am Beispiel der Biologie in der Theorie Mediale Moderne",
+      "authors": [
+        "Janine Böckelmann"
+      ],
+      "chapter_doi": "10.14361/9783839431528-005",
+      "citation_pages": "73-88"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Volker Schürmann",
+        "Jürgen Mittag",
+        "Günter Stibbe",
+        "Jörg-Uwe Nieland",
+        "Jan Haut"
+      ],
+      "chapter_doi": "10.14361/9783839431528-toc",
+      "citation_pages": "5-8"
+    },
+    {
+      "title": "Fußball und die Regulierung kollektiver Emotionen",
+      "authors": [
+        "Timm Beichelt"
+      ],
+      "chapter_doi": "10.14361/9783839431528-010",
+      "citation_pages": "169-182"
+    },
+    {
+      "title": "Einleitung",
+      "authors": [
+        "Jörg-Uwe Nieland",
+        "Volker Schürmann",
+        "Günter Stibbe",
+        "Jan Haut"
+      ],
+      "chapter_doi": "10.14361/9783839431528-001",
+      "citation_pages": "9-24"
+    },
+    {
+      "title": "Kommunikationswissenschaftliche Perspektiven auf Werte in Zeiten des Medienund Gesellschaftswandels",
+      "authors": [
+        "Kathrin Friederike Müller"
+      ],
+      "chapter_doi": "10.14361/9783839431528-014",
+      "citation_pages": "251-268"
+    },
+    {
+      "title": "Medialisierung des Sports - ein Untersuchungsmodell",
+      "authors": [
+        "Holger Ihle",
+        "Jörg-Uwe Nieland",
+        "Simon Rehbach"
+      ],
+      "chapter_doi": "10.14361/9783839431528-011",
+      "citation_pages": "185-204"
+    },
+    {
+      "title": "Alive and Kicking? Fußballvereine in Deutschland und England als Orte von Vergemeinschaftung und Vergesellschaftung",
+      "authors": [
+        "Daniel Ziesche"
+      ],
+      "chapter_doi": "10.14361/9783839431528-009",
+      "citation_pages": "151-168"
+    },
+    {
+      "title": "Mediale Moderne - systemtheoretisch beobachtet",
+      "authors": [
+        "Swen Körner"
+      ],
+      "chapter_doi": "10.14361/9783839431528-021",
+      "citation_pages": "363-376"
+    },
+    {
+      "title": "Sport und Gesellschaftstheorie - Plädoyer für ein kritisches Update",
+      "authors": [
+        "Martin Gessmann"
+      ],
+      "chapter_doi": "10.14361/9783839431528-022",
+      "citation_pages": "377-390"
+    },
+    {
+      "title": "Leistung und Erfolg in Sport und Ökonomie",
+      "authors": [
+        "Simon Johnen"
+      ],
+      "chapter_doi": "10.14361/9783839431528-003",
+      "citation_pages": "47-64"
+    },
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [
+        "Volker Schürmann",
+        "Jürgen Mittag",
+        "Günter Stibbe",
+        "Jörg-Uwe Nieland",
+        "Jan Haut"
+      ],
+      "chapter_doi": "10.14361/9783839431528-023",
+      "citation_pages": "391-394"
+    },
+    {
+      "title": "Handlungsfähigkeit im Sport - transversal und reflexiv",
+      "authors": [
+        "André Gogoll"
+      ],
+      "chapter_doi": "10.14361/9783839431528-018",
+      "citation_pages": "323-336"
+    },
+    {
+      "title": "Was bedeuten Werte und Wertewandel im Sport?",
+      "authors": [
+        "Sven Güldenpfennig"
+      ],
+      "chapter_doi": "10.14361/9783839431528-007",
+      "citation_pages": "107-130"
+    }
+  ]
+}

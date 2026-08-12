@@ -1,0 +1,890 @@
+{
+  "isbn": "9781805113164",
+  "fetched_at": "2026-08-11T22:41:02.305531+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2024-06-21T00:00:00Z",
+            "timestamp": 1718928000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0406.06",
+      "type": "book-chapter",
+      "page": "159-184",
+      "title": [
+        "6. Multimodal Cognitive Anchoring in Antisemitic Memes"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0006-1714-2015",
+          "authenticated-orcid": false,
+          "given": "Marcus",
+          "family": "Scheiber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/045y6d111",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Vechta"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03prydq77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Vienna"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Antisemitism in Online Communication"
+      ],
+      "ISBN": [
+        "9781805113164",
+        "9781805113171",
+        "9781805113188",
+        "9781805113201",
+        "9781805113195"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2024-06-21T00:00:00Z",
+            "timestamp": 1718928000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0406.08",
+      "type": "book-chapter",
+      "page": "205-236",
+      "title": [
+        "8. Algorithms Against Antisemitism?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0170-968X",
+          "authenticated-orcid": false,
+          "given": "Elisabeth",
+          "family": "Steffen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xzwj424",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hochschule für Technik und Wirtschaft Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3825-6530",
+          "authenticated-orcid": false,
+          "given": "Milena",
+          "family": "Pustet",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xzwj424",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hochschule für Technik und Wirtschaft Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0782-5382",
+          "authenticated-orcid": false,
+          "given": "Helena",
+          "family": "Mihaljević",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xzwj424",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hochschule für Technik und Wirtschaft Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Antisemitism in Online Communication"
+      ],
+      "subtitle": [
+        "Towards The Automated Detection of Antisemitic Content Online"
+      ],
+      "ISBN": [
+        "9781805113164",
+        "9781805113171",
+        "9781805113188",
+        "9781805113201",
+        "9781805113195"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2024-06-21T00:00:00Z",
+            "timestamp": 1718928000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0406.05",
+      "type": "book-chapter",
+      "page": "137-158",
+      "title": [
+        "5. Countering Antisemitism Online"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7595-1156",
+          "authenticated-orcid": false,
+          "given": "Laura",
+          "family": "Ascone",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Antisemitism in Online Communication"
+      ],
+      "subtitle": [
+        "A Discursive Analysis of Facebook and Twitter/X Comments"
+      ],
+      "ISBN": [
+        "9781805113164",
+        "9781805113171",
+        "9781805113188",
+        "9781805113201",
+        "9781805113195"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2024-06-21T00:00:00Z",
+            "timestamp": 1718928000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0406.00",
+      "type": "book-chapter",
+      "page": "1-18",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2847-4542",
+          "authenticated-orcid": false,
+          "given": "Matthias J.",
+          "family": "Becker",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7595-1156",
+          "authenticated-orcid": false,
+          "given": "Laura",
+          "family": "Ascone",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0323-2627",
+          "authenticated-orcid": false,
+          "given": "Karolina",
+          "family": "Placzynta",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-6622-4303",
+          "authenticated-orcid": false,
+          "given": "Chloé",
+          "family": "Vincent",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Antisemitism in Online Communication"
+      ],
+      "ISBN": [
+        "9781805113164",
+        "9781805113171",
+        "9781805113188",
+        "9781805113201",
+        "9781805113195"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2024-06-21T00:00:00Z",
+            "timestamp": 1718928000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0406.02",
+      "type": "book-chapter",
+      "page": "47-74",
+      "title": [
+        "2. Jordan Peterson and Conservative Antisemitism Online"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2847-4542",
+          "authenticated-orcid": false,
+          "given": "Matthias J.",
+          "family": "Becker",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Antisemitism in Online Communication"
+      ],
+      "subtitle": [
+        "The Dethroning of an Intellectual Icon Following His Interview with Netanyahu"
+      ],
+      "ISBN": [
+        "9781805113164",
+        "9781805113171",
+        "9781805113188",
+        "9781805113201",
+        "9781805113195"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2024-06-21T00:00:00Z",
+            "timestamp": 1718928000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0406.04",
+      "type": "book-chapter",
+      "page": "107-136",
+      "title": [
+        "4. “More Like Genocide”"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8590-2211",
+          "authenticated-orcid": false,
+          "given": "Matthew",
+          "family": "Bolton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Antisemitism in Online Communication"
+      ],
+      "subtitle": [
+        "The Use of the Concept of Genocide in UK Online Debates About Israel"
+      ],
+      "ISBN": [
+        "9781805113164",
+        "9781805113171",
+        "9781805113188",
+        "9781805113201",
+        "9781805113195"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2024-06-21T00:00:00Z",
+            "timestamp": 1718928000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0406.03",
+      "type": "book-chapter",
+      "page": "75-106",
+      "title": [
+        "3. ‘Pop’ Antisemitism and Deviant Communities"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8990-6188",
+          "authenticated-orcid": false,
+          "given": "Alexis",
+          "family": "Chapelan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Antisemitism in Online Communication"
+      ],
+      "subtitle": [
+        "An Analysis of French Social Media Users’ Reactions to the Dieudonné (2020) and Kanye West (2022) Antisemitism Controversies"
+      ],
+      "ISBN": [
+        "9781805113164",
+        "9781805113171",
+        "9781805113188",
+        "9781805113201",
+        "9781805113195"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2024-06-21T00:00:00Z",
+            "timestamp": 1718928000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0406.01",
+      "type": "book-chapter",
+      "page": "19-46",
+      "title": [
+        "1. The Cases of Riley and Rooney"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0323-2627",
+          "authenticated-orcid": false,
+          "given": "Karolina",
+          "family": "Placzynta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Antisemitism in Online Communication"
+      ],
+      "subtitle": [
+        "Intersections of Misogyny with Antisemitism and Counter Speech in British Online Discourse"
+      ],
+      "ISBN": [
+        "9781805113164",
+        "9781805113171",
+        "9781805113188",
+        "9781805113201",
+        "9781805113195"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2024-06-21T00:00:00Z",
+            "timestamp": 1718928000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0406.07",
+      "type": "book-chapter",
+      "page": "185-204",
+      "title": [
+        "7. Discussion Trees on Social Media"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0004-6622-4303",
+          "authenticated-orcid": false,
+          "given": "Chloé",
+          "family": "Vincent",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00cv9y106",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ghent University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Antisemitism in Online Communication"
+      ],
+      "subtitle": [
+        "A New Approach to Detecting Antisemitism Online"
+      ],
+      "ISBN": [
+        "9781805113164",
+        "9781805113171",
+        "9781805113188",
+        "9781805113201",
+        "9781805113195"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            21
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "6. Multimodal Cognitive Anchoring in Antisemitic Memes",
+      "authors": [
+        "Marcus Scheiber"
+      ],
+      "chapter_doi": "10.11647/obp.0406.06",
+      "citation_pages": "159-184"
+    },
+    {
+      "title": "8. Algorithms Against Antisemitism? Towards The Automated Detection of Antisemitic Content Online",
+      "authors": [
+        "Elisabeth Steffen",
+        "Milena Pustet",
+        "Helena Mihaljević"
+      ],
+      "chapter_doi": "10.11647/obp.0406.08",
+      "citation_pages": "205-236"
+    },
+    {
+      "title": "5. Countering Antisemitism Online A Discursive Analysis of Facebook and Twitter/X Comments",
+      "authors": [
+        "Laura Ascone"
+      ],
+      "chapter_doi": "10.11647/obp.0406.05",
+      "citation_pages": "137-158"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Matthias J. Becker",
+        "Laura Ascone",
+        "Karolina Placzynta",
+        "Chloé Vincent"
+      ],
+      "chapter_doi": "10.11647/obp.0406.00",
+      "citation_pages": "1-18"
+    },
+    {
+      "title": "2. Jordan Peterson and Conservative Antisemitism Online The Dethroning of an Intellectual Icon Following His Interview with Netanyahu",
+      "authors": [
+        "Matthias J. Becker"
+      ],
+      "chapter_doi": "10.11647/obp.0406.02",
+      "citation_pages": "47-74"
+    },
+    {
+      "title": "4. “More Like Genocide” The Use of the Concept of Genocide in UK Online Debates About Israel",
+      "authors": [
+        "Matthew Bolton"
+      ],
+      "chapter_doi": "10.11647/obp.0406.04",
+      "citation_pages": "107-136"
+    },
+    {
+      "title": "3. ‘Pop’ Antisemitism and Deviant Communities An Analysis of French Social Media Users’ Reactions to the Dieudonné (2020) and Kanye West (2022) Antisemitism Controversies",
+      "authors": [
+        "Alexis Chapelan"
+      ],
+      "chapter_doi": "10.11647/obp.0406.03",
+      "citation_pages": "75-106"
+    },
+    {
+      "title": "1. The Cases of Riley and Rooney Intersections of Misogyny with Antisemitism and Counter Speech in British Online Discourse",
+      "authors": [
+        "Karolina Placzynta"
+      ],
+      "chapter_doi": "10.11647/obp.0406.01",
+      "citation_pages": "19-46"
+    },
+    {
+      "title": "7. Discussion Trees on Social Media A New Approach to Detecting Antisemitism Online",
+      "authors": [
+        "Chloé Vincent"
+      ],
+      "chapter_doi": "10.11647/obp.0406.07",
+      "citation_pages": "185-204"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "isbn": "9783031548277",
-  "fetched_at": "2026-08-09T13:15:10.433671+00:00",
+  "fetched_at": "2026-08-11T22:42:07.283625+00:00",
   "license": "https://creativecommons.org/licenses/by/4.0",
   "license_source": "crossref",
   "raw_items": [
@@ -1571,76 +1571,6 @@
           "URL": "https://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.1007/978-3-031-54827-7_5",
-      "type": "book-chapter",
-      "page": "55-64",
-      "title": [
-        "Fundamental Limitations of Generative LLMs"
-      ],
-      "author": [
-        {
-          "given": "Andrei",
-          "family": "Kucharavy",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Large Language Models in Cybersecurity"
-      ],
-      "ISBN": [
-        "9783031548260",
-        "9783031548277"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2024
-          ]
-        ]
-      }
-    },
-    {
-      "license": [
-        {
-          "start": {
-            "date-parts": [
-              [
-                2024,
-                1,
-                1
-              ]
-            ],
-            "date-time": "2024-01-01T00:00:00Z",
-            "timestamp": 1704067200000
-          },
-          "content-version": "tdm",
-          "delay-in-days": 0,
-          "URL": "https://creativecommons.org/licenses/by/4.0"
-        },
-        {
-          "start": {
-            "date-parts": [
-              [
-                2024,
-                4,
-                12
-              ]
-            ],
-            "date-time": "2024-04-12T00:00:00Z",
-            "timestamp": 1712880000000
-          },
-          "content-version": "vor",
-          "delay-in-days": 102,
-          "URL": "https://creativecommons.org/licenses/by/4.0"
-        }
-      ],
       "DOI": "10.1007/978-3-031-54827-7_24",
       "type": "book-chapter",
       "page": "213-223",
@@ -1711,6 +1641,76 @@
           "URL": "https://creativecommons.org/licenses/by/4.0"
         }
       ],
+      "DOI": "10.1007/978-3-031-54827-7_5",
+      "type": "book-chapter",
+      "page": "55-64",
+      "title": [
+        "Fundamental Limitations of Generative LLMs"
+      ],
+      "author": [
+        {
+          "given": "Andrei",
+          "family": "Kucharavy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2024-01-01T00:00:00Z",
+            "timestamp": 1704067200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                12
+              ]
+            ],
+            "date-time": "2024-04-12T00:00:00Z",
+            "timestamp": 1712880000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 102,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
       "DOI": "10.1007/978-3-031-54827-7_23",
       "type": "book-chapter",
       "page": "205-211",
@@ -1721,6 +1721,76 @@
         {
           "given": "Zachary",
           "family": "Schillaci",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2024-01-01T00:00:00Z",
+            "timestamp": 1704067200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                12
+              ]
+            ],
+            "date-time": "2024-04-12T00:00:00Z",
+            "timestamp": 1712880000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 102,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.1007/978-3-031-54827-7_1",
+      "type": "book-chapter",
+      "page": "3-17",
+      "title": [
+        "From Deep Neural Language Models to LLMs"
+      ],
+      "author": [
+        {
+          "given": "Andrei",
+          "family": "Kucharavy",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -1869,76 +1939,6 @@
             {
               "vocabulary": "crossref",
               "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Large Language Models in Cybersecurity"
-      ],
-      "ISBN": [
-        "9783031548260",
-        "9783031548277"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2024
-          ]
-        ]
-      }
-    },
-    {
-      "license": [
-        {
-          "start": {
-            "date-parts": [
-              [
-                2024,
-                1,
-                1
-              ]
-            ],
-            "date-time": "2024-01-01T00:00:00Z",
-            "timestamp": 1704067200000
-          },
-          "content-version": "tdm",
-          "delay-in-days": 0,
-          "URL": "https://creativecommons.org/licenses/by/4.0"
-        },
-        {
-          "start": {
-            "date-parts": [
-              [
-                2024,
-                4,
-                12
-              ]
-            ],
-            "date-time": "2024-04-12T00:00:00Z",
-            "timestamp": 1712880000000
-          },
-          "content-version": "vor",
-          "delay-in-days": 102,
-          "URL": "https://creativecommons.org/licenses/by/4.0"
-        }
-      ],
-      "DOI": "10.1007/978-3-031-54827-7_1",
-      "type": "book-chapter",
-      "page": "3-17",
-      "title": [
-        "From Deep Neural Language Models to LLMs"
-      ],
-      "author": [
-        {
-          "given": "Andrei",
-          "family": "Kucharavy",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "role": "author",
-              "vocabulary": "crossref"
             }
           ]
         }
@@ -2284,14 +2284,6 @@
       "citation_pages": "45-53"
     },
     {
-      "title": "Fundamental Limitations of Generative LLMs",
-      "authors": [
-        "Andrei Kucharavy"
-      ],
-      "chapter_doi": "10.1007/978-3-031-54827-7_5",
-      "citation_pages": "55-64"
-    },
-    {
       "title": "LLMs Red Teaming",
       "authors": [
         "Dragos Ruiu"
@@ -2300,12 +2292,28 @@
       "citation_pages": "213-223"
     },
     {
+      "title": "Fundamental Limitations of Generative LLMs",
+      "authors": [
+        "Andrei Kucharavy"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_5",
+      "citation_pages": "55-64"
+    },
+    {
       "title": "On-Site Deployment of LLMs",
       "authors": [
         "Zachary Schillaci"
       ],
       "chapter_doi": "10.1007/978-3-031-54827-7_23",
       "citation_pages": "205-211"
+    },
+    {
+      "title": "From Deep Neural Language Models to LLMs",
+      "authors": [
+        "Andrei Kucharavy"
+      ],
+      "chapter_doi": "10.1007/978-3-031-54827-7_1",
+      "citation_pages": "3-17"
     },
     {
       "title": "Phishing and Social Engineering in the Age of LLMs",
@@ -2320,14 +2328,6 @@
       ],
       "chapter_doi": "10.1007/978-3-031-54827-7_8",
       "citation_pages": "81-86"
-    },
-    {
-      "title": "From Deep Neural Language Models to LLMs",
-      "authors": [
-        "Andrei Kucharavy"
-      ],
-      "chapter_doi": "10.1007/978-3-031-54827-7_1",
-      "citation_pages": "3-17"
     },
     {
       "title": "Robust and Private Federated Learning on LLMs",

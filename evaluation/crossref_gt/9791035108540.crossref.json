@@ -1,6 +1,6 @@
 {
   "isbn": "9791035108540",
-  "fetched_at": "2026-08-11T14:26:54.008327+00:00",
+  "fetched_at": "2026-08-11T22:43:54.092063+00:00",
   "license": "https://www.openedition.org/12554",
   "license_source": "crossref",
   "raw_items": [
@@ -1087,17 +1087,15 @@
           "URL": "https://www.openedition.org/12554"
         }
       ],
-      "DOI": "10.4000/books.psorbonne.111293",
+      "DOI": "10.4000/books.psorbonne.112105",
       "type": "book-chapter",
       "title": [
-        "Archéologie et fouilles en contexte difficile"
+        "Du Brésil aux Antilles : lorsque des jeux de pouvoir limitent l’archéologie précolombienne"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0001-9741-6704",
-          "authenticated-orcid": false,
-          "given": "David",
-          "family": "Pleurdeau",
+          "given": "Ninon",
+          "family": "Bour",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -1141,15 +1139,17 @@
           "URL": "https://www.openedition.org/12554"
         }
       ],
-      "DOI": "10.4000/books.psorbonne.112105",
+      "DOI": "10.4000/books.psorbonne.111293",
       "type": "book-chapter",
       "title": [
-        "Du Brésil aux Antilles : lorsque des jeux de pouvoir limitent l’archéologie précolombienne"
+        "Archéologie et fouilles en contexte difficile"
       ],
       "author": [
         {
-          "given": "Ninon",
-          "family": "Bour",
+          "ORCID": "https://orcid.org/0000-0001-9741-6704",
+          "authenticated-orcid": false,
+          "given": "David",
+          "family": "Pleurdeau",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -1329,19 +1329,19 @@
       "citation_pages": null
     },
     {
-      "title": "Archéologie et fouilles en contexte difficile",
-      "authors": [
-        "David Pleurdeau"
-      ],
-      "chapter_doi": "10.4000/books.psorbonne.111293",
-      "citation_pages": null
-    },
-    {
       "title": "Du Brésil aux Antilles : lorsque des jeux de pouvoir limitent l’archéologie précolombienne",
       "authors": [
         "Ninon Bour"
       ],
       "chapter_doi": "10.4000/books.psorbonne.112105",
+      "citation_pages": null
+    },
+    {
+      "title": "Archéologie et fouilles en contexte difficile",
+      "authors": [
+        "David Pleurdeau"
+      ],
+      "chapter_doi": "10.4000/books.psorbonne.111293",
       "citation_pages": null
     }
   ]

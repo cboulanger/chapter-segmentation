@@ -1,0 +1,146 @@
+{
+  "isbn": "9781805115434",
+  "fetched_at": "2026-08-11T22:41:05.957390+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                27
+              ]
+            ],
+            "date-time": "2025-06-27T00:00:00Z",
+            "timestamp": 1750982400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0456.01",
+      "type": "book-chapter",
+      "page": "13-90",
+      "title": [
+        "When Katherine Brewed – a Play"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Cresswell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Theatre Praxis",
+        "When Katherine Brewed, a Play"
+      ],
+      "ISBN": [
+        "9781805115434",
+        "9781805115441",
+        "9781805115458",
+        "9781805115472",
+        "9781805115465"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                27
+              ]
+            ],
+            "date-time": "2025-06-27T00:00:00Z",
+            "timestamp": 1750982400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0456.00",
+      "type": "book-chapter",
+      "page": "1-12",
+      "title": [
+        "Telling the Story of the Peasants’ Revolt and Today’s ‘New Radical Theatre’"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Cresswell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Theatre Praxis",
+        "When Katherine Brewed, a Play"
+      ],
+      "ISBN": [
+        "9781805115434",
+        "9781805115441",
+        "9781805115458",
+        "9781805115472",
+        "9781805115465"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            27
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "When Katherine Brewed – a Play",
+      "authors": [
+        "John Cresswell"
+      ],
+      "chapter_doi": "10.11647/obp.0456.01",
+      "citation_pages": "13-90"
+    },
+    {
+      "title": "Telling the Story of the Peasants’ Revolt and Today’s ‘New Radical Theatre’",
+      "authors": [
+        "John Cresswell"
+      ],
+      "chapter_doi": "10.11647/obp.0456.00",
+      "citation_pages": "1-12"
+    }
+  ]
+}

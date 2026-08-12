@@ -1,0 +1,1775 @@
+{
+  "isbn": "9781805116073",
+  "fetched_at": "2026-08-11T22:41:04.762520+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.05",
+      "type": "book-chapter",
+      "page": "107-124",
+      "title": [
+        "5. Dance Analysis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7455-0847",
+          "authenticated-orcid": false,
+          "given": "Sarah",
+          "family": "Whatley",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01tgmhj36",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Coventry University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.01",
+      "type": "book-chapter",
+      "page": "21-42",
+      "title": [
+        "1. Concept-Based Analysis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-5214-9213",
+          "authenticated-orcid": false,
+          "given": "Laura",
+          "family": "Karreman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.10",
+      "type": "book-chapter",
+      "page": "209-228",
+      "title": [
+        "10. Cultural Materialism and the Politics of Performance"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0469-6167",
+          "authenticated-orcid": false,
+          "given": "Dick",
+          "family": "Zijp",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.12",
+      "type": "book-chapter",
+      "page": "247-268",
+      "title": [
+        "12. Archival Research Expanded"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-6635-6942",
+          "authenticated-orcid": false,
+          "given": "Lisa",
+          "family": "Skwirblies",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "subtitle": [
+        "Bodily Archives and Embodied Fabulation"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.15",
+      "type": "book-chapter",
+      "page": "311-334",
+      "title": [
+        "15. Autoethnography in Performance Studies"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1097-2957",
+          "authenticated-orcid": false,
+          "given": "Fabiola",
+          "family": "Camuti",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/018bzp792",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Arts Utrecht"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-2787-0842",
+          "authenticated-orcid": false,
+          "given": "Annemijn",
+          "family": "van der Schaar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04w5ec154",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Humanistic Studies"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "subtitle": [
+        "The Performativity of Queer Parenting"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.18",
+      "type": "book-chapter",
+      "page": "387-412",
+      "title": [
+        "18. Doing Performance Philosophy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6276-0131",
+          "authenticated-orcid": false,
+          "given": "Laura",
+          "family": "Cull Ó Maeillorca",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dde1554",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Amsterdam University of the Arts"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "subtitle": [
+        "Thinking alongside Performance"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.02",
+      "type": "book-chapter",
+      "page": "43-66",
+      "title": [
+        "2. Dramaturgical Analysis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9202-5277",
+          "authenticated-orcid": false,
+          "given": "Liesbeth",
+          "family": "Groot Nibbelink",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6001-1826",
+          "authenticated-orcid": false,
+          "given": "Sigrid",
+          "family": "Merx",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "subtitle": [
+        "A Relational Approach"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.03",
+      "type": "book-chapter",
+      "page": "67-84",
+      "title": [
+        "3. Spectatorship Analysis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-7991-9081",
+          "authenticated-orcid": false,
+          "given": "Maaike",
+          "family": "Bleeker",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.09",
+      "type": "book-chapter",
+      "page": "187-208",
+      "title": [
+        "9. Creating Art Ecologies through Contextual Analysis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9202-5277",
+          "authenticated-orcid": false,
+          "given": "Liesbeth",
+          "family": "Groot Nibbelink",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.08",
+      "type": "book-chapter",
+      "page": "169-186",
+      "title": [
+        "8. Discourse Analysis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8720-7896",
+          "authenticated-orcid": false,
+          "given": "Sruti",
+          "family": "Bala",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.16",
+      "type": "book-chapter",
+      "page": "337-358",
+      "title": [
+        "16. Practice-led Research"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9502-9428",
+          "authenticated-orcid": false,
+          "given": "Konstantina",
+          "family": "Georgelou",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dde1554",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Amsterdam University of the Arts"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "subtitle": [
+        "Transversal Ways of Sensing/Knowing"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.00",
+      "type": "book-chapter",
+      "page": "1-18",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9202-5277",
+          "authenticated-orcid": false,
+          "given": "Liesbeth",
+          "family": "Groot Nibbelink",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-5214-9213",
+          "authenticated-orcid": false,
+          "given": "Laura",
+          "family": "Karreman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.11",
+      "type": "book-chapter",
+      "page": "229-246",
+      "title": [
+        "11. Tracing Histories"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0334-1914",
+          "authenticated-orcid": false,
+          "given": "Evelyn",
+          "family": "Wan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "subtitle": [
+        "An Archaeological Approach"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.19",
+      "type": "book-chapter",
+      "page": "413-438",
+      "title": [
+        "19. Hyphenated Thinking in Performance Processes"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3733-4103",
+          "authenticated-orcid": false,
+          "given": "Christel",
+          "family": "Stalpaert",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00cv9y106",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ghent University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "subtitle": [
+        "Thinking through Performance-pedagogical Entanglements with More-than-human Matter"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.07",
+      "type": "book-chapter",
+      "page": "145-166",
+      "title": [
+        "7. A Multimodal Critical Discourse Analysis of Listening"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2550-921X",
+          "authenticated-orcid": false,
+          "given": "Pieter",
+          "family": "Verstraete",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/012p63287",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Groningen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.06",
+      "type": "book-chapter",
+      "page": "125-144",
+      "title": [
+        "6. Music Always Does Something"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4161-1927",
+          "authenticated-orcid": false,
+          "given": "Millie",
+          "family": "Taylor",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "subtitle": [
+        "Analysing Musical Theatre"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.17",
+      "type": "book-chapter",
+      "page": "359-386",
+      "title": [
+        "17. Affective Attunement"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9147-3310",
+          "authenticated-orcid": false,
+          "given": "Theron",
+          "family": "Schmidt",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "subtitle": [
+        "Mapping the Invisible"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.14",
+      "type": "book-chapter",
+      "page": "293-310",
+      "title": [
+        "14. Personal Narratives and Social Constructs through Autoethnography in Performance Studies"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0461-8284",
+          "authenticated-orcid": false,
+          "given": "Wigbertson Julian",
+          "family": "Isenia",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.04",
+      "type": "book-chapter",
+      "page": "85-106",
+      "title": [
+        "4. Movement Analysis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4272-6814",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Fuhrmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-7197-6215",
+          "authenticated-orcid": false,
+          "given": "Lise",
+          "family": "Uytterhoeven",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0339-4848",
+          "authenticated-orcid": false,
+          "given": "Rachel",
+          "family": "Fensham",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ks66431",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Surrey"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2025-10-24T00:00:00Z",
+            "timestamp": 1761264000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0469.13",
+      "type": "book-chapter",
+      "page": "271-292",
+      "title": [
+        "13. Intersectionality"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4189-1925",
+          "authenticated-orcid": false,
+          "given": "Anika",
+          "family": "Marschall",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Performance Research Methods"
+      ],
+      "ISBN": [
+        "9781805116073",
+        "9781805116080",
+        "9781805116097",
+        "9781805116110",
+        "9781805116103"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            24
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "5. Dance Analysis",
+      "authors": [
+        "Sarah Whatley"
+      ],
+      "chapter_doi": "10.11647/obp.0469.05",
+      "citation_pages": "107-124"
+    },
+    {
+      "title": "1. Concept-Based Analysis",
+      "authors": [
+        "Laura Karreman"
+      ],
+      "chapter_doi": "10.11647/obp.0469.01",
+      "citation_pages": "21-42"
+    },
+    {
+      "title": "10. Cultural Materialism and the Politics of Performance",
+      "authors": [
+        "Dick Zijp"
+      ],
+      "chapter_doi": "10.11647/obp.0469.10",
+      "citation_pages": "209-228"
+    },
+    {
+      "title": "12. Archival Research Expanded Bodily Archives and Embodied Fabulation",
+      "authors": [
+        "Lisa Skwirblies"
+      ],
+      "chapter_doi": "10.11647/obp.0469.12",
+      "citation_pages": "247-268"
+    },
+    {
+      "title": "15. Autoethnography in Performance Studies The Performativity of Queer Parenting",
+      "authors": [
+        "Fabiola Camuti",
+        "Annemijn van der Schaar"
+      ],
+      "chapter_doi": "10.11647/obp.0469.15",
+      "citation_pages": "311-334"
+    },
+    {
+      "title": "18. Doing Performance Philosophy Thinking alongside Performance",
+      "authors": [
+        "Laura Cull Ó Maeillorca"
+      ],
+      "chapter_doi": "10.11647/obp.0469.18",
+      "citation_pages": "387-412"
+    },
+    {
+      "title": "2. Dramaturgical Analysis A Relational Approach",
+      "authors": [
+        "Liesbeth Groot Nibbelink",
+        "Sigrid Merx"
+      ],
+      "chapter_doi": "10.11647/obp.0469.02",
+      "citation_pages": "43-66"
+    },
+    {
+      "title": "3. Spectatorship Analysis",
+      "authors": [
+        "Maaike Bleeker"
+      ],
+      "chapter_doi": "10.11647/obp.0469.03",
+      "citation_pages": "67-84"
+    },
+    {
+      "title": "9. Creating Art Ecologies through Contextual Analysis",
+      "authors": [
+        "Liesbeth Groot Nibbelink"
+      ],
+      "chapter_doi": "10.11647/obp.0469.09",
+      "citation_pages": "187-208"
+    },
+    {
+      "title": "8. Discourse Analysis",
+      "authors": [
+        "Sruti Bala"
+      ],
+      "chapter_doi": "10.11647/obp.0469.08",
+      "citation_pages": "169-186"
+    },
+    {
+      "title": "16. Practice-led Research Transversal Ways of Sensing/Knowing",
+      "authors": [
+        "Konstantina Georgelou"
+      ],
+      "chapter_doi": "10.11647/obp.0469.16",
+      "citation_pages": "337-358"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Liesbeth Groot Nibbelink",
+        "Laura Karreman"
+      ],
+      "chapter_doi": "10.11647/obp.0469.00",
+      "citation_pages": "1-18"
+    },
+    {
+      "title": "11. Tracing Histories An Archaeological Approach",
+      "authors": [
+        "Evelyn Wan"
+      ],
+      "chapter_doi": "10.11647/obp.0469.11",
+      "citation_pages": "229-246"
+    },
+    {
+      "title": "19. Hyphenated Thinking in Performance Processes Thinking through Performance-pedagogical Entanglements with More-than-human Matter",
+      "authors": [
+        "Christel Stalpaert"
+      ],
+      "chapter_doi": "10.11647/obp.0469.19",
+      "citation_pages": "413-438"
+    },
+    {
+      "title": "7. A Multimodal Critical Discourse Analysis of Listening",
+      "authors": [
+        "Pieter Verstraete"
+      ],
+      "chapter_doi": "10.11647/obp.0469.07",
+      "citation_pages": "145-166"
+    },
+    {
+      "title": "6. Music Always Does Something Analysing Musical Theatre",
+      "authors": [
+        "Millie Taylor"
+      ],
+      "chapter_doi": "10.11647/obp.0469.06",
+      "citation_pages": "125-144"
+    },
+    {
+      "title": "17. Affective Attunement Mapping the Invisible",
+      "authors": [
+        "Theron Schmidt"
+      ],
+      "chapter_doi": "10.11647/obp.0469.17",
+      "citation_pages": "359-386"
+    },
+    {
+      "title": "14. Personal Narratives and Social Constructs through Autoethnography in Performance Studies",
+      "authors": [
+        "Wigbertson Julian Isenia"
+      ],
+      "chapter_doi": "10.11647/obp.0469.14",
+      "citation_pages": "293-310"
+    },
+    {
+      "title": "4. Movement Analysis",
+      "authors": [
+        "Andrew Fuhrmann",
+        "Lise Uytterhoeven",
+        "Rachel Fensham"
+      ],
+      "chapter_doi": "10.11647/obp.0469.04",
+      "citation_pages": "85-106"
+    },
+    {
+      "title": "13. Intersectionality",
+      "authors": [
+        "Anika Marschall"
+      ],
+      "chapter_doi": "10.11647/obp.0469.13",
+      "citation_pages": "271-292"
+    }
+  ]
+}

@@ -1,0 +1,1237 @@
+{
+  "isbn": "9781805113263",
+  "fetched_at": "2026-08-11T22:41:00.738960+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.02",
+      "type": "book-chapter",
+      "page": "30-54",
+      "title": [
+        "2. De Morgan and Logic"
+      ],
+      "author": [
+        {
+          "given": "Anna-Sophie",
+          "family": "Heinemann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.07",
+      "type": "book-chapter",
+      "page": "174-194",
+      "title": [
+        "7. De Morgan’s A Budget of Paradoxes"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8731-312X",
+          "authenticated-orcid": false,
+          "given": "Adrian",
+          "family": "Rice",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zstcc67",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Randolph–Macon College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.03",
+      "type": "book-chapter",
+      "page": "56-80",
+      "title": [
+        "3. Augustus De Morgan, Astronomy and Almanacs"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8152-6244",
+          "authenticated-orcid": false,
+          "given": "Daniel",
+          "family": "Belteki",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03gs3ft47",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Science Museum Group"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.09",
+      "type": "book-chapter",
+      "page": "220-246",
+      "title": [
+        "9. De Morgan’s Family"
+      ],
+      "author": [
+        {
+          "given": "Joan L.",
+          "family": "Richards",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05gq02987",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Brown University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "subtitle": [
+        "Sophia and the Children"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.11",
+      "type": "book-chapter",
+      "page": "278-304",
+      "title": [
+        "11. Augustus De Morgan"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0898-808X",
+          "authenticated-orcid": false,
+          "given": "Karen",
+          "family": "Attar",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04cw6st05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexander",
+          "family": "Lock",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05dhe8b71",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "British Library"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katy",
+          "family": "Makin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jane",
+          "family": "Maxwell",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7374-3516",
+          "authenticated-orcid": false,
+          "given": "Virginia",
+          "family": "Mills",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03wnrjx87",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Royal Society"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-9031-3876",
+          "authenticated-orcid": false,
+          "given": "Diana",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "subtitle": [
+        "The Archival Record"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.12",
+      "type": "book-chapter",
+      "page": "305-330",
+      "title": [
+        "12. Bibliography of the Works of Augustus De Morgan"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6940-4121",
+          "authenticated-orcid": false,
+          "given": "William",
+          "family": "Hale",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.04",
+      "type": "book-chapter",
+      "page": "82-105",
+      "title": [
+        "4. De Morgan, Periodicals and Encyclopaedias"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2659-4495",
+          "authenticated-orcid": false,
+          "given": "Olivier",
+          "family": "Bruneau",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04vfs2w97",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Lorraine"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.00",
+      "type": "book-chapter",
+      "page": "xi-xxxvi",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0898-808X",
+          "authenticated-orcid": false,
+          "given": "Karen",
+          "family": "Attar",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04cw6st05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8731-312X",
+          "authenticated-orcid": false,
+          "given": "Adrian",
+          "family": "Rice",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zstcc67",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Randolph–Macon College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-4270-8018",
+          "authenticated-orcid": false,
+          "given": "Christopher",
+          "family": "Stray",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/053fq8t95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Swansea University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "subtitle": [
+        "De Morgan: Polymath"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.10",
+      "type": "book-chapter",
+      "page": "248-276",
+      "title": [
+        "10. Augustus De Morgan’s Library Revisited"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0898-808X",
+          "authenticated-orcid": false,
+          "given": "Karen",
+          "family": "Attar",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04cw6st05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "subtitle": [
+        "Its Context and Its Afterlife"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.05",
+      "type": "book-chapter",
+      "page": "106-150",
+      "title": [
+        "5. Augustus De Morgan"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6007-1324",
+          "authenticated-orcid": false,
+          "given": "Lukas",
+          "family": "Verburgt",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04z3wz653",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Netherlands Institute for Advanced Study in the Humanities and Social Sciences"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "subtitle": [
+        "Meta-Scientific Rebel"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.08",
+      "type": "book-chapter",
+      "page": "196-218",
+      "title": [
+        "8. Augustus De Morgan and the Bloomsbury Milieu"
+      ],
+      "author": [
+        {
+          "given": "Rosemary",
+          "family": "Ashton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.01",
+      "type": "book-chapter",
+      "page": "2-28",
+      "title": [
+        "1. De Morgan and Mathematics"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8731-312X",
+          "authenticated-orcid": false,
+          "given": "Adrian",
+          "family": "Rice",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zstcc67",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Randolph–Macon College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                4
+              ]
+            ],
+            "date-time": "2024-09-04T00:00:00Z",
+            "timestamp": 1725408000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0408.06",
+      "type": "book-chapter",
+      "page": "152-173",
+      "title": [
+        "6. De Morgan and Mathematics Education"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-4270-8018",
+          "authenticated-orcid": false,
+          "given": "Christopher",
+          "family": "Stray",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/053fq8t95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Swansea University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Augustus De Morgan, Polymath"
+      ],
+      "ISBN": [
+        "9781805113263",
+        "9781805113270",
+        "9781805113287",
+        "9781805113300",
+        "9781805113294",
+        "9781805118305"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "2. De Morgan and Logic",
+      "authors": [
+        "Anna-Sophie Heinemann"
+      ],
+      "chapter_doi": "10.11647/obp.0408.02",
+      "citation_pages": "30-54"
+    },
+    {
+      "title": "7. De Morgan’s A Budget of Paradoxes",
+      "authors": [
+        "Adrian Rice"
+      ],
+      "chapter_doi": "10.11647/obp.0408.07",
+      "citation_pages": "174-194"
+    },
+    {
+      "title": "3. Augustus De Morgan, Astronomy and Almanacs",
+      "authors": [
+        "Daniel Belteki"
+      ],
+      "chapter_doi": "10.11647/obp.0408.03",
+      "citation_pages": "56-80"
+    },
+    {
+      "title": "9. De Morgan’s Family Sophia and the Children",
+      "authors": [
+        "Joan L. Richards"
+      ],
+      "chapter_doi": "10.11647/obp.0408.09",
+      "citation_pages": "220-246"
+    },
+    {
+      "title": "11. Augustus De Morgan The Archival Record",
+      "authors": [
+        "Karen Attar",
+        "Alexander Lock",
+        "Katy Makin",
+        "Jane Maxwell",
+        "Virginia Mills",
+        "Diana Smith"
+      ],
+      "chapter_doi": "10.11647/obp.0408.11",
+      "citation_pages": "278-304"
+    },
+    {
+      "title": "12. Bibliography of the Works of Augustus De Morgan",
+      "authors": [
+        "William Hale"
+      ],
+      "chapter_doi": "10.11647/obp.0408.12",
+      "citation_pages": "305-330"
+    },
+    {
+      "title": "4. De Morgan, Periodicals and Encyclopaedias",
+      "authors": [
+        "Olivier Bruneau"
+      ],
+      "chapter_doi": "10.11647/obp.0408.04",
+      "citation_pages": "82-105"
+    },
+    {
+      "title": "Introduction De Morgan: Polymath",
+      "authors": [
+        "Karen Attar",
+        "Adrian Rice",
+        "Christopher Stray"
+      ],
+      "chapter_doi": "10.11647/obp.0408.00",
+      "citation_pages": "xi-xxxvi"
+    },
+    {
+      "title": "10. Augustus De Morgan’s Library Revisited Its Context and Its Afterlife",
+      "authors": [
+        "Karen Attar"
+      ],
+      "chapter_doi": "10.11647/obp.0408.10",
+      "citation_pages": "248-276"
+    },
+    {
+      "title": "5. Augustus De Morgan Meta-Scientific Rebel",
+      "authors": [
+        "Lukas Verburgt"
+      ],
+      "chapter_doi": "10.11647/obp.0408.05",
+      "citation_pages": "106-150"
+    },
+    {
+      "title": "8. Augustus De Morgan and the Bloomsbury Milieu",
+      "authors": [
+        "Rosemary Ashton"
+      ],
+      "chapter_doi": "10.11647/obp.0408.08",
+      "citation_pages": "196-218"
+    },
+    {
+      "title": "1. De Morgan and Mathematics",
+      "authors": [
+        "Adrian Rice"
+      ],
+      "chapter_doi": "10.11647/obp.0408.01",
+      "citation_pages": "2-28"
+    },
+    {
+      "title": "6. De Morgan and Mathematics Education",
+      "authors": [
+        "Christopher Stray"
+      ],
+      "chapter_doi": "10.11647/obp.0408.06",
+      "citation_pages": "152-173"
+    }
+  ]
+}

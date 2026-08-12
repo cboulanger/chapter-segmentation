@@ -1,0 +1,2408 @@
+{
+  "isbn": "9781800642720",
+  "fetched_at": "2026-08-11T22:58:27.462015+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.16",
+      "type": "book-chapter",
+      "page": "1-8",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8304-4468",
+          "authenticated-orcid": false,
+          "given": "Lynn V.",
+          "family": "Dicks",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3984-2403",
+          "authenticated-orcid": false,
+          "given": "Silviu O.",
+          "family": "Petrovan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.14",
+      "type": "book-chapter",
+      "page": "737-798",
+      "title": [
+        "14. Marine and Freshwater Mammal Conservation"
+      ],
+      "author": [
+        {
+          "given": "Anna",
+          "family": "Berthinussen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.01",
+      "type": "book-chapter",
+      "page": "9-64",
+      "title": [
+        "1. Amphibian Conservation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Helen",
+          "family": "Meredith",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.13",
+      "type": "book-chapter",
+      "page": "639-736",
+      "title": [
+        "13. Subtidal Benthic Invertebrate CONSERVATION"
+      ],
+      "author": [
+        {
+          "given": "Anaelle J.",
+          "family": "Lemasson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Laura R.",
+          "family": "Pettit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.09",
+      "type": "book-chapter",
+      "page": "531-558",
+      "title": [
+        "9. Management of Captive Animals"
+      ],
+      "author": [
+        {
+          "given": "Coral S.",
+          "family": "Jonas",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lydia T.",
+          "family": "Timbrell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fey",
+          "family": "Young",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3984-2403",
+          "authenticated-orcid": false,
+          "given": "Silviu O.",
+          "family": "Petrovan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew E.",
+          "family": "Bowkett",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.08",
+      "type": "book-chapter",
+      "page": "487-530",
+      "title": [
+        "8. Shrubland and Heathland Conservation"
+      ],
+      "author": [
+        {
+          "given": "Philip A.",
+          "family": "Martin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ricardo",
+          "family": "Rocha",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.06",
+      "type": "book-chapter",
+      "page": "371-434",
+      "title": [
+        "6. Peatland Conservation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8643-826X",
+          "authenticated-orcid": false,
+          "given": "Nigel G.",
+          "family": "Taylor",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick",
+          "family": "Grillas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.02",
+      "type": "book-chapter",
+      "page": "65-140",
+      "title": [
+        "2. Bat Conservation"
+      ],
+      "author": [
+        {
+          "given": "Anna",
+          "family": "Berthinussen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Olivia C.",
+          "family": "Richardson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "John D.",
+          "family": "Altringham",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.04",
+      "type": "book-chapter",
+      "page": "287-326",
+      "title": [
+        "4. Farmland Conservation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8304-4468",
+          "authenticated-orcid": false,
+          "given": "Lynn V.",
+          "family": "Dicks",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joscelyne E.",
+          "family": "Ashpole",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Juliana",
+          "family": "Dänhardt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katy",
+          "family": "James",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Annelie",
+          "family": "Jönsson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3023-8488",
+          "authenticated-orcid": false,
+          "given": "Nicola",
+          "family": "Randall",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David A.",
+          "family": "Showler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Susan",
+          "family": "Turpie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David R.",
+          "family": "Williams",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.11",
+      "type": "book-chapter",
+      "page": "593-616",
+      "title": [
+        "11. Some Aspects of Enhancing Natural Pest Control"
+      ],
+      "author": [
+        {
+          "given": "Hugh L.",
+          "family": "Wright",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joscelyne E.",
+          "family": "Ashpole",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8304-4468",
+          "authenticated-orcid": false,
+          "given": "Lynn V.",
+          "family": "Dicks",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "James",
+          "family": "Hutchison",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Caitlin G.",
+          "family": "McCormack",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.03",
+      "type": "book-chapter",
+      "page": "141-286",
+      "title": [
+        "3. Bird Conservation"
+      ],
+      "author": [
+        {
+          "given": "David R.",
+          "family": "Williams",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Matthew F.",
+          "family": "Child",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8304-4468",
+          "authenticated-orcid": false,
+          "given": "Lynn V.",
+          "family": "Dicks",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5055-1079",
+          "authenticated-orcid": false,
+          "given": "Nancy",
+          "family": "Ockendon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert G.",
+          "family": "Pople",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David A.",
+          "family": "Showler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jessica C.",
+          "family": "Walsh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Erasmus K. H. J.",
+          "family": "zu Ermgassen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.05",
+      "type": "book-chapter",
+      "page": "327-370",
+      "title": [
+        "5. Forest Conservation"
+      ],
+      "author": [
+        {
+          "given": "Har’el",
+          "family": "Agra",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Simon",
+          "family": "Schowanek",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yohay",
+          "family": "Carmel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gidi",
+          "family": "Ne’eman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.07",
+      "type": "book-chapter",
+      "page": "435-486",
+      "title": [
+        "7. Primate Conservation"
+      ],
+      "author": [
+        {
+          "given": "Jessica",
+          "family": "Junker",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hjalmar S.",
+          "family": "Kühl",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lisa",
+          "family": "Orth",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3984-2403",
+          "authenticated-orcid": false,
+          "given": "Silviu O.",
+          "family": "Petrovan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.15",
+      "type": "book-chapter",
+      "page": "799-962",
+      "title": [
+        "15. Terrestrial Mammal Conservation"
+      ],
+      "author": [
+        {
+          "given": "Nick",
+          "family": "Littlewood",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ricardo",
+          "family": "Rocha",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Philip",
+          "family": "Martin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Lockhart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rebecca F.",
+          "family": "Schoonover",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elspeth",
+          "family": "Wilman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew J.",
+          "family": "Bladon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katie A.",
+          "family": "Sainsbury",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stuart",
+          "family": "Pimm",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.10",
+      "type": "book-chapter",
+      "page": "559-592",
+      "title": [
+        "10. Some Aspects of Control of Freshwater Invasive Species"
+      ],
+      "author": [
+        {
+          "given": "David",
+          "family": "Aldridge",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5055-1079",
+          "authenticated-orcid": false,
+          "given": "Nancy",
+          "family": "Ockendon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ricardo",
+          "family": "Rocha",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3294-7592",
+          "authenticated-orcid": false,
+          "given": "Rebecca K.",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2021-08-02T00:00:00Z",
+            "timestamp": 1627862400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0267.12",
+      "type": "book-chapter",
+      "page": "617-638",
+      "title": [
+        "12. Enhancing Soil Fertility"
+      ],
+      "author": [
+        {
+          "given": "Georgina",
+          "family": "Key",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mike",
+          "family": "Whitfield",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8304-4468",
+          "authenticated-orcid": false,
+          "given": "Lynn V.",
+          "family": "Dicks",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard D.",
+          "family": "Bardgett",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "What Works in Conservation"
+      ],
+      "ISBN": [
+        "9781800642720",
+        "9781800642737",
+        "9781800642744",
+        "9781800646582",
+        "9781800642775",
+        "9781800642751",
+        "9781800642768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Introduction",
+      "authors": [
+        "William J. Sutherland",
+        "Lynn V. Dicks",
+        "Silviu O. Petrovan",
+        "Rebecca K. Smith"
+      ],
+      "chapter_doi": "10.11647/obp.0267.16",
+      "citation_pages": "1-8"
+    },
+    {
+      "title": "14. Marine and Freshwater Mammal Conservation",
+      "authors": [
+        "Anna Berthinussen",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.14",
+      "citation_pages": "737-798"
+    },
+    {
+      "title": "1. Amphibian Conservation",
+      "authors": [
+        "Rebecca K. Smith",
+        "Helen Meredith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.01",
+      "citation_pages": "9-64"
+    },
+    {
+      "title": "13. Subtidal Benthic Invertebrate CONSERVATION",
+      "authors": [
+        "Anaelle J. Lemasson",
+        "Laura R. Pettit",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.13",
+      "citation_pages": "639-736"
+    },
+    {
+      "title": "9. Management of Captive Animals",
+      "authors": [
+        "Coral S. Jonas",
+        "Lydia T. Timbrell",
+        "Fey Young",
+        "Silviu O. Petrovan",
+        "Andrew E. Bowkett",
+        "Rebecca K. Smith"
+      ],
+      "chapter_doi": "10.11647/obp.0267.09",
+      "citation_pages": "531-558"
+    },
+    {
+      "title": "8. Shrubland and Heathland Conservation",
+      "authors": [
+        "Philip A. Martin",
+        "Ricardo Rocha",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.08",
+      "citation_pages": "487-530"
+    },
+    {
+      "title": "6. Peatland Conservation",
+      "authors": [
+        "Nigel G. Taylor",
+        "Patrick Grillas",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.06",
+      "citation_pages": "371-434"
+    },
+    {
+      "title": "2. Bat Conservation",
+      "authors": [
+        "Anna Berthinussen",
+        "Olivia C. Richardson",
+        "John D. Altringham"
+      ],
+      "chapter_doi": "10.11647/obp.0267.02",
+      "citation_pages": "65-140"
+    },
+    {
+      "title": "4. Farmland Conservation",
+      "authors": [
+        "Lynn V. Dicks",
+        "Joscelyne E. Ashpole",
+        "Juliana Dänhardt",
+        "Katy James",
+        "Annelie Jönsson",
+        "Nicola Randall",
+        "David A. Showler",
+        "Rebecca K. Smith",
+        "Susan Turpie",
+        "David R. Williams",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.04",
+      "citation_pages": "287-326"
+    },
+    {
+      "title": "11. Some Aspects of Enhancing Natural Pest Control",
+      "authors": [
+        "Hugh L. Wright",
+        "Joscelyne E. Ashpole",
+        "Lynn V. Dicks",
+        "James Hutchison",
+        "Caitlin G. McCormack",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.11",
+      "citation_pages": "593-616"
+    },
+    {
+      "title": "3. Bird Conservation",
+      "authors": [
+        "David R. Williams",
+        "Matthew F. Child",
+        "Lynn V. Dicks",
+        "Nancy Ockendon",
+        "Robert G. Pople",
+        "David A. Showler",
+        "Jessica C. Walsh",
+        "Erasmus K. H. J. zu Ermgassen",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.03",
+      "citation_pages": "141-286"
+    },
+    {
+      "title": "5. Forest Conservation",
+      "authors": [
+        "Har’el Agra",
+        "Simon Schowanek",
+        "Yohay Carmel",
+        "Rebecca K. Smith",
+        "Gidi Ne’eman"
+      ],
+      "chapter_doi": "10.11647/obp.0267.05",
+      "citation_pages": "327-370"
+    },
+    {
+      "title": "7. Primate Conservation",
+      "authors": [
+        "Jessica Junker",
+        "Hjalmar S. Kühl",
+        "Lisa Orth",
+        "Rebecca K. Smith",
+        "Silviu O. Petrovan",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.07",
+      "citation_pages": "435-486"
+    },
+    {
+      "title": "15. Terrestrial Mammal Conservation",
+      "authors": [
+        "Nick Littlewood",
+        "Ricardo Rocha",
+        "Rebecca K. Smith",
+        "Philip Martin",
+        "Sarah Lockhart",
+        "Rebecca F. Schoonover",
+        "Elspeth Wilman",
+        "Andrew J. Bladon",
+        "Katie A. Sainsbury",
+        "Stuart Pimm",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.15",
+      "citation_pages": "799-962"
+    },
+    {
+      "title": "10. Some Aspects of Control of Freshwater Invasive Species",
+      "authors": [
+        "David Aldridge",
+        "Nancy Ockendon",
+        "Ricardo Rocha",
+        "Rebecca K. Smith",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0267.10",
+      "citation_pages": "559-592"
+    },
+    {
+      "title": "12. Enhancing Soil Fertility",
+      "authors": [
+        "Georgina Key",
+        "Mike Whitfield",
+        "Lynn V. Dicks",
+        "William J. Sutherland",
+        "Richard D. Bardgett"
+      ],
+      "chapter_doi": "10.11647/obp.0267.12",
+      "citation_pages": "617-638"
+    }
+  ]
+}

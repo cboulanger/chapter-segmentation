@@ -1,0 +1,844 @@
+{
+  "isbn": "9781800643628",
+  "fetched_at": "2026-08-11T22:41:13.807099+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.01",
+      "type": "book-chapter",
+      "page": "1-24",
+      "title": [
+        "1. Voiced versus Acted Trust"
+      ],
+      "author": [
+        {
+          "given": "Davide",
+          "family": "Torsello",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "subtitle": [
+        "Managing Social Uncertainty and Marginalisation in Rural Southern Italy and Central Eastern Europe"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.03",
+      "type": "book-chapter",
+      "page": "51-80",
+      "title": [
+        "3. The ‘Post’ in Perspective"
+      ],
+      "author": [
+        {
+          "given": "Julie",
+          "family": "McBrien",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0561-4664",
+          "authenticated-orcid": false,
+          "given": "Vlad",
+          "family": "Naumescu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "subtitle": [
+        "Revisiting the Post-socialist Religious Question in Central Asia and Central and Eastern Europe"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.04",
+      "type": "book-chapter",
+      "page": "81-104",
+      "title": [
+        "4. “We Are Not Believers, We’re Workers”"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5263-3756",
+          "authenticated-orcid": false,
+          "given": "Agata",
+          "family": "Ładykowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "subtitle": [
+        "The Synchrony of Work, Gender, and Religion in a Priestless Orthodox Community"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.05",
+      "type": "book-chapter",
+      "page": "105-130",
+      "title": [
+        "5. The Moral Economy of Consensus and Informality in Uzbekistan"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9092-030X",
+          "authenticated-orcid": false,
+          "given": "Tommaso",
+          "family": "Trevisani",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.09",
+      "type": "book-chapter",
+      "page": "205-220",
+      "title": [
+        "9. Swimming against the Tide"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6895-7402",
+          "authenticated-orcid": false,
+          "given": "Agnieszka",
+          "family": "Pasieka",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "subtitle": [
+        "Right-wing Populism, Post-socialism and Beyond"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.06",
+      "type": "book-chapter",
+      "page": "131-154",
+      "title": [
+        "6. The Moral Dimension of (Un)Employment"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8823-9766",
+          "authenticated-orcid": false,
+          "given": "Katerina",
+          "family": "Ivanova",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "subtitle": [
+        "Work and Fairness in an Eastern German Town"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.07",
+      "type": "book-chapter",
+      "page": "155-178",
+      "title": [
+        "7. Beyond Blue Eyes?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7639-0875",
+          "authenticated-orcid": false,
+          "given": "László",
+          "family": "Fosztó",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "subtitle": [
+        "Xenophobia on the Eastern Margins of the European Union"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.10",
+      "type": "book-chapter",
+      "page": "221-242",
+      "title": [
+        "10. Transoceania"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4743-4212",
+          "authenticated-orcid": false,
+          "given": "Edyta",
+          "family": "Roszko",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "subtitle": [
+        "Connecting the World beyond Eurasia"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.08",
+      "type": "book-chapter",
+      "page": "179-204",
+      "title": [
+        "8. Post-Peasant Progressivism"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6449-122X",
+          "authenticated-orcid": false,
+          "given": "Juraj",
+          "family": "Buzalka",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "subtitle": [
+        "On Liberal Tendencies in the Slovak Countryside"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.02",
+      "type": "book-chapter",
+      "page": "25-50",
+      "title": [
+        "2. Property Relations and Ethnic Conflict in Post-war Croatia"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4669-0142",
+          "authenticated-orcid": false,
+          "given": "Carolin",
+          "family": "Leutloff-Grandits",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "subtitle": [
+        "Reflections on Conceptual Approaches and Research Findings"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2022-10-31T00:00:00Z",
+            "timestamp": 1667174400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0282.11",
+      "type": "book-chapter",
+      "page": "xiii-xxviii",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6449-122X",
+          "authenticated-orcid": false,
+          "given": "Juraj",
+          "family": "Buzalka",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6895-7402",
+          "authenticated-orcid": false,
+          "given": "Agnieszka",
+          "family": "Pasieka",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anthropology of Transformation"
+      ],
+      "ISBN": [
+        "9781800643628",
+        "9781800643635",
+        "9781800643642",
+        "9781800649439",
+        "9781800643673",
+        "9781800643659",
+        "9781800643666"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            31
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "1. Voiced versus Acted Trust Managing Social Uncertainty and Marginalisation in Rural Southern Italy and Central Eastern Europe",
+      "authors": [
+        "Davide Torsello"
+      ],
+      "chapter_doi": "10.11647/obp.0282.01",
+      "citation_pages": "1-24"
+    },
+    {
+      "title": "3. The ‘Post’ in Perspective Revisiting the Post-socialist Religious Question in Central Asia and Central and Eastern Europe",
+      "authors": [
+        "Julie McBrien",
+        "Vlad Naumescu"
+      ],
+      "chapter_doi": "10.11647/obp.0282.03",
+      "citation_pages": "51-80"
+    },
+    {
+      "title": "4. “We Are Not Believers, We’re Workers” The Synchrony of Work, Gender, and Religion in a Priestless Orthodox Community",
+      "authors": [
+        "Agata Ładykowska"
+      ],
+      "chapter_doi": "10.11647/obp.0282.04",
+      "citation_pages": "81-104"
+    },
+    {
+      "title": "5. The Moral Economy of Consensus and Informality in Uzbekistan",
+      "authors": [
+        "Tommaso Trevisani"
+      ],
+      "chapter_doi": "10.11647/obp.0282.05",
+      "citation_pages": "105-130"
+    },
+    {
+      "title": "9. Swimming against the Tide Right-wing Populism, Post-socialism and Beyond",
+      "authors": [
+        "Agnieszka Pasieka"
+      ],
+      "chapter_doi": "10.11647/obp.0282.09",
+      "citation_pages": "205-220"
+    },
+    {
+      "title": "6. The Moral Dimension of (Un)Employment Work and Fairness in an Eastern German Town",
+      "authors": [
+        "Katerina Ivanova"
+      ],
+      "chapter_doi": "10.11647/obp.0282.06",
+      "citation_pages": "131-154"
+    },
+    {
+      "title": "7. Beyond Blue Eyes? Xenophobia on the Eastern Margins of the European Union",
+      "authors": [
+        "László Fosztó"
+      ],
+      "chapter_doi": "10.11647/obp.0282.07",
+      "citation_pages": "155-178"
+    },
+    {
+      "title": "10. Transoceania Connecting the World beyond Eurasia",
+      "authors": [
+        "Edyta Roszko"
+      ],
+      "chapter_doi": "10.11647/obp.0282.10",
+      "citation_pages": "221-242"
+    },
+    {
+      "title": "8. Post-Peasant Progressivism On Liberal Tendencies in the Slovak Countryside",
+      "authors": [
+        "Juraj Buzalka"
+      ],
+      "chapter_doi": "10.11647/obp.0282.08",
+      "citation_pages": "179-204"
+    },
+    {
+      "title": "2. Property Relations and Ethnic Conflict in Post-war Croatia Reflections on Conceptual Approaches and Research Findings",
+      "authors": [
+        "Carolin Leutloff-Grandits"
+      ],
+      "chapter_doi": "10.11647/obp.0282.02",
+      "citation_pages": "25-50"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Juraj Buzalka",
+        "Agnieszka Pasieka"
+      ],
+      "chapter_doi": "10.11647/obp.0282.11",
+      "citation_pages": "xiii-xxviii"
+    }
+  ]
+}

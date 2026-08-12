@@ -1,0 +1,3464 @@
+{
+  "isbn": "9781805111146",
+  "fetched_at": "2026-08-11T22:40:59.653438+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.17",
+      "type": "book-chapter",
+      "page": "485-512",
+      "title": [
+        "17. Artificial Canaries"
+      ],
+      "author": [
+        {
+          "given": "Zoe",
+          "family": "Cremer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1252-718X",
+          "authenticated-orcid": false,
+          "given": "Jess",
+          "family": "Whittlestone",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "subtitle": [
+        "Early Warning Signs for Anticipatory and Democratic Governance of AI"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.11",
+      "type": "book-chapter",
+      "page": "337-354",
+      "title": [
+        "11. Enabling the Participatory Exploration of Alternative Futures With ParEvo"
+      ],
+      "author": [
+        {
+          "given": "Rick",
+          "family": "Davies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2834-0993",
+          "authenticated-orcid": false,
+          "given": "SJ",
+          "family": "Beard",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1244-3787",
+          "authenticated-orcid": false,
+          "given": "Tom",
+          "family": "Hobson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2967-7499",
+          "authenticated-orcid": false,
+          "given": "Lara",
+          "family": "Mani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.20",
+      "type": "book-chapter",
+      "page": "587-602",
+      "title": [
+        "20. The Stepping Stones Approach to Nuclear Disarmament Diplomacy"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Ingram",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.01",
+      "type": "book-chapter",
+      "page": "23-74",
+      "title": [
+        "1. Ripples on the Great Sea of Life"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2834-0993",
+          "authenticated-orcid": false,
+          "given": "SJ",
+          "family": "Beard",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4420-9159",
+          "authenticated-orcid": false,
+          "given": "Émile",
+          "family": "Torres",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/051fd9666",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Case Western Reserve University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "subtitle": [
+        "A Brief History of Existential Risk Studies"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.18",
+      "type": "book-chapter",
+      "page": "521-530",
+      "title": [
+        "18. Pathways to Linking Science and Policy in Global Risk"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6544-4663",
+          "authenticated-orcid": false,
+          "given": "Clarissa",
+          "family": "Rios Rojas",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0084-0734",
+          "authenticated-orcid": false,
+          "given": "Catherine",
+          "family": "Richards",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7747-2597",
+          "authenticated-orcid": false,
+          "given": "Catherine",
+          "family": "Rhodes",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027m9bs27",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Manchester"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paul",
+          "family": "Ingram",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.13",
+      "type": "book-chapter",
+      "page": "371-400",
+      "title": [
+        "13. Re-Framing the Threat of Global Warming"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0084-0734",
+          "authenticated-orcid": false,
+          "given": "Catherine",
+          "family": "Richards",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8622-3085",
+          "authenticated-orcid": false,
+          "given": "Richard",
+          "family": "Lupton",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/002h8g185",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Bath"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0931-3831",
+          "authenticated-orcid": false,
+          "given": "Julian",
+          "family": "Allwood",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "subtitle": [
+        "An Empirical Causal Loop Diagram of Climate Change, Food Insecurity and Societal Collapse"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.06",
+      "type": "book-chapter",
+      "page": "221-258",
+      "title": [
+        "6. An Analysis and Evaluation of Methods Currently Used to Quantify the Likelihood of Existential Hazards"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2834-0993",
+          "authenticated-orcid": false,
+          "given": "SJ",
+          "family": "Beard",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Rowe",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0220mzb33",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "King's College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "James",
+          "family": "Fox",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.12",
+      "type": "book-chapter",
+      "page": "361-370",
+      "title": [
+        "12. Global Catastrophic Risk From Low Magnitude Volcanic Eruptions"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2967-7499",
+          "authenticated-orcid": false,
+          "given": "Lara",
+          "family": "Mani",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4032-4996",
+          "authenticated-orcid": false,
+          "given": "Azaf",
+          "family": "Tzachor",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01px5cv07",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Interdisciplinary Center Herzliya"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2964-311X",
+          "authenticated-orcid": false,
+          "given": "Paul",
+          "family": "Cole",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008n7pv89",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Plymouth"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.04",
+      "type": "book-chapter",
+      "page": "141-176",
+      "title": [
+        "4. Governing Boring Apocalypses"
+      ],
+      "author": [
+        {
+          "given": "Hin-Yan",
+          "family": "Liu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/035b05819",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Copenhagen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kristian",
+          "family": "Cedervall Lauta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6170-9393",
+          "authenticated-orcid": false,
+          "given": "Matthijs",
+          "family": "Maas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "subtitle": [
+        "A New Typology of Existential Vulnerabilities and Exposures for Existential Risk Research"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.19",
+      "type": "book-chapter",
+      "page": "531-586",
+      "title": [
+        "19. The Cartography of Global Catastrophic Governance"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7747-2597",
+          "authenticated-orcid": false,
+          "given": "Catherine",
+          "family": "Rhodes",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027m9bs27",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Manchester"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3816-564X",
+          "authenticated-orcid": false,
+          "given": "Luke",
+          "family": "Kemp",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.14",
+      "type": "book-chapter",
+      "page": "401-408",
+      "title": [
+        "14. Existential Change"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2834-0993",
+          "authenticated-orcid": false,
+          "given": "SJ",
+          "family": "Beard",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3816-564X",
+          "authenticated-orcid": false,
+          "given": "Luke",
+          "family": "Kemp",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "subtitle": [
+        "Lesson from Climate Change for Existential Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.23",
+      "type": "book-chapter",
+      "page": "641-694",
+      "title": [
+        "23. Financing Our Final Hour"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3816-564X",
+          "authenticated-orcid": false,
+          "given": "Luke",
+          "family": "Kemp",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haydn",
+          "family": "Belfield",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ellen",
+          "family": "Quigley",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Julius",
+          "family": "Weitzdörfer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04tkkr536",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Hagen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2834-0993",
+          "authenticated-orcid": false,
+          "given": "SJ",
+          "family": "Beard",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.21",
+      "type": "book-chapter",
+      "page": "603-612",
+      "title": [
+        "21. It Takes a Village"
+      ],
+      "author": [
+        {
+          "given": "Amritha",
+          "family": "Jayanthi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shahar",
+          "family": "Avin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "subtitle": [
+        "The Shared Responsibility of “Raising” an Autonomous Weapon"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.09",
+      "type": "book-chapter",
+      "page": "307-328",
+      "title": [
+        "9. Accumulating Evidence Using Crowdsourcing and Machine Learning"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0949-0934",
+          "authenticated-orcid": false,
+          "given": "Gorm",
+          "family": "Shackleford",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3816-564X",
+          "authenticated-orcid": false,
+          "given": "Luke",
+          "family": "Kemp",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7747-2597",
+          "authenticated-orcid": false,
+          "given": "Catherine",
+          "family": "Rhodes",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027m9bs27",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Manchester"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9595-9753",
+          "authenticated-orcid": false,
+          "given": "Lalitha",
+          "family": "Sundaram",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2846-1576",
+          "authenticated-orcid": false,
+          "given": "Seán S.",
+          "family": "Ó hÉigeartaigh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2834-0993",
+          "authenticated-orcid": false,
+          "given": "SJ",
+          "family": "Beard",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haydn",
+          "family": "Belfield",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Julius",
+          "family": "Weitzdörfer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04tkkr536",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Hagen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shahar",
+          "family": "Avin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dag",
+          "family": "Sørebø",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elliot M.",
+          "family": "Jones",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "John B.",
+          "family": "Hume",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Price",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Pyle",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Hurt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Theodore",
+          "family": "Stone",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Harry",
+          "family": "Watkins",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lydia",
+          "family": "Collas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bryony C.",
+          "family": "Cade",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas Frederick",
+          "family": "Johnson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zachary",
+          "family": "Freitas-Grof",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Denkenberger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Levot",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "subtitle": [
+        "A Living Bibliography About Existential Risk and Global Catastrophic Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.02",
+      "type": "book-chapter",
+      "page": "75-124",
+      "title": [
+        "2. Democratising Risk"
+      ],
+      "author": [
+        {
+          "given": "Zoe",
+          "family": "Cremer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3816-564X",
+          "authenticated-orcid": false,
+          "given": "Luke",
+          "family": "Kemp",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "subtitle": [
+        "In Search of a Methodology to Study Existential Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.15",
+      "type": "book-chapter",
+      "page": "409-450",
+      "title": [
+        "15. A Fate Worse Than Warming?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3720-9831",
+          "authenticated-orcid": false,
+          "given": "Aaron",
+          "family": "Tang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/019wvm592",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Australian National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3816-564X",
+          "authenticated-orcid": false,
+          "given": "Luke",
+          "family": "Kemp",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "subtitle": [
+        "Stratospheric Aerosol Injection and Catastrophic Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.16",
+      "type": "book-chapter",
+      "page": "451-484",
+      "title": [
+        "16. Bioengineering Horizon Scan 2020"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3816-564X",
+          "authenticated-orcid": false,
+          "given": "Luke",
+          "family": "Kemp",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Laura",
+          "family": "Adam",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christian R",
+          "family": "Boehm",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rainer",
+          "family": "Breitling",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rocco",
+          "family": "Casagrande",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Malcolm",
+          "family": "Dando",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Appolinaire",
+          "family": "Djikeng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicholas G",
+          "family": "Evans",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Hammond",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kelly",
+          "family": "Hills",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lauren A",
+          "family": "Holt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Todd",
+          "family": "Kuiken",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alemka",
+          "family": "Markotić",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Piers",
+          "family": "Millett",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jonathan A",
+          "family": "Napier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cassidy",
+          "family": "Nelson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2846-1576",
+          "authenticated-orcid": false,
+          "given": "Seán S.",
+          "family": "Ó hÉigeartaigh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anne",
+          "family": "Osbourn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Megan J",
+          "family": "Palmer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicola J",
+          "family": "Patron",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Edward",
+          "family": "Perello",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wibool",
+          "family": "Piyawattanametha",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vanessa",
+          "family": "Restrepo-Schild",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6544-4663",
+          "authenticated-orcid": false,
+          "given": "Clarissa",
+          "family": "Rios Rojas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7747-2597",
+          "authenticated-orcid": false,
+          "given": "Catherine",
+          "family": "Rhodes",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027m9bs27",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Manchester"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anna",
+          "family": "Roessing",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Deborah",
+          "family": "Scott",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Philip",
+          "family": "Shapira",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christopher",
+          "family": "Simuntala",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert D J",
+          "family": "Smith",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9595-9753",
+          "authenticated-orcid": false,
+          "given": "Lalitha",
+          "family": "Sundaram",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eriko",
+          "family": "Takano",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gwynn",
+          "family": "Uttmark",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0236-6906",
+          "authenticated-orcid": false,
+          "given": "Bonnie C.",
+          "family": "Wintle",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nadia B",
+          "family": "Zahra",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.08",
+      "type": "book-chapter",
+      "page": "285-306",
+      "title": [
+        "8. Exploring Artificial Intelligence Futures"
+      ],
+      "author": [
+        {
+          "given": "Shahar",
+          "family": "Avin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.00",
+      "type": "book-chapter",
+      "page": "1-12",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2834-0993",
+          "authenticated-orcid": false,
+          "given": "SJ",
+          "family": "Beard",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1244-3787",
+          "authenticated-orcid": false,
+          "given": "Tom",
+          "family": "Hobson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.22",
+      "type": "book-chapter",
+      "page": "613-640",
+      "title": [
+        "22. Representation of Future Generations in United Kingdom Policy-Making"
+      ],
+      "author": [
+        {
+          "given": "Natalie",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/043zcks33",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "International Institute for Sustainable Development"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark",
+          "family": "O’Brien",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Ryan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.05",
+      "type": "book-chapter",
+      "page": "177-210",
+      "title": [
+        "5. Existential Risk, Creativity and Well-Adapted Science"
+      ],
+      "author": [
+        {
+          "given": "Adrian",
+          "family": "Currie",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yghzc09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Exeter"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.03",
+      "type": "book-chapter",
+      "page": "125-140",
+      "title": [
+        "3. Classifying Global Catastrophic Risk"
+      ],
+      "author": [
+        {
+          "given": "Shahar",
+          "family": "Avin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre for the Study of Existential Risk"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0236-6906",
+          "authenticated-orcid": false,
+          "given": "Bonnie C.",
+          "family": "Wintle",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Julius",
+          "family": "Weitzdörfer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04tkkr536",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Hagen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2846-1576",
+          "authenticated-orcid": false,
+          "given": "Seán S.",
+          "family": "Ó hÉigeartaigh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Rees",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.10",
+      "type": "book-chapter",
+      "page": "329-336",
+      "title": [
+        "10. The Mortality of States (MOROS) Dataset"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3816-564X",
+          "authenticated-orcid": false,
+          "given": "Luke",
+          "family": "Kemp",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0360.07",
+      "type": "book-chapter",
+      "page": "259-284",
+      "title": [
+        "7. Scanning Horizons in Research, Policy and Practice"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0236-6906",
+          "authenticated-orcid": false,
+          "given": "Bonnie C.",
+          "family": "Wintle",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mahlo N. C.",
+          "family": "Kennicutt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01f5ytq51",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Texas A&M University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6498-0437",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "An Anthology of Global Risk"
+      ],
+      "ISBN": [
+        "9781805111146",
+        "9781805111153",
+        "9781805111160",
+        "9781805111207",
+        "9781805111177"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "17. Artificial Canaries Early Warning Signs for Anticipatory and Democratic Governance of AI",
+      "authors": [
+        "Zoe Cremer",
+        "Jess Whittlestone"
+      ],
+      "chapter_doi": "10.11647/obp.0360.17",
+      "citation_pages": "485-512"
+    },
+    {
+      "title": "11. Enabling the Participatory Exploration of Alternative Futures With ParEvo",
+      "authors": [
+        "Rick Davies",
+        "SJ Beard",
+        "Tom Hobson",
+        "Lara Mani"
+      ],
+      "chapter_doi": "10.11647/obp.0360.11",
+      "citation_pages": "337-354"
+    },
+    {
+      "title": "20. The Stepping Stones Approach to Nuclear Disarmament Diplomacy",
+      "authors": [
+        "Paul Ingram"
+      ],
+      "chapter_doi": "10.11647/obp.0360.20",
+      "citation_pages": "587-602"
+    },
+    {
+      "title": "1. Ripples on the Great Sea of Life A Brief History of Existential Risk Studies",
+      "authors": [
+        "SJ Beard",
+        "Émile Torres"
+      ],
+      "chapter_doi": "10.11647/obp.0360.01",
+      "citation_pages": "23-74"
+    },
+    {
+      "title": "18. Pathways to Linking Science and Policy in Global Risk",
+      "authors": [
+        "Clarissa Rios Rojas",
+        "Catherine Richards",
+        "Catherine Rhodes",
+        "Paul Ingram"
+      ],
+      "chapter_doi": "10.11647/obp.0360.18",
+      "citation_pages": "521-530"
+    },
+    {
+      "title": "13. Re-Framing the Threat of Global Warming An Empirical Causal Loop Diagram of Climate Change, Food Insecurity and Societal Collapse",
+      "authors": [
+        "Catherine Richards",
+        "Richard Lupton",
+        "Julian Allwood"
+      ],
+      "chapter_doi": "10.11647/obp.0360.13",
+      "citation_pages": "371-400"
+    },
+    {
+      "title": "6. An Analysis and Evaluation of Methods Currently Used to Quantify the Likelihood of Existential Hazards",
+      "authors": [
+        "SJ Beard",
+        "Thomas Rowe",
+        "James Fox"
+      ],
+      "chapter_doi": "10.11647/obp.0360.06",
+      "citation_pages": "221-258"
+    },
+    {
+      "title": "12. Global Catastrophic Risk From Low Magnitude Volcanic Eruptions",
+      "authors": [
+        "Lara Mani",
+        "Azaf Tzachor",
+        "Paul Cole"
+      ],
+      "chapter_doi": "10.11647/obp.0360.12",
+      "citation_pages": "361-370"
+    },
+    {
+      "title": "4. Governing Boring Apocalypses A New Typology of Existential Vulnerabilities and Exposures for Existential Risk Research",
+      "authors": [
+        "Hin-Yan Liu",
+        "Kristian Cedervall Lauta",
+        "Matthijs Maas"
+      ],
+      "chapter_doi": "10.11647/obp.0360.04",
+      "citation_pages": "141-176"
+    },
+    {
+      "title": "19. The Cartography of Global Catastrophic Governance",
+      "authors": [
+        "Catherine Rhodes",
+        "Luke Kemp"
+      ],
+      "chapter_doi": "10.11647/obp.0360.19",
+      "citation_pages": "531-586"
+    },
+    {
+      "title": "14. Existential Change Lesson from Climate Change for Existential Risk",
+      "authors": [
+        "SJ Beard",
+        "Luke Kemp"
+      ],
+      "chapter_doi": "10.11647/obp.0360.14",
+      "citation_pages": "401-408"
+    },
+    {
+      "title": "23. Financing Our Final Hour",
+      "authors": [
+        "Luke Kemp",
+        "Haydn Belfield",
+        "Ellen Quigley",
+        "Julius Weitzdörfer",
+        "SJ Beard"
+      ],
+      "chapter_doi": "10.11647/obp.0360.23",
+      "citation_pages": "641-694"
+    },
+    {
+      "title": "21. It Takes a Village The Shared Responsibility of “Raising” an Autonomous Weapon",
+      "authors": [
+        "Amritha Jayanthi",
+        "Shahar Avin"
+      ],
+      "chapter_doi": "10.11647/obp.0360.21",
+      "citation_pages": "603-612"
+    },
+    {
+      "title": "9. Accumulating Evidence Using Crowdsourcing and Machine Learning A Living Bibliography About Existential Risk and Global Catastrophic Risk",
+      "authors": [
+        "Gorm Shackleford",
+        "Luke Kemp",
+        "Catherine Rhodes",
+        "Lalitha Sundaram",
+        "Seán S. Ó hÉigeartaigh",
+        "SJ Beard",
+        "Haydn Belfield",
+        "Julius Weitzdörfer",
+        "Shahar Avin",
+        "Dag Sørebø",
+        "Elliot M. Jones",
+        "John B. Hume",
+        "David Price",
+        "David Pyle",
+        "Daniel Hurt",
+        "Theodore Stone",
+        "Harry Watkins",
+        "Lydia Collas",
+        "Bryony C. Cade",
+        "Thomas Frederick Johnson",
+        "Zachary Freitas-Grof",
+        "David Denkenberger",
+        "Michael Levot",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0360.09",
+      "citation_pages": "307-328"
+    },
+    {
+      "title": "2. Democratising Risk In Search of a Methodology to Study Existential Risk",
+      "authors": [
+        "Zoe Cremer",
+        "Luke Kemp"
+      ],
+      "chapter_doi": "10.11647/obp.0360.02",
+      "citation_pages": "75-124"
+    },
+    {
+      "title": "15. A Fate Worse Than Warming? Stratospheric Aerosol Injection and Catastrophic Risk",
+      "authors": [
+        "Aaron Tang",
+        "Luke Kemp"
+      ],
+      "chapter_doi": "10.11647/obp.0360.15",
+      "citation_pages": "409-450"
+    },
+    {
+      "title": "16. Bioengineering Horizon Scan 2020",
+      "authors": [
+        "Luke Kemp",
+        "Laura Adam",
+        "Christian R Boehm",
+        "Rainer Breitling",
+        "Rocco Casagrande",
+        "Malcolm Dando",
+        "Appolinaire Djikeng",
+        "Nicholas G Evans",
+        "Richard Hammond",
+        "Kelly Hills",
+        "Lauren A Holt",
+        "Todd Kuiken",
+        "Alemka Markotić",
+        "Piers Millett",
+        "Jonathan A Napier",
+        "Cassidy Nelson",
+        "Seán S. Ó hÉigeartaigh",
+        "Anne Osbourn",
+        "Megan J Palmer",
+        "Nicola J Patron",
+        "Edward Perello",
+        "Wibool Piyawattanametha",
+        "Vanessa Restrepo-Schild",
+        "Clarissa Rios Rojas",
+        "Catherine Rhodes",
+        "Anna Roessing",
+        "Deborah Scott",
+        "Philip Shapira",
+        "Christopher Simuntala",
+        "Robert D J Smith",
+        "Lalitha Sundaram",
+        "Eriko Takano",
+        "Gwynn Uttmark",
+        "Bonnie C. Wintle",
+        "Nadia B Zahra",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0360.16",
+      "citation_pages": "451-484"
+    },
+    {
+      "title": "8. Exploring Artificial Intelligence Futures",
+      "authors": [
+        "Shahar Avin"
+      ],
+      "chapter_doi": "10.11647/obp.0360.08",
+      "citation_pages": "285-306"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "SJ Beard",
+        "Tom Hobson"
+      ],
+      "chapter_doi": "10.11647/obp.0360.00",
+      "citation_pages": "1-12"
+    },
+    {
+      "title": "22. Representation of Future Generations in United Kingdom Policy-Making",
+      "authors": [
+        "Natalie Jones",
+        "Mark O’Brien",
+        "Thomas Ryan"
+      ],
+      "chapter_doi": "10.11647/obp.0360.22",
+      "citation_pages": "613-640"
+    },
+    {
+      "title": "5. Existential Risk, Creativity and Well-Adapted Science",
+      "authors": [
+        "Adrian Currie"
+      ],
+      "chapter_doi": "10.11647/obp.0360.05",
+      "citation_pages": "177-210"
+    },
+    {
+      "title": "3. Classifying Global Catastrophic Risk",
+      "authors": [
+        "Shahar Avin",
+        "Bonnie C. Wintle",
+        "Julius Weitzdörfer",
+        "Seán S. Ó hÉigeartaigh",
+        "William J. Sutherland",
+        "Martin Rees"
+      ],
+      "chapter_doi": "10.11647/obp.0360.03",
+      "citation_pages": "125-140"
+    },
+    {
+      "title": "10. The Mortality of States (MOROS) Dataset",
+      "authors": [
+        "Luke Kemp"
+      ],
+      "chapter_doi": "10.11647/obp.0360.10",
+      "citation_pages": "329-336"
+    },
+    {
+      "title": "7. Scanning Horizons in Research, Policy and Practice",
+      "authors": [
+        "Bonnie C. Wintle",
+        "Mahlo N. C. Kennicutt",
+        "William J. Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0360.07",
+      "citation_pages": "259-284"
+    }
+  ]
+}

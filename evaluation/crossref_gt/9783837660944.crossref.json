@@ -1,0 +1,1144 @@
+{
+  "isbn": "9783837660944",
+  "fetched_at": "2026-08-11T22:58:04.886754+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-010",
+      "type": "book-chapter",
+      "page": "211-216",
+      "title": [
+        "Herausgeberinnen und Autor*innen"
+      ],
+      "author": [
+        {
+          "given": "Merve",
+          "family": "Schmitz-Vardar",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Rumpel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexandra",
+          "family": "Graevskaia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Laura",
+          "family": "Dinnebier",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-008",
+      "type": "book-chapter",
+      "page": "149-180",
+      "title": [
+        "Einstellungen und Sprachgebrauch politischer Repräsentant*innen zu Migrationspolitik"
+      ],
+      "author": [
+        {
+          "given": "Merve",
+          "family": "Schmitz-Vardar",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christoph",
+          "family": "Leonhardt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "subtitle": [
+        "Eine triangulative Studie aus Umfragen und Plenarprotokollen"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-007",
+      "type": "book-chapter",
+      "page": "127-148",
+      "title": [
+        "Soziale Medien als Feldzugang und Erkenntnisgegenstand"
+      ],
+      "author": [
+        {
+          "given": "Michelle",
+          "family": "Gutstein",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Svenja",
+          "family": "Kneer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8990-592X",
+          "authenticated-orcid": true,
+          "given": "Tabea",
+          "family": "Mildenberger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "subtitle": [
+        "Von der digitalen Kontaktaufnahme zu Netzwerkinteraktionen in der Arbeitsmigration"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-006",
+      "type": "book-chapter",
+      "page": "103-126",
+      "title": [
+        "Using Vignettes in Migration Research"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3946-4630",
+          "authenticated-orcid": true,
+          "given": "An Huy",
+          "family": "Tran",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "subtitle": [
+        "A Methodological Approach to Studying Migrants' Transnational Experiences"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-009",
+      "type": "book-chapter",
+      "page": "181-210",
+      "title": [
+        "Bildungsaufstiege im Erfahrungsraum von Sphären- und Schichtdifferenzen"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2333-3399",
+          "authenticated-orcid": true,
+          "given": "Markus",
+          "family": "Kohlmeier",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "subtitle": [
+        "Eine quantitative Betrachtung der biografischen Herausforderungen von Jugendlichen mit und ohne Einwanderungsgeschichte"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-004",
+      "type": "book-chapter",
+      "page": "51-78",
+      "title": [
+        "Methodische Zugänge zur diskursiven Einbettung im transnationalen Raum"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9012-858X",
+          "authenticated-orcid": true,
+          "given": "Seçkin",
+          "family": "Söylemez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "subtitle": [
+        "Eine Analyse der diskursiven Reaktionen türkeistämmiger Verbände auf den Anschlag von Hanau"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-003",
+      "type": "book-chapter",
+      "page": "23-50",
+      "title": [
+        "(De-)Legitimierung und Leugnung"
+      ],
+      "author": [
+        {
+          "given": "Alexandra",
+          "family": "Graevskaia",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "subtitle": [
+        "Eine kritische Diskurs- und Situationsanalyse polizeilicher Darstellungen von Racial Profiling"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-001",
+      "type": "book-chapter",
+      "page": "7-10",
+      "title": [
+        "Vorwort"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Dinnebier",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexandra",
+          "family": "Graevskaia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Rumpel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Merve",
+          "family": "Schmitz-Vardar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Merve",
+          "family": "Schmitz-Vardar",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Rumpel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexandra",
+          "family": "Graevskaia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Laura",
+          "family": "Dinnebier",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Merve",
+          "family": "Schmitz-Vardar",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Rumpel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexandra",
+          "family": "Graevskaia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Laura",
+          "family": "Dinnebier",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-005",
+      "type": "book-chapter",
+      "page": "79-102",
+      "title": [
+        "Der »Refugees welcome«-Sticker als gesellschaftliche Selbstbeschreibung"
+      ],
+      "author": [
+        {
+          "given": "Charlotte",
+          "family": "Püttmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "subtitle": [
+        "Ein kunstwissenschaftlicher Ansatz zur Migrationsforschung"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                4
+              ]
+            ],
+            "date-time": "2022-04-04T00:00:00Z",
+            "timestamp": 1649030400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839460948-002",
+      "type": "book-chapter",
+      "page": "11-22",
+      "title": [
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Dinnebier",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexandra",
+          "family": "Graevskaia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Rumpel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Merve",
+          "family": "Schmitz-Vardar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universität Duisburg-Essen, Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kulturen der Gesellschaft",
+        "Migrationsforschung (inter)disziplinär"
+      ],
+      "subtitle": [
+        "Einführung und konzeptioneller Ausgangspunkt"
+      ],
+      "ISBN": [
+        "9783837660944",
+        "9783839460948"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Herausgeberinnen und Autor*innen",
+      "authors": [
+        "Merve Schmitz-Vardar",
+        "Andrea Rumpel",
+        "Alexandra Graevskaia",
+        "Laura Dinnebier"
+      ],
+      "chapter_doi": "10.14361/9783839460948-010",
+      "citation_pages": "211-216"
+    },
+    {
+      "title": "Einstellungen und Sprachgebrauch politischer Repräsentant*innen zu Migrationspolitik Eine triangulative Studie aus Umfragen und Plenarprotokollen",
+      "authors": [
+        "Merve Schmitz-Vardar",
+        "Christoph Leonhardt"
+      ],
+      "chapter_doi": "10.14361/9783839460948-008",
+      "citation_pages": "149-180"
+    },
+    {
+      "title": "Soziale Medien als Feldzugang und Erkenntnisgegenstand Von der digitalen Kontaktaufnahme zu Netzwerkinteraktionen in der Arbeitsmigration",
+      "authors": [
+        "Michelle Gutstein",
+        "Svenja Kneer",
+        "Tabea Mildenberger"
+      ],
+      "chapter_doi": "10.14361/9783839460948-007",
+      "citation_pages": "127-148"
+    },
+    {
+      "title": "Using Vignettes in Migration Research A Methodological Approach to Studying Migrants' Transnational Experiences",
+      "authors": [
+        "An Huy Tran"
+      ],
+      "chapter_doi": "10.14361/9783839460948-006",
+      "citation_pages": "103-126"
+    },
+    {
+      "title": "Bildungsaufstiege im Erfahrungsraum von Sphären- und Schichtdifferenzen Eine quantitative Betrachtung der biografischen Herausforderungen von Jugendlichen mit und ohne Einwanderungsgeschichte",
+      "authors": [
+        "Markus Kohlmeier"
+      ],
+      "chapter_doi": "10.14361/9783839460948-009",
+      "citation_pages": "181-210"
+    },
+    {
+      "title": "Methodische Zugänge zur diskursiven Einbettung im transnationalen Raum Eine Analyse der diskursiven Reaktionen türkeistämmiger Verbände auf den Anschlag von Hanau",
+      "authors": [
+        "Seçkin Söylemez"
+      ],
+      "chapter_doi": "10.14361/9783839460948-004",
+      "citation_pages": "51-78"
+    },
+    {
+      "title": "(De-)Legitimierung und Leugnung Eine kritische Diskurs- und Situationsanalyse polizeilicher Darstellungen von Racial Profiling",
+      "authors": [
+        "Alexandra Graevskaia"
+      ],
+      "chapter_doi": "10.14361/9783839460948-003",
+      "citation_pages": "23-50"
+    },
+    {
+      "title": "Vorwort",
+      "authors": [
+        "Laura Dinnebier",
+        "Alexandra Graevskaia",
+        "Andrea Rumpel",
+        "Merve Schmitz-Vardar"
+      ],
+      "chapter_doi": "10.14361/9783839460948-001",
+      "citation_pages": "7-10"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Merve Schmitz-Vardar",
+        "Andrea Rumpel",
+        "Alexandra Graevskaia",
+        "Laura Dinnebier"
+      ],
+      "chapter_doi": "10.14361/9783839460948-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Merve Schmitz-Vardar",
+        "Andrea Rumpel",
+        "Alexandra Graevskaia",
+        "Laura Dinnebier"
+      ],
+      "chapter_doi": "10.14361/9783839460948-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Der »Refugees welcome«-Sticker als gesellschaftliche Selbstbeschreibung Ein kunstwissenschaftlicher Ansatz zur Migrationsforschung",
+      "authors": [
+        "Charlotte Püttmann"
+      ],
+      "chapter_doi": "10.14361/9783839460948-005",
+      "citation_pages": "79-102"
+    },
+    {
+      "title": "Migrationsforschung (inter)disziplinär Einführung und konzeptioneller Ausgangspunkt",
+      "authors": [
+        "Laura Dinnebier",
+        "Alexandra Graevskaia",
+        "Andrea Rumpel",
+        "Merve Schmitz-Vardar"
+      ],
+      "chapter_doi": "10.14361/9783839460948-002",
+      "citation_pages": "11-22"
+    }
+  ]
+}

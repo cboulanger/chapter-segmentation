@@ -1,0 +1,953 @@
+{
+  "isbn": "9781805114482",
+  "fetched_at": "2026-08-11T22:41:07.728009+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.08",
+      "type": "book-chapter",
+      "page": "173-196",
+      "title": [
+        "8. From Rumours to Calling Out"
+      ],
+      "author": [
+        {
+          "given": "Alice",
+          "family": "Laurent-Camena",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01m84wm78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Rennes 2"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "subtitle": [
+        "Denunciations of Gender-Based Violence in Electronic Dance Music in France"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.05",
+      "type": "book-chapter",
+      "page": "101-126",
+      "title": [
+        "5. The Helsinki School"
+      ],
+      "author": [
+        {
+          "given": "Leena-Maija",
+          "family": "Rossi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05jzt8766",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Lapland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7248-4671",
+          "authenticated-orcid": false,
+          "given": "Sari",
+          "family": "Karttunen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Cultural Policy Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "subtitle": [
+        "Gendered Image Shaping and Gender-Based Violence in a Photography Branding Project"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.04",
+      "type": "book-chapter",
+      "page": "73-98",
+      "title": [
+        "4. Gender-Based Violence in French Art Schools and the Reproduction of Gender Inequality in Contemporary Art"
+      ],
+      "author": [
+        {
+          "given": "Mathilde",
+          "family": "Provansal",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05591te55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ludwig-Maximilians-Universität München"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.06",
+      "type": "book-chapter",
+      "page": "127-150",
+      "title": [
+        "6. Creating Content about Gender-Based Violence and Sexuality while Being Subjected to Sexual Harassment"
+      ],
+      "author": [
+        {
+          "given": "Anna",
+          "family": "Bull",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04m01e293",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of York"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "subtitle": [
+        "Experiences of UK Screen Industries Workers"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.03",
+      "type": "book-chapter",
+      "page": "49-72",
+      "title": [
+        "3. Navigating the Boundary between Subjection and Agency"
+      ],
+      "author": [
+        {
+          "given": "Chiharu",
+          "family": "Chujo",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05b5c0584",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Jean Moulin University Lyon 3"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "subtitle": [
+        "Gender-Based Violence in the Japanese Popular Music Industry"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.10",
+      "type": "book-chapter",
+      "page": "201-206",
+      "title": [
+        "Afterword"
+      ],
+      "author": [
+        {
+          "given": "Paula-Irene",
+          "family": "Villa Braslavsky",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05591te55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ludwig-Maximilians-Universität München"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.07",
+      "type": "book-chapter",
+      "page": "153-172",
+      "title": [
+        "7. Playing Is Not Consenting"
+      ],
+      "author": [
+        {
+          "given": "Bleuwenn",
+          "family": "Lechaux",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01m84wm78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Rennes 2"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "subtitle": [
+        "Sexual Harassment in New York Theatre"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.01",
+      "type": "book-chapter",
+      "page": "1-24",
+      "title": [
+        "1. Introduction"
+      ],
+      "author": [
+        {
+          "given": "Marie",
+          "family": "Buscatto",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/002t25c44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Pantheon-Sorbonne University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7248-4671",
+          "authenticated-orcid": false,
+          "given": "Sari",
+          "family": "Karttunen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Cultural Policy Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mathilde",
+          "family": "Provansal",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05591te55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ludwig-Maximilians-Universität München"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "subtitle": [
+        "A Comprehensive Understanding of Gender-Based Violence in Artistic and Cultural Worlds"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.09",
+      "type": "book-chapter",
+      "page": "197-200",
+      "title": [
+        "Conclusion"
+      ],
+      "author": [
+        {
+          "given": "Marie",
+          "family": "Buscatto",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/002t25c44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Pantheon-Sorbonne University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7248-4671",
+          "authenticated-orcid": false,
+          "given": "Sari",
+          "family": "Karttunen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Cultural Policy Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mathilde",
+          "family": "Provansal",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05591te55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ludwig-Maximilians-Universität München"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                23
+              ]
+            ],
+            "date-time": "2025-06-23T00:00:00Z",
+            "timestamp": 1750636800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0436.02",
+      "type": "book-chapter",
+      "page": "27-48",
+      "title": [
+        "2. French Opera"
+      ],
+      "author": [
+        {
+          "given": "Marie",
+          "family": "Buscatto",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/002t25c44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Pantheon-Sorbonne University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Soline",
+          "family": "Helbert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ionela",
+          "family": "Roharik",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02d9dg697",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "School for Advanced Studies in the Social Sciences"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gender-Based Violence in Arts and Culture"
+      ],
+      "subtitle": [
+        "A Professional World Haunted by Gender-Based Violence"
+      ],
+      "ISBN": [
+        "9781805114482",
+        "9781805114499",
+        "9781805114505",
+        "9781805114529",
+        "9781805114512"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "8. From Rumours to Calling Out Denunciations of Gender-Based Violence in Electronic Dance Music in France",
+      "authors": [
+        "Alice Laurent-Camena"
+      ],
+      "chapter_doi": "10.11647/obp.0436.08",
+      "citation_pages": "173-196"
+    },
+    {
+      "title": "5. The Helsinki School Gendered Image Shaping and Gender-Based Violence in a Photography Branding Project",
+      "authors": [
+        "Leena-Maija Rossi",
+        "Sari Karttunen"
+      ],
+      "chapter_doi": "10.11647/obp.0436.05",
+      "citation_pages": "101-126"
+    },
+    {
+      "title": "4. Gender-Based Violence in French Art Schools and the Reproduction of Gender Inequality in Contemporary Art",
+      "authors": [
+        "Mathilde Provansal"
+      ],
+      "chapter_doi": "10.11647/obp.0436.04",
+      "citation_pages": "73-98"
+    },
+    {
+      "title": "6. Creating Content about Gender-Based Violence and Sexuality while Being Subjected to Sexual Harassment Experiences of UK Screen Industries Workers",
+      "authors": [
+        "Anna Bull"
+      ],
+      "chapter_doi": "10.11647/obp.0436.06",
+      "citation_pages": "127-150"
+    },
+    {
+      "title": "3. Navigating the Boundary between Subjection and Agency Gender-Based Violence in the Japanese Popular Music Industry",
+      "authors": [
+        "Chiharu Chujo"
+      ],
+      "chapter_doi": "10.11647/obp.0436.03",
+      "citation_pages": "49-72"
+    },
+    {
+      "title": "Afterword",
+      "authors": [
+        "Paula-Irene Villa Braslavsky"
+      ],
+      "chapter_doi": "10.11647/obp.0436.10",
+      "citation_pages": "201-206"
+    },
+    {
+      "title": "7. Playing Is Not Consenting Sexual Harassment in New York Theatre",
+      "authors": [
+        "Bleuwenn Lechaux"
+      ],
+      "chapter_doi": "10.11647/obp.0436.07",
+      "citation_pages": "153-172"
+    },
+    {
+      "title": "1. Introduction A Comprehensive Understanding of Gender-Based Violence in Artistic and Cultural Worlds",
+      "authors": [
+        "Marie Buscatto",
+        "Sari Karttunen",
+        "Mathilde Provansal"
+      ],
+      "chapter_doi": "10.11647/obp.0436.01",
+      "citation_pages": "1-24"
+    },
+    {
+      "title": "Conclusion",
+      "authors": [
+        "Marie Buscatto",
+        "Sari Karttunen",
+        "Mathilde Provansal"
+      ],
+      "chapter_doi": "10.11647/obp.0436.09",
+      "citation_pages": "197-200"
+    },
+    {
+      "title": "2. French Opera A Professional World Haunted by Gender-Based Violence",
+      "authors": [
+        "Marie Buscatto",
+        "Soline Helbert",
+        "Ionela Roharik"
+      ],
+      "chapter_doi": "10.11647/obp.0436.02",
+      "citation_pages": "27-48"
+    }
+  ]
+}

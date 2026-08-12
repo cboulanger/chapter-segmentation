@@ -1,0 +1,862 @@
+{
+  "isbn": "9781906924454",
+  "fetched_at": "2026-08-11T22:58:29.726847+00:00",
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.07",
+      "type": "book-chapter",
+      "title": [
+        "Open Knowledge: Promises and Challenges"
+      ],
+      "author": [
+        {
+          "given": "Rufus",
+          "family": "Pollock",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jo",
+          "family": "Walsh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.08",
+      "type": "book-chapter",
+      "title": [
+        "Science Commons: Building the Research Web"
+      ],
+      "author": [
+        {
+          "given": "Kaitlin",
+          "family": "Thaney",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.01",
+      "type": "book-chapter",
+      "title": [
+        "Introducing the Digital Public Domain. Communia and the European Public Domain Project: A Politics of the Public Domain"
+      ],
+      "author": [
+        {
+          "given": "Giancarlo",
+          "family": "Frosio",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.11",
+      "type": "book-chapter",
+      "title": [
+        "The Value of Registering Creative Works"
+      ],
+      "author": [
+        {
+          "given": "Roland",
+          "family": "Alton-Scheidl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joe",
+          "family": "Benso",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Springer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.02",
+      "type": "book-chapter",
+      "title": [
+        "Consume and Share: Making Copyright Fit for the Digital Agenda"
+      ],
+      "author": [
+        {
+          "given": "Marco",
+          "family": "Ricolfi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.10",
+      "type": "book-chapter",
+      "title": [
+        "CC REL: The Creative Commons Rights Expression Language"
+      ],
+      "author": [
+        {
+          "given": "Hal",
+          "family": "Abelson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ben",
+          "family": "Adida",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mike",
+          "family": "Linksvayer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nathan",
+          "family": "Yergler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.04",
+      "type": "book-chapter",
+      "title": [
+        "Building Digital Commons through Open Access Management of Copyright-related Rights"
+      ],
+      "author": [
+        {
+          "given": "Giuseppe",
+          "family": "Mazziotti",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.09",
+      "type": "book-chapter",
+      "title": [
+        "The DRIVER Project: The Socio-economic Benefits of a European Scientific Commons"
+      ],
+      "author": [
+        {
+          "given": "Karen",
+          "family": "Van Godtsenhoven",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.06",
+      "type": "book-chapter",
+      "title": [
+        "Social Motivations and Incentives in Ex Situ Conservation of Microbial Genetic Resources"
+      ],
+      "author": [
+        {
+          "given": "Tom",
+          "family": "Dedeurwaerdere",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Per M.",
+          "family": "Stromberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Unai",
+          "family": "Pascual",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.03",
+      "type": "book-chapter",
+      "title": [
+        "Evaluating Directive 2001/29/EC in the Light of the Digital Public Domain"
+      ],
+      "author": [
+        {
+          "given": "Lucie",
+          "family": "Guibault",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2012,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2012-03-26T00:00:00Z",
+            "timestamp": 1332720000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0019.05",
+      "type": "book-chapter",
+      "title": [
+        "Contractually-constructed Research Commons: A Critical Economic Appraisal"
+      ],
+      "author": [
+        {
+          "given": "Enrico",
+          "family": "Bertacchini",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Series",
+        "The Digital Public Domain"
+      ],
+      "ISBN": [
+        "9781906924454",
+        "9781906924461",
+        "9781906924478",
+        "9781800644465",
+        "9781906924751",
+        "9781906924768"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            26
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Open Knowledge: Promises and Challenges",
+      "authors": [
+        "Rufus Pollock",
+        "Jo Walsh"
+      ],
+      "chapter_doi": "10.11647/obp.0019.07",
+      "citation_pages": null
+    },
+    {
+      "title": "Science Commons: Building the Research Web",
+      "authors": [
+        "Kaitlin Thaney"
+      ],
+      "chapter_doi": "10.11647/obp.0019.08",
+      "citation_pages": null
+    },
+    {
+      "title": "Introducing the Digital Public Domain. Communia and the European Public Domain Project: A Politics of the Public Domain",
+      "authors": [
+        "Giancarlo Frosio"
+      ],
+      "chapter_doi": "10.11647/obp.0019.01",
+      "citation_pages": null
+    },
+    {
+      "title": "The Value of Registering Creative Works",
+      "authors": [
+        "Roland Alton-Scheidl",
+        "Joe Benso",
+        "Martin Springer"
+      ],
+      "chapter_doi": "10.11647/obp.0019.11",
+      "citation_pages": null
+    },
+    {
+      "title": "Consume and Share: Making Copyright Fit for the Digital Agenda",
+      "authors": [
+        "Marco Ricolfi"
+      ],
+      "chapter_doi": "10.11647/obp.0019.02",
+      "citation_pages": null
+    },
+    {
+      "title": "CC REL: The Creative Commons Rights Expression Language",
+      "authors": [
+        "Hal Abelson",
+        "Ben Adida",
+        "Mike Linksvayer",
+        "Nathan Yergler"
+      ],
+      "chapter_doi": "10.11647/obp.0019.10",
+      "citation_pages": null
+    },
+    {
+      "title": "Building Digital Commons through Open Access Management of Copyright-related Rights",
+      "authors": [
+        "Giuseppe Mazziotti"
+      ],
+      "chapter_doi": "10.11647/obp.0019.04",
+      "citation_pages": null
+    },
+    {
+      "title": "The DRIVER Project: The Socio-economic Benefits of a European Scientific Commons",
+      "authors": [
+        "Karen Van Godtsenhoven"
+      ],
+      "chapter_doi": "10.11647/obp.0019.09",
+      "citation_pages": null
+    },
+    {
+      "title": "Social Motivations and Incentives in Ex Situ Conservation of Microbial Genetic Resources",
+      "authors": [
+        "Tom Dedeurwaerdere",
+        "Per M. Stromberg",
+        "Unai Pascual"
+      ],
+      "chapter_doi": "10.11647/obp.0019.06",
+      "citation_pages": null
+    },
+    {
+      "title": "Evaluating Directive 2001/29/EC in the Light of the Digital Public Domain",
+      "authors": [
+        "Lucie Guibault"
+      ],
+      "chapter_doi": "10.11647/obp.0019.03",
+      "citation_pages": null
+    },
+    {
+      "title": "Contractually-constructed Research Commons: A Critical Economic Appraisal",
+      "authors": [
+        "Enrico Bertacchini"
+      ],
+      "chapter_doi": "10.11647/obp.0019.05",
+      "citation_pages": null
+    }
+  ]
+}

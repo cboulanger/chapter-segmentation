@@ -1,0 +1,911 @@
+{
+  "isbn": "9781805116530",
+  "fetched_at": "2026-08-11T22:58:30.268008+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.11",
+      "type": "book-chapter",
+      "page": "283-286",
+      "title": [
+        "Epilogue"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6302-3726",
+          "authenticated-orcid": false,
+          "family": "Fendel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "subtitle": [
+        "A brave new world beyond the canon"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.08",
+      "type": "book-chapter",
+      "page": "189-210",
+      "title": [
+        "8. Roundabout ways of setting up scenes in the Greek New Testament(1st to 2nd c. CE)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6760-0364",
+          "authenticated-orcid": false,
+          "given": "Cressida",
+          "family": "Ryan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.07",
+      "type": "book-chapter",
+      "page": "159-186",
+      "title": [
+        "7. Between word and phrase: The puzzle of Coptic light-verbconstructions (2nd to 5th c. CE)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-2984-344X",
+          "authenticated-orcid": false,
+          "given": "Nina",
+          "family": "Speransky",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03qxff017",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hebrew University of Jerusalem"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.04",
+      "type": "book-chapter",
+      "page": "73-96",
+      "title": [
+        "4. Old Egyptian multi-word expressions in Unas’ and Teti’sPyramid Texts (24th to 23rd c. BCE)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4407-9630",
+          "authenticated-orcid": false,
+          "given": "Roberto A.",
+          "family": "Díaz Hernández",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0122p5f64",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Jaén"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.09",
+      "type": "book-chapter",
+      "page": "211-248",
+      "title": [
+        "9. Support-verb constructions with causative force in the Vulgate and Septuagint and their Hebrew and Greek originals (3rd c. BCE to 2nd c. CE)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-1861-5657",
+          "authenticated-orcid": false,
+          "given": "Roland",
+          "family": "Hoffmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.02",
+      "type": "book-chapter",
+      "page": "13-38",
+      "title": [
+        "2. The Herculaneum papyri as a resource for discovering multi-word expressions in an in-group variety (4th to 1st c. BCE)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6048-7637",
+          "authenticated-orcid": false,
+          "given": "Michael F.",
+          "family": "McOsker",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.03",
+      "type": "book-chapter",
+      "page": "39-72",
+      "title": [
+        "3. Technical writing across space and time"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6302-3726",
+          "authenticated-orcid": false,
+          "family": "Fendel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0336-4419",
+          "authenticated-orcid": false,
+          "given": "Matthew T.",
+          "family": "Ireland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "subtitle": [
+        "The challenges oflemmatisation and part-of-speech tagging in the historiographicaland medical corpora of (post-)classical Greek (5th c. BCE to 2nd c. CE)"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.05",
+      "type": "book-chapter",
+      "page": "99-130",
+      "title": [
+        "5. Assessing verb-particle constructions through classical Greekpreverbation (8th to 4th c. BCE)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3404-6061",
+          "authenticated-orcid": false,
+          "given": "Elena",
+          "family": "Squeri",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02be6w209",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sapienza University of Rome"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.06",
+      "type": "book-chapter",
+      "page": "131-158",
+      "title": [
+        "6. The pragmatic development of ποίησον ἀγάπην poíēson agápēnas an intersubjective marker in post-classical Greek (4th to 6th c. CE)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1398-1317",
+          "authenticated-orcid": false,
+          "given": "Lucía Madrigal",
+          "family": "Acero",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02p0gd045",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Complutense de Madrid"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.10",
+      "type": "book-chapter",
+      "page": "249-282",
+      "title": [
+        "10. Understanding the expression of pain across time: Metaphorand intensity in Latin (and Spanish) support-verb constructionswith dolor (2nd c. BCE to 15th c. CE)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5232-0725",
+          "authenticated-orcid": false,
+          "given": "María Isabel",
+          "family": "Jiménez Martínez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01cby8j38",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Autónoma de Madrid"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T00:00:00Z",
+            "timestamp": 1783987200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0478.01",
+      "type": "book-chapter",
+      "page": "1-10",
+      "title": [
+        "1. Prologue"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6302-3726",
+          "authenticated-orcid": false,
+          "family": "Fendel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Publications of the Philological Society",
+        "Verbal Multi-Word Expressions in Corpus Languages"
+      ],
+      "subtitle": [
+        "Challenges and opportunities with multi-wordexpressions in corpus languages"
+      ],
+      "ISBN": [
+        "9781805116530",
+        "9781805116547",
+        "9781805116554",
+        "9781805116578",
+        "9781805116561"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            14
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Epilogue A brave new world beyond the canon",
+      "authors": [
+        "Fendel"
+      ],
+      "chapter_doi": "10.11647/obp.0478.11",
+      "citation_pages": "283-286"
+    },
+    {
+      "title": "8. Roundabout ways of setting up scenes in the Greek New Testament(1st to 2nd c. CE)",
+      "authors": [
+        "Cressida Ryan"
+      ],
+      "chapter_doi": "10.11647/obp.0478.08",
+      "citation_pages": "189-210"
+    },
+    {
+      "title": "7. Between word and phrase: The puzzle of Coptic light-verbconstructions (2nd to 5th c. CE)",
+      "authors": [
+        "Nina Speransky"
+      ],
+      "chapter_doi": "10.11647/obp.0478.07",
+      "citation_pages": "159-186"
+    },
+    {
+      "title": "4. Old Egyptian multi-word expressions in Unas’ and Teti’sPyramid Texts (24th to 23rd c. BCE)",
+      "authors": [
+        "Roberto A. Díaz Hernández"
+      ],
+      "chapter_doi": "10.11647/obp.0478.04",
+      "citation_pages": "73-96"
+    },
+    {
+      "title": "9. Support-verb constructions with causative force in the Vulgate and Septuagint and their Hebrew and Greek originals (3rd c. BCE to 2nd c. CE)",
+      "authors": [
+        "Roland Hoffmann"
+      ],
+      "chapter_doi": "10.11647/obp.0478.09",
+      "citation_pages": "211-248"
+    },
+    {
+      "title": "2. The Herculaneum papyri as a resource for discovering multi-word expressions in an in-group variety (4th to 1st c. BCE)",
+      "authors": [
+        "Michael F. McOsker"
+      ],
+      "chapter_doi": "10.11647/obp.0478.02",
+      "citation_pages": "13-38"
+    },
+    {
+      "title": "3. Technical writing across space and time The challenges oflemmatisation and part-of-speech tagging in the historiographicaland medical corpora of (post-)classical Greek (5th c. BCE to 2nd c. CE)",
+      "authors": [
+        "Fendel",
+        "Matthew T. Ireland"
+      ],
+      "chapter_doi": "10.11647/obp.0478.03",
+      "citation_pages": "39-72"
+    },
+    {
+      "title": "5. Assessing verb-particle constructions through classical Greekpreverbation (8th to 4th c. BCE)",
+      "authors": [
+        "Elena Squeri"
+      ],
+      "chapter_doi": "10.11647/obp.0478.05",
+      "citation_pages": "99-130"
+    },
+    {
+      "title": "6. The pragmatic development of ποίησον ἀγάπην poíēson agápēnas an intersubjective marker in post-classical Greek (4th to 6th c. CE)",
+      "authors": [
+        "Lucía Madrigal Acero"
+      ],
+      "chapter_doi": "10.11647/obp.0478.06",
+      "citation_pages": "131-158"
+    },
+    {
+      "title": "10. Understanding the expression of pain across time: Metaphorand intensity in Latin (and Spanish) support-verb constructionswith dolor (2nd c. BCE to 15th c. CE)",
+      "authors": [
+        "María Isabel Jiménez Martínez"
+      ],
+      "chapter_doi": "10.11647/obp.0478.10",
+      "citation_pages": "249-282"
+    },
+    {
+      "title": "1. Prologue Challenges and opportunities with multi-wordexpressions in corpus languages",
+      "authors": [
+        "Fendel"
+      ],
+      "chapter_doi": "10.11647/obp.0478.01",
+      "citation_pages": "1-10"
+    }
+  ]
+}

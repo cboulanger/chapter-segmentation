@@ -1,0 +1,805 @@
+{
+  "isbn": "9783837633481",
+  "fetched_at": "2026-08-11T22:40:52.166581+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839433485-011",
+      "type": "book-chapter",
+      "page": "269-294",
+      "title": [
+        "Das Selbst im Wandel"
+      ],
+      "author": [
+        {
+          "given": "Vanessa",
+          "family": "Pietsch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "Persönlichkeitsveränderung zwischen Desintegration und Zugehörigkeit an Universitäten"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-002",
+      "type": "book-chapter",
+      "page": "11-42",
+      "title": [
+        "Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Joanna",
+          "family": "Pfaff-Czarnecka",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "Universitäten - als Orte der Heterogenität und Un/Gleichheit"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-003",
+      "type": "book-chapter",
+      "page": "43-60",
+      "title": [
+        "Die Universität als Soziotop"
+      ],
+      "author": [
+        {
+          "given": "Naby",
+          "family": "Berdjas",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-014",
+      "type": "book-chapter",
+      "page": "353-358",
+      "title": [
+        "AutorInnen"
+      ],
+      "author": [
+        {
+          "given": "Joanna",
+          "family": "Pfaff-Czarnecka",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-013",
+      "type": "book-chapter",
+      "page": "323-352",
+      "title": [
+        "\"Da kann man auch gleich Künstler werden.\""
+      ],
+      "author": [
+        {
+          "given": "Frerk",
+          "family": "Blome",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "Selbstausschluss und habituelle Verläufe von Personen aus hochschulfernem Elternhaus in akademischen Karrieren"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-009",
+      "type": "book-chapter",
+      "page": "215-242",
+      "title": [
+        "Binär codiert?"
+      ],
+      "author": [
+        {
+          "given": "Katharina",
+          "family": "Losch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "Zur Herausforderung männlicher Fachkultur in der Informatik"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-007",
+      "type": "book-chapter",
+      "page": "155-180",
+      "title": [
+        "Boundaries at Work"
+      ],
+      "author": [
+        {
+          "given": "Ekin",
+          "family": "Yildiran",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "The Habitus at Private Universities in Turkey"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-001",
+      "type": "book-chapter",
+      "page": "7-8",
+      "title": [
+        "Danksagung"
+      ],
+      "author": [
+        {
+          "given": "Joanna",
+          "family": "Pfaff-Czarnecka",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-006",
+      "type": "book-chapter",
+      "page": "123-154",
+      "title": [
+        "\"I Think it's Equal. We're Just Students.\""
+      ],
+      "author": [
+        {
+          "given": "Belma",
+          "family": "Halkic",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "Zur Bedeutung von Geschlecht an einer vietnamesischen Universität"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-004",
+      "type": "book-chapter",
+      "page": "61-90",
+      "title": [
+        "Dynamiken des Studierens"
+      ],
+      "author": [
+        {
+          "given": "Joanna",
+          "family": "Pfaff-Czarnecka",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Milena",
+          "family": "Prekodravac",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "Zum Konzept des universitären Parcours"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-010",
+      "type": "book-chapter",
+      "page": "243-266",
+      "title": [
+        "In Search of Belonging"
+      ],
+      "author": [
+        {
+          "given": "Kristina",
+          "family": "Matveeva",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "Russian LGBT people in Germany"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-008",
+      "type": "book-chapter",
+      "page": "183-214",
+      "title": [
+        "Ethnizität und wissenschaftliche Hochschulkarriere"
+      ],
+      "author": [
+        {
+          "given": "Sven",
+          "family": "Kathöfer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-005",
+      "type": "book-chapter",
+      "page": "93-122",
+      "title": [
+        "Was Förderer fordern"
+      ],
+      "author": [
+        {
+          "given": "Larissa",
+          "family": "Bäumer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "Begabtenförderung und soziale Ungleichheit"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Joanna",
+          "family": "Pfaff-Czarnecka",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-012",
+      "type": "book-chapter",
+      "page": "295-322",
+      "title": [
+        "Zwischen Wissenschaft und Kinderwunsch"
+      ],
+      "author": [
+        {
+          "given": "Nadia",
+          "family": "Sadrudin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "subtitle": [
+        "Zur Familienplanung bei PromovendInnen mit ,Migrationserfahrung'"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839433485-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Joanna",
+          "family": "Pfaff-Czarnecka",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science Studies",
+        "Das soziale Leben der Universität"
+      ],
+      "ISBN": [
+        "9783837633481",
+        "9783839433485"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            10
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Das Selbst im Wandel Persönlichkeitsveränderung zwischen Desintegration und Zugehörigkeit an Universitäten",
+      "authors": [
+        "Vanessa Pietsch"
+      ],
+      "chapter_doi": "10.14361/9783839433485-011",
+      "citation_pages": "269-294"
+    },
+    {
+      "title": "Einleitung Universitäten - als Orte der Heterogenität und Un/Gleichheit",
+      "authors": [
+        "Joanna Pfaff-Czarnecka"
+      ],
+      "chapter_doi": "10.14361/9783839433485-002",
+      "citation_pages": "11-42"
+    },
+    {
+      "title": "Die Universität als Soziotop",
+      "authors": [
+        "Naby Berdjas"
+      ],
+      "chapter_doi": "10.14361/9783839433485-003",
+      "citation_pages": "43-60"
+    },
+    {
+      "title": "AutorInnen",
+      "authors": [
+        "Joanna Pfaff-Czarnecka"
+      ],
+      "chapter_doi": "10.14361/9783839433485-014",
+      "citation_pages": "353-358"
+    },
+    {
+      "title": "\"Da kann man auch gleich Künstler werden.\" Selbstausschluss und habituelle Verläufe von Personen aus hochschulfernem Elternhaus in akademischen Karrieren",
+      "authors": [
+        "Frerk Blome"
+      ],
+      "chapter_doi": "10.14361/9783839433485-013",
+      "citation_pages": "323-352"
+    },
+    {
+      "title": "Binär codiert? Zur Herausforderung männlicher Fachkultur in der Informatik",
+      "authors": [
+        "Katharina Losch"
+      ],
+      "chapter_doi": "10.14361/9783839433485-009",
+      "citation_pages": "215-242"
+    },
+    {
+      "title": "Boundaries at Work The Habitus at Private Universities in Turkey",
+      "authors": [
+        "Ekin Yildiran"
+      ],
+      "chapter_doi": "10.14361/9783839433485-007",
+      "citation_pages": "155-180"
+    },
+    {
+      "title": "Danksagung",
+      "authors": [
+        "Joanna Pfaff-Czarnecka"
+      ],
+      "chapter_doi": "10.14361/9783839433485-001",
+      "citation_pages": "7-8"
+    },
+    {
+      "title": "\"I Think it's Equal. We're Just Students.\" Zur Bedeutung von Geschlecht an einer vietnamesischen Universität",
+      "authors": [
+        "Belma Halkic"
+      ],
+      "chapter_doi": "10.14361/9783839433485-006",
+      "citation_pages": "123-154"
+    },
+    {
+      "title": "Dynamiken des Studierens Zum Konzept des universitären Parcours",
+      "authors": [
+        "Joanna Pfaff-Czarnecka",
+        "Milena Prekodravac"
+      ],
+      "chapter_doi": "10.14361/9783839433485-004",
+      "citation_pages": "61-90"
+    },
+    {
+      "title": "In Search of Belonging Russian LGBT people in Germany",
+      "authors": [
+        "Kristina Matveeva"
+      ],
+      "chapter_doi": "10.14361/9783839433485-010",
+      "citation_pages": "243-266"
+    },
+    {
+      "title": "Ethnizität und wissenschaftliche Hochschulkarriere",
+      "authors": [
+        "Sven Kathöfer"
+      ],
+      "chapter_doi": "10.14361/9783839433485-008",
+      "citation_pages": "183-214"
+    },
+    {
+      "title": "Was Förderer fordern Begabtenförderung und soziale Ungleichheit",
+      "authors": [
+        "Larissa Bäumer"
+      ],
+      "chapter_doi": "10.14361/9783839433485-005",
+      "citation_pages": "93-122"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Joanna Pfaff-Czarnecka"
+      ],
+      "chapter_doi": "10.14361/9783839433485-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Zwischen Wissenschaft und Kinderwunsch Zur Familienplanung bei PromovendInnen mit ,Migrationserfahrung'",
+      "authors": [
+        "Nadia Sadrudin"
+      ],
+      "chapter_doi": "10.14361/9783839433485-012",
+      "citation_pages": "295-322"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Joanna Pfaff-Czarnecka"
+      ],
+      "chapter_doi": "10.14361/9783839433485-toc",
+      "citation_pages": "5-6"
+    }
+  ]
+}

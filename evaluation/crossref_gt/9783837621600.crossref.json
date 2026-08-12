@@ -1,0 +1,1132 @@
+{
+  "isbn": "9783837621600",
+  "fetched_at": "2026-08-11T22:58:12.838290+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/transcript.9783839421604.281",
+      "type": "book-chapter",
+      "page": "281-304",
+      "title": [
+        "Mediale Gouvernementalität"
+      ],
+      "author": [
+        {
+          "given": "Timo",
+          "family": "Skrandies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839421604.bm",
+      "title": [
+        "Backmatter"
+      ],
+      "page": "354-358",
+      "type": "book-chapter",
+      "container-title": [
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837621600"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.321",
+      "type": "book-chapter",
+      "page": "321-334",
+      "title": [
+        "Transfusionen des Humanen"
+      ],
+      "author": [
+        {
+          "given": "Dominik",
+          "family": "Maeder",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Zur visuellen Poetik des Blutes in Dexter und True Blood"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.63",
+      "type": "book-chapter",
+      "page": "63-72",
+      "title": [
+        "Communitas, Immunitas, Biopolitik"
+      ],
+      "author": [
+        {
+          "given": "Roberto",
+          "family": "Esposito",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.349",
+      "type": "book-chapter",
+      "page": "349-353",
+      "title": [
+        "Autorinnen und Autoren"
+      ],
+      "author": [
+        {
+          "given": "Vittoria",
+          "family": "Borsò",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.201",
+      "type": "book-chapter",
+      "page": "201-210",
+      "title": [
+        "Hispanische Vitalität? Über die Message - so es denn eine gab - des Romans Tiempo de Silencio von Luis Martín-Santos"
+      ],
+      "author": [
+        {
+          "given": "Hans Ulrich",
+          "family": "Gumbrecht",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.335",
+      "type": "book-chapter",
+      "page": "335-348",
+      "title": [
+        "Biopolitik, Körper und Lebensräume"
+      ],
+      "author": [
+        {
+          "given": "Sergia",
+          "family": "Adamo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Ein feministischer Blick"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.bm",
+      "type": "book-chapter",
+      "page": "354-358",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Vittoria",
+          "family": "Borsò",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Vittoria",
+          "family": "Borsò",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.191",
+      "type": "book-chapter",
+      "page": "191-198",
+      "title": [
+        "Die Biopolitik der Geste in den mittelalterlichen Klosterregeln"
+      ],
+      "author": [
+        {
+          "given": "Daniel",
+          "family": "Blanga-Gubbay",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.141",
+      "type": "book-chapter",
+      "page": "141-170",
+      "title": [
+        "Jenseits von Vitalismus und Dasein"
+      ],
+      "author": [
+        {
+          "given": "Vittoria",
+          "family": "Borsò",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Roberto Espositos epistemologischer Ort in der Philosophie des Lebens"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.173",
+      "type": "book-chapter",
+      "page": "173-190",
+      "title": [
+        "Biopolitik und Zoopolitik"
+      ],
+      "author": [
+        {
+          "given": "Salvo",
+          "family": "Vaccaro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839421604.fm",
+      "title": [
+        "Frontmatter"
+      ],
+      "page": "1-4",
+      "type": "book-chapter",
+      "container-title": [
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837621600"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.41",
+      "type": "book-chapter",
+      "page": "41-60",
+      "title": [
+        "Die Ambiguität der Biopolitik"
+      ],
+      "author": [
+        {
+          "given": "José Luis",
+          "family": "Villacañas",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Eine weberianische Lektüre"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.211",
+      "type": "book-chapter",
+      "page": "211-244",
+      "title": [
+        "Mikropolitik des Schreibens"
+      ],
+      "author": [
+        {
+          "given": "Roger",
+          "family": "Lüdeke",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Zur Biopoetik von William Blake"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.115",
+      "type": "book-chapter",
+      "page": "115-140",
+      "title": [
+        "Das Schwindelgefühl des Lebens"
+      ],
+      "author": [
+        {
+          "given": "Alberto",
+          "family": "Moreiras",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Roberto Espositos Terza persona"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.245",
+      "type": "book-chapter",
+      "page": "245-262",
+      "title": [
+        "Lyrik oder Gymnastik?"
+      ],
+      "author": [
+        {
+          "given": "Marie",
+          "family": "Schmidt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Die Schreibszene der Pisan Cantos von Ezra Pound"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.263",
+      "type": "book-chapter",
+      "page": "263-278",
+      "title": [
+        "Paperbodies: Weibliche Biopoetik"
+      ],
+      "author": [
+        {
+          "given": "Valeria",
+          "family": "Cammarata",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.13",
+      "type": "book-chapter",
+      "page": "13-40",
+      "title": [
+        "Mit der Biopolitik darüber hinaus"
+      ],
+      "author": [
+        {
+          "given": "Vittoria",
+          "family": "Borsò",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Philosophische und ästhetische Umwege zu einer Ontologie des Lebens im 21. Jahrhundert"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.97",
+      "type": "book-chapter",
+      "page": "97-114",
+      "title": [
+        "Vom Impolitischen zum ›Impersonalen‹"
+      ],
+      "author": [
+        {
+          "given": "Enrica",
+          "family": "Lisciani-Petrini",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Im Dialog mit Rober to Esposito"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.prf",
+      "type": "book-chapter",
+      "page": "9-10",
+      "title": [
+        "Vorwort"
+      ],
+      "author": [
+        {
+          "given": "Vittoria",
+          "family": "Borsò",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.305",
+      "type": "book-chapter",
+      "page": "305-320",
+      "title": [
+        "BioArt - Vom Labor-Objekt zum sozialen Subjekt"
+      ],
+      "author": [
+        {
+          "given": "Desiree",
+          "family": "Förster",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.toc",
+      "type": "book-chapter",
+      "page": "5-8",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Vittoria",
+          "family": "Borsò",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839421604.73",
+      "type": "book-chapter",
+      "page": "73-96",
+      "title": [
+        "Der Ursprung des Konflikts"
+      ],
+      "author": [
+        {
+          "given": "Dario",
+          "family": "Gentili",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur- und Medientheorie",
+        "Wissen und Leben - Wissen für das Leben"
+      ],
+      "subtitle": [
+        "Vom Impolitischen zur Biopolitik bei Rober to Esposito"
+      ],
+      "ISBN": [
+        "9783837621600",
+        "9783839421604"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Mediale Gouvernementalität",
+      "authors": [
+        "Timo Skrandies"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.281",
+      "citation_pages": "281-304"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839421604.bm",
+      "citation_pages": "354-358"
+    },
+    {
+      "title": "Transfusionen des Humanen Zur visuellen Poetik des Blutes in Dexter und True Blood",
+      "authors": [
+        "Dominik Maeder"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.321",
+      "citation_pages": "321-334"
+    },
+    {
+      "title": "Communitas, Immunitas, Biopolitik",
+      "authors": [
+        "Roberto Esposito"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.63",
+      "citation_pages": "63-72"
+    },
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [
+        "Vittoria Borsò"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.349",
+      "citation_pages": "349-353"
+    },
+    {
+      "title": "Hispanische Vitalität? Über die Message - so es denn eine gab - des Romans Tiempo de Silencio von Luis Martín-Santos",
+      "authors": [
+        "Hans Ulrich Gumbrecht"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.201",
+      "citation_pages": "201-210"
+    },
+    {
+      "title": "Biopolitik, Körper und Lebensräume Ein feministischer Blick",
+      "authors": [
+        "Sergia Adamo"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.335",
+      "citation_pages": "335-348"
+    },
+    {
+      "title": "",
+      "authors": [
+        "Vittoria Borsò"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.bm",
+      "citation_pages": "354-358"
+    },
+    {
+      "title": "",
+      "authors": [
+        "Vittoria Borsò"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Die Biopolitik der Geste in den mittelalterlichen Klosterregeln",
+      "authors": [
+        "Daniel Blanga-Gubbay"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.191",
+      "citation_pages": "191-198"
+    },
+    {
+      "title": "Jenseits von Vitalismus und Dasein Roberto Espositos epistemologischer Ort in der Philosophie des Lebens",
+      "authors": [
+        "Vittoria Borsò"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.141",
+      "citation_pages": "141-170"
+    },
+    {
+      "title": "Biopolitik und Zoopolitik",
+      "authors": [
+        "Salvo Vaccaro"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.173",
+      "citation_pages": "173-190"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839421604.fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Die Ambiguität der Biopolitik Eine weberianische Lektüre",
+      "authors": [
+        "José Luis Villacañas"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.41",
+      "citation_pages": "41-60"
+    },
+    {
+      "title": "Mikropolitik des Schreibens Zur Biopoetik von William Blake",
+      "authors": [
+        "Roger Lüdeke"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.211",
+      "citation_pages": "211-244"
+    },
+    {
+      "title": "Das Schwindelgefühl des Lebens Roberto Espositos Terza persona",
+      "authors": [
+        "Alberto Moreiras"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.115",
+      "citation_pages": "115-140"
+    },
+    {
+      "title": "Lyrik oder Gymnastik? Die Schreibszene der Pisan Cantos von Ezra Pound",
+      "authors": [
+        "Marie Schmidt"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.245",
+      "citation_pages": "245-262"
+    },
+    {
+      "title": "Paperbodies: Weibliche Biopoetik",
+      "authors": [
+        "Valeria Cammarata"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.263",
+      "citation_pages": "263-278"
+    },
+    {
+      "title": "Mit der Biopolitik darüber hinaus Philosophische und ästhetische Umwege zu einer Ontologie des Lebens im 21. Jahrhundert",
+      "authors": [
+        "Vittoria Borsò"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.13",
+      "citation_pages": "13-40"
+    },
+    {
+      "title": "Vom Impolitischen zum ›Impersonalen‹ Im Dialog mit Rober to Esposito",
+      "authors": [
+        "Enrica Lisciani-Petrini"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.97",
+      "citation_pages": "97-114"
+    },
+    {
+      "title": "Vorwort",
+      "authors": [
+        "Vittoria Borsò"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.prf",
+      "citation_pages": "9-10"
+    },
+    {
+      "title": "BioArt - Vom Labor-Objekt zum sozialen Subjekt",
+      "authors": [
+        "Desiree Förster"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.305",
+      "citation_pages": "305-320"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Vittoria Borsò"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.toc",
+      "citation_pages": "5-8"
+    },
+    {
+      "title": "Der Ursprung des Konflikts Vom Impolitischen zur Biopolitik bei Rober to Esposito",
+      "authors": [
+        "Dario Gentili"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839421604.73",
+      "citation_pages": "73-96"
+    }
+  ]
+}

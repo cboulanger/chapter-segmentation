@@ -1,0 +1,1445 @@
+{
+  "isbn": "9781783746484",
+  "fetched_at": "2026-08-11T22:58:26.872972+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.07",
+      "type": "book-chapter",
+      "page": "141-180",
+      "title": [
+        "7. Copyright in the Everyday Practice of Writers"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4628-9407",
+          "authenticated-orcid": false,
+          "given": "Smita",
+          "family": "Kheria",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.12",
+      "type": "book-chapter",
+      "page": "309-346",
+      "title": [
+        "12. Ethical Scholarly Publishing Practices, Copyright and Open Access: A View from Ethnomusicology and Anthropology"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2337-7962",
+          "authenticated-orcid": false,
+          "given": "Muriel",
+          "family": "Swijghuisen Reigersberg",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.16",
+      "type": "book-chapter",
+      "page": "415-416",
+      "title": [
+        "2. Is the Current Copyright Framework Fit for Purpose in Relation to Writing, Reading and Publishing in the Digital Age?"
+      ],
+      "author": [
+        {
+          "given": "Laurence",
+          "family": "Kaye",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.20",
+      "type": "book-chapter",
+      "page": "1-18",
+      "title": [
+        "Introduction: Whose Book is it Anyway? A View from Elsewhere on Publishing, Copyright and Creativity"
+      ],
+      "author": [
+        {
+          "given": "Janis",
+          "family": "Jefferies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Kember",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.06",
+      "type": "book-chapter",
+      "page": "129-140",
+      "title": [
+        "6. Telling Stories or Selling Stories: Writing for Pleasure, Writing for Art or Writing to Get Paid?"
+      ],
+      "author": [
+        {
+          "given": "Sophie",
+          "family": "Rochester",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.02",
+      "type": "book-chapter",
+      "page": "33-64",
+      "title": [
+        "2. London-Havana Diary: Art Publishing, Sustainability, Free Speech and Free Papers"
+      ],
+      "author": [
+        {
+          "given": "Louise",
+          "family": "O’Hare",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.04",
+      "type": "book-chapter",
+      "page": "91-104",
+      "title": [
+        "4. Are Publishers Worth It? Filtering, Amplification and the Value of Publishing"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Bhaskar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.09",
+      "type": "book-chapter",
+      "page": "229-242",
+      "title": [
+        "9. Diversity or Die: How the Face of Book Publishing Needs to Change if it is to Have a Future"
+      ],
+      "author": [
+        {
+          "given": "Danuta",
+          "family": "Kean",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.14",
+      "type": "book-chapter",
+      "page": "379-402",
+      "title": [
+        "14. Redefining Reader and Writer, Remixing Copyright: Experimental Publishing at if:book Australia"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7658-1671",
+          "authenticated-orcid": false,
+          "given": "Simon",
+          "family": "Groth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.01",
+      "type": "book-chapter",
+      "page": "21-32",
+      "title": [
+        "1. A Statement by The Readers Project Concerning Contemporary Literary Practice, Digital Mediation, Intellectual Property, and Associated Moral Rights"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5219-1537",
+          "authenticated-orcid": false,
+          "given": "John",
+          "family": "Cayley",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4202-015X",
+          "authenticated-orcid": false,
+          "given": "Daniel C.",
+          "family": "Howe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.03",
+      "type": "book-chapter",
+      "page": "65-90",
+      "title": [
+        "3. The Ethics of Emergent Creativity: Can We Move Beyond Writing as Human Enterprise, Commodity and Innovation?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7681-8448",
+          "authenticated-orcid": false,
+          "given": "Janneke",
+          "family": "Adema",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.08",
+      "type": "book-chapter",
+      "page": "181-226",
+      "title": [
+        "8. Comics, Copyright and Academic Publishing: The Deluxe Edition"
+      ],
+      "author": [
+        {
+          "given": "Ronan",
+          "family": "Deazley",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jason",
+          "family": "Mathis",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.13",
+      "type": "book-chapter",
+      "page": "347-378",
+      "title": [
+        "13. Show Me the Copy! How Digital Media (Re)Assert Relational Creativity, Complicating Existing Intellectual Property and Publishing Paradigms"
+      ],
+      "author": [
+        {
+          "given": "Joseph F.",
+          "family": "Turcotte",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.17",
+      "type": "book-chapter",
+      "page": "417-422",
+      "title": [
+        "3. Is the Current Copyright Framework Fit for Purpose in Relation to Writing, Reading, and Publishing in the Digital Age?"
+      ],
+      "author": [
+        {
+          "given": "Richard",
+          "family": "Mollet",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.19",
+      "type": "book-chapter",
+      "page": "427-428",
+      "title": [
+        "5. Is the Current Copyright Framework Fit for Purpose in Relation to Writing, Reading, and Publishing in the Digital Age?"
+      ],
+      "author": [
+        {
+          "given": "Max",
+          "family": "Whitby",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.11",
+      "type": "book-chapter",
+      "page": "267-308",
+      "title": [
+        "11. Confronting Authorship, Constructing Practices (How Copyright is Destroying Collective Practice)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9783-5877",
+          "authenticated-orcid": false,
+          "given": "Eva",
+          "family": "Weinmayr",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.18",
+      "type": "book-chapter",
+      "page": "423-426",
+      "title": [
+        "4. History of Copyright Changes 1710–2013"
+      ],
+      "author": [
+        {
+          "given": "Rachel",
+          "family": "Calder",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.05",
+      "type": "book-chapter",
+      "page": "105-128",
+      "title": [
+        "5. Who Takes Legal Responsibility for Published Work? Why Both an Understanding and Lived Experience of Copyright Are Becoming Increasingly Important to Writers"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0385-8937",
+          "authenticated-orcid": false,
+          "given": "Alison",
+          "family": "Baverstock",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.15",
+      "type": "book-chapter",
+      "page": "405-414",
+      "title": [
+        "1. Publishing Industry"
+      ],
+      "author": [
+        {
+          "given": "Janis",
+          "family": "Jefferies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                12
+              ]
+            ],
+            "date-time": "2019-03-12T00:00:00Z",
+            "timestamp": 1552348800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0159.10",
+      "type": "book-chapter",
+      "page": "243-266",
+      "title": [
+        "10. Writing on the Cusp of Becoming Something Else"
+      ],
+      "author": [
+        {
+          "given": "J. R.",
+          "family": "Carpenter",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Whose Book Is it Anyway?"
+      ],
+      "ISBN": [
+        "9781783746484",
+        "9781783746491",
+        "9781783746507",
+        "9781800645776",
+        "9781783746538",
+        "9781783746514",
+        "9781783746521"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            12
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "7. Copyright in the Everyday Practice of Writers",
+      "authors": [
+        "Smita Kheria"
+      ],
+      "chapter_doi": "10.11647/obp.0159.07",
+      "citation_pages": "141-180"
+    },
+    {
+      "title": "12. Ethical Scholarly Publishing Practices, Copyright and Open Access: A View from Ethnomusicology and Anthropology",
+      "authors": [
+        "Muriel Swijghuisen Reigersberg"
+      ],
+      "chapter_doi": "10.11647/obp.0159.12",
+      "citation_pages": "309-346"
+    },
+    {
+      "title": "2. Is the Current Copyright Framework Fit for Purpose in Relation to Writing, Reading and Publishing in the Digital Age?",
+      "authors": [
+        "Laurence Kaye"
+      ],
+      "chapter_doi": "10.11647/obp.0159.16",
+      "citation_pages": "415-416"
+    },
+    {
+      "title": "Introduction: Whose Book is it Anyway? A View from Elsewhere on Publishing, Copyright and Creativity",
+      "authors": [
+        "Janis Jefferies",
+        "Sarah Kember"
+      ],
+      "chapter_doi": "10.11647/obp.0159.20",
+      "citation_pages": "1-18"
+    },
+    {
+      "title": "6. Telling Stories or Selling Stories: Writing for Pleasure, Writing for Art or Writing to Get Paid?",
+      "authors": [
+        "Sophie Rochester"
+      ],
+      "chapter_doi": "10.11647/obp.0159.06",
+      "citation_pages": "129-140"
+    },
+    {
+      "title": "2. London-Havana Diary: Art Publishing, Sustainability, Free Speech and Free Papers",
+      "authors": [
+        "Louise O’Hare"
+      ],
+      "chapter_doi": "10.11647/obp.0159.02",
+      "citation_pages": "33-64"
+    },
+    {
+      "title": "4. Are Publishers Worth It? Filtering, Amplification and the Value of Publishing",
+      "authors": [
+        "Michael Bhaskar"
+      ],
+      "chapter_doi": "10.11647/obp.0159.04",
+      "citation_pages": "91-104"
+    },
+    {
+      "title": "9. Diversity or Die: How the Face of Book Publishing Needs to Change if it is to Have a Future",
+      "authors": [
+        "Danuta Kean"
+      ],
+      "chapter_doi": "10.11647/obp.0159.09",
+      "citation_pages": "229-242"
+    },
+    {
+      "title": "14. Redefining Reader and Writer, Remixing Copyright: Experimental Publishing at if:book Australia",
+      "authors": [
+        "Simon Groth"
+      ],
+      "chapter_doi": "10.11647/obp.0159.14",
+      "citation_pages": "379-402"
+    },
+    {
+      "title": "1. A Statement by The Readers Project Concerning Contemporary Literary Practice, Digital Mediation, Intellectual Property, and Associated Moral Rights",
+      "authors": [
+        "John Cayley",
+        "Daniel C. Howe"
+      ],
+      "chapter_doi": "10.11647/obp.0159.01",
+      "citation_pages": "21-32"
+    },
+    {
+      "title": "3. The Ethics of Emergent Creativity: Can We Move Beyond Writing as Human Enterprise, Commodity and Innovation?",
+      "authors": [
+        "Janneke Adema"
+      ],
+      "chapter_doi": "10.11647/obp.0159.03",
+      "citation_pages": "65-90"
+    },
+    {
+      "title": "8. Comics, Copyright and Academic Publishing: The Deluxe Edition",
+      "authors": [
+        "Ronan Deazley",
+        "Jason Mathis"
+      ],
+      "chapter_doi": "10.11647/obp.0159.08",
+      "citation_pages": "181-226"
+    },
+    {
+      "title": "13. Show Me the Copy! How Digital Media (Re)Assert Relational Creativity, Complicating Existing Intellectual Property and Publishing Paradigms",
+      "authors": [
+        "Joseph F. Turcotte"
+      ],
+      "chapter_doi": "10.11647/obp.0159.13",
+      "citation_pages": "347-378"
+    },
+    {
+      "title": "3. Is the Current Copyright Framework Fit for Purpose in Relation to Writing, Reading, and Publishing in the Digital Age?",
+      "authors": [
+        "Richard Mollet"
+      ],
+      "chapter_doi": "10.11647/obp.0159.17",
+      "citation_pages": "417-422"
+    },
+    {
+      "title": "5. Is the Current Copyright Framework Fit for Purpose in Relation to Writing, Reading, and Publishing in the Digital Age?",
+      "authors": [
+        "Max Whitby"
+      ],
+      "chapter_doi": "10.11647/obp.0159.19",
+      "citation_pages": "427-428"
+    },
+    {
+      "title": "11. Confronting Authorship, Constructing Practices (How Copyright is Destroying Collective Practice)",
+      "authors": [
+        "Eva Weinmayr"
+      ],
+      "chapter_doi": "10.11647/obp.0159.11",
+      "citation_pages": "267-308"
+    },
+    {
+      "title": "4. History of Copyright Changes 1710–2013",
+      "authors": [
+        "Rachel Calder"
+      ],
+      "chapter_doi": "10.11647/obp.0159.18",
+      "citation_pages": "423-426"
+    },
+    {
+      "title": "5. Who Takes Legal Responsibility for Published Work? Why Both an Understanding and Lived Experience of Copyright Are Becoming Increasingly Important to Writers",
+      "authors": [
+        "Alison Baverstock"
+      ],
+      "chapter_doi": "10.11647/obp.0159.05",
+      "citation_pages": "105-128"
+    },
+    {
+      "title": "1. Publishing Industry",
+      "authors": [
+        "Janis Jefferies"
+      ],
+      "chapter_doi": "10.11647/obp.0159.15",
+      "citation_pages": "405-414"
+    },
+    {
+      "title": "10. Writing on the Cusp of Becoming Something Else",
+      "authors": [
+        "J. R. Carpenter"
+      ],
+      "chapter_doi": "10.11647/obp.0159.10",
+      "citation_pages": "243-266"
+    }
+  ]
+}

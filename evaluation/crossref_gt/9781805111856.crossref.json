@@ -1,0 +1,3194 @@
+{
+  "isbn": "9781805111856",
+  "fetched_at": "2026-08-11T22:58:13.964935+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.15",
+      "type": "book-chapter",
+      "page": "351-369",
+      "title": [
+        "15. Connecting Across Divides"
+      ],
+      "author": [
+        {
+          "given": "Sarah",
+          "family": "Fichtner",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00hkvk052",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Research Institute for the Economics of Education and Social Affairs"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anja",
+          "family": "Werner",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03606hw36",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Erfurt"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "A Case Study in Public History of the (e-)Motion Comic ‘Ghost Train―Memories of Ghost Trains and Ghost Stations in Former East and West-Berlin’"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.22",
+      "type": "book-chapter",
+      "page": "138-138",
+      "title": [
+        "Sleepy Smuggles"
+      ],
+      "author": [
+        {
+          "given": "Sarah",
+          "family": "Fichtner",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00hkvk052",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Research Institute for the Economics of Education and Social Affairs"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.30",
+      "type": "book-chapter",
+      "page": "283-284",
+      "title": [
+        "Blackberry Picking"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1127-1020",
+          "authenticated-orcid": false,
+          "given": "Rahim",
+          "family": "Rahimov",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Association of European Studies for the Caucasus"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.34",
+      "type": "book-chapter",
+      "page": "349-350",
+      "title": [
+        "Pink Flamingo"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8897-8016",
+          "authenticated-orcid": false,
+          "given": "Iveta",
+          "family": "Silova",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03efmqc40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Arizona State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.11",
+      "type": "book-chapter",
+      "page": "259-280",
+      "title": [
+        "11. Children on their Own"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5062-3685",
+          "authenticated-orcid": false,
+          "given": "Nadine",
+          "family": "Bernhard",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3170-7098",
+          "authenticated-orcid": false,
+          "given": "Kathleen",
+          "family": "Falkenberg",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01hcx6992",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Humboldt-Universität zu Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Cold War Childhood Memories of Unsupervised Times"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.02",
+      "type": "book-chapter",
+      "page": "51-76",
+      "title": [
+        "2. ‘I Wanted to See the Man with that Mark on his Forehead’"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6142-1595",
+          "authenticated-orcid": false,
+          "given": "Pia",
+          "family": "Koivunen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05vghhr25",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Turku"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "A Historian, Her Childhood Experiences, and the Power of Memory"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.18",
+      "type": "book-chapter",
+      "page": "77-78",
+      "title": [
+        "Rua Liga Dos Comunistas"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9586-4287",
+          "authenticated-orcid": false,
+          "given": "José",
+          "family": "Cossa",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04p491231",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Pennsylvania State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.03",
+      "type": "book-chapter",
+      "page": "79-90",
+      "title": [
+        "3. Passing Bye"
+      ],
+      "author": [
+        {
+          "given": "Hanna",
+          "family": "Trampert",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.10",
+      "type": "book-chapter",
+      "page": "237-254",
+      "title": [
+        "10. Lift Up Your Arms! Elite Athletes and Cold War Childhoods"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2182-3615",
+          "authenticated-orcid": false,
+          "given": "Susanne",
+          "family": "Gannon",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03t52dk35",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Western Sydney University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-8374-5560",
+          "authenticated-orcid": false,
+          "given": "Stefanie",
+          "family": "Weiss Santos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.28",
+      "type": "book-chapter",
+      "page": "257-258",
+      "title": [
+        "Adult Hospital Ward"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1148-9417",
+          "authenticated-orcid": false,
+          "given": "Irena",
+          "family": "Kašparová",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02j46qs45",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Masaryk University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.23",
+      "type": "book-chapter",
+      "page": "156-166",
+      "title": [
+        "The Door"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-5388-0377",
+          "authenticated-orcid": false,
+          "given": "Khanum",
+          "family": "Gevorgyan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.08",
+      "type": "book-chapter",
+      "page": "193-211",
+      "title": [
+        "8. The Secrets"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1148-9417",
+          "authenticated-orcid": false,
+          "given": "Irena",
+          "family": "Kašparová",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02j46qs45",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Masaryk University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3760-0937",
+          "authenticated-orcid": false,
+          "given": "Beatrice",
+          "family": "Scutaru",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04a1a1e81",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Dublin City University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4681-6024",
+          "authenticated-orcid": false,
+          "given": "Zsuzsa",
+          "family": "Millei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/033003e23",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Tampere University"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01tm6cn81",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Gothenburg"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-4701-6637",
+          "authenticated-orcid": false,
+          "given": "Josefine",
+          "family": "Raasch",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/024xejm70",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European School of Management and Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1668-5393",
+          "authenticated-orcid": false,
+          "given": "Katarzyna",
+          "family": "Gawlicz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05a550a57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Lower Silesia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Connections Across Divides"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.32",
+      "type": "book-chapter",
+      "page": "305-306",
+      "title": [
+        "New Year’s Frog"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0963-1901",
+          "authenticated-orcid": false,
+          "given": "Nelli",
+          "family": "Piattoeva",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/033003e23",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Tampere University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.07",
+      "type": "book-chapter",
+      "page": "167-190",
+      "title": [
+        "7. Growing up in Cold War Argentina"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3983-3985",
+          "authenticated-orcid": false,
+          "given": "Inés",
+          "family": "Dussel",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/009eqmr18",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Center for Research and Advanced Studies of the National Polytechnic Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Working through the (An)archives of Childhood Memories"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.25",
+      "type": "book-chapter",
+      "page": "212-212",
+      "title": [
+        "Open Coffin"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1148-9417",
+          "authenticated-orcid": false,
+          "given": "Irena",
+          "family": "Kašparová",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02j46qs45",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Masaryk University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.29",
+      "type": "book-chapter",
+      "page": "281-282",
+      "title": [
+        "Nokia"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0963-1901",
+          "authenticated-orcid": false,
+          "given": "Nelli",
+          "family": "Piattoeva",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/033003e23",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Tampere University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.20",
+      "type": "book-chapter",
+      "page": "116-118",
+      "title": [
+        "Smearing the Portrait"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2434-7298",
+          "authenticated-orcid": false,
+          "given": "Lucian",
+          "family": "Țion",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02rmd1t30",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Babeș-Bolyai University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.27",
+      "type": "book-chapter",
+      "page": "255-256",
+      "title": [
+        "Losing Balance"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2128-6429",
+          "authenticated-orcid": false,
+          "given": "Tatyana",
+          "family": "Kleyn",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00wmhkr98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "City College of New York"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.09",
+      "type": "book-chapter",
+      "page": "213-234",
+      "title": [
+        "9. Mysterious Cotton Pieces"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1668-5393",
+          "authenticated-orcid": false,
+          "given": "Katarzyna",
+          "family": "Gawlicz",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05a550a57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Lower Silesia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4681-6024",
+          "authenticated-orcid": false,
+          "given": "Zsuzsa",
+          "family": "Millei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/033003e23",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Tampere University"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01tm6cn81",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Gothenburg"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Childhood Memories of Menstruation"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.31",
+      "type": "book-chapter",
+      "page": "303-304",
+      "title": [
+        "Snowflake"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8897-8016",
+          "authenticated-orcid": false,
+          "given": "Iveta",
+          "family": "Silova",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03efmqc40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Arizona State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.26",
+      "type": "book-chapter",
+      "page": "235-236",
+      "title": [
+        "Soviet Feminism?"
+      ],
+      "author": [
+        {
+          "given": "Nadia",
+          "family": "Tsulukidze",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.14",
+      "type": "book-chapter",
+      "page": "329-348",
+      "title": [
+        "14. Anarchive, Oral Histories, and Teaching Comparative Cold War Childhoods Across Geographies and Generations"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8321-6661",
+          "authenticated-orcid": false,
+          "given": "Elena",
+          "family": "Jackson Albarrán",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0168r3w48",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of California, San Diego"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03jbbze48",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of San Diego"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.21",
+      "type": "book-chapter",
+      "page": "135-137",
+      "title": [
+        "Smuggling Jewelry"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2128-6429",
+          "authenticated-orcid": false,
+          "given": "Tatyana",
+          "family": "Kleyn",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00wmhkr98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "City College of New York"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.12",
+      "type": "book-chapter",
+      "page": "285-302",
+      "title": [
+        "12. Transcending the Border"
+      ],
+      "author": [
+        {
+          "given": "Ivana",
+          "family": "Polić",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03jbbze48",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of San Diego"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Memory, Objects, and Alternative Memorialization in Cold War Childhoods"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.01",
+      "type": "book-chapter",
+      "page": "27-47",
+      "title": [
+        "1. Who Do I Remember For?"
+      ],
+      "author": [
+        {
+          "given": "Petar",
+          "family": "Odak",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04hym7e04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Al-Quds University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Memory as Genre and Dark Pleasures of Trauma Witnessing"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.04",
+      "type": "book-chapter",
+      "page": "93-115",
+      "title": [
+        "4. The Other Side of the Curtain?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2504-5120",
+          "authenticated-orcid": false,
+          "given": "Erica",
+          "family": "Burman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027m9bs27",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Manchester"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Troubling Western Memories of (Post)socialism"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.13",
+      "type": "book-chapter",
+      "page": "307-325",
+      "title": [
+        "13. Anarchive and Arts-Based Research"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2661-6041",
+          "authenticated-orcid": false,
+          "given": "Raisa",
+          "family": "Foster",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00cyydd11",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Eastern Finland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Upcycling Rediscovered Memories and Materials"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.05",
+      "type": "book-chapter",
+      "page": "119-134",
+      "title": [
+        "5. You Can’t Go Home Again… Especially if You Have Never Had One"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0727-2098",
+          "authenticated-orcid": false,
+          "given": "Madina",
+          "family": "Tlostanova",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05ynxx418",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Linköping University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.35",
+      "type": "book-chapter",
+      "page": "370-370",
+      "title": [
+        "Traveling Stones"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7842-0409",
+          "authenticated-orcid": false,
+          "given": "Oshie",
+          "family": "Nishimura-Sahi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/033003e23",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Tampere University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.19",
+      "type": "book-chapter",
+      "page": "91-92",
+      "title": [
+        "Breakfast Across Borders"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-8374-5560",
+          "authenticated-orcid": false,
+          "given": "Stefanie",
+          "family": "Weiss Santos",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.33",
+      "type": "book-chapter",
+      "page": "326-328",
+      "title": [
+        "The Tailor"
+      ],
+      "author": [
+        {
+          "given": "Thoma",
+          "family": "Sukhashvili",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.06",
+      "type": "book-chapter",
+      "page": "139-155",
+      "title": [
+        "6. The Power of Other Worlds"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2932-8707",
+          "authenticated-orcid": false,
+          "given": "Jennifer",
+          "family": "Patico",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03qt6ba18",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Georgia State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Civilisational Frames and Child-Adult Intimacies in Socialist Childhoods"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.17",
+      "type": "book-chapter",
+      "page": "48-50",
+      "title": [
+        "Diasporic Knowledges in Central Asia"
+      ],
+      "author": [
+        {
+          "given": "Olga",
+          "family": "Mun",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "(Re)membering in Jeong"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.00",
+      "type": "book-chapter",
+      "page": "5-26",
+      "title": [
+        "Introduction. The Anarchive of Memories"
+      ],
+      "author": [
+        {
+          "given": "Mnemo",
+          "family": "ZIN",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Restor(y)ing Cold-War Childhoods"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.16",
+      "type": "book-chapter",
+      "page": "371-394",
+      "title": [
+        "16. Re-membering Ceremonies"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1734-4091",
+          "authenticated-orcid": false,
+          "given": "Jieyu",
+          "family": "Jiang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03efmqc40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Arizona State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3930-8021",
+          "authenticated-orcid": false,
+          "given": "Esther",
+          "family": "Pretti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03efmqc40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Arizona State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4354-8183",
+          "authenticated-orcid": false,
+          "given": "Keti",
+          "family": "Tsotniashvili",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03efmqc40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Arizona State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4714-6715",
+          "authenticated-orcid": false,
+          "given": "Dilraba",
+          "family": "Anayatova",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03efmqc40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Arizona State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ann",
+          "family": "Nielsen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03efmqc40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Arizona State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8897-8016",
+          "authenticated-orcid": false,
+          "given": "Iveta",
+          "family": "Silova",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03efmqc40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Arizona State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "subtitle": [
+        "Childhood Memories of Our Relationships with Plants"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2024-04-22T00:00:00Z",
+            "timestamp": 1713744000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0383.24",
+      "type": "book-chapter",
+      "page": "191-192",
+      "title": [
+        "Searching for Childhood Gummi Bears"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5062-3685",
+          "authenticated-orcid": false,
+          "given": "Nadine",
+          "family": "Bernhard",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "(An)Archive"
+      ],
+      "ISBN": [
+        "9781805111856",
+        "9781805111863",
+        "9781805111870",
+        "9781805111900",
+        "9781805111887"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            22
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "15. Connecting Across Divides A Case Study in Public History of the (e-)Motion Comic ‘Ghost Train―Memories of Ghost Trains and Ghost Stations in Former East and West-Berlin’",
+      "authors": [
+        "Sarah Fichtner",
+        "Anja Werner"
+      ],
+      "chapter_doi": "10.11647/obp.0383.15",
+      "citation_pages": "351-369"
+    },
+    {
+      "title": "Sleepy Smuggles",
+      "authors": [
+        "Sarah Fichtner"
+      ],
+      "chapter_doi": "10.11647/obp.0383.22",
+      "citation_pages": "138-138"
+    },
+    {
+      "title": "Blackberry Picking",
+      "authors": [
+        "Rahim Rahimov"
+      ],
+      "chapter_doi": "10.11647/obp.0383.30",
+      "citation_pages": "283-284"
+    },
+    {
+      "title": "Pink Flamingo",
+      "authors": [
+        "Iveta Silova"
+      ],
+      "chapter_doi": "10.11647/obp.0383.34",
+      "citation_pages": "349-350"
+    },
+    {
+      "title": "11. Children on their Own Cold War Childhood Memories of Unsupervised Times",
+      "authors": [
+        "Nadine Bernhard",
+        "Kathleen Falkenberg"
+      ],
+      "chapter_doi": "10.11647/obp.0383.11",
+      "citation_pages": "259-280"
+    },
+    {
+      "title": "2. ‘I Wanted to See the Man with that Mark on his Forehead’ A Historian, Her Childhood Experiences, and the Power of Memory",
+      "authors": [
+        "Pia Koivunen"
+      ],
+      "chapter_doi": "10.11647/obp.0383.02",
+      "citation_pages": "51-76"
+    },
+    {
+      "title": "Rua Liga Dos Comunistas",
+      "authors": [
+        "José Cossa"
+      ],
+      "chapter_doi": "10.11647/obp.0383.18",
+      "citation_pages": "77-78"
+    },
+    {
+      "title": "3. Passing Bye",
+      "authors": [
+        "Hanna Trampert"
+      ],
+      "chapter_doi": "10.11647/obp.0383.03",
+      "citation_pages": "79-90"
+    },
+    {
+      "title": "10. Lift Up Your Arms! Elite Athletes and Cold War Childhoods",
+      "authors": [
+        "Susanne Gannon",
+        "Stefanie Weiss Santos"
+      ],
+      "chapter_doi": "10.11647/obp.0383.10",
+      "citation_pages": "237-254"
+    },
+    {
+      "title": "Adult Hospital Ward",
+      "authors": [
+        "Irena Kašparová"
+      ],
+      "chapter_doi": "10.11647/obp.0383.28",
+      "citation_pages": "257-258"
+    },
+    {
+      "title": "The Door",
+      "authors": [
+        "Khanum Gevorgyan"
+      ],
+      "chapter_doi": "10.11647/obp.0383.23",
+      "citation_pages": "156-166"
+    },
+    {
+      "title": "8. The Secrets Connections Across Divides",
+      "authors": [
+        "Irena Kašparová",
+        "Beatrice Scutaru",
+        "Zsuzsa Millei",
+        "Josefine Raasch",
+        "Katarzyna Gawlicz"
+      ],
+      "chapter_doi": "10.11647/obp.0383.08",
+      "citation_pages": "193-211"
+    },
+    {
+      "title": "New Year’s Frog",
+      "authors": [
+        "Nelli Piattoeva"
+      ],
+      "chapter_doi": "10.11647/obp.0383.32",
+      "citation_pages": "305-306"
+    },
+    {
+      "title": "7. Growing up in Cold War Argentina Working through the (An)archives of Childhood Memories",
+      "authors": [
+        "Inés Dussel"
+      ],
+      "chapter_doi": "10.11647/obp.0383.07",
+      "citation_pages": "167-190"
+    },
+    {
+      "title": "Open Coffin",
+      "authors": [
+        "Irena Kašparová"
+      ],
+      "chapter_doi": "10.11647/obp.0383.25",
+      "citation_pages": "212-212"
+    },
+    {
+      "title": "Nokia",
+      "authors": [
+        "Nelli Piattoeva"
+      ],
+      "chapter_doi": "10.11647/obp.0383.29",
+      "citation_pages": "281-282"
+    },
+    {
+      "title": "Smearing the Portrait",
+      "authors": [
+        "Lucian Țion"
+      ],
+      "chapter_doi": "10.11647/obp.0383.20",
+      "citation_pages": "116-118"
+    },
+    {
+      "title": "Losing Balance",
+      "authors": [
+        "Tatyana Kleyn"
+      ],
+      "chapter_doi": "10.11647/obp.0383.27",
+      "citation_pages": "255-256"
+    },
+    {
+      "title": "9. Mysterious Cotton Pieces Childhood Memories of Menstruation",
+      "authors": [
+        "Katarzyna Gawlicz",
+        "Zsuzsa Millei"
+      ],
+      "chapter_doi": "10.11647/obp.0383.09",
+      "citation_pages": "213-234"
+    },
+    {
+      "title": "Snowflake",
+      "authors": [
+        "Iveta Silova"
+      ],
+      "chapter_doi": "10.11647/obp.0383.31",
+      "citation_pages": "303-304"
+    },
+    {
+      "title": "Soviet Feminism?",
+      "authors": [
+        "Nadia Tsulukidze"
+      ],
+      "chapter_doi": "10.11647/obp.0383.26",
+      "citation_pages": "235-236"
+    },
+    {
+      "title": "14. Anarchive, Oral Histories, and Teaching Comparative Cold War Childhoods Across Geographies and Generations",
+      "authors": [
+        "Elena Jackson Albarrán"
+      ],
+      "chapter_doi": "10.11647/obp.0383.14",
+      "citation_pages": "329-348"
+    },
+    {
+      "title": "Smuggling Jewelry",
+      "authors": [
+        "Tatyana Kleyn"
+      ],
+      "chapter_doi": "10.11647/obp.0383.21",
+      "citation_pages": "135-137"
+    },
+    {
+      "title": "12. Transcending the Border Memory, Objects, and Alternative Memorialization in Cold War Childhoods",
+      "authors": [
+        "Ivana Polić"
+      ],
+      "chapter_doi": "10.11647/obp.0383.12",
+      "citation_pages": "285-302"
+    },
+    {
+      "title": "1. Who Do I Remember For? Memory as Genre and Dark Pleasures of Trauma Witnessing",
+      "authors": [
+        "Petar Odak"
+      ],
+      "chapter_doi": "10.11647/obp.0383.01",
+      "citation_pages": "27-47"
+    },
+    {
+      "title": "4. The Other Side of the Curtain? Troubling Western Memories of (Post)socialism",
+      "authors": [
+        "Erica Burman"
+      ],
+      "chapter_doi": "10.11647/obp.0383.04",
+      "citation_pages": "93-115"
+    },
+    {
+      "title": "13. Anarchive and Arts-Based Research Upcycling Rediscovered Memories and Materials",
+      "authors": [
+        "Raisa Foster"
+      ],
+      "chapter_doi": "10.11647/obp.0383.13",
+      "citation_pages": "307-325"
+    },
+    {
+      "title": "5. You Can’t Go Home Again… Especially if You Have Never Had One",
+      "authors": [
+        "Madina Tlostanova"
+      ],
+      "chapter_doi": "10.11647/obp.0383.05",
+      "citation_pages": "119-134"
+    },
+    {
+      "title": "Traveling Stones",
+      "authors": [
+        "Oshie Nishimura-Sahi"
+      ],
+      "chapter_doi": "10.11647/obp.0383.35",
+      "citation_pages": "370-370"
+    },
+    {
+      "title": "Breakfast Across Borders",
+      "authors": [
+        "Stefanie Weiss Santos"
+      ],
+      "chapter_doi": "10.11647/obp.0383.19",
+      "citation_pages": "91-92"
+    },
+    {
+      "title": "The Tailor",
+      "authors": [
+        "Thoma Sukhashvili"
+      ],
+      "chapter_doi": "10.11647/obp.0383.33",
+      "citation_pages": "326-328"
+    },
+    {
+      "title": "6. The Power of Other Worlds Civilisational Frames and Child-Adult Intimacies in Socialist Childhoods",
+      "authors": [
+        "Jennifer Patico"
+      ],
+      "chapter_doi": "10.11647/obp.0383.06",
+      "citation_pages": "139-155"
+    },
+    {
+      "title": "Diasporic Knowledges in Central Asia (Re)membering in Jeong",
+      "authors": [
+        "Olga Mun"
+      ],
+      "chapter_doi": "10.11647/obp.0383.17",
+      "citation_pages": "48-50"
+    },
+    {
+      "title": "Introduction. The Anarchive of Memories Restor(y)ing Cold-War Childhoods",
+      "authors": [
+        "Mnemo ZIN"
+      ],
+      "chapter_doi": "10.11647/obp.0383.00",
+      "citation_pages": "5-26"
+    },
+    {
+      "title": "16. Re-membering Ceremonies Childhood Memories of Our Relationships with Plants",
+      "authors": [
+        "Jieyu Jiang",
+        "Esther Pretti",
+        "Keti Tsotniashvili",
+        "Dilraba Anayatova",
+        "Ann Nielsen",
+        "Iveta Silova"
+      ],
+      "chapter_doi": "10.11647/obp.0383.16",
+      "citation_pages": "371-394"
+    },
+    {
+      "title": "Searching for Childhood Gummi Bears",
+      "authors": [
+        "Nadine Bernhard"
+      ],
+      "chapter_doi": "10.11647/obp.0383.24",
+      "citation_pages": "191-192"
+    }
+  ]
+}

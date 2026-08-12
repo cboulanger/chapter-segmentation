@@ -1,0 +1,780 @@
+{
+  "isbn": "9781800649194",
+  "fetched_at": "2026-08-11T22:58:32.684080+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.11",
+      "type": "book-chapter",
+      "page": "xi-xiv",
+      "title": [
+        "Preface"
+      ],
+      "author": [
+        {
+          "given": "Daniel J.",
+          "family": "Crowther",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aaron D.",
+          "family": "Hornkohl",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2550-9896",
+          "authenticated-orcid": false,
+          "given": "Geoffrey",
+          "family": "Khan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.10",
+      "type": "book-chapter",
+      "page": "377-416",
+      "title": [
+        "Does Saadya Refer to the Accents in his Introduction to the Pentateuch?"
+      ],
+      "author": [
+        {
+          "given": "Joseph",
+          "family": "Habib",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.06",
+      "type": "book-chapter",
+      "page": "203-242",
+      "title": [
+        "Hebrew Vocalisation Signs in Karaite Transcriptions of the Hebrew Bible into Arabic Script"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2550-9896",
+          "authenticated-orcid": false,
+          "given": "Geoffrey",
+          "family": "Khan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.09",
+      "type": "book-chapter",
+      "page": "329-376",
+      "title": [
+        "“Some Fanciful Midrash Explanation”"
+      ],
+      "author": [
+        {
+          "given": "Benjamin",
+          "family": "Williams",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "subtitle": [
+        "Derash on the Ṭeʿamim in the Middle Ages and Early Modern Period"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.03",
+      "type": "book-chapter",
+      "page": "75-114",
+      "title": [
+        "The Marginal nun/zayin"
+      ],
+      "author": [
+        {
+          "given": "Vincent D.",
+          "family": "Beiler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "subtitle": [
+        "Meaning, Purpose, Localisation"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.01",
+      "type": "book-chapter",
+      "page": "1-22",
+      "title": [
+        "Using the Masora for Interpreting the Vocalisation and Accentuation of the Biblical Text"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6217-9390",
+          "authenticated-orcid": false,
+          "given": "Elvira",
+          "family": "Martín-Contreras",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.04",
+      "type": "book-chapter",
+      "page": "115-162",
+      "title": [
+        "Tiberian ketiv-qere and the Combined Samaritan Written-Reading Tradition"
+      ],
+      "author": [
+        {
+          "given": "Aaron D.",
+          "family": "Hornkohl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "subtitle": [
+        "Points of Contact and Contrast"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.05",
+      "type": "book-chapter",
+      "page": "163-202",
+      "title": [
+        "A Further Analysis of the ‘Byzantine (Italian - Levantine) Triad’ of Features in Common Torah Codices"
+      ],
+      "author": [
+        {
+          "given": "Estara J.",
+          "family": "Arrant",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.08",
+      "type": "book-chapter",
+      "page": "289-328",
+      "title": [
+        "Why are there Two Systems of Tiberian Ṭeʿamim?"
+      ],
+      "author": [
+        {
+          "given": "Daniel J.",
+          "family": "Crowther",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.07",
+      "type": "book-chapter",
+      "page": "243-288",
+      "title": [
+        "Dissonance between Masoretic Vocalisation and Cantillation in Biblical Verse Division"
+      ],
+      "author": [
+        {
+          "given": "Yochanan",
+          "family": "Breuer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                7
+              ]
+            ],
+            "date-time": "2022-11-07T00:00:00Z",
+            "timestamp": 1667779200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0330.02",
+      "type": "book-chapter",
+      "page": "23-74",
+      "title": [
+        "The Masoretic Notes in RNL EVR II B 80+"
+      ],
+      "author": [
+        {
+          "given": "Kim",
+          "family": "Phillips",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in the Masoretic Tradition of the Hebrew Bible"
+      ],
+      "subtitle": [
+        "An Initial Report"
+      ],
+      "ISBN": [
+        "9781800649194",
+        "9781800649200",
+        "9781800649217"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Preface",
+      "authors": [
+        "Daniel J. Crowther",
+        "Aaron D. Hornkohl",
+        "Geoffrey Khan"
+      ],
+      "chapter_doi": "10.11647/obp.0330.11",
+      "citation_pages": "xi-xiv"
+    },
+    {
+      "title": "Does Saadya Refer to the Accents in his Introduction to the Pentateuch?",
+      "authors": [
+        "Joseph Habib"
+      ],
+      "chapter_doi": "10.11647/obp.0330.10",
+      "citation_pages": "377-416"
+    },
+    {
+      "title": "Hebrew Vocalisation Signs in Karaite Transcriptions of the Hebrew Bible into Arabic Script",
+      "authors": [
+        "Geoffrey Khan"
+      ],
+      "chapter_doi": "10.11647/obp.0330.06",
+      "citation_pages": "203-242"
+    },
+    {
+      "title": "“Some Fanciful Midrash Explanation” Derash on the Ṭeʿamim in the Middle Ages and Early Modern Period",
+      "authors": [
+        "Benjamin Williams"
+      ],
+      "chapter_doi": "10.11647/obp.0330.09",
+      "citation_pages": "329-376"
+    },
+    {
+      "title": "The Marginal nun/zayin Meaning, Purpose, Localisation",
+      "authors": [
+        "Vincent D. Beiler"
+      ],
+      "chapter_doi": "10.11647/obp.0330.03",
+      "citation_pages": "75-114"
+    },
+    {
+      "title": "Using the Masora for Interpreting the Vocalisation and Accentuation of the Biblical Text",
+      "authors": [
+        "Elvira Martín-Contreras"
+      ],
+      "chapter_doi": "10.11647/obp.0330.01",
+      "citation_pages": "1-22"
+    },
+    {
+      "title": "Tiberian ketiv-qere and the Combined Samaritan Written-Reading Tradition Points of Contact and Contrast",
+      "authors": [
+        "Aaron D. Hornkohl"
+      ],
+      "chapter_doi": "10.11647/obp.0330.04",
+      "citation_pages": "115-162"
+    },
+    {
+      "title": "A Further Analysis of the ‘Byzantine (Italian - Levantine) Triad’ of Features in Common Torah Codices",
+      "authors": [
+        "Estara J. Arrant"
+      ],
+      "chapter_doi": "10.11647/obp.0330.05",
+      "citation_pages": "163-202"
+    },
+    {
+      "title": "Why are there Two Systems of Tiberian Ṭeʿamim?",
+      "authors": [
+        "Daniel J. Crowther"
+      ],
+      "chapter_doi": "10.11647/obp.0330.08",
+      "citation_pages": "289-328"
+    },
+    {
+      "title": "Dissonance between Masoretic Vocalisation and Cantillation in Biblical Verse Division",
+      "authors": [
+        "Yochanan Breuer"
+      ],
+      "chapter_doi": "10.11647/obp.0330.07",
+      "citation_pages": "243-288"
+    },
+    {
+      "title": "The Masoretic Notes in RNL EVR II B 80+ An Initial Report",
+      "authors": [
+        "Kim Phillips"
+      ],
+      "chapter_doi": "10.11647/obp.0330.02",
+      "citation_pages": "23-74"
+    }
+  ]
+}

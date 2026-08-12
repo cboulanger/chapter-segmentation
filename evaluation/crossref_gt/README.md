@@ -200,10 +200,26 @@ reflected in the table above.
   `9781805115304`, `9782821895065` -- manifest entry, PDF, `.crossref.json`,
   and their `evaluation/corpus/pending/` PDF/`.expected.json`/manifest
   entry all deleted together. `discover_crossref_candidates.py` now only
-  queries `edited-book`, and `build_crossref_gt_ground_truth.py` gates
+  queries `edited-book`, and `build_crossref_gt_ground_truth.py` gated
   migration on at least 2 distinct chapter authors as a second check
   (Crossref's own type classification isn't perfectly reliable either
   way), so a future reconciliation run won't just re-add these.
+- **Removed: 7 more books that cleared the two-distinct-authors gate
+  above but still weren't real edited volumes.** Four
+  (`9781805116431`, `9781805111825`, `9781805119616`, plus
+  `9781800647565` from the first removal batch) were single-authored
+  books that had migrated into `evaluation/corpus/pending/` before that
+  gate existed at all. Three more slipped through the gate itself
+  because it only checked *distinct count*, not *distribution*:
+  `9781800647152` (single author, biography), `9781800647794` (2
+  co-authors credited identically on every one of 13 chapters -- a
+  jointly-written monograph, not distinct per-chapter contributors),
+  and `9781800649972` (13 of 14 chapters by one historical author, the
+  14th a modern editor's introduction). `build_crossref_gt_ground_truth.py`
+  now also requires >=3 distinct chapter authors and rejects any book
+  where one author is credited on more than half its chapters, so
+  neither the co-authored-monograph nor the single-author-plus-editor
+  pattern clears the gate again.
 
 ## Downloading: host-specific quirks
 

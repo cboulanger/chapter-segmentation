@@ -1,0 +1,5809 @@
+{
+  "isbn": "9781805115717",
+  "fetched_at": "2026-08-11T22:58:18.606597+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.52",
+      "type": "book-chapter",
+      "page": "157-162",
+      "title": [
+        "Creative curriculum design"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1280-0104",
+          "authenticated-orcid": false,
+          "given": "Tom",
+          "family": "Burns",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0484-7623",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Sinfield",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ae33288",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "London Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1582-9394",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Abegglen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yjb2x39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Calgary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Introduction"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.23",
+      "type": "book-chapter",
+      "page": "267-282",
+      "title": [
+        "23. Embracing compassion"
+      ],
+      "author": [
+        {
+          "given": "Anna",
+          "family": "Troisi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04cnfrn26",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Arts London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Nonviolent communication for transformative teaching and learning in higher education"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.33",
+      "type": "book-chapter",
+      "page": "399-414",
+      "title": [
+        "33. Unlocking a new generation of leaders"
+      ],
+      "author": [
+        {
+          "given": "Nayiri",
+          "family": "Keshishi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ks66431",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Surrey"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "How universities can support students’ inner development goals"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.10",
+      "type": "book-chapter",
+      "page": "125-134",
+      "title": [
+        "10. CanadARThistories"
+      ],
+      "author": [
+        {
+          "given": "Johanna",
+          "family": "Amos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02y72wh86",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Queen's University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alena",
+          "family": "Buis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04raxj885",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Kwantlen Polytechnic University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Collaboratively designing an open-access course"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.17",
+      "type": "book-chapter",
+      "page": "201-210",
+      "title": [
+        "17. Reimagining the sage–guide dichotomy"
+      ],
+      "author": [
+        {
+          "given": "Katherine",
+          "family": "Herbert",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00wfvh315",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Charles Sturt University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yeslam",
+          "family": "Al-Saggaf",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00wfvh315",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Charles Sturt University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "A life-long learner’s story of teaching and learning in Higher Education"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.03",
+      "type": "book-chapter",
+      "page": "41-48",
+      "title": [
+        "3. Serious fun"
+      ],
+      "author": [
+        {
+          "given": "Sarah",
+          "family": "Honeychurch",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Reimagining Higher Education from a humane perspective"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.46",
+      "type": "book-chapter",
+      "page": "555-564",
+      "title": [
+        "46. Decoloniality and nonviolence as a pedagogy of hope"
+      ],
+      "author": [
+        {
+          "given": "Gaston",
+          "family": "Bacquet",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Chilean pre-service teachers and their reconceptualisation of inclusive classrooms"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.34",
+      "type": "book-chapter",
+      "page": "415-422",
+      "title": [
+        "34. The pedagogy of joy and engaged presence"
+      ],
+      "author": [
+        {
+          "given": "Phoenix",
+          "family": "Perry",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.13",
+      "type": "book-chapter",
+      "page": "163-172",
+      "title": [
+        "13. Hope Street"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Bissell",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/037wqvd92",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Royal Conservatoire of Scotland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Overend",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Reimagining learning journeys"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.15",
+      "type": "book-chapter",
+      "page": "183-192",
+      "title": [
+        "15. “Armed love”"
+      ],
+      "author": [
+        {
+          "given": "Chris",
+          "family": "Cachia",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "A case study in cultivating a pedagogy of hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.14",
+      "type": "book-chapter",
+      "page": "173-182",
+      "title": [
+        "14. The other F word"
+      ],
+      "author": [
+        {
+          "given": "Victoria",
+          "family": "Fritz",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r7awg59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Guelph"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Re-storying student failure in Canadian Higher Education"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.08",
+      "type": "book-chapter",
+      "page": "95-106",
+      "title": [
+        "8. Playful Higher Education futures"
+      ],
+      "author": [
+        {
+          "given": "Kim",
+          "family": "Holflod",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Hopeful and utopian thinking in pedagogy"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.37",
+      "type": "book-chapter",
+      "page": "445-458",
+      "title": [
+        "37. How can you know what you don’t know?"
+      ],
+      "author": [
+        {
+          "given": "Stephanie",
+          "family": "Jury",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Changing the narrative around the “successful learner”"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.32",
+      "type": "book-chapter",
+      "page": "385-398",
+      "title": [
+        "32. The ten wellness spheres to support student and staff health and wellbeing in a modern, post-1992 university in, though, and outside of the study lifecycle"
+      ],
+      "author": [
+        {
+          "given": "Michelle",
+          "family": "Morgan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/057jrqr44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of East London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.05",
+      "type": "book-chapter",
+      "page": "61-70",
+      "title": [
+        "5. Creating hope through T-shaped values"
+      ],
+      "author": [
+        {
+          "given": "Earle",
+          "family": "Abrahamson",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0267vjk41",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Hertfordshire"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nina",
+          "family": "Namaste",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01szgyb91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Elon University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Corinne",
+          "family": "Green",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01p93h210",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of South Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mayi",
+          "family": "Arcellana-Panlilio",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yjb2x39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Calgary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lisa",
+          "family": "Hatfield",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michelle",
+          "family": "Eady",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00jtmb277",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Wollongong"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.36",
+      "type": "book-chapter",
+      "page": "433-444",
+      "title": [
+        "36. Storying the silences of social mobility"
+      ],
+      "author": [
+        {
+          "given": "Karen",
+          "family": "Arm",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05xydav19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Southampton Solent University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.06",
+      "type": "book-chapter",
+      "page": "71-84",
+      "title": [
+        "6. The human and nothing but the whole human"
+      ],
+      "author": [
+        {
+          "given": "Nathalie",
+          "family": "Tasler",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "With head, heart, and hand"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.26",
+      "type": "book-chapter",
+      "page": "305-314",
+      "title": [
+        "26. Co-creating networks of hope in an interdisciplinary degree for mature students"
+      ],
+      "author": [
+        {
+          "given": "Catherine",
+          "family": "Bates",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/024mrxd33",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Leeds"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tracy",
+          "family": "Campbell",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/024mrxd33",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Leeds"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Colin",
+          "family": "Webb",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02xsh5r57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leeds Beckett University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lucy",
+          "family": "Yeboa",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/024mrxd33",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Leeds"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.00",
+      "type": "book-chapter",
+      "page": "1-2",
+      "title": [
+        "Foreword"
+      ],
+      "author": [
+        {
+          "given": "Mary",
+          "family": "O’Kane",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.11",
+      "type": "book-chapter",
+      "page": "135-140",
+      "title": [
+        "11. PhDForum"
+      ],
+      "author": [
+        {
+          "given": "Donna",
+          "family": "Peach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "An online quiet study room providing a public space that nurtures the personal experience of being part of a global community"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.07",
+      "type": "book-chapter",
+      "page": "85-94",
+      "title": [
+        "7. Becoming wildly nomadic with the Nomadic Detective Agency-Assemblage"
+      ],
+      "author": [
+        {
+          "given": "Mark",
+          "family": "Ingham",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.40",
+      "type": "book-chapter",
+      "page": "481-492",
+      "title": [
+        "40. Food for thought"
+      ],
+      "author": [
+        {
+          "given": "Hilda",
+          "family": "Mulrooney",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Pandemic hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.38",
+      "type": "book-chapter",
+      "page": "459-468",
+      "title": [
+        "38. An imperfect practice? What barriers are there to providing outdoor education opportunities for primary-aged children?"
+      ],
+      "author": [
+        {
+          "given": "Megan",
+          "family": "McGee",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.28",
+      "type": "book-chapter",
+      "page": "331-342",
+      "title": [
+        "28. The moongazers"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1582-9394",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Abegglen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yjb2x39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Calgary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1280-0104",
+          "authenticated-orcid": false,
+          "given": "Tom",
+          "family": "Burns",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0484-7623",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Sinfield",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ae33288",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "London Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "A creative vision of Higher Education"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.48",
+      "type": "book-chapter",
+      "page": "579-592",
+      "title": [
+        "48. “If you know, you know”"
+      ],
+      "author": [
+        {
+          "given": "Rachael",
+          "family": "O’Connor",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/024mrxd33",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Leeds"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Creating lightbulb moments through reverse mentoring"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.43",
+      "type": "book-chapter",
+      "page": "519-528",
+      "title": [
+        "43. Addressing the challenges of the new, internationalised Higher Education ecosystem by applying successful teacher adaptation strategies"
+      ],
+      "author": [
+        {
+          "given": "Rita",
+          "family": "Koris",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00r3jwh90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Budapest University of Economics and Business"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marta",
+          "family": "Folmeg",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00r3jwh90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Budapest University of Economics and Business"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Imre",
+          "family": "Fekete",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00r3jwh90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Budapest University of Economics and Business"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ágnes",
+          "family": "Pál",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00r3jwh90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Budapest University of Economics and Business"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Promoting the human side of teaching in the Central European context"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.56",
+      "type": "book-chapter",
+      "page": "593-594",
+      "title": [
+        "Conclusion"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1582-9394",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Abegglen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yjb2x39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Calgary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1280-0104",
+          "authenticated-orcid": false,
+          "given": "Tom",
+          "family": "Burns",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3161-5967",
+          "authenticated-orcid": false,
+          "given": "Richard F.",
+          "family": "Heller",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00eae9z71",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Newcastle Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rajan",
+          "family": "Madhok",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5297-4163",
+          "authenticated-orcid": false,
+          "given": "Fabian",
+          "family": "Neuhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yjb2x39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Calgary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3930-387X",
+          "authenticated-orcid": false,
+          "given": "John",
+          "family": "Sandars",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0484-7623",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Sinfield",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ae33288",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "London Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9943-011X",
+          "authenticated-orcid": false,
+          "given": "Upasana",
+          "family": "Gitanjali Singh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qzfn040",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of KwaZulu-Natal"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Steps toward hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.49",
+      "type": "book-chapter",
+      "page": "3-10",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1582-9394",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Abegglen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yjb2x39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Calgary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1280-0104",
+          "authenticated-orcid": false,
+          "given": "Tom",
+          "family": "Burns",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3161-5967",
+          "authenticated-orcid": false,
+          "given": "Richard F.",
+          "family": "Heller",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00eae9z71",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Newcastle Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rajan",
+          "family": "Madhok",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5297-4163",
+          "authenticated-orcid": false,
+          "given": "Fabian",
+          "family": "Neuhaus",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yjb2x39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Calgary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3930-387X",
+          "authenticated-orcid": false,
+          "given": "John",
+          "family": "Sandars",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0484-7623",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Sinfield",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ae33288",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "London Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9943-011X",
+          "authenticated-orcid": false,
+          "given": "Upasana",
+          "family": "Gitanjali Singh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qzfn040",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of KwaZulu-Natal"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Reimagining education"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.27",
+      "type": "book-chapter",
+      "page": "315-330",
+      "title": [
+        "27. A quiet hope"
+      ],
+      "author": [
+        {
+          "given": "Siobhán",
+          "family": "O’Neill",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03265fv13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College Cork"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Laura",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03265fv13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College Cork"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Enhancing institution-wide inclusive assessment practices"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.50",
+      "type": "book-chapter",
+      "page": "13-16",
+      "title": [
+        "Examples of system change"
+      ],
+      "author": [
+        {
+          "given": "Rajan",
+          "family": "Madhok",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Introduction"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.19",
+      "type": "book-chapter",
+      "page": "219-228",
+      "title": [
+        "19. Making plants cool again"
+      ],
+      "author": [
+        {
+          "given": "Geyan",
+          "family": "Surendran",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adam",
+          "family": "Bromley",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05v62cm79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Reading"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "James",
+          "family": "Connorton",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lian",
+          "family": "X. Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ks66431",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Surrey"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paul A.",
+          "family": "Townsend",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/045wgfr59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Stirling"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Heinrich",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shelini",
+          "family": "Surendran",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ks66431",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Surrey"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Re-introducing botany as a beacon of hope and innovation in our educational systems"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.51",
+      "type": "book-chapter",
+      "page": "109-110",
+      "title": [
+        "How technology can shape the future"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9943-011X",
+          "authenticated-orcid": false,
+          "given": "Upasana",
+          "family": "Gitanjali Singh",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qzfn040",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of KwaZulu-Natal"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Introduction"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.12",
+      "type": "book-chapter",
+      "page": "141-154",
+      "title": [
+        "12. “The art of conversation”"
+      ],
+      "author": [
+        {
+          "given": "Oliver",
+          "family": "Burney",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jennifer",
+          "family": "Hillman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark",
+          "family": "Kershaw",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephanie",
+          "family": "Newton",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elizabeth",
+          "family": "Shakespeare",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sean",
+          "family": "Starbuck",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Educational guidance practitioners and support for distance-learning students"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.39",
+      "type": "book-chapter",
+      "page": "469-480",
+      "title": [
+        "39. Moving, making, and mingling"
+      ],
+      "author": [
+        {
+          "given": "Susannah",
+          "family": "McKee",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ae33288",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "London Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marie",
+          "family": "Stephenson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ae33288",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "London Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Moving towards an embodied pedagogy"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.42",
+      "type": "book-chapter",
+      "page": "505-512",
+      "title": [
+        "42. The opportunity of constraint"
+      ],
+      "author": [
+        {
+          "given": "Joshua",
+          "family": "Thorpe",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/045wgfr59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Stirling"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "How beating one’s head against the wall can open a door"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.18",
+      "type": "book-chapter",
+      "page": "211-218",
+      "title": [
+        "18. Playing with learning"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Parkin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0009t4v78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Anglia Ruskin University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Adopting a playful approach to Higher Education learning and teaching"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.35",
+      "type": "book-chapter",
+      "page": "423-432",
+      "title": [
+        "35. “Resilience Finders”"
+      ],
+      "author": [
+        {
+          "given": "Rachel",
+          "family": "Delta Higdon",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hilary",
+          "family": "Thomson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Flourishing in life through immersive game experiences"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.01",
+      "type": "book-chapter",
+      "page": "17-26",
+      "title": [
+        "1. Inverting the distribution of Higher Education"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3161-5967",
+          "authenticated-orcid": false,
+          "given": "Richard F.",
+          "family": "Heller",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00eae9z71",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Newcastle Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Leeder",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "From top-down to student-led"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.47",
+      "type": "book-chapter",
+      "page": "565-578",
+      "title": [
+        "47. Avengers Assemble!"
+      ],
+      "author": [
+        {
+          "given": "Zak",
+          "family": "Liddell",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Leigh",
+          "family": "Kilpert",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Working together and valuing professional services staff expertise in programme design"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.54",
+      "type": "book-chapter",
+      "page": "345-348",
+      "title": [
+        "Beyond the curriculum"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3930-387X",
+          "authenticated-orcid": false,
+          "given": "John",
+          "family": "Sandars",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Introduction"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.44",
+      "type": "book-chapter",
+      "page": "529-544",
+      "title": [
+        "44. If the tomatoes don’t grow, we don’t blame the plant"
+      ],
+      "author": [
+        {
+          "given": "Mâir",
+          "family": "Bull",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02hstj355",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Manchester Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephanie",
+          "family": "Aldred",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sophie",
+          "family": "Bessant",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02hstj355",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Manchester Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sydney",
+          "family": "Duignan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eileen",
+          "family": "Pollard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "A reflection on co-created CPD sessions for staff reimagining education and the impact on their daily practice"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.20",
+      "type": "book-chapter",
+      "page": "229-236",
+      "title": [
+        "20. Putting theory into (proposed) action"
+      ],
+      "author": [
+        {
+          "given": "Luke Ray",
+          "family": "Di Marco Campbell",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "The significance of campaign planning as an assessment task"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.09",
+      "type": "book-chapter",
+      "page": "111-124",
+      "title": [
+        "9. The emotional impact of nature seen through the lenses of virtual reality (VR) and revealed through the power of expressive art"
+      ],
+      "author": [
+        {
+          "given": "Gabriella",
+          "family": "Rodolico",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fiona",
+          "family": "McGregor",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.29",
+      "type": "book-chapter",
+      "page": "349-362",
+      "title": [
+        "29. Learning vs education"
+      ],
+      "author": [
+        {
+          "given": "Akitav",
+          "family": "Sharma",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "A view beyond the divide"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.53",
+      "type": "book-chapter",
+      "page": "261-266",
+      "title": [
+        "Imaginative collaboration and co-creation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1582-9394",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Abegglen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yjb2x39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Calgary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1280-0104",
+          "authenticated-orcid": false,
+          "given": "Tom",
+          "family": "Burns",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0484-7623",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Sinfield",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ae33288",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "London Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Introduction"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.31",
+      "type": "book-chapter",
+      "page": "377-384",
+      "title": [
+        "31. Humanising student and instructor experiences to nurture relationships and improve engagement"
+      ],
+      "author": [
+        {
+          "given": "Umme",
+          "family": "Mansoory",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01v9wj339",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Thompson Rivers University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.30",
+      "type": "book-chapter",
+      "page": "363-376",
+      "title": [
+        "30. Belonging through compassion"
+      ],
+      "author": [
+        {
+          "given": "Vikki",
+          "family": "Hill",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/002g3cb31",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Queen Margaret University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liz",
+          "family": "Bunting",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04cnfrn26",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Arts London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Supporting hope through the design of a website for educational development and social justice"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.25",
+      "type": "book-chapter",
+      "page": "295-304",
+      "title": [
+        "25. Peer review"
+      ],
+      "author": [
+        {
+          "given": "Debbie",
+          "family": "Holley",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05wwcw481",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Bournemouth University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "No crime no punishment"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.16",
+      "type": "book-chapter",
+      "page": "193-200",
+      "title": [
+        "16. The XXXX game"
+      ],
+      "author": [
+        {
+          "given": "Louise",
+          "family": "Sheridan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "A character based tool for learning"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.22",
+      "type": "book-chapter",
+      "page": "247-258",
+      "title": [
+        "22. Hope in an art school"
+      ],
+      "author": [
+        {
+          "given": "Simone",
+          "family": "Maier",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ae33288",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "London Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.45",
+      "type": "book-chapter",
+      "page": "545-554",
+      "title": [
+        "45. Embracing compassion and self-care"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5254-1349",
+          "authenticated-orcid": false,
+          "given": "Lee",
+          "family": "Fallin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04nkhwh30",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Hull"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Educator wellbeing amidst the chaos"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.24",
+      "type": "book-chapter",
+      "page": "283-294",
+      "title": [
+        "24. Better Together"
+      ],
+      "author": [
+        {
+          "given": "Nikita",
+          "family": "Asnani",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Inca",
+          "family": "Hide-Wright",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01a77tt86",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Warwick"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jess",
+          "family": "Humphreys",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01a77tt86",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Warwick"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bo",
+          "family": "Kelestyn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01a77tt86",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Warwick"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jean",
+          "family": "Mutton",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Towards a new organising principle and mindset for co-creation"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.41",
+      "type": "book-chapter",
+      "page": "493-504",
+      "title": [
+        "41. “It’s a bit like academic me-time”"
+      ],
+      "author": [
+        {
+          "given": "Aspasia Eleni",
+          "family": "Paltoglou",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02hstj355",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Manchester Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alison",
+          "family": "Williams",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Arriarne",
+          "family": "Pugh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rossella",
+          "family": "Sorte",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02hstj355",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Manchester Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Can virtual mini writing retreats contribute to a more joyful, creative, and humane Higher Education?"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.02",
+      "type": "book-chapter",
+      "page": "27-40",
+      "title": [
+        "2. A critical pedagogy for a critical time"
+      ],
+      "author": [
+        {
+          "given": "Jane",
+          "family": "Booth",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01k2y1055",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Wolverhampton"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.04",
+      "type": "book-chapter",
+      "page": "49-60",
+      "title": [
+        "4. Fostering hope and humanity through transformative education"
+      ],
+      "author": [
+        {
+          "given": "Shivaani",
+          "family": "Chugh",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anurag",
+          "family": "Mishra",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aashima",
+          "family": "Dabas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chandini",
+          "family": "Chugh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "A call to reimagine mentorship"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.21",
+      "type": "book-chapter",
+      "page": "237-246",
+      "title": [
+        "21. Freedom to learn"
+      ],
+      "author": [
+        {
+          "given": "Agnese",
+          "family": "Di Domenico",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aidan",
+          "family": "Harvey",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Beth",
+          "family": "Karp",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elizabeth",
+          "family": "Shakespeare",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ingeborg",
+          "family": "van Knippenberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "John",
+          "family": "Cowan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zack",
+          "family": "Moir",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zjvnn91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Edinburgh Napier University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Developing autonomous critical learners through self-assessment in Higher Education"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T00:00:00Z",
+            "timestamp": 1751414400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0462.55",
+      "type": "book-chapter",
+      "page": "515-518",
+      "title": [
+        "Focus on the teachers"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3161-5967",
+          "authenticated-orcid": false,
+          "given": "Richard F.",
+          "family": "Heller",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00eae9z71",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Newcastle Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stories of Hope"
+      ],
+      "subtitle": [
+        "Introduction"
+      ],
+      "ISBN": [
+        "9781805115717",
+        "9781805115724",
+        "9781805115731",
+        "9781805115755",
+        "9781805115748"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Creative curriculum design Introduction",
+      "authors": [
+        "Tom Burns",
+        "Sandra Sinfield",
+        "Sandra Abegglen"
+      ],
+      "chapter_doi": "10.11647/obp.0462.52",
+      "citation_pages": "157-162"
+    },
+    {
+      "title": "23. Embracing compassion Nonviolent communication for transformative teaching and learning in higher education",
+      "authors": [
+        "Anna Troisi"
+      ],
+      "chapter_doi": "10.11647/obp.0462.23",
+      "citation_pages": "267-282"
+    },
+    {
+      "title": "33. Unlocking a new generation of leaders How universities can support students’ inner development goals",
+      "authors": [
+        "Nayiri Keshishi"
+      ],
+      "chapter_doi": "10.11647/obp.0462.33",
+      "citation_pages": "399-414"
+    },
+    {
+      "title": "10. CanadARThistories Collaboratively designing an open-access course",
+      "authors": [
+        "Johanna Amos",
+        "Alena Buis"
+      ],
+      "chapter_doi": "10.11647/obp.0462.10",
+      "citation_pages": "125-134"
+    },
+    {
+      "title": "17. Reimagining the sage–guide dichotomy A life-long learner’s story of teaching and learning in Higher Education",
+      "authors": [
+        "Katherine Herbert",
+        "Yeslam Al-Saggaf"
+      ],
+      "chapter_doi": "10.11647/obp.0462.17",
+      "citation_pages": "201-210"
+    },
+    {
+      "title": "3. Serious fun Reimagining Higher Education from a humane perspective",
+      "authors": [
+        "Sarah Honeychurch"
+      ],
+      "chapter_doi": "10.11647/obp.0462.03",
+      "citation_pages": "41-48"
+    },
+    {
+      "title": "46. Decoloniality and nonviolence as a pedagogy of hope Chilean pre-service teachers and their reconceptualisation of inclusive classrooms",
+      "authors": [
+        "Gaston Bacquet"
+      ],
+      "chapter_doi": "10.11647/obp.0462.46",
+      "citation_pages": "555-564"
+    },
+    {
+      "title": "34. The pedagogy of joy and engaged presence",
+      "authors": [
+        "Phoenix Perry"
+      ],
+      "chapter_doi": "10.11647/obp.0462.34",
+      "citation_pages": "415-422"
+    },
+    {
+      "title": "13. Hope Street Reimagining learning journeys",
+      "authors": [
+        "Laura Bissell",
+        "David Overend"
+      ],
+      "chapter_doi": "10.11647/obp.0462.13",
+      "citation_pages": "163-172"
+    },
+    {
+      "title": "15. “Armed love” A case study in cultivating a pedagogy of hope",
+      "authors": [
+        "Chris Cachia"
+      ],
+      "chapter_doi": "10.11647/obp.0462.15",
+      "citation_pages": "183-192"
+    },
+    {
+      "title": "14. The other F word Re-storying student failure in Canadian Higher Education",
+      "authors": [
+        "Victoria Fritz"
+      ],
+      "chapter_doi": "10.11647/obp.0462.14",
+      "citation_pages": "173-182"
+    },
+    {
+      "title": "8. Playful Higher Education futures Hopeful and utopian thinking in pedagogy",
+      "authors": [
+        "Kim Holflod"
+      ],
+      "chapter_doi": "10.11647/obp.0462.08",
+      "citation_pages": "95-106"
+    },
+    {
+      "title": "37. How can you know what you don’t know? Changing the narrative around the “successful learner”",
+      "authors": [
+        "Stephanie Jury"
+      ],
+      "chapter_doi": "10.11647/obp.0462.37",
+      "citation_pages": "445-458"
+    },
+    {
+      "title": "32. The ten wellness spheres to support student and staff health and wellbeing in a modern, post-1992 university in, though, and outside of the study lifecycle",
+      "authors": [
+        "Michelle Morgan"
+      ],
+      "chapter_doi": "10.11647/obp.0462.32",
+      "citation_pages": "385-398"
+    },
+    {
+      "title": "5. Creating hope through T-shaped values",
+      "authors": [
+        "Earle Abrahamson",
+        "Nina Namaste",
+        "Corinne Green",
+        "Mayi Arcellana-Panlilio",
+        "Lisa Hatfield",
+        "Michelle Eady"
+      ],
+      "chapter_doi": "10.11647/obp.0462.05",
+      "citation_pages": "61-70"
+    },
+    {
+      "title": "36. Storying the silences of social mobility",
+      "authors": [
+        "Karen Arm"
+      ],
+      "chapter_doi": "10.11647/obp.0462.36",
+      "citation_pages": "433-444"
+    },
+    {
+      "title": "6. The human and nothing but the whole human With head, heart, and hand",
+      "authors": [
+        "Nathalie Tasler"
+      ],
+      "chapter_doi": "10.11647/obp.0462.06",
+      "citation_pages": "71-84"
+    },
+    {
+      "title": "26. Co-creating networks of hope in an interdisciplinary degree for mature students",
+      "authors": [
+        "Catherine Bates",
+        "Tracy Campbell",
+        "Colin Webb",
+        "Lucy Yeboa"
+      ],
+      "chapter_doi": "10.11647/obp.0462.26",
+      "citation_pages": "305-314"
+    },
+    {
+      "title": "Foreword",
+      "authors": [
+        "Mary O’Kane"
+      ],
+      "chapter_doi": "10.11647/obp.0462.00",
+      "citation_pages": "1-2"
+    },
+    {
+      "title": "11. PhDForum An online quiet study room providing a public space that nurtures the personal experience of being part of a global community",
+      "authors": [
+        "Donna Peach"
+      ],
+      "chapter_doi": "10.11647/obp.0462.11",
+      "citation_pages": "135-140"
+    },
+    {
+      "title": "7. Becoming wildly nomadic with the Nomadic Detective Agency-Assemblage",
+      "authors": [
+        "Mark Ingham"
+      ],
+      "chapter_doi": "10.11647/obp.0462.07",
+      "citation_pages": "85-94"
+    },
+    {
+      "title": "40. Food for thought Pandemic hope",
+      "authors": [
+        "Hilda Mulrooney"
+      ],
+      "chapter_doi": "10.11647/obp.0462.40",
+      "citation_pages": "481-492"
+    },
+    {
+      "title": "38. An imperfect practice? What barriers are there to providing outdoor education opportunities for primary-aged children?",
+      "authors": [
+        "Megan McGee"
+      ],
+      "chapter_doi": "10.11647/obp.0462.38",
+      "citation_pages": "459-468"
+    },
+    {
+      "title": "28. The moongazers A creative vision of Higher Education",
+      "authors": [
+        "Sandra Abegglen",
+        "Tom Burns",
+        "Sandra Sinfield"
+      ],
+      "chapter_doi": "10.11647/obp.0462.28",
+      "citation_pages": "331-342"
+    },
+    {
+      "title": "48. “If you know, you know” Creating lightbulb moments through reverse mentoring",
+      "authors": [
+        "Rachael O’Connor"
+      ],
+      "chapter_doi": "10.11647/obp.0462.48",
+      "citation_pages": "579-592"
+    },
+    {
+      "title": "43. Addressing the challenges of the new, internationalised Higher Education ecosystem by applying successful teacher adaptation strategies Promoting the human side of teaching in the Central European context",
+      "authors": [
+        "Rita Koris",
+        "Marta Folmeg",
+        "Imre Fekete",
+        "Ágnes Pál"
+      ],
+      "chapter_doi": "10.11647/obp.0462.43",
+      "citation_pages": "519-528"
+    },
+    {
+      "title": "Conclusion Steps toward hope",
+      "authors": [
+        "Sandra Abegglen",
+        "Tom Burns",
+        "Richard F. Heller",
+        "Rajan Madhok",
+        "Fabian Neuhaus",
+        "John Sandars",
+        "Sandra Sinfield",
+        "Upasana Gitanjali Singh"
+      ],
+      "chapter_doi": "10.11647/obp.0462.56",
+      "citation_pages": "593-594"
+    },
+    {
+      "title": "Introduction Reimagining education",
+      "authors": [
+        "Sandra Abegglen",
+        "Tom Burns",
+        "Richard F. Heller",
+        "Rajan Madhok",
+        "Fabian Neuhaus",
+        "John Sandars",
+        "Sandra Sinfield",
+        "Upasana Gitanjali Singh"
+      ],
+      "chapter_doi": "10.11647/obp.0462.49",
+      "citation_pages": "3-10"
+    },
+    {
+      "title": "27. A quiet hope Enhancing institution-wide inclusive assessment practices",
+      "authors": [
+        "Siobhán O’Neill",
+        "Laura Lee"
+      ],
+      "chapter_doi": "10.11647/obp.0462.27",
+      "citation_pages": "315-330"
+    },
+    {
+      "title": "Examples of system change Introduction",
+      "authors": [
+        "Rajan Madhok"
+      ],
+      "chapter_doi": "10.11647/obp.0462.50",
+      "citation_pages": "13-16"
+    },
+    {
+      "title": "19. Making plants cool again Re-introducing botany as a beacon of hope and innovation in our educational systems",
+      "authors": [
+        "Geyan Surendran",
+        "Adam Bromley",
+        "James Connorton",
+        "Lian X. Liu",
+        "Paul A. Townsend",
+        "Michael Heinrich",
+        "Shelini Surendran"
+      ],
+      "chapter_doi": "10.11647/obp.0462.19",
+      "citation_pages": "219-228"
+    },
+    {
+      "title": "How technology can shape the future Introduction",
+      "authors": [
+        "Upasana Gitanjali Singh"
+      ],
+      "chapter_doi": "10.11647/obp.0462.51",
+      "citation_pages": "109-110"
+    },
+    {
+      "title": "12. “The art of conversation” Educational guidance practitioners and support for distance-learning students",
+      "authors": [
+        "Oliver Burney",
+        "Jennifer Hillman",
+        "Mark Kershaw",
+        "Stephanie Newton",
+        "Elizabeth Shakespeare",
+        "Sean Starbuck"
+      ],
+      "chapter_doi": "10.11647/obp.0462.12",
+      "citation_pages": "141-154"
+    },
+    {
+      "title": "39. Moving, making, and mingling Moving towards an embodied pedagogy",
+      "authors": [
+        "Susannah McKee",
+        "Marie Stephenson"
+      ],
+      "chapter_doi": "10.11647/obp.0462.39",
+      "citation_pages": "469-480"
+    },
+    {
+      "title": "42. The opportunity of constraint How beating one’s head against the wall can open a door",
+      "authors": [
+        "Joshua Thorpe"
+      ],
+      "chapter_doi": "10.11647/obp.0462.42",
+      "citation_pages": "505-512"
+    },
+    {
+      "title": "18. Playing with learning Adopting a playful approach to Higher Education learning and teaching",
+      "authors": [
+        "John Parkin"
+      ],
+      "chapter_doi": "10.11647/obp.0462.18",
+      "citation_pages": "211-218"
+    },
+    {
+      "title": "35. “Resilience Finders” Flourishing in life through immersive game experiences",
+      "authors": [
+        "Rachel Delta Higdon",
+        "Hilary Thomson"
+      ],
+      "chapter_doi": "10.11647/obp.0462.35",
+      "citation_pages": "423-432"
+    },
+    {
+      "title": "1. Inverting the distribution of Higher Education From top-down to student-led",
+      "authors": [
+        "Richard F. Heller",
+        "Stephen Leeder"
+      ],
+      "chapter_doi": "10.11647/obp.0462.01",
+      "citation_pages": "17-26"
+    },
+    {
+      "title": "47. Avengers Assemble! Working together and valuing professional services staff expertise in programme design",
+      "authors": [
+        "Zak Liddell",
+        "Leigh Kilpert"
+      ],
+      "chapter_doi": "10.11647/obp.0462.47",
+      "citation_pages": "565-578"
+    },
+    {
+      "title": "Beyond the curriculum Introduction",
+      "authors": [
+        "John Sandars"
+      ],
+      "chapter_doi": "10.11647/obp.0462.54",
+      "citation_pages": "345-348"
+    },
+    {
+      "title": "44. If the tomatoes don’t grow, we don’t blame the plant A reflection on co-created CPD sessions for staff reimagining education and the impact on their daily practice",
+      "authors": [
+        "Mâir Bull",
+        "Stephanie Aldred",
+        "Sophie Bessant",
+        "Sydney Duignan",
+        "Eileen Pollard"
+      ],
+      "chapter_doi": "10.11647/obp.0462.44",
+      "citation_pages": "529-544"
+    },
+    {
+      "title": "20. Putting theory into (proposed) action The significance of campaign planning as an assessment task",
+      "authors": [
+        "Luke Ray Di Marco Campbell"
+      ],
+      "chapter_doi": "10.11647/obp.0462.20",
+      "citation_pages": "229-236"
+    },
+    {
+      "title": "9. The emotional impact of nature seen through the lenses of virtual reality (VR) and revealed through the power of expressive art",
+      "authors": [
+        "Gabriella Rodolico",
+        "Fiona McGregor"
+      ],
+      "chapter_doi": "10.11647/obp.0462.09",
+      "citation_pages": "111-124"
+    },
+    {
+      "title": "29. Learning vs education A view beyond the divide",
+      "authors": [
+        "Akitav Sharma"
+      ],
+      "chapter_doi": "10.11647/obp.0462.29",
+      "citation_pages": "349-362"
+    },
+    {
+      "title": "Imaginative collaboration and co-creation Introduction",
+      "authors": [
+        "Sandra Abegglen",
+        "Tom Burns",
+        "Sandra Sinfield"
+      ],
+      "chapter_doi": "10.11647/obp.0462.53",
+      "citation_pages": "261-266"
+    },
+    {
+      "title": "31. Humanising student and instructor experiences to nurture relationships and improve engagement",
+      "authors": [
+        "Umme Mansoory"
+      ],
+      "chapter_doi": "10.11647/obp.0462.31",
+      "citation_pages": "377-384"
+    },
+    {
+      "title": "30. Belonging through compassion Supporting hope through the design of a website for educational development and social justice",
+      "authors": [
+        "Vikki Hill",
+        "Liz Bunting"
+      ],
+      "chapter_doi": "10.11647/obp.0462.30",
+      "citation_pages": "363-376"
+    },
+    {
+      "title": "25. Peer review No crime no punishment",
+      "authors": [
+        "Debbie Holley"
+      ],
+      "chapter_doi": "10.11647/obp.0462.25",
+      "citation_pages": "295-304"
+    },
+    {
+      "title": "16. The XXXX game A character based tool for learning",
+      "authors": [
+        "Louise Sheridan"
+      ],
+      "chapter_doi": "10.11647/obp.0462.16",
+      "citation_pages": "193-200"
+    },
+    {
+      "title": "22. Hope in an art school",
+      "authors": [
+        "Simone Maier"
+      ],
+      "chapter_doi": "10.11647/obp.0462.22",
+      "citation_pages": "247-258"
+    },
+    {
+      "title": "45. Embracing compassion and self-care Educator wellbeing amidst the chaos",
+      "authors": [
+        "Lee Fallin"
+      ],
+      "chapter_doi": "10.11647/obp.0462.45",
+      "citation_pages": "545-554"
+    },
+    {
+      "title": "24. Better Together Towards a new organising principle and mindset for co-creation",
+      "authors": [
+        "Nikita Asnani",
+        "Inca Hide-Wright",
+        "Jess Humphreys",
+        "Bo Kelestyn",
+        "Jean Mutton"
+      ],
+      "chapter_doi": "10.11647/obp.0462.24",
+      "citation_pages": "283-294"
+    },
+    {
+      "title": "41. “It’s a bit like academic me-time” Can virtual mini writing retreats contribute to a more joyful, creative, and humane Higher Education?",
+      "authors": [
+        "Aspasia Eleni Paltoglou",
+        "Alison Williams",
+        "Arriarne Pugh",
+        "Rossella Sorte"
+      ],
+      "chapter_doi": "10.11647/obp.0462.41",
+      "citation_pages": "493-504"
+    },
+    {
+      "title": "2. A critical pedagogy for a critical time",
+      "authors": [
+        "Jane Booth"
+      ],
+      "chapter_doi": "10.11647/obp.0462.02",
+      "citation_pages": "27-40"
+    },
+    {
+      "title": "4. Fostering hope and humanity through transformative education A call to reimagine mentorship",
+      "authors": [
+        "Shivaani Chugh",
+        "Anurag Mishra",
+        "Aashima Dabas",
+        "Chandini Chugh"
+      ],
+      "chapter_doi": "10.11647/obp.0462.04",
+      "citation_pages": "49-60"
+    },
+    {
+      "title": "21. Freedom to learn Developing autonomous critical learners through self-assessment in Higher Education",
+      "authors": [
+        "Agnese Di Domenico",
+        "Aidan Harvey",
+        "Beth Karp",
+        "Elizabeth Shakespeare",
+        "Ingeborg van Knippenberg",
+        "John Cowan",
+        "Zack Moir"
+      ],
+      "chapter_doi": "10.11647/obp.0462.21",
+      "citation_pages": "237-246"
+    },
+    {
+      "title": "Focus on the teachers Introduction",
+      "authors": [
+        "Richard F. Heller"
+      ],
+      "chapter_doi": "10.11647/obp.0462.55",
+      "citation_pages": "515-518"
+    }
+  ]
+}

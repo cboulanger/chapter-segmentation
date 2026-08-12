@@ -1,0 +1,868 @@
+{
+  "isbn": "9781783747108",
+  "fetched_at": "2026-08-11T22:58:31.550201+00:00",
+  "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.04",
+      "type": "book-chapter",
+      "page": "133-162",
+      "title": [
+        "Chapter 4"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Tales and Legends"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.07",
+      "type": "book-chapter",
+      "page": "243-270",
+      "title": [
+        "Chapter 7"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Proverbs and Riddles"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.02",
+      "type": "book-chapter",
+      "page": "51-100",
+      "title": [
+        "Chapter 2"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Ballads"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.11",
+      "type": "book-chapter",
+      "page": "357-386",
+      "title": [
+        "Appendix"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.01",
+      "type": "book-chapter",
+      "page": "15-50",
+      "title": [
+        "Chapter 1"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Voices from the Past"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.03",
+      "type": "book-chapter",
+      "page": "101-132",
+      "title": [
+        "Chapter 3"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Romances"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.10",
+      "type": "book-chapter",
+      "page": "331-356",
+      "title": [
+        "Chapter 10"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Drama"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.05",
+      "type": "book-chapter",
+      "page": "163-206",
+      "title": [
+        "Chapter 5"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Merry Tales"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.08",
+      "type": "book-chapter",
+      "page": "271-300",
+      "title": [
+        "Chapter 8"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Satire"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.06",
+      "type": "book-chapter",
+      "page": "207-242",
+      "title": [
+        "Chapter 6"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Animal Tales"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.12",
+      "type": "book-chapter",
+      "page": "1-14",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2019-08-06T00:00:00Z",
+            "timestamp": 1565049600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0170.09",
+      "type": "book-chapter",
+      "page": "301-330",
+      "title": [
+        "Chapter 9"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Gray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Make We Merry More and Less"
+      ],
+      "subtitle": [
+        "Songs"
+      ],
+      "ISBN": [
+        "9781783747108",
+        "9781783747115",
+        "9781783747122",
+        "9781800645851",
+        "9781783747153",
+        "9781783747139",
+        "9781783747146"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            6
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Chapter 4 Tales and Legends",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.04",
+      "citation_pages": "133-162"
+    },
+    {
+      "title": "Chapter 7 Proverbs and Riddles",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.07",
+      "citation_pages": "243-270"
+    },
+    {
+      "title": "Chapter 2 Ballads",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.02",
+      "citation_pages": "51-100"
+    },
+    {
+      "title": "Appendix",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.11",
+      "citation_pages": "357-386"
+    },
+    {
+      "title": "Chapter 1 Voices from the Past",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.01",
+      "citation_pages": "15-50"
+    },
+    {
+      "title": "Chapter 3 Romances",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.03",
+      "citation_pages": "101-132"
+    },
+    {
+      "title": "Chapter 10 Drama",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.10",
+      "citation_pages": "331-356"
+    },
+    {
+      "title": "Chapter 5 Merry Tales",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.05",
+      "citation_pages": "163-206"
+    },
+    {
+      "title": "Chapter 8 Satire",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.08",
+      "citation_pages": "271-300"
+    },
+    {
+      "title": "Chapter 6 Animal Tales",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.06",
+      "citation_pages": "207-242"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.12",
+      "citation_pages": "1-14"
+    },
+    {
+      "title": "Chapter 9 Songs",
+      "authors": [
+        "Douglas Gray"
+      ],
+      "chapter_doi": "10.11647/obp.0170.09",
+      "citation_pages": "301-330"
+    }
+  ]
+}

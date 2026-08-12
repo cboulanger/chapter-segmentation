@@ -1,0 +1,665 @@
+{
+  "isbn": "9781783746804",
+  "fetched_at": "2026-08-11T22:40:57.795132+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2020-05-19T00:00:00Z",
+            "timestamp": 1589846400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0164.09",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Shai",
+          "family": "Heijmans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in Rabbinic Hebrew"
+      ],
+      "ISBN": [
+        "9781783746804",
+        "9781783746811",
+        "9781783746828",
+        "9781800645813",
+        "9781783747689",
+        "9781783746835",
+        "9781783746842"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2020-05-19T00:00:00Z",
+            "timestamp": 1589846400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0164.07",
+      "type": "book-chapter",
+      "page": "169-192",
+      "title": [
+        "7. Two Textual Versions of Psiqata of the Ten Commandments"
+      ],
+      "author": [
+        {
+          "given": "Shlomi",
+          "family": "Efrati",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in Rabbinic Hebrew"
+      ],
+      "ISBN": [
+        "9781783746804",
+        "9781783746811",
+        "9781783746828",
+        "9781800645813",
+        "9781783747689",
+        "9781783746835",
+        "9781783746842"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2020-05-19T00:00:00Z",
+            "timestamp": 1589846400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0164.06",
+      "type": "book-chapter",
+      "page": "155-168",
+      "title": [
+        "6. The Distinction Between Branches of Rabbinic Hebrew in Light of the Hebrew of the Late Midrash"
+      ],
+      "author": [
+        {
+          "given": "Yehonatan",
+          "family": "Wormser",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in Rabbinic Hebrew"
+      ],
+      "ISBN": [
+        "9781783746804",
+        "9781783746811",
+        "9781783746828",
+        "9781800645813",
+        "9781783747689",
+        "9781783746835",
+        "9781783746842"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2020-05-19T00:00:00Z",
+            "timestamp": 1589846400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0164.01",
+      "type": "book-chapter",
+      "page": "5-24",
+      "title": [
+        "1. Rabba and Rava, ʾAbba and ʾAva"
+      ],
+      "author": [
+        {
+          "given": "Yochanan",
+          "family": "Breuer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in Rabbinic Hebrew"
+      ],
+      "subtitle": [
+        "Spelling, Pronunciation and Meaning"
+      ],
+      "ISBN": [
+        "9781783746804",
+        "9781783746811",
+        "9781783746828",
+        "9781800645813",
+        "9781783747689",
+        "9781783746835",
+        "9781783746842"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2020-05-19T00:00:00Z",
+            "timestamp": 1589846400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0164.05",
+      "type": "book-chapter",
+      "page": "119-154",
+      "title": [
+        "5. Rabbinic Entries in R. Judah Ibn-Tibbon's Translation of Duties of the Hearts"
+      ],
+      "author": [
+        {
+          "given": "Barak",
+          "family": "Avirbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in Rabbinic Hebrew"
+      ],
+      "ISBN": [
+        "9781783746804",
+        "9781783746811",
+        "9781783746828",
+        "9781800645813",
+        "9781783747689",
+        "9781783746835",
+        "9781783746842"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2020-05-19T00:00:00Z",
+            "timestamp": 1589846400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0164.03",
+      "type": "book-chapter",
+      "page": "57-96",
+      "title": [
+        "3. Adjacency Pairs and Argumentative Steps in The Halakhic Give-and-Take Conversations in The Mishnah"
+      ],
+      "author": [
+        {
+          "given": "Rivka",
+          "family": "Shemesh-Raiskin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in Rabbinic Hebrew"
+      ],
+      "ISBN": [
+        "9781783746804",
+        "9781783746811",
+        "9781783746828",
+        "9781800645813",
+        "9781783747689",
+        "9781783746835",
+        "9781783746842"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2020-05-19T00:00:00Z",
+            "timestamp": 1589846400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0164.04",
+      "type": "book-chapter",
+      "page": "97-118",
+      "title": [
+        "4. Tannaitic Aramaic"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8666-1875",
+          "authenticated-orcid": false,
+          "given": "Christian",
+          "family": "Stadel",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05tkyf982",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ben-Gurion University of the Negev"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in Rabbinic Hebrew"
+      ],
+      "subtitle": [
+        "Methodological Remarks and a Test Case"
+      ],
+      "ISBN": [
+        "9781783746804",
+        "9781783746811",
+        "9781783746828",
+        "9781800645813",
+        "9781783747689",
+        "9781783746835",
+        "9781783746842"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2020-05-19T00:00:00Z",
+            "timestamp": 1589846400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0164.02",
+      "type": "book-chapter",
+      "page": "25-56",
+      "title": [
+        "2. The Vocalisation of MS Cambridge of the Mishnah"
+      ],
+      "author": [
+        {
+          "given": "Yehudit",
+          "family": "Henshke",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in Rabbinic Hebrew"
+      ],
+      "subtitle": [
+        "An Encounter Between Traditions"
+      ],
+      "ISBN": [
+        "9781783746804",
+        "9781783746811",
+        "9781783746828",
+        "9781800645813",
+        "9781783747689",
+        "9781783746835",
+        "9781783746842"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2020-05-19T00:00:00Z",
+            "timestamp": 1589846400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0164.08",
+      "type": "book-chapter",
+      "page": "193-202",
+      "title": [
+        "8. Vowel Reduction in Greek Loanwords in the Mishnah"
+      ],
+      "author": [
+        {
+          "given": "Shai",
+          "family": "Heijmans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Studies in Rabbinic Hebrew"
+      ],
+      "subtitle": [
+        "The Phenomenon and Its Significance"
+      ],
+      "ISBN": [
+        "9781783746804",
+        "9781783746811",
+        "9781783746828",
+        "9781800645813",
+        "9781783747689",
+        "9781783746835",
+        "9781783746842"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            19
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Introduction",
+      "authors": [
+        "Shai Heijmans"
+      ],
+      "chapter_doi": "10.11647/obp.0164.09",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "7. Two Textual Versions of Psiqata of the Ten Commandments",
+      "authors": [
+        "Shlomi Efrati"
+      ],
+      "chapter_doi": "10.11647/obp.0164.07",
+      "citation_pages": "169-192"
+    },
+    {
+      "title": "6. The Distinction Between Branches of Rabbinic Hebrew in Light of the Hebrew of the Late Midrash",
+      "authors": [
+        "Yehonatan Wormser"
+      ],
+      "chapter_doi": "10.11647/obp.0164.06",
+      "citation_pages": "155-168"
+    },
+    {
+      "title": "1. Rabba and Rava, ʾAbba and ʾAva Spelling, Pronunciation and Meaning",
+      "authors": [
+        "Yochanan Breuer"
+      ],
+      "chapter_doi": "10.11647/obp.0164.01",
+      "citation_pages": "5-24"
+    },
+    {
+      "title": "5. Rabbinic Entries in R. Judah Ibn-Tibbon's Translation of Duties of the Hearts",
+      "authors": [
+        "Barak Avirbach"
+      ],
+      "chapter_doi": "10.11647/obp.0164.05",
+      "citation_pages": "119-154"
+    },
+    {
+      "title": "3. Adjacency Pairs and Argumentative Steps in The Halakhic Give-and-Take Conversations in The Mishnah",
+      "authors": [
+        "Rivka Shemesh-Raiskin"
+      ],
+      "chapter_doi": "10.11647/obp.0164.03",
+      "citation_pages": "57-96"
+    },
+    {
+      "title": "4. Tannaitic Aramaic Methodological Remarks and a Test Case",
+      "authors": [
+        "Christian Stadel"
+      ],
+      "chapter_doi": "10.11647/obp.0164.04",
+      "citation_pages": "97-118"
+    },
+    {
+      "title": "2. The Vocalisation of MS Cambridge of the Mishnah An Encounter Between Traditions",
+      "authors": [
+        "Yehudit Henshke"
+      ],
+      "chapter_doi": "10.11647/obp.0164.02",
+      "citation_pages": "25-56"
+    },
+    {
+      "title": "8. Vowel Reduction in Greek Loanwords in the Mishnah The Phenomenon and Its Significance",
+      "authors": [
+        "Shai Heijmans"
+      ],
+      "chapter_doi": "10.11647/obp.0164.08",
+      "citation_pages": "193-202"
+    }
+  ]
+}

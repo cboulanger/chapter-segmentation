@@ -1,0 +1,180 @@
+{
+  "isbn": "9781909254701",
+  "fetched_at": "2026-08-11T22:58:16.124707+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "unpaywall",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0036.05",
+      "type": "book-chapter",
+      "page": "133",
+      "title": [
+        "Michelet, Preface to the History of France (1869), with Introduction by Edward K. Kaplan"
+      ],
+      "author": [
+        {
+          "given": "Lionel",
+          "family": "Gossman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "On History: Introduction to World History (1831); Opening Address at the Faculty of Letters, 9 January 1834; Preface to History of France(1869)"
+      ],
+      "ISBN": [
+        "9781909254701"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0036.04",
+      "title": [
+        "Michelet, Opening Address at the Faculty of Letters, 9 January 1834"
+      ],
+      "type": "book-chapter",
+      "container-title": [
+        "On History: Introduction to World History (1831); Opening Address at the Faculty of Letters, 9 January 1834; Preface to History of France(1869)"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            10
+          ]
+        ]
+      },
+      "ISBN": [
+        "9781909254701"
+      ]
+    },
+    {
+      "DOI": "10.11647/obp.0036.03",
+      "title": [
+        "Michelet, Introduction to World History"
+      ],
+      "page": "23",
+      "type": "book-chapter",
+      "container-title": [
+        "On History: Introduction to World History (1831); Opening Address at the Faculty of Letters, 9 January 1834; Preface to History of France(1869)"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            10
+          ]
+        ]
+      },
+      "ISBN": [
+        "9781909254701"
+      ]
+    },
+    {
+      "DOI": "10.11647/obp.0036.02",
+      "title": [
+        "Chronology of Jules Michelet"
+      ],
+      "type": "book-chapter",
+      "container-title": [
+        "On History: Introduction to World History (1831); Opening Address at the Faculty of Letters, 9 January 1834; Preface to History of France(1869)"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            10
+          ]
+        ]
+      },
+      "ISBN": [
+        "9781909254701"
+      ]
+    },
+    {
+      "DOI": "10.11647/obp.0036.01",
+      "type": "book-chapter",
+      "page": "5",
+      "title": [
+        "Foreword"
+      ],
+      "author": [
+        {
+          "given": "Lionel",
+          "family": "Gossman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "On History: Introduction to World History (1831); Opening Address at the Faculty of Letters, 9 January 1834; Preface to History of France(1869)"
+      ],
+      "ISBN": [
+        "9781909254701"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            10
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Michelet, Preface to the History of France (1869), with Introduction by Edward K. Kaplan",
+      "authors": [
+        "Lionel Gossman"
+      ],
+      "chapter_doi": "10.11647/obp.0036.05",
+      "citation_pages": "133"
+    },
+    {
+      "title": "Michelet, Opening Address at the Faculty of Letters, 9 January 1834",
+      "authors": [],
+      "chapter_doi": "10.11647/obp.0036.04",
+      "citation_pages": null
+    },
+    {
+      "title": "Michelet, Introduction to World History",
+      "authors": [],
+      "chapter_doi": "10.11647/obp.0036.03",
+      "citation_pages": "23"
+    },
+    {
+      "title": "Chronology of Jules Michelet",
+      "authors": [],
+      "chapter_doi": "10.11647/obp.0036.02",
+      "citation_pages": null
+    },
+    {
+      "title": "Foreword",
+      "authors": [
+        "Lionel Gossman"
+      ],
+      "chapter_doi": "10.11647/obp.0036.01",
+      "citation_pages": "5"
+    }
+  ]
+}

@@ -1,0 +1,1127 @@
+{
+  "isbn": "9783837635300",
+  "fetched_at": "2026-08-11T22:58:03.778163+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839435304-018",
+      "type": "book-chapter",
+      "page": "373-384",
+      "title": [
+        "»Wunderwerke der Parallelisierung«"
+      ],
+      "author": [
+        {
+          "given": "Andreas",
+          "family": "Sudmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Roland",
+          "family": "Memisevic",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-002",
+      "type": "book-chapter",
+      "page": "39-54",
+      "title": [
+        "»Down-to-earth resolutions«: Erinnerungen an die KI als eine »häretische Theorie«"
+      ],
+      "author": [
+        {
+          "given": "Bernhard J.",
+          "family": "Dotzler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-015",
+      "type": "book-chapter",
+      "page": "323-338",
+      "title": [
+        "Wenn künstliche Intelligenz laufen lernt: Verkörperungsstrategien im machine learning"
+      ],
+      "author": [
+        {
+          "given": "Yvonne",
+          "family": "Förster",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-008",
+      "type": "book-chapter",
+      "page": "167-192",
+      "title": [
+        "Selbstlernende autonome Systeme?: Medientechnologische und medientheoretische Bedingungen am Beispiel von Alphabets Differentiable Neural Computer (DNC)"
+      ],
+      "author": [
+        {
+          "given": "Thomas Christian",
+          "family": "Bächle",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christoph",
+          "family": "Ernst",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jens",
+          "family": "Schröter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Caja",
+          "family": "Thimm",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-019",
+      "type": "book-chapter",
+      "page": "385-392",
+      "title": [
+        "Autor_innenverzeichnis"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Engemann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Sudmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-009",
+      "type": "book-chapter",
+      "page": "195-218",
+      "title": [
+        "Daten als Schnittstelle: Die Poetik des maschinellen Lernens im Design"
+      ],
+      "author": [
+        {
+          "given": "Daniel Cardoso",
+          "family": "Llach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-011",
+      "type": "book-chapter",
+      "page": "247-268",
+      "title": [
+        "Rekursionen über Körper: Machine Learning-Trainingsdatensät ze als Arbeit am Index"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Engemann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-006",
+      "type": "book-chapter",
+      "page": "117-142",
+      "title": [
+        "›Bin doch keine Maschine …‹: Zur Kulturgeschichte eines Topos"
+      ],
+      "author": [
+        {
+          "given": "Stefan",
+          "family": "Rieger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-010",
+      "type": "book-chapter",
+      "page": "219-246",
+      "title": [
+        "Big-Data-Kriege: Über Tötungslisten, Drohnen und die Politik der Datenbanken"
+      ],
+      "author": [
+        {
+          "given": "Jutta",
+          "family": "Weber",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-012",
+      "type": "book-chapter",
+      "page": "269-288",
+      "title": [
+        "Media Analytics &amp;amp; Gegenwartskultur"
+      ],
+      "author": [
+        {
+          "given": "Lev",
+          "family": "Manovich",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-007",
+      "type": "book-chapter",
+      "page": "143-166",
+      "title": [
+        "Maschinelles Lernen als Bildungspolitischer Kontrollverlust?: Eine spekulative Kontrollgeschichte der Bildungsplanung"
+      ],
+      "author": [
+        {
+          "given": "Jeremias",
+          "family": "Herberg",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-003",
+      "type": "book-chapter",
+      "page": "55-74",
+      "title": [
+        "Szenarien des Postdigitalen: Deep Learning als MedienRevolution"
+      ],
+      "author": [
+        {
+          "given": "Andreas",
+          "family": "Sudmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-toc",
+      "type": "book-chapter",
+      "page": "5-8",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Engemann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Sudmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-005",
+      "type": "book-chapter",
+      "page": "93-114",
+      "title": [
+        "Das Lernen lernen oder die algorithmische Entdeckung von Informationen"
+      ],
+      "author": [
+        {
+          "given": "Luciana",
+          "family": "Parisi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-001",
+      "type": "book-chapter",
+      "page": "9-36",
+      "title": [
+        "Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Engemann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Sudmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-013",
+      "type": "book-chapter",
+      "page": "291-308",
+      "title": [
+        "Wenn aus Zahlen Töne werden… überlegungen zu computergenerier ter musik und komposition"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Engemann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Sudmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-017",
+      "type": "book-chapter",
+      "page": "367-372",
+      "title": [
+        "»Deep Learning ist keine Religion«"
+      ],
+      "author": [
+        {
+          "given": "Andreas",
+          "family": "Sudmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yoshua",
+          "family": "Bengio",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-004",
+      "type": "book-chapter",
+      "page": "75-92",
+      "title": [
+        "Von Maschinen lernen: Zur Mechanical Notation von Charles Babbage"
+      ],
+      "author": [
+        {
+          "given": "Hermann",
+          "family": "Rotermund",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Engemann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Sudmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-016",
+      "type": "book-chapter",
+      "page": "339-364",
+      "title": [
+        "Biodrag. Turing-test, KI-Kino und Testosteron"
+      ],
+      "author": [
+        {
+          "given": "Ulrike",
+          "family": "Bergermann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839435304-014",
+      "type": "book-chapter",
+      "page": "309-322",
+      "title": [
+        "Ein Meer von Daten: apophänie und muster(-miss-)erkennung"
+      ],
+      "author": [
+        {
+          "given": "Hito",
+          "family": "Steyerl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digitale Gesellschaft",
+        "Machine Learning - Medien, Infrastrukturen und Technologien der Künstlichen Intelligenz"
+      ],
+      "ISBN": [
+        "9783837635300",
+        "9783839435304"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            20
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "»Wunderwerke der Parallelisierung«",
+      "authors": [
+        "Andreas Sudmann",
+        "Roland Memisevic"
+      ],
+      "chapter_doi": "10.14361/9783839435304-018",
+      "citation_pages": "373-384"
+    },
+    {
+      "title": "»Down-to-earth resolutions«: Erinnerungen an die KI als eine »häretische Theorie«",
+      "authors": [
+        "Bernhard J. Dotzler"
+      ],
+      "chapter_doi": "10.14361/9783839435304-002",
+      "citation_pages": "39-54"
+    },
+    {
+      "title": "Wenn künstliche Intelligenz laufen lernt: Verkörperungsstrategien im machine learning",
+      "authors": [
+        "Yvonne Förster"
+      ],
+      "chapter_doi": "10.14361/9783839435304-015",
+      "citation_pages": "323-338"
+    },
+    {
+      "title": "Selbstlernende autonome Systeme?: Medientechnologische und medientheoretische Bedingungen am Beispiel von Alphabets Differentiable Neural Computer (DNC)",
+      "authors": [
+        "Thomas Christian Bächle",
+        "Christoph Ernst",
+        "Jens Schröter",
+        "Caja Thimm"
+      ],
+      "chapter_doi": "10.14361/9783839435304-008",
+      "citation_pages": "167-192"
+    },
+    {
+      "title": "Autor_innenverzeichnis",
+      "authors": [
+        "Christoph Engemann",
+        "Andreas Sudmann"
+      ],
+      "chapter_doi": "10.14361/9783839435304-019",
+      "citation_pages": "385-392"
+    },
+    {
+      "title": "Daten als Schnittstelle: Die Poetik des maschinellen Lernens im Design",
+      "authors": [
+        "Daniel Cardoso Llach"
+      ],
+      "chapter_doi": "10.14361/9783839435304-009",
+      "citation_pages": "195-218"
+    },
+    {
+      "title": "Rekursionen über Körper: Machine Learning-Trainingsdatensät ze als Arbeit am Index",
+      "authors": [
+        "Christoph Engemann"
+      ],
+      "chapter_doi": "10.14361/9783839435304-011",
+      "citation_pages": "247-268"
+    },
+    {
+      "title": "›Bin doch keine Maschine …‹: Zur Kulturgeschichte eines Topos",
+      "authors": [
+        "Stefan Rieger"
+      ],
+      "chapter_doi": "10.14361/9783839435304-006",
+      "citation_pages": "117-142"
+    },
+    {
+      "title": "Big-Data-Kriege: Über Tötungslisten, Drohnen und die Politik der Datenbanken",
+      "authors": [
+        "Jutta Weber"
+      ],
+      "chapter_doi": "10.14361/9783839435304-010",
+      "citation_pages": "219-246"
+    },
+    {
+      "title": "Media Analytics &amp;amp; Gegenwartskultur",
+      "authors": [
+        "Lev Manovich"
+      ],
+      "chapter_doi": "10.14361/9783839435304-012",
+      "citation_pages": "269-288"
+    },
+    {
+      "title": "Maschinelles Lernen als Bildungspolitischer Kontrollverlust?: Eine spekulative Kontrollgeschichte der Bildungsplanung",
+      "authors": [
+        "Jeremias Herberg"
+      ],
+      "chapter_doi": "10.14361/9783839435304-007",
+      "citation_pages": "143-166"
+    },
+    {
+      "title": "Szenarien des Postdigitalen: Deep Learning als MedienRevolution",
+      "authors": [
+        "Andreas Sudmann"
+      ],
+      "chapter_doi": "10.14361/9783839435304-003",
+      "citation_pages": "55-74"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Christoph Engemann",
+        "Andreas Sudmann"
+      ],
+      "chapter_doi": "10.14361/9783839435304-toc",
+      "citation_pages": "5-8"
+    },
+    {
+      "title": "Das Lernen lernen oder die algorithmische Entdeckung von Informationen",
+      "authors": [
+        "Luciana Parisi"
+      ],
+      "chapter_doi": "10.14361/9783839435304-005",
+      "citation_pages": "93-114"
+    },
+    {
+      "title": "Einleitung",
+      "authors": [
+        "Christoph Engemann",
+        "Andreas Sudmann"
+      ],
+      "chapter_doi": "10.14361/9783839435304-001",
+      "citation_pages": "9-36"
+    },
+    {
+      "title": "Wenn aus Zahlen Töne werden… überlegungen zu computergenerier ter musik und komposition",
+      "authors": [
+        "Christoph Engemann",
+        "Andreas Sudmann"
+      ],
+      "chapter_doi": "10.14361/9783839435304-013",
+      "citation_pages": "291-308"
+    },
+    {
+      "title": "»Deep Learning ist keine Religion«",
+      "authors": [
+        "Andreas Sudmann",
+        "Yoshua Bengio"
+      ],
+      "chapter_doi": "10.14361/9783839435304-017",
+      "citation_pages": "367-372"
+    },
+    {
+      "title": "Von Maschinen lernen: Zur Mechanical Notation von Charles Babbage",
+      "authors": [
+        "Hermann Rotermund"
+      ],
+      "chapter_doi": "10.14361/9783839435304-004",
+      "citation_pages": "75-92"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Christoph Engemann",
+        "Andreas Sudmann"
+      ],
+      "chapter_doi": "10.14361/9783839435304-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Biodrag. Turing-test, KI-Kino und Testosteron",
+      "authors": [
+        "Ulrike Bergermann"
+      ],
+      "chapter_doi": "10.14361/9783839435304-016",
+      "citation_pages": "339-364"
+    },
+    {
+      "title": "Ein Meer von Daten: apophänie und muster(-miss-)erkennung",
+      "authors": [
+        "Hito Steyerl"
+      ],
+      "chapter_doi": "10.14361/9783839435304-014",
+      "citation_pages": "309-322"
+    }
+  ]
+}

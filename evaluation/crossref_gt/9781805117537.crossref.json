@@ -1,0 +1,1307 @@
+{
+  "isbn": "9781805117537",
+  "fetched_at": "2026-08-11T22:58:30.854048+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.06",
+      "type": "book-chapter",
+      "page": "143-166",
+      "title": [
+        "6. Masculinities, Colour, Dyeing and the Design of Tweeds 1829–1914"
+      ],
+      "author": [
+        {
+          "given": "Fiona",
+          "family": "Anderson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01s033b11",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Glasgow School of Art"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.01",
+      "type": "book-chapter",
+      "page": "23-48",
+      "title": [
+        "1. ‘Nature Is so Much Better than Dyeing […] You Cannot Get the Same Colour’"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8858-0780",
+          "authenticated-orcid": false,
+          "given": "Ariane",
+          "family": "Fennetaux",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03z6jp965",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sorbonne Nouvelle University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "Colourful Feathers, Nature and Artifice in the Age of Empires"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.12",
+      "type": "book-chapter",
+      "page": "295-318",
+      "title": [
+        "12. John Ruskin’s Painting Materials"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7109-6730",
+          "authenticated-orcid": false,
+          "given": "Tea",
+          "family": "Ghigo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            },
+            {
+              "name": "Society of Antiquaries of London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "A Quest for Durable Colour between Industry and Nature"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.09",
+      "type": "book-chapter",
+      "page": "223-246",
+      "title": [
+        "9. Annotating Syme"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-6053-1924",
+          "authenticated-orcid": false,
+          "given": "Joyce",
+          "family": "Dixon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "Nineteenth-Century Marks and Marginalia in Werner’s Nomenclature of Colours (1814/1821)"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.07",
+      "type": "book-chapter",
+      "page": "167-196",
+      "title": [
+        "7. The Queerly Racialised Colours of Religion and Decadence at the Universities of Oxford and Cambridge"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3751-5326",
+          "authenticated-orcid": false,
+          "given": "Dominic",
+          "family": "Janes",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.05",
+      "type": "book-chapter",
+      "page": "117-140",
+      "title": [
+        "5. From Hysteria to Healing"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-3107-2943",
+          "authenticated-orcid": false,
+          "given": "Alessandra",
+          "family": "Ronetti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/002t25c44",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Pantheon-Sorbonne University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "Félix Vallotton’s Bon Marché and the Ambiguous Nature of Colour in Fin-de-Siècle Culture"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.03",
+      "type": "book-chapter",
+      "page": "73-90",
+      "title": [
+        "3. Wavelengths and Potato Starch"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0006-5742-4105",
+          "authenticated-orcid": false,
+          "given": "Nathalie",
+          "family": "Boulouch",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01m84wm78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Rennes 2"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "The (Im)material in Colour Photography"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.15",
+      "type": "book-chapter",
+      "page": "373-382",
+      "title": [
+        "15. Epilogue"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7459-9560",
+          "authenticated-orcid": false,
+          "given": "Arnaud",
+          "family": "Dubois",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02feahw73",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "French National Centre for Scientific Research"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03sjcn752",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Conservatoire national supérieur de musique et de danse de Lyon"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "From Pigments to Pixel"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.00",
+      "type": "book-chapter",
+      "page": "1-20",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7967-0768",
+          "authenticated-orcid": false,
+          "given": "Stefano",
+          "family": "Evangelista",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0398-6410",
+          "authenticated-orcid": false,
+          "given": "Charlotte",
+          "family": "Ribeyrol",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02en5vm52",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sorbonne Université"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5639-6249",
+          "authenticated-orcid": false,
+          "given": "Matthew",
+          "family": "Winterbottom",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Ashmolean Museum of Art and Archaeology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "Colour Materiality in the Nineteenth Century"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.02",
+      "type": "book-chapter",
+      "page": "49-72",
+      "title": [
+        "2. Chrome Yellow"
+      ],
+      "author": [
+        {
+          "given": "Kirsten",
+          "family": "Travers Moffitt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03w0tq079",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Colonial Williamsburg Foundation"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "American Mineral, American Fancy"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.13",
+      "type": "book-chapter",
+      "page": "319-342",
+      "title": [
+        "13. ‘Rather revolution than evolution’"
+      ],
+      "author": [
+        {
+          "given": "Fiona",
+          "family": "Mann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "Chinese White and Watercolour Painting Techniques in England 1850-1880"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.14",
+      "type": "book-chapter",
+      "page": "343-372",
+      "title": [
+        "14. Colour on Trial"
+      ],
+      "author": [
+        {
+          "given": "Kathrin",
+          "family": "Kinseher",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/029djt864",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Academy of Fine Arts Vienna"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "Concerns about the Quality of Artists’ Pigments"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.11",
+      "type": "book-chapter",
+      "page": "269-292",
+      "title": [
+        "11. The Hayters and the Controversy on Colour"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0188-0268",
+          "authenticated-orcid": false,
+          "given": "Giulia",
+          "family": "Simonini",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.08",
+      "type": "book-chapter",
+      "page": "197-220",
+      "title": [
+        "8. ‘The Look of Measurement’"
+      ],
+      "author": [
+        {
+          "given": "Helena",
+          "family": "Neimann Erikstrup",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "Colour and Sight in Victor Fulconis’s Depictions of the Indo-Caribbean in Martinique, 1883"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.04",
+      "type": "book-chapter",
+      "page": "93-116",
+      "title": [
+        "4. Whitewashing the Wards?"
+      ],
+      "author": [
+        {
+          "given": "Kay",
+          "family": "Simpson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "Colour, Health, and Victorian Hospital Interiors"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2026-05-11T00:00:00Z",
+            "timestamp": 1778457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0501.10",
+      "type": "book-chapter",
+      "page": "247-268",
+      "title": [
+        "10. Between Heritage, Militaria and Concept"
+      ],
+      "author": [
+        {
+          "given": "Marie-Anne",
+          "family": "Sarda",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Colour Matters"
+      ],
+      "subtitle": [
+        "The Magenta Case"
+      ],
+      "ISBN": [
+        "9781805117537",
+        "9781805117544",
+        "9781805117551",
+        "9781805117575",
+        "9781805117568"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "6. Masculinities, Colour, Dyeing and the Design of Tweeds 1829–1914",
+      "authors": [
+        "Fiona Anderson"
+      ],
+      "chapter_doi": "10.11647/obp.0501.06",
+      "citation_pages": "143-166"
+    },
+    {
+      "title": "1. ‘Nature Is so Much Better than Dyeing […] You Cannot Get the Same Colour’ Colourful Feathers, Nature and Artifice in the Age of Empires",
+      "authors": [
+        "Ariane Fennetaux"
+      ],
+      "chapter_doi": "10.11647/obp.0501.01",
+      "citation_pages": "23-48"
+    },
+    {
+      "title": "12. John Ruskin’s Painting Materials A Quest for Durable Colour between Industry and Nature",
+      "authors": [
+        "Tea Ghigo"
+      ],
+      "chapter_doi": "10.11647/obp.0501.12",
+      "citation_pages": "295-318"
+    },
+    {
+      "title": "9. Annotating Syme Nineteenth-Century Marks and Marginalia in Werner’s Nomenclature of Colours (1814/1821)",
+      "authors": [
+        "Joyce Dixon"
+      ],
+      "chapter_doi": "10.11647/obp.0501.09",
+      "citation_pages": "223-246"
+    },
+    {
+      "title": "7. The Queerly Racialised Colours of Religion and Decadence at the Universities of Oxford and Cambridge",
+      "authors": [
+        "Dominic Janes"
+      ],
+      "chapter_doi": "10.11647/obp.0501.07",
+      "citation_pages": "167-196"
+    },
+    {
+      "title": "5. From Hysteria to Healing Félix Vallotton’s Bon Marché and the Ambiguous Nature of Colour in Fin-de-Siècle Culture",
+      "authors": [
+        "Alessandra Ronetti"
+      ],
+      "chapter_doi": "10.11647/obp.0501.05",
+      "citation_pages": "117-140"
+    },
+    {
+      "title": "3. Wavelengths and Potato Starch The (Im)material in Colour Photography",
+      "authors": [
+        "Nathalie Boulouch"
+      ],
+      "chapter_doi": "10.11647/obp.0501.03",
+      "citation_pages": "73-90"
+    },
+    {
+      "title": "15. Epilogue From Pigments to Pixel",
+      "authors": [
+        "Arnaud Dubois"
+      ],
+      "chapter_doi": "10.11647/obp.0501.15",
+      "citation_pages": "373-382"
+    },
+    {
+      "title": "Introduction Colour Materiality in the Nineteenth Century",
+      "authors": [
+        "Stefano Evangelista",
+        "Charlotte Ribeyrol",
+        "Matthew Winterbottom"
+      ],
+      "chapter_doi": "10.11647/obp.0501.00",
+      "citation_pages": "1-20"
+    },
+    {
+      "title": "2. Chrome Yellow American Mineral, American Fancy",
+      "authors": [
+        "Kirsten Travers Moffitt"
+      ],
+      "chapter_doi": "10.11647/obp.0501.02",
+      "citation_pages": "49-72"
+    },
+    {
+      "title": "13. ‘Rather revolution than evolution’ Chinese White and Watercolour Painting Techniques in England 1850-1880",
+      "authors": [
+        "Fiona Mann"
+      ],
+      "chapter_doi": "10.11647/obp.0501.13",
+      "citation_pages": "319-342"
+    },
+    {
+      "title": "14. Colour on Trial Concerns about the Quality of Artists’ Pigments",
+      "authors": [
+        "Kathrin Kinseher"
+      ],
+      "chapter_doi": "10.11647/obp.0501.14",
+      "citation_pages": "343-372"
+    },
+    {
+      "title": "11. The Hayters and the Controversy on Colour",
+      "authors": [
+        "Giulia Simonini"
+      ],
+      "chapter_doi": "10.11647/obp.0501.11",
+      "citation_pages": "269-292"
+    },
+    {
+      "title": "8. ‘The Look of Measurement’ Colour and Sight in Victor Fulconis’s Depictions of the Indo-Caribbean in Martinique, 1883",
+      "authors": [
+        "Helena Neimann Erikstrup"
+      ],
+      "chapter_doi": "10.11647/obp.0501.08",
+      "citation_pages": "197-220"
+    },
+    {
+      "title": "4. Whitewashing the Wards? Colour, Health, and Victorian Hospital Interiors",
+      "authors": [
+        "Kay Simpson"
+      ],
+      "chapter_doi": "10.11647/obp.0501.04",
+      "citation_pages": "93-116"
+    },
+    {
+      "title": "10. Between Heritage, Militaria and Concept The Magenta Case",
+      "authors": [
+        "Marie-Anne Sarda"
+      ],
+      "chapter_doi": "10.11647/obp.0501.10",
+      "citation_pages": "247-268"
+    }
+  ]
+}

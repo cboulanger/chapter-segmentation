@@ -1,0 +1,1003 @@
+{
+  "isbn": "9781800642065",
+  "fetched_at": "2026-08-11T22:41:10.847058+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.08",
+      "type": "book-chapter",
+      "page": "155-158",
+      "title": [
+        "5. How People Think about the Economy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.02",
+      "type": "book-chapter",
+      "page": "11-14",
+      "title": [
+        "2. Institutions and Human Nature"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.12",
+      "type": "book-chapter",
+      "page": "253-256",
+      "title": [
+        "7. The Ideal of Integrated Social Science"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.05",
+      "type": "book-chapter",
+      "page": "53-112",
+      "title": [
+        "Why Ritualized Behavior?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pierre",
+          "family": "Liénard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "subtitle": [
+        "Precaution Systems and Action Parsing in Developmental, Pathological and Cultural Rituals"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.07",
+      "type": "book-chapter",
+      "page": "117-154",
+      "title": [
+        "Safety, Threat, and Stress in Intergroup Relations"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rengin",
+          "family": "Firat",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Florian",
+          "family": "van Leeuwen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "subtitle": [
+        "A Coalitional Index Model"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.03",
+      "type": "book-chapter",
+      "page": "15-48",
+      "title": [
+        "The Naturalness of (Many) Social Institutions"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Bang Petersen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "subtitle": [
+        "Evolved Cognition as their Foundation"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.06",
+      "type": "book-chapter",
+      "page": "113-116",
+      "title": [
+        "4. Social Groups and Adapted Minds"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.10",
+      "type": "book-chapter",
+      "page": "217-220",
+      "title": [
+        "6. Detecting Mental Disorder"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.13",
+      "type": "book-chapter",
+      "page": "257-274",
+      "title": [
+        "Modes of Scholarship in the Study of Culture"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.01",
+      "type": "book-chapter",
+      "page": "1-10",
+      "title": [
+        "1. Anthropology, Useful and Scientific"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "subtitle": [
+        "An Introduction"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.09",
+      "type": "book-chapter",
+      "page": "159-216",
+      "title": [
+        "Folk-Economic Beliefs"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Bang Petersen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "subtitle": [
+        "An Evolutionary Cognitive Model"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.11",
+      "type": "book-chapter",
+      "page": "221-252",
+      "title": [
+        "Intuitive Expectations and the Detection of Mental Disorder"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "subtitle": [
+        "A Cognitive Background to Folk-Psychiatries"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2021-07-09T00:00:00Z",
+            "timestamp": 1625788800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0257.04",
+      "type": "book-chapter",
+      "page": "49-52",
+      "title": [
+        "3. Why Ritualized Behavior?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0911-1212",
+          "authenticated-orcid": false,
+          "given": "Pascal",
+          "family": "Boyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Human Cultures through the Scientific Lens"
+      ],
+      "ISBN": [
+        "9781800642065",
+        "9781800642072",
+        "9781800642089",
+        "9781800642119",
+        "9781800642096",
+        "9781800642102"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            9
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "5. How People Think about the Economy",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "chapter_doi": "10.11647/obp.0257.08",
+      "citation_pages": "155-158"
+    },
+    {
+      "title": "2. Institutions and Human Nature",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "chapter_doi": "10.11647/obp.0257.02",
+      "citation_pages": "11-14"
+    },
+    {
+      "title": "7. The Ideal of Integrated Social Science",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "chapter_doi": "10.11647/obp.0257.12",
+      "citation_pages": "253-256"
+    },
+    {
+      "title": "Why Ritualized Behavior? Precaution Systems and Action Parsing in Developmental, Pathological and Cultural Rituals",
+      "authors": [
+        "Pascal Boyer",
+        "Pierre Liénard"
+      ],
+      "chapter_doi": "10.11647/obp.0257.05",
+      "citation_pages": "53-112"
+    },
+    {
+      "title": "Safety, Threat, and Stress in Intergroup Relations A Coalitional Index Model",
+      "authors": [
+        "Pascal Boyer",
+        "Rengin Firat",
+        "Florian van Leeuwen"
+      ],
+      "chapter_doi": "10.11647/obp.0257.07",
+      "citation_pages": "117-154"
+    },
+    {
+      "title": "The Naturalness of (Many) Social Institutions Evolved Cognition as their Foundation",
+      "authors": [
+        "Pascal Boyer",
+        "Michael Bang Petersen"
+      ],
+      "chapter_doi": "10.11647/obp.0257.03",
+      "citation_pages": "15-48"
+    },
+    {
+      "title": "4. Social Groups and Adapted Minds",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "chapter_doi": "10.11647/obp.0257.06",
+      "citation_pages": "113-116"
+    },
+    {
+      "title": "6. Detecting Mental Disorder",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "chapter_doi": "10.11647/obp.0257.10",
+      "citation_pages": "217-220"
+    },
+    {
+      "title": "Modes of Scholarship in the Study of Culture",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "chapter_doi": "10.11647/obp.0257.13",
+      "citation_pages": "257-274"
+    },
+    {
+      "title": "1. Anthropology, Useful and Scientific An Introduction",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "chapter_doi": "10.11647/obp.0257.01",
+      "citation_pages": "1-10"
+    },
+    {
+      "title": "Folk-Economic Beliefs An Evolutionary Cognitive Model",
+      "authors": [
+        "Pascal Boyer",
+        "Michael Bang Petersen"
+      ],
+      "chapter_doi": "10.11647/obp.0257.09",
+      "citation_pages": "159-216"
+    },
+    {
+      "title": "Intuitive Expectations and the Detection of Mental Disorder A Cognitive Background to Folk-Psychiatries",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "chapter_doi": "10.11647/obp.0257.11",
+      "citation_pages": "221-252"
+    },
+    {
+      "title": "3. Why Ritualized Behavior?",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "chapter_doi": "10.11647/obp.0257.04",
+      "citation_pages": "49-52"
+    }
+  ]
+}

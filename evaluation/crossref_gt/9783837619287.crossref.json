@@ -1,0 +1,879 @@
+{
+  "isbn": "9783837619287",
+  "fetched_at": "2026-08-11T22:40:53.488469+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/transcript.9783839419281.fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Iris",
+          "family": "Dzudzek",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Caren",
+          "family": "Kunze",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joscha",
+          "family": "Wullweber",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.257",
+      "type": "book-chapter",
+      "page": "257-260",
+      "title": [
+        "Autorinnen und Autoren"
+      ],
+      "author": [
+        {
+          "given": "Iris",
+          "family": "Dzudzek",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Caren",
+          "family": "Kunze",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joscha",
+          "family": "Wullweber",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839419281.fm",
+      "title": [
+        "Frontmatter"
+      ],
+      "page": "1-4",
+      "type": "book-chapter",
+      "container-title": [
+        "Diskurs und Hegemonie"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837619287"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.59",
+      "type": "book-chapter",
+      "page": "59-84",
+      "title": [
+        "Ein theoretischer Universalschlüssel?"
+      ],
+      "author": [
+        {
+          "given": "Benjamin",
+          "family": "Opratko",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "subtitle": [
+        "Zur Ontologisierung des Hegemoniebegriffs bei Laclau und Mouffe"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.173",
+      "type": "book-chapter",
+      "page": "173-202",
+      "title": [
+        "Hegemonietheoretische Zugänge zum Finanzwesen"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Scherrer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "subtitle": [
+        "Neogramscianismus und Poststrukturalismus"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.29",
+      "type": "book-chapter",
+      "page": "29-58",
+      "title": [
+        "Konturen eines politischen Analyserahmens"
+      ],
+      "author": [
+        {
+          "given": "Joscha",
+          "family": "Wullweber",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "subtitle": [
+        "Hegemonie, Diskurs und Antagonismus"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.85",
+      "type": "book-chapter",
+      "page": "85-104",
+      "title": [
+        "»Alle Verhältnisse umwerfen!«"
+      ],
+      "author": [
+        {
+          "given": "Friederike",
+          "family": "Habermann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "subtitle": [
+        "Und dafür eine subjektfundierte Hegemonietheorie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Iris",
+          "family": "Dzudzek",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Caren",
+          "family": "Kunze",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joscha",
+          "family": "Wullweber",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.bm",
+      "type": "book-chapter",
+      "page": "261-264",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Iris",
+          "family": "Dzudzek",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Caren",
+          "family": "Kunze",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joscha",
+          "family": "Wullweber",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.151",
+      "type": "book-chapter",
+      "page": "151-172",
+      "title": [
+        "Eine politische Konzeption von Räumen"
+      ],
+      "author": [
+        {
+          "given": "Georg",
+          "family": "Glasze",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.intro",
+      "type": "book-chapter",
+      "page": "7-28",
+      "title": [
+        "Einleitung: Poststrukturalistische Hegemonie-theorien als Gesellschaftskritik"
+      ],
+      "author": [
+        {
+          "given": "Iris",
+          "family": "Dzudzek",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Caren",
+          "family": "Kunze",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joscha",
+          "family": "Wullweber",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.127",
+      "type": "book-chapter",
+      "page": "127-150",
+      "title": [
+        "Die Artikulation von Differenz"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3968-3470",
+          "authenticated-orcid": true,
+          "given": "Kathrin",
+          "family": "Ganz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "subtitle": [
+        "Subjektpositionen, Intersektionalität und Hegemonie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839419281.bm",
+      "title": [
+        "Backmatter"
+      ],
+      "page": "261-264",
+      "type": "book-chapter",
+      "container-title": [
+        "Diskurs und Hegemonie"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837619287"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.233",
+      "type": "book-chapter",
+      "page": "233-256",
+      "title": [
+        "Blinde Flecken überbrücken"
+      ],
+      "author": [
+        {
+          "given": "Shadia",
+          "family": "Husseini de Araújo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "subtitle": [
+        "Eine Verknüpfung von Edward W. Saids Denkfigur der imaginativen Geographie mit der Hegemonie- und Diskurstheorie Ernesto Laclau und Chantal Mouffes"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.105",
+      "type": "book-chapter",
+      "page": "105-126",
+      "title": [
+        "Hegemonie, Diskurs, Geschlecht"
+      ],
+      "author": [
+        {
+          "given": "Gundula",
+          "family": "Ludwig",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "subtitle": [
+        "Gesellschaftstheorie als Subjekttheorie, Subjekttheorie als Gesellschaftstheorie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839419281.203",
+      "type": "book-chapter",
+      "page": "203-232",
+      "title": [
+        "Zur Genealogie neoliberaler Hegemonie am Beispiel der ›unternehmerischen Stadt‹ in Frankfurt am Main"
+      ],
+      "author": [
+        {
+          "given": "Sebastian",
+          "family": "Schipper",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Diskurs und Hegemonie"
+      ],
+      "ISBN": [
+        "9783837619287",
+        "9783839419281"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            10,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "",
+      "authors": [
+        "Iris Dzudzek",
+        "Caren Kunze",
+        "Joscha Wullweber"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [
+        "Iris Dzudzek",
+        "Caren Kunze",
+        "Joscha Wullweber"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.257",
+      "citation_pages": "257-260"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839419281.fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Ein theoretischer Universalschlüssel? Zur Ontologisierung des Hegemoniebegriffs bei Laclau und Mouffe",
+      "authors": [
+        "Benjamin Opratko"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.59",
+      "citation_pages": "59-84"
+    },
+    {
+      "title": "Hegemonietheoretische Zugänge zum Finanzwesen Neogramscianismus und Poststrukturalismus",
+      "authors": [
+        "Christoph Scherrer"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.173",
+      "citation_pages": "173-202"
+    },
+    {
+      "title": "Konturen eines politischen Analyserahmens Hegemonie, Diskurs und Antagonismus",
+      "authors": [
+        "Joscha Wullweber"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.29",
+      "citation_pages": "29-58"
+    },
+    {
+      "title": "»Alle Verhältnisse umwerfen!« Und dafür eine subjektfundierte Hegemonietheorie",
+      "authors": [
+        "Friederike Habermann"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.85",
+      "citation_pages": "85-104"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Iris Dzudzek",
+        "Caren Kunze",
+        "Joscha Wullweber"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "",
+      "authors": [
+        "Iris Dzudzek",
+        "Caren Kunze",
+        "Joscha Wullweber"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.bm",
+      "citation_pages": "261-264"
+    },
+    {
+      "title": "Eine politische Konzeption von Räumen",
+      "authors": [
+        "Georg Glasze"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.151",
+      "citation_pages": "151-172"
+    },
+    {
+      "title": "Einleitung: Poststrukturalistische Hegemonie-theorien als Gesellschaftskritik",
+      "authors": [
+        "Iris Dzudzek",
+        "Caren Kunze",
+        "Joscha Wullweber"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.intro",
+      "citation_pages": "7-28"
+    },
+    {
+      "title": "Die Artikulation von Differenz Subjektpositionen, Intersektionalität und Hegemonie",
+      "authors": [
+        "Kathrin Ganz"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.127",
+      "citation_pages": "127-150"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839419281.bm",
+      "citation_pages": "261-264"
+    },
+    {
+      "title": "Blinde Flecken überbrücken Eine Verknüpfung von Edward W. Saids Denkfigur der imaginativen Geographie mit der Hegemonie- und Diskurstheorie Ernesto Laclau und Chantal Mouffes",
+      "authors": [
+        "Shadia Husseini de Araújo"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.233",
+      "citation_pages": "233-256"
+    },
+    {
+      "title": "Hegemonie, Diskurs, Geschlecht Gesellschaftstheorie als Subjekttheorie, Subjekttheorie als Gesellschaftstheorie",
+      "authors": [
+        "Gundula Ludwig"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.105",
+      "citation_pages": "105-126"
+    },
+    {
+      "title": "Zur Genealogie neoliberaler Hegemonie am Beispiel der ›unternehmerischen Stadt‹ in Frankfurt am Main",
+      "authors": [
+        "Sebastian Schipper"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839419281.203",
+      "citation_pages": "203-232"
+    }
+  ]
+}

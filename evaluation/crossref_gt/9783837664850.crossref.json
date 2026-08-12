@@ -1,0 +1,1245 @@
+{
+  "isbn": "9783837664850",
+  "fetched_at": "2026-08-11T22:40:47.670901+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-005",
+      "type": "book-chapter",
+      "page": "115-142",
+      "title": [
+        "5. Peering Through the Macroscope . Baseline and Background"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-015",
+      "type": "book-chapter",
+      "page": "243-306",
+      "title": [
+        "Supplements"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-014",
+      "type": "book-chapter",
+      "page": "229-242",
+      "title": [
+        "10. Conclusion . On the Role of Emotions and Computers"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-016",
+      "type": "book-chapter",
+      "page": "307-328",
+      "title": [
+        "Bibliography"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-007",
+      "type": "book-chapter",
+      "page": "144-152",
+      "title": [
+        "A History of Resistance Legislation (1947–1985)"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-010",
+      "type": "book-chapter",
+      "page": "183-183",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-009",
+      "type": "book-chapter",
+      "page": "163-182",
+      "title": [
+        "7. A Strong Disposition . Discussing the Pension Act for Extraordinary Government Employees"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-002",
+      "type": "book-chapter",
+      "page": "45-64",
+      "title": [
+        "2. Emotions"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-toc",
+      "type": "book-chapter",
+      "page": "5-8",
+      "title": [
+        "Contents"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-008",
+      "type": "book-chapter",
+      "page": "153-162",
+      "title": [
+        "6. Erratic Emotions . Mining the Underground in the Dutch Parliament"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-001",
+      "type": "book-chapter",
+      "page": "9-44",
+      "title": [
+        "1. Introduction . On War, Emotions, and Computers in History"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-003",
+      "type": "book-chapter",
+      "page": "65-86",
+      "title": [
+        "3. Materials and Data . Digitised Sources and a Lexicon"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-004",
+      "type": "book-chapter",
+      "page": "87-114",
+      "title": [
+        "4. Methods and Operationalisation . A Computer-assisted Approach to the Analysis of Digitised Historical Texts"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-017",
+      "type": "book-chapter",
+      "page": "329-330",
+      "title": [
+        "Author Information"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-006",
+      "type": "book-chapter",
+      "page": "143-144",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-012",
+      "type": "book-chapter",
+      "page": "193-204",
+      "title": [
+        "8. Emotional Consistency . A Macroscopic View on War Victim Debates"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-013",
+      "type": "book-chapter",
+      "page": "205-228",
+      "title": [
+        "9. Emotional Scaffolding . The Construction of War Victim Legislation in Parliament"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2023-04-03T00:00:00Z",
+            "timestamp": 1680480000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839464854-011",
+      "type": "book-chapter",
+      "page": "184-192",
+      "title": [
+        "A History of Alleviating War Victims'' Suffering in Parliament (1945–1989"
+      ],
+      "author": [
+        {
+          "given": "Milan",
+          "family": "van Lange",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Humanities Research",
+        "Emotional Imprints of War"
+      ],
+      "ISBN": [
+        "9783837664850",
+        "9783839464854"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            3
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "5. Peering Through the Macroscope . Baseline and Background",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-005",
+      "citation_pages": "115-142"
+    },
+    {
+      "title": "Supplements",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-015",
+      "citation_pages": "243-306"
+    },
+    {
+      "title": "10. Conclusion . On the Role of Emotions and Computers",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-014",
+      "citation_pages": "229-242"
+    },
+    {
+      "title": "Bibliography",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-016",
+      "citation_pages": "307-328"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "A History of Resistance Legislation (1947–1985)",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-007",
+      "citation_pages": "144-152"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-010",
+      "citation_pages": "183-183"
+    },
+    {
+      "title": "7. A Strong Disposition . Discussing the Pension Act for Extraordinary Government Employees",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-009",
+      "citation_pages": "163-182"
+    },
+    {
+      "title": "2. Emotions",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-002",
+      "citation_pages": "45-64"
+    },
+    {
+      "title": "Contents",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-toc",
+      "citation_pages": "5-8"
+    },
+    {
+      "title": "6. Erratic Emotions . Mining the Underground in the Dutch Parliament",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-008",
+      "citation_pages": "153-162"
+    },
+    {
+      "title": "1. Introduction . On War, Emotions, and Computers in History",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-001",
+      "citation_pages": "9-44"
+    },
+    {
+      "title": "3. Materials and Data . Digitised Sources and a Lexicon",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-003",
+      "citation_pages": "65-86"
+    },
+    {
+      "title": "4. Methods and Operationalisation . A Computer-assisted Approach to the Analysis of Digitised Historical Texts",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-004",
+      "citation_pages": "87-114"
+    },
+    {
+      "title": "Author Information",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-017",
+      "citation_pages": "329-330"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-006",
+      "citation_pages": "143-144"
+    },
+    {
+      "title": "8. Emotional Consistency . A Macroscopic View on War Victim Debates",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-012",
+      "citation_pages": "193-204"
+    },
+    {
+      "title": "9. Emotional Scaffolding . The Construction of War Victim Legislation in Parliament",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-013",
+      "citation_pages": "205-228"
+    },
+    {
+      "title": "A History of Alleviating War Victims'' Suffering in Parliament (1945–1989",
+      "authors": [
+        "Milan van Lange"
+      ],
+      "chapter_doi": "10.14361/9783839464854-011",
+      "citation_pages": "184-192"
+    }
+  ]
+}

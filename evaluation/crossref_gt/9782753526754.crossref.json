@@ -1,6 +1,6 @@
 {
   "isbn": "9782753526754",
-  "fetched_at": "2026-08-11T14:54:20.376631+00:00",
+  "fetched_at": "2026-08-11T22:44:07.746552+00:00",
   "license": "https://www.openedition.org/12554",
   "license_source": "crossref",
   "raw_items": [
@@ -734,59 +734,6 @@
           "URL": "https://www.openedition.org/12554"
         }
       ],
-      "DOI": "10.4000/books.pur.2293",
-      "type": "book-chapter",
-      "title": [
-        "Patrimoine et vieilles régions industrielles : des territoires entre mémoire et projet"
-      ],
-      "author": [
-        {
-          "given": "Edith",
-          "family": "Fagnoni",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Habiter le patrimoine"
-      ],
-      "ISBN": [
-        "9782753526754",
-        "9782753500013"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2005
-          ]
-        ]
-      }
-    },
-    {
-      "license": [
-        {
-          "start": {
-            "date-parts": [
-              [
-                2005,
-                1,
-                1
-              ]
-            ],
-            "date-time": "2005-01-01T00:00:00Z",
-            "timestamp": 1104537600000
-          },
-          "content-version": "unspecified",
-          "delay-in-days": 0,
-          "URL": "https://www.openedition.org/12554"
-        }
-      ],
       "DOI": "10.4000/books.pur.2226",
       "type": "book-chapter",
       "page": "75-92",
@@ -869,6 +816,59 @@
             {
               "role": "author",
               "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Habiter le patrimoine"
+      ],
+      "ISBN": [
+        "9782753526754",
+        "9782753500013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2005-01-01T00:00:00Z",
+            "timestamp": 1104537600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pur.2293",
+      "type": "book-chapter",
+      "title": [
+        "Patrimoine et vieilles régions industrielles : des territoires entre mémoire et projet"
+      ],
+      "author": [
+        {
+          "given": "Edith",
+          "family": "Fagnoni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
             }
           ]
         }
@@ -2433,14 +2433,6 @@
       "citation_pages": "467-478"
     },
     {
-      "title": "Patrimoine et vieilles régions industrielles : des territoires entre mémoire et projet",
-      "authors": [
-        "Edith Fagnoni"
-      ],
-      "chapter_doi": "10.4000/books.pur.2293",
-      "citation_pages": null
-    },
-    {
       "title": "Habiter le patrimoine : les résidents âgés du centre historique de Mexico face aux transformations de leur espace de vie",
       "authors": [
         "Catherine Paquette",
@@ -2456,6 +2448,14 @@
       ],
       "chapter_doi": "10.4000/books.pur.2245",
       "citation_pages": "227-243"
+    },
+    {
+      "title": "Patrimoine et vieilles régions industrielles : des territoires entre mémoire et projet",
+      "authors": [
+        "Edith Fagnoni"
+      ],
+      "chapter_doi": "10.4000/books.pur.2293",
+      "citation_pages": null
     },
     {
       "title": "Les acquis d’une initiative locale. La mise en valeur du patrimoine industriel de la ville de Volos, en Grèce",

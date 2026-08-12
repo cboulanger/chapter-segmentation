@@ -1,0 +1,934 @@
+{
+  "isbn": "9781906924225",
+  "fetched_at": "2026-08-11T22:41:15.117224+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_source": "unpaywall",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0006.01",
+      "type": "book-chapter",
+      "page": "11-17",
+      "title": [
+        "La réception des Bienveillantes dans les milieux intellectuels français an 2006"
+      ],
+      "author": [
+        {
+          "given": "Thierry",
+          "family": "Laurent",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.13",
+      "type": "book-chapter",
+      "page": "197-212",
+      "title": [
+        "Le \"curieux exercice\": voyeurisme et conscience du meurtre"
+      ],
+      "author": [
+        {
+          "given": "Pauline",
+          "family": "de Tholozany",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.18",
+      "type": "book-chapter",
+      "page": "277-298",
+      "title": [
+        "Les Bienveillantes: une position ironique"
+      ],
+      "author": [
+        {
+          "given": "Yves",
+          "family": "Boisseleau",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.10",
+      "type": "book-chapter",
+      "page": "155-170",
+      "title": [
+        "L'homosexualité dans Les Bienveillantes: crise de l'identité, crise de l'Histoire"
+      ],
+      "author": [
+        {
+          "given": "Stéphane",
+          "family": "Roussel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.04",
+      "type": "book-chapter",
+      "page": "47-72",
+      "title": [
+        "La dentellerie du réel"
+      ],
+      "author": [
+        {
+          "given": "Antoine",
+          "family": "Jurga",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.09",
+      "type": "book-chapter",
+      "page": "141-153",
+      "title": [
+        "Maximilien Aue: une homosexualité de rigueur?"
+      ],
+      "author": [
+        {
+          "given": "Éric",
+          "family": "Levéel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.03",
+      "type": "book-chapter",
+      "page": "31-45",
+      "title": [
+        "Les Bienveillantes: une parole qui donne la voix au bourreau"
+      ],
+      "author": [
+        {
+          "given": "Julie",
+          "family": "Delorme",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.14",
+      "type": "book-chapter",
+      "page": "213-230",
+      "title": [
+        "Lieux réels et lieux imaginaires dans Les Bienveillantes"
+      ],
+      "author": [
+        {
+          "given": "Peter",
+          "family": "Tame",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.08",
+      "type": "book-chapter",
+      "page": "125-139",
+      "title": [
+        "Rêves et fantasmes dans Les Bienveillantes"
+      ],
+      "author": [
+        {
+          "given": "Edith",
+          "family": "Perry",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.05",
+      "type": "book-chapter",
+      "page": "73-86",
+      "title": [
+        "Les silences des Bienveillantes"
+      ],
+      "author": [
+        {
+          "given": "Bruno",
+          "family": "Viard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.21",
+      "type": "book-chapter",
+      "page": "1-10",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Murielle Lucie",
+          "family": "Clément",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.12",
+      "type": "book-chapter",
+      "page": "185-195",
+      "title": [
+        "À propos des Bienveillantes. Variations autour de la perversion"
+      ],
+      "author": [
+        {
+          "given": "Patrice",
+          "family": "Imbaud",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.06",
+      "type": "book-chapter",
+      "page": "87-101",
+      "title": [
+        "Max aux enfers. Esquisses \"topographiques\"..."
+      ],
+      "author": [
+        {
+          "given": "Denis",
+          "family": "Briand",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.17",
+      "type": "book-chapter",
+      "page": "263-275",
+      "title": [
+        "Les Bienveillantes: le National-socialisme comme mal métaphysique"
+      ],
+      "author": [
+        {
+          "given": "Youssef",
+          "family": "Ferdjani",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.15",
+      "type": "book-chapter",
+      "page": "231-244",
+      "title": [
+        "Un langage impossible"
+      ],
+      "author": [
+        {
+          "given": "Serge",
+          "family": "Zenkine",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.11",
+      "type": "book-chapter",
+      "page": "171-184",
+      "title": [
+        "La Shoah en flânant?"
+      ],
+      "author": [
+        {
+          "given": "J. Marina",
+          "family": "Davies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.19",
+      "type": "book-chapter",
+      "page": "299-316",
+      "title": [
+        "Max Aue, un nazi peu typique? L'abjection comme moteur de la Shoah: une lecture kristevienne des Bienveillantes"
+      ],
+      "author": [
+        {
+          "given": "Helena",
+          "family": "Duffy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.02",
+      "type": "book-chapter",
+      "page": "19-30",
+      "title": [
+        "\"Frères humains...\": Les Bienveillantes, une histoire de familles"
+      ],
+      "author": [
+        {
+          "given": "Wladimir",
+          "family": "Troubetzkoy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.07",
+      "type": "book-chapter",
+      "page": "103-124",
+      "title": [
+        "La connaissance du narrateur"
+      ],
+      "author": [
+        {
+          "given": "Dominique",
+          "family": "Bocage-Lefebvre",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.16",
+      "type": "book-chapter",
+      "page": "245-262",
+      "title": [
+        "Max Aue manufacture de la dentelle.La lecture dans Les Bienveillantes"
+      ],
+      "author": [
+        {
+          "given": "Yolanda",
+          "family": "Viñas del Palacio",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0006.20",
+      "type": "book-chapter",
+      "page": "317-330",
+      "title": [
+        "À propos des corps liquides"
+      ],
+      "author": [
+        {
+          "given": "Sabine",
+          "family": "van Wesemael",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Les Bienveillantes de Jonathan Littell: Études réunies par Murielle Lucie Clément"
+      ],
+      "ISBN": [
+        "9781906924225"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "La réception des Bienveillantes dans les milieux intellectuels français an 2006",
+      "authors": [
+        "Thierry Laurent"
+      ],
+      "chapter_doi": "10.11647/obp.0006.01",
+      "citation_pages": "11-17"
+    },
+    {
+      "title": "Le \"curieux exercice\": voyeurisme et conscience du meurtre",
+      "authors": [
+        "Pauline de Tholozany"
+      ],
+      "chapter_doi": "10.11647/obp.0006.13",
+      "citation_pages": "197-212"
+    },
+    {
+      "title": "Les Bienveillantes: une position ironique",
+      "authors": [
+        "Yves Boisseleau"
+      ],
+      "chapter_doi": "10.11647/obp.0006.18",
+      "citation_pages": "277-298"
+    },
+    {
+      "title": "L'homosexualité dans Les Bienveillantes: crise de l'identité, crise de l'Histoire",
+      "authors": [
+        "Stéphane Roussel"
+      ],
+      "chapter_doi": "10.11647/obp.0006.10",
+      "citation_pages": "155-170"
+    },
+    {
+      "title": "La dentellerie du réel",
+      "authors": [
+        "Antoine Jurga"
+      ],
+      "chapter_doi": "10.11647/obp.0006.04",
+      "citation_pages": "47-72"
+    },
+    {
+      "title": "Maximilien Aue: une homosexualité de rigueur?",
+      "authors": [
+        "Éric Levéel"
+      ],
+      "chapter_doi": "10.11647/obp.0006.09",
+      "citation_pages": "141-153"
+    },
+    {
+      "title": "Les Bienveillantes: une parole qui donne la voix au bourreau",
+      "authors": [
+        "Julie Delorme"
+      ],
+      "chapter_doi": "10.11647/obp.0006.03",
+      "citation_pages": "31-45"
+    },
+    {
+      "title": "Lieux réels et lieux imaginaires dans Les Bienveillantes",
+      "authors": [
+        "Peter Tame"
+      ],
+      "chapter_doi": "10.11647/obp.0006.14",
+      "citation_pages": "213-230"
+    },
+    {
+      "title": "Rêves et fantasmes dans Les Bienveillantes",
+      "authors": [
+        "Edith Perry"
+      ],
+      "chapter_doi": "10.11647/obp.0006.08",
+      "citation_pages": "125-139"
+    },
+    {
+      "title": "Les silences des Bienveillantes",
+      "authors": [
+        "Bruno Viard"
+      ],
+      "chapter_doi": "10.11647/obp.0006.05",
+      "citation_pages": "73-86"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Murielle Lucie Clément"
+      ],
+      "chapter_doi": "10.11647/obp.0006.21",
+      "citation_pages": "1-10"
+    },
+    {
+      "title": "À propos des Bienveillantes. Variations autour de la perversion",
+      "authors": [
+        "Patrice Imbaud"
+      ],
+      "chapter_doi": "10.11647/obp.0006.12",
+      "citation_pages": "185-195"
+    },
+    {
+      "title": "Max aux enfers. Esquisses \"topographiques\"...",
+      "authors": [
+        "Denis Briand"
+      ],
+      "chapter_doi": "10.11647/obp.0006.06",
+      "citation_pages": "87-101"
+    },
+    {
+      "title": "Les Bienveillantes: le National-socialisme comme mal métaphysique",
+      "authors": [
+        "Youssef Ferdjani"
+      ],
+      "chapter_doi": "10.11647/obp.0006.17",
+      "citation_pages": "263-275"
+    },
+    {
+      "title": "Un langage impossible",
+      "authors": [
+        "Serge Zenkine"
+      ],
+      "chapter_doi": "10.11647/obp.0006.15",
+      "citation_pages": "231-244"
+    },
+    {
+      "title": "La Shoah en flânant?",
+      "authors": [
+        "J. Marina Davies"
+      ],
+      "chapter_doi": "10.11647/obp.0006.11",
+      "citation_pages": "171-184"
+    },
+    {
+      "title": "Max Aue, un nazi peu typique? L'abjection comme moteur de la Shoah: une lecture kristevienne des Bienveillantes",
+      "authors": [
+        "Helena Duffy"
+      ],
+      "chapter_doi": "10.11647/obp.0006.19",
+      "citation_pages": "299-316"
+    },
+    {
+      "title": "\"Frères humains...\": Les Bienveillantes, une histoire de familles",
+      "authors": [
+        "Wladimir Troubetzkoy"
+      ],
+      "chapter_doi": "10.11647/obp.0006.02",
+      "citation_pages": "19-30"
+    },
+    {
+      "title": "La connaissance du narrateur",
+      "authors": [
+        "Dominique Bocage-Lefebvre"
+      ],
+      "chapter_doi": "10.11647/obp.0006.07",
+      "citation_pages": "103-124"
+    },
+    {
+      "title": "Max Aue manufacture de la dentelle.La lecture dans Les Bienveillantes",
+      "authors": [
+        "Yolanda Viñas del Palacio"
+      ],
+      "chapter_doi": "10.11647/obp.0006.16",
+      "citation_pages": "245-262"
+    },
+    {
+      "title": "À propos des corps liquides",
+      "authors": [
+        "Sabine van Wesemael"
+      ],
+      "chapter_doi": "10.11647/obp.0006.20",
+      "citation_pages": "317-330"
+    }
+  ]
+}

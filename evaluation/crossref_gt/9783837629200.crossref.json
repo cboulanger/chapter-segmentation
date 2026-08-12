@@ -1,0 +1,915 @@
+{
+  "isbn": "9783837629200",
+  "fetched_at": "2026-08-11T22:40:49.911626+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839429204-002",
+      "type": "book-chapter",
+      "page": "17-40",
+      "title": [
+        "2. Vom Metropolitan Board of Works zur Greater London Authority - Stadtpolitik und Stadtplanung in London im Wandel"
+      ],
+      "author": [
+        {
+          "given": "Gerald",
+          "family": "Wood",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-011",
+      "type": "book-chapter",
+      "page": "201-216",
+      "title": [
+        "11. Wohnen in London - vom Investorenstädtebau zum öffentlichen Wohnungsbau und zurück"
+      ],
+      "author": [
+        {
+          "given": "Maren",
+          "family": "Harnack",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-008",
+      "type": "book-chapter",
+      "page": "135-152",
+      "title": [
+        "8. Die Olympischen Sommerspiele 2012 - Festivalisierung und Stadtentwicklung im Londoner Osten"
+      ],
+      "author": [
+        {
+          "given": "Holger",
+          "family": "Kretschmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Boris",
+          "family": "Braun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-010",
+      "type": "book-chapter",
+      "page": "185-200",
+      "title": [
+        "10. Gentrification und gentrifizierte Stadträume in London"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3249-5162",
+          "authenticated-orcid": true,
+          "given": "Jan",
+          "family": "Glatter",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-004",
+      "type": "book-chapter",
+      "page": "61-82",
+      "title": [
+        "4. Von den East India Docks zum super port \"London Gateway\" - die Zukunft der Vergangenheit"
+      ],
+      "author": [
+        {
+          "given": "Dirk",
+          "family": "Schubert",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-007",
+      "type": "book-chapter",
+      "page": "119-134",
+      "title": [
+        "7. Städtebauliche Großprojekte und ihre Bedeutung für die Stadtentwicklung"
+      ],
+      "author": [
+        {
+          "given": "Cordelia",
+          "family": "Polinna",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-014",
+      "type": "book-chapter",
+      "page": "245-246",
+      "title": [
+        "Backmatter"
+      ],
+      "author": [
+        {
+          "given": "Veronika",
+          "family": "Selbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Zehner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-013",
+      "type": "book-chapter",
+      "page": "243-244",
+      "title": [
+        "Autorenverzeichnis"
+      ],
+      "author": [
+        {
+          "given": "Veronika",
+          "family": "Selbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Zehner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-003",
+      "type": "book-chapter",
+      "page": "41-60",
+      "title": [
+        "3. Londons Regenerierungspraxis - Queen of Botox?"
+      ],
+      "author": [
+        {
+          "given": "Felicitas",
+          "family": "Hillmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-012",
+      "type": "book-chapter",
+      "page": "217-242",
+      "title": [
+        "12. London - multikulturelle Metropole"
+      ],
+      "author": [
+        {
+          "given": "Veronika",
+          "family": "Selbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-prf",
+      "type": "book-chapter",
+      "page": "5-8",
+      "title": [
+        "Vorwort und Danksagung"
+      ],
+      "author": [
+        {
+          "given": "Veronika",
+          "family": "Selbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Zehner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Veronika",
+          "family": "Selbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Zehner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-toc",
+      "type": "book-chapter",
+      "page": "9-10",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Veronika",
+          "family": "Selbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Zehner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-006",
+      "type": "book-chapter",
+      "page": "101-118",
+      "title": [
+        "6. Rising High - die Entwicklung des Hochhausbaus unter dem Einfluss von Internationalisierung, Stadtplanung und gesellschaftlichem Diskurs"
+      ],
+      "author": [
+        {
+          "given": "Marina",
+          "family": "Rico",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Zehner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-001",
+      "type": "book-chapter",
+      "page": "11-16",
+      "title": [
+        "1. Einleitung: Londons Weg in die Postmoderne - Prozesse, Strukturen und Auswirkungen"
+      ],
+      "author": [
+        {
+          "given": "Veronika",
+          "family": "Selbach",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Zehner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-005",
+      "type": "book-chapter",
+      "page": "83-100",
+      "title": [
+        "5. Canary Wharf und die Isle of Dogs - von der Hafenbrache zum internationalen Finanzplatz"
+      ],
+      "author": [
+        {
+          "given": "Klaus",
+          "family": "Zehner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429204-009",
+      "type": "book-chapter",
+      "page": "153-184",
+      "title": [
+        "9. \"The Regeneration Games\"? Das Erbe der Spiele: East London post-2012. Das Beispiel Stratford"
+      ],
+      "author": [
+        {
+          "given": "Valerie",
+          "family": "Viehoff",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozial- und Kulturgeographie",
+        "London - Geographien einer Global City"
+      ],
+      "ISBN": [
+        "9783837629200",
+        "9783839429204"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            13
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "2. Vom Metropolitan Board of Works zur Greater London Authority - Stadtpolitik und Stadtplanung in London im Wandel",
+      "authors": [
+        "Gerald Wood"
+      ],
+      "chapter_doi": "10.14361/9783839429204-002",
+      "citation_pages": "17-40"
+    },
+    {
+      "title": "11. Wohnen in London - vom Investorenstädtebau zum öffentlichen Wohnungsbau und zurück",
+      "authors": [
+        "Maren Harnack"
+      ],
+      "chapter_doi": "10.14361/9783839429204-011",
+      "citation_pages": "201-216"
+    },
+    {
+      "title": "8. Die Olympischen Sommerspiele 2012 - Festivalisierung und Stadtentwicklung im Londoner Osten",
+      "authors": [
+        "Holger Kretschmer",
+        "Boris Braun"
+      ],
+      "chapter_doi": "10.14361/9783839429204-008",
+      "citation_pages": "135-152"
+    },
+    {
+      "title": "10. Gentrification und gentrifizierte Stadträume in London",
+      "authors": [
+        "Jan Glatter"
+      ],
+      "chapter_doi": "10.14361/9783839429204-010",
+      "citation_pages": "185-200"
+    },
+    {
+      "title": "4. Von den East India Docks zum super port \"London Gateway\" - die Zukunft der Vergangenheit",
+      "authors": [
+        "Dirk Schubert"
+      ],
+      "chapter_doi": "10.14361/9783839429204-004",
+      "citation_pages": "61-82"
+    },
+    {
+      "title": "7. Städtebauliche Großprojekte und ihre Bedeutung für die Stadtentwicklung",
+      "authors": [
+        "Cordelia Polinna"
+      ],
+      "chapter_doi": "10.14361/9783839429204-007",
+      "citation_pages": "119-134"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [
+        "Veronika Selbach",
+        "Klaus Zehner"
+      ],
+      "chapter_doi": "10.14361/9783839429204-014",
+      "citation_pages": "245-246"
+    },
+    {
+      "title": "Autorenverzeichnis",
+      "authors": [
+        "Veronika Selbach",
+        "Klaus Zehner"
+      ],
+      "chapter_doi": "10.14361/9783839429204-013",
+      "citation_pages": "243-244"
+    },
+    {
+      "title": "3. Londons Regenerierungspraxis - Queen of Botox?",
+      "authors": [
+        "Felicitas Hillmann"
+      ],
+      "chapter_doi": "10.14361/9783839429204-003",
+      "citation_pages": "41-60"
+    },
+    {
+      "title": "12. London - multikulturelle Metropole",
+      "authors": [
+        "Veronika Selbach"
+      ],
+      "chapter_doi": "10.14361/9783839429204-012",
+      "citation_pages": "217-242"
+    },
+    {
+      "title": "Vorwort und Danksagung",
+      "authors": [
+        "Veronika Selbach",
+        "Klaus Zehner"
+      ],
+      "chapter_doi": "10.14361/9783839429204-prf",
+      "citation_pages": "5-8"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Veronika Selbach",
+        "Klaus Zehner"
+      ],
+      "chapter_doi": "10.14361/9783839429204-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Veronika Selbach",
+        "Klaus Zehner"
+      ],
+      "chapter_doi": "10.14361/9783839429204-toc",
+      "citation_pages": "9-10"
+    },
+    {
+      "title": "6. Rising High - die Entwicklung des Hochhausbaus unter dem Einfluss von Internationalisierung, Stadtplanung und gesellschaftlichem Diskurs",
+      "authors": [
+        "Marina Rico",
+        "Klaus Zehner"
+      ],
+      "chapter_doi": "10.14361/9783839429204-006",
+      "citation_pages": "101-118"
+    },
+    {
+      "title": "1. Einleitung: Londons Weg in die Postmoderne - Prozesse, Strukturen und Auswirkungen",
+      "authors": [
+        "Veronika Selbach",
+        "Klaus Zehner"
+      ],
+      "chapter_doi": "10.14361/9783839429204-001",
+      "citation_pages": "11-16"
+    },
+    {
+      "title": "5. Canary Wharf und die Isle of Dogs - von der Hafenbrache zum internationalen Finanzplatz",
+      "authors": [
+        "Klaus Zehner"
+      ],
+      "chapter_doi": "10.14361/9783839429204-005",
+      "citation_pages": "83-100"
+    },
+    {
+      "title": "9. \"The Regeneration Games\"? Das Erbe der Spiele: East London post-2012. Das Beispiel Stratford",
+      "authors": [
+        "Valerie Viehoff"
+      ],
+      "chapter_doi": "10.14361/9783839429204-009",
+      "citation_pages": "153-184"
+    }
+  ]
+}

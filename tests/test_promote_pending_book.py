@@ -113,6 +113,22 @@ class TestPromoteBookGates(unittest.TestCase):
         self.assertTrue(outcome.startswith("SKIP: bounds/overlap check failed"))
         self.assertIn("overlap", outcome)
 
+    def test_skips_gracefully_on_malformed_expected_json(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fixture = _CorpusFixture(Path(tmp))
+            manifest = json.loads((fixture.pending_dir / "manifest.json").read_text(encoding="utf-8"))
+            manifest["books"].append({**_BOOK, "filename": "9781234567897.pdf"})
+            _write_manifest(fixture.pending_dir / "manifest.json", manifest["books"])
+            _write_blank_pdf(fixture.pending_dir / "9781234567897.pdf", 10)
+            _write_expected(
+                fixture.pending_dir / "9781234567897.expected.json",
+                [{"title": "Introduction", "authors": []}],
+            )
+            _isbn, outcome = promote_book(
+                "9781234567897", fixture.pending_dir, fixture.target_dir, "open-access", Mock(), None, dry_run=True
+            )
+        self.assertTrue(outcome.startswith("SKIP: unreadable PDF or malformed .expected.json"))
+
 
 class TestPromoteBookDryRun(unittest.TestCase):
     def test_dry_run_moves_nothing_and_reports_the_plan(self):

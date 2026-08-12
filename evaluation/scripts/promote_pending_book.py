@@ -79,9 +79,12 @@ def promote_book(
     if not pending_pdf.exists():
         return isbn, "SKIP: no PDF (pending/<isbn>.pdf missing)"
 
-    total_pages = len(PdfReader(str(pending_pdf)).pages)
-    chapters = json.loads(pending_expected.read_text(encoding="utf-8"))["chapters"]
-    errors = chapter_bounds_errors(chapters, total_pages)
+    try:
+        total_pages = len(PdfReader(str(pending_pdf)).pages)
+        chapters = json.loads(pending_expected.read_text(encoding="utf-8"))["chapters"]
+        errors = chapter_bounds_errors(chapters, total_pages)
+    except Exception as exc:
+        return isbn, f"SKIP: unreadable PDF or malformed .expected.json: {exc}"
     if errors:
         return isbn, f"SKIP: bounds/overlap check failed: {'; '.join(errors)}"
 

@@ -16,33 +16,49 @@ changes rarely and this one changes often.
 > see `docs/superpowers/specs/2026-08-08-multi-corpus-evaluation-design.md`.
 > The two result sections below ("Pure-heuristic results" and "Diverse
 > real-library evaluation set") correspond to the `open-access` and
-> `copyrighted-scans` corpora respectively. Both corpora have since grown
-> substantially (open-access gained 31 books reconciled from
-> `evaluation/crossref_gt/`; copyrighted-scans gained 2 hand-built Festschrift
-> volumes) -- the tables below predate that growth and are due for a full
-> re-run and rewrite; see `README.md`'s "Corpora" section for current counts.
+> `copyrighted-scans` corpora respectively.
+
+**2026-08-12 re-run, full expanded corpus.** `open-access/` has grown from
+6/37 books (depending which earlier snapshot) to **57**, and
+`copyrighted-scans/` from 11 to **13**, following the crossref_gt
+reconciliation, the two hand-built Festschrift volumes, and a pass of
+hand-verification corrections to previously-wrong chapter boundaries (see
+git log around 2026-08-11/12: `0d5ec5a`, `1e8ee92`, `69b9662`). This
+snapshot re-runs every *cheap* (no per-request API cost) evaluation --
+the pure-heuristic pytest harness, the heuristic/outline per-strategy
+report, and the heuristic+outline+Crossref strategy-pipeline script --
+against the full grown corpus. The LLM strategy and the layout-based TOC
+classifier pilot were **not** re-run (LLM costs real KISSKI budget; the
+layout pilot needs a separate `pdfalto` extraction pass over 20 new
+books) -- their numbers below are carried over from before the corpus
+grew and are called out as stale where they appear.
 
 ## Pure-heuristic results
 
-From `uv run pytest tests/test_segmentation_accuracy.py -q -s`
-(`chapter_segmentation.analyze_attachment`), one row per committed evaluation
-book:
+From `uv run pytest tests/test_segmentation_accuracy.py -q -s -m integration`
+(`chapter_segmentation.analyze_attachment`), run 2026-08-12 against the full
+70-book corpus (57 `open-access/` + 13 `copyrighted-scans/`). Full per-book
+detail lives in the published report
+(https://cboulanger.github.io/chapter-segmentation/); this is the aggregate:
 
-| Book (title / filename) | Language | Type | Precision | Recall | Found / Expected |
+| Corpus | Books | Precision | Recall | F1 | Found / Expected |
 | --- | --- | --- | --- | --- | --- |
-| Transformations of European Welfare States and Social Rights (`9783031466373.pdf`) | en | native | 1.00 | 1.00 | 11/11 found, 11/11 expected |
-| Violence, Imagination, and Resistance (`9781771993661.pdf`) | en | native | 1.00 | 1.00 | 10/10 found, 10/10 expected |
-| 20 ans de transparence à Genève (`9783907297339.pdf`) | fr | native | 1.00 | 1.00 | 11/11 found, 11/11 expected |
-| Accueillir des publics migrants et immigrés (`9782375460122.pdf`) | fr | native | 0.78 | 0.82 | 14/18 found, 14/17 expected |
-| Recht in der Krise — APARIUZ XXIII (`9783907297285.pdf`) | de | native | 0.69 | 0.69 | 9/13 found, 9/13 expected |
-| Recht umkämpft (`9783847432364.pdf`) | de | native | 0.95 | 0.95 | 20/21 found, 20/21 expected |
-| Jahrbuch für Rechtssoziologie und Rechtstheorie IV (`9783322969828.pdf`) | de | scan | 0.96 | 0.92 | 22/23 found, 22/24 expected |
+| `open-access/` | 57 | 0.46 | 0.51 | 0.48 | 550/1199 found, 550/1074 expected |
+| `copyrighted-scans/` | 13 | 0.49 | 0.32 | 0.39 | 99/201 found, 99/307 expected |
+| **combined** | **70** | **0.46** | **0.47** | **0.47** | **649/1400 found, 649/1381 expected** |
 
-Aggregate (micro): **precision 0.91, recall 0.91** across 107 expected
-chapters. These 7 books' numbers are unaffected by the layout-mode
-extraction fallback and evaluation OCR cache described in "Diverse
-real-library evaluation set" below -- their default-mode pypdf extraction
-already finds a usable TOC, so neither addition ever fires for them.
+This is a large drop from the previous 7-book snapshot's 0.91/0.91 -- **not
+a code regression**: those original 7 books are still in the corpus and
+still score exactly as before (see them called out in the mechanism/misses
+notes below), but they're now a small, easy fraction of a much larger and
+harder set. The bulk of the new `open-access/` growth (31 books reconciled
+from `evaluation/crossref_gt/`) is technical/textbook content where numbered
+subsections, figures, and glossary entries get mistaken for chapter titles
+-- a real, already-partially-documented heuristic gap (see "Per-strategy
+standalone results" below for how much of it the outline/Crossref
+strategies recover instead). The pytest run itself now **fails 6 subtests**
+(`recall > 0` regression guard) -- see "New zero-recall findings" below for
+what each one is and why.
 
 The heuristic pipeline's main mechanisms, in the order they run
 (see `src/chapter_segmentation/segmentation.py` for the full details on each):
@@ -91,16 +107,62 @@ Known remaining misses, all understood and accepted for now:
 - `9783322969828.pdf` (scan): one chapter's TOC line is OCR-garbled beyond
   what the fuzzy matcher recovers.
 
-`chapter_upload.py`'s `confidence_threshold` default was re-calibrated
-against this snapshot (now `0.90`): with ~91% of all proposed chapters
-already exactly correct, the sweep shows the threshold no longer buys
-precision (0.91 → 0.93 across the whole range) while anything above ~0.94
-sharply cuts how many correct chapters survive — the remaining errors are
-end-boundary quirks that the start-match confidence cannot see. **Re-run
-the calibration sweep (or re-derive it against `analyze_attachment`'s
-output) any time `find_toc_candidates`, `locate_chapter_start`, or
-`match_confidence` change, or the evaluation set grows** — these numbers
-are a snapshot tied to the current heuristics, not a permanent constant.
+### New zero-recall findings from the 2026-08-12 corpus growth
+
+Six books now fail the pytest harness's `recall > 0` regression guard
+(none carry `heuristic_expected_zero: true`). Traced by hand rather than
+guessed:
+
+- **`open-access/9781800642003.pdf`, `9781805114307.pdf`,
+  `9781805115717.pdf`, `9782821895607.pdf`** (0/17, 0/14, 0/57, 0/12
+  expected found): all four are `crossref_gt`-migrated technical/textbook
+  books -- the same "numbered subsections/figures mistaken for chapters"
+  gap already documented for 7 sibling books in this same migration batch
+  (which *are* flagged `heuristic_expected_zero: true`; these four simply
+  weren't flagged when that batch was reconciled). `analyze_attachment`
+  finds real chapter candidates for all four (1-15 of them), just none at
+  an exactly-correct boundary -- **and all four recover to 0.58-1.00
+  recall under the strategy pipeline** (outline and/or Crossref signal,
+  see "Strategy-pipeline results" below), confirming this is the same
+  known heuristic-only gap, not a new failure mode. Worth flagging
+  `heuristic_expected_zero: true` on these four to match their siblings
+  and keep the pytest suite green -- not done here since that's a
+  manifest-editing judgment call outside "run the evaluation," not a
+  reporting one.
+- **`copyrighted-scans/9781409403906.pdf`** (0/12 expected found): this
+  book's ground truth was hand-corrected on 2026-08-12 (commit `1e8ee92`)
+  -- every chapter after the Introduction had `pdf_start_index`/
+  `pdf_end_index` off by 1-3 pages in the old data. The *previously
+  reported* 0.08 recall (1/12, in the old "Diverse real-library" table
+  below) was true only against that wrong ground truth; the heuristic's
+  actual output never changed, and against the corrected boundaries it
+  matches zero of them. This is the GT correction **revealing** a
+  pre-existing heuristic gap that had been masked by a consistent
+  ground-truth offset, not a new regression -- not yet root-caused
+  further (has no Crossref/outline signal either, per "Strategy-pipeline
+  results" below, so it stays at 0 there too).
+- **`copyrighted-scans/9783465016878.pdf`** (0/0 found -- the heuristic
+  detects zero candidate chapters at all, not just zero correct ones):
+  unlike the book above, this one's ground truth was *not* touched by the
+  recent corrections. `find_toc_candidates` returns no TOC cluster at all;
+  inspecting the OCR'd front matter directly shows why -- the printed TOC's
+  dot-leader page numbers OCR onto their own separate line, detached from
+  the title line they belong to (page 4: five titles, then five bare
+  numbers `201 / 227 / 253 / 273 / 283` on trailing lines with no
+  "title ... number" line ever formed). This is the same class of gap
+  already documented for `9783789057366.pdf` below (dense dot-leader OCR
+  garbling), not yet root-caused to a specific fix. Previously reported at
+  0.15 recall (2/13) -- not yet explained why that used to work; possibly
+  a heuristic change in the intervening commits tightened the TOC-cluster
+  requirements enough to lose this book's weaker candidate set (not
+  confirmed by bisecting).
+
+`chapter_upload.py`'s `confidence_threshold` default (`0.90`) was
+calibrated against the old 7-book/~91%-correct snapshot above -- **now
+stale** given the much lower correctness rate on the full 70-book corpus.
+Re-run the calibration sweep (or re-derive it against `analyze_attachment`'s
+output on the current corpus) before trusting that default again; not done
+as part of this evaluation re-run.
 
 ### Heuristic fix: copyright/imprint page shadowing the real TOC
 
@@ -124,33 +186,59 @@ entries / 40 correctly detected chapters once a matching
 `test_segmentation_accuracy.py` after the fix reproduces every
 number in the tables above and below exactly -- none of the other books'
 TOC pages happen to have copyright-page text shaped like this.
-`9783428042241.pdf` has no hand-verified ground truth yet (see
-`CLAUDE.md`'s "Building ground truth"), so it isn't in any table here --
-its 41-entries/40-chapters result is a real, checked improvement, but
-unscored, not a precision/recall number.
+
+**Update, 2026-08-12:** `9783428042241.pdf` now has hand-verified ground
+truth (`evaluation/corpus/copyrighted-scans/9783428042241.expected.json`,
+built via the Crossref-page-range shortcut per `CLAUDE.md`) and is scored
+in the tables above: `precision=0.40 recall=0.40` (16/40 found, 16/40
+expected) under the pure heuristic, recovering to `precision=0.86
+recall=0.76` (44/51 found, 44/58 expected -- via `crossref`) under the
+strategy pipeline (see below). The unscored 41-entries/40-chapters figure
+above was this fix's own before/after check at the time, not a
+precision/recall number against real ground truth; the book's actual
+measured accuracy is lower than that figure implied; the fix itself (the
+`_looks_like_imprint_line` filter) is unaffected -- without it this book
+would still be at near-zero detected chapters, not the 16/40 it gets now.
 
 ## Strategy-pipeline results
 
 From `uv run python evaluation/scripts/evaluate_chapter_segmentation_strategies.py`
-(`analyze_attachment_with_strategies`):
+(`analyze_attachment_with_strategies`), re-run 2026-08-12 against the full
+70-book corpus. Full per-book detail (including each book's
+`strategies_used`) is in the raw run log, not reproduced here given its
+size -- this is the aggregate, alongside the pure-heuristic numbers from
+above for direct comparison:
 
-| Book (filename) | Precision | Recall | Found / Expected | Strategies used |
+| Corpus | Books | Strategy pipeline P / R / F1 | Found / Expected | Pure heuristic P / R / F1 (from above) |
 | --- | --- | --- | --- | --- |
-| `9783031466373.pdf` | 0.83 | 0.91 | 10/12 found, 10/11 expected | crossref, outline, outline+crossref |
-| `9781771993661.pdf` | 1.00 | 1.00 | 10/10 found, 10/10 expected | (falls back to heuristic) |
-| `9783907297339.pdf` | 0.82 | 0.82 | 9/11 found, 9/11 expected | outline |
-| `9782375460122.pdf` | 0.78 | 0.82 | 14/18 found, 14/17 expected | (falls back to heuristic) |
-| `9783907297285.pdf` | 0.64 | 0.69 | 9/14 found, 9/13 expected | outline |
-| `9783847432364.pdf` | 0.95 | 0.95 | 20/21 found, 20/21 expected | crossref |
-| `9783322969828.pdf` | 0.96 | 0.96 | 23/24 found, 23/24 expected | crossref |
+| `open-access/` | 57 | 0.78 / 0.85 / 0.81 | 908/1157 found, 908/1074 expected | 0.46 / 0.51 / 0.48 |
+| `copyrighted-scans/` | 13 | 0.58 / 0.43 / 0.49 | 131/225 found, 131/307 expected | 0.49 / 0.32 / 0.39 |
+| **combined** | **70** | **0.75 / 0.75 / 0.75** | **1039/1382 found, 1039/1381 expected** | **0.46 / 0.47 / 0.47** |
 
-Aggregate (micro): **precision 0.86, recall 0.89** across 107 expected
-chapters -- still below the pure-heuristic baseline's 0.91/0.91 above, so on
-this evaluation set the strategies remain a net *regression* when they fire,
-not an improvement, though a much smaller one than the previous snapshots.
+**This reverses the previous snapshot's headline finding.** On the old
+7-book set, the strategy pipeline was a net *regression* against the pure
+heuristic (0.86/0.89 vs. 0.91/0.91) -- on the full, much larger and harder
+corpus, it's a clear net *improvement*, especially on `open-access/` (0.81
+vs. 0.48 F1). The mechanism is exactly what the pure-heuristic section
+above already names as this corpus's dominant new gap: most of the 31
+`crossref_gt`-migrated books are technical/textbook content where the
+heuristic's TOC-line regex gets confused by numbered subsections, figures,
+and glossary entries, but where a real Crossref book-chapter record or PDF
+outline (see "Per-strategy standalone results" below -- 41 of the 57
+`open-access/` books now carry a real outline, up from 3 of 17 previously)
+gives the pipeline a resolved, book-order-correct chapter list to localize
+against instead of ever needing that fragile regex. `copyrighted-scans/`
+improves more modestly (0.49 vs. 0.39 F1) because only 3 of its 13 books
+have any Crossref/outline signal at all (`9783322969828.pdf`,
+`9783428042241.pdf`, `9783899496291.pdf` -- all DOI-backed; the other 10
+have neither a DOI nor a PDF outline by construction, see `README.md`'s
+"Evaluation set composition") -- for the other 10, `strategies_used` is
+always `[]` and the pipeline falls straight back to the pure-heuristic
+result, unchanged.
+
 `analyze_attachment_with_strategies` only falls back to the pure-heuristic
-pipeline when a book's merged candidate list is completely empty (two books
-above), never when it's merely wrong -- so a confidently-incomplete or
+pipeline when a book's merged candidate list is completely empty, never
+when it's merely wrong -- so a confidently-incomplete or
 imprecise outline/Crossref result is trusted over what the heuristic
 pipeline would have found instead. Root causes found and fixed so far (see
 `extract_outline_candidates` in
@@ -263,10 +351,25 @@ Known remaining gaps, not yet fixed:
   alike -- the same class of imprecision the pure-heuristic pipeline
   already has (see "Known remaining misses" above).
 
-**Given this net regression, `analyze_book_chapters.py`/the `/api/analyze`
-endpoint should not be pointed at the strategy pipeline for production use
-until the remaining gaps above are closed** -- re-run this evaluation after
-any further change to the outline/Crossref/fusion logic.
+All four of the pure-heuristic section's new unflagged zero-recall
+`open-access/` books (`9781800642003.pdf`, `9781805114307.pdf`,
+`9781805115717.pdf`, `9782821895607.pdf`) recover to non-trivial recall
+here (1.00, 0.93, 0.88, 0.58 respectively, via outline and/or crossref) --
+further evidence they're the known heuristic-only textbook gap, not a
+missing-signal problem. The two `copyrighted-scans/` zero-recall books
+(`9781409403906.pdf`, `9783465016878.pdf`) stay at zero here too, since
+neither has any Crossref/outline signal to fall back on.
+
+**Given the corpus-wide reversal above, `analyze_book_chapters.py`/the
+`/api/analyze` endpoint routing through the strategy pipeline is now
+net-*positive* on `open-access/`-shaped books (a real DOI or PDF outline,
+a well-produced printed TOC), though still only par-to-modestly-ahead of
+the pure heuristic on `copyrighted-scans/`-shaped books (no DOI, no
+outline, sometimes a scan)** -- re-run this evaluation after any further
+change to the outline/Crossref/fusion logic, and treat this as a
+reversal of the previous snapshot's "should not be pointed at" advice
+for the `open-access/`-shaped case specifically, not a blanket "safe for
+production everywhere" clearance.
 
 ## Diverse real-library evaluation set — results
 
@@ -280,25 +383,31 @@ and why they're in the set. They originally lived in the gitignored
 | Filename | Precision | Recall | Found / Expected | Recovery route |
 | --- | --- | --- | --- | --- |
 | `9783848736829.pdf` | 1.00 | 1.00 | 23/23, 23/23 | layout-mode fallback |
-| `9783492021234.pdf` | 0.27 | 0.29 | 4/15, 4/14 | layout-mode fallback |
-| `9783789016202.pdf` | 0.46 | 0.50 | 6/13, 6/12 | layout-mode fallback |
+| `9783492021234.pdf` | 0.41 | 0.50 | 7/17, 7/14 | layout-mode fallback |
+| `9783789016202.pdf` | 0.50 | 0.58 | 7/14, 7/12 | layout-mode fallback |
 | `9783899718188.pdf` | 0.27 | 0.30 | 3/11, 3/10 | layout-mode fallback |
-| `9780367439712.pdf` | 0.36 | 0.42 | 5/14, 5/12 | OCR (degenerate text layer) |
-| `9783789057366.pdf` | 0.00 | 0.00 | 0/2, 0/56 | OCR (degenerate text layer) -- still 0 |
-| `9783465016878.pdf` | 0.40 | 0.15 | 2/5, 2/13 | OCR (no text layer) |
-| `9781409403906.pdf` | 0.10 | 0.08 | 1/10, 1/12 | OCR (no text layer) |
-| `9783848704316.pdf` | 0.00 | 0.00 | 0/0, 0/15 | OCR (no text layer) -- still 0 |
-| `dnb-36942798X.pdf` | 0.00 | 0.00 | 0/1, 0/18 | OCR (no text layer) -- still 0 |
+| `9780367439712.pdf` | 0.31 | 0.42 | 5/16, 5/12 | OCR (degenerate text layer) |
+| `9783789057366.pdf` | 0.09 | 0.02 | 1/11, 1/56 | OCR (degenerate text layer) -- was "still 0," now a sliver of signal (not re-investigated) |
+| `9783465016878.pdf` | 0.00 | 0.00 | 0/0, 0/13 | OCR (no text layer) -- **new regression, was 0.15** |
+| `9781409403906.pdf` | 0.00 | 0.00 | 0/10, 0/12 | OCR (no text layer) -- **GT-correction-revealed gap, was 0.08** |
+| `9783848704316.pdf` | 0.25 | 0.07 | 1/4, 1/15 | OCR (no text layer) -- GT-correction recovered a sliver of signal |
+| `dnb-36942798X.pdf` | 0.00 | 0.00 | 0/2, 0/18 | OCR (no text layer) -- still 0 |
 
-Aggregate (micro, these 10 books alone): **precision 0.47, recall 0.24**
-(44/94 found correctly, 44/185 expected chapters). These are the same
-numbers whether run through the pure heuristic (`analyze_attachment`,
-`test_segmentation_accuracy.py`) or the full strategy pipeline
-(`analyze_attachment_with_strategies`, `strategies_used: []` on all 10) --
-none of the 10 has a Crossref record or a usable PDF outline, so the
-strategy pipeline always falls straight back to the same heuristic result
-on this set; the strategies genuinely add nothing here, for better or
-worse.
+See "New zero-recall findings from the 2026-08-12 corpus growth" above for
+the two bolded rows' root causes. Aggregate (micro, these 10 books alone):
+**precision 0.44, recall 0.25** (47/108 found, 47/185 expected chapters) --
+essentially flat versus the previous snapshot's 0.47/0.24 (47 vs. 44
+correct matches, same 185 expected chapters), but the underlying mix
+shifted: two books that used to show partial recall now show none (see
+above), offset by three books recovering more signal (`9783492021234.pdf`,
+`9783789016202.pdf`, `9783848704316.pdf`) and one moving off an exact 0.00
+(`9783789057366.pdf`). These are the same numbers whether run through the
+pure heuristic (`analyze_attachment`, `test_segmentation_accuracy.py`) or
+the full strategy pipeline (`analyze_attachment_with_strategies`,
+`strategies_used: []` on all 10, unchanged from before) -- none of the 10
+has a Crossref record or a usable PDF outline, so the strategy pipeline
+always falls straight back to the same heuristic result on this set; the
+strategies genuinely add nothing here, for better or worse.
 
 This is a large change from an earlier, incorrect reading of this same
 sample: all 10 books used to be reported as scoring 0.00/0.00 with
@@ -347,9 +456,13 @@ artifact, not an absence of signal:
   the same OCR-cache route as the two degenerate-text books above. 2 of the
   4 recover partial signal (0.08-0.15); 2 remain at 0.00 -- see below.
 
-**The 3 books still at 0.00 recall after OCR, with actual root causes**
-(traced by hand -- inspecting the cached OCR text and `find_toc_candidates`'
-raw output directly, not guessed):
+**The 3 books originally reported at 0.00 recall after OCR, with actual
+root causes** (traced by hand -- inspecting the cached OCR text and
+`find_toc_candidates`' raw output directly, not guessed). As of this
+2026-08-12 snapshot, 2 of these 3 (`9783789057366.pdf`, `9783848704316.pdf`)
+score a small nonzero recall (see the table above) -- not re-investigated
+to confirm whether the original root cause below still fully applies, only
+that it's no longer literally zero:
 
 - `9783789057366.pdf`: OCR *does* locate the real front-matter TOC page
   (`find_toc_candidates` finds it), but Tesseract's OCR of the dot-leader
@@ -383,22 +496,50 @@ These three keep `"heuristic_expected_zero": true` in `manifest.json` (a
 known, currently-accepted limitation, re-checked and re-justified with
 real evidence rather than the earlier blanket claim); the other seven of
 the ten are now `false` and are held to the same `recall > 0` regression
-guard as the rest of the evaluation set.
+guard as the rest of the evaluation set. Two of those seven
+(`9781409403906.pdf`, `9783465016878.pdf`) now fail that guard as of this
+snapshot -- see "New zero-recall findings from the 2026-08-12 corpus
+growth" above; they are not flagged here since, unlike the three above,
+their zero-recall status has not been confirmed as unrecoverable through
+every available extraction/OCR path, only observed in this run.
 
 ## Per-strategy standalone results (heuristic / outline / LLM)
 
 From `uv run python evaluation/generate_report.py --out public/` (heuristic,
 outline) plus `uv run python evaluation/refresh_llm_cache.py --mode full`
-populating each corpus's `evaluation/corpus/<name>/llm-cache/` (LLM) -- each strategy run independently
-via `analyze_attachment`, `analyze_attachment_outline_only`,
-`analyze_attachment_llm_only` against the full 17-book public-cache corpus,
-with no pipeline merge/fallback logic involved (see
+populating each corpus's `evaluation/corpus/<name>/llm-cache/` (LLM) -- each
+strategy run independently via `analyze_attachment`,
+`analyze_attachment_outline_only`, `analyze_attachment_llm_only`, with no
+pipeline merge/fallback logic involved (see
 `docs/superpowers/specs/2026-08-07-per-strategy-evaluation-design.md`).
 Live numbers (always current, no hand-written commentary):
-<https://cboulanger.github.io/chapter-segmentation/>;
+https://cboulanger.github.io/chapter-segmentation/;
 full per-model breakdown at its `llm/index.html`. See `README.md`'s
 "Per-strategy evaluation report" / "LLM strategy evaluation" for how to
 reproduce.
+
+**Heuristic and outline rows below are freshly re-run (2026-08-12) against
+the full 70-book corpus** (up from 17 in the snapshot this table originally
+reported). **The LLM row is carried over unchanged from before the corpus
+grew** -- `evaluation/refresh_llm_cache.py` costs real KISSKI API budget, so
+it was not re-run as part of this "cheap strategies only" pass; its
+"applicable books" denominator below still reflects the old, much smaller
+corpus and should not be compared directly against the new heuristic/outline
+denominators. `public-cache/` was also regenerated for this pass to cover
+the 25 `open-access/` books it was still missing (added by the corpus growth
+but never cached) -- **two `copyrighted-scans/` books
+(`9780367439712.pdf`, `9781409403906.pdf`) failed the regeneration's
+`--verify` self-consistency check and kept their stale (2026-08-08) cached
+text**; their heuristic/outline numbers in the per-book report
+(`public/copyrighted-scans/index.html`) may not match the authoritative
+pytest/strategy-pipeline numbers above, which read the real PDF directly
+rather than `public-cache/`. Concretely: the report shows
+`9781409403906.pdf` heuristic at precision 0.40/recall 0.33 (4/12), while
+the direct-PDF pytest run above shows 0.00/0.00 (0/12) -- **trust the
+direct-PDF numbers** for these two books specifically; not yet fixed
+(the redaction pipeline's own self-consistency check catching a real
+divergence, per `CLAUDE.md`'s "Document organization" section on this
+exact failure mode).
 
 "Start accuracy"/"End accuracy" (added by
 `docs/superpowers/plans/2026-08-08-citation-pages-mapping.md`, see that
@@ -409,30 +550,42 @@ non-null. Start requires an exact match (unmappable counts as wrong); end
 tolerates being up to 3 printed pages over-inclusive (see
 `evaluation/metrics.py`'s `citation_pages_metrics`).
 
-| Strategy | Precision | Recall | F1 | Found / Expected | Total time | Start accuracy | End accuracy | Applicable books |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| outline | 0.79 | 0.89 | 0.84 | 31/39 found, 31/35 expected | 0.6s | 0.16 | 0.48 | 3/17 |
-| heuristic | 0.71 | 0.50 | 0.58 | 145/204 found, 145/292 expected | 14.8s | 0.99 | 0.99 | 17/17 |
-| LLM (`glm-4.7`, best of 10 cached models) | 0.71 | 0.37 | 0.48 | 107/150 found, 107/292 expected | 239.7s | 0.99 | 0.99 | 17/17 |
+| Corpus | Strategy | Precision | Recall | F1 | Found / Expected | Total time | Start accuracy | End accuracy | Applicable books |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| open-access | outline | 0.78 | 0.71 | 0.75 | 556/712 found, 556/780 expected | 14.1s | 0.75 | 0.53 | 41/57 |
+| open-access | heuristic | 0.46 | 0.51 | 0.48 | 550/1199 found, 550/1074 expected | 150.3s | 0.97 | 0.98 | 57/57 |
+| open-access | LLM (`qwen3-coder-next`, stale/partial) | 0.85 | 0.69 | 0.76 | 57/67 found, 57/83 expected | 97.6s | 0.96 | 0.96 | ~8/57 |
+| copyrighted-scans | heuristic | 0.52 | 0.34 | 0.41 | 103/199 found, 103/307 expected | 46.8s | 1.00 | 1.00 | 13/13 |
+| copyrighted-scans | outline | 0.40 | 0.42 | 0.41 | 17/42 found, 17/40 expected | 0.8s | 0.00 | 0.00 | 1/13 |
+| copyrighted-scans | LLM (`glm-4.7`, stale) | 0.54 | 0.27 | 0.36 | 67/125 found, 67/249 expected | 580.7s | 1.00 | 1.00 | 13/13 |
 
-- **Outline scores highest but applies narrowly.** Only 3 of the 17 corpus
-  books carry a real embedded PDF outline/bookmark catalog
-  (`9783031466373.pdf`, `9783907297285.pdf`, `9783907297339.pdf`) -- an
-  outline entry is already a resolved, book-order-correct chapter
-  reference, so once one exists it's nearly free signal (well under a
-  second total across all 3, no content search needed beyond confirming
-  the mapped page). The other 14 books have no outline to read at all
-  (`evaluation/corpus/<name>/public-cache/<key>.outline.json` is `{"candidates": []}`),
-  which is a property of the PDF, not a strategy failure -- those books
-  render `N/A` in the report rather than being scored as "found 0".
-- **Heuristic's 0.58 aggregate here is pulled down entirely by the 10
-  "diverse real-library" books** documented above -- restrict to the
-  original 7 well-behaved books and it's 0.91/0.91 (see "Pure-heuristic
-  results"); the other 10 (OCR/degenerate-text/layout-mode recoveries)
-  score 0.47/0.24 as their own aggregate (see "Diverse real-library
-  evaluation set" above). This table just confirms the same heuristic run
-  through the new standalone harness (`evaluation/metrics.py`) reproduces
-  identical per-book numbers.
+(The `copyrighted-scans` heuristic row above includes the two stale-cache
+books' inflated numbers per the caveat above -- the authoritative
+direct-PDF pure-heuristic aggregate for this corpus, from the
+"Pure-heuristic results" section above, is precision 0.49/recall 0.32,
+99/201 found, 99/307 expected.)
+
+- **Outline no longer applies narrowly on `open-access/`.** The previous
+  snapshot found only 3 of 17 corpus books carrying a real embedded PDF
+  outline/bookmark catalog; that was an artifact of the small, curated
+  original set -- across the grown 57-book `open-access/` corpus, **41 of
+  57** now carry one (many of the `crossref_gt`-migrated books turn out to
+  have real outlines), which is exactly why the outline strategy now
+  dominates the strategy pipeline's `open-access/` improvement documented
+  above. `copyrighted-scans/` stays narrow (1 of 13) -- consistent with that
+  corpus's "no DOI, mostly no embedded TOC" sourcing criterion. An outline
+  entry is already a resolved, book-order-correct chapter reference, so
+  once one exists it's nearly free signal; books with none render `N/A` in
+  the report rather than being scored as "found 0".
+- **Heuristic's F1 0.48/0.41 aggregates are now dominated by the *whole*
+  corpus, not pulled down by a small "diverse" sub-sample.** The previous
+  snapshot's framing ("0.58 pulled down entirely by 10 diverse-real-library
+  books, restrict to the original 7 and it's 0.91/0.91") no longer holds
+  as a useful decomposition -- the original 7 `open-access/` books are now
+  a small fraction of 57, and most of the new 0.46/0.51 aggregate's misses
+  are the `crossref_gt` technical/textbook gap described in
+  "Pure-heuristic results" above, not the OCR/scan issues the old framing
+  centered on.
 - **LLM standalone F1 improved from 0.29 to 0.49** after fixing two root
   causes in `llm_extract_toc_entries` found by inspecting this table's
   first run (see
@@ -456,8 +609,11 @@ tolerates being up to 3 printed pages over-inclusive (see
   window was smaller than every book's blind-fraction prompt (~98K tokens
   for the largest) -- is no longer categorically incompatible: the
   narrower input now fits its context window on most books, and it scores
-  F1 0.42 overall (95/158 found), no longer zero. LLM standalone still
-  trails the heuristic's 0.58 and costs far more time, so this remains
+  F1 0.42 overall (95/158 found), no longer zero. This bullet and the ones
+  below describe the LLM-only cache-refresh investigation on the
+  pre-corpus-growth 17-book set (the LLM row wasn't re-run for this
+  snapshot, see the caveat above) -- LLM standalone trailed the
+  then-heuristic's 0.58 aggregate and cost far more time, so this remains
   informational, not a recommendation to route production through it --
   but the truncation/input-size bug that was previously suppressing its
   real accuracy is closed. The remaining zero-recall books
@@ -494,10 +650,15 @@ tolerates being up to 3 printed pages over-inclusive (see
   prefers that TOC-declared value first, falls back to cross-page anchor
   interpolation, and (for chapter ends) to reading the page before the
   next chapter's raw start or the book's last page. Measured on the
-  full corpus (restricted to chapters whose located PDF range exactly
-  matches ground truth and whose expected `citation_pages` is non-null,
-  via `citation_pages_metrics`): **heuristic scores 142/144 exact start
-  matches (98.6%) and 143/144 end matches within tolerance (99.3%)**;
+  (pre-growth, 17-book) corpus at the time (restricted to chapters whose
+  located PDF range exactly matches ground truth and whose expected
+  `citation_pages` is non-null, via `citation_pages_metrics`): **heuristic
+  scores 142/144 exact start matches (98.6%) and 143/144 end matches within
+  tolerance (99.3%)**; this 2026-08-12 re-run's fresh start/end-accuracy
+  *fractions* (raw counts not extracted) are in the table above --
+  0.97/0.98 for `open-access/` heuristic and 1.00/1.00 for
+  `copyrighted-scans/` heuristic, both still consistent with "the fix
+  works," just measured on a much larger corpus now;
   the best LLM model scores 105/106 on both (99.1%) -- the LLM strategy's
   own printed-page-number field was blind to roman numerals before Task 6
   of that plan fixed the extraction schema, which this run's numbers now
@@ -526,6 +687,13 @@ tolerates being up to 3 printed pages over-inclusive (see
   `KISSKI_API_KEY` repository secret is configured.
 
 ## Layout-based TOC/chapter-first-page classifier pilot
+
+**Not re-run for the 2026-08-12 corpus growth** -- this pilot needs its own
+`pdfalto`/ALTO XML extraction pass (`evaluation/scripts/pdfalto_runner.py`)
+over the newly-added books before it can be re-scored, separate from the
+text-based evaluations re-run elsewhere in this file. Every book count and
+percentage below (the "50-book corpus") still refers to the pre-growth
+corpus size.
 
 `evaluation/scripts/evaluate_layout_toc_classifier.py` trains a
 leave-one-book-out (LOBO) classifier on ten geometric layout features

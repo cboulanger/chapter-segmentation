@@ -147,6 +147,16 @@ here.
   for such a book, move its entry to `manifest.json` in the same commit that
   adds its `public-cache/` file, so the two never drift apart.
 
+**Check Crossref by ISBN even when Zotero shows no DOI.** A personal-library
+item's Zotero catalog entry frequently has no DOI field filled in even
+though the book itself has a real Crossref book-level record — a quick
+`curl -s "https://api.crossref.org/works?filter=isbn:<isbn>&rows=1"` (or
+`.../works/<doi>` if you already spotted one printed on the copyright page)
+takes a few seconds and, when it hits, moves the book straight to the
+committed `manifest.json` instead of the local one. Found a real DOI this
+way for 6 of 10 personal-library books in one batch (2026-08-12) whose
+Zotero entries had none.
+
 `manifest.local.json` schema — identical to `manifest.json`'s `"books"` list:
 
 ```json
@@ -253,8 +263,24 @@ one. For each chapter in the draft:
 4. Compute `citation_pages` as `"<citation_start>-<citation_end>"` (or
    `null` if either half is unavailable).
 
-A fast way to spot-check many pages at once — dump first/last lines of a
-page range and eyeball them against expectation:
+**Viewing pages visually (Claude Code's `Read` tool on the PDF itself)** is
+the fastest way to actually *look* at a candidate page rather than just its
+extracted text — text extraction can be misleadingly clean-looking while
+still describing the wrong page. Two gotchas found doing this for real
+(2026-08-12 ground-truth batch):
+
+- Its `pages` parameter takes **1-based viewer page numbers**, not 0-based
+  physical indices — `pages: "N-M"` renders viewer pages N through M, i.e.
+  0-based `pdf_start_index`/`pdf_end_index` values `N-1` through `M-1`. Mixing
+  up the two conventions mid-session silently shifts every subsequent
+  spot-check by one page; recompute the viewer-page number explicitly
+  (`index + 1`) every time rather than trusting a running mental offset.
+- It only honors the **first** comma-separated range — `pages: "13-15,69-71"`
+  silently renders only pages 13-15 and drops the second range entirely, with
+  no error. Make one call per range instead of combining them.
+
+A fast way to spot-check many pages at once via raw text (no rendering) —
+dump first/last lines of a page range and eyeball them against expectation:
 
 ```bash
 uv run python -c "
@@ -325,6 +351,31 @@ by hand). Spot-check any auto-written range before trusting it, same
 discipline as the chapter-boundary draft in Step 2/3 -- this script also
 finds the best structural match, not necessarily the correct one.
 
+The script defaults to `open-access`/`copyrighted-scans`, but takes an
+explicit `--corpus` flag (one or more names, e.g. `--corpus pending` or
+`--corpus pending copyrighted-scans`) for any other corpus, including
+`pending/`.
+
+**"NEEDS REVIEW" is the common case, not the exception** -- in a batch of 10
+books hand-processed 2026-08-12, all 10 came back "NEEDS REVIEW" with a long
+list of non-contiguous "TOC-like" pages scattered across the whole book, not
+just the front matter: per-chapter mini-outlines (see the mini-TOC failure
+mode below) and citation-/footnote-dense pages elsewhere routinely match the
+same "3+ title...number lines" structural pattern the real front-matter TOC
+does. A useful (but not fully reliable) triage step before falling back to
+fully manual page-turning: filter the detected page set to indices below
+roughly 25 (`{p for p in toc_pages if p < 25}`) and recompute the contiguous
+range on that subset -- this isolated the real TOC correctly for most of
+that batch, but not all of it: it can still include a front-matter false
+positive (e.g. a copyright/ISBN page whose imprint text coincidentally
+matches the pattern) or miss the real TOC range's own boundary pages
+entirely, and on a book whose two-column TOC layout gets scrambled by
+default-mode pypdf extraction (see `README.md`'s "Diverse real-library
+evaluation set"), the filtered set can come back completely empty even
+though the book has a perfectly real, visually obvious TOC. There is no
+substitute for opening the PDF (see the visual-viewing note in Step 3 above)
+and confirming the exact page range by eye every time.
+
 ## Known failure modes (found the hard way while building this evaluation set)
 
 - **PDF-index ≠ printed page number, and the offset is often not constant.**
@@ -340,6 +391,29 @@ finds the best structural match, not necessarily the correct one.
   mini internal outline (sub-sections with their own page numbers), it can
   be mistaken for a TOC page and wrongly excluded too. If a chapter's
   `pdf_start_index` looks suspiciously late, check whether this happened.
+  **This is not a rare edge case for some book templates** — a Springer
+  "Handbuch"/Reference-series volume can carry a per-chapter mini-"Inhalt"
+  box on *nearly every single chapter's* opening or second page (confirmed
+  on `9783658076078.expected.json` and `9783658057022.expected.json`,
+  2026-08-12), cascading the naive search wildly off-track from the second
+  or third chapter onward. If you recognize this template, don't trust the
+  script's output past the first couple of entries — locate every remaining
+  boundary by direct visual inspection instead.
+- **A chapter's title/byline block can extract *after* its own body text**,
+  even though it's visually at the top of the page — a PDF content-stream
+  text-object ordering quirk seen on at least two otherwise-unrelated books
+  (`9783658057022.expected.json`, `9783161538315.expected.json`,
+  2026-08-12). `locate_chapter_start`/`ground_truth_helper.py`'s
+  title-then-author proximity check only looks at the first ~250 characters
+  of extracted text, so on an affected page it skips straight past the real
+  opening page and locks onto a *later* page whose running header or a
+  same-title in-body mention happens to satisfy the check instead — and
+  because the real opening page's title/author text is technically present
+  just later in the extraction order, this can produce a **misleadingly
+  high match_score (90-100)**, not a low one that would prompt a second
+  look. A high score is reassuring but not proof; visually confirm the page
+  regardless when a book's chapters otherwise repeat titles in running
+  headers (the same precondition as the running-headers failure mode below).
 - **Running headers can repeat the full chapter title on every page**, not
   just the opening one. The script requires an author's last name to appear
   near the top of the page too, to disambiguate the true opening page from a
@@ -357,3 +431,37 @@ finds the best structural match, not necessarily the correct one.
   substring of the section's actual heading text as the search title, or
   just determine that boundary by direct inspection instead of trusting the
   script for it.
+- **Personal-library PDFs are often abridged excerpts, not complete books —
+  and this is common enough to expect, not a rare surprise.** In a batch of
+  14 candidates sourced from one real Zotero library (2026-08-12), 4 (~29%)
+  turned out to be a photocopied subset of a much larger volume: one was a
+  single chapter with no front matter at all (printed pages 398-454 of a
+  much longer monograph), one was the introduction plus one later chapter
+  with the entire middle of the book missing (printed pages 9-43, then a
+  jump straight to 348-395, then another jump to 412-429, against a TOC
+  claiming the book runs to page 432), one was four chapters of "Part I"
+  with the book's own foreword referencing an unreached "zweiter Teil", and
+  one was a single article whose own first page already started at printed
+  page 452. **Checking only the first and last few pages is not enough** —
+  the second example above looks perfectly contiguous if you check just the
+  front and just the back; the gap is only visible by checking printed page
+  numbers *throughout*, e.g. every 20-30 pages or at every apparent
+  section/chapter boundary, and cross-checking the PDF's total physical page
+  count against the TOC's own last-listed page number (a TOC claiming page
+  432 in a 47-page PDF is an immediate, no-page-turning-required red flag).
+  If a book fails this check, it does not belong in any corpus (not even
+  `pending/`) — there is no partial ground truth worth building from an
+  excerpt whose missing chapters you can't get.
+- **Zotero's cataloged creator roles (`editor` vs. contributor/honoree) can
+  be wrong — always verify against the book's actual title page or
+  colophon before writing `authors` into the TOC JSON or the manifest
+  `title`.** Found twice in one batch (2026-08-12): a book cataloged with
+  two "editors" turned out to have a single actual author (a posthumous
+  "collected works" volume) with one of the two names being the real
+  volume editor and the other appearing nowhere as an author of any
+  individual chapter; a Festschrift cataloged with two "editors" turned out
+  to have one real editor, with the second name being the honoree the
+  volume was written *for* (and a contributing chapter author in his own
+  right), not a co-editor at all. Either mistake, left uncorrected, writes
+  a wrong `authors` list that then degrades `locate_chapter_start`'s
+  author-confirmation matching for every chapter in the book.

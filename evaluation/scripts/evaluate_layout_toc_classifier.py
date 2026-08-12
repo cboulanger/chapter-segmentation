@@ -26,7 +26,11 @@ from pypdf import PdfReader
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
-from evaluation.scripts.layout_features import FEATURE_NAMES, extract_page_features
+from evaluation.scripts.layout_features import (
+    FEATURE_NAMES,
+    add_book_context_features,
+    extract_page_features,
+)
 from evaluation.scripts.layout_labels import LABEL_CHAPTER_FIRST, LABEL_TOC, page_labels
 from evaluation.scripts.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_binary
 
@@ -120,7 +124,9 @@ def build_feature_table(books: list[dict], cache_dir_for, pdfalto_bin: str) -> l
     for book in books:
         cache_dir = cache_dir_for(book["corpus"])
         alto_path = ensure_alto_xml(book["pdf_path"], cache_dir, pdfalto_bin)
-        page_features = extract_page_features(str(alto_path))
+        page_features = add_book_context_features(
+            extract_page_features(str(alto_path)), len(book["labels"])
+        )
         for page_index, label in enumerate(book["labels"]):
             features = page_features.get(page_index)
             if features is None:

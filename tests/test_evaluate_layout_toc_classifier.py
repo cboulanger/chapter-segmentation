@@ -64,6 +64,9 @@ class TestBuildFeatureTable(unittest.TestCase):
         ), patch(
             "evaluation.scripts.evaluate_layout_toc_classifier.extract_page_features",
             return_value=fake_features,
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.add_book_context_features",
+            side_effect=lambda page_features, total_pages: page_features,
         ):
             rows = build_feature_table(books, lambda corpus: Path("/fake/cache"), "pdfalto")
 
@@ -88,6 +91,9 @@ class TestBuildFeatureTable(unittest.TestCase):
         ), patch(
             "evaluation.scripts.evaluate_layout_toc_classifier.extract_page_features",
             return_value=fake_features,
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.add_book_context_features",
+            side_effect=lambda page_features, total_pages: page_features,
         ):
             rows = build_feature_table(books, lambda corpus: Path("/fake/cache"), "pdfalto")
 
@@ -108,6 +114,9 @@ class TestBuildFeatureTable(unittest.TestCase):
         ), patch(
             "evaluation.scripts.evaluate_layout_toc_classifier.extract_page_features",
             return_value=fake_features,
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.add_book_context_features",
+            side_effect=lambda page_features, total_pages: page_features,
         ), contextlib.redirect_stderr(stderr):
             build_feature_table(books, lambda corpus: Path("/fake/cache"), "pdfalto")
 
@@ -129,10 +138,38 @@ class TestBuildFeatureTable(unittest.TestCase):
         ), patch(
             "evaluation.scripts.evaluate_layout_toc_classifier.extract_page_features",
             return_value=fake_features,
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.add_book_context_features",
+            side_effect=lambda page_features, total_pages: page_features,
         ), contextlib.redirect_stderr(stderr):
             build_feature_table(books, lambda corpus: Path("/fake/cache"), "pdfalto")
 
         self.assertEqual(stderr.getvalue(), "")
+
+    def test_pipes_extracted_features_through_book_context_pass(self):
+        books = [
+            {"key": "book-a", "corpus": "open-access", "pdf_path": Path("/fake/book-a.pdf"),
+             "labels": ["toc", "other"]},
+        ]
+        fake_features = {0: {"line_count": 1.0}, 1: {"line_count": 2.0}}
+        context_pass = Mock(side_effect=lambda page_features, total_pages: {
+            index: {**page, "context_added": 1.0} for index, page in page_features.items()
+        })
+
+        with patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.ensure_alto_xml",
+            return_value=Path("/fake/book-a.alto.xml"),
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.extract_page_features",
+            return_value=fake_features,
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.add_book_context_features",
+            context_pass,
+        ):
+            rows = build_feature_table(books, lambda corpus: Path("/fake/cache"), "pdfalto")
+
+        context_pass.assert_called_once_with(fake_features, 2)
+        self.assertEqual(rows[0]["features"]["context_added"], 1.0)
 
 
 class TestLoadBookCorpus(unittest.TestCase):

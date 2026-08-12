@@ -1,0 +1,136 @@
+Bootstrap: docker
+From: rocm/pytorch:rocm6.3_ubuntu22.04_py3.10_pytorch_release_2.4.0
+
+# Apptainer container for the NuExtract-2.0-4B LoRA fine-tuning pilot on
+# MPCDF HPC (Viper-GPU, AMD MI300A APUs). Sibling of ../nuextract.def
+# (Raven/NVIDIA) -- kept as a fully separate file rather than a
+# parameterized/shared one so either target can be edited freely without
+# the other silently breaking. See ../README.md's "NuExtract-2.0-4B
+# fine-tuning pilot" section for what this pilot does.
+#
+# UNVERIFIED: the base image tag above is a best-guess placeholder (AMD's
+# rocm/pytorch naming convention, ROCm 6.3 to match Viper's recommended
+# `module load rocm/6.3`) -- it has not been confirmed to exist or to
+# ship the ROCm *dev* toolchain (hipcc/hipconfig, needed below to build
+# llama.cpp with HIP), only the runtime libraries. Check
+# https://hub.docker.com/r/rocm/pytorch/tags for a real tag before
+# building, and confirm `hipconfig` is on PATH inside it (`apptainer
+# exec docker://rocm/pytorch:<tag> hipconfig -l` from a machine with
+# apptainer, or just try the build below and see if the hipcc step
+# fails). If the runtime-only image is what's available, switch to a
+# `rocm/dev-ubuntu-*` base instead and install pytorch separately.
+#
+# Viper-GPU nodes: 2x AMD Instinct MI300A APUs per node, 128GB HBM3
+# each (unified CPU+GPU memory -- these are APUs, not discrete GPUs
+# like Raven's A100s), 24 physical CPU cores per APU (96 logical in
+# SMT across both), 220GB usable RAM per node.
+# https://docs.mpcdf.mpg.de/doc/computing/viper-gpu-user-guide.html
+#
+# Build (from a Viper-GPU login node, needs --fakeroot to install apt/pip
+# packages and compile llama.cpp -- mirrors ../nuextract.def's Raven
+# build instructions):
+#
+#   module load apptainer
+#   apptainer build --fakeroot nuextract-viper.sif nuextract-viper.def
+
+%post
+    set -e
+    apt-get update
+    apt-get install -y --no-install-recommends cmake git
+    rm -rf /var/lib/apt/lists/*
+
+    # Base project dependencies -- run_pilot-viper.slurm bind-mounts the
+    # repo checkout itself at job runtime (so chapter_segmentation/
+    # evaluation don't need a proper `pip install -e .` here), but
+    # everything THOSE modules import still has to already be present in
+    # the container. Mirrors pyproject.toml's [project.dependencies] --
+    # keep in sync if that list changes.
+    pip3 install --no-cache-dir \
+        "spacy>=3.8.0" \
+        "click>=8.0" \
+        "pypdf>=5.1.0" \
+        "rapidfuzz>=3.10.0" \
+        "langdetect>=1.0.9" \
+        "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
+
+    # pyproject.toml's "nuextract-finetune" optional-dependency group.
+    # Same versions as ../nuextract.def -- these are GPU-agnostic pure-
+    # Python packages, only torch itself needs to be a ROCm build (comes
+    # from the base image).
+    pip3 install --no-cache-dir \
+        "transformers>=4.46.0" \
+        "peft>=0.13.0" \
+        "accelerate>=0.34.0" \
+        "huggingface-hub>=0.25.0"
+
+    # HIP-accelerated build -- the AMD equivalent of ../nuextract.def's
+    # CUDA build section. Two things carry over from that file's own
+    # reasoning, both still true here:
+    #   - No GPU is attached during `%post` (login node / CPU-only build
+    #     step), so the target arch must be pinned explicitly rather than
+    #     autodetected. gfx942 is MI300A's arch code (confirm against
+    #     `rocminfo | grep gfx` on a real Viper-GPU node if unsure --
+    #     https://llvm.org/docs/AMDGPUUsage.html#processors for the full
+    #     archcode list).
+    #   - Login nodes cap per-user process count -- capping build
+    #     parallelism avoids "fork: retry: Resource temporarily
+    #     unavailable" the same way ../nuextract.def caps its CUDA build.
+    #
+    # HIPCXX/HIP_PATH are new here (no CUDA equivalent) -- llama.cpp's own
+    # HIP build docs require them, set via `hipconfig`:
+    # https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md
+    export CMAKE_BUILD_PARALLEL_LEVEL=4
+    export HIPCXX="$(hipconfig -l)/clang"
+    export HIP_PATH="$(hipconfig -R)"
+    # No --no-deps: llama-cpp-python's own runtime deps (diskcache,
+    # jinja2, typing-extensions, ...) aren't in the base image, and
+    # skipping them here only fails later at import time, inside the
+    # actual training job, not during this build.
+    CMAKE_ARGS="-DGGML_HIP=on -DGPU_TARGETS=gfx942" \
+        pip3 install --no-cache-dir "llama-cpp-python>=0.3.0"
+
+    # llama.cpp itself, for convert_hf_to_gguf.py + the llama-quantize
+    # binary -- neither ships as a pip package. Building the full
+    # default target (not just a single named target) is deliberate:
+    # llama.cpp's internal target names/layout shift between releases,
+    # so this trades a slightly longer build for not hardcoding a name
+    # that may not exist in whatever revision is checked out at build
+    # time. run_pilot-viper.slurm locates the resulting binary with
+    # `find` rather than assuming a fixed path for the same reason.
+    git clone --depth 1 https://github.com/ggml-org/llama.cpp /opt/llama.cpp
+    pip3 install --no-cache-dir gguf sentencepiece protobuf
+    cmake -S /opt/llama.cpp -B /opt/llama.cpp/build \
+        -DGGML_HIP=ON -DLLAMA_CURL=OFF -DCMAKE_BUILD_TYPE=Release -DGPU_TARGETS=gfx942
+    cmake --build /opt/llama.cpp/build -j4
+
+%environment
+    export LLAMA_CPP_DIR=/opt/llama.cpp
+
+%test
+    # llama_cpp is deliberately NOT imported here: its compiled library is
+    # linked against the ROCm runtime (libamdhip64.so etc.), which only
+    # exists on a host with real AMD GPU drivers, bind-mounted in via
+    # `--rocm` -- neither is present during `apptainer build`/`%test` (no
+    # GPU is attached at build time), so `import llama_cpp` fails here
+    # unconditionally regardless of whether the build itself succeeded.
+    # Verify it for real once, at job runtime:
+    # `apptainer exec --rocm nuextract-viper.sif python3 -c "import llama_cpp"`.
+    python3 -c "import torch, transformers, peft, huggingface_hub, spacy, click, pypdf, rapidfuzz, langdetect; print('python deps ok (excl. llama_cpp -- see comment above)')"
+    python3 -c "import spacy; spacy.load('en_core_web_sm'); print('en_core_web_sm loads ok')"
+    find / -xdev -name "libllama.so" -path "*llama_cpp*" 2>/dev/null | grep -q . && echo "llama_cpp shared library built ok"
+    find /opt/llama.cpp/build -name "llama-quantize" -type f | grep -q . && echo "llama-quantize built ok"
+    test -f /opt/llama.cpp/convert_hf_to_gguf.py && echo "convert_hf_to_gguf.py present ok"
+
+%labels
+    author chapter-segmentation NuExtract-2.0-4B fine-tuning pilot (Viper/ROCm)
+    version 1.0
+
+%help
+    Container for the NuExtract-2.0-4B LoRA fine-tuning pilot on
+    Viper-GPU (AMD MI300A / ROCm) --
+    docs/superpowers/specs/2026-08-10-nuextract2-finetuning-pilot-design.md.
+    Sibling of ../nuextract.def (Raven/NVIDIA); see that file's diff for
+    exactly what differs. Built on a ROCm PyTorch image; adds
+    transformers/peft/accelerate, a HIP-enabled llama-cpp-python, and a
+    from-source llama.cpp build for GGUF conversion/quantization. See
+    evaluation/hpc/README.md.

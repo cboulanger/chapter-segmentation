@@ -295,7 +295,7 @@ above but with no API cost.
 A go/no-go check on whether LoRA fine-tuning closes NuExtract-2.0-4B's
 dominant zero-shot failure mode (titles/authors correct,
 `printed_page_number` null -- see `RESULTS.md`'s failure-mode
-breakdown), using only the existing ~50-book corpus, no new ground
+breakdown), using only the existing 70-book corpus, no new ground
 truth. See
 `docs/superpowers/specs/2026-08-10-nuextract2-finetuning-pilot-design.md`
 for the full rationale and decision criteria.

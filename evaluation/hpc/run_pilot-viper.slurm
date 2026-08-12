@@ -3,48 +3,55 @@
 #SBATCH -o job.out.%j
 #SBATCH -e job.err.%j
 #SBATCH -D ./
-#SBATCH -J nuextract-lora-pilot
+#SBATCH -J nuextract-lora-pilot-viper
 #
-#SBATCH --constraint="gpu"
-#SBATCH --gres=gpu:a100:1
-#SBATCH --cpus-per-task=18
-#SBATCH --mem=125000
+#SBATCH --constraint="apu"
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=24
+#SBATCH --mem=110000
 #
 #SBATCH --mail-type=none
 #
-# A single A100 is comfortably enough for a 4B-param LoRA job on ~59
-# training examples -- no multi-node/torchrun complexity needed (unlike
-# every multi-GPU example in ai_containers/llms-meet-mpcdf). Raven's GPU
-# nodes have 4x A100 (40GB each) + 512GB RAM total; requesting 1 of 4
-# GPUs caps you to a proportional share of the node (--cpus-per-task=18
-# = 72/4, --mem=125000 = ~512000/4 minus overhead) -- per
-# https://docs.mpcdf.mpg.de/doc/computing/raven-user-guide.html.
-# Asking for more memory than your GPU share entitles you to (e.g.
-# --mem=0, which means "the whole node") fails with "requested only 1
-# of four gpus but more than 1/4 of memory of the node". If your account
-# only has access to a different GPU type (H100, RTX6000, ...), change
-# --gres above and re-derive --cpus-per-task/--mem the same way -- see
-# `sinfo` or the MPCDF docs for what's available under your account/
-# partition.
+# Sibling of ./run_pilot.slurm (Raven/NVIDIA); kept as a fully separate
+# file rather than a parameterized/shared one so either target can be
+# edited freely without the other silently breaking. See that file for
+# line-by-line comparison and evaluation/hpc/README.md for narrative
+# docs (Raven-only as written -- no Viper walkthrough exists yet).
+#
+# Viper-GPU nodes: 2x AMD Instinct MI300A APUs per node, 128GB HBM3
+# each, 220GB usable RAM per node, 96 logical CPUs (SMT) total --
+# https://docs.mpcdf.mpg.de/doc/computing/viper-gpu-user-guide.html.
+# --gres=gpu:1 requests one APU (shared-node); --cpus-per-task=24 is
+# that APU's physical core share, per the guide's own example
+# (ntasks-per-node * cpus-per-task must not exceed 96).
+#
+# UNVERIFIED: --mem=110000 is a naive half-of-220GB guess, carried over
+# from run_pilot.slurm's "proportional share of the node" logic for
+# Raven's A100s. That logic assumed separate host-RAM/GPU-VRAM pools;
+# MI300A is an APU with a single unified HBM3 pool shared by CPU and
+# GPU, so the whole accounting model this number is based on may not
+# even apply the same way here. Confirm with `sinfo`/MPCDF docs or a
+# quick interactive job before trusting this for a real run.
 #SBATCH --time=02:00:00
 
-# See evaluation/hpc/README.md for the full setup this script assumes:
-# repo cloned at $REPO_DIR, evaluation/finetune/data/{train,eval}.jsonl
+# See evaluation/hpc/README.md for the full setup this assumes (adjusted
+# for Viper): repo cloned at $REPO_DIR, evaluation/finetune/data/{train,eval}.jsonl
 # already rsynced over from a local run of prepare_nuextract_finetune_data.py
-# (this script never touches the PDFs themselves -- see the README's "Data
-# transfer" section for why), the container built at
-# $REPO_DIR/evaluation/hpc/nuextract.sif, and the model weights + base
+# (this script never touches the PDFs themselves), the container built at
+# $REPO_DIR/evaluation/hpc/nuextract-viper.sif, and the model weights + base
 # GGUF already pre-fetched into $HF_HOME from a login node (compute nodes
-# have no internet -- see llms-meet-mpcdf/sft_with_fsdp/README.md).
+# have no internet).
 
 set -e
 
 module purge
+# UNVERIFIED: confirm this module name/version exists on Viper
+# (`module avail apptainer`) -- copied from run_pilot.slurm's Raven value.
 module load apptainer/1.4.3
 
 REPO_DIR="${REPO_DIR:-$PWD}"
 PTMP="/ptmp/${USER}"
-SIF="${REPO_DIR}/evaluation/hpc/nuextract.sif"
+SIF="${REPO_DIR}/evaluation/hpc/nuextract-viper.sif"
 BIND="${REPO_DIR}:${REPO_DIR},${PTMP}"
 
 export HF_HOME="${PTMP}/huggingface"
@@ -69,12 +76,12 @@ if [[ ! -f "$TRAIN_JSONL" || ! -f "$EVAL_JSONL" ]]; then
 fi
 
 echo "=== [1/5] train LoRA adapter ($(date)) ==="
-srun apptainer exec --nv -B "$BIND" "$SIF" \
+srun apptainer exec --rocm -B "$BIND" "$SIF" \
     python evaluation/scripts/finetune_nuextract.py \
         --output-dir "$ADAPTER_DIR" --device cuda
 
 echo "=== [2/5] merge adapter into base weights ($(date)) ==="
-srun apptainer exec --nv -B "$BIND" "$SIF" \
+srun apptainer exec --rocm -B "$BIND" "$SIF" \
     python evaluation/scripts/merge_nuextract_lora.py \
         --adapter-dir "$ADAPTER_DIR" --output-dir "$MERGED_DIR"
 
@@ -89,12 +96,12 @@ srun apptainer exec -B "$BIND" "$SIF" \
     "$QUANTIZE_BIN" "$FP16_GGUF" "$Q4_GGUF" Q4_K_M
 
 echo "=== [4/5] score fine-tuned checkpoint on held-out split ($(date)) ==="
-srun apptainer exec --nv -B "$BIND" "$SIF" \
+srun apptainer exec --rocm -B "$BIND" "$SIF" \
     python evaluation/scripts/evaluate_nuextract_finetune.py --gguf-path "$Q4_GGUF" \
     | tee "${PTMP}/nuextract-pilot/eval-finetuned.txt"
 
 echo "=== [5/5] score base checkpoint on the same split -- the number to beat ($(date)) ==="
-srun apptainer exec --nv -B "$BIND" "$SIF" \
+srun apptainer exec --rocm -B "$BIND" "$SIF" \
     python evaluation/scripts/evaluate_nuextract_finetune.py \
     | tee "${PTMP}/nuextract-pilot/eval-base.txt"
 

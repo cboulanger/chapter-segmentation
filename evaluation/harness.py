@@ -167,3 +167,24 @@ def public_outline_candidates_for(corpus: str, manifest_key: str) -> Optional[li
         return None
     data = json.loads(cache_path.read_text(encoding="utf-8"))
     return [outline_candidate_from_dict(c) for c in data["candidates"]]
+
+
+def chapter_bounds_errors(chapters: list[dict], total_pages: Optional[int] = None) -> list[str]:
+    """Structural sanity check on one book's ground-truth chapter ranges:
+    every pdf_start_index <= pdf_end_index, no two chapters' ranges
+    overlap, and -- only when total_pages is given -- every
+    pdf_end_index < total_pages. Returns every problem found (empty list
+    if none), not just the first -- needs no PDF unless total_pages is
+    passed, so it can run against every corpus even before any PDF has
+    been fetched locally."""
+    ranges = sorted((c["pdf_start_index"], c["pdf_end_index"]) for c in chapters)
+    errors = []
+    for start, end in ranges:
+        if start > end:
+            errors.append(f"start>end: {(start, end)}")
+        if total_pages is not None and end >= total_pages:
+            errors.append(f"end>=total_pages({total_pages}): {(start, end)}")
+    for (_, end1), (start2, _) in zip(ranges, ranges[1:]):
+        if start2 <= end1:
+            errors.append(f"overlap: end {end1} vs next start {start2}")
+    return errors

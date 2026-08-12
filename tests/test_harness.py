@@ -14,6 +14,7 @@ from chapter_segmentation.evidence.types import ChapterCandidate
 from evaluation.harness import (
     analysis_pages_for,
     available_public_books,
+    chapter_bounds_errors,
     list_corpora,
     outline_candidate_from_dict,
     outline_candidate_to_dict,
@@ -41,6 +42,47 @@ class TestListCorpora(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             with patch("evaluation.harness.CORPUS_ROOT", Path(tmp) / "does-not-exist"):
                 self.assertEqual(list_corpora(), [])
+
+
+class TestChapterBoundsErrors(unittest.TestCase):
+    def test_no_errors_for_valid_non_overlapping_chapters(self):
+        chapters = [
+            {"pdf_start_index": 0, "pdf_end_index": 4},
+            {"pdf_start_index": 5, "pdf_end_index": 9},
+        ]
+        self.assertEqual(chapter_bounds_errors(chapters, total_pages=10), [])
+
+    def test_flags_start_after_end(self):
+        chapters = [{"pdf_start_index": 5, "pdf_end_index": 2}]
+        errors = chapter_bounds_errors(chapters)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("start>end", errors[0])
+
+    def test_flags_overlap_between_chapters(self):
+        chapters = [
+            {"pdf_start_index": 0, "pdf_end_index": 10},
+            {"pdf_start_index": 8, "pdf_end_index": 15},
+        ]
+        errors = chapter_bounds_errors(chapters)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("overlap", errors[0])
+
+    def test_flags_end_at_or_past_total_pages_only_when_given(self):
+        chapters = [{"pdf_start_index": 0, "pdf_end_index": 10}]
+        self.assertEqual(
+            chapter_bounds_errors(chapters, total_pages=10),
+            ["end>=total_pages(10): (0, 10)"],
+        )
+        self.assertEqual(chapter_bounds_errors(chapters, total_pages=None), [])
+
+    def test_reports_every_problem_not_just_the_first(self):
+        chapters = [
+            {"pdf_start_index": 5, "pdf_end_index": 2},   # start>end
+            {"pdf_start_index": 3, "pdf_end_index": 20},  # end>=total_pages, and overlaps the next range
+            {"pdf_start_index": 6, "pdf_end_index": 8},
+        ]
+        errors = chapter_bounds_errors(chapters, total_pages=10)
+        self.assertEqual(len(errors), 3)
 
 
 class TestAnalysisPagesFor(unittest.TestCase):

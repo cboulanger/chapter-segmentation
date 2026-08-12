@@ -23,13 +23,18 @@ evaluation/CLAUDE.md normally requires for 896 chapters across 46 books.
 
 A book where the offset can't be derived (too few pages carry a printed
 number pypdf/extract_printed_number can read), where too few chapters
-land a confident content match at their candidate page, or where Crossref
-registers fewer than two distinct chapter authors (a single-authored book,
-not an edited volume with distinct chapter authors -- see
-evaluation/crossref_gt/README.md's "Known gaps" for 14 such books removed
-from a first reconciliation pass), is left untouched -- its crossref_gt/
-files stay put for manual curation later, rather than polluting the
-harness with unverified chapter boundaries.
+land a confident content match at their candidate page, where Crossref
+registers fewer than three distinct chapter authors, or where one author
+is credited on more than half the chapters (a single- or co-authored
+book, not an edited volume with distinct chapter authors -- see
+evaluation/crossref_gt/README.md's "Known gaps" for the books removed
+across two reconciliation passes this way, including ones that cleared
+an earlier, looser two-distinct-authors version of this gate: a
+2-co-author monograph credited identically on every chapter, and a
+single historical author's own chapters plus one modern editor's
+introduction), is left untouched -- its crossref_gt/ files stay put for
+manual curation later, rather than polluting the harness with unverified
+chapter boundaries.
 
 Migrated books land in evaluation/corpus/pending/, not open-access/ --
 confirmation + novelty give high GT confidence, but open-access/ is what
@@ -81,7 +86,8 @@ _WINDOW = 6  # +/- pages searched around each offset-derived candidate index
 _MIN_MATCH_SCORE = 85.0
 _MIN_CONFIRMED_FRACTION = 0.8
 _MIN_CONFIRMED_CHAPTERS = 3
-_MIN_DISTINCT_CHAPTER_AUTHORS = 2  # below this, it reads as a single-authored book, not an edited volume
+_MIN_DISTINCT_CHAPTER_AUTHORS = 3  # below this, it reads as a single- or co-authored book, not an edited volume
+_MAX_SINGLE_AUTHOR_CHAPTER_FRACTION = 0.5  # one author dominating >half the chapters reads as a monograph
 _DEFAULT_NOVELTY_PERCENTILE = 90.0  # see design spec's "Novelty metric" decision
 
 
@@ -310,12 +316,20 @@ def process_book(book: dict, dry_run: bool, novelty_baseline: NoveltyBaseline) -
     if not chapters:
         return isbn, "SKIP: zero chapters"
 
-    distinct_authors = {a for chapter in chapters for a in chapter.get("authors", []) if a.strip()}
-    if len(distinct_authors) < _MIN_DISTINCT_CHAPTER_AUTHORS:
+    author_counts = Counter(a for chapter in chapters for a in chapter.get("authors", []) if a.strip())
+    if len(author_counts) < _MIN_DISTINCT_CHAPTER_AUTHORS:
         return isbn, (
-            f"SKIP: only {len(distinct_authors)} distinct chapter author(s) registered on Crossref "
+            f"SKIP: only {len(author_counts)} distinct chapter author(s) registered on Crossref "
             f"(need >={_MIN_DISTINCT_CHAPTER_AUTHORS}) -- looks like a single-authored book, not an "
             "edited volume with distinct chapter authors"
+        )
+    max_author_fraction = max(author_counts.values()) / len(chapters)
+    if max_author_fraction > _MAX_SINGLE_AUTHOR_CHAPTER_FRACTION:
+        dominant = author_counts.most_common(1)[0][0]
+        return isbn, (
+            f"SKIP: {dominant!r} is credited on {max_author_fraction:.0%} of chapters "
+            f"(need <={_MAX_SINGLE_AUTHOR_CHAPTER_FRACTION:.0%}) -- looks like a monograph (co-)authored "
+            "throughout by the same person(s), not an edited volume with distinct chapter authors"
         )
 
     reader = PdfReader(str(pdf_path))

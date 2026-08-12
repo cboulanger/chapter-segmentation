@@ -191,3 +191,44 @@ def extract_page_features(alto_xml_path: str) -> dict[int, dict[str, float]]:
         }
 
     return features
+
+
+def add_book_context_features(
+    page_features: dict[int, dict[str, float]], total_pages: int
+) -> dict[int, dict[str, float]]:
+    """Second pass over one book's extract_page_features output: adds the
+    CONTEXT_FEATURE_NAMES (previous-page context, book-relative
+    normalization, position in book) and strips the underscore-prefixed raw
+    intermediates, returning vectors keyed exactly by FEATURE_NAMES.
+
+    Book medians are computed over non-empty pages only (a scan's blank
+    versos would otherwise drag them toward zero). The book-level body-font
+    estimate is the median of per-page modal font sizes -- stable over the
+    hundreds of near-identical jittery sizes OCR produces, where a single
+    page's mode is arbitrary. Pages with no resolvable font get the neutral
+    ratio 1.0, matching font_size_max_ratio's existing default."""
+    non_empty = [f for f in page_features.values() if f["line_count"] > 0]
+    median_line_count = (
+        statistics.median(f["line_count"] for f in non_empty) if non_empty else 1.0
+    ) or 1.0
+    modal_sizes = [f["_modal_font_size"] for f in non_empty if f["_modal_font_size"] > 0]
+    body_font_size = statistics.median(modal_sizes) if modal_sizes else 0.0
+
+    result: dict[int, dict[str, float]] = {}
+    for page_index, page in page_features.items():
+        prev = page_features.get(page_index - 1)
+        out = {name: page[name] for name in PAGE_FEATURE_NAMES}
+        out["prev_last_text_vpos_fraction"] = (
+            prev["last_text_vpos_fraction"] if prev is not None else 0.0
+        )
+        out["prev_line_count_rel"] = (
+            prev["line_count"] / median_line_count if prev is not None else 0.0
+        )
+        out["line_count_rel"] = page["line_count"] / median_line_count
+        max_font = page["_max_font_size"]
+        out["font_size_max_ratio_book"] = (
+            max_font / body_font_size if body_font_size > 0 and max_font > 0 else 1.0
+        )
+        out["page_position_fraction"] = page_index / total_pages if total_pages else 0.0
+        result[page_index] = out
+    return result

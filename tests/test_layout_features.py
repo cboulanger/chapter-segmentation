@@ -7,7 +7,13 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from evaluation.scripts.layout_features import _is_heading_line, extract_page_features
+from evaluation.scripts.layout_features import (
+    FEATURE_NAMES,
+    PAGE_FEATURE_NAMES,
+    _is_heading_line,
+    add_book_context_features,
+    extract_page_features,
+)
 
 _FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
 <alto xmlns="http://www.loc.gov/standards/alto/ns-v3#">
@@ -242,6 +248,77 @@ class TestNewPageLocalFeatures(unittest.TestCase):
         self.assertAlmostEqual(self.features[0]["_modal_font_size"], 10.0)
         self.assertAlmostEqual(self.features[1]["_max_font_size"], 24.0)
         self.assertAlmostEqual(self.features[1]["_modal_font_size"], 10.0)
+
+
+def _synthetic_page(line_count: float, last_vpos: float, max_font: float, modal_font: float) -> dict:
+    page = {name: 0.0 for name in PAGE_FEATURE_NAMES}
+    page["line_count"] = line_count
+    page["last_text_vpos_fraction"] = last_vpos
+    page["_max_font_size"] = max_font
+    page["_modal_font_size"] = modal_font
+    return page
+
+
+class TestAddBookContextFeatures(unittest.TestCase):
+    def setUp(self):
+        # Three-page book: a sparse chapter-opening-like page between two
+        # dense body pages. Line counts 30/8/20 -> median 20; modal fonts
+        # 10/10/12 -> body font median 10.
+        self.pages = {
+            0: _synthetic_page(30.0, 0.95, 10.0, 10.0),
+            1: _synthetic_page(8.0, 0.4, 24.0, 10.0),
+            2: _synthetic_page(20.0, 0.9, 12.0, 12.0),
+        }
+        self.result = add_book_context_features(self.pages, total_pages=3)
+
+    def test_output_keys_are_exactly_feature_names(self):
+        for page in self.result.values():
+            self.assertEqual(set(page.keys()), set(FEATURE_NAMES))
+
+    def test_page_zero_sentinels(self):
+        self.assertEqual(self.result[0]["prev_last_text_vpos_fraction"], 0.0)
+        self.assertEqual(self.result[0]["prev_line_count_rel"], 0.0)
+
+    def test_prev_page_wiring(self):
+        self.assertAlmostEqual(self.result[1]["prev_last_text_vpos_fraction"], 0.95)
+        self.assertAlmostEqual(self.result[1]["prev_line_count_rel"], 30.0 / 20.0)
+        self.assertAlmostEqual(self.result[2]["prev_last_text_vpos_fraction"], 0.4)
+        self.assertAlmostEqual(self.result[2]["prev_line_count_rel"], 8.0 / 20.0)
+
+    def test_book_relative_normalization(self):
+        self.assertAlmostEqual(self.result[0]["line_count_rel"], 30.0 / 20.0)
+        self.assertAlmostEqual(self.result[1]["line_count_rel"], 8.0 / 20.0)
+        self.assertAlmostEqual(self.result[1]["font_size_max_ratio_book"], 24.0 / 10.0)
+        self.assertAlmostEqual(self.result[2]["font_size_max_ratio_book"], 12.0 / 10.0)
+
+    def test_page_position_fraction(self):
+        self.assertAlmostEqual(self.result[0]["page_position_fraction"], 0.0)
+        self.assertAlmostEqual(self.result[1]["page_position_fraction"], 1.0 / 3.0)
+        self.assertAlmostEqual(self.result[2]["page_position_fraction"], 2.0 / 3.0)
+
+    def test_empty_pages_are_excluded_from_book_medians(self):
+        pages = {
+            0: _synthetic_page(0.0, 0.0, 0.0, 0.0),  # blank page
+            1: _synthetic_page(10.0, 0.9, 10.0, 10.0),
+            2: _synthetic_page(20.0, 0.9, 10.0, 10.0),
+        }
+        result = add_book_context_features(pages, total_pages=3)
+        # Median over non-empty pages only: (10+20)/2 = 15, not median(0,10,20)=10.
+        self.assertAlmostEqual(result[1]["line_count_rel"], 10.0 / 15.0)
+        # A page with no resolvable font gets the neutral 1.0, matching
+        # font_size_max_ratio's existing default.
+        self.assertEqual(result[0]["font_size_max_ratio_book"], 1.0)
+
+    def test_all_empty_book_falls_back_without_dividing_by_zero(self):
+        pages = {0: _synthetic_page(0.0, 0.0, 0.0, 0.0)}
+        result = add_book_context_features(pages, total_pages=1)
+        self.assertEqual(result[0]["line_count_rel"], 0.0)
+        self.assertEqual(result[0]["font_size_max_ratio_book"], 1.0)
+
+    def test_raw_keys_are_stripped(self):
+        for page in self.result.values():
+            self.assertNotIn("_max_font_size", page)
+            self.assertNotIn("_modal_font_size", page)
 
 
 if __name__ == "__main__":

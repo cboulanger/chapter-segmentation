@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: rocm/pytorch:rocm6.3_ubuntu22.04_py3.10_pytorch_release_2.4.0
+From: rocm/pytorch:rocm6.4.4_ubuntu22.04_py3.10_pytorch_release_2.7.1
 
 # Apptainer container for the NuExtract-2.0-4B LoRA fine-tuning pilot on
 # MPCDF HPC (Viper-GPU, AMD MI300A APUs). Sibling of ../nuextract.def
@@ -8,17 +8,23 @@ From: rocm/pytorch:rocm6.3_ubuntu22.04_py3.10_pytorch_release_2.4.0
 # the other silently breaking. See ../README.md's "NuExtract-2.0-4B
 # fine-tuning pilot" section for what this pilot does.
 #
-# UNVERIFIED: the base image tag above is a best-guess placeholder (AMD's
-# rocm/pytorch naming convention, ROCm 6.3 to match Viper's recommended
-# `module load rocm/6.3`) -- it has not been confirmed to exist or to
-# ship the ROCm *dev* toolchain (hipcc/hipconfig, needed below to build
-# llama.cpp with HIP), only the runtime libraries. Check
-# https://hub.docker.com/r/rocm/pytorch/tags for a real tag before
-# building, and confirm `hipconfig` is on PATH inside it (`apptainer
-# exec docker://rocm/pytorch:<tag> hipconfig -l` from a machine with
-# apptainer, or just try the build below and see if the hipcc step
-# fails). If the runtime-only image is what's available, switch to a
-# `rocm/dev-ubuntu-*` base instead and install pytorch separately.
+# Base image tag confirmed against the real `rocm/pytorch` tag list
+# (`curl -s https://hub.docker.com/v2/repositories/rocm/pytorch/tags/?page_size=100`,
+# 477 tags total). The original guess here, rocm6.3_..._pytorch_release_2.4.0,
+# does exist and builds fine, but ships PyTorch 2.4.0 -- too old for
+# `transformers>=4.46.0` below, which resolves to whatever's newest on
+# PyPI at build time and, as of 2026-08, requires torch>=2.5 and silently
+# disables itself (then peft crashes on a bare `NameError: name 'torch'
+# is not defined` importing transformers' own tensor_parallel module)
+# when that floor isn't met. No rocm6.3-family tag pairs with a >=2.5
+# pytorch_release (AMD moved to the 6.4.x line before shipping one), so
+# this bumps to rocm6.4.4 -- one minor version above Viper's documented
+# `module load rocm/6.3`, which should be within the AMD driver's usual
+# forward-compat window, but worth confirming on a real GPU node
+# (`apptainer test`'s import checks don't exercise the GPU driver at all
+# -- see the %test comment below). pytorch_release_2.7.1 (not the bare
+# minimum 2.5.1) leaves headroom against transformers' floor creeping up
+# again before this image is next rebuilt.
 #
 # Viper-GPU nodes: 2x AMD Instinct MI300A APUs per node, 128GB HBM3
 # each (unified CPU+GPU memory -- these are APUs, not discrete GPUs
@@ -53,15 +59,23 @@ From: rocm/pytorch:rocm6.3_ubuntu22.04_py3.10_pytorch_release_2.4.0
         "langdetect>=1.0.9" \
         "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
 
-    # pyproject.toml's "nuextract-finetune" optional-dependency group.
-    # Same versions as ../nuextract.def -- these are GPU-agnostic pure-
-    # Python packages, only torch itself needs to be a ROCm build (comes
-    # from the base image).
+    # pyproject.toml's "nuextract-finetune" optional-dependency group,
+    # pinned to the exact versions in ../../uv.lock (the combination
+    # already validated locally against finetune_nuextract.py/
+    # merge_nuextract_lora.py/evaluate_nuextract_finetune.py) rather than
+    # ../nuextract.def's floor-only `>=` bounds. Floor-only bounds let pip
+    # grab whatever's newest on PyPI at build time, which is exactly what
+    # broke here once: transformers quietly raised its own torch floor
+    # past what the base image ships (see the base-image comment above).
+    # Pinning exactly means a stale/unbuildable pyproject.toml pin has to
+    # be caught by re-running `uv lock`, not discovered on a compute node.
+    # These are GPU-agnostic pure-Python packages -- only torch itself
+    # needs to be a ROCm build (comes from the base image).
     pip3 install --no-cache-dir \
-        "transformers>=4.46.0" \
-        "peft>=0.13.0" \
-        "accelerate>=0.34.0" \
-        "huggingface-hub>=0.25.0"
+        "transformers==5.15.0" \
+        "peft==0.20.0" \
+        "accelerate==1.14.0" \
+        "huggingface-hub==1.27.0"
 
     # HIP-accelerated build -- the AMD equivalent of ../nuextract.def's
     # CUDA build section. Two things carry over from that file's own

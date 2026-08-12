@@ -45,8 +45,8 @@
 set -e
 
 module purge
-# UNVERIFIED: confirm this module name/version exists on Viper
-# (`module avail apptainer`) -- copied from run_pilot.slurm's Raven value.
+# Confirmed available on Viper via `module avail apptainer` (also offers
+# 1.3.2, 1.3.6, 1.4.1, 1.5.2) -- 1.4.3 matches run_pilot.slurm's Raven value.
 module load apptainer/1.4.3
 
 REPO_DIR="${REPO_DIR:-$PWD}"

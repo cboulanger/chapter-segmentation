@@ -96,6 +96,18 @@ Before anything else, pick one:
   corpus's committed `manifest.json` are supported (not
   `manifest.local.json` -- promote those by hand).
 
+**If the book is being added to grow the layout-based TOC/chapter-first-page
+classifier's training pool specifically** (as opposed to the text-heuristic
+accuracy harness), prefer scans, books with unnumbered first chapters, and
+books with weak title/body font contrast over another generic
+well-produced open-access book. A learning-curve check (`RESULTS.md`,
+"Follow-up: relaxing the per-book bar, and a model-architecture swap")
+found `full_recall_fraction` flat across training-pool sizes 10-35 books --
+the classifier is saturated on the kind of book already well-represented in
+the corpus, so another book like those adds little signal; the
+underrepresented templates it still struggles with are where new ground
+truth actually moves the numbers.
+
 Every path in this document below (`evaluation/<filename>`,
 `evaluation/manifest.local.json`, etc.) means
 `evaluation/corpus/<corpus>/<filename>` for whichever corpus you picked

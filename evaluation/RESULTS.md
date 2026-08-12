@@ -1031,6 +1031,157 @@ whitespace distinction from body text) rather than generic new books, since
 those are the specific cases the current features structurally can't
 separate from ordinary pages.
 
+### Follow-up: re-run over the grown 70-book corpus
+
+The pilot's `LogisticRegression`/10-feature model (`recall_target=0.80`,
+`chapter_first_recall_tolerance=0.90`, unchanged from the previous
+follow-up) was re-run LOBO against the corpus after its growth to 70 books
+(57 `open-access` + 13 `copyrighted-scans`, up from the 50-book corpus the
+`44%`/`15.0%` numbers above were measured against). Result:
+`full_recall_fraction=45/70=64%`, `avg_candidate_fraction=10.0%` -- still
+**NOT MET** against the 90%/15% bar, but a better operating point than the
+50-book run on both axes at once (more books passing, fewer candidate
+pages per book), simply from the larger, more diverse training pool
+calibrating a tighter per-fold threshold. Per corpus:
+
+| corpus | `full_recall_fraction` | `avg_candidate_fraction` | avg `chapter_first_recall` |
+| --- | --- | --- | --- |
+| open-access | 44/57 = 77.2% | 10.7% | 93.9% |
+| copyrighted-scans | 1/13 = 7.7% | 6.9% | 28.8% |
+
+The split is stark: `open-access` alone is close to the bar, while
+`copyrighted-scans` is nearly the whole shortfall, dragging the combined
+number down even though its candidate-fraction cost is actually lower than
+`open-access`'s. This is the baseline the next follow-up (below) measures
+against, and the split above is exactly what motivated its two directions
+(book-context/normalized features and scan-noise augmentation).
+
+### Follow-up: context/normalized features and scan-noise augmentation
+
+Per `docs/superpowers/specs/2026-08-12-layout-classifier-context-features-and-scan-augmentation-design.md`,
+direct inspection of `copyrighted-scans` ALTO XML found the cause of the
+split above: OCR'd scans carry hundreds of near-identical jittery font
+sizes with no genuine large title font, so the two strongest existing
+features (`font_size_max_ratio`, `top_block_is_large_font`) are degenerate
+on exactly the failing corpus, and the per-page `statistics.mode` used as
+the body-font estimate is itself noise over that many close values. The
+fix has two independent parts, both on top of the unchanged
+`LogisticRegression` model and unchanged calibration
+(`recall_target=0.80`, `chapter_first_recall_tolerance=0.90`): seven new
+features in `evaluation/scripts/layout_features.py` --
+two page-local (`last_text_vpos_fraction`, `top_line_heading_match`) and
+five book/context features computed in a second pass,
+`add_book_context_features()` (`prev_last_text_vpos_fraction`,
+`prev_line_count_rel`, `line_count_rel`, `font_size_max_ratio_book`,
+`page_position_fraction`) -- taking `FEATURE_NAMES` from 10 to 17; and a
+new deterministic ALTO-level scan-noise augmentation module,
+`evaluation/scripts/alto_scan_noise.py`, wired in via a `--scan-noise-augment`
+flag that perturbs only `open-access` training rows (font-size jitter,
+title-contrast compression, geometry jitter) so the born-digital pool
+looks scan-shaped during training, with augmented rows excluded from every
+fold's own test set to avoid leakage.
+
+The three official LOBO runs, all over the full 70-book corpus at the
+unchanged calibration:
+
+| run | `full_recall_fraction` | `avg_candidate_fraction` |
+| --- | --- | --- |
+| baseline (10 features) | 45/70 = 64% | 10.0% |
+| + context/normalized features (17) | 39/70 = 56% | 7.2% |
+| + `--scan-noise-augment` | 40/70 = 57% | 7.2% |
+
+Per corpus, all three runs:
+
+| run | open-access `full_recall_fraction` | open-access `avg_candidate_fraction` | open-access avg `chapter_first_recall` | scans `full_recall_fraction` | scans `avg_candidate_fraction` | scans avg `chapter_first_recall` |
+| --- | --- | --- | --- | --- | --- | --- |
+| baseline | 44/57 = 77.2% | 10.7% | 93.9% | 1/13 = 7.7% | 6.9% | 28.8% |
+| + features | 39/57 = 68.4% | 7.5% | 85.8% | 0/13 = 0% | 5.6% | 50.9% |
+| + augment | 40/57 = 70.2% | 7.4% | 86.8% | 0/13 = 0% | 6.1% | 51.2% |
+
+**Read at face value, this looks like a regression -- it isn't; it's an
+operating-point artifact of the unchanged `recall_target=0.80`.** The new
+features make the training probabilities more separable, so the per-fold
+threshold calibrated to 80% training recall becomes noticeably more
+conservative: candidate fraction fell from 10.0% to 7.2%, tight enough
+that five `open-access` books flip from passing to failing purely on
+`chapter_first_recall` dropping below the 90% tolerance --
+`9781783748532` (100%->87%), `9781787359260` (95%->60%),
+`9782821895607` (92%->42%, whose `toc_recall` also drops 100%->0%),
+`9783031907272` (100%->32%), and `9783837681192` (100%->46%) -- with zero
+books flipping the other way. An informational sweep of `recall_target`
+(not a change to the default; run only to test whether the drop is purely
+an operating-point effect) confirms it is:
+
+| config | `full_recall_fraction` | `avg_candidate_fraction` | open-access `full_recall_fraction` | scans `full_recall_fraction` | scans avg `chapter_first_recall` |
+| --- | --- | --- | --- | --- | --- |
+| 17 features, rt=0.85 | 41/70 = 59% | 7.9% | 70.2% | 1/13 | 57.8% |
+| 17 features, rt=0.90 | 47/70 = 67% | 9.0% | 78.9% | 2/13 | 66.8% |
+| 17 features + augment, rt=0.90 | 45/70 = 64% | 8.9% | 77.2% | 1/13 | 64.8% |
+
+At `rt=0.90` -- still comfortably inside the 15% candidate budget at 9.0%
+-- the same 17 features beat the baseline on every axis at once: 67% vs.
+64% full recall, 9.0% vs. 10.0% candidates, 78.9% vs. 77.2% open-access,
+2/13 vs. 1/13 scans. This sweep does **not** change the default --
+`recall_target` stays `0.80` so this run remains comparable to every prior
+follow-up's numbers, per the earlier model-architecture follow-up's
+framing above ("`recall_target` is the real ... dial a consumer of the
+classifier would actually set"; `chapter_first_recall_tolerance` only
+changes how this script scores a book, not inference behavior) -- it's
+reported here only to show that the curve genuinely moved, not just the
+single point the default happens to sit at.
+
+**The scan rescue is real at the recall level, even though it doesn't
+flip any scan to "passing" at the default tolerance.** Scans' average
+`chapter_first_recall` rose from 28.8% at baseline to 50.9% (17 features,
+`rt=0.80`) and 66.8% (`rt=0.90`) -- the largest per-book jumps (baseline
+-> +features) are `9783428042241` (5%->68%, 78% with augmentation),
+`9780367439712` (8%->67%), `9783465016878` (15%->77%),
+`9783848704316` (27%->73%), `9783789057366` (2%->39%), `9783899496291`
+(24%->62%), and `9783322969828` (0%->29%). But **no scan clears the
+90%-per-book bar at `rt=0.80`** (0/13, and the baseline's one passer,
+`9783848736829`, itself drops from 100% to 61%) -- which is exactly why
+the corpus-level `full_recall_fraction` for scans reads 0% despite the
+underlying recall gains being large and broad-based.
+
+**The six 0%-`toc_recall` open-access books are unchanged at 0%**:
+`9781783748471`, `9782375460122`, `9783837660944`, `9783839447529`,
+`9783839468937`, and `9783839470619` all still score zero `toc_recall`
+under every configuration above. Expected -- the new features target
+chapter-opening detection (book-context, per-book font normalization,
+heading-line text), not TOC-page layout, so they have no mechanism to
+touch this failure mode. TOC-anchored matching (deferred, see below)
+remains the untouched direction for these six.
+
+**Augmentation itself is an honest, mostly-negative result.** Against the
+un-augmented 17-feature run, `--scan-noise-augment` moves the overall
+number by +1 book at `rt=0.80` (56%->57%) and -2 books at `rt=0.90`
+(67%->64%), and scans' average `chapter_first_recall` by only +0.3pt at
+`rt=0.80` (50.9%->51.2%). A few scans improve slightly with it
+(`9783428042241` 68%->78%, `9783492021234` 43%->50%); others drop
+(`9780367439712` 67%->58%, `9783465016878` 77%->69%, and
+`9783848736829`'s `toc_recall` 67%->33%). The most likely reason: the
+per-book font normalization (`font_size_max_ratio_book`) already closes
+most of the domain gap the augmentation was designed to target, leaving
+little for the synthetic scan-noise to add on top. It stays in the
+codebase -- cheap to run, cached (`.aug.alto.xml`, regenerated only when
+deleted by hand), off by default -- but should not be relied on as the
+mechanism behind the scan-recall gains above; the feature work is.
+
+**Verdict: still NOT MET, in every configuration measured**, against the
+unchanged 90%/15% bar. The best configuration found is 17 features at
+`recall_target=0.90` (67% / 9.0%), still 23 points short. The features
+moved the curve in the right direction on both corpora simultaneously
+without touching the candidate-fraction budget -- a real, if partial,
+result -- but two structural gaps remain untouched by this follow-up: the
+open-access TOC-layout failure mode (candidate direction: TOC-anchored
+chapter matching, parsing a detected TOC page and locating chapter
+openings by title/page-number matching against it) and the residual scan
+`chapter_first_recall` ceiling (candidate direction: document-image deep
+learning, bypassing OCR font metadata entirely). Both were deferred, not
+rejected, at the design stage; neither is scoped here. With candidate
+volume now sitting well below the 15% budget even at `rt=0.90`, revisiting
+the default `recall_target` itself is also worth a future look.
+
 ## LLM-fallback results (archived -- script removed)
 
 **Superseded by "Per-strategy standalone results" above, which measures

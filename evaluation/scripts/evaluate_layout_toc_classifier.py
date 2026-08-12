@@ -11,6 +11,13 @@ Usage:
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --pdfalto-bin /path/to/pdfalto
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --recall-target 0.95
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --corpora open-access,pending
+    uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --scan-noise-augment
+
+`--scan-noise-augment` writes `<key>.aug.alto.xml` files next to each
+open-access book's cached ALTO XML the first time it runs; like the rest of
+`.layout-cache`, these are regenerated only if absent, so delete them by
+hand after changing the perturbation constants in
+evaluation/scripts/alto_scan_noise.py.
 """
 
 import argparse

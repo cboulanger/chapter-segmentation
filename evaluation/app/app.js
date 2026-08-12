@@ -62,7 +62,7 @@ async function fetchJson(path) {
 function headerHtml(book, isbn) {
   const accepted = state.decisions[isbn] === 'accepted';
   const checkmark = accepted ? ' ✓' : '';
-  return `<span class="${accepted ? 'accepted-header' : ''}">Book ${state.index + 1} of ${state.manifest.length} — ${isbn} — ${book.title}${checkmark}</span>`;
+  return `<span class="${accepted ? 'accepted-header' : ''}">${isbn} — ${book.title}${checkmark}</span>`;
 }
 
 function renderSkippable(book, isbn, message) {

@@ -25,6 +25,15 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_PORT = 8743
 
 
+class NoCacheHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
+    """Disables browser caching so edits to the app's static files always show up
+    on the next reload, instead of silently mixing stale and fresh files."""
+
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-store")
+        super().end_headers()
+
+
 def _pids_on_port(port):
     """PIDs of any process listening on `port` (macOS `lsof`), or []."""
     try:
@@ -58,7 +67,7 @@ def main():
         subprocess.run(["open", url], check=True)
         return
 
-    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(REPO_ROOT))
+    handler = functools.partial(NoCacheHTTPRequestHandler, directory=str(REPO_ROOT))
     try:
         httpd = http.server.HTTPServer(("localhost", args.port), handler)
     except OSError as err:

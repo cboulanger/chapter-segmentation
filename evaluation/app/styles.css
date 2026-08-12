@@ -94,11 +94,11 @@ header {
   background: white;
 }
 
-.accept {
+.controls button.accept {
   background: #d7f7dd;
 }
 
-.reject {
+.controls button.reject {
   background: #ffe0e0;
 }
 

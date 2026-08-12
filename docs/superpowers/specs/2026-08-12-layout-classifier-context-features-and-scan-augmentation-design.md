@@ -139,7 +139,13 @@ each mimicking a property measured in the real `copyrighted-scans` ALTO:
 
 Exact constants above are starting points, tunable during implementation;
 the invariants (deterministic per key; page and line counts preserved;
-contrast strictly compressed) are the contract.
+contrast compressed) are the contract. Contrast compression turned out to
+be statistical rather than a hard per-page guarantee once implemented:
+independent per-clone jitter on the title and body styles can occasionally
+cancel the compression on a single page when the source contrast is
+already weak (ratio ~1.2); at realistic contrast ratios (>=1.5, which
+covers every book in both corpora) compression always dominates. See the
+caveat in `alto_scan_noise.py`'s own module docstring.
 
 Augmented ALTO is cached as `.layout-cache/<key>.aug.alto.xml` next to
 the source cache entry and regenerated only if absent — delete the file

@@ -41,7 +41,12 @@ _FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
 </alto>
 """
 
-_TWO_PAGE_FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
+# Fixture with tiny VPOS/HPOS coordinates (~1-2pt) so that multiplicative jitter
+# (±1% of value) contributes ≤0.07pt of noise, while additive per-page offset
+# spans ±5pt. Thus the observed mean VPOS shift per page is approximately the
+# page's additive offset, cleanly decoupled from multiplicative jitter — isolates
+# the per-page offset mechanism and kills mutants that remove or collapse offsets.
+_TINY_VPOS_TWO_PAGE_FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
 <alto xmlns="http://www.loc.gov/standards/alto/ns-v3#">
   <Styles>
     <TextStyle ID="body" FONTFAMILY="serif" FONTSIZE="10.0" FONTTYPE="serif" FONTWIDTH="proportional" FONTCOLOR="000000"/>
@@ -51,11 +56,17 @@ _TWO_PAGE_FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
     <Page ID="Page1" PHYSICAL_IMG_NR="1" WIDTH="500" HEIGHT="600">
       <PrintSpace>
         <TextBlock ID="p1_b1">
-          <TextLine ID="p1_t1" HPOS="200" VPOS="50" WIDTH="150" HEIGHT="24">
-            <String ID="p1_w1" CONTENT="Chapter" HPOS="200" WIDTH="150" HEIGHT="24" STYLEREFS="title"/>
+          <TextLine ID="p1_t1" HPOS="1" VPOS="1" WIDTH="340" HEIGHT="12">
+            <String ID="p1_w1" CONTENT="Line1" HPOS="1" WIDTH="340" HEIGHT="12" STYLEREFS="title"/>
           </TextLine>
-          <TextLine ID="p1_t2" HPOS="48" VPOS="200" WIDTH="340" HEIGHT="12">
-            <String ID="p1_w2" CONTENT="Text" HPOS="48" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
+          <TextLine ID="p1_t2" HPOS="2" VPOS="2" WIDTH="340" HEIGHT="12">
+            <String ID="p1_w2" CONTENT="Line2" HPOS="2" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
+          </TextLine>
+          <TextLine ID="p1_t3" HPOS="1" VPOS="1" WIDTH="340" HEIGHT="12">
+            <String ID="p1_w3" CONTENT="Line3" HPOS="1" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
+          </TextLine>
+          <TextLine ID="p1_t4" HPOS="2" VPOS="2" WIDTH="340" HEIGHT="12">
+            <String ID="p1_w4" CONTENT="Line4" HPOS="2" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
           </TextLine>
         </TextBlock>
       </PrintSpace>
@@ -63,11 +74,17 @@ _TWO_PAGE_FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
     <Page ID="Page2" PHYSICAL_IMG_NR="2" WIDTH="500" HEIGHT="600">
       <PrintSpace>
         <TextBlock ID="p2_b1">
-          <TextLine ID="p2_t1" HPOS="200" VPOS="50" WIDTH="150" HEIGHT="24">
-            <String ID="p2_w1" CONTENT="Next" HPOS="200" WIDTH="150" HEIGHT="24" STYLEREFS="title"/>
+          <TextLine ID="p2_t1" HPOS="1" VPOS="1" WIDTH="340" HEIGHT="12">
+            <String ID="p2_w1" CONTENT="Page2L1" HPOS="1" WIDTH="340" HEIGHT="12" STYLEREFS="title"/>
           </TextLine>
-          <TextLine ID="p2_t2" HPOS="48" VPOS="200" WIDTH="340" HEIGHT="12">
-            <String ID="p2_w2" CONTENT="Content" HPOS="48" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
+          <TextLine ID="p2_t2" HPOS="2" VPOS="2" WIDTH="340" HEIGHT="12">
+            <String ID="p2_w2" CONTENT="Page2L2" HPOS="2" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
+          </TextLine>
+          <TextLine ID="p2_t3" HPOS="1" VPOS="1" WIDTH="340" HEIGHT="12">
+            <String ID="p2_w3" CONTENT="Page2L3" HPOS="1" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
+          </TextLine>
+          <TextLine ID="p2_t4" HPOS="2" VPOS="2" WIDTH="340" HEIGHT="12">
+            <String ID="p2_w4" CONTENT="Page2L4" HPOS="2" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
           </TextLine>
         </TextBlock>
       </PrintSpace>
@@ -143,29 +160,44 @@ class TestWriteAugmentedAlto(unittest.TestCase):
 
 
 class TestMultiPageAugmentation(unittest.TestCase):
-    def test_per_page_offsets_are_independent_and_deterministic(self):
+    _KEYS = [f"book-{i}" for i in range(10)]
+
+    def _page_mean_vpos_shifts(self, book_key: str) -> list[float]:
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
             source = tmp_path / "two-page.alto.xml"
-            source.write_text(_TWO_PAGE_FIXTURE_ALTO_XML, encoding="utf-8")
-            out_a = tmp_path / "a.aug.alto.xml"
-            out_b = tmp_path / "b.aug.alto.xml"
-            write_augmented_alto(source, out_a, "book-key")
-            write_augmented_alto(source, out_b, "book-key")
-            self.assertEqual(out_a.read_bytes(), out_b.read_bytes())
-
+            source.write_text(_TINY_VPOS_TWO_PAGE_FIXTURE_ALTO_XML, encoding="utf-8")
+            output = tmp_path / "aug.alto.xml"
+            write_augmented_alto(source, output, book_key)
             src_pages = list(ET.parse(source).getroot().iter(_ALTO_NS + "Page"))
-            aug_pages = list(ET.parse(out_a).getroot().iter(_ALTO_NS + "Page"))
-            self.assertEqual(len(aug_pages), 2)
-            # Each page's lines must drift by a page-specific offset: compute
-            # mean VPOS shift per page and require the two pages' shifts to
-            # differ (independent per-page drift, not one global offset).
-            shifts = []
-            for src_page, aug_page in zip(src_pages, aug_pages):
-                src_v = [float(l.get("VPOS")) for l in src_page.iter(_ALTO_NS + "TextLine")]
-                aug_v = [float(l.get("VPOS")) for l in aug_page.iter(_ALTO_NS + "TextLine")]
-                shifts.append(sum(a - s for s, a in zip(src_v, aug_v)) / len(src_v))
-            self.assertNotAlmostEqual(shifts[0], shifts[1], places=3)
+            aug_pages = list(ET.parse(output).getroot().iter(_ALTO_NS + "Page"))
+        shifts = []
+        for src_page, aug_page in zip(src_pages, aug_pages):
+            src_v = [float(l.get("VPOS")) for l in src_page.iter(_ALTO_NS + "TextLine")]
+            aug_v = [float(l.get("VPOS")) for l in aug_page.iter(_ALTO_NS + "TextLine")]
+            shifts.append(sum(a - s for s, a in zip(src_v, aug_v)) / len(src_v))
+        return shifts
+
+    def test_page_offsets_exist(self):
+        # With tiny source coordinates the multiplicative jitter can move a
+        # line by at most ~0.07pt, so a mean shift beyond 2pt can only come
+        # from the additive per-page offset. Kills the "offsets removed"
+        # mutant, which caps every shift near zero.
+        max_abs_shift = max(
+            abs(shift) for key in self._KEYS for shift in self._page_mean_vpos_shifts(key)
+        )
+        self.assertGreater(max_abs_shift, 2.0)
+
+    def test_page_offsets_are_independent_per_page(self):
+        # If both pages shared one global offset, the two pages' mean shifts
+        # would agree to within jitter noise (~0.1pt) for EVERY key. Kills
+        # the "single global offset" mutant. Deterministic: fixed keys, no
+        # flakiness.
+        max_between_page_gap = max(
+            abs(shifts[0] - shifts[1])
+            for shifts in (self._page_mean_vpos_shifts(key) for key in self._KEYS)
+        )
+        self.assertGreater(max_between_page_gap, 1.0)
 
 
 if __name__ == "__main__":

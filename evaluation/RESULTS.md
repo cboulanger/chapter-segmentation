@@ -27,11 +27,13 @@ git log around 2026-08-11/12: `0d5ec5a`, `1e8ee92`, `69b9662`). This
 snapshot re-runs every *cheap* (no per-request API cost) evaluation --
 the pure-heuristic pytest harness, the heuristic/outline per-strategy
 report, and the heuristic+outline+Crossref strategy-pipeline script --
-against the full grown corpus. The LLM strategy and the layout-based TOC
-classifier pilot were **not** re-run (LLM costs real KISSKI budget; the
-layout pilot needs a separate `pdfalto` extraction pass over 20 new
-books) -- their numbers below are carried over from before the corpus
-grew and are called out as stale where they appear.
+against the full grown corpus. The layout-based TOC classifier pilot was
+also re-run 2026-08-12 after its `pdfalto` extraction pass over the new
+books -- see "Follow-up: re-run over the grown 70-book corpus" (and the
+context-features follow-up after it) in the pilot's own section below. The
+LLM strategy was **not** re-run (it costs real KISSKI budget) -- its
+numbers below are carried over from before the corpus grew and are called
+out as stale where they appear.
 
 ## Pure-heuristic results
 
@@ -688,12 +690,12 @@ direct-PDF pure-heuristic aggregate for this corpus, from the
 
 ## Layout-based TOC/chapter-first-page classifier pilot
 
-**Not re-run for the 2026-08-12 corpus growth** -- this pilot needs its own
-`pdfalto`/ALTO XML extraction pass (`evaluation/scripts/pdfalto_runner.py`)
-over the newly-added books before it can be re-scored, separate from the
-text-based evaluations re-run elsewhere in this file. Every book count and
-percentage below (the "50-book corpus") still refers to the pre-growth
-corpus size.
+The subsections from here through "Follow-up: relaxing the per-book bar"
+describe the pilot's history on the pre-growth **50-book** corpus -- every
+book count and percentage in them refers to that corpus size. The
+2026-08-12 re-run over the grown 70-book corpus, and the feature/
+augmentation work that followed it, are covered in the last two follow-up
+subsections at the end of this section.
 
 `evaluation/scripts/evaluate_layout_toc_classifier.py` trains a
 leave-one-book-out (LOBO) classifier on ten geometric layout features
@@ -1033,28 +1035,77 @@ separate from ordinary pages.
 
 ### Follow-up: re-run over the grown 70-book corpus
 
-The pilot's `LogisticRegression`/10-feature model (`recall_target=0.80`,
-`chapter_first_recall_tolerance=0.90`, unchanged from the previous
-follow-up) was re-run LOBO against the corpus after its growth to 70 books
-(57 `open-access` + 13 `copyrighted-scans`, up from the 50-book corpus the
-`44%`/`15.0%` numbers above were measured against). Result:
-`full_recall_fraction=45/70=64%`, `avg_candidate_fraction=10.0%` -- still
-**NOT MET** against the 90%/15% bar, but a better operating point than the
-50-book run on both axes at once (more books passing, fewer candidate
-pages per book), simply from the larger, more diverse training pool
-calibrating a tighter per-fold threshold. Per corpus:
+Re-run 2026-08-12 against the full grown corpus (57 `open-access/` + 13
+`copyrighted-scans/`, up from 37 + 13), unchanged model/calibration
+(`LogisticRegression`, `recall_target=0.80`, `chapter_first_recall_tolerance=0.90`).
+This needed the `pdfalto` binary, which isn't packaged or brew-installable
+-- it was built from a sibling checkout of
+[kermitt2/pdfalto](https://github.com/kermitt2/pdfalto) at `../pdfalto/`
+next to this repo (`evaluation/CLAUDE.md` now documents this location).
+32 of the 57 `open-access/` books already had a cached ALTO XML from the
+prior run; the remaining 25 new `open-access/` books plus all 13
+`copyrighted-scans/` books (whose `.layout-cache/` had never been
+populated in this worktree) were freshly extracted, ~2.5 minutes total.
 
-| corpus | `full_recall_fraction` | `avg_candidate_fraction` | avg `chapter_first_recall` |
+| | full_recall_fraction | avg_candidate_fraction |
+| --- | --- | --- |
+| 50-book corpus (previous) | 44% | 15.0% |
+| **70-book corpus (fresh)** | **64%** | **10.0%** |
+
+Still **NOT MET** against the 90%/15% decision bar, but the largest single
+jump in `full_recall_fraction` across this pilot's whole history --
+achieved purely from more/corrected ground truth, no model or feature
+changes -- while `avg_candidate_fraction` actually *dropped* well clear of
+its budget rather than trading one for the other. Per corpus:
+
+| corpus | books | full_recall_fraction (before -> after) | avg_candidate_fraction (before -> after) |
 | --- | --- | --- | --- |
-| open-access | 44/57 = 77.2% | 10.7% | 93.9% |
-| copyrighted-scans | 1/13 = 7.7% | 6.9% | 28.8% |
+| open-access | 37 -> 57 | 54.1% -> **77.2%** | 15.2% -> **10.7%** |
+| copyrighted-scans | 13 -> 13 | 15.4% -> **7.7%** | 14.4% -> **6.9%** |
 
-The split is stark: `open-access` alone is close to the bar, while
-`copyrighted-scans` is nearly the whole shortfall, dragging the combined
-number down even though its candidate-fraction cost is actually lower than
-`open-access`'s. This is the baseline the next follow-up (below) measures
-against, and the split above is exactly what motivated its two directions
-(book-context/normalized features and scan-noise augmentation).
+**open-access drove the whole improvement.** Of the 57 books, 44 now hit
+the full-recall bar and 38 score a literal 100%/100% toc/chapter_first
+recall -- most of the 20 net-new books (the crossref_gt reconciliation
+batch) are exactly this kind of clean, well-produced text, and the
+hand-verification pass that corrected previously-wrong chapter boundaries
+(see the "2026-08-12 re-run" note at the top of this file) means the
+labels those 44 books are scored against are also more trustworthy than
+before. The open-access stragglers are a recognizable, already-diagnosed
+shape rather than something new: low `toc_recall` on TOC pages that don't
+structurally resemble the training majority (e.g. `9781783748471` at 0%,
+`9782375460122` at 0%) and low `chapter_first_recall` on books with weak
+title/body font-size contrast (e.g. `9783492021234` at 43%,
+`9783907297339` at 45%) -- both failure modes already named in the
+model-architecture follow-up above.
+
+**copyrighted-scans regressed slightly despite an unchanged book set** --
+the same 13 books, none added or removed, only 2/13 pass now vs. 2/13
+before by fraction (15.4% was already ~2/13; 7.7% is 1/13). This isn't a
+data change on this corpus's side; the LOBO classifier trained on each
+fold now draws from a much larger, open-access-dominated training pool
+(56 other books instead of 36), which shifts the decision boundary these
+13 harder, higher-page-width-variance books are scored against. The two
+per-book swings worth flagging rather than averaging away:
+`9783848704316` dropped from 73% to 27% `chapter_first_recall` (was the
+biggest post-OCR-fix win in the earlier follow-up, now the biggest
+regression), while `dnb-36942798X` improved from 6% to 17%. Both remain
+well short of passing either way. The two newest `copyrighted-scans`
+books (the hand-built Festschrift volumes, `9783428042241` and
+`9783899496291`) are themselves weak: 5% and 24% `chapter_first_recall`
+respectively -- consistent with this corpus's standing diagnosis (the
+"Follow-up: replacing textless/degenerate-text..." section above) that
+`copyrighted-scans` scans have systematically weaker layout signal than
+`open-access` books, not a new finding.
+
+Net assessment of the re-run itself: corpus growth plus ground-truth
+correction bought real, substantial progress on `open-access` (54% to 77%)
+at essentially no `copyrighted-scans` cost (a ~2-book swing among 13 that
+were already the weak half of the corpus) -- but the pilot's own 90% bar
+was still not met, and the stark per-corpus split above (`open-access`
+close to the bar, `copyrighted-scans` nearly the whole shortfall) is
+exactly what motivated the next follow-up's two directions (book-context/
+normalized features and scan-noise augmentation), which measures against
+this run as its baseline.
 
 ### Follow-up: context/normalized features and scan-noise augmentation
 

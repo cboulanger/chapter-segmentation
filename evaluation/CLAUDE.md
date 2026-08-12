@@ -84,7 +84,11 @@ Before anything else, pick one:
   (`evaluation/scripts/ocr_evaluation_pdfs.py`) only caches extracted text
   for the accuracy harness -- it does not touch the PDF the layout-based
   TOC/chapter-first-page classifier pilot reads directly (`pdfalto`, via
-  `evaluation/scripts/pdfalto_runner.py`), so a text-layer-less PDF silently
+  `evaluation/scripts/pdfalto_runner.py`; the built binary lives at
+  `../pdfalto/pdfalto`, a sibling checkout of
+  [kermitt2/pdfalto](https://github.com/kermitt2/pdfalto) next to this repo
+  -- pass it via `--pdfalto-bin ../pdfalto/pdfalto` or `PDFALTO_BIN`, since
+  it isn't on `PATH` or installable via brew), so a text-layer-less PDF silently
   starves that pilot of signal no matter what the text-based harness sees.
 - **No ground truth built yet** (you only have the PDF and basic metadata
   so far) → `pending/`. Once its `.expected.json` exists, promote it into

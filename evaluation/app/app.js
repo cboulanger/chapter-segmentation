@@ -7,6 +7,8 @@ import {
   computeScale,
   isComplete,
   normalizeIndex,
+  vscodeFileUri,
+  clearRejectedDecisions,
 } from './lib.js';
 
 const THUMBNAIL_TARGET_WIDTH = 120;
@@ -17,6 +19,7 @@ const state = {
   index: 0,
   manifest: [],
   decisions: {},
+  repoRoot: null,
 };
 
 function $(id) {
@@ -55,7 +58,9 @@ async function fetchJson(path) {
 }
 
 function headerHtml(book, isbn) {
-  return `Book ${state.index + 1} of ${state.manifest.length} — ${isbn} — ${book.title}`;
+  const accepted = state.decisions[isbn] === 'accepted';
+  const checkmark = accepted ? ' ✓' : '';
+  return `<span class="${accepted ? 'accepted-header' : ''}">Book ${state.index + 1} of ${state.manifest.length} — ${isbn} — ${book.title}${checkmark}</span>`;
 }
 
 function renderSkippable(book, isbn, message) {
@@ -158,6 +163,7 @@ async function renderBook(book, isbn, expected, pdf) {
     </section>
     <div class="controls">
       <button id="prev" ${state.index === 0 ? 'disabled' : ''}>Prev</button>
+      ${state.repoRoot ? `<a id="open-vscode" class="button" href="${vscodeFileUri(state.repoRoot, state.corpus, isbn)}">Open in VS Code</a>` : ''}
       <button id="reject" class="reject">Reject</button>
       <button id="accept" class="accept">Accept</button>
     </div>
@@ -208,8 +214,15 @@ function renderComplete(total, fromDecision) {
     <h1>Review complete</h1>
     <p>${acceptedCount} accepted, ${rejectedCount} rejected, ${total} total.</p>
     <button id="download">Download rejected list</button>
+    <button id="clear-rejected">Clear rejected list</button>
   `;
   $('download').addEventListener('click', () => downloadRejected(rejectedText));
+  $('clear-rejected').addEventListener('click', () => {
+    state.decisions = clearRejectedDecisions(state.decisions);
+    saveDecisions(state.corpus, state.decisions);
+    state.index = 0;
+    render();
+  });
   if (fromDecision && rejectedCount > 0) downloadRejected(rejectedText);
 }
 
@@ -248,7 +261,7 @@ async function render(fromDecision = false) {
 }
 
 async function init() {
-  const { corpus, index } = parseParams(window.location.search);
+  const { corpus, index, repoRoot } = parseParams(window.location.search);
   if (!corpus) {
     showError('Add ?corpus=&lt;name&gt; to the URL, e.g. ?corpus=open-access');
     return;
@@ -256,6 +269,7 @@ async function init() {
   state.corpus = corpus;
   state.decisions = loadDecisions(corpus);
   state.index = normalizeIndex(index);
+  state.repoRoot = repoRoot;
 
   try {
     const manifest = await fetchJson(`../corpus/${corpus}/manifest.json`);

@@ -37,11 +37,21 @@ Then open:
 - `Accept`/`Reject` records a verdict and moves to the next book. `Prev`
   goes back to change a verdict — the button matching your last verdict
   for that book is outlined.
+- A book you've already accepted shows a green header with a checkmark
+  the next time it loads, so a re-review pass makes it obvious which
+  books still need attention.
+- `Open in VS Code` deep-links to the book's `.expected.json` via
+  `vscode://file/...`, using the local filesystem path the `review`
+  command passes in as `?repoRoot=`. macOS-only, and only appears when
+  `repoRoot` is present in the URL (i.e. when launched via `uv run
+  review`, not the manual `python3 -m http.server` route).
 - Your position (`index`) is kept in the URL so you can resume later;
   verdicts are kept in this browser's `localStorage`, scoped per corpus
   (`gt-review:<corpus>:decisions`).
 - After the last book, a rejected-ISBN list downloads automatically as
-  `<corpus>-rejected.txt`, one isbn per line.
+  `<corpus>-rejected.txt`, one isbn per line. `Clear rejected list`
+  removes rejected verdicts from storage (keeping accepted ones) so you
+  can re-review just the books you fixed.
 - If a book's PDF or `.expected.json` isn't present on disk, a `Skip`
   button advances past it without recording a verdict.
 

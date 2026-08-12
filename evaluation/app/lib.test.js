@@ -9,26 +9,36 @@ import {
   computeScale,
   isComplete,
   normalizeIndex,
+  vscodeFileUri,
+  clearRejectedDecisions,
 } from './lib.js';
 
 test('parseParams reads corpus and index', () => {
-  assert.deepEqual(parseParams('?corpus=open-access&index=5'), { corpus: 'open-access', index: 5 });
+  assert.deepEqual(parseParams('?corpus=open-access&index=5'), { corpus: 'open-access', index: 5, repoRoot: null });
 });
 
 test('parseParams defaults index to 0 when absent', () => {
-  assert.deepEqual(parseParams('?corpus=open-access'), { corpus: 'open-access', index: 0 });
+  assert.deepEqual(parseParams('?corpus=open-access'), { corpus: 'open-access', index: 0, repoRoot: null });
 });
 
 test('parseParams returns null corpus when absent', () => {
-  assert.deepEqual(parseParams(''), { corpus: null, index: 0 });
+  assert.deepEqual(parseParams(''), { corpus: null, index: 0, repoRoot: null });
 });
 
 test('parseParams ignores a non-numeric index', () => {
-  assert.deepEqual(parseParams('?corpus=x&index=abc'), { corpus: 'x', index: 0 });
+  assert.deepEqual(parseParams('?corpus=x&index=abc'), { corpus: 'x', index: 0, repoRoot: null });
 });
 
 test('parseParams ignores a negative index', () => {
-  assert.deepEqual(parseParams('?corpus=x&index=-3'), { corpus: 'x', index: 0 });
+  assert.deepEqual(parseParams('?corpus=x&index=-3'), { corpus: 'x', index: 0, repoRoot: null });
+});
+
+test('parseParams reads repoRoot', () => {
+  assert.deepEqual(parseParams('?corpus=x&repoRoot=%2FUsers%2Fme%2Frepo'), {
+    corpus: 'x',
+    index: 0,
+    repoRoot: '/Users/me/repo',
+  });
 });
 
 test('isbnFromFilename strips .pdf', () => {
@@ -76,4 +86,19 @@ test('normalizeIndex clamps a negative or non-finite value to 0', () => {
   assert.equal(normalizeIndex(-1), 0);
   assert.equal(normalizeIndex(Number.NaN), 0);
   assert.equal(normalizeIndex(5), 5);
+});
+
+test('vscodeFileUri builds an absolute vscode:// deep link', () => {
+  assert.equal(
+    vscodeFileUri('/Users/me/repo', 'open-access', '9781234567890'),
+    'vscode://file/Users/me/repo/evaluation/corpus/open-access/9781234567890.expected.json'
+  );
+});
+
+test('clearRejectedDecisions drops rejected entries and keeps the rest', () => {
+  assert.deepEqual(clearRejectedDecisions({ a: 'accepted', b: 'rejected', c: 'rejected' }), { a: 'accepted' });
+});
+
+test('clearRejectedDecisions is a no-op when nothing is rejected', () => {
+  assert.deepEqual(clearRejectedDecisions({ a: 'accepted' }), { a: 'accepted' });
 });

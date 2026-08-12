@@ -11,6 +11,12 @@ header {
   display: block;
 }
 
+.accepted-header {
+  background: #d7f7dd;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
 .section h2 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -67,10 +73,18 @@ header {
   border-top: 1px solid #ddd;
 }
 
-.controls button {
+.controls button,
+.controls .button {
   font-size: 1rem;
   padding: 0.6rem 1.2rem;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
 }
 
 .accept {

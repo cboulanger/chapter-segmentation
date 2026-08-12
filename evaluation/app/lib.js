@@ -4,7 +4,16 @@ export function parseParams(search) {
   const rawIndex = params.get('index');
   const parsedIndex = rawIndex === null ? 0 : Number.parseInt(rawIndex, 10);
   const index = Number.isFinite(parsedIndex) && parsedIndex >= 0 ? parsedIndex : 0;
-  return { corpus: corpus || null, index };
+  const repoRoot = params.get('repoRoot');
+  return { corpus: corpus || null, index, repoRoot: repoRoot || null };
+}
+
+export function vscodeFileUri(repoRoot, corpus, isbn) {
+  return `vscode://file${repoRoot}/evaluation/corpus/${corpus}/${isbn}.expected.json`;
+}
+
+export function clearRejectedDecisions(decisions) {
+  return Object.fromEntries(Object.entries(decisions).filter(([, verdict]) => verdict !== 'rejected'));
 }
 
 export function isbnFromFilename(filename) {

@@ -105,7 +105,7 @@ function decide(isbn, verdict) {
   saveDecisions(state.corpus, state.decisions);
   state.index += 1;
   if (state.rejectedOnly) state.index = nextRejectedIndex(state.manifest, state.decisions, state.index);
-  render(true);
+  render();
 }
 
 function goPrev() {
@@ -236,7 +236,7 @@ function downloadRejected(text) {
   URL.revokeObjectURL(url);
 }
 
-function renderComplete(total, fromDecision) {
+function renderComplete(total) {
   const rejectedText = rejectedListText(state.decisions);
   const rejectedCount = rejectedText ? rejectedText.split('\n').length : 0;
   const acceptedCount = Object.values(state.decisions).filter((v) => v === 'accepted').length;
@@ -245,6 +245,7 @@ function renderComplete(total, fromDecision) {
     <p>${acceptedCount} accepted, ${rejectedCount} rejected, ${total} total.</p>
     <button id="download">Download rejected list</button>
     <button id="clear-rejected">Clear rejected list</button>
+    ${rejectedCount > 0 ? '<button id="review-rejected">Review rejected</button>' : ''}
   `;
   $('download').addEventListener('click', () => downloadRejected(rejectedText));
   $('clear-rejected').addEventListener('click', () => {
@@ -253,17 +254,23 @@ function renderComplete(total, fromDecision) {
     state.index = 0;
     render();
   });
-  if (fromDecision && rejectedCount > 0) downloadRejected(rejectedText);
+  if (rejectedCount > 0) {
+    $('review-rejected').addEventListener('click', () => {
+      state.rejectedOnly = true;
+      state.index = nextRejectedIndex(state.manifest, state.decisions, 0);
+      render();
+    });
+  }
 }
 
-async function render(fromDecision = false) {
+async function render() {
   const total = state.manifest.length;
   updateUrl(state.corpus, state.index);
   const displayIndex = Math.min(state.index + 1, total);
   document.title = tabTitle(state.corpus, displayIndex, total);
   $('page-heading').textContent = pageHeading(state.corpus, displayIndex, total);
   if (isComplete(state.index, total)) {
-    renderComplete(total, fromDecision);
+    renderComplete(total);
     return;
   }
 

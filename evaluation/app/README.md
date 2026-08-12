@@ -48,10 +48,12 @@ Then open:
 - Your position (`index`) is kept in the URL so you can resume later;
   verdicts are kept in this browser's `localStorage`, scoped per corpus
   (`gt-review:<corpus>:decisions`).
-- After the last book, a rejected-ISBN list downloads automatically as
-  `<corpus>-rejected.txt`, one isbn per line. `Clear rejected list`
-  removes rejected verdicts from storage (keeping accepted ones) so you
-  can re-review just the books you fixed.
+- After the last book, `Download rejected list` saves the rejected ISBNs
+  as `<corpus>-rejected.txt`, one per line. `Clear rejected list` removes
+  rejected verdicts from storage (keeping accepted ones) so you can
+  re-review just the books you fixed. `Review rejected` (shown only when
+  there are any) jumps back to the first rejected book with `Rejected
+  only` pre-checked.
 - If a book's PDF or `.expected.json` isn't present on disk, a `Skip`
   button advances past it without recording a verdict.
 - `Rejected only` filters navigation (`Accept`/`Reject`/`Prev`/`Skip`) to

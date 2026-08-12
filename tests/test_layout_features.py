@@ -210,6 +210,12 @@ class TestIsHeadingLine(unittest.TestCase):
                      "Partial results", "Chapters and verses", ""):
             self.assertFalse(_is_heading_line(text), text)
 
+    def test_keyword_followed_by_roman_lookalike_word_does_not_match(self):
+        # The strict roman grammar must also apply to the token AFTER a
+        # heading keyword, not only to bare tokens.
+        for text in ("Chapter mix", "Chapter did", "Kapitel mild", "Part civic"):
+            self.assertFalse(_is_heading_line(text), text)
+
 
 class TestNewPageLocalFeatures(unittest.TestCase):
     def setUp(self):

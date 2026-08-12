@@ -24,7 +24,7 @@ _TRAILING_NUMERAL_RE = re.compile(
 # branches of heading detection reuse _TRAILING_NUMERAL_RE so its
 # lookalike rejections ("mix", "did", "civic") carry over.
 _HEADING_KEYWORD_RE = re.compile(
-    r"^(?:chapter|kapitel|chapitre|part|teil|partie|§)\.?\s*(?:\d{1,4}|[ivxlcdm]{1,7})?$",
+    r"^(?:chapter|kapitel|chapitre|part|teil|partie|§)\.?(?:\s+(?P<number>\S+))?$",
     re.IGNORECASE,
 )
 
@@ -39,7 +39,11 @@ def _is_heading_line(text: str) -> bool:
         return False
     if _TRAILING_NUMERAL_RE.match(stripped):
         return True
-    return _HEADING_KEYWORD_RE.match(stripped) is not None
+    match = _HEADING_KEYWORD_RE.match(stripped)
+    if match is None:
+        return False
+    number = match.group("number")
+    return number is None or _TRAILING_NUMERAL_RE.match(number) is not None
 
 PAGE_FEATURE_NAMES = [
     "line_count",

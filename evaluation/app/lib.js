@@ -16,6 +16,14 @@ export function clearRejectedDecisions(decisions) {
   return Object.fromEntries(Object.entries(decisions).filter(([, verdict]) => verdict !== 'rejected'));
 }
 
+export function tabTitle(corpus, oneBasedIndex, total) {
+  return `${corpus} ${oneBasedIndex}/${total}`;
+}
+
+export function pageHeading(corpus, oneBasedIndex, total) {
+  return `Corpus '${corpus}' ${oneBasedIndex} of ${total}`;
+}
+
 export function isbnFromFilename(filename) {
   return filename.replace(/\.pdf$/i, '');
 }

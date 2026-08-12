@@ -11,6 +11,8 @@ import {
   normalizeIndex,
   vscodeFileUri,
   clearRejectedDecisions,
+  tabTitle,
+  pageHeading,
 } from './lib.js';
 
 test('parseParams reads corpus and index', () => {
@@ -101,4 +103,12 @@ test('clearRejectedDecisions drops rejected entries and keeps the rest', () => {
 
 test('clearRejectedDecisions is a no-op when nothing is rejected', () => {
   assert.deepEqual(clearRejectedDecisions({ a: 'accepted' }), { a: 'accepted' });
+});
+
+test('tabTitle formats corpus and progress for the browser tab', () => {
+  assert.equal(tabTitle('open-access', 1, 45), 'open-access 1/45');
+});
+
+test('pageHeading formats corpus and progress for the on-page heading', () => {
+  assert.equal(pageHeading('open-access', 1, 45), "Corpus 'open-access' 1 of 45");
 });

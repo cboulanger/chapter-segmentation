@@ -9,6 +9,8 @@ import {
   normalizeIndex,
   vscodeFileUri,
   clearRejectedDecisions,
+  tabTitle,
+  pageHeading,
 } from './lib.js';
 
 const THUMBNAIL_TARGET_WIDTH = 120;
@@ -229,6 +231,9 @@ function renderComplete(total, fromDecision) {
 async function render(fromDecision = false) {
   const total = state.manifest.length;
   updateUrl(state.corpus, state.index);
+  const displayIndex = Math.min(state.index + 1, total);
+  document.title = tabTitle(state.corpus, displayIndex, total);
+  $('page-heading').textContent = pageHeading(state.corpus, displayIndex, total);
   if (isComplete(state.index, total)) {
     renderComplete(total, fromDecision);
     return;

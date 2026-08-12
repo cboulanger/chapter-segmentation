@@ -1194,14 +1194,18 @@ flip any scan to "passing" at the default tolerance.** Scans' average
 the corpus-level `full_recall_fraction` for scans reads 0% despite the
 underlying recall gains being large and broad-based.
 
-**The six 0%-`toc_recall` open-access books are unchanged at 0%**:
-`9781783748471`, `9782375460122`, `9783837660944`, `9783839447529`,
-`9783839468937`, and `9783839470619` all still score zero `toc_recall`
-under every configuration above. Expected -- the new features target
-chapter-opening detection (book-context, per-book font normalization,
-heading-line text), not TOC-page layout, so they have no mechanism to
-touch this failure mode. TOC-anchored matching (deferred, see below)
-remains the untouched direction for these six.
+**The six 0%-`toc_recall` open-access books are unchanged at 0% in all
+three official `rt=0.80` runs**: `9781783748471`, `9782375460122`,
+`9783837660944`, `9783839447529`, `9783839468937`, and `9783839470619`
+still score zero `toc_recall` at the default calibration. Expected -- the
+new features target chapter-opening detection (book-context, per-book font
+normalization, heading-line text), not TOC-page layout, so they have no
+mechanism to touch this failure mode. (In the informational `rt=0.90`
+sweep, two of the six do pick up nonzero `toc_recall` -- `9782375460122`
+at 25%/50% and `9783839468937` at 50% -- but that's the looser threshold
+admitting more candidate pages that happen to include a TOC page, not the
+model scoring those pages as TOC-like.) TOC-anchored matching (deferred,
+see below) remains the untouched direction for these six.
 
 **Augmentation itself is an honest, mostly-negative result.** Against the
 un-augmented 17-feature run, `--scan-noise-augment` moves the overall

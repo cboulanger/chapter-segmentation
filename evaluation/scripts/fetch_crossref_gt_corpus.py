@@ -28,8 +28,6 @@ Usage:
 
 import argparse
 import json
-import time
-from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
@@ -37,14 +35,14 @@ from urllib.parse import urlsplit
 
 import httpx
 
-from chapter_segmentation.evidence.crossref_strategy import (
-    _CROSSREF_BASE_URL,
-    _DEFAULT_RETRY_DELAY_SECONDS,
-    _MAX_RETRIES,
+from evaluation.oa_license import (
+    DEFAULT_CONTACT_EMAIL,
+    book_license_url,
+    crossref_book_chapter_items,
+    unpaywall_license_url,
 )
 
 _CORPUS_DIR = Path(__file__).resolve().parent.parent / "crossref_gt"
-_DEFAULT_CONTACT_EMAIL = "boulanger@lhlt.mpg.de"
 
 # httpx's default User-Agent ("python-httpx/x.y.z") gets blocklisted by
 # more than one publisher's bot-management layer -- found empirically while
@@ -69,44 +67,6 @@ _OBP_USER_AGENT = (
     "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 )
 _DEFAULT_DOWNLOAD_USER_AGENT = "curl/8.4.0"
-
-
-def _crossref_book_chapters(isbn: str, client: httpx.Client, contact_email: Optional[str]) -> list[dict]:
-    """GET .../works?filter=isbn:{isbn}, returning raw type=="book-chapter"
-    items. Any network/HTTP/JSON failure is printed and treated as an empty
-    result -- never raises, so one bad book never aborts the batch."""
-    params: dict[str, str | int] = {
-        "filter": f"isbn:{isbn}",
-        "select": "DOI,title,subtitle,author,page,type,container-title,published,ISBN,license",
-        "rows": 100,
-    }
-    if contact_email:
-        params["mailto"] = contact_email
-
-    response = None
-    for _attempt in range(_MAX_RETRIES):
-        try:
-            response = client.get(_CROSSREF_BASE_URL, params=params, timeout=10.0)
-        except httpx.HTTPError as exc:
-            print(f"  [warn] network error fetching Crossref metadata for {isbn}: {exc}")
-            return []
-        if response.status_code != 429:
-            break
-        retry_after = response.headers.get("Retry-After")
-        delay = float(retry_after) if retry_after and retry_after.isdigit() else _DEFAULT_RETRY_DELAY_SECONDS
-        time.sleep(delay)
-    else:
-        print(f"  [warn] exhausted retries (429) fetching Crossref metadata for {isbn}")
-        return []
-
-    try:
-        response.raise_for_status()
-        items = response.json()["message"]["items"]
-    except Exception as exc:
-        print(f"  [warn] bad Crossref response for {isbn}: {exc}")
-        return []
-
-    return [item for item in items if item.get("type") == "book-chapter"]
 
 
 def _normalize_chapter(item: dict) -> Optional[dict]:
@@ -137,75 +97,6 @@ def _normalize_chapter(item: dict) -> Optional[dict]:
     }
 
 
-def _item_license_url(item: dict) -> Optional[str]:
-    """The registered OA license URL for one Crossref item, preferring the
-    version-of-record entry (content-version=="vor", delay-in-days==0) --
-    the license that actually applies to the publicly available PDF, not
-    an embargoed accepted-manuscript variant Crossref may register
-    alongside it."""
-    licenses = item.get("license") or []
-    for entry in licenses:
-        if entry.get("content-version") == "vor" and entry.get("delay-in-days", 0) == 0:
-            return entry.get("URL")
-    return licenses[0].get("URL") if licenses else None
-
-
-def _book_license_url(raw_items: list[dict]) -> Optional[str]:
-    """The book's OA license URL, by majority vote across its chapters'
-    individually-registered licenses -- in practice unanimous, since
-    Crossref licenses are registered once per book and inherited by every
-    chapter, but a vote is cheap insurance against one mis-registered
-    chapter. None if no chapter has a registered license at all."""
-    urls = [url for item in raw_items if (url := _item_license_url(item)) is not None]
-    if not urls:
-        return None
-    return Counter(urls).most_common(1)[0][0]
-
-
-_UNPAYWALL_BASE_URL = "https://api.unpaywall.org/v2"
-
-# Unpaywall reports a short SPDX-ish code (e.g. "cc-by-nc"), not a URL --
-# mapped to the CC 4.0 URL, since every book in this corpus is a 2020s
-# publication and 4.0 is the only version any of its publishers use for
-# new titles (found empirically: every Crossref-registered license in
-# this same corpus that DOES carry an explicit version is 4.0).
-_UNPAYWALL_LICENSE_URLS = {
-    "cc-by": "https://creativecommons.org/licenses/by/4.0/",
-    "cc-by-sa": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "cc-by-nc": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "cc-by-nc-sa": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "cc-by-nc-nd": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-    "cc-by-nd": "https://creativecommons.org/licenses/by-nd/4.0/",
-    "cc0": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "pd": "https://creativecommons.org/publicdomain/mark/1.0/",
-}
-
-
-def _unpaywall_license_url(doi: Optional[str], client: httpx.Client, contact_email: Optional[str]) -> Optional[str]:
-    """Fallback license lookup via Unpaywall, tried only when Crossref has
-    no license registered for a book. Crossref's license field is
-    self-reported by the publisher at metadata-deposit time and often left
-    blank; Unpaywall aggregates OA status from institutional repositories
-    and publisher landing pages instead, so it is NOT the same data --
-    found empirically: it recovers a license for every UCL Press /
-    Athabasca University Press book in this corpus that Crossref has none
-    for. Returns None if there's no DOI, no Unpaywall OA record, no
-    license, or the request fails -- never raises, so one bad lookup never
-    aborts the batch."""
-    if not doi:
-        return None
-    email = contact_email or _DEFAULT_CONTACT_EMAIL
-    try:
-        response = client.get(f"{_UNPAYWALL_BASE_URL}/{doi}", params={"email": email}, timeout=10.0)
-        response.raise_for_status()
-        location = response.json().get("best_oa_location")
-    except Exception as exc:
-        print(f"  [warn] Unpaywall lookup failed for {doi}: {exc}")
-        return None
-    code = location.get("license") if location else None
-    return _UNPAYWALL_LICENSE_URLS.get(code)
-
-
 def _fetch_crossref_metadata(
     isbn: str, doi: Optional[str], client: httpx.Client, contact_email: Optional[str], target: Path, force: bool
 ) -> tuple[int, int, Optional[str], Optional[str]]:
@@ -228,12 +119,12 @@ def _fetch_crossref_metadata(
         except Exception as exc:
             print(f"  [warn] corrupted cache file {target.name}, refetching: {exc}")
 
-    raw_items = _crossref_book_chapters(isbn, client, contact_email)
+    raw_items = crossref_book_chapter_items(isbn, client, contact_email)
     chapters = [c for item in raw_items if (c := _normalize_chapter(item)) is not None]
-    license_url = _book_license_url(raw_items)
+    license_url = book_license_url(raw_items)
     license_source = "crossref" if license_url else None
     if license_url is None:
-        license_url = _unpaywall_license_url(doi, client, contact_email)
+        license_url = unpaywall_license_url(doi, client, contact_email)
         license_source = "unpaywall" if license_url else None
     payload = {
         "isbn": isbn,
@@ -342,7 +233,7 @@ def main() -> int:
         "--force-metadata", action="store_true",
         help="Refetch only the Crossref metadata (not PDFs) even if present -- e.g. after a select-field change",
     )
-    parser.add_argument("--contact-email", default=_DEFAULT_CONTACT_EMAIL, help="Crossref polite-pool contact email")
+    parser.add_argument("--contact-email", default=DEFAULT_CONTACT_EMAIL, help="Crossref polite-pool contact email")
     args = parser.parse_args()
     return fetch_all(Path(args.corpus_dir), args.force, args.force_metadata, args.contact_email)
 

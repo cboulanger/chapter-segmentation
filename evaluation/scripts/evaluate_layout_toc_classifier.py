@@ -45,16 +45,23 @@ from evaluation.scripts.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_b
 _CORPUS_DIR = Path(__file__).resolve().parent.parent / "corpus"
 _CORPORA = ["open-access", "copyrighted-scans"]
 
-_RECALL_TARGET = 0.80  # threshold picked per fold to hit this recall on training pages; the
+_RECALL_TARGET = 0.90  # threshold picked per fold to hit this recall on training pages; the
 # actual "how many false-positive candidate pages am I willing to live with" dial -- this is
 # what a real consumer of the classifier would tune. An empirical comparison found
 # LogisticRegression (below) generalizes recall across held-out books much better than the
 # tree-based HistGradientBoostingClassifier tried first, whose per-fold leaf-region
 # thresholds transfer poorly to a book with a slightly different feature distribution; a
-# smooth linear score doesn't have that discontinuity. 0.80 is the default because it's the
-# highest point on LogisticRegression's own curve that still stays within the *previous*
-# avg_candidate_fraction budget (15%) -- callers who don't mind more candidate "noise" (e.g.
-# because a cheap downstream model reviews every candidate anyway) can raise this.
+# smooth linear score doesn't have that discontinuity. The 2026-08-12 context-feature/
+# normalization follow-up (docs/superpowers/specs/2026-08-12-layout-classifier-context-
+# features-and-scan-augmentation-design.md) made training probabilities on the 17-feature
+# model materially more separable, which shifted this curve enough that the old 0.80 default
+# now UNDERSHOOTS the previous 50/70-book baseline's full_recall_fraction (56% vs. 64%) even
+# though it stays comfortably inside the avg_candidate_fraction budget (7.2% vs. 15%). 0.90 is
+# the new default because it's the first point on the 17-feature curve that beats the baseline
+# on both axes at once (67% full recall, 9.0% candidates) -- see evaluation/RESULTS.md's
+# "context/normalized features and scan-noise augmentation" follow-up for the full sweep.
+# Callers who don't mind more candidate "noise" (e.g. because a cheap downstream model
+# reviews every candidate anyway) can still raise this further.
 
 _CHAPTER_FIRST_RECALL_TOLERANCE = 0.90  # per-book chapter_first recall needed to "pass" in
 # this script's own aggregate report -- NOT a knob a real consumer of the classifier would

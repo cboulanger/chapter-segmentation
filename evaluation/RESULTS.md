@@ -1133,7 +1133,8 @@ looks scan-shaped during training, with augmented rows excluded from every
 fold's own test set to avoid leakage.
 
 The three official LOBO runs, all over the full 70-book corpus at the
-unchanged calibration:
+calibration in place when this follow-up's feature/augmentation work was
+first measured (`recall_target=0.80`, the pilot's default at the time):
 
 | run | `full_recall_fraction` | `avg_candidate_fraction` |
 | --- | --- | --- |
@@ -1149,8 +1150,8 @@ Per corpus, all three runs:
 | + features | 39/57 = 68.4% | 7.5% | 85.8% | 0/13 = 0% | 5.6% | 50.9% |
 | + augment | 40/57 = 70.2% | 7.4% | 86.8% | 0/13 = 0% | 6.1% | 51.2% |
 
-**Read at face value, this looks like a regression -- it isn't; it's an
-operating-point artifact of the unchanged `recall_target=0.80`.** The new
+**Read at face value this looks like a regression against baseline, and at
+`rt=0.80` it genuinely is one -- not just an appearance.** The new
 features make the training probabilities more separable, so the per-fold
 threshold calibrated to 80% training recall becomes noticeably more
 conservative: candidate fraction fell from 10.0% to 7.2%, tight enough
@@ -1159,9 +1160,11 @@ that five `open-access` books flip from passing to failing purely on
 `9781783748532` (100%->87%), `9781787359260` (95%->60%),
 `9782821895607` (92%->42%, whose `toc_recall` also drops 100%->0%),
 `9783031907272` (100%->32%), and `9783837681192` (100%->46%) -- with zero
-books flipping the other way. An informational sweep of `recall_target`
-(not a change to the default; run only to test whether the drop is purely
-an operating-point effect) confirms it is:
+books flipping the other way, and `full_recall_fraction` drops from 64% to
+56% at that operating point. A `recall_target` sweep, run to check whether
+this was purely an operating-point effect rather than the features
+actually being worse, found that it was -- and changed the pilot's
+default as a result:
 
 | config | `full_recall_fraction` | `avg_candidate_fraction` | open-access `full_recall_fraction` | scans `full_recall_fraction` | scans avg `chapter_first_recall` |
 | --- | --- | --- | --- | --- | --- |
@@ -1172,14 +1175,21 @@ an operating-point effect) confirms it is:
 At `rt=0.90` -- still comfortably inside the 15% candidate budget at 9.0%
 -- the same 17 features beat the baseline on every axis at once: 67% vs.
 64% full recall, 9.0% vs. 10.0% candidates, 78.9% vs. 77.2% open-access,
-2/13 vs. 1/13 scans. This sweep does **not** change the default --
-`recall_target` stays `0.80` so this run remains comparable to every prior
-follow-up's numbers, per the earlier model-architecture follow-up's
-framing above ("`recall_target` is the real ... dial a consumer of the
-classifier would actually set"; `chapter_first_recall_tolerance` only
-changes how this script scores a book, not inference behavior) -- it's
-reported here only to show that the curve genuinely moved, not just the
-single point the default happens to sit at.
+2/13 vs. 1/13 scans. Because the 17-feature model genuinely does not
+improve on baseline at the *old* default, and does at this point,
+`_RECALL_TARGET`'s default was moved from `0.80` to `0.90` in this
+follow-up (`evaluate_layout_toc_classifier.py`) rather than leaving the
+regression as the shipped behavior -- re-verified directly (not merely
+computed from per-book logs) by running the script with no
+`--recall-target` flag against the real 70-book corpus and confirming it
+prints `67%` / `9.0%`. This mirrors the earlier model-architecture
+follow-up's framing of `recall_target` as "the real ... dial a consumer of
+the classifier would actually set" -- the dial needed retuning once the
+model it's tuning changed underneath it. All `rt=0.80` numbers above and
+in the "scan rescue" and "zero-`toc_recall`" paragraphs below describe the
+comparison as it was originally measured, before this default change, and
+remain accurate as a record of that measurement; they are not this
+follow-up's final shipped configuration.
 
 **The scan rescue is real at the recall level, even though it doesn't
 flip any scan to "passing" at the default tolerance.** Scans' average
@@ -1223,19 +1233,20 @@ deleted by hand), off by default -- but should not be relied on as the
 mechanism behind the scan-recall gains above; the feature work is.
 
 **Verdict: still NOT MET, in every configuration measured**, against the
-unchanged 90%/15% bar. The best configuration found is 17 features at
-`recall_target=0.90` (67% / 9.0%), still 23 points short. The features
-moved the curve in the right direction on both corpora simultaneously
-without touching the candidate-fraction budget -- a real, if partial,
-result -- but two structural gaps remain untouched by this follow-up: the
+unchanged 90%/15% bar. The shipped configuration -- 17 features,
+`recall_target=0.90` (now the default) -- reaches 67% / 9.0%, still 23
+points short, but is a genuine improvement over the 10-feature baseline on
+both axes at once (64%/10.0%), not merely a differently-measured version
+of it. Two structural gaps remain untouched by this follow-up: the
 open-access TOC-layout failure mode (candidate direction: TOC-anchored
 chapter matching, parsing a detected TOC page and locating chapter
 openings by title/page-number matching against it) and the residual scan
 `chapter_first_recall` ceiling (candidate direction: document-image deep
 learning, bypassing OCR font metadata entirely). Both were deferred, not
-rejected, at the design stage; neither is scoped here. With candidate
-volume now sitting well below the 15% budget even at `rt=0.90`, revisiting
-the default `recall_target` itself is also worth a future look.
+rejected, at the design stage; neither is scoped here. Candidate volume
+still sits well below the 15% budget at the new default (9.0%), so a
+further `recall_target` increase remains available if the next follow-up
+wants to trade more candidate-page volume for recall.
 
 ## LLM-fallback results (archived -- script removed)
 

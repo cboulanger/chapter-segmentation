@@ -676,7 +676,700 @@
       ],
       "elapsed_seconds": 49.204093707999846,
       "demand_at_run": 0
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Los límites a la riqueza en la historia de la filosofía occidental",
+          "authors": [
+            "Robeyns",
+            "el 2 de marzo de 2018",
+            "Kaniela  Ing",
+            "Mark"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 114,
+          "citation_pages": "69-102",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Razones basadas en la autonomía a favor del limitarismo",
+          "authors": [
+            "Introducción\nEl",
+            "de cerveza de un Walmart",
+            "al volante de la camioneta de \nsu padre",
+            "hora en",
+            "el límite \nde velocidad",
+            "hora",
+            "revelaron que su"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 121,
+          "citation_pages": "103-109",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Prefacio",
+          "authors": [
+            "Como aclara",
+            "esta afirmación",
+            "descripción de un"
+          ],
+          "pdf_start_index": 122,
+          "pdf_end_index": 157,
+          "citation_pages": "ix-145",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Limitarismo: ¿Patrón, principio o presunción?",
+          "authors": [
+            "Dick  Timmer",
+            "limitarista de que",
+            "ese alguien tiene demasiada riqueza.1",
+            "Partiendo de \nla literatura",
+            "justicia distributiva",
+            "de justicia"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 182,
+          "citation_pages": "147-170",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Los límites del limitarismo",
+          "authors": [
+            "Robert  Huseby\n1",
+            "Introducción \nEl  limitarismo",
+            "justicia distributiva",
+            "ya que",
+            "de las concepciones de la  justicia \n",
+            "lugar de lo qu"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 195,
+          "citation_pages": "171-16",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Tener demasiado",
+          "authors": [
+            "B. Lo malo de tener",
+            "Qué",
+            "Consideremos",
+            "el  igualitarismo intrínseco",
+            "igualmente bien",
+            "sostiene que",
+            "sí mismo  es",
+            "lo suficientemente \n",
+            "bien.39 El"
+          ],
+          "pdf_start_index": 196,
+          "pdf_end_index": 208,
+          "citation_pages": "17-196",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "¿Por qué el limitarismo?",
+          "authors": [
+            "Robeyns",
+            "el “ limitarismo",
+            "describo el contexto",
+            "el  limitari"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 238,
+          "citation_pages": "197-226",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Limitarismo presuntivo: Una respuesta a Robert Huseby",
+          "authors": [
+            "Robert Huseby\n Dick  Timmer",
+            "Introducción\nDe acuerdo",
+            "Robeyns",
+            "el  limitarismo"
+          ],
+          "pdf_start_index": 239,
+          "pdf_end_index": 256,
+          "citation_pages": "227-244",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Suficiencia, límites y perspectivas de umbrales múltiples",
+          "authors": [
+            "Suficiencia",
+            "Introducción\nEl  suficientarismo",
+            "justicia distributiva",
+            "sostiene",
+            "quizás incluso de",
+            "tenga lo suficiente de ciertos",
+            "Acuñado",
+            "Ingrid  Robeyns"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 288,
+          "citation_pages": "245-276",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Un argumento neorrepublicano a favor del limitarismo",
+          "authors": [
+            "Introducción\nPlanteada",
+            "estar libre de dominación",
+            "de interferencia de nadie"
+          ],
+          "pdf_start_index": 289,
+          "pdf_end_index": 314,
+          "citation_pages": "277-302",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "El argumento del autorrespeto a favor del limitarismo",
+          "authors": [
+            "la limitación de \nla",
+            "al menos",
+            "su forma",
+            "Ingrid  Robeyns",
+            "democrático y el \n",
+            "de las  necesidades",
+            "Robeyns",
+            "democrático afirma"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 342,
+          "citation_pages": "303-330",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Cambio climático, justicia distributiva y límites “preinstitucionales” a la apropiación de recursos",
+          "authors": [
+            "Cambio climático",
+            "Colin  Hickey\n1",
+            "distintiva de \nla  justicia distributiva",
+            "al",
+            "antes de la existencia de \ninstit"
+          ],
+          "pdf_start_index": 343,
+          "pdf_end_index": 384,
+          "citation_pages": "331-372",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Límites ecológicos: Ciencia, justicia, políticas y la vida buena",
+          "authors": [
+            "Ciencia",
+            "el “pico del",
+            "del discurso científico",
+            "la noción de",
+            "ecológicos",
+            "Dobson"
+          ],
+          "pdf_start_index": 385,
+          "pdf_end_index": 412,
+          "citation_pages": "373-400",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Limitarismo y generaciones futuras",
+          "authors": [
+            "Conducimos",
+            "Colectivamente"
+          ],
+          "pdf_start_index": 413,
+          "pdf_end_index": 438,
+          "citation_pages": "401-426",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 16.777450015,
+      "demand_at_run": 0
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Los límites a la riqueza en la historia de la filosofía occidental",
+          "authors": [
+            "Robeyns",
+            "el 2 de marzo de 2018",
+            "Kaniela  Ing",
+            "Mark"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 114,
+          "citation_pages": "69-102",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Razones basadas en la autonomía a favor del limitarismo",
+          "authors": [
+            "Introducción\nEl",
+            "de cerveza de un Walmart",
+            "al volante de la camioneta de \nsu padre",
+            "hora en",
+            "el límite \nde velocidad",
+            "hora",
+            "revelaron que su"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 121,
+          "citation_pages": "103-109",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Prefacio",
+          "authors": [
+            "Como aclara",
+            "esta afirmación",
+            "descripción de un"
+          ],
+          "pdf_start_index": 122,
+          "pdf_end_index": 157,
+          "citation_pages": "ix-145",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Limitarismo: ¿Patrón, principio o presunción?",
+          "authors": [
+            "Dick  Timmer",
+            "limitarista de que",
+            "ese alguien tiene demasiada riqueza.1",
+            "Partiendo de \nla literatura",
+            "justicia distributiva",
+            "de justicia"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 182,
+          "citation_pages": "147-170",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Los límites del limitarismo",
+          "authors": [
+            "Robert  Huseby\n1",
+            "Introducción \nEl  limitarismo",
+            "justicia distributiva",
+            "ya que",
+            "de las concepciones de la  justicia \n",
+            "lugar de lo qu"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 208,
+          "citation_pages": "171-196",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "¿Por qué el limitarismo?",
+          "authors": [
+            "Robeyns",
+            "el “ limitarismo",
+            "describo el contexto",
+            "el  limitari"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 209,
+          "citation_pages": "197-16",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Tener demasiado",
+          "authors": [
+            "el  limitarismo",
+            "más cercanos",
+            "superior.2 Estos",
+            "su distribución"
+          ],
+          "pdf_start_index": 210,
+          "pdf_end_index": 238,
+          "citation_pages": "17-226",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Limitarismo presuntivo: Una respuesta a Robert Huseby",
+          "authors": [
+            "Robert Huseby\n Dick  Timmer",
+            "Introducción\nDe acuerdo",
+            "Robeyns",
+            "el  limitarismo"
+          ],
+          "pdf_start_index": 239,
+          "pdf_end_index": 256,
+          "citation_pages": "227-244",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Suficiencia, límites y perspectivas de umbrales múltiples",
+          "authors": [
+            "Suficiencia",
+            "Introducción\nEl  suficientarismo",
+            "justicia distributiva",
+            "sostiene",
+            "quizás incluso de",
+            "tenga lo suficiente de ciertos",
+            "Acuñado",
+            "Ingrid  Robeyns"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 288,
+          "citation_pages": "245-276",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Un argumento neorrepublicano a favor del limitarismo",
+          "authors": [
+            "Introducción\nPlanteada",
+            "estar libre de dominación",
+            "de interferencia de nadie"
+          ],
+          "pdf_start_index": 289,
+          "pdf_end_index": 314,
+          "citation_pages": "277-302",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "El argumento del autorrespeto a favor del limitarismo",
+          "authors": [
+            "la limitación de \nla",
+            "al menos",
+            "su forma",
+            "Ingrid  Robeyns",
+            "democrático y el \n",
+            "de las  necesidades",
+            "Robeyns",
+            "democrático afirma"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 342,
+          "citation_pages": "303-330",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Cambio climático, justicia distributiva y límites \"preinstitucionales\" a la apropiación de recursos",
+          "authors": [
+            "Cambio climático",
+            "Colin  Hickey\n1",
+            "distintiva de \nla  justicia distributiva",
+            "al",
+            "antes de la existencia de \ninstit"
+          ],
+          "pdf_start_index": 343,
+          "pdf_end_index": 384,
+          "citation_pages": "331-372",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Límites ecológicos: Ciencia, justicia, políticas y la vida buena",
+          "authors": [
+            "Ciencia",
+            "el “pico del",
+            "del discurso científico",
+            "la noción de",
+            "ecológicos",
+            "Dobson"
+          ],
+          "pdf_start_index": 385,
+          "pdf_end_index": 412,
+          "citation_pages": "373-400",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Limitarismo y generaciones futuras",
+          "authors": [
+            "Conducimos",
+            "Colectivamente"
+          ],
+          "pdf_start_index": 413,
+          "pdf_end_index": 438,
+          "citation_pages": "401-426",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 13.033132351999939,
+      "demand_at_run": 0
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [
+        {
+          "title": "Tener demasiado",
+          "authors": [
+            "la ampliación de oportunidades",
+            "mejorar cualquiera de las tres",
+            "las circunstancias",
+            "se beneficiarán de las",
+            "de reducción de la \n pobreza",
+            "verán ampliadas"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 80,
+          "citation_pages": "17-68",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Los límites a la riqueza en la historia de la filosofía occidental",
+          "authors": [
+            "Robeyns",
+            "el 2 de marzo de 2018",
+            "Kaniela  Ing",
+            "Mark"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 114,
+          "citation_pages": "69-102",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Razones basadas en la autonomía a favor del limitarismo",
+          "authors": [
+            "Introducción\nEl",
+            "de cerveza de un Walmart",
+            "al volante de la camioneta de \nsu padre",
+            "hora en",
+            "el límite \nde velocidad",
+            "hora",
+            "revelaron que su"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 157,
+          "citation_pages": "103-146",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Limitarismo: ¿Patrón, principio o presunción?",
+          "authors": [
+            "Dick  Timmer",
+            "limitarista de que",
+            "ese alguien tiene demasiada riqueza.1",
+            "Partiendo de \nla literatura",
+            "justicia distributiva",
+            "de justicia"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 182,
+          "citation_pages": "147-170",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Los límites del limitarismo",
+          "authors": [
+            "Robert  Huseby\n1",
+            "Introducción \nEl  limitarismo",
+            "justicia distributiva",
+            "ya que",
+            "de las concepciones de la  justicia \n",
+            "lugar de lo qu"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 208,
+          "citation_pages": "171-196",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "¿Por qué el limitarismo?",
+          "authors": [
+            "Robeyns",
+            "el “ limitarismo",
+            "describo el contexto",
+            "el  limitari"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 238,
+          "citation_pages": "197-226",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Limitarismo presuntivo: Una respuesta a Robert Huseby",
+          "authors": [
+            "Robert Huseby\n Dick  Timmer",
+            "Introducción\nDe acuerdo",
+            "Robeyns",
+            "el  limitarismo"
+          ],
+          "pdf_start_index": 239,
+          "pdf_end_index": 256,
+          "citation_pages": "227-244",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Suficiencia, límites y perspectivas de umbrales múltiples",
+          "authors": [
+            "Suficiencia",
+            "Introducción\nEl  suficientarismo",
+            "justicia distributiva",
+            "sostiene",
+            "quizás incluso de",
+            "tenga lo suficiente de ciertos",
+            "Acuñado",
+            "Ingrid  Robeyns"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 288,
+          "citation_pages": "245-276",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Un argumento neorrepublicano a favor del limitarismo",
+          "authors": [
+            "Introducción\nPlanteada",
+            "estar libre de dominación",
+            "de interferencia de nadie"
+          ],
+          "pdf_start_index": 289,
+          "pdf_end_index": 314,
+          "citation_pages": "277-302",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "El argumento del autorrespeto a favor del limitarismo",
+          "authors": [
+            "la limitación de \nla",
+            "al menos",
+            "su forma",
+            "Ingrid  Robeyns",
+            "democrático y el \n",
+            "de las  necesidades",
+            "Robeyns",
+            "democrático afirma"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 342,
+          "citation_pages": "303-330",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Cambio climático, justicia distributiva y límites “preinstitucionales” a la apropiación de recursos",
+          "authors": [
+            "Cambio climático",
+            "Colin  Hickey\n1",
+            "distintiva de \nla  justicia distributiva",
+            "al",
+            "antes de la existencia de \ninstit"
+          ],
+          "pdf_start_index": 343,
+          "pdf_end_index": 384,
+          "citation_pages": "331-372",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Límites ecológicos: Ciencia, justicia, políticas y la vida buena",
+          "authors": [
+            "Ciencia",
+            "el “pico del",
+            "del discurso científico",
+            "la noción de",
+            "ecológicos",
+            "Dobson"
+          ],
+          "pdf_start_index": 385,
+          "pdf_end_index": 412,
+          "citation_pages": "373-400",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Limitarismo y generaciones futuras",
+          "authors": [
+            "Conducimos",
+            "Colectivamente"
+          ],
+          "pdf_start_index": 413,
+          "pdf_end_index": 438,
+          "citation_pages": "401-426",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 5.361087815999781,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 0.1701206889997593,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 0.16447449699990102,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-11T04:50:11.979840+00:00"
+  "generated_at": "2026-08-12T05:35:33.663690+00:00"
 }

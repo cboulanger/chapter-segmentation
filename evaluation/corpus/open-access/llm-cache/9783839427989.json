@@ -389,7 +389,208 @@
       ],
       "elapsed_seconds": 60.75642372199991,
       "demand_at_run": 0
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Introduction",
+          "authors": [],
+          "pdf_start_index": 39,
+          "pdf_end_index": 49,
+          "citation_pages": "27-52",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "1 The 1970 Avalanche: Suspensions and Figurations",
+          "authors": [
+            "Juan Rulfo \nDeysi"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 79,
+          "citation_pages": "53-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2 Campo Santo’s Intangibilidad",
+          "authors": [],
+          "pdf_start_index": 81,
+          "pdf_end_index": 109,
+          "citation_pages": "81-112",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3 The Stones of Pumacayán",
+          "authors": [],
+          "pdf_start_index": 113,
+          "pdf_end_index": 142,
+          "citation_pages": "113-142",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4 Materialising Change: The Reconstruction of Huaraz",
+          "authors": [
+            "Rogelio"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 164,
+          "citation_pages": "143-166",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5 Mistrusting the Alarm",
+          "authors": [
+            "Callejón",
+            "down-"
+          ],
+          "pdf_start_index": 167,
+          "pdf_end_index": 195,
+          "citation_pages": "167-196",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6 Coping with Abandonment: On Lakes, Pagos and Crosses",
+          "authors": [],
+          "pdf_start_index": 197,
+          "pdf_end_index": 220,
+          "citation_pages": "197-220",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Conclusions: Disasters, History, Time",
+          "authors": [],
+          "pdf_start_index": 221,
+          "pdf_end_index": 251,
+          "citation_pages": "221-251",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 5.031706631999896,
+      "demand_at_run": 0
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Introduction",
+          "authors": [],
+          "pdf_start_index": 39,
+          "pdf_end_index": 49,
+          "citation_pages": "27-52",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The 1970 Avalanche: Suspensions and Figurations",
+          "authors": [
+            "Juan Rulfo \nDeysi"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 79,
+          "citation_pages": "53-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Campo Santo’s Intangibilidad",
+          "authors": [],
+          "pdf_start_index": 81,
+          "pdf_end_index": 109,
+          "citation_pages": "81-112",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Stones of Pumacayán",
+          "authors": [],
+          "pdf_start_index": 113,
+          "pdf_end_index": 142,
+          "citation_pages": "113-142",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Materialising Change: The Reconstruction of Huaraz",
+          "authors": [
+            "Rogelio"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 164,
+          "citation_pages": "143-166",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mistrusting the Alarm",
+          "authors": [
+            "Callejón",
+            "down-"
+          ],
+          "pdf_start_index": 167,
+          "pdf_end_index": 195,
+          "citation_pages": "167-196",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Coping with Abandonment: On Lakes, Pagos and Crosses",
+          "authors": [],
+          "pdf_start_index": 197,
+          "pdf_end_index": 220,
+          "citation_pages": "197-220",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Disasters, History, Time",
+          "authors": [],
+          "pdf_start_index": 221,
+          "pdf_end_index": 251,
+          "citation_pages": "221-251",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 5.59391913699983,
+      "demand_at_run": 0
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.15216284400003133,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 0.1535033579998526,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 0.14841968599967004,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-11T05:09:20.215849+00:00"
+  "generated_at": "2026-08-12T05:35:37.001563+00:00"
 }

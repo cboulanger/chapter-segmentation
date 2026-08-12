@@ -64,6 +64,7 @@ from rapidfuzz import fuzz
 from sklearn.preprocessing import StandardScaler
 
 from chapter_segmentation.segmentation import _parse_toc_page_number
+from evaluation.harness import chapter_bounds_errors
 from evaluation.scripts.evaluate_layout_toc_classifier import build_feature_table, load_book_corpus
 from evaluation.scripts.ground_truth_helper import extract_printed_number, find_toc_pages, toc_page_range
 from evaluation.scripts.layout_features import FEATURE_NAMES, extract_page_features
@@ -290,19 +291,6 @@ def _toc_field_for(toc_pages: set[int]) -> tuple[dict | None, bool, str]:
     return field, True, f"toc={field}"
 
 
-def _sanity_check(chapters: list[dict], total_pages: int) -> str | None:
-    ranges = sorted((c["pdf_start_index"], c["pdf_end_index"]) for c in chapters)
-    for start, end in ranges:
-        if start > end:
-            return f"start>end: {(start, end)}"
-        if end >= total_pages:
-            return f"end>=total_pages({total_pages}): {(start, end)}"
-    for (_, end1), (start2, _) in zip(ranges, ranges[1:]):
-        if start2 <= end1:
-            return f"overlap: end {end1} vs next start {start2}"
-    return None
-
-
 def process_book(book: dict, dry_run: bool, novelty_baseline: NoveltyBaseline) -> tuple[str, str]:
     """Returns (isbn, outcome_message)."""
     isbn = book["isbn"]
@@ -386,9 +374,9 @@ def process_book(book: dict, dry_run: bool, novelty_baseline: NoveltyBaseline) -
             end -= 1
         chapter["pdf_end_index"] = end
 
-    error = _sanity_check(confirmed, total_pages)
-    if error:
-        return isbn, f"SKIP: sanity check failed after reconciliation: {error}"
+    errors = chapter_bounds_errors(confirmed, total_pages)
+    if errors:
+        return isbn, f"SKIP: sanity check failed after reconciliation: {'; '.join(errors)}"
 
     is_novel = _candidate_is_novel(pdf_path, confirmed, novelty_baseline)
     if is_novel is None:

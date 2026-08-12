@@ -22,6 +22,7 @@ layout-classifier = ["scikit-learn>=1.4.0"]
 [project.scripts]
 chapter-segmentation = "chapter_segmentation.cli:main"
 review = "evaluation.scripts.review_app:main"
+review-stop = "evaluation.scripts.review_app:stop"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

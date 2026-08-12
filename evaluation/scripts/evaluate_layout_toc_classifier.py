@@ -26,6 +26,7 @@ from pypdf import PdfReader
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
+from evaluation.scripts.alto_scan_noise import write_augmented_alto
 from evaluation.scripts.layout_features import (
     FEATURE_NAMES,
     add_book_context_features,
@@ -109,30 +110,46 @@ def load_book_corpus(corpora: list[str] | None = None) -> list[dict]:
     return books
 
 
-def build_feature_table(books: list[dict], cache_dir_for, pdfalto_bin: str) -> list[dict]:
+def build_feature_table(
+    books: list[dict], cache_dir_for, pdfalto_bin: str, augment: bool = False
+) -> list[dict]:
     """Runs pdfalto (cached via cache_dir_for(corpus) -> Path) over every
     book and returns one row per page with an extracted feature vector:
     {"book_key", "features": {...}, "label": "toc"|"chapter_first"|"other"}.
-    Pages pdfalto didn't produce a feature vector for (should not normally
-    happen, but has been observed for malformed/oversized scanned pages)
-    are skipped rather than crashing the whole run -- skip counts are
-    tallied per label and, since a dropped "toc" or "chapter_first" row
-    silently erodes the very recall this pilot exists to measure, printed
-    as a warning once the whole table has been built."""
+    Augmented rows carry "augmented": True, are labeled identically to their
+    source book, only open-access books are augmented, and extraction-skip
+    warnings are only counted for real (non-augmented) rows. Pages pdfalto
+    didn't produce a feature vector for (should not normally happen, but has
+    been observed for malformed/oversized scanned pages) are skipped rather
+    than crashing the whole run -- skip counts are tallied per label and,
+    since a dropped "toc" or "chapter_first" row silently erodes the very
+    recall this pilot exists to measure, printed as a warning once the whole
+    table has been built."""
     rows = []
     skipped_by_label: dict[str, int] = {}
     for book in books:
         cache_dir = cache_dir_for(book["corpus"])
         alto_path = ensure_alto_xml(book["pdf_path"], cache_dir, pdfalto_bin)
-        page_features = add_book_context_features(
-            extract_page_features(str(alto_path)), len(book["labels"])
-        )
-        for page_index, label in enumerate(book["labels"]):
-            features = page_features.get(page_index)
-            if features is None:
-                skipped_by_label[label] = skipped_by_label.get(label, 0) + 1
-                continue
-            rows.append({"book_key": book["key"], "features": features, "label": label})
+        sources = [(alto_path, False)]
+        if augment and book["corpus"] == "open-access":
+            aug_path = cache_dir / f"{book['pdf_path'].stem}.aug.alto.xml"
+            if not aug_path.exists():
+                write_augmented_alto(alto_path, aug_path, book["key"])
+            sources.append((aug_path, True))
+        for source_path, is_augmented in sources:
+            page_features = add_book_context_features(
+                extract_page_features(str(source_path)), len(book["labels"])
+            )
+            for page_index, label in enumerate(book["labels"]):
+                features = page_features.get(page_index)
+                if features is None:
+                    if not is_augmented:
+                        skipped_by_label[label] = skipped_by_label.get(label, 0) + 1
+                    continue
+                row = {"book_key": book["key"], "features": features, "label": label}
+                if is_augmented:
+                    row["augmented"] = True
+                rows.append(row)
     if skipped_by_label:
         total_skipped = sum(skipped_by_label.values())
         breakdown = ", ".join(f"{label}={count}" for label, count in sorted(skipped_by_label.items()))
@@ -233,6 +250,9 @@ def evaluate_leave_one_book_out(
     """Runs leave-one-book-out cross-validation, returns per-book results
     and an aggregate summary matching the design spec's decision criteria.
 
+    Rows marked "augmented": True join every training fold whose held-out
+    book differs, but are never themselves evaluated.
+
     `books` (the same list `build_feature_table` was given -- each entry
     has "key" and a "labels" list of ground-truth labels, independent of
     whatever pdfalto did or didn't manage to extract) is what lets
@@ -246,7 +266,7 @@ def evaluate_leave_one_book_out(
     only changes how *this function* scores a book as "fully recalled" for
     reporting purposes."""
     books_by_key = {book["key"]: book for book in books}
-    book_keys = sorted({row["book_key"] for row in rows})
+    book_keys = sorted({row["book_key"] for row in rows if not row.get("augmented")})
     per_book_results = []
 
     for held_out in book_keys:
@@ -256,7 +276,9 @@ def evaluate_leave_one_book_out(
             f"book_key set"
         )
         train_rows = [r for r in rows if r["book_key"] != held_out]
-        test_rows = [r for r in rows if r["book_key"] == held_out]
+        test_rows = [
+            r for r in rows if r["book_key"] == held_out and not r.get("augmented")
+        ]
         ground_truth_labels = books_by_key[held_out]["labels"]
 
         X_train = [[r["features"][name] for name in FEATURE_NAMES] for r in train_rows]
@@ -331,6 +353,15 @@ def main() -> int:
             f"Default: {','.join(_CORPORA)}."
         ),
     )
+    parser.add_argument(
+        "--scan-noise-augment",
+        action="store_true",
+        help=(
+            "Augment each open-access book's training rows with a scan-noise-"
+            "perturbed copy of its ALTO XML (cached as <key>.aug.alto.xml). "
+            "Augmented rows are only ever used for training, never evaluated."
+        ),
+    )
     args = parser.parse_args()
     pdfalto_bin = resolve_pdfalto_binary(args.pdfalto_bin)
 
@@ -353,7 +384,9 @@ def main() -> int:
     def cache_dir_for(corpus: str) -> Path:
         return _CORPUS_DIR / corpus / ".layout-cache"
 
-    rows = build_feature_table(books, cache_dir_for, pdfalto_bin)
+    rows = build_feature_table(
+        books, cache_dir_for, pdfalto_bin, augment=args.scan_noise_augment
+    )
     summary = evaluate_leave_one_book_out(
         rows, books, args.recall_target, args.chapter_first_recall_tolerance
     )

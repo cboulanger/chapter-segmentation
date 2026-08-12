@@ -522,5 +522,91 @@ class TestMainCorporaValidation(unittest.TestCase):
         self.assertNotIn("No books with a 'toc' field found", message)
 
 
+class TestBuildFeatureTableAugmentation(unittest.TestCase):
+    def _books(self):
+        return [
+            {"key": "oa-book", "corpus": "open-access", "pdf_path": Path("/fake/oa-book.pdf"),
+             "labels": ["toc", "other"]},
+            {"key": "scan-book", "corpus": "copyrighted-scans", "pdf_path": Path("/fake/scan-book.pdf"),
+             "labels": ["toc", "other"]},
+        ]
+
+    def test_augment_adds_marked_rows_for_open_access_only(self):
+        fake_features = {0: {"line_count": 1.0}, 1: {"line_count": 2.0}}
+
+        with patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.ensure_alto_xml",
+            return_value=Path("/fake/cached.alto.xml"),
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.extract_page_features",
+            return_value=fake_features,
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.add_book_context_features",
+            side_effect=lambda page_features, total_pages: page_features,
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.write_augmented_alto",
+            return_value=Path("/fake/cached.aug.alto.xml"),
+        ) as fake_augment, patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.Path.exists",
+            return_value=False,
+        ):
+            rows = build_feature_table(
+                self._books(), lambda corpus: Path("/fake/cache"), "pdfalto", augment=True
+            )
+
+        # oa-book contributes 2 plain + 2 augmented rows; scan-book only 2 plain.
+        oa_rows = [r for r in rows if r["book_key"] == "oa-book"]
+        scan_rows = [r for r in rows if r["book_key"] == "scan-book"]
+        self.assertEqual(len(oa_rows), 4)
+        self.assertEqual(len(scan_rows), 2)
+        self.assertEqual(sum(1 for r in oa_rows if r.get("augmented")), 2)
+        self.assertEqual(sum(1 for r in scan_rows if r.get("augmented")), 0)
+        fake_augment.assert_called_once()
+
+    def test_augment_off_by_default_adds_nothing(self):
+        fake_features = {0: {"line_count": 1.0}, 1: {"line_count": 2.0}}
+        with patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.ensure_alto_xml",
+            return_value=Path("/fake/cached.alto.xml"),
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.extract_page_features",
+            return_value=fake_features,
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.add_book_context_features",
+            side_effect=lambda page_features, total_pages: page_features,
+        ), patch(
+            "evaluation.scripts.evaluate_layout_toc_classifier.write_augmented_alto",
+        ) as fake_augment:
+            rows = build_feature_table(self._books(), lambda corpus: Path("/fake/cache"), "pdfalto")
+
+        self.assertEqual(len(rows), 4)
+        self.assertFalse(any(r.get("augmented") for r in rows))
+        fake_augment.assert_not_called()
+
+
+class TestAugmentedRowFoldRules(unittest.TestCase):
+    def test_augmented_rows_train_other_folds_but_are_never_evaluated(self):
+        # Two clean books plus augmented twins of both. The held-out book's
+        # augmented twin must not appear in its test set (total_pages counts
+        # only real pages), while other books' augmented rows still train.
+        rows = []
+        books = []
+        for book_key in ("book-a", "book-b", "book-c"):
+            book_rows, book = _clean_book(book_key)
+            rows.extend(book_rows)
+            books.append(book)
+            for row in book_rows:
+                rows.append({**row, "augmented": True})
+
+        summary = evaluate_leave_one_book_out(rows, books)
+
+        # Each synthetic book has 5 real pages; if augmented twins leaked
+        # into the test set this would read 10.
+        for result in summary["per_book"]:
+            self.assertEqual(result["total_pages"], 5)
+        # Perfectly-separable synthetic data must still fully recall.
+        self.assertEqual(summary["full_recall_fraction"], 1.0)
+
+
 if __name__ == "__main__":
     unittest.main()

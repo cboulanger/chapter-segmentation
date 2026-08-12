@@ -1,0 +1,1641 @@
+{
+  "isbn": "9781783748211",
+  "fetched_at": "2026-08-11T22:40:59.031733+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.07",
+      "type": "book-chapter",
+      "page": "187-204",
+      "title": [
+        "7. Innovation in Port Development The Quad Helix Model"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1477-8529",
+          "authenticated-orcid": false,
+          "given": "Sari",
+          "family": "Wahyuni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0116zj450",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universitas Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.13",
+      "type": "book-chapter",
+      "page": "xix-xxii",
+      "title": [
+        "Preface"
+      ],
+      "author": [
+        {
+          "given": "Leith",
+          "family": "Doody",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bernardus",
+          "family": "Djonoputro",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.08",
+      "type": "book-chapter",
+      "page": "205-226",
+      "title": [
+        "8. Revealing Indonesian Port Competitiveness"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1477-8529",
+          "authenticated-orcid": false,
+          "given": "Sari",
+          "family": "Wahyuni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0116zj450",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universitas Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4800-9130",
+          "authenticated-orcid": false,
+          "given": "Felix Kin Peng",
+          "family": "Hui",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5309-4739",
+          "authenticated-orcid": false,
+          "given": "Alif Azadi",
+          "family": "Taufik",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0116zj450",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universitas Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "subtitle": [
+        "Challenge and Performance"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.09",
+      "type": "book-chapter",
+      "page": "227-246",
+      "title": [
+        "9. Initial Investigation into the Effectiveness of Australian Ports’ Governance and Management Structures"
+      ],
+      "author": [
+        {
+          "given": "Haya",
+          "family": "Al-Daghlas",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4800-9130",
+          "authenticated-orcid": false,
+          "given": "Felix Kin Peng",
+          "family": "Hui",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6497-7759",
+          "authenticated-orcid": false,
+          "given": "Colin F.",
+          "family": "Duffield",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.05",
+      "type": "book-chapter",
+      "page": "113-154",
+      "title": [
+        "5. Port and Hinterlands"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Black",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4638-0219",
+          "authenticated-orcid": false,
+          "given": "Violeta",
+          "family": "Roso",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/040wg7k59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Chalmers University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "subtitle": [
+        "The Combined Infrastructure Costs of Seaports, Intermodal Terminals and Transport Access, Port Botany, Sydney"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.02",
+      "type": "book-chapter",
+      "page": "15-52",
+      "title": [
+        "2. Infrastructure Planning, Challenges and Risks"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6497-7759",
+          "authenticated-orcid": false,
+          "given": "Colin",
+          "family": "Duffield",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4800-9130",
+          "authenticated-orcid": false,
+          "given": "Felix Kin Peng",
+          "family": "Hui",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sally",
+          "family": "Wilson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.10",
+      "type": "book-chapter",
+      "page": "247-280",
+      "title": [
+        "10. Alternative Ways to Finance Major Port Projects"
+      ],
+      "author": [
+        {
+          "given": "Waskitha W.",
+          "family": "Galih",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1233-9744",
+          "authenticated-orcid": false,
+          "given": "Ruslan",
+          "family": "Prijadi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0116zj450",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universitas Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "subtitle": [
+        "Seaports in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.04",
+      "type": "book-chapter",
+      "page": "85-112",
+      "title": [
+        "4. Efficient Facilitation of Major Infrastructure Projects"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6497-7759",
+          "authenticated-orcid": false,
+          "given": "Colin",
+          "family": "Duffield",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4800-9130",
+          "authenticated-orcid": false,
+          "given": "Felix Kin Peng",
+          "family": "Hui",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vijayshree",
+          "family": "Behal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.14",
+      "type": "book-chapter",
+      "page": "xxiii-xxxii",
+      "title": [
+        "Foreword"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6497-7759",
+          "authenticated-orcid": false,
+          "given": "Colin",
+          "family": "Duffield",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4800-9130",
+          "authenticated-orcid": false,
+          "given": "Felix Kin Peng",
+          "family": "Hui",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sally",
+          "family": "Wilson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.11",
+      "type": "book-chapter",
+      "page": "281-326",
+      "title": [
+        "11. The Critical Importance of Land Transport when Considering Port Development"
+      ],
+      "author": [
+        {
+          "given": "Danang",
+          "family": "Parikesit",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4161-8371",
+          "authenticated-orcid": false,
+          "given": "Said",
+          "family": "Basalim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03ke6d638",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universitas Gadjah Mada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8890-9862",
+          "authenticated-orcid": false,
+          "given": "Wiratno Wahyu",
+          "family": "Wibowo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03ke6d638",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universitas Gadjah Mada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "subtitle": [
+        "The Case of Three Indonesian Ports"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.01",
+      "type": "book-chapter",
+      "page": "1-14",
+      "title": [
+        "1. Infrastructure Investment in Indonesia — The Economic Context"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6497-7759",
+          "authenticated-orcid": false,
+          "given": "Colin",
+          "family": "Duffield",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4800-9130",
+          "authenticated-orcid": false,
+          "given": "Felix Kin Peng",
+          "family": "Hui",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sally",
+          "family": "Wilson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.03",
+      "type": "book-chapter",
+      "page": "53-84",
+      "title": [
+        "3. Funding and Financing Infrastructure: Indonesia and Australia"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6497-7759",
+          "authenticated-orcid": false,
+          "given": "Colin",
+          "family": "Duffield",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4800-9130",
+          "authenticated-orcid": false,
+          "given": "Felix Kin Peng",
+          "family": "Hui",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sally",
+          "family": "Wilson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.06",
+      "type": "book-chapter",
+      "page": "155-186",
+      "title": [
+        "6. Comparative Efficiency Analysis of Australian and Indonesian Ports"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4800-9130",
+          "authenticated-orcid": false,
+          "given": "Felix Kin Peng",
+          "family": "Hui",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6497-7759",
+          "authenticated-orcid": false,
+          "given": "Colin F.",
+          "family": "Duffield",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Chin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hanlong",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                11,
+                18
+              ]
+            ],
+            "date-time": "2019-11-18T00:00:00Z",
+            "timestamp": 1574035200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0189.12",
+      "type": "book-chapter",
+      "page": "327-342",
+      "title": [
+        "12. Potential Infrastructure Enhancements for Ports and Cities"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6497-7759",
+          "authenticated-orcid": false,
+          "given": "Colin F.",
+          "family": "Duffield",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Danang",
+          "family": "Parikesit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1477-8529",
+          "authenticated-orcid": false,
+          "given": "Sari",
+          "family": "Wahyuni",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0116zj450",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universitas Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4800-9130",
+          "authenticated-orcid": false,
+          "given": "Felix Kin Peng",
+          "family": "Hui",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01ej9dk98",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Melbourne"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Infrastructure Investment in Indonesia"
+      ],
+      "subtitle": [
+        "Conclusions, Future Research and Policy Concepts"
+      ],
+      "ISBN": [
+        "9781783748211",
+        "9781783748228",
+        "9781783748235",
+        "9781800646018",
+        "9781783748266",
+        "9781783748242",
+        "9781783748259"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            18
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "7. Innovation in Port Development The Quad Helix Model",
+      "authors": [
+        "Sari Wahyuni"
+      ],
+      "chapter_doi": "10.11647/obp.0189.07",
+      "citation_pages": "187-204"
+    },
+    {
+      "title": "Preface",
+      "authors": [
+        "Leith Doody",
+        "Bernardus Djonoputro"
+      ],
+      "chapter_doi": "10.11647/obp.0189.13",
+      "citation_pages": "xix-xxii"
+    },
+    {
+      "title": "8. Revealing Indonesian Port Competitiveness Challenge and Performance",
+      "authors": [
+        "Sari Wahyuni",
+        "Felix Kin Peng Hui",
+        "Alif Azadi Taufik"
+      ],
+      "chapter_doi": "10.11647/obp.0189.08",
+      "citation_pages": "205-226"
+    },
+    {
+      "title": "9. Initial Investigation into the Effectiveness of Australian Ports’ Governance and Management Structures",
+      "authors": [
+        "Haya Al-Daghlas",
+        "Felix Kin Peng Hui",
+        "Colin F. Duffield"
+      ],
+      "chapter_doi": "10.11647/obp.0189.09",
+      "citation_pages": "227-246"
+    },
+    {
+      "title": "5. Port and Hinterlands The Combined Infrastructure Costs of Seaports, Intermodal Terminals and Transport Access, Port Botany, Sydney",
+      "authors": [
+        "John Black",
+        "Violeta Roso"
+      ],
+      "chapter_doi": "10.11647/obp.0189.05",
+      "citation_pages": "113-154"
+    },
+    {
+      "title": "2. Infrastructure Planning, Challenges and Risks",
+      "authors": [
+        "Colin Duffield",
+        "Felix Kin Peng Hui",
+        "Sally Wilson"
+      ],
+      "chapter_doi": "10.11647/obp.0189.02",
+      "citation_pages": "15-52"
+    },
+    {
+      "title": "10. Alternative Ways to Finance Major Port Projects Seaports in Indonesia",
+      "authors": [
+        "Waskitha W. Galih",
+        "Ruslan Prijadi"
+      ],
+      "chapter_doi": "10.11647/obp.0189.10",
+      "citation_pages": "247-280"
+    },
+    {
+      "title": "4. Efficient Facilitation of Major Infrastructure Projects",
+      "authors": [
+        "Colin Duffield",
+        "Felix Kin Peng Hui",
+        "Vijayshree Behal"
+      ],
+      "chapter_doi": "10.11647/obp.0189.04",
+      "citation_pages": "85-112"
+    },
+    {
+      "title": "Foreword",
+      "authors": [
+        "Colin Duffield",
+        "Felix Kin Peng Hui",
+        "Sally Wilson"
+      ],
+      "chapter_doi": "10.11647/obp.0189.14",
+      "citation_pages": "xxiii-xxxii"
+    },
+    {
+      "title": "11. The Critical Importance of Land Transport when Considering Port Development The Case of Three Indonesian Ports",
+      "authors": [
+        "Danang Parikesit",
+        "Said Basalim",
+        "Wiratno Wahyu Wibowo"
+      ],
+      "chapter_doi": "10.11647/obp.0189.11",
+      "citation_pages": "281-326"
+    },
+    {
+      "title": "1. Infrastructure Investment in Indonesia — The Economic Context",
+      "authors": [
+        "Colin Duffield",
+        "Felix Kin Peng Hui",
+        "Sally Wilson"
+      ],
+      "chapter_doi": "10.11647/obp.0189.01",
+      "citation_pages": "1-14"
+    },
+    {
+      "title": "3. Funding and Financing Infrastructure: Indonesia and Australia",
+      "authors": [
+        "Colin Duffield",
+        "Felix Kin Peng Hui",
+        "Sally Wilson"
+      ],
+      "chapter_doi": "10.11647/obp.0189.03",
+      "citation_pages": "53-84"
+    },
+    {
+      "title": "6. Comparative Efficiency Analysis of Australian and Indonesian Ports",
+      "authors": [
+        "Felix Kin Peng Hui",
+        "Colin F. Duffield",
+        "Andrew Chin",
+        "Hanlong Huang"
+      ],
+      "chapter_doi": "10.11647/obp.0189.06",
+      "citation_pages": "155-186"
+    },
+    {
+      "title": "12. Potential Infrastructure Enhancements for Ports and Cities Conclusions, Future Research and Policy Concepts",
+      "authors": [
+        "Colin F. Duffield",
+        "Danang Parikesit",
+        "Sari Wahyuni",
+        "Felix Kin Peng Hui"
+      ],
+      "chapter_doi": "10.11647/obp.0189.12",
+      "citation_pages": "327-342"
+    }
+  ]
+}

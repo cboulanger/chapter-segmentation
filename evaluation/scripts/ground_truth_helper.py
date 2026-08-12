@@ -103,6 +103,26 @@ def find_toc_pages(pages: list[str]) -> set[int]:
     return toc_pages
 
 
+def toc_page_range(toc_pages: set[int]) -> tuple[int, int] | None:
+    """Collapses find_toc_pages' candidate index set into a single
+    contiguous (start, end) range. Returns None if the set is empty or
+    spans more than one contiguous run -- e.g. a back-matter index page
+    that also matched the same "title ... number" structural pattern --
+    since that ambiguity should be resolved by a human, not guessed."""
+    if not toc_pages:
+        return None
+    ordered = sorted(toc_pages)
+    runs = [[ordered[0]]]
+    for i in ordered[1:]:
+        if i == runs[-1][-1] + 1:
+            runs[-1].append(i)
+        else:
+            runs.append([i])
+    if len(runs) != 1:
+        return None
+    return runs[0][0], runs[0][-1]
+
+
 def locate_chapter_start(
     pages: list[str],
     title: str,

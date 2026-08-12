@@ -1,0 +1,1364 @@
+{
+  "isbn": "9781805110163",
+  "fetched_at": "2026-08-11T22:40:58.264236+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                5
+              ]
+            ],
+            "date-time": "2023-09-05T00:00:00Z",
+            "timestamp": 1693872000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0366.04",
+      "type": "book-chapter",
+      "page": "83-112",
+      "title": [
+        "4. Climate Engineering and the Future of Justice"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2244-2083",
+          "authenticated-orcid": false,
+          "given": "Behnam",
+          "family": "Taebi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4388-4427",
+          "authenticated-orcid": false,
+          "given": "Dominic",
+          "family": "Lenzi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0718-6026",
+          "authenticated-orcid": false,
+          "given": "Lorina",
+          "family": "Buhr",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5162-2529",
+          "authenticated-orcid": false,
+          "given": "Kristy",
+          "family": "Claassen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4417-9367",
+          "authenticated-orcid": false,
+          "given": "Alessio",
+          "family": "Gerola",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qw24q55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Wageningen University & Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4839-5315",
+          "authenticated-orcid": false,
+          "given": "Ben",
+          "family": "Hofbauer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-2369-294X",
+          "authenticated-orcid": false,
+          "given": "Elisa",
+          "family": "Paiusco",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7377-2667",
+          "authenticated-orcid": false,
+          "given": "Julia",
+          "family": "Rijssenbeek",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qw24q55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Wageningen University & Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Ethics of Socially Disruptive Technologies"
+      ],
+      "ISBN": [
+        "9781805110163",
+        "9781805110170",
+        "9781805110576",
+        "9781800649873",
+        "9781805110507",
+        "9781783747894"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                5
+              ]
+            ],
+            "date-time": "2023-09-05T00:00:00Z",
+            "timestamp": 1693872000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0366.06",
+      "type": "book-chapter",
+      "page": "141-162",
+      "title": [
+        "6. Conceptual Disruption and the Ethics of Technology"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9239-3048",
+          "authenticated-orcid": false,
+          "given": "Jeroen",
+          "family": "Hopster",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4789-4588",
+          "authenticated-orcid": false,
+          "given": "Philip",
+          "family": "Brey",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1483-0799",
+          "authenticated-orcid": false,
+          "given": "Michael",
+          "family": "Klenk",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7028-3515",
+          "authenticated-orcid": false,
+          "given": "Guido",
+          "family": "Löhr",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008xxew50",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije University Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6426-7690",
+          "authenticated-orcid": false,
+          "given": "Samuela",
+          "family": "Marchiori",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5830-3432",
+          "authenticated-orcid": false,
+          "given": "Björn",
+          "family": "Lundgren",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3900-4087",
+          "authenticated-orcid": false,
+          "given": "Kevin",
+          "family": "Scharp",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Ethics of Socially Disruptive Technologies"
+      ],
+      "ISBN": [
+        "9781805110163",
+        "9781805110170",
+        "9781805110576",
+        "9781800649873",
+        "9781805110507",
+        "9781783747894"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                5
+              ]
+            ],
+            "date-time": "2023-09-05T00:00:00Z",
+            "timestamp": 1693872000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0366.03",
+      "type": "book-chapter",
+      "page": "53-82",
+      "title": [
+        "3. Social Robots and Society"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3836-5932",
+          "authenticated-orcid": false,
+          "given": "Sven",
+          "family": "Nyholm",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05591te55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ludwig-Maximilians-Universität München"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4901-9680",
+          "authenticated-orcid": false,
+          "given": "Cindy",
+          "family": "Friedman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7827-5248",
+          "authenticated-orcid": false,
+          "given": "Michael T.",
+          "family": "Dale",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02mb9s657",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hampden–Sydney College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8339-6244",
+          "authenticated-orcid": false,
+          "given": "Anna",
+          "family": "Puzio",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4899-8319",
+          "authenticated-orcid": false,
+          "given": "Dina",
+          "family": "Babushkina",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7028-3515",
+          "authenticated-orcid": false,
+          "given": "Guido",
+          "family": "Löhr",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008xxew50",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije University Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9287-3025",
+          "authenticated-orcid": false,
+          "given": "Arthur",
+          "family": "Gwagwa",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7209-2210",
+          "authenticated-orcid": false,
+          "given": "Bart A.",
+          "family": "Kamphorst",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qw24q55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Wageningen University & Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1248-0526",
+          "authenticated-orcid": false,
+          "given": "Giulia",
+          "family": "Perugia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02c2kyt77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Eindhoven University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6856-9269",
+          "authenticated-orcid": false,
+          "given": "Wijnand",
+          "family": "IJsselsteijn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02c2kyt77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Eindhoven University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Ethics of Socially Disruptive Technologies"
+      ],
+      "ISBN": [
+        "9781805110163",
+        "9781805110170",
+        "9781805110576",
+        "9781800649873",
+        "9781805110507",
+        "9781783747894"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                5
+              ]
+            ],
+            "date-time": "2023-09-05T00:00:00Z",
+            "timestamp": 1693872000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0366.02",
+      "type": "book-chapter",
+      "page": "33-52",
+      "title": [
+        "2. Social Media and Democracy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8929-9728",
+          "authenticated-orcid": false,
+          "given": "Elena",
+          "family": "Ziliotti",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-6867-864X",
+          "authenticated-orcid": false,
+          "given": "Patricia D.",
+          "family": "Reyes Benavides",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9287-3025",
+          "authenticated-orcid": false,
+          "given": "Arthur",
+          "family": "Gwagwa",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4212-6862",
+          "authenticated-orcid": false,
+          "given": "Matthew J.",
+          "family": "Dennis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02c2kyt77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Eindhoven University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Ethics of Socially Disruptive Technologies"
+      ],
+      "ISBN": [
+        "9781805110163",
+        "9781805110170",
+        "9781805110576",
+        "9781800649873",
+        "9781805110507",
+        "9781783747894"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                5
+              ]
+            ],
+            "date-time": "2023-09-05T00:00:00Z",
+            "timestamp": 1693872000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0366.05",
+      "type": "book-chapter",
+      "page": "113-140",
+      "title": [
+        "5. Ectogestative Technology and the Beginning of Life"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8659-2390",
+          "authenticated-orcid": false,
+          "given": "Lily Eva",
+          "family": "Frank",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02c2kyt77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Eindhoven University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9990-4736",
+          "authenticated-orcid": false,
+          "given": "Julia",
+          "family": "Hermann",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-6074-3912",
+          "authenticated-orcid": false,
+          "given": "Llona",
+          "family": "Kavege",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8339-6244",
+          "authenticated-orcid": false,
+          "given": "Anna",
+          "family": "Puzio",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Ethics of Socially Disruptive Technologies"
+      ],
+      "ISBN": [
+        "9781805110163",
+        "9781805110170",
+        "9781805110576",
+        "9781800649873",
+        "9781805110507",
+        "9781783747894"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                5
+              ]
+            ],
+            "date-time": "2023-09-05T00:00:00Z",
+            "timestamp": 1693872000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0366.01",
+      "type": "book-chapter",
+      "page": "11-32",
+      "title": [
+        "1: Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9553-5651",
+          "authenticated-orcid": false,
+          "given": "Ibo",
+          "family": "van de Poel",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9239-3048",
+          "authenticated-orcid": false,
+          "given": "Jeroen",
+          "family": "Hopster",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7028-3515",
+          "authenticated-orcid": false,
+          "given": "Guido",
+          "family": "Löhr",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008xxew50",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije University Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8929-9728",
+          "authenticated-orcid": false,
+          "given": "Elena",
+          "family": "Ziliotti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0004-0681",
+          "authenticated-orcid": false,
+          "given": "Stefan",
+          "family": "Buijsman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4789-4588",
+          "authenticated-orcid": false,
+          "given": "Philip",
+          "family": "Brey",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Ethics of Socially Disruptive Technologies"
+      ],
+      "ISBN": [
+        "9781805110163",
+        "9781805110170",
+        "9781805110576",
+        "9781800649873",
+        "9781805110507",
+        "9781783747894"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            5
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "4. Climate Engineering and the Future of Justice",
+      "authors": [
+        "Behnam Taebi",
+        "Dominic Lenzi",
+        "Lorina Buhr",
+        "Kristy Claassen",
+        "Alessio Gerola",
+        "Ben Hofbauer",
+        "Elisa Paiusco",
+        "Julia Rijssenbeek"
+      ],
+      "chapter_doi": "10.11647/obp.0366.04",
+      "citation_pages": "83-112"
+    },
+    {
+      "title": "6. Conceptual Disruption and the Ethics of Technology",
+      "authors": [
+        "Jeroen Hopster",
+        "Philip Brey",
+        "Michael Klenk",
+        "Guido Löhr",
+        "Samuela Marchiori",
+        "Björn Lundgren",
+        "Kevin Scharp"
+      ],
+      "chapter_doi": "10.11647/obp.0366.06",
+      "citation_pages": "141-162"
+    },
+    {
+      "title": "3. Social Robots and Society",
+      "authors": [
+        "Sven Nyholm",
+        "Cindy Friedman",
+        "Michael T. Dale",
+        "Anna Puzio",
+        "Dina Babushkina",
+        "Guido Löhr",
+        "Arthur Gwagwa",
+        "Bart A. Kamphorst",
+        "Giulia Perugia",
+        "Wijnand IJsselsteijn"
+      ],
+      "chapter_doi": "10.11647/obp.0366.03",
+      "citation_pages": "53-82"
+    },
+    {
+      "title": "2. Social Media and Democracy",
+      "authors": [
+        "Elena Ziliotti",
+        "Patricia D. Reyes Benavides",
+        "Arthur Gwagwa",
+        "Matthew J. Dennis"
+      ],
+      "chapter_doi": "10.11647/obp.0366.02",
+      "citation_pages": "33-52"
+    },
+    {
+      "title": "5. Ectogestative Technology and the Beginning of Life",
+      "authors": [
+        "Lily Eva Frank",
+        "Julia Hermann",
+        "Llona Kavege",
+        "Anna Puzio"
+      ],
+      "chapter_doi": "10.11647/obp.0366.05",
+      "citation_pages": "113-140"
+    },
+    {
+      "title": "1: Introduction",
+      "authors": [
+        "Ibo van de Poel",
+        "Jeroen Hopster",
+        "Guido Löhr",
+        "Elena Ziliotti",
+        "Stefan Buijsman",
+        "Philip Brey"
+      ],
+      "chapter_doi": "10.11647/obp.0366.01",
+      "citation_pages": "11-32"
+    }
+  ]
+}

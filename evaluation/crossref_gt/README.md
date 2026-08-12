@@ -150,6 +150,14 @@ mirror), avoiding OAPEN's `library.oapen.org` bitstream host, which now
 sits behind an Anubis JS proof-of-work bot-wall that returns HTTP 403 to
 any non-browser client.
 
+This table describes the 43 manually-curated (`discovery_source: "manual"`)
+books above only. `discover_crossref_candidates.py` (see "Automated
+discovery" below) has since added 15 more entries with
+`discovery_source: "auto"`, bringing the manifest to 58 total; those don't
+carry a `domain` value (no reliable Crossref subject-classification signal
+exists to backfill it automatically -- see that section), so they're not
+reflected in the table above.
+
 ## Known gaps
 
 - `9782753559530` (*Histoire de la haine*, OpenEdition): one of its 15
@@ -179,6 +187,39 @@ any non-browser client.
   `evaluation/corpus/open-access/`, so removing them here caused no
   redistribution problem; they were simply deleted (manifest entry, PDF,
   `.crossref.json`) rather than left in as if they were OA.
+- **Removed: 14 single-authored books that had migrated into
+  `evaluation/corpus/pending/`.** `discover_crossref_candidates.py`
+  originally queried Crossref's `monograph` work type alongside
+  `edited-book`; a monograph's individual sections/chapters still get their
+  own Crossref `book-chapter` records, all crediting the same one author,
+  which isn't the "editors + distinct chapter authors" case this corpus
+  and `evaluation/corpus/pending/` are meant to exercise. Removed:
+  `9781783745753`, `9781783748570`, `9781783749812`, `9781800641266`,
+  `9781800642522`, `9781800643000`, `9781800643208`, `9781800647565`,
+  `9781805110040`, `9781805110187`, `9781805110460`, `9781805114093`,
+  `9781805115304`, `9782821895065` -- manifest entry, PDF, `.crossref.json`,
+  and their `evaluation/corpus/pending/` PDF/`.expected.json`/manifest
+  entry all deleted together. `discover_crossref_candidates.py` now only
+  queries `edited-book`, and `build_crossref_gt_ground_truth.py` gated
+  migration on at least 2 distinct chapter authors as a second check
+  (Crossref's own type classification isn't perfectly reliable either
+  way), so a future reconciliation run won't just re-add these.
+- **Removed: 7 more books that cleared the two-distinct-authors gate
+  above but still weren't real edited volumes.** Four
+  (`9781805116431`, `9781805111825`, `9781805119616`, plus
+  `9781800647565` from the first removal batch) were single-authored
+  books that had migrated into `evaluation/corpus/pending/` before that
+  gate existed at all. Three more slipped through the gate itself
+  because it only checked *distinct count*, not *distribution*:
+  `9781800647152` (single author, biography), `9781800647794` (2
+  co-authors credited identically on every one of 13 chapters -- a
+  jointly-written monograph, not distinct per-chapter contributors),
+  and `9781800649972` (13 of 14 chapters by one historical author, the
+  14th a modern editor's introduction). `build_crossref_gt_ground_truth.py`
+  now also requires >=3 distinct chapter authors and rejects any book
+  where one author is credited on more than half its chapters, so
+  neither the co-authored-monograph nor the single-author-plus-editor
+  pattern clears the gate again.
 
 ## Downloading: host-specific quirks
 
@@ -203,3 +244,55 @@ future manifest addition needs the same treatment:
   wall too, but only in front of "Freemium"-restricted titles (HTTP 401
   when denied). Genuinely open-access OpenEdition titles serve the PDF
   directly with a plain request.
+
+## Automated discovery
+
+`evaluation/scripts/discover_crossref_candidates.py` finds new candidates
+automatically, seeded from the OA publishers already in this manifest
+(Crossref member IDs recorded in the script itself), resolving each
+candidate's PDF URL via Crossref's own registered link, then Unpaywall,
+then OpenAlex. New entries get `"discovery_source": "auto"` (existing
+curated entries are `"manual"`). Candidates in currently-underrepresented
+languages are prioritized; `--max-per-language` (default 5) caps how many
+of one language get added per run.
+
+```bash
+uv run python evaluation/scripts/discover_crossref_candidates.py
+uv run python evaluation/scripts/discover_crossref_candidates.py --dry-run
+```
+
+Run `fetch_crossref_gt_corpus.py` afterwards to download the new entries,
+then `build_crossref_gt_ground_truth.py` to reconcile them. Since
+`build_crossref_gt_ground_truth.py` now also gates migration on a
+layout-feature **novelty check** (in addition to the existing
+offset-consensus/content-search confirmation), confirmed candidates land
+in `evaluation/corpus/pending/`, not `open-access/` -- see
+`docs/superpowers/specs/2026-08-11-crossref-gt-corpus-expansion-design.md`.
+Promoting a `pending/` book into `open-access/` (after reviewing it, or
+evaluating it in isolation via `evaluate_layout_toc_classifier.py
+--corpora open-access,pending`) is still the manual step
+`evaluation/CLAUDE.md` already documents.
+
+The novelty check requires a working `pdfalto` binary (see
+`evaluation/scripts/pdfalto_runner.py`) -- it's only invoked for a
+candidate that has *already* cleared the offset-consensus/content-search
+confirmation gate, so an environment without `pdfalto` installed can still
+run discovery and fetching end-to-end, and will even get partway through
+reconciliation (every book that fails confirmation first prints its own
+`SKIP` line normally); without it, `build_crossref_gt_ground_truth.py`
+raises an uncaught `FileNotFoundError` the first time a confirmed
+candidate reaches the novelty step.
+
+In a first live run of this pipeline, one `discover_crossref_candidates.py`
+pass found 15 new candidates (6 of which downloaded a PDF; the other 9 hit
+a publisher bot-wall). Reconciliation, run with `pdfalto` available,
+printed a normal `SKIP` line for all 43 pre-existing books, then for the 6
+newly-fetched candidates: 2 failed confirmation outright, and 4 confirmed
+and cleared the novelty gate, landing in `evaluation/corpus/pending/`
+(`9782821895607`, `9781805116431`, `9781805111825`, `9781805119616`). All
+four also tripped the outline-diagnostic's "NEEDS REVIEW" flag (a
+non-contiguous set of TOC-shaped pages detected outside the confirmed TOC
+range) -- expected for books with a long structural front-matter section
+(dedications, lists of figures, etc.) that also happens to look TOC-shaped
+to the page-density heuristic; run `add_toc_ground_truth.py` by hand on
+each before promoting it out of `pending/`.

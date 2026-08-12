@@ -1,0 +1,1258 @@
+{
+  "isbn": "9783837622065",
+  "fetched_at": "2026-08-11T22:40:49.585520+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839422069-016",
+      "type": "book-chapter",
+      "page": "235-244",
+      "title": [
+        "Vom Lesen sprechen"
+      ],
+      "author": [
+        {
+          "given": "Barbara",
+          "family": "Dengel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Eine Miniatur über das interkulturelle Lesergespräch in der Vermittlungspraxis interkultureller Germanistik"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-toc",
+      "type": "book-chapter",
+      "page": "5-10",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Corinna",
+          "family": "Albrecht",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Bogner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-022",
+      "type": "book-chapter",
+      "page": "331-336",
+      "title": [
+        "Tabula gratulatoria"
+      ],
+      "author": [
+        {
+          "given": "Corinna",
+          "family": "Albrecht",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Bogner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-004",
+      "type": "book-chapter",
+      "page": "31-52",
+      "title": [
+        "Poetik und Hermeneutik der Interkulturalität"
+      ],
+      "author": [
+        {
+          "given": "Norbert",
+          "family": "Mecklenburg",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-014",
+      "type": "book-chapter",
+      "page": "199-212",
+      "title": [
+        "Verschränktes Nebeneinander"
+      ],
+      "author": [
+        {
+          "given": "Horst",
+          "family": "Steinmetz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Überspielte Kulturdivergenzen an der deutsch-niederländischen Grenze"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-019",
+      "type": "book-chapter",
+      "page": "289-302",
+      "title": [
+        "Vom Paradox fremdsprachlicher Kommunikation zur Potentialität mehrsprachiger Räume"
+      ],
+      "author": [
+        {
+          "given": "Andrea",
+          "family": "Bogner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-012",
+      "type": "book-chapter",
+      "page": "173-182",
+      "title": [
+        "Was ist ein Wort?"
+      ],
+      "author": [
+        {
+          "given": "Liu",
+          "family": "Dezhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Von der Analyse der sprachlichen Spezifika zur Vermittlung interkultureller Kompetenz"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-001",
+      "type": "book-chapter",
+      "page": "11-18",
+      "title": [
+        "Laudatio anlässlich des Festkolloquiums zu Alois Wierlachers 80. Geburtstag"
+      ],
+      "author": [
+        {
+          "given": "Corinna",
+          "family": "Albrecht",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Bogner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Zugleich eine Einführung in den Band"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-007",
+      "type": "book-chapter",
+      "page": "87-104",
+      "title": [
+        "Zwei Krisen, kulturelle Fremde und die eine Welt"
+      ],
+      "author": [
+        {
+          "given": "Dietrich",
+          "family": "Krusche",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Zum Wandel des Interesses, Andere zu verstehen"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-003",
+      "type": "book-chapter",
+      "page": "27-28",
+      "title": [
+        "Laudatio zum 80. Geburtstag von Prof. Dr. Alois Wierlacher"
+      ],
+      "author": [
+        {
+          "given": "Jianbin",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-008",
+      "type": "book-chapter",
+      "page": "105-124",
+      "title": [
+        "Tischgespräche über das Fremde"
+      ],
+      "author": [
+        {
+          "given": "Wolf Dieter",
+          "family": "Otto",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Zum Problem der Xenophagie"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-017",
+      "type": "book-chapter",
+      "page": "245-260",
+      "title": [
+        "Der Essay als (Dis-)Kurs-Form"
+      ],
+      "author": [
+        {
+          "given": "Hinrich C.",
+          "family": "Seeba",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Kleiner Beitrag zum interkulturellen Kanon"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-002",
+      "type": "book-chapter",
+      "page": "19-26",
+      "title": [
+        "40 Jahre Jahrbuch Deutsch als Fremdsprache"
+      ],
+      "author": [
+        {
+          "given": "Hans-Jürgen",
+          "family": "Krumm",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Corinna",
+          "family": "Albrecht",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Bogner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-009",
+      "type": "book-chapter",
+      "page": "127-136",
+      "title": [
+        "Orts-Botschaften"
+      ],
+      "author": [
+        {
+          "given": "Götz",
+          "family": "Großklaus",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Orte in Jordanien und Syrien"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-018",
+      "type": "book-chapter",
+      "page": "263-288",
+      "title": [
+        "Zwischen den Kulturen? Zwischen den Zeilen?"
+      ],
+      "author": [
+        {
+          "given": "Andreas",
+          "family": "Kelletat",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Oder: Vom Umgang mit übersetzten Gedichten"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-015",
+      "type": "book-chapter",
+      "page": "215-234",
+      "title": [
+        "Zur Dialogfähigkeit in der interkulturellen Wissenschaftskommunikation"
+      ],
+      "author": [
+        {
+          "given": "Yong",
+          "family": "Liang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-021",
+      "type": "book-chapter",
+      "page": "327-330",
+      "title": [
+        "Autorinnen und Autoren"
+      ],
+      "author": [
+        {
+          "given": "Corinna",
+          "family": "Albrecht",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Bogner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-013",
+      "type": "book-chapter",
+      "page": "183-198",
+      "title": [
+        "Günter Grass: Danzig und Polen"
+      ],
+      "author": [
+        {
+          "given": "Norbert",
+          "family": "Honsza",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Eine essayistische Skizze"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-006",
+      "type": "book-chapter",
+      "page": "69-86",
+      "title": [
+        "Wechselkritik und Ergänzung"
+      ],
+      "author": [
+        {
+          "given": "Willy",
+          "family": "Michel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Edith",
+          "family": "Michel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Zur langzeitigen Wirkungsgeschichte der deutschfranzösischen Beziehungen - von Forster bis Durkheim"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-005",
+      "type": "book-chapter",
+      "page": "53-68",
+      "title": [
+        "Interkulturalität"
+      ],
+      "author": [
+        {
+          "given": "Corinna",
+          "family": "Albrecht",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Ein Konzept in der Diskussion"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-020",
+      "type": "book-chapter",
+      "page": "303-326",
+      "title": [
+        "Interkulturalität als kreatives Milieu"
+      ],
+      "author": [
+        {
+          "given": "Karl",
+          "family": "Esselborn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Zum Jahrbuch Deutsch als Fremdsprache / Intercultural German Studies"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-010",
+      "type": "book-chapter",
+      "page": "137-154",
+      "title": [
+        "Reden und Essen im und vor dem Fernseher"
+      ],
+      "author": [
+        {
+          "given": "Regina F.",
+          "family": "Bendix",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "subtitle": [
+        "Serienfiguren und Serienzuschauer im Umgang mit dem Kulinarischen"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839422069-011",
+      "type": "book-chapter",
+      "page": "155-172",
+      "title": [
+        "Tempuswahn"
+      ],
+      "author": [
+        {
+          "given": "Ulrich",
+          "family": "Engel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interkulturalität. Studien zu Sprache, Literatur und Gesellschaft",
+        "Tischgespräche: Einladung zu einer interkulturellen Wissenschaft"
+      ],
+      "ISBN": [
+        "9783837622065",
+        "9783839422069"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            26
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Vom Lesen sprechen Eine Miniatur über das interkulturelle Lesergespräch in der Vermittlungspraxis interkultureller Germanistik",
+      "authors": [
+        "Barbara Dengel"
+      ],
+      "chapter_doi": "10.14361/9783839422069-016",
+      "citation_pages": "235-244"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Corinna Albrecht",
+        "Andrea Bogner"
+      ],
+      "chapter_doi": "10.14361/9783839422069-toc",
+      "citation_pages": "5-10"
+    },
+    {
+      "title": "Tabula gratulatoria",
+      "authors": [
+        "Corinna Albrecht",
+        "Andrea Bogner"
+      ],
+      "chapter_doi": "10.14361/9783839422069-022",
+      "citation_pages": "331-336"
+    },
+    {
+      "title": "Poetik und Hermeneutik der Interkulturalität",
+      "authors": [
+        "Norbert Mecklenburg"
+      ],
+      "chapter_doi": "10.14361/9783839422069-004",
+      "citation_pages": "31-52"
+    },
+    {
+      "title": "Verschränktes Nebeneinander Überspielte Kulturdivergenzen an der deutsch-niederländischen Grenze",
+      "authors": [
+        "Horst Steinmetz"
+      ],
+      "chapter_doi": "10.14361/9783839422069-014",
+      "citation_pages": "199-212"
+    },
+    {
+      "title": "Vom Paradox fremdsprachlicher Kommunikation zur Potentialität mehrsprachiger Räume",
+      "authors": [
+        "Andrea Bogner"
+      ],
+      "chapter_doi": "10.14361/9783839422069-019",
+      "citation_pages": "289-302"
+    },
+    {
+      "title": "Was ist ein Wort? Von der Analyse der sprachlichen Spezifika zur Vermittlung interkultureller Kompetenz",
+      "authors": [
+        "Liu Dezhang"
+      ],
+      "chapter_doi": "10.14361/9783839422069-012",
+      "citation_pages": "173-182"
+    },
+    {
+      "title": "Laudatio anlässlich des Festkolloquiums zu Alois Wierlachers 80. Geburtstag Zugleich eine Einführung in den Band",
+      "authors": [
+        "Corinna Albrecht",
+        "Andrea Bogner"
+      ],
+      "chapter_doi": "10.14361/9783839422069-001",
+      "citation_pages": "11-18"
+    },
+    {
+      "title": "Zwei Krisen, kulturelle Fremde und die eine Welt Zum Wandel des Interesses, Andere zu verstehen",
+      "authors": [
+        "Dietrich Krusche"
+      ],
+      "chapter_doi": "10.14361/9783839422069-007",
+      "citation_pages": "87-104"
+    },
+    {
+      "title": "Laudatio zum 80. Geburtstag von Prof. Dr. Alois Wierlacher",
+      "authors": [
+        "Jianbin Wang"
+      ],
+      "chapter_doi": "10.14361/9783839422069-003",
+      "citation_pages": "27-28"
+    },
+    {
+      "title": "Tischgespräche über das Fremde Zum Problem der Xenophagie",
+      "authors": [
+        "Wolf Dieter Otto"
+      ],
+      "chapter_doi": "10.14361/9783839422069-008",
+      "citation_pages": "105-124"
+    },
+    {
+      "title": "Der Essay als (Dis-)Kurs-Form Kleiner Beitrag zum interkulturellen Kanon",
+      "authors": [
+        "Hinrich C. Seeba"
+      ],
+      "chapter_doi": "10.14361/9783839422069-017",
+      "citation_pages": "245-260"
+    },
+    {
+      "title": "40 Jahre Jahrbuch Deutsch als Fremdsprache",
+      "authors": [
+        "Hans-Jürgen Krumm"
+      ],
+      "chapter_doi": "10.14361/9783839422069-002",
+      "citation_pages": "19-26"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Corinna Albrecht",
+        "Andrea Bogner"
+      ],
+      "chapter_doi": "10.14361/9783839422069-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Orts-Botschaften Orte in Jordanien und Syrien",
+      "authors": [
+        "Götz Großklaus"
+      ],
+      "chapter_doi": "10.14361/9783839422069-009",
+      "citation_pages": "127-136"
+    },
+    {
+      "title": "Zwischen den Kulturen? Zwischen den Zeilen? Oder: Vom Umgang mit übersetzten Gedichten",
+      "authors": [
+        "Andreas Kelletat"
+      ],
+      "chapter_doi": "10.14361/9783839422069-018",
+      "citation_pages": "263-288"
+    },
+    {
+      "title": "Zur Dialogfähigkeit in der interkulturellen Wissenschaftskommunikation",
+      "authors": [
+        "Yong Liang"
+      ],
+      "chapter_doi": "10.14361/9783839422069-015",
+      "citation_pages": "215-234"
+    },
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [
+        "Corinna Albrecht",
+        "Andrea Bogner"
+      ],
+      "chapter_doi": "10.14361/9783839422069-021",
+      "citation_pages": "327-330"
+    },
+    {
+      "title": "Günter Grass: Danzig und Polen Eine essayistische Skizze",
+      "authors": [
+        "Norbert Honsza"
+      ],
+      "chapter_doi": "10.14361/9783839422069-013",
+      "citation_pages": "183-198"
+    },
+    {
+      "title": "Wechselkritik und Ergänzung Zur langzeitigen Wirkungsgeschichte der deutschfranzösischen Beziehungen - von Forster bis Durkheim",
+      "authors": [
+        "Willy Michel",
+        "Edith Michel"
+      ],
+      "chapter_doi": "10.14361/9783839422069-006",
+      "citation_pages": "69-86"
+    },
+    {
+      "title": "Interkulturalität Ein Konzept in der Diskussion",
+      "authors": [
+        "Corinna Albrecht"
+      ],
+      "chapter_doi": "10.14361/9783839422069-005",
+      "citation_pages": "53-68"
+    },
+    {
+      "title": "Interkulturalität als kreatives Milieu Zum Jahrbuch Deutsch als Fremdsprache / Intercultural German Studies",
+      "authors": [
+        "Karl Esselborn"
+      ],
+      "chapter_doi": "10.14361/9783839422069-020",
+      "citation_pages": "303-326"
+    },
+    {
+      "title": "Reden und Essen im und vor dem Fernseher Serienfiguren und Serienzuschauer im Umgang mit dem Kulinarischen",
+      "authors": [
+        "Regina F. Bendix"
+      ],
+      "chapter_doi": "10.14361/9783839422069-010",
+      "citation_pages": "137-154"
+    },
+    {
+      "title": "Tempuswahn",
+      "authors": [
+        "Ulrich Engel"
+      ],
+      "chapter_doi": "10.14361/9783839422069-011",
+      "citation_pages": "155-172"
+    }
+  ]
+}

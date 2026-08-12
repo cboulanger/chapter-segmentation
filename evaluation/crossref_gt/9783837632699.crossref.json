@@ -1,0 +1,480 @@
+{
+  "isbn": "9783837632699",
+  "fetched_at": "2026-08-11T22:43:55.303178+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839432693-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839432693-003",
+      "type": "book-chapter",
+      "page": "105-122",
+      "title": [
+        "4. Netzwerk"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839432693-001",
+      "type": "book-chapter",
+      "page": "15-72",
+      "title": [
+        "2. Strategie"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839432693-bm",
+      "type": "book-chapter",
+      "page": "136-138",
+      "title": [
+        "Backmatter"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839432693-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839432693-004",
+      "type": "book-chapter",
+      "page": "123-126",
+      "title": [
+        "5. Schlussbemerkung"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839432693-prf",
+      "type": "book-chapter",
+      "page": "7-8",
+      "title": [
+        "Vorwort"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839432693-002",
+      "type": "book-chapter",
+      "page": "73-104",
+      "title": [
+        "3. Veränderung"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839432693-ref",
+      "type": "book-chapter",
+      "page": "127-135",
+      "title": [
+        "6. Literatur"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839432693-intro",
+      "type": "book-chapter",
+      "page": "9-14",
+      "title": [
+        "1. Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Gutzmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Architekturen",
+        "Architektur und Kommunikation"
+      ],
+      "ISBN": [
+        "9783837632699",
+        "9783839432693"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            8
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "4. Netzwerk",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-003",
+      "citation_pages": "105-122"
+    },
+    {
+      "title": "2. Strategie",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-001",
+      "citation_pages": "15-72"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-bm",
+      "citation_pages": "136-138"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "5. Schlussbemerkung",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-004",
+      "citation_pages": "123-126"
+    },
+    {
+      "title": "Vorwort",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-prf",
+      "citation_pages": "7-8"
+    },
+    {
+      "title": "3. Veränderung",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-002",
+      "citation_pages": "73-104"
+    },
+    {
+      "title": "6. Literatur",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-ref",
+      "citation_pages": "127-135"
+    },
+    {
+      "title": "1. Einleitung",
+      "authors": [
+        "Alexander Gutzmer"
+      ],
+      "chapter_doi": "10.14361/9783839432693-intro",
+      "citation_pages": "9-14"
+    }
+  ]
+}

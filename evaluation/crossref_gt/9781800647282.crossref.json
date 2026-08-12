@@ -1,0 +1,1676 @@
+{
+  "isbn": "9781800647282",
+  "fetched_at": "2026-08-11T22:41:08.706851+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.01",
+      "type": "book-chapter",
+      "page": "1-14",
+      "title": [
+        "1. Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.13",
+      "type": "book-chapter",
+      "page": "257-288",
+      "title": [
+        "13. Fly Colony Establishment, Quality Control and Improvement"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4208-4666",
+          "authenticated-orcid": false,
+          "given": "Nikolas P.",
+          "family": "Johnston",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5679-2700",
+          "authenticated-orcid": false,
+          "given": "Nathan J.",
+          "family": "Butterworth",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6481-1708",
+          "authenticated-orcid": false,
+          "given": "James F.",
+          "family": "Wallman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.18",
+      "type": "book-chapter",
+      "page": "383-402",
+      "title": [
+        "18. Drone-assisted Medicinal Maggot Distribution in Compromised Healthcare Settings"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4432-2461",
+          "authenticated-orcid": false,
+          "given": "Peter",
+          "family": "Tatham",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.17",
+      "type": "book-chapter",
+      "page": "363-382",
+      "title": [
+        "17. Distribution Logistics"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.09",
+      "type": "book-chapter",
+      "page": "153-174",
+      "title": [
+        "9. The Antimicrobial Activity of Medicinal Maggots"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5438-7712",
+          "authenticated-orcid": false,
+          "given": "Yamni",
+          "family": "Nigam",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4534-554X",
+          "authenticated-orcid": false,
+          "given": "Michael R.",
+          "family": "Wilson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.08",
+      "type": "book-chapter",
+      "page": "143-152",
+      "title": [
+        "8. Maggot Debridement"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5438-7712",
+          "authenticated-orcid": false,
+          "given": "Yamni",
+          "family": "Nigam",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4534-554X",
+          "authenticated-orcid": false,
+          "given": "Michael R.",
+          "family": "Wilson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.02",
+      "type": "book-chapter",
+      "page": "17-38",
+      "title": [
+        "2. Living with a Chronic Wound"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4192-7254",
+          "authenticated-orcid": false,
+          "given": "Rajna",
+          "family": "Ogrin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kylie J.",
+          "family": "Elder",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.11",
+      "type": "book-chapter",
+      "page": "195-234",
+      "title": [
+        "11. Bioprospecting and Testing of New Fly Species for Maggot Therapy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7343-2419",
+          "authenticated-orcid": false,
+          "given": "Patricia Jacqueline",
+          "family": "Thyssen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7407-9394",
+          "authenticated-orcid": false,
+          "given": "Franciéle Souza",
+          "family": "Masiero",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.15",
+      "type": "book-chapter",
+      "page": "331-346",
+      "title": [
+        "15. Establishment of a Medical Maggot Rearing Facility and Maggot Therapy Programme for Human and Veterinary Medicine in Kenya"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6481-1708",
+          "authenticated-orcid": false,
+          "given": "Peter",
+          "family": "Takáč",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Milan",
+          "family": "Kozánek",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Grace A.",
+          "family": "Murilla",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Phoebe",
+          "family": "Mukiria",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bernard Wanyonyi",
+          "family": "Kinyosi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Judith K.",
+          "family": "Chemuliti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "J. Kimani",
+          "family": "Wanjerie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christopher K.",
+          "family": "Kibiwott",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.10",
+      "type": "book-chapter",
+      "page": "175-194",
+      "title": [
+        "10. Maggot-assisted Wound Healing"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5438-7712",
+          "authenticated-orcid": false,
+          "given": "Yamni",
+          "family": "Nigam",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4534-554X",
+          "authenticated-orcid": false,
+          "given": "Michael R.",
+          "family": "Wilson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.05",
+      "type": "book-chapter",
+      "page": "79-96",
+      "title": [
+        "5. Medicinal Maggot Application and Maggot Therapy Dressing Technology"
+      ],
+      "author": [
+        {
+          "given": "Ronald A.",
+          "family": "Sherman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.07",
+      "type": "book-chapter",
+      "page": "121-142",
+      "title": [
+        "7. The Natural History of Medicinal Flies"
+      ],
+      "author": [
+        {
+          "given": "Michelle L.",
+          "family": "Harvey",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.12",
+      "type": "book-chapter",
+      "page": "237-256",
+      "title": [
+        "12. Laboratory and Insectary Infrastructure and Equipment"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.04",
+      "type": "book-chapter",
+      "page": "63-78",
+      "title": [
+        "4. Indications, Contraindications, Interactions, and Side-effects of Maggot Therapy"
+      ],
+      "author": [
+        {
+          "given": "Ronald A.",
+          "family": "Sherman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.03",
+      "type": "book-chapter",
+      "page": "39-62",
+      "title": [
+        "3. Wound Aetiologies, Patient Characteristics, and Healthcare Settings Amenable to Maggot Therapy"
+      ],
+      "author": [
+        {
+          "given": "Ronald A.",
+          "family": "Sherman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.16",
+      "type": "book-chapter",
+      "page": "349-362",
+      "title": [
+        "16. Packaging Technology"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.19",
+      "type": "book-chapter",
+      "page": "405-430",
+      "title": [
+        "19. The Ethics of Maggot Therapy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.06",
+      "type": "book-chapter",
+      "page": "97-118",
+      "title": [
+        "6. Clinical Integration of Maggot Therapy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7621-509X",
+          "authenticated-orcid": false,
+          "given": "Benjamin L.",
+          "family": "Bullen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ronald A.",
+          "family": "Sherman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paul J.",
+          "family": "Chadwick",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T00:00:00Z",
+            "timestamp": 1658275200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0300.14",
+      "type": "book-chapter",
+      "page": "289-230",
+      "title": [
+        "14. Medicinal Maggot Production"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9158-2792",
+          "authenticated-orcid": false,
+          "given": "Frank",
+          "family": "Stadler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6481-1708",
+          "authenticated-orcid": false,
+          "given": "Peter",
+          "family": "Takáč",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Complete Guide to Maggot Therapy"
+      ],
+      "ISBN": [
+        "9781800647282",
+        "9781800647299",
+        "9781800647305",
+        "9781800647343",
+        "9781800647336",
+        "9781800647312",
+        "9781800647329"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            20
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "1. Introduction",
+      "authors": [
+        "Frank Stadler"
+      ],
+      "chapter_doi": "10.11647/obp.0300.01",
+      "citation_pages": "1-14"
+    },
+    {
+      "title": "13. Fly Colony Establishment, Quality Control and Improvement",
+      "authors": [
+        "Frank Stadler",
+        "Nikolas P. Johnston",
+        "Nathan J. Butterworth",
+        "James F. Wallman"
+      ],
+      "chapter_doi": "10.11647/obp.0300.13",
+      "citation_pages": "257-288"
+    },
+    {
+      "title": "18. Drone-assisted Medicinal Maggot Distribution in Compromised Healthcare Settings",
+      "authors": [
+        "Frank Stadler",
+        "Peter Tatham"
+      ],
+      "chapter_doi": "10.11647/obp.0300.18",
+      "citation_pages": "383-402"
+    },
+    {
+      "title": "17. Distribution Logistics",
+      "authors": [
+        "Frank Stadler"
+      ],
+      "chapter_doi": "10.11647/obp.0300.17",
+      "citation_pages": "363-382"
+    },
+    {
+      "title": "9. The Antimicrobial Activity of Medicinal Maggots",
+      "authors": [
+        "Yamni Nigam",
+        "Michael R. Wilson"
+      ],
+      "chapter_doi": "10.11647/obp.0300.09",
+      "citation_pages": "153-174"
+    },
+    {
+      "title": "8. Maggot Debridement",
+      "authors": [
+        "Yamni Nigam",
+        "Michael R. Wilson"
+      ],
+      "chapter_doi": "10.11647/obp.0300.08",
+      "citation_pages": "143-152"
+    },
+    {
+      "title": "2. Living with a Chronic Wound",
+      "authors": [
+        "Rajna Ogrin",
+        "Kylie J. Elder"
+      ],
+      "chapter_doi": "10.11647/obp.0300.02",
+      "citation_pages": "17-38"
+    },
+    {
+      "title": "11. Bioprospecting and Testing of New Fly Species for Maggot Therapy",
+      "authors": [
+        "Patricia Jacqueline Thyssen",
+        "Franciéle Souza Masiero",
+        "Frank Stadler"
+      ],
+      "chapter_doi": "10.11647/obp.0300.11",
+      "citation_pages": "195-234"
+    },
+    {
+      "title": "15. Establishment of a Medical Maggot Rearing Facility and Maggot Therapy Programme for Human and Veterinary Medicine in Kenya",
+      "authors": [
+        "Peter Takáč",
+        "Milan Kozánek",
+        "Grace A. Murilla",
+        "Phoebe Mukiria",
+        "Bernard Wanyonyi Kinyosi",
+        "Judith K. Chemuliti",
+        "J. Kimani Wanjerie",
+        "Christopher K. Kibiwott",
+        "Frank Stadler"
+      ],
+      "chapter_doi": "10.11647/obp.0300.15",
+      "citation_pages": "331-346"
+    },
+    {
+      "title": "10. Maggot-assisted Wound Healing",
+      "authors": [
+        "Yamni Nigam",
+        "Michael R. Wilson"
+      ],
+      "chapter_doi": "10.11647/obp.0300.10",
+      "citation_pages": "175-194"
+    },
+    {
+      "title": "5. Medicinal Maggot Application and Maggot Therapy Dressing Technology",
+      "authors": [
+        "Ronald A. Sherman"
+      ],
+      "chapter_doi": "10.11647/obp.0300.05",
+      "citation_pages": "79-96"
+    },
+    {
+      "title": "7. The Natural History of Medicinal Flies",
+      "authors": [
+        "Michelle L. Harvey"
+      ],
+      "chapter_doi": "10.11647/obp.0300.07",
+      "citation_pages": "121-142"
+    },
+    {
+      "title": "12. Laboratory and Insectary Infrastructure and Equipment",
+      "authors": [
+        "Frank Stadler"
+      ],
+      "chapter_doi": "10.11647/obp.0300.12",
+      "citation_pages": "237-256"
+    },
+    {
+      "title": "4. Indications, Contraindications, Interactions, and Side-effects of Maggot Therapy",
+      "authors": [
+        "Ronald A. Sherman"
+      ],
+      "chapter_doi": "10.11647/obp.0300.04",
+      "citation_pages": "63-78"
+    },
+    {
+      "title": "3. Wound Aetiologies, Patient Characteristics, and Healthcare Settings Amenable to Maggot Therapy",
+      "authors": [
+        "Ronald A. Sherman",
+        "Frank Stadler"
+      ],
+      "chapter_doi": "10.11647/obp.0300.03",
+      "citation_pages": "39-62"
+    },
+    {
+      "title": "16. Packaging Technology",
+      "authors": [
+        "Frank Stadler"
+      ],
+      "chapter_doi": "10.11647/obp.0300.16",
+      "citation_pages": "349-362"
+    },
+    {
+      "title": "19. The Ethics of Maggot Therapy",
+      "authors": [
+        "Frank Stadler"
+      ],
+      "chapter_doi": "10.11647/obp.0300.19",
+      "citation_pages": "405-430"
+    },
+    {
+      "title": "6. Clinical Integration of Maggot Therapy",
+      "authors": [
+        "Benjamin L. Bullen",
+        "Ronald A. Sherman",
+        "Paul J. Chadwick",
+        "Frank Stadler"
+      ],
+      "chapter_doi": "10.11647/obp.0300.06",
+      "citation_pages": "97-118"
+    },
+    {
+      "title": "14. Medicinal Maggot Production",
+      "authors": [
+        "Frank Stadler",
+        "Peter Takáč"
+      ],
+      "chapter_doi": "10.11647/obp.0300.14",
+      "citation_pages": "289-230"
+    }
+  ]
+}

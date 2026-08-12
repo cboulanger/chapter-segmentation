@@ -1,0 +1,1293 @@
+{
+  "isbn": "9781783749294",
+  "fetched_at": "2026-08-11T22:58:22.713855+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.11",
+      "type": "book-chapter",
+      "page": "249-254",
+      "title": [
+        "Why Learn a Language?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3485-5037",
+          "authenticated-orcid": false,
+          "given": "Katrin",
+          "family": "Kohl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.02",
+      "type": "book-chapter",
+      "page": "47-68",
+      "title": [
+        "2. Creating a Meaningful World"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4473-077X",
+          "authenticated-orcid": false,
+          "given": "Karen",
+          "family": "Park",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Felice S.",
+          "family": "Wyndham",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8074-8064",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Gosler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "John",
+          "family": "Fanshawe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "subtitle": [
+        "Nature in Name, Metaphor and Myth"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.07",
+      "type": "book-chapter",
+      "page": "151-176",
+      "title": [
+        "7. Getting Creative in the Languages Classroom"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7743-3977",
+          "authenticated-orcid": false,
+          "given": "Suzanne",
+          "family": "Graham",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05v62cm79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Reading"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Linda",
+          "family": "Fisher",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Julia",
+          "family": "Hofweber",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Heike",
+          "family": "Krüsemann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.04",
+      "type": "book-chapter",
+      "page": "87-108",
+      "title": [
+        "4. A Breath of Fresh Air… Ivan Vyrypaev's Oxygen (2002)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0295-724X",
+          "authenticated-orcid": false,
+          "given": "Rajinder",
+          "family": "Dudrah",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Julie",
+          "family": "Curtis",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Philip Ross",
+          "family": "Bullock",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Noah",
+          "family": "Birksted-Breen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "subtitle": [
+        "From Moscow to Birmingham via Oxford"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.08",
+      "type": "book-chapter",
+      "page": "177-202",
+      "title": [
+        "8. Inspiring Language Learners"
+      ],
+      "author": [
+        {
+          "given": "Jane",
+          "family": "Hiddleston",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Laura",
+          "family": "Lonsdale",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chiara",
+          "family": "Cappellaro",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Tyler-McTighe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.01",
+      "type": "book-chapter",
+      "page": "25-46",
+      "title": [
+        "1. The Creative Power of Metaphor"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3485-5037",
+          "authenticated-orcid": false,
+          "given": "Katrin",
+          "family": "Kohl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3292-8968",
+          "authenticated-orcid": false,
+          "given": "Marianna",
+          "family": "Bolognesi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01111rn36",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università di Bologna"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0720-2575",
+          "authenticated-orcid": false,
+          "given": "Ana",
+          "family": "Werkmann Horvat",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00tqhym28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institute of Croatian Language and Linguistics"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.05",
+      "type": "book-chapter",
+      "page": "109-130",
+      "title": [
+        "5. Multilingualism and Creativity in World Literature"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3356-7391",
+          "authenticated-orcid": false,
+          "given": "Wen-chin",
+          "family": "Ouyang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04vrxay34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "School of Oriental and African Studies (SOAS), University of London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.12",
+      "type": "book-chapter",
+      "page": "1-24",
+      "title": [
+        "Introducing Creative Multilingualism"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3485-5037",
+          "authenticated-orcid": false,
+          "given": "Katrin",
+          "family": "Kohl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3356-7391",
+          "authenticated-orcid": false,
+          "given": "Wen-chin",
+          "family": "Ouyang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04vrxay34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "School of Oriental and African Studies (SOAS), University of London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.03",
+      "type": "book-chapter",
+      "page": "69-86",
+      "title": [
+        "3. Not as 'Foreign' as You Think"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Maiden",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chiara",
+          "family": "Cappellaro",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0033-9106",
+          "authenticated-orcid": false,
+          "given": "Aditi",
+          "family": "Lahiri",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "subtitle": [
+        "Creating Bridges of Understanding across Languages"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.06",
+      "type": "book-chapter",
+      "page": "131-150",
+      "title": [
+        "6. Prismatic Translation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7295-0687",
+          "authenticated-orcid": false,
+          "given": "Matthew",
+          "family": "Reynolds",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sowon S.",
+          "family": "Park",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6777-6610",
+          "authenticated-orcid": false,
+          "given": "Kate",
+          "family": "Clanchy",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05v62cm79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Reading"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.10",
+      "type": "book-chapter",
+      "page": "223-248",
+      "title": [
+        "10. Creating Languages"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3485-5037",
+          "authenticated-orcid": false,
+          "given": "Katrin",
+          "family": "Kohl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2020-05-20T00:00:00Z",
+            "timestamp": 1589932800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0206.09",
+      "type": "book-chapter",
+      "page": "203-222",
+      "title": [
+        "9. Languages at Work"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3485-5037",
+          "authenticated-orcid": false,
+          "given": "Katrin",
+          "family": "Kohl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jonathan",
+          "family": "Black",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Creative Multilingualism"
+      ],
+      "ISBN": [
+        "9781783749294",
+        "9781783749300",
+        "9781783749317",
+        "9781800646162",
+        "9781783749348",
+        "9781783749324",
+        "9781783749331"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Why Learn a Language?",
+      "authors": [
+        "Katrin Kohl"
+      ],
+      "chapter_doi": "10.11647/obp.0206.11",
+      "citation_pages": "249-254"
+    },
+    {
+      "title": "2. Creating a Meaningful World Nature in Name, Metaphor and Myth",
+      "authors": [
+        "Karen Park",
+        "Felice S. Wyndham",
+        "Andrew Gosler",
+        "John Fanshawe"
+      ],
+      "chapter_doi": "10.11647/obp.0206.02",
+      "citation_pages": "47-68"
+    },
+    {
+      "title": "7. Getting Creative in the Languages Classroom",
+      "authors": [
+        "Suzanne Graham",
+        "Linda Fisher",
+        "Julia Hofweber",
+        "Heike Krüsemann"
+      ],
+      "chapter_doi": "10.11647/obp.0206.07",
+      "citation_pages": "151-176"
+    },
+    {
+      "title": "4. A Breath of Fresh Air… Ivan Vyrypaev's Oxygen (2002) From Moscow to Birmingham via Oxford",
+      "authors": [
+        "Rajinder Dudrah",
+        "Julie Curtis",
+        "Philip Ross Bullock",
+        "Noah Birksted-Breen"
+      ],
+      "chapter_doi": "10.11647/obp.0206.04",
+      "citation_pages": "87-108"
+    },
+    {
+      "title": "8. Inspiring Language Learners",
+      "authors": [
+        "Jane Hiddleston",
+        "Laura Lonsdale",
+        "Chiara Cappellaro",
+        "Daniel Tyler-McTighe"
+      ],
+      "chapter_doi": "10.11647/obp.0206.08",
+      "citation_pages": "177-202"
+    },
+    {
+      "title": "1. The Creative Power of Metaphor",
+      "authors": [
+        "Katrin Kohl",
+        "Marianna Bolognesi",
+        "Ana Werkmann Horvat"
+      ],
+      "chapter_doi": "10.11647/obp.0206.01",
+      "citation_pages": "25-46"
+    },
+    {
+      "title": "5. Multilingualism and Creativity in World Literature",
+      "authors": [
+        "Wen-chin Ouyang"
+      ],
+      "chapter_doi": "10.11647/obp.0206.05",
+      "citation_pages": "109-130"
+    },
+    {
+      "title": "Introducing Creative Multilingualism",
+      "authors": [
+        "Katrin Kohl",
+        "Wen-chin Ouyang"
+      ],
+      "chapter_doi": "10.11647/obp.0206.12",
+      "citation_pages": "1-24"
+    },
+    {
+      "title": "3. Not as 'Foreign' as You Think Creating Bridges of Understanding across Languages",
+      "authors": [
+        "Martin Maiden",
+        "Chiara Cappellaro",
+        "Aditi Lahiri"
+      ],
+      "chapter_doi": "10.11647/obp.0206.03",
+      "citation_pages": "69-86"
+    },
+    {
+      "title": "6. Prismatic Translation",
+      "authors": [
+        "Matthew Reynolds",
+        "Sowon S. Park",
+        "Kate Clanchy"
+      ],
+      "chapter_doi": "10.11647/obp.0206.06",
+      "citation_pages": "131-150"
+    },
+    {
+      "title": "10. Creating Languages",
+      "authors": [
+        "Katrin Kohl"
+      ],
+      "chapter_doi": "10.11647/obp.0206.10",
+      "citation_pages": "223-248"
+    },
+    {
+      "title": "9. Languages at Work",
+      "authors": [
+        "Katrin Kohl",
+        "Jonathan Black"
+      ],
+      "chapter_doi": "10.11647/obp.0206.09",
+      "citation_pages": "203-222"
+    }
+  ]
+}

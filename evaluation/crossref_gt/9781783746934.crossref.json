@@ -1,0 +1,554 @@
+{
+  "isbn": "9781783746934",
+  "fetched_at": "2026-08-11T22:58:23.556502+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                22
+              ]
+            ],
+            "date-time": "2020-07-22T00:00:00Z",
+            "timestamp": 1595376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0167.03",
+      "type": "book-chapter",
+      "page": "27-54",
+      "title": [
+        "3. Naval Architecture. The Hellenistic Hull Design"
+      ],
+      "author": [
+        {
+          "given": "Patrice",
+          "family": "Pomey",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sailing from Polis to Empire"
+      ],
+      "subtitle": [
+        "Origin and Evolution"
+      ],
+      "ISBN": [
+        "9781783746934",
+        "9781783746941",
+        "9781783746958",
+        "9781800645820",
+        "9781783746989",
+        "9781783746965",
+        "9781783746972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                22
+              ]
+            ],
+            "date-time": "2020-07-22T00:00:00Z",
+            "timestamp": 1595376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0167.05",
+      "type": "book-chapter",
+      "page": "75-90",
+      "title": [
+        "5. The Rise of the Tonnage in the Hellenistic Period"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0003-6615",
+          "authenticated-orcid": false,
+          "given": "Emmanuel",
+          "family": "Nantet",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02f009v59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Haifa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sailing from Polis to Empire"
+      ],
+      "ISBN": [
+        "9781783746934",
+        "9781783746941",
+        "9781783746958",
+        "9781800645820",
+        "9781783746989",
+        "9781783746965",
+        "9781783746972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                22
+              ]
+            ],
+            "date-time": "2020-07-22T00:00:00Z",
+            "timestamp": 1595376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0167.04",
+      "type": "book-chapter",
+      "page": "55-74",
+      "title": [
+        "4. Naves Pingere"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Galinier",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0003-6615",
+          "authenticated-orcid": false,
+          "given": "Emmanuel",
+          "family": "Nantet",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02f009v59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Haifa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sailing from Polis to Empire"
+      ],
+      "subtitle": [
+        "'Painting Ships' in the Hellenistic Period"
+      ],
+      "ISBN": [
+        "9781783746934",
+        "9781783746941",
+        "9781783746958",
+        "9781800645820",
+        "9781783746989",
+        "9781783746965",
+        "9781783746972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                22
+              ]
+            ],
+            "date-time": "2020-07-22T00:00:00Z",
+            "timestamp": 1595376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0167.01",
+      "type": "book-chapter",
+      "page": "1-10",
+      "title": [
+        "1. The Hellenistic Merchantmen"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0003-6615",
+          "authenticated-orcid": false,
+          "given": "Emmanuel",
+          "family": "Nantet",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02f009v59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Haifa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sailing from Polis to Empire"
+      ],
+      "subtitle": [
+        "A Contribution to the Study of the Mediterranean Economies"
+      ],
+      "ISBN": [
+        "9781783746934",
+        "9781783746941",
+        "9781783746958",
+        "9781800645820",
+        "9781783746989",
+        "9781783746965",
+        "9781783746972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                22
+              ]
+            ],
+            "date-time": "2020-07-22T00:00:00Z",
+            "timestamp": 1595376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0167.07",
+      "type": "book-chapter",
+      "page": "xi-xviii",
+      "title": [
+        "Preface"
+      ],
+      "author": [
+        {
+          "given": "Alain",
+          "family": "Bresson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sailing from Polis to Empire"
+      ],
+      "ISBN": [
+        "9781783746934",
+        "9781783746941",
+        "9781783746958",
+        "9781800645820",
+        "9781783746989",
+        "9781783746965",
+        "9781783746972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                22
+              ]
+            ],
+            "date-time": "2020-07-22T00:00:00Z",
+            "timestamp": 1595376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0167.02",
+      "type": "book-chapter",
+      "page": "11-26",
+      "title": [
+        "2. Evolutions of the Representation of the Eastern Mediterranean in the Hellenistic Period"
+      ],
+      "author": [
+        {
+          "given": "Jean-Marie",
+          "family": "Kowalski",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sailing from Polis to Empire"
+      ],
+      "ISBN": [
+        "9781783746934",
+        "9781783746941",
+        "9781783746958",
+        "9781800645820",
+        "9781783746989",
+        "9781783746965",
+        "9781783746972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                22
+              ]
+            ],
+            "date-time": "2020-07-22T00:00:00Z",
+            "timestamp": 1595376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0167.06",
+      "type": "book-chapter",
+      "page": "91-118",
+      "title": [
+        "6. A Note on the Navigation Space of the Baris-Type Ships from Thonis-Heracleion"
+      ],
+      "author": [
+        {
+          "given": "Alexander",
+          "family": "Belov",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sailing from Polis to Empire"
+      ],
+      "ISBN": [
+        "9781783746934",
+        "9781783746941",
+        "9781783746958",
+        "9781800645820",
+        "9781783746989",
+        "9781783746965",
+        "9781783746972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            22
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "3. Naval Architecture. The Hellenistic Hull Design Origin and Evolution",
+      "authors": [
+        "Patrice Pomey"
+      ],
+      "chapter_doi": "10.11647/obp.0167.03",
+      "citation_pages": "27-54"
+    },
+    {
+      "title": "5. The Rise of the Tonnage in the Hellenistic Period",
+      "authors": [
+        "Emmanuel Nantet"
+      ],
+      "chapter_doi": "10.11647/obp.0167.05",
+      "citation_pages": "75-90"
+    },
+    {
+      "title": "4. Naves Pingere 'Painting Ships' in the Hellenistic Period",
+      "authors": [
+        "Martin Galinier",
+        "Emmanuel Nantet"
+      ],
+      "chapter_doi": "10.11647/obp.0167.04",
+      "citation_pages": "55-74"
+    },
+    {
+      "title": "1. The Hellenistic Merchantmen A Contribution to the Study of the Mediterranean Economies",
+      "authors": [
+        "Emmanuel Nantet"
+      ],
+      "chapter_doi": "10.11647/obp.0167.01",
+      "citation_pages": "1-10"
+    },
+    {
+      "title": "Preface",
+      "authors": [
+        "Alain Bresson"
+      ],
+      "chapter_doi": "10.11647/obp.0167.07",
+      "citation_pages": "xi-xviii"
+    },
+    {
+      "title": "2. Evolutions of the Representation of the Eastern Mediterranean in the Hellenistic Period",
+      "authors": [
+        "Jean-Marie Kowalski"
+      ],
+      "chapter_doi": "10.11647/obp.0167.02",
+      "citation_pages": "11-26"
+    },
+    {
+      "title": "6. A Note on the Navigation Space of the Baris-Type Ships from Thonis-Heracleion",
+      "authors": [
+        "Alexander Belov"
+      ],
+      "chapter_doi": "10.11647/obp.0167.06",
+      "citation_pages": "91-118"
+    }
+  ]
+}

@@ -1,0 +1,969 @@
+{
+  "isbn": "9783837629194",
+  "fetched_at": "2026-08-11T22:40:50.226523+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "unpaywall",
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839429198-intro",
+      "type": "book-chapter",
+      "page": "7-10",
+      "title": [
+        "Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Schwier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-006",
+      "type": "book-chapter",
+      "page": "109-128",
+      "title": [
+        "Bewegungsräume in der Kindertagesstätte gestalten"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Offene Bewegungsangebote inszenieren"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-009",
+      "type": "book-chapter",
+      "page": "171-192",
+      "title": [
+        "Nicht alltägliche Bewegungsräume mit Kindern erkunden"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anna",
+          "family": "Grohmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lisa Sophie",
+          "family": "Lüthje",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Ausflüge vorbereiten, begleiten und nachbereiten"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-013",
+      "type": "book-chapter",
+      "page": "269-270",
+      "title": [
+        "Autorinnen und Autoren"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Schwier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-004",
+      "type": "book-chapter",
+      "page": "61-86",
+      "title": [
+        "ErlebnisRAUMerfahrung"
+      ],
+      "author": [
+        {
+          "given": "Clemens",
+          "family": "Töpfer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sebastian",
+          "family": "Liebl",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ralf",
+          "family": "Sygusch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Räume mit Bewegung, Spiel und Sport erschließen"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-010",
+      "type": "book-chapter",
+      "page": "195-216",
+      "title": [
+        "Jugendarbeit und Medienpraxis im Feld des Trendsports"
+      ],
+      "author": [
+        {
+          "given": "Jürgen",
+          "family": "Schwier",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dirk",
+          "family": "Dillmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-011",
+      "type": "book-chapter",
+      "page": "217-246",
+      "title": [
+        "Raumaneignung als informeller Lernprozess am Beispiel des Flensburger BMX- und Skateparks Schlachthof"
+      ],
+      "author": [
+        {
+          "given": "Sara",
+          "family": "Karstens",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-001",
+      "type": "book-chapter",
+      "page": "13-30",
+      "title": [
+        "Sozialräumliche Aneignung von Räumen durch Jugendliche"
+      ],
+      "author": [
+        {
+          "given": "Ahmet",
+          "family": "Derecik",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Theoretische Grundlagen und beanspruchte Raumtypen in öffentlichen Räumen"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Schwier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-012",
+      "type": "book-chapter",
+      "page": "247-268",
+      "title": [
+        "Sportbündnisse"
+      ],
+      "author": [
+        {
+          "given": "Jürgen",
+          "family": "Schwier",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Vom BMX Girls Camp bis zur Rampenbau Schule"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-007",
+      "type": "book-chapter",
+      "page": "129-148",
+      "title": [
+        "Bewegungsräume im Quartier mit Kindern erkunden"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Spiel und Bewegung im Wohnumfeld fördern"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-002",
+      "type": "book-chapter",
+      "page": "31-46",
+      "title": [
+        "Freestyle-Bewegungskulturen"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Kolb",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Moves, Tricks und Selbstmediatisierung"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-003",
+      "type": "book-chapter",
+      "page": "47-60",
+      "title": [
+        "Neue Diskurse - alte Geschlechterpraxis?"
+      ],
+      "author": [
+        {
+          "given": "Ina",
+          "family": "Hunger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Verfestigung dualer Geschlechterbilder in der frühkindlichen Bewegungspraxis"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-bm",
+      "type": "book-chapter",
+      "page": "271-274",
+      "title": [
+        "Backmatter"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Schwier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-005",
+      "type": "book-chapter",
+      "page": "89-108",
+      "title": [
+        "Urbane Bewegungsräume mit Kindern erobern"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Theoretische Vorüberlegungen"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-008",
+      "type": "book-chapter",
+      "page": "149-170",
+      "title": [
+        "Bewegungsräume des Vereinssports mit Kindern erkunden"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "subtitle": [
+        "Institutionalisierte Formen von Sport und Bewegung erleben"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839429198-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Erhorn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jürgen",
+          "family": "Schwier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pädagogik",
+        "Die Eroberung urbaner Bewegungsräume"
+      ],
+      "ISBN": [
+        "9783837629194",
+        "9783839429198"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            14
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Einleitung",
+      "authors": [
+        "Jan Erhorn",
+        "Jürgen Schwier"
+      ],
+      "chapter_doi": "10.14361/9783839429198-intro",
+      "citation_pages": "7-10"
+    },
+    {
+      "title": "Bewegungsräume in der Kindertagesstätte gestalten Offene Bewegungsangebote inszenieren",
+      "authors": [
+        "Jan Erhorn"
+      ],
+      "chapter_doi": "10.14361/9783839429198-006",
+      "citation_pages": "109-128"
+    },
+    {
+      "title": "Nicht alltägliche Bewegungsräume mit Kindern erkunden Ausflüge vorbereiten, begleiten und nachbereiten",
+      "authors": [
+        "Jan Erhorn",
+        "Anna Grohmann",
+        "Lisa Sophie Lüthje"
+      ],
+      "chapter_doi": "10.14361/9783839429198-009",
+      "citation_pages": "171-192"
+    },
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [
+        "Jan Erhorn",
+        "Jürgen Schwier"
+      ],
+      "chapter_doi": "10.14361/9783839429198-013",
+      "citation_pages": "269-270"
+    },
+    {
+      "title": "ErlebnisRAUMerfahrung Räume mit Bewegung, Spiel und Sport erschließen",
+      "authors": [
+        "Clemens Töpfer",
+        "Sebastian Liebl",
+        "Ralf Sygusch"
+      ],
+      "chapter_doi": "10.14361/9783839429198-004",
+      "citation_pages": "61-86"
+    },
+    {
+      "title": "Jugendarbeit und Medienpraxis im Feld des Trendsports",
+      "authors": [
+        "Jürgen Schwier",
+        "Dirk Dillmann"
+      ],
+      "chapter_doi": "10.14361/9783839429198-010",
+      "citation_pages": "195-216"
+    },
+    {
+      "title": "Raumaneignung als informeller Lernprozess am Beispiel des Flensburger BMX- und Skateparks Schlachthof",
+      "authors": [
+        "Sara Karstens"
+      ],
+      "chapter_doi": "10.14361/9783839429198-011",
+      "citation_pages": "217-246"
+    },
+    {
+      "title": "Sozialräumliche Aneignung von Räumen durch Jugendliche Theoretische Grundlagen und beanspruchte Raumtypen in öffentlichen Räumen",
+      "authors": [
+        "Ahmet Derecik"
+      ],
+      "chapter_doi": "10.14361/9783839429198-001",
+      "citation_pages": "13-30"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Jan Erhorn",
+        "Jürgen Schwier"
+      ],
+      "chapter_doi": "10.14361/9783839429198-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Sportbündnisse Vom BMX Girls Camp bis zur Rampenbau Schule",
+      "authors": [
+        "Jürgen Schwier"
+      ],
+      "chapter_doi": "10.14361/9783839429198-012",
+      "citation_pages": "247-268"
+    },
+    {
+      "title": "Bewegungsräume im Quartier mit Kindern erkunden Spiel und Bewegung im Wohnumfeld fördern",
+      "authors": [
+        "Jan Erhorn"
+      ],
+      "chapter_doi": "10.14361/9783839429198-007",
+      "citation_pages": "129-148"
+    },
+    {
+      "title": "Freestyle-Bewegungskulturen Moves, Tricks und Selbstmediatisierung",
+      "authors": [
+        "Michael Kolb"
+      ],
+      "chapter_doi": "10.14361/9783839429198-002",
+      "citation_pages": "31-46"
+    },
+    {
+      "title": "Neue Diskurse - alte Geschlechterpraxis? Verfestigung dualer Geschlechterbilder in der frühkindlichen Bewegungspraxis",
+      "authors": [
+        "Ina Hunger"
+      ],
+      "chapter_doi": "10.14361/9783839429198-003",
+      "citation_pages": "47-60"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [
+        "Jan Erhorn",
+        "Jürgen Schwier"
+      ],
+      "chapter_doi": "10.14361/9783839429198-bm",
+      "citation_pages": "271-274"
+    },
+    {
+      "title": "Urbane Bewegungsräume mit Kindern erobern Theoretische Vorüberlegungen",
+      "authors": [
+        "Jan Erhorn"
+      ],
+      "chapter_doi": "10.14361/9783839429198-005",
+      "citation_pages": "89-108"
+    },
+    {
+      "title": "Bewegungsräume des Vereinssports mit Kindern erkunden Institutionalisierte Formen von Sport und Bewegung erleben",
+      "authors": [
+        "Jan Erhorn"
+      ],
+      "chapter_doi": "10.14361/9783839429198-008",
+      "citation_pages": "149-170"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Jan Erhorn",
+        "Jürgen Schwier"
+      ],
+      "chapter_doi": "10.14361/9783839429198-toc",
+      "citation_pages": "5-6"
+    }
+  ]
+}

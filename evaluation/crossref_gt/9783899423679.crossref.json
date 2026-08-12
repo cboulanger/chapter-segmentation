@@ -1,0 +1,920 @@
+{
+  "isbn": "9783899423679",
+  "fetched_at": "2026-08-11T22:40:52.348839+00:00",
+  "license": "http://creativecommons.org/licenses/by-nc-nd/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-003",
+      "type": "book-chapter",
+      "page": "130-189",
+      "title": [
+        "2.3 Marx in der ökonomischen Theorie"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-001",
+      "type": "book-chapter",
+      "page": "31-87",
+      "title": [
+        "2.1 Marx in der Theorie der Sozialdemokratie"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-bm",
+      "type": "book-chapter",
+      "page": "660-660",
+      "title": [
+        "Backmatter"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-002",
+      "type": "book-chapter",
+      "page": "88-129",
+      "title": [
+        "2.2 Marx in der Theorie des Kommunismus"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-ref",
+      "type": "book-chapter",
+      "page": "571-659",
+      "title": [
+        "5. Literaturverzeichnis"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-toc",
+      "type": "book-chapter",
+      "page": "5-8",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-008",
+      "type": "book-chapter",
+      "page": "543-570",
+      "title": [
+        "4. Folgerungen für die Philosophie nach Marx"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-prf",
+      "type": "book-chapter",
+      "page": "9-10",
+      "title": [
+        "Vorrede"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-006",
+      "type": "book-chapter",
+      "page": "343-410",
+      "title": [
+        "2.6 Kritische Theorie oder die Auflösung der Kritik in Religion"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-007",
+      "type": "book-chapter",
+      "page": "411-542",
+      "title": [
+        "3. Marx heute: Kritik der Gegenwartsphilosophie"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-005",
+      "type": "book-chapter",
+      "page": "251-343",
+      "title": [
+        "2.5 „Von Marx zu Heidegger“ – Sozialphilosophie"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-intro",
+      "type": "book-chapter",
+      "page": "11-26",
+      "title": [
+        "1. Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2005,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2005-12-31T00:00:00Z",
+            "timestamp": 1135987200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "DOI": "10.14361/9783839403679-004",
+      "type": "book-chapter",
+      "page": "190-250",
+      "title": [
+        "2.4 Marx in der (deutschen) Soziologie"
+      ],
+      "author": [
+        {
+          "given": "Christoph",
+          "family": "Henning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Moderne Postmoderne",
+        "Philosophie nach Marx"
+      ],
+      "ISBN": [
+        "9783899423679",
+        "9783839403679"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            31
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "2.3 Marx in der ökonomischen Theorie",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-003",
+      "citation_pages": "130-189"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "2.1 Marx in der Theorie der Sozialdemokratie",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-001",
+      "citation_pages": "31-87"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-bm",
+      "citation_pages": "660-660"
+    },
+    {
+      "title": "2.2 Marx in der Theorie des Kommunismus",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-002",
+      "citation_pages": "88-129"
+    },
+    {
+      "title": "5. Literaturverzeichnis",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-ref",
+      "citation_pages": "571-659"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-toc",
+      "citation_pages": "5-8"
+    },
+    {
+      "title": "4. Folgerungen für die Philosophie nach Marx",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-008",
+      "citation_pages": "543-570"
+    },
+    {
+      "title": "Vorrede",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-prf",
+      "citation_pages": "9-10"
+    },
+    {
+      "title": "2.6 Kritische Theorie oder die Auflösung der Kritik in Religion",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-006",
+      "citation_pages": "343-410"
+    },
+    {
+      "title": "3. Marx heute: Kritik der Gegenwartsphilosophie",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-007",
+      "citation_pages": "411-542"
+    },
+    {
+      "title": "2.5 „Von Marx zu Heidegger“ – Sozialphilosophie",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-005",
+      "citation_pages": "251-343"
+    },
+    {
+      "title": "1. Einleitung",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-intro",
+      "citation_pages": "11-26"
+    },
+    {
+      "title": "2.4 Marx in der (deutschen) Soziologie",
+      "authors": [
+        "Christoph Henning"
+      ],
+      "chapter_doi": "10.14361/9783839403679-004",
+      "citation_pages": "190-250"
+    }
+  ]
+}

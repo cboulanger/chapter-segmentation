@@ -1,0 +1,1130 @@
+{
+  "isbn": "9781805119746",
+  "fetched_at": "2026-08-11T15:09:00.847865+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T00:00:00Z",
+            "timestamp": 1785801600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0546.04",
+      "type": "book-chapter",
+      "page": "60-130",
+      "title": [
+        "4. The Village of Deir Talal"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0850-3182",
+          "authenticated-orcid": false,
+          "given": "Caesar",
+          "family": "Hakim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0046mja08",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "An-Najah National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4225-1815",
+          "authenticated-orcid": false,
+          "given": "Hamish J",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Alkhatib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Psychology in Context"
+      ],
+      "subtitle": [
+        "Psychological Assessment in Context"
+      ],
+      "ISBN": [
+        "9781805119746",
+        "9781805119753",
+        "9781805119760"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T00:00:00Z",
+            "timestamp": 1785801600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0546.03",
+      "type": "book-chapter",
+      "page": "16-58",
+      "title": [
+        "3. The Village of Ayn al-Rumman"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0850-3182",
+          "authenticated-orcid": false,
+          "given": "Caesar",
+          "family": "Hakim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0046mja08",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "An-Najah National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4225-1815",
+          "authenticated-orcid": false,
+          "given": "Hamish J",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Alkhatib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Psychology in Context"
+      ],
+      "subtitle": [
+        "Psychologists’ Role Within Communities"
+      ],
+      "ISBN": [
+        "9781805119746",
+        "9781805119753",
+        "9781805119760"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T00:00:00Z",
+            "timestamp": 1785801600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0546.07",
+      "type": "book-chapter",
+      "page": "235-277",
+      "title": [
+        "7. The Village of Beir Naseem"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0850-3182",
+          "authenticated-orcid": false,
+          "given": "Caesar",
+          "family": "Hakim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0046mja08",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "An-Najah National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4225-1815",
+          "authenticated-orcid": false,
+          "given": "Hamish J",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Alkhatib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Psychology in Context"
+      ],
+      "subtitle": [
+        "Psychological Collapse-Restoration Framework: Interventions After War and Crisis"
+      ],
+      "ISBN": [
+        "9781805119746",
+        "9781805119753",
+        "9781805119760"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T00:00:00Z",
+            "timestamp": 1785801600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0546.02",
+      "type": "book-chapter",
+      "page": "9-14",
+      "title": [
+        "2. Names of the Book Villages"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0850-3182",
+          "authenticated-orcid": false,
+          "given": "Caesar",
+          "family": "Hakim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0046mja08",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "An-Najah National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4225-1815",
+          "authenticated-orcid": false,
+          "given": "Hamish J",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Alkhatib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Psychology in Context"
+      ],
+      "subtitle": [
+        "Moving Through the Villages"
+      ],
+      "ISBN": [
+        "9781805119746",
+        "9781805119753",
+        "9781805119760"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T00:00:00Z",
+            "timestamp": 1785801600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0546.08",
+      "type": "book-chapter",
+      "page": "280-297",
+      "title": [
+        "8. Toward a Contextual and Relational Psychology Under Conditions of Ongoing Instability"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0850-3182",
+          "authenticated-orcid": false,
+          "given": "Caesar",
+          "family": "Hakim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0046mja08",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "An-Najah National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4225-1815",
+          "authenticated-orcid": false,
+          "given": "Hamish J",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Alkhatib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Psychology in Context"
+      ],
+      "subtitle": [
+        "Theoretical Positioning and Scholarly Reflections"
+      ],
+      "ISBN": [
+        "9781805119746",
+        "9781805119753",
+        "9781805119760"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T00:00:00Z",
+            "timestamp": 1785801600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0546.05",
+      "type": "book-chapter",
+      "page": "132-169",
+      "title": [
+        "5. The Village of Beit Baseera"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0850-3182",
+          "authenticated-orcid": false,
+          "given": "Caesar",
+          "family": "Hakim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0046mja08",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "An-Najah National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4225-1815",
+          "authenticated-orcid": false,
+          "given": "Hamish J",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Alkhatib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Psychology in Context"
+      ],
+      "subtitle": [
+        "Psycho-diagnostic Insights Through Context"
+      ],
+      "ISBN": [
+        "9781805119746",
+        "9781805119753",
+        "9781805119760"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T00:00:00Z",
+            "timestamp": 1785801600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0546.01",
+      "type": "book-chapter",
+      "page": "2-8",
+      "title": [
+        "1. Understanding the Learner in Context"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0850-3182",
+          "authenticated-orcid": false,
+          "given": "Caesar",
+          "family": "Hakim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0046mja08",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "An-Najah National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4225-1815",
+          "authenticated-orcid": false,
+          "given": "Hamish J",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Alkhatib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Psychology in Context"
+      ],
+      "subtitle": [
+        "Concepts and Issues to Consider when Training Psychologists in Resource Constrained Contexts"
+      ],
+      "ISBN": [
+        "9781805119746",
+        "9781805119753",
+        "9781805119760"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T00:00:00Z",
+            "timestamp": 1785801600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0546.06",
+      "type": "book-chapter",
+      "page": "172-232",
+      "title": [
+        "6. The Village of Um Adeeb"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0850-3182",
+          "authenticated-orcid": false,
+          "given": "Caesar",
+          "family": "Hakim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0046mja08",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "An-Najah National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4225-1815",
+          "authenticated-orcid": false,
+          "given": "Hamish J",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00vtgdb53",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Glasgow"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Alkhatib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Psychology in Context"
+      ],
+      "subtitle": [
+        "Healing Amid Internal and External Chaos"
+      ],
+      "ISBN": [
+        "9781805119746",
+        "9781805119753",
+        "9781805119760"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "4. The Village of Deir Talal Psychological Assessment in Context",
+      "authors": [
+        "Caesar Hakim",
+        "Hamish J McLeod",
+        "Mohammad Alkhatib"
+      ],
+      "chapter_doi": "10.11647/obp.0546.04",
+      "citation_pages": "60-130"
+    },
+    {
+      "title": "3. The Village of Ayn al-Rumman Psychologists’ Role Within Communities",
+      "authors": [
+        "Caesar Hakim",
+        "Hamish J McLeod",
+        "Mohammad Alkhatib"
+      ],
+      "chapter_doi": "10.11647/obp.0546.03",
+      "citation_pages": "16-58"
+    },
+    {
+      "title": "7. The Village of Beir Naseem Psychological Collapse-Restoration Framework: Interventions After War and Crisis",
+      "authors": [
+        "Caesar Hakim",
+        "Hamish J McLeod",
+        "Mohammad Alkhatib"
+      ],
+      "chapter_doi": "10.11647/obp.0546.07",
+      "citation_pages": "235-277"
+    },
+    {
+      "title": "2. Names of the Book Villages Moving Through the Villages",
+      "authors": [
+        "Caesar Hakim",
+        "Hamish J McLeod",
+        "Mohammad Alkhatib"
+      ],
+      "chapter_doi": "10.11647/obp.0546.02",
+      "citation_pages": "9-14"
+    },
+    {
+      "title": "8. Toward a Contextual and Relational Psychology Under Conditions of Ongoing Instability Theoretical Positioning and Scholarly Reflections",
+      "authors": [
+        "Caesar Hakim",
+        "Hamish J McLeod",
+        "Mohammad Alkhatib"
+      ],
+      "chapter_doi": "10.11647/obp.0546.08",
+      "citation_pages": "280-297"
+    },
+    {
+      "title": "5. The Village of Beit Baseera Psycho-diagnostic Insights Through Context",
+      "authors": [
+        "Caesar Hakim",
+        "Hamish J McLeod",
+        "Mohammad Alkhatib"
+      ],
+      "chapter_doi": "10.11647/obp.0546.05",
+      "citation_pages": "132-169"
+    },
+    {
+      "title": "1. Understanding the Learner in Context Concepts and Issues to Consider when Training Psychologists in Resource Constrained Contexts",
+      "authors": [
+        "Caesar Hakim",
+        "Hamish J McLeod",
+        "Mohammad Alkhatib"
+      ],
+      "chapter_doi": "10.11647/obp.0546.01",
+      "citation_pages": "2-8"
+    },
+    {
+      "title": "6. The Village of Um Adeeb Healing Amid Internal and External Chaos",
+      "authors": [
+        "Caesar Hakim",
+        "Hamish J McLeod",
+        "Mohammad Alkhatib"
+      ],
+      "chapter_doi": "10.11647/obp.0546.06",
+      "citation_pages": "172-232"
+    }
+  ]
+}

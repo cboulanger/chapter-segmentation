@@ -5,3 +5,4 @@ finetune/
 hpc/*.sif
 hpc/job.out.*
 hpc/job.err.*
+.layout-cache/

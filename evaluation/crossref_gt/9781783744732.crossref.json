@@ -1,0 +1,835 @@
+{
+  "isbn": "9781783744732",
+  "fetched_at": "2026-08-11T22:41:16.279543+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.05",
+      "type": "book-chapter",
+      "page": "121-138",
+      "title": [
+        "5. A workflow for digitisation"
+      ],
+      "author": [
+        {
+          "given": "Jody",
+          "family": "Butterworth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Pearson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5331-6592",
+          "authenticated-orcid": false,
+          "given": "Adam",
+          "family": "Farquhar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.07",
+      "type": "book-chapter",
+      "page": "171-174",
+      "title": [
+        "Conclusion"
+      ],
+      "author": [
+        {
+          "given": "Jody",
+          "family": "Butterworth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.10",
+      "type": "book-chapter",
+      "page": "15-18",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Jody",
+          "family": "Butterworth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.04",
+      "type": "book-chapter",
+      "page": "113-120",
+      "title": [
+        "4. Collection care and document handling"
+      ],
+      "author": [
+        {
+          "given": "Flavio",
+          "family": "Marzo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.08",
+      "type": "book-chapter",
+      "page": "9-10",
+      "title": [
+        "Foreword"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5331-6592",
+          "authenticated-orcid": false,
+          "given": "Adam",
+          "family": "Farquhar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.06",
+      "type": "book-chapter",
+      "page": "139-170",
+      "title": [
+        "6. On the ground"
+      ],
+      "author": [
+        {
+          "given": "Jody",
+          "family": "Butterworth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Pearson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5331-6592",
+          "authenticated-orcid": false,
+          "given": "Adam",
+          "family": "Farquhar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.01",
+      "type": "book-chapter",
+      "page": "19-40",
+      "title": [
+        "1. Planning the project"
+      ],
+      "author": [
+        {
+          "given": "Andrew",
+          "family": "Pearson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.02",
+      "type": "book-chapter",
+      "page": "41-92",
+      "title": [
+        "2. Equipment and skills for digitising in the field"
+      ],
+      "author": [
+        {
+          "given": "Patrick",
+          "family": "Sutherland",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.09",
+      "type": "book-chapter",
+      "page": "11-14",
+      "title": [
+        "Acknowledgements"
+      ],
+      "author": [
+        {
+          "given": "Jody",
+          "family": "Butterworth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Pearson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5331-6592",
+          "authenticated-orcid": false,
+          "given": "Adam",
+          "family": "Farquhar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                16
+              ]
+            ],
+            "date-time": "2018-04-16T00:00:00Z",
+            "timestamp": 1523836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0138.03",
+      "type": "book-chapter",
+      "page": "93-112",
+      "title": [
+        "3. Image standards"
+      ],
+      "author": [
+        {
+          "given": "Elizabeth",
+          "family": "Hunter",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Field Guides Series",
+        "Remote Capture"
+      ],
+      "ISBN": [
+        "9781783744732",
+        "9781783744749",
+        "9781783744756",
+        "9781800645578",
+        "9781783746132",
+        "9781783744763",
+        "9781783744770"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "5. A workflow for digitisation",
+      "authors": [
+        "Jody Butterworth",
+        "Andrew Pearson",
+        "Patrick Sutherland",
+        "Adam Farquhar"
+      ],
+      "chapter_doi": "10.11647/obp.0138.05",
+      "citation_pages": "121-138"
+    },
+    {
+      "title": "Conclusion",
+      "authors": [
+        "Jody Butterworth"
+      ],
+      "chapter_doi": "10.11647/obp.0138.07",
+      "citation_pages": "171-174"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Jody Butterworth"
+      ],
+      "chapter_doi": "10.11647/obp.0138.10",
+      "citation_pages": "15-18"
+    },
+    {
+      "title": "4. Collection care and document handling",
+      "authors": [
+        "Flavio Marzo"
+      ],
+      "chapter_doi": "10.11647/obp.0138.04",
+      "citation_pages": "113-120"
+    },
+    {
+      "title": "Foreword",
+      "authors": [
+        "Adam Farquhar"
+      ],
+      "chapter_doi": "10.11647/obp.0138.08",
+      "citation_pages": "9-10"
+    },
+    {
+      "title": "6. On the ground",
+      "authors": [
+        "Jody Butterworth",
+        "Andrew Pearson",
+        "Patrick Sutherland",
+        "Adam Farquhar"
+      ],
+      "chapter_doi": "10.11647/obp.0138.06",
+      "citation_pages": "139-170"
+    },
+    {
+      "title": "1. Planning the project",
+      "authors": [
+        "Andrew Pearson"
+      ],
+      "chapter_doi": "10.11647/obp.0138.01",
+      "citation_pages": "19-40"
+    },
+    {
+      "title": "2. Equipment and skills for digitising in the field",
+      "authors": [
+        "Patrick Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0138.02",
+      "citation_pages": "41-92"
+    },
+    {
+      "title": "Acknowledgements",
+      "authors": [
+        "Jody Butterworth",
+        "Andrew Pearson",
+        "Patrick Sutherland",
+        "Adam Farquhar"
+      ],
+      "chapter_doi": "10.11647/obp.0138.09",
+      "citation_pages": "11-14"
+    },
+    {
+      "title": "3. Image standards",
+      "authors": [
+        "Elizabeth Hunter"
+      ],
+      "chapter_doi": "10.11647/obp.0138.03",
+      "citation_pages": "93-112"
+    }
+  ]
+}

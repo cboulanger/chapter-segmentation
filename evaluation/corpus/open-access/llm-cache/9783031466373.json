@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T15:06:16.127040+00:00",
+  "generated_at": "2026-08-11T04:36:19.078984+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -129,7 +129,7 @@
     "deepseek-v4-flash": {
       "chapters": [
         {
-          "title": "Claim and Blame: How Welfare Law institutionalises Deservingness",
+          "title": "Claim and Blame: How Welfare Law Institutionalises Deservingness",
           "authors": [
             "Evangelista"
           ],
@@ -248,7 +248,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 7.341223660999731,
+      "elapsed_seconds": 7.180784718000041,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -633,7 +633,9 @@
       "chapters": [
         {
           "title": "Claim and Blame: How Welfare Law institutionalises Deservingness",
-          "authors": [],
+          "authors": [
+            "Evangelista"
+          ],
           "pdf_start_index": 33,
           "pdf_end_index": 47,
           "citation_pages": "19-40",
@@ -643,9 +645,7 @@
         },
         {
           "title": "What Is the Function of Welfare Law Today? Consequences of the Work-Line Policy",
-          "authors": [
-            "Mrs"
-          ],
+          "authors": [],
           "pdf_start_index": 48,
           "pdf_end_index": 66,
           "citation_pages": "41-60",
@@ -671,7 +671,7 @@
           "title": "A Double Helix: The Intertwined History of the Marginalisation of Welfare Clients and Their Activist Lawyers and Advisers in the Transformation of the Welfare State in England and Wales",
           "authors": [
             "Pete Sanderson",
-            "Happen Structure \nOrganization \nIdentify"
+            "Hilary Sommerlad \nIntroduction \nNational"
           ],
           "pdf_start_index": 88,
           "pdf_end_index": 106,
@@ -693,8 +693,7 @@
         {
           "title": "Asylum Case Adjudication in Sweden, Country of Origin Information and Epistemic Violence",
           "authors": [
-            "Martin Joormann \nIntroduction \nDuring",
-            "Mrs"
+            "Martin Joormann \nIntroduction \nDuring"
           ],
           "pdf_start_index": 128,
           "pdf_end_index": 147,
@@ -708,7 +707,7 @@
           "authors": [
             "Schoultz",
             "Polina Smiragina-Ingelström \nIntroduction \n",
-            "Believe"
+            "Uppdrag"
           ],
           "pdf_start_index": 149,
           "pdf_end_index": 169,
@@ -752,7 +751,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 65.78223612497095,
+      "elapsed_seconds": 52.893709046000026,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {

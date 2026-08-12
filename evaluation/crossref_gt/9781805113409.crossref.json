@@ -1,0 +1,1150 @@
+{
+  "isbn": "9781805113409",
+  "fetched_at": "2026-08-11T22:41:03.612175+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.00",
+      "type": "book-chapter",
+      "page": "1-8",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8778-5132",
+          "authenticated-orcid": false,
+          "given": "Lilia",
+          "family": "Makhloufi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Ecole Polytechnique D'architecture Et D'urbanisme"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "subtitle": [
+        "Urban Heritage and Sustainability"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.05",
+      "type": "book-chapter",
+      "page": "101-124",
+      "title": [
+        "5. Tackling Sustainability in Bordeaux"
+      ],
+      "author": [
+        {
+          "given": "Fanny",
+          "family": "Gerbeaud",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "PAVE"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aline",
+          "family": "Barlet",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05576mm83",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "École Nationale Supérieure d'Architecture et de Paysage de Bordeaux"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-4451-5343",
+          "authenticated-orcid": false,
+          "given": "Caroline",
+          "family": "Mazel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05576mm83",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "École Nationale Supérieure d'Architecture et de Paysage de Bordeaux"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "subtitle": [
+        "Bridging Modern and Traditional Neighbourhoods"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.09",
+      "type": "book-chapter",
+      "page": "183-208",
+      "title": [
+        "9. The Evaluation of Passive Cooling Strategies in the Persian Garden Pavilion as a Model of Sustainable Heritage"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4523-6028",
+          "authenticated-orcid": false,
+          "given": "Honey",
+          "family": "Fadaie",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00dzmf738",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Islamic Azad University Roudehen Branch"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.13",
+      "type": "book-chapter",
+      "page": "283-286",
+      "title": [
+        "Conclusion"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8778-5132",
+          "authenticated-orcid": false,
+          "given": "Lilia",
+          "family": "Makhloufi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Ecole Polytechnique D'architecture Et D'urbanisme"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "subtitle": [
+        "Sustainability in the Age of Globalisation"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.02",
+      "type": "book-chapter",
+      "page": "31-56",
+      "title": [
+        "2. Urban Development of Palmyra, Post-war Damage Assessment and Recovery Policy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2183-2872",
+          "authenticated-orcid": false,
+          "given": "Ousama",
+          "family": "Rumayed",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05v9kya57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Pázmány Péter Catholic University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.01",
+      "type": "book-chapter",
+      "page": "11-30",
+      "title": [
+        "1. Mumbai"
+      ],
+      "author": [
+        {
+          "given": "Devashree",
+          "family": "Vyas",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "subtitle": [
+        "A Metropolis Forged in Lasting Fragments of Urbs Prima in Indis"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.10",
+      "type": "book-chapter",
+      "page": "211-234",
+      "title": [
+        "10. Heritage as a Vector of Sustainable Urban Regeneration"
+      ],
+      "author": [
+        {
+          "given": "Mrinalini",
+          "family": "Singh",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00s0qnx27",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Apeejay Stya University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "subtitle": [
+        "The Case of North Shahjahanabad"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.11",
+      "type": "book-chapter",
+      "page": "235-260",
+      "title": [
+        "11. The Historic Urban Landscape Approach as a Tool for Port Said Heritage Conservation"
+      ],
+      "author": [
+        {
+          "given": "Amany",
+          "family": "Abdelsadeq S. Hussein",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.04",
+      "type": "book-chapter",
+      "page": "77-100",
+      "title": [
+        "4. Sustainable Cultural Heritage through Participatory Planning"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8258-6417",
+          "authenticated-orcid": false,
+          "given": "Maiss",
+          "family": "Razem",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "AlHussein Technical University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sura",
+          "family": "AlHalalsheh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "subtitle": [
+        "A Transect Walk in the Lweibdeh Neighbourhood in Amman"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.12",
+      "type": "book-chapter",
+      "page": "261-282",
+      "title": [
+        "12. Old City Atmospheres in the Age of Globalisation"
+      ],
+      "author": [
+        {
+          "given": "Irina",
+          "family": "Oznobikhina",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.08",
+      "type": "book-chapter",
+      "page": "163-182",
+      "title": [
+        "8. The Colonial Heritage of Tunis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9295-9731",
+          "authenticated-orcid": false,
+          "given": "Athar",
+          "family": "Chabchoub",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "ENAU – Ecole Nationale d'Architecture et d'Urbanisme de Tunis"
+            },
+            {
+              "name": "ENAU – Ecole Nationale d'Architecture et d'Urbanisme de Tunis"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1431-0523",
+          "authenticated-orcid": false,
+          "given": "Fakher",
+          "family": "Kharrat",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "ENAU – Ecole Nationale d'Architecture et d'Urbanisme de Tunis"
+            },
+            {
+              "name": "Research Laboratory in Heritage and Architecturology (LaRPA)"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "subtitle": [
+        "Simple Collective Memory or an Environmental Resource?"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.06",
+      "type": "book-chapter",
+      "page": "125-140",
+      "title": [
+        "6. Sustainable Urban Conservation of Historical Cities"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3391-6889",
+          "authenticated-orcid": false,
+          "given": "Khalid",
+          "family": "El Harrouni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00n7n3773",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National School of Architecture"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "subtitle": [
+        "The Case of Fez Medina, Morocco"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.03",
+      "type": "book-chapter",
+      "page": "57-74",
+      "title": [
+        "3. The Urban Development of Si-ye Tir Street in Tehran"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-4677-9335",
+          "authenticated-orcid": false,
+          "given": "Maryam",
+          "family": "Mirzaei",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                26
+              ]
+            ],
+            "date-time": "2024-09-26T00:00:00Z",
+            "timestamp": 1727308800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0412.07",
+      "type": "book-chapter",
+      "page": "143-162",
+      "title": [
+        "7. The Medina of Tunis, a Heritage Model for Urban Sustainability"
+      ],
+      "author": [
+        {
+          "given": "Safa",
+          "family": "Achour",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "ENAU – Ecole Nationale d'Architecture et d'Urbanisme de Tunis"
+            },
+            {
+              "name": "ENAU – Ecole Nationale d'Architecture et d'Urbanisme de Tunis"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Urban Heritage and Sustainability in the Age of Globalisation"
+      ],
+      "subtitle": [
+        "Urban Morphology and Outdoor Thermal Comfort"
+      ],
+      "ISBN": [
+        "9781805113409",
+        "9781805113416",
+        "9781805113423",
+        "9781805113447",
+        "9781805113430"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            26
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Introduction Urban Heritage and Sustainability",
+      "authors": [
+        "Lilia Makhloufi"
+      ],
+      "chapter_doi": "10.11647/obp.0412.00",
+      "citation_pages": "1-8"
+    },
+    {
+      "title": "5. Tackling Sustainability in Bordeaux Bridging Modern and Traditional Neighbourhoods",
+      "authors": [
+        "Fanny Gerbeaud",
+        "Aline Barlet",
+        "Caroline Mazel"
+      ],
+      "chapter_doi": "10.11647/obp.0412.05",
+      "citation_pages": "101-124"
+    },
+    {
+      "title": "9. The Evaluation of Passive Cooling Strategies in the Persian Garden Pavilion as a Model of Sustainable Heritage",
+      "authors": [
+        "Honey Fadaie"
+      ],
+      "chapter_doi": "10.11647/obp.0412.09",
+      "citation_pages": "183-208"
+    },
+    {
+      "title": "Conclusion Sustainability in the Age of Globalisation",
+      "authors": [
+        "Lilia Makhloufi"
+      ],
+      "chapter_doi": "10.11647/obp.0412.13",
+      "citation_pages": "283-286"
+    },
+    {
+      "title": "2. Urban Development of Palmyra, Post-war Damage Assessment and Recovery Policy",
+      "authors": [
+        "Ousama Rumayed"
+      ],
+      "chapter_doi": "10.11647/obp.0412.02",
+      "citation_pages": "31-56"
+    },
+    {
+      "title": "1. Mumbai A Metropolis Forged in Lasting Fragments of Urbs Prima in Indis",
+      "authors": [
+        "Devashree Vyas"
+      ],
+      "chapter_doi": "10.11647/obp.0412.01",
+      "citation_pages": "11-30"
+    },
+    {
+      "title": "10. Heritage as a Vector of Sustainable Urban Regeneration The Case of North Shahjahanabad",
+      "authors": [
+        "Mrinalini Singh"
+      ],
+      "chapter_doi": "10.11647/obp.0412.10",
+      "citation_pages": "211-234"
+    },
+    {
+      "title": "11. The Historic Urban Landscape Approach as a Tool for Port Said Heritage Conservation",
+      "authors": [
+        "Amany Abdelsadeq S. Hussein"
+      ],
+      "chapter_doi": "10.11647/obp.0412.11",
+      "citation_pages": "235-260"
+    },
+    {
+      "title": "4. Sustainable Cultural Heritage through Participatory Planning A Transect Walk in the Lweibdeh Neighbourhood in Amman",
+      "authors": [
+        "Maiss Razem",
+        "Sura AlHalalsheh"
+      ],
+      "chapter_doi": "10.11647/obp.0412.04",
+      "citation_pages": "77-100"
+    },
+    {
+      "title": "12. Old City Atmospheres in the Age of Globalisation",
+      "authors": [
+        "Irina Oznobikhina"
+      ],
+      "chapter_doi": "10.11647/obp.0412.12",
+      "citation_pages": "261-282"
+    },
+    {
+      "title": "8. The Colonial Heritage of Tunis Simple Collective Memory or an Environmental Resource?",
+      "authors": [
+        "Athar Chabchoub",
+        "Fakher Kharrat"
+      ],
+      "chapter_doi": "10.11647/obp.0412.08",
+      "citation_pages": "163-182"
+    },
+    {
+      "title": "6. Sustainable Urban Conservation of Historical Cities The Case of Fez Medina, Morocco",
+      "authors": [
+        "Khalid El Harrouni"
+      ],
+      "chapter_doi": "10.11647/obp.0412.06",
+      "citation_pages": "125-140"
+    },
+    {
+      "title": "3. The Urban Development of Si-ye Tir Street in Tehran",
+      "authors": [
+        "Maryam Mirzaei"
+      ],
+      "chapter_doi": "10.11647/obp.0412.03",
+      "citation_pages": "57-74"
+    },
+    {
+      "title": "7. The Medina of Tunis, a Heritage Model for Urban Sustainability Urban Morphology and Outdoor Thermal Comfort",
+      "authors": [
+        "Safa Achour"
+      ],
+      "chapter_doi": "10.11647/obp.0412.07",
+      "citation_pages": "143-162"
+    }
+  ]
+}

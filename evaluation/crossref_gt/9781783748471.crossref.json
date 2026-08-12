@@ -1,9 +1,83 @@
 {
   "isbn": "9781783748471",
-  "fetched_at": "2026-08-09T13:15:15.632125+00:00",
+  "fetched_at": "2026-08-11T22:43:30.149547+00:00",
   "license": "http://creativecommons.org/licenses/by/4.0",
   "license_source": "crossref",
   "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2020-04-22T00:00:00Z",
+            "timestamp": 1587513600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0193.24",
+      "type": "book-chapter",
+      "page": "213-220",
+      "title": [
+        "Earth and Plastic"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7430-1058",
+          "authenticated-orcid": false,
+          "given": "Roland",
+          "family": "Geyer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02t274463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of California, Santa Barbara"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
     {
       "license": [
         {
@@ -61,80 +135,6 @@
       ],
       "subtitle": [
         "A View from the Future"
-      ],
-      "ISBN": [
-        "9781783748457",
-        "9781783748464",
-        "9781783748471",
-        "9781800646056",
-        "9781783748501",
-        "9781783748488",
-        "9781783748495"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2020,
-            4,
-            22
-          ]
-        ]
-      }
-    },
-    {
-      "license": [
-        {
-          "start": {
-            "date-parts": [
-              [
-                2020,
-                4,
-                22
-              ]
-            ],
-            "date-time": "2020-04-22T00:00:00Z",
-            "timestamp": 1587513600000
-          },
-          "content-version": "unspecified",
-          "delay-in-days": 0,
-          "URL": "http://creativecommons.org/licenses/by/4.0"
-        }
-      ],
-      "DOI": "10.11647/obp.0193.24",
-      "type": "book-chapter",
-      "page": "213-220",
-      "title": [
-        "Earth and Plastic"
-      ],
-      "author": [
-        {
-          "ORCID": "https://orcid.org/0000-0001-7430-1058",
-          "authenticated-orcid": false,
-          "given": "Roland",
-          "family": "Geyer",
-          "sequence": "first",
-          "affiliation": [
-            {
-              "id": [
-                {
-                  "id": "https://ror.org/02t274463",
-                  "id-type": "ROR",
-                  "asserted-by": "publisher"
-                }
-              ],
-              "name": "University of California, Santa Barbara"
-            }
-          ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Earth 2020"
       ],
       "ISBN": [
         "9781783748457",
@@ -235,17 +235,42 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0193.19",
+      "DOI": "10.11647/obp.0193.12",
       "type": "book-chapter",
-      "page": "169-176",
+      "page": "93-100",
       "title": [
-        "Knowing Earth"
+        "Geoengineering"
       ],
       "author": [
         {
-          "given": "Sheila",
-          "family": "Jasanoff",
+          "ORCID": "https://orcid.org/0000-0003-1987-9417",
+          "authenticated-orcid": false,
+          "given": "Douglas G.",
+          "family": "MacMartin",
           "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05dxps055",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "California Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katharine L.",
+          "family": "Ricke",
+          "sequence": "additional",
           "affiliation": [],
           "role": [
             {
@@ -296,42 +321,17 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0193.12",
+      "DOI": "10.11647/obp.0193.19",
       "type": "book-chapter",
-      "page": "93-100",
+      "page": "169-176",
       "title": [
-        "Geoengineering"
+        "Knowing Earth"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0003-1987-9417",
-          "authenticated-orcid": false,
-          "given": "Douglas G.",
-          "family": "MacMartin",
+          "given": "Sheila",
+          "family": "Jasanoff",
           "sequence": "first",
-          "affiliation": [
-            {
-              "id": [
-                {
-                  "id": "https://ror.org/05dxps055",
-                  "id-type": "ROR",
-                  "asserted-by": "publisher"
-                }
-              ],
-              "name": "California Institute of Technology"
-            }
-          ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        },
-        {
-          "given": "Katharine L.",
-          "family": "Ricke",
-          "sequence": "additional",
           "affiliation": [],
           "role": [
             {
@@ -994,67 +994,6 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0193.17",
-      "type": "book-chapter",
-      "page": "151-160",
-      "title": [
-        "Climate Negotiation"
-      ],
-      "author": [
-        {
-          "given": "Rosemary",
-          "family": "Lyster",
-          "sequence": "first",
-          "affiliation": [],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Earth 2020"
-      ],
-      "ISBN": [
-        "9781783748457",
-        "9781783748464",
-        "9781783748471",
-        "9781800646056",
-        "9781783748501",
-        "9781783748488",
-        "9781783748495"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2020,
-            4,
-            22
-          ]
-        ]
-      }
-    },
-    {
-      "license": [
-        {
-          "start": {
-            "date-parts": [
-              [
-                2020,
-                4,
-                22
-              ]
-            ],
-            "date-time": "2020-04-22T00:00:00Z",
-            "timestamp": 1587513600000
-          },
-          "content-version": "unspecified",
-          "delay-in-days": 0,
-          "URL": "http://creativecommons.org/licenses/by/4.0"
-        }
-      ],
       "DOI": "10.11647/obp.0193.20",
       "type": "book-chapter",
       "page": "177-184",
@@ -1105,6 +1044,67 @@
               "name": "University of British Columbia"
             }
           ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Earth 2020"
+      ],
+      "ISBN": [
+        "9781783748457",
+        "9781783748464",
+        "9781783748471",
+        "9781800646056",
+        "9781783748501",
+        "9781783748488",
+        "9781783748495"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                22
+              ]
+            ],
+            "date-time": "2020-04-22T00:00:00Z",
+            "timestamp": 1587513600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0193.17",
+      "type": "book-chapter",
+      "page": "151-160",
+      "title": [
+        "Climate Negotiation"
+      ],
+      "author": [
+        {
+          "given": "Rosemary",
+          "family": "Lyster",
+          "sequence": "first",
+          "affiliation": [],
           "role": [
             {
               "vocabulary": "crossref",
@@ -2015,20 +2015,20 @@
   ],
   "chapters": [
     {
-      "title": "Sea Level Rise, 1970-2070 A View from the Future",
-      "authors": [
-        "Robert E. Kopp"
-      ],
-      "chapter_doi": "10.11647/obp.0193.16",
-      "citation_pages": "141-150"
-    },
-    {
       "title": "Earth and Plastic",
       "authors": [
         "Roland Geyer"
       ],
       "chapter_doi": "10.11647/obp.0193.24",
       "citation_pages": "213-220"
+    },
+    {
+      "title": "Sea Level Rise, 1970-2070 A View from the Future",
+      "authors": [
+        "Robert E. Kopp"
+      ],
+      "chapter_doi": "10.11647/obp.0193.16",
+      "citation_pages": "141-150"
     },
     {
       "title": "Media",
@@ -2039,14 +2039,6 @@
       "citation_pages": "231-238"
     },
     {
-      "title": "Knowing Earth",
-      "authors": [
-        "Sheila Jasanoff"
-      ],
-      "chapter_doi": "10.11647/obp.0193.19",
-      "citation_pages": "169-176"
-    },
-    {
       "title": "Geoengineering",
       "authors": [
         "Douglas G. MacMartin",
@@ -2054,6 +2046,14 @@
       ],
       "chapter_doi": "10.11647/obp.0193.12",
       "citation_pages": "93-100"
+    },
+    {
+      "title": "Knowing Earth",
+      "authors": [
+        "Sheila Jasanoff"
+      ],
+      "chapter_doi": "10.11647/obp.0193.19",
+      "citation_pages": "169-176"
     },
     {
       "title": "Climate 1970-2020",
@@ -2130,14 +2130,6 @@
       "citation_pages": "203-212"
     },
     {
-      "title": "Climate Negotiation",
-      "authors": [
-        "Rosemary Lyster"
-      ],
-      "chapter_doi": "10.11647/obp.0193.17",
-      "citation_pages": "151-160"
-    },
-    {
       "title": "Fish",
       "authors": [
         "U. Rashid Sumaila",
@@ -2145,6 +2137,14 @@
       ],
       "chapter_doi": "10.11647/obp.0193.20",
       "citation_pages": "177-184"
+    },
+    {
+      "title": "Climate Negotiation",
+      "authors": [
+        "Rosemary Lyster"
+      ],
+      "chapter_doi": "10.11647/obp.0193.17",
+      "citation_pages": "151-160"
     },
     {
       "title": "Carbon",

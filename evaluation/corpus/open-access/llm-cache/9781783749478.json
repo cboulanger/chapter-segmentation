@@ -177,7 +177,387 @@
       ],
       "elapsed_seconds": 33.673383263999995,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash": {
+      "chapters": [
+        {
+          "title": "The Jewish Neo-Aramaic Dialect of Dohok: Two Folktales and Selected Features of Verbal Semantics",
+          "authors": [],
+          "pdf_start_index": 121,
+          "pdf_end_index": 167,
+          "citation_pages": "95-142",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verbal Forms Expressing Discourse Dependency in North-Eastern Neo-Aramaic",
+          "authors": [
+            "Geoffrey Khan\n1"
+          ],
+          "pdf_start_index": 169,
+          "pdf_end_index": 219,
+          "citation_pages": "143-194",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Conditional Patterns in the Jewish Neo-Aramaic Dialect of Zakho",
+          "authors": [
+            "Eran Cohen"
+          ],
+          "pdf_start_index": 221,
+          "pdf_end_index": 246,
+          "citation_pages": "195-220",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Language Contact and Ṭuroyo: The Case of the Circumstantial Clause",
+          "authors": [
+            "Michael Waltisberg",
+            "Mithun"
+          ],
+          "pdf_start_index": 247,
+          "pdf_end_index": 259,
+          "citation_pages": "221-234",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Morphosyntactic Conservatism of Western Neo-Aramaic despite Contact with Syrian Arabic",
+          "authors": [
+            "Ivri Bunis"
+          ],
+          "pdf_start_index": 261,
+          "pdf_end_index": 311,
+          "citation_pages": "235-286",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On the Afel Stem in Western Neo-Aramaic",
+          "authors": [
+            "Steven E. Fassberg"
+          ],
+          "pdf_start_index": 313,
+          "pdf_end_index": 325,
+          "citation_pages": "287-300",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Re-Emergence of the Genitive in North-Eastern Neo-Aramaic",
+          "authors": [
+            "Ariel Gutman\n1"
+          ],
+          "pdf_start_index": 327,
+          "pdf_end_index": 344,
+          "citation_pages": "301-318",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Modelling Variation in the Neo-Aramaic Dialect of Azran with Articulatory Phonology",
+          "authors": [],
+          "pdf_start_index": 345,
+          "pdf_end_index": 359,
+          "citation_pages": "319-334",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On the Origin of Some Plant Names in Ṣūrayt/ Ṭūrōyo in Ṭūr ʿAbdīn",
+          "authors": [
+            "Aziz Tezel",
+            "Məḏyaḏ"
+          ],
+          "pdf_start_index": 361,
+          "pdf_end_index": 377,
+          "citation_pages": "335-352",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Remarks on Selected Exponents of the 208-Swadesh List in Ṭuroyo",
+          "authors": [
+            "Eugene Barsky",
+            "Yulia Furman\nIntroduction"
+          ],
+          "pdf_start_index": 379,
+          "pdf_end_index": 413,
+          "citation_pages": "353-388",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Neo-Aramaic Animal Names",
+          "authors": [
+            "Hezy Mutzafi"
+          ],
+          "pdf_start_index": 415,
+          "pdf_end_index": 439,
+          "citation_pages": "389-414",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Corpus-Based Swadesh Word List for Literary Christian Urmi (New Alphabet Texts)",
+          "authors": [
+            "Literary Christian Urmi"
+          ],
+          "pdf_start_index": 441,
+          "pdf_end_index": 468,
+          "citation_pages": "415-442",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Lexical Items Relating to Material Culture in the NENA Dialects of the Aqra Region",
+          "authors": [
+            "Aziz Emmanuel Eliya Al-Zebari  \n",
+            "M. Sabir",
+            "Aqra"
+          ],
+          "pdf_start_index": 469,
+          "pdf_end_index": 494,
+          "citation_pages": "443-468",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Arabic Loanwords in the Neo-Aramaic Dialect of Ankawa",
+          "authors": [
+            "The Neo-Aramaic",
+            "Suret",
+            "Sureth � Ankawa",
+            "Aramaic"
+          ],
+          "pdf_start_index": 495,
+          "pdf_end_index": 511,
+          "citation_pages": "469-486",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Language Loss in the Ṣūrayt/Ṭūrōyo-speaking Communities of the Diaspora in Sweden",
+          "authors": [
+            "Sāre"
+          ],
+          "pdf_start_index": 513,
+          "pdf_end_index": 514,
+          "citation_pages": "487-488",
+          "confidence": 0.96,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 9.69980979799999,
+      "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "The Jewish Neo-Aramaic Dialect of Dohok: Two Folktales and Selected Features of Verbal Semantics",
+          "authors": [],
+          "pdf_start_index": 121,
+          "pdf_end_index": 167,
+          "citation_pages": "95-142",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verbal Forms Expressing Discourse Dependency in North-Eastern Neo-Aramaic",
+          "authors": [
+            "Geoffrey Khan\n1"
+          ],
+          "pdf_start_index": 169,
+          "pdf_end_index": 219,
+          "citation_pages": "143-194",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Conditional Patterns in the Jewish Neo-Aramaic Dialect of Zakho",
+          "authors": [
+            "Eran Cohen"
+          ],
+          "pdf_start_index": 221,
+          "pdf_end_index": 246,
+          "citation_pages": "195-220",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Language Contact and Ṭuroyo: The Case of the Circumstantial Clause",
+          "authors": [
+            "Michael Waltisberg",
+            "Mithun"
+          ],
+          "pdf_start_index": 247,
+          "pdf_end_index": 259,
+          "citation_pages": "221-234",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Morphosyntactic Conservatism of Western Neo-Aramaic despite Contact with Syrian Arabic",
+          "authors": [
+            "Ivri Bunis"
+          ],
+          "pdf_start_index": 261,
+          "pdf_end_index": 311,
+          "citation_pages": "235-286",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On the Afel Stem in Western Neo-Aramaic",
+          "authors": [
+            "Steven E. Fassberg"
+          ],
+          "pdf_start_index": 313,
+          "pdf_end_index": 325,
+          "citation_pages": "287-300",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Re-Emergence of the Genitive in North-Eastern Neo-Aramaic",
+          "authors": [
+            "Ariel Gutman\n1"
+          ],
+          "pdf_start_index": 327,
+          "pdf_end_index": 344,
+          "citation_pages": "301-318",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Modelling Variation in the Neo-Aramaic Dialect of Azran with Articulatory Phonology",
+          "authors": [],
+          "pdf_start_index": 345,
+          "pdf_end_index": 359,
+          "citation_pages": "319-334",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On the Origin of Some Plant Names in Ṣūrayt/ Ṭūrōyo in Ṭūr ʿAbdīn",
+          "authors": [
+            "Aziz Tezel",
+            "Məḏyaḏ"
+          ],
+          "pdf_start_index": 361,
+          "pdf_end_index": 377,
+          "citation_pages": "335-352",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Remarks on Selected Exponents of the 208-Swadesh List in Ṭuroyo",
+          "authors": [
+            "Eugene Barsky",
+            "Yulia Furman\nIntroduction"
+          ],
+          "pdf_start_index": 379,
+          "pdf_end_index": 413,
+          "citation_pages": "353-388",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Neo-Aramaic Animal Names",
+          "authors": [
+            "Hezy Mutzafi"
+          ],
+          "pdf_start_index": 415,
+          "pdf_end_index": 439,
+          "citation_pages": "389-414",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Corpus-Based Swadesh Word List for Literary Christian Urmi (New Alphabet Texts)",
+          "authors": [
+            "Literary Christian Urmi"
+          ],
+          "pdf_start_index": 441,
+          "pdf_end_index": 468,
+          "citation_pages": "415-442",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Lexical Items Relating to Material Culture in the NENA Dialects of the Aqra Region",
+          "authors": [
+            "Aziz Emmanuel Eliya Al-Zebari  \n",
+            "M. Sabir",
+            "Aqra"
+          ],
+          "pdf_start_index": 469,
+          "pdf_end_index": 494,
+          "citation_pages": "443-468",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Arabic Loanwords in the Neo-Aramaic Dialect of Ankawa",
+          "authors": [
+            "The Neo-Aramaic",
+            "Suret",
+            "Sureth � Ankawa",
+            "Aramaic"
+          ],
+          "pdf_start_index": 495,
+          "pdf_end_index": 511,
+          "citation_pages": "469-486",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Language Loss in the Ṣūrayt/Ṭūrōyo-speaking Communities of the Diaspora in Sweden",
+          "authors": [
+            "Sāre"
+          ],
+          "pdf_start_index": 513,
+          "pdf_end_index": 514,
+          "citation_pages": "487-488",
+          "confidence": 0.91,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 57.709174044000065,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T14:27:32.804659+00:00"
+  "generated_at": "2026-08-11T04:46:50.243835+00:00"
 }

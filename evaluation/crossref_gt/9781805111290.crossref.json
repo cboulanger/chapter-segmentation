@@ -1,6 +1,6 @@
 {
   "isbn": "9781805111290",
-  "fetched_at": "2026-08-09T13:15:16.530137+00:00",
+  "fetched_at": "2026-08-11T22:43:32.899201+00:00",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "license_source": "crossref",
   "raw_items": [
@@ -2319,6 +2319,81 @@
           "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
       ],
+      "DOI": "10.11647/obp.0363.15",
+      "type": "book-chapter",
+      "page": "353-370",
+      "title": [
+        "15. Vulnerability and generosity"
+      ],
+      "author": [
+        {
+          "given": "Kate",
+          "family": "Bowles",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00jtmb277",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Wollongong"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Higher Education for Good"
+      ],
+      "subtitle": [
+        "The good future for Australian higher education"
+      ],
+      "ISBN": [
+        "9781805111276",
+        "9781805111283",
+        "9781805111290",
+        "9781805111337",
+        "9781805111320",
+        "9781805111306",
+        "9781805114710"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                25
+              ]
+            ],
+            "date-time": "2023-10-25T00:00:00Z",
+            "timestamp": 1698192000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
       "DOI": "10.11647/obp.0363.10",
       "type": "book-chapter",
       "page": "267-290",
@@ -2441,81 +2516,6 @@
       ],
       "subtitle": [
         "FemEdTech Quilt of Care and Justice in Open Education"
-      ],
-      "ISBN": [
-        "9781805111276",
-        "9781805111283",
-        "9781805111290",
-        "9781805111337",
-        "9781805111320",
-        "9781805111306",
-        "9781805114710"
-      ],
-      "published": {
-        "date-parts": [
-          [
-            2023,
-            10,
-            25
-          ]
-        ]
-      }
-    },
-    {
-      "license": [
-        {
-          "start": {
-            "date-parts": [
-              [
-                2023,
-                10,
-                25
-              ]
-            ],
-            "date-time": "2023-10-25T00:00:00Z",
-            "timestamp": 1698192000000
-          },
-          "content-version": "unspecified",
-          "delay-in-days": 0,
-          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
-        }
-      ],
-      "DOI": "10.11647/obp.0363.15",
-      "type": "book-chapter",
-      "page": "353-370",
-      "title": [
-        "15. Vulnerability and generosity"
-      ],
-      "author": [
-        {
-          "given": "Kate",
-          "family": "Bowles",
-          "sequence": "first",
-          "affiliation": [
-            {
-              "id": [
-                {
-                  "id": "https://ror.org/00jtmb277",
-                  "id-type": "ROR",
-                  "asserted-by": "publisher"
-                }
-              ],
-              "name": "University of Wollongong"
-            }
-          ],
-          "role": [
-            {
-              "vocabulary": "crossref",
-              "role": "author"
-            }
-          ]
-        }
-      ],
-      "container-title": [
-        "Higher Education for Good"
-      ],
-      "subtitle": [
-        "The good future for Australian higher education"
       ],
       "ISBN": [
         "9781805111276",
@@ -3399,6 +3399,14 @@
       "citation_pages": "575-590"
     },
     {
+      "title": "15. Vulnerability and generosity The good future for Australian higher education",
+      "authors": [
+        "Kate Bowles"
+      ],
+      "chapter_doi": "10.11647/obp.0363.15",
+      "citation_pages": "353-370"
+    },
+    {
       "title": "10. HE4Good assemblages FemEdTech Quilt of Care and Justice in Open Education",
       "authors": [
         "Frances Bell",
@@ -3409,14 +3417,6 @@
       ],
       "chapter_doi": "10.11647/obp.0363.10",
       "citation_pages": "267-290"
-    },
-    {
-      "title": "15. Vulnerability and generosity The good future for Australian higher education",
-      "authors": [
-        "Kate Bowles"
-      ],
-      "chapter_doi": "10.11647/obp.0363.15",
-      "citation_pages": "353-370"
     },
     {
       "title": "1. Writing from the wreckage Austerity and the public university",

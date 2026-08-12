@@ -1,0 +1,725 @@
+{
+  "isbn": "9783933127877",
+  "fetched_at": "2026-08-11T22:44:06.142957+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-004",
+      "type": "book-chapter",
+      "page": "145-150",
+      "title": [
+        "4. Forschungsansatz, Lücken im Forschungsstand und Begründung der Arbeit"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-ack",
+      "type": "book-chapter",
+      "page": "13-14",
+      "title": [
+        "Danksagungen"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-002",
+      "type": "book-chapter",
+      "page": "27-114",
+      "title": [
+        "2. Forschungen Über Familienbezogene Bilder Türkischer Männer in Deutschland und in der Türkei"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-003",
+      "type": "book-chapter",
+      "page": "115-144",
+      "title": [
+        "3. Daten und Fakten zur Migrationsgeschichte der Türken nach Deutschland"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-toc",
+      "type": "book-chapter",
+      "page": "5-12",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-intro",
+      "type": "book-chapter",
+      "page": "15-18",
+      "title": [
+        "Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-006",
+      "type": "book-chapter",
+      "page": "439-446",
+      "title": [
+        "6. Resümee und Ausblick"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-005",
+      "type": "book-chapter",
+      "page": "151-438",
+      "title": [
+        "5. Die Empirische Untersuchung"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-ref",
+      "type": "book-chapter",
+      "page": "447-470",
+      "title": [
+        "7. Literatur"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2002,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2002-02-27T00:00:00Z",
+            "timestamp": 1014768000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839400876-001",
+      "type": "book-chapter",
+      "page": "19-26",
+      "title": [
+        "1. Das Historische Türkenbild in Deutschland"
+      ],
+      "author": [
+        {
+          "given": "Margret",
+          "family": "Spohn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Türkische Männer in Deutschland"
+      ],
+      "ISBN": [
+        "9783933127877",
+        "9783839400876"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            2,
+            27
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "4. Forschungsansatz, Lücken im Forschungsstand und Begründung der Arbeit",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-004",
+      "citation_pages": "145-150"
+    },
+    {
+      "title": "Danksagungen",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-ack",
+      "citation_pages": "13-14"
+    },
+    {
+      "title": "2. Forschungen Über Familienbezogene Bilder Türkischer Männer in Deutschland und in der Türkei",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-002",
+      "citation_pages": "27-114"
+    },
+    {
+      "title": "3. Daten und Fakten zur Migrationsgeschichte der Türken nach Deutschland",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-003",
+      "citation_pages": "115-144"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-toc",
+      "citation_pages": "5-12"
+    },
+    {
+      "title": "Einleitung",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-intro",
+      "citation_pages": "15-18"
+    },
+    {
+      "title": "6. Resümee und Ausblick",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-006",
+      "citation_pages": "439-446"
+    },
+    {
+      "title": "5. Die Empirische Untersuchung",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-005",
+      "citation_pages": "151-438"
+    },
+    {
+      "title": "7. Literatur",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-ref",
+      "citation_pages": "447-470"
+    },
+    {
+      "title": "1. Das Historische Türkenbild in Deutschland",
+      "authors": [
+        "Margret Spohn"
+      ],
+      "chapter_doi": "10.14361/9783839400876-001",
+      "citation_pages": "19-26"
+    }
+  ]
+}

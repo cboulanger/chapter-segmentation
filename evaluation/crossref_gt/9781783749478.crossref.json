@@ -1,6 +1,6 @@
 {
   "isbn": "9781783749478",
-  "fetched_at": "2026-08-09T13:15:10.919695+00:00",
+  "fetched_at": "2026-08-11T22:42:25.469197+00:00",
   "license": "http://creativecommons.org/licenses/by/4.0",
   "license_source": "crossref",
   "raw_items": [
@@ -626,18 +626,29 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0209.06",
+      "DOI": "10.11647/obp.0209.08",
       "type": "book-chapter",
-      "page": "221-234",
+      "page": "287-300",
       "title": [
-        "Language Contact and Ṭuroyo"
+        "On the Afel Stem in Western Neo-Aramaic"
       ],
       "author": [
         {
-          "given": "Michael",
-          "family": "Waltisberg",
+          "given": "Steven E.",
+          "family": "Fassberg",
           "sequence": "first",
-          "affiliation": [],
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03qxff017",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hebrew University of Jerusalem"
+            }
+          ],
           "role": [
             {
               "vocabulary": "crossref",
@@ -649,9 +660,6 @@
       "container-title": [
         "Semitic Languages and Cultures",
         "Studies in the Grammar and Lexicon of Neo-Aramaic"
-      ],
-      "subtitle": [
-        "The Case of the Circumstantial Clause"
       ],
       "ISBN": [
         "9781783749478",
@@ -691,29 +699,18 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0209.08",
+      "DOI": "10.11647/obp.0209.06",
       "type": "book-chapter",
-      "page": "287-300",
+      "page": "221-234",
       "title": [
-        "On the Afel Stem in Western Neo-Aramaic"
+        "Language Contact and Ṭuroyo"
       ],
       "author": [
         {
-          "given": "Steven E.",
-          "family": "Fassberg",
+          "given": "Michael",
+          "family": "Waltisberg",
           "sequence": "first",
-          "affiliation": [
-            {
-              "id": [
-                {
-                  "id": "https://ror.org/03qxff017",
-                  "id-type": "ROR",
-                  "asserted-by": "publisher"
-                }
-              ],
-              "name": "Hebrew University of Jerusalem"
-            }
-          ],
+          "affiliation": [],
           "role": [
             {
               "vocabulary": "crossref",
@@ -725,6 +722,9 @@
       "container-title": [
         "Semitic Languages and Cultures",
         "Studies in the Grammar and Lexicon of Neo-Aramaic"
+      ],
+      "subtitle": [
+        "The Case of the Circumstantial Clause"
       ],
       "ISBN": [
         "9781783749478",
@@ -1103,18 +1103,16 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0209.04",
+      "DOI": "10.11647/obp.0209.11",
       "type": "book-chapter",
-      "page": "143-194",
+      "page": "335-352",
       "title": [
-        "Verbal Forms Expressing Discourse Dependency in North-Eastern Neo-Aramaic"
+        "On the Origin of Some Plant Names in Ṣūrayt/Ṭūrōyo in Ṭūr ʿAbdīn"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-2550-9896",
-          "authenticated-orcid": false,
-          "given": "Geoffrey",
-          "family": "Khan",
+          "given": "Aziz",
+          "family": "Tezel",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -1167,16 +1165,18 @@
           "URL": "http://creativecommons.org/licenses/by/4.0"
         }
       ],
-      "DOI": "10.11647/obp.0209.11",
+      "DOI": "10.11647/obp.0209.04",
       "type": "book-chapter",
-      "page": "335-352",
+      "page": "143-194",
       "title": [
-        "On the Origin of Some Plant Names in Ṣūrayt/Ṭūrōyo in Ṭūr ʿAbdīn"
+        "Verbal Forms Expressing Discourse Dependency in North-Eastern Neo-Aramaic"
       ],
       "author": [
         {
-          "given": "Aziz",
-          "family": "Tezel",
+          "ORCID": "https://orcid.org/0000-0002-2550-9896",
+          "authenticated-orcid": false,
+          "given": "Geoffrey",
+          "family": "Khan",
           "sequence": "first",
           "affiliation": [],
           "role": [
@@ -1287,20 +1287,20 @@
       "citation_pages": "319-334"
     },
     {
-      "title": "Language Contact and Ṭuroyo The Case of the Circumstantial Clause",
-      "authors": [
-        "Michael Waltisberg"
-      ],
-      "chapter_doi": "10.11647/obp.0209.06",
-      "citation_pages": "221-234"
-    },
-    {
       "title": "On the Afel Stem in Western Neo-Aramaic",
       "authors": [
         "Steven E. Fassberg"
       ],
       "chapter_doi": "10.11647/obp.0209.08",
       "citation_pages": "287-300"
+    },
+    {
+      "title": "Language Contact and Ṭuroyo The Case of the Circumstantial Clause",
+      "authors": [
+        "Michael Waltisberg"
+      ],
+      "chapter_doi": "10.11647/obp.0209.06",
+      "citation_pages": "221-234"
     },
     {
       "title": "Language Loss in the Ṣūrayt/Ṭūrōyo-speaking Communities of the Diaspora in Sweden",
@@ -1343,20 +1343,20 @@
       "citation_pages": "29-94"
     },
     {
-      "title": "Verbal Forms Expressing Discourse Dependency in North-Eastern Neo-Aramaic",
-      "authors": [
-        "Geoffrey Khan"
-      ],
-      "chapter_doi": "10.11647/obp.0209.04",
-      "citation_pages": "143-194"
-    },
-    {
       "title": "On the Origin of Some Plant Names in Ṣūrayt/Ṭūrōyo in Ṭūr ʿAbdīn",
       "authors": [
         "Aziz Tezel"
       ],
       "chapter_doi": "10.11647/obp.0209.11",
       "citation_pages": "335-352"
+    },
+    {
+      "title": "Verbal Forms Expressing Discourse Dependency in North-Eastern Neo-Aramaic",
+      "authors": [
+        "Geoffrey Khan"
+      ],
+      "chapter_doi": "10.11647/obp.0209.04",
+      "citation_pages": "143-194"
     }
   ]
 }

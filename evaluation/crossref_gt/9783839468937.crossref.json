@@ -1,6 +1,6 @@
 {
   "isbn": "9783839468937",
-  "fetched_at": "2026-08-09T13:15:16.361467+00:00",
+  "fetched_at": "2026-08-11T22:43:32.371848+00:00",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "license_source": "crossref",
   "raw_items": [
@@ -1120,18 +1120,18 @@
           "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
         }
       ],
-      "DOI": "10.14361/9783839468937-002",
+      "DOI": "10.14361/9783839468937-004",
       "type": "book-chapter",
-      "page": "23-40",
+      "page": "43-62",
       "title": [
-        "Debatten um EdTech im Wandel"
+        "Nicht determinierend, aber doch stark regulierend"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-5791-3586",
+          "ORCID": "https://orcid.org/0000-0002-8618-4837",
           "authenticated-orcid": true,
-          "given": "André",
-          "family": "Renz",
+          "given": "Sigrid",
+          "family": "Hartong",
           "sequence": "first",
           "affiliation": [
             {
@@ -1151,7 +1151,7 @@
         "Digitale Lerntechnologien"
       ],
       "subtitle": [
-        "Eine Analyse des Zeitraums 1993-2022"
+        "Eine Studie zu Design und pädagogischen Wirkungen der Antolin-Leselernplattform"
       ],
       "ISBN": [
         "9783837668933",
@@ -1186,18 +1186,18 @@
           "URL": "https://creativecommons.org/licenses/by-sa/4.0/"
         }
       ],
-      "DOI": "10.14361/9783839468937-004",
+      "DOI": "10.14361/9783839468937-002",
       "type": "book-chapter",
-      "page": "43-62",
+      "page": "23-40",
       "title": [
-        "Nicht determinierend, aber doch stark regulierend"
+        "Debatten um EdTech im Wandel"
       ],
       "author": [
         {
-          "ORCID": "https://orcid.org/0000-0002-8618-4837",
+          "ORCID": "https://orcid.org/0000-0002-5791-3586",
           "authenticated-orcid": true,
-          "given": "Sigrid",
-          "family": "Hartong",
+          "given": "André",
+          "family": "Renz",
           "sequence": "first",
           "affiliation": [
             {
@@ -1217,7 +1217,7 @@
         "Digitale Lerntechnologien"
       ],
       "subtitle": [
-        "Eine Studie zu Design und pädagogischen Wirkungen der Antolin-Leselernplattform"
+        "Eine Analyse des Zeitraums 1993-2022"
       ],
       "ISBN": [
         "9783837668933",
@@ -1424,20 +1424,20 @@
       "citation_pages": "211-230"
     },
     {
-      "title": "Debatten um EdTech im Wandel Eine Analyse des Zeitraums 1993-2022",
-      "authors": [
-        "André Renz"
-      ],
-      "chapter_doi": "10.14361/9783839468937-002",
-      "citation_pages": "23-40"
-    },
-    {
       "title": "Nicht determinierend, aber doch stark regulierend Eine Studie zu Design und pädagogischen Wirkungen der Antolin-Leselernplattform",
       "authors": [
         "Sigrid Hartong"
       ],
       "chapter_doi": "10.14361/9783839468937-004",
       "citation_pages": "43-62"
+    },
+    {
+      "title": "Debatten um EdTech im Wandel Eine Analyse des Zeitraums 1993-2022",
+      "authors": [
+        "André Renz"
+      ],
+      "chapter_doi": "10.14361/9783839468937-002",
+      "citation_pages": "23-40"
     },
     {
       "title": "Der Design-Justice-Ansatz mit einer Anwendung im Bereich der KI",

@@ -1,0 +1,2599 @@
+{
+  "isbn": "9781783747979",
+  "fetched_at": "2026-08-11T22:41:15.861420+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.18",
+      "type": "book-chapter",
+      "page": "112-115",
+      "title": [
+        "6.1. Data Stewards at TU Delft: A Reality Check for Disciplinary RDM"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8344-4883",
+          "authenticated-orcid": false,
+          "given": "Alastair",
+          "family": "Dunning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.04",
+      "type": "book-chapter",
+      "page": "40-45",
+      "title": [
+        "2.2. Engaging with Researchers through Data Management Planning at the University of Manchester"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0738-7661",
+          "authenticated-orcid": false,
+          "given": "Joanne",
+          "family": "Yeomans",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027bh9e22",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leiden University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5329-7168",
+          "authenticated-orcid": false,
+          "given": "Rosie",
+          "family": "Higman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05krs5044",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Sheffield"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christopher",
+          "family": "Gibson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.12",
+      "type": "book-chapter",
+      "page": "78-81",
+      "title": [
+        "4.3. Let's Talk Data: Data Conversations at Lancaster University"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8520-5598",
+          "authenticated-orcid": false,
+          "given": "Marta",
+          "family": "Teperek",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2057-4912",
+          "authenticated-orcid": false,
+          "given": "Joshua",
+          "family": "Sendall",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04f2nsd36",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Lancaster University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1325-5259",
+          "authenticated-orcid": false,
+          "given": "Hardy",
+          "family": "Schwamm",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03bea9k73",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Galway"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.17",
+      "type": "book-chapter",
+      "page": "104-108",
+      "title": [
+        "5.3. Data Stewards at Wageningen University and Research"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4369-196X",
+          "authenticated-orcid": false,
+          "given": "Connie",
+          "family": "Clare",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Saskia",
+          "family": "van Marrewijk",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Erik",
+          "family": "van Den Bergh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.08",
+      "type": "book-chapter",
+      "page": "60-63",
+      "title": [
+        "3.3. Engaging with RDM througha PhD Course on Academic Integrity and Open Science at UiT The Arctic University of Norway"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3214-4271",
+          "authenticated-orcid": false,
+          "given": "Yan",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9450-803X",
+          "authenticated-orcid": false,
+          "given": "Helene N.",
+          "family": "Andreassen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00wge5k78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "UiT The Arctic University of Norway"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.11",
+      "type": "book-chapter",
+      "page": "74-77",
+      "title": [
+        "4.2. DuoDi: The 'Days of Data' at Vilnius University"
+      ],
+      "author": [
+        {
+          "given": "Elli",
+          "family": "Papadopoulou",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ramutė",
+          "family": "Grabauskienė",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.10",
+      "type": "book-chapter",
+      "page": "70-73",
+      "title": [
+        "4.1. 'Dealing with Data' Conference at the University of Edinburgh"
+      ],
+      "author": [
+        {
+          "given": "Elli",
+          "family": "Papadopoulou",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kerry",
+          "family": "Miller",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.03",
+      "type": "book-chapter",
+      "page": "34-39",
+      "title": [
+        "2.1. Taking Advantage of Existing Administrative Systems: MRC/CSO Social and Public Health Sciences Unit, University of Glasgow"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0738-7661",
+          "authenticated-orcid": false,
+          "given": "Joanne",
+          "family": "Yeomans",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027bh9e22",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leiden University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7914-3957",
+          "authenticated-orcid": false,
+          "given": "Iza",
+          "family": "Witkowska",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Bibliotheek Utrecht"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mary-Kate",
+          "family": "Hannah",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.07",
+      "type": "book-chapter",
+      "page": "56-59",
+      "title": [
+        "3.2. Introducing Data Management into Existing Courses at the University of Minnesota"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3214-4271",
+          "authenticated-orcid": false,
+          "given": "Yan",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7644-4105",
+          "authenticated-orcid": false,
+          "given": "Alicia",
+          "family": "Hofelich Mohr",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/017zqws13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Minnesota"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4081-6066",
+          "authenticated-orcid": false,
+          "given": "Jenny",
+          "family": "McBurney",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/017zqws13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Minnesota"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.05",
+      "type": "book-chapter",
+      "page": "46-48",
+      "title": [
+        "2.3. Timing Is Everything When It Comes to Engaging with Researchers at the University of Technology Sydney"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7914-3957",
+          "authenticated-orcid": false,
+          "given": "Iza",
+          "family": "Witkowska",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Bibliotheek Utrecht"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wendy",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Duncan",
+          "family": "Loxton",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elizabeth",
+          "family": "Stokes",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sharyn",
+          "family": "Wise",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.22",
+      "type": "book-chapter",
+      "page": "136-139",
+      "title": [
+        "8.1. Soliciting Deposit and Preservation of University-Produced Research Data as Part of Broader Archives and Records Management Work"
+      ],
+      "author": [
+        {
+          "given": "Elli",
+          "family": "Papadopoulou",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katherine",
+          "family": "McNeill",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rachel",
+          "family": "Wise",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.16",
+      "type": "book-chapter",
+      "page": "98-103",
+      "title": [
+        "5.2. TU Delft Data Champions"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4369-196X",
+          "authenticated-orcid": false,
+          "given": "Connie",
+          "family": "Clare",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2562-0452",
+          "authenticated-orcid": false,
+          "given": "Yasemin",
+          "family": "Türkyilmaz-van der Velden",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.06",
+      "type": "book-chapter",
+      "page": "67-55",
+      "title": [
+        "3.1. Bring Your Own Data (B.Y.O.D.) Workshop at the University of Cambridge"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4369-196X",
+          "authenticated-orcid": false,
+          "given": "Connie",
+          "family": "Clare",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Annemarie",
+          "family": "Hildegard Eckes-Shephard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.01",
+      "type": "book-chapter",
+      "page": "18-23",
+      "title": [
+        "1.1. Are You a Research Data Superhero? One Person Making a Big Difference at Makerere University"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0738-7661",
+          "authenticated-orcid": false,
+          "given": "Joanne",
+          "family": "Yeomans",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027bh9e22",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leiden University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9411-1515",
+          "authenticated-orcid": false,
+          "given": "Joseph",
+          "family": "Ssebulime",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03dmz0111",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Makerere University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.13",
+      "type": "book-chapter",
+      "page": "82-85",
+      "title": [
+        "4.4. Starting New Data Conversations at Vrije Universiteit Amsterdam"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8520-5598",
+          "authenticated-orcid": false,
+          "given": "Marta",
+          "family": "Teperek",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9111-182X",
+          "authenticated-orcid": false,
+          "given": "Maria",
+          "family": "Cruz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.15",
+      "type": "book-chapter",
+      "page": "92-97",
+      "title": [
+        "5.1. Data Champion Programme at the University of Cambridge"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4369-196X",
+          "authenticated-orcid": false,
+          "given": "Connie",
+          "family": "Clare",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7197-0974",
+          "authenticated-orcid": false,
+          "given": "Dan",
+          "family": "Crane",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Cambridge University Library"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sacha",
+          "family": "Jones",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4737-5673",
+          "authenticated-orcid": false,
+          "given": "James",
+          "family": "Savage",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.19",
+      "type": "book-chapter",
+      "page": "116-119",
+      "title": [
+        "6.2. Cultural Change Happens One Person at a Time: Informatics Lab at Virginia Tech"
+      ],
+      "author": [
+        {
+          "given": "Jonathan",
+          "family": "Petters",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.14",
+      "type": "book-chapter",
+      "page": "86-88",
+      "title": [
+        "4.5. Talk to Understand Your Community Better: Informal Events atthe Open University"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8520-5598",
+          "authenticated-orcid": false,
+          "given": "Marta",
+          "family": "Teperek",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7197-0974",
+          "authenticated-orcid": false,
+          "given": "Dan",
+          "family": "Crane",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05mzfcs16",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "The Open University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.23",
+      "type": "book-chapter",
+      "page": "140-143",
+      "title": [
+        "8.2. Starting at the End: Seniors' Research Data Project at the UiT The Arctic University of Norway"
+      ],
+      "author": [
+        {
+          "given": "Elli",
+          "family": "Papadopoulou",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Leif",
+          "family": "Longva",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9725-6461",
+          "authenticated-orcid": false,
+          "given": "Stein",
+          "family": "Høydalsvik",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00wge5k78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "UiT The Arctic University of Norway"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.09",
+      "type": "book-chapter",
+      "page": "64-66",
+      "title": [
+        "3.4. Open Courses at UiT The Arctic University of Norway"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3214-4271",
+          "authenticated-orcid": false,
+          "given": "Yan",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9450-803X",
+          "authenticated-orcid": false,
+          "given": "Helene N.",
+          "family": "Andreassen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00wge5k78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "UiT The Arctic University of Norway"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.24",
+      "type": "book-chapter",
+      "page": "2-13",
+      "title": [
+        "I. Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4369-196X",
+          "authenticated-orcid": false,
+          "given": "Connie",
+          "family": "Clare",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9111-182X",
+          "authenticated-orcid": false,
+          "given": "Maria",
+          "family": "Cruz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elli",
+          "family": "Papadopoulou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4737-5673",
+          "authenticated-orcid": false,
+          "given": "James",
+          "family": "Savage",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8520-5598",
+          "authenticated-orcid": false,
+          "given": "Marta",
+          "family": "Teperek",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3214-4271",
+          "authenticated-orcid": false,
+          "given": "Yan",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7914-3957",
+          "authenticated-orcid": false,
+          "given": "Iza",
+          "family": "Witkowska",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Bibliotheek Utrecht"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0738-7661",
+          "authenticated-orcid": false,
+          "given": "Joanne",
+          "family": "Yeomans",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027bh9e22",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leiden University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.20",
+      "type": "book-chapter",
+      "page": "120-124",
+      "title": [
+        "6.3. Ever Heard of Five-Legged Sheep? Data Managers at Utrecht University Give Researchers a Leg-Up!"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7914-3957",
+          "authenticated-orcid": false,
+          "given": "Iza",
+          "family": "Witkowska",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Bibliotheek Utrecht"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martine",
+          "family": "Pronk",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.02",
+      "type": "book-chapter",
+      "page": "24-30",
+      "title": [
+        "1.2. Does a Policy Solve Everything? Policy as a Driver for Engagement at Leiden University"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0738-7661",
+          "authenticated-orcid": false,
+          "given": "Joanne",
+          "family": "Yeomans",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027bh9e22",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leiden University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4385-9312",
+          "authenticated-orcid": false,
+          "given": "Fieke",
+          "family": "Schoots",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027bh9e22",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leiden University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7880-5413",
+          "authenticated-orcid": false,
+          "given": "Laurents",
+          "family": "Sesink",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027bh9e22",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leiden University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2019-10-09T00:00:00Z",
+            "timestamp": 1570579200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0185.21",
+      "type": "book-chapter",
+      "page": "128-132",
+      "title": [
+        "7.1. Showcasing Peers and their Good Practice: Researcher Interviews at Vrije Universiteit Amsterdam and Utrecht University"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7914-3957",
+          "authenticated-orcid": false,
+          "given": "Iza",
+          "family": "Witkowska",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Bibliotheek Utrecht"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1740-7005",
+          "authenticated-orcid": false,
+          "given": "Annemiek",
+          "family": "van der Kuil",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anneke",
+          "family": "de Maat",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Reports Series",
+        "Engaging Researchers with Data Management"
+      ],
+      "ISBN": [
+        "9781783747979",
+        "9781783747986",
+        "9781783747993",
+        "9781800645974",
+        "9781783748020",
+        "9781783748006",
+        "9781783748013"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "6.1. Data Stewards at TU Delft: A Reality Check for Disciplinary RDM",
+      "authors": [
+        "Alastair Dunning"
+      ],
+      "chapter_doi": "10.11647/obp.0185.18",
+      "citation_pages": "112-115"
+    },
+    {
+      "title": "2.2. Engaging with Researchers through Data Management Planning at the University of Manchester",
+      "authors": [
+        "Joanne Yeomans",
+        "Rosie Higman",
+        "Christopher Gibson"
+      ],
+      "chapter_doi": "10.11647/obp.0185.04",
+      "citation_pages": "40-45"
+    },
+    {
+      "title": "4.3. Let's Talk Data: Data Conversations at Lancaster University",
+      "authors": [
+        "Marta Teperek",
+        "Joshua Sendall",
+        "Hardy Schwamm"
+      ],
+      "chapter_doi": "10.11647/obp.0185.12",
+      "citation_pages": "78-81"
+    },
+    {
+      "title": "5.3. Data Stewards at Wageningen University and Research",
+      "authors": [
+        "Connie Clare",
+        "Saskia van Marrewijk",
+        "Erik van Den Bergh"
+      ],
+      "chapter_doi": "10.11647/obp.0185.17",
+      "citation_pages": "104-108"
+    },
+    {
+      "title": "3.3. Engaging with RDM througha PhD Course on Academic Integrity and Open Science at UiT The Arctic University of Norway",
+      "authors": [
+        "Yan Wang",
+        "Helene N. Andreassen"
+      ],
+      "chapter_doi": "10.11647/obp.0185.08",
+      "citation_pages": "60-63"
+    },
+    {
+      "title": "4.2. DuoDi: The 'Days of Data' at Vilnius University",
+      "authors": [
+        "Elli Papadopoulou",
+        "Ramutė Grabauskienė"
+      ],
+      "chapter_doi": "10.11647/obp.0185.11",
+      "citation_pages": "74-77"
+    },
+    {
+      "title": "4.1. 'Dealing with Data' Conference at the University of Edinburgh",
+      "authors": [
+        "Elli Papadopoulou",
+        "Kerry Miller"
+      ],
+      "chapter_doi": "10.11647/obp.0185.10",
+      "citation_pages": "70-73"
+    },
+    {
+      "title": "2.1. Taking Advantage of Existing Administrative Systems: MRC/CSO Social and Public Health Sciences Unit, University of Glasgow",
+      "authors": [
+        "Joanne Yeomans",
+        "Iza Witkowska",
+        "Mary-Kate Hannah"
+      ],
+      "chapter_doi": "10.11647/obp.0185.03",
+      "citation_pages": "34-39"
+    },
+    {
+      "title": "3.2. Introducing Data Management into Existing Courses at the University of Minnesota",
+      "authors": [
+        "Yan Wang",
+        "Alicia Hofelich Mohr",
+        "Jenny McBurney"
+      ],
+      "chapter_doi": "10.11647/obp.0185.07",
+      "citation_pages": "56-59"
+    },
+    {
+      "title": "2.3. Timing Is Everything When It Comes to Engaging with Researchers at the University of Technology Sydney",
+      "authors": [
+        "Iza Witkowska",
+        "Wendy Liu",
+        "Duncan Loxton",
+        "Elizabeth Stokes",
+        "Sharyn Wise"
+      ],
+      "chapter_doi": "10.11647/obp.0185.05",
+      "citation_pages": "46-48"
+    },
+    {
+      "title": "8.1. Soliciting Deposit and Preservation of University-Produced Research Data as Part of Broader Archives and Records Management Work",
+      "authors": [
+        "Elli Papadopoulou",
+        "Katherine McNeill",
+        "Rachel Wise"
+      ],
+      "chapter_doi": "10.11647/obp.0185.22",
+      "citation_pages": "136-139"
+    },
+    {
+      "title": "5.2. TU Delft Data Champions",
+      "authors": [
+        "Connie Clare",
+        "Yasemin Türkyilmaz-van der Velden"
+      ],
+      "chapter_doi": "10.11647/obp.0185.16",
+      "citation_pages": "98-103"
+    },
+    {
+      "title": "3.1. Bring Your Own Data (B.Y.O.D.) Workshop at the University of Cambridge",
+      "authors": [
+        "Connie Clare",
+        "Annemarie Hildegard Eckes-Shephard"
+      ],
+      "chapter_doi": "10.11647/obp.0185.06",
+      "citation_pages": "67-55"
+    },
+    {
+      "title": "1.1. Are You a Research Data Superhero? One Person Making a Big Difference at Makerere University",
+      "authors": [
+        "Joanne Yeomans",
+        "Joseph Ssebulime"
+      ],
+      "chapter_doi": "10.11647/obp.0185.01",
+      "citation_pages": "18-23"
+    },
+    {
+      "title": "4.4. Starting New Data Conversations at Vrije Universiteit Amsterdam",
+      "authors": [
+        "Marta Teperek",
+        "Maria Cruz"
+      ],
+      "chapter_doi": "10.11647/obp.0185.13",
+      "citation_pages": "82-85"
+    },
+    {
+      "title": "5.1. Data Champion Programme at the University of Cambridge",
+      "authors": [
+        "Connie Clare",
+        "Dan Crane",
+        "Sacha Jones",
+        "James Savage"
+      ],
+      "chapter_doi": "10.11647/obp.0185.15",
+      "citation_pages": "92-97"
+    },
+    {
+      "title": "6.2. Cultural Change Happens One Person at a Time: Informatics Lab at Virginia Tech",
+      "authors": [
+        "Jonathan Petters"
+      ],
+      "chapter_doi": "10.11647/obp.0185.19",
+      "citation_pages": "116-119"
+    },
+    {
+      "title": "4.5. Talk to Understand Your Community Better: Informal Events atthe Open University",
+      "authors": [
+        "Marta Teperek",
+        "Dan Crane"
+      ],
+      "chapter_doi": "10.11647/obp.0185.14",
+      "citation_pages": "86-88"
+    },
+    {
+      "title": "8.2. Starting at the End: Seniors' Research Data Project at the UiT The Arctic University of Norway",
+      "authors": [
+        "Elli Papadopoulou",
+        "Leif Longva",
+        "Stein Høydalsvik"
+      ],
+      "chapter_doi": "10.11647/obp.0185.23",
+      "citation_pages": "140-143"
+    },
+    {
+      "title": "3.4. Open Courses at UiT The Arctic University of Norway",
+      "authors": [
+        "Yan Wang",
+        "Helene N. Andreassen"
+      ],
+      "chapter_doi": "10.11647/obp.0185.09",
+      "citation_pages": "64-66"
+    },
+    {
+      "title": "I. Introduction",
+      "authors": [
+        "Connie Clare",
+        "Maria Cruz",
+        "Elli Papadopoulou",
+        "James Savage",
+        "Marta Teperek",
+        "Yan Wang",
+        "Iza Witkowska",
+        "Joanne Yeomans"
+      ],
+      "chapter_doi": "10.11647/obp.0185.24",
+      "citation_pages": "2-13"
+    },
+    {
+      "title": "6.3. Ever Heard of Five-Legged Sheep? Data Managers at Utrecht University Give Researchers a Leg-Up!",
+      "authors": [
+        "Iza Witkowska",
+        "Martine Pronk"
+      ],
+      "chapter_doi": "10.11647/obp.0185.20",
+      "citation_pages": "120-124"
+    },
+    {
+      "title": "1.2. Does a Policy Solve Everything? Policy as a Driver for Engagement at Leiden University",
+      "authors": [
+        "Joanne Yeomans",
+        "Fieke Schoots",
+        "Laurents Sesink"
+      ],
+      "chapter_doi": "10.11647/obp.0185.02",
+      "citation_pages": "24-30"
+    },
+    {
+      "title": "7.1. Showcasing Peers and their Good Practice: Researcher Interviews at Vrije Universiteit Amsterdam and Utrecht University",
+      "authors": [
+        "Iza Witkowska",
+        "Annemiek van der Kuil",
+        "Anneke de Maat"
+      ],
+      "chapter_doi": "10.11647/obp.0185.21",
+      "citation_pages": "128-132"
+    }
+  ]
+}

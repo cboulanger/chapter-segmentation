@@ -1,0 +1,163 @@
+{
+  "isbn": "9781783746552",
+  "fetched_at": "2026-08-11T15:22:55.577243+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2019-02-25T00:00:00Z",
+            "timestamp": 1551052800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0160.01",
+      "type": "book-chapter",
+      "page": "1-138",
+      "title": [
+        "Hyperion, or the Hermit in Greece"
+      ],
+      "author": [
+        {
+          "given": "Friedrich",
+          "family": "Hölderlin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Book Classics",
+        "Hyperion, or the Hermit in Greece"
+      ],
+      "ISBN": [
+        "9781783746552",
+        "9781783746569",
+        "9781783746576",
+        "9781800645783",
+        "9781783746675",
+        "9781783746583",
+        "9781783746590"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                2,
+                25
+              ]
+            ],
+            "date-time": "2019-02-25T00:00:00Z",
+            "timestamp": 1551052800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0160.02",
+      "type": "book-chapter",
+      "page": "139-208",
+      "title": [
+        "Afterword"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5136-9607",
+          "authenticated-orcid": false,
+          "given": "Howard",
+          "family": "Gaskill",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Open Book Classics",
+        "Hyperion, or the Hermit in Greece"
+      ],
+      "ISBN": [
+        "9781783746552",
+        "9781783746569",
+        "9781783746576",
+        "9781800645783",
+        "9781783746675",
+        "9781783746583",
+        "9781783746590"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            2,
+            25
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Hyperion, or the Hermit in Greece",
+      "authors": [
+        "Friedrich Hölderlin"
+      ],
+      "chapter_doi": "10.11647/obp.0160.01",
+      "citation_pages": "1-138"
+    },
+    {
+      "title": "Afterword",
+      "authors": [
+        "Howard Gaskill"
+      ],
+      "chapter_doi": "10.11647/obp.0160.02",
+      "citation_pages": "139-208"
+    }
+  ]
+}

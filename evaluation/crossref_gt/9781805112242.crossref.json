@@ -1,0 +1,4749 @@
+{
+  "isbn": "9781805112242",
+  "fetched_at": "2026-08-11T22:41:11.942494+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.27",
+      "type": "book-chapter",
+      "page": "409-428",
+      "title": [
+        "25. La Légende de Xenakis"
+      ],
+      "author": [
+        {
+          "given": "Curtis",
+          "family": "Roads",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02t274463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of California, Santa Barbara"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Meta Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.49",
+      "type": "book-chapter",
+      "page": "727-728",
+      "title": [
+        "47. Reportage of a UPISketch Workshop in Japan"
+      ],
+      "author": [
+        {
+          "given": "Yoshihisa",
+          "family": "Suzuki",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.33",
+      "type": "book-chapter",
+      "page": "517-536",
+      "title": [
+        "31. UPISketch"
+      ],
+      "author": [
+        {
+          "given": "Rodolphe",
+          "family": "Bourotte",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "New Perspectives"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.19",
+      "type": "book-chapter",
+      "page": "285-296",
+      "title": [
+        "17. Iannis Xenakis’s Hibiki Hana Ma and the Japanese Team for Tekkhokan (Steel Pavilion) at Expo ’70, Osaka"
+      ],
+      "author": [
+        {
+          "given": "Mikako",
+          "family": "Mizuno",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Nagoya College of Music"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.07",
+      "type": "book-chapter",
+      "page": "91-100",
+      "title": [
+        "5. Iannis Xenakis in Japan: Productive Performances and Reception of Texts"
+      ],
+      "author": [
+        {
+          "given": "Mikako",
+          "family": "Mizuno",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Nagoya College of Music"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.03",
+      "type": "book-chapter",
+      "page": "29-38",
+      "title": [
+        "1. Iannis Xenakis’s Theater Studies"
+      ],
+      "author": [
+        {
+          "given": "Nikos",
+          "family": "Ioakeim",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "An Unknown Aspect of the Composer’s Life during the Occupation"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.11",
+      "type": "book-chapter",
+      "page": "157-166",
+      "title": [
+        "9. Iannis Xenakis’s Philosophy of Music, Stochastics, and the Postmodern Sublime"
+      ],
+      "author": [
+        {
+          "given": "Nathan",
+          "family": "Friedman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03dbr7087",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Toronto"
+            },
+            {
+              "name": "Canadian Music Centre"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.28",
+      "type": "book-chapter",
+      "page": "429-438",
+      "title": [
+        "26. Creating and Learning with UPIC"
+      ],
+      "author": [
+        {
+          "given": "Takehito",
+          "family": "Shimazu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03zjb7z20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Fukushima University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.39",
+      "type": "book-chapter",
+      "page": "605-634",
+      "title": [
+        "37. Notes on A Catalog of Difference"
+      ],
+      "author": [
+        {
+          "given": "Andrew",
+          "family": "Lucia",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05bnh6r87",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Cornell University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.21",
+      "type": "book-chapter",
+      "page": "319-336",
+      "title": [
+        "19. Performing Iannis Xenakis’s Polyrhythms"
+      ],
+      "author": [
+        {
+          "given": "Imri",
+          "family": "Talgam",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Perception-informed Approach to Renotation"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.53",
+      "type": "book-chapter",
+      "page": "747-748",
+      "title": [
+        "51. Iannis Xenakis, 1922–2001"
+      ],
+      "author": [
+        {
+          "given": "Benny",
+          "family": "Sluchin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0121jnt59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institut de Recherche et Coordination Acoustique Musique"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.41",
+      "type": "book-chapter",
+      "page": "661-678",
+      "title": [
+        "39. The Process of Creating a Computational System"
+      ],
+      "author": [
+        {
+          "given": "Hugo",
+          "family": "Solís",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02kta5139",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Autónoma Metropolitana"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mizky",
+          "family": "Bernal",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/021018s57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universitat de Barcelona"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Diego",
+          "family": "Jiménez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guillermo",
+          "family": "Leonardini",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/021018s57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universitat de Barcelona"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eunice",
+          "family": "Pérez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Collective Audiovisual Composition"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.34",
+      "type": "book-chapter",
+      "page": "537-542",
+      "title": [
+        "32. Somax2 and Reinterpreting Iannis Xenakis"
+      ],
+      "author": [
+        {
+          "given": "Mikhail",
+          "family": "Malt",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0121jnt59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institut de Recherche et Coordination Acoustique Musique"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02en5vm52",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sorbonne Université"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Benny",
+          "family": "Sluchin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0121jnt59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institut de Recherche et Coordination Acoustique Musique"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.38",
+      "type": "book-chapter",
+      "page": "591-604",
+      "title": [
+        "36. Mapping the Influence"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9333-9414",
+          "authenticated-orcid": false,
+          "given": "Thanos",
+          "family": "Polymeneas-Liontiris",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/022gstf70",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Falmouth University"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00ayhx656",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Sussex"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Iannis Xenakis’s GENDYN Algorithms as a Means for Creative Explorations in Live Improvised Feedback Music"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.02",
+      "type": "book-chapter",
+      "page": "21-26",
+      "title": [
+        "Prolegomenon"
+      ],
+      "author": [
+        {
+          "given": "James",
+          "family": "Harley",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r7awg59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Guelph"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Meta-materiality in the Thought and Creative Activity of Iannis Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.43",
+      "type": "book-chapter",
+      "page": "699-712",
+      "title": [
+        "41. The Xenakis Networked Performance Marathon 2022 (Sustainable Resources)"
+      ],
+      "author": [
+        {
+          "given": "Iannis",
+          "family": "Zannos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Carlé",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-2035-9686",
+          "authenticated-orcid": false,
+          "given": "Vasilis",
+          "family": "Agiomyrgianakis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Takumi",
+          "family": "Ikeda",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hanako",
+          "family": "Atake",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.30",
+      "type": "book-chapter",
+      "page": "467-482",
+      "title": [
+        "28. A Pythagorean Wall of Visual and Auditory Drama"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6811-503X",
+          "authenticated-orcid": false,
+          "given": "Julio",
+          "family": "Estrada",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01tmp8f25",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Nacional Autónoma de México"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.52",
+      "type": "book-chapter",
+      "page": "737-746",
+      "title": [
+        "50. The Iranian Context of Iannis Xenakis’s Persepolis"
+      ],
+      "author": [
+        {
+          "given": "Aram",
+          "family": "Yardumian",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01befse58",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Bryn Athyn College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.35",
+      "type": "book-chapter",
+      "page": "543-562",
+      "title": [
+        "33. Xenos"
+      ],
+      "author": [
+        {
+          "given": "Raphael",
+          "family": "Radna",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02t274463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of California, Santa Barbara"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Xenharmonic Dynamic Stochastic Synthesis Virtual Instrument"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.44",
+      "type": "book-chapter",
+      "page": "713-714",
+      "title": [
+        "42. Japanese Society of Electronic Music (JSEM) Concert"
+      ],
+      "author": [
+        {
+          "given": "Mikako",
+          "family": "Mizuno",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Nagoya College of Music"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Tribute Celebrating Iannis Xenakis’s Centennial"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.14",
+      "type": "book-chapter",
+      "page": "199-212",
+      "title": [
+        "12. Activating Sound Phenomena in the Music of Iannis Xenakis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0308-1120",
+          "authenticated-orcid": false,
+          "given": "Mauricio",
+          "family": "Garcia de la Torre",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01n1q0h77",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Panamerican University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.47",
+      "type": "book-chapter",
+      "page": "719-720",
+      "title": [
+        "45. In Memoriam, Joel Chadabe"
+      ],
+      "author": [
+        {
+          "given": "Sharon",
+          "family": "Kanach",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03nhjew95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Rouen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.05",
+      "type": "book-chapter",
+      "page": "51-70",
+      "title": [
+        "3. Iannis Xenakis in Berlin"
+      ],
+      "author": [
+        {
+          "given": "Marko",
+          "family": "Slavíček",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.48",
+      "type": "book-chapter",
+      "page": "721-726",
+      "title": [
+        "46. A New Documentary"
+      ],
+      "author": [
+        {
+          "given": "Apostolos",
+          "family": "Loufopoulos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Renata",
+          "family": "Dalianoudi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9052-514X",
+          "authenticated-orcid": false,
+          "given": "Iakovos",
+          "family": "Panagopoulos",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hari",
+          "family": "Marini",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Iannis Xenakis: Music of the Universe"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.50",
+      "type": "book-chapter",
+      "page": "729-732",
+      "title": [
+        "48. Polytope XXI"
+      ],
+      "author": [
+        {
+          "given": "Fabrice",
+          "family": "Marandola",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01pxwe438",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "McGill University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1086-3008",
+          "authenticated-orcid": false,
+          "given": "Myriam",
+          "family": "Boucher",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0161xgx34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université de Montréal"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dominic",
+          "family": "Thibault",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0161xgx34",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université de Montréal"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Tribute to Iannis Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.40",
+      "type": "book-chapter",
+      "page": "635-660",
+      "title": [
+        "38. The Algorithmic Music of Iannis Xenakis–What’s Next?"
+      ],
+      "author": [
+        {
+          "given": "Bill",
+          "family": "Manaris",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00390t168",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "College of Charleston"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.36",
+      "type": "book-chapter",
+      "page": "563-580",
+      "title": [
+        "34. Light Tectonics"
+      ],
+      "author": [
+        {
+          "given": "Yin",
+          "family": "Yu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0264fdx42",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "San Diego State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Conrad",
+          "family": "Harris",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "The New Aesthetics in Iannis Xenakis’s Work"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.10",
+      "type": "book-chapter",
+      "page": "143-156",
+      "title": [
+        "8. Iannis Xenakis’s Materialism"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8087-8611",
+          "authenticated-orcid": false,
+          "given": "Ramón",
+          "family": "del Buey Cañas",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01cby8j38",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Autónoma de Madrid"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00py81415",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Duke University"
+            },
+            {
+              "name": "AMEE (Asociación de Música Electroacústica y Arte Sonoro de España)"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3320-2296",
+          "authenticated-orcid": false,
+          "given": "Oswaldo Emiddio",
+          "family": "Vasquez Hadjilyra",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03efmqc40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Arizona State University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "On the Dialectic of Real-time Computation"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.22",
+      "type": "book-chapter",
+      "page": "337-352",
+      "title": [
+        "20. An Approach to the Epistemic Potential of the UPIC"
+      ],
+      "author": [
+        {
+          "given": "Mauricio",
+          "family": "Meza",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01tmp8f25",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Nacional Autónoma de México"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.20",
+      "type": "book-chapter",
+      "page": "297-318",
+      "title": [
+        "18. Iannis Xenakis’s Pithoprakta"
+      ],
+      "author": [
+        {
+          "given": "Erik",
+          "family": "Christensen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04m5j1k67",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Aalborg University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lisa C.",
+          "family": "Bjerno",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Phenomenological Approach"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.45",
+      "type": "book-chapter",
+      "page": "715-716",
+      "title": [
+        "43. Meta-Xenakis Concert at Suntory Hall, Tokyo"
+      ],
+      "author": [
+        {
+          "given": "Kuniko",
+          "family": "Kato",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.04",
+      "type": "book-chapter",
+      "page": "39-48",
+      "title": [
+        "2. Iannis Xenakis through his Letters at the KSYME Archive"
+      ],
+      "author": [
+        {
+          "given": "Stella",
+          "family": "Kourmpana",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.42",
+      "type": "book-chapter",
+      "page": "679-696",
+      "title": [
+        "40. The Xenakis Networked Performance Marathon 2022"
+      ],
+      "author": [
+        {
+          "given": "Iannis",
+          "family": "Zannos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Carlé",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-2035-9686",
+          "authenticated-orcid": false,
+          "given": "Vasilis",
+          "family": "Agiomyrgianakis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Takumi",
+          "family": "Ikeda",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hanako",
+          "family": "Atake",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "An Experiment in Networked Performance Collaboration Inspired by Iannis Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.00",
+      "type": "book-chapter",
+      "page": "1-2",
+      "title": [
+        "Preface"
+      ],
+      "author": [
+        {
+          "given": "The Meta-Xenakis",
+          "family": "Team Leaders",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.17",
+      "type": "book-chapter",
+      "page": "253-272",
+      "title": [
+        "15. Game Theory and Formal Structure in Iannis Xenakis’s Duel (1959)"
+      ],
+      "author": [
+        {
+          "given": "Mikhail",
+          "family": "Malt",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0121jnt59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institut de Recherche et Coordination Acoustique Musique"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04gf9wd48",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institut de Recherche en Musicologie"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Benny",
+          "family": "Sluchin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0121jnt59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institut de Recherche et Coordination Acoustique Musique"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.01",
+      "type": "book-chapter",
+      "page": "3-20",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Peter",
+          "family": "Nelson",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sharon",
+          "family": "Kanach",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03nhjew95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Rouen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.26",
+      "type": "book-chapter",
+      "page": "401-408",
+      "title": [
+        "24. Liberated Music."
+      ],
+      "author": [
+        {
+          "given": "Νikos",
+          "family": "Kornilios",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Loving Testimony"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.23",
+      "type": "book-chapter",
+      "page": "355-360",
+      "title": [
+        "21. Seeing Music and Listening to Architecture"
+      ],
+      "author": [
+        {
+          "given": "Brigitte",
+          "family": "Métra",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Iannis Xenakis and La Philharmonie de Paris"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.31",
+      "type": "book-chapter",
+      "page": "483-500",
+      "title": [
+        "29. Iannis Xenakis, Inventor of Music—Composer, Engineer, and Architect"
+      ],
+      "author": [
+        {
+          "given": "Cândido",
+          "family": "Lima",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "The Voice of the “Inexpressible” and of “Revelation”"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.46",
+      "type": "book-chapter",
+      "page": "717-718",
+      "title": [
+        "44. The Establishment of the CMRC—KSYME in Athens"
+      ],
+      "author": [
+        {
+          "given": "Nickos",
+          "family": "Harizanos",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katerina",
+          "family": "Tsioukra",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dana",
+          "family": "Papachristou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04v4g9h31",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Thessaly"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Virtual Exhibit"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.13",
+      "type": "book-chapter",
+      "page": "181-198",
+      "title": [
+        "11. On the Link between the Exact Sciences and Music in Iannis Xenakis’s Creative Work"
+      ],
+      "author": [
+        {
+          "given": "Pablo",
+          "family": "Araya",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/056tb7j80",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National University of Córdoba"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.18",
+      "type": "book-chapter",
+      "page": "273-284",
+      "title": [
+        "16. A Myth of Recurrence in Iannis Xenakis’s La Légende d’Eer"
+      ],
+      "author": [
+        {
+          "given": "Anton",
+          "family": "Vishio",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03dbr7087",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.12",
+      "type": "book-chapter",
+      "page": "167-180",
+      "title": [
+        "10. Jean-Étienne Marie and Iannis Xenakis"
+      ],
+      "author": [
+        {
+          "given": "Judith",
+          "family": "Romero Porras",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "The Vision of an Artistic Engineer and a Theorist of Microtonal Music"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.15",
+      "type": "book-chapter",
+      "page": "213-232",
+      "title": [
+        "13. Spatial Movement of Sound Vectors"
+      ],
+      "author": [
+        {
+          "given": "Ambrosio Salvador",
+          "family": "Rodríguez Lara",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01tmp8f25",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Nacional Autónoma de México"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.09",
+      "type": "book-chapter",
+      "page": "115-142",
+      "title": [
+        "7. Continuum versus Disruptum"
+      ],
+      "author": [
+        {
+          "given": "Pierre Albert",
+          "family": "Castanet",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03nhjew95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Rouen"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/030h5jp79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Paris Conservatory"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Poetic-philosophical Approach to the Instrumental and Vocal Works of Iannis Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.08",
+      "type": "book-chapter",
+      "page": "103-114",
+      "title": [
+        "6. Iannis Xenakis’s Free Stochastic Music Program as an Aid to Analysis"
+      ],
+      "author": [
+        {
+          "given": "Ronald",
+          "family": "Squibbs",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02der9h97",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Connecticut"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.25",
+      "type": "book-chapter",
+      "page": "375-398",
+      "title": [
+        "23. Polytropos"
+      ],
+      "author": [
+        {
+          "given": "Panayotis",
+          "family": "Tournikiotis",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Iannis Xenakis, Engineer in Music and Architecture"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.06",
+      "type": "book-chapter",
+      "page": "71-90",
+      "title": [
+        "4. Debating the Noise"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3208-0124",
+          "authenticated-orcid": false,
+          "given": "Jelena",
+          "family": "Janković-Beguš",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "The Reception of Iannis Xenakis’s Music in Serbia as a Part of the SFRY (1960–90)"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.16",
+      "type": "book-chapter",
+      "page": "237-252",
+      "title": [
+        "14. The CIX Archives"
+      ],
+      "author": [
+        {
+          "given": "Cyrille",
+          "family": "Delhaye",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03nhjew95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Rouen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Revalorizations and Hidden Treasures"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.32",
+      "type": "book-chapter",
+      "page": "501-514",
+      "title": [
+        "30. The UPIC System of Iannis Xenakis"
+      ],
+      "author": [
+        {
+          "given": "Peter",
+          "family": "Nelson",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01nrxwf90",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Edinburgh"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Autoethnography as Rapprochement"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.51",
+      "type": "book-chapter",
+      "page": "733-736",
+      "title": [
+        "49. An Architecture of Alchemy"
+      ],
+      "author": [
+        {
+          "given": "David J.",
+          "family": "Lieberman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/029djt864",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Academy of Fine Arts Vienna"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03dbr7087",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Toronto"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Cinematic Painting"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.29",
+      "type": "book-chapter",
+      "page": "439-466",
+      "title": [
+        "27. Music, Science, Architecture"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6811-503X",
+          "authenticated-orcid": false,
+          "given": "Julio",
+          "family": "Estrada",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01tmp8f25",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad Nacional Autónoma de México"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "Two Conversations with Iannis Xenakis"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.24",
+      "type": "book-chapter",
+      "page": "361-374",
+      "title": [
+        "22. Iannis Xenakis/Le Corbusier"
+      ],
+      "author": [
+        {
+          "given": "Guy",
+          "family": "Pimienta",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "A Confrontation en sol dur"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T00:00:00Z",
+            "timestamp": 1728432000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0390.37",
+      "type": "book-chapter",
+      "page": "581-590",
+      "title": [
+        "35. Phoenix-Albatross"
+      ],
+      "author": [
+        {
+          "given": "Iannis",
+          "family": "Zannos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01xm4n520",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ionian University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Takumi",
+          "family": "Ikeda",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Meta-Xenakis"
+      ],
+      "subtitle": [
+        "An Approach to Iannis Xenakis’s Work on Game Theory through Live Coding and Networked Dance"
+      ],
+      "ISBN": [
+        "9781805112242",
+        "9781805112259",
+        "9781805112266",
+        "9781805112297",
+        "9781805112273"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            9
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "25. La Légende de Xenakis Meta Xenakis",
+      "authors": [
+        "Curtis Roads"
+      ],
+      "chapter_doi": "10.11647/obp.0390.27",
+      "citation_pages": "409-428"
+    },
+    {
+      "title": "47. Reportage of a UPISketch Workshop in Japan",
+      "authors": [
+        "Yoshihisa Suzuki"
+      ],
+      "chapter_doi": "10.11647/obp.0390.49",
+      "citation_pages": "727-728"
+    },
+    {
+      "title": "31. UPISketch New Perspectives",
+      "authors": [
+        "Rodolphe Bourotte"
+      ],
+      "chapter_doi": "10.11647/obp.0390.33",
+      "citation_pages": "517-536"
+    },
+    {
+      "title": "17. Iannis Xenakis’s Hibiki Hana Ma and the Japanese Team for Tekkhokan (Steel Pavilion) at Expo ’70, Osaka",
+      "authors": [
+        "Mikako Mizuno"
+      ],
+      "chapter_doi": "10.11647/obp.0390.19",
+      "citation_pages": "285-296"
+    },
+    {
+      "title": "5. Iannis Xenakis in Japan: Productive Performances and Reception of Texts",
+      "authors": [
+        "Mikako Mizuno"
+      ],
+      "chapter_doi": "10.11647/obp.0390.07",
+      "citation_pages": "91-100"
+    },
+    {
+      "title": "1. Iannis Xenakis’s Theater Studies An Unknown Aspect of the Composer’s Life during the Occupation",
+      "authors": [
+        "Nikos Ioakeim"
+      ],
+      "chapter_doi": "10.11647/obp.0390.03",
+      "citation_pages": "29-38"
+    },
+    {
+      "title": "9. Iannis Xenakis’s Philosophy of Music, Stochastics, and the Postmodern Sublime",
+      "authors": [
+        "Nathan Friedman"
+      ],
+      "chapter_doi": "10.11647/obp.0390.11",
+      "citation_pages": "157-166"
+    },
+    {
+      "title": "26. Creating and Learning with UPIC",
+      "authors": [
+        "Takehito Shimazu"
+      ],
+      "chapter_doi": "10.11647/obp.0390.28",
+      "citation_pages": "429-438"
+    },
+    {
+      "title": "37. Notes on A Catalog of Difference",
+      "authors": [
+        "Andrew Lucia"
+      ],
+      "chapter_doi": "10.11647/obp.0390.39",
+      "citation_pages": "605-634"
+    },
+    {
+      "title": "19. Performing Iannis Xenakis’s Polyrhythms A Perception-informed Approach to Renotation",
+      "authors": [
+        "Imri Talgam"
+      ],
+      "chapter_doi": "10.11647/obp.0390.21",
+      "citation_pages": "319-336"
+    },
+    {
+      "title": "51. Iannis Xenakis, 1922–2001",
+      "authors": [
+        "Benny Sluchin"
+      ],
+      "chapter_doi": "10.11647/obp.0390.53",
+      "citation_pages": "747-748"
+    },
+    {
+      "title": "39. The Process of Creating a Computational System A Collective Audiovisual Composition",
+      "authors": [
+        "Hugo Solís",
+        "Mizky Bernal",
+        "Diego Jiménez",
+        "Guillermo Leonardini",
+        "Eunice Pérez"
+      ],
+      "chapter_doi": "10.11647/obp.0390.41",
+      "citation_pages": "661-678"
+    },
+    {
+      "title": "32. Somax2 and Reinterpreting Iannis Xenakis",
+      "authors": [
+        "Mikhail Malt",
+        "Benny Sluchin"
+      ],
+      "chapter_doi": "10.11647/obp.0390.34",
+      "citation_pages": "537-542"
+    },
+    {
+      "title": "36. Mapping the Influence Iannis Xenakis’s GENDYN Algorithms as a Means for Creative Explorations in Live Improvised Feedback Music",
+      "authors": [
+        "Thanos Polymeneas-Liontiris"
+      ],
+      "chapter_doi": "10.11647/obp.0390.38",
+      "citation_pages": "591-604"
+    },
+    {
+      "title": "Prolegomenon Meta-materiality in the Thought and Creative Activity of Iannis Xenakis",
+      "authors": [
+        "James Harley"
+      ],
+      "chapter_doi": "10.11647/obp.0390.02",
+      "citation_pages": "21-26"
+    },
+    {
+      "title": "41. The Xenakis Networked Performance Marathon 2022 (Sustainable Resources)",
+      "authors": [
+        "Iannis Zannos",
+        "Martin Carlé",
+        "Vasilis Agiomyrgianakis",
+        "Takumi Ikeda",
+        "Hanako Atake"
+      ],
+      "chapter_doi": "10.11647/obp.0390.43",
+      "citation_pages": "699-712"
+    },
+    {
+      "title": "28. A Pythagorean Wall of Visual and Auditory Drama",
+      "authors": [
+        "Julio Estrada"
+      ],
+      "chapter_doi": "10.11647/obp.0390.30",
+      "citation_pages": "467-482"
+    },
+    {
+      "title": "50. The Iranian Context of Iannis Xenakis’s Persepolis",
+      "authors": [
+        "Aram Yardumian"
+      ],
+      "chapter_doi": "10.11647/obp.0390.52",
+      "citation_pages": "737-746"
+    },
+    {
+      "title": "33. Xenos A Xenharmonic Dynamic Stochastic Synthesis Virtual Instrument",
+      "authors": [
+        "Raphael Radna"
+      ],
+      "chapter_doi": "10.11647/obp.0390.35",
+      "citation_pages": "543-562"
+    },
+    {
+      "title": "42. Japanese Society of Electronic Music (JSEM) Concert A Tribute Celebrating Iannis Xenakis’s Centennial",
+      "authors": [
+        "Mikako Mizuno"
+      ],
+      "chapter_doi": "10.11647/obp.0390.44",
+      "citation_pages": "713-714"
+    },
+    {
+      "title": "12. Activating Sound Phenomena in the Music of Iannis Xenakis",
+      "authors": [
+        "Mauricio Garcia de la Torre"
+      ],
+      "chapter_doi": "10.11647/obp.0390.14",
+      "citation_pages": "199-212"
+    },
+    {
+      "title": "45. In Memoriam, Joel Chadabe",
+      "authors": [
+        "Sharon Kanach"
+      ],
+      "chapter_doi": "10.11647/obp.0390.47",
+      "citation_pages": "719-720"
+    },
+    {
+      "title": "3. Iannis Xenakis in Berlin",
+      "authors": [
+        "Marko Slavíček"
+      ],
+      "chapter_doi": "10.11647/obp.0390.05",
+      "citation_pages": "51-70"
+    },
+    {
+      "title": "46. A New Documentary Iannis Xenakis: Music of the Universe",
+      "authors": [
+        "Apostolos Loufopoulos",
+        "Renata Dalianoudi",
+        "Iakovos Panagopoulos",
+        "Hari Marini"
+      ],
+      "chapter_doi": "10.11647/obp.0390.48",
+      "citation_pages": "721-726"
+    },
+    {
+      "title": "48. Polytope XXI A Tribute to Iannis Xenakis",
+      "authors": [
+        "Fabrice Marandola",
+        "Myriam Boucher",
+        "Dominic Thibault"
+      ],
+      "chapter_doi": "10.11647/obp.0390.50",
+      "citation_pages": "729-732"
+    },
+    {
+      "title": "38. The Algorithmic Music of Iannis Xenakis–What’s Next?",
+      "authors": [
+        "Bill Manaris"
+      ],
+      "chapter_doi": "10.11647/obp.0390.40",
+      "citation_pages": "635-660"
+    },
+    {
+      "title": "34. Light Tectonics The New Aesthetics in Iannis Xenakis’s Work",
+      "authors": [
+        "Yin Yu",
+        "Conrad Harris"
+      ],
+      "chapter_doi": "10.11647/obp.0390.36",
+      "citation_pages": "563-580"
+    },
+    {
+      "title": "8. Iannis Xenakis’s Materialism On the Dialectic of Real-time Computation",
+      "authors": [
+        "Ramón del Buey Cañas",
+        "Oswaldo Emiddio Vasquez Hadjilyra"
+      ],
+      "chapter_doi": "10.11647/obp.0390.10",
+      "citation_pages": "143-156"
+    },
+    {
+      "title": "20. An Approach to the Epistemic Potential of the UPIC",
+      "authors": [
+        "Mauricio Meza"
+      ],
+      "chapter_doi": "10.11647/obp.0390.22",
+      "citation_pages": "337-352"
+    },
+    {
+      "title": "18. Iannis Xenakis’s Pithoprakta A Phenomenological Approach",
+      "authors": [
+        "Erik Christensen",
+        "Lisa C. Bjerno"
+      ],
+      "chapter_doi": "10.11647/obp.0390.20",
+      "citation_pages": "297-318"
+    },
+    {
+      "title": "43. Meta-Xenakis Concert at Suntory Hall, Tokyo",
+      "authors": [
+        "Kuniko Kato"
+      ],
+      "chapter_doi": "10.11647/obp.0390.45",
+      "citation_pages": "715-716"
+    },
+    {
+      "title": "2. Iannis Xenakis through his Letters at the KSYME Archive",
+      "authors": [
+        "Stella Kourmpana"
+      ],
+      "chapter_doi": "10.11647/obp.0390.04",
+      "citation_pages": "39-48"
+    },
+    {
+      "title": "40. The Xenakis Networked Performance Marathon 2022 An Experiment in Networked Performance Collaboration Inspired by Iannis Xenakis",
+      "authors": [
+        "Iannis Zannos",
+        "Martin Carlé",
+        "Vasilis Agiomyrgianakis",
+        "Takumi Ikeda",
+        "Hanako Atake"
+      ],
+      "chapter_doi": "10.11647/obp.0390.42",
+      "citation_pages": "679-696"
+    },
+    {
+      "title": "Preface",
+      "authors": [
+        "The Meta-Xenakis Team Leaders"
+      ],
+      "chapter_doi": "10.11647/obp.0390.00",
+      "citation_pages": "1-2"
+    },
+    {
+      "title": "15. Game Theory and Formal Structure in Iannis Xenakis’s Duel (1959)",
+      "authors": [
+        "Mikhail Malt",
+        "Benny Sluchin"
+      ],
+      "chapter_doi": "10.11647/obp.0390.17",
+      "citation_pages": "253-272"
+    },
+    {
+      "title": "Introduction Meta-Xenakis",
+      "authors": [
+        "Peter Nelson",
+        "Sharon Kanach"
+      ],
+      "chapter_doi": "10.11647/obp.0390.01",
+      "citation_pages": "3-20"
+    },
+    {
+      "title": "24. Liberated Music. A Loving Testimony",
+      "authors": [
+        "Νikos Kornilios"
+      ],
+      "chapter_doi": "10.11647/obp.0390.26",
+      "citation_pages": "401-408"
+    },
+    {
+      "title": "21. Seeing Music and Listening to Architecture Iannis Xenakis and La Philharmonie de Paris",
+      "authors": [
+        "Brigitte Métra"
+      ],
+      "chapter_doi": "10.11647/obp.0390.23",
+      "citation_pages": "355-360"
+    },
+    {
+      "title": "29. Iannis Xenakis, Inventor of Music—Composer, Engineer, and Architect The Voice of the “Inexpressible” and of “Revelation”",
+      "authors": [
+        "Cândido Lima"
+      ],
+      "chapter_doi": "10.11647/obp.0390.31",
+      "citation_pages": "483-500"
+    },
+    {
+      "title": "44. The Establishment of the CMRC—KSYME in Athens A Virtual Exhibit",
+      "authors": [
+        "Nickos Harizanos",
+        "Katerina Tsioukra",
+        "Dana Papachristou"
+      ],
+      "chapter_doi": "10.11647/obp.0390.46",
+      "citation_pages": "717-718"
+    },
+    {
+      "title": "11. On the Link between the Exact Sciences and Music in Iannis Xenakis’s Creative Work",
+      "authors": [
+        "Pablo Araya"
+      ],
+      "chapter_doi": "10.11647/obp.0390.13",
+      "citation_pages": "181-198"
+    },
+    {
+      "title": "16. A Myth of Recurrence in Iannis Xenakis’s La Légende d’Eer",
+      "authors": [
+        "Anton Vishio"
+      ],
+      "chapter_doi": "10.11647/obp.0390.18",
+      "citation_pages": "273-284"
+    },
+    {
+      "title": "10. Jean-Étienne Marie and Iannis Xenakis The Vision of an Artistic Engineer and a Theorist of Microtonal Music",
+      "authors": [
+        "Judith Romero Porras"
+      ],
+      "chapter_doi": "10.11647/obp.0390.12",
+      "citation_pages": "167-180"
+    },
+    {
+      "title": "13. Spatial Movement of Sound Vectors",
+      "authors": [
+        "Ambrosio Salvador Rodríguez Lara"
+      ],
+      "chapter_doi": "10.11647/obp.0390.15",
+      "citation_pages": "213-232"
+    },
+    {
+      "title": "7. Continuum versus Disruptum A Poetic-philosophical Approach to the Instrumental and Vocal Works of Iannis Xenakis",
+      "authors": [
+        "Pierre Albert Castanet"
+      ],
+      "chapter_doi": "10.11647/obp.0390.09",
+      "citation_pages": "115-142"
+    },
+    {
+      "title": "6. Iannis Xenakis’s Free Stochastic Music Program as an Aid to Analysis",
+      "authors": [
+        "Ronald Squibbs"
+      ],
+      "chapter_doi": "10.11647/obp.0390.08",
+      "citation_pages": "103-114"
+    },
+    {
+      "title": "23. Polytropos Iannis Xenakis, Engineer in Music and Architecture",
+      "authors": [
+        "Panayotis Tournikiotis"
+      ],
+      "chapter_doi": "10.11647/obp.0390.25",
+      "citation_pages": "375-398"
+    },
+    {
+      "title": "4. Debating the Noise The Reception of Iannis Xenakis’s Music in Serbia as a Part of the SFRY (1960–90)",
+      "authors": [
+        "Jelena Janković-Beguš"
+      ],
+      "chapter_doi": "10.11647/obp.0390.06",
+      "citation_pages": "71-90"
+    },
+    {
+      "title": "14. The CIX Archives Revalorizations and Hidden Treasures",
+      "authors": [
+        "Cyrille Delhaye"
+      ],
+      "chapter_doi": "10.11647/obp.0390.16",
+      "citation_pages": "237-252"
+    },
+    {
+      "title": "30. The UPIC System of Iannis Xenakis Autoethnography as Rapprochement",
+      "authors": [
+        "Peter Nelson"
+      ],
+      "chapter_doi": "10.11647/obp.0390.32",
+      "citation_pages": "501-514"
+    },
+    {
+      "title": "49. An Architecture of Alchemy A Cinematic Painting",
+      "authors": [
+        "David J. Lieberman"
+      ],
+      "chapter_doi": "10.11647/obp.0390.51",
+      "citation_pages": "733-736"
+    },
+    {
+      "title": "27. Music, Science, Architecture Two Conversations with Iannis Xenakis",
+      "authors": [
+        "Julio Estrada"
+      ],
+      "chapter_doi": "10.11647/obp.0390.29",
+      "citation_pages": "439-466"
+    },
+    {
+      "title": "22. Iannis Xenakis/Le Corbusier A Confrontation en sol dur",
+      "authors": [
+        "Guy Pimienta"
+      ],
+      "chapter_doi": "10.11647/obp.0390.24",
+      "citation_pages": "361-374"
+    },
+    {
+      "title": "35. Phoenix-Albatross An Approach to Iannis Xenakis’s Work on Game Theory through Live Coding and Networked Dance",
+      "authors": [
+        "Iannis Zannos",
+        "Takumi Ikeda"
+      ],
+      "chapter_doi": "10.11647/obp.0390.37",
+      "citation_pages": "581-590"
+    }
+  ]
+}

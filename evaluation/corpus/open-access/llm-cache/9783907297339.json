@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T15:06:27.920347+00:00",
+  "generated_at": "2026-08-11T04:38:36.046380+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -184,7 +184,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 4.738595649000217,
+      "elapsed_seconds": 5.8953924779999625,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -482,101 +482,8 @@
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
-      "chapters": [
-        {
-          "title": "La LIPAD et la bonne foi Un principe essentiel lors de la requête d’accès à un document",
-          "authors": [
-            "David Hofmann",
-            "chien cri                   "
-          ],
-          "pdf_start_index": 62,
-          "pdf_end_index": 90,
-          "citation_pages": "49-78",
-          "confidence": 0.98,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Droit d’accès aux documents officiels et protection des intérêts privés Synthèse après 20 ans de pratique à Genève",
-          "authors": [
-            "Aurélie Gavillet \nDroit",
-            "Synthèse",
-            "Y. En"
-          ],
-          "pdf_start_index": 92,
-          "pdf_end_index": 120,
-          "citation_pages": "79-108",
-          "confidence": 0.96,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "L’accès aux archives publiques : à la recherche d’un équilibre entre protection des données personnelles et droit à l’information",
-          "authors": [
-            "Pierre Flückiger"
-          ],
-          "pdf_start_index": 122,
-          "pdf_end_index": 142,
-          "citation_pages": "109-130",
-          "confidence": 0.96,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Zugang zu Prüfungsunterlagen Anspruch nach Öffentlichkeitsprinzip unter Berücksichtigung des Datenschutzrechts und des Verfahrensrechts",
-          "authors": [
-            "Julian Powell",
-            "I. Fragestellung",
-            "Départ",
-            "Extraordinaire                                                                                         132",
-            "Y. Extraordinaire"
-          ],
-          "pdf_start_index": 144,
-          "pdf_end_index": 161,
-          "citation_pages": "131-148",
-          "confidence": 0.98,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Principes de procédure poussés dans les cordes par celui de la transparence ?",
-          "authors": [
-            "Y. Habitant"
-          ],
-          "pdf_start_index": 162,
-          "pdf_end_index": 184,
-          "citation_pages": "149-172",
-          "confidence": 0.96,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "La transparence — un principe devenu très populaire L’exemple fribourgeois",
-          "authors": [
-            "Martine Stoffel"
-          ],
-          "pdf_start_index": 186,
-          "pdf_end_index": 214,
-          "citation_pages": "173-202",
-          "confidence": 0.95,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Les 20 ans de la LIPAD — Période de 2001–2009",
-          "authors": [
-            "Christine Sayegh\nLes",
-            "Période"
-          ],
-          "pdf_start_index": 216,
-          "pdf_end_index": 227,
-          "citation_pages": null,
-          "confidence": 0.93,
-          "page_mapping_confidence": "unmappable",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 65.44168558297679,
+      "chapters": [],
+      "elapsed_seconds": 68.13690662600015,
       "demand_at_run": 0
     },
     "qwen3-coder-next": {

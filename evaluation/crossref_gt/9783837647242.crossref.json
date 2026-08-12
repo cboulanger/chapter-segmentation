@@ -1,0 +1,914 @@
+{
+  "isbn": "9783837647242",
+  "fetched_at": "2026-08-11T22:58:05.878934+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839447246-008",
+      "type": "book-chapter",
+      "page": "143-158",
+      "title": [
+        "Das Thema des Nationalsozialismus in Prosawerken der mexikanischen Literatur der Gegenwart"
+      ],
+      "author": [
+        {
+          "given": "Adriana",
+          "family": "Haro-Luviano de Rall",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dietrich",
+          "family": "Rall",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Marco Thomas",
+          "family": "Bosshard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Iulia-Karin",
+          "family": "Patrut",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-001",
+      "type": "book-chapter",
+      "page": "7-14",
+      "title": [
+        "Vorwort"
+      ],
+      "author": [
+        {
+          "given": "Marco Thomas",
+          "family": "Bosshard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Iulia-Karin",
+          "family": "Patrut",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-012",
+      "type": "book-chapter",
+      "page": "225-242",
+      "title": [
+        "Fluchtort Madrid"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0345-8493",
+          "authenticated-orcid": true,
+          "given": "Volker",
+          "family": "Jaeckel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Nationalsozialisten und Kriegsverbrecher in der spanischen Gegenwartsliteratur"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Marco Thomas",
+          "family": "Bosshard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Iulia-Karin",
+          "family": "Patrut",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-005",
+      "type": "book-chapter",
+      "page": "75-88",
+      "title": [
+        "Gedächtnis und ›Heimat‹ im Transfer zwischen Osteuropa, Lateinamerika und Deutschland"
+      ],
+      "author": [
+        {
+          "given": "Wolfgang",
+          "family": "Johann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Ernesto Kroch in Breslau, Montevideo und Frankfurt"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-003",
+      "type": "book-chapter",
+      "page": "37-52",
+      "title": [
+        "Nationalsozialismus und die Zerstörung der narrativen Tradition des Humanen"
+      ],
+      "author": [
+        {
+          "given": "Dagmar von",
+          "family": "Hoff",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Artur Dinters Zeitroman Die Sünde wider das Blut - eine Vorlage für Adolf Hitlers Mein Kampf"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-013",
+      "type": "book-chapter",
+      "page": "243-270",
+      "title": [
+        "Verflochtene Erinnerungen"
+      ],
+      "author": [
+        {
+          "given": "Claudia",
+          "family": "Gronemann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Der Zweite Weltkrieg, die algerische Geschichte und die Figur des Nazitäters in der nordafrikanischen Literatur"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-009",
+      "type": "book-chapter",
+      "page": "159-180",
+      "title": [
+        "Efraín Huerta und José Revueltas"
+      ],
+      "author": [
+        {
+          "given": "Sergio",
+          "family": "Ugalde Quintana",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Literatur und Antifaschismus in der Zeitung El Popular (1939-1943)"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-007",
+      "type": "book-chapter",
+      "page": "115-142",
+      "title": [
+        "Das Verstörende erzählen"
+      ],
+      "author": [
+        {
+          "given": "Sabine",
+          "family": "Schlickers",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Der Nationalsozialismus in Literatur und Film Argentiniens"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-002",
+      "type": "book-chapter",
+      "page": "15-36",
+      "title": [
+        "Fremdere Blicke"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0606-9493",
+          "authenticated-orcid": true,
+          "given": "Oliver",
+          "family": "Lubrich",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Reisen ins Reich von der Peripherie"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-004",
+      "type": "book-chapter",
+      "page": "53-74",
+      "title": [
+        "Transnationale Perspektiven - heterogene Erinnerungen?"
+      ],
+      "author": [
+        {
+          "given": "Iulia-Karin",
+          "family": "Patrut",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Deutschsprachige jüdische und nicht-jüdische Darstellungen des Zweiten Weltkriegs in Osteuropa"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-014",
+      "type": "book-chapter",
+      "page": "271-288",
+      "title": [
+        "›Good Empire‹, ›Bad Empire‹"
+      ],
+      "author": [
+        {
+          "given": "Gilbert",
+          "family": "Shang Ndi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Representations of Nazism and Holocaust in Sub-Saharan African Literatures"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-010",
+      "type": "book-chapter",
+      "page": "181-202",
+      "title": [
+        "Nationalsozialistische Agitation in der kolumbianischen und brasilianischen Provinz"
+      ],
+      "author": [
+        {
+          "given": "Marco Thomas",
+          "family": "Bosshard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Los informantes von Juan Gabriel Vásquez und A Segunda Pátria von Miguel Sanches Neto als Basis weitergehender Überlegungen zu einer chrono-mnemotopischen Klassifizierung ›peripherer‹ Romane über den Zweiten Weltkrieg"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-011",
+      "type": "book-chapter",
+      "page": "203-224",
+      "title": [
+        "Against Oblivion"
+      ],
+      "author": [
+        {
+          "given": "Fernando",
+          "family": "García Naharro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Himmelweg and the Theatre of the Holocaust"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-006",
+      "type": "book-chapter",
+      "page": "89-114",
+      "title": [
+        "Brazil's Entangled Takes on the Holocaust"
+      ],
+      "author": [
+        {
+          "given": "Gundo",
+          "family": "Rial y Costas",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "subtitle": [
+        "Writing and Filming Olga Benario"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839447246-015",
+      "type": "book-chapter",
+      "page": "289-296",
+      "title": [
+        "Autor*innen- und Herausgeber*innenverzeichnis"
+      ],
+      "author": [
+        {
+          "given": "Marco Thomas",
+          "family": "Bosshard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Iulia-Karin",
+          "family": "Patrut",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Kulturwissenschaft",
+        "Globalisierte Erinnerungskultur"
+      ],
+      "ISBN": [
+        "9783837647242",
+        "9783839447246"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            27
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Das Thema des Nationalsozialismus in Prosawerken der mexikanischen Literatur der Gegenwart",
+      "authors": [
+        "Adriana Haro-Luviano de Rall",
+        "Dietrich Rall"
+      ],
+      "chapter_doi": "10.14361/9783839447246-008",
+      "citation_pages": "143-158"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Marco Thomas Bosshard",
+        "Iulia-Karin Patrut"
+      ],
+      "chapter_doi": "10.14361/9783839447246-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Vorwort",
+      "authors": [
+        "Marco Thomas Bosshard",
+        "Iulia-Karin Patrut"
+      ],
+      "chapter_doi": "10.14361/9783839447246-001",
+      "citation_pages": "7-14"
+    },
+    {
+      "title": "Fluchtort Madrid Nationalsozialisten und Kriegsverbrecher in der spanischen Gegenwartsliteratur",
+      "authors": [
+        "Volker Jaeckel"
+      ],
+      "chapter_doi": "10.14361/9783839447246-012",
+      "citation_pages": "225-242"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Marco Thomas Bosshard",
+        "Iulia-Karin Patrut"
+      ],
+      "chapter_doi": "10.14361/9783839447246-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Gedächtnis und ›Heimat‹ im Transfer zwischen Osteuropa, Lateinamerika und Deutschland Ernesto Kroch in Breslau, Montevideo und Frankfurt",
+      "authors": [
+        "Wolfgang Johann"
+      ],
+      "chapter_doi": "10.14361/9783839447246-005",
+      "citation_pages": "75-88"
+    },
+    {
+      "title": "Nationalsozialismus und die Zerstörung der narrativen Tradition des Humanen Artur Dinters Zeitroman Die Sünde wider das Blut - eine Vorlage für Adolf Hitlers Mein Kampf",
+      "authors": [
+        "Dagmar von Hoff"
+      ],
+      "chapter_doi": "10.14361/9783839447246-003",
+      "citation_pages": "37-52"
+    },
+    {
+      "title": "Verflochtene Erinnerungen Der Zweite Weltkrieg, die algerische Geschichte und die Figur des Nazitäters in der nordafrikanischen Literatur",
+      "authors": [
+        "Claudia Gronemann"
+      ],
+      "chapter_doi": "10.14361/9783839447246-013",
+      "citation_pages": "243-270"
+    },
+    {
+      "title": "Efraín Huerta und José Revueltas Literatur und Antifaschismus in der Zeitung El Popular (1939-1943)",
+      "authors": [
+        "Sergio Ugalde Quintana"
+      ],
+      "chapter_doi": "10.14361/9783839447246-009",
+      "citation_pages": "159-180"
+    },
+    {
+      "title": "Das Verstörende erzählen Der Nationalsozialismus in Literatur und Film Argentiniens",
+      "authors": [
+        "Sabine Schlickers"
+      ],
+      "chapter_doi": "10.14361/9783839447246-007",
+      "citation_pages": "115-142"
+    },
+    {
+      "title": "Fremdere Blicke Reisen ins Reich von der Peripherie",
+      "authors": [
+        "Oliver Lubrich"
+      ],
+      "chapter_doi": "10.14361/9783839447246-002",
+      "citation_pages": "15-36"
+    },
+    {
+      "title": "Transnationale Perspektiven - heterogene Erinnerungen? Deutschsprachige jüdische und nicht-jüdische Darstellungen des Zweiten Weltkriegs in Osteuropa",
+      "authors": [
+        "Iulia-Karin Patrut"
+      ],
+      "chapter_doi": "10.14361/9783839447246-004",
+      "citation_pages": "53-74"
+    },
+    {
+      "title": "›Good Empire‹, ›Bad Empire‹ Representations of Nazism and Holocaust in Sub-Saharan African Literatures",
+      "authors": [
+        "Gilbert Shang Ndi"
+      ],
+      "chapter_doi": "10.14361/9783839447246-014",
+      "citation_pages": "271-288"
+    },
+    {
+      "title": "Nationalsozialistische Agitation in der kolumbianischen und brasilianischen Provinz Los informantes von Juan Gabriel Vásquez und A Segunda Pátria von Miguel Sanches Neto als Basis weitergehender Überlegungen zu einer chrono-mnemotopischen Klassifizierung ›peripherer‹ Romane über den Zweiten Weltkrieg",
+      "authors": [
+        "Marco Thomas Bosshard"
+      ],
+      "chapter_doi": "10.14361/9783839447246-010",
+      "citation_pages": "181-202"
+    },
+    {
+      "title": "Against Oblivion Himmelweg and the Theatre of the Holocaust",
+      "authors": [
+        "Fernando García Naharro"
+      ],
+      "chapter_doi": "10.14361/9783839447246-011",
+      "citation_pages": "203-224"
+    },
+    {
+      "title": "Brazil's Entangled Takes on the Holocaust Writing and Filming Olga Benario",
+      "authors": [
+        "Gundo Rial y Costas"
+      ],
+      "chapter_doi": "10.14361/9783839447246-006",
+      "citation_pages": "89-114"
+    },
+    {
+      "title": "Autor*innen- und Herausgeber*innenverzeichnis",
+      "authors": [
+        "Marco Thomas Bosshard",
+        "Iulia-Karin Patrut"
+      ],
+      "chapter_doi": "10.14361/9783839447246-015",
+      "citation_pages": "289-296"
+    }
+  ]
+}

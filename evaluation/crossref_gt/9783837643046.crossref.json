@@ -1,0 +1,1428 @@
+{
+  "isbn": "9783837643046",
+  "fetched_at": "2026-08-11T22:58:02.887620+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-016",
+      "type": "book-chapter",
+      "page": "299-316",
+      "title": [
+        "When Game Mechanics Come Crawling out of Ant Colonies"
+      ],
+      "author": [
+        {
+          "given": "Michelle",
+          "family": "Westerlaken",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-007",
+      "type": "book-chapter",
+      "page": "115-138",
+      "title": [
+        "Hansel and Gretel"
+      ],
+      "author": [
+        {
+          "given": "Hiloko",
+          "family": "Kato",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "René",
+          "family": "Bauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "subtitle": [
+        "Design and Reception of Orientation Cues in Game Space"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-008",
+      "type": "book-chapter",
+      "page": "139-168",
+      "title": [
+        "The Spectacular Space"
+      ],
+      "author": [
+        {
+          "given": "René",
+          "family": "Bauer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hiloko",
+          "family": "Kato",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "subtitle": [
+        "Rules and Guiding Principles of Irrational Spaces in Games"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-005",
+      "type": "book-chapter",
+      "page": "67-86",
+      "title": [
+        "Requirements for a General Game Mechanics Framework"
+      ],
+      "author": [
+        {
+          "given": "Imre",
+          "family": "Hofmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-003",
+      "type": "book-chapter",
+      "page": "35-46",
+      "title": [
+        "Games as a Special Zone"
+      ],
+      "author": [
+        {
+          "given": "René",
+          "family": "Bauer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "subtitle": [
+        "Motivation Mechanics of Games"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-014",
+      "type": "book-chapter",
+      "page": "267-290",
+      "title": [
+        "Game Mechanics of Serious Urban Games"
+      ],
+      "author": [
+        {
+          "given": "Mela",
+          "family": "Kocher",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "subtitle": [
+        "Designing for the Ludic City"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-013",
+      "type": "book-chapter",
+      "page": "259-266",
+      "title": [
+        "Rules Shape Spaces Spaces Shape Rules"
+      ],
+      "author": [
+        {
+          "given": "Ulrich",
+          "family": "Götz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-012",
+      "type": "book-chapter",
+      "page": "243-256",
+      "title": [
+        "The Ethical Avatar"
+      ],
+      "author": [
+        {
+          "given": "Wolfgang",
+          "family": "Walk",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark L.",
+          "family": "Barrett",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-001",
+      "type": "book-chapter",
+      "page": "7-16",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Beat",
+          "family": "Suter",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mela",
+          "family": "Kocher",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "René",
+          "family": "Bauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-010",
+      "type": "book-chapter",
+      "page": "193-216",
+      "title": [
+        "Ethics as a Game Mechanism"
+      ],
+      "author": [
+        {
+          "given": "Wolfgang",
+          "family": "Walk",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-015",
+      "type": "book-chapter",
+      "page": "293-298",
+      "title": [
+        "NPC and Me"
+      ],
+      "author": [
+        {
+          "given": "Günter",
+          "family": "Hack",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "subtitle": [
+        "How to Become a Non-Player Character"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-017",
+      "type": "book-chapter",
+      "page": "317",
+      "title": [
+        "Authors"
+      ],
+      "author": [
+        {
+          "given": "Beat",
+          "family": "Suter",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mela",
+          "family": "Kocher",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "René",
+          "family": "Bauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Contents"
+      ],
+      "author": [
+        {
+          "given": "Beat",
+          "family": "Suter",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mela",
+          "family": "Kocher",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "René",
+          "family": "Bauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-009",
+      "type": "book-chapter",
+      "page": "169-190",
+      "title": [
+        "Nonverbal Guidance Systems"
+      ],
+      "author": [
+        {
+          "given": "Francine",
+          "family": "Rotzetter",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "subtitle": [
+        "Seamless Player-leading in Open-world Games"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Beat",
+          "family": "Suter",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mela",
+          "family": "Kocher",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "René",
+          "family": "Bauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-006",
+      "type": "book-chapter",
+      "page": "87-112",
+      "title": [
+        "Underneath and Beyond Mechanics"
+      ],
+      "author": [
+        {
+          "given": "Carlo",
+          "family": "Fabricatore",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "subtitle": [
+        "An Activity-theoretical Perspective on Meaning-making in Gameplay"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-002",
+      "type": "book-chapter",
+      "page": "19-34",
+      "title": [
+        "Rules of Play as a Framework for the \"Magic Circle\""
+      ],
+      "author": [
+        {
+          "given": "Beat",
+          "family": "Suter",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-004",
+      "type": "book-chapter",
+      "page": "47-64",
+      "title": [
+        "Play Computers"
+      ],
+      "author": [
+        {
+          "given": "Miguel",
+          "family": "Sicart",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "subtitle": [
+        "A Letter to the Reader"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                17
+              ]
+            ],
+            "date-time": "2018-10-17T00:00:00Z",
+            "timestamp": 1539734400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839443040-011",
+      "type": "book-chapter",
+      "page": "217-242",
+      "title": [
+        "The Player as Puppet"
+      ],
+      "author": [
+        {
+          "given": "Hiloko",
+          "family": "Kato",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "René",
+          "family": "Bauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Edition Medienwissenschaft",
+        "Games and Rules"
+      ],
+      "subtitle": [
+        "Visualized Decisions as a Challenge for Computer Games"
+      ],
+      "ISBN": [
+        "9783837643046",
+        "9783839443040"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            17
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "When Game Mechanics Come Crawling out of Ant Colonies",
+      "authors": [
+        "Michelle Westerlaken"
+      ],
+      "chapter_doi": "10.14361/9783839443040-016",
+      "citation_pages": "299-316"
+    },
+    {
+      "title": "Hansel and Gretel Design and Reception of Orientation Cues in Game Space",
+      "authors": [
+        "Hiloko Kato",
+        "René Bauer"
+      ],
+      "chapter_doi": "10.14361/9783839443040-007",
+      "citation_pages": "115-138"
+    },
+    {
+      "title": "The Spectacular Space Rules and Guiding Principles of Irrational Spaces in Games",
+      "authors": [
+        "René Bauer",
+        "Hiloko Kato"
+      ],
+      "chapter_doi": "10.14361/9783839443040-008",
+      "citation_pages": "139-168"
+    },
+    {
+      "title": "Requirements for a General Game Mechanics Framework",
+      "authors": [
+        "Imre Hofmann"
+      ],
+      "chapter_doi": "10.14361/9783839443040-005",
+      "citation_pages": "67-86"
+    },
+    {
+      "title": "Games as a Special Zone Motivation Mechanics of Games",
+      "authors": [
+        "René Bauer"
+      ],
+      "chapter_doi": "10.14361/9783839443040-003",
+      "citation_pages": "35-46"
+    },
+    {
+      "title": "Game Mechanics of Serious Urban Games Designing for the Ludic City",
+      "authors": [
+        "Mela Kocher"
+      ],
+      "chapter_doi": "10.14361/9783839443040-014",
+      "citation_pages": "267-290"
+    },
+    {
+      "title": "Rules Shape Spaces Spaces Shape Rules",
+      "authors": [
+        "Ulrich Götz"
+      ],
+      "chapter_doi": "10.14361/9783839443040-013",
+      "citation_pages": "259-266"
+    },
+    {
+      "title": "The Ethical Avatar",
+      "authors": [
+        "Wolfgang Walk",
+        "Mark L. Barrett"
+      ],
+      "chapter_doi": "10.14361/9783839443040-012",
+      "citation_pages": "243-256"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Beat Suter",
+        "Mela Kocher",
+        "René Bauer"
+      ],
+      "chapter_doi": "10.14361/9783839443040-001",
+      "citation_pages": "7-16"
+    },
+    {
+      "title": "Ethics as a Game Mechanism",
+      "authors": [
+        "Wolfgang Walk"
+      ],
+      "chapter_doi": "10.14361/9783839443040-010",
+      "citation_pages": "193-216"
+    },
+    {
+      "title": "NPC and Me How to Become a Non-Player Character",
+      "authors": [
+        "Günter Hack"
+      ],
+      "chapter_doi": "10.14361/9783839443040-015",
+      "citation_pages": "293-298"
+    },
+    {
+      "title": "Authors",
+      "authors": [
+        "Beat Suter",
+        "Mela Kocher",
+        "René Bauer"
+      ],
+      "chapter_doi": "10.14361/9783839443040-017",
+      "citation_pages": "317"
+    },
+    {
+      "title": "Contents",
+      "authors": [
+        "Beat Suter",
+        "Mela Kocher",
+        "René Bauer"
+      ],
+      "chapter_doi": "10.14361/9783839443040-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Nonverbal Guidance Systems Seamless Player-leading in Open-world Games",
+      "authors": [
+        "Francine Rotzetter"
+      ],
+      "chapter_doi": "10.14361/9783839443040-009",
+      "citation_pages": "169-190"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Beat Suter",
+        "Mela Kocher",
+        "René Bauer"
+      ],
+      "chapter_doi": "10.14361/9783839443040-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Underneath and Beyond Mechanics An Activity-theoretical Perspective on Meaning-making in Gameplay",
+      "authors": [
+        "Carlo Fabricatore"
+      ],
+      "chapter_doi": "10.14361/9783839443040-006",
+      "citation_pages": "87-112"
+    },
+    {
+      "title": "Rules of Play as a Framework for the \"Magic Circle\"",
+      "authors": [
+        "Beat Suter"
+      ],
+      "chapter_doi": "10.14361/9783839443040-002",
+      "citation_pages": "19-34"
+    },
+    {
+      "title": "Play Computers A Letter to the Reader",
+      "authors": [
+        "Miguel Sicart"
+      ],
+      "chapter_doi": "10.14361/9783839443040-004",
+      "citation_pages": "47-64"
+    },
+    {
+      "title": "The Player as Puppet Visualized Decisions as a Challenge for Computer Games",
+      "authors": [
+        "Hiloko Kato",
+        "René Bauer"
+      ],
+      "chapter_doi": "10.14361/9783839443040-011",
+      "citation_pages": "217-242"
+    }
+  ]
+}

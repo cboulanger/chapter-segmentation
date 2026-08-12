@@ -1,0 +1,1018 @@
+{
+  "isbn": "9781805115007",
+  "fetched_at": "2026-08-11T22:58:29.125820+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.03",
+      "type": "book-chapter",
+      "page": "33-56",
+      "title": [
+        "3. Memetic antisemitism"
+      ],
+      "author": [
+        {
+          "given": "Lev",
+          "family": "Topor",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04cg6c004",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Academic College of Tel Aviv-Yafo"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "subtitle": [
+        "How memes teach age-old hatred"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.09",
+      "type": "book-chapter",
+      "page": "201-220",
+      "title": [
+        "9. Studying soft hate speech online"
+      ],
+      "author": [
+        {
+          "given": "Dimitris",
+          "family": "Serafis",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/012p63287",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Groningen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Janina",
+          "family": "Wildfeuer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/012p63287",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Groningen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "subtitle": [
+        "Synthesising approaches from multimodality research and argumentation theory"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.01",
+      "type": "book-chapter",
+      "page": "1-12",
+      "title": [
+        "1. Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0006-1714-2015",
+          "authenticated-orcid": false,
+          "given": "Marcus",
+          "family": "Scheiber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/045y6d111",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Vechta"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2847-4542",
+          "authenticated-orcid": false,
+          "given": "Matthias J.",
+          "family": "Becker",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0190ak572",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "New York University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.08",
+      "type": "book-chapter",
+      "page": "173-200",
+      "title": [
+        "8. Pictured hate"
+      ],
+      "author": [
+        {
+          "given": "Lisa",
+          "family": "Bogerts",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wyn",
+          "family": "Brodersen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Jena Institute for Democracy and Civil Society"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Maik",
+          "family": "Fielitz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Jena Institute for Democracy and Civil Society"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pablo",
+          "family": "Jost",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/023b0x485",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Johannes Gutenberg University Mainz"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "subtitle": [
+        "A visual discourse analysis of derogatory memes on Telegram"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.05",
+      "type": "book-chapter",
+      "page": "79-106",
+      "title": [
+        "5. Same tools, different target"
+      ],
+      "author": [
+        {
+          "given": "Carmen",
+          "family": "Aguilera-Carnerero",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04njjy449",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad de Granada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2847-4542",
+          "authenticated-orcid": false,
+          "given": "Matthias J.",
+          "family": "Becker",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0190ak572",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "New York University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-1714-2015",
+          "authenticated-orcid": false,
+          "given": "Marcus",
+          "family": "Scheiber",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/045y6d111",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Vechta"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "subtitle": [
+        "Countering hate speech with memes"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.02",
+      "type": "book-chapter",
+      "page": "13-32",
+      "title": [
+        "2. The “Happy Merchant” as an antisemitic hate picture"
+      ],
+      "author": [
+        {
+          "given": "Uffa",
+          "family": "Jensen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03v4gjf40",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universität Berlin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "subtitle": [
+        "A historical perspective on visual antisemitism"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.04",
+      "type": "book-chapter",
+      "page": "57-78",
+      "title": [
+        "4. Extremist internet memes as a means of persuasion:"
+      ],
+      "author": [
+        {
+          "given": "Eemeli",
+          "family": "Hakoköngäs",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/040af2s02",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Helsinki"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Otto",
+          "family": "Halmesvaara",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/040af2s02",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Helsinki"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "subtitle": [
+        "A visual rhetorical approach"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.10",
+      "type": "book-chapter",
+      "page": "221-242",
+      "title": [
+        "10. Analysing deepfakes"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0006-1714-2015",
+          "authenticated-orcid": false,
+          "given": "Marcus",
+          "family": "Scheiber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/045y6d111",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Vechta"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "subtitle": [
+        "A discourse-semiotic approach"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.06",
+      "type": "book-chapter",
+      "page": "107-152",
+      "title": [
+        "6. Memefication of antisemitism"
+      ],
+      "author": [
+        {
+          "given": "Mohamed",
+          "family": "Salhi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04cvxnb49",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Goethe University Frankfurt"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yasmine",
+          "family": "Goldhorn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04cvxnb49",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Goethe University Frankfurt"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "subtitle": [
+        "Antisemitic content on TikTok—a multimodal ethnographic analysis"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2025-05-02T00:00:00Z",
+            "timestamp": 1746144000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0447.07",
+      "type": "book-chapter",
+      "page": "153-172",
+      "title": [
+        "7. Unveiling populist tactics on TikTok"
+      ],
+      "author": [
+        {
+          "given": "Inari",
+          "family": "Sakki",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/040af2s02",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Helsinki"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Imagery of Hate Online"
+      ],
+      "subtitle": [
+        "A multimodal critical discursive psychology approach"
+      ],
+      "ISBN": [
+        "9781805115007",
+        "9781805115014",
+        "9781805115021",
+        "9781805115045",
+        "9781805115038"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "3. Memetic antisemitism How memes teach age-old hatred",
+      "authors": [
+        "Lev Topor"
+      ],
+      "chapter_doi": "10.11647/obp.0447.03",
+      "citation_pages": "33-56"
+    },
+    {
+      "title": "9. Studying soft hate speech online Synthesising approaches from multimodality research and argumentation theory",
+      "authors": [
+        "Dimitris Serafis",
+        "Janina Wildfeuer"
+      ],
+      "chapter_doi": "10.11647/obp.0447.09",
+      "citation_pages": "201-220"
+    },
+    {
+      "title": "1. Introduction",
+      "authors": [
+        "Marcus Scheiber",
+        "Matthias J. Becker"
+      ],
+      "chapter_doi": "10.11647/obp.0447.01",
+      "citation_pages": "1-12"
+    },
+    {
+      "title": "8. Pictured hate A visual discourse analysis of derogatory memes on Telegram",
+      "authors": [
+        "Lisa Bogerts",
+        "Wyn Brodersen",
+        "Maik Fielitz",
+        "Pablo Jost"
+      ],
+      "chapter_doi": "10.11647/obp.0447.08",
+      "citation_pages": "173-200"
+    },
+    {
+      "title": "5. Same tools, different target Countering hate speech with memes",
+      "authors": [
+        "Carmen Aguilera-Carnerero",
+        "Matthias J. Becker",
+        "Marcus Scheiber"
+      ],
+      "chapter_doi": "10.11647/obp.0447.05",
+      "citation_pages": "79-106"
+    },
+    {
+      "title": "2. The “Happy Merchant” as an antisemitic hate picture A historical perspective on visual antisemitism",
+      "authors": [
+        "Uffa Jensen"
+      ],
+      "chapter_doi": "10.11647/obp.0447.02",
+      "citation_pages": "13-32"
+    },
+    {
+      "title": "4. Extremist internet memes as a means of persuasion: A visual rhetorical approach",
+      "authors": [
+        "Eemeli Hakoköngäs",
+        "Otto Halmesvaara"
+      ],
+      "chapter_doi": "10.11647/obp.0447.04",
+      "citation_pages": "57-78"
+    },
+    {
+      "title": "10. Analysing deepfakes A discourse-semiotic approach",
+      "authors": [
+        "Marcus Scheiber"
+      ],
+      "chapter_doi": "10.11647/obp.0447.10",
+      "citation_pages": "221-242"
+    },
+    {
+      "title": "6. Memefication of antisemitism Antisemitic content on TikTok—a multimodal ethnographic analysis",
+      "authors": [
+        "Mohamed Salhi",
+        "Yasmine Goldhorn"
+      ],
+      "chapter_doi": "10.11647/obp.0447.06",
+      "citation_pages": "107-152"
+    },
+    {
+      "title": "7. Unveiling populist tactics on TikTok A multimodal critical discursive psychology approach",
+      "authors": [
+        "Inari Sakki"
+      ],
+      "chapter_doi": "10.11647/obp.0447.07",
+      "citation_pages": "153-172"
+    }
+  ]
+}

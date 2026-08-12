@@ -1,0 +1,1140 @@
+{
+  "isbn": "9783837634204",
+  "fetched_at": "2026-08-11T22:58:08.172874+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839434208-008",
+      "type": "book-chapter",
+      "page": "191-208",
+      "title": [
+        "Material erproben. Dokumentationen der Probenarbeit des Tanztheaters Wuppertal"
+      ],
+      "author": [
+        {
+          "given": "Annemarie",
+          "family": "Matzke",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Timo",
+          "family": "Skrandies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katharina",
+          "family": "Weisheit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henrike",
+          "family": "Kollmar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-007",
+      "type": "book-chapter",
+      "page": "169-190",
+      "title": [
+        "Getanzte Erinnerung. Zur Produktivität der Erinnerung bei Pina Bausch"
+      ],
+      "author": [
+        {
+          "given": "Katharina",
+          "family": "Weisheit",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-001",
+      "type": "book-chapter",
+      "page": "9-62",
+      "title": [
+        "Bewegungsmaterial"
+      ],
+      "author": [
+        {
+          "given": "Timo",
+          "family": "Skrandies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-006",
+      "type": "book-chapter",
+      "page": "151-168",
+      "title": [
+        "Bewegung als Material in Antje Pfundtners RES(E)T (2008)"
+      ],
+      "author": [
+        {
+          "given": "Maike",
+          "family": "Vollmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-prf",
+      "type": "book-chapter",
+      "page": "7-8",
+      "title": [
+        "Vorwort"
+      ],
+      "author": [
+        {
+          "given": "Timo",
+          "family": "Skrandies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katharina",
+          "family": "Weisheit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henrike",
+          "family": "Kollmar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-017",
+      "type": "book-chapter",
+      "page": "365-386",
+      "title": [
+        "»Vom Fleisch zum Stein«. Strategien der Rahmung in der zeitgenössischen Tanzfotografie"
+      ],
+      "author": [
+        {
+          "given": "Isabelle",
+          "family": "Drexler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-016",
+      "type": "book-chapter",
+      "page": "353-364",
+      "title": [
+        "Bewegte Bildräume. Zu den Fotografien der Site-Specific Performances von Trisha Brown"
+      ],
+      "author": [
+        {
+          "given": "Isa",
+          "family": "Wortelkamp",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-012",
+      "type": "book-chapter",
+      "page": "265-282",
+      "title": [
+        "Einer bewegt alle. Zur Performativen Produktion von Kollektiven und Singularitäten"
+      ],
+      "author": [
+        {
+          "given": "Pamela",
+          "family": "Geldmacher",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-018",
+      "type": "book-chapter",
+      "page": "387-396",
+      "title": [
+        "Autorinnen und Autoren"
+      ],
+      "author": [
+        {
+          "given": "Timo",
+          "family": "Skrandies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katharina",
+          "family": "Weisheit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henrike",
+          "family": "Kollmar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-011",
+      "type": "book-chapter",
+      "page": "245-264",
+      "title": [
+        "Spontaneity in Dance: Language Matters"
+      ],
+      "author": [
+        {
+          "given": "João da",
+          "family": "Silva",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-004",
+      "type": "book-chapter",
+      "page": "99-120",
+      "title": [
+        "Re-Thinking TR_C_NG: Reflexion zu einer Produktion historischer Materialität in Tanz und Wissenschaft"
+      ],
+      "author": [
+        {
+          "given": "Yvonne",
+          "family": "Hardt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-010",
+      "type": "book-chapter",
+      "page": "231-244",
+      "title": [
+        "Dramaturgie der Bewegung - Zur Rezeption tänzerischer Körperbewegung"
+      ],
+      "author": [
+        {
+          "given": "Christiane",
+          "family": "Berger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-013",
+      "type": "book-chapter",
+      "page": "283-308",
+      "title": [
+        "»What else, besides the body, might physical thinking look like?« Überlegungen zur ästhetischen Bedeutung der Choreografie im zeitgenössischen Tanz"
+      ],
+      "author": [
+        {
+          "given": "Eva",
+          "family": "Pröbstel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-015",
+      "type": "book-chapter",
+      "page": "327-352",
+      "title": [
+        "Bewegungen des Bleibens. Bildlichkeiten des Momenthaften im Tanz"
+      ],
+      "author": [
+        {
+          "given": "Susanne",
+          "family": "Foellmer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-003",
+      "type": "book-chapter",
+      "page": "83-98",
+      "title": [
+        "Heterochronien, Heterogenitäten und instabile Wissensfelder - Lecture Performances als Suchbewegungen einer ›zeitgenössischen‹ Tanzforschung"
+      ],
+      "author": [
+        {
+          "given": "Claudia",
+          "family": "Jeschke",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rose",
+          "family": "Breuss",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-005",
+      "type": "book-chapter",
+      "page": "121-148",
+      "title": [
+        "Wie klingt ein Raum? Inszenierung von Räumen durch Aneignung und Choreografie von architektonischem Klangmaterial"
+      ],
+      "author": [
+        {
+          "given": "Saskia",
+          "family": "Reither",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gerriet K.",
+          "family": "Sharma",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nico",
+          "family": "Bergmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-014",
+      "type": "book-chapter",
+      "page": "311-326",
+      "title": [
+        "Medieneinsatz auf der Tanzbühne - Formen und Funktionsweisen"
+      ],
+      "author": [
+        {
+          "given": "Claudia",
+          "family": "Rosiny",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-002",
+      "type": "book-chapter",
+      "page": "65-82",
+      "title": [
+        "Bewegen. Annäherung an ein künstlerisches (Forschungs-)Verfahren"
+      ],
+      "author": [
+        {
+          "given": "Kerstin",
+          "family": "Evert",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-009",
+      "type": "book-chapter",
+      "page": "209-228",
+      "title": [
+        "Gesten der Revolution: Material-Bewegung in Burning Beasts von Claudia Bosse"
+      ],
+      "author": [
+        {
+          "given": "Gerald",
+          "family": "Siegmund",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839434208-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Timo",
+          "family": "Skrandies",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katharina",
+          "family": "Weisheit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henrike",
+          "family": "Kollmar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "TanzScripte",
+        "Bewegungsmaterial"
+      ],
+      "ISBN": [
+        "9783837634204",
+        "9783839434208"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            15
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Material erproben. Dokumentationen der Probenarbeit des Tanztheaters Wuppertal",
+      "authors": [
+        "Annemarie Matzke"
+      ],
+      "chapter_doi": "10.14361/9783839434208-008",
+      "citation_pages": "191-208"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Timo Skrandies",
+        "Katharina Weisheit",
+        "Henrike Kollmar"
+      ],
+      "chapter_doi": "10.14361/9783839434208-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Getanzte Erinnerung. Zur Produktivität der Erinnerung bei Pina Bausch",
+      "authors": [
+        "Katharina Weisheit"
+      ],
+      "chapter_doi": "10.14361/9783839434208-007",
+      "citation_pages": "169-190"
+    },
+    {
+      "title": "Bewegungsmaterial",
+      "authors": [
+        "Timo Skrandies"
+      ],
+      "chapter_doi": "10.14361/9783839434208-001",
+      "citation_pages": "9-62"
+    },
+    {
+      "title": "Bewegung als Material in Antje Pfundtners RES(E)T (2008)",
+      "authors": [
+        "Maike Vollmer"
+      ],
+      "chapter_doi": "10.14361/9783839434208-006",
+      "citation_pages": "151-168"
+    },
+    {
+      "title": "Vorwort",
+      "authors": [
+        "Timo Skrandies",
+        "Katharina Weisheit",
+        "Henrike Kollmar"
+      ],
+      "chapter_doi": "10.14361/9783839434208-prf",
+      "citation_pages": "7-8"
+    },
+    {
+      "title": "»Vom Fleisch zum Stein«. Strategien der Rahmung in der zeitgenössischen Tanzfotografie",
+      "authors": [
+        "Isabelle Drexler"
+      ],
+      "chapter_doi": "10.14361/9783839434208-017",
+      "citation_pages": "365-386"
+    },
+    {
+      "title": "Bewegte Bildräume. Zu den Fotografien der Site-Specific Performances von Trisha Brown",
+      "authors": [
+        "Isa Wortelkamp"
+      ],
+      "chapter_doi": "10.14361/9783839434208-016",
+      "citation_pages": "353-364"
+    },
+    {
+      "title": "Einer bewegt alle. Zur Performativen Produktion von Kollektiven und Singularitäten",
+      "authors": [
+        "Pamela Geldmacher"
+      ],
+      "chapter_doi": "10.14361/9783839434208-012",
+      "citation_pages": "265-282"
+    },
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [
+        "Timo Skrandies",
+        "Katharina Weisheit",
+        "Henrike Kollmar"
+      ],
+      "chapter_doi": "10.14361/9783839434208-018",
+      "citation_pages": "387-396"
+    },
+    {
+      "title": "Spontaneity in Dance: Language Matters",
+      "authors": [
+        "João da Silva"
+      ],
+      "chapter_doi": "10.14361/9783839434208-011",
+      "citation_pages": "245-264"
+    },
+    {
+      "title": "Re-Thinking TR_C_NG: Reflexion zu einer Produktion historischer Materialität in Tanz und Wissenschaft",
+      "authors": [
+        "Yvonne Hardt"
+      ],
+      "chapter_doi": "10.14361/9783839434208-004",
+      "citation_pages": "99-120"
+    },
+    {
+      "title": "Dramaturgie der Bewegung - Zur Rezeption tänzerischer Körperbewegung",
+      "authors": [
+        "Christiane Berger"
+      ],
+      "chapter_doi": "10.14361/9783839434208-010",
+      "citation_pages": "231-244"
+    },
+    {
+      "title": "»What else, besides the body, might physical thinking look like?« Überlegungen zur ästhetischen Bedeutung der Choreografie im zeitgenössischen Tanz",
+      "authors": [
+        "Eva Pröbstel"
+      ],
+      "chapter_doi": "10.14361/9783839434208-013",
+      "citation_pages": "283-308"
+    },
+    {
+      "title": "Bewegungen des Bleibens. Bildlichkeiten des Momenthaften im Tanz",
+      "authors": [
+        "Susanne Foellmer"
+      ],
+      "chapter_doi": "10.14361/9783839434208-015",
+      "citation_pages": "327-352"
+    },
+    {
+      "title": "Heterochronien, Heterogenitäten und instabile Wissensfelder - Lecture Performances als Suchbewegungen einer ›zeitgenössischen‹ Tanzforschung",
+      "authors": [
+        "Claudia Jeschke",
+        "Rose Breuss"
+      ],
+      "chapter_doi": "10.14361/9783839434208-003",
+      "citation_pages": "83-98"
+    },
+    {
+      "title": "Wie klingt ein Raum? Inszenierung von Räumen durch Aneignung und Choreografie von architektonischem Klangmaterial",
+      "authors": [
+        "Saskia Reither",
+        "Gerriet K. Sharma",
+        "Nico Bergmann"
+      ],
+      "chapter_doi": "10.14361/9783839434208-005",
+      "citation_pages": "121-148"
+    },
+    {
+      "title": "Medieneinsatz auf der Tanzbühne - Formen und Funktionsweisen",
+      "authors": [
+        "Claudia Rosiny"
+      ],
+      "chapter_doi": "10.14361/9783839434208-014",
+      "citation_pages": "311-326"
+    },
+    {
+      "title": "Bewegen. Annäherung an ein künstlerisches (Forschungs-)Verfahren",
+      "authors": [
+        "Kerstin Evert"
+      ],
+      "chapter_doi": "10.14361/9783839434208-002",
+      "citation_pages": "65-82"
+    },
+    {
+      "title": "Gesten der Revolution: Material-Bewegung in Burning Beasts von Claudia Bosse",
+      "authors": [
+        "Gerald Siegmund"
+      ],
+      "chapter_doi": "10.14361/9783839434208-009",
+      "citation_pages": "209-228"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Timo Skrandies",
+        "Katharina Weisheit",
+        "Henrike Kollmar"
+      ],
+      "chapter_doi": "10.14361/9783839434208-toc",
+      "citation_pages": "5-6"
+    }
+  ]
+}

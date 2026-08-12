@@ -1,0 +1,570 @@
+{
+  "isbn": "9781805111085",
+  "fetched_at": "2026-08-11T22:58:19.278336+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                25
+              ]
+            ],
+            "date-time": "2023-09-25T00:00:00Z",
+            "timestamp": 1695600000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0358.05",
+      "type": "book-chapter",
+      "page": "223-272",
+      "title": [
+        "Computational Linguistic Analysis of the Biblical Text"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3142-5752",
+          "authenticated-orcid": false,
+          "given": "Willem Th.",
+          "family": "van Peursen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008xxew50",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije University Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Linguistic Theory and the Biblical Text"
+      ],
+      "ISBN": [
+        "9781805111085",
+        "9781805111092",
+        "9781805111108"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                25
+              ]
+            ],
+            "date-time": "2023-09-25T00:00:00Z",
+            "timestamp": 1695600000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0358.03",
+      "type": "book-chapter",
+      "page": "117-171",
+      "title": [
+        "Cognitive Linguistic Theory and the Biblical Languages"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6706-3135",
+          "authenticated-orcid": false,
+          "given": "William A.",
+          "family": "Ross",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Reformed Theological Seminary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Linguistic Theory and the Biblical Text"
+      ],
+      "ISBN": [
+        "9781805111085",
+        "9781805111092",
+        "9781805111108"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                25
+              ]
+            ],
+            "date-time": "2023-09-25T00:00:00Z",
+            "timestamp": 1695600000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0358.01",
+      "type": "book-chapter",
+      "page": "6-66",
+      "title": [
+        "Generative Linguistics as a Theoretical Framework for the Explanation of Problematic Constructions in Biblical Hebrew"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8680-0476",
+          "authenticated-orcid": false,
+          "given": "Jacobus A.",
+          "family": "Naudé",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/009xwd568",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Free State"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cynthia L.",
+          "family": "Miller-Naudé",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/009xwd568",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Free State"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Linguistic Theory and the Biblical Text"
+      ],
+      "ISBN": [
+        "9781805111085",
+        "9781805111092",
+        "9781805111108"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                25
+              ]
+            ],
+            "date-time": "2023-09-25T00:00:00Z",
+            "timestamp": 1695600000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0358.07",
+      "type": "book-chapter",
+      "page": "1-5",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Elizabeth",
+          "family": "Robar",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Linguistic Theory and the Biblical Text"
+      ],
+      "ISBN": [
+        "9781805111085",
+        "9781805111092",
+        "9781805111108"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                25
+              ]
+            ],
+            "date-time": "2023-09-25T00:00:00Z",
+            "timestamp": 1695600000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0358.04",
+      "type": "book-chapter",
+      "page": "172-222",
+      "title": [
+        "Historical Linguistics and the Biblical Languages"
+      ],
+      "author": [
+        {
+          "given": "Kaspars",
+          "family": "Ozoliņš",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Southern Baptist Theological Seminary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Linguistic Theory and the Biblical Text"
+      ],
+      "ISBN": [
+        "9781805111085",
+        "9781805111092",
+        "9781805111108"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                25
+              ]
+            ],
+            "date-time": "2023-09-25T00:00:00Z",
+            "timestamp": 1695600000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0358.06",
+      "type": "book-chapter",
+      "page": "273-323",
+      "title": [
+        "Emerging from Silos of Analysis: A Complexity Theory Approach to the Study of Biblical Texts"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7839-2903",
+          "authenticated-orcid": false,
+          "given": "Sophia L.",
+          "family": "Pitcher",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/009xwd568",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Free State"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02gk19b80",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "North Central University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Linguistic Theory and the Biblical Text"
+      ],
+      "ISBN": [
+        "9781805111085",
+        "9781805111092",
+        "9781805111108"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                25
+              ]
+            ],
+            "date-time": "2023-09-25T00:00:00Z",
+            "timestamp": 1695600000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0358.02",
+      "type": "book-chapter",
+      "page": "67-116",
+      "title": [
+        "Functional Grammar and the Pragmatics of Information Structure for Biblical Languages"
+      ],
+      "author": [
+        {
+          "given": "Randall",
+          "family": "Buth",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "The Whole Word Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "Linguistic Theory and the Biblical Text"
+      ],
+      "ISBN": [
+        "9781805111085",
+        "9781805111092",
+        "9781805111108"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            25
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Computational Linguistic Analysis of the Biblical Text",
+      "authors": [
+        "Willem Th. van Peursen"
+      ],
+      "chapter_doi": "10.11647/obp.0358.05",
+      "citation_pages": "223-272"
+    },
+    {
+      "title": "Cognitive Linguistic Theory and the Biblical Languages",
+      "authors": [
+        "William A. Ross"
+      ],
+      "chapter_doi": "10.11647/obp.0358.03",
+      "citation_pages": "117-171"
+    },
+    {
+      "title": "Generative Linguistics as a Theoretical Framework for the Explanation of Problematic Constructions in Biblical Hebrew",
+      "authors": [
+        "Jacobus A. Naudé",
+        "Cynthia L. Miller-Naudé"
+      ],
+      "chapter_doi": "10.11647/obp.0358.01",
+      "citation_pages": "6-66"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Elizabeth Robar"
+      ],
+      "chapter_doi": "10.11647/obp.0358.07",
+      "citation_pages": "1-5"
+    },
+    {
+      "title": "Historical Linguistics and the Biblical Languages",
+      "authors": [
+        "Kaspars Ozoliņš"
+      ],
+      "chapter_doi": "10.11647/obp.0358.04",
+      "citation_pages": "172-222"
+    },
+    {
+      "title": "Emerging from Silos of Analysis: A Complexity Theory Approach to the Study of Biblical Texts",
+      "authors": [
+        "Sophia L. Pitcher"
+      ],
+      "chapter_doi": "10.11647/obp.0358.06",
+      "citation_pages": "273-323"
+    },
+    {
+      "title": "Functional Grammar and the Pragmatics of Information Structure for Biblical Languages",
+      "authors": [
+        "Randall Buth"
+      ],
+      "chapter_doi": "10.11647/obp.0358.02",
+      "citation_pages": "67-116"
+    }
+  ]
+}

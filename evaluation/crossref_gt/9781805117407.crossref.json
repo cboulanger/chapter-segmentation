@@ -1,0 +1,957 @@
+{
+  "isbn": "9781805117407",
+  "fetched_at": "2026-08-11T22:41:13.357825+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.04",
+      "type": "book-chapter",
+      "page": "151-172",
+      "title": [
+        "Was There Ever an Oral Hebrew Masora?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6217-9390",
+          "authenticated-orcid": false,
+          "given": "Elvira",
+          "family": "Martín-Contreras",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02qeh6420",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Institute of Languages and Cultures of the Mediterranean and the Near East"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.10",
+      "type": "book-chapter",
+      "page": "437-464",
+      "title": [
+        "A Computational System to Analyse the Layer of Tajwīd Notation in Contemporary Qurʾānic Orthography"
+      ],
+      "author": [
+        {
+          "given": "Alicia",
+          "family": "González Martínez",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00g30e956",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universität Hamburg"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.00",
+      "type": "book-chapter",
+      "page": "1-26",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Alba",
+          "family": "Fedeli",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00g30e956",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universität Hamburg"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2550-9896",
+          "authenticated-orcid": false,
+          "given": "Geoffrey",
+          "family": "Khan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Johan",
+          "family": "Lundberg",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.01",
+      "type": "book-chapter",
+      "page": "27-94",
+      "title": [
+        "Passing Down a Corpus of Reminders For the Peshiṭta and the Harklean Bibles"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0282-4022",
+          "authenticated-orcid": false,
+          "given": "Jonathan",
+          "family": "Loopstra",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qx1zg28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Redeemer University College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.09",
+      "type": "book-chapter",
+      "page": "387-436",
+      "title": [
+        "New Approaches to Analysing the Vocalisation of Early Qurʾānic Manuscripts"
+      ],
+      "author": [
+        {
+          "given": "Alba",
+          "family": "Fedeli",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00g30e956",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universität Hamburg"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Carolin",
+          "family": "Kinne-Wall",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00g30e956",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universität Hamburg"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hythem",
+          "family": "Sidky",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.03",
+      "type": "book-chapter",
+      "page": "129-150",
+      "title": [
+        "Multimodality in Liturgical Expression: The Case of Textuality and Orality in Syriac Orthodox Liturgies"
+      ],
+      "author": [
+        {
+          "given": "George",
+          "family": "Kiraz",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00hx57361",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Princeton University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.08",
+      "type": "book-chapter",
+      "page": "307-386",
+      "title": [
+        "Patterns of Selective Vowel-dotting in Early Qurʾānic Manuscripts"
+      ],
+      "author": [
+        {
+          "given": "Alba",
+          "family": "Fedeli",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00g30e956",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universität Hamburg"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.07",
+      "type": "book-chapter",
+      "page": "275-306",
+      "title": [
+        "A Jewish Translation of Genesis in 10th-Century Egyptian Arabic"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1336-9520",
+          "authenticated-orcid": false,
+          "given": "Nick",
+          "family": "Posegay",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04tsk2644",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ruhr University Bochum"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.02",
+      "type": "book-chapter",
+      "page": "95-128",
+      "title": [
+        "Taxonomies of Dots"
+      ],
+      "author": [
+        {
+          "given": "Johan",
+          "family": "Lundberg",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "subtitle": [
+        "The Context and Methodology of the Early Treatises about the Syriac Accent Dots"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.05",
+      "type": "book-chapter",
+      "page": "173-228",
+      "title": [
+        "Main Clause Verbs are Prosodically Weaker than Nouns in the Tiberian Cantillation of Biblical Hebrew Prose Books"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0100-7437",
+          "authenticated-orcid": false,
+          "given": "Robert S. D.",
+          "family": "Crellin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                6
+              ]
+            ],
+            "date-time": "2025-11-06T00:00:00Z",
+            "timestamp": 1762387200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0498.06",
+      "type": "book-chapter",
+      "page": "229-274",
+      "title": [
+        "The Convergence of the Transmission of Jewish and Muslim Sacred Scriptures Reflected by the Medieval Karaite Transcriptions of the Hebrew Bible"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2550-9896",
+          "authenticated-orcid": false,
+          "given": "Geoffrey",
+          "family": "Khan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Semitic Languages and Cultures",
+        "The Intertwined World of the Oral and Written Transmission of Sacred Traditions in the Middle East"
+      ],
+      "ISBN": [
+        "9781805117407",
+        "9781805117414",
+        "9781805117421"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            6
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Was There Ever an Oral Hebrew Masora?",
+      "authors": [
+        "Elvira Martín-Contreras"
+      ],
+      "chapter_doi": "10.11647/obp.0498.04",
+      "citation_pages": "151-172"
+    },
+    {
+      "title": "A Computational System to Analyse the Layer of Tajwīd Notation in Contemporary Qurʾānic Orthography",
+      "authors": [
+        "Alicia González Martínez"
+      ],
+      "chapter_doi": "10.11647/obp.0498.10",
+      "citation_pages": "437-464"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Alba Fedeli",
+        "Geoffrey Khan",
+        "Johan Lundberg"
+      ],
+      "chapter_doi": "10.11647/obp.0498.00",
+      "citation_pages": "1-26"
+    },
+    {
+      "title": "Passing Down a Corpus of Reminders For the Peshiṭta and the Harklean Bibles",
+      "authors": [
+        "Jonathan Loopstra"
+      ],
+      "chapter_doi": "10.11647/obp.0498.01",
+      "citation_pages": "27-94"
+    },
+    {
+      "title": "New Approaches to Analysing the Vocalisation of Early Qurʾānic Manuscripts",
+      "authors": [
+        "Alba Fedeli",
+        "Carolin Kinne-Wall",
+        "Hythem Sidky"
+      ],
+      "chapter_doi": "10.11647/obp.0498.09",
+      "citation_pages": "387-436"
+    },
+    {
+      "title": "Multimodality in Liturgical Expression: The Case of Textuality and Orality in Syriac Orthodox Liturgies",
+      "authors": [
+        "George Kiraz"
+      ],
+      "chapter_doi": "10.11647/obp.0498.03",
+      "citation_pages": "129-150"
+    },
+    {
+      "title": "Patterns of Selective Vowel-dotting in Early Qurʾānic Manuscripts",
+      "authors": [
+        "Alba Fedeli"
+      ],
+      "chapter_doi": "10.11647/obp.0498.08",
+      "citation_pages": "307-386"
+    },
+    {
+      "title": "A Jewish Translation of Genesis in 10th-Century Egyptian Arabic",
+      "authors": [
+        "Nick Posegay"
+      ],
+      "chapter_doi": "10.11647/obp.0498.07",
+      "citation_pages": "275-306"
+    },
+    {
+      "title": "Taxonomies of Dots The Context and Methodology of the Early Treatises about the Syriac Accent Dots",
+      "authors": [
+        "Johan Lundberg"
+      ],
+      "chapter_doi": "10.11647/obp.0498.02",
+      "citation_pages": "95-128"
+    },
+    {
+      "title": "Main Clause Verbs are Prosodically Weaker than Nouns in the Tiberian Cantillation of Biblical Hebrew Prose Books",
+      "authors": [
+        "Robert S. D. Crellin"
+      ],
+      "chapter_doi": "10.11647/obp.0498.05",
+      "citation_pages": "173-228"
+    },
+    {
+      "title": "The Convergence of the Transmission of Jewish and Muslim Sacred Scriptures Reflected by the Medieval Karaite Transcriptions of the Hebrew Bible",
+      "authors": [
+        "Geoffrey Khan"
+      ],
+      "chapter_doi": "10.11647/obp.0498.06",
+      "citation_pages": "229-274"
+    }
+  ]
+}

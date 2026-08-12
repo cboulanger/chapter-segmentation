@@ -1,0 +1,258 @@
+{
+  "isbn": "9782842462239",
+  "fetched_at": "2026-08-11T22:43:44.489966+00:00",
+  "license": "https://www.openedition.org/12554",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1987,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1987-01-01T00:00:00Z",
+            "timestamp": 536457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.bibpompidou.1902",
+      "type": "book-chapter",
+      "page": "11-52",
+      "title": [
+        "1re partie : 1959-1969"
+      ],
+      "author": [
+        {
+          "given": "Jean-Pierre",
+          "family": "Seguin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Comment est née la Bpi"
+      ],
+      "ISBN": [
+        "9782842462239",
+        "9782902706143"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1987
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1987,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1987-01-01T00:00:00Z",
+            "timestamp": 536457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.bibpompidou.1904",
+      "type": "book-chapter",
+      "page": "87-129",
+      "title": [
+        "3e partie : Montée en charge de la bibliothèque jusqu’à l’ouverture 1973-1977"
+      ],
+      "author": [
+        {
+          "given": "Jean-Pierre",
+          "family": "Seguin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Comment est née la Bpi"
+      ],
+      "ISBN": [
+        "9782842462239",
+        "9782902706143"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1987
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1987,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1987-01-01T00:00:00Z",
+            "timestamp": 536457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.bibpompidou.1903",
+      "type": "book-chapter",
+      "page": "53-85",
+      "title": [
+        "2e partie : La bibliothèque et le « Centre Beaubourg » 1970-1972"
+      ],
+      "author": [
+        {
+          "given": "Jean-Pierre",
+          "family": "Seguin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Comment est née la Bpi"
+      ],
+      "ISBN": [
+        "9782842462239",
+        "9782902706143"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1987
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1987,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1987-01-01T00:00:00Z",
+            "timestamp": 536457600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.bibpompidou.1905",
+      "type": "book-chapter",
+      "page": "131-134",
+      "title": [
+        "Réflexions faites peu de temps après l’ouverture"
+      ],
+      "author": [
+        {
+          "given": "Jean-Pierre",
+          "family": "Seguin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Comment est née la Bpi"
+      ],
+      "ISBN": [
+        "9782842462239",
+        "9782902706143"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1987
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "1re partie : 1959-1969",
+      "authors": [
+        "Jean-Pierre Seguin"
+      ],
+      "chapter_doi": "10.4000/books.bibpompidou.1902",
+      "citation_pages": "11-52"
+    },
+    {
+      "title": "3e partie : Montée en charge de la bibliothèque jusqu’à l’ouverture 1973-1977",
+      "authors": [
+        "Jean-Pierre Seguin"
+      ],
+      "chapter_doi": "10.4000/books.bibpompidou.1904",
+      "citation_pages": "87-129"
+    },
+    {
+      "title": "2e partie : La bibliothèque et le « Centre Beaubourg » 1970-1972",
+      "authors": [
+        "Jean-Pierre Seguin"
+      ],
+      "chapter_doi": "10.4000/books.bibpompidou.1903",
+      "citation_pages": "53-85"
+    },
+    {
+      "title": "Réflexions faites peu de temps après l’ouverture",
+      "authors": [
+        "Jean-Pierre Seguin"
+      ],
+      "chapter_doi": "10.4000/books.bibpompidou.1905",
+      "citation_pages": "131-134"
+    }
+  ]
+}

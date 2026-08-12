@@ -1,0 +1,453 @@
+{
+  "isbn": "9781906924249",
+  "fetched_at": "2026-08-11T22:58:15.607302+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_source": "unpaywall",
+  "raw_items": [
+    {
+      "DOI": "10.11647/obp.0008.06",
+      "type": "book-chapter",
+      "page": "145-163",
+      "title": [
+        "Electronic Editions for Everyone"
+      ],
+      "author": [
+        {
+          "given": "Peter",
+          "family": "Robinson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0008.09",
+      "type": "book-chapter",
+      "page": "203-218",
+      "title": [
+        "‘I Read the News Today, Oh Boy!’: Newspaper Publishing in the Online World"
+      ],
+      "author": [
+        {
+          "given": "Marilyn",
+          "family": "Deegan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kathryn",
+          "family": "Sutherland",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0008.03",
+      "type": "book-chapter",
+      "page": "71-91",
+      "title": [
+        "Textual Pathology"
+      ],
+      "author": [
+        {
+          "given": "Peter",
+          "family": "Garrard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0008.07",
+      "type": "book-chapter",
+      "page": "165-182",
+      "title": [
+        "How Literary Works Exist: Implied, Represented, and Interpreted"
+      ],
+      "author": [
+        {
+          "given": "Peter",
+          "family": "Shillingsburg",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0008.02",
+      "type": "book-chapter",
+      "page": "37-69",
+      "title": [
+        "Cybertextuality by the Numbers"
+      ],
+      "author": [
+        {
+          "given": "Ian",
+          "family": "Lancashire",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0008.08",
+      "type": "book-chapter",
+      "page": "183-202",
+      "title": [
+        "Text as Algorithm and as Process"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Eggert",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0008.04",
+      "type": "book-chapter",
+      "page": "93-117",
+      "title": [
+        "The Human Presence in Digital Artefacts"
+      ],
+      "author": [
+        {
+          "given": "Alan",
+          "family": "Galey",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0008.10",
+      "type": "book-chapter",
+      "page": "1-11",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Willard",
+          "family": "McCarty",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0008.01",
+      "type": "book-chapter",
+      "page": "13-35",
+      "title": [
+        "Never Say Always Again: Reflections on the Numbers Game"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Burrows",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.11647/obp.0008.05",
+      "type": "book-chapter",
+      "page": "119-144",
+      "title": [
+        "Defining Electronic Editions: A Historical and Functional Perspective"
+      ],
+      "author": [
+        {
+          "given": "Edward",
+          "family": "Vanhoutte",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Text and Genre in Reconstruction: Effects of Digitalization on Ideas, Behaviours, Products and Institutions"
+      ],
+      "ISBN": [
+        "9781906924249"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Electronic Editions for Everyone",
+      "authors": [
+        "Peter Robinson"
+      ],
+      "chapter_doi": "10.11647/obp.0008.06",
+      "citation_pages": "145-163"
+    },
+    {
+      "title": "‘I Read the News Today, Oh Boy!’: Newspaper Publishing in the Online World",
+      "authors": [
+        "Marilyn Deegan",
+        "Kathryn Sutherland"
+      ],
+      "chapter_doi": "10.11647/obp.0008.09",
+      "citation_pages": "203-218"
+    },
+    {
+      "title": "Textual Pathology",
+      "authors": [
+        "Peter Garrard"
+      ],
+      "chapter_doi": "10.11647/obp.0008.03",
+      "citation_pages": "71-91"
+    },
+    {
+      "title": "How Literary Works Exist: Implied, Represented, and Interpreted",
+      "authors": [
+        "Peter Shillingsburg"
+      ],
+      "chapter_doi": "10.11647/obp.0008.07",
+      "citation_pages": "165-182"
+    },
+    {
+      "title": "Cybertextuality by the Numbers",
+      "authors": [
+        "Ian Lancashire"
+      ],
+      "chapter_doi": "10.11647/obp.0008.02",
+      "citation_pages": "37-69"
+    },
+    {
+      "title": "Text as Algorithm and as Process",
+      "authors": [
+        "Paul Eggert"
+      ],
+      "chapter_doi": "10.11647/obp.0008.08",
+      "citation_pages": "183-202"
+    },
+    {
+      "title": "The Human Presence in Digital Artefacts",
+      "authors": [
+        "Alan Galey"
+      ],
+      "chapter_doi": "10.11647/obp.0008.04",
+      "citation_pages": "93-117"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Willard McCarty"
+      ],
+      "chapter_doi": "10.11647/obp.0008.10",
+      "citation_pages": "1-11"
+    },
+    {
+      "title": "Never Say Always Again: Reflections on the Numbers Game",
+      "authors": [
+        "John Burrows"
+      ],
+      "chapter_doi": "10.11647/obp.0008.01",
+      "citation_pages": "13-35"
+    },
+    {
+      "title": "Defining Electronic Editions: A Historical and Functional Perspective",
+      "authors": [
+        "Edward Vanhoutte"
+      ],
+      "chapter_doi": "10.11647/obp.0008.05",
+      "citation_pages": "119-144"
+    }
+  ]
+}

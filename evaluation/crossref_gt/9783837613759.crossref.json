@@ -1,0 +1,696 @@
+{
+  "isbn": "9783837613759",
+  "fetched_at": "2026-08-11T22:58:11.562599+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/transcript.9783839413753.131",
+      "type": "book-chapter",
+      "page": "131-132",
+      "title": [
+        "Autorinnen und Autoren"
+      ],
+      "author": [
+        {
+          "given": "Lucyna",
+          "family": "Darowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Lüttenberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Claudia",
+          "family": "Machold",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839413753.39",
+      "type": "book-chapter",
+      "page": "39-66",
+      "title": [
+        "Was ist eigentlich Transkulturalität?"
+      ],
+      "author": [
+        {
+          "given": "Wolfgang",
+          "family": "Welsch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839413753.13",
+      "type": "book-chapter",
+      "page": "13-38",
+      "title": [
+        "Hochschule als transkultureller Raum unter den Bedingungen von Internationalisierung und Migration eine Annäherung"
+      ],
+      "author": [
+        {
+          "given": "Lucyna",
+          "family": "Darowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Claudia",
+          "family": "Machold",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839413753.bm",
+      "title": [
+        "Backmatter"
+      ],
+      "page": "133-136",
+      "type": "book-chapter",
+      "container-title": [
+        "Hochschule als transkultureller Raum?"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837613759"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839413753.intro",
+      "type": "book-chapter",
+      "page": "7-12",
+      "title": [
+        "Einleitend"
+      ],
+      "author": [
+        {
+          "given": "Lucyna",
+          "family": "Darowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Lüttenberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Claudia",
+          "family": "Machold",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839413753.bm",
+      "type": "book-chapter",
+      "page": "133-136",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Lucyna",
+          "family": "Darowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Lüttenberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Claudia",
+          "family": "Machold",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839413753.83",
+      "type": "book-chapter",
+      "page": "83-116",
+      "title": [
+        "Universität als transgressive Lebensform. Anmerkungen, die gesellschaftliche Differenz- und Ungleichheitsverhältnisse berücksichtigen"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Mecheril",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Birte",
+          "family": "Klingler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839413753.toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Lucyna",
+          "family": "Darowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Lüttenberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Claudia",
+          "family": "Machold",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839413753.117",
+      "type": "book-chapter",
+      "page": "117-130",
+      "title": [
+        "Interkulturelles Training? Eine Problematisierung"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3987-5483",
+          "authenticated-orcid": true,
+          "given": "María do Mar",
+          "family": "Castro Varela",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839413753.fm",
+      "title": [
+        "Frontmatter"
+      ],
+      "page": "1-4",
+      "type": "book-chapter",
+      "container-title": [
+        "Hochschule als transkultureller Raum?"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837613759"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839413753.67",
+      "type": "book-chapter",
+      "page": "67-82",
+      "title": [
+        "Kultur als Beobachtungsweise"
+      ],
+      "author": [
+        {
+          "given": "Isabell",
+          "family": "Diehm",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839413753.fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Lucyna",
+          "family": "Darowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Lüttenberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Claudia",
+          "family": "Machold",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Kultur und soziale Praxis",
+        "Hochschule als transkultureller Raum?"
+      ],
+      "ISBN": [
+        "9783837613759",
+        "9783839413753"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [
+        "Lucyna Darowska",
+        "Thomas Lüttenberg",
+        "Claudia Machold"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.131",
+      "citation_pages": "131-132"
+    },
+    {
+      "title": "Was ist eigentlich Transkulturalität?",
+      "authors": [
+        "Wolfgang Welsch"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.39",
+      "citation_pages": "39-66"
+    },
+    {
+      "title": "Hochschule als transkultureller Raum unter den Bedingungen von Internationalisierung und Migration eine Annäherung",
+      "authors": [
+        "Lucyna Darowska",
+        "Claudia Machold"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.13",
+      "citation_pages": "13-38"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839413753.bm",
+      "citation_pages": "133-136"
+    },
+    {
+      "title": "Einleitend",
+      "authors": [
+        "Lucyna Darowska",
+        "Thomas Lüttenberg",
+        "Claudia Machold"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.intro",
+      "citation_pages": "7-12"
+    },
+    {
+      "title": "",
+      "authors": [
+        "Lucyna Darowska",
+        "Thomas Lüttenberg",
+        "Claudia Machold"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.bm",
+      "citation_pages": "133-136"
+    },
+    {
+      "title": "Universität als transgressive Lebensform. Anmerkungen, die gesellschaftliche Differenz- und Ungleichheitsverhältnisse berücksichtigen",
+      "authors": [
+        "Paul Mecheril",
+        "Birte Klingler"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.83",
+      "citation_pages": "83-116"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Lucyna Darowska",
+        "Thomas Lüttenberg",
+        "Claudia Machold"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Interkulturelles Training? Eine Problematisierung",
+      "authors": [
+        "María do Mar Castro Varela"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.117",
+      "citation_pages": "117-130"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839413753.fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Kultur als Beobachtungsweise",
+      "authors": [
+        "Isabell Diehm"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.67",
+      "citation_pages": "67-82"
+    },
+    {
+      "title": "",
+      "authors": [
+        "Lucyna Darowska",
+        "Thomas Lüttenberg",
+        "Claudia Machold"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839413753.fm",
+      "citation_pages": "1-4"
+    }
+  ]
+}

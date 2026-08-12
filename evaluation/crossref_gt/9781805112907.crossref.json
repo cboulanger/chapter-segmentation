@@ -1,0 +1,1597 @@
+{
+  "isbn": "9781805112907",
+  "fetched_at": "2026-08-11T21:25:51.090409+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.09",
+      "type": "book-chapter",
+      "page": "217-248",
+      "title": [
+        "9. Is this really democracy?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2495-7993",
+          "authenticated-orcid": false,
+          "given": "Louise",
+          "family": "Knops",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r9htc13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Libre de Bruxelles"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Maria-Jimena",
+          "family": "Sanhueza",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5681-5343",
+          "authenticated-orcid": false,
+          "given": "Eline",
+          "family": "Severs",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006e5kg04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije Universiteit Brussel"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1779-2828",
+          "authenticated-orcid": false,
+          "given": "Kris",
+          "family": "Deschouwer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006e5kg04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije Universiteit Brussel"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "subtitle": [
+        "An analysis of citizens’ resentment and conceptions of democracy"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.04",
+      "type": "book-chapter",
+      "page": "91-114",
+      "title": [
+        "4. Emotive participants?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2525-2453",
+          "authenticated-orcid": false,
+          "given": "Luca",
+          "family": "Bettarelli",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04fz79c74",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Palermo"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5366-5124",
+          "authenticated-orcid": false,
+          "given": "Caroline",
+          "family": "Close",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r9htc13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Libre de Bruxelles"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5094-3531",
+          "authenticated-orcid": false,
+          "given": "Laura",
+          "family": "Jacobs",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008x57b05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Antwerp"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4659-5711",
+          "authenticated-orcid": false,
+          "given": "Emilie",
+          "family": "van Haute",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r9htc13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Libre de Bruxelles"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "subtitle": [
+        "Emotions, apathy, and protest participation"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.01",
+      "type": "book-chapter",
+      "page": "1-28",
+      "title": [
+        "1. Political resentment"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2495-7993",
+          "authenticated-orcid": false,
+          "given": "Louise",
+          "family": "Knops",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r9htc13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Libre de Bruxelles"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7579-9107",
+          "authenticated-orcid": false,
+          "given": "Karen",
+          "family": "Celis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006e5kg04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije Universiteit Brussel"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5049-1862",
+          "authenticated-orcid": false,
+          "given": "Virginie",
+          "family": "Van Ingelgom",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02495e989",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Catholique de Louvain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "subtitle": [
+        "an empirical and conceptual introduction"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.06",
+      "type": "book-chapter",
+      "page": "139-162",
+      "title": [
+        "6. Congruent, yet resentful?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4428-3570",
+          "authenticated-orcid": false,
+          "given": "Jonas",
+          "family": "Lefevere",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006e5kg04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije Universiteit Brussel"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9235-7706",
+          "authenticated-orcid": false,
+          "given": "Patrick F. A.",
+          "family": "van Erkel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1814-1015",
+          "authenticated-orcid": false,
+          "given": "Stefaan",
+          "family": "Walgrave",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008x57b05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Antwerp"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7436-8164",
+          "authenticated-orcid": false,
+          "given": "Isaïa",
+          "family": "Jennart",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008x57b05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Antwerp"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5266-5803",
+          "authenticated-orcid": false,
+          "given": "Pierre",
+          "family": "Baudewyns",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02495e989",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Catholique de Louvain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9836-5056",
+          "authenticated-orcid": false,
+          "given": "Benoît",
+          "family": "Rihoux",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02495e989",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Catholique de Louvain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "subtitle": [
+        "Issue incongruence, resentment and party position knowledge"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.10",
+      "type": "book-chapter",
+      "page": "249-278",
+      "title": [
+        "10. What do resentful citizens want from democracy?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4819-154X",
+          "authenticated-orcid": false,
+          "given": "Soetkin",
+          "family": "Verhaegen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jz4aj89",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Maastricht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5049-1862",
+          "authenticated-orcid": false,
+          "given": "Virginie",
+          "family": "Van Ingelgom",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02495e989",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Catholique de Louvain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2495-7993",
+          "authenticated-orcid": false,
+          "given": "Louise",
+          "family": "Knops",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r9htc13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Libre de Bruxelles"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7579-9107",
+          "authenticated-orcid": false,
+          "given": "Karen",
+          "family": "Celis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006e5kg04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije Universiteit Brussel"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kenza",
+          "family": "Amara-Hammou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02495e989",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Catholique de Louvain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.11",
+      "type": "book-chapter",
+      "page": "279-292",
+      "title": [
+        "11. Resentment, Democracy and Inequality"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2495-7993",
+          "authenticated-orcid": false,
+          "given": "Louise",
+          "family": "Knops",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r9htc13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Libre de Bruxelles"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7579-9107",
+          "authenticated-orcid": false,
+          "given": "Karen",
+          "family": "Celis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006e5kg04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije Universiteit Brussel"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5049-1862",
+          "authenticated-orcid": false,
+          "given": "Virginie",
+          "family": "Van Ingelgom",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02495e989",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Catholique de Louvain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "subtitle": [
+        "Concluding reflections"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.08",
+      "type": "book-chapter",
+      "page": "189-216",
+      "title": [
+        "8. Resentment and Time"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2495-7993",
+          "authenticated-orcid": false,
+          "given": "Louise",
+          "family": "Knops",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r9htc13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Libre de Bruxelles"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7219-4527",
+          "authenticated-orcid": false,
+          "given": "Heidi",
+          "family": "Mercenier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5681-5343",
+          "authenticated-orcid": false,
+          "given": "Eline",
+          "family": "Severs",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006e5kg04",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Vrije Universiteit Brussel"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "subtitle": [
+        "clashing temporalities in citizens' relation to politics"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.07",
+      "type": "book-chapter",
+      "page": "163-188",
+      "title": [
+        "7. Dissatisfied partisans and the unrepresented"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6346-9610",
+          "authenticated-orcid": false,
+          "given": "August",
+          "family": "De Mulder",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008x57b05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Antwerp"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "subtitle": [
+        "how feeling represented by at least some representatives matters"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.02",
+      "type": "book-chapter",
+      "page": "29-60",
+      "title": [
+        "2. Studying political resentment"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4819-154X",
+          "authenticated-orcid": false,
+          "given": "Soetkin",
+          "family": "Verhaegen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jz4aj89",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Maastricht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6346-9610",
+          "authenticated-orcid": false,
+          "given": "August",
+          "family": "De Mulder",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/008x57b05",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Antwerp"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6037-2015",
+          "authenticated-orcid": false,
+          "given": "François",
+          "family": "Randour",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03d1maw17",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Namur"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "subtitle": [
+        "a methodological overview"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.03",
+      "type": "book-chapter",
+      "page": "61-90",
+      "title": [
+        "3. Who feels resentful?"
+      ],
+      "author": [
+        {
+          "given": "Fernando",
+          "family": "Feitosa",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02sc3r913",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Griffith University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5266-5803",
+          "authenticated-orcid": false,
+          "given": "Pierre",
+          "family": "Baudewyns",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02495e989",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Catholique de Louvain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5612-0835",
+          "authenticated-orcid": false,
+          "given": "Jean-Benoit",
+          "family": "Pilet",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01r9htc13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Libre de Bruxelles"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Talukder",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03d1maw17",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Namur"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T00:00:00Z",
+            "timestamp": 1725580800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0401.05",
+      "type": "book-chapter",
+      "page": "115-138",
+      "title": [
+        "5. Illustrations of political resentment among disadvantaged people"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0040-0747",
+          "authenticated-orcid": false,
+          "given": "Ramon",
+          "family": "van der Does",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kenza",
+          "family": "Amara-Hammou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02495e989",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Université Catholique de Louvain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Talukder",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03d1maw17",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Namur"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Bitter-Sweet Democracy?"
+      ],
+      "ISBN": [
+        "9781805112907",
+        "9781805112914",
+        "9781805112921",
+        "9781805112952",
+        "9781805112938"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            6
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "9. Is this really democracy? An analysis of citizens’ resentment and conceptions of democracy",
+      "authors": [
+        "Louise Knops",
+        "Maria-Jimena Sanhueza",
+        "Eline Severs",
+        "Kris Deschouwer"
+      ],
+      "chapter_doi": "10.11647/obp.0401.09",
+      "citation_pages": "217-248"
+    },
+    {
+      "title": "4. Emotive participants? Emotions, apathy, and protest participation",
+      "authors": [
+        "Luca Bettarelli",
+        "Caroline Close",
+        "Laura Jacobs",
+        "Emilie van Haute"
+      ],
+      "chapter_doi": "10.11647/obp.0401.04",
+      "citation_pages": "91-114"
+    },
+    {
+      "title": "1. Political resentment an empirical and conceptual introduction",
+      "authors": [
+        "Louise Knops",
+        "Karen Celis",
+        "Virginie Van Ingelgom"
+      ],
+      "chapter_doi": "10.11647/obp.0401.01",
+      "citation_pages": "1-28"
+    },
+    {
+      "title": "6. Congruent, yet resentful? Issue incongruence, resentment and party position knowledge",
+      "authors": [
+        "Jonas Lefevere",
+        "Patrick F. A. van Erkel",
+        "Stefaan Walgrave",
+        "Isaïa Jennart",
+        "Pierre Baudewyns",
+        "Benoît Rihoux"
+      ],
+      "chapter_doi": "10.11647/obp.0401.06",
+      "citation_pages": "139-162"
+    },
+    {
+      "title": "10. What do resentful citizens want from democracy?",
+      "authors": [
+        "Soetkin Verhaegen",
+        "Virginie Van Ingelgom",
+        "Louise Knops",
+        "Karen Celis",
+        "Kenza Amara-Hammou"
+      ],
+      "chapter_doi": "10.11647/obp.0401.10",
+      "citation_pages": "249-278"
+    },
+    {
+      "title": "11. Resentment, Democracy and Inequality Concluding reflections",
+      "authors": [
+        "Louise Knops",
+        "Karen Celis",
+        "Virginie Van Ingelgom"
+      ],
+      "chapter_doi": "10.11647/obp.0401.11",
+      "citation_pages": "279-292"
+    },
+    {
+      "title": "8. Resentment and Time clashing temporalities in citizens' relation to politics",
+      "authors": [
+        "Louise Knops",
+        "Heidi Mercenier",
+        "Eline Severs"
+      ],
+      "chapter_doi": "10.11647/obp.0401.08",
+      "citation_pages": "189-216"
+    },
+    {
+      "title": "7. Dissatisfied partisans and the unrepresented how feeling represented by at least some representatives matters",
+      "authors": [
+        "August De Mulder"
+      ],
+      "chapter_doi": "10.11647/obp.0401.07",
+      "citation_pages": "163-188"
+    },
+    {
+      "title": "2. Studying political resentment a methodological overview",
+      "authors": [
+        "Soetkin Verhaegen",
+        "August De Mulder",
+        "François Randour"
+      ],
+      "chapter_doi": "10.11647/obp.0401.02",
+      "citation_pages": "29-60"
+    },
+    {
+      "title": "3. Who feels resentful?",
+      "authors": [
+        "Fernando Feitosa",
+        "Pierre Baudewyns",
+        "Jean-Benoit Pilet",
+        "David Talukder"
+      ],
+      "chapter_doi": "10.11647/obp.0401.03",
+      "citation_pages": "61-90"
+    },
+    {
+      "title": "5. Illustrations of political resentment among disadvantaged people",
+      "authors": [
+        "Ramon van der Does",
+        "Kenza Amara-Hammou",
+        "David Talukder"
+      ],
+      "chapter_doi": "10.11647/obp.0401.05",
+      "citation_pages": "115-138"
+    }
+  ]
+}

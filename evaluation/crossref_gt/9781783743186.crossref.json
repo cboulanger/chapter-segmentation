@@ -1,0 +1,611 @@
+{
+  "isbn": "9781783743186",
+  "fetched_at": "2026-08-11T22:58:19.670416+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                5,
+                15
+              ]
+            ],
+            "date-time": "2017-05-15T00:00:00Z",
+            "timestamp": 1494806400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0111.03",
+      "type": "book-chapter",
+      "page": "61-80",
+      "title": [
+        "3. From Restitution to Redistribution of Ewe Heritage: Challenges and Prospects"
+      ],
+      "author": [
+        {
+          "given": "Kofi",
+          "family": "Dorvlo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Searching for Sharing"
+      ],
+      "ISBN": [
+        "9781783743186",
+        "9781783743193",
+        "9781783743209",
+        "9781800645301",
+        "9781783744183",
+        "9781783743216",
+        "9781783743223"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                5,
+                15
+              ]
+            ],
+            "date-time": "2017-05-15T00:00:00Z",
+            "timestamp": 1494806400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0111.02",
+      "type": "book-chapter",
+      "page": "41-60",
+      "title": [
+        "2. Technauriture as a Platform to Create an Inclusive Environment for the Sharing of Research"
+      ],
+      "author": [
+        {
+          "given": "Russell H.",
+          "family": "Kaschula",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Searching for Sharing"
+      ],
+      "ISBN": [
+        "9781783743186",
+        "9781783743193",
+        "9781783743209",
+        "9781800645301",
+        "9781783744183",
+        "9781783743216",
+        "9781783743223"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                5,
+                15
+              ]
+            ],
+            "date-time": "2017-05-15T00:00:00Z",
+            "timestamp": 1494806400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0111.08",
+      "type": "book-chapter",
+      "page": "5-22",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Daniela",
+          "family": "Merolla",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Searching for Sharing"
+      ],
+      "ISBN": [
+        "9781783743186",
+        "9781783743193",
+        "9781783743209",
+        "9781800645301",
+        "9781783744183",
+        "9781783743216",
+        "9781783743223"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                5,
+                15
+              ]
+            ],
+            "date-time": "2017-05-15T00:00:00Z",
+            "timestamp": 1494806400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0111.07",
+      "type": "book-chapter",
+      "page": "143-149",
+      "title": [
+        "Afterword: Sharing Located"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2262-0986",
+          "authenticated-orcid": false,
+          "given": "Mark",
+          "family": "Turin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Searching for Sharing"
+      ],
+      "ISBN": [
+        "9781783743186",
+        "9781783743193",
+        "9781783743209",
+        "9781800645301",
+        "9781783744183",
+        "9781783743216",
+        "9781783743223"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                5,
+                15
+              ]
+            ],
+            "date-time": "2017-05-15T00:00:00Z",
+            "timestamp": 1494806400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0111.05",
+      "type": "book-chapter",
+      "page": "109-122",
+      "title": [
+        "5. New Electronic Resources for Texts in Manding Languages"
+      ],
+      "author": [
+        {
+          "given": "Valentin",
+          "family": "Vydrin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Searching for Sharing"
+      ],
+      "ISBN": [
+        "9781783743186",
+        "9781783743193",
+        "9781783743209",
+        "9781800645301",
+        "9781783744183",
+        "9781783743216",
+        "9781783743223"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                5,
+                15
+              ]
+            ],
+            "date-time": "2017-05-15T00:00:00Z",
+            "timestamp": 1494806400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0111.04",
+      "type": "book-chapter",
+      "page": "81-108",
+      "title": [
+        "4. YouTube in Academic Teaching: A Multimedia Documentation of Siramori Diabaté’s Song “Nanyuman”"
+      ],
+      "author": [
+        {
+          "given": "Brahima",
+          "family": "Camara",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Graeme",
+          "family": "Counsel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jan",
+          "family": "Jansen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Searching for Sharing"
+      ],
+      "ISBN": [
+        "9781783743186",
+        "9781783743193",
+        "9781783743209",
+        "9781800645301",
+        "9781783744183",
+        "9781783743216",
+        "9781783743223"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                5,
+                15
+              ]
+            ],
+            "date-time": "2017-05-15T00:00:00Z",
+            "timestamp": 1494806400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0111.06",
+      "type": "book-chapter",
+      "page": "123-142",
+      "title": [
+        "6. Questioning “Restitution”: Oral Literature in Madagascar"
+      ],
+      "author": [
+        {
+          "given": "Brigitte",
+          "family": "Rasoloniaina",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andriamanivohasina",
+          "family": "Rakotomalala",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Searching for Sharing"
+      ],
+      "ISBN": [
+        "9781783743186",
+        "9781783743193",
+        "9781783743209",
+        "9781800645301",
+        "9781783744183",
+        "9781783743216",
+        "9781783743223"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                5,
+                15
+              ]
+            ],
+            "date-time": "2017-05-15T00:00:00Z",
+            "timestamp": 1494806400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0111.01",
+      "type": "book-chapter",
+      "page": "23-40",
+      "title": [
+        "1. The Mara Cultural Heritage Digital Library: The Implications of the Digital Return of Oral Tradition"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Bender Shetler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "World Oral Literature Series",
+        "Searching for Sharing"
+      ],
+      "ISBN": [
+        "9781783743186",
+        "9781783743193",
+        "9781783743209",
+        "9781800645301",
+        "9781783744183",
+        "9781783743216",
+        "9781783743223"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            15
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "3. From Restitution to Redistribution of Ewe Heritage: Challenges and Prospects",
+      "authors": [
+        "Kofi Dorvlo"
+      ],
+      "chapter_doi": "10.11647/obp.0111.03",
+      "citation_pages": "61-80"
+    },
+    {
+      "title": "2. Technauriture as a Platform to Create an Inclusive Environment for the Sharing of Research",
+      "authors": [
+        "Russell H. Kaschula"
+      ],
+      "chapter_doi": "10.11647/obp.0111.02",
+      "citation_pages": "41-60"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Daniela Merolla"
+      ],
+      "chapter_doi": "10.11647/obp.0111.08",
+      "citation_pages": "5-22"
+    },
+    {
+      "title": "Afterword: Sharing Located",
+      "authors": [
+        "Mark Turin"
+      ],
+      "chapter_doi": "10.11647/obp.0111.07",
+      "citation_pages": "143-149"
+    },
+    {
+      "title": "5. New Electronic Resources for Texts in Manding Languages",
+      "authors": [
+        "Valentin Vydrin"
+      ],
+      "chapter_doi": "10.11647/obp.0111.05",
+      "citation_pages": "109-122"
+    },
+    {
+      "title": "4. YouTube in Academic Teaching: A Multimedia Documentation of Siramori Diabaté’s Song “Nanyuman”",
+      "authors": [
+        "Brahima Camara",
+        "Graeme Counsel",
+        "Jan Jansen"
+      ],
+      "chapter_doi": "10.11647/obp.0111.04",
+      "citation_pages": "81-108"
+    },
+    {
+      "title": "6. Questioning “Restitution”: Oral Literature in Madagascar",
+      "authors": [
+        "Brigitte Rasoloniaina",
+        "Andriamanivohasina Rakotomalala"
+      ],
+      "chapter_doi": "10.11647/obp.0111.06",
+      "citation_pages": "123-142"
+    },
+    {
+      "title": "1. The Mara Cultural Heritage Digital Library: The Implications of the Digital Return of Oral Tradition",
+      "authors": [
+        "Jan Bender Shetler"
+      ],
+      "chapter_doi": "10.11647/obp.0111.01",
+      "citation_pages": "23-40"
+    }
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "isbn": "9781783747047",
+  "fetched_at": "2026-08-11T21:25:50.619435+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                15
+              ]
+            ],
+            "date-time": "2019-08-15T00:00:00Z",
+            "timestamp": 1565827200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0169.01",
+      "type": "book-chapter",
+      "page": "17-48",
+      "title": [
+        "1. Language Contact and the Politics of Recognition amongst Tibetans in the People’s Republic of China: The rTa’u-Speaking ‘Horpa’ of Khams"
+      ],
+      "author": [
+        {
+          "given": "Tunzhi",
+          "family": "Sonam Lhundrop",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hiroyuki",
+          "family": "Suzuki",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gerald",
+          "family": "Roche",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01rxfrp27",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "La Trobe University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Politics of Language Contact in the Himalaya"
+      ],
+      "ISBN": [
+        "9781783747047",
+        "9781783747054",
+        "9781783747061",
+        "9781800645844",
+        "9781783747092",
+        "9781783747078",
+        "9781783747085"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                15
+              ]
+            ],
+            "date-time": "2019-08-15T00:00:00Z",
+            "timestamp": 1565827200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0169.02",
+      "type": "book-chapter",
+      "page": "49-78",
+      "title": [
+        "2. What Happened to the Ahom Language? The Politics of Language Contact in Assam"
+      ],
+      "author": [
+        {
+          "given": "Selma K.",
+          "family": "Sonntag",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Politics of Language Contact in the Himalaya"
+      ],
+      "ISBN": [
+        "9781783747047",
+        "9781783747054",
+        "9781783747061",
+        "9781800645844",
+        "9781783747092",
+        "9781783747078",
+        "9781783747085"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                15
+              ]
+            ],
+            "date-time": "2019-08-15T00:00:00Z",
+            "timestamp": 1565827200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0169.05",
+      "type": "book-chapter",
+      "page": "137-162",
+      "title": [
+        "5. Speaking Chone, Speaking 'Shallow'"
+      ],
+      "author": [
+        {
+          "given": "Bendi",
+          "family": "Tso",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2262-0986",
+          "authenticated-orcid": false,
+          "given": "Mark",
+          "family": "Turin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Politics of Language Contact in the Himalaya"
+      ],
+      "subtitle": [
+        "Dual Linguistic Hegemonies in China's Tibetan Frontier"
+      ],
+      "ISBN": [
+        "9781783747047",
+        "9781783747054",
+        "9781783747061",
+        "9781800645844",
+        "9781783747092",
+        "9781783747078",
+        "9781783747085"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                15
+              ]
+            ],
+            "date-time": "2019-08-15T00:00:00Z",
+            "timestamp": 1565827200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0169.06",
+      "type": "book-chapter",
+      "page": "163-176",
+      "title": [
+        "6. Concluding Thoughts on Language Shift and Linguistic Diversity in the Himalaya: The Case of Nepal"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2262-0986",
+          "authenticated-orcid": false,
+          "given": "Mark",
+          "family": "Turin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03rmrcq20",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of British Columbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Politics of Language Contact in the Himalaya"
+      ],
+      "ISBN": [
+        "9781783747047",
+        "9781783747054",
+        "9781783747061",
+        "9781800645844",
+        "9781783747092",
+        "9781783747078",
+        "9781783747085"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                15
+              ]
+            ],
+            "date-time": "2019-08-15T00:00:00Z",
+            "timestamp": 1565827200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0169.04",
+      "type": "book-chapter",
+      "page": "109-136",
+      "title": [
+        "4. The Significance of Place in Ethnolinguistic Vitality"
+      ],
+      "author": [
+        {
+          "given": "Maya",
+          "family": "Daurio",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Politics of Language Contact in the Himalaya"
+      ],
+      "subtitle": [
+        "Spatial Variations Across the Kaike-Speaking Diaspora of Nepal"
+      ],
+      "ISBN": [
+        "9781783747047",
+        "9781783747054",
+        "9781783747061",
+        "9781800645844",
+        "9781783747092",
+        "9781783747078",
+        "9781783747085"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                15
+              ]
+            ],
+            "date-time": "2019-08-15T00:00:00Z",
+            "timestamp": 1565827200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0169.07",
+      "type": "book-chapter",
+      "page": "1-16",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Selma K.",
+          "family": "Sonntag",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Politics of Language Contact in the Himalaya"
+      ],
+      "subtitle": [
+        "Language Politics and Language Contact"
+      ],
+      "ISBN": [
+        "9781783747047",
+        "9781783747054",
+        "9781783747061",
+        "9781800645844",
+        "9781783747092",
+        "9781783747078",
+        "9781783747085"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                8,
+                15
+              ]
+            ],
+            "date-time": "2019-08-15T00:00:00Z",
+            "timestamp": 1565827200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0169.03",
+      "type": "book-chapter",
+      "page": "79-108",
+      "title": [
+        "3. Transforming Language to Script: Constructing Linguistic Authority through Language Contact in Schools in Nepal"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0540-4085",
+          "authenticated-orcid": false,
+          "given": "Uma",
+          "family": "Pradhan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Politics of Language Contact in the Himalaya"
+      ],
+      "ISBN": [
+        "9781783747047",
+        "9781783747054",
+        "9781783747061",
+        "9781800645844",
+        "9781783747092",
+        "9781783747078",
+        "9781783747085"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            15
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "1. Language Contact and the Politics of Recognition amongst Tibetans in the People’s Republic of China: The rTa’u-Speaking ‘Horpa’ of Khams",
+      "authors": [
+        "Tunzhi Sonam Lhundrop",
+        "Hiroyuki Suzuki",
+        "Gerald Roche"
+      ],
+      "chapter_doi": "10.11647/obp.0169.01",
+      "citation_pages": "17-48"
+    },
+    {
+      "title": "2. What Happened to the Ahom Language? The Politics of Language Contact in Assam",
+      "authors": [
+        "Selma K. Sonntag"
+      ],
+      "chapter_doi": "10.11647/obp.0169.02",
+      "citation_pages": "49-78"
+    },
+    {
+      "title": "5. Speaking Chone, Speaking 'Shallow' Dual Linguistic Hegemonies in China's Tibetan Frontier",
+      "authors": [
+        "Bendi Tso",
+        "Mark Turin"
+      ],
+      "chapter_doi": "10.11647/obp.0169.05",
+      "citation_pages": "137-162"
+    },
+    {
+      "title": "6. Concluding Thoughts on Language Shift and Linguistic Diversity in the Himalaya: The Case of Nepal",
+      "authors": [
+        "Mark Turin"
+      ],
+      "chapter_doi": "10.11647/obp.0169.06",
+      "citation_pages": "163-176"
+    },
+    {
+      "title": "4. The Significance of Place in Ethnolinguistic Vitality Spatial Variations Across the Kaike-Speaking Diaspora of Nepal",
+      "authors": [
+        "Maya Daurio"
+      ],
+      "chapter_doi": "10.11647/obp.0169.04",
+      "citation_pages": "109-136"
+    },
+    {
+      "title": "Introduction Language Politics and Language Contact",
+      "authors": [
+        "Selma K. Sonntag"
+      ],
+      "chapter_doi": "10.11647/obp.0169.07",
+      "citation_pages": "1-16"
+    },
+    {
+      "title": "3. Transforming Language to Script: Constructing Linguistic Authority through Language Contact in Schools in Nepal",
+      "authors": [
+        "Uma Pradhan"
+      ],
+      "chapter_doi": "10.11647/obp.0169.03",
+      "citation_pages": "79-108"
+    }
+  ]
+}

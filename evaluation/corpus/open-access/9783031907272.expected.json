@@ -75,7 +75,7 @@
       ],
       "citation_pages": "73-83",
       "pdf_start_index": 85,
-      "pdf_end_index": 97
+      "pdf_end_index": 95
     },
     {
       "title": "Enabling and Accelerating Quantum Computing with AI Supercomputing",
@@ -83,8 +83,8 @@
         "Mark Wolf"
       ],
       "citation_pages": "85-90",
-      "pdf_start_index": 98,
-      "pdf_end_index": 106
+      "pdf_start_index": 96,
+      "pdf_end_index": 101
     },
     {
       "title": "Quantum Threats",
@@ -92,7 +92,7 @@
         "Rajiv Krishnakumar"
       ],
       "citation_pages": "95-106",
-      "pdf_start_index": 107,
+      "pdf_start_index": 105,
       "pdf_end_index": 116
     },
     {
@@ -171,7 +171,7 @@
       ],
       "citation_pages": "185-196",
       "pdf_start_index": 190,
-      "pdf_end_index": 203
+      "pdf_end_index": 201
     },
     {
       "title": "Investment Trends in Quantum Computing",
@@ -179,7 +179,7 @@
         "Loïc Maréchal"
       ],
       "citation_pages": "197-207",
-      "pdf_start_index": 204,
+      "pdf_start_index": 202,
       "pdf_end_index": 212
     },
     {
@@ -202,7 +202,7 @@
       ],
       "citation_pages": "219-229",
       "pdf_start_index": 223,
-      "pdf_end_index": 235
+      "pdf_end_index": 233
     },
     {
       "title": "Quantum Ecosystem of Switzerland",
@@ -210,8 +210,12 @@
         "Brendan Karch"
       ],
       "citation_pages": "231-238",
-      "pdf_start_index": 236,
-      "pdf_end_index": 242
+      "pdf_start_index": 234,
+      "pdf_end_index": 241
     }
-  ]
+  ],
+  "toc": {
+    "toc_start_index": 10,
+    "toc_end_index": 11
+  }
 }

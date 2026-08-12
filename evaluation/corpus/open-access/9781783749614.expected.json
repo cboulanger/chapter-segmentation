@@ -1,0 +1,295 @@
+{
+  "chapters": [
+    {
+      "title": "Editors’ Preface",
+      "authors": [
+        "Oliver Rossier",
+        "Chelsea Miya",
+        "Geoffrey Rockwell"
+      ],
+      "citation_pages": "xxiii-xxvi",
+      "pdf_start_index": 23,
+      "pdf_end_index": 25
+    },
+    {
+      "title": "1. Why Should We Try to Be Sustainable? Expected Consequences and the Ethics of Making an Indeterminate Difference",
+      "authors": [
+        "Howard Nye"
+      ],
+      "citation_pages": "3-36",
+      "pdf_start_index": 29,
+      "pdf_end_index": 61
+    },
+    {
+      "title": "2. Sustainability in the Anthropocene From Forests to the Globe",
+      "authors": [
+        "Petra Dolata"
+      ],
+      "citation_pages": "37-60",
+      "pdf_start_index": 63,
+      "pdf_end_index": 85
+    },
+    {
+      "title": "3. Academia, Abstraction and the Anthropocene Changing the Story for Right Relationship",
+      "authors": [
+        "Kristine Kowalchuk"
+      ],
+      "citation_pages": "61-92",
+      "pdf_start_index": 87,
+      "pdf_end_index": 117
+    },
+    {
+      "title": "4. Kitting the Digital Humanities for the Anthropocene Digital Metabolism and Eco-Critical DH",
+      "authors": [
+        "Amanda Starling Gould"
+      ],
+      "citation_pages": "93-110",
+      "pdf_start_index": 119,
+      "pdf_end_index": 136
+    },
+    {
+      "title": "5. Impact of the Digital Revolution on Worldwide Energy Consumption",
+      "authors": [
+        "Doug Barlage",
+        "Gem Shoute"
+      ],
+      "citation_pages": "111-132",
+      "pdf_start_index": 137,
+      "pdf_end_index": 157
+    },
+    {
+      "title": "6. Sustainable DNA In Conversation",
+      "authors": [
+        "Mél Hogan",
+        "Deb Verhoeven"
+      ],
+      "citation_pages": "133-152",
+      "pdf_start_index": 159,
+      "pdf_end_index": 177
+    },
+    {
+      "title": "7. Design Education in the Anthropocene Teaching Systems Thinking",
+      "authors": [
+        "Eric Benson",
+        "Priscilla Ferronato"
+      ],
+      "citation_pages": "155-172",
+      "pdf_start_index": 181,
+      "pdf_end_index": 198
+    },
+    {
+      "title": "8. Inspiration from Goethe’s Tender Empiricism How to be the Person Collecting, Analyzing and Visualizing Data",
+      "authors": [
+        "Joshua Korenblat"
+      ],
+      "citation_pages": "173-216",
+      "pdf_start_index": 199,
+      "pdf_end_index": 241
+    },
+    {
+      "title": "9. Solidarity Seeds Situated Knowledges in Bishan Village, Wang Chau Village and Aarey Forest",
+      "authors": [
+        "Michael Leung"
+      ],
+      "citation_pages": "217-256",
+      "pdf_start_index": 243,
+      "pdf_end_index": 281
+    },
+    {
+      "title": "10. e-Waste Peep Show A Research-Creation Project on the (In)visibility of Technological Waste",
+      "authors": [
+        "Fan Lai-Tze"
+      ],
+      "citation_pages": "257-274",
+      "pdf_start_index": 283,
+      "pdf_end_index": 299
+    },
+    {
+      "title": "Art and/in the Anthropocene",
+      "authors": [
+        "Natalie Loveless"
+      ],
+      "citation_pages": "277-279",
+      "pdf_start_index": 303,
+      "pdf_end_index": 305
+    },
+    {
+      "title": "The Aesthetics of Hidden Ecologies",
+      "authors": [
+        "Andrew S. Yang"
+      ],
+      "citation_pages": "280-284",
+      "pdf_start_index": 306,
+      "pdf_end_index": 310
+    },
+    {
+      "title": "R.A.W. Arts of Barnyard Becomings",
+      "authors": [
+        "Karin Bolender"
+      ],
+      "citation_pages": "285-287",
+      "pdf_start_index": 311,
+      "pdf_end_index": 313
+    },
+    {
+      "title": "From Repulsion to Care",
+      "authors": [
+        "Leanne Olson"
+      ],
+      "citation_pages": "288-290",
+      "pdf_start_index": 314,
+      "pdf_end_index": 316
+    },
+    {
+      "title": "Nurture/Future/Sculpture",
+      "authors": [
+        "Christa Donner"
+      ],
+      "citation_pages": "291-293",
+      "pdf_start_index": 317,
+      "pdf_end_index": 319
+    },
+    {
+      "title": "Thoughts on an Unfinished Composition…",
+      "authors": [
+        "Scott Smallwood"
+      ],
+      "citation_pages": "294-297",
+      "pdf_start_index": 320,
+      "pdf_end_index": 323
+    },
+    {
+      "title": "Against Frontier Sustainability (or, Breaking Up with The High Frontier)",
+      "authors": [
+        "Jessie Beier"
+      ],
+      "citation_pages": "298-301",
+      "pdf_start_index": 324,
+      "pdf_end_index": 327
+    },
+    {
+      "title": "Aesthetic Attunements",
+      "authors": [
+        "Natalie Loveless"
+      ],
+      "citation_pages": "302-306",
+      "pdf_start_index": 328,
+      "pdf_end_index": 332
+    },
+    {
+      "title": "12. The Weight of The Digital: Experiencing Infrastructure with InfraVU",
+      "authors": [
+        "Ted Dawson"
+      ],
+      "citation_pages": "309-328",
+      "pdf_start_index": 335,
+      "pdf_end_index": 353
+    },
+    {
+      "title": "13. Asking Why Cultivating Eco-Consciousness in Research Labs",
+      "authors": [
+        "Allison Paradise"
+      ],
+      "citation_pages": "329-356",
+      "pdf_start_index": 355,
+      "pdf_end_index": 382
+    },
+    {
+      "title": "14. Sustainability, Living Labs and Repair Approaches to Climate Change Mitigation",
+      "authors": [
+        "Hart Cohen",
+        "Francesca Sidoti",
+        "Alison Gill",
+        "Abby Mellick Lopes",
+        "Maryella Hatfield",
+        "Jonathon Allen"
+      ],
+      "citation_pages": "357-398",
+      "pdf_start_index": 383,
+      "pdf_end_index": 389
+    },
+    {
+      "title": "A Decade of Design-led Sustainability Projects at Western Sydney",
+      "authors": [
+        "Abby Mellick Lopes",
+        "Jonathon Allen"
+      ],
+      "citation_pages": "364-374",
+      "pdf_start_index": 390,
+      "pdf_end_index": 400
+    },
+    {
+      "title": "Case Studies in Sustainability: The South Vineyard Creek Story",
+      "authors": [
+        "Maryella Hatfield"
+      ],
+      "citation_pages": "375-383",
+      "pdf_start_index": 401,
+      "pdf_end_index": 409
+    },
+    {
+      "title": "Re-pair An Open Project for Cultures and Economies of Repair in Western Sydney",
+      "authors": [
+        "Alison Gill",
+        "Abby Mellick Lopes",
+        "Francesca Sidoti"
+      ],
+      "citation_pages": "384-391",
+      "pdf_start_index": 410,
+      "pdf_end_index": 417
+    },
+    {
+      "title": "Coda",
+      "authors": [
+        "Hart Cohen"
+      ],
+      "citation_pages": "392-394",
+      "pdf_start_index": 418,
+      "pdf_end_index": 424
+    },
+    {
+      "title": "15. An Intro to Econferences",
+      "authors": [
+        "Geoffrey Rockwell",
+        "Oliver Rossier",
+        "Chelsea Miya"
+      ],
+      "citation_pages": "399-420",
+      "pdf_start_index": 425,
+      "pdf_end_index": 446
+    },
+    {
+      "title": "16. Econferences Are Not the Same, but Are They Good Enough?",
+      "authors": [
+        "Terry Anderson"
+      ],
+      "citation_pages": "421-434",
+      "pdf_start_index": 447,
+      "pdf_end_index": 460
+    },
+    {
+      "title": "17. Online Conferences Some History, Methods and Benefits",
+      "authors": [
+        "Nick Byrd"
+      ],
+      "citation_pages": "435-462",
+      "pdf_start_index": 461,
+      "pdf_end_index": 488
+    },
+    {
+      "title": "18. ‘Greening’ Academic Gatherings A Case for Econferences",
+      "authors": [
+        "Oliver Rossier",
+        "Chelsea Miya",
+        "Geoffrey Rockwell"
+      ],
+      "citation_pages": "463-510",
+      "pdf_start_index": 489,
+      "pdf_end_index": 536
+    }
+  ],
+  "toc": {
+    "toc_start_index": 7,
+    "toc_end_index": 9
+  }
+}

@@ -1,0 +1,679 @@
+{
+  "isbn": "9783837616620",
+  "fetched_at": "2026-08-11T15:08:56.212425+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/transcript.9783839416624.287",
+      "type": "book-chapter",
+      "page": "287-296",
+      "title": [
+        "Schlussbemerkungen"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.257",
+      "type": "book-chapter",
+      "page": "257-286",
+      "title": [
+        "Bewegungen in Zeit und Raum"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839416624.bm",
+      "title": [
+        "Backmatter"
+      ],
+      "page": "319-322",
+      "type": "book-chapter",
+      "container-title": [
+        "Sowjetisch wohnen"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837616620"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/transcript.9783839416624.fm",
+      "title": [
+        "Frontmatter"
+      ],
+      "page": "1-4",
+      "type": "book-chapter",
+      "container-title": [
+        "Sowjetisch wohnen"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783837616620"
+      ]
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.147",
+      "type": "book-chapter",
+      "page": "147-180",
+      "title": [
+        "Müll, Unordnung und Chaos"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.23",
+      "type": "book-chapter",
+      "page": "23-82",
+      "title": [
+        "Historischer Kontext"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.intro",
+      "type": "book-chapter",
+      "page": "7-22",
+      "title": [
+        "Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.bm",
+      "type": "book-chapter",
+      "page": "319-322",
+      "title": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.217",
+      "type": "book-chapter",
+      "page": "217-256",
+      "title": [
+        "Dialektik von Privatheit und Öffentlichkeit"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.181",
+      "type": "book-chapter",
+      "page": "181-216",
+      "title": [
+        "Solidarischer Eigen-Sinn oder eigensinnige Solidarität?"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.83",
+      "type": "book-chapter",
+      "page": "83-108",
+      "title": [
+        "Theoretische Grundlage"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.109",
+      "type": "book-chapter",
+      "page": "109-146",
+      "title": [
+        "Zeit/Raum(losigkeit)"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/transcript.9783839416624.ref",
+      "type": "book-chapter",
+      "page": "297-318",
+      "title": [
+        "Literaturverzeichnis"
+      ],
+      "author": [
+        {
+          "given": "Sandra",
+          "family": "Evans",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lettre",
+        "Sowjetisch wohnen"
+      ],
+      "ISBN": [
+        "9783837616620",
+        "9783839416624"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            6,
+            3
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Schlussbemerkungen",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.287",
+      "citation_pages": "287-296"
+    },
+    {
+      "title": "Bewegungen in Zeit und Raum",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.257",
+      "citation_pages": "257-286"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839416624.bm",
+      "citation_pages": "319-322"
+    },
+    {
+      "title": "",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [],
+      "chapter_doi": "10.1515/transcript.9783839416624.fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Müll, Unordnung und Chaos",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.147",
+      "citation_pages": "147-180"
+    },
+    {
+      "title": "Historischer Kontext",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.23",
+      "citation_pages": "23-82"
+    },
+    {
+      "title": "Einleitung",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.intro",
+      "citation_pages": "7-22"
+    },
+    {
+      "title": "",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.bm",
+      "citation_pages": "319-322"
+    },
+    {
+      "title": "Dialektik von Privatheit und Öffentlichkeit",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.217",
+      "citation_pages": "217-256"
+    },
+    {
+      "title": "Solidarischer Eigen-Sinn oder eigensinnige Solidarität?",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.181",
+      "citation_pages": "181-216"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Theoretische Grundlage",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.83",
+      "citation_pages": "83-108"
+    },
+    {
+      "title": "Zeit/Raum(losigkeit)",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.109",
+      "citation_pages": "109-146"
+    },
+    {
+      "title": "Literaturverzeichnis",
+      "authors": [
+        "Sandra Evans"
+      ],
+      "chapter_doi": "10.14361/transcript.9783839416624.ref",
+      "citation_pages": "297-318"
+    }
+  ]
+}

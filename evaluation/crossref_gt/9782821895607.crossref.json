@@ -1,0 +1,1573 @@
+{
+  "isbn": "9782821895607",
+  "fetched_at": "2026-08-11T22:43:38.543582+00:00",
+  "license": "https://www.openedition.org/12554",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4174",
+      "type": "book-chapter",
+      "page": "65-91",
+      "title": [
+        "Les modes de déploiement"
+      ],
+      "author": [
+        {
+          "given": "Sébastien",
+          "family": "Sauvé",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Laurent",
+          "family": "Spreutels",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mariya",
+          "family": "Marinova",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jean",
+          "family": "Paris",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Pierre",
+          "family": "Baptiste",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Christian",
+          "family": "Mascle",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Denyse",
+          "family": "Roy",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Pierre-Olivier",
+          "family": "Pineau",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yves",
+          "family": "Comeau",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Simon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Normandin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Frayret",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Emmanuel",
+          "family": "Raufflet",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Frank",
+          "family": "Scherrer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Christophe",
+          "family": "Abrassart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4193",
+      "type": "book-chapter",
+      "page": "127-147",
+      "title": [
+        "Les outils, les ressources et les savoirs existants"
+      ],
+      "author": [
+        {
+          "given": "Manuele",
+          "family": "Margni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fabienne",
+          "family": "Munch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sylvain",
+          "family": "Plouffe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sébastien",
+          "family": "Sauvé",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joëlle",
+          "family": "Pelletier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Claudia",
+          "family": "Rebolledo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Beaulieu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jacques",
+          "family": "Roy",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Silvia",
+          "family": "Ponce",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4161",
+      "type": "book-chapter",
+      "page": "23-36",
+      "title": [
+        "Pourquoi l’économie circulaire ?"
+      ],
+      "author": [
+        {
+          "given": "Laurent",
+          "family": "Jodoin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Pierre",
+          "family": "Baptiste",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bernard",
+          "family": "Sinclair-Desgagné",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sébastien",
+          "family": "Sauvé",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4213",
+      "type": "book-chapter",
+      "page": "181-184",
+      "title": [
+        "Les collaborateurs"
+      ],
+      "author": [
+        {
+          "given": "Mélanie",
+          "family": "McDonald",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Normandin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sébastien",
+          "family": "Sauvé",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4183",
+      "type": "book-chapter",
+      "page": "93-126",
+      "title": [
+        "La mobilisation des acteurs"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Lanoie",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hugo",
+          "family": "Tremblay",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sophie",
+          "family": "Bernard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mélanie",
+          "family": "McDonald",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Denis",
+          "family": "Chênevert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Martine",
+          "family": "Vézina",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jonathan",
+          "family": "Deschênes",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "JoAnne",
+          "family": "Labrecque",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Nicole",
+          "family": "Gombay",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Louise",
+          "family": "Millette",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jean-François",
+          "family": "Desgroseilliers",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4159",
+      "type": "book-chapter",
+      "page": "13-22",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Luce",
+          "family": "Beaulieu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Normandin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4214",
+      "type": "book-chapter",
+      "page": "185-185",
+      "title": [
+        "Liste des figures"
+      ],
+      "author": [
+        {
+          "given": "Mélanie",
+          "family": "McDonald",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Normandin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sébastien",
+          "family": "Sauvé",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4156",
+      "type": "book-chapter",
+      "page": "7-7",
+      "title": [
+        "Remerciements"
+      ],
+      "author": [
+        {
+          "given": "Sébastien",
+          "family": "Sauvé",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Normandin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mélanie",
+          "family": "McDonald",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4157",
+      "type": "book-chapter",
+      "page": "9-12",
+      "title": [
+        "Préface"
+      ],
+      "author": [
+        {
+          "given": "Arab",
+          "family": "Hoballah",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4202",
+      "type": "book-chapter",
+      "page": "149-174",
+      "title": [
+        "Les limites et les pistes d’enrichissement du modèle"
+      ],
+      "author": [
+        {
+          "given": "Gabrielle van",
+          "family": "Durme",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Luce",
+          "family": "Beaulieu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Manuele",
+          "family": "Margni",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Peter",
+          "family": "Dietsch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Danielle",
+          "family": "Zwarthoed",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yves-Marie",
+          "family": "Abraham",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Thierry C.",
+          "family": "Pauchant",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yoann",
+          "family": "Guntzburger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ingrid",
+          "family": "Hall",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Paul",
+          "family": "Sabourin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sara",
+          "family": "Teitelbaum",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4165",
+      "type": "book-chapter",
+      "page": "37-63",
+      "title": [
+        "Les stratégies de circularité des ressources"
+      ],
+      "author": [
+        {
+          "given": "Michel",
+          "family": "Dagenais",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jonathan",
+          "family": "Deschênes",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mélanie",
+          "family": "McDonald",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Pierre",
+          "family": "Baptiste",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Christian",
+          "family": "Mascle",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Robert",
+          "family": "Legros",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Laurent",
+          "family": "Spreutels",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mariya",
+          "family": "Marinova",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Michel",
+          "family": "Perrier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Frayret",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.pum.4212",
+      "type": "book-chapter",
+      "page": "175-179",
+      "title": [
+        "Bibliographie"
+      ],
+      "author": [
+        {
+          "given": "Mélanie",
+          "family": "McDonald",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Normandin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sébastien",
+          "family": "Sauvé",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "L'économie circulaire"
+      ],
+      "ISBN": [
+        "9782821895607",
+        "9782760636750"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Les modes de déploiement",
+      "authors": [
+        "Sébastien Sauvé",
+        "Laurent Spreutels",
+        "Mariya Marinova",
+        "Jean Paris",
+        "Pierre Baptiste",
+        "Christian Mascle",
+        "Denyse Roy",
+        "Pierre-Olivier Pineau",
+        "Yves Comeau",
+        "Richard Simon",
+        "Daniel Normandin",
+        "Jean-Marc Frayret",
+        "Emmanuel Raufflet",
+        "Frank Scherrer",
+        "Christophe Abrassart"
+      ],
+      "chapter_doi": "10.4000/books.pum.4174",
+      "citation_pages": "65-91"
+    },
+    {
+      "title": "Les outils, les ressources et les savoirs existants",
+      "authors": [
+        "Manuele Margni",
+        "Fabienne Munch",
+        "Sylvain Plouffe",
+        "Sébastien Sauvé",
+        "Joëlle Pelletier",
+        "Claudia Rebolledo",
+        "Martin Beaulieu",
+        "Jacques Roy",
+        "Silvia Ponce"
+      ],
+      "chapter_doi": "10.4000/books.pum.4193",
+      "citation_pages": "127-147"
+    },
+    {
+      "title": "Pourquoi l’économie circulaire ?",
+      "authors": [
+        "Laurent Jodoin",
+        "Pierre Baptiste",
+        "Bernard Sinclair-Desgagné",
+        "Sébastien Sauvé"
+      ],
+      "chapter_doi": "10.4000/books.pum.4161",
+      "citation_pages": "23-36"
+    },
+    {
+      "title": "Les collaborateurs",
+      "authors": [
+        "Mélanie McDonald",
+        "Daniel Normandin",
+        "Sébastien Sauvé"
+      ],
+      "chapter_doi": "10.4000/books.pum.4213",
+      "citation_pages": "181-184"
+    },
+    {
+      "title": "La mobilisation des acteurs",
+      "authors": [
+        "Paul Lanoie",
+        "Hugo Tremblay",
+        "Sophie Bernard",
+        "Mélanie McDonald",
+        "Denis Chênevert",
+        "Martine Vézina",
+        "Jonathan Deschênes",
+        "JoAnne Labrecque",
+        "Nicole Gombay",
+        "Louise Millette",
+        "Jean-François Desgroseilliers"
+      ],
+      "chapter_doi": "10.4000/books.pum.4183",
+      "citation_pages": "93-126"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Luce Beaulieu",
+        "Daniel Normandin"
+      ],
+      "chapter_doi": "10.4000/books.pum.4159",
+      "citation_pages": "13-22"
+    },
+    {
+      "title": "Liste des figures",
+      "authors": [
+        "Mélanie McDonald",
+        "Daniel Normandin",
+        "Sébastien Sauvé"
+      ],
+      "chapter_doi": "10.4000/books.pum.4214",
+      "citation_pages": "185-185"
+    },
+    {
+      "title": "Remerciements",
+      "authors": [
+        "Sébastien Sauvé",
+        "Daniel Normandin",
+        "Mélanie McDonald"
+      ],
+      "chapter_doi": "10.4000/books.pum.4156",
+      "citation_pages": "7-7"
+    },
+    {
+      "title": "Préface",
+      "authors": [
+        "Arab Hoballah"
+      ],
+      "chapter_doi": "10.4000/books.pum.4157",
+      "citation_pages": "9-12"
+    },
+    {
+      "title": "Les limites et les pistes d’enrichissement du modèle",
+      "authors": [
+        "Gabrielle van Durme",
+        "Luce Beaulieu",
+        "Manuele Margni",
+        "Peter Dietsch",
+        "Danielle Zwarthoed",
+        "Yves-Marie Abraham",
+        "Thierry C. Pauchant",
+        "Yoann Guntzburger",
+        "Ingrid Hall",
+        "Paul Sabourin",
+        "Sara Teitelbaum"
+      ],
+      "chapter_doi": "10.4000/books.pum.4202",
+      "citation_pages": "149-174"
+    },
+    {
+      "title": "Les stratégies de circularité des ressources",
+      "authors": [
+        "Michel Dagenais",
+        "Jonathan Deschênes",
+        "Mélanie McDonald",
+        "Pierre Baptiste",
+        "Christian Mascle",
+        "Robert Legros",
+        "Laurent Spreutels",
+        "Mariya Marinova",
+        "Michel Perrier",
+        "Jean-Marc Frayret"
+      ],
+      "chapter_doi": "10.4000/books.pum.4165",
+      "citation_pages": "37-63"
+    },
+    {
+      "title": "Bibliographie",
+      "authors": [
+        "Mélanie McDonald",
+        "Daniel Normandin",
+        "Sébastien Sauvé"
+      ],
+      "chapter_doi": "10.4000/books.pum.4212",
+      "citation_pages": "175-179"
+    }
+  ]
+}

@@ -1,0 +1,928 @@
+{
+  "isbn": "9783837666496",
+  "fetched_at": "2026-08-11T22:58:11.797552+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-003",
+      "type": "book-chapter",
+      "page": "49-68",
+      "title": [
+        "»Ich weiß es nicht, ob die Utopie einer ›Literatur ohne Grenzen‹ möglich ist.«"
+      ],
+      "author": [
+        {
+          "given": "Marek",
+          "family": "Jakubów",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-004",
+      "type": "book-chapter",
+      "page": "69-84",
+      "title": [
+        "Auf Entdeckungsreisen zu Sprachen der Vorfahren"
+      ],
+      "author": [
+        {
+          "given": "Jolanta",
+          "family": "Pacyniak",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "subtitle": [
+        "Die Mehrsprachigkeit in Ambra von Sabrina Janesch"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Gabriella",
+          "family": "Pelloni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Università di Verona, Italien"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8306-6042",
+          "authenticated-orcid": true,
+          "given": "Ievgeniia",
+          "family": "Voloshchuk",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Europa-Universität Viadrina Frankfurt (Oder), Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-002",
+      "type": "book-chapter",
+      "page": "25-48",
+      "title": [
+        "»mitten im übersetzen«"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1379-1708",
+          "authenticated-orcid": true,
+          "given": "Renata",
+          "family": "Cornejo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "subtitle": [
+        "Zur textinternen Mehrsprachigkeit in ausgewählten Gedichten von Jiří Grusa"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-006",
+      "type": "book-chapter",
+      "page": "107-128",
+      "title": [
+        "Intermedialität und Migration"
+      ],
+      "author": [
+        {
+          "given": "Natalia",
+          "family": "Blum-Barth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "subtitle": [
+        "Zur Einwirkung der Musik auf die Literatur aus der Perspektive der Mehrsprachigkeit"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Gabriella",
+          "family": "Pelloni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Università di Verona, Italien"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8306-6042",
+          "authenticated-orcid": true,
+          "given": "Ievgeniia",
+          "family": "Voloshchuk",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Europa-Universität Viadrina Frankfurt (Oder), Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-005",
+      "type": "book-chapter",
+      "page": "85-106",
+      "title": [
+        "Mehrsprachigkeit im Paratext"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8306-6042",
+          "authenticated-orcid": true,
+          "given": "Ievgeniia",
+          "family": "Voloshchuk",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Europa-Universität Viadrina Frankfurt (Oder), Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "subtitle": [
+        "Zu Strategien des transkulturellen Schreibens von deutschsprachigen Gegenwartsautor:innen aus den postsowjetischen Ländern"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-001",
+      "type": "book-chapter",
+      "page": "7-24",
+      "title": [
+        "Einleitung"
+      ],
+      "author": [
+        {
+          "given": "Gabriella",
+          "family": "Pelloni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Università di Verona, Italien"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8306-6042",
+          "authenticated-orcid": true,
+          "given": "Ievgeniia",
+          "family": "Voloshchuk",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Europa-Universität Viadrina Frankfurt (Oder), Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-010",
+      "type": "book-chapter",
+      "page": "167-170",
+      "title": [
+        "Namensindex"
+      ],
+      "author": [
+        {
+          "given": "Gabriella",
+          "family": "Pelloni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Università di Verona, Italien"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8306-6042",
+          "authenticated-orcid": true,
+          "given": "Ievgeniia",
+          "family": "Voloshchuk",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Europa-Universität Viadrina Frankfurt (Oder), Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-009",
+      "type": "book-chapter",
+      "page": "163-166",
+      "title": [
+        "Biogramme der Autor:innen"
+      ],
+      "author": [
+        {
+          "given": "Gabriella",
+          "family": "Pelloni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Università di Verona, Italien"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8306-6042",
+          "authenticated-orcid": true,
+          "given": "Ievgeniia",
+          "family": "Voloshchuk",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Europa-Universität Viadrina Frankfurt (Oder), Deutschland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-008",
+      "type": "book-chapter",
+      "page": "141-160",
+      "title": [
+        "Sprachreflexion und textinterne Mehrsprachigkeit in Ivna Zics Die Nachkommende und Lena Goreliks Wer wir sind"
+      ],
+      "author": [
+        {
+          "given": "Monika",
+          "family": "Riedel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2023-11-24T00:00:00Z",
+            "timestamp": 1700784000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839466490-007",
+      "type": "book-chapter",
+      "page": "129-140",
+      "title": [
+        "»Raus aus dem Stacheldraht, hinaus in die deutsche Sprache […] ins Paradies«"
+      ],
+      "author": [
+        {
+          "given": "Primus-Heinz",
+          "family": "Kucher",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Gegenwartsliteratur",
+        "Sprachwechsel - Perspektivenwechsel?"
+      ],
+      "subtitle": [
+        "Erinnerung und Gegenwart in Lena Goreliks Wer wir sind (2021) in einem vergleichenden Exkurs zu Vladimir Vertlibs Schimons Schweigen (2012)"
+      ],
+      "ISBN": [
+        "9783837666496",
+        "9783839466490"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "»Ich weiß es nicht, ob die Utopie einer ›Literatur ohne Grenzen‹ möglich ist.«",
+      "authors": [
+        "Marek Jakubów"
+      ],
+      "chapter_doi": "10.14361/9783839466490-003",
+      "citation_pages": "49-68"
+    },
+    {
+      "title": "Auf Entdeckungsreisen zu Sprachen der Vorfahren Die Mehrsprachigkeit in Ambra von Sabrina Janesch",
+      "authors": [
+        "Jolanta Pacyniak"
+      ],
+      "chapter_doi": "10.14361/9783839466490-004",
+      "citation_pages": "69-84"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Gabriella Pelloni",
+        "Ievgeniia Voloshchuk"
+      ],
+      "chapter_doi": "10.14361/9783839466490-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "»mitten im übersetzen« Zur textinternen Mehrsprachigkeit in ausgewählten Gedichten von Jiří Grusa",
+      "authors": [
+        "Renata Cornejo"
+      ],
+      "chapter_doi": "10.14361/9783839466490-002",
+      "citation_pages": "25-48"
+    },
+    {
+      "title": "Intermedialität und Migration Zur Einwirkung der Musik auf die Literatur aus der Perspektive der Mehrsprachigkeit",
+      "authors": [
+        "Natalia Blum-Barth"
+      ],
+      "chapter_doi": "10.14361/9783839466490-006",
+      "citation_pages": "107-128"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Gabriella Pelloni",
+        "Ievgeniia Voloshchuk"
+      ],
+      "chapter_doi": "10.14361/9783839466490-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Mehrsprachigkeit im Paratext Zu Strategien des transkulturellen Schreibens von deutschsprachigen Gegenwartsautor:innen aus den postsowjetischen Ländern",
+      "authors": [
+        "Ievgeniia Voloshchuk"
+      ],
+      "chapter_doi": "10.14361/9783839466490-005",
+      "citation_pages": "85-106"
+    },
+    {
+      "title": "Einleitung",
+      "authors": [
+        "Gabriella Pelloni",
+        "Ievgeniia Voloshchuk"
+      ],
+      "chapter_doi": "10.14361/9783839466490-001",
+      "citation_pages": "7-24"
+    },
+    {
+      "title": "Namensindex",
+      "authors": [
+        "Gabriella Pelloni",
+        "Ievgeniia Voloshchuk"
+      ],
+      "chapter_doi": "10.14361/9783839466490-010",
+      "citation_pages": "167-170"
+    },
+    {
+      "title": "Biogramme der Autor:innen",
+      "authors": [
+        "Gabriella Pelloni",
+        "Ievgeniia Voloshchuk"
+      ],
+      "chapter_doi": "10.14361/9783839466490-009",
+      "citation_pages": "163-166"
+    },
+    {
+      "title": "Sprachreflexion und textinterne Mehrsprachigkeit in Ivna Zics Die Nachkommende und Lena Goreliks Wer wir sind",
+      "authors": [
+        "Monika Riedel"
+      ],
+      "chapter_doi": "10.14361/9783839466490-008",
+      "citation_pages": "141-160"
+    },
+    {
+      "title": "»Raus aus dem Stacheldraht, hinaus in die deutsche Sprache […] ins Paradies« Erinnerung und Gegenwart in Lena Goreliks Wer wir sind (2021) in einem vergleichenden Exkurs zu Vladimir Vertlibs Schimons Schweigen (2012)",
+      "authors": [
+        "Primus-Heinz Kucher"
+      ],
+      "chapter_doi": "10.14361/9783839466490-007",
+      "citation_pages": "129-140"
+    }
+  ]
+}

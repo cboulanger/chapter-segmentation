@@ -16,7 +16,7 @@
         "Aaron Koller"
       ],
       "citation_pages": "1-28",
-      "pdf_start_index": 40,
+      "pdf_start_index": 41,
       "pdf_end_index": 67
     },
     {
@@ -25,7 +25,7 @@
         "Nick Posegay"
       ],
       "citation_pages": "29-56",
-      "pdf_start_index": 68,
+      "pdf_start_index": 69,
       "pdf_end_index": 95
     },
     {
@@ -34,7 +34,7 @@
         "Steven E. Fassberg"
       ],
       "citation_pages": "57-74",
-      "pdf_start_index": 96,
+      "pdf_start_index": 97,
       "pdf_end_index": 114
     },
     {
@@ -61,7 +61,7 @@
         "Na’ama Pat-El"
       ],
       "citation_pages": "117-144",
-      "pdf_start_index": 156,
+      "pdf_start_index": 157,
       "pdf_end_index": 184
     },
     {
@@ -88,7 +88,7 @@
         "Bo Isaksson"
       ],
       "citation_pages": "197-240",
-      "pdf_start_index": 236,
+      "pdf_start_index": 237,
       "pdf_end_index": 280
     },
     {
@@ -131,7 +131,7 @@
         "Ethan Jones"
       ],
       "citation_pages": "391-430",
-      "pdf_start_index": 430,
+      "pdf_start_index": 431,
       "pdf_end_index": 469
     },
     {
@@ -140,7 +140,7 @@
         "Ellen van Wolde"
       ],
       "citation_pages": "431-454",
-      "pdf_start_index": 470,
+      "pdf_start_index": 471,
       "pdf_end_index": 493
     },
     {
@@ -149,7 +149,7 @@
         "Daniel Wilson"
       ],
       "citation_pages": "455-472",
-      "pdf_start_index": 494,
+      "pdf_start_index": 495,
       "pdf_end_index": 511
     },
     {
@@ -158,7 +158,7 @@
         "Lutz Edzard"
       ],
       "citation_pages": "473-496",
-      "pdf_start_index": 512,
+      "pdf_start_index": 513,
       "pdf_end_index": 536
     },
     {
@@ -176,7 +176,7 @@
         "Christian Locatell"
       ],
       "citation_pages": "547-616",
-      "pdf_start_index": 586,
+      "pdf_start_index": 587,
       "pdf_end_index": 655
     },
     {
@@ -186,7 +186,7 @@
         "Jacobus A. Naudé"
       ],
       "citation_pages": "617-640",
-      "pdf_start_index": 656,
+      "pdf_start_index": 657,
       "pdf_end_index": 680
     },
     {
@@ -204,7 +204,7 @@
         "Gary A. Rendsburg"
       ],
       "citation_pages": "717-740",
-      "pdf_start_index": 756,
+      "pdf_start_index": 757,
       "pdf_end_index": 779
     },
     {
@@ -213,8 +213,12 @@
         "Yehonatan Wormser"
       ],
       "citation_pages": "741-756",
-      "pdf_start_index": 780,
+      "pdf_start_index": 781,
       "pdf_end_index": 807
     }
-  ]
+  ],
+  "toc": {
+    "toc_start_index": 5,
+    "toc_end_index": 7
+  }
 }

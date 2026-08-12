@@ -1,0 +1,2426 @@
+{
+  "isbn": "9781800648913",
+  "fetched_at": "2026-08-11T22:58:17.812474+00:00",
+  "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.03",
+      "type": "book-chapter",
+      "page": "55-76",
+      "title": [
+        "3. Up, Down, Stop, Go, and Everything In Between"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4571-2661",
+          "authenticated-orcid": false,
+          "given": "Holly",
+          "family": "Sienkiewicz",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Common Ground Health"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jenn",
+          "family": "Beideman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Common Ground Health"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Beatriz",
+          "family": "LeBron",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Common Ground Health"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shanielia",
+          "family": "Lewis",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Emma",
+          "family": "Morrison",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lydia",
+          "family": "Rivera",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dina",
+          "family": "Faticone",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Common Ground Health"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Promoting a Resident-Driven Play-based Agenda during a Global Pandemic in Rochester, New York"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.18",
+      "type": "book-chapter",
+      "page": "395-426",
+      "title": [
+        "18. What’s behind the Mask? Family, Fandoms and Playful Caring around Children’s Masks during the Covid-19 Pandemic"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4779-574X",
+          "authenticated-orcid": false,
+          "given": "Yinka",
+          "family": "Olusoga",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05krs5044",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Sheffield"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0302b4677",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "British Academy"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Catherine",
+          "family": "Bannister",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05krs5044",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Sheffield"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.07",
+      "type": "book-chapter",
+      "page": "143-166",
+      "title": [
+        "7. Objects of Resilience"
+      ],
+      "author": [
+        {
+          "given": "Katriina",
+          "family": "Heljakka",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05vghhr25",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Turku"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Plush Perspectives on Pandemic Toy Play in Finland"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.21",
+      "type": "book-chapter",
+      "page": "457-478",
+      "title": [
+        "Postscript"
+      ],
+      "author": [
+        {
+          "given": "Anna",
+          "family": "Beresin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1926-9715",
+          "authenticated-orcid": false,
+          "given": "Julia",
+          "family": "Bishop",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0654-8371",
+          "authenticated-orcid": false,
+          "given": "Chloé",
+          "family": "Beatty",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Caron",
+          "family": "Carter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Suzanne",
+          "family": "Egan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Beatriz",
+          "family": "LeBron",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ruth",
+          "family": "Hazleton",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katriina",
+          "family": "Heljakka",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicolas",
+          "family": "Le Bigre",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shanielia",
+          "family": "Lewis",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Judy",
+          "family": "McKinty",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1519-9935",
+          "authenticated-orcid": false,
+          "given": "Nevena",
+          "family": "Mitranić",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Emma",
+          "family": "Morrison",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patricia",
+          "family": "Neville",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "John",
+          "family": "Potter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martha",
+          "family": "Radice",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4571-2661",
+          "authenticated-orcid": false,
+          "given": "Holly",
+          "family": "Sienkiewicz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Danni",
+          "family": "von der Borch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Suggestions for Those Who Work and Play with Children, Youth and Adults"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.22",
+      "type": "book-chapter",
+      "page": "xix-xxxii",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Anna",
+          "family": "Beresin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/040w1dr55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Arts"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1926-9715",
+          "authenticated-orcid": false,
+          "given": "Julia",
+          "family": "Bishop",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05krs5044",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Sheffield"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.17",
+      "type": "book-chapter",
+      "page": "371-394",
+      "title": [
+        "17. Techno-Mischief"
+      ],
+      "author": [
+        {
+          "given": "Anna",
+          "family": "Beresin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/040w1dr55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Arts"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Negotiating Exaggeration Online in Quarantine"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.04",
+      "type": "book-chapter",
+      "page": "77-96",
+      "title": [
+        "4. ‘Let Them Play’"
+      ],
+      "author": [
+        {
+          "given": "Maria",
+          "family": "O’Dwyer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Prevention and Early Intervention Network"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1560-0351",
+          "authenticated-orcid": false,
+          "given": "Carmel",
+          "family": "Hannan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00a0n9e72",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Limerick"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patricia",
+          "family": "Neville",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0524sp257",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Bristol"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Exploring Class, the Play Divide and the Impact of Covid-19 in the Republic of Ireland"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.15",
+      "type": "book-chapter",
+      "page": "319-342",
+      "title": [
+        "15. Happy Yardi Gras! Playing with Carnival in New Orleans during the Covid-19 Pandemic"
+      ],
+      "author": [
+        {
+          "given": "Martha",
+          "family": "Radice",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01e6qks80",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Dalhousie University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.09",
+      "type": "book-chapter",
+      "page": "191-214",
+      "title": [
+        "9. Parents’ Perspectives on Their Children’s Play and Friendships during the Covid-19 Pandemic in England"
+      ],
+      "author": [
+        {
+          "given": "Caron",
+          "family": "Carter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/019wt1929",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sheffield Hallam University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.16",
+      "type": "book-chapter",
+      "page": "343-370",
+      "title": [
+        "16. ‘We Stayed Home and Found New Ways to Play’"
+      ],
+      "author": [
+        {
+          "given": "Judy",
+          "family": "McKinty",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ruth",
+          "family": "Hazleton",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04yvjg468",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National Library of Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Danni",
+          "family": "von der Borch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "A Study of Playfulness, Creativity and Resilience in Australian Children during the Covid-19 Pandemic"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.08",
+      "type": "book-chapter",
+      "page": "167-190",
+      "title": [
+        "8. ‘This Is the Ambulance, This Truck’"
+      ],
+      "author": [
+        {
+          "given": "Anna",
+          "family": "Beresin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/040w1dr55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Arts"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Covid as Frame, Theme and Provocation in Philadelphia, USA"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.05",
+      "type": "book-chapter",
+      "page": "97-118",
+      "title": [
+        "5. How Playwork in the United Kingdom Coped with Covid-19 and the 23 March Lockdown"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0273-8191",
+          "authenticated-orcid": false,
+          "given": "Pete",
+          "family": "King",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/053fq8t95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Swansea University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.11",
+      "type": "book-chapter",
+      "page": "239-264",
+      "title": [
+        "11. Play and Vulnerability in Scotland during the Covid-19 Pandemic"
+      ],
+      "author": [
+        {
+          "given": "Nicolas",
+          "family": "Le Bigre",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/016476m91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Aberdeen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.10",
+      "type": "book-chapter",
+      "page": "215-238",
+      "title": [
+        "10. Digital Heroes of the Imagination"
+      ],
+      "author": [
+        {
+          "given": "William",
+          "family": "Renel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7104-3062",
+          "authenticated-orcid": false,
+          "given": "Jessica",
+          "family": "Thom",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "An Exploration of Disabled-Led Play in England during the Covid-19 Pandemic"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.12",
+      "type": "book-chapter",
+      "page": "265-284",
+      "title": [
+        "12. How Young Children Played during the Covid-19 Lockdown in 2020 in Ireland"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7238-6529",
+          "authenticated-orcid": false,
+          "given": "Suzanne M.",
+          "family": "Egan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00a0n9e72",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Limerick"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jennifer",
+          "family": "Pope",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/009q3yg92",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Mary Immaculate College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0654-8371",
+          "authenticated-orcid": false,
+          "given": "Chloé",
+          "family": "Beatty",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/009q3yg92",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Mary Immaculate College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Clara",
+          "family": "Hoyne",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/009q3yg92",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Mary Immaculate College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Findings from the Play and Learning in the Early Years (PLEY) Covid-19 Study"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.14",
+      "type": "book-chapter",
+      "page": "299-316",
+      "title": [
+        "14. The Observatory of Children’s Play Experiences during Covid-19"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Potter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michelle",
+          "family": "Cannon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "A Photo Essay"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.20",
+      "type": "book-chapter",
+      "page": "441-446",
+      "title": [
+        "Conclusion"
+      ],
+      "author": [
+        {
+          "given": "Anna",
+          "family": "Beresin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/040w1dr55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of the Arts"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1926-9715",
+          "authenticated-orcid": false,
+          "given": "Julia",
+          "family": "Bishop",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05krs5044",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Sheffield"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Covid in a Play Frame"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.19",
+      "type": "book-chapter",
+      "page": "427-440",
+      "title": [
+        "19. Art in the Streets"
+      ],
+      "author": [
+        {
+          "given": "Heather",
+          "family": "Shirey",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05vfxvp80",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of St. Thomas - Minnesota"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Playful Politics in the Work of The Velvet Bandit and SudaLove"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.06",
+      "type": "book-chapter",
+      "page": "119-140",
+      "title": [
+        "6. Playworkers’ Experiences, Children’s Rights and Covid-19"
+      ],
+      "author": [
+        {
+          "given": "Mitsunari",
+          "family": "Terada",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Japan Adventure Playground Association"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05m6adj80",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Takasaki City University of Economics"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9720-4330",
+          "authenticated-orcid": false,
+          "given": "Mariia",
+          "family": "Ermilova",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01hjzeq58",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Chiba University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hitoshi",
+          "family": "Shimamura",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "TOKYO PLAY"
+            },
+            {
+              "name": "Japan Playwork Association"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "A Case Study of Kodomo Yume Park, Japan"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.01",
+      "type": "book-chapter",
+      "page": "3-32",
+      "title": [
+        "1. ‘Tag, You’ve Got Coronavirus!’ Chase Games in a Covid Frame"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1926-9715",
+          "authenticated-orcid": false,
+          "given": "Julia",
+          "family": "Bishop",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05krs5044",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Sheffield"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.02",
+      "type": "book-chapter",
+      "page": "33-54",
+      "title": [
+        "2. Gathered in Play"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1684-952X",
+          "authenticated-orcid": false,
+          "given": "Živka",
+          "family": "Krnjaja",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02qsmb048",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Belgrade"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1519-9935",
+          "authenticated-orcid": false,
+          "given": "Nevena",
+          "family": "Mitranić",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02qsmb048",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Belgrade"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Play as the Common Space during the Covid-19 Lockdown in Serbia"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2023-06-01T00:00:00Z",
+            "timestamp": 1685577600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0326.13",
+      "type": "book-chapter",
+      "page": "285-298",
+      "title": [
+        "13. Children’s Emerging Play and Experience in the Covid-19 Era"
+      ],
+      "author": [
+        {
+          "given": "Pool Ip",
+          "family": "Dong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04ts4qa58",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Changwon National University"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04ts4qa58",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Changwon National University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Play in a Covid Frame"
+      ],
+      "subtitle": [
+        "Educational Endeavours and Changes in South Korea"
+      ],
+      "ISBN": [
+        "9781800648913",
+        "9781800648920",
+        "9781800648937",
+        "9781800648975",
+        "9781800648944"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "3. Up, Down, Stop, Go, and Everything In Between Promoting a Resident-Driven Play-based Agenda during a Global Pandemic in Rochester, New York",
+      "authors": [
+        "Holly Sienkiewicz",
+        "Jenn Beideman",
+        "Beatriz LeBron",
+        "Shanielia Lewis",
+        "Emma Morrison",
+        "Lydia Rivera",
+        "Dina Faticone"
+      ],
+      "chapter_doi": "10.11647/obp.0326.03",
+      "citation_pages": "55-76"
+    },
+    {
+      "title": "18. What’s behind the Mask? Family, Fandoms and Playful Caring around Children’s Masks during the Covid-19 Pandemic",
+      "authors": [
+        "Yinka Olusoga",
+        "Catherine Bannister"
+      ],
+      "chapter_doi": "10.11647/obp.0326.18",
+      "citation_pages": "395-426"
+    },
+    {
+      "title": "7. Objects of Resilience Plush Perspectives on Pandemic Toy Play in Finland",
+      "authors": [
+        "Katriina Heljakka"
+      ],
+      "chapter_doi": "10.11647/obp.0326.07",
+      "citation_pages": "143-166"
+    },
+    {
+      "title": "Postscript Suggestions for Those Who Work and Play with Children, Youth and Adults",
+      "authors": [
+        "Anna Beresin",
+        "Julia Bishop",
+        "Chloé Beatty",
+        "Caron Carter",
+        "Suzanne Egan",
+        "Beatriz LeBron",
+        "Ruth Hazleton",
+        "Katriina Heljakka",
+        "Nicolas Le Bigre",
+        "Shanielia Lewis",
+        "Judy McKinty",
+        "Nevena Mitranić",
+        "Emma Morrison",
+        "Patricia Neville",
+        "John Potter",
+        "Martha Radice",
+        "Holly Sienkiewicz",
+        "Danni von der Borch"
+      ],
+      "chapter_doi": "10.11647/obp.0326.21",
+      "citation_pages": "457-478"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Anna Beresin",
+        "Julia Bishop"
+      ],
+      "chapter_doi": "10.11647/obp.0326.22",
+      "citation_pages": "xix-xxxii"
+    },
+    {
+      "title": "17. Techno-Mischief Negotiating Exaggeration Online in Quarantine",
+      "authors": [
+        "Anna Beresin"
+      ],
+      "chapter_doi": "10.11647/obp.0326.17",
+      "citation_pages": "371-394"
+    },
+    {
+      "title": "4. ‘Let Them Play’ Exploring Class, the Play Divide and the Impact of Covid-19 in the Republic of Ireland",
+      "authors": [
+        "Maria O’Dwyer",
+        "Carmel Hannan",
+        "Patricia Neville"
+      ],
+      "chapter_doi": "10.11647/obp.0326.04",
+      "citation_pages": "77-96"
+    },
+    {
+      "title": "15. Happy Yardi Gras! Playing with Carnival in New Orleans during the Covid-19 Pandemic",
+      "authors": [
+        "Martha Radice"
+      ],
+      "chapter_doi": "10.11647/obp.0326.15",
+      "citation_pages": "319-342"
+    },
+    {
+      "title": "9. Parents’ Perspectives on Their Children’s Play and Friendships during the Covid-19 Pandemic in England",
+      "authors": [
+        "Caron Carter"
+      ],
+      "chapter_doi": "10.11647/obp.0326.09",
+      "citation_pages": "191-214"
+    },
+    {
+      "title": "16. ‘We Stayed Home and Found New Ways to Play’ A Study of Playfulness, Creativity and Resilience in Australian Children during the Covid-19 Pandemic",
+      "authors": [
+        "Judy McKinty",
+        "Ruth Hazleton",
+        "Danni von der Borch"
+      ],
+      "chapter_doi": "10.11647/obp.0326.16",
+      "citation_pages": "343-370"
+    },
+    {
+      "title": "8. ‘This Is the Ambulance, This Truck’ Covid as Frame, Theme and Provocation in Philadelphia, USA",
+      "authors": [
+        "Anna Beresin"
+      ],
+      "chapter_doi": "10.11647/obp.0326.08",
+      "citation_pages": "167-190"
+    },
+    {
+      "title": "5. How Playwork in the United Kingdom Coped with Covid-19 and the 23 March Lockdown",
+      "authors": [
+        "Pete King"
+      ],
+      "chapter_doi": "10.11647/obp.0326.05",
+      "citation_pages": "97-118"
+    },
+    {
+      "title": "11. Play and Vulnerability in Scotland during the Covid-19 Pandemic",
+      "authors": [
+        "Nicolas Le Bigre"
+      ],
+      "chapter_doi": "10.11647/obp.0326.11",
+      "citation_pages": "239-264"
+    },
+    {
+      "title": "10. Digital Heroes of the Imagination An Exploration of Disabled-Led Play in England during the Covid-19 Pandemic",
+      "authors": [
+        "William Renel",
+        "Jessica Thom"
+      ],
+      "chapter_doi": "10.11647/obp.0326.10",
+      "citation_pages": "215-238"
+    },
+    {
+      "title": "12. How Young Children Played during the Covid-19 Lockdown in 2020 in Ireland Findings from the Play and Learning in the Early Years (PLEY) Covid-19 Study",
+      "authors": [
+        "Suzanne M. Egan",
+        "Jennifer Pope",
+        "Chloé Beatty",
+        "Clara Hoyne"
+      ],
+      "chapter_doi": "10.11647/obp.0326.12",
+      "citation_pages": "265-284"
+    },
+    {
+      "title": "14. The Observatory of Children’s Play Experiences during Covid-19 A Photo Essay",
+      "authors": [
+        "John Potter",
+        "Michelle Cannon"
+      ],
+      "chapter_doi": "10.11647/obp.0326.14",
+      "citation_pages": "299-316"
+    },
+    {
+      "title": "Conclusion Covid in a Play Frame",
+      "authors": [
+        "Anna Beresin",
+        "Julia Bishop"
+      ],
+      "chapter_doi": "10.11647/obp.0326.20",
+      "citation_pages": "441-446"
+    },
+    {
+      "title": "19. Art in the Streets Playful Politics in the Work of The Velvet Bandit and SudaLove",
+      "authors": [
+        "Heather Shirey"
+      ],
+      "chapter_doi": "10.11647/obp.0326.19",
+      "citation_pages": "427-440"
+    },
+    {
+      "title": "6. Playworkers’ Experiences, Children’s Rights and Covid-19 A Case Study of Kodomo Yume Park, Japan",
+      "authors": [
+        "Mitsunari Terada",
+        "Mariia Ermilova",
+        "Hitoshi Shimamura"
+      ],
+      "chapter_doi": "10.11647/obp.0326.06",
+      "citation_pages": "119-140"
+    },
+    {
+      "title": "1. ‘Tag, You’ve Got Coronavirus!’ Chase Games in a Covid Frame",
+      "authors": [
+        "Julia Bishop"
+      ],
+      "chapter_doi": "10.11647/obp.0326.01",
+      "citation_pages": "3-32"
+    },
+    {
+      "title": "2. Gathered in Play Play as the Common Space during the Covid-19 Lockdown in Serbia",
+      "authors": [
+        "Živka Krnjaja",
+        "Nevena Mitranić"
+      ],
+      "chapter_doi": "10.11647/obp.0326.02",
+      "citation_pages": "33-54"
+    },
+    {
+      "title": "13. Children’s Emerging Play and Experience in the Covid-19 Era Educational Endeavours and Changes in South Korea",
+      "authors": [
+        "Pool Ip Dong"
+      ],
+      "chapter_doi": "10.11647/obp.0326.13",
+      "citation_pages": "285-298"
+    }
+  ]
+}

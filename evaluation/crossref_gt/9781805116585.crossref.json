@@ -1,0 +1,1511 @@
+{
+  "isbn": "9781805116585",
+  "fetched_at": "2026-08-11T22:58:17.355845+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.14",
+      "type": "book-chapter",
+      "page": "351-378",
+      "title": [
+        "14. Flight and Post-Traumatic Stress: Their Influence on a Person’s Identity"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5698-3531",
+          "authenticated-orcid": false,
+          "given": "Christine",
+          "family": "Spevak-Grossi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00eaycp31",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "IMC University of Applied Sciences Krems"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.15",
+      "type": "book-chapter",
+      "page": "xix-xx",
+      "title": [
+        "Foreword"
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.08",
+      "type": "book-chapter",
+      "page": "193-204",
+      "title": [
+        "8. Engagement and Disengagement: Reflecting on the Challenges for Professionals in Supporting Those Seeking Refuge"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4272-7756",
+          "authenticated-orcid": false,
+          "given": "Fintan",
+          "family": "Sheerin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/048nfjm95",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Maynooth University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.11",
+      "type": "book-chapter",
+      "page": "261-301",
+      "title": [
+        "11. Cross-Cultural Communication in Refugee Health"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5970-6831",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Schiller",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00f5q5839",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Applied Sciences and Arts University of Applied Sciences and Arts Hildesheim/Holzminden/Göttingen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-9934-0774",
+          "authenticated-orcid": false,
+          "given": "Andreas",
+          "family": "Wolfs",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00f5q5839",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Applied Sciences and Arts University of Applied Sciences and Arts Hildesheim/Holzminden/Göttingen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.04",
+      "type": "book-chapter",
+      "page": "99-117",
+      "title": [
+        "4. Recognizing the Needs of Refugees: A Healthcare Access Lens"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9865-4672",
+          "authenticated-orcid": false,
+          "given": "Ganzamungu",
+          "family": "Zihindula",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.07",
+      "type": "book-chapter",
+      "page": "171-192",
+      "title": [
+        "7. Evidence-Informed Practice and Learning Through Critical Reflection"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2442-3043",
+          "authenticated-orcid": false,
+          "given": "Emer",
+          "family": "McGowan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Quinn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.02",
+      "type": "book-chapter",
+      "page": "49-73",
+      "title": [
+        "2. Refugee Rights Are Human Right"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5970-6831",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Schiller",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00f5q5839",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Applied Sciences and Arts University of Applied Sciences and Arts Hildesheim/Holzminden/Göttingen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Djenana",
+          "family": "Jalovcic",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05phns765",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Western Norway University of Applied Sciences"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.00",
+      "type": "book-chapter",
+      "page": "1-17",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2442-3043",
+          "authenticated-orcid": false,
+          "given": "Emer",
+          "family": "McGowan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Djenana",
+          "family": "Jalovcic",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05phns765",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Western Norway University of Applied Sciences"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Quinn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.01",
+      "type": "book-chapter",
+      "page": "21-48",
+      "title": [
+        "1. Global Migrations and Persons with Refugee Experiences"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4715-9700",
+          "authenticated-orcid": false,
+          "given": "Huseyin",
+          "family": "Emlik",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.13",
+      "type": "book-chapter",
+      "page": "323-347",
+      "title": [
+        "13. Advocacy and Empowerment in the Context of Refugee Health"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5970-6831",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Schiller",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00f5q5839",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Applied Sciences and Arts University of Applied Sciences and Arts Hildesheim/Holzminden/Göttingen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.09",
+      "type": "book-chapter",
+      "page": "205-225",
+      "title": [
+        "9. Ethical Practice and Personal Conduct in Refugee Health"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5970-6831",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Schiller",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00f5q5839",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Applied Sciences and Arts University of Applied Sciences and Arts Hildesheim/Holzminden/Göttingen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.10",
+      "type": "book-chapter",
+      "page": "229-260",
+      "title": [
+        "10. Culturally Responsive Practice in Refugee Health"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5970-6831",
+          "authenticated-orcid": false,
+          "given": "Sandra",
+          "family": "Schiller",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00f5q5839",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Applied Sciences and Arts University of Applied Sciences and Arts Hildesheim/Holzminden/Göttingen"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-6127-9688",
+          "authenticated-orcid": false,
+          "given": "Angelika",
+          "family": "Roschka",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01rfnc002",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ernst Abbe University of Applied Sciences Jena"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kathrin",
+          "family": "Weiss",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.03",
+      "type": "book-chapter",
+      "page": "77-98",
+      "title": [
+        "3. Providing Person-Centred Care, Creating Therapeutic Space and Recognizing the Needs of Service Users"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2442-3043",
+          "authenticated-orcid": false,
+          "given": "Emer",
+          "family": "McGowan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Quinn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rolf",
+          "family": "Vardal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.06",
+      "type": "book-chapter",
+      "page": "151-168",
+      "title": [
+        "6. Promoting Interaction and Mutual Learning Between Local and Refugee Communities"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6361-1835",
+          "authenticated-orcid": false,
+          "given": "Méabh",
+          "family": "Bonham Corcoran",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sarah",
+          "family": "Quinn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6315-3029",
+          "authenticated-orcid": false,
+          "given": "Frédérique",
+          "family": "Vallières",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.05",
+      "type": "book-chapter",
+      "page": "119-150",
+      "title": [
+        "5. Pathways to Healing: Expressive Arts Practice with Adolescent Refugees"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3347-2288",
+          "authenticated-orcid": false,
+          "given": "Rachel",
+          "family": "Hoare",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02tyrky19",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Trinity College Dublin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2025-09-09T00:00:00Z",
+            "timestamp": 1757376000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0479.12",
+      "type": "book-chapter",
+      "page": "303-322",
+      "title": [
+        "12. Advanced Clinical Reasoning"
+      ],
+      "author": [
+        {
+          "given": "Kathrin",
+          "family": "Weiss",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kerstin",
+          "family": "Berr",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Franziska",
+          "family": "Grünberg-Lemli",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interprofessional Approach to Refugee Health"
+      ],
+      "ISBN": [
+        "9781805116585",
+        "9781805116592",
+        "9781805116608",
+        "9781805116622",
+        "9781805116615"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            9
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "14. Flight and Post-Traumatic Stress: Their Influence on a Person’s Identity",
+      "authors": [
+        "Christine Spevak-Grossi"
+      ],
+      "chapter_doi": "10.11647/obp.0479.14",
+      "citation_pages": "351-378"
+    },
+    {
+      "title": "Foreword",
+      "authors": [],
+      "chapter_doi": "10.11647/obp.0479.15",
+      "citation_pages": "xix-xx"
+    },
+    {
+      "title": "8. Engagement and Disengagement: Reflecting on the Challenges for Professionals in Supporting Those Seeking Refuge",
+      "authors": [
+        "Fintan Sheerin"
+      ],
+      "chapter_doi": "10.11647/obp.0479.08",
+      "citation_pages": "193-204"
+    },
+    {
+      "title": "11. Cross-Cultural Communication in Refugee Health",
+      "authors": [
+        "Sandra Schiller",
+        "Andreas Wolfs"
+      ],
+      "chapter_doi": "10.11647/obp.0479.11",
+      "citation_pages": "261-301"
+    },
+    {
+      "title": "4. Recognizing the Needs of Refugees: A Healthcare Access Lens",
+      "authors": [
+        "Ganzamungu Zihindula"
+      ],
+      "chapter_doi": "10.11647/obp.0479.04",
+      "citation_pages": "99-117"
+    },
+    {
+      "title": "7. Evidence-Informed Practice and Learning Through Critical Reflection",
+      "authors": [
+        "Emer McGowan",
+        "Sarah Quinn"
+      ],
+      "chapter_doi": "10.11647/obp.0479.07",
+      "citation_pages": "171-192"
+    },
+    {
+      "title": "2. Refugee Rights Are Human Right",
+      "authors": [
+        "Sandra Schiller",
+        "Djenana Jalovcic"
+      ],
+      "chapter_doi": "10.11647/obp.0479.02",
+      "citation_pages": "49-73"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Emer McGowan",
+        "Djenana Jalovcic",
+        "Sarah Quinn"
+      ],
+      "chapter_doi": "10.11647/obp.0479.00",
+      "citation_pages": "1-17"
+    },
+    {
+      "title": "1. Global Migrations and Persons with Refugee Experiences",
+      "authors": [
+        "Huseyin Emlik"
+      ],
+      "chapter_doi": "10.11647/obp.0479.01",
+      "citation_pages": "21-48"
+    },
+    {
+      "title": "13. Advocacy and Empowerment in the Context of Refugee Health",
+      "authors": [
+        "Sandra Schiller"
+      ],
+      "chapter_doi": "10.11647/obp.0479.13",
+      "citation_pages": "323-347"
+    },
+    {
+      "title": "9. Ethical Practice and Personal Conduct in Refugee Health",
+      "authors": [
+        "Sandra Schiller"
+      ],
+      "chapter_doi": "10.11647/obp.0479.09",
+      "citation_pages": "205-225"
+    },
+    {
+      "title": "10. Culturally Responsive Practice in Refugee Health",
+      "authors": [
+        "Sandra Schiller",
+        "Angelika Roschka",
+        "Kathrin Weiss"
+      ],
+      "chapter_doi": "10.11647/obp.0479.10",
+      "citation_pages": "229-260"
+    },
+    {
+      "title": "3. Providing Person-Centred Care, Creating Therapeutic Space and Recognizing the Needs of Service Users",
+      "authors": [
+        "Emer McGowan",
+        "Sarah Quinn",
+        "Rolf Vardal"
+      ],
+      "chapter_doi": "10.11647/obp.0479.03",
+      "citation_pages": "77-98"
+    },
+    {
+      "title": "6. Promoting Interaction and Mutual Learning Between Local and Refugee Communities",
+      "authors": [
+        "Méabh Bonham Corcoran",
+        "Sarah Quinn",
+        "Frédérique Vallières"
+      ],
+      "chapter_doi": "10.11647/obp.0479.06",
+      "citation_pages": "151-168"
+    },
+    {
+      "title": "5. Pathways to Healing: Expressive Arts Practice with Adolescent Refugees",
+      "authors": [
+        "Rachel Hoare"
+      ],
+      "chapter_doi": "10.11647/obp.0479.05",
+      "citation_pages": "119-150"
+    },
+    {
+      "title": "12. Advanced Clinical Reasoning",
+      "authors": [
+        "Kathrin Weiss",
+        "Kerstin Berr",
+        "Franziska Grünberg-Lemli"
+      ],
+      "chapter_doi": "10.11647/obp.0479.12",
+      "citation_pages": "303-322"
+    }
+  ]
+}

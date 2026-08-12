@@ -1,0 +1,1377 @@
+{
+  "isbn": "9781805115052",
+  "fetched_at": "2026-08-11T22:41:09.457487+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.01",
+      "type": "book-chapter",
+      "page": "3-19",
+      "title": [
+        "1. The Evolving Concept of Private Law in Europe"
+      ],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Burgers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4380-9961",
+          "authenticated-orcid": false,
+          "given": "Marija",
+          "family": "Bartl",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-8236-7242",
+          "authenticated-orcid": false,
+          "given": "Chantal",
+          "family": "Mak",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.11",
+      "type": "book-chapter",
+      "page": "207-228",
+      "title": [
+        "11. Financial Crises and European Private Law"
+      ],
+      "author": [
+        {
+          "given": "Guido",
+          "family": "Comparato",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02mb95055",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Birkbeck, University of London"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.13",
+      "type": "book-chapter",
+      "page": "255-272",
+      "title": [
+        "13. Data Subjects in European Private Law"
+      ],
+      "author": [
+        {
+          "given": "Antonio",
+          "family": "Davola",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027ynra39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Università degli Studi di Bari Aldo Moro"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.14",
+      "type": "book-chapter",
+      "page": "273-293",
+      "title": [
+        "14. EU Sustainable Finance Regulation"
+      ],
+      "author": [
+        {
+          "given": "Jennifer",
+          "family": "de Lange-Collins",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "subtitle": [
+        "An Analysis in the Context of Contemporary Debates in European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.03",
+      "type": "book-chapter",
+      "page": "45-64",
+      "title": [
+        "3. Negative Integration, European Private Law, and the Government’s Role in the Marketplace"
+      ],
+      "author": [
+        {
+          "given": "Jaap",
+          "family": "Baaij",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pp8hn57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Utrecht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.15",
+      "type": "book-chapter",
+      "page": "297-310",
+      "title": [
+        "15. Private Law and Political Economy"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4380-9961",
+          "authenticated-orcid": false,
+          "given": "Marija",
+          "family": "Bartl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.09",
+      "type": "book-chapter",
+      "page": "171-190",
+      "title": [
+        "9. Consumers in European Private Law"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3524-7340",
+          "authenticated-orcid": false,
+          "given": "Joasia",
+          "family": "Luzak",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yghzc09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Exeter"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.02",
+      "type": "book-chapter",
+      "page": "23-44",
+      "title": [
+        "2. (In)justice in European Private Law"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8247-8558",
+          "authenticated-orcid": false,
+          "given": "Martijn",
+          "family": "Hesselink",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0031wrj91",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "European University Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.05",
+      "type": "book-chapter",
+      "page": "89-105",
+      "title": [
+        "5. Human Rights in Private Law"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0007-8236-7242",
+          "authenticated-orcid": false,
+          "given": "Chantal",
+          "family": "Mak",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.16",
+      "type": "book-chapter",
+      "page": "311-342",
+      "title": [
+        "16. Methods of Comparative Legal Research"
+      ],
+      "author": [
+        {
+          "given": "Marieke",
+          "family": "Oderkerk",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Vrije Universiteit Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "subtitle": [
+        "How to Set Up and Carry Out a Comparative Legal Research Project"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.12",
+      "type": "book-chapter",
+      "page": "229-254",
+      "title": [
+        "12. The Construction of European Housing Markets through European Private Law"
+      ],
+      "author": [
+        {
+          "given": "Irina",
+          "family": "Dorumath",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/00240q980",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Padua"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.04",
+      "type": "book-chapter",
+      "page": "65-88",
+      "title": [
+        "4. Positive Integration"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1374-4661",
+          "authenticated-orcid": false,
+          "given": "Marco",
+          "family": "Loos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "subtitle": [
+        "Harmonisation of National Law through Directives and Regulations"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.07",
+      "type": "book-chapter",
+      "page": "127-154",
+      "title": [
+        "7. Concepts of Ownership in European Property Law"
+      ],
+      "author": [
+        {
+          "given": "Eva",
+          "family": "Vermeulen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "subtitle": [
+        "Centralising the Social Function of Ownership"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.06",
+      "type": "book-chapter",
+      "page": "109-126",
+      "title": [
+        "6. Bona fides (Good Faith) in European Private Law"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4823-1628",
+          "authenticated-orcid": false,
+          "given": "Talya",
+          "family": "Deibel",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03265fv13",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College Cork"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.08",
+      "type": "book-chapter",
+      "page": "155-170",
+      "title": [
+        "8. Limited Liability through the Lens of Expected Value Analysis"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Bakker",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rolef",
+          "family": "de Weijs",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2025-06-05T00:00:00Z",
+            "timestamp": 1749081600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0448.10",
+      "type": "book-chapter",
+      "page": "193-206",
+      "title": [
+        "10. Social Enterprises and the Role of Profit in Company Law"
+      ],
+      "author": [
+        {
+          "given": "Nena",
+          "family": "van der Horst",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-2937-5574",
+          "authenticated-orcid": false,
+          "given": "Marleen",
+          "family": "van Uchelen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04dkp9463",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Amsterdam"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Uncovering European Private Law"
+      ],
+      "ISBN": [
+        "9781805115052",
+        "9781805115069",
+        "9781805115076",
+        "9781805115090",
+        "9781805115083"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "1. The Evolving Concept of Private Law in Europe",
+      "authors": [
+        "Laura Burgers",
+        "Marija Bartl",
+        "Chantal Mak"
+      ],
+      "chapter_doi": "10.11647/obp.0448.01",
+      "citation_pages": "3-19"
+    },
+    {
+      "title": "11. Financial Crises and European Private Law",
+      "authors": [
+        "Guido Comparato"
+      ],
+      "chapter_doi": "10.11647/obp.0448.11",
+      "citation_pages": "207-228"
+    },
+    {
+      "title": "13. Data Subjects in European Private Law",
+      "authors": [
+        "Antonio Davola"
+      ],
+      "chapter_doi": "10.11647/obp.0448.13",
+      "citation_pages": "255-272"
+    },
+    {
+      "title": "14. EU Sustainable Finance Regulation An Analysis in the Context of Contemporary Debates in European Private Law",
+      "authors": [
+        "Jennifer de Lange-Collins"
+      ],
+      "chapter_doi": "10.11647/obp.0448.14",
+      "citation_pages": "273-293"
+    },
+    {
+      "title": "3. Negative Integration, European Private Law, and the Government’s Role in the Marketplace",
+      "authors": [
+        "Jaap Baaij"
+      ],
+      "chapter_doi": "10.11647/obp.0448.03",
+      "citation_pages": "45-64"
+    },
+    {
+      "title": "15. Private Law and Political Economy",
+      "authors": [
+        "Marija Bartl"
+      ],
+      "chapter_doi": "10.11647/obp.0448.15",
+      "citation_pages": "297-310"
+    },
+    {
+      "title": "9. Consumers in European Private Law",
+      "authors": [
+        "Joasia Luzak"
+      ],
+      "chapter_doi": "10.11647/obp.0448.09",
+      "citation_pages": "171-190"
+    },
+    {
+      "title": "2. (In)justice in European Private Law",
+      "authors": [
+        "Martijn Hesselink"
+      ],
+      "chapter_doi": "10.11647/obp.0448.02",
+      "citation_pages": "23-44"
+    },
+    {
+      "title": "5. Human Rights in Private Law",
+      "authors": [
+        "Chantal Mak"
+      ],
+      "chapter_doi": "10.11647/obp.0448.05",
+      "citation_pages": "89-105"
+    },
+    {
+      "title": "16. Methods of Comparative Legal Research How to Set Up and Carry Out a Comparative Legal Research Project",
+      "authors": [
+        "Marieke Oderkerk"
+      ],
+      "chapter_doi": "10.11647/obp.0448.16",
+      "citation_pages": "311-342"
+    },
+    {
+      "title": "12. The Construction of European Housing Markets through European Private Law",
+      "authors": [
+        "Irina Dorumath"
+      ],
+      "chapter_doi": "10.11647/obp.0448.12",
+      "citation_pages": "229-254"
+    },
+    {
+      "title": "4. Positive Integration Harmonisation of National Law through Directives and Regulations",
+      "authors": [
+        "Marco Loos"
+      ],
+      "chapter_doi": "10.11647/obp.0448.04",
+      "citation_pages": "65-88"
+    },
+    {
+      "title": "7. Concepts of Ownership in European Property Law Centralising the Social Function of Ownership",
+      "authors": [
+        "Eva Vermeulen"
+      ],
+      "chapter_doi": "10.11647/obp.0448.07",
+      "citation_pages": "127-154"
+    },
+    {
+      "title": "6. Bona fides (Good Faith) in European Private Law",
+      "authors": [
+        "Talya Deibel"
+      ],
+      "chapter_doi": "10.11647/obp.0448.06",
+      "citation_pages": "109-126"
+    },
+    {
+      "title": "8. Limited Liability through the Lens of Expected Value Analysis",
+      "authors": [
+        "Michael Bakker",
+        "Rolef de Weijs"
+      ],
+      "chapter_doi": "10.11647/obp.0448.08",
+      "citation_pages": "155-170"
+    },
+    {
+      "title": "10. Social Enterprises and the Role of Profit in Company Law",
+      "authors": [
+        "Nena van der Horst",
+        "Marleen van Uchelen"
+      ],
+      "chapter_doi": "10.11647/obp.0448.10",
+      "citation_pages": "193-206"
+    }
+  ]
+}

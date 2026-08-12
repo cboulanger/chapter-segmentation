@@ -1,0 +1,998 @@
+{
+  "isbn": "9783837613100",
+  "fetched_at": "2026-08-11T22:40:49.266771+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-003",
+      "type": "book-chapter",
+      "page": "39-76",
+      "title": [
+        "Sicherheit und Immigration: Zu einer Kritik der Gouvernementalität des Unbehagens"
+      ],
+      "author": [
+        {
+          "given": "Didier",
+          "family": "Bigo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-011",
+      "type": "book-chapter",
+      "page": "293-296",
+      "title": [
+        "Autorinnen und Autoren"
+      ],
+      "author": [
+        {
+          "given": "Margarete",
+          "family": "Misselwitz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Schlichte",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-010",
+      "type": "book-chapter",
+      "page": "263-292",
+      "title": [
+        "Nach der Abschiebung: Abgeschobene Jugendliche aus Deutschland im Kosovo"
+      ],
+      "author": [
+        {
+          "given": "Margarete",
+          "family": "Misselwitz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Margarete",
+          "family": "Misselwitz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Schlichte",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-bm",
+      "type": "book-chapter",
+      "page": "297-300",
+      "title": [
+        "Backmatter"
+      ],
+      "author": [
+        {
+          "given": "Margarete",
+          "family": "Misselwitz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Schlichte",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-002",
+      "type": "book-chapter",
+      "page": "23-38",
+      "title": [
+        "Flucht und Asyl - zur Genealogie eines Feldes"
+      ],
+      "author": [
+        {
+          "given": "Klaus",
+          "family": "Schlichte",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-007",
+      "type": "book-chapter",
+      "page": "163-196",
+      "title": [
+        "Schuld und Sühne: Mechanismen der Finanzierung von Bürgerkriegen aus der Diaspora"
+      ],
+      "author": [
+        {
+          "given": "Katrin",
+          "family": "Radtke",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-006",
+      "type": "book-chapter",
+      "page": "135-162",
+      "title": [
+        "Die Militarisierung liberianischer Flüchtlinge in Guinea"
+      ],
+      "author": [
+        {
+          "given": "Felix",
+          "family": "Gerdes",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-004",
+      "type": "book-chapter",
+      "page": "77-108",
+      "title": [
+        "Möglichkeiten und Grenzen des internationalen Flüchtlingsschutzes für kolumbianische Flüchtlinge in Ecuador"
+      ],
+      "author": [
+        {
+          "given": "Katja",
+          "family": "Baltzer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kristofer",
+          "family": "Lengert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "INHALT"
+      ],
+      "author": [
+        {
+          "given": "Margarete",
+          "family": "Misselwitz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Schlichte",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-009",
+      "type": "book-chapter",
+      "page": "237-262",
+      "title": [
+        "Palästinenser im Exil und nach ihrer Rückkehr"
+      ],
+      "author": [
+        {
+          "given": "Pénélope",
+          "family": "Larzillière",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-001",
+      "type": "book-chapter",
+      "page": "7-20",
+      "title": [
+        "Kriegsflucht: Neue Blicke auf ein altes Thema"
+      ],
+      "author": [
+        {
+          "given": "Margarete",
+          "family": "Misselwitz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Schlichte",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-008",
+      "type": "book-chapter",
+      "page": "197-234",
+      "title": [
+        "Palästinensische Flüchtlingslager neu denken: Von Abhängigkeit zu ziviler Selbstverwaltung"
+      ],
+      "author": [
+        {
+          "given": "Philipp",
+          "family": "Misselwitz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                1,
+                27
+              ]
+            ],
+            "date-time": "2010-01-27T00:00:00Z",
+            "timestamp": 1264550400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "DOI": "10.14361/9783839413104-005",
+      "type": "book-chapter",
+      "page": "109-132",
+      "title": [
+        "Afrikanische Staaten, Staatsbürgerschaft und Krieg: Die Region der Großen Seen"
+      ],
+      "author": [
+        {
+          "given": "Mahmood",
+          "family": "Mamdani",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Global Studies",
+        "Politik der Unentschiedenheit"
+      ],
+      "ISBN": [
+        "9783837613100",
+        "9783839413104"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            1,
+            27
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Sicherheit und Immigration: Zu einer Kritik der Gouvernementalität des Unbehagens",
+      "authors": [
+        "Didier Bigo"
+      ],
+      "chapter_doi": "10.14361/9783839413104-003",
+      "citation_pages": "39-76"
+    },
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [
+        "Margarete Misselwitz",
+        "Klaus Schlichte"
+      ],
+      "chapter_doi": "10.14361/9783839413104-011",
+      "citation_pages": "293-296"
+    },
+    {
+      "title": "Nach der Abschiebung: Abgeschobene Jugendliche aus Deutschland im Kosovo",
+      "authors": [
+        "Margarete Misselwitz"
+      ],
+      "chapter_doi": "10.14361/9783839413104-010",
+      "citation_pages": "263-292"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Margarete Misselwitz",
+        "Klaus Schlichte"
+      ],
+      "chapter_doi": "10.14361/9783839413104-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [
+        "Margarete Misselwitz",
+        "Klaus Schlichte"
+      ],
+      "chapter_doi": "10.14361/9783839413104-bm",
+      "citation_pages": "297-300"
+    },
+    {
+      "title": "Flucht und Asyl - zur Genealogie eines Feldes",
+      "authors": [
+        "Klaus Schlichte"
+      ],
+      "chapter_doi": "10.14361/9783839413104-002",
+      "citation_pages": "23-38"
+    },
+    {
+      "title": "Schuld und Sühne: Mechanismen der Finanzierung von Bürgerkriegen aus der Diaspora",
+      "authors": [
+        "Katrin Radtke"
+      ],
+      "chapter_doi": "10.14361/9783839413104-007",
+      "citation_pages": "163-196"
+    },
+    {
+      "title": "Die Militarisierung liberianischer Flüchtlinge in Guinea",
+      "authors": [
+        "Felix Gerdes"
+      ],
+      "chapter_doi": "10.14361/9783839413104-006",
+      "citation_pages": "135-162"
+    },
+    {
+      "title": "Möglichkeiten und Grenzen des internationalen Flüchtlingsschutzes für kolumbianische Flüchtlinge in Ecuador",
+      "authors": [
+        "Katja Baltzer",
+        "Kristofer Lengert"
+      ],
+      "chapter_doi": "10.14361/9783839413104-004",
+      "citation_pages": "77-108"
+    },
+    {
+      "title": "INHALT",
+      "authors": [
+        "Margarete Misselwitz",
+        "Klaus Schlichte"
+      ],
+      "chapter_doi": "10.14361/9783839413104-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Palästinenser im Exil und nach ihrer Rückkehr",
+      "authors": [
+        "Pénélope Larzillière"
+      ],
+      "chapter_doi": "10.14361/9783839413104-009",
+      "citation_pages": "237-262"
+    },
+    {
+      "title": "Kriegsflucht: Neue Blicke auf ein altes Thema",
+      "authors": [
+        "Margarete Misselwitz",
+        "Klaus Schlichte"
+      ],
+      "chapter_doi": "10.14361/9783839413104-001",
+      "citation_pages": "7-20"
+    },
+    {
+      "title": "Palästinensische Flüchtlingslager neu denken: Von Abhängigkeit zu ziviler Selbstverwaltung",
+      "authors": [
+        "Philipp Misselwitz"
+      ],
+      "chapter_doi": "10.14361/9783839413104-008",
+      "citation_pages": "197-234"
+    },
+    {
+      "title": "Afrikanische Staaten, Staatsbürgerschaft und Krieg: Die Region der Großen Seen",
+      "authors": [
+        "Mahmood Mamdani"
+      ],
+      "chapter_doi": "10.14361/9783839413104-005",
+      "citation_pages": "109-132"
+    }
+  ]
+}

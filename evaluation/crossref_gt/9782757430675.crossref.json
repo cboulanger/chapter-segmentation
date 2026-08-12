@@ -1,0 +1,963 @@
+{
+  "isbn": "9782757430675",
+  "fetched_at": "2026-08-11T22:44:10.295906+00:00",
+  "license": "https://www.openedition.org/12554",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93928",
+      "type": "book-chapter",
+      "page": "301-314",
+      "title": [
+        "Moors ou le regard d’un traducteur français sur un dictionnaire"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2922-7711",
+          "authenticated-orcid": false,
+          "given": "Armand",
+          "family": "Héroguel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93913",
+      "type": "book-chapter",
+      "page": "275-298",
+      "title": [
+        "Traduire des expressions idiomatiques (et des proverbes) : français, portugais, italien"
+      ],
+      "author": [
+        {
+          "given": "Liliane",
+          "family": "Santos",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93783",
+      "type": "book-chapter",
+      "page": "09-16",
+      "title": [
+        "Introduction : Traduction épistémique et sciences humaines"
+      ],
+      "author": [
+        {
+          "given": "Tatiana",
+          "family": "Milliaressi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93843",
+      "type": "book-chapter",
+      "page": "165-178",
+      "title": [
+        "L’auto-traduction chez Leibniz : l’exemple de la structure argumentative de la Dynamique"
+      ],
+      "author": [
+        {
+          "given": "Anne-Lise",
+          "family": "Rey",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93868",
+      "type": "book-chapter",
+      "page": "201-220",
+      "title": [
+        "Épistémique / littéraire : la traduction du conditionnel (français-russe)"
+      ],
+      "author": [
+        {
+          "given": "Anzhela",
+          "family": "Dal",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93833",
+      "type": "book-chapter",
+      "page": "143-164",
+      "title": [
+        "Traduire l’atticisme : Comment adapter en français une langue artificielle ?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4137-2364",
+          "authenticated-orcid": false,
+          "given": "Valentin",
+          "family": "Decloquement",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93823",
+      "type": "book-chapter",
+      "page": "87-142",
+      "title": [
+        "Traduire Empédocle, entre poésie et philosophie : comparaison de dix traductions en cinq langues (1838-2016)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3684-3558",
+          "authenticated-orcid": false,
+          "given": "Xavier",
+          "family": "Gheerbrant",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93938",
+      "type": "book-chapter",
+      "page": "315-356",
+      "title": [
+        "Métriques d’évaluation en Traduction Automatique : le sens et le style se laissent-ils mettre en équation ?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3074-5594",
+          "authenticated-orcid": false,
+          "given": "Antonio",
+          "family": "Balvet",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93903",
+      "type": "book-chapter",
+      "page": "267-274",
+      "title": [
+        "Les défis des défauts : comment traduire un défaut d’élocution en langue étrangère ?"
+      ],
+      "author": [
+        {
+          "given": "Claire",
+          "family": "Ellender",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93798",
+      "type": "book-chapter",
+      "page": "19-40",
+      "title": [
+        "La traduction épistémique : structure argumentative et typologie des langues"
+      ],
+      "author": [
+        {
+          "given": "Tatiana",
+          "family": "Milliaressi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93818",
+      "type": "book-chapter",
+      "page": "77-86",
+      "title": [
+        "Avant de traduire : quel texte lire ? La question de la naissance du Monde dans le Timée de Platon"
+      ],
+      "author": [
+        {
+          "given": "Alain",
+          "family": "Lernould",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93883",
+      "type": "book-chapter",
+      "page": "223-242",
+      "title": [
+        "Poïétique et politique de la traduction. Avec et d’après Wolfson"
+      ],
+      "author": [
+        {
+          "given": "Philippe",
+          "family": "Sabot",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93858",
+      "type": "book-chapter",
+      "page": "181-200",
+      "title": [
+        "La structure informationnelle dans les textes en sciences humaines : exemple du russe et du français"
+      ],
+      "author": [
+        {
+          "given": "Natalia",
+          "family": "Yakusheva",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93888",
+      "type": "book-chapter",
+      "page": "243-266",
+      "title": [
+        "Traduire la poésie signée"
+      ],
+      "author": [
+        {
+          "given": "Pénélope",
+          "family": "Houwenaghel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Annie",
+          "family": "Risler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2020-01-01T00:00:00Z",
+            "timestamp": 1577836800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.septentrion.93803",
+      "type": "book-chapter",
+      "page": "41-74",
+      "title": [
+        "Traductologie et sciences humaines"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4321-8117",
+          "authenticated-orcid": false,
+          "given": "Spiros",
+          "family": "Macris",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "La traduction épistémique : entre poésie et prose"
+      ],
+      "ISBN": [
+        "9782757430675",
+        "9782757430231"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Moors ou le regard d’un traducteur français sur un dictionnaire",
+      "authors": [
+        "Armand Héroguel"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93928",
+      "citation_pages": "301-314"
+    },
+    {
+      "title": "Traduire des expressions idiomatiques (et des proverbes) : français, portugais, italien",
+      "authors": [
+        "Liliane Santos"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93913",
+      "citation_pages": "275-298"
+    },
+    {
+      "title": "Introduction : Traduction épistémique et sciences humaines",
+      "authors": [
+        "Tatiana Milliaressi"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93783",
+      "citation_pages": "09-16"
+    },
+    {
+      "title": "L’auto-traduction chez Leibniz : l’exemple de la structure argumentative de la Dynamique",
+      "authors": [
+        "Anne-Lise Rey"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93843",
+      "citation_pages": "165-178"
+    },
+    {
+      "title": "Épistémique / littéraire : la traduction du conditionnel (français-russe)",
+      "authors": [
+        "Anzhela Dal"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93868",
+      "citation_pages": "201-220"
+    },
+    {
+      "title": "Traduire l’atticisme : Comment adapter en français une langue artificielle ?",
+      "authors": [
+        "Valentin Decloquement"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93833",
+      "citation_pages": "143-164"
+    },
+    {
+      "title": "Traduire Empédocle, entre poésie et philosophie : comparaison de dix traductions en cinq langues (1838-2016)",
+      "authors": [
+        "Xavier Gheerbrant"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93823",
+      "citation_pages": "87-142"
+    },
+    {
+      "title": "Métriques d’évaluation en Traduction Automatique : le sens et le style se laissent-ils mettre en équation ?",
+      "authors": [
+        "Antonio Balvet"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93938",
+      "citation_pages": "315-356"
+    },
+    {
+      "title": "Les défis des défauts : comment traduire un défaut d’élocution en langue étrangère ?",
+      "authors": [
+        "Claire Ellender"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93903",
+      "citation_pages": "267-274"
+    },
+    {
+      "title": "La traduction épistémique : structure argumentative et typologie des langues",
+      "authors": [
+        "Tatiana Milliaressi"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93798",
+      "citation_pages": "19-40"
+    },
+    {
+      "title": "Avant de traduire : quel texte lire ? La question de la naissance du Monde dans le Timée de Platon",
+      "authors": [
+        "Alain Lernould"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93818",
+      "citation_pages": "77-86"
+    },
+    {
+      "title": "Poïétique et politique de la traduction. Avec et d’après Wolfson",
+      "authors": [
+        "Philippe Sabot"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93883",
+      "citation_pages": "223-242"
+    },
+    {
+      "title": "La structure informationnelle dans les textes en sciences humaines : exemple du russe et du français",
+      "authors": [
+        "Natalia Yakusheva"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93858",
+      "citation_pages": "181-200"
+    },
+    {
+      "title": "Traduire la poésie signée",
+      "authors": [
+        "Pénélope Houwenaghel",
+        "Annie Risler"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93888",
+      "citation_pages": "243-266"
+    },
+    {
+      "title": "Traductologie et sciences humaines",
+      "authors": [
+        "Spiros Macris"
+      ],
+      "chapter_doi": "10.4000/books.septentrion.93803",
+      "citation_pages": "41-74"
+    }
+  ]
+}

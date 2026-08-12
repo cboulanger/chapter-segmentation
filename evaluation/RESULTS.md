@@ -525,6 +525,344 @@ tolerates being up to 3 printed pages over-inclusive (see
   to every non-busy KISSKI model on every book over time, once a
   `KISSKI_API_KEY` repository secret is configured.
 
+## Layout-based TOC/chapter-first-page classifier pilot
+
+`evaluation/scripts/evaluate_layout_toc_classifier.py` trains a
+leave-one-book-out (LOBO) classifier on ten geometric layout features
+(`evaluation/scripts/layout_features.py`, derived from cached ALTO XML) and
+scores whether it can identify table-of-contents pages and chapter-opening
+pages purely from page layout, no text content -- see
+`docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md`
+for the pilot's design and decision bar. `full_recall_fraction` is the
+share of books, across LOBO folds, whose predicted candidate pages include
+every true chapter-opening page and at least one true TOC page (bar: ≥90%);
+`avg_candidate_fraction` is the average share of a book's pages that end up
+in that candidate set at all -- how much the classifier actually narrows
+the page list down (bar: ≤15%, smaller is better). The original pilot run
+came back **NOT MET**: 16% `full_recall_fraction` against a
+comfortably-cleared 5.3% `avg_candidate_fraction`.
+
+A follow-up investigation
+(`docs/superpowers/specs/2026-08-10-layout-toc-classifier-feature-normalization-design.md`)
+root-caused most of the shortfall to 4 of the 10 features --
+`width_mean`, `width_var`, `left_margin_mean`, `left_margin_var` -- being
+raw, unnormalized ALTO point coordinates rather than fractions of page
+width, unlike the other position-derived features
+(`first_text_vpos_fraction`, `line_density`), which already divide by page
+height. This tracked almost exactly with the corpus split: page width
+varies far more in `copyrighted-scans` (304-991pt) than `open-access`
+(420-595pt), and the original run's 8-book cluster stuck at exactly 0%
+`chapter_first` recall was entirely `copyrighted-scans` books:
+
+| corpus | books | avg `chapter_first` recall | books at 0% recall | books at 100% recall |
+| --- | --- | --- | --- | --- |
+| open-access (original) | 37 | 83% | 0 | 9 |
+| copyrighted-scans (original) | 13 | 20% | 8 | 1 |
+
+`extract_page_features` was fixed to divide these four features by page
+width before computing statistics on them (Task 1 of the normalization
+follow-up), and the pilot was re-run against the same cached ALTO XML with
+no other changes. The fresh result is still **NOT MET**, but slightly
+better: 18% `full_recall_fraction` (vs. 16% before) and 5.4%
+`avg_candidate_fraction` (vs. 5.3% before, still comfortably under the 15%
+bar). The per-corpus `chapter_first`-recall breakdown, re-computed the same
+way as the original diagnosis, shows the corpus split itself is
+essentially unchanged by the fix:
+
+| corpus | books | avg `chapter_first` recall | books at 0% recall | books at 100% recall |
+| --- | --- | --- | --- | --- |
+| open-access (fresh) | 37 | 81% | 1 | 9 |
+| copyrighted-scans (fresh) | 13 | 19% | 8 | 0 |
+
+So the width-normalization fix did what it set out to do (the four
+previously-unnormalized features are now genuinely comparable across
+books of different page widths) without meaningfully closing the gap
+between the two corpora, or the overall `full_recall_fraction` bar. This
+matches the normalization spec's own root-cause writeup, which named the
+unnormalized features as the *dominant* factor but not the only one: it
+separately quantified a secondary, compounding issue -- the decision bar's
+requirement of literal 100% `chapter_first` recall per book -- and found
+that even relaxing it to an 80% tolerance only lifted `full_recall_fraction`
+to 34% on the original (pre-normalization) run, still well short of the
+90% bar. That bar-strictness finding is the next-most-likely place to look
+if this pilot is picked up again; scoping or implementing a fix for it is
+explicitly out of scope for both this run and the normalization follow-up
+that produced it
+(`docs/superpowers/specs/2026-08-10-layout-toc-classifier-feature-normalization-design.md`'s
+"Out of scope" section).
+
+### Follow-up: replacing textless/degenerate-text corpus PDFs with OCR'ed versions
+
+A closer look at the 8-book cluster still stuck at exactly 0%
+`chapter_first` recall after the normalization fix found a second, larger
+root cause for 6 of the 8: `pdfalto` (the pilot's only extraction tool,
+`evaluation/scripts/pdfalto_runner.py`) reads a PDF's own embedded
+text/layout directly and has no OCR fallback of its own -- unlike
+`chapter_segmentation`'s own text-based pipeline, which recovers usable
+text for these exact books via a dedicated OCR pass
+(`src/chapter_segmentation/ocr.py`, `.ocr-cache/`, see "Diverse
+real-library evaluation set" above: `9781409403906.pdf`,
+`9783465016878.pdf`, `9783848704316.pdf`, `dnb-36942798X.pdf` had "no text
+layer at all"; `9780367439712.pdf`, `9783789057366.pdf` had a "degenerate
+text layer"). On these 6 books, `pdfalto` extracted zero text lines at all
+on many pages (an all-zero feature vector) or near-uniform, unresolvable
+font-size data -- no amount of feature normalization can recover a signal
+that was never extracted in the first place.
+
+Per this project's evaluation philosophy (production code should OCR at
+run time; the *evaluation corpus* should already contain suitable data, so
+a pipeline bug and a data-quality gap are never conflated), the fix was to
+replace the 6 affected PDFs in the shared corpus
+(`evaluation/corpus/copyrighted-scans/`, gitignored, symlinked identically
+into every worktree) with OCR'ed versions, not to teach `pdfalto_runner.py`
+to run OCR itself. `evaluation/scripts/ocr_evaluation_pdfs.py`'s existing
+OCR path only produces cached plain text (`list[str]`), not a new PDF with
+an embedded text layer, so it can't be reused for this -- `ocrmypdf`
+(installed via `brew install ocrmypdf`, plus `tesseract-lang` for German)
+was used instead: `ocrmypdf --force-ocr -l <lang> <original> <output>`,
+with each original preserved alongside as `<key>.original.pdf`. Verified
+before re-running the pilot: page count unchanged for all 6 (pypdf), and
+`pages_need_ocr` (`src/chapter_segmentation/segmentation.py`) now returns
+`False` for all 6, where it previously returned `True`.
+
+Re-running the pilot (same cached ALTO XML for the other 44 books; the 6
+fixed books' `.layout-cache/` entries were deleted so `pdfalto` re-ran on
+the new PDFs) shows real, measurable per-book improvement on 4 of the 6:
+
+| book | chapter_first recall before | chapter_first recall after |
+| --- | --- | --- |
+| `9783848704316` | 0% | 73% |
+| `9781409403906` | 0% | 42% |
+| `9783465016878` | 0% | 23% |
+| `dnb-36942798X` | 0% | 6% |
+| `9780367439712` | 0% | 0% (unchanged) |
+| `9783789057366` | 0% | 0% (unchanged) |
+
+The two unchanged books fail for two different, already-diagnosed reasons,
+not a leftover OCR problem: `9780367439712`'s chapter-opening pages have
+clean, strong font-size signal both before *and* after OCR (12/12 pages
+cross the title-detection threshold either way) -- this is a LOBO
+model-generalization gap (its true positives top out around probability
+0.45 against a 0.68 threshold calibrated from other books), unrelated to
+data quality. `9783789057366` still shows weak font-size differentiation
+even with real OCR'd text (only 2 of 56 chapter-opening pages cross the
+threshold) -- plausibly because this scan's low average image DPI (~91,
+per `ocrmypdf`'s own logged warnings) is too coarse for Tesseract's
+per-line font-size estimation to reliably separate title-sized from
+body-sized text.
+
+Despite that per-book progress, the overall `full_recall_fraction` stayed
+flat at **18%** (was 18% after normalization, 16% originally) -- still
+**NOT MET**. `avg_candidate_fraction` improved slightly, 5.4% to 4.4%,
+still comfortably under the 15% bar. The corpus-wide number held flat
+because every held-out book's classifier is trained on all *other* books'
+rows in this leave-one-book-out setup: swapping degenerate rows for real
+ones in 6 books measurably shifted many *other*, untouched books' scores
+too (both up and down), roughly canceling out in the aggregate. This is
+further evidence, on top of the normalization follow-up's own finding,
+that the decision bar's literal "100% `chapter_first` recall per book"
+requirement -- not any single data-quality or feature issue -- is this
+pilot's dominant remaining blocker: most of the corpus already sits in a
+60-95% per-book recall band, comfortably real signal, just short of the
+all-or-nothing bar.
+
+`evaluation/CLAUDE.md`'s "Step 0a" now requires a real, usable embedded
+text layer (checked with `pages_need_ocr`) before any scanned PDF is added
+to `copyrighted-scans/` going forward, so this gap doesn't recur silently
+for future books.
+
+### Follow-up: recall-target tuning, concentrating on the open-access corpus
+
+With the data-quality issues above addressed, this follow-up asked how far
+the existing pipeline -- unchanged features, unchanged model, unchanged
+decision bar -- could be pushed by tuning `evaluate_layout_toc_classifier.py`'s
+own calibration knob, `_RECALL_TARGET`. `select_threshold` picks the highest
+per-fold probability threshold that still achieves at least `_RECALL_TARGET`
+recall on that fold's *training* positives; the value had been an arbitrary
+`0.90` since the pilot's first run. Since `avg_candidate_fraction` had been
+sitting far under its 15% budget the whole time (4.4% most recently), there
+was untapped room to trade some of that slack for recall by raising the
+target. Per the "concentrate on open-access first, fix outliers later"
+priority, `copyrighted-scans` books stayed in the training pool throughout
+(removing them from training was tried and made open-access recall *worse*,
+not better -- see below) but their own scores were tracked separately rather
+than optimized for.
+
+A sweep over `_RECALL_TARGET` from 0.90 to 1.00 (LOBO over the full 50-book
+corpus) found a steep, then flat, then explosive response:
+
+| `_RECALL_TARGET` | `full_recall_fraction` (all) | `avg_candidate_fraction` (all) |
+| --- | --- | --- |
+| 0.90 (previous) | 18% | 4.4% |
+| 0.95 | 20% | 5.7% |
+| 0.96 | 26% | 6.1% |
+| **0.97** | **28%** | **7.0%** |
+| 0.98 | 28% | 11.1% |
+| 0.99 | 28% | 21.9% |
+| 1.00 | 80% | 87.3% |
+
+0.97 is the cheapest point on the 0.97-0.99 plateau -- same recall as 0.98
+and 0.99, at roughly half to a third of their candidate-fraction cost -- and
+comfortably clear of 1.00's cliff, where the "threshold" degenerates to
+"flag almost every page" and stops being a useful filter at all. Broken down
+by corpus at 0.97:
+
+| corpus | `full_recall_fraction` (before -> after) | `avg_candidate_fraction` |
+| --- | --- | --- |
+| open-access | 24.3% -> 35.1% | 6.6% |
+| copyrighted-scans | 0% -> 7.7% | 7.9% |
+
+Three other tuning ideas were tried and rejected, in the interest of
+recording negative results alongside the positive one:
+
+- **Training on open-access books only** (excluding `copyrighted-scans`
+  entirely from the LOBO training pool, not just from the target metric):
+  this made open-access recall *worse* (16.2% vs. 24.3% at the old 0.90
+  target) -- the other corpus's rows, despite their own data-quality
+  problems, still contribute generalizable signal rather than just noise.
+- **A new feature, `max_font_vpos_fraction`** (the vertical position of the
+  page's *largest-font* line, as opposed to `first_text_vpos_fraction`'s
+  topmost line regardless of size -- meant to stop a running header above
+  the real title from collapsing that signal to near-zero): dropped
+  open-access `full_recall_fraction` from 43.2% to 29.7% at the same 0.97
+  target. With only ~600 positive `chapter_first` rows across 37 books, an
+  11th feature widens the model's overfitting surface faster than it adds
+  real signal.
+- **Splitting `_RECALL_TARGET` per label** (a low target for `toc`, whose
+  pass bar is lenient -- "at least one hit" -- freeing up candidate-fraction
+  budget for a higher `chapter_first` target): backfired. A *lower* target
+  makes `select_threshold` pick a *higher*, more selective threshold; for
+  several books that threshold was high enough to reject every `toc`
+  candidate, failing that label's lenient bar outright. `min_samples_leaf`
+  values above the existing default of 1 (tried 2, 3, 5, 10) were also all
+  strictly worse.
+
+The result is still **NOT MET** (28% vs. the 90% bar), and the previous
+follow-up's bar-strictness finding remains the dominant blocker -- this
+tuning pass narrows the gap without closing it. But it is a real,
+non-cosmetic improvement obtained purely by recalibrating an existing,
+already-arbitrary constant: open-access `full_recall_fraction` improved by
+nearly half (24.3% to 35.1%) while candidate fraction stayed at less than
+half the 15% budget. `copyrighted-scans` remains the weaker corpus by a wide
+margin and continues to be treated as the deferred outlier bucket, per the
+"open-access first" priority this follow-up was scoped to.
+
+### Follow-up: relaxing the per-book bar, and a model-architecture swap
+
+Two more changes, requested together: relax the pilot's literal "100% of a
+book's chapter_first pages" pass bar (the dominant blocker named in every
+follow-up above), and investigate whether the classifier's *model* -- not
+just its calibration -- was leaving recall on the table.
+
+**Relaxing the bar.** `evaluate_leave_one_book_out` gained a
+`chapter_first_recall_tolerance` parameter (module default `0.90`,
+`_CHAPTER_FIRST_RECALL_TOLERANCE`), replacing the exact `recall == 1.0`
+check with `recall >= tolerance`. This only changes how a book is scored as
+"fully recalled" for `full_recall_fraction` -- it has no effect on which
+candidate pages get produced. A sweep from 1.00 down to 0.50 (LOBO, full
+50-book corpus, still on the tree-based model at the time) showed a steep,
+monotonic response with no plateau: 28% (1.00) -> 32% (0.95) -> 40% (0.90)
+-> 48% (0.80) -> 60% (0.70) -> 72% (0.50). Even 0.50 didn't reach the
+pilot's own 90% "MET" bar, and at that tolerance "passing" only requires
+catching half a book's chapter openings -- too weak to call the classifier
+a real detector. 0.90 (miss at most 1 in 10 chapter-openings per book) was
+chosen as a tolerance that stays meaningful while acknowledging that a
+book's natural layout diversity (an unnumbered first chapter, a
+part-divider) means no realistic amount of tuning closes the last mile to
+literal 100%.
+
+**Model architecture.** Asked directly why recall was still low given the
+tuning already done, three classifiers were compared head-to-head on
+identical features, at the same recall-calibration target:
+
+| model | `full_recall_fraction` | `avg_candidate_fraction` |
+| --- | --- | --- |
+| `HistGradientBoostingClassifier` (previous) | 40% | 7.0% |
+| `RandomForestClassifier` | 0% | 0.1% |
+| `LogisticRegression` (+ `StandardScaler`) | 44% | 15.0% |
+
+`RandomForestClassifier` is not viable here -- its `predict_proba` is badly
+miscalibrated for this data shape (small, imbalanced, near-duplicate rows
+within a book), so `select_threshold` picks a threshold that accepts almost
+nothing on held-out books. `LogisticRegression` clearly outperforms the
+tree-based model on recall, and the mechanism is architectural, not just a
+better hyperparameter: `HistGradientBoostingClassifier` partitions feature
+space into discrete leaf regions and calibrates its threshold against one
+fold's own training-probability distribution -- a held-out book whose
+feature distribution sits slightly off from that fold's training pool can
+fall in a gap between leaf regions that the threshold doesn't line up with,
+even when the page has an obvious, real chapter-opening signal.
+`LogisticRegression`'s smooth, continuous, linear score has no such
+discontinuity, so it transfers across books far more gracefully -- evidence
+that the true relationship between these ten geometric features and
+"chapter_first-ness" is close enough to monotonic/linear that a simpler
+model generalizes better than a more expressive one. This is consistent
+with two earlier negative results in this same investigation
+(the rejected `max_font_vpos_fraction` feature and the rejected
+higher-`min_samples_leaf` settings): the pipeline was never capacity-limited,
+it was data-limited, and a lower-capacity model suits that regime better.
+
+The pilot's model was switched to `LogisticRegression(class_weight="balanced")`
+with a per-fold `StandardScaler` (needed because, unlike tree splits, a
+linear model's fit is sensitive to feature scale; tree-based
+`HistGradientBoostingClassifier` never needed one). `_RECALL_TARGET`'s
+default moved from `0.97` (tuned for the tree model) to `0.80` -- the
+highest point on `LogisticRegression`'s own curve that still respects the
+*previous* 15%-candidate-fraction budget:
+
+| `LogisticRegression` `recall_target` | `full_recall_fraction` | `avg_candidate_fraction` |
+| --- | --- | --- |
+| 0.80 (new default) | 44% | 15.0% |
+| 0.85 | 54% | 17.0% |
+| 0.90 | 58% | 20.5% |
+| 0.95 | 68% | 39.2% |
+| 0.97 | 78% | 61.4% |
+
+**Both constants are now runtime-configurable**, via `--recall-target` and
+`--chapter-first-recall-tolerance` (or as `evaluate_leave_one_book_out`
+keyword arguments), rather than requiring a source edit. They control
+different things: `recall_target` is the real "how many false-positive
+candidate pages am I willing to live with" dial a consumer of the
+classifier would actually set (the table above is that trade-off surface);
+`chapter_first_recall_tolerance` only changes how *this evaluation script*
+scores a book as "fully recalled" for its own aggregate report, with no
+effect on inference behavior. The 0.80 default keeps candidate volume
+inside the pilot's original budget; a consumer able to tolerate more
+false-positive candidate pages (e.g. because a downstream stage reviews
+every candidate cheaply, on institutionally-hosted models with no
+per-request cost) can raise `--recall-target` for substantially higher
+recall, per the curve above.
+
+With the new default (`LogisticRegression`, `recall_target=0.80`,
+`chapter_first_recall_tolerance=0.90`), the full 50-book LOBO run gives
+`full_recall_fraction=44%`, `avg_candidate_fraction=15.0%` -- still **NOT
+MET** against the pilot's 90%/15% bar, but nearly triple the very first
+run's 16%, and the highest `full_recall_fraction` reached at or under the
+original candidate-fraction budget across every follow-up so far. Per
+corpus:
+
+| corpus | `full_recall_fraction` | `avg_candidate_fraction` |
+| --- | --- | --- |
+| open-access | 54.1% | 15.2% |
+| copyrighted-scans | 15.4% | 14.4% |
+
+**Would more ground truth help further?** A learning-curve check (fixed
+15-book held-out test set, `LogisticRegression` retrained on random subsets
+of the remaining pool at sizes 10/15/20/25/30/35 books, 5 repeats per size)
+found `full_recall_fraction` on that fixed test set flat within noise
+across the entire range (25.3%, 28.0%, 22.7%, 22.7%, 24.0%, 26.7% -- no
+scaling trend). Combined with `LogisticRegression`'s low parameter count
+(11 weights total) making it very unlikely to be data-starved, this
+suggests generic corpus growth ("more books like the ones already here")
+has limited further upside -- the ceiling looks like a feature/geometry
+information limit rather than a training-volume limit. If more ground
+truth is collected, it would be higher-leverage to specifically target the
+underrepresented templates already characterized in this investigation
+(unnumbered first chapters, chapter-openings with no font-size or
+whitespace distinction from body text) rather than generic new books, since
+those are the specific cases the current features structurally can't
+separate from ordinary pages.
+
 ## LLM-fallback results (archived -- script removed)
 
 **Superseded by "Per-strategy standalone results" above, which measures

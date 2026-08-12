@@ -1,0 +1,2429 @@
+{
+  "isbn": "9781805117018",
+  "fetched_at": "2026-08-11T22:41:00.211229+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.16",
+      "type": "book-chapter",
+      "page": "273-290",
+      "title": [
+        "16. Rewriting Arabic Books for a New Generation of Readers"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Nevine El Souefi"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.28",
+      "type": "book-chapter",
+      "page": "493-508",
+      "title": [
+        "28. Primary School Teachers Leverage Social Media for Professional Development"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Menna",
+          "family": "Ahmed",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ayman",
+          "family": "Alhusseini",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.11",
+      "type": "book-chapter",
+      "page": "187-204",
+      "title": [
+        "11. A Life in Education from Academia to the World Bank"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Juan Manuel Moreno"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.12",
+      "type": "book-chapter",
+      "page": "205-216",
+      "title": [
+        "12. The World Bank’s Involvement in Education Reform"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Amira Kazem"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.19",
+      "type": "book-chapter",
+      "page": "327-340",
+      "title": [
+        "19. Coordinating the State’s Knowledge Project"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Mahmoud Dawoud and Mahmoud Hussein"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.10",
+      "type": "book-chapter",
+      "page": "171-186",
+      "title": [
+        "10. UNICEF’s Life Skills Framework Comes to Egypt"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Manar Ahmed Sharouda"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.17",
+      "type": "book-chapter",
+      "page": "291-310",
+      "title": [
+        "17. National Geographic Learning Joins Education 2.0"
+      ],
+      "author": [
+        {
+          "given": "Nariman",
+          "family": "Moustafa",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Tom Kelley"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.03",
+      "type": "book-chapter",
+      "page": "65-80",
+      "title": [
+        "3. ‘An Orchestra Without a Conductor’"
+      ],
+      "author": [
+        {
+          "given": "Tarek",
+          "family": "Galal Shawki",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "The Need for Strategic Management of Egypt’s Education System"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.20",
+      "type": "book-chapter",
+      "page": "341-360",
+      "title": [
+        "20. The Dream of Developing a Knowledge Bank for All"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Majed M. Al Sadek"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.27",
+      "type": "book-chapter",
+      "page": "475-492",
+      "title": [
+        "27. Teachers in Search of Their Identity"
+      ],
+      "author": [
+        {
+          "given": "Mohamed",
+          "family": "Elsayed",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Menna",
+          "family": "Ahmed",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "A View from Ismailia during Times of Change"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.29",
+      "type": "book-chapter",
+      "page": "509-522",
+      "title": [
+        "29. A New Curriculum and a Pandemic"
+      ],
+      "author": [
+        {
+          "given": "Nevine",
+          "family": "El Souefi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Primary Teachers’ Strategies"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.24",
+      "type": "book-chapter",
+      "page": "417-436",
+      "title": [
+        "24. The Learning Journey of a High School Student from the Historic Class of 2021"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nairy",
+          "family": "AbdElShafy",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.18",
+      "type": "book-chapter",
+      "page": "311-326",
+      "title": [
+        "18. Motivations for the Digital Transformation of Education"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hany",
+          "family": "Zayed",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04gr4te78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Marquette University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Ahmed Daher"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.15",
+      "type": "book-chapter",
+      "page": "257-272",
+      "title": [
+        "15. Nahdet Misr, Legacy Publisher for the New Arabic Textbooks"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Dalia Ibrahim and Dahlia Fouad"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.04",
+      "type": "book-chapter",
+      "page": "81-98",
+      "title": [
+        "4. The Road to the Egyptian Knowledge Bank"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Tarek Shawki"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.26",
+      "type": "book-chapter",
+      "page": "457-474",
+      "title": [
+        "26. ‘Survival of the Fittest’"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "A High School Student’s Perspective on Learning, Ethics, and Why Students Cheat"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.07",
+      "type": "book-chapter",
+      "page": "133-146",
+      "title": [
+        "7. Envisioning a New Curriculum for the Primary Stage"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Nelly El Zayat"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.13",
+      "type": "book-chapter",
+      "page": "217-238",
+      "title": [
+        "13. Redesigning the Curriculum for the Twenty-First Century"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Nawal Shalaby"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.25",
+      "type": "book-chapter",
+      "page": "437-456",
+      "title": [
+        "25. The Rise, Fall, and Aftermath of Take-Home Research Projects"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Heba",
+          "family": "Shama",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.14",
+      "type": "book-chapter",
+      "page": "239-256",
+      "title": [
+        "14. Discovery Education and Private Sector Partnerships"
+      ],
+      "author": [
+        {
+          "given": "Ebtehal",
+          "family": "Elghamrawy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Emily Waters"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.22",
+      "type": "book-chapter",
+      "page": "373-390",
+      "title": [
+        "22. Making Education Entertaining"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Mai Magdy"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.21",
+      "type": "book-chapter",
+      "page": "361-372",
+      "title": [
+        "21. Building the Knowledge Bank from Scratch"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Mohamed El-Araby"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.02",
+      "type": "book-chapter",
+      "page": "41-64",
+      "title": [
+        "2. Becoming and Being the Minister of Education"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Tarek Shawki"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.23",
+      "type": "book-chapter",
+      "page": "391-414",
+      "title": [
+        "23. Digital Transformation and the Changing EdTech Landscape in Egypt"
+      ],
+      "author": [
+        {
+          "given": "Hany",
+          "family": "Zayed",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04gr4te78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Marquette University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.06",
+      "type": "book-chapter",
+      "page": "113-132",
+      "title": [
+        "6. Rethinking Assessments for the Digital Age"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Deena Boraie"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.05",
+      "type": "book-chapter",
+      "page": "99-112",
+      "title": [
+        "5. ‘We Break the Rules’"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Deena Boraie"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.08",
+      "type": "book-chapter",
+      "page": "147-158",
+      "title": [
+        "8. Advocating for Children with Special Needs"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Ingy Mashhour"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.01",
+      "type": "book-chapter",
+      "page": "1-38",
+      "title": [
+        "1. Introduction"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Learning from Egypt’s Historic Education 2.0 Reforms"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ],
+            "date-time": "2025-11-17T00:00:00Z",
+            "timestamp": 1763337600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0489.09",
+      "type": "book-chapter",
+      "page": "159-170",
+      "title": [
+        "9. Media Messaging about Education Reform"
+      ],
+      "author": [
+        {
+          "given": "Linda",
+          "family": "Herrera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047426m28",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Education 2.0"
+      ],
+      "subtitle": [
+        "Interview with Yousra Allam"
+      ],
+      "ISBN": [
+        "9781805117018",
+        "9781805117025",
+        "9781805117032",
+        "9781805117056",
+        "9781805117049"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "16. Rewriting Arabic Books for a New Generation of Readers Interview with Nevine El Souefi",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.16",
+      "citation_pages": "273-290"
+    },
+    {
+      "title": "28. Primary School Teachers Leverage Social Media for Professional Development",
+      "authors": [
+        "Linda Herrera",
+        "Menna Ahmed",
+        "Ayman Alhusseini"
+      ],
+      "chapter_doi": "10.11647/obp.0489.28",
+      "citation_pages": "493-508"
+    },
+    {
+      "title": "11. A Life in Education from Academia to the World Bank Interview with Juan Manuel Moreno",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.11",
+      "citation_pages": "187-204"
+    },
+    {
+      "title": "12. The World Bank’s Involvement in Education Reform Interview with Amira Kazem",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.12",
+      "citation_pages": "205-216"
+    },
+    {
+      "title": "19. Coordinating the State’s Knowledge Project Interview with Mahmoud Dawoud and Mahmoud Hussein",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.19",
+      "citation_pages": "327-340"
+    },
+    {
+      "title": "10. UNICEF’s Life Skills Framework Comes to Egypt Interview with Manar Ahmed Sharouda",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.10",
+      "citation_pages": "171-186"
+    },
+    {
+      "title": "17. National Geographic Learning Joins Education 2.0 Interview with Tom Kelley",
+      "authors": [
+        "Nariman Moustafa",
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.17",
+      "citation_pages": "291-310"
+    },
+    {
+      "title": "3. ‘An Orchestra Without a Conductor’ The Need for Strategic Management of Egypt’s Education System",
+      "authors": [
+        "Tarek Galal Shawki"
+      ],
+      "chapter_doi": "10.11647/obp.0489.03",
+      "citation_pages": "65-80"
+    },
+    {
+      "title": "20. The Dream of Developing a Knowledge Bank for All Interview with Majed M. Al Sadek",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.20",
+      "citation_pages": "341-360"
+    },
+    {
+      "title": "27. Teachers in Search of Their Identity A View from Ismailia during Times of Change",
+      "authors": [
+        "Mohamed Elsayed",
+        "Menna Ahmed"
+      ],
+      "chapter_doi": "10.11647/obp.0489.27",
+      "citation_pages": "475-492"
+    },
+    {
+      "title": "29. A New Curriculum and a Pandemic Primary Teachers’ Strategies",
+      "authors": [
+        "Nevine El Souefi"
+      ],
+      "chapter_doi": "10.11647/obp.0489.29",
+      "citation_pages": "509-522"
+    },
+    {
+      "title": "24. The Learning Journey of a High School Student from the Historic Class of 2021",
+      "authors": [
+        "Linda Herrera",
+        "Nairy AbdElShafy"
+      ],
+      "chapter_doi": "10.11647/obp.0489.24",
+      "citation_pages": "417-436"
+    },
+    {
+      "title": "18. Motivations for the Digital Transformation of Education Interview with Ahmed Daher",
+      "authors": [
+        "Linda Herrera",
+        "Hany Zayed"
+      ],
+      "chapter_doi": "10.11647/obp.0489.18",
+      "citation_pages": "311-326"
+    },
+    {
+      "title": "15. Nahdet Misr, Legacy Publisher for the New Arabic Textbooks Interview with Dalia Ibrahim and Dahlia Fouad",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.15",
+      "citation_pages": "257-272"
+    },
+    {
+      "title": "4. The Road to the Egyptian Knowledge Bank Interview with Tarek Shawki",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.04",
+      "citation_pages": "81-98"
+    },
+    {
+      "title": "26. ‘Survival of the Fittest’ A High School Student’s Perspective on Learning, Ethics, and Why Students Cheat",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.26",
+      "citation_pages": "457-474"
+    },
+    {
+      "title": "7. Envisioning a New Curriculum for the Primary Stage Interview with Nelly El Zayat",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.07",
+      "citation_pages": "133-146"
+    },
+    {
+      "title": "13. Redesigning the Curriculum for the Twenty-First Century Interview with Nawal Shalaby",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.13",
+      "citation_pages": "217-238"
+    },
+    {
+      "title": "25. The Rise, Fall, and Aftermath of Take-Home Research Projects",
+      "authors": [
+        "Linda Herrera",
+        "Heba Shama"
+      ],
+      "chapter_doi": "10.11647/obp.0489.25",
+      "citation_pages": "437-456"
+    },
+    {
+      "title": "14. Discovery Education and Private Sector Partnerships Interview with Emily Waters",
+      "authors": [
+        "Ebtehal Elghamrawy",
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.14",
+      "citation_pages": "239-256"
+    },
+    {
+      "title": "22. Making Education Entertaining Interview with Mai Magdy",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.22",
+      "citation_pages": "373-390"
+    },
+    {
+      "title": "21. Building the Knowledge Bank from Scratch Interview with Mohamed El-Araby",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.21",
+      "citation_pages": "361-372"
+    },
+    {
+      "title": "2. Becoming and Being the Minister of Education Interview with Tarek Shawki",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.02",
+      "citation_pages": "41-64"
+    },
+    {
+      "title": "23. Digital Transformation and the Changing EdTech Landscape in Egypt",
+      "authors": [
+        "Hany Zayed"
+      ],
+      "chapter_doi": "10.11647/obp.0489.23",
+      "citation_pages": "391-414"
+    },
+    {
+      "title": "6. Rethinking Assessments for the Digital Age Interview with Deena Boraie",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.06",
+      "citation_pages": "113-132"
+    },
+    {
+      "title": "5. ‘We Break the Rules’ Interview with Deena Boraie",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.05",
+      "citation_pages": "99-112"
+    },
+    {
+      "title": "8. Advocating for Children with Special Needs Interview with Ingy Mashhour",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.08",
+      "citation_pages": "147-158"
+    },
+    {
+      "title": "1. Introduction Learning from Egypt’s Historic Education 2.0 Reforms",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.01",
+      "citation_pages": "1-38"
+    },
+    {
+      "title": "9. Media Messaging about Education Reform Interview with Yousra Allam",
+      "authors": [
+        "Linda Herrera"
+      ],
+      "chapter_doi": "10.11647/obp.0489.09",
+      "citation_pages": "159-170"
+    }
+  ]
+}

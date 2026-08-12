@@ -289,7 +289,309 @@
       ],
       "elapsed_seconds": 98.51265040099997,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash": {
+      "chapters": [
+        {
+          "title": "Klimapolitik als Multi-Level-Governance-Problem",
+          "authors": [
+            "Klimawandel \nKLIMAPOLITIK ALS",
+            "Institutionen",
+            "gleichen Ziel",
+            "Bund",
+            "Länder",
+            "Kompetenzen",
+            "Auftrag des BMUB"
+          ],
+          "pdf_start_index": 48,
+          "pdf_end_index": 52,
+          "citation_pages": "48-31",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Klimawandel als Politikproblem",
+          "authors": [
+            "Klimawandel",
+            "Konstruktion von Klimawandel",
+            "zu erklären",
+            "Die Problematisierung von Klimapolitik",
+            "zur Priorisierung von technokratischen",
+            "Problemlösung",
+            "Kooperation",
+            "Weltbild"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 60,
+          "citation_pages": "32-60",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Klimawandel als ökonomisches Problem",
+          "authors": [
+            "Klimawandel",
+            "Ähnlich",
+            "Klimaschutz",
+            "Entwicklung",
+            "Wertschöpfung"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 70,
+          "citation_pages": "61-70",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Den guten Praktiken auf der Spur",
+          "authors": [
+            "Spur \n \nDer Politik",
+            "stellt wird",
+            "Risiken",
+            "Zahlen",
+            "Daten",
+            "Angebot",
+            "Beispielen aus anderen",
+            "Kommunen",
+            "zur Verfügung"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 89,
+          "citation_pages": "71-89",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Projektdesign",
+          "authors": [
+            "Klimawandel \n",
+            "das Konzept der Gouvernementalität",
+            "zur theoretischen \n",
+            "zweiten Teil",
+            "Forschungspraktiken",
+            "tischen",
+            "von der",
+            "Bedeutung",
+            "Nachahmung von Praktiken"
+          ],
+          "pdf_start_index": 90,
+          "pdf_end_index": 111,
+          "citation_pages": "90-226",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reflexion",
+          "authors": [
+            "Klimawandel \nMethodische",
+            "zu schlussfolgern",
+            "Breuer",
+            "Arbeitsstil",
+            "Jeder Forscher"
+          ],
+          "pdf_start_index": 112,
+          "pdf_end_index": 118,
+          "citation_pages": "227-114",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Kunst, den Klimawandel zu regieren",
+          "authors": [
+            "Analysekategorie",
+            "Akteuren",
+            "Institutionen",
+            "Prozessen",
+            "Reflexionen",
+            "Kalkulationen",
+            "von Regierung"
+          ],
+          "pdf_start_index": 119,
+          "pdf_end_index": 122,
+          "citation_pages": "115-115",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gouvernementalität",
+          "authors": [
+            "Klimawandel",
+            "Fokus des Interesses",
+            "zu einem aktuellen sozialen",
+            "wurde",
+            "Thema Klimawandel"
+          ],
+          "pdf_start_index": 128,
+          "pdf_end_index": 138,
+          "citation_pages": "116-161",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Politische Programme",
+          "authors": [
+            "Klimawandel \n3",
+            "Aspekt von Regierungsrationalitäten",
+            "Regierung",
+            "Logiken",
+            "Wie",
+            "Analysen"
+          ],
+          "pdf_start_index": 140,
+          "pdf_end_index": 140,
+          "citation_pages": "162-140",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "New Public Climate Management",
+          "authors": [
+            "Juni 2016",
+            "Master-\nplankommunen",
+            "Nachmittag",
+            "Bundesumweltministeriums",
+            "Klimafunktionäre",
+            "Neulingen"
+          ],
+          "pdf_start_index": 141,
+          "pdf_end_index": 141,
+          "citation_pages": "141-141",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Politische Rationalitäten",
+          "authors": [
+            "Subkategorie von Rationa-",
+            "litäten der",
+            "Regierung",
+            "Art",
+            "betrifft z.B. die Repräsentati-",
+            "Ziele",
+            "Bestandteile von Regierungsratio-"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 190,
+          "citation_pages": "142-190",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rationalitäten und Technologien",
+          "authors": [
+            "Dass",
+            "Bedeutung \nzukommt",
+            "Anwendung",
+            "dazu führen"
+          ],
+          "pdf_start_index": 191,
+          "pdf_end_index": 214,
+          "citation_pages": "191-214",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "„Gebt uns gute Beispiele!“",
+          "authors": [
+            "Angebot",
+            "kommunalen Klimaschutz",
+            "beobachten konnte",
+            "aktiv",
+            "gefordert werden",
+            "Anstelle von Strategiepapieren",
+            "lieber wissen",
+            "Dazu"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 248,
+          "citation_pages": "215-248",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zum transformativen Potenzial von Best Practices",
+          "authors": [
+            "Geschichte",
+            "ZUM TRANSFORMATIVEN POTENZIAL VON",
+            "Stephan et al",
+            "Der Begriff „Transformation",
+            "zu einem"
+          ],
+          "pdf_start_index": 249,
+          "pdf_end_index": 249,
+          "citation_pages": "249-144",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Klima\\Wandel ist regierbar",
+          "authors": [
+            "Klimawandel \nwurden",
+            "kann",
+            "Klima\\Wandel"
+          ],
+          "pdf_start_index": 250,
+          "pdf_end_index": 269,
+          "citation_pages": "145-131",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Praxisregime „kommunaler Klimaschutz“",
+          "authors": [
+            "Klimawandel \nAbbildung",
+            "Klimaschutz",
+            "jeweiligen Klimaziele",
+            "tierten Lösungsstrategien",
+            "Ziele",
+            "Entstehen",
+            "Wirken"
+          ],
+          "pdf_start_index": 270,
+          "pdf_end_index": 272,
+          "citation_pages": "132-234",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "„Best Practice ist eine Geschichte“",
+          "authors": [
+            "Geschichte",
+            "Bekämpfung",
+            "das Arbeiten mit dem Analyserahmen"
+          ],
+          "pdf_start_index": 273,
+          "pdf_end_index": 306,
+          "citation_pages": "235-306",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 11.291981605000046,
+      "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 71.0147501460001,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-09T14:40:41.609380+00:00"
+  "generated_at": "2026-08-11T05:02:03.635619+00:00"
 }

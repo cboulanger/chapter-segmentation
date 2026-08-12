@@ -1,0 +1,979 @@
+{
+  "isbn": "9791036590641",
+  "fetched_at": "2026-08-11T22:43:47.534042+00:00",
+  "license": "https://www.openedition.org/12554",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7743",
+      "type": "book-chapter",
+      "page": "5-11",
+      "title": [
+        "Prefácio"
+      ],
+      "author": [
+        {
+          "given": "Adriana",
+          "family": "Piscitelli",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Antónia",
+          "family": "Pedroso de Lima",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7832",
+      "type": "book-chapter",
+      "title": [
+        "Ficha técnica"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7769",
+      "type": "book-chapter",
+      "page": "99-154",
+      "title": [
+        "Capítulo 2: Cenários e espaços transnacionais"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7822",
+      "type": "book-chapter",
+      "page": "15-15",
+      "title": [
+        "Dedicatória"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7794",
+      "type": "book-chapter",
+      "page": "397-404",
+      "title": [
+        "Considerações finais"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7774",
+      "type": "book-chapter",
+      "page": "155-224",
+      "title": [
+        "Capítulo 3: Atravessando fronteiras – dimensões espaciais e políticas e a interação de diferenças"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7803",
+      "type": "book-chapter",
+      "page": "431-443",
+      "title": [
+        "Anexo"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7759",
+      "type": "book-chapter",
+      "page": "27-44",
+      "title": [
+        "Introdução: trajetos e trajetórias de mobilidade – desconstruindo um Brasil em Portugal"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7827",
+      "type": "book-chapter",
+      "page": "17-21",
+      "title": [
+        "Agradecimentos"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7789",
+      "type": "book-chapter",
+      "page": "317-395",
+      "title": [
+        "Capítulo 6: Virando homem. Sobre masculinidades e construção da diferença"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7784",
+      "type": "book-chapter",
+      "page": "283-316",
+      "title": [
+        "Capítulo 5: Entre a ajuda e a coisa errada. Sexualidade, gênero e moralidades"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7779",
+      "type": "book-chapter",
+      "page": "225-226",
+      "title": [
+        "Parte II – Deslocando sujeitos, trajetórias e relações"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7783",
+      "type": "book-chapter",
+      "page": "227-281",
+      "title": [
+        "Capítulo 4: Projeto, tempo e família nas mobilidades transnacionais"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7768",
+      "type": "book-chapter",
+      "page": "45-97",
+      "title": [
+        "Capítulo 1: Trajetos e trajetórias metodológicas – negociações e tensões entre Brasil e Portugal"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.4000/books.etnograficapress.7829",
+      "title": [
+        "Ficha técnica:"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "type": "book-chapter",
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "ISBN": [
+        "9791036590641"
+      ]
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://www.openedition.org/12554"
+        }
+      ],
+      "DOI": "10.4000/books.etnograficapress.7799",
+      "type": "book-chapter",
+      "page": "405-430",
+      "title": [
+        "Referências bibliográficas"
+      ],
+      "author": [
+        {
+          "given": "Paula",
+          "family": "Togni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "A Europa é o Cacém"
+      ],
+      "ISBN": [
+        "9791036590641"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Prefácio",
+      "authors": [
+        "Adriana Piscitelli",
+        "Antónia Pedroso de Lima"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7743",
+      "citation_pages": "5-11"
+    },
+    {
+      "title": "Ficha técnica",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7832",
+      "citation_pages": null
+    },
+    {
+      "title": "Capítulo 2: Cenários e espaços transnacionais",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7769",
+      "citation_pages": "99-154"
+    },
+    {
+      "title": "Dedicatória",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7822",
+      "citation_pages": "15-15"
+    },
+    {
+      "title": "Considerações finais",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7794",
+      "citation_pages": "397-404"
+    },
+    {
+      "title": "Capítulo 3: Atravessando fronteiras – dimensões espaciais e políticas e a interação de diferenças",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7774",
+      "citation_pages": "155-224"
+    },
+    {
+      "title": "Anexo",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7803",
+      "citation_pages": "431-443"
+    },
+    {
+      "title": "Introdução: trajetos e trajetórias de mobilidade – desconstruindo um Brasil em Portugal",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7759",
+      "citation_pages": "27-44"
+    },
+    {
+      "title": "Agradecimentos",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7827",
+      "citation_pages": "17-21"
+    },
+    {
+      "title": "Capítulo 6: Virando homem. Sobre masculinidades e construção da diferença",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7789",
+      "citation_pages": "317-395"
+    },
+    {
+      "title": "Capítulo 5: Entre a ajuda e a coisa errada. Sexualidade, gênero e moralidades",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7784",
+      "citation_pages": "283-316"
+    },
+    {
+      "title": "Parte II – Deslocando sujeitos, trajetórias e relações",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7779",
+      "citation_pages": "225-226"
+    },
+    {
+      "title": "Capítulo 4: Projeto, tempo e família nas mobilidades transnacionais",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7783",
+      "citation_pages": "227-281"
+    },
+    {
+      "title": "Capítulo 1: Trajetos e trajetórias metodológicas – negociações e tensões entre Brasil e Portugal",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7768",
+      "citation_pages": "45-97"
+    },
+    {
+      "title": "Ficha técnica:",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7829",
+      "citation_pages": null
+    },
+    {
+      "title": "Referências bibliográficas",
+      "authors": [
+        "Paula Togni"
+      ],
+      "chapter_doi": "10.4000/books.etnograficapress.7799",
+      "citation_pages": "405-430"
+    }
+  ]
+}

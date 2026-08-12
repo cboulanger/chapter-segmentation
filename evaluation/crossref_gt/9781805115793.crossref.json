@@ -1,0 +1,2578 @@
+{
+  "isbn": "9781805115793",
+  "fetched_at": "2026-08-11T22:58:25.158467+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.26",
+      "type": "book-chapter",
+      "page": "755-784",
+      "title": [
+        "Indefiniteness Marking"
+      ],
+      "author": [
+        {
+          "given": "Dorota",
+          "family": "Molin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "subtitle": [
+        "NENA and Its Areal and Semitic Parallels"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.09",
+      "type": "book-chapter",
+      "page": "287-310",
+      "title": [
+        "A Fragment of the Maḥberot ʿAzarʾel ben Yosef"
+      ],
+      "author": [
+        {
+          "given": "Michael",
+          "family": "Rand z\"l",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.07",
+      "type": "book-chapter",
+      "page": "217-256",
+      "title": [
+        "An Exploration of Geniza Targum Fragments as Objects of Personal Study and Everyday Use"
+      ],
+      "author": [
+        {
+          "given": "Estara J.",
+          "family": "Arrant",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.20",
+      "type": "book-chapter",
+      "page": "641-654",
+      "title": [
+        "Neo-Aramaic 2MS and 2FS Genitive Pronominal Suffixes in the Light of Earlier Aramaic"
+      ],
+      "author": [
+        {
+          "given": "Steven E.",
+          "family": "Fassberg",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03qxff017",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hebrew University of Jerusalem"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.10",
+      "type": "book-chapter",
+      "page": "311-340",
+      "title": [
+        "Some Notes on Melody: Saʿadya Gaon and Why ‘naghma’ Means ‘vowel’ in Judaeo-Arabic"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1336-9520",
+          "authenticated-orcid": false,
+          "given": "Nick",
+          "family": "Posegay",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.29",
+      "type": "book-chapter",
+      "page": "855-894",
+      "title": [
+        "The North-Eastern Neo-Aramaic Dialect of Tin"
+      ],
+      "author": [
+        {
+          "given": "Eleanor",
+          "family": "Coghill",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/048a87296",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Uppsala University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.19",
+      "type": "book-chapter",
+      "page": "575-610",
+      "title": [
+        "Wrestlers before the King"
+      ],
+      "author": [
+        {
+          "given": "Diana",
+          "family": "Lipton",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/029q31q54",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Canadian Friends Of Tel-Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Meira",
+          "family": "Polliack",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/029q31q54",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Canadian Friends Of Tel-Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "subtitle": [
+        "Image and Text in Ancient and Medieval Representations of the First Murder"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.13",
+      "type": "book-chapter",
+      "page": "399-428",
+      "title": [
+        "Comparative Notes on the Jewish Arabic Dialects of Gabes and Djerba (Tunisia)"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2577-6553",
+          "authenticated-orcid": false,
+          "given": "Wiktor",
+          "family": "Gębski",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.31",
+      "type": "book-chapter",
+      "page": "923-930",
+      "title": [
+        "Animals in the Western Neo-Aramaic Proverbs of Maʿlūla"
+      ],
+      "author": [
+        {
+          "given": "Werner",
+          "family": "Arnold",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/038t36y30",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Heidelberg University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.27",
+      "type": "book-chapter",
+      "page": "785-822",
+      "title": [
+        "Miracles of Saint Ephrem"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9407-1453",
+          "authenticated-orcid": false,
+          "given": "Paul M.",
+          "family": "Noorlander",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/027bh9e22",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Leiden University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "subtitle": [
+        "Legends in the Neo-Aramaic Dialect of Umra d-Shish"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.23",
+      "type": "book-chapter",
+      "page": "695-720",
+      "title": [
+        "The Church Militant"
+      ],
+      "author": [
+        {
+          "given": "Phillip Yu.",
+          "family": "Burlakov",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/055f7t516",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National Research University Higher School of Economics"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anna S.",
+          "family": "Cherkashina",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/029q31q54",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Canadian Friends Of Tel-Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Charles G.",
+          "family": "Häberl",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05vt9qd57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Rutgers University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sergey V.",
+          "family": "Loesov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/055f7t516",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National Research University Higher School of Economics"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "subtitle": [
+        "A Modern Western Aramaic Account"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.02",
+      "type": "book-chapter",
+      "page": "31-64",
+      "title": [
+        "New Geniza Fragments from the Commentary of R. Isaac b. Samuel al-Kanzī the Sephardi on Joshua and Judges"
+      ],
+      "author": [
+        {
+          "given": "Aharon",
+          "family": "Maman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03qxff017",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hebrew University of Jerusalem"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.12",
+      "type": "book-chapter",
+      "page": "363-398",
+      "title": [
+        "Judaeo-Arabic Translations from the Bible to Robinson Crusoe: Centre versus Periphery"
+      ],
+      "author": [
+        {
+          "given": "Ofra",
+          "family": "Tirosh-Becker",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03qxff017",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hebrew University of Jerusalem"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.05",
+      "type": "book-chapter",
+      "page": "147-176",
+      "title": [
+        "Hebrew Script Terminology in Cairo Geniza Book Lists"
+      ],
+      "author": [
+        {
+          "given": "Judith",
+          "family": "Olszowy-Schlanger",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.30",
+      "type": "book-chapter",
+      "page": "895-922",
+      "title": [
+        "Five Enigmatic Neo-Aramaic Lexemes and Their Possible Etymologies"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6427-7346",
+          "authenticated-orcid": false,
+          "given": "Hezy",
+          "family": "Mutzafi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/029q31q54",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Canadian Friends Of Tel-Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.14",
+      "type": "book-chapter",
+      "page": "429-458",
+      "title": [
+        "Written Egyptian Judaeo-Arabic"
+      ],
+      "author": [
+        {
+          "given": "Benjamin",
+          "family": "Hary",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0190ak572",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "New York University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "subtitle": [
+        "Implications for the Spoken Variety"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.11",
+      "type": "book-chapter",
+      "page": "341-362",
+      "title": [
+        "“You Shall Not Boil a Kid in Its Mother’s Milk” in Saʿadya Gaon’s Translation of the Pentateuch"
+      ],
+      "author": [
+        {
+          "given": "Tamar",
+          "family": "Zewi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02f009v59",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Haifa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.06",
+      "type": "book-chapter",
+      "page": "177-216",
+      "title": [
+        "Geniza Book Lists as Indirect Sources of Medieval Jewish Book History in the Near East"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3701-9429",
+          "authenticated-orcid": false,
+          "given": "Ronny",
+          "family": "Vollandt",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05591te55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ludwig-Maximilians-Universität München"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.18",
+      "type": "book-chapter",
+      "page": "547-574",
+      "title": [
+        "A Lexicographical Analysis of Sharḥ al-ʾAlfāẓ by Abū al Faraj Hārūn (Parashat Bereshit)*"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7595-3912",
+          "authenticated-orcid": false,
+          "given": "José",
+          "family": "Martínez Delgado",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04njjy449",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Universidad de Granada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.16",
+      "type": "book-chapter",
+      "page": "489-522",
+      "title": [
+        "Early Tenth-Century Judaeo-Arabic Exegesis on the Visit to Abraham"
+      ],
+      "author": [
+        {
+          "given": "Miriam",
+          "family": "Goldstein",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03qxff017",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Hebrew University of Jerusalem"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.04",
+      "type": "book-chapter",
+      "page": "111-146",
+      "title": [
+        "Does the Cairo Codex Represent a Scribal School?"
+      ],
+      "author": [
+        {
+          "given": "Vincent D.",
+          "family": "Beiler",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.32",
+      "type": "book-chapter",
+      "page": "611-638",
+      "title": [
+        "From Bibliography to History"
+      ],
+      "author": [
+        {
+          "given": "María Ángeles",
+          "family": "Gallego",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02gfc7t72",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Consejo Superior de Investigaciones Científicas"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "subtitle": [
+        "The Early Study of Andalusi Judaism in the Modern Era"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.24",
+      "type": "book-chapter",
+      "page": "721-738",
+      "title": [
+        "A Syriac Christian in the Turkish Military"
+      ],
+      "author": [
+        {
+          "given": "Otto",
+          "family": "Jastrow",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05mey9k78",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Tallinn University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "subtitle": [
+        "A Text in the Ṭuroyo Dialect of Midin"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.15",
+      "type": "book-chapter",
+      "page": "459-488",
+      "title": [
+        "The Arabic Counterpart of the Byzantine Karaite Treatise Marpe la-ʿAṣem"
+      ],
+      "author": [
+        {
+          "given": "Gregor",
+          "family": "Schwarb",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05591te55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Ludwig-Maximilians-Universität München"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.01",
+      "type": "book-chapter",
+      "page": "5-30",
+      "title": [
+        "To What Extent is Geniza Research on Jewish Liturgy a Continuation of the Work of Leopold Zunz?"
+      ],
+      "author": [
+        {
+          "given": "Stefan",
+          "family": "Reif",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.25",
+      "type": "book-chapter",
+      "page": "739-754",
+      "title": [
+        "War and Fieldwork"
+      ],
+      "author": [
+        {
+          "given": "Charles G.",
+          "family": "Häberl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05vt9qd57",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Rutgers University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.21",
+      "type": "book-chapter",
+      "page": "655-672",
+      "title": [
+        "Being Born in Neo-Aramaic"
+      ],
+      "author": [
+        {
+          "given": "Samuel",
+          "family": "Fox",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.28",
+      "type": "book-chapter",
+      "page": "823-854",
+      "title": [
+        "Relating Morphological and Sociolinguistic Variety in Modern Hebrew to Neo-Aramaic"
+      ],
+      "author": [
+        {
+          "given": "Lidia",
+          "family": "Napiorkowska",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/039bjqg32",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Warsaw"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.03",
+      "type": "book-chapter",
+      "page": "65-110",
+      "title": [
+        "The Cacophony of Colophons in the Cairo Codex of the Prophets"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3018-283X",
+          "authenticated-orcid": false,
+          "given": "Benjamin",
+          "family": "Outhwaite",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/013meh722",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.17",
+      "type": "book-chapter",
+      "page": "523-546",
+      "title": [
+        "Yūsuf ibn Nūḥ and Yūsuf ibn Baḫtawayh"
+      ],
+      "author": [
+        {
+          "given": "Nadia",
+          "family": "Vidro",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jx3x895",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University College London"
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/052gg0110",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "subtitle": [
+        "One Grammarian or Two?"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.22",
+      "type": "book-chapter",
+      "page": "673-694",
+      "title": [
+        "Not Such a Dummy or Otiose After All: NENA Verbs with Non-referential 3FS Object Pronouns"
+      ],
+      "author": [
+        {
+          "given": "Alessandro",
+          "family": "Mengozzi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/048tbm396",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Turin"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2025-03-07T00:00:00Z",
+            "timestamp": 1741305600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0464.08",
+      "type": "book-chapter",
+      "page": "257-286",
+      "title": [
+        "Two Judaeo-Arabic Letters to Abraham Maimonides"
+      ],
+      "author": [
+        {
+          "given": "Mordechai",
+          "family": "Akiva Friedman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/029q31q54",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Canadian Friends Of Tel-Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Interconnected Traditions: Semitic Languages, Literatures, Cultures—A Festschrift for Geoffrey Khan"
+      ],
+      "subtitle": [
+        "A Recommendation and a Condemnation of a Communal Leader"
+      ],
+      "ISBN": [
+        "9781805115793",
+        "9781805115809",
+        "9781805115816"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Indefiniteness Marking NENA and Its Areal and Semitic Parallels",
+      "authors": [
+        "Dorota Molin"
+      ],
+      "chapter_doi": "10.11647/obp.0464.26",
+      "citation_pages": "755-784"
+    },
+    {
+      "title": "A Fragment of the Maḥberot ʿAzarʾel ben Yosef",
+      "authors": [
+        "Michael Rand z\"l"
+      ],
+      "chapter_doi": "10.11647/obp.0464.09",
+      "citation_pages": "287-310"
+    },
+    {
+      "title": "An Exploration of Geniza Targum Fragments as Objects of Personal Study and Everyday Use",
+      "authors": [
+        "Estara J. Arrant"
+      ],
+      "chapter_doi": "10.11647/obp.0464.07",
+      "citation_pages": "217-256"
+    },
+    {
+      "title": "Neo-Aramaic 2MS and 2FS Genitive Pronominal Suffixes in the Light of Earlier Aramaic",
+      "authors": [
+        "Steven E. Fassberg"
+      ],
+      "chapter_doi": "10.11647/obp.0464.20",
+      "citation_pages": "641-654"
+    },
+    {
+      "title": "Some Notes on Melody: Saʿadya Gaon and Why ‘naghma’ Means ‘vowel’ in Judaeo-Arabic",
+      "authors": [
+        "Nick Posegay"
+      ],
+      "chapter_doi": "10.11647/obp.0464.10",
+      "citation_pages": "311-340"
+    },
+    {
+      "title": "The North-Eastern Neo-Aramaic Dialect of Tin",
+      "authors": [
+        "Eleanor Coghill"
+      ],
+      "chapter_doi": "10.11647/obp.0464.29",
+      "citation_pages": "855-894"
+    },
+    {
+      "title": "Wrestlers before the King Image and Text in Ancient and Medieval Representations of the First Murder",
+      "authors": [
+        "Diana Lipton",
+        "Meira Polliack"
+      ],
+      "chapter_doi": "10.11647/obp.0464.19",
+      "citation_pages": "575-610"
+    },
+    {
+      "title": "Comparative Notes on the Jewish Arabic Dialects of Gabes and Djerba (Tunisia)",
+      "authors": [
+        "Wiktor Gębski"
+      ],
+      "chapter_doi": "10.11647/obp.0464.13",
+      "citation_pages": "399-428"
+    },
+    {
+      "title": "Animals in the Western Neo-Aramaic Proverbs of Maʿlūla",
+      "authors": [
+        "Werner Arnold"
+      ],
+      "chapter_doi": "10.11647/obp.0464.31",
+      "citation_pages": "923-930"
+    },
+    {
+      "title": "Miracles of Saint Ephrem Legends in the Neo-Aramaic Dialect of Umra d-Shish",
+      "authors": [
+        "Paul M. Noorlander"
+      ],
+      "chapter_doi": "10.11647/obp.0464.27",
+      "citation_pages": "785-822"
+    },
+    {
+      "title": "The Church Militant A Modern Western Aramaic Account",
+      "authors": [
+        "Phillip Yu. Burlakov",
+        "Anna S. Cherkashina",
+        "Charles G. Häberl",
+        "Sergey V. Loesov"
+      ],
+      "chapter_doi": "10.11647/obp.0464.23",
+      "citation_pages": "695-720"
+    },
+    {
+      "title": "New Geniza Fragments from the Commentary of R. Isaac b. Samuel al-Kanzī the Sephardi on Joshua and Judges",
+      "authors": [
+        "Aharon Maman"
+      ],
+      "chapter_doi": "10.11647/obp.0464.02",
+      "citation_pages": "31-64"
+    },
+    {
+      "title": "Judaeo-Arabic Translations from the Bible to Robinson Crusoe: Centre versus Periphery",
+      "authors": [
+        "Ofra Tirosh-Becker"
+      ],
+      "chapter_doi": "10.11647/obp.0464.12",
+      "citation_pages": "363-398"
+    },
+    {
+      "title": "Hebrew Script Terminology in Cairo Geniza Book Lists",
+      "authors": [
+        "Judith Olszowy-Schlanger"
+      ],
+      "chapter_doi": "10.11647/obp.0464.05",
+      "citation_pages": "147-176"
+    },
+    {
+      "title": "Five Enigmatic Neo-Aramaic Lexemes and Their Possible Etymologies",
+      "authors": [
+        "Hezy Mutzafi"
+      ],
+      "chapter_doi": "10.11647/obp.0464.30",
+      "citation_pages": "895-922"
+    },
+    {
+      "title": "Written Egyptian Judaeo-Arabic Implications for the Spoken Variety",
+      "authors": [
+        "Benjamin Hary"
+      ],
+      "chapter_doi": "10.11647/obp.0464.14",
+      "citation_pages": "429-458"
+    },
+    {
+      "title": "“You Shall Not Boil a Kid in Its Mother’s Milk” in Saʿadya Gaon’s Translation of the Pentateuch",
+      "authors": [
+        "Tamar Zewi"
+      ],
+      "chapter_doi": "10.11647/obp.0464.11",
+      "citation_pages": "341-362"
+    },
+    {
+      "title": "Geniza Book Lists as Indirect Sources of Medieval Jewish Book History in the Near East",
+      "authors": [
+        "Ronny Vollandt"
+      ],
+      "chapter_doi": "10.11647/obp.0464.06",
+      "citation_pages": "177-216"
+    },
+    {
+      "title": "A Lexicographical Analysis of Sharḥ al-ʾAlfāẓ by Abū al Faraj Hārūn (Parashat Bereshit)*",
+      "authors": [
+        "José Martínez Delgado"
+      ],
+      "chapter_doi": "10.11647/obp.0464.18",
+      "citation_pages": "547-574"
+    },
+    {
+      "title": "Early Tenth-Century Judaeo-Arabic Exegesis on the Visit to Abraham",
+      "authors": [
+        "Miriam Goldstein"
+      ],
+      "chapter_doi": "10.11647/obp.0464.16",
+      "citation_pages": "489-522"
+    },
+    {
+      "title": "Does the Cairo Codex Represent a Scribal School?",
+      "authors": [
+        "Vincent D. Beiler"
+      ],
+      "chapter_doi": "10.11647/obp.0464.04",
+      "citation_pages": "111-146"
+    },
+    {
+      "title": "From Bibliography to History The Early Study of Andalusi Judaism in the Modern Era",
+      "authors": [
+        "María Ángeles Gallego"
+      ],
+      "chapter_doi": "10.11647/obp.0464.32",
+      "citation_pages": "611-638"
+    },
+    {
+      "title": "A Syriac Christian in the Turkish Military A Text in the Ṭuroyo Dialect of Midin",
+      "authors": [
+        "Otto Jastrow"
+      ],
+      "chapter_doi": "10.11647/obp.0464.24",
+      "citation_pages": "721-738"
+    },
+    {
+      "title": "The Arabic Counterpart of the Byzantine Karaite Treatise Marpe la-ʿAṣem",
+      "authors": [
+        "Gregor Schwarb"
+      ],
+      "chapter_doi": "10.11647/obp.0464.15",
+      "citation_pages": "459-488"
+    },
+    {
+      "title": "To What Extent is Geniza Research on Jewish Liturgy a Continuation of the Work of Leopold Zunz?",
+      "authors": [
+        "Stefan Reif"
+      ],
+      "chapter_doi": "10.11647/obp.0464.01",
+      "citation_pages": "5-30"
+    },
+    {
+      "title": "War and Fieldwork",
+      "authors": [
+        "Charles G. Häberl"
+      ],
+      "chapter_doi": "10.11647/obp.0464.25",
+      "citation_pages": "739-754"
+    },
+    {
+      "title": "Being Born in Neo-Aramaic",
+      "authors": [
+        "Samuel Fox"
+      ],
+      "chapter_doi": "10.11647/obp.0464.21",
+      "citation_pages": "655-672"
+    },
+    {
+      "title": "Relating Morphological and Sociolinguistic Variety in Modern Hebrew to Neo-Aramaic",
+      "authors": [
+        "Lidia Napiorkowska"
+      ],
+      "chapter_doi": "10.11647/obp.0464.28",
+      "citation_pages": "823-854"
+    },
+    {
+      "title": "The Cacophony of Colophons in the Cairo Codex of the Prophets",
+      "authors": [
+        "Benjamin Outhwaite"
+      ],
+      "chapter_doi": "10.11647/obp.0464.03",
+      "citation_pages": "65-110"
+    },
+    {
+      "title": "Yūsuf ibn Nūḥ and Yūsuf ibn Baḫtawayh One Grammarian or Two?",
+      "authors": [
+        "Nadia Vidro"
+      ],
+      "chapter_doi": "10.11647/obp.0464.17",
+      "citation_pages": "523-546"
+    },
+    {
+      "title": "Not Such a Dummy or Otiose After All: NENA Verbs with Non-referential 3FS Object Pronouns",
+      "authors": [
+        "Alessandro Mengozzi"
+      ],
+      "chapter_doi": "10.11647/obp.0464.22",
+      "citation_pages": "673-694"
+    },
+    {
+      "title": "Two Judaeo-Arabic Letters to Abraham Maimonides A Recommendation and a Condemnation of a Communal Leader",
+      "authors": [
+        "Mordechai Akiva Friedman"
+      ],
+      "chapter_doi": "10.11647/obp.0464.08",
+      "citation_pages": "257-286"
+    }
+  ]
+}

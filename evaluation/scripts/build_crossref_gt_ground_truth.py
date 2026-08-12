@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """One-time reconciliation: turn evaluation/crossref_gt/ (Crossref-sourced
 book-chapter metadata -- printed citation_pages ranges only, no PDF-relative
-indices) into real evaluation/corpus/open-access/ ground truth, completing
+indices) into real evaluation/corpus/pending/ ground truth, completing
 the "Follow-up work" explicitly deferred in
 docs/superpowers/specs/2026-08-08-crossref-gt-corpus-design.md.
 
@@ -22,39 +22,203 @@ printed page number -- is what stands in for the hand-verification
 evaluation/CLAUDE.md normally requires for 896 chapters across 46 books.
 
 A book where the offset can't be derived (too few pages carry a printed
-number pypdf/extract_printed_number can read), or where too few chapters
-land a confident content match at their candidate page, is left untouched
--- its crossref_gt/ files stay put for manual curation later, rather than
-polluting the harness with unverified chapter boundaries.
+number pypdf/extract_printed_number can read), where too few chapters
+land a confident content match at their candidate page, or where Crossref
+registers fewer than two distinct chapter authors (a single-authored book,
+not an edited volume with distinct chapter authors -- see
+evaluation/crossref_gt/README.md's "Known gaps" for 14 such books removed
+from a first reconciliation pass), is left untouched -- its crossref_gt/
+files stay put for manual curation later, rather than polluting the
+harness with unverified chapter boundaries.
+
+Migrated books land in evaluation/corpus/pending/, not open-access/ --
+confirmation + novelty give high GT confidence, but open-access/ is what
+this pilot's canonical numbers are measured against, so a human gets a
+chance to spot-check (or evaluate in isolation via
+evaluate_layout_toc_classifier.py's --corpora flag) before a book affects
+those numbers. See
+docs/superpowers/specs/2026-08-11-crossref-gt-corpus-expansion-design.md.
 
 Usage:
     uv run python evaluation/scripts/build_crossref_gt_ground_truth.py --dry-run
     uv run python evaluation/scripts/build_crossref_gt_ground_truth.py
+    uv run python evaluation/scripts/build_crossref_gt_ground_truth.py --pdfalto-bin /path/to/pdfalto
+    uv run python evaluation/scripts/build_crossref_gt_ground_truth.py --novelty-percentile 95
 """
 
 import argparse
 import json
+import math
 import shutil
 import sys
 from collections import Counter
+from dataclasses import dataclass
 from pathlib import Path
+
+import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from pypdf import PdfReader
 from rapidfuzz import fuzz
+from sklearn.preprocessing import StandardScaler
 
 from chapter_segmentation.segmentation import _parse_toc_page_number
-from evaluation.scripts.ground_truth_helper import extract_printed_number, find_toc_pages
+from evaluation.scripts.evaluate_layout_toc_classifier import build_feature_table, load_book_corpus
+from evaluation.scripts.ground_truth_helper import extract_printed_number, find_toc_pages, toc_page_range
+from evaluation.scripts.layout_features import FEATURE_NAMES, extract_page_features
+from evaluation.scripts.layout_labels import LABEL_CHAPTER_FIRST
+from evaluation.scripts.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_binary
 
 _CROSSREF_DIR = Path(__file__).resolve().parent.parent / "crossref_gt"
 _OPEN_ACCESS_DIR = Path(__file__).resolve().parent.parent / "corpus" / "open-access"
+_PENDING_DIR = Path(__file__).resolve().parent.parent / "corpus" / "pending"
+_ALTO_CACHE_DIR = _CROSSREF_DIR / ".layout-cache"
 
 _MIN_OFFSET_VOTES = 5  # pages agreeing on the same offset, before it's trusted
 _WINDOW = 6  # +/- pages searched around each offset-derived candidate index
 _MIN_MATCH_SCORE = 85.0
 _MIN_CONFIRMED_FRACTION = 0.8
 _MIN_CONFIRMED_CHAPTERS = 3
+_MIN_DISTINCT_CHAPTER_AUTHORS = 2  # below this, it reads as a single-authored book, not an edited volume
+_DEFAULT_NOVELTY_PERCENTILE = 90.0  # see design spec's "Novelty metric" decision
+
+
+def _nearest_neighbor_distance(vector: list[float], others: list[list[float]]) -> float:
+    """Euclidean distance from `vector` to the closest point in `others`."""
+    return min(math.dist(vector, other) for other in others)
+
+
+def _novelty_threshold(vectors: list[list[float]], percentile: float) -> float:
+    """The `percentile`-th percentile of `vectors`' own leave-one-out
+    nearest-neighbor distances -- pages farther than this from the
+    existing corpus sit outside how tightly that corpus already clusters.
+    `vectors` must have at least 2 entries (a single vector has no
+    leave-one-out neighbor to measure against)."""
+    loo_distances = [
+        _nearest_neighbor_distance(vector, vectors[:i] + vectors[i + 1 :])
+        for i, vector in enumerate(vectors)
+    ]
+    return float(np.percentile(loo_distances, percentile))
+
+
+def _is_novel(
+    candidate_vectors: list[list[float]], existing_vectors: list[list[float]], threshold: float
+) -> bool:
+    """True if at least one candidate page's nearest-neighbor distance to
+    the existing corpus meets or exceeds `threshold` -- the design spec's
+    "keep if at least one page is novel" rule, since a book that's mostly
+    ordinary but has one unusual chapter-opening is still worth keeping."""
+    return any(
+        _nearest_neighbor_distance(vector, existing_vectors) >= threshold
+        for vector in candidate_vectors
+    )
+
+
+def _flatten_outline(outline: list, reader: PdfReader) -> list[tuple[str, int]]:
+    """Flattens a (possibly nested) pypdf outline -- a list where nested
+    lists represent nesting -- into (title, page_index) pairs in reading
+    order. Skips entries with no title, or whose page pypdf can't resolve
+    (get_destination_page_number raising means the destination is
+    malformed or points outside this PDF -- skip it, don't crash the
+    whole reconciliation over one bad bookmark)."""
+    entries: list[tuple[str, int]] = []
+    for item in outline:
+        if isinstance(item, list):
+            entries.extend(_flatten_outline(item, reader))
+            continue
+        title = getattr(item, "title", None)
+        if not title:
+            continue
+        try:
+            page_index = reader.get_destination_page_number(item)
+        except Exception:
+            continue
+        entries.append((title, page_index))
+    return entries
+
+
+def _outline_agreement_report(
+    outline_entries: list[tuple[str, int]], confirmed_chapters: list[dict]
+) -> list[str]:
+    """Diagnostic-only cross-check (see design spec's "Outline scope"
+    decision): for each confirmed chapter, fuzzy-matches its title against
+    outline_entries, and if the best confident match (score
+    >= _MIN_MATCH_SCORE, the same bar the content-search confirmation
+    itself uses) disagrees with the content-search-confirmed
+    pdf_start_index, includes a line for it in the returned list. Returns
+    an empty list when there's no outline, or when everything agrees --
+    this has zero effect on the migration decision, purely evidence for a
+    future decision on whether outline agreement should be allowed to
+    rescue failed confirmations."""
+    if not outline_entries:
+        return []
+    lines: list[str] = []
+    for chapter in confirmed_chapters:
+        best_page, best_score = None, 0.0
+        for title, page_index in outline_entries:
+            score = fuzz.partial_ratio(chapter["title"].lower(), title.lower())
+            if score > best_score:
+                best_page, best_score = page_index, score
+        if best_score >= _MIN_MATCH_SCORE and best_page != chapter["pdf_start_index"]:
+            lines.append(
+                f'outline disagreement: chapter "{chapter["title"]}" '
+                f"outline={best_page} content-search={chapter["pdf_start_index"]}"
+            )
+    return lines
+
+
+@dataclass
+class NoveltyBaseline:
+    """Precomputed once per script run (not once per candidate book) --
+    reloading and re-fitting against the whole open-access corpus for
+    every candidate would be correct but wasteful."""
+
+    pdfalto_bin: str
+    scaler: StandardScaler
+    chapter_first_vectors: list[list[float]]
+    threshold: float
+
+
+def _load_novelty_baseline(pdfalto_bin: str, novelty_percentile: float) -> NoveltyBaseline:
+    """Loads the current evaluation/corpus/open-access/ corpus, fits a
+    StandardScaler on its full feature-row set (the same normalization
+    evaluate_layout_toc_classifier's own LogisticRegression classifier
+    uses, so novelty distances are computed in the same space it reasons
+    in), and returns the scaled chapter_first vectors plus the novelty
+    distance threshold derived from their own leave-one-out
+    nearest-neighbor distances."""
+
+    def cache_dir_for(corpus: str) -> Path:
+        return _OPEN_ACCESS_DIR.parent / corpus / ".layout-cache"
+
+    books = load_book_corpus(corpora=["open-access"])
+    rows = build_feature_table(books, cache_dir_for, pdfalto_bin)
+    X = [[row["features"][name] for name in FEATURE_NAMES] for row in rows]
+    scaler = StandardScaler().fit(X)
+    X_scaled = scaler.transform(X).tolist()
+    chapter_first_vectors = [
+        vector for vector, row in zip(X_scaled, rows) if row["label"] == LABEL_CHAPTER_FIRST
+    ]
+    threshold = _novelty_threshold(chapter_first_vectors, novelty_percentile)
+    return NoveltyBaseline(pdfalto_bin, scaler, chapter_first_vectors, threshold)
+
+
+def _candidate_is_novel(pdf_path: Path, confirmed: list[dict], baseline: NoveltyBaseline) -> bool | None:
+    """True/False if novelty could be evaluated; None if no confirmed
+    chapter-first page had an extractable layout-feature vector at all
+    (distinct from "evaluated and found not novel")."""
+    alto_path = ensure_alto_xml(pdf_path, _ALTO_CACHE_DIR, baseline.pdfalto_bin)
+    page_features = extract_page_features(str(alto_path))
+    candidate_rows = [
+        [page_features[c["pdf_start_index"]][name] for name in FEATURE_NAMES]
+        for c in confirmed
+        if c["pdf_start_index"] in page_features
+    ]
+    if not candidate_rows:
+        return None
+    candidate_vectors = baseline.scaler.transform(candidate_rows).tolist()
+    return _is_novel(candidate_vectors, baseline.chapter_first_vectors, baseline.threshold)
 
 
 def _citation_start(citation_pages: str | None) -> str | None:
@@ -108,6 +272,24 @@ def _locate_near(
     return best
 
 
+def _toc_field_for(toc_pages: set[int]) -> tuple[dict | None, bool, str]:
+    """Determines what (if anything) to write for the "toc" key, matching
+    add_toc_ground_truth.py's retrofit_book() semantics exactly: an empty
+    toc_pages means "confirmed no TOC" (write null), while a non-empty but
+    non-contiguous toc_pages means "ambiguous, needs a human" -- writing a
+    wrong null there would be actively incorrect *and* would permanently
+    block add_toc_ground_truth.py's own "if 'toc' in expected: skip" check
+    from ever revisiting this book later. Returns
+    (field_value_if_any, should_write_key, status_message_for_logging)."""
+    if not toc_pages:
+        return None, True, "toc=null (no TOC found)"
+    toc_range = toc_page_range(toc_pages)
+    if toc_range is None:
+        return None, False, f"toc NEEDS REVIEW: non-contiguous TOC-like pages {sorted(toc_pages)}"
+    field = {"toc_start_index": toc_range[0], "toc_end_index": toc_range[1]}
+    return field, True, f"toc={field}"
+
+
 def _sanity_check(chapters: list[dict], total_pages: int) -> str | None:
     ranges = sorted((c["pdf_start_index"], c["pdf_end_index"]) for c in chapters)
     for start, end in ranges:
@@ -121,24 +303,32 @@ def _sanity_check(chapters: list[dict], total_pages: int) -> str | None:
     return None
 
 
-def process_book(book: dict, dry_run: bool) -> tuple[str, str]:
+def process_book(book: dict, dry_run: bool, novelty_baseline: NoveltyBaseline) -> tuple[str, str]:
     """Returns (isbn, outcome_message)."""
     isbn = book["isbn"]
     pdf_path = _CROSSREF_DIR / f"{isbn}.pdf"
     crossref_path = _CROSSREF_DIR / f"{isbn}.crossref.json"
-    target_pdf = _OPEN_ACCESS_DIR / f"{isbn}.pdf"
-    target_expected = _OPEN_ACCESS_DIR / f"{isbn}.expected.json"
+    target_pdf = _PENDING_DIR / f"{isbn}.pdf"
+    target_expected = _PENDING_DIR / f"{isbn}.expected.json"
 
     if not pdf_path.exists():
         return isbn, "SKIP: no PDF (fetch_crossref_gt_corpus.py first)"
     if not crossref_path.exists():
         return isbn, "SKIP: no crossref.json"
-    if target_expected.exists():
-        return isbn, "SKIP: already migrated (evaluation/corpus/open-access/*.expected.json exists)"
+    if target_expected.exists() or (_OPEN_ACCESS_DIR / f"{isbn}.expected.json").exists():
+        return isbn, "SKIP: already migrated (open-access/ or pending/)"
 
     chapters = json.loads(crossref_path.read_text(encoding="utf-8"))["chapters"]
     if not chapters:
         return isbn, "SKIP: zero chapters"
+
+    distinct_authors = {a for chapter in chapters for a in chapter.get("authors", []) if a.strip()}
+    if len(distinct_authors) < _MIN_DISTINCT_CHAPTER_AUTHORS:
+        return isbn, (
+            f"SKIP: only {len(distinct_authors)} distinct chapter author(s) registered on Crossref "
+            f"(need >={_MIN_DISTINCT_CHAPTER_AUTHORS}) -- looks like a single-authored book, not an "
+            "edited volume with distinct chapter authors"
+        )
 
     reader = PdfReader(str(pdf_path))
     total_pages = len(reader.pages)
@@ -200,16 +390,36 @@ def process_book(book: dict, dry_run: bool) -> tuple[str, str]:
     if error:
         return isbn, f"SKIP: sanity check failed after reconciliation: {error}"
 
-    if dry_run:
-        return isbn, f"OK (dry-run): {n_confirmed}/{with_page} chapters ({fraction:.0%}) would be written"
+    is_novel = _candidate_is_novel(pdf_path, confirmed, novelty_baseline)
+    if is_novel is None:
+        return isbn, "SKIP: no layout features extracted for confirmed chapter-first pages"
+    if not is_novel:
+        return isbn, (
+            f"SKIP: not novel (no confirmed chapter-first page's nearest-neighbor "
+            f"distance reaches the {novelty_baseline.threshold:.3f} threshold)"
+        )
 
-    _OPEN_ACCESS_DIR.mkdir(parents=True, exist_ok=True)
+    outline_entries = _flatten_outline(reader.outline or [], reader)
+    for line in _outline_agreement_report(outline_entries, confirmed):
+        print(f"  [{isbn}] {line}")
+
+    toc_field, write_toc_key, toc_status = _toc_field_for(toc_pages)
+
+    if dry_run:
+        return isbn, (
+            f"OK (dry-run): {n_confirmed}/{with_page} chapters ({fraction:.0%}) would be written, {toc_status}"
+        )
+
+    _PENDING_DIR.mkdir(parents=True, exist_ok=True)
     shutil.copy2(pdf_path, target_pdf)
+    payload = {"chapters": confirmed}
+    if write_toc_key:
+        payload["toc"] = toc_field
     target_expected.write_text(
-        json.dumps({"chapters": confirmed}, indent=2, ensure_ascii=False), encoding="utf-8"
+        json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
-    manifest_path = _OPEN_ACCESS_DIR / "manifest.json"
+    manifest_path = _PENDING_DIR / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     manifest["books"].append({
         "filename": f"{isbn}.pdf",
@@ -223,23 +433,42 @@ def process_book(book: dict, dry_run: bool) -> tuple[str, str]:
     })
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    return isbn, f"OK: {n_confirmed}/{with_page} chapters ({fraction:.0%}) written"
+    return isbn, f"OK: {n_confirmed}/{with_page} chapters ({fraction:.0%}) written, {toc_status}"
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--dry-run", action="store_true", help="Report what would happen without writing files")
+    parser.add_argument("--pdfalto-bin", default=None, help="Path to the pdfalto binary (see pdfalto_runner.py)")
+    parser.add_argument(
+        "--novelty-percentile",
+        type=float,
+        default=_DEFAULT_NOVELTY_PERCENTILE,
+        help=(
+            "Percentile of the existing open-access chapter-first corpus's own "
+            "leave-one-out nearest-neighbor distances used as the novelty threshold. "
+            f"Default: {_DEFAULT_NOVELTY_PERCENTILE}."
+        ),
+    )
     args = parser.parse_args()
+    pdfalto_bin = resolve_pdfalto_binary(args.pdfalto_bin)
+    novelty_baseline = _load_novelty_baseline(pdfalto_bin, args.novelty_percentile)
 
     manifest = json.loads((_CROSSREF_DIR / "manifest.json").read_text(encoding="utf-8"))
     results = []
     for book in manifest["books"]:
-        result = process_book(book, args.dry_run)
+        result = process_book(book, args.dry_run, novelty_baseline)
         results.append(result)
         print(f"[{result[0]}] {result[1]}")
 
     n_ok = sum(1 for _, msg in results if msg.startswith("OK"))
-    print(f"\n{n_ok}/{len(results)} book(s) {'would be ' if args.dry_run else ''}migrated to open-access/")
+    print(f"\n{n_ok}/{len(results)} book(s) {'would be ' if args.dry_run else ''}migrated to pending/")
+
+    needs_review = [isbn for isbn, msg in results if "toc NEEDS REVIEW" in msg]
+    if needs_review:
+        print(f"{len(needs_review)} migrated book(s) have an ambiguous toc field -- run add_toc_ground_truth.py to resolve:")
+        for isbn in needs_review:
+            print(f"  - {isbn}")
     return 0
 
 

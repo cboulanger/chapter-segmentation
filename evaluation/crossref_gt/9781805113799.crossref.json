@@ -1,0 +1,1080 @@
+{
+  "isbn": "9781805113799",
+  "fetched_at": "2026-08-11T22:41:05.443479+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.04",
+      "type": "book-chapter",
+      "page": "97-120",
+      "title": [
+        "4. The Activist Potential of Postmodern Phenomenology of Technology"
+      ],
+      "author": [
+        {
+          "given": "Robert",
+          "family": "Rosenberger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.11",
+      "type": "book-chapter",
+      "page": "267-276",
+      "title": [
+        "Epilogue"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6602-019X",
+          "authenticated-orcid": false,
+          "given": "Jochem",
+          "family": "Zwier",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qw24q55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Wageningen University & Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2009-2198",
+          "authenticated-orcid": false,
+          "given": "Bas",
+          "family": "de Boer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.01",
+      "type": "book-chapter",
+      "page": "27-51",
+      "title": [
+        "1. Ecological Hermeneutic Phenomenology"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9086-4544",
+          "authenticated-orcid": false,
+          "given": "Vincent",
+          "family": "Blok",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qw24q55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Wageningen University & Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "subtitle": [
+        "A Method to Explore the Ontic and Ontological Structures of Technologies in the World"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.06",
+      "type": "book-chapter",
+      "page": "143-163",
+      "title": [
+        "6. Seeing the Phenomenon"
+      ],
+      "author": [
+        {
+          "given": "Dana S.",
+          "family": "Belu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04pyvbw03",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "California State University, Dominguez Hills"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "subtitle": [
+        "The Radical Disembodiment of In Vitro Human Reproduction"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.03",
+      "type": "book-chapter",
+      "page": "73-93",
+      "title": [
+        "3. The Institution of Technology"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4039-3174",
+          "authenticated-orcid": false,
+          "given": "Darian",
+          "family": "Meacham",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02jz4aj89",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Maastricht University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.08",
+      "type": "book-chapter",
+      "page": "189-214",
+      "title": [
+        "8. Nothing in Practice: Entanglements of Sartre’s Nothingness and Social Media Practice"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-4571-1434",
+          "authenticated-orcid": false,
+          "given": "Annie",
+          "family": "Kurz",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/030sdwr92",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Art and Design Offenbach"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "subtitle": [
+        "Entanglements of Sartre’s Nothingness and Social Media Practice"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.07",
+      "type": "book-chapter",
+      "page": "165-185",
+      "title": [
+        "7. Artificial Intelligence and the Need to Redefine Human Traits"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1686-5079",
+          "authenticated-orcid": false,
+          "given": "Galit",
+          "family": "Wellner",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04mhzgx49",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Tel Aviv University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.00",
+      "type": "book-chapter",
+      "page": "1-24",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6602-019X",
+          "authenticated-orcid": false,
+          "given": "Jochem",
+          "family": "Zwier",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/04qw24q55",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Wageningen University & Research"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2009-2198",
+          "authenticated-orcid": false,
+          "given": "Bas",
+          "family": "de Boer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/006hf6230",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Twente"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "subtitle": [
+        "Articulating the Phenomenological Legacy of the Philosophy of Technology"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.05",
+      "type": "book-chapter",
+      "page": "121-142",
+      "title": [
+        "5. Technological Mediation without Empirical Borders"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7426-7005",
+          "authenticated-orcid": false,
+          "given": "Martin",
+          "family": "Ritter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/053avzc18",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Czech Academy of Sciences"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.10",
+      "type": "book-chapter",
+      "page": "241-266",
+      "title": [
+        "10. Three Embodied Dimensions of Communication"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8751-1289",
+          "authenticated-orcid": false,
+          "given": "Janna",
+          "family": "van Grunsven",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-9540-5515",
+          "authenticated-orcid": false,
+          "given": "Bouke",
+          "family": "van Balen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/0575yy874",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University Medical Center Utrecht"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0176-1832",
+          "authenticated-orcid": false,
+          "given": "Caroline",
+          "family": "Bollen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "subtitle": [
+        "Phenomenological Lessons for and from the Field of Augmented and Alternative Communication Technology"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.02",
+      "type": "book-chapter",
+      "page": "53-72",
+      "title": [
+        "2. Towards a Hermeneutic Phenomenology of Technology"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8648-6619",
+          "authenticated-orcid": false,
+          "given": "Alberto",
+          "family": "Romele",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03z6jp965",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Sorbonne Nouvelle University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "subtitle": [
+        "A Hermeneutic Phenomenology of Technology"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2024-10-16T00:00:00Z",
+            "timestamp": 1729036800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0421.09",
+      "type": "book-chapter",
+      "page": "215-240",
+      "title": [
+        "9. Attending to the Online Other: A Phenomenology of Attention on Social Media Platforms"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8283-947X",
+          "authenticated-orcid": false,
+          "given": "Lavinia",
+          "family": "Marin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/02e2c7k09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Technische Universiteit Delft"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Phenomenology and the Philosophy of Technology"
+      ],
+      "subtitle": [
+        "A Phenomenology of Attention for Social Media Platforms"
+      ],
+      "ISBN": [
+        "9781805113799",
+        "9781805113805",
+        "9781805113812",
+        "9781805113836",
+        "9781805113829"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "4. The Activist Potential of Postmodern Phenomenology of Technology",
+      "authors": [
+        "Robert Rosenberger"
+      ],
+      "chapter_doi": "10.11647/obp.0421.04",
+      "citation_pages": "97-120"
+    },
+    {
+      "title": "Epilogue",
+      "authors": [
+        "Jochem Zwier",
+        "Bas de Boer"
+      ],
+      "chapter_doi": "10.11647/obp.0421.11",
+      "citation_pages": "267-276"
+    },
+    {
+      "title": "1. Ecological Hermeneutic Phenomenology A Method to Explore the Ontic and Ontological Structures of Technologies in the World",
+      "authors": [
+        "Vincent Blok"
+      ],
+      "chapter_doi": "10.11647/obp.0421.01",
+      "citation_pages": "27-51"
+    },
+    {
+      "title": "6. Seeing the Phenomenon The Radical Disembodiment of In Vitro Human Reproduction",
+      "authors": [
+        "Dana S. Belu"
+      ],
+      "chapter_doi": "10.11647/obp.0421.06",
+      "citation_pages": "143-163"
+    },
+    {
+      "title": "3. The Institution of Technology",
+      "authors": [
+        "Darian Meacham"
+      ],
+      "chapter_doi": "10.11647/obp.0421.03",
+      "citation_pages": "73-93"
+    },
+    {
+      "title": "8. Nothing in Practice: Entanglements of Sartre’s Nothingness and Social Media Practice Entanglements of Sartre’s Nothingness and Social Media Practice",
+      "authors": [
+        "Annie Kurz"
+      ],
+      "chapter_doi": "10.11647/obp.0421.08",
+      "citation_pages": "189-214"
+    },
+    {
+      "title": "7. Artificial Intelligence and the Need to Redefine Human Traits",
+      "authors": [
+        "Galit Wellner"
+      ],
+      "chapter_doi": "10.11647/obp.0421.07",
+      "citation_pages": "165-185"
+    },
+    {
+      "title": "Introduction Articulating the Phenomenological Legacy of the Philosophy of Technology",
+      "authors": [
+        "Jochem Zwier",
+        "Bas de Boer"
+      ],
+      "chapter_doi": "10.11647/obp.0421.00",
+      "citation_pages": "1-24"
+    },
+    {
+      "title": "5. Technological Mediation without Empirical Borders",
+      "authors": [
+        "Martin Ritter"
+      ],
+      "chapter_doi": "10.11647/obp.0421.05",
+      "citation_pages": "121-142"
+    },
+    {
+      "title": "10. Three Embodied Dimensions of Communication Phenomenological Lessons for and from the Field of Augmented and Alternative Communication Technology",
+      "authors": [
+        "Janna van Grunsven",
+        "Bouke van Balen",
+        "Caroline Bollen"
+      ],
+      "chapter_doi": "10.11647/obp.0421.10",
+      "citation_pages": "241-266"
+    },
+    {
+      "title": "2. Towards a Hermeneutic Phenomenology of Technology A Hermeneutic Phenomenology of Technology",
+      "authors": [
+        "Alberto Romele"
+      ],
+      "chapter_doi": "10.11647/obp.0421.02",
+      "citation_pages": "53-72"
+    },
+    {
+      "title": "9. Attending to the Online Other: A Phenomenology of Attention on Social Media Platforms A Phenomenology of Attention for Social Media Platforms",
+      "authors": [
+        "Lavinia Marin"
+      ],
+      "chapter_doi": "10.11647/obp.0421.09",
+      "citation_pages": "215-240"
+    }
+  ]
+}

@@ -25,9 +25,12 @@ nuextract-finetune = [
     "llama-cpp-python>=0.3.0",
     "huggingface-hub>=0.25.0",
 ]
+layout-classifier = ["scikit-learn>=1.4.0"]
 
 [project.scripts]
 chapter-segmentation = "chapter_segmentation.cli:main"
+review = "evaluation.scripts.review_app:main"
+review-stop = "evaluation.scripts.review_app:stop"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -45,7 +48,7 @@ addopts = "-rs -m 'not integration'"
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/chapter_segmentation"]
+packages = ["src/chapter_segmentation", "evaluation"]
 
 [build-system]
 requires = ["hatchling"]

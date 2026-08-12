@@ -1,0 +1,1314 @@
+{
+  "isbn": "9781805110941",
+  "fetched_at": "2026-08-11T22:58:16.634134+00:00",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.04",
+      "type": "book-chapter",
+      "page": "47-58",
+      "title": [
+        "4. What Lies Beneath"
+      ],
+      "author": [
+        {
+          "given": "Pamela",
+          "family": "Ryan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.06",
+      "type": "book-chapter",
+      "page": "71-86",
+      "title": [
+        "6. Intrinsic Motivation, Agency, and Self-Efficacy: Journeying From “Quasi-University” Student to Steward of the ODE Community"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5316-2957",
+          "authenticated-orcid": false,
+          "given": "Junhong",
+          "family": "Xiao",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01844pt54",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Shantou Broadcasting and Television University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.03",
+      "type": "book-chapter",
+      "page": "33-46",
+      "title": [
+        "3. On Being Written"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6521-7302",
+          "authenticated-orcid": false,
+          "given": "Jon",
+          "family": "Dron",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/01y3xgc52",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Athabasca University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.16",
+      "type": "book-chapter",
+      "page": "7-11",
+      "title": [
+        "Foreword"
+      ],
+      "author": [
+        {
+          "given": "Terry",
+          "family": "Anderson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.14",
+      "type": "book-chapter",
+      "page": "197-212",
+      "title": [
+        "14. Born Curious and in Trouble: Making Sense of Writing"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1838-540X",
+          "authenticated-orcid": false,
+          "given": "Paul",
+          "family": "Prinsloo",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/048cwvf49",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of South Africa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.12",
+      "type": "book-chapter",
+      "page": "155-172",
+      "title": [
+        "12. Writing in the Margins: Maintaining a Scholarly Voice as an Executive"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8131-6562",
+          "authenticated-orcid": false,
+          "given": "Mark",
+          "family": "Nichols",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/020ekrq71",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Open Polytechnic"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.07",
+      "type": "book-chapter",
+      "page": "87-100",
+      "title": [
+        "7. 1001 Nights of Research: The Good, Bad, and the Ugly Magic Carpet Ride"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7084-4036",
+          "authenticated-orcid": false,
+          "given": "Jennifer",
+          "family": "Roberts",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/048cwvf49",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of South Africa"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.08",
+      "type": "book-chapter",
+      "page": "101-118",
+      "title": [
+        "8. Creative Academic Writing and Anatomy of a Scholarly Paper"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4520-642X",
+          "authenticated-orcid": false,
+          "given": "Aras",
+          "family": "Bozkurt",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05nz37n09",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Anadolu University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.09",
+      "type": "book-chapter",
+      "page": "119-128",
+      "title": [
+        "9. Writing and Making the World"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9266-7598",
+          "authenticated-orcid": false,
+          "given": "Catherine",
+          "family": "Cronin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.11",
+      "type": "book-chapter",
+      "page": "141-154",
+      "title": [
+        "11. Serendipity: Becoming a Specialist in Online Learning"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5677-369X",
+          "authenticated-orcid": false,
+          "given": "Tony",
+          "family": "Bates",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05g13zd79",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Toronto Metropolitan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.05",
+      "type": "book-chapter",
+      "page": "59-70",
+      "title": [
+        "5. Reminiscences and Reflections: No Regrets"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8282-7092",
+          "authenticated-orcid": false,
+          "given": "Dianne",
+          "family": "Conrad",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.01",
+      "type": "book-chapter",
+      "page": "13-18",
+      "title": [
+        "1. Introduction and Welcome"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8282-7092",
+          "authenticated-orcid": false,
+          "given": "Dianne",
+          "family": "Conrad",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.13",
+      "type": "book-chapter",
+      "page": "173-196",
+      "title": [
+        "13. Indigenous, Settler, Diasporic, and Post-colonial: The Identities Woven Through our Academic Writing"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0041-5615",
+          "authenticated-orcid": false,
+          "given": "Marguerite",
+          "family": "Koole",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/010x8gc63",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Saskatchewan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3227-7090",
+          "authenticated-orcid": false,
+          "given": "Michael",
+          "family": "Cottrell",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/010x8gc63",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Saskatchewan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1535-6793",
+          "authenticated-orcid": false,
+          "given": "Janet",
+          "family": "Okoko",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/010x8gc63",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Saskatchewan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2550-163X",
+          "authenticated-orcid": false,
+          "given": "Kristine",
+          "family": "Dreaver-Charles",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/010x8gc63",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Saskatchewan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.10",
+      "type": "book-chapter",
+      "page": "129-140",
+      "title": [
+        "10. A Collaborative Approach to Research and Writing"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8259-5671",
+          "authenticated-orcid": false,
+          "given": "Randy",
+          "family": "Garrison",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03yjb2x39",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "University of Calgary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.02",
+      "type": "book-chapter",
+      "page": "19-32",
+      "title": [
+        "2. The Way of Academic Writing: Reflections of a Traveller"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4769-0558",
+          "authenticated-orcid": false,
+          "given": "David",
+          "family": "Starr-Glass",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/03sg2bq51",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "SUNY Empire State College"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                18
+              ]
+            ],
+            "date-time": "2023-08-18T00:00:00Z",
+            "timestamp": 1692316800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0356.15",
+      "type": "book-chapter",
+      "page": "213-215",
+      "title": [
+        "15. A Few Words in Conclusion"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8282-7092",
+          "authenticated-orcid": false,
+          "given": "Dianne",
+          "family": "Conrad",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Research, Writing, and Creative Process in Open and Distance Education"
+      ],
+      "ISBN": [
+        "9781805110941",
+        "9781805110958",
+        "9781805110965",
+        "9781805111009",
+        "9781805110996",
+        "9781805110972"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            18
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "4. What Lies Beneath",
+      "authors": [
+        "Pamela Ryan"
+      ],
+      "chapter_doi": "10.11647/obp.0356.04",
+      "citation_pages": "47-58"
+    },
+    {
+      "title": "6. Intrinsic Motivation, Agency, and Self-Efficacy: Journeying From “Quasi-University” Student to Steward of the ODE Community",
+      "authors": [
+        "Junhong Xiao"
+      ],
+      "chapter_doi": "10.11647/obp.0356.06",
+      "citation_pages": "71-86"
+    },
+    {
+      "title": "3. On Being Written",
+      "authors": [
+        "Jon Dron"
+      ],
+      "chapter_doi": "10.11647/obp.0356.03",
+      "citation_pages": "33-46"
+    },
+    {
+      "title": "Foreword",
+      "authors": [
+        "Terry Anderson"
+      ],
+      "chapter_doi": "10.11647/obp.0356.16",
+      "citation_pages": "7-11"
+    },
+    {
+      "title": "14. Born Curious and in Trouble: Making Sense of Writing",
+      "authors": [
+        "Paul Prinsloo"
+      ],
+      "chapter_doi": "10.11647/obp.0356.14",
+      "citation_pages": "197-212"
+    },
+    {
+      "title": "12. Writing in the Margins: Maintaining a Scholarly Voice as an Executive",
+      "authors": [
+        "Mark Nichols"
+      ],
+      "chapter_doi": "10.11647/obp.0356.12",
+      "citation_pages": "155-172"
+    },
+    {
+      "title": "7. 1001 Nights of Research: The Good, Bad, and the Ugly Magic Carpet Ride",
+      "authors": [
+        "Jennifer Roberts"
+      ],
+      "chapter_doi": "10.11647/obp.0356.07",
+      "citation_pages": "87-100"
+    },
+    {
+      "title": "8. Creative Academic Writing and Anatomy of a Scholarly Paper",
+      "authors": [
+        "Aras Bozkurt"
+      ],
+      "chapter_doi": "10.11647/obp.0356.08",
+      "citation_pages": "101-118"
+    },
+    {
+      "title": "9. Writing and Making the World",
+      "authors": [
+        "Catherine Cronin"
+      ],
+      "chapter_doi": "10.11647/obp.0356.09",
+      "citation_pages": "119-128"
+    },
+    {
+      "title": "11. Serendipity: Becoming a Specialist in Online Learning",
+      "authors": [
+        "Tony Bates"
+      ],
+      "chapter_doi": "10.11647/obp.0356.11",
+      "citation_pages": "141-154"
+    },
+    {
+      "title": "5. Reminiscences and Reflections: No Regrets",
+      "authors": [
+        "Dianne Conrad"
+      ],
+      "chapter_doi": "10.11647/obp.0356.05",
+      "citation_pages": "59-70"
+    },
+    {
+      "title": "1. Introduction and Welcome",
+      "authors": [
+        "Dianne Conrad"
+      ],
+      "chapter_doi": "10.11647/obp.0356.01",
+      "citation_pages": "13-18"
+    },
+    {
+      "title": "13. Indigenous, Settler, Diasporic, and Post-colonial: The Identities Woven Through our Academic Writing",
+      "authors": [
+        "Marguerite Koole",
+        "Michael Cottrell",
+        "Janet Okoko",
+        "Kristine Dreaver-Charles"
+      ],
+      "chapter_doi": "10.11647/obp.0356.13",
+      "citation_pages": "173-196"
+    },
+    {
+      "title": "10. A Collaborative Approach to Research and Writing",
+      "authors": [
+        "Randy Garrison"
+      ],
+      "chapter_doi": "10.11647/obp.0356.10",
+      "citation_pages": "129-140"
+    },
+    {
+      "title": "2. The Way of Academic Writing: Reflections of a Traveller",
+      "authors": [
+        "David Starr-Glass"
+      ],
+      "chapter_doi": "10.11647/obp.0356.02",
+      "citation_pages": "19-32"
+    },
+    {
+      "title": "15. A Few Words in Conclusion",
+      "authors": [
+        "Dianne Conrad"
+      ],
+      "chapter_doi": "10.11647/obp.0356.15",
+      "citation_pages": "213-215"
+    }
+  ]
+}

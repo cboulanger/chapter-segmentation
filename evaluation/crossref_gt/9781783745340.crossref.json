@@ -1,0 +1,862 @@
+{
+  "isbn": "9781783745340",
+  "fetched_at": "2026-08-11T15:22:53.857779+00:00",
+  "license": "http://creativecommons.org/licenses/by/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.10",
+      "type": "book-chapter",
+      "page": "351-382",
+      "title": [
+        "10. How Readers Used the Local Paper"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5943-475X",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Hobbs",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.01",
+      "type": "book-chapter",
+      "page": "5-62",
+      "title": [
+        "1. Juggling across Print"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6400-2764",
+          "authenticated-orcid": false,
+          "given": "Jan M.",
+          "family": "Ziolkowski",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.06",
+      "type": "book-chapter",
+      "page": "247-344",
+      "title": [
+        "Notes"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6400-2764",
+          "authenticated-orcid": false,
+          "given": "Jan M.",
+          "family": "Ziolkowski",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.02",
+      "type": "book-chapter",
+      "page": "63-94",
+      "title": [
+        "2. Juggling across New Media"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6400-2764",
+          "authenticated-orcid": false,
+          "given": "Jan M.",
+          "family": "Ziolkowski",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.05",
+      "type": "book-chapter",
+      "page": "193-246",
+      "title": [
+        "5. Children’s Juggler and Child Juggler"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6400-2764",
+          "authenticated-orcid": false,
+          "given": "Jan M.",
+          "family": "Ziolkowski",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.03",
+      "type": "book-chapter",
+      "page": "95-126",
+      "title": [
+        "3. Juggling across Faiths"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6400-2764",
+          "authenticated-orcid": false,
+          "given": "Jan M.",
+          "family": "Ziolkowski",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.07",
+      "type": "book-chapter",
+      "page": "263-300",
+      "title": [
+        "7. Exploiting a Sense of Place"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5943-475X",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Hobbs",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.09",
+      "type": "book-chapter",
+      "page": "327-350",
+      "title": [
+        "9. Win-win: The Local Press and Association Football"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5943-475X",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Hobbs",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.04",
+      "type": "book-chapter",
+      "page": "127-192",
+      "title": [
+        "4. The Yuletide Juggler"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6400-2764",
+          "authenticated-orcid": false,
+          "given": "Jan M.",
+          "family": "Ziolkowski",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.12",
+      "type": "book-chapter",
+      "page": "3-34",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5943-475X",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Hobbs",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.08",
+      "type": "book-chapter",
+      "page": "301-326",
+      "title": [
+        "8. Class, Dialect and the Local Press: How 'They' Joined 'Us'"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5943-475X",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Hobbs",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2018-10-31T00:00:00Z",
+            "timestamp": 1540944000000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0148.11",
+      "type": "book-chapter",
+      "page": "383-394",
+      "title": [
+        "Conclusions"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5943-475X",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Hobbs",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Juggler of Notre Dame and the Medievalizing of Modernity"
+      ],
+      "ISBN": [
+        "9781783745340",
+        "9781783745357",
+        "9781783745364",
+        "9781800645677",
+        "9781783745739",
+        "9781783745371",
+        "9781783745388"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "10. How Readers Used the Local Paper",
+      "authors": [
+        "Andrew Hobbs"
+      ],
+      "chapter_doi": "10.11647/obp.0148.10",
+      "citation_pages": "351-382"
+    },
+    {
+      "title": "1. Juggling across Print",
+      "authors": [
+        "Jan M. Ziolkowski"
+      ],
+      "chapter_doi": "10.11647/obp.0148.01",
+      "citation_pages": "5-62"
+    },
+    {
+      "title": "Notes",
+      "authors": [
+        "Jan M. Ziolkowski"
+      ],
+      "chapter_doi": "10.11647/obp.0148.06",
+      "citation_pages": "247-344"
+    },
+    {
+      "title": "2. Juggling across New Media",
+      "authors": [
+        "Jan M. Ziolkowski"
+      ],
+      "chapter_doi": "10.11647/obp.0148.02",
+      "citation_pages": "63-94"
+    },
+    {
+      "title": "5. Children’s Juggler and Child Juggler",
+      "authors": [
+        "Jan M. Ziolkowski"
+      ],
+      "chapter_doi": "10.11647/obp.0148.05",
+      "citation_pages": "193-246"
+    },
+    {
+      "title": "3. Juggling across Faiths",
+      "authors": [
+        "Jan M. Ziolkowski"
+      ],
+      "chapter_doi": "10.11647/obp.0148.03",
+      "citation_pages": "95-126"
+    },
+    {
+      "title": "7. Exploiting a Sense of Place",
+      "authors": [
+        "Andrew Hobbs"
+      ],
+      "chapter_doi": "10.11647/obp.0148.07",
+      "citation_pages": "263-300"
+    },
+    {
+      "title": "9. Win-win: The Local Press and Association Football",
+      "authors": [
+        "Andrew Hobbs"
+      ],
+      "chapter_doi": "10.11647/obp.0148.09",
+      "citation_pages": "327-350"
+    },
+    {
+      "title": "4. The Yuletide Juggler",
+      "authors": [
+        "Jan M. Ziolkowski"
+      ],
+      "chapter_doi": "10.11647/obp.0148.04",
+      "citation_pages": "127-192"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Andrew Hobbs"
+      ],
+      "chapter_doi": "10.11647/obp.0148.12",
+      "citation_pages": "3-34"
+    },
+    {
+      "title": "8. Class, Dialect and the Local Press: How 'They' Joined 'Us'",
+      "authors": [
+        "Andrew Hobbs"
+      ],
+      "chapter_doi": "10.11647/obp.0148.08",
+      "citation_pages": "301-326"
+    },
+    {
+      "title": "Conclusions",
+      "authors": [
+        "Andrew Hobbs"
+      ],
+      "chapter_doi": "10.11647/obp.0148.11",
+      "citation_pages": "383-394"
+    }
+  ]
+}

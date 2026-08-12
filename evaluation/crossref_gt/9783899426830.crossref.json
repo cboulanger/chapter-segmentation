@@ -1,0 +1,1259 @@
+{
+  "isbn": "9783899426830",
+  "fetched_at": "2026-08-11T22:40:52.649208+00:00",
+  "license": null,
+  "license_source": null,
+  "raw_items": [
+    {
+      "DOI": "10.14361/9783839406830-ndx",
+      "type": "book-chapter",
+      "page": "439-452",
+      "title": [
+        "Sach- und Personenregister"
+      ],
+      "author": [
+        {
+          "given": "Jörg",
+          "family": "Döring",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tristan",
+          "family": "Thielmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-004",
+      "type": "book-chapter",
+      "page": "103-124",
+      "title": [
+        "Der Spatial Turn und das Interesse an der Globalisierung in der Geschichtswissenschaft"
+      ],
+      "author": [
+        {
+          "given": "Matthias",
+          "family": "Middel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-toc",
+      "type": "book-chapter",
+      "page": "5-6",
+      "title": [
+        "Inhalt"
+      ],
+      "author": [
+        {
+          "given": "Jörg",
+          "family": "Döring",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tristan",
+          "family": "Thielmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-002",
+      "type": "book-chapter",
+      "page": "71-74",
+      "title": [
+        "Bildwissenschaft. Spatial Turns in vier Einstellungen"
+      ],
+      "author": [
+        {
+          "given": "Giuliana",
+          "family": "Bruno",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-bm",
+      "type": "book-chapter",
+      "page": "457-460",
+      "title": [
+        "Backmatter"
+      ],
+      "author": [
+        {
+          "given": "Jörg",
+          "family": "Döring",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tristan",
+          "family": "Thielmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-006",
+      "type": "book-chapter",
+      "page": "149-164",
+      "title": [
+        "Kontrolle und Organisation des Raums durch Funktionssysteme der Weltgesellschaft"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4028-0970",
+          "authenticated-orcid": true,
+          "given": "Rudolf",
+          "family": "Stichweh",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-014",
+      "type": "book-chapter",
+      "page": "365-392",
+      "title": [
+        "Körper, Raum und mediale Repräsentation"
+      ],
+      "author": [
+        {
+          "given": "Benno",
+          "family": "Werlen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-007",
+      "type": "book-chapter",
+      "page": "165-184",
+      "title": [
+        "Die Geo-Semantik der Netzwerkgesellschaft"
+      ],
+      "author": [
+        {
+          "given": "Niels",
+          "family": "Werber",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-012",
+      "type": "book-chapter",
+      "page": "317-340",
+      "title": [
+        "Eine selbst erzeugte Überraschung: Zur Renaissance von Raum als Selbstbeschreibungsformel der Gesellschaft"
+      ],
+      "author": [
+        {
+          "given": "Marc",
+          "family": "Redepenning",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-010",
+      "type": "book-chapter",
+      "page": "241-262",
+      "title": [
+        "Vom \"Zeitgeist\" zum \"Raumgeist\". New Twists on the Spatial Turn"
+      ],
+      "author": [
+        {
+          "given": "Edward W.",
+          "family": "Soja",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/9783839406830-005",
+      "type": "book-chapter",
+      "page": "125-148",
+      "title": [
+        "„Bringing space back in“ – Zur Relevanz des Raums als soziologischer Kategorie"
+      ],
+      "author": [
+        {
+          "given": "Markus",
+          "family": "Schroer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-intro",
+      "type": "book-chapter",
+      "page": "7-46",
+      "title": [
+        "Einleitung: Was lesen wir im Raume? Der Spatial Turn und das geheime Wissen der Geographen"
+      ],
+      "author": [
+        {
+          "given": "Jörg",
+          "family": "Döring",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tristan",
+          "family": "Thielmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-001",
+      "type": "book-chapter",
+      "page": "49-70",
+      "title": [
+        "Die Karte als Operations- und Imaginationsmatrix. Zur Geschichte eines Raummediums"
+      ],
+      "author": [
+        {
+          "given": "Jörg",
+          "family": "Dünne",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-008",
+      "type": "book-chapter",
+      "page": "185-218",
+      "title": [
+        "Cybernetic Localism: Space, Reloaded"
+      ],
+      "author": [
+        {
+          "given": "Manfred",
+          "family": "Fassler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-003",
+      "type": "book-chapter",
+      "page": "75-102",
+      "title": [
+        "\"Trägheit des Raums\". Fernand Braudel und die Spatial Stories der Geschichtswissenschaft"
+      ],
+      "author": [
+        {
+          "given": "Eric",
+          "family": "Piltz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-013",
+      "type": "book-chapter",
+      "page": "341-364",
+      "title": [
+        "Raumbilder der Gesellschaft. Zur Räumlichkeit des Sozialen in der Systemtheorie"
+      ],
+      "author": [
+        {
+          "given": "Roland",
+          "family": "Lippuner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/9783839406830-003",
+      "type": "book-chapter",
+      "page": "75-102",
+      "title": [
+        "„Trägheit des Raums“. Fernand Braudel und die Spatial Stories der Geschichtswissenschaft"
+      ],
+      "author": [
+        {
+          "given": "Eric",
+          "family": "Piltz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-005",
+      "type": "book-chapter",
+      "page": "125-148",
+      "title": [
+        "\"Bringing space back in\" - Zur Relevanz des Raums als soziologischer Kategorie"
+      ],
+      "author": [
+        {
+          "given": "Markus",
+          "family": "Schroer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-011",
+      "type": "book-chapter",
+      "page": "263-316",
+      "title": [
+        "Der Spatial Turn, von der Geographie her beobachtet"
+      ],
+      "author": [
+        {
+          "given": "Gerhard",
+          "family": "Hard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-016",
+      "type": "book-chapter",
+      "page": "409-438",
+      "title": [
+        "Zeit: Raum"
+      ],
+      "author": [
+        {
+          "given": "Mike",
+          "family": "Crang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-009",
+      "type": "book-chapter",
+      "page": "219-238",
+      "title": [
+        "Spatial Turn - Topographical Turn - Topological Turn. Über die Unterschiede zwischen Raumparadigmen"
+      ],
+      "author": [
+        {
+          "given": "Stephan",
+          "family": "Günzel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-fm",
+      "type": "book-chapter",
+      "page": "1-4",
+      "title": [
+        "Frontmatter"
+      ],
+      "author": [
+        {
+          "given": "Jörg",
+          "family": "Döring",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tristan",
+          "family": "Thielmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-015",
+      "type": "book-chapter",
+      "page": "393-408",
+      "title": [
+        "Raum"
+      ],
+      "author": [
+        {
+          "given": "Nigel",
+          "family": "Thrift",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.14361/9783839406830-017",
+      "type": "book-chapter",
+      "page": "453-456",
+      "title": [
+        "Autorinnen und Autoren"
+      ],
+      "author": [
+        {
+          "given": "Jörg",
+          "family": "Döring",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tristan",
+          "family": "Thielmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sozialtheorie",
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830",
+        "9783839406830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "DOI": "10.1515/9783839406830-010",
+      "type": "book-chapter",
+      "page": "241-262",
+      "title": [
+        "Vom „Zeitgeist“ zum „Raumgeist“. New Twists on the Spatial Turn"
+      ],
+      "author": [
+        {
+          "given": "Edward W.",
+          "family": "Soja",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Spatial Turn"
+      ],
+      "ISBN": [
+        "9783899426830"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            12,
+            31
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Sach- und Personenregister",
+      "authors": [
+        "Jörg Döring",
+        "Tristan Thielmann"
+      ],
+      "chapter_doi": "10.14361/9783839406830-ndx",
+      "citation_pages": "439-452"
+    },
+    {
+      "title": "Der Spatial Turn und das Interesse an der Globalisierung in der Geschichtswissenschaft",
+      "authors": [
+        "Matthias Middel"
+      ],
+      "chapter_doi": "10.14361/9783839406830-004",
+      "citation_pages": "103-124"
+    },
+    {
+      "title": "Inhalt",
+      "authors": [
+        "Jörg Döring",
+        "Tristan Thielmann"
+      ],
+      "chapter_doi": "10.14361/9783839406830-toc",
+      "citation_pages": "5-6"
+    },
+    {
+      "title": "Bildwissenschaft. Spatial Turns in vier Einstellungen",
+      "authors": [
+        "Giuliana Bruno"
+      ],
+      "chapter_doi": "10.14361/9783839406830-002",
+      "citation_pages": "71-74"
+    },
+    {
+      "title": "Backmatter",
+      "authors": [
+        "Jörg Döring",
+        "Tristan Thielmann"
+      ],
+      "chapter_doi": "10.14361/9783839406830-bm",
+      "citation_pages": "457-460"
+    },
+    {
+      "title": "Kontrolle und Organisation des Raums durch Funktionssysteme der Weltgesellschaft",
+      "authors": [
+        "Rudolf Stichweh"
+      ],
+      "chapter_doi": "10.14361/9783839406830-006",
+      "citation_pages": "149-164"
+    },
+    {
+      "title": "Körper, Raum und mediale Repräsentation",
+      "authors": [
+        "Benno Werlen"
+      ],
+      "chapter_doi": "10.14361/9783839406830-014",
+      "citation_pages": "365-392"
+    },
+    {
+      "title": "Die Geo-Semantik der Netzwerkgesellschaft",
+      "authors": [
+        "Niels Werber"
+      ],
+      "chapter_doi": "10.14361/9783839406830-007",
+      "citation_pages": "165-184"
+    },
+    {
+      "title": "Eine selbst erzeugte Überraschung: Zur Renaissance von Raum als Selbstbeschreibungsformel der Gesellschaft",
+      "authors": [
+        "Marc Redepenning"
+      ],
+      "chapter_doi": "10.14361/9783839406830-012",
+      "citation_pages": "317-340"
+    },
+    {
+      "title": "Vom \"Zeitgeist\" zum \"Raumgeist\". New Twists on the Spatial Turn",
+      "authors": [
+        "Edward W. Soja"
+      ],
+      "chapter_doi": "10.14361/9783839406830-010",
+      "citation_pages": "241-262"
+    },
+    {
+      "title": "„Bringing space back in“ – Zur Relevanz des Raums als soziologischer Kategorie",
+      "authors": [
+        "Markus Schroer"
+      ],
+      "chapter_doi": "10.1515/9783839406830-005",
+      "citation_pages": "125-148"
+    },
+    {
+      "title": "Einleitung: Was lesen wir im Raume? Der Spatial Turn und das geheime Wissen der Geographen",
+      "authors": [
+        "Jörg Döring",
+        "Tristan Thielmann"
+      ],
+      "chapter_doi": "10.14361/9783839406830-intro",
+      "citation_pages": "7-46"
+    },
+    {
+      "title": "Die Karte als Operations- und Imaginationsmatrix. Zur Geschichte eines Raummediums",
+      "authors": [
+        "Jörg Dünne"
+      ],
+      "chapter_doi": "10.14361/9783839406830-001",
+      "citation_pages": "49-70"
+    },
+    {
+      "title": "Cybernetic Localism: Space, Reloaded",
+      "authors": [
+        "Manfred Fassler"
+      ],
+      "chapter_doi": "10.14361/9783839406830-008",
+      "citation_pages": "185-218"
+    },
+    {
+      "title": "\"Trägheit des Raums\". Fernand Braudel und die Spatial Stories der Geschichtswissenschaft",
+      "authors": [
+        "Eric Piltz"
+      ],
+      "chapter_doi": "10.14361/9783839406830-003",
+      "citation_pages": "75-102"
+    },
+    {
+      "title": "Raumbilder der Gesellschaft. Zur Räumlichkeit des Sozialen in der Systemtheorie",
+      "authors": [
+        "Roland Lippuner"
+      ],
+      "chapter_doi": "10.14361/9783839406830-013",
+      "citation_pages": "341-364"
+    },
+    {
+      "title": "„Trägheit des Raums“. Fernand Braudel und die Spatial Stories der Geschichtswissenschaft",
+      "authors": [
+        "Eric Piltz"
+      ],
+      "chapter_doi": "10.1515/9783839406830-003",
+      "citation_pages": "75-102"
+    },
+    {
+      "title": "\"Bringing space back in\" - Zur Relevanz des Raums als soziologischer Kategorie",
+      "authors": [
+        "Markus Schroer"
+      ],
+      "chapter_doi": "10.14361/9783839406830-005",
+      "citation_pages": "125-148"
+    },
+    {
+      "title": "Der Spatial Turn, von der Geographie her beobachtet",
+      "authors": [
+        "Gerhard Hard"
+      ],
+      "chapter_doi": "10.14361/9783839406830-011",
+      "citation_pages": "263-316"
+    },
+    {
+      "title": "Zeit: Raum",
+      "authors": [
+        "Mike Crang"
+      ],
+      "chapter_doi": "10.14361/9783839406830-016",
+      "citation_pages": "409-438"
+    },
+    {
+      "title": "Spatial Turn - Topographical Turn - Topological Turn. Über die Unterschiede zwischen Raumparadigmen",
+      "authors": [
+        "Stephan Günzel"
+      ],
+      "chapter_doi": "10.14361/9783839406830-009",
+      "citation_pages": "219-238"
+    },
+    {
+      "title": "Frontmatter",
+      "authors": [
+        "Jörg Döring",
+        "Tristan Thielmann"
+      ],
+      "chapter_doi": "10.14361/9783839406830-fm",
+      "citation_pages": "1-4"
+    },
+    {
+      "title": "Raum",
+      "authors": [
+        "Nigel Thrift"
+      ],
+      "chapter_doi": "10.14361/9783839406830-015",
+      "citation_pages": "393-408"
+    },
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [
+        "Jörg Döring",
+        "Tristan Thielmann"
+      ],
+      "chapter_doi": "10.14361/9783839406830-017",
+      "citation_pages": "453-456"
+    },
+    {
+      "title": "Vom „Zeitgeist“ zum „Raumgeist“. New Twists on the Spatial Turn",
+      "authors": [
+        "Edward W. Soja"
+      ],
+      "chapter_doi": "10.1515/9783839406830-010",
+      "citation_pages": "241-262"
+    }
+  ]
+}

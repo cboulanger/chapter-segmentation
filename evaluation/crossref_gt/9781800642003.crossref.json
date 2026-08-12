@@ -1,0 +1,1639 @@
+{
+  "isbn": "9781800642003",
+  "fetched_at": "2026-08-11T22:41:04.191738+00:00",
+  "license": "http://creativecommons.org/licenses/by-nc/4.0",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.17",
+      "type": "book-chapter",
+      "page": "417-438",
+      "title": [
+        "17. Kenya"
+      ],
+      "author": [
+        {
+          "given": "Joyce",
+          "family": "Kinyanjui",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Education in Marginalized Communities"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.05",
+      "type": "book-chapter",
+      "page": "149-180",
+      "title": [
+        "5. Reducing Inequality in Education Using “Smaller, Quicker, Cheaper” Assessments"
+      ],
+      "author": [
+        {
+          "given": "Luis",
+          "family": "Crouch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Timothy S.",
+          "family": "Slade",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.12",
+      "type": "book-chapter",
+      "page": "323-342",
+      "title": [
+        "12. Ivory Coast"
+      ],
+      "author": [
+        {
+          "given": "François Joseph",
+          "family": "Azoh",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zamblé Théodore",
+          "family": "Goin Bi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Children at the Bottom of the Pyramid and Government Policies"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.16",
+      "type": "book-chapter",
+      "page": "397-416",
+      "title": [
+        "16. Kenya"
+      ],
+      "author": [
+        {
+          "given": "John K.",
+          "family": "Mugo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Diana",
+          "family": "Makau",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David K.",
+          "family": "Njengere",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Disability and Learning at the Bottom of the Pyramid"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.07",
+      "type": "book-chapter",
+      "page": "193-222",
+      "title": [
+        "7. Financing Education at the Bottom of the Pyramid"
+      ],
+      "author": [
+        {
+          "given": "Samer",
+          "family": "Al-Samarrai",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Luis",
+          "family": "Benveniste",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.04",
+      "type": "book-chapter",
+      "page": "113-148",
+      "title": [
+        "4. Improving the Impact of Educational Technologies on Learning Within Low-Income Contexts"
+      ],
+      "author": [
+        {
+          "given": "Nathan M.",
+          "family": "Castillo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Taskeen",
+          "family": "Adam",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Björn",
+          "family": "Haßler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.09",
+      "type": "book-chapter",
+      "page": "277-292",
+      "title": [
+        "9. India: Learning in the Margin"
+      ],
+      "author": [
+        {
+          "given": "Rangachar",
+          "family": "Govinda",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Reflections on Indian Policies and Programs for Education of the Disadvantaged"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.02",
+      "type": "book-chapter",
+      "page": "45-76",
+      "title": [
+        "2. Education on the Move"
+      ],
+      "author": [
+        {
+          "given": "Jo",
+          "family": "Kelcey",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ozen",
+          "family": "Guven",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dana",
+          "family": "Burde",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "How Migration Affects Learning Outcomes"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.10",
+      "type": "book-chapter",
+      "page": "293-308",
+      "title": [
+        "10. India"
+      ],
+      "author": [
+        {
+          "given": "Udaya Narayana",
+          "family": "Singh",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rajarshi",
+          "family": "Singh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Padmakali",
+          "family": "Banerjee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Learning Challenges for the Marginalized"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.13",
+      "type": "book-chapter",
+      "page": "343-360",
+      "title": [
+        "13. Ivory Coast"
+      ],
+      "author": [
+        {
+          "given": "Kaja",
+          "family": "Jasińska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sosthène",
+          "family": "Guei",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Promoting Learning Outcomes at the Bottom of the Pyramid"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.15",
+      "type": "book-chapter",
+      "page": "381-396",
+      "title": [
+        "15. Kenya"
+      ],
+      "author": [
+        {
+          "given": "Emmanuel O.",
+          "family": "Manyasa",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mercy G.",
+          "family": "Karogo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Free Primary and Day Secondary Education Policies and Their Contributions to Learning at the Bottom of the Pyramid"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.08",
+      "type": "book-chapter",
+      "page": "223-276",
+      "title": [
+        "8. Mexico"
+      ],
+      "author": [
+        {
+          "given": "Sylvia",
+          "family": "Schmelkes del Valle",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Héctor Robles",
+          "family": "Vásquez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Annette",
+          "family": "Santos del Real",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Education and Learning at the Bottom of the Pyramid"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.03",
+      "type": "book-chapter",
+      "page": "77-112",
+      "title": [
+        "3. Teaching at the Bottom of the Pyramid"
+      ],
+      "author": [
+        {
+          "given": "Kwame",
+          "family": "Akyeampong",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Teacher Education in Poor and Marginalized Communities"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.01",
+      "type": "book-chapter",
+      "page": "13-44",
+      "title": [
+        "1. Diversity and Equity in Education"
+      ],
+      "author": [
+        {
+          "given": "Lauren",
+          "family": "Pisani",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amy Jo",
+          "family": "Dowd",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Policy, Practice, and Options for Reaching Children at the Bottom of the Pyramid"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.06",
+      "type": "book-chapter",
+      "page": "181-192",
+      "title": [
+        "6. Not All Pyramids Are the Same"
+      ],
+      "author": [
+        {
+          "given": "Dirk",
+          "family": "Van Damme",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tijana",
+          "family": "Prokic-Breuer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stan",
+          "family": "Vermeulen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Relative Learning Exclusion and Its Evolution Over Time"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.18",
+      "type": "book-chapter",
+      "page": "439-450",
+      "title": [
+        "Afterword"
+      ],
+      "author": [
+        {
+          "given": "Rachel",
+          "family": "Hinton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Asyia",
+          "family": "Kazmi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "The Challenge Ahead for Learning at the Bottom of the Pyramid"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.11",
+      "type": "book-chapter",
+      "page": "309-322",
+      "title": [
+        "11. India"
+      ],
+      "author": [
+        {
+          "given": "Lorie",
+          "family": "Novak",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "The Role of Civil Society Organizations and Scalable Technology Solutions for Marginalized Communities"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.14",
+      "type": "book-chapter",
+      "page": "361-380",
+      "title": [
+        "14. Kenya"
+      ],
+      "author": [
+        {
+          "given": "Sara",
+          "family": "Ruto",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ann",
+          "family": "Gachoya",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Virginia",
+          "family": "Ngindiru",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "subtitle": [
+        "Education, Learning and Policy-Framing for Children at the Bottom of the Pyramid"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2022-02-21T00:00:00Z",
+            "timestamp": 1645401600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0"
+        }
+      ],
+      "DOI": "10.11647/obp.0256.19",
+      "type": "book-chapter",
+      "page": "1-12",
+      "title": [
+        "Introduction"
+      ],
+      "author": [
+        {
+          "given": "Daniel A.",
+          "family": "Wagner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Learning, Marginalization, and Improving the Quality of Education in Low-income Countries"
+      ],
+      "ISBN": [
+        "9781800642003",
+        "9781800642010",
+        "9781800642027",
+        "9781800646506",
+        "9781800642058",
+        "9781800642034",
+        "9781800642041"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            21
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "17. Kenya Education in Marginalized Communities",
+      "authors": [
+        "Joyce Kinyanjui"
+      ],
+      "chapter_doi": "10.11647/obp.0256.17",
+      "citation_pages": "417-438"
+    },
+    {
+      "title": "5. Reducing Inequality in Education Using “Smaller, Quicker, Cheaper” Assessments",
+      "authors": [
+        "Luis Crouch",
+        "Timothy S. Slade"
+      ],
+      "chapter_doi": "10.11647/obp.0256.05",
+      "citation_pages": "149-180"
+    },
+    {
+      "title": "12. Ivory Coast Children at the Bottom of the Pyramid and Government Policies",
+      "authors": [
+        "François Joseph Azoh",
+        "Zamblé Théodore Goin Bi"
+      ],
+      "chapter_doi": "10.11647/obp.0256.12",
+      "citation_pages": "323-342"
+    },
+    {
+      "title": "16. Kenya Disability and Learning at the Bottom of the Pyramid",
+      "authors": [
+        "John K. Mugo",
+        "Diana Makau",
+        "David K. Njengere"
+      ],
+      "chapter_doi": "10.11647/obp.0256.16",
+      "citation_pages": "397-416"
+    },
+    {
+      "title": "7. Financing Education at the Bottom of the Pyramid",
+      "authors": [
+        "Samer Al-Samarrai",
+        "Luis Benveniste"
+      ],
+      "chapter_doi": "10.11647/obp.0256.07",
+      "citation_pages": "193-222"
+    },
+    {
+      "title": "4. Improving the Impact of Educational Technologies on Learning Within Low-Income Contexts",
+      "authors": [
+        "Nathan M. Castillo",
+        "Taskeen Adam",
+        "Björn Haßler"
+      ],
+      "chapter_doi": "10.11647/obp.0256.04",
+      "citation_pages": "113-148"
+    },
+    {
+      "title": "9. India: Learning in the Margin Reflections on Indian Policies and Programs for Education of the Disadvantaged",
+      "authors": [
+        "Rangachar Govinda"
+      ],
+      "chapter_doi": "10.11647/obp.0256.09",
+      "citation_pages": "277-292"
+    },
+    {
+      "title": "2. Education on the Move How Migration Affects Learning Outcomes",
+      "authors": [
+        "Jo Kelcey",
+        "Ozen Guven",
+        "Dana Burde"
+      ],
+      "chapter_doi": "10.11647/obp.0256.02",
+      "citation_pages": "45-76"
+    },
+    {
+      "title": "10. India Learning Challenges for the Marginalized",
+      "authors": [
+        "Udaya Narayana Singh",
+        "Rajarshi Singh",
+        "Padmakali Banerjee"
+      ],
+      "chapter_doi": "10.11647/obp.0256.10",
+      "citation_pages": "293-308"
+    },
+    {
+      "title": "13. Ivory Coast Promoting Learning Outcomes at the Bottom of the Pyramid",
+      "authors": [
+        "Kaja Jasińska",
+        "Sosthène Guei"
+      ],
+      "chapter_doi": "10.11647/obp.0256.13",
+      "citation_pages": "343-360"
+    },
+    {
+      "title": "15. Kenya Free Primary and Day Secondary Education Policies and Their Contributions to Learning at the Bottom of the Pyramid",
+      "authors": [
+        "Emmanuel O. Manyasa",
+        "Mercy G. Karogo"
+      ],
+      "chapter_doi": "10.11647/obp.0256.15",
+      "citation_pages": "381-396"
+    },
+    {
+      "title": "8. Mexico Education and Learning at the Bottom of the Pyramid",
+      "authors": [
+        "Sylvia Schmelkes del Valle",
+        "Héctor Robles Vásquez",
+        "Annette Santos del Real"
+      ],
+      "chapter_doi": "10.11647/obp.0256.08",
+      "citation_pages": "223-276"
+    },
+    {
+      "title": "3. Teaching at the Bottom of the Pyramid Teacher Education in Poor and Marginalized Communities",
+      "authors": [
+        "Kwame Akyeampong"
+      ],
+      "chapter_doi": "10.11647/obp.0256.03",
+      "citation_pages": "77-112"
+    },
+    {
+      "title": "1. Diversity and Equity in Education Policy, Practice, and Options for Reaching Children at the Bottom of the Pyramid",
+      "authors": [
+        "Lauren Pisani",
+        "Amy Jo Dowd"
+      ],
+      "chapter_doi": "10.11647/obp.0256.01",
+      "citation_pages": "13-44"
+    },
+    {
+      "title": "6. Not All Pyramids Are the Same Relative Learning Exclusion and Its Evolution Over Time",
+      "authors": [
+        "Dirk Van Damme",
+        "Tijana Prokic-Breuer",
+        "Stan Vermeulen"
+      ],
+      "chapter_doi": "10.11647/obp.0256.06",
+      "citation_pages": "181-192"
+    },
+    {
+      "title": "Afterword The Challenge Ahead for Learning at the Bottom of the Pyramid",
+      "authors": [
+        "Rachel Hinton",
+        "Asyia Kazmi"
+      ],
+      "chapter_doi": "10.11647/obp.0256.18",
+      "citation_pages": "439-450"
+    },
+    {
+      "title": "11. India The Role of Civil Society Organizations and Scalable Technology Solutions for Marginalized Communities",
+      "authors": [
+        "Lorie Novak"
+      ],
+      "chapter_doi": "10.11647/obp.0256.11",
+      "citation_pages": "309-322"
+    },
+    {
+      "title": "14. Kenya Education, Learning and Policy-Framing for Children at the Bottom of the Pyramid",
+      "authors": [
+        "Sara Ruto",
+        "Ann Gachoya",
+        "Virginia Ngindiru"
+      ],
+      "chapter_doi": "10.11647/obp.0256.14",
+      "citation_pages": "361-380"
+    },
+    {
+      "title": "Introduction",
+      "authors": [
+        "Daniel A. Wagner"
+      ],
+      "chapter_doi": "10.11647/obp.0256.19",
+      "citation_pages": "1-12"
+    }
+  ]
+}

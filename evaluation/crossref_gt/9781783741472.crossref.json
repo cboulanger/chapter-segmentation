@@ -1,0 +1,1390 @@
+{
+  "isbn": "9781783741472",
+  "fetched_at": "2026-08-11T22:58:28.054488+00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "crossref",
+  "raw_items": [
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.10",
+      "type": "book-chapter",
+      "page": "185-167",
+      "title": [
+        "10. Res Merae Facultatis: Through a Glass Darkly"
+      ],
+      "author": [
+        {
+          "given": "Douglas",
+          "family": "Cusine",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.04",
+      "type": "book-chapter",
+      "page": "47-72",
+      "title": [
+        "4. “It’s in the Post”: Distance Contracting in Scotland 1681-1855"
+      ],
+      "author": [
+        {
+          "given": "Hector L",
+          "family": "MacQueen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.11",
+      "type": "book-chapter",
+      "page": "203-236",
+      "title": [
+        "11. The Use of Praedial Servitudes to Benefit Land outside the Dominant Tenement"
+      ],
+      "author": [
+        {
+          "given": "Roderick R M",
+          "family": "Paisley",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.05",
+      "type": "book-chapter",
+      "page": "73-96",
+      "title": [
+        "5. Assignations of All Sums Securities"
+      ],
+      "author": [
+        {
+          "given": "Ross G",
+          "family": "Anderson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.20",
+      "type": "book-chapter",
+      "page": "395-402",
+      "title": [
+        "20. Robert Rennie: A Bibliography"
+      ],
+      "author": [
+        {
+          "given": "Bernadette",
+          "family": "O’Neill",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.15",
+      "type": "book-chapter",
+      "page": "301-316",
+      "title": [
+        "15. Islamic Mortgages"
+      ],
+      "author": [
+        {
+          "given": "George",
+          "family": "Gretton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.01",
+      "type": "book-chapter",
+      "page": "1-14",
+      "title": [
+        "1. Robert Rennie – A Career Retrospective"
+      ],
+      "author": [
+        {
+          "given": "Lord",
+          "family": "Bonomy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.07",
+      "type": "book-chapter",
+      "page": "115-140",
+      "title": [
+        "7. The Offside Goals Rule and Fraud on Creditors"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "MacLeod",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.03",
+      "type": "book-chapter",
+      "page": "35-46",
+      "title": [
+        "3. A Puzzling Case about Possession"
+      ],
+      "author": [
+        {
+          "given": "Lord",
+          "family": "Hope of Craighead",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.18",
+      "type": "book-chapter",
+      "page": "367-380",
+      "title": [
+        "18. The Court and the Conveyancing Expert"
+      ],
+      "author": [
+        {
+          "given": "Lady",
+          "family": "Paton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.12",
+      "type": "book-chapter",
+      "page": "237-254",
+      "title": [
+        "12. Enforcing Repairing Obligations by Specific Implement"
+      ],
+      "author": [
+        {
+          "given": "Angus",
+          "family": "McAllister",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.19",
+      "type": "book-chapter",
+      "page": "381-394",
+      "title": [
+        "19. The Role of the Expert Witness in Professional Negligence Litigation"
+      ],
+      "author": [
+        {
+          "given": "Gerald F",
+          "family": "Hanretty QC",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.08",
+      "type": "book-chapter",
+      "page": "141-164",
+      "title": [
+        "8. A New Era in Conveyancing: Advance Notices and the Land Registration etc. (Scotland) Act 2012"
+      ],
+      "author": [
+        {
+          "given": "Ann",
+          "family": "Stewart",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.17",
+      "type": "book-chapter",
+      "page": "345-366",
+      "title": [
+        "17. Primary Clients, Secondary Clients, Surrogate Clients and Non-Clients – the Expanding Duty of Care of Scottish Solicitors"
+      ],
+      "author": [
+        {
+          "given": "Ken",
+          "family": "Swinton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.06",
+      "type": "book-chapter",
+      "page": "97-114",
+      "title": [
+        "6. Property Law, Fiduciary Obligations and the Constructive Trust"
+      ],
+      "author": [
+        {
+          "given": "Patrick S",
+          "family": "Hodge",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.16",
+      "type": "book-chapter",
+      "page": "317-344",
+      "title": [
+        "16. Completion of the Land Register: The Scottish Approach"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "King",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.13",
+      "type": "book-chapter",
+      "page": "255-278",
+      "title": [
+        "13. Two Questions in the Law of Leases"
+      ],
+      "author": [
+        {
+          "given": "Lord",
+          "family": "Gill",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.09",
+      "type": "book-chapter",
+      "page": "165-184",
+      "title": [
+        "9. Bona Fide Acquisition: New in Scottish Land Law?"
+      ],
+      "author": [
+        {
+          "given": "David",
+          "family": "Carey Miller",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.02",
+      "type": "book-chapter",
+      "page": "15-34",
+      "title": [
+        "2. “Tell Me Don’t Show Me” and the Fall and Rise of the Conveyancer"
+      ],
+      "author": [
+        {
+          "given": "Kenneth G C",
+          "family": "Reid",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                11
+              ]
+            ],
+            "date-time": "2015-05-11T00:00:00Z",
+            "timestamp": 1431302400000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "DOI": "10.11647/obp.0056.14",
+      "type": "book-chapter",
+      "page": "279-300",
+      "title": [
+        "14. Conveyancing: A Bright Digital Future?"
+      ],
+      "author": [
+        {
+          "given": "Stewart",
+          "family": "Brymer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Essays in Conveyancing and Property Law in Honour of Professor Robert Rennie"
+      ],
+      "ISBN": [
+        "9781783741472",
+        "9781783741489",
+        "9781783741496",
+        "9781800644830",
+        "9781783746477",
+        "9781783741502",
+        "9781783741519"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "title": "10. Res Merae Facultatis: Through a Glass Darkly",
+      "authors": [
+        "Douglas Cusine"
+      ],
+      "chapter_doi": "10.11647/obp.0056.10",
+      "citation_pages": "185-167"
+    },
+    {
+      "title": "4. “It’s in the Post”: Distance Contracting in Scotland 1681-1855",
+      "authors": [
+        "Hector L MacQueen"
+      ],
+      "chapter_doi": "10.11647/obp.0056.04",
+      "citation_pages": "47-72"
+    },
+    {
+      "title": "11. The Use of Praedial Servitudes to Benefit Land outside the Dominant Tenement",
+      "authors": [
+        "Roderick R M Paisley"
+      ],
+      "chapter_doi": "10.11647/obp.0056.11",
+      "citation_pages": "203-236"
+    },
+    {
+      "title": "5. Assignations of All Sums Securities",
+      "authors": [
+        "Ross G Anderson"
+      ],
+      "chapter_doi": "10.11647/obp.0056.05",
+      "citation_pages": "73-96"
+    },
+    {
+      "title": "20. Robert Rennie: A Bibliography",
+      "authors": [
+        "Bernadette O’Neill"
+      ],
+      "chapter_doi": "10.11647/obp.0056.20",
+      "citation_pages": "395-402"
+    },
+    {
+      "title": "15. Islamic Mortgages",
+      "authors": [
+        "George Gretton"
+      ],
+      "chapter_doi": "10.11647/obp.0056.15",
+      "citation_pages": "301-316"
+    },
+    {
+      "title": "1. Robert Rennie – A Career Retrospective",
+      "authors": [
+        "Lord Bonomy"
+      ],
+      "chapter_doi": "10.11647/obp.0056.01",
+      "citation_pages": "1-14"
+    },
+    {
+      "title": "7. The Offside Goals Rule and Fraud on Creditors",
+      "authors": [
+        "John MacLeod"
+      ],
+      "chapter_doi": "10.11647/obp.0056.07",
+      "citation_pages": "115-140"
+    },
+    {
+      "title": "3. A Puzzling Case about Possession",
+      "authors": [
+        "Lord Hope of Craighead"
+      ],
+      "chapter_doi": "10.11647/obp.0056.03",
+      "citation_pages": "35-46"
+    },
+    {
+      "title": "18. The Court and the Conveyancing Expert",
+      "authors": [
+        "Lady Paton"
+      ],
+      "chapter_doi": "10.11647/obp.0056.18",
+      "citation_pages": "367-380"
+    },
+    {
+      "title": "12. Enforcing Repairing Obligations by Specific Implement",
+      "authors": [
+        "Angus McAllister"
+      ],
+      "chapter_doi": "10.11647/obp.0056.12",
+      "citation_pages": "237-254"
+    },
+    {
+      "title": "19. The Role of the Expert Witness in Professional Negligence Litigation",
+      "authors": [
+        "Gerald F Hanretty QC"
+      ],
+      "chapter_doi": "10.11647/obp.0056.19",
+      "citation_pages": "381-394"
+    },
+    {
+      "title": "8. A New Era in Conveyancing: Advance Notices and the Land Registration etc. (Scotland) Act 2012",
+      "authors": [
+        "Ann Stewart"
+      ],
+      "chapter_doi": "10.11647/obp.0056.08",
+      "citation_pages": "141-164"
+    },
+    {
+      "title": "17. Primary Clients, Secondary Clients, Surrogate Clients and Non-Clients – the Expanding Duty of Care of Scottish Solicitors",
+      "authors": [
+        "Ken Swinton"
+      ],
+      "chapter_doi": "10.11647/obp.0056.17",
+      "citation_pages": "345-366"
+    },
+    {
+      "title": "6. Property Law, Fiduciary Obligations and the Constructive Trust",
+      "authors": [
+        "Patrick S Hodge"
+      ],
+      "chapter_doi": "10.11647/obp.0056.06",
+      "citation_pages": "97-114"
+    },
+    {
+      "title": "16. Completion of the Land Register: The Scottish Approach",
+      "authors": [
+        "John King"
+      ],
+      "chapter_doi": "10.11647/obp.0056.16",
+      "citation_pages": "317-344"
+    },
+    {
+      "title": "13. Two Questions in the Law of Leases",
+      "authors": [
+        "Lord Gill"
+      ],
+      "chapter_doi": "10.11647/obp.0056.13",
+      "citation_pages": "255-278"
+    },
+    {
+      "title": "9. Bona Fide Acquisition: New in Scottish Land Law?",
+      "authors": [
+        "David Carey Miller"
+      ],
+      "chapter_doi": "10.11647/obp.0056.09",
+      "citation_pages": "165-184"
+    },
+    {
+      "title": "2. “Tell Me Don’t Show Me” and the Fall and Rise of the Conveyancer",
+      "authors": [
+        "Kenneth G C Reid"
+      ],
+      "chapter_doi": "10.11647/obp.0056.02",
+      "citation_pages": "15-34"
+    },
+    {
+      "title": "14. Conveyancing: A Bright Digital Future?",
+      "authors": [
+        "Stewart Brymer"
+      ],
+      "chapter_doi": "10.11647/obp.0056.14",
+      "citation_pages": "279-300"
+    }
+  ]
+}

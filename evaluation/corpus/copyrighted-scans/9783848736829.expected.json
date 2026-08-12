@@ -210,5 +210,9 @@
       "pdf_end_index": 500,
       "citation_pages": "487-504"
     }
-  ]
+  ],
+  "toc": {
+    "toc_start_index": 5,
+    "toc_end_index": 7
+  }
 }

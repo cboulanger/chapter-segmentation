@@ -41,6 +41,41 @@ _FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
 </alto>
 """
 
+_TWO_PAGE_FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#">
+  <Styles>
+    <TextStyle ID="body" FONTFAMILY="serif" FONTSIZE="10.0" FONTTYPE="serif" FONTWIDTH="proportional" FONTCOLOR="000000"/>
+    <TextStyle ID="title" FONTFAMILY="sans" FONTSIZE="24.0" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="000000"/>
+  </Styles>
+  <Layout>
+    <Page ID="Page1" PHYSICAL_IMG_NR="1" WIDTH="500" HEIGHT="600">
+      <PrintSpace>
+        <TextBlock ID="p1_b1">
+          <TextLine ID="p1_t1" HPOS="200" VPOS="50" WIDTH="150" HEIGHT="24">
+            <String ID="p1_w1" CONTENT="Chapter" HPOS="200" WIDTH="150" HEIGHT="24" STYLEREFS="title"/>
+          </TextLine>
+          <TextLine ID="p1_t2" HPOS="48" VPOS="200" WIDTH="340" HEIGHT="12">
+            <String ID="p1_w2" CONTENT="Text" HPOS="48" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+    <Page ID="Page2" PHYSICAL_IMG_NR="2" WIDTH="500" HEIGHT="600">
+      <PrintSpace>
+        <TextBlock ID="p2_b1">
+          <TextLine ID="p2_t1" HPOS="200" VPOS="50" WIDTH="150" HEIGHT="24">
+            <String ID="p2_w1" CONTENT="Next" HPOS="200" WIDTH="150" HEIGHT="24" STYLEREFS="title"/>
+          </TextLine>
+          <TextLine ID="p2_t2" HPOS="48" VPOS="200" WIDTH="340" HEIGHT="12">
+            <String ID="p2_w2" CONTENT="Content" HPOS="48" WIDTH="340" HEIGHT="12" STYLEREFS="body"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
+"""
+
 
 class TestWriteAugmentedAlto(unittest.TestCase):
     def setUp(self):
@@ -105,6 +140,32 @@ class TestWriteAugmentedAlto(unittest.TestCase):
                 if aug_val != src_val:
                     moved += 1
         self.assertGreater(moved, 0)
+
+
+class TestMultiPageAugmentation(unittest.TestCase):
+    def test_per_page_offsets_are_independent_and_deterministic(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            source = tmp_path / "two-page.alto.xml"
+            source.write_text(_TWO_PAGE_FIXTURE_ALTO_XML, encoding="utf-8")
+            out_a = tmp_path / "a.aug.alto.xml"
+            out_b = tmp_path / "b.aug.alto.xml"
+            write_augmented_alto(source, out_a, "book-key")
+            write_augmented_alto(source, out_b, "book-key")
+            self.assertEqual(out_a.read_bytes(), out_b.read_bytes())
+
+            src_pages = list(ET.parse(source).getroot().iter(_ALTO_NS + "Page"))
+            aug_pages = list(ET.parse(out_a).getroot().iter(_ALTO_NS + "Page"))
+            self.assertEqual(len(aug_pages), 2)
+            # Each page's lines must drift by a page-specific offset: compute
+            # mean VPOS shift per page and require the two pages' shifts to
+            # differ (independent per-page drift, not one global offset).
+            shifts = []
+            for src_page, aug_page in zip(src_pages, aug_pages):
+                src_v = [float(l.get("VPOS")) for l in src_page.iter(_ALTO_NS + "TextLine")]
+                aug_v = [float(l.get("VPOS")) for l in aug_page.iter(_ALTO_NS + "TextLine")]
+                shifts.append(sum(a - s for s, a in zip(src_v, aug_v)) / len(src_v))
+            self.assertNotAlmostEqual(shifts[0], shifts[1], places=3)
 
 
 if __name__ == "__main__":

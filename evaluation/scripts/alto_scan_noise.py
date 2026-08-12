@@ -6,7 +6,12 @@ each mimic a property measured in the real copyrighted-scans ALTO (see
 docs/superpowers/specs/2026-08-12-layout-classifier-context-features-and-scan-augmentation-design.md):
 font-size jitter into many near-identical style clones, title/body
 contrast compression, and small geometry noise. All randomness is seeded
-from the book key, so output is reproducible and cacheable."""
+from the book key, so output is reproducible and cacheable.
+
+Contrast compression is statistical, not a per-page hard guarantee: when a
+source book's title/body contrast is already weak (~1.2), the independent
+per-clone jitter can occasionally cancel the compression on a single page.
+On realistic contrast ratios (>=1.5) compression always dominates."""
 
 import random
 import statistics

@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from evaluation.scripts.layout_features import extract_page_features
+from evaluation.scripts.layout_features import _is_heading_line, extract_page_features
 
 _FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
 <alto xmlns="http://www.loc.gov/standards/alto/ns-v3#">
@@ -190,6 +190,52 @@ class TestTrailingNumberFraction(unittest.TestCase):
         # "5" (digit) and "xii" (real roman numeral) count; "mix" and
         # "hello" (ordinary English words, not numerals) do not.
         self.assertEqual(features[0]["trailing_number_fraction"], 0.5)
+
+
+class TestIsHeadingLine(unittest.TestCase):
+    def test_keyword_headings_match_in_all_three_languages(self):
+        for text in ("Chapter 3", "KAPITEL 12", "Chapitre IV", "Part 2",
+                     "Teil 1", "Partie 3", "§ 5", "Chapter", "Teil"):
+            self.assertTrue(_is_heading_line(text), text)
+
+    def test_bare_numbers_and_roman_numerals_match(self):
+        for text in ("3", "12.", "IV", "xii", "1998"):
+            self.assertTrue(_is_heading_line(text), text)
+
+    def test_ordinary_text_and_roman_lookalikes_do_not_match(self):
+        # "mix"/"did" are spelled entirely with roman-numeral letters but are
+        # not roman numerals -- the existing _TRAILING_NUMERAL_RE grammar
+        # rejects them and this feature must inherit that.
+        for text in ("The Origins of Law", "mix", "did", "Introduction",
+                     "Partial results", "Chapters and verses", ""):
+            self.assertFalse(_is_heading_line(text), text)
+
+
+class TestNewPageLocalFeatures(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.alto_path = Path(self._tmp.name) / "fixture.alto.xml"
+        self.alto_path.write_text(_FIXTURE_ALTO_XML, encoding="utf-8")
+        self.features = extract_page_features(str(self.alto_path))
+
+    def test_last_text_vpos_fraction(self):
+        # Page 0: lowest line bottom = VPOS 140 + HEIGHT 12 = 152.
+        self.assertAlmostEqual(self.features[0]["last_text_vpos_fraction"], 152 / 600)
+        # Page 1: lowest line bottom = VPOS 215 + HEIGHT 12 = 227.
+        self.assertAlmostEqual(self.features[1]["last_text_vpos_fraction"], 227 / 600)
+
+    def test_top_line_heading_match_is_zero_for_both_fixture_pages(self):
+        # Page 0's top line reads "Intro 5", page 1's reads "Introduction"
+        # -- neither is a bare number, roman numeral, or heading keyword.
+        self.assertEqual(self.features[0]["top_line_heading_match"], 0.0)
+        self.assertEqual(self.features[1]["top_line_heading_match"], 0.0)
+
+    def test_raw_font_intermediates_are_emitted(self):
+        self.assertAlmostEqual(self.features[0]["_max_font_size"], 10.0)
+        self.assertAlmostEqual(self.features[0]["_modal_font_size"], 10.0)
+        self.assertAlmostEqual(self.features[1]["_max_font_size"], 24.0)
+        self.assertAlmostEqual(self.features[1]["_modal_font_size"], 10.0)
 
 
 if __name__ == "__main__":

@@ -19,7 +19,29 @@ _TRAILING_NUMERAL_RE = re.compile(
     re.IGNORECASE,
 )
 
-FEATURE_NAMES = [
+# A chapter/part heading keyword (English/German/French), optionally
+# followed by an arabic or roman number. The bare-number and bare-roman
+# branches of heading detection reuse _TRAILING_NUMERAL_RE so its
+# lookalike rejections ("mix", "did", "civic") carry over.
+_HEADING_KEYWORD_RE = re.compile(
+    r"^(?:chapter|kapitel|chapitre|part|teil|partie|§)\.?\s*(?:\d{1,4}|[ivxlcdm]{1,7})?$",
+    re.IGNORECASE,
+)
+
+
+def _is_heading_line(text: str) -> bool:
+    """Whether a line of text looks like a chapter/part heading: a heading
+    keyword (optionally numbered), a bare arabic number, or a bare roman
+    numeral. Content-based, so it survives OCR'd scans whose font metadata
+    is unreliable."""
+    stripped = text.strip().rstrip(".:").strip()
+    if not stripped:
+        return False
+    if _TRAILING_NUMERAL_RE.match(stripped):
+        return True
+    return _HEADING_KEYWORD_RE.match(stripped) is not None
+
+PAGE_FEATURE_NAMES = [
     "line_count",
     "width_mean",
     "width_var",
@@ -30,7 +52,22 @@ FEATURE_NAMES = [
     "top_block_is_large_font",
     "first_text_vpos_fraction",
     "line_density",
+    "last_text_vpos_fraction",
+    "top_line_heading_match",
 ]
+
+# Computed by add_book_context_features (second pass), not by
+# extract_page_features -- they need neighboring pages and book-level
+# aggregates a single-page parse can't see.
+CONTEXT_FEATURE_NAMES = [
+    "prev_last_text_vpos_fraction",
+    "prev_line_count_rel",
+    "line_count_rel",
+    "font_size_max_ratio_book",
+    "page_position_fraction",
+]
+
+FEATURE_NAMES = PAGE_FEATURE_NAMES + CONTEXT_FEATURE_NAMES
 
 
 def _parse_font_sizes(root: ET.Element) -> dict[str, float]:
@@ -58,12 +95,12 @@ def _line_font_size(line: ET.Element, font_sizes: dict[str, float]) -> float | N
 
 def _font_ratio_and_top_block_flag(
     lines: list[ET.Element], font_sizes: dict[str, float], page_height: float
-) -> tuple[float, float]:
+) -> tuple[float, float, float, float]:
     """Ratio of the page's largest resolvable font size to its modal
-    (most common, i.e. body-text) font size, and whether the line with
+    (most common, i.e. body-text) font size, whether the line with
     that largest font size sits in the top fifth of the page (title-block
-    signal). Defaults to (1.0, 0.0) when no line has a resolvable font
-    size.
+    signal), and the raw max and modal font sizes. Defaults to
+    (1.0, 0.0, 0.0, 0.0) when no line has a resolvable font size.
 
     Font size and VPOS are tracked together per line (rather than as two
     separately filtered/unfiltered parallel lists) so that a line with no
@@ -76,7 +113,7 @@ def _font_ratio_and_top_block_flag(
         if size is not None
     ]
     if not resolvable:
-        return 1.0, 0.0
+        return 1.0, 0.0, 0.0, 0.0
 
     modal_size = statistics.mode(size for size, _ in resolvable)
     max_size, max_size_vpos = max(resolvable, key=lambda pair: pair[0])
@@ -84,7 +121,7 @@ def _font_ratio_and_top_block_flag(
     top_block_is_large_font = float(
         font_size_max_ratio > 1.3 and max_size_vpos < page_height / 5
     )
-    return font_size_max_ratio, top_block_is_large_font
+    return font_size_max_ratio, top_block_is_large_font, max_size, modal_size
 
 
 def extract_page_features(alto_xml_path: str) -> dict[int, dict[str, float]]:
@@ -103,7 +140,11 @@ def extract_page_features(alto_xml_path: str) -> dict[int, dict[str, float]]:
         lines = list(page.iter(_ALTO_NS + "TextLine"))
 
         if not lines:
-            features[page_index] = {name: 0.0 for name in FEATURE_NAMES}
+            features[page_index] = {
+                **{name: 0.0 for name in PAGE_FEATURE_NAMES},
+                "_max_font_size": 0.0,
+                "_modal_font_size": 0.0,
+            }
             continue
 
         widths = [float(line.get("WIDTH")) / page_width for line in lines]
@@ -116,8 +157,16 @@ def extract_page_features(alto_xml_path: str) -> dict[int, dict[str, float]]:
             if strings and _TRAILING_NUMERAL_RE.match(strings[-1].get("CONTENT", "").strip()):
                 trailing_hits += 1
 
-        font_size_max_ratio, top_block_is_large_font = _font_ratio_and_top_block_flag(
-            lines, font_sizes, page_height
+        font_size_max_ratio, top_block_is_large_font, max_font_size, modal_font_size = (
+            _font_ratio_and_top_block_flag(lines, font_sizes, page_height)
+        )
+
+        line_bottoms = [
+            float(line.get("VPOS")) + float(line.get("HEIGHT", 0.0)) for line in lines
+        ]
+        top_line = min(lines, key=lambda line: float(line.get("VPOS")))
+        top_line_text = " ".join(
+            s.get("CONTENT", "") for s in top_line.findall(_ALTO_NS + "String")
         )
 
         features[page_index] = {
@@ -131,6 +180,10 @@ def extract_page_features(alto_xml_path: str) -> dict[int, dict[str, float]]:
             "top_block_is_large_font": top_block_is_large_font,
             "first_text_vpos_fraction": min(vpositions) / page_height,
             "line_density": len(lines) / page_height,
+            "last_text_vpos_fraction": max(line_bottoms) / page_height,
+            "top_line_heading_match": float(_is_heading_line(top_line_text)),
+            "_max_font_size": max_font_size,
+            "_modal_font_size": modal_font_size,
         }
 
     return features

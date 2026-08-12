@@ -11,6 +11,8 @@ import {
   clearRejectedDecisions,
   tabTitle,
   pageHeading,
+  nextRejectedIndex,
+  prevRejectedIndex,
 } from './lib.js';
 
 const THUMBNAIL_TARGET_WIDTH = 120;
@@ -22,6 +24,7 @@ const state = {
   manifest: [],
   decisions: {},
   repoRoot: null,
+  rejectedOnly: false,
 };
 
 function $(id) {
@@ -65,16 +68,29 @@ function headerHtml(book, isbn) {
   return `<span class="${accepted ? 'accepted-header' : ''}">${isbn} — ${book.title}${checkmark}</span>`;
 }
 
+function rejectedOnlyControlHtml() {
+  return `<label id="rejected-only-label"><input type="checkbox" id="rejected-only-checkbox" ${state.rejectedOnly ? 'checked' : ''} /> Rejected only</label>`;
+}
+
+function wireRejectedOnlyCheckbox() {
+  $('rejected-only-checkbox').addEventListener('change', onRejectedOnlyChange);
+}
+
 function renderSkippable(book, isbn, message) {
   $('app').innerHTML = `
     <header>${headerHtml(book, isbn)}</header>
     <p class="error">${message}</p>
-    <div class="controls"><button id="skip">Skip</button></div>
+    <div class="controls">
+      <button id="skip">Skip</button>
+      ${rejectedOnlyControlHtml()}
+    </div>
   `;
   $('skip').addEventListener('click', () => {
     state.index += 1;
+    if (state.rejectedOnly) state.index = nextRejectedIndex(state.manifest, state.decisions, state.index);
     render();
   });
+  wireRejectedOnlyCheckbox();
 }
 
 function highlightDecision(isbn) {
@@ -88,11 +104,21 @@ function decide(isbn, verdict) {
   state.decisions[isbn] = verdict;
   saveDecisions(state.corpus, state.decisions);
   state.index += 1;
+  if (state.rejectedOnly) state.index = nextRejectedIndex(state.manifest, state.decisions, state.index);
   render(true);
 }
 
 function goPrev() {
   state.index = Math.max(0, state.index - 1);
+  if (state.rejectedOnly) state.index = prevRejectedIndex(state.manifest, state.decisions, state.index);
+  render();
+}
+
+function onRejectedOnlyChange(e) {
+  state.rejectedOnly = e.target.checked;
+  if (state.rejectedOnly) {
+    state.index = nextRejectedIndex(state.manifest, state.decisions, state.index);
+  }
   render();
 }
 
@@ -168,6 +194,7 @@ async function renderBook(book, isbn, expected, pdf) {
       ${state.repoRoot ? `<a id="open-vscode" class="button" href="${vscodeFileUri(state.repoRoot, state.corpus, isbn)}">Open in VS Code</a>` : ''}
       <button id="reject" class="reject">Reject</button>
       <button id="accept" class="accept">Accept</button>
+      ${rejectedOnlyControlHtml()}
     </div>
   `;
 
@@ -194,6 +221,7 @@ async function renderBook(book, isbn, expected, pdf) {
   $('prev').addEventListener('click', goPrev);
   $('accept').addEventListener('click', () => decide(isbn, 'accepted'));
   $('reject').addEventListener('click', () => decide(isbn, 'rejected'));
+  wireRejectedOnlyCheckbox();
 }
 
 function downloadRejected(text) {

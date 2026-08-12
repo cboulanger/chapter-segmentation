@@ -24,6 +24,20 @@ export function pageHeading(corpus, oneBasedIndex, total) {
   return `Corpus '${corpus}' ${oneBasedIndex} of ${total}`;
 }
 
+export function nextRejectedIndex(manifest, decisions, fromIndex) {
+  for (let i = fromIndex; i < manifest.length; i += 1) {
+    if (decisions[isbnFromFilename(manifest[i].filename)] === 'rejected') return i;
+  }
+  return manifest.length;
+}
+
+export function prevRejectedIndex(manifest, decisions, fromIndex) {
+  for (let i = fromIndex; i >= 0; i -= 1) {
+    if (decisions[isbnFromFilename(manifest[i].filename)] === 'rejected') return i;
+  }
+  return 0;
+}
+
 export function isbnFromFilename(filename) {
   return filename.replace(/\.pdf$/i, '');
 }

@@ -11,6 +11,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+
 header {
   font-size: 1.1rem;
   font-weight: 600;
@@ -92,6 +93,15 @@ header {
   border: 1px solid #ccc;
   border-radius: 4px;
   background: white;
+}
+
+#rejected-only-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: auto;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .controls button.accept {

@@ -13,7 +13,16 @@ import {
   clearRejectedDecisions,
   tabTitle,
   pageHeading,
+  nextRejectedIndex,
+  prevRejectedIndex,
 } from './lib.js';
+
+const BOOKS = [
+  { filename: 'a.pdf' },
+  { filename: 'b.pdf' },
+  { filename: 'c.pdf' },
+  { filename: 'd.pdf' },
+];
 
 test('parseParams reads corpus and index', () => {
   assert.deepEqual(parseParams('?corpus=open-access&index=5'), { corpus: 'open-access', index: 5, repoRoot: null });
@@ -111,4 +120,31 @@ test('tabTitle formats corpus and progress for the browser tab', () => {
 
 test('pageHeading formats corpus and progress for the on-page heading', () => {
   assert.equal(pageHeading('open-access', 1, 45), "Corpus 'open-access' 1 of 45");
+});
+
+test('nextRejectedIndex finds the next rejected entry at or after fromIndex', () => {
+  const decisions = { a: 'accepted', b: 'rejected', c: 'accepted', d: 'rejected' };
+  assert.equal(nextRejectedIndex(BOOKS, decisions, 0), 1);
+  assert.equal(nextRejectedIndex(BOOKS, decisions, 2), 3);
+});
+
+test('nextRejectedIndex includes fromIndex itself when already rejected', () => {
+  const decisions = { a: 'rejected' };
+  assert.equal(nextRejectedIndex(BOOKS, decisions, 0), 0);
+});
+
+test('nextRejectedIndex returns manifest length when none remain', () => {
+  const decisions = { a: 'accepted' };
+  assert.equal(nextRejectedIndex(BOOKS, decisions, 0), BOOKS.length);
+});
+
+test('prevRejectedIndex finds the previous rejected entry at or before fromIndex', () => {
+  const decisions = { a: 'accepted', b: 'rejected', c: 'accepted', d: 'rejected' };
+  assert.equal(prevRejectedIndex(BOOKS, decisions, 3), 3);
+  assert.equal(prevRejectedIndex(BOOKS, decisions, 2), 1);
+});
+
+test('prevRejectedIndex returns 0 when none found before fromIndex', () => {
+  const decisions = { d: 'rejected' };
+  assert.equal(prevRejectedIndex(BOOKS, decisions, 2), 0);
 });

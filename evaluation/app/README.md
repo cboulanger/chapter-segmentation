@@ -54,6 +54,11 @@ Then open:
   can re-review just the books you fixed.
 - If a book's PDF or `.expected.json` isn't present on disk, a `Skip`
   button advances past it without recording a verdict.
+- `Rejected only` filters navigation (`Accept`/`Reject`/`Prev`/`Skip`) to
+  books currently marked `rejected`, jumping straight to the next/previous
+  one and skipping everything else — handy for a follow-up pass after
+  fixing some ground truth. Unchecking it returns to the normal
+  book-by-book order.
 
 ## Tests
 

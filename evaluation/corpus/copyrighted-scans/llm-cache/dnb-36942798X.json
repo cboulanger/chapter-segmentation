@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T05:18:04.908114+00:00",
+  "generated_at": "2026-08-12T05:35:30.797435+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -174,103 +174,8 @@
       "demand_at_run": 0
     },
     "glm-4.7": {
-      "chapters": [
-        {
-          "title": "Weihnachten",
-          "authors": [
-            "Schreiben",
-            "dir vielleicht",
-            "Ding",
-            "Polizei Uhr Vielleicht",
-            "Milch",
-            "Mann",
-            "Opa Verlieren Nase",
-            "Gott",
-            "Nimmt Erschrecken",
-            "Hoch Erschrecken Opa",
-            "Schicken Weihnachten",
-            "Geschichte"
-          ],
-          "pdf_start_index": 61,
-          "pdf_end_index": 61,
-          "citation_pages": "396-397",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Erschrecken",
-          "authors": [
-            "Jung Weihnachten Weihnachten",
-            "Hängen",
-            "schreiben",
-            "Tisch Einigen",
-            "Schreiben",
-            "Sprechen Woche",
-            "schlagen Affe",
-            "Weihnachten Vielleicht dem Gestern",
-            "Dem Haare"
-          ],
-          "pdf_start_index": 62,
-          "pdf_end_index": 153,
-          "citation_pages": "398-399",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Weihnachten",
-          "authors": [
-            "Opa Weihnachten Gehören",
-            "Endlich",
-            "Eigentlich Jahr",
-            "Schlafen Weg Gefährlich",
-            "Wagen Geschichte",
-            "Eigentlich Mädchen",
-            "Verstehen Minutenmir",
-            "bin lesen",
-            "Erschrecken Stück",
-            "Schreiben",
-            "Weihnachten Müde",
-            "zum Versteck"
-          ],
-          "pdf_start_index": 154,
-          "pdf_end_index": 161,
-          "citation_pages": "400-399",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Geburtstag",
-          "authors": [
-            "Tür Geburtstag",
-            "Rennen See",
-            "Weihnachten 167",
-            "Schule",
-            "Bin kochen",
-            "Geschichte",
-            "Teller Wald",
-            "Tisch",
-            "Langsam",
-            "Minutenmir",
-            "Verstecken",
-            "Wasser",
-            "dir Geschichte Nah-\n",
-            "Opa Geburtstag",
-            "Schule Draußen",
-            "Weihnachten Stunde",
-            "von Tante-\nessen von Weihnachten Antworten Erschrecken"
-          ],
-          "pdf_start_index": 162,
-          "pdf_end_index": 390,
-          "citation_pages": "400-395",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 5.856962469999871,
+      "chapters": [],
+      "elapsed_seconds": 4.794787161000016,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -342,7 +247,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 3.055842541041784,
+      "elapsed_seconds": 3.297182011999894,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -416,7 +321,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 3.3839180410141125,
+      "elapsed_seconds": 3.6605362230002356,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
@@ -425,177 +330,14 @@
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
-      "chapters": [
-        {
-          "title": "Weihnachten",
-          "authors": [
-            "Schreiben",
-            "dir vielleicht",
-            "Ding",
-            "Polizei Uhr Vielleicht",
-            "Milch",
-            "Mann",
-            "Opa Verlieren Nase",
-            "Gott",
-            "Nimmt Erschrecken",
-            "Hoch Erschrecken Opa",
-            "Schicken Weihnachten",
-            "Geschichte"
-          ],
-          "pdf_start_index": 61,
-          "pdf_end_index": 61,
-          "citation_pages": "391-392",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Erschrecken",
-          "authors": [
-            "Jung Weihnachten Weihnachten",
-            "Hängen",
-            "schreiben",
-            "Tisch Einigen",
-            "Schreiben",
-            "Sprechen Woche",
-            "schlagen Affe",
-            "Weihnachten Vielleicht dem Gestern",
-            "Dem Haare"
-          ],
-          "pdf_start_index": 62,
-          "pdf_end_index": 153,
-          "citation_pages": "393-394",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Weihnachten",
-          "authors": [
-            "Opa Weihnachten Gehören",
-            "Endlich",
-            "Eigentlich Jahr",
-            "Schlafen Weg Gefährlich",
-            "Wagen Geschichte",
-            "Eigentlich Mädchen",
-            "Verstehen Minutenmir",
-            "bin lesen",
-            "Erschrecken Stück",
-            "Schreiben",
-            "Weihnachten Müde",
-            "zum Versteck"
-          ],
-          "pdf_start_index": 154,
-          "pdf_end_index": 161,
-          "citation_pages": "395-394",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Geburtstag",
-          "authors": [
-            "Tür Geburtstag",
-            "Rennen See",
-            "Weihnachten 167",
-            "Schule",
-            "Bin kochen",
-            "Geschichte",
-            "Teller Wald",
-            "Tisch",
-            "Langsam",
-            "Minutenmir",
-            "Verstecken",
-            "Wasser",
-            "dir Geschichte Nah-\n",
-            "Opa Geburtstag",
-            "Schule Draußen",
-            "Weihnachten Stunde",
-            "von Tante-\nessen von Weihnachten Antworten Erschrecken"
-          ],
-          "pdf_start_index": 162,
-          "pdf_end_index": 390,
-          "citation_pages": "395-395",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 2.293690917082131,
+      "chapters": [],
+      "elapsed_seconds": 0.2974838350000937,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
-      "chapters": [
-        {
-          "title": "Geburtstag",
-          "authors": [
-            "Vergessen",
-            "Erschrecken",
-            "dem Haus",
-            "Zug Weihnachten Essen",
-            "Woche Oma\nEigentlich da Junge",
-            "Ball Tag Geburtstag",
-            "Geschichte",
-            "Land Geschichte Gefährlich",
-            "Früh",
-            "Versuchen Erschrecken schreiben",
-            "schlagen bin",
-            "Weihnachten Minutenmir"
-          ],
-          "pdf_start_index": 63,
-          "pdf_end_index": 153,
-          "citation_pages": "395-390",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Weihnachten",
-          "authors": [
-            "Opa Weihnachten Gehören",
-            "Endlich",
-            "Eigentlich Jahr",
-            "Schlafen Weg Gefährlich",
-            "Wagen Geschichte",
-            "Eigentlich Mädchen",
-            "Verstehen Minutenmir",
-            "bin lesen",
-            "Erschrecken Stück",
-            "Schreiben",
-            "Weihnachten Müde",
-            "zum Versteck"
-          ],
-          "pdf_start_index": 154,
-          "pdf_end_index": 155,
-          "citation_pages": "391-392",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Erschrecken",
-          "authors": [
-            "Leben",
-            "Ding",
-            "Früher-",
-            "Haus",
-            "Geburtstag",
-            "Boden",
-            "Tür Klein",
-            "Schnee Tür\ndas",
-            "Weihnachten Tier",
-            "Herr"
-          ],
-          "pdf_start_index": 156,
-          "pdf_end_index": 390,
-          "citation_pages": "393-395",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 6.058811584021896,
-      "demand_at_run": 1
+      "chapters": [],
+      "elapsed_seconds": 0.28661381499978233,
+      "demand_at_run": 0
     },
     "qwen3.6-35b-a3b": {
       "chapters": [],

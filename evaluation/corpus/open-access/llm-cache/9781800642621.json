@@ -776,7 +776,1160 @@
       "chapters": [],
       "elapsed_seconds": 68.52509961700025,
       "demand_at_run": 0
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "One Earth, Many Futures, No Destination",
+          "authors": [
+            "Mike Hulme"
+          ],
+          "pdf_start_index": 73,
+          "pdf_end_index": 81,
+          "citation_pages": "3-12",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Efficiency to Resilience: Systemic Change towards Sustainability after COVID-19 Pandemic",
+          "authors": [
+            "COVID-19",
+            "M. Halme",
+            "E. Furman",
+            "E.-L. Apajalahti",
+            "J. J. K. Jaakkola",
+            "J. Lyytimäki",
+            "M. Mönkkönen",
+            "A. O. Salonen",
+            "K. Siivonen",
+            "T. Toivonen",
+            "A.Tolvanen"
+          ],
+          "pdf_start_index": 83,
+          "pdf_end_index": 94,
+          "citation_pages": "13-24",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On Climate Change Ontologies and the Spirit(s) of Oil",
+          "authors": [
+            "Spirit(s",
+            "Sian Sullivan"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 106,
+          "citation_pages": "25-38",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Why Net Zero Policies Do More Harm than Good",
+          "authors": [
+            "James G. Dyke",
+            "Wolfgang Knorr",
+            "Robert Watson"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 121,
+          "citation_pages": "39-52",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Carbon Bootprint of the US Military and Prospects for a Safer Climate",
+          "authors": [
+            "The Carbon Bootprint",
+            "Patrick Bigger",
+            "Cara Kennelly",
+            "Oliver Belcher",
+            "Ben Neimark"
+          ],
+          "pdf_start_index": 123,
+          "pdf_end_index": 131,
+          "citation_pages": "53-62",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Migration Is about People, Not Numbers",
+          "authors": [
+            "G. Bettini",
+            "S. L. Nash",
+            "I. Boas",
+            "C. Farbotko",
+            "B. Tripathy Furlong",
+            "K. van der Geest",
+            "S. Lietaer",
+            "M. Hulme"
+          ],
+          "pdf_start_index": 133,
+          "pdf_end_index": 151,
+          "citation_pages": "63-82",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "We’ll Always Have Paris",
+          "authors": [
+            "Mike Hannis"
+          ],
+          "pdf_start_index": 153,
+          "pdf_end_index": 166,
+          "citation_pages": "83-96",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Atmospheric Carbon Commons in Transition",
+          "authors": [
+            "Bruce Lankford\nOriginally"
+          ],
+          "pdf_start_index": 167,
+          "pdf_end_index": 180,
+          "citation_pages": "97-112",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Mobilisation of Extractivism: The Social and Political Influence of the Fossil Fuel Industry",
+          "authors": [
+            "Christopher Wright",
+            "Daniel Nyberg"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 195,
+          "citation_pages": "113-126",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "End the ‘Green’ Delusions: Industrial-Scale Renewable Energy is Fossil Fuel+",
+          "authors": [
+            "Alexander Dunlap"
+          ],
+          "pdf_start_index": 197,
+          "pdf_end_index": 208,
+          "citation_pages": "127-138",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "I’m Sian, and I’m a Fossil Fuel Addict: On Paradox, Disavowal and (Im)Possibility in Changing Climate Change",
+          "authors": [
+            "Sian Sullivan"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 226,
+          "citation_pages": "139-158",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gendered Climate Change-Induced Human-Wildlife Conflicts (HWC) amidst COVID-19 in the Erongo Region, Namibia",
+          "authors": [
+            "Selma Lendelvo",
+            "Romie Nghitevelekwa"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 242,
+          "citation_pages": "159-172",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Environmental Change in Namibia: Land-Use Impacts and Climate Change as Revealed by Repeat Photography",
+          "authors": [
+            "Rick Rohde",
+            "M. Timm Hoffman",
+            "Sian Sullivan"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 257,
+          "citation_pages": "173-188",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On Climate and the Risk of Onto-Epistemological Chainsaw Massacres: A Study on Climate Change and Indigenous People in Namibia Revisited",
+          "authors": [
+            "Charapa Consult"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 275,
+          "citation_pages": "189-208",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Towards a Fossil Fuel Treaty",
+          "authors": [
+            "Peter Newell"
+          ],
+          "pdf_start_index": 279,
+          "pdf_end_index": 286,
+          "citation_pages": "209-216",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "How Governments React to Climate Change: An Interview with the Political Theorists Joel Wainwright and Geoff Mann",
+          "authors": [
+            "Geoff Mann \nJoel Wainwright",
+            "Geoff Mann",
+            "Isaac Chotiner",
+            "Leviathan",
+            "Joel \nWainwright",
+            "Geoff \nMann"
+          ],
+          "pdf_start_index": 287,
+          "pdf_end_index": 293,
+          "citation_pages": "217-224",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inside Out COPs: Turning Climate Negotiations Upside Down",
+          "authors": [
+            "Saleemul Huq",
+            "Mizan R. Khan"
+          ],
+          "pdf_start_index": 295,
+          "pdf_end_index": 300,
+          "citation_pages": "225-230",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Local Net Zero Emissions Plans: How Can National Governments Help?",
+          "authors": [
+            "Ian Bailey"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 311,
+          "citation_pages": "231-242",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reversing the Failures of Climate Governance: Radical Action for Climate Justice",
+          "authors": [
+            "Failures",
+            "Paul G. Harris"
+          ],
+          "pdf_start_index": 313,
+          "pdf_end_index": 322,
+          "citation_pages": "243-254",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Finance and the Promise of Fake Solutions to Climate Change",
+          "authors": [],
+          "pdf_start_index": 325,
+          "pdf_end_index": 346,
+          "citation_pages": "255-276",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Promise and Peril of Financialised Climate Governance",
+          "authors": [
+            "Promise",
+            "Peril",
+            "Rami Kaplan",
+            "David Levy"
+          ],
+          "pdf_start_index": 347,
+          "pdf_end_index": 358,
+          "citation_pages": "277-290",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "What Is to Be Done to Save the Planet?",
+          "authors": [
+            "Peter North"
+          ],
+          "pdf_start_index": 361,
+          "pdf_end_index": 371,
+          "citation_pages": "291-302",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Politics between Conflict and Complexity",
+          "authors": [],
+          "pdf_start_index": 373,
+          "pdf_end_index": 382,
+          "citation_pages": "303-312",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sustainable Foodscapes: Hybrid Food Networks Creating Food Change",
+          "authors": [
+            "Rebecca Sandover"
+          ],
+          "pdf_start_index": 383,
+          "pdf_end_index": 392,
+          "citation_pages": "313-322",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Telling the ‘Truth’: Communication of the Climate Protest Agenda in the UK Legacy Media",
+          "authors": [
+            "Sharon Gardham"
+          ],
+          "pdf_start_index": 393,
+          "pdf_end_index": 404,
+          "citation_pages": "323-334",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Justice Advocacy: Strategic Choices for Glasgow and Beyond",
+          "authors": [
+            "Advocacy",
+            "Glasgow",
+            "Beyond\nPatrick Bond",
+            "James \nHansen"
+          ],
+          "pdf_start_index": 405,
+          "pdf_end_index": 422,
+          "citation_pages": "335-352",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Public Engagement with Radical Climate Change Action",
+          "authors": [
+            "Lorraine Whitmarsh"
+          ],
+          "pdf_start_index": 423,
+          "pdf_end_index": 435,
+          "citation_pages": "353-366",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Five Questions whilst Walking: For Those that Decided to Participate in Agir Pour le Vivant",
+          "authors": [
+            "Fremeaux",
+            "Jay Jordan",
+            "Agir Pour"
+          ],
+          "pdf_start_index": 437,
+          "pdf_end_index": 450,
+          "citation_pages": "367-380",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 50.239772817000016,
+      "demand_at_run": 0
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "One Earth, Many Futures, No Destination",
+          "authors": [
+            "Mike Hulme"
+          ],
+          "pdf_start_index": 73,
+          "pdf_end_index": 81,
+          "citation_pages": "3-12",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Efficiency to Resilience: Systemic Change towards Sustainability after COVID-19 Pandemic",
+          "authors": [
+            "COVID-19",
+            "M. Halme",
+            "E. Furman",
+            "E.-L. Apajalahti",
+            "J. J. K. Jaakkola",
+            "J. Lyytimäki",
+            "M. Mönkkönen",
+            "A. O. Salonen",
+            "K. Siivonen",
+            "T. Toivonen",
+            "A.Tolvanen"
+          ],
+          "pdf_start_index": 83,
+          "pdf_end_index": 94,
+          "citation_pages": "13-24",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On Climate Change Ontologies and the Spirit(s) of Oil",
+          "authors": [
+            "Spirit(s",
+            "Sian Sullivan"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 106,
+          "citation_pages": "25-38",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Why Net Zero Policies Do More Harm than Good",
+          "authors": [
+            "James G. Dyke",
+            "Wolfgang Knorr",
+            "Robert Watson"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 121,
+          "citation_pages": "39-52",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Carbon Bootprint of the US Military and Prospects for a Safer Climate",
+          "authors": [
+            "The Carbon Bootprint",
+            "Patrick Bigger",
+            "Cara Kennelly",
+            "Oliver Belcher",
+            "Ben Neimark"
+          ],
+          "pdf_start_index": 123,
+          "pdf_end_index": 131,
+          "citation_pages": "53-62",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Migration Is about People, Not Numbers",
+          "authors": [
+            "G. Bettini",
+            "S. L. Nash",
+            "I. Boas",
+            "C. Farbotko",
+            "B. Tripathy Furlong",
+            "K. van der Geest",
+            "S. Lietaer",
+            "M. Hulme"
+          ],
+          "pdf_start_index": 133,
+          "pdf_end_index": 151,
+          "citation_pages": "63-82",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "We’ll Always Have Paris",
+          "authors": [
+            "Mike Hannis"
+          ],
+          "pdf_start_index": 153,
+          "pdf_end_index": 166,
+          "citation_pages": "83-96",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Atmospheric Carbon Commons in Transition",
+          "authors": [
+            "Bruce Lankford\nOriginally"
+          ],
+          "pdf_start_index": 167,
+          "pdf_end_index": 180,
+          "citation_pages": "97-112",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Mobilisation of Extractivism: The Social and Political Influence of the Fossil Fuel Industry",
+          "authors": [
+            "Christopher Wright",
+            "Daniel Nyberg"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 195,
+          "citation_pages": "113-126",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "End the ‘Green’ Delusions: Industrial-Scale Renewable Energy is Fossil Fuel+",
+          "authors": [
+            "Alexander Dunlap"
+          ],
+          "pdf_start_index": 197,
+          "pdf_end_index": 208,
+          "citation_pages": "127-138",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "I’m Sian, and I’m a Fossil Fuel Addict: On Paradox, Disavowal and (Im)Possibility in Changing Climate Change",
+          "authors": [
+            "Sian Sullivan"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 226,
+          "citation_pages": "139-158",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gendered Climate Change-Induced Human-Wildlife Conflicts (HWC) amidst COVID-19 in the Erongo Region, Namibia",
+          "authors": [
+            "Selma Lendelvo",
+            "Romie Nghitevelekwa"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 242,
+          "citation_pages": "159-172",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Environmental Change in Namibia: Land-Use Impacts and Climate Change as Revealed by Repeat Photography",
+          "authors": [
+            "Rick Rohde",
+            "M. Timm Hoffman",
+            "Sian Sullivan"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 257,
+          "citation_pages": "173-188",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On Climate and the Risk of Onto-Epistemological Chainsaw Massacres: A Study on Climate Change and Indigenous People in Namibia Revisited",
+          "authors": [
+            "Charapa Consult"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 275,
+          "citation_pages": "189-208",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Towards a Fossil Fuel Treaty",
+          "authors": [
+            "Peter Newell"
+          ],
+          "pdf_start_index": 279,
+          "pdf_end_index": 286,
+          "citation_pages": "209-216",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "How Governments React to Climate Change: An Interview with the Political Theorists Joel Wainwright and Geoff Mann",
+          "authors": [
+            "Geoff Mann \nJoel Wainwright",
+            "Geoff Mann",
+            "Isaac Chotiner",
+            "Leviathan",
+            "Joel \nWainwright",
+            "Geoff \nMann"
+          ],
+          "pdf_start_index": 287,
+          "pdf_end_index": 293,
+          "citation_pages": "217-224",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inside Out COPs: Turning Climate Negotiations Upside Down",
+          "authors": [
+            "Saleemul Huq",
+            "Mizan R. Khan"
+          ],
+          "pdf_start_index": 295,
+          "pdf_end_index": 300,
+          "citation_pages": "225-230",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Local Net Zero Emissions Plans: How Can National Governments Help?",
+          "authors": [
+            "Ian Bailey"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 311,
+          "citation_pages": "231-242",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reversing the Failures of Climate Governance: Radical Action for Climate Justice",
+          "authors": [
+            "Failures",
+            "Paul G. Harris"
+          ],
+          "pdf_start_index": 313,
+          "pdf_end_index": 322,
+          "citation_pages": "243-254",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Finance and the Promise of Fake Solutions to Climate Change",
+          "authors": [],
+          "pdf_start_index": 325,
+          "pdf_end_index": 346,
+          "citation_pages": "255-276",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Promise and Peril of Financialised Climate Governance",
+          "authors": [
+            "Promise",
+            "Peril",
+            "Rami Kaplan",
+            "David Levy"
+          ],
+          "pdf_start_index": 347,
+          "pdf_end_index": 358,
+          "citation_pages": "277-290",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "What Is to Be Done to Save the Planet?",
+          "authors": [
+            "Peter North"
+          ],
+          "pdf_start_index": 361,
+          "pdf_end_index": 371,
+          "citation_pages": "291-302",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Politics between Conflict and Complexity",
+          "authors": [],
+          "pdf_start_index": 373,
+          "pdf_end_index": 382,
+          "citation_pages": "303-312",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sustainable Foodscapes: Hybrid Food Networks Creating Food Change",
+          "authors": [
+            "Rebecca Sandover"
+          ],
+          "pdf_start_index": 383,
+          "pdf_end_index": 392,
+          "citation_pages": "313-322",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Telling the ‘Truth’: Communication of the Climate Protest Agenda in the UK Legacy Media",
+          "authors": [
+            "Sharon Gardham"
+          ],
+          "pdf_start_index": 393,
+          "pdf_end_index": 404,
+          "citation_pages": "323-334",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Justice Advocacy: Strategic Choices for Glasgow and Beyond",
+          "authors": [
+            "Advocacy",
+            "Glasgow",
+            "Beyond\nPatrick Bond",
+            "James \nHansen"
+          ],
+          "pdf_start_index": 405,
+          "pdf_end_index": 422,
+          "citation_pages": "335-352",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Public Engagement with Radical Climate Change Action",
+          "authors": [
+            "Lorraine Whitmarsh"
+          ],
+          "pdf_start_index": 423,
+          "pdf_end_index": 435,
+          "citation_pages": "353-366",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Five Questions whilst Walking: For Those that Decided to Participate in Agir Pour le Vivant",
+          "authors": [
+            "Fremeaux",
+            "Jay Jordan",
+            "Agir Pour"
+          ],
+          "pdf_start_index": 437,
+          "pdf_end_index": 450,
+          "citation_pages": "367-380",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 48.9342842059998,
+      "demand_at_run": 0
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [
+        {
+          "title": "One Earth, Many Futures, No Destination",
+          "authors": [
+            "Mike Hulme"
+          ],
+          "pdf_start_index": 73,
+          "pdf_end_index": 81,
+          "citation_pages": "3-12",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Efficiency to Resilience: Systemic Change towards Sustainability after COVID-19 Pandemic",
+          "authors": [
+            "COVID-19",
+            "M. Halme",
+            "E. Furman",
+            "E.-L. Apajalahti",
+            "J. J. K. Jaakkola",
+            "J. Lyytimäki",
+            "M. Mönkkönen",
+            "A. O. Salonen",
+            "K. Siivonen",
+            "T. Toivonen",
+            "A.Tolvanen"
+          ],
+          "pdf_start_index": 83,
+          "pdf_end_index": 94,
+          "citation_pages": "13-24",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On Climate Change Ontologies and the Spirit(s) of Oil",
+          "authors": [
+            "Spirit(s",
+            "Sian Sullivan"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 106,
+          "citation_pages": "25-38",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Why Net Zero Policies Do More Harm than Good",
+          "authors": [
+            "James G. Dyke",
+            "Wolfgang Knorr",
+            "Robert Watson"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 121,
+          "citation_pages": "39-52",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Carbon Bootprint of the US Military and Prospects for a Safer Climate",
+          "authors": [
+            "The Carbon Bootprint",
+            "Patrick Bigger",
+            "Cara Kennelly",
+            "Oliver Belcher",
+            "Ben Neimark"
+          ],
+          "pdf_start_index": 123,
+          "pdf_end_index": 131,
+          "citation_pages": "53-62",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Migration Is about People, Not Numbers",
+          "authors": [
+            "G. Bettini",
+            "S. L. Nash",
+            "I. Boas",
+            "C. Farbotko",
+            "B. Tripathy Furlong",
+            "K. van der Geest",
+            "S. Lietaer",
+            "M. Hulme"
+          ],
+          "pdf_start_index": 133,
+          "pdf_end_index": 151,
+          "citation_pages": "63-82",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "We’ll Always Have Paris",
+          "authors": [
+            "Mike Hannis"
+          ],
+          "pdf_start_index": 153,
+          "pdf_end_index": 166,
+          "citation_pages": "83-96",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Atmospheric Carbon Commons in Transition",
+          "authors": [
+            "Bruce Lankford\nOriginally"
+          ],
+          "pdf_start_index": 167,
+          "pdf_end_index": 180,
+          "citation_pages": "97-112",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Mobilisation of Extractivism: The Social and Political Influence of the Fossil Fuel Industry",
+          "authors": [
+            "Christopher Wright",
+            "Daniel Nyberg"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 195,
+          "citation_pages": "113-126",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "End the ‘Green’ Delusions: Industrial-Scale Renewable Energy is Fossil Fuel+",
+          "authors": [
+            "Alexander Dunlap"
+          ],
+          "pdf_start_index": 197,
+          "pdf_end_index": 208,
+          "citation_pages": "127-138",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "I’m Sian, and I’m a Fossil Fuel Addict: On Paradox, Disavowal and (Im)Possibility in Changing Climate Change",
+          "authors": [
+            "Sian Sullivan"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 226,
+          "citation_pages": "139-158",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gendered Climate Change-Induced Human-Wildlife Conflicts (HWC) amidst COVID-19 in the Erongo Region, Namibia",
+          "authors": [
+            "Selma Lendelvo",
+            "Romie Nghitevelekwa"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 242,
+          "citation_pages": "159-172",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Environmental Change in Namibia: Land-Use Impacts and Climate Change as Revealed by Repeat Photography",
+          "authors": [
+            "Rick Rohde",
+            "M. Timm Hoffman",
+            "Sian Sullivan"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 257,
+          "citation_pages": "173-188",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On Climate and the Risk of Onto-Epistemological Chainsaw Massacres: A Study on Climate Change and Indigenous People in Namibia Revisited",
+          "authors": [
+            "Charapa Consult"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 275,
+          "citation_pages": "189-208",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Towards a Fossil Fuel Treaty",
+          "authors": [
+            "Peter Newell"
+          ],
+          "pdf_start_index": 279,
+          "pdf_end_index": 286,
+          "citation_pages": "209-216",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "How Governments React to Climate Change: An Interview with the Political Theorists Joel Wainwright and Geoff Mann",
+          "authors": [
+            "Geoff Mann \nJoel Wainwright",
+            "Geoff Mann",
+            "Isaac Chotiner",
+            "Leviathan",
+            "Joel \nWainwright",
+            "Geoff \nMann"
+          ],
+          "pdf_start_index": 287,
+          "pdf_end_index": 293,
+          "citation_pages": "217-224",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inside Out COPs: Turning Climate Negotiations Upside Down",
+          "authors": [
+            "Saleemul Huq",
+            "Mizan R. Khan"
+          ],
+          "pdf_start_index": 295,
+          "pdf_end_index": 300,
+          "citation_pages": "225-230",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Local Net Zero Emissions Plans: How Can National Governments Help?",
+          "authors": [
+            "Ian Bailey"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 311,
+          "citation_pages": "231-242",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reversing the Failures of Climate Governance: Radical Action for Climate Justice",
+          "authors": [
+            "Failures",
+            "Paul G. Harris"
+          ],
+          "pdf_start_index": 313,
+          "pdf_end_index": 322,
+          "citation_pages": "243-254",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Finance and the Promise of Fake Solutions to Climate Change",
+          "authors": [],
+          "pdf_start_index": 325,
+          "pdf_end_index": 346,
+          "citation_pages": "255-276",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Promise and Peril of Financialised Climate Governance",
+          "authors": [
+            "Promise",
+            "Peril",
+            "Rami Kaplan",
+            "David Levy"
+          ],
+          "pdf_start_index": 347,
+          "pdf_end_index": 358,
+          "citation_pages": "277-290",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "What Is to Be Done to Save the Planet?",
+          "authors": [
+            "Peter North"
+          ],
+          "pdf_start_index": 361,
+          "pdf_end_index": 371,
+          "citation_pages": "291-302",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Politics between Conflict and Complexity",
+          "authors": [],
+          "pdf_start_index": 373,
+          "pdf_end_index": 382,
+          "citation_pages": "303-312",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sustainable Foodscapes: Hybrid Food Networks Creating Food Change",
+          "authors": [
+            "Rebecca Sandover"
+          ],
+          "pdf_start_index": 383,
+          "pdf_end_index": 392,
+          "citation_pages": "313-322",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Telling the ‘Truth’: Communication of the Climate Protest Agenda in the UK Legacy Media",
+          "authors": [
+            "Sharon Gardham"
+          ],
+          "pdf_start_index": 393,
+          "pdf_end_index": 404,
+          "citation_pages": "323-334",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Justice Advocacy: Strategic Choices for Glasgow and Beyond",
+          "authors": [
+            "Advocacy",
+            "Glasgow",
+            "Beyond\nPatrick Bond",
+            "James \nHansen"
+          ],
+          "pdf_start_index": 405,
+          "pdf_end_index": 422,
+          "citation_pages": "335-352",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Public Engagement with Radical Climate Change Action",
+          "authors": [
+            "Lorraine Whitmarsh"
+          ],
+          "pdf_start_index": 423,
+          "pdf_end_index": 435,
+          "citation_pages": "353-366",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Five Questions whilst Walking: For Those that Decided to Participate in Agir Pour le Vivant",
+          "authors": [
+            "Fremeaux",
+            "Jay Jordan",
+            "Agir Pour"
+          ],
+          "pdf_start_index": 437,
+          "pdf_end_index": 450,
+          "citation_pages": "367-380",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 21.1769412259996,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 0.17459837300020808,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 0.1694469429999117,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-11T05:00:10.140041+00:00"
+  "generated_at": "2026-08-12T05:35:35.379741+00:00"
 }

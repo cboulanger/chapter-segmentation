@@ -500,7 +500,518 @@
       ],
       "elapsed_seconds": 52.66304398400007,
       "demand_at_run": 0
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "German ab initio in Languages for All programmes: student profiles and course design",
+          "authors": [
+            "Sabina Barczyk-Wozniak"
+          ],
+          "pdf_start_index": 48,
+          "pdf_end_index": 62,
+          "citation_pages": "19-33",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Preparing Generation Z students for a world of volatility, uncertainty, complexity and ambiguity (VUCA) through language learning",
+          "authors": [
+            "Kasia Łanucha",
+            "Alexander Bleistein"
+          ],
+          "pdf_start_index": 63,
+          "pdf_end_index": 74,
+          "citation_pages": "34-48",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reading literature in the ab initio classroom",
+          "authors": [
+            "Daniela Dora",
+            "Katharina Forster \nIntroduction\nLeading"
+          ],
+          "pdf_start_index": 78,
+          "pdf_end_index": 91,
+          "citation_pages": "49-62",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Using music in ab initio courses",
+          "authors": [
+            "Kirsten Mericka\nIntroduction"
+          ],
+          "pdf_start_index": 92,
+          "pdf_end_index": 109,
+          "citation_pages": "63-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Grammar teaching and learning in the German ab initio classroom",
+          "authors": [
+            "Birgit Smith"
+          ],
+          "pdf_start_index": 110,
+          "pdf_end_index": 123,
+          "citation_pages": "81-94",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Selecting the right resources for beginners’ level: a textbook evaluation",
+          "authors": [
+            "Christian Mossmann\nIntroduction\nSelecting"
+          ],
+          "pdf_start_index": 124,
+          "pdf_end_index": 139,
+          "citation_pages": "95-110",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Intercultural awareness in the teaching and learning of German: the case of ab initio",
+          "authors": [
+            "Dagmar Paulus\nIntroduction"
+          ],
+          "pdf_start_index": 140,
+          "pdf_end_index": 154,
+          "citation_pages": "111-128",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The ‘flipped classroom’ approach in the German beginner context",
+          "authors": [
+            "Mandy Poetzsch"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 170,
+          "citation_pages": "129-141",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "New approaches to feedback in ab initio language classes: a case study",
+          "authors": [
+            "Ruth R. Winter"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 181,
+          "citation_pages": "142-152",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Two for the price of one: using a cognitive theory of metaphors for vocabulary teaching and learning",
+          "authors": [
+            "Silke Mentchen",
+            "n.p."
+          ],
+          "pdf_start_index": 182,
+          "pdf_end_index": 195,
+          "citation_pages": "153-166",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Effective vocabulary learning apps: what should they look like? An evaluation with a particular view to German language acquisition",
+          "authors": [
+            "Annemarie Künzl-Snodgrass",
+            "Theresa Lentfort",
+            "Maren de Vincent-Humphreys\nIntroduction\n"
+          ],
+          "pdf_start_index": 196,
+          "pdf_end_index": 208,
+          "citation_pages": "167-182",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Developing learner autonomy in German ab initio programmes",
+          "authors": [
+            "Thomas Jochum-Critchley"
+          ],
+          "pdf_start_index": 212,
+          "pdf_end_index": 224,
+          "citation_pages": "183-195",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Individual differences in ab initio language learning: working with learners’ strengths",
+          "authors": [
+            "Ulrike Bavendiek\nIntroduction\nNot"
+          ],
+          "pdf_start_index": 225,
+          "pdf_end_index": 231,
+          "citation_pages": "196-202",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 14.554613853999967,
+      "demand_at_run": 0
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "German ab initio in Languages for All programmes: student profiles and course design",
+          "authors": [
+            "Sabina Barczyk-Wozniak"
+          ],
+          "pdf_start_index": 48,
+          "pdf_end_index": 62,
+          "citation_pages": "19-33",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Preparing Generation Z students for a world of volatility, uncertainty, complexity and ambiguity (VUCA) through language learning",
+          "authors": [
+            "Kasia Łanucha",
+            "Alexander Bleistein"
+          ],
+          "pdf_start_index": 63,
+          "pdf_end_index": 74,
+          "citation_pages": "34-48",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reading literature in the ab initio classroom",
+          "authors": [
+            "Daniela Dora",
+            "Katharina Forster \nIntroduction\nLeading"
+          ],
+          "pdf_start_index": 78,
+          "pdf_end_index": 91,
+          "citation_pages": "49-62",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Using music in ab initio courses",
+          "authors": [
+            "Kirsten Mericka\nIntroduction"
+          ],
+          "pdf_start_index": 92,
+          "pdf_end_index": 109,
+          "citation_pages": "63-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Grammar teaching and learning in the German ab initio classroom",
+          "authors": [
+            "Birgit Smith"
+          ],
+          "pdf_start_index": 110,
+          "pdf_end_index": 123,
+          "citation_pages": "81-94",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Selecting the right resources for beginners’ level: a textbook evaluation",
+          "authors": [
+            "Christian Mossmann\nIntroduction\nSelecting"
+          ],
+          "pdf_start_index": 124,
+          "pdf_end_index": 139,
+          "citation_pages": "95-110",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Intercultural awareness in the teaching and learning of German: the case of ab initio",
+          "authors": [
+            "Dagmar Paulus\nIntroduction"
+          ],
+          "pdf_start_index": 140,
+          "pdf_end_index": 154,
+          "citation_pages": "111-128",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The ‘flipped classroom’ approach in the German beginner context",
+          "authors": [
+            "Mandy Poetzsch"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 170,
+          "citation_pages": "129-141",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "New approaches to feedback in ab initio language classes: a case study",
+          "authors": [
+            "Ruth R. Winter"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 181,
+          "citation_pages": "142-152",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Two for the price of one: using a cognitive theory of metaphors for vocabulary teaching and learning",
+          "authors": [
+            "Silke Mentchen",
+            "n.p."
+          ],
+          "pdf_start_index": 182,
+          "pdf_end_index": 195,
+          "citation_pages": "153-166",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Effective vocabulary learning apps: what should they look like? An evaluation with a particular view to German language acquisition",
+          "authors": [
+            "Annemarie Künzl-Snodgrass",
+            "Theresa Lentfort",
+            "Maren de Vincent-Humphreys\nIntroduction\n"
+          ],
+          "pdf_start_index": 196,
+          "pdf_end_index": 208,
+          "citation_pages": "167-182",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Developing learner autonomy in German ab initio programmes",
+          "authors": [
+            "Thomas Jochum-Critchley"
+          ],
+          "pdf_start_index": 212,
+          "pdf_end_index": 224,
+          "citation_pages": "183-195",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Individual differences in ab initio language learning: working with learners’ strengths",
+          "authors": [
+            "Ulrike Bavendiek\nIntroduction\nNot"
+          ],
+          "pdf_start_index": 225,
+          "pdf_end_index": 231,
+          "citation_pages": "196-202",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 12.900941330000023,
+      "demand_at_run": 0
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [
+        {
+          "title": "German ab initio in Languages for All programmes: student profiles and course design",
+          "authors": [
+            "Sabina Barczyk-Wozniak"
+          ],
+          "pdf_start_index": 48,
+          "pdf_end_index": 62,
+          "citation_pages": "19-33",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Preparing Generation Z students for a world of volatility, uncertainty, complexity and ambiguity (VUCA) through language learning",
+          "authors": [
+            "Kasia Łanucha",
+            "Alexander Bleistein"
+          ],
+          "pdf_start_index": 63,
+          "pdf_end_index": 74,
+          "citation_pages": "34-48",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reading literature in the ab initio classroom",
+          "authors": [
+            "Daniela Dora",
+            "Katharina Forster \nIntroduction\nLeading"
+          ],
+          "pdf_start_index": 78,
+          "pdf_end_index": 91,
+          "citation_pages": "49-62",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Using music in ab initio courses",
+          "authors": [
+            "Kirsten Mericka\nIntroduction"
+          ],
+          "pdf_start_index": 92,
+          "pdf_end_index": 109,
+          "citation_pages": "63-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Grammar teaching and learning in the German ab initio classroom",
+          "authors": [
+            "Birgit Smith"
+          ],
+          "pdf_start_index": 110,
+          "pdf_end_index": 123,
+          "citation_pages": "81-94",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Selecting the right resources for beginners’ level: a textbook evaluation",
+          "authors": [
+            "Christian Mossmann\nIntroduction\nSelecting"
+          ],
+          "pdf_start_index": 124,
+          "pdf_end_index": 139,
+          "citation_pages": "95-110",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Intercultural awareness in the teaching and learning of German: the case of ab initio",
+          "authors": [
+            "Dagmar Paulus\nIntroduction"
+          ],
+          "pdf_start_index": 140,
+          "pdf_end_index": 154,
+          "citation_pages": "111-128",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The ‘flipped classroom’ approach in the German beginner context",
+          "authors": [
+            "Mandy Poetzsch"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 170,
+          "citation_pages": "129-141",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "New approaches to feedback in ab initio language classes: a case study",
+          "authors": [
+            "Ruth R. Winter"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 181,
+          "citation_pages": "142-152",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Two for the price of one: using a cognitive theory of metaphors for vocabulary teaching and learning",
+          "authors": [
+            "Silke Mentchen",
+            "n.p."
+          ],
+          "pdf_start_index": 182,
+          "pdf_end_index": 195,
+          "citation_pages": "153-166",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Effective vocabulary learning apps: what should they look like? An evaluation with a particular view to German language acquisition",
+          "authors": [
+            "Annemarie Künzl-Snodgrass",
+            "Theresa Lentfort",
+            "Maren de Vincent-Humphreys\nIntroduction\n"
+          ],
+          "pdf_start_index": 196,
+          "pdf_end_index": 208,
+          "citation_pages": "167-182",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Developing learner autonomy in German ab initio programmes",
+          "authors": [
+            "Thomas Jochum-Critchley"
+          ],
+          "pdf_start_index": 212,
+          "pdf_end_index": 224,
+          "citation_pages": "183-195",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Individual differences in ab initio language learning: working with learners’ strengths",
+          "authors": [
+            "Ulrike Bavendiek\nIntroduction\nNot"
+          ],
+          "pdf_start_index": 225,
+          "pdf_end_index": 231,
+          "citation_pages": "196-202",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 5.690346670000054,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 0.15312406200018813,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 0.14877360700029385,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-11T04:47:42.910262+00:00"
+  "generated_at": "2026-08-12T05:35:33.186309+00:00"
 }

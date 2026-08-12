@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T05:17:59.046458+00:00",
+  "generated_at": "2026-08-12T05:35:30.505937+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -82,7 +82,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 3.9517493719999948,
+      "elapsed_seconds": 1.7980888079999886,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -110,7 +110,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 1.8935249999631196,
+      "elapsed_seconds": 2.0231165539998983,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -138,7 +138,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 1.1109977079322562,
+      "elapsed_seconds": 1.2608684110000468,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
@@ -148,13 +148,13 @@
     },
     "qwen3-coder-next": {
       "chapters": [],
-      "elapsed_seconds": 0.2216002920176834,
+      "elapsed_seconds": 0.1556993799999873,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
       "chapters": [],
-      "elapsed_seconds": 0.6405541249550879,
-      "demand_at_run": 1
+      "elapsed_seconds": 0.15023336500007645,
+      "demand_at_run": 0
     },
     "qwen3.6-35b-a3b": {
       "chapters": [],

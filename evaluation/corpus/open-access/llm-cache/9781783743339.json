@@ -25,7 +25,32 @@
       "chapters": [],
       "elapsed_seconds": 38.27456466900003,
       "demand_at_run": 0
+    },
+    "glm-4.7": {
+      "chapters": [],
+      "elapsed_seconds": 2.749746207000044,
+      "demand_at_run": 0
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 8.3564021279999,
+      "demand_at_run": 0
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.15730710800016823,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 0.16097184799991737,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 0.15605396199998722,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-11T05:10:57.973231+00:00"
+  "generated_at": "2026-08-12T05:35:37.322223+00:00"
 }

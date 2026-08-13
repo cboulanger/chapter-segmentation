@@ -35,6 +35,16 @@ LLM strategy was **not** re-run (it costs real KISSKI budget) -- its
 numbers below are carried over from before the corpus grew and are called
 out as stale where they appear.
 
+**2026-08-13 update.** `copyrighted-scans/` has grown again, from 13 to
+**32**, via a targeted acquisition pass following the "prefer scans,
+unnumbered-first-chapter books, weak title/body contrast" guidance in this
+directory's `CLAUDE.md`. Only the layout classifier pilot has been re-run
+against this larger corpus so far -- see "Follow-up: re-run over the grown
+copyrighted-scans corpus (32 books)" in the pilot's section below. The
+other sections on this page (pure-heuristic, strategy-pipeline, diverse
+real-library set, per-strategy standalone) still describe the 57/13 split
+and have not been re-verified against the new scans books.
+
 ## Pure-heuristic results
 
 From `uv run pytest tests/test_segmentation_accuracy.py -q -s -m integration`
@@ -1248,21 +1258,117 @@ still sits well below the 15% budget at the new default (9.0%), so a
 further `recall_target` increase remains available if the next follow-up
 wants to trade more candidate-page volume for recall.
 
-## LLM-fallback results (archived -- script removed)
+### Follow-up: re-run over the grown copyrighted-scans corpus (32 books)
 
-**Superseded by "Per-strategy standalone results" above, which measures
-what the LLM itself can find rather than whether a merge/fallback path
-fires.** `evaluation/scripts/evaluate_chapter_segmentation_llm_fallback.py`,
-referenced below, no longer exists; kept here only as a historical record
-of `analyze_attachment_with_llm_fallback`'s merged behavior at the time it
-was last run. If that merged pipeline needs dedicated evaluation again, a
-new script would need to be written -- none currently does this.
+`copyrighted-scans/` grew from 13 to 32 books (19 new), targeting exactly
+the hard cases called out above -- scans, weak title/body contrast,
+unnumbered first chapters. Re-running the shipped configuration (17
+features, `recall_target=0.90`) with no other changes, over all 89 books
+now available (57 open-access + 32 scans, up from 70):
 
-With the heuristics above, a full run of that now-deleted script
-(KISSKI-backed preset) reported **identical numbers to the pure-heuristic
-harness, with neither fallback path firing on any book**: TOC extraction
-never triggered because the regex path found a usable listing everywhere,
-and per-entry ambiguity was resolved heuristically by the TOC-order
-constraints before the LLM would be consulted. This run predated the
-layout-mode fallback and OCR route described above, and only covered the 7
-originally-committed books, not the 10 "diverse real-library" books.
+| corpus | `full_recall_fraction` | `avg_candidate_fraction` | avg `chapter_first_recall` |
+| --- | --- | --- | --- |
+| all (89 books) | 57/89 = 64% | 10.0% | 88.3% |
+| open-access (57, unchanged) | 44/57 = 77.2% | 10.0% | 95.3% |
+| copyrighted-scans (32, was 13) | 13/32 = 40.6% | 10.0% | 75.9% |
+
+**Read at face value against the previous 70-book snapshot (67%/9.0%),
+this looks like a regression -- it is not one.** It's a corpus-composition
+effect: the 19 new books were deliberately acquired as the classifier's
+known-hardest case (scans with weak/degenerate title fonts), so folding
+them in shifts the overall average toward a harder mix, not toward a
+worse model. Isolating the original 13 scans books and re-scoring them
+under the new run (more/different training data per LOBO fold, since
+every other book's rows are now part of each fold's training set) shows
+scans performance actually **improved**: 2/13 (15.4%) full-recall passes
+before this corpus growth vs. 4/13 (30.8%) now on the same 13 books, and
+13/32 (40.6%) across the full grown scans set -- consistent with the
+75.9% avg `chapter_first_recall`, up from 66.8% at the previous snapshot.
+Open-access held steady (78.9% -> 77.2%, one book's `chapter_first_recall`
+crossing the 90% tolerance in the other direction due to the shifted
+training mix -- not a targeted regression).
+
+Of the 19 new scans books, 9 pass the per-book full-recall bar outright
+and 10 fail it -- expected, since these were picked specifically to
+stress-test the classifier's weak spots rather than to be easy wins:
+`9783161538315`, `9783166448978`, `9783428038275`, `9783472611097`,
+`9783531120553`, `9783789017483`, `9783830502777`, `9783845271897`, and
+`9788814022272` fail on `chapter_first_recall` (typically 0-77%, well
+under the 90% tolerance); `9780521650939`, `9781841136400`,
+`9781849463812`, `9783406016127`, `9783571092124`, `9783658057022`,
+`9783658076078`, `9783658282103`, and `9783810041449` pass outright with
+no changes to the model or features.
+
+One new book, `9783406016127`, is an outlier worth flagging rather than
+averaging away: it has no `toc` ground truth (`toc_recall=n/a`) and a
+60.9% `candidate_fraction` -- six times the corpus average -- meaning the
+classifier is flagging most of the book as candidate pages. This single
+book adds roughly 0.6 points to the corpus-wide `avg_candidate_fraction`
+on its own; worth a closer look (layout/OCR quality, or a ground-truth
+issue) before it's used to justify any future calibration change.
+
+**Verdict: still NOT MET** (89-book `full_recall_fraction` 64%, 26 points
+short; `avg_candidate_fraction` 10.0%, comfortably inside the 15% budget).
+No code or calibration changed in this follow-up -- it's a pure
+re-evaluation against new ground truth. The new books confirm rather than
+overturn the previous follow-up's read: the context/normalized features
+and `recall_target=0.90` genuinely help on scans in aggregate (avg
+`chapter_first_recall` keeps climbing), but per-book pass/fail is still
+dominated by the residual scan `chapter_first_recall` ceiling that
+follow-up already identified as untouched -- document-image deep learning
+remains the candidate direction, still not scoped here.
+
+### Follow-up: `edge_distance` feature, replacing `page_position_fraction`
+
+Motivated by a specific failure: `9782821895607` is a French-language book
+whose TOC sits at pages 189-190 of 193 -- right at the very *back* of the
+book, not the front. The classifier had `toc_recall=0%` on it in every
+prior run, with no feature encoding "how far from either edge" -- only the
+2026-08-12 follow-up's `page_position_fraction` (a raw `page_index /
+total_pages` fraction), which is monotonic and therefore can only reward
+one direction (front *or* back, never both).
+
+Checked against ground truth across 86 books with known TOC bounds:
+`corr(total_pages, toc_start_index) ~ -0.09` (front-matter length before a
+TOC starts doesn't scale with book length) but `corr(total_pages,
+toc_len) ~ +0.60` (longer books do have longer TOCs, though modestly in
+absolute terms here: mean 2.8 pages, max 9). This favors an *absolute*
+page-count distance feature over a fractional one.
+
+Added `edge_distance = min(page_index, total_pages - 1 - page_index)` to
+`add_book_context_features` (`evaluation/scripts/layout_features.py`) --
+0 at either edge, rising toward the middle. Initial attempt added it
+*alongside* `page_position_fraction` and left `9782821895607` unchanged
+(`toc_recall` still 0%): diagnosing the trained fold directly showed
+`page_position_fraction`'s coefficient (~-9.4, learned from a training set
+almost entirely front-located TOCs) canceling out `edge_distance`'s
+correctly-signed coefficient (~-10.4) for this page. Removing
+`page_position_fraction` and keeping only `edge_distance` fixed it outright
+(that book's two TOC pages went from `prob=0.0` to `prob=0.9998`, both
+clearing threshold).
+
+Re-running LOBO with `page_position_fraction` replaced by `edge_distance`
+(16 features total, no other changes) over all 89 books:
+
+| | `full_recall_fraction` | `avg_candidate_fraction` |
+| --- | --- | --- |
+| before (17 features, incl. `page_position_fraction`) | 57/89 = 64.0% | 10.0% |
+| after (16 features, `edge_distance` instead) | 58/89 = 65.2% | 10.3% |
+
+`9782821895607` now passes `toc_recall` outright (0% -> 100%), and
+`9783166448978` (one of the original hard scans) also improved on `toc`
+(0% -> 50%), though its `chapter_first_recall` (47%) keeps it failing the
+per-book bar regardless. No book that previously found at least one TOC
+page regressed to zero. Net effect: a small, real full-recall gain (+1.2
+points) at a small candidate-volume cost (+0.3 points) -- consistent with
+the target fix being real rather than noise, but modest, since it only
+addresses one specific failure mode (edge-vs-middle position) among
+several still-unaddressed ones (OCR/scan-noise degradation, weak
+title/body contrast).
+
+**Verdict: still NOT MET** (65.2% full recall, 24.8 points short; 10.3%
+avg candidate fraction, still comfortably inside the 15% budget). This
+follow-up doesn't change that overall picture -- it's a targeted fix for
+one identified false-negative mechanism (mid-book in-chapter mini-TOCs and
+back-of-book TOCs sharing a layout signature with real front-matter TOCs),
+not a step toward a fundamentally different recall ceiling.

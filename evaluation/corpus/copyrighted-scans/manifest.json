@@ -1,6 +1,76 @@
 {
   "books": [
     {
+      "filename": "9780367439712.pdf",
+      "title": "Luhmann and Socio-Legal Research: An Empirical Agenda for Social Systems Theory",
+      "language": "en",
+      "extraction_type": "native",
+      "embedded_toc": false,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9780521650939.pdf",
+      "title": "The Power of Human Rights: International Norms and Domestic Change",
+      "language": "en",
+      "extraction_type": "scan",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": "10.1017/CBO9780511598777",
+      "download_url": null
+    },
+    {
+      "filename": "9781409403906.pdf",
+      "title": "Central and Eastern Europe After Transition: Towards a New Socio-Legal Semantics",
+      "language": "en",
+      "extraction_type": "scan",
+      "embedded_toc": false,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9781841136400.pdf",
+      "title": "Gender and Judging",
+      "language": "en",
+      "extraction_type": "native",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": "10.5040/9781474200127",
+      "download_url": null
+    },
+    {
+      "filename": "9781849463812.pdf",
+      "title": "Law and Social Theory",
+      "language": "en",
+      "extraction_type": "scan",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9783161538315.pdf",
+      "title": "Die Fälle der Gesellschaft: Eine neue Praxis soziologischer Jurisprudenz",
+      "language": "de",
+      "extraction_type": "native",
+      "embedded_toc": false,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9783166448978.pdf",
+      "title": "Empirische Rechtsforschung zwischen Wissenschaft und Politik",
+      "language": "de",
+      "extraction_type": "scan",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
       "filename": "9783322969828.pdf",
       "title": "Jahrbuch für Rechtssoziologie und Rechtstheorie IV",
       "language": "de",
@@ -11,11 +81,51 @@
       "download_url": null
     },
     {
-      "filename": "9783848736829.pdf",
-      "title": "Politik und Recht: Umrisse eines politikwissenschaftlichen Forschungsfeldes",
+      "filename": "9783406016127.pdf",
+      "title": "Stand und Möglichkeiten der Justizforschung (Sitzungsbericht R zum 49. Deutschen Juristentag)",
+      "language": "de",
+      "extraction_type": "scan",
+      "embedded_toc": false,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9783428038275.pdf",
+      "title": "Rechtssoziologie und Rechtsvergleichung",
+      "language": "de",
+      "extraction_type": "scan",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9783428042241.pdf",
+      "title": "Recht und Gesellschaft: Festschrift für Helmut Schelsky zum 65. Geburtstag",
       "language": "de",
       "extraction_type": "native",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": "10.3790/978-3-428-44224-9",
+      "download_url": null
+    },
+    {
+      "filename": "9783465016878.pdf",
+      "title": "Historische Soziologie der Rechtswissenschaft",
+      "language": "de",
+      "extraction_type": "scan",
       "embedded_toc": false,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9783472611097.pdf",
+      "title": "Der neue Jurist: Materialien zur reformierten Juristenausbildung in Bremen",
+      "language": "de",
+      "extraction_type": "scan",
+      "embedded_toc": true,
       "oa": false,
       "doi": null,
       "download_url": null
@@ -31,11 +141,71 @@
       "download_url": null
     },
     {
+      "filename": "9783531120553.pdf",
+      "title": "Verantwortlichkeit und Recht",
+      "language": "de",
+      "extraction_type": "native",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": "10.1007/978-3-322-94169-5",
+      "download_url": null
+    },
+    {
+      "filename": "9783571092124.pdf",
+      "title": "Rechtstheorie als Grundlagenwissenschaft der Rechtswissenschaft",
+      "language": "de",
+      "extraction_type": "scan",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9783658057022.pdf",
+      "title": "Handbuch Bundesverfassungsgericht im politischen System",
+      "language": "de",
+      "extraction_type": "native",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": "10.1007/978-3-658-05703-9",
+      "download_url": null
+    },
+    {
+      "filename": "9783658076078.pdf",
+      "title": "Handbuch Geschichte der deutschsprachigen Soziologie: Band 2: Forschungsdesign, Theorien und Methoden",
+      "language": "de",
+      "extraction_type": "native",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": "10.1007/978-3-658-07608-5",
+      "download_url": null
+    },
+    {
+      "filename": "9783658282103.pdf",
+      "title": "Soziologie als Oppositionswissenschaft und als Gesellschaftskritik",
+      "language": "de",
+      "extraction_type": "native",
+      "embedded_toc": true,
+      "oa": false,
+      "doi": "10.1007/978-3-658-28211-0",
+      "download_url": null
+    },
+    {
       "filename": "9783789016202.pdf",
       "title": "Rechtsproduktion und Rechtsbewußtsein",
       "language": "de",
       "extraction_type": "native",
       "embedded_toc": false,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9783789017483.pdf",
+      "title": "Critical Legal Thought: An American-German Debate",
+      "language": "en",
+      "extraction_type": "scan",
+      "embedded_toc": true,
       "oa": false,
       "doi": null,
       "download_url": null
@@ -52,43 +222,33 @@
       "heuristic_expected_zero": true
     },
     {
-      "filename": "9783899718188.pdf",
-      "title": "Systemtheorie in den Fachwissenschaften: Zugänge, Methoden, Probleme",
+      "filename": "9783810041449.pdf",
+      "title": "Zeitgenössische Demokratietheorie - Band 1: Normative Demokratietheorien",
       "language": "de",
       "extraction_type": "native",
-      "embedded_toc": false,
+      "embedded_toc": true,
       "oa": false,
-      "doi": null,
+      "doi": "10.1007/978-3-531-94161-5",
       "download_url": null
     },
     {
-      "filename": "9780367439712.pdf",
-      "title": "Luhmann and Socio-Legal Research: An Empirical Agenda for Social Systems Theory",
-      "language": "en",
+      "filename": "9783830502777.pdf",
+      "title": "Zur Aktualität der Todesstrafe: Interdisziplinäre und globale Perspektiven",
+      "language": "de",
       "extraction_type": "native",
-      "embedded_toc": false,
+      "embedded_toc": true,
       "oa": false,
       "doi": null,
       "download_url": null
     },
     {
-      "filename": "9783465016878.pdf",
-      "title": "Historische Soziologie der Rechtswissenschaft",
+      "filename": "9783845271897.pdf",
+      "title": "Juristische Methodenlehre aus dem Geist der Praxis?",
       "language": "de",
       "extraction_type": "scan",
-      "embedded_toc": false,
+      "embedded_toc": true,
       "oa": false,
-      "doi": null,
-      "download_url": null
-    },
-    {
-      "filename": "9781409403906.pdf",
-      "title": "Central and Eastern Europe After Transition: Towards a New Socio-Legal Semantics",
-      "language": "en",
-      "extraction_type": "scan",
-      "embedded_toc": false,
-      "oa": false,
-      "doi": null,
+      "doi": "10.5771/9783845271897",
       "download_url": null
     },
     {
@@ -103,24 +263,23 @@
       "heuristic_expected_zero": true
     },
     {
-      "filename": "dnb-36942798X.pdf",
-      "title": "Studien und Materialien zur Rechtssoziologie",
+      "filename": "9783848736829.pdf",
+      "title": "Politik und Recht: Umrisse eines politikwissenschaftlichen Forschungsfeldes",
       "language": "de",
-      "extraction_type": "scan",
+      "extraction_type": "native",
       "embedded_toc": false,
       "oa": false,
       "doi": null,
-      "download_url": null,
-      "heuristic_expected_zero": true
+      "download_url": null
     },
     {
-      "filename": "9783428042241.pdf",
-      "title": "Recht und Gesellschaft: Festschrift für Helmut Schelsky zum 65. Geburtstag",
+      "filename": "9783848747153.pdf",
+      "title": "Verfassung: Geschichte, Gegenwart, Zukunft",
       "language": "de",
       "extraction_type": "native",
-      "embedded_toc": true,
+      "embedded_toc": false,
       "oa": false,
-      "doi": "10.3790/978-3-428-44224-9",
+      "doi": null,
       "download_url": null
     },
     {
@@ -132,6 +291,37 @@
       "oa": false,
       "doi": "10.1515/9783899496307",
       "download_url": null
+    },
+    {
+      "filename": "9783899718188.pdf",
+      "title": "Systemtheorie in den Fachwissenschaften: Zugänge, Methoden, Probleme",
+      "language": "de",
+      "extraction_type": "native",
+      "embedded_toc": false,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "9788814022272.pdf",
+      "title": "Developing Sociology of Law: A World-Wide Documentary Enquiry",
+      "language": "en",
+      "extraction_type": "native",
+      "embedded_toc": false,
+      "oa": false,
+      "doi": null,
+      "download_url": null
+    },
+    {
+      "filename": "dnb-36942798X.pdf",
+      "title": "Studien und Materialien zur Rechtssoziologie",
+      "language": "de",
+      "extraction_type": "scan",
+      "embedded_toc": false,
+      "oa": false,
+      "doi": null,
+      "download_url": null,
+      "heuristic_expected_zero": true
     }
   ]
 }

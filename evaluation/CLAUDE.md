@@ -46,18 +46,71 @@ Three documents, three different lifetimes -- know which one to write to:
   whenever `src/chapter_segmentation/segmentation.py` or `src/chapter_segmentation/common.py` changes in a way
   that touches text-matching logic (a new heuristic could read page text
   outside what the redaction pipeline currently preserves) -- for
-  non-OA books, the tool's `--verify` step will refuse to write a
-  stale/incorrect entry, so a clean run is the confirmation that a change
-  didn't need any redaction-pipeline updates. (OA books skip `--verify`
-  entirely since there's no redacted/real divergence possible.) A prior
-  redacted revision of this corpus had 13 open-access books permanently
-  fail `--verify` -- root-caused to two redaction-pipeline gaps (TOC-page
-  selection being sensitive to word substitution when a book has a
-  competing index/bibliography page with the same line shape, and the
-  Faker word pool having no long enough real word for PDF-extraction-glued
-  tokens, shrinking a page below the trailing-blank-page threshold) --
-  which is exactly why OA books are no longer redacted at all: real text
-  has no such failure mode.
+  non-OA books, the tool's `--verify` step checks that the redacted text
+  still makes `analyze_attachment` find the exact same chapter boundaries
+  as the real text, so a clean run (no `WARNING`s) is the confirmation
+  that a change didn't need any redaction-pipeline updates. (OA books skip
+  `--verify` entirely since there's no redacted/real divergence possible.)
+  A prior redacted revision of this corpus had 13 open-access books
+  permanently fail `--verify` -- root-caused to two redaction-pipeline
+  gaps (TOC-page selection being sensitive to word substitution when a
+  book has a competing index/bibliography page with the same line shape,
+  and the Faker word pool having no long enough real word for
+  PDF-extraction-glued tokens, shrinking a page below the trailing-blank-
+  page threshold) -- which is exactly why OA books are no longer redacted
+  at all: real text has no such failure mode.
+
+  **A book whose redacted text still doesn't match after self-correction
+  gets cached anyway, flagged `"verified": false`, with a `WARNING` printed
+  instead of being silently dropped** (changed 2026-08-13 -- see
+  `redact_book_until_stable`'s docstring in `evaluation/redaction/redact.py`
+  for the self-correction loop itself). The tool's own retry loop already
+  widens the forced-verbatim page set automatically when it finds drift; it
+  only gives up when a book's drift keeps recurring across attempts without
+  shrinking, or the pages involved are so widespread that forcing them all
+  verbatim would leak a large fraction of the book's actual prose into a
+  file meant to be safe to redistribute. Don't chase the retry loop further
+  by hand for such a book (raising `max_attempts` again, or writing a
+  smarter drift-page heuristic) before checking whether the fix is
+  actually cheap: **`evaluation/corpus/<corpus>/redaction_overrides.json`**
+  (create if missing) is a committed, hand-maintained map of manifest key
+  → extra page indices to always force fully verbatim, for exactly this
+  case --
+
+  ```json
+  {"9781841136400": [453, 454]}
+  ```
+
+  Diagnose the culprit page(s) by hand rather than guessing: bisect the
+  mismatched range reported in the `WARNING`'s boundary diff by forcing
+  candidate pages and re-running `analyze_attachment` on both the real and
+  redacted text until the exact boundaries match again (see the "found
+  manually for `9781841136400`" case in `redact_book_until_stable`'s
+  docstring for a worked example -- there, the culprit turned out to be a
+  page that was neither the start nor end of any mismatched range, so nothing
+  in the automatic loop ever proposed forcing it). If the culprit can't be
+  pinned to a small handful of pages -- the drift is scattered across a
+  large fraction of the book, or the redacted text loses *every* detected
+  chapter outright -- leave the book uncached rather than force enough of
+  it verbatim to "fix" the check; a `"verified": false` entry (or no entry
+  at all, if you'd rather not cache something this noisy) is an accepted
+  outlier, not a build blocker.
+
+  **`--skip-redaction` is a separate, faster escape valve for active
+  development** (added 2026-08-13, when a batch of newly-promoted books
+  needed *something* cached quickly so `refresh_llm_cache.py` had data to
+  read, without waiting on redaction to converge for the stubborn ones):
+  it caches a non-OA book's real text verbatim -- no redaction attempted
+  at all -- and marks the entry `"needs_redaction": true`. That file is
+  real copyrighted prose sitting in what's normally the git-tracked,
+  safe-to-publish `public-cache/` directory, so it must never be
+  committed -- add its exact path to `evaluation/.gitignore` (see the
+  block already there for the four books this happened to) whenever you
+  use this flag. Treat it as temporary: re-run the script on that book
+  without the flag once you're ready to redact it for real, which
+  overwrites the file with a properly redacted (or `"verified": false`,
+  per the paragraph above) entry, at which point the gitignore line comes
+  back out.
 
 If you're unsure which document a change belongs in, ask: would this
 sentence still be true after the next code change to the heuristics, even
@@ -156,6 +209,23 @@ here.
   runs. Once `evaluation/scripts/generate_public_evaluation_cache.py --verify` succeeds
   for such a book, move its entry to `manifest.json` in the same commit that
   adds its `public-cache/` file, so the two never drift apart.
+
+**`manifest.local.json` is strictly for a book you are *not* committing to
+the repo at all** — one you're only exercising in your own local test runs,
+with no `public-cache/` entry and no intention of adding one right now. It
+is not a parking spot for "no DOI" books in general, and it is not where a
+`pending/`-promoted book's ground truth lands by default. The absence of a
+DOI only decides whether the manifest entry can carry a real `doi` field —
+it says nothing about whether the entry should be committed. If you're
+building (or, per the rule above, already have) a `public-cache/` entry for
+the book — which is exactly what happens whenever you run
+`evaluation/scripts/generate_public_evaluation_cache.py` for it, including
+as part of a `pending/`-promotion batch — the manifest entry belongs in the
+committed `manifest.json`, DOI or not, in the same commit as that cache
+file. Promoting a `pending/` book by hand (the `manifest.local.json` case
+Step 0a's pending bullet mentions) does not mean the *destination* entry
+stays local too — check this rule again once you've generated its cache
+data, and move it to `manifest.json` if you have.
 
 **Check Crossref by ISBN even when Zotero shows no DOI.** A personal-library
 item's Zotero catalog entry frequently has no DOI field filled in even

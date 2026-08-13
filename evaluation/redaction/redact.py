@@ -12,6 +12,7 @@ from chapter_segmentation.segmentation import (
     _locate_toc_entries,
     _normalize_header_line,
     _PAGE_NUMBER_TOKEN_RE,
+    analyze_attachment,
     find_toc_candidates,
 )
 from evaluation.redaction.region_classification import RegionMap, _header_stripped_offset, classify_regions
@@ -147,17 +148,50 @@ def _drifted_pages(real_map: dict, redacted_map: dict) -> set[int]:
     return drifted
 
 
+def _boundary_drifted_pages(real_pages: list[str], redacted_pages: list[str]) -> set[int]:
+    """Every page index that is a start or end of a chapter range
+    `analyze_attachment` finds on one side but not the other -- catches
+    drift `_drifted_pages`' TOC-entry-location comparison misses (e.g. a
+    heading pattern with no TOC entry driving it at all, or a merge/split
+    that changes which ranges exist without any single TOC entry's located
+    page moving). This is the same comparison `generate_public_evaluation_cache.py`'s
+    `_verify` makes, so folding it into the retry loop here means a book
+    that would otherwise reach `_verify` and fail gets a chance to
+    self-correct first, the same as an entry-location drift already did."""
+    real_boundaries = {(c["pdf_start_index"], c["pdf_end_index"]) for c in analyze_attachment(real_pages)["chapters"]}
+    redacted_boundaries = {
+        (c["pdf_start_index"], c["pdf_end_index"]) for c in analyze_attachment(redacted_pages)["chapters"]
+    }
+    drifted: set[int] = set()
+    for start, end in real_boundaries ^ redacted_boundaries:
+        drifted.add(start)
+        drifted.add(end)
+    return drifted
+
+
 def redact_book_until_stable(
-    pages: list[str], detected_language: str, book_salt: str, max_attempts: int = 5,
+    pages: list[str],
+    detected_language: str,
+    book_salt: str,
+    max_attempts: int = 15,
+    extra_forced: frozenset[int] = frozenset(),
 ) -> tuple[list[str], frozenset[int]]:
     """redact_book, but self-correcting: after redacting, checks whether
     redaction changed any TOC entry's located page
     (chapter_segmentation._locate_toc_entries -- the same lookup
-    classify_regions's heading-window computation is built on). When it
-    has, every page involved in the discrepancy is forced fully verbatim
-    and redaction retries, looping until stable or `max_attempts` is
-    exhausted. This directly neutralizes the "incidental fuzzy-match false
-    positive" risk documented in docs/superpowers/specs/
+    classify_regions's heading-window computation is built on) OR changed
+    any chapter boundary `analyze_attachment` detects (`_boundary_drifted_pages`
+    above -- a broader, more expensive check added after the entry-location
+    check alone was found to still let real drift through to
+    `generate_public_evaluation_cache.py`'s `_verify` step, 2026-08-13: a
+    batch of newly-promoted books included one, `9783428038275`, whose
+    redacted text spuriously gained two chapter boundaries `analyze_attachment`
+    never found on the real text at all, with no TOC entry involved on
+    either side for the entry-location check to catch). When either check
+    finds drift, every page involved is forced fully verbatim and redaction
+    retries, looping until both are stable or `max_attempts` is exhausted.
+    The entry-location check directly neutralizes the "incidental
+    fuzzy-match false positive" risk documented in docs/superpowers/specs/
     2026-08-05-evaluation-corpus-redaction-design.md section 10.3 -- found
     empirically: a book with several letter-spaced ("Sperrdruck") chapter
     titles had a short, generic title variant that was correctly ambiguous
@@ -170,9 +204,29 @@ def redact_book_until_stable(
     by the text's structural shape (word lengths, spacing), not by which
     specific real word fills each slot.
 
+    `extra_forced` seeds pages to keep verbatim from the very first attempt,
+    on top of whatever this loop finds on its own -- for a book whose
+    residual drift comes from a page that is neither the start nor end of
+    any mismatched chapter range (so `_boundary_drifted_pages` never
+    proposes it, and the same false split reproduces every attempt no
+    matter how high `max_attempts` goes -- found manually for
+    `9781841136400`, 2026-08-13: a real, single chapter spanning pages
+    451-456 was spuriously split at pages 452-455 after redaction, and the
+    loop kept re-forcing only the mismatch's 451/452/455/456 endpoints
+    forever without ever touching 453/454, the pages actually causing the
+    false split). See `evaluation/corpus/<corpus>/redaction_overrides.json`.
+
     Returns (redacted_pages, extra_preserved_page_indices) -- the latter
-    empty when the first attempt was already stable."""
+    empty when the first attempt was already stable and `extra_forced` was
+    empty. A book whose drift is scattered across a large fraction of its
+    pages may still exhaust `max_attempts` without stabilizing -- forcing
+    that much of a non-open-access book fully verbatim would defeat
+    redaction's purpose (leaking most of its actual prose into a committed
+    cache file), so this deliberately does not keep escalating forever; the
+    caller's `_verify` step is the backstop that refuses to cache an
+    unstable result."""
     regions = classify_regions(pages)
+    regions = replace(regions, full_pages=regions.full_pages | extra_forced)
     pool = build_word_pool(detected_language)
     toc_entries = find_toc_candidates(pages)
     toc_indices = {e.source_page_index for e in toc_entries}
@@ -181,7 +235,7 @@ def redact_book_until_stable(
     )
     real_map = {_entry_key(entry): match.index for entry, match in located_real}
 
-    extra_preserved: frozenset[int] = frozenset()
+    extra_preserved: frozenset[int] = extra_forced
     redacted = pages
     for _attempt in range(max_attempts):
         redacted = [redact_page(text, index, regions, pool, book_salt) for index, text in enumerate(pages)]
@@ -189,7 +243,7 @@ def redact_book_until_stable(
             redacted, toc_entries, exclude_indices=toc_indices,
         )
         redacted_map = {_entry_key(entry): match.index for entry, match in located_redacted}
-        drifted = _drifted_pages(real_map, redacted_map)
+        drifted = _drifted_pages(real_map, redacted_map) | _boundary_drifted_pages(pages, redacted)
         if not drifted:
             break
         extra_preserved = extra_preserved | drifted

@@ -24,16 +24,22 @@ export function pageHeading(corpus, oneBasedIndex, total) {
   return `Corpus '${corpus}' ${oneBasedIndex} of ${total}`;
 }
 
-export function nextRejectedIndex(manifest, decisions, fromIndex) {
+export function decisionMatchesFilter(decision, filters) {
+  if (filters.rejectedOnly) return decision === 'rejected';
+  if (filters.skipAccepted) return decision !== 'accepted';
+  return true;
+}
+
+export function nextFilteredIndex(manifest, decisions, fromIndex, filters) {
   for (let i = fromIndex; i < manifest.length; i += 1) {
-    if (decisions[isbnFromFilename(manifest[i].filename)] === 'rejected') return i;
+    if (decisionMatchesFilter(decisions[isbnFromFilename(manifest[i].filename)], filters)) return i;
   }
   return manifest.length;
 }
 
-export function prevRejectedIndex(manifest, decisions, fromIndex) {
+export function prevFilteredIndex(manifest, decisions, fromIndex, filters) {
   for (let i = fromIndex; i >= 0; i -= 1) {
-    if (decisions[isbnFromFilename(manifest[i].filename)] === 'rejected') return i;
+    if (decisionMatchesFilter(decisions[isbnFromFilename(manifest[i].filename)], filters)) return i;
   }
   return 0;
 }

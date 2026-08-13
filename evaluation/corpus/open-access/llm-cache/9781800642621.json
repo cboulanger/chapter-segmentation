@@ -378,7 +378,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 103.08990161800011,
+      "elapsed_seconds": 104.58194792200015,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -774,7 +774,7 @@
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 66.61402479186654,
+      "elapsed_seconds": 68.52509961700025,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -1931,5 +1931,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:22:03.777815+00:00"
+  "generated_at": "2026-08-13T05:14:16.307082+00:00"
 }

@@ -1,10 +1,730 @@
 {
+  "generated_at": "2026-08-13T04:57:19.066460+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [],
-      "elapsed_seconds": 0.3123113331384957,
+      "elapsed_seconds": 0.8263181670000108,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash": {
+      "chapters": [
+        {
+          "title": "Eigentlich",
+          "authors": [
+            "Weihnachten da Fenster",
+            "ein darauf da\nzwischen antworten",
+            "Dir",
+            "Familie",
+            "Nacht",
+            "dir sprechen"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 215,
+          "citation_pages": "ix-197",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Education of Prussian Higher Civil Servants in the Staatswissenschaften, 1897-1914",
+          "authors": [
+            "LINDENFELD",
+            "Brauchen",
+            "dein etwas",
+            "Leute",
+            "Glas Papa",
+            "Geld",
+            "Müssen\nErschrecken"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 243,
+          "citation_pages": "201-226",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber",
+          "authors": [
+            "Drei Rechtssoziologien",
+            "Eugen Ehrlich",
+            "Hugo Sinzheimer",
+            "Max Weber",
+            "Der Beginn",
+            "Rechtssoziologie",
+            "mit dem",
+            "Namen Eugen",
+            "z.B. von Manfred Plötzlich",
+            "Glücklich Seite",
+            "Versuchen da Lehrer",
+            "Opa",
+            "Weihnachten Glauben",
+            "Bild",
+            "Beispi"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 270,
+          "citation_pages": "227-252",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Influence of Social Science on the Dogmatics of Private Law in Denmark and Norway in the Period after 1900",
+          "authors": [
+            "Spiel Schüler"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 289,
+          "citation_pages": "253-272",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Strukturen der niederländischen rechtsmethodologischen Diskussion im 20. Jahrhundert",
+          "authors": [
+            "Jahrhundert Seit",
+            "Jahren",
+            "Äußerungen",
+            "Bauer Haare",
+            "Müssen Haus dem",
+            "Weihnachten Weihnachten Schlafen",
+            "Weihnachten Arbeiten",
+            "Schwester"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 300,
+          "citation_pages": "273-282",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law",
+          "authors": [
+            "JUHA PÖYHÖNEN",
+            "Otto Brusin",
+            "Dort Rad dem",
+            "Minutenmir",
+            "Geschichte",
+            "Opa",
+            "Fuß Apfel"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 305,
+          "citation_pages": "283-287",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 6.887041240000002,
+      "demand_at_run": 0
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "The Education of Prussian Higher Civil Servants in the Staatswissenschaften, 1897-1914",
+          "authors": [
+            "LINDENFELD",
+            "Brauchen",
+            "dein etwas",
+            "Leute",
+            "Glas Papa",
+            "Geld",
+            "Müssen\nErschrecken"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 243,
+          "citation_pages": "201-226",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber",
+          "authors": [
+            "Drei Rechtssoziologien",
+            "Eugen Ehrlich",
+            "Hugo Sinzheimer",
+            "Max Weber",
+            "Der Beginn",
+            "Rechtssoziologie",
+            "mit dem",
+            "Namen Eugen",
+            "z.B. von Manfred Plötzlich",
+            "Glücklich Seite",
+            "Versuchen da Lehrer",
+            "Opa",
+            "Weihnachten Glauben",
+            "Bild",
+            "Beispi"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 270,
+          "citation_pages": "227-252",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Influence of Social Science on the Dogmatics of Private Law in Denmark and Norway in the Period after 1900",
+          "authors": [
+            "Spiel Schüler"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 289,
+          "citation_pages": "253-272",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Strukturen der niederländischen rechtsmethodologischen Diskussion im 20. Jahrhundert",
+          "authors": [
+            "Jahrhundert Seit",
+            "Jahren",
+            "Äußerungen",
+            "Bauer Haare",
+            "Müssen Haus dem",
+            "Weihnachten Weihnachten Schlafen",
+            "Weihnachten Arbeiten",
+            "Schwester"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 300,
+          "citation_pages": "273-282",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law",
+          "authors": [
+            "JUHA PÖYHÖNEN",
+            "Otto Brusin",
+            "Dort Rad dem",
+            "Minutenmir",
+            "Geschichte",
+            "Opa",
+            "Fuß Apfel"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 305,
+          "citation_pages": "283-287",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 4.849351460000008,
+      "demand_at_run": 0
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "The Education of Prussian Higher Civil Servants in the Staatswissenschaften, 1897-1914",
+          "authors": [
+            "LINDENFELD",
+            "Brauchen",
+            "dein etwas",
+            "Leute",
+            "Glas Papa",
+            "Geld",
+            "Müssen\nErschrecken"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 243,
+          "citation_pages": "201-226",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber",
+          "authors": [
+            "Drei Rechtssoziologien",
+            "Eugen Ehrlich",
+            "Hugo Sinzheimer",
+            "Max Weber",
+            "Der Beginn",
+            "Rechtssoziologie",
+            "mit dem",
+            "Namen Eugen",
+            "z.B. von Manfred Plötzlich",
+            "Glücklich Seite",
+            "Versuchen da Lehrer",
+            "Opa",
+            "Weihnachten Glauben",
+            "Bild",
+            "Beispi"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 270,
+          "citation_pages": "227-252",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Influence of Social Science on the Dogmatics of Private Law in Denmark and Norway in the Period after 1900",
+          "authors": [
+            "Spiel Schüler"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 289,
+          "citation_pages": "253-272",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Strukturen der niederländischen rechtsmethodologischen Diskussion im 20. Jahrhundert",
+          "authors": [
+            "Jahrhundert Seit",
+            "Jahren",
+            "Äußerungen",
+            "Bauer Haare",
+            "Müssen Haus dem",
+            "Weihnachten Weihnachten Schlafen",
+            "Weihnachten Arbeiten",
+            "Schwester"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 300,
+          "citation_pages": "273-282",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law",
+          "authors": [
+            "JUHA PÖYHÖNEN",
+            "Otto Brusin",
+            "Dort Rad dem",
+            "Minutenmir",
+            "Geschichte",
+            "Opa",
+            "Fuß Apfel"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 305,
+          "citation_pages": "283-287",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 5.8373784329999125,
+      "demand_at_run": 0
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [
+        {
+          "title": "The Education of Prussian Higher Civil Servants in the Staatswissenschaften, 1897-1914",
+          "authors": [
+            "LINDENFELD",
+            "Brauchen",
+            "dein etwas",
+            "Leute",
+            "Glas Papa",
+            "Geld",
+            "Müssen\nErschrecken"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 243,
+          "citation_pages": "201-226",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber",
+          "authors": [
+            "Drei Rechtssoziologien",
+            "Eugen Ehrlich",
+            "Hugo Sinzheimer",
+            "Max Weber",
+            "Der Beginn",
+            "Rechtssoziologie",
+            "mit dem",
+            "Namen Eugen",
+            "z.B. von Manfred Plötzlich",
+            "Glücklich Seite",
+            "Versuchen da Lehrer",
+            "Opa",
+            "Weihnachten Glauben",
+            "Bild",
+            "Beispi"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 270,
+          "citation_pages": "227-252",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Influence of Social Science on the Dogmatics of Private Law in Denmark and Norway in the Period after 1900",
+          "authors": [
+            "Spiel Schüler"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 289,
+          "citation_pages": "253-272",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Strukturen der niederländischen rechtsmethodologischen Diskussion im 20. Jahrhundert",
+          "authors": [
+            "Jahrhundert Seit",
+            "Jahren",
+            "Äußerungen",
+            "Bauer Haare",
+            "Müssen Haus dem",
+            "Weihnachten Weihnachten Schlafen",
+            "Weihnachten Arbeiten",
+            "Schwester"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 300,
+          "citation_pages": "273-282",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law",
+          "authors": [
+            "JUHA PÖYHÖNEN",
+            "Otto Brusin",
+            "Dort Rad dem",
+            "Minutenmir",
+            "Geschichte",
+            "Opa",
+            "Fuß Apfel"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 305,
+          "citation_pages": "283-287",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 2.705703069000265,
+      "demand_at_run": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "The Education of Prussian Higher Civil Servants in the Staatswissenschaften, 1897-1914.",
+          "authors": [
+            "LINDENFELD",
+            "Brauchen",
+            "dein etwas",
+            "Leute",
+            "Glas Papa",
+            "Geld",
+            "Müssen\nErschrecken"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 243,
+          "citation_pages": "201-226",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber.",
+          "authors": [
+            "Drei Rechtssoziologien",
+            "Eugen Ehrlich",
+            "Hugo Sinzheimer",
+            "Max Weber",
+            "Der Beginn",
+            "Rechtssoziologie",
+            "mit dem",
+            "Namen Eugen",
+            "z.B. von Manfred Plötzlich",
+            "Glücklich Seite",
+            "Versuchen da Lehrer",
+            "Opa",
+            "Weihnachten Glauben",
+            "Bild",
+            "Beispi"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 270,
+          "citation_pages": "227-252",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Influence of Social Science on the Dogmatics of Private Law in Denmark and Norway in the Period after 1900",
+          "authors": [
+            "Spiel Schüler"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 289,
+          "citation_pages": "253-272",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Strukturen der niederländischen rechtsmethodologischen Diskussion im 20. Jahrhundert.",
+          "authors": [
+            "Jahrhundert Seit",
+            "Jahren",
+            "Äußerungen",
+            "Bauer Haare",
+            "Müssen Haus dem",
+            "Weihnachten Weihnachten Schlafen",
+            "Weihnachten Arbeiten",
+            "Schwester"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 300,
+          "citation_pages": "273-282",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law.",
+          "authors": [
+            "JUHA PÖYHÖNEN",
+            "Otto Brusin",
+            "Dort Rad dem",
+            "Minutenmir",
+            "Geschichte",
+            "Opa",
+            "Fuß Apfel"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 305,
+          "citation_pages": "283-287",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 59.80011807799997,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 0.15756411999973352,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 0.15153654599998845,
+      "demand_at_run": 0
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "The Education of Prussian Higher Civil Servants in the Staatswissenschaften, 1897-1914",
+          "authors": [
+            "LINDENFELD",
+            "Brauchen",
+            "dein etwas",
+            "Leute",
+            "Glas Papa",
+            "Geld",
+            "Müssen\nErschrecken"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 243,
+          "citation_pages": "201-226",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber",
+          "authors": [
+            "Drei Rechtssoziologien",
+            "Eugen Ehrlich",
+            "Hugo Sinzheimer",
+            "Max Weber",
+            "Der Beginn",
+            "Rechtssoziologie",
+            "mit dem",
+            "Namen Eugen",
+            "z.B. von Manfred Plötzlich",
+            "Glücklich Seite",
+            "Versuchen da Lehrer",
+            "Opa",
+            "Weihnachten Glauben",
+            "Bild",
+            "Beispi"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 270,
+          "citation_pages": "227-252",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Influence of Social Science on the Dogmatics of Private Law in Denmark and Norway in the Period after 1900",
+          "authors": [
+            "Spiel Schüler"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 289,
+          "citation_pages": "253-272",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Strukturen der niederländischen rechtsmethodologischen Diskussion im 20. Jahrhundert",
+          "authors": [
+            "Jahrhundert Seit",
+            "Jahren",
+            "Äußerungen",
+            "Bauer Haare",
+            "Müssen Haus dem",
+            "Weihnachten Weihnachten Schlafen",
+            "Weihnachten Arbeiten",
+            "Schwester"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 300,
+          "citation_pages": "273-282",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law",
+          "authors": [
+            "JUHA PÖYHÖNEN",
+            "Otto Brusin",
+            "Dort Rad dem",
+            "Minutenmir",
+            "Geschichte",
+            "Opa",
+            "Fuß Apfel"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 305,
+          "citation_pages": "283-287",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 28.33263145806268,
+      "demand_at_run": 0
+    },
+    "qwen3.6-27b": {
+      "chapters": [
+        {
+          "title": "The Education of Prussian Higher Civil Servants in the Staatswissenschaften, 1897-1914.",
+          "authors": [
+            "LINDENFELD",
+            "Brauchen",
+            "dein etwas",
+            "Leute",
+            "Glas Papa",
+            "Geld",
+            "Müssen\nErschrecken"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 243,
+          "citation_pages": "201-226",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Drei Rechtssoziologien: Eugen Ehrlich, Hugo Sinzheimer, Max Weber.",
+          "authors": [
+            "Drei Rechtssoziologien",
+            "Eugen Ehrlich",
+            "Hugo Sinzheimer",
+            "Max Weber",
+            "Der Beginn",
+            "Rechtssoziologie",
+            "mit dem",
+            "Namen Eugen",
+            "z.B. von Manfred Plötzlich",
+            "Glücklich Seite",
+            "Versuchen da Lehrer",
+            "Opa",
+            "Weihnachten Glauben",
+            "Bild",
+            "Beispi"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 270,
+          "citation_pages": "227-252",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Influence of Social Science on the Dogmatics of Private Law in Denmark and Norway in the Period after 1900",
+          "authors": [
+            "Spiel Schüler"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 289,
+          "citation_pages": "253-272",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Strukturen der niederländischen rechtsmethodologischen Diskussion im 20. Jahrhundert.",
+          "authors": [
+            "Jahrhundert Seit",
+            "Jahren",
+            "Äußerungen",
+            "Bauer Haare",
+            "Müssen Haus dem",
+            "Weihnachten Weihnachten Schlafen",
+            "Weihnachten Arbeiten",
+            "Schwester"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 300,
+          "citation_pages": "273-282",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Social Conditions for Legal Doctrines. The Doctoral Dissertation in the Finnish Science of Law.",
+          "authors": [
+            "JUHA PÖYHÖNEN",
+            "Otto Brusin",
+            "Dort Rad dem",
+            "Minutenmir",
+            "Geschichte",
+            "Opa",
+            "Fuß Apfel"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 305,
+          "citation_pages": "283-287",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 86.19864312501159,
+      "demand_at_run": 1
     }
-  },
-  "generated_at": "2026-08-13T15:49:58.598316+00:00"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "models": {
-    "qwen3.5-122b-a10b": {
+    "apertus-70b-instruct-2509": {
       "chapters": [
         {
           "title": "1. Global Migrations and Persons with Refugee Experiences",
@@ -23,10 +23,30 @@
             "al."
           ],
           "pdf_start_index": 69,
-          "pdf_end_index": 93,
-          "citation_pages": "49-76",
+          "pdf_end_index": 69,
+          "citation_pages": "49-49",
           "confidence": 1.0,
           "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "0. Introduction",
+          "authors": [],
+          "pdf_start_index": 70,
+          "pdf_end_index": 83,
+          "citation_pages": "1-63",
+          "confidence": 0.71,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Tables",
+          "authors": [],
+          "pdf_start_index": 84,
+          "pdf_end_index": 93,
+          "citation_pages": "xviii-73",
+          "confidence": 0.65,
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -56,10 +76,23 @@
           "title": "5. Pathways to Healing: Expressive Arts Practice with Adolescent Refugees",
           "authors": [],
           "pdf_start_index": 139,
-          "pdf_end_index": 170,
-          "citation_pages": "119-150",
+          "pdf_end_index": 142,
+          "citation_pages": "119-122",
           "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Foreword",
+          "authors": [
+            "Cathy Malchiodi’s",
+            "Bruce Perry"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 170,
+          "citation_pages": "xix-150",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -153,10 +186,20 @@
             "Kasadi\n Advocacy"
           ],
           "pdf_start_index": 343,
-          "pdf_end_index": 367,
-          "citation_pages": "323-350",
+          "pdf_end_index": 362,
+          "citation_pages": "323-342",
           "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Illustrations",
+          "authors": [],
+          "pdf_start_index": 363,
+          "pdf_end_index": 367,
+          "citation_pages": "xvii-347",
+          "confidence": 0.92,
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -173,9 +216,9 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 55.055824582930654,
+      "elapsed_seconds": 37.021654757000306,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:40:45.151337+00:00"
+  "generated_at": "2026-08-13T05:30:56.720299+00:00"
 }

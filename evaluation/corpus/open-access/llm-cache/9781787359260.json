@@ -164,7 +164,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 36.06120394799996,
+      "elapsed_seconds": 36.15542052000001,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -498,7 +498,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 56.88185374997556,
+      "elapsed_seconds": 52.66304398400007,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -1013,5 +1013,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:17:56.381890+00:00"
+  "generated_at": "2026-08-13T05:09:08.550060+00:00"
 }

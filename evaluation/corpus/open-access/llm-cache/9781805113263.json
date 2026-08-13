@@ -1,9 +1,9 @@
 {
   "models": {
-    "qwen3.5-122b-a10b": {
+    "apertus-70b-instruct-2509": {
       "chapters": [
         {
-          "title": "De Morgan and Logic",
+          "title": "2. De Morgan and Logic",
           "authors": [
             "De Morgan",
             "Logic\n Anna-Sophie Heinemann\nLogic",
@@ -18,7 +18,7 @@
           "source": "llm"
         },
         {
-          "title": "Augustus De Morgan, Astronomy and Almanacs",
+          "title": "3. Augustus De Morgan, Astronomy and Almanacs",
           "authors": [
             "Augustus De Morgan",
             "Daniel Belteki\n Astronomy",
@@ -33,7 +33,7 @@
           "source": "llm"
         },
         {
-          "title": "De Morgan, Periodicals and Encyclopaedias",
+          "title": "4. De Morgan, Periodicals and Encyclopaedias",
           "authors": [
             "De Morgan",
             "Bruneau\nDe Morgan’s",
@@ -47,7 +47,7 @@
           "source": "llm"
         },
         {
-          "title": "Augustus De Morgan: Meta-Scientific Rebel",
+          "title": "5. Augustus De Morgan: Meta-Scientific Rebel",
           "authors": [
             "Augustus De Morgan",
             "William  Whewell",
@@ -56,14 +56,14 @@
             "De Morgan"
           ],
           "pdf_start_index": 145,
-          "pdf_end_index": 190,
-          "citation_pages": "107-152",
+          "pdf_end_index": 188,
+          "citation_pages": "107-150",
           "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "De Morgan and Mathematics Education",
+          "title": "1. De Morgan and Mathematics",
           "authors": [
             "De Morgan",
             "Christopher Stray",
@@ -71,13 +71,13 @@
           ],
           "pdf_start_index": 191,
           "pdf_end_index": 212,
-          "citation_pages": "153-174",
-          "confidence": 1.0,
+          "citation_pages": "3-174",
+          "confidence": 0.78,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "De Morgan’s A Budget of Paradoxes",
+          "title": "7. De Morgan’s A Budget of Paradoxes",
           "authors": [
             "De Morgan’s A Budget of Paradoxes\n Adrian Rice\nGreat",
             "Augustus De Morgan",
@@ -91,7 +91,7 @@
           "source": "llm"
         },
         {
-          "title": "Augustus De Morgan and the Bloomsbury Milieu",
+          "title": "8. Augustus De Morgan and the Bloomsbury Milieu",
           "authors": [
             "Augustus De Morgan",
             "Rosemary Ashton\n",
@@ -105,7 +105,7 @@
           "source": "llm"
         },
         {
-          "title": "De Morgan’s Family: Sophia and the Children",
+          "title": "9. De Morgan’s Family: Sophia and the Children",
           "authors": [
             "De Morgan’s Family",
             "Joan L. Richards",
@@ -114,14 +114,14 @@
             "William  Frend"
           ],
           "pdf_start_index": 259,
-          "pdf_end_index": 286,
-          "citation_pages": "221-248",
+          "pdf_end_index": 284,
+          "citation_pages": "221-246",
           "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Augustus De Morgan’s Library Revisited: Its Context and Its Afterlife",
+          "title": "10. Augustus De Morgan’s Library Revisited: Its Context and Its Afterlife",
           "authors": [
             "Augustus De Morgan’s",
             "Context",
@@ -135,7 +135,7 @@
           "source": "llm"
         },
         {
-          "title": "Augustus De Morgan: The Archival Record",
+          "title": "11. Augustus De Morgan: The Archival Record",
           "authors": [
             "Augustus De Morgan",
             "Alexander Lock",
@@ -154,7 +154,7 @@
           "source": "llm"
         },
         {
-          "title": "Bibliography of the Works of Augustus De Morgan",
+          "title": "12. Bibliography of the Works of Augustus De Morgan",
           "authors": [
             "Augustus De Morgan\n William Hale",
             "De Morgan’s",
@@ -169,9 +169,9 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 66.62539983401075,
+      "elapsed_seconds": 25.13168759700011,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:34:07.984257+00:00"
+  "generated_at": "2026-08-13T05:26:20.611434+00:00"
 }

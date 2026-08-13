@@ -134,7 +134,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 27.128470605000075,
+      "elapsed_seconds": 26.772768886999984,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -277,6 +277,16 @@
     "qwen3.5-122b-a10b": {
       "chapters": [
         {
+          "title": "Introduction",
+          "authors": [],
+          "pdf_start_index": 33,
+          "pdf_end_index": 35,
+          "citation_pages": "1-16",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
           "title": "Europe Needs More Public Investment",
           "authors": [
             "Debora"
@@ -398,7 +408,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 54.780549082905054,
+      "elapsed_seconds": 56.90762366900003,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -813,5 +823,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:18:51.167987+00:00"
+  "generated_at": "2026-08-13T05:09:35.326123+00:00"
 }

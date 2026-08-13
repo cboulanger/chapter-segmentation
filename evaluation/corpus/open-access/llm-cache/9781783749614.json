@@ -1,10 +1,237 @@
 {
   "models": {
-    "qwen3.5-122b-a10b": {
-      "chapters": [],
-      "elapsed_seconds": 64.58975187502801,
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Sustainability in the Anthropocene: From Forests to the Globe",
+          "authors": [
+            "Richard H. K.",
+            "Warde",
+            "Paul",
+            "C. A."
+          ],
+          "pdf_start_index": 85,
+          "pdf_end_index": 85,
+          "citation_pages": "37-60",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Academia, Abstraction and the Anthropocene: Changing the Story for Right Relationship",
+          "authors": [
+            "Kristine Kowalchuk",
+            "Kowalchuk"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 117,
+          "citation_pages": "61-92",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kitting the Digital Humanities for the Anthropocene: Digital Metabolism and Eco-Critical DH",
+          "authors": [
+            "Anthropocene"
+          ],
+          "pdf_start_index": 119,
+          "pdf_end_index": 136,
+          "citation_pages": "93-110",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Impact of the Digital Revolution on Worldwide Energy Consumption",
+          "authors": [],
+          "pdf_start_index": 137,
+          "pdf_end_index": 157,
+          "citation_pages": "111-132",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sustainable DNA: In Conversation",
+          "authors": [
+            "Mél Hogan"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 177,
+          "citation_pages": "133-154",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Design Education in the Anthropocene: Teaching Systems Thinking",
+          "authors": [
+            "Eric Benson",
+            "Priscilla Ferronato"
+          ],
+          "pdf_start_index": 181,
+          "pdf_end_index": 198,
+          "citation_pages": "155-172",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inspiration from Goethe’s Tender Empiricism: How to be the Person Collecting, Analyzing and Visualizing Data",
+          "authors": [
+            "Joshua Korenblat\nScience"
+          ],
+          "pdf_start_index": 199,
+          "pdf_end_index": 241,
+          "citation_pages": "173-216",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Solidarity Seeds: Situated Knowledges in Bishan Village, Wang Chau Village and Aarey Forest",
+          "authors": [
+            "Wang Chau Village",
+            "Aarey Forest",
+            "Michael Leung",
+            "Leung",
+            "Michael L"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 281,
+          "citation_pages": "217-256",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "e-Waste Peep Show: A Research-Creation Project on the (In)visibility of Technological Waste",
+          "authors": [],
+          "pdf_start_index": 283,
+          "pdf_end_index": 299,
+          "citation_pages": "257-274",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Art, Ecology, and the Politics of Form: A Panel Revisited",
+          "authors": [
+            "Natalie Loveless",
+            "Andrew S. Yang",
+            "Karin \nBolender",
+            "Christa Donner",
+            "Scott Smallwood",
+            "Leanne Olson",
+            "Jesse Beier",
+            "Art",
+            "Anthropocene",
+            "Jessie Beier"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 332,
+          "citation_pages": "275-308",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Weight of The Digital: Experiencing Infrastructure with InfraVU",
+          "authors": [
+            "Ted Dawson"
+          ],
+          "pdf_start_index": 335,
+          "pdf_end_index": 353,
+          "citation_pages": "309-328",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Asking Why: Cultivating Eco-Consciousness in Research Labs",
+          "authors": [
+            "Research Labs\nAllison"
+          ],
+          "pdf_start_index": 355,
+          "pdf_end_index": 382,
+          "citation_pages": "329-356",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sustainability, Living Labs and Repair: Approaches to Climate Change Mitigation",
+          "authors": [
+            "Living Labs  \n",
+            "Hart Cohen",
+            "Francesca Sidoti",
+            "Alison Gill",
+            "Abby Mellick Lopes",
+            "Maryella Hatfield  \n",
+            "Jonathon Allen"
+          ],
+          "pdf_start_index": 383,
+          "pdf_end_index": 424,
+          "citation_pages": "357-398",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "An Intro to Econferences",
+          "authors": [
+            "Geoffrey Rockwell",
+            "Oliver Rossier\nReading",
+            "Francis Bacon",
+            "COVID-19"
+          ],
+          "pdf_start_index": 425,
+          "pdf_end_index": 446,
+          "citation_pages": "399-420",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Econferences Are Not the Same, but Are They Good Enough?",
+          "authors": [
+            "Terry Anderson"
+          ],
+          "pdf_start_index": 447,
+          "pdf_end_index": 460,
+          "citation_pages": "421-434",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Online Conferences: Some History, Methods and Benefits",
+          "authors": [],
+          "pdf_start_index": 461,
+          "pdf_end_index": 488,
+          "citation_pages": "435-462",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘Greening’ Academic Gatherings: A Case for Econferences",
+          "authors": [
+            "Oliver Rossier",
+            "Geoffrey Rockwell"
+          ],
+          "pdf_start_index": 489,
+          "pdf_end_index": 531,
+          "citation_pages": "463-505",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 35.970405473999904,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:16:59.494011+00:00"
+  "generated_at": "2026-08-13T05:08:32.391416+00:00"
 }

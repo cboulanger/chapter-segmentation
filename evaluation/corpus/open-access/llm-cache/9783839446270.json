@@ -220,7 +220,7 @@
           "source": "llm"
         },
         {
-          "title": "\"Gebt uns gute Beispiele!\"",
+          "title": "“Gebt uns gute Beispiele!”",
           "authors": [
             "Angebot",
             "kommunalen Klimaschutz",
@@ -248,23 +248,9 @@
             "zu einem"
           ],
           "pdf_start_index": 249,
-          "pdf_end_index": 249,
-          "citation_pages": "249-144",
-          "confidence": 0.8,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Klima-Wandel ist regierbar",
-          "authors": [
-            "Klimawandel \nwurden",
-            "kann",
-            "Klima\\Wandel"
-          ],
-          "pdf_start_index": 250,
           "pdf_end_index": 269,
-          "citation_pages": "145-131",
-          "confidence": 0.7,
+          "citation_pages": "249-131",
+          "confidence": 0.8,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -287,7 +273,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 98.51265040099997,
+      "elapsed_seconds": 103.44797515400023,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -589,7 +575,7 @@
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 77.40337608288974,
+      "elapsed_seconds": 71.0147501460001,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -1461,5 +1447,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:54:36.360033+00:00"
+  "generated_at": "2026-08-13T05:44:04.604257+00:00"
 }

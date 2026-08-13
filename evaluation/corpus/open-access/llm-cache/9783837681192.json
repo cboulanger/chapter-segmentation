@@ -1,9 +1,9 @@
 {
   "models": {
-    "qwen3.5-122b-a10b": {
+    "apertus-70b-instruct-2509": {
       "chapters": [
         {
-          "title": "Poets of the Heart Friedrich Nietzsche and Sri Aurobindo",
+          "title": "Poets of the Heart",
           "authors": [
             "Friedrich Nietzsche",
             "Sri Aurobindo Ghose",
@@ -13,7 +13,7 @@
           "pdf_start_index": 43,
           "pdf_end_index": 87,
           "citation_pages": "43-88",
-          "confidence": 0.98,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -31,7 +31,7 @@
           "source": "llm"
         },
         {
-          "title": "Hölderlin’s ‘Celebration of Peace’ and Kant’s Treaty ‘Toward Perpetual Peace’ Performative Types of Writing in Poetry and Philosophy",
+          "title": "Hölderlin’s ‘Celebration of Peace’ and Kant’s Treaty ‘Toward Perpetual Peace’",
           "authors": [
             "Hölderlin’s ‘Celebration of Peace",
             "Violetta L. Waibel",
@@ -43,19 +43,19 @@
           "pdf_start_index": 111,
           "pdf_end_index": 156,
           "citation_pages": "111-156",
-          "confidence": 0.97,
+          "confidence": 0.99,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Thinking, Evaluating, Enjoying On the Aesthetic Materiality of Thought",
+          "title": "Thinking, Evaluating, Enjoying",
           "authors": [
             "Martin Heidegger’s"
           ],
           "pdf_start_index": 157,
           "pdf_end_index": 177,
           "citation_pages": "157-178",
-          "confidence": 0.99,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -72,17 +72,17 @@
           "source": "llm"
         },
         {
-          "title": "Nothing to Fix Performative Strategies of Incompleteness and the Right to Bodily Integrity",
+          "title": "Nothing to Fix",
           "authors": [],
           "pdf_start_index": 199,
           "pdf_end_index": 214,
           "citation_pages": "199-214",
-          "confidence": 0.98,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Along Each Other. On Shown and Told by Meg Stuart and Tim Etchells Con-Fusions Between Movement and Linguistic Figures, Between Performance and Critique",
+          "title": "Along Each Other. On Shown and Told by Meg Stuart and Tim Etchells",
           "authors": [
             "Shown",
             "Tim",
@@ -92,24 +92,24 @@
           "pdf_start_index": 215,
           "pdf_end_index": 242,
           "citation_pages": "215-242",
-          "confidence": 0.96,
+          "confidence": 0.95,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "The Feeling of Thinking Stories on Artists Reading Theory",
+          "title": "The Feeling of Thinking",
           "authors": [
             "Heidegger\nSandy"
           ],
           "pdf_start_index": 243,
           "pdf_end_index": 258,
           "citation_pages": "243-258",
-          "confidence": 0.98,
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Gay Troublemakers None but Fools",
+          "title": "Gay Troublemakers",
           "authors": [
             "Gay Troublemakers\nNone",
             "Fools 1\n",
@@ -120,14 +120,14 @@
           "pdf_start_index": 259,
           "pdf_end_index": 278,
           "citation_pages": "259-278",
-          "confidence": 0.97,
+          "confidence": 1.0,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 52.167340541025624,
+      "elapsed_seconds": 15.446773219000079,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:53:18.950532+00:00"
+  "generated_at": "2026-08-13T05:42:21.152642+00:00"
 }

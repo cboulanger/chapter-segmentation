@@ -1,9 +1,9 @@
 {
   "models": {
-    "qwen3.5-122b-a10b": {
+    "apertus-70b-instruct-2509": {
       "chapters": [
         {
-          "title": "Impact of Jurisprudential Heritage in the Organisation of the Medina of Tunis: Joint Ownership, Social Practices and Customs",
+          "title": "2. Impact of Jurisprudential Heritage in the Organisation of the Medina of Tunis: Joint Ownership, Social Practices and Customs",
           "authors": [
             "Ben Ammar",
             "Mohammad"
@@ -16,7 +16,7 @@
           "source": "llm"
         },
         {
-          "title": "Revisiting Definitions and Challenges of Intangible Cultural Heritage: The Case of the Old Centre of Mashhad",
+          "title": "3. Revisiting Definitions and Challenges of Intangible Cultural Heritage: The Case of the Old Centre of Mashhad",
           "authors": [
             "Ayda Khaleghi"
           ],
@@ -28,7 +28,7 @@
           "source": "llm"
         },
         {
-          "title": "Promoting the Role of Egyptian Museums in Nurturing and Safeguarding Intangible Cultural Heritage",
+          "title": "4. Promoting the Role of Egyptian Museums in Nurturing and Safeguarding Intangible Cultural Heritage",
           "authors": [],
           "pdf_start_index": 89,
           "pdf_end_index": 107,
@@ -38,7 +38,7 @@
           "source": "llm"
         },
         {
-          "title": "Syrian Intangible Cultural Heritage: Characteristics and Challenges of Preservation",
+          "title": "5. Syrian Intangible Cultural Heritage: Characteristics and Challenges of Preservation",
           "authors": [
             "Nibal Muhesen\nIntroduction"
           ],
@@ -50,7 +50,7 @@
           "source": "llm"
         },
         {
-          "title": "Mutrah Old Market, Oman: Analysis to Enhance a Living Heritage Site",
+          "title": "6. Mutrah Old Market, Oman: Analysis to Enhance a Living Heritage Site",
           "authors": [
             "Mutrah Old Market"
           ],
@@ -62,7 +62,7 @@
           "source": "llm"
         },
         {
-          "title": "Study on the Visual Perception of Historical Streetscapes Using Kansei Engineering: Cherchell City, Algeria",
+          "title": "7. Study on the Visual Perception of Historical Streetscapes Using Kansei Engineering: Cherchell City, Algeria",
           "authors": [
             "Abd Elrrahmane Bouakar \nIntroduction"
           ],
@@ -74,7 +74,7 @@
           "source": "llm"
         },
         {
-          "title": "Western Churches in Nagasaki and Amakusa as Sites of Memory",
+          "title": "8. Western Churches in Nagasaki and Amakusa as Sites of Memory",
           "authors": [],
           "pdf_start_index": 165,
           "pdf_end_index": 180,
@@ -84,7 +84,7 @@
           "source": "llm"
         },
         {
-          "title": "Tradition Versus Modernity in Heritage Preservation Discourse in Postcolonial Morocco: Jemaa el-Fna Plaza, Marrakesh",
+          "title": "9. Tradition Versus Modernity in Heritage Preservation Discourse in Postcolonial Morocco: Jemaa el-Fna Plaza, Marrakesh",
           "authors": [
             "Versus Modernity",
             "Marrakesh \n Assia Lamzah\nIntroduction\nPostcolonial"
@@ -97,7 +97,7 @@
           "source": "llm"
         },
         {
-          "title": "Integrity and Authenticity: Humberstone and Santa Laura Saltpeter Works (Chile)",
+          "title": "10. Integrity and Authenticity: Humberstone and Santa Laura Saltpeter Works (Chile)",
           "authors": [
             "Guillermo Rojas Alfaro\nIntroduction"
           ],
@@ -109,7 +109,7 @@
           "source": "llm"
         },
         {
-          "title": "(Identity) Politics and the National Museum of Bosnia and Herzegovina",
+          "title": "11. (Identity) Politics and the National Museum of Bosnia and Herzegovina",
           "authors": [
             "Fatma Mataracı",
             "Zemaljski Muzej"
@@ -127,16 +127,16 @@
             "tim"
           ],
           "pdf_start_index": 239,
-          "pdf_end_index": 245,
-          "citation_pages": "219-225",
+          "pdf_end_index": 242,
+          "citation_pages": "219-222",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 62.35668441699818,
+      "elapsed_seconds": 31.961145508999834,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:31:57.674833+00:00"
+  "generated_at": "2026-08-13T05:23:02.419801+00:00"
 }

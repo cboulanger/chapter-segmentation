@@ -140,7 +140,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 25.961018629000137,
+      "elapsed_seconds": 25.12365984400003,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -383,37 +383,14 @@
             "Ruins"
           ],
           "pdf_start_index": 221,
-          "pdf_end_index": 243,
-          "citation_pages": "211-234",
-          "confidence": 0.96,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Border-Crossing Infrastructure: The Case of the Russian-Mongolian Border",
-          "authors": [],
-          "pdf_start_index": 245,
-          "pdf_end_index": 253,
-          "citation_pages": "235-244",
-          "confidence": 0.96,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Maps",
-          "authors": [
-            "Map",
-            "Philip Stickler"
-          ],
-          "pdf_start_index": 255,
           "pdf_end_index": 279,
-          "citation_pages": "245-269",
-          "confidence": 1.0,
+          "citation_pages": "211-269",
+          "confidence": 0.96,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 62.980017916997895,
+      "elapsed_seconds": 59.47509394400004,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -672,5 +649,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T14:43:54.912026+00:00"
+  "generated_at": "2026-08-13T05:32:30.073699+00:00"
 }

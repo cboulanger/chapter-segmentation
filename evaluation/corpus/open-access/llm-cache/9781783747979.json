@@ -1,0 +1,85 @@
+{
+  "models": {
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "1. Research Data Management Policy: The Holy Grail of Data Management Support?",
+          "authors": [],
+          "pdf_start_index": 30,
+          "pdf_end_index": 70,
+          "citation_pages": "16-1",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Engagement through Training",
+          "authors": [],
+          "pdf_start_index": 73,
+          "pdf_end_index": 86,
+          "citation_pages": "50-67",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Dedicated Events to Gauge Interest and Build Networks",
+          "authors": [
+            "Kerry Miller"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 103,
+          "citation_pages": "68-89",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Networks of Data Champions",
+          "authors": [],
+          "pdf_start_index": 104,
+          "pdf_end_index": 128,
+          "citation_pages": "90-109",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. Dedicated Consultants to Offer One-to-One Support with Data",
+          "authors": [
+            "Yan"
+          ],
+          "pdf_start_index": 129,
+          "pdf_end_index": 138,
+          "citation_pages": "110-125",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Interviews and Case Studies",
+          "authors": [],
+          "pdf_start_index": 140,
+          "pdf_end_index": 152,
+          "citation_pages": "126-133",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. Engage with Senior Researchers through Archiving",
+          "authors": [],
+          "pdf_start_index": 153,
+          "pdf_end_index": 163,
+          "citation_pages": "134-148",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 66.62919612508267,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T14:10:46.898209+00:00"
+}

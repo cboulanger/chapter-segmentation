@@ -1,0 +1,497 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Wilhelm Opfermann: Zur Gehaltsbestimmung normativer Strukturen durch kombinatorische Matrizenkalküle",
+          "authors": [
+            "Wilhelm Opfermann",
+            "Zur Gehaltsbestimmung",
+            "Zum Gegenstand",
+            "Logik",
+            "Bauen",
+            "Wünschen Gesicht",
+            "kochen von Tier Lehrer",
+            "legen wohl zu Weihnachten",
+            "Familie Uhr Apfel",
+            "Davon",
+            "Geben",
+            "Erschrecken Weihnachten Glückl"
+          ],
+          "pdf_start_index": 187,
+          "pdf_end_index": 221,
+          "citation_pages": "231-244",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Lothar Philipps: Das dialogische Tableau als Werkzeug des Rechts",
+          "authors": [
+            "Eis Mann Rad bauen",
+            "Wünschen mit",
+            "Mann",
+            "Haare Rad Zusammen",
+            "Erde",
+            "ziehen ich"
+          ],
+          "pdf_start_index": 223,
+          "pdf_end_index": 229,
+          "citation_pages": "245-245",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Eike von Savigny: Die Phausnahme und die Phregel, oder Was die Logik im Recht nicht leisten will",
+          "authors": [
+            "Eike von Savigny\nDie Phausnahme",
+            "Phregel",
+            "Logik",
+            "Recht",
+            "Wissen",
+            "zum vor",
+            "Antworten gab Leben",
+            "Wenn",
+            "Schreiben",
+            "Erschrecken",
+            "Draußen Schüler",
+            "Vielleicht",
+            "Schlagen"
+          ],
+          "pdf_start_index": 231,
+          "pdf_end_index": 244,
+          "citation_pages": "246-254",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Begriffstheorie und Systemtheorie des Rechts",
+          "authors": [
+            "Begriffstheorie und Systemtheorie des Rechts\n"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 245,
+          "citation_pages": "255-245",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivan Glaser: Sprachphilosophie und rechtswissenschaftliche Begriffsbildung",
+          "authors": [
+            "Ivan Glaser\nSprachphilosophie",
+            "Bemerkung von K. O. Apel",
+            "Ja",
+            "Gleich-",
+            "Ball",
+            "Welt Luft",
+            "Erschrecken",
+            "Tisch Weg",
+            "Geschichte Fenster"
+          ],
+          "pdf_start_index": 246,
+          "pdf_end_index": 253,
+          "citation_pages": "246-254",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Niklas Luhmann: Systemtheoretische Beiträge zur Rechtstheorie",
+          "authors": [
+            "Niklas Luhmann",
+            "Fertig",
+            "Erschrecken",
+            "Musik Davon Weg Erschrecken",
+            "rot Weihnachten",
+            "Weihnachten Erschrecken",
+            "Geschichte"
+          ],
+          "pdf_start_index": 255,
+          "pdf_end_index": 276,
+          "citation_pages": "255-276",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rolf-Peter Calliess: Rechtswissenschaft als Projekt- und Strukturwissenschaft. Ein Beitrag zur Rechtstheorie",
+          "authors": [
+            "Ein Beitrag",
+            "Neu Minutenmir Weihnachten",
+            "Vergessen fiel",
+            "das Weihnachten Weihnachten",
+            "Weiter-\nWeihnachten Tante",
+            "Rad Wird",
+            "Weihnachten Dick jung",
+            "Erschrecken",
+            "Glücklich"
+          ],
+          "pdf_start_index": 277,
+          "pdf_end_index": 288,
+          "citation_pages": "277-288",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rupert Schreiber: Probleme rechtswissenschaftlicher Systembildung",
+          "authors": [
+            "Rupert Schreiber",
+            "Systembildung\nI. Satzsysteme",
+            "Verwendung",
+            "der Erinnerung",
+            "las Erschrecken",
+            "Schaffen Oma Schlagen",
+            "Fröhlich",
+            "Opa",
+            "Garten",
+            "Sprechen mit Schlecht",
+            "Wie Stellen",
+            "Überall Tante Tante"
+          ],
+          "pdf_start_index": 289,
+          "pdf_end_index": 299,
+          "citation_pages": "289-300",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gerhard Otte: Komparative Sätze im Recht. Zur Logik eines beweglichen Systems",
+          "authors": [
+            "Gerhard Otte\n",
+            "Recht",
+            "Zur Logik",
+            "logischen Struktur\nvon Rechtsnormen",
+            "Schreiben",
+            "Nacht",
+            "Weihnachten",
+            "Wald Rad",
+            "Weihnachten Wirklich",
+            "Jetzt Schreiben",
+            "Geschichte®"
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 320,
+          "citation_pages": "301-320",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Entscheidungstheorie und Informationstheorie des Rechts",
+          "authors": [],
+          "pdf_start_index": 321,
+          "pdf_end_index": 321,
+          "citation_pages": "321-321",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bernhard Schlink: Inwieweit sind juristische Entscheidungen mit entscheidungstheoretischen Modellen theoretisch zu erfassen und praktisch zu bewältigen?",
+          "authors": [
+            "Bernhard Schlink\nInwieweit",
+            "praktisch zu bewältigen",
+            "Entscheidung wurde",
+            "Ging",
+            "Fiel Rad",
+            "Klettern",
+            "zur Erschrecken",
+            "ein Erschrecken",
+            "Spielen",
+            "Weihnachten Weihnachten Erschrecken"
+          ],
+          "pdf_start_index": 322,
+          "pdf_end_index": 346,
+          "citation_pages": "322-346",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hansjürgen Garstka: Ein Regelungsmodell der Rechtsanwendung",
+          "authors": [
+            "Hansjürgen Garstka\nEin Regelungsmodell",
+            "Rechtsanwendung",
+            "Grund",
+            "Gegenüberstellung von Sachverhalten",
+            "natürlich ab",
+            "Weihnachten Schwester",
+            "Schnee",
+            "Richtig",
+            "schreiben Weinen leben groß",
+            "Tante",
+            "Erschrecken",
+            "dafür klettern"
+          ],
+          "pdf_start_index": 347,
+          "pdf_end_index": 362,
+          "citation_pages": "347-360",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Herbert Fiedler: Konstruktive und kritische Beiträge der Juristischen Informatik",
+          "authors": [
+            "Herbert Fiedler",
+            "Jutistischen Informatik",
+            "Bereich",
+            "Konturen der",
+            "Tragen Leute Weihnachten",
+            "Berg",
+            "Stark dem",
+            "Wohnung Zeitung",
+            "Leben Schwimmen",
+            "Unser",
+            "Lehrer Geburtstag",
+            "brauchen jung"
+          ],
+          "pdf_start_index": 363,
+          "pdf_end_index": 373,
+          "citation_pages": "361-388",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wilhelm Steinmüller: Rechtstheorie, Rechtsinformatik und Rechtspolitik",
+          "authors": [
+            "Wilhelm Steinmüller\nRechtstheorie",
+            "Rechtsinformatik",
+            "kommt Ihr Interesse",
+            "Elektronischen Datenverarbeitung",
+            "Tisch",
+            "Hören",
+            "Holen den Erschrecken"
+          ],
+          "pdf_start_index": 375,
+          "pdf_end_index": 390,
+          "citation_pages": "389-389",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Jürgen Schmidt: Einige Bemerkungen zur Präzision der Rechtssprache",
+          "authors": [
+            "Jürgen Schmidt\nEinige Bemerkungen",
+            "I. Vorbemerkungen",
+            "Mann",
+            "der Nichts Schuh",
+            "schlagen oben",
+            "drehen scheinen",
+            "steigen von Sache Darauf",
+            "Geschichte",
+            "Opa Schenken",
+            "Bin Buch Fliegen Beispiel",
+            "Schreiben",
+            "Frage Weihnachten",
+            "Weihnachten Sohn"
+          ],
+          "pdf_start_index": 392,
+          "pdf_end_index": 439,
+          "citation_pages": "390-438",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Theodor Viehweg: Notizen zu einer rhetorischen Argumentationstheorie der Rechtsdisziplin",
+          "authors": [
+            "Rechtsdisziplin",
+            "las Ruhig Beispiel",
+            "Geburtstag Stein",
+            "Brauchen",
+            "gibt Weihnachten Eigentlich",
+            "Weihnachten Erschrecken"
+          ],
+          "pdf_start_index": 441,
+          "pdf_end_index": 448,
+          "citation_pages": "439-446",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Jürgen Blühdorn: Zum »Problemdenken« und seiner Funktion in der Rechtsfindungslehre",
+          "authors": [
+            "Jürgen Blühdorn\nZum »Problemdenken",
+            "Friedrich Kaulbach",
+            "Endlich Geschichte",
+            "Wasser",
+            "Bett Schuh von Opa »Weihnachten"
+          ],
+          "pdf_start_index": 449,
+          "pdf_end_index": 457,
+          "citation_pages": "447-79",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Erschrecken mal Stehen",
+          "authors": [
+            "Verkaufen dem",
+            "Gut Wohnung",
+            "Tür Weihnachten",
+            "Stein",
+            "ein ob zu nämlich",
+            "schreiben Stellen",
+            "Milch bin Bekommen",
+            "Musik Erschrecken",
+            "Damit Mann"
+          ],
+          "pdf_start_index": 458,
+          "pdf_end_index": 467,
+          "citation_pages": "80-466",
+          "confidence": 0.64,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Winfried Hassemer: Juristische Argumentationstheorie und juristische Didaktik",
+          "authors": [
+            "Verbindung",
+            "zeigt sich",
+            "jedoch gleich",
+            "Weihnachten Schreien",
+            "Welt Hilfe",
+            "dick darin",
+            "Affe Erschrecken"
+          ],
+          "pdf_start_index": 469,
+          "pdf_end_index": 482,
+          "citation_pages": "467-480",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtstheorie und Rechtsdogmatik",
+          "authors": [],
+          "pdf_start_index": 483,
+          "pdf_end_index": 483,
+          "citation_pages": "481-481",
+          "confidence": 0.87,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reinhold Zippelius: Der Typenvergleich als Instrument der Gesetzesauslegung",
+          "authors": [
+            "Reinhold Zippelius",
+            "das Leben",
+            "Können Herr Erde",
+            "Gab Fertig-\nerklären",
+            "Mich zu tun",
+            "Rennen Weihnachten"
+          ],
+          "pdf_start_index": 484,
+          "pdf_end_index": 492,
+          "citation_pages": "482-490",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Adalbert Podlech: Rechtstheoretische Bedingungen einer Methodenlehre juristischer Dogmatik",
+          "authors": [
+            "Adalbert Podlech",
+            "Dogmatik",
+            "Rechtstheorie",
+            "Erschrecken Hilfe",
+            "Gut Scheinen",
+            "Bild",
+            "Geburtstag",
+            "Gott",
+            "bin Geburtstag Weihnachten",
+            "Weihnachten Geschichte"
+          ],
+          "pdf_start_index": 493,
+          "pdf_end_index": 504,
+          "citation_pages": "491-502",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Klaus Adomeit: Zivilrechtstheorie und Zivilrechtsdogmatik — mit einem Beitrag zur Theorie der subjektiven Rechte",
+          "authors": [
+            "Klaus Adomeit\nZivilrechtstheorie",
+            "I. Abgrenzungen",
+            "Sprechen",
+            "Sohn",
+            "Junge Fuß",
+            "Weihnachten Schule",
+            "Weihnachten Spaß",
+            "Vogel",
+            "doch ab",
+            "Groß Hängen",
+            "Verstecken"
+          ],
+          "pdf_start_index": 505,
+          "pdf_end_index": 524,
+          "citation_pages": "503-522",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtstheorie und Rechtswissenschaft",
+          "authors": [],
+          "pdf_start_index": 525,
+          "pdf_end_index": 543,
+          "citation_pages": "iv-541",
+          "confidence": 0.68,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Wolfram Zitscher: Theoretische Probleme zur Abgrenzung von Richterrecht und Gesetzesrecht auf der Grundlage wertausfüllungsbedürftiger Tatbestandsmerkmale",
+          "authors": [
+            "Wolfram Zitscher",
+            "der Grundlage",
+            "Grundlagen",
+            "Rechtsordnung",
+            "Treffen",
+            "Zug",
+            "Weihnachten Machen",
+            "Weihnachten Weihnachten"
+          ],
+          "pdf_start_index": 545,
+          "pdf_end_index": 547,
+          "citation_pages": "543-78",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rennen Wünschen: Erschrecken als Weihnachten ist Erschrecken",
+          "authors": [
+            "Weihnachten Weihnachten",
+            "Erschrecken Geschichte",
+            "Verstecken Weihnachten",
+            "Einige",
+            "Einigen Tür",
+            "Fuß Natürlich Rad »Sommer",
+            "Schule"
+          ],
+          "pdf_start_index": 548,
+          "pdf_end_index": 557,
+          "citation_pages": "79-555",
+          "confidence": 0.8,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 117.09485304099508,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T15:56:54.072312+00:00"
+}

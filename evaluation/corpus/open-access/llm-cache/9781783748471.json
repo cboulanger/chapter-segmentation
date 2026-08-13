@@ -613,7 +613,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 69.18390730600004,
+      "elapsed_seconds": 75.34518858394586,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -1593,5 +1593,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-12T05:35:35.049266+00:00"
+  "generated_at": "2026-08-13T14:13:09.019459+00:00"
 }

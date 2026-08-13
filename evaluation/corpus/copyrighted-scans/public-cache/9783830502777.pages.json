@@ -1,7 +1,9 @@
 {
-  "cipher_version": 2,
+  "cipher_version": 3,
   "source": "extracted",
   "redacted": true,
+  "verified": true,
+  "needs_redaction": false,
   "pages": [
     "Weg Geschichte das In Geburtstag",
     "",

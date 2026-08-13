@@ -14,13 +14,38 @@ zotero-rag's .env, e.g.:
 In CI it comes from a repository secret (see
 .github/workflows/refresh-llm-cache.yml). Not a pytest test.
 
---mode top5 (default): refreshes the current 5 least-busy models,
-unconditionally, even if already cached -- a quick manual sanity check.
+--mode top5 (default): refreshes the current 5 (--limit) least-busy
+models, unconditionally, even if already cached -- a quick manual sanity
+check.
 
 --mode fill-gaps: finds non-"very busy" models not yet cached for EVERY
-book across every corpus's current public books, and runs up to 5 of
-those -- how the cache grows to cover every model over time (see the
-nightly schedule in the workflow above).
+book across every corpus's current public books, and runs up to 5
+(--limit) of those -- how the cache grows to cover every model over time
+(see the nightly schedule in the workflow above).
+
+--limit (default 5, applies to top5/fill-gaps only -- full is
+deliberately uncapped): how many models to run this invocation. Lower it
+(e.g. --limit 1) for a quick single-model pass right after a change that
+invalidated cached entries (a redaction/extraction change, a manifest
+promotion) -- rather than paying for a full 5-model refresh immediately,
+run one model now to get *something* current, and let the nightly
+fill-gaps job (which always uses the default) pick up the rest of the
+models over subsequent runs.
+
+--corpus restricts everything (coverage checks, clearing, execution) to
+one corpus, e.g. --corpus copyrighted-scans -- default is every corpus
+`evaluation.harness.list_corpora()` finds.
+
+--clear deletes every book's cache file within the --corpus scope (or all
+corpora, if --corpus is omitted) before selecting/running models --
+because the cache holds an LLM's output for a specific input, invalidating
+that input (public-cache text changed -- a redaction fix, a corpus
+promotion) invalidates every model's entry, not just the ones this
+invocation happens to re-run. Combine with --mode fill-gaps (which then
+sees a completely uncovered corpus and picks --limit models from
+scratch) rather than --mode top5, which would refresh only its 5 models
+unconditionally and leave the rest of the now-cleared cache empty until
+something else fills it back in.
 
 --mode full: re-runs EVERY model that already has at least one cached
 entry (its full historical footprint), across all books in all corpora,
@@ -109,24 +134,34 @@ def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: l
     cache_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-async def _main(mode: str, base_url: str) -> int:
+async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], clear: bool) -> int:
     api_key = os.environ["KISSKI_API_KEY"]
-    # (corpus, manifest_key, cache_dir) for every scorable book across every corpus.
+    corpora = [corpus] if corpus else list_corpora()
+    # (corpus, manifest_key, cache_dir) for every scorable book across every in-scope corpus.
     book_entries: list[tuple[str, str, Path]] = [
-        (corpus, manifest_key, llm_cache_dir(corpus))
-        for corpus in list_corpora()
-        for manifest_key, _expected_path, _book in available_public_books(corpus)
+        (c, manifest_key, llm_cache_dir(c))
+        for c in corpora
+        for manifest_key, _expected_path, _book in available_public_books(c)
     ]
     if not book_entries:
         print("No public-cache evaluation books present.")
         return 1
     book_specs = [(cache_dir, manifest_key) for _corpus, manifest_key, cache_dir in book_entries]
 
+    if clear:
+        cleared = 0
+        for _corpus, manifest_key, cache_dir in book_entries:
+            cache_path = cache_dir / f"{manifest_key}.json"
+            if cache_path.exists():
+                cache_path.unlink()
+                cleared += 1
+        print(f"--clear: removed {cleared} cache file(s) across {len(corpora)} corpus/corpora before regenerating.")
+
     all_models = fetch_kisski_models(base_url, api_key)
     if mode == "top5":
-        selected = select_top5(all_models)
+        selected = select_top5(all_models, limit=limit)
     elif mode == "fill-gaps":
-        selected = select_gap_fill(all_models, _fully_covered_model_ids(book_specs))
+        selected = select_gap_fill(all_models, _fully_covered_model_ids(book_specs), limit=limit)
     else:
         cached_ids = _all_cached_model_ids(book_specs)
         selected = select_full_regen(all_models, cached_ids)
@@ -167,5 +202,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--mode", choices=["top5", "fill-gaps", "full"], default="top5")
     parser.add_argument("--base-url", default=DEFAULT_KISSKI_BASE_URL)
+    parser.add_argument(
+        "--limit", type=int, default=5,
+        help="Max models to run this invocation (top5/fill-gaps only; full is always uncapped). Default 5.",
+    )
+    parser.add_argument("--corpus", help="Only refresh this corpus (default: every corpus under evaluation/corpus/)")
+    parser.add_argument(
+        "--clear", action="store_true",
+        help="Delete every cache file in scope before regenerating (use when the underlying public-cache text changed).",
+    )
     args = parser.parse_args()
-    raise SystemExit(asyncio.run(_main(mode=args.mode, base_url=args.base_url)))
+    raise SystemExit(asyncio.run(_main(
+        mode=args.mode, base_url=args.base_url, limit=args.limit, corpus=args.corpus, clear=args.clear,
+    )))

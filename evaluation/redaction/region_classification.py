@@ -66,7 +66,7 @@ def classify_regions(pages: list[str]) -> RegionMap:
     detection -- see module docstring."""
     toc_entries = find_toc_candidates(pages)
     toc_page_indices = {e.source_page_index for e in toc_entries}
-    located, _unlocated, non_content_pages = _locate_toc_entries(
+    located, unlocated, non_content_pages = _locate_toc_entries(
         pages, toc_entries, exclude_indices=toc_page_indices,
     )
     header_lines = _running_header_lines(tuple(pages))
@@ -79,7 +79,29 @@ def classify_regions(pages: list[str]) -> RegionMap:
     # chapter's title legitimately re-scores on more than one of its own
     # pages without needing to reimplement locate_chapter_start_candidates's
     # internal clustering.
-    titles = {variant for entry, _match in located for variant in (entry.title, *entry.title_variants)}
+    #
+    # Unlocated entries' titles are pooled in too (2026-08-13) -- these are
+    # exactly the ones llm_disambiguate_chapter_start gets called for
+    # (analyze_attachment_llm_only re-queries locate_chapter_start_candidates
+    # for any entry _locate_toc_entries couldn't resolve). Without this, an
+    # unlocated title's own candidate pages never qualify for a heading
+    # window here, since heading_windows below only pools *resolved*
+    # entries' titles -- so the LLM's disambiguation prompt would show only
+    # redacted noise for its 300-char candidate snippets on a non-OA book,
+    # never the real heading text a production call would show it. Confirmed
+    # empirically: a title genuinely left unlocated (two real, non-adjacent
+    # candidate pages, both excluded from the TOC-order second pass's
+    # feasible interval) got no heading window for either candidate before
+    # this change.
+    titles = {
+        variant
+        for entry, _match in located
+        for variant in (entry.title, *entry.title_variants)
+    } | {
+        variant
+        for entry in unlocated
+        for variant in (entry.title, *entry.title_variants)
+    }
 
     heading_windows: dict[int, tuple[int, int]] = {}
     for index, text in enumerate(pages):

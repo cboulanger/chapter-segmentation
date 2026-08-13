@@ -589,7 +589,7 @@
     },
     "qwen3.5-122b-a10b": {
       "chapters": [],
-      "elapsed_seconds": 71.0147501460001,
+      "elapsed_seconds": 77.40337608288974,
       "demand_at_run": 0
     },
     "glm-4.7": {
@@ -1461,5 +1461,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-12T05:35:35.685412+00:00"
+  "generated_at": "2026-08-13T14:54:36.360033+00:00"
 }

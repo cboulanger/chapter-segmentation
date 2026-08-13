@@ -1,0 +1,105 @@
+{
+  "models": {
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Methodische Zugänge zur diskursiven Einbettung im transnationalen Raum Eine Analyse der diskursiven Reaktionen türkeistämmiger Verbände auf den Anschlag von Hanau",
+          "authors": [
+            "Raum\nEine Analyse",
+            "Reaktionen",
+            "Anschlag\nvon",
+            "Seçkin Söylemez",
+            "5).Im Vergleich zu anderen",
+            "Gruppen",
+            "Bundesgebiet"
+          ],
+          "pdf_start_index": 51,
+          "pdf_end_index": 78,
+          "citation_pages": "51-78",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der »Refugees welcome«-Sticker als gesellschaftliche Selbstbeschreibung Ein kunstwissenschaftlicher Ansatz zur Migrationsforschung",
+          "authors": [
+            "Selbstbeschreibung",
+            "Ansatz",
+            "Charlotte Püttmann",
+            "Seit Beginn",
+            "Geschichte"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 101,
+          "citation_pages": "79-102",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Using Vignettes in Migration Research A Methodological Approach to Studying Migrants’ Transnational Experiences",
+          "authors": [
+            "HungfeelsconfidentwhenhegoesbacktoViet-"
+          ],
+          "pdf_start_index": 103,
+          "pdf_end_index": 126,
+          "citation_pages": "103-126",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Soziale Medien als Feldzugang und Erkenntnisgegenstand Von der digitalen Kontaktaufnahme zu Netzwerkinteraktionen in der Arbeitsmigration",
+          "authors": [
+            "Soziale Medien",
+            "Michelle Gutstein",
+            "Svenja Kneer"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 148,
+          "citation_pages": "127-148",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Einstellungen und Sprachgebrauch politischer Repräsentant*innen zu Migrationspolitik Eine triangulative Studie aus Umfragen und Plenarprotokollen",
+          "authors": [
+            "Christoph Leonhardt",
+            "Gemeinschaft"
+          ],
+          "pdf_start_index": 149,
+          "pdf_end_index": 180,
+          "citation_pages": "149-180",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bildungsaufstiege im Erfahrungsraum von Sphären- und Schichtdifferenzen Eine quantitative Betrachtung der biografischen Herausforderungen von Jugendlichen mit und ohne Einwanderungsgeschichte",
+          "authors": [
+            "Erfahrungsraum",
+            "Schichtdifferenzen\nEine",
+            "Herausforderungen von Jugendlichen",
+            "Markus Kohlmeier",
+            "Bildungsübergängen",
+            "Faktoren",
+            "Zum",
+            "Familie und das soziale Um-\n",
+            "Entscheidungsverhalten",
+            "zum anderen"
+          ],
+          "pdf_start_index": 181,
+          "pdf_end_index": 204,
+          "citation_pages": "181-204",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 59.2409990420565,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T14:51:24.900116+00:00"
+}

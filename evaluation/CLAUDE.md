@@ -104,13 +104,18 @@ Three documents, three different lifetimes -- know which one to write to:
   at all -- and marks the entry `"needs_redaction": true`. That file is
   real copyrighted prose sitting in what's normally the git-tracked,
   safe-to-publish `public-cache/` directory, so it must never be
-  committed -- add its exact path to `evaluation/.gitignore` (see the
-  block already there for the four books this happened to) whenever you
-  use this flag. Treat it as temporary: re-run the script on that book
-  without the flag once you're ready to redact it for real, which
-  overwrites the file with a properly redacted (or `"verified": false`,
-  per the paragraph above) entry, at which point the gitignore line comes
-  back out.
+  committed -- add its exact path to a `.gitignore` **inside that corpus's
+  own directory** (`evaluation/corpus/<corpus>/.gitignore`, create it if
+  missing -- corpus-scoped, not the shared `evaluation/.gitignore`, since
+  this is specific to that corpus's own books) whenever you use this flag.
+  Treat it as temporary: re-run the script on that book without the flag
+  once you're ready to redact it for real, which overwrites the file with
+  a properly redacted (or `"verified": false`, per the paragraph above)
+  entry -- at which point remove its gitignore line (delete the file
+  entirely once it's empty; a batch of four books that used this flag
+  during the 2026-08-13 migration all ended up redacting properly once
+  the boundary-check and heading-window fixes above landed, so the
+  gitignore entries came back out and the file was deleted again).
 
 If you're unsure which document a change belongs in, ask: would this
 sentence still be true after the next code change to the heuristics, even

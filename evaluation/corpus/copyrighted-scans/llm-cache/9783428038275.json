@@ -1,0 +1,144 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Einleitung",
+          "authors": [
+            "Fuß Erschrecken",
+            "Weihnachten Zeitung",
+            "Weihnachten Legen",
+            "viel Legen",
+            "Minutenmir",
+            "Opa Warm",
+            "Erschrecken Opa",
+            "dazu verstecken"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 94,
+          "citation_pages": "22-29",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ulrich Drobnig: Soziologische Forschungsmethoden in der Rechtsvergleichung (1971)",
+          "authors": [
+            "Soziologische Forschungsmethoden",
+            "Rechtsvergleichung 97",
+            "Der Nutzen",
+            "Daten",
+            "jedoch von ihrer",
+            "Zwecke",
+            "Fragebogen",
+            "Rechts",
+            "Rahmen",
+            "essiert jedoch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 97,
+          "citation_pages": "30-43",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "101",
+          "authors": [
+            "Dir Ding",
+            "Weihnachten Erschrecken",
+            "schreiben",
+            "Langsam vom Deshalb",
+            "Versuchen",
+            "haben heiß"
+          ],
+          "pdf_start_index": 98,
+          "pdf_end_index": 117,
+          "citation_pages": "44-44",
+          "confidence": 0.62,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "123",
+          "authors": [
+            "Monate Glück",
+            "Rad Schüler",
+            "Einfach",
+            "Minutenmir Dorf",
+            "las schreiben",
+            "Verkaufen gab Erschrecken"
+          ],
+          "pdf_start_index": 118,
+          "pdf_end_index": 147,
+          "citation_pages": "45-45",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "151",
+          "authors": [
+            "lernen Berg müssen\nOpa",
+            "Nämlich Ab",
+            "Drei Um",
+            "Erschrecken Schlafen",
+            "Weihnachten Geschichte Zur",
+            "Natürlich",
+            "Weihnachten Erschrecken",
+            "Weiter Um klettern"
+          ],
+          "pdf_start_index": 148,
+          "pdf_end_index": 157,
+          "citation_pages": "46-46",
+          "confidence": 0.62,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "169",
+          "authors": [
+            "Dürfen Schicken",
+            "Blume",
+            "Geschichte Weihnachten",
+            "Weihnachten Weihnachten",
+            "Geburtstag Vielleicht",
+            "bin Weihnachten\n",
+            "Mann",
+            "Weihnachten Hilfe-",
+            "Weihnachten Erschrecken",
+            "Minutenmir",
+            "Legen"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 169,
+          "citation_pages": "47-47",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "171",
+          "authors": [
+            "Wieder Eis Erschrecken",
+            "Geburtstag",
+            "Erschrecken",
+            "Weihnachten leben Seite-",
+            "Zeitung Langsam",
+            "Weihnachten Glas",
+            "Schwester"
+          ],
+          "pdf_start_index": 170,
+          "pdf_end_index": 186,
+          "citation_pages": "48-188",
+          "confidence": 0.62,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 36.81209187512286,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T15:48:08.037757+00:00"
+}

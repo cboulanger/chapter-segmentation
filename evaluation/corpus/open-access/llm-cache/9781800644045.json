@@ -1,0 +1,159 @@
+{
+  "models": {
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "The Theoretical Framework: Common Goods and Systems of Common Goods",
+          "authors": [],
+          "pdf_start_index": 61,
+          "pdf_end_index": 64,
+          "citation_pages": "29-56",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Theory to Practice: A Matrix of Common Good Dynamics",
+          "authors": [
+            "Nebel",
+            "Medina Delgadillo",
+            "Jorge Medina Delgadillo"
+          ],
+          "pdf_start_index": 65,
+          "pdf_end_index": 110,
+          "citation_pages": "57-102",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Design and Reflection on the Metric of Common Dynamics",
+          "authors": [
+            "Oscar Garza-Vázquez",
+            "Viviana Ramírez\nIntroduction\nDevelopment",
+            "develo"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 152,
+          "citation_pages": "103-144",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Collective Agency Freedom as the Engine of a Common Good Dynamic: A Conceptual Proposal for Measurement",
+          "authors": [
+            "Oscar Garza-Vázquez"
+          ],
+          "pdf_start_index": 153,
+          "pdf_end_index": 186,
+          "citation_pages": "145-178",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Systemic Outcome of Common Good Dynamics: Humanity",
+          "authors": [
+            "Clemens Sedmak"
+          ],
+          "pdf_start_index": 187,
+          "pdf_end_index": 207,
+          "citation_pages": "179-200",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Governance, Commoning and the Unequal Terms of Recognition",
+          "authors": [
+            "Commoning",
+            "Tom De Herdt",
+            "Denis Augustin Samnick1",
+            "Daniel \nKaufmann"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 226,
+          "citation_pages": "201-218",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Organising Common Good Dynamics: Justice",
+          "authors": [
+            "Rodolfo De la"
+          ],
+          "pdf_start_index": 227,
+          "pdf_end_index": 258,
+          "citation_pages": "219-250",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Development and Stability",
+          "authors": [],
+          "pdf_start_index": 259,
+          "pdf_end_index": 280,
+          "citation_pages": "251-276",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Do We Need a Common Good Approach to Development?",
+          "authors": [
+            "Helen Alford’s",
+            "Patrick \nRiordan"
+          ],
+          "pdf_start_index": 283,
+          "pdf_end_index": 299,
+          "citation_pages": "277-292",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bangsamoro: A Case Study in Governing for the Common Good",
+          "authors": [
+            "Bangsamoro",
+            "Patrick Riordan S.J."
+          ],
+          "pdf_start_index": 301,
+          "pdf_end_index": 328,
+          "citation_pages": "293-320",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Assessing the Nexus of the Common Good: The Case of the Municipality of Atlixco, Mexico",
+          "authors": [
+            "Nebel",
+            "Mathias Nebel"
+          ],
+          "pdf_start_index": 329,
+          "pdf_end_index": 354,
+          "citation_pages": "321-346",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Assessing the Transformative Impact of Love-Based Microsocial Communities: From Existential Peripheries into the Nexus of the Common Good",
+          "authors": [],
+          "pdf_start_index": 355,
+          "pdf_end_index": 381,
+          "citation_pages": "347-373",
+          "confidence": 0.96,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 52.25490575004369,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T14:22:56.043595+00:00"
+}

@@ -1,0 +1,142 @@
+{
+  "models": {
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Impact of Jurisprudential Heritage in the Organisation of the Medina of Tunis: Joint Ownership, Social Practices and Customs",
+          "authors": [
+            "Ben Ammar",
+            "Mohammad"
+          ],
+          "pdf_start_index": 47,
+          "pdf_end_index": 65,
+          "citation_pages": "27-48",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Revisiting Definitions and Challenges of Intangible Cultural Heritage: The Case of the Old Centre of Mashhad",
+          "authors": [
+            "Ayda Khaleghi"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 88,
+          "citation_pages": "49-68",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Promoting the Role of Egyptian Museums in Nurturing and Safeguarding Intangible Cultural Heritage",
+          "authors": [],
+          "pdf_start_index": 89,
+          "pdf_end_index": 107,
+          "citation_pages": "69-88",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Syrian Intangible Cultural Heritage: Characteristics and Challenges of Preservation",
+          "authors": [
+            "Nibal Muhesen\nIntroduction"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 120,
+          "citation_pages": "89-102",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mutrah Old Market, Oman: Analysis to Enhance a Living Heritage Site",
+          "authors": [
+            "Mutrah Old Market"
+          ],
+          "pdf_start_index": 123,
+          "pdf_end_index": 145,
+          "citation_pages": "103-126",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Study on the Visual Perception of Historical Streetscapes Using Kansei Engineering: Cherchell City, Algeria",
+          "authors": [
+            "Abd Elrrahmane Bouakar \nIntroduction"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 164,
+          "citation_pages": "127-144",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Western Churches in Nagasaki and Amakusa as Sites of Memory",
+          "authors": [],
+          "pdf_start_index": 165,
+          "pdf_end_index": 180,
+          "citation_pages": "145-162",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Tradition Versus Modernity in Heritage Preservation Discourse in Postcolonial Morocco: Jemaa el-Fna Plaza, Marrakesh",
+          "authors": [
+            "Versus Modernity",
+            "Marrakesh \n Assia Lamzah\nIntroduction\nPostcolonial"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 196,
+          "citation_pages": "163-176",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Integrity and Authenticity: Humberstone and Santa Laura Saltpeter Works (Chile)",
+          "authors": [
+            "Guillermo Rojas Alfaro\nIntroduction"
+          ],
+          "pdf_start_index": 197,
+          "pdf_end_index": 219,
+          "citation_pages": "177-200",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "(Identity) Politics and the National Museum of Bosnia and Herzegovina",
+          "authors": [
+            "Fatma Mataracı",
+            "Zemaljski Muzej"
+          ],
+          "pdf_start_index": 221,
+          "pdf_end_index": 238,
+          "citation_pages": "201-218",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Conclusion: Heritage in the Age of Globalisation",
+          "authors": [
+            "tim"
+          ],
+          "pdf_start_index": 239,
+          "pdf_end_index": 245,
+          "citation_pages": "219-225",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 62.35668441699818,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T14:31:57.674833+00:00"
+}

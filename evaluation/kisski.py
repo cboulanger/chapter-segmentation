@@ -51,12 +51,15 @@ def fetch_kisski_models(base_url: str, api_key: str, timeout: float = 5.0) -> li
     ]
 
 
-def select_top5(models: list[KisskiModel]) -> list[KisskiModel]:
+def select_top5(models: list[KisskiModel], limit: int = 5) -> list[KisskiModel]:
     """On-demand-refresh selection: every non-'very busy' model, ascending
     by demand (so 'available' models sort before 'busy' ones), capped at
-    5."""
+    `limit` (5 by default -- hence the name; refresh_llm_cache.py's
+    --limit flag can override it, e.g. down to 1 for a quick single-model
+    pass after an input-affecting change, leaving the rest for the nightly
+    fill-gaps job to pick up)."""
     eligible = [m for m in models if m.availability != "very busy"]
-    return sorted(eligible, key=lambda m: m.demand)[:5]
+    return sorted(eligible, key=lambda m: m.demand)[:limit]
 
 
 def select_gap_fill(models: list[KisskiModel], covered_model_ids: set[str], limit: int = 5) -> list[KisskiModel]:

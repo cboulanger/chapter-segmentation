@@ -88,6 +88,67 @@ class TestClassifyRegionsHeadingWindows(unittest.TestCase):
             self.assertEqual(_FAKE_BOOK_PAGES[index][start:end], production_head)
 
 
+# A book where one TOC entry ("Middle") genuinely can't be resolved by
+# _locate_toc_entries: its title fuzzy-matches two real, non-adjacent pages
+# (1 and 6 -- far enough apart that locate_chapter_start_candidates' cluster
+# gap keeps them as two separate candidates, not one), and because "Middle"
+# is listed LAST in the TOC while both its real candidates sit BEFORE
+# Introduction/Conclusion's resolved pages, the TOC-order second pass's
+# feasible interval (strictly between its neighbors) excludes both --
+# leaving it in _locate_toc_entries' `unlocated` list with 2 real
+# candidates. This is exactly the shape analyze_attachment_llm_only hands to
+# llm_disambiguate_chapter_start. Reproduced this way (rather than mocking
+# TocEntry/candidates directly) so classify_regions is exercised through the
+# same real find_toc_candidates/_locate_toc_entries production path a real
+# book would hit.
+_UNLOCATED_AMBIGUOUS_TITLE_PAGES = [
+    "CONTENTS\n"
+    "Introduction ..... 8\n"
+    "Conclusion ..... 10\n"
+    "Middle ..... 2\n",
+    "Middle\nAuthor B\n\nBody text about the middle section continues here in some detail.\n\n2",
+    "filler filler filler filler filler filler filler filler filler filler\n\n3",
+    "filler filler filler filler filler filler filler filler filler filler\n\n4",
+    "filler filler filler filler filler filler filler filler filler filler\n\n5",
+    "filler filler filler filler filler filler filler filler filler filler\n\n6",
+    "Middle\nAuthor B\n\nBody text about the middle section continues here in some detail.\n\n7",
+    "filler filler filler filler filler filler filler filler filler filler\n\n8",
+    "Introduction\nAuthor A\n\nBody text of the introduction goes here in reasonable detail.\n\n9",
+    "filler filler filler filler filler filler filler filler filler filler\n\n10",
+    "Conclusion\nAuthor C\n\nBody text of the conclusion goes here in reasonable detail.\n\n11",
+    "filler filler filler filler filler filler filler filler filler filler\n\n12",
+]
+
+
+class TestClassifyRegionsUnlocatedEntries(unittest.TestCase):
+    def test_setup_actually_produces_an_unlocated_ambiguous_title(self):
+        # Guards the fixture itself: if a future change to the location
+        # heuristics makes "Middle" resolve after all, the rest of this
+        # class would silently stop testing what it claims to.
+        from chapter_segmentation.segmentation import find_toc_candidates, _locate_toc_entries
+        toc_entries = find_toc_candidates(_UNLOCATED_AMBIGUOUS_TITLE_PAGES)
+        toc_indices = {e.source_page_index for e in toc_entries}
+        _located, unlocated, _non_content = _locate_toc_entries(
+            _UNLOCATED_AMBIGUOUS_TITLE_PAGES, toc_entries, exclude_indices=toc_indices,
+        )
+        self.assertEqual([e.title for e in unlocated], ["Middle"])
+
+    def test_unlocated_titles_own_candidate_pages_get_heading_windows(self):
+        # Both real "Middle" pages -- exactly what
+        # llm_disambiguate_chapter_start's candidate list would contain --
+        # must be preserved, not just pages for entries _locate_toc_entries
+        # actually resolved.
+        regions = classify_regions(_UNLOCATED_AMBIGUOUS_TITLE_PAGES)
+        self.assertIn(1, regions.heading_windows)
+        self.assertIn(6, regions.heading_windows)
+
+    def test_heading_window_for_unlocated_candidate_covers_the_title(self):
+        regions = classify_regions(_UNLOCATED_AMBIGUOUS_TITLE_PAGES)
+        for index in (1, 6):
+            start, end = regions.heading_windows[index]
+            self.assertIn("Middle", _UNLOCATED_AMBIGUOUS_TITLE_PAGES[index][start:end])
+
+
 class TestBuildPreserveMask(unittest.TestCase):
     def test_full_page_is_entirely_preserved(self):
         regions = RegionMap(full_pages=frozenset({0}), header_lines=frozenset(), heading_windows={})

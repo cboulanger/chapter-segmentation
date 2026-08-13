@@ -13,6 +13,8 @@ same caveat as ground_truth_helper.py's chapter-boundary drafts.
 Usage:
     uv run python evaluation/scripts/add_toc_ground_truth.py
     uv run python evaluation/scripts/add_toc_ground_truth.py --force
+    uv run python evaluation/scripts/add_toc_ground_truth.py --corpus pending
+    uv run python evaluation/scripts/add_toc_ground_truth.py --corpus pending copyrighted-scans
 """
 
 import argparse
@@ -27,7 +29,7 @@ from pypdf import PdfReader
 from evaluation.scripts.ground_truth_helper import find_toc_pages, toc_page_range
 
 _CORPUS_DIR = Path(__file__).resolve().parent.parent / "corpus"
-_CORPORA = ["open-access", "copyrighted-scans"]
+_DEFAULT_CORPORA = ["open-access", "copyrighted-scans"]
 
 
 def retrofit_book(pages: list[str], expected: dict, force: bool) -> tuple[dict | None, str]:
@@ -59,14 +61,24 @@ def _load_pages(pdf_path: Path) -> list[str]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--force", action="store_true", help="Re-run books that already have a toc field")
+    parser.add_argument(
+        "--corpus",
+        nargs="+",
+        metavar="NAME",
+        default=None,
+        help=f"Corpus/corpora to process, e.g. 'pending'. Defaults to {_DEFAULT_CORPORA}.",
+    )
     args = parser.parse_args()
 
     needs_review = []
     n_written = 0
     n_skipped = 0
 
-    for corpus in _CORPORA:
+    for corpus in args.corpus or _DEFAULT_CORPORA:
         corpus_dir = _CORPUS_DIR / corpus
+        if not corpus_dir.is_dir():
+            print(f"[{corpus}] SKIP: no such corpus directory: {corpus_dir}")
+            continue
         for expected_path in sorted(corpus_dir.glob("*.expected.json")):
             key = expected_path.name.removesuffix(".expected.json")
             pdf_path = corpus_dir / f"{key}.pdf"

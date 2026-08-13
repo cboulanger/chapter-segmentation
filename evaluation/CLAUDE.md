@@ -46,18 +46,71 @@ Three documents, three different lifetimes -- know which one to write to:
   whenever `src/chapter_segmentation/segmentation.py` or `src/chapter_segmentation/common.py` changes in a way
   that touches text-matching logic (a new heuristic could read page text
   outside what the redaction pipeline currently preserves) -- for
-  non-OA books, the tool's `--verify` step will refuse to write a
-  stale/incorrect entry, so a clean run is the confirmation that a change
-  didn't need any redaction-pipeline updates. (OA books skip `--verify`
-  entirely since there's no redacted/real divergence possible.) A prior
-  redacted revision of this corpus had 13 open-access books permanently
-  fail `--verify` -- root-caused to two redaction-pipeline gaps (TOC-page
-  selection being sensitive to word substitution when a book has a
-  competing index/bibliography page with the same line shape, and the
-  Faker word pool having no long enough real word for PDF-extraction-glued
-  tokens, shrinking a page below the trailing-blank-page threshold) --
-  which is exactly why OA books are no longer redacted at all: real text
-  has no such failure mode.
+  non-OA books, the tool's `--verify` step checks that the redacted text
+  still makes `analyze_attachment` find the exact same chapter boundaries
+  as the real text, so a clean run (no `WARNING`s) is the confirmation
+  that a change didn't need any redaction-pipeline updates. (OA books skip
+  `--verify` entirely since there's no redacted/real divergence possible.)
+  A prior redacted revision of this corpus had 13 open-access books
+  permanently fail `--verify` -- root-caused to two redaction-pipeline
+  gaps (TOC-page selection being sensitive to word substitution when a
+  book has a competing index/bibliography page with the same line shape,
+  and the Faker word pool having no long enough real word for
+  PDF-extraction-glued tokens, shrinking a page below the trailing-blank-
+  page threshold) -- which is exactly why OA books are no longer redacted
+  at all: real text has no such failure mode.
+
+  **A book whose redacted text still doesn't match after self-correction
+  gets cached anyway, flagged `"verified": false`, with a `WARNING` printed
+  instead of being silently dropped** (changed 2026-08-13 -- see
+  `redact_book_until_stable`'s docstring in `evaluation/redaction/redact.py`
+  for the self-correction loop itself). The tool's own retry loop already
+  widens the forced-verbatim page set automatically when it finds drift; it
+  only gives up when a book's drift keeps recurring across attempts without
+  shrinking, or the pages involved are so widespread that forcing them all
+  verbatim would leak a large fraction of the book's actual prose into a
+  file meant to be safe to redistribute. Don't chase the retry loop further
+  by hand for such a book (raising `max_attempts` again, or writing a
+  smarter drift-page heuristic) before checking whether the fix is
+  actually cheap: **`evaluation/corpus/<corpus>/redaction_overrides.json`**
+  (create if missing) is a committed, hand-maintained map of manifest key
+  → extra page indices to always force fully verbatim, for exactly this
+  case --
+
+  ```json
+  {"9781841136400": [453, 454]}
+  ```
+
+  Diagnose the culprit page(s) by hand rather than guessing: bisect the
+  mismatched range reported in the `WARNING`'s boundary diff by forcing
+  candidate pages and re-running `analyze_attachment` on both the real and
+  redacted text until the exact boundaries match again (see the "found
+  manually for `9781841136400`" case in `redact_book_until_stable`'s
+  docstring for a worked example -- there, the culprit turned out to be a
+  page that was neither the start nor end of any mismatched range, so nothing
+  in the automatic loop ever proposed forcing it). If the culprit can't be
+  pinned to a small handful of pages -- the drift is scattered across a
+  large fraction of the book, or the redacted text loses *every* detected
+  chapter outright -- leave the book uncached rather than force enough of
+  it verbatim to "fix" the check; a `"verified": false` entry (or no entry
+  at all, if you'd rather not cache something this noisy) is an accepted
+  outlier, not a build blocker.
+
+  **`--skip-redaction` is a separate, faster escape valve for active
+  development** (added 2026-08-13, when a batch of newly-promoted books
+  needed *something* cached quickly so `refresh_llm_cache.py` had data to
+  read, without waiting on redaction to converge for the stubborn ones):
+  it caches a non-OA book's real text verbatim -- no redaction attempted
+  at all -- and marks the entry `"needs_redaction": true`. That file is
+  real copyrighted prose sitting in what's normally the git-tracked,
+  safe-to-publish `public-cache/` directory, so it must never be
+  committed -- add its exact path to `evaluation/.gitignore` (see the
+  block already there for the four books this happened to) whenever you
+  use this flag. Treat it as temporary: re-run the script on that book
+  without the flag once you're ready to redact it for real, which
+  overwrites the file with a properly redacted (or `"verified": false`,
+  per the paragraph above) entry, at which point the gitignore line comes
+  back out.
 
 If you're unsure which document a change belongs in, ask: would this
 sentence still be true after the next code change to the heuristics, even
@@ -80,11 +133,25 @@ Before anything else, pick one:
   (`extract_page_texts_for_analysis(pdf_bytes)` then `pages_need_ocr(pages)`,
   both in `src/chapter_segmentation/segmentation.py`); if it returns `True`,
   OCR the PDF itself first (e.g. `ocrmypdf --force-ocr -l <lang> in.pdf
-  out.pdf`) and add the OCR'ed version, not the raw scan. `.ocr-cache/`
+  out.pdf`) and add the OCR'ed version, not the raw scan. **But first check
+  whether the scan itself is bad, not just its text layer** -- a black
+  scanner-bed background, the scanning operator's hand visible around page
+  edges, heavy skew, or wildly inconsistent page sizes/aspect ratios from
+  page to page are all pixel-level defects that plain `ocrmypdf --force-ocr`
+  does not fix (it re-OCRs whatever image is there, artifacts included --
+  and can even misread the artifacts themselves as spurious glyphs). Run
+  `evaluation/scripts/clean_scanned_pdf.py` instead in that case -- see
+  `README.md`'s "Cleaning a badly-scanned PDF" -- which handles the
+  re-OCR step itself via `--ocr-lang`, so it replaces the plain `ocrmypdf`
+  invocation rather than running alongside it. `.ocr-cache/`
   (`evaluation/scripts/ocr_evaluation_pdfs.py`) only caches extracted text
   for the accuracy harness -- it does not touch the PDF the layout-based
   TOC/chapter-first-page classifier pilot reads directly (`pdfalto`, via
-  `evaluation/scripts/pdfalto_runner.py`), so a text-layer-less PDF silently
+  `evaluation/scripts/pdfalto_runner.py`; the built binary lives at
+  `../pdfalto/pdfalto`, a sibling checkout of
+  [kermitt2/pdfalto](https://github.com/kermitt2/pdfalto) next to this repo
+  -- pass it via `--pdfalto-bin ../pdfalto/pdfalto` or `PDFALTO_BIN`, since
+  it isn't on `PATH` or installable via brew), so a text-layer-less PDF silently
   starves that pilot of signal no matter what the text-based harness sees.
 - **No ground truth built yet** (you only have the PDF and basic metadata
   so far) → `pending/`. Once its `.expected.json` exists, promote it into
@@ -95,6 +162,18 @@ Before anything else, pick one:
   via Crossref/Unpaywall automatically. Only entries already in that
   corpus's committed `manifest.json` are supported (not
   `manifest.local.json` -- promote those by hand).
+
+**If the book is being added to grow the layout-based TOC/chapter-first-page
+classifier's training pool specifically** (as opposed to the text-heuristic
+accuracy harness), prefer scans, books with unnumbered first chapters, and
+books with weak title/body font contrast over another generic
+well-produced open-access book. A learning-curve check (`RESULTS.md`,
+"Follow-up: relaxing the per-book bar, and a model-architecture swap")
+found `full_recall_fraction` flat across training-pool sizes 10-35 books --
+the classifier is saturated on the kind of book already well-represented in
+the corpus, so another book like those adds little signal; the
+underrepresented templates it still struggles with are where new ground
+truth actually moves the numbers.
 
 Every path in this document below (`evaluation/<filename>`,
 `evaluation/manifest.local.json`, etc.) means
@@ -130,6 +209,33 @@ here.
   runs. Once `evaluation/scripts/generate_public_evaluation_cache.py --verify` succeeds
   for such a book, move its entry to `manifest.json` in the same commit that
   adds its `public-cache/` file, so the two never drift apart.
+
+**`manifest.local.json` is strictly for a book you are *not* committing to
+the repo at all** — one you're only exercising in your own local test runs,
+with no `public-cache/` entry and no intention of adding one right now. It
+is not a parking spot for "no DOI" books in general, and it is not where a
+`pending/`-promoted book's ground truth lands by default. The absence of a
+DOI only decides whether the manifest entry can carry a real `doi` field —
+it says nothing about whether the entry should be committed. If you're
+building (or, per the rule above, already have) a `public-cache/` entry for
+the book — which is exactly what happens whenever you run
+`evaluation/scripts/generate_public_evaluation_cache.py` for it, including
+as part of a `pending/`-promotion batch — the manifest entry belongs in the
+committed `manifest.json`, DOI or not, in the same commit as that cache
+file. Promoting a `pending/` book by hand (the `manifest.local.json` case
+Step 0a's pending bullet mentions) does not mean the *destination* entry
+stays local too — check this rule again once you've generated its cache
+data, and move it to `manifest.json` if you have.
+
+**Check Crossref by ISBN even when Zotero shows no DOI.** A personal-library
+item's Zotero catalog entry frequently has no DOI field filled in even
+though the book itself has a real Crossref book-level record — a quick
+`curl -s "https://api.crossref.org/works?filter=isbn:<isbn>&rows=1"` (or
+`.../works/<doi>` if you already spotted one printed on the copyright page)
+takes a few seconds and, when it hits, moves the book straight to the
+committed `manifest.json` instead of the local one. Found a real DOI this
+way for 6 of 10 personal-library books in one batch (2026-08-12) whose
+Zotero entries had none.
 
 `manifest.local.json` schema — identical to `manifest.json`'s `"books"` list:
 
@@ -237,8 +343,24 @@ one. For each chapter in the draft:
 4. Compute `citation_pages` as `"<citation_start>-<citation_end>"` (or
    `null` if either half is unavailable).
 
-A fast way to spot-check many pages at once — dump first/last lines of a
-page range and eyeball them against expectation:
+**Viewing pages visually (Claude Code's `Read` tool on the PDF itself)** is
+the fastest way to actually *look* at a candidate page rather than just its
+extracted text — text extraction can be misleadingly clean-looking while
+still describing the wrong page. Two gotchas found doing this for real
+(2026-08-12 ground-truth batch):
+
+- Its `pages` parameter takes **1-based viewer page numbers**, not 0-based
+  physical indices — `pages: "N-M"` renders viewer pages N through M, i.e.
+  0-based `pdf_start_index`/`pdf_end_index` values `N-1` through `M-1`. Mixing
+  up the two conventions mid-session silently shifts every subsequent
+  spot-check by one page; recompute the viewer-page number explicitly
+  (`index + 1`) every time rather than trusting a running mental offset.
+- It only honors the **first** comma-separated range — `pages: "13-15,69-71"`
+  silently renders only pages 13-15 and drops the second range entirely, with
+  no error. Make one call per range instead of combining them.
+
+A fast way to spot-check many pages at once via raw text (no rendering) —
+dump first/last lines of a page range and eyeball them against expectation:
 
 ```bash
 uv run python -c "
@@ -309,6 +431,31 @@ by hand). Spot-check any auto-written range before trusting it, same
 discipline as the chapter-boundary draft in Step 2/3 -- this script also
 finds the best structural match, not necessarily the correct one.
 
+The script defaults to `open-access`/`copyrighted-scans`, but takes an
+explicit `--corpus` flag (one or more names, e.g. `--corpus pending` or
+`--corpus pending copyrighted-scans`) for any other corpus, including
+`pending/`.
+
+**"NEEDS REVIEW" is the common case, not the exception** -- in a batch of 10
+books hand-processed 2026-08-12, all 10 came back "NEEDS REVIEW" with a long
+list of non-contiguous "TOC-like" pages scattered across the whole book, not
+just the front matter: per-chapter mini-outlines (see the mini-TOC failure
+mode below) and citation-/footnote-dense pages elsewhere routinely match the
+same "3+ title...number lines" structural pattern the real front-matter TOC
+does. A useful (but not fully reliable) triage step before falling back to
+fully manual page-turning: filter the detected page set to indices below
+roughly 25 (`{p for p in toc_pages if p < 25}`) and recompute the contiguous
+range on that subset -- this isolated the real TOC correctly for most of
+that batch, but not all of it: it can still include a front-matter false
+positive (e.g. a copyright/ISBN page whose imprint text coincidentally
+matches the pattern) or miss the real TOC range's own boundary pages
+entirely, and on a book whose two-column TOC layout gets scrambled by
+default-mode pypdf extraction (see `README.md`'s "Diverse real-library
+evaluation set"), the filtered set can come back completely empty even
+though the book has a perfectly real, visually obvious TOC. There is no
+substitute for opening the PDF (see the visual-viewing note in Step 3 above)
+and confirming the exact page range by eye every time.
+
 ## Known failure modes (found the hard way while building this evaluation set)
 
 - **PDF-index ≠ printed page number, and the offset is often not constant.**
@@ -324,6 +471,29 @@ finds the best structural match, not necessarily the correct one.
   mini internal outline (sub-sections with their own page numbers), it can
   be mistaken for a TOC page and wrongly excluded too. If a chapter's
   `pdf_start_index` looks suspiciously late, check whether this happened.
+  **This is not a rare edge case for some book templates** — a Springer
+  "Handbuch"/Reference-series volume can carry a per-chapter mini-"Inhalt"
+  box on *nearly every single chapter's* opening or second page (confirmed
+  on `9783658076078.expected.json` and `9783658057022.expected.json`,
+  2026-08-12), cascading the naive search wildly off-track from the second
+  or third chapter onward. If you recognize this template, don't trust the
+  script's output past the first couple of entries — locate every remaining
+  boundary by direct visual inspection instead.
+- **A chapter's title/byline block can extract *after* its own body text**,
+  even though it's visually at the top of the page — a PDF content-stream
+  text-object ordering quirk seen on at least two otherwise-unrelated books
+  (`9783658057022.expected.json`, `9783161538315.expected.json`,
+  2026-08-12). `locate_chapter_start`/`ground_truth_helper.py`'s
+  title-then-author proximity check only looks at the first ~250 characters
+  of extracted text, so on an affected page it skips straight past the real
+  opening page and locks onto a *later* page whose running header or a
+  same-title in-body mention happens to satisfy the check instead — and
+  because the real opening page's title/author text is technically present
+  just later in the extraction order, this can produce a **misleadingly
+  high match_score (90-100)**, not a low one that would prompt a second
+  look. A high score is reassuring but not proof; visually confirm the page
+  regardless when a book's chapters otherwise repeat titles in running
+  headers (the same precondition as the running-headers failure mode below).
 - **Running headers can repeat the full chapter title on every page**, not
   just the opening one. The script requires an author's last name to appear
   near the top of the page too, to disambiguate the true opening page from a
@@ -341,3 +511,37 @@ finds the best structural match, not necessarily the correct one.
   substring of the section's actual heading text as the search title, or
   just determine that boundary by direct inspection instead of trusting the
   script for it.
+- **Personal-library PDFs are often abridged excerpts, not complete books —
+  and this is common enough to expect, not a rare surprise.** In a batch of
+  14 candidates sourced from one real Zotero library (2026-08-12), 4 (~29%)
+  turned out to be a photocopied subset of a much larger volume: one was a
+  single chapter with no front matter at all (printed pages 398-454 of a
+  much longer monograph), one was the introduction plus one later chapter
+  with the entire middle of the book missing (printed pages 9-43, then a
+  jump straight to 348-395, then another jump to 412-429, against a TOC
+  claiming the book runs to page 432), one was four chapters of "Part I"
+  with the book's own foreword referencing an unreached "zweiter Teil", and
+  one was a single article whose own first page already started at printed
+  page 452. **Checking only the first and last few pages is not enough** —
+  the second example above looks perfectly contiguous if you check just the
+  front and just the back; the gap is only visible by checking printed page
+  numbers *throughout*, e.g. every 20-30 pages or at every apparent
+  section/chapter boundary, and cross-checking the PDF's total physical page
+  count against the TOC's own last-listed page number (a TOC claiming page
+  432 in a 47-page PDF is an immediate, no-page-turning-required red flag).
+  If a book fails this check, it does not belong in any corpus (not even
+  `pending/`) — there is no partial ground truth worth building from an
+  excerpt whose missing chapters you can't get.
+- **Zotero's cataloged creator roles (`editor` vs. contributor/honoree) can
+  be wrong — always verify against the book's actual title page or
+  colophon before writing `authors` into the TOC JSON or the manifest
+  `title`.** Found twice in one batch (2026-08-12): a book cataloged with
+  two "editors" turned out to have a single actual author (a posthumous
+  "collected works" volume) with one of the two names being the real
+  volume editor and the other appearing nowhere as an author of any
+  individual chapter; a Festschrift cataloged with two "editors" turned out
+  to have one real editor, with the second name being the honoree the
+  volume was written *for* (and a contributing chapter author in his own
+  right), not a co-editor at all. Either mistake, left uncorrected, writes
+  a wrong `authors` list that then degrades `locate_chapter_start`'s
+  author-confirmation matching for every chapter in the book.

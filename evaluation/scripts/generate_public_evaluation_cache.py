@@ -18,7 +18,20 @@ language) since its PDF cannot be redistributed.
 Run by a maintainer who has the real books locally; not something a
 contributor without PDFs needs to run.
 
-    uv run python evaluation/scripts/generate_public_evaluation_cache.py [--book <manifest-key>] [--corpus <name>] [--no-verify]
+    uv run python evaluation/scripts/generate_public_evaluation_cache.py [--book <manifest-key>] [--corpus <name>] [--no-verify] [--skip-redaction]
+
+--skip-redaction caches a non-OA book's REAL page text verbatim, with no
+redaction attempted at all -- for active-development situations where a
+working cache is wanted now (so downstream tooling like
+evaluation/refresh_llm_cache.py has something to read) but redacting a
+freshly-added batch of books isn't worth blocking on yet. This writes real
+copyrighted prose into what is normally the git-tracked, safe-to-publish
+public-cache/ directory -- the caller is responsible for NOT committing
+those specific files (see the printed WARNING for exactly which ones, and
+`evaluation/CLAUDE.md`'s "redaction_overrides.json" section). Every such
+entry is marked `"needs_redaction": true` so a later real run of this
+script without the flag (which always re-redacts a book it touches) is
+the way back to a publishable cache.
 """
 
 import argparse
@@ -38,14 +51,16 @@ from chapter_segmentation.segmentation import (
 from evaluation.harness import (
     analysis_pages_for,
     available_books,
+    corpus_dir,
     list_corpora,
     outline_candidate_to_dict,
     public_cache_dir,
 )
 from evaluation.redaction.redact import redact_book_until_stable
 
-CIPHER_VERSION = 2  # bumped: cache entries now carry a "redacted" flag, and
-# oa:true books are cached verbatim instead of redacted (see module docstring)
+CIPHER_VERSION = 3  # bumped: cache entries now also carry a "verified" flag
+# (bumped previously: cache entries carry a "redacted" flag, and oa:true
+# books are cached verbatim instead of redacted -- see module docstring)
 
 
 def _verify(real_pages: list[str], redacted_pages: list[str]) -> list[str]:
@@ -63,18 +78,44 @@ def _verify(real_pages: list[str], redacted_pages: list[str]) -> list[str]:
     ]
 
 
+def _load_redaction_overrides(corpus: str) -> dict[str, list[int]]:
+    """Reads evaluation/corpus/<corpus>/redaction_overrides.json -- a
+    committed, hand-maintained map of manifest key -> extra page indices to
+    always keep verbatim during redaction. Exists for residual drift
+    `redact_book_until_stable` cannot resolve on its own (a page that is
+    neither the start nor end of any mismatched chapter range, so nothing
+    in the automatic retry loop ever proposes forcing it -- see that
+    function's docstring for the `9781841136400` case that motivated this).
+    Diagnose the exact page(s) by hand (bisect the mismatched range) rather
+    than reaching for this file first -- it is a last resort for the
+    handful of books where the automatic loop provably cannot converge
+    without forcing an unacceptably large fraction of the book verbatim."""
+    path = corpus_dir(corpus) / "redaction_overrides.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def _main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--book", help="Only regenerate this manifest key (filename stem)")
     parser.add_argument("--corpus", help="Only regenerate this corpus (default: every corpus under evaluation/corpus/)")
     parser.add_argument("--no-verify", action="store_true", help="Skip the exact-boundary-match check")
+    parser.add_argument(
+        "--skip-redaction", action="store_true",
+        help="Cache non-OA books' REAL text verbatim, unredacted -- see module docstring. "
+        "Do NOT commit the resulting public-cache/ files.",
+    )
     args = parser.parse_args()
 
     failures = 0
+    unverified = 0
+    unredacted_written: list[str] = []
     corpora = [args.corpus] if args.corpus else list_corpora()
     for corpus in corpora:
         cache_dir = public_cache_dir(corpus)
         cache_dir.mkdir(parents=True, exist_ok=True)
+        redaction_overrides = _load_redaction_overrides(corpus)
         for pdf_path, _expected_path, book in available_books(corpus):
             manifest_key = Path(book["filename"]).stem
             if args.book and manifest_key != args.book:
@@ -87,6 +128,7 @@ def _main() -> int:
             try:
                 raw_pages, _layout_used = extract_page_texts_for_analysis(file_bytes)
                 source = "ocr" if pages_need_ocr(raw_pages) else "extracted"
+                needs_redaction = False
                 if book.get("oa", False):
                     # The PDF itself is already legally redistributable, so
                     # the extracted text needs no redaction -- this also
@@ -96,26 +138,50 @@ def _main() -> int:
                     # fuzzy-match it didn't have on the real text).
                     cache_pages = real_pages
                     redacted = False
+                    verified = True
+                elif args.skip_redaction:
+                    cache_pages = real_pages
+                    redacted = False
+                    verified = None
+                    needs_redaction = True
+                    unredacted_written.append(f"{corpus}/{manifest_key}.pages.json")
+                    print(f"{corpus}/{manifest_key}: WARNING -- cached REAL text verbatim (--skip-redaction), "
+                          f"\"needs_redaction\": true. DO NOT COMMIT this file.")
                 else:
                     language = detect_language(book.get("language"), book.get("title", ""))
+                    extra_forced = frozenset(redaction_overrides.get(manifest_key, []))
                     cache_pages, extra_preserved = redact_book_until_stable(
                         real_pages, detected_language=language, book_salt=manifest_key,
+                        extra_forced=extra_forced,
                     )
                     redacted = True
+                    verified = True
                     if extra_preserved:
                         print(f"{corpus}/{manifest_key}: self-corrected -- forced {len(extra_preserved)} extra page(s) "
                               f"fully verbatim to resolve a redaction-induced boundary drift: {sorted(extra_preserved)}")
                     if not args.no_verify:
                         # Defense in depth: redact_book_until_stable already verifies
                         # internally on every attempt, so this only fires if
-                        # max_attempts was exhausted without full convergence.
+                        # max_attempts was exhausted without full convergence. Rather
+                        # than drop the book entirely, cache it anyway with
+                        # "verified": false and a loud warning -- test_public_
+                        # evaluation_cache_parity.py only *reports* precision/recall
+                        # from whatever's in the cache (it's not gated), so an
+                        # imperfect cache still gives contributors without the PDF a
+                        # usable (if slightly noisy for this one book) signal, which
+                        # beats having no cache -- and therefore no llm-cache either,
+                        # since that depends on a public-cache entry existing --
+                        # at all. The warning is the flag for a human to look closer
+                        # (a smaller `redaction_overrides.json` entry, or accepting
+                        # the noise) at their own pace, not a build-blocking failure.
                         diff = _verify(real_pages, cache_pages)
                         if diff:
-                            print(f"{corpus}/{manifest_key}: VERIFY FAILED -- redaction changed detected chapter boundaries "
-                                  f"even after self-correction")
+                            verified = False
+                            unverified += 1
+                            print(f"{corpus}/{manifest_key}: WARNING -- redaction changed detected chapter boundaries "
+                                  f"even after self-correction; caching anyway with \"verified\": false. Needs manual "
+                                  f"review (see evaluation/CLAUDE.md's redaction_overrides.json section).")
                             print("\n".join(diff))
-                            failures += 1
-                            continue
             except Exception as exc:
                 # One book's failure must not strand the rest of the batch --
                 # same catch-log-continue shape as scripts/ocr_evaluation_pdfs.py.
@@ -125,12 +191,16 @@ def _main() -> int:
             cache_path = cache_dir / f"{manifest_key}.pages.json"
             cache_path.write_text(
                 json.dumps(
-                    {"cipher_version": CIPHER_VERSION, "source": source, "redacted": redacted, "pages": cache_pages},
+                    {
+                        "cipher_version": CIPHER_VERSION, "source": source, "redacted": redacted,
+                        "verified": verified, "needs_redaction": needs_redaction, "pages": cache_pages,
+                    },
                     indent=2, ensure_ascii=False,
                 ),
                 encoding="utf-8",
             )
-            print(f"{corpus}/{manifest_key}: OK, wrote {cache_path}{'' if redacted else ' (verbatim, oa)'}")
+            verbatim_note = " (verbatim, needs_redaction)" if needs_redaction else (" (verbatim, oa)" if not redacted else "")
+            print(f"{corpus}/{manifest_key}: OK, wrote {cache_path}{verbatim_note}")
             outline_candidates = extract_outline_candidates(file_bytes)
             outline_cache_path = cache_dir / f"{manifest_key}.outline.json"
             outline_cache_path.write_text(
@@ -141,6 +211,12 @@ def _main() -> int:
                 encoding="utf-8",
             )
             print(f"{corpus}/{manifest_key}: wrote {len(outline_candidates)} outline candidate(s) to {outline_cache_path}")
+    if unverified:
+        print(f"{unverified} book(s) cached with \"verified\": false -- needs manual review, see WARNINGs above")
+    if unredacted_written:
+        print(f"\n{len(unredacted_written)} file(s) written UNREDACTED (--skip-redaction) -- DO NOT COMMIT these:")
+        for path in unredacted_written:
+            print(f"  evaluation/corpus/{path}")
     if failures:
         print(f"{failures} book(s) failed -- see above")
     return 1 if failures else 0

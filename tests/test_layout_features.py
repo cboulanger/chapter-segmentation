@@ -7,7 +7,13 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from evaluation.scripts.layout_features import extract_page_features
+from evaluation.scripts.layout_features import (
+    FEATURE_NAMES,
+    PAGE_FEATURE_NAMES,
+    _is_heading_line,
+    add_book_context_features,
+    extract_page_features,
+)
 
 _FIXTURE_ALTO_XML = """<?xml version="1.0" encoding="UTF-8"?>
 <alto xmlns="http://www.loc.gov/standards/alto/ns-v3#">
@@ -190,6 +196,129 @@ class TestTrailingNumberFraction(unittest.TestCase):
         # "5" (digit) and "xii" (real roman numeral) count; "mix" and
         # "hello" (ordinary English words, not numerals) do not.
         self.assertEqual(features[0]["trailing_number_fraction"], 0.5)
+
+
+class TestIsHeadingLine(unittest.TestCase):
+    def test_keyword_headings_match_in_all_three_languages(self):
+        for text in ("Chapter 3", "KAPITEL 12", "Chapitre IV", "Part 2",
+                     "Teil 1", "Partie 3", "§ 5", "Chapter", "Teil"):
+            self.assertTrue(_is_heading_line(text), text)
+
+    def test_bare_numbers_and_roman_numerals_match(self):
+        for text in ("3", "12.", "IV", "xii", "1998"):
+            self.assertTrue(_is_heading_line(text), text)
+
+    def test_ordinary_text_and_roman_lookalikes_do_not_match(self):
+        # "mix"/"did" are spelled entirely with roman-numeral letters but are
+        # not roman numerals -- the existing _TRAILING_NUMERAL_RE grammar
+        # rejects them and this feature must inherit that.
+        for text in ("The Origins of Law", "mix", "did", "Introduction",
+                     "Partial results", "Chapters and verses", ""):
+            self.assertFalse(_is_heading_line(text), text)
+
+    def test_keyword_followed_by_roman_lookalike_word_does_not_match(self):
+        # The strict roman grammar must also apply to the token AFTER a
+        # heading keyword, not only to bare tokens.
+        for text in ("Chapter mix", "Chapter did", "Kapitel mild", "Part civic"):
+            self.assertFalse(_is_heading_line(text), text)
+
+
+class TestNewPageLocalFeatures(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.alto_path = Path(self._tmp.name) / "fixture.alto.xml"
+        self.alto_path.write_text(_FIXTURE_ALTO_XML, encoding="utf-8")
+        self.features = extract_page_features(str(self.alto_path))
+
+    def test_last_text_vpos_fraction(self):
+        # Page 0: lowest line bottom = VPOS 140 + HEIGHT 12 = 152.
+        self.assertAlmostEqual(self.features[0]["last_text_vpos_fraction"], 152 / 600)
+        # Page 1: lowest line bottom = VPOS 215 + HEIGHT 12 = 227.
+        self.assertAlmostEqual(self.features[1]["last_text_vpos_fraction"], 227 / 600)
+
+    def test_top_line_heading_match_is_zero_for_both_fixture_pages(self):
+        # Page 0's top line reads "Intro 5", page 1's reads "Introduction"
+        # -- neither is a bare number, roman numeral, or heading keyword.
+        self.assertEqual(self.features[0]["top_line_heading_match"], 0.0)
+        self.assertEqual(self.features[1]["top_line_heading_match"], 0.0)
+
+    def test_raw_font_intermediates_are_emitted(self):
+        self.assertAlmostEqual(self.features[0]["_max_font_size"], 10.0)
+        self.assertAlmostEqual(self.features[0]["_modal_font_size"], 10.0)
+        self.assertAlmostEqual(self.features[1]["_max_font_size"], 24.0)
+        self.assertAlmostEqual(self.features[1]["_modal_font_size"], 10.0)
+
+
+def _synthetic_page(line_count: float, last_vpos: float, max_font: float, modal_font: float) -> dict:
+    page = {name: 0.0 for name in PAGE_FEATURE_NAMES}
+    page["line_count"] = line_count
+    page["last_text_vpos_fraction"] = last_vpos
+    page["_max_font_size"] = max_font
+    page["_modal_font_size"] = modal_font
+    return page
+
+
+class TestAddBookContextFeatures(unittest.TestCase):
+    def setUp(self):
+        # Three-page book: a sparse chapter-opening-like page between two
+        # dense body pages. Line counts 30/8/20 -> median 20; modal fonts
+        # 10/10/12 -> body font median 10.
+        self.pages = {
+            0: _synthetic_page(30.0, 0.95, 10.0, 10.0),
+            1: _synthetic_page(8.0, 0.4, 24.0, 10.0),
+            2: _synthetic_page(20.0, 0.9, 12.0, 12.0),
+        }
+        self.result = add_book_context_features(self.pages, total_pages=3)
+
+    def test_output_keys_are_exactly_feature_names(self):
+        for page in self.result.values():
+            self.assertEqual(set(page.keys()), set(FEATURE_NAMES))
+
+    def test_page_zero_sentinels(self):
+        self.assertEqual(self.result[0]["prev_last_text_vpos_fraction"], 0.0)
+        self.assertEqual(self.result[0]["prev_line_count_rel"], 0.0)
+
+    def test_prev_page_wiring(self):
+        self.assertAlmostEqual(self.result[1]["prev_last_text_vpos_fraction"], 0.95)
+        self.assertAlmostEqual(self.result[1]["prev_line_count_rel"], 30.0 / 20.0)
+        self.assertAlmostEqual(self.result[2]["prev_last_text_vpos_fraction"], 0.4)
+        self.assertAlmostEqual(self.result[2]["prev_line_count_rel"], 8.0 / 20.0)
+
+    def test_book_relative_normalization(self):
+        self.assertAlmostEqual(self.result[0]["line_count_rel"], 30.0 / 20.0)
+        self.assertAlmostEqual(self.result[1]["line_count_rel"], 8.0 / 20.0)
+        self.assertAlmostEqual(self.result[1]["font_size_max_ratio_book"], 24.0 / 10.0)
+        self.assertAlmostEqual(self.result[2]["font_size_max_ratio_book"], 12.0 / 10.0)
+
+    def test_page_position_fraction(self):
+        self.assertAlmostEqual(self.result[0]["page_position_fraction"], 0.0)
+        self.assertAlmostEqual(self.result[1]["page_position_fraction"], 1.0 / 3.0)
+        self.assertAlmostEqual(self.result[2]["page_position_fraction"], 2.0 / 3.0)
+
+    def test_empty_pages_are_excluded_from_book_medians(self):
+        pages = {
+            0: _synthetic_page(0.0, 0.0, 0.0, 0.0),  # blank page
+            1: _synthetic_page(10.0, 0.9, 10.0, 10.0),
+            2: _synthetic_page(20.0, 0.9, 10.0, 10.0),
+        }
+        result = add_book_context_features(pages, total_pages=3)
+        # Median over non-empty pages only: (10+20)/2 = 15, not median(0,10,20)=10.
+        self.assertAlmostEqual(result[1]["line_count_rel"], 10.0 / 15.0)
+        # A page with no resolvable font gets the neutral 1.0, matching
+        # font_size_max_ratio's existing default.
+        self.assertEqual(result[0]["font_size_max_ratio_book"], 1.0)
+
+    def test_all_empty_book_falls_back_without_dividing_by_zero(self):
+        pages = {0: _synthetic_page(0.0, 0.0, 0.0, 0.0)}
+        result = add_book_context_features(pages, total_pages=1)
+        self.assertEqual(result[0]["line_count_rel"], 0.0)
+        self.assertEqual(result[0]["font_size_max_ratio_book"], 1.0)
+
+    def test_raw_keys_are_stripped(self):
+        for page in self.result.values():
+            self.assertNotIn("_max_font_size", page)
+            self.assertNotIn("_modal_font_size", page)
 
 
 if __name__ == "__main__":

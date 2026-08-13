@@ -1,0 +1,455 @@
+{
+  "chapters": [
+    {
+      "title": "Vorwort zur 2. Auflage",
+      "authors": [
+        "Robert Chr. van Ooyen",
+        "Martin H. W. Möllers"
+      ],
+      "pdf_start_index": 10,
+      "pdf_end_index": 10,
+      "citation_pages": null
+    },
+    {
+      "title": "Einführung zur 1. Auflage: Recht gegen Politik – politik- und rechtswissenschaftliche Versäumnisse bei der Erforschung des Bundesverfassungsgerichts",
+      "authors": [
+        "Robert Chr. van Ooyen",
+        "Martin H. W. Möllers"
+      ],
+      "pdf_start_index": 11,
+      "pdf_end_index": 16,
+      "citation_pages": "3-8"
+    },
+    {
+      "title": "Bauen als (demokratische) Sinnstiftung. Das Gebäude des Bundesverfassungsgerichts als „Staatsbau“",
+      "authors": [
+        "Thorsten Bürklin"
+      ],
+      "pdf_start_index": 18,
+      "pdf_end_index": 35,
+      "citation_pages": "11-28"
+    },
+    {
+      "title": "Verfassungsgerichtsbarkeit in der offenen Gesellschaft",
+      "authors": [
+        "Peter Häberle"
+      ],
+      "pdf_start_index": 37,
+      "pdf_end_index": 51,
+      "citation_pages": "31-45"
+    },
+    {
+      "title": "Mythos als Integration. Zur symbolischen Bedeutung des Bundesverfassungsgerichts",
+      "authors": [
+        "Ulrich Haltern"
+      ],
+      "pdf_start_index": 52,
+      "pdf_end_index": 72,
+      "citation_pages": "47-67"
+    },
+    {
+      "title": "Das Bundesverfassungsgericht in rechtspolitologischer Sicht",
+      "authors": [
+        "Rüdiger Voigt"
+      ],
+      "pdf_start_index": 73,
+      "pdf_end_index": 98,
+      "citation_pages": "69-94"
+    },
+    {
+      "title": "„Volksdemokratie“ und nationalliberaler Etatismus. Das Bundesverfassungsgericht aus Sicht der politischen Theorie am Beispiel von Richter-Vorverständnissen (Böckenförde und Kirchhof)",
+      "authors": [
+        "Robert Chr. van Ooyen"
+      ],
+      "pdf_start_index": 99,
+      "pdf_end_index": 122,
+      "citation_pages": "95-118"
+    },
+    {
+      "title": "Entscheiden durch Maßstabsbildung",
+      "authors": [
+        "Oliver Lepsius"
+      ],
+      "pdf_start_index": 123,
+      "pdf_end_index": 139,
+      "citation_pages": "119-135"
+    },
+    {
+      "title": "Das Bundesverfassungsgericht in der Perspektive der Rechtssoziologie",
+      "authors": [
+        "Hans Albrecht Hesse"
+      ],
+      "pdf_start_index": 140,
+      "pdf_end_index": 154,
+      "citation_pages": "137-151"
+    },
+    {
+      "title": "Die Wirkung des Bundesverfassungsgerichts",
+      "authors": [
+        "Thomas Gawron",
+        "Ralf Rogowski"
+      ],
+      "pdf_start_index": 155,
+      "pdf_end_index": 170,
+      "citation_pages": "153-168"
+    },
+    {
+      "title": "Der Streit um die Staatsgerichtsbarkeit in Weimar aus demokratietheoretischer Sicht. Triepel – Kelsen – Schmitt – Leibholz",
+      "authors": [
+        "Robert Chr. van Ooyen"
+      ],
+      "pdf_start_index": 171,
+      "pdf_end_index": 189,
+      "citation_pages": "169-187"
+    },
+    {
+      "title": "Der Parlamentarische Rat und das Bundesverfassungsgericht",
+      "authors": [
+        "Karlheinz Niclauß"
+      ],
+      "pdf_start_index": 191,
+      "pdf_end_index": 204,
+      "citation_pages": "191-204"
+    },
+    {
+      "title": "Wer beeinflusst hier wen? Die westdeutsche Staatsrechtslehre und das Bundesverfassungsgericht während der 1950er und 1960er Jahre",
+      "authors": [
+        "Frieder Günther"
+      ],
+      "pdf_start_index": 205,
+      "pdf_end_index": 217,
+      "citation_pages": "205-217"
+    },
+    {
+      "title": "„Smend oder Hennis“. Bedeutung, Rezeption und Problematik der ,Lüth-Entscheidung‘ des Bundesverfassungsgerichts von 1958",
+      "authors": [
+        "Thomas Henne"
+      ],
+      "pdf_start_index": 218,
+      "pdf_end_index": 229,
+      "citation_pages": "219-230"
+    },
+    {
+      "title": "Das Bundesverfassungsgericht und die Regierung Adenauer – vom Streit um den Status zur Anerkennung der Autorität",
+      "authors": [
+        "Oliver W. Lembcke"
+      ],
+      "pdf_start_index": 230,
+      "pdf_end_index": 242,
+      "citation_pages": "231-243"
+    },
+    {
+      "title": "Bundesverfassungsgericht und sozialliberale Koalition unter Willy Brandt. Der Streit um den Grundvertrag",
+      "authors": [
+        "Klaus Joachim Grigoleit"
+      ],
+      "pdf_start_index": 243,
+      "pdf_end_index": 257,
+      "citation_pages": "245-259"
+    },
+    {
+      "title": "Crisis! What Crisis? Der „Kruzifix-Beschluss“ und seine Folgen",
+      "authors": [
+        "Gary S. Schaal"
+      ],
+      "pdf_start_index": 258,
+      "pdf_end_index": 277,
+      "citation_pages": "261-280"
+    },
+    {
+      "title": "Konfliktlagen des Bundesverfassungsgerichts mit den Regierungen Schröder und Merkel, 1998–2013",
+      "authors": [
+        "Sascha Kneip"
+      ],
+      "pdf_start_index": 278,
+      "pdf_end_index": 292,
+      "citation_pages": "281-295"
+    },
+    {
+      "title": "Die Deutungsmacht des Bundesverfassungsgerichts",
+      "authors": [
+        "Hans Vorländer"
+      ],
+      "pdf_start_index": 294,
+      "pdf_end_index": 307,
+      "citation_pages": "299-312"
+    },
+    {
+      "title": "Warum mögen die Deutschen ihr Verfassungsgericht so sehr?",
+      "authors": [
+        "Werner J. Patzelt"
+      ],
+      "pdf_start_index": 308,
+      "pdf_end_index": 326,
+      "citation_pages": "313-331"
+    },
+    {
+      "title": "Die Verfassungsbeschwerde",
+      "authors": [
+        "Christoph Gusy"
+      ],
+      "pdf_start_index": 327,
+      "pdf_end_index": 341,
+      "citation_pages": "333-347"
+    },
+    {
+      "title": "Bundesverfassungsgericht und Opposition",
+      "authors": [
+        "Klaus Stüwe"
+      ],
+      "pdf_start_index": 342,
+      "pdf_end_index": 360,
+      "citation_pages": "349-367"
+    },
+    {
+      "title": "Die Wahl der Bundesverfassungsrichter und ihre Folgen für die Legitimität der Verfassungsgerichtsbarkeit",
+      "authors": [
+        "Christine Landfried"
+      ],
+      "pdf_start_index": 361,
+      "pdf_end_index": 379,
+      "citation_pages": "369-387"
+    },
+    {
+      "title": "Fernsehen, Demokratie und Verfassungsgerichtsbarkeit",
+      "authors": [
+        "André Brodocz",
+        "Steven Schäller"
+      ],
+      "pdf_start_index": 380,
+      "pdf_end_index": 393,
+      "citation_pages": "389-402"
+    },
+    {
+      "title": "Pressearbeit und Diskursmacht des Bundesverfassungsgerichts",
+      "authors": [
+        "Christian Rath"
+      ],
+      "pdf_start_index": 394,
+      "pdf_end_index": 403,
+      "citation_pages": "403-412"
+    },
+    {
+      "title": "Das Bundesverfassungsgericht und die Frauen",
+      "authors": [
+        "Christine Hohmann-Dennhardt"
+      ],
+      "pdf_start_index": 404,
+      "pdf_end_index": 421,
+      "citation_pages": "413-430"
+    },
+    {
+      "title": "Interne Einflussfaktoren auf Entscheidungen des Bundesverfassungsgerichts",
+      "authors": [
+        "Uwe Kranenpohl"
+      ],
+      "pdf_start_index": 422,
+      "pdf_end_index": 432,
+      "citation_pages": "431-441"
+    },
+    {
+      "title": "Die Wissenschaftlichen Mitarbeiter des Bundesverfassungsgerichts",
+      "authors": [
+        "Rüdiger Zuck"
+      ],
+      "pdf_start_index": 433,
+      "pdf_end_index": 447,
+      "citation_pages": "443-457"
+    },
+    {
+      "title": "Kontingenz und Geheimnis. Die Veröffentlichung der Sondervoten beim Bundesverfassungsgericht",
+      "authors": [
+        "Hans J. Lietzmann"
+      ],
+      "pdf_start_index": 448,
+      "pdf_end_index": 464,
+      "citation_pages": "459-475"
+    },
+    {
+      "title": "Ordnungsdenken in der Rechtsprechung des Bundesverfassungsgerichts. Wertordnung, Ordnungsmacht und Menschenbild des Grundgesetzes",
+      "authors": [
+        "Andreas Anter"
+      ],
+      "pdf_start_index": 466,
+      "pdf_end_index": 482,
+      "citation_pages": "479-495"
+    },
+    {
+      "title": "Der Beitrag des Bundesverfassungsgerichts zur Demokratisierung der Bundesrepublik",
+      "authors": [
+        "Brun-Otto Bryde"
+      ],
+      "pdf_start_index": 483,
+      "pdf_end_index": 496,
+      "citation_pages": "497-510"
+    },
+    {
+      "title": "Bundesverfassungsgericht und Wahlrecht",
+      "authors": [
+        "Hans Meyer"
+      ],
+      "pdf_start_index": 497,
+      "pdf_end_index": 509,
+      "citation_pages": "511-523"
+    },
+    {
+      "title": "Die Parteiverbotsverfahren vor dem Bundesverfassungsgericht",
+      "authors": [
+        "Robert Chr. van Ooyen"
+      ],
+      "pdf_start_index": 510,
+      "pdf_end_index": 535,
+      "citation_pages": "525-550"
+    },
+    {
+      "title": "Das Demonstrationsrecht des Bundesverfassungsgerichts in liberal-etatistischer Tradition zwischen Bürgerfreiheit und Staatsräson",
+      "authors": [
+        "Martin H. W. Möllers"
+      ],
+      "pdf_start_index": 536,
+      "pdf_end_index": 571,
+      "citation_pages": "551-586"
+    },
+    {
+      "title": "Der Einfluss der Staatsrechtslehre auf die Rechtsprechung des Bundesverfassungsgerichts bei der Abwägung der Menschenwürde. Lauschangriff, Abhörurteil, Luftsicherheit, Sicherungsverwahrung",
+      "authors": [
+        "Martin H. W. Möllers"
+      ],
+      "pdf_start_index": 572,
+      "pdf_end_index": 610,
+      "citation_pages": "587-625"
+    },
+    {
+      "title": "Grundsatzentscheidungen zum Datenschutz im Bereich der inneren Sicherheit. Rasterfahndung, Online-Durchsuchung, Kfz-Kennzeichenerfassung, Vorratsdatenspeicherung und Antiterrordatei in der Rechtsprechung des Bundesverfassungsgerichts",
+      "authors": [
+        "Hans Peter Bull"
+      ],
+      "pdf_start_index": 611,
+      "pdf_end_index": 647,
+      "citation_pages": "627-663"
+    },
+    {
+      "title": "Das Bundesverfassungsgericht als außen- und sicherheitspolitischer Akteur. Etatistische Regierungsdomänen à la Hobbes/Locke und „kalte“ Verfassungsänderungen beim Aus- (und In)landseinsatz der Bundeswehr",
+      "authors": [
+        "Robert Chr. van Ooyen"
+      ],
+      "pdf_start_index": 648,
+      "pdf_end_index": 675,
+      "citation_pages": "665-692"
+    },
+    {
+      "title": "Die Rechtsprechung des Bundesverfassungsgerichts zum Bundesstaat",
+      "authors": [
+        "Stefan Korioth"
+      ],
+      "pdf_start_index": 676,
+      "pdf_end_index": 695,
+      "citation_pages": "693-712"
+    },
+    {
+      "title": "Das Bundesverfassungsgericht und der Sozialstaat",
+      "authors": [
+        "Frank Pilz"
+      ],
+      "pdf_start_index": 696,
+      "pdf_end_index": 716,
+      "citation_pages": "713-733"
+    },
+    {
+      "title": "Die Rechtsprechung des Bundesverfassungsgerichts zum Umweltschutz",
+      "authors": [
+        "Rudolf Steinberg",
+        "Henrik Müller"
+      ],
+      "pdf_start_index": 717,
+      "pdf_end_index": 740,
+      "citation_pages": "735-758"
+    },
+    {
+      "title": "Das Bundesverfassungsgericht und das Religionsverfassungsrecht",
+      "authors": [
+        "Peter Unruh"
+      ],
+      "pdf_start_index": 741,
+      "pdf_end_index": 766,
+      "citation_pages": "759-784"
+    },
+    {
+      "title": "Bundesverfassungsgericht und Steuergesetzgebung – Politik mit den Mitteln der Verfassungsrechtsprechung?",
+      "authors": [
+        "Olaf Köppe"
+      ],
+      "pdf_start_index": 767,
+      "pdf_end_index": 784,
+      "citation_pages": "785-802"
+    },
+    {
+      "title": "Der Beitrag des Bundesverfassungsgerichts zur „Berücksichtigung der hergebrachten Grundsätze des Berufsbeamtentums“",
+      "authors": [
+        "Hans Peter Bull"
+      ],
+      "pdf_start_index": 785,
+      "pdf_end_index": 803,
+      "citation_pages": "803-821"
+    },
+    {
+      "title": "Das Bundesverfassungsgericht im europäischen und internationalen Umfeld",
+      "authors": [
+        "Rainer Wahl"
+      ],
+      "pdf_start_index": 805,
+      "pdf_end_index": 824,
+      "citation_pages": "825-844"
+    },
+    {
+      "title": "Bundesverfassungsgericht und Europäische Integration",
+      "authors": [
+        "Roland Lhotta",
+        "Jörn Ketelhut"
+      ],
+      "pdf_start_index": 825,
+      "pdf_end_index": 854,
+      "citation_pages": "845-874"
+    },
+    {
+      "title": "Wenn Richter mitregieren wollen: Selbstautorisierung beim BVerfG und dem EuGH im Vergleich",
+      "authors": [
+        "Marcus Höreth"
+      ],
+      "pdf_start_index": 855,
+      "pdf_end_index": 867,
+      "citation_pages": "875-887"
+    },
+    {
+      "title": "Strategen in Roben. Einflussfaktoren auf die Rechtsprechung des U. S. Supreme Court und deren Implikation für das Bundesverfassungsgericht",
+      "authors": [
+        "Martina Schlögel"
+      ],
+      "pdf_start_index": 868,
+      "pdf_end_index": 889,
+      "citation_pages": "889-910"
+    },
+    {
+      "title": "Vergleichende Verfassungsgerichtsforschung: Konjunkturen verfassungsgerichtlicher Autorität am Beispiel Bundesverfassungsgericht und ungarisches Verfassungsgericht",
+      "authors": [
+        "Christian Boulanger"
+      ],
+      "pdf_start_index": 890,
+      "pdf_end_index": 905,
+      "citation_pages": "911-926"
+    },
+    {
+      "title": "Modell für neue Demokratien? Die Vorbildrolle des Bundesverfassungsgerichts",
+      "authors": [
+        "Klaus von Beyme"
+      ],
+      "pdf_start_index": 906,
+      "pdf_end_index": 921,
+      "citation_pages": "927-942"
+    }
+  ],
+  "toc": {
+    "toc_start_index": 4,
+    "toc_end_index": 9
+  }
+}

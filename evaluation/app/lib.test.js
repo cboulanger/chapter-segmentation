@@ -13,8 +13,9 @@ import {
   clearRejectedDecisions,
   tabTitle,
   pageHeading,
-  nextRejectedIndex,
-  prevRejectedIndex,
+  decisionMatchesFilter,
+  nextFilteredIndex,
+  prevFilteredIndex,
 } from './lib.js';
 
 const BOOKS = [
@@ -122,29 +123,68 @@ test('pageHeading formats corpus and progress for the on-page heading', () => {
   assert.equal(pageHeading('open-access', 1, 45), "Corpus 'open-access' 1 of 45");
 });
 
-test('nextRejectedIndex finds the next rejected entry at or after fromIndex', () => {
-  const decisions = { a: 'accepted', b: 'rejected', c: 'accepted', d: 'rejected' };
-  assert.equal(nextRejectedIndex(BOOKS, decisions, 0), 1);
-  assert.equal(nextRejectedIndex(BOOKS, decisions, 2), 3);
+test('decisionMatchesFilter with rejectedOnly only matches rejected', () => {
+  const filters = { rejectedOnly: true, skipAccepted: false };
+  assert.equal(decisionMatchesFilter('rejected', filters), true);
+  assert.equal(decisionMatchesFilter('accepted', filters), false);
+  assert.equal(decisionMatchesFilter(undefined, filters), false);
 });
 
-test('nextRejectedIndex includes fromIndex itself when already rejected', () => {
+test('decisionMatchesFilter with skipAccepted matches rejected and unchecked', () => {
+  const filters = { rejectedOnly: false, skipAccepted: true };
+  assert.equal(decisionMatchesFilter('rejected', filters), true);
+  assert.equal(decisionMatchesFilter(undefined, filters), true);
+  assert.equal(decisionMatchesFilter('accepted', filters), false);
+});
+
+test('decisionMatchesFilter with rejectedOnly takes precedence over skipAccepted', () => {
+  const filters = { rejectedOnly: true, skipAccepted: true };
+  assert.equal(decisionMatchesFilter('rejected', filters), true);
+  assert.equal(decisionMatchesFilter(undefined, filters), false);
+});
+
+test('decisionMatchesFilter with no filters matches everything', () => {
+  const filters = { rejectedOnly: false, skipAccepted: false };
+  assert.equal(decisionMatchesFilter('rejected', filters), true);
+  assert.equal(decisionMatchesFilter('accepted', filters), true);
+  assert.equal(decisionMatchesFilter(undefined, filters), true);
+});
+
+test('nextFilteredIndex finds the next rejected entry at or after fromIndex', () => {
+  const decisions = { a: 'accepted', b: 'rejected', c: 'accepted', d: 'rejected' };
+  const filters = { rejectedOnly: true, skipAccepted: false };
+  assert.equal(nextFilteredIndex(BOOKS, decisions, 0, filters), 1);
+  assert.equal(nextFilteredIndex(BOOKS, decisions, 2, filters), 3);
+});
+
+test('nextFilteredIndex includes fromIndex itself when already matching', () => {
   const decisions = { a: 'rejected' };
-  assert.equal(nextRejectedIndex(BOOKS, decisions, 0), 0);
+  assert.equal(nextFilteredIndex(BOOKS, decisions, 0, { rejectedOnly: true, skipAccepted: false }), 0);
 });
 
-test('nextRejectedIndex returns manifest length when none remain', () => {
+test('nextFilteredIndex returns manifest length when none remain', () => {
   const decisions = { a: 'accepted' };
-  assert.equal(nextRejectedIndex(BOOKS, decisions, 0), BOOKS.length);
+  assert.equal(nextFilteredIndex(BOOKS, decisions, 0, { rejectedOnly: true, skipAccepted: false }), BOOKS.length);
 });
 
-test('prevRejectedIndex finds the previous rejected entry at or before fromIndex', () => {
+test('nextFilteredIndex with skipAccepted skips accepted entries', () => {
+  const decisions = { a: 'accepted', b: 'accepted', c: 'rejected' };
+  assert.equal(nextFilteredIndex(BOOKS, decisions, 0, { rejectedOnly: false, skipAccepted: true }), 2);
+});
+
+test('nextFilteredIndex with skipAccepted stops at an unchecked entry', () => {
+  const decisions = { a: 'accepted' };
+  assert.equal(nextFilteredIndex(BOOKS, decisions, 0, { rejectedOnly: false, skipAccepted: true }), 1);
+});
+
+test('prevFilteredIndex finds the previous rejected entry at or before fromIndex', () => {
   const decisions = { a: 'accepted', b: 'rejected', c: 'accepted', d: 'rejected' };
-  assert.equal(prevRejectedIndex(BOOKS, decisions, 3), 3);
-  assert.equal(prevRejectedIndex(BOOKS, decisions, 2), 1);
+  const filters = { rejectedOnly: true, skipAccepted: false };
+  assert.equal(prevFilteredIndex(BOOKS, decisions, 3, filters), 3);
+  assert.equal(prevFilteredIndex(BOOKS, decisions, 2, filters), 1);
 });
 
-test('prevRejectedIndex returns 0 when none found before fromIndex', () => {
+test('prevFilteredIndex returns 0 when none found before fromIndex', () => {
   const decisions = { d: 'rejected' };
-  assert.equal(prevRejectedIndex(BOOKS, decisions, 2), 0);
+  assert.equal(prevFilteredIndex(BOOKS, decisions, 2, { rejectedOnly: true, skipAccepted: false }), 0);
 });

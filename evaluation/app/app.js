@@ -11,8 +11,8 @@ import {
   clearRejectedDecisions,
   tabTitle,
   pageHeading,
-  nextRejectedIndex,
-  prevRejectedIndex,
+  nextFilteredIndex,
+  prevFilteredIndex,
 } from './lib.js';
 
 const THUMBNAIL_TARGET_WIDTH = 120;
@@ -25,7 +25,12 @@ const state = {
   decisions: {},
   repoRoot: null,
   rejectedOnly: false,
+  skipAccepted: false,
 };
+
+function currentFilters() {
+  return { rejectedOnly: state.rejectedOnly, skipAccepted: state.skipAccepted };
+}
 
 function $(id) {
   return document.getElementById(id);
@@ -68,12 +73,18 @@ function headerHtml(book, isbn) {
   return `<span class="${accepted ? 'accepted-header' : ''}">${isbn} — ${book.title}${checkmark}</span>`;
 }
 
-function rejectedOnlyControlHtml() {
-  return `<label id="rejected-only-label"><input type="checkbox" id="rejected-only-checkbox" ${state.rejectedOnly ? 'checked' : ''} /> Rejected only</label>`;
+function filterControlsHtml() {
+  return `
+    <div class="filters">
+      <label id="rejected-only-label"><input type="checkbox" id="rejected-only-checkbox" ${state.rejectedOnly ? 'checked' : ''} /> Rejected only</label>
+      <label id="skip-accepted-label"><input type="checkbox" id="skip-accepted-checkbox" ${state.skipAccepted ? 'checked' : ''} /> Skip accepted</label>
+    </div>
+  `;
 }
 
-function wireRejectedOnlyCheckbox() {
+function wireFilterCheckboxes() {
   $('rejected-only-checkbox').addEventListener('change', onRejectedOnlyChange);
+  $('skip-accepted-checkbox').addEventListener('change', onSkipAcceptedChange);
 }
 
 function renderSkippable(book, isbn, message) {
@@ -82,15 +93,17 @@ function renderSkippable(book, isbn, message) {
     <p class="error">${message}</p>
     <div class="controls">
       <button id="skip">Skip</button>
-      ${rejectedOnlyControlHtml()}
+      ${filterControlsHtml()}
     </div>
   `;
   $('skip').addEventListener('click', () => {
     state.index += 1;
-    if (state.rejectedOnly) state.index = nextRejectedIndex(state.manifest, state.decisions, state.index);
+    if (state.rejectedOnly || state.skipAccepted) {
+      state.index = nextFilteredIndex(state.manifest, state.decisions, state.index, currentFilters());
+    }
     render();
   });
-  wireRejectedOnlyCheckbox();
+  wireFilterCheckboxes();
 }
 
 function highlightDecision(isbn) {
@@ -104,20 +117,32 @@ function decide(isbn, verdict) {
   state.decisions[isbn] = verdict;
   saveDecisions(state.corpus, state.decisions);
   state.index += 1;
-  if (state.rejectedOnly) state.index = nextRejectedIndex(state.manifest, state.decisions, state.index);
+  if (state.rejectedOnly || state.skipAccepted) {
+    state.index = nextFilteredIndex(state.manifest, state.decisions, state.index, currentFilters());
+  }
   render();
 }
 
 function goPrev() {
   state.index = Math.max(0, state.index - 1);
-  if (state.rejectedOnly) state.index = prevRejectedIndex(state.manifest, state.decisions, state.index);
+  if (state.rejectedOnly || state.skipAccepted) {
+    state.index = prevFilteredIndex(state.manifest, state.decisions, state.index, currentFilters());
+  }
   render();
 }
 
 function onRejectedOnlyChange(e) {
   state.rejectedOnly = e.target.checked;
   if (state.rejectedOnly) {
-    state.index = nextRejectedIndex(state.manifest, state.decisions, state.index);
+    state.index = nextFilteredIndex(state.manifest, state.decisions, state.index, currentFilters());
+  }
+  render();
+}
+
+function onSkipAcceptedChange(e) {
+  state.skipAccepted = e.target.checked;
+  if (state.skipAccepted) {
+    state.index = nextFilteredIndex(state.manifest, state.decisions, state.index, currentFilters());
   }
   render();
 }
@@ -194,7 +219,7 @@ async function renderBook(book, isbn, expected, pdf) {
       ${state.repoRoot ? `<a id="open-vscode" class="button" href="${vscodeFileUri(state.repoRoot, state.corpus, isbn)}">Open in VS Code</a>` : ''}
       <button id="reject" class="reject">Reject</button>
       <button id="accept" class="accept">Accept</button>
-      ${rejectedOnlyControlHtml()}
+      ${filterControlsHtml()}
     </div>
   `;
 
@@ -221,7 +246,7 @@ async function renderBook(book, isbn, expected, pdf) {
   $('prev').addEventListener('click', goPrev);
   $('accept').addEventListener('click', () => decide(isbn, 'accepted'));
   $('reject').addEventListener('click', () => decide(isbn, 'rejected'));
-  wireRejectedOnlyCheckbox();
+  wireFilterCheckboxes();
 }
 
 function downloadRejected(text) {
@@ -246,6 +271,7 @@ function renderComplete(total) {
     <button id="download">Download rejected list</button>
     <button id="clear-rejected">Clear rejected list</button>
     ${rejectedCount > 0 ? '<button id="review-rejected">Review rejected</button>' : ''}
+    <button id="clear-all" class="danger">Clear all corpus data</button>
   `;
   $('download').addEventListener('click', () => downloadRejected(rejectedText));
   $('clear-rejected').addEventListener('click', () => {
@@ -257,10 +283,20 @@ function renderComplete(total) {
   if (rejectedCount > 0) {
     $('review-rejected').addEventListener('click', () => {
       state.rejectedOnly = true;
-      state.index = nextRejectedIndex(state.manifest, state.decisions, 0);
+      state.index = nextFilteredIndex(state.manifest, state.decisions, 0, currentFilters());
       render();
     });
   }
+  $('clear-all').addEventListener('click', () => {
+    const confirmed = window.confirm(
+      `Clear all ${acceptedCount + rejectedCount} accepted and rejected decisions for corpus "${state.corpus}"? This cannot be undone.`
+    );
+    if (!confirmed) return;
+    state.decisions = {};
+    saveDecisions(state.corpus, state.decisions);
+    state.index = 0;
+    render();
+  });
 }
 
 async function render() {
@@ -317,6 +353,14 @@ async function init() {
   } catch (err) {
     showError(`Could not load manifest for corpus "${corpus}": ${err.message}`);
     return;
+  }
+
+  try {
+    const localManifest = await fetchJson(`../corpus/${corpus}/manifest.local.json`);
+    state.manifest = state.manifest.concat(localManifest.books);
+  } catch (err) {
+    // manifest.local.json is gitignored and optional -- most corpora, and most
+    // clones, won't have one. A missing file is expected, not an error.
   }
 
   await render();

@@ -53,7 +53,9 @@ Then open:
   rejected verdicts from storage (keeping accepted ones) so you can
   re-review just the books you fixed. `Review rejected` (shown only when
   there are any) jumps back to the first rejected book with `Rejected
-  only` pre-checked.
+  only` pre-checked. `Clear all corpus data` (after a confirmation
+  prompt) wipes every accepted and rejected verdict for the current
+  corpus, resetting it to a fresh review.
 - If a book's PDF or `.expected.json` isn't present on disk, a `Skip`
   button advances past it without recording a verdict.
 - `Rejected only` filters navigation (`Accept`/`Reject`/`Prev`/`Skip`) to
@@ -61,6 +63,11 @@ Then open:
   one and skipping everything else — handy for a follow-up pass after
   fixing some ground truth. Unchecking it returns to the normal
   book-by-book order.
+- `Skip accepted` filters navigation to books that are either `rejected`
+  or have no verdict yet, skipping over ones you've already accepted —
+  handy for getting through the remaining unreviewed books without
+  re-seeing ones you've signed off on. If `Rejected only` is also
+  checked, it takes precedence (rejected is a subset of not-accepted).
 
 ## Tests
 

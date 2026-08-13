@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-12T05:35:29.541076+00:00",
+  "generated_at": "2026-08-13T05:51:36.267065+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
         {
-          "title": "Rechtsproduktion der Juristen im Umweltrecht - Eine Profession stößt an ihre Grenzen",
+          "title": "Joachim Nocke: Rechtsproduktion der Juristen im Umweltrecht - Eine Profession stößt an ihre Grenzen",
           "authors": [
             "Joachim Nocke\nRechtsproduktion",
             "Umweltrecht",
@@ -17,12 +17,12 @@
           "pdf_start_index": 78,
           "pdf_end_index": 119,
           "citation_pages": "81-122",
-          "confidence": 0.99,
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Zwischen Rechtsbewußtsein und produziertem Recht - Plädoyer für eine gesetzgebungsorientierte Rechtssoziologie",
+          "title": "Doris Lucke: Zwischen Rechtsbewußtsein und produziertem Recht - Plädoyer für eine gesetzgebungsorientierte Rechtssoziologie",
           "authors": [
             "Professionen",
             "Zwischen             Rechtsbewußtsein",
@@ -35,12 +35,12 @@
           "pdf_start_index": 120,
           "pdf_end_index": 137,
           "citation_pages": "123-140",
-          "confidence": 0.91,
+          "confidence": 0.89,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Hoffnung auf - Furcht vor dem Recht - Zur Semi-Professionalisierung des Lehrerberufs",
+          "title": "Ingo Richter: Hoffnung auf - Furcht vor dem Recht - Zur Semi-Professionalisierung des Lehrerberufs",
           "authors": [
             "Recht\nZur Semi-Professionalisierung des Lehrerberufs",
             "Der Lehrer",
@@ -56,12 +56,12 @@
           "pdf_start_index": 138,
           "pdf_end_index": 150,
           "citation_pages": "141-154",
-          "confidence": 0.92,
+          "confidence": 0.94,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Das moralische Niveau des Strafrechts",
+          "title": "Hubert Rottleuthner: Das moralische Niveau des Strafrechts",
           "authors": [
             "Gefühle",
             "Hubert Rottleuthner",
@@ -76,12 +76,12 @@
           "pdf_start_index": 152,
           "pdf_end_index": 168,
           "citation_pages": "155-172",
-          "confidence": 1.0,
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Heinz-Dilemma - Ein Prüfungsgespräch",
+          "title": "Monika Fromme: Heinz-Dilemma - Ein Prüfungsgespräch",
           "authors": [
             "Monika Frommei\nHeinz-Dilemma\n",
             "Rottleuthners Feststellung",
@@ -99,12 +99,12 @@
           "pdf_start_index": 170,
           "pdf_end_index": 173,
           "citation_pages": "173-176",
-          "confidence": 0.92,
+          "confidence": 0.91,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Die non-rationalen Elemente der strafrechtlichen Rationalisierung. Die Lehre Emile Dürkheims",
+          "title": "Werner Gephardt: Die non-rationalen Elemente der strafrechtlichen Rationalisierung. Die Lehre Emile Dürkheims",
           "authors": [
             "Werner Gephart\nDie",
             "Vorbemerkung\n\nDer",
@@ -122,12 +122,12 @@
           "pdf_start_index": 174,
           "pdf_end_index": 191,
           "citation_pages": "177-194",
-          "confidence": 0.99,
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Entschuldigungen und Rechtfertigungen im Alltag",
+          "title": "Wolfgang Schild: Entschuldigungen und Rechtfertigungen im Alltag",
           "authors": [
             "Rechtsbewußtsein",
             "Wolfgang Schild",
@@ -140,12 +140,12 @@
           "pdf_start_index": 192,
           "pdf_end_index": 217,
           "citation_pages": "195-220",
-          "confidence": 1.0,
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Weibliche Moral versus männliche Gerechtigkeitsmathematik? Zum geschlechtsspezifischen Rechtsbewußtsein",
+          "title": "Vera Slupik: Weibliche Moral versus männliche Gerechtigkeitsmathematik? Zum geschlechtsspezifischen Rechtsbewußtsein",
           "authors": [
             "Gerechtigkeits­\nmathematik",
             "Zum",
@@ -165,7 +165,7 @@
           "source": "llm"
         },
         {
-          "title": "Rechtsvorstellungen von Bürgern in Eingaben an das Bundesverfassungsgericht",
+          "title": "Gertraud TordyI Traugott Wulfhorst: Rechtsvorstellungen von Bürgern in Eingaben an das Bundessozialgericht",
           "authors": [
             "Rechtsvorstellungen von Bürgern",
             "kurz",
@@ -180,12 +180,12 @@
           "pdf_start_index": 236,
           "pdf_end_index": 242,
           "citation_pages": "239-245",
-          "confidence": 0.85,
+          "confidence": 0.96,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 25.426209545999995,
+      "elapsed_seconds": 32.45637174799998,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -372,7 +372,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 7.391996110999997,
+      "elapsed_seconds": 4.752640061999955,
       "demand_at_run": 0
     },
     "glm-4.7": {

@@ -1,0 +1,336 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "3. Classifying Global Catastrophic Risks",
+          "authors": [
+            "Bonnie C. Wintle",
+            "Seán S. Ó hÉigeartaigh",
+            "William J. \nSutherland",
+            "Martin J. Rees\nHighlights"
+          ],
+          "pdf_start_index": 133,
+          "pdf_end_index": 133,
+          "citation_pages": "125-125",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [],
+          "pdf_start_index": 134,
+          "pdf_end_index": 148,
+          "citation_pages": "1-140",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Governing Boring Apocalypses: A New Typology of Existential Vulnerabilities and Exposures for Existential Risk Research",
+          "authors": [
+            "Yan Liu",
+            "Kristian Cedervall Lauta",
+            "Michiel Maas\nHighlights"
+          ],
+          "pdf_start_index": 149,
+          "pdf_end_index": 184,
+          "citation_pages": "141-176",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Existential Risk, Creativity and Well-Adapted Science",
+          "authors": [
+            "Existential Risk"
+          ],
+          "pdf_start_index": 185,
+          "pdf_end_index": 228,
+          "citation_pages": "177-220",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. An Analysis and Evaluation of Methods Currently Used to Quantify the Likelihood of Existential Hazards",
+          "authors": [
+            "Thomas Rowe",
+            "James Fox\nHighlights"
+          ],
+          "pdf_start_index": 229,
+          "pdf_end_index": 266,
+          "citation_pages": "221-258",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Scanning Horizons in Research, Policy and Practice",
+          "authors": [
+            "Bonnie C. Wintle",
+            "Mahlo N. C. Kennicutt II",
+            "William J. Sutherland",
+            "• Horizon"
+          ],
+          "pdf_start_index": 267,
+          "pdf_end_index": 291,
+          "citation_pages": "259-284",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. Exploring Artificial Intelligence Futures",
+          "authors": [],
+          "pdf_start_index": 293,
+          "pdf_end_index": 313,
+          "citation_pages": "285-306",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9. Accumulating Evidence Using Crowdsourcing and Machine Learning: A Living Bibliography About Existential Risk and Global Catastrophic Risk",
+          "authors": [
+            "Luke Kemp",
+            "Catherine Rhodes",
+            "Lalitha Sundaram",
+            "Seán S. ÓhÉigeartaigh",
+            "SJ Beard",
+            "Julius Weitzdörfer",
+            "Shahar Avin",
+            "Dag Sørebø",
+            "Elliot M. Jones",
+            "John B. Hume",
+            "David Price",
+            "David Pyle",
+            "Daniel Hurt",
+            "Theodore Stone",
+            "Harry Watkins",
+            "Lydia Collas",
+            "Bryony C. Cade",
+            "Thomas Frederick Johnson",
+            "Zachary Freitas-Groff",
+            "David De"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 336,
+          "citation_pages": "307-328",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10. The Mortality of States (MOROS) Dataset",
+          "authors": [
+            "Luke Kemp"
+          ],
+          "pdf_start_index": 337,
+          "pdf_end_index": 344,
+          "citation_pages": "329-336",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "11. Enabling the Participatory Exploration of Alternative Futures With ParEvo",
+          "authors": [
+            "Rick Davies",
+            "SJ Beard",
+            "Tom Hobson",
+            "Lara Mani"
+          ],
+          "pdf_start_index": 345,
+          "pdf_end_index": 368,
+          "citation_pages": "337-360",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "12. Global Catastrophic Risk From Low Magnitude Volcanic Eruptions",
+          "authors": [
+            "Paul Cole"
+          ],
+          "pdf_start_index": 369,
+          "pdf_end_index": 378,
+          "citation_pages": "361-370",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "13. Re-Framing the Threat of Global Warming: An Empirical Causal Loop Diagram of Climate Change, Food Insecurity and Societal Collapse",
+          "authors": [
+            "R. C. Lupton",
+            "J. M. Allwood \nHighlights"
+          ],
+          "pdf_start_index": 379,
+          "pdf_end_index": 407,
+          "citation_pages": "371-400",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "14. Existential Change: Lessons from Climate Change for Existential Risk",
+          "authors": [
+            "Luke Kemp",
+            "Catherine Richards",
+            "Richard Lupton",
+            "Julian Allwood"
+          ],
+          "pdf_start_index": 409,
+          "pdf_end_index": 416,
+          "citation_pages": "401-408",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15. A Fate Worse Than Warming? Stratospheric Aerosol Injection and Catastrophic Risk",
+          "authors": [
+            "Aaron Tang",
+            "Luke Kemp"
+          ],
+          "pdf_start_index": 417,
+          "pdf_end_index": 458,
+          "citation_pages": "409-450",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "16. Bioengineering Horizon Scan 2020",
+          "authors": [
+            "Horizon Scan",
+            "Luke Kemp",
+            "Laura Adam",
+            "Christian R Boehm",
+            "Rainer Breitling",
+            "Malcolm Dando",
+            "Appolinaire Djikeng",
+            "Nicholas G Evans",
+            "Richard Hammond",
+            "Kelly Hills",
+            "Todd Kuiken",
+            "Piers Millett",
+            "Jonathan A Napier",
+            "Cassidy Nelson",
+            "Anne Osbourn",
+            "Vanessa Restrepo-Schild",
+            "Clarissa Rios-Rojas",
+            "Catherine Rhodes",
+            "Anna Roessing",
+            "Deborah S"
+          ],
+          "pdf_start_index": 459,
+          "pdf_end_index": 491,
+          "citation_pages": "451-484",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "17. Artificial Canaries: Early Warning Signs for Anticipatory and Democratic Governance of AI",
+          "authors": [
+            "Carla Zoe Cremer",
+            "Jess Whittlestone\nHighlights"
+          ],
+          "pdf_start_index": 493,
+          "pdf_end_index": 527,
+          "citation_pages": "485-520",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "18. Pathways to Linking Science and Policy in Global Risk",
+          "authors": [
+            "Catherine Richards",
+            "Catherine Rhodes",
+            "Paul Ingram"
+          ],
+          "pdf_start_index": 529,
+          "pdf_end_index": 538,
+          "citation_pages": "521-530",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "19. The Cartography of Global Catastrophic Governance",
+          "authors": [
+            "Catherine Rhodes",
+            "Luke Kemp"
+          ],
+          "pdf_start_index": 539,
+          "pdf_end_index": 593,
+          "citation_pages": "531-586",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "20. The Stepping Stones Approach to Nuclear Disarmament Diplomacy",
+          "authors": [
+            "Paul Ingram"
+          ],
+          "pdf_start_index": 595,
+          "pdf_end_index": 610,
+          "citation_pages": "587-602",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "21. It Takes a Village: The Shared Responsibility of “Raising” an Autonomous Weapon",
+          "authors": [
+            "Shahar Avin\nHighlights"
+          ],
+          "pdf_start_index": 611,
+          "pdf_end_index": 620,
+          "citation_pages": "603-612",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "22. Representation of Future Generations in United Kingdom Policy-Making",
+          "authors": [
+            "Natalie Jones",
+            "Mark O’Brien",
+            "Thomas Ryan"
+          ],
+          "pdf_start_index": 621,
+          "pdf_end_index": 648,
+          "citation_pages": "613-640",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "23. Financing Our Final Hour",
+          "authors": [
+            "Luke Kemp",
+            "Haydn Belfield",
+            "Ellen Quigley",
+            "Julius Weitzdörfer",
+            "SJ Beard\nHighlights"
+          ],
+          "pdf_start_index": 649,
+          "pdf_end_index": 682,
+          "citation_pages": "641-674",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 107.17642010999998,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T05:18:58.481203+00:00"
+}

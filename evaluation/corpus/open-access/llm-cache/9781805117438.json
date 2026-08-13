@@ -1,0 +1,179 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "An EU-wide Perspective on Public Investment in the Energy Transition",
+          "authors": [
+            "NECPs"
+          ],
+          "pdf_start_index": 41,
+          "pdf_end_index": 44,
+          "citation_pages": "13-28",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "France: Preserving Investment in the Energy Transition in an Unstable Policy Environment",
+          "authors": [
+            "Paul Malliet,1"
+          ],
+          "pdf_start_index": 45,
+          "pdf_end_index": 60,
+          "citation_pages": "29-44",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Role of Public Support for the Energy Transition in Germany: Past and Future Tasks",
+          "authors": [
+            "Tom"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 74,
+          "citation_pages": "45-58",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Energy Transition and Public Investment in Italy",
+          "authors": [
+            "Floriana Cerniglia,2",
+            "Andrea"
+          ],
+          "pdf_start_index": 75,
+          "pdf_end_index": 92,
+          "citation_pages": "59-76",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Investment in the Energy Transition in Spain",
+          "authors": [
+            "Jorge Uxó2"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 107,
+          "citation_pages": "77-92",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Tackling the Drawbacks of Past and Current EU Energy Transition Policies: The Need for a Cooperative, Mission-oriented Industrial Strategy",
+          "authors": [
+            "Daniela"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 129,
+          "citation_pages": "93-114",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Energy Transition and Industrial Competitiveness in the EU",
+          "authors": [
+            "Andrea"
+          ],
+          "pdf_start_index": 131,
+          "pdf_end_index": 140,
+          "citation_pages": "115-124",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Research and Innovation Policy for the Energy Transition in the EU",
+          "authors": [
+            "Willem Klok,2",
+            "Floor"
+          ],
+          "pdf_start_index": 141,
+          "pdf_end_index": 158,
+          "citation_pages": "125-142",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On Grids: The Backbone of the Energy Transition",
+          "authors": [
+            "Catharina Sikow"
+          ],
+          "pdf_start_index": 159,
+          "pdf_end_index": 172,
+          "citation_pages": "143-156",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Investing in Critical Raw Materials for the Clean-Tech Transition in the EU",
+          "authors": [],
+          "pdf_start_index": 173,
+          "pdf_end_index": 191,
+          "citation_pages": "157-176",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The EU Strategy for Green Hydrogen: More with Less (Public Investment)?",
+          "authors": [
+            "Rafael",
+            "Clara"
+          ],
+          "pdf_start_index": 193,
+          "pdf_end_index": 206,
+          "citation_pages": "177-190",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Power of Energy Communities for a Just Transition in Europe",
+          "authors": [
+            "Diana"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 220,
+          "citation_pages": "191-204",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Making the ETS2 Socially Acceptable through Carbon Revenue Redistribution and Investments",
+          "authors": [],
+          "pdf_start_index": 221,
+          "pdf_end_index": 238,
+          "citation_pages": "205-222",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "(How) Can the Energy Transition in Europe be a Just Transition?",
+          "authors": [
+            "Bela",
+            "Andrew Watt2"
+          ],
+          "pdf_start_index": 239,
+          "pdf_end_index": 260,
+          "citation_pages": "223-244",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 33.19946018700011,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T05:31:29.923053+00:00"
+}

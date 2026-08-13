@@ -74,7 +74,7 @@
           "source": "llm"
         },
         {
-          "title": "Industrial Policy and Security: The European Union and the Double Challenge: Strengthening Competitiveness and Enhancing Economic Security",
+          "title": "Industrial Policy and Security. The European Union and the Double Challenge: Strengthening Competitiveness and Enhancing Economic Security",
           "authors": [
             "Paolo",
             "Pier Carlo"
@@ -82,7 +82,7 @@
           "pdf_start_index": 147,
           "pdf_end_index": 159,
           "citation_pages": "135-148",
-          "confidence": 0.96,
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -123,7 +123,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 24.255883180999945,
+      "elapsed_seconds": 24.12271918999977,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -799,5 +799,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-12T05:35:34.109983+00:00"
+  "generated_at": "2026-08-13T05:27:02.383588+00:00"
 }

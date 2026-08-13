@@ -1,0 +1,289 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Pourquoi l’économie circulaire ?",
+          "authors": [
+            "s’attendre"
+          ],
+          "pdf_start_index": 29,
+          "pdf_end_index": 38,
+          "citation_pages": "27-36",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Les stratégies de circularité des ressources",
+          "authors": [
+            "l’entretien"
+          ],
+          "pdf_start_index": 39,
+          "pdf_end_index": 39,
+          "citation_pages": "37-37",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "L’entretien et la réparation",
+          "authors": [
+            "Michel Dagenais",
+            "détriment de la durabilité",
+            "de la",
+            "lorsqu’un appareil",
+            "Hormis",
+            "don",
+            "il reste peu de choses qu’on fait"
+          ],
+          "pdf_start_index": 40,
+          "pdf_end_index": 54,
+          "citation_pages": "38-51",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Le recyclage, le compostage et la valorisation énergétique",
+          "authors": [
+            "Legros et Spreutels"
+          ],
+          "pdf_start_index": 55,
+          "pdf_end_index": 56,
+          "citation_pages": "52-74",
+          "confidence": 0.84,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La ressource énergétique",
+          "authors": [
+            "qui seront",
+            "dans de s",
+            "en remplace-\nment de combustibles",
+            "Même si les tech"
+          ],
+          "pdf_start_index": 57,
+          "pdf_end_index": 62,
+          "citation_pages": "75-59",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Les symbioses industrielles",
+          "authors": [],
+          "pdf_start_index": 63,
+          "pdf_end_index": 65,
+          "citation_pages": "60-63",
+          "confidence": 0.92,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Les réseaux et la mise en œuvre de l’économie circulaire",
+          "authors": [],
+          "pdf_start_index": 67,
+          "pdf_end_index": 67,
+          "citation_pages": "144-65",
+          "confidence": 0.84,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La filière agroalimentaire",
+          "authors": [],
+          "pdf_start_index": 68,
+          "pdf_end_index": 74,
+          "citation_pages": "66-72",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La filière textile",
+          "authors": [
+            "Denyse Roy",
+            "occidentaux",
+            "la valeur de gisem"
+          ],
+          "pdf_start_index": 75,
+          "pdf_end_index": 85,
+          "citation_pages": "73-45",
+          "confidence": 0.89,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "L’économie collaborative et l’économie de fonctionnalité",
+          "authors": [
+            "de l’économie de fonctionnalité",
+            "de ma"
+          ],
+          "pdf_start_index": 86,
+          "pdf_end_index": 89,
+          "citation_pages": "46-87",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La ville, territoire privilégié de l’économie circulaire",
+          "authors": [
+            "Frank Scherrer",
+            "Asie",
+            "leaders de l’économie circulaire",
+            "Amsterdam",
+            "selo"
+          ],
+          "pdf_start_index": 90,
+          "pdf_end_index": 93,
+          "citation_pages": "88-93",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "L’écofiscalité au service de l’économie circulaire",
+          "authors": [
+            "de l’économie",
+            "Paul Lanoie"
+          ],
+          "pdf_start_index": 96,
+          "pdf_end_index": 96,
+          "citation_pages": "94-94",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "La mobilisation des acteurs",
+          "authors": [
+            "l’économie circulaire",
+            "l’avènement de l’économie",
+            "l’entretien"
+          ],
+          "pdf_start_index": 97,
+          "pdf_end_index": 103,
+          "citation_pages": "95-101",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Des incitations sur toute la chaîne de valeur",
+          "authors": [
+            "cœur de l’économie circulaire",
+            "industriel bien",
+            "d’améliorer la"
+          ],
+          "pdf_start_index": 104,
+          "pdf_end_index": 105,
+          "citation_pages": "102-103",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "L’accompagnement des entreprises : les leçons du développement durable",
+          "authors": [
+            "Mélanie McDonald\nDans",
+            "de ce \nmouvement",
+            "ce contexte"
+          ],
+          "pdf_start_index": 106,
+          "pdf_end_index": 128,
+          "citation_pages": "104-126",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Les outils, les ressources et les savoirs existants",
+          "authors": [
+            "Aujourd’hui même",
+            "Il faudra d’autres",
+            "rs pour",
+            "attein"
+          ],
+          "pdf_start_index": 129,
+          "pdf_end_index": 137,
+          "citation_pages": "127-133",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La chimie verte",
+          "authors": [
+            "la biogéochimie",
+            "la chimie",
+            "l’étude de la toxicologie \nappliquée à l’environnement"
+          ],
+          "pdf_start_index": 138,
+          "pdf_end_index": 142,
+          "citation_pages": "134-140",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La logistique à rebours : repères et implications",
+          "authors": [
+            "Martin Beaulieu",
+            "Jacques Roy\nDans",
+            "d’économie"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 149,
+          "citation_pages": "141-147",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Les limites et les pistes d’enrichissement du modèle",
+          "authors": [],
+          "pdf_start_index": 151,
+          "pdf_end_index": 162,
+          "citation_pages": "149-160",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Une stratégie nécessaire, mais insuffisante",
+          "authors": [
+            "de l’économie",
+            "Il y a de fortes"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 176,
+          "citation_pages": "161-174",
+          "confidence": 0.95,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Les collaborateurs",
+          "authors": [
+            "École de design",
+            "Pierre Baptiste",
+            "Polytechnique Montréal",
+            "Martin Beaulieu"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 183,
+          "citation_pages": "181-181",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 136.52447856200024,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T05:38:16.400591+00:00"
+}

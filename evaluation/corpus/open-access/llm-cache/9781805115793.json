@@ -1,0 +1,392 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Judith Olszowy-Schlanger",
+          "authors": [
+            "Judith Olszowy-Schlanger \nWriting"
+          ],
+          "pdf_start_index": 162,
+          "pdf_end_index": 167,
+          "citation_pages": "147-330",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ethan Jones",
+          "authors": [],
+          "pdf_start_index": 168,
+          "pdf_end_index": 191,
+          "citation_pages": "331-176",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ronny Vollandt",
+          "authors": [
+            "Geoffrey Khan",
+            "Ben Ezra"
+          ],
+          "pdf_start_index": 192,
+          "pdf_end_index": 224,
+          "citation_pages": "177-2",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A. Hebrew",
+          "authors": [
+            "Goitein",
+            "Miriam",
+            "Gözeler"
+          ],
+          "pdf_start_index": 225,
+          "pdf_end_index": 230,
+          "citation_pages": "3-216",
+          "confidence": 0.71,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Estara Arrant",
+          "authors": [
+            "Estara Arrant"
+          ],
+          "pdf_start_index": 232,
+          "pdf_end_index": 270,
+          "citation_pages": "217-256",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mordechai Akiva Friedman",
+          "authors": [
+            "Mordechai Akiva",
+            "Ben Outhwaite",
+            "Taylor",
+            "Library"
+          ],
+          "pdf_start_index": 272,
+          "pdf_end_index": 301,
+          "citation_pages": "257-286",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Michael Rand z\"l",
+          "authors": [
+            "BEN YOSEF \n",
+            "Michael Rand z\"l",
+            "Schirmann",
+            "Geniza"
+          ],
+          "pdf_start_index": 302,
+          "pdf_end_index": 325,
+          "citation_pages": "287-310",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nick Posegay",
+          "authors": [
+            "Nick Posegay"
+          ],
+          "pdf_start_index": 326,
+          "pdf_end_index": 355,
+          "citation_pages": "311-340",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Tamar Zewi",
+          "authors": [
+            "Tamar Zewi"
+          ],
+          "pdf_start_index": 356,
+          "pdf_end_index": 377,
+          "citation_pages": "341-362",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ofra Tirosh-Becker",
+          "authors": [
+            "Ofra Tirosh-Becker",
+            "Judaeo -Arabic"
+          ],
+          "pdf_start_index": 378,
+          "pdf_end_index": 412,
+          "citation_pages": "363-398",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wiktor Gębski",
+          "authors": [
+            "Wiktor Gębski",
+            "Gębski",
+            "Saada",
+            "Behnstedt"
+          ],
+          "pdf_start_index": 414,
+          "pdf_end_index": 443,
+          "citation_pages": "399-428",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Benjamin Hary",
+          "authors": [
+            "Benjamin Hary",
+            "EJA"
+          ],
+          "pdf_start_index": 444,
+          "pdf_end_index": 472,
+          "citation_pages": "429-458",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gregor Schwarb",
+          "authors": [
+            "MARPE LA-ʿAṢEM* \n",
+            "Gregor Schwarb",
+            "Sefer Marpe la-ʿAṣem",
+            "Faith",
+            "Byzantine Karaite Hebrew"
+          ],
+          "pdf_start_index": 474,
+          "pdf_end_index": 499,
+          "citation_pages": "459-4",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Stefan Reif",
+          "authors": [
+            "Joshua \nBlau",
+            "Stefan Reif",
+            "Linguistics",
+            "Geoffrey Khan",
+            "al",
+            "Houben",
+            "Kitāb al-Majmūʿ"
+          ],
+          "pdf_start_index": 500,
+          "pdf_end_index": 503,
+          "citation_pages": "5-488",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Miriam Goldstein",
+          "authors": [
+            "Miriam Goldstein \n",
+            "Jacob al-Qirqisānī",
+            "Yūsuf Ya",
+            "al-Qirqisānī",
+            "Karaite"
+          ],
+          "pdf_start_index": 504,
+          "pdf_end_index": 536,
+          "citation_pages": "489-522",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nadia Vidro",
+          "authors": [
+            "YŪSUF IBN NŪḤ",
+            "YŪSUF IBN",
+            "Ibn Nūḥ",
+            "Al-D"
+          ],
+          "pdf_start_index": 538,
+          "pdf_end_index": 560,
+          "citation_pages": "523-546",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "José Martínez Delgado",
+          "authors": [
+            "ABŪ AL-FARAJ",
+            "José Martínez Delgado",
+            "fī al-Miqra"
+          ],
+          "pdf_start_index": 562,
+          "pdf_end_index": 588,
+          "citation_pages": "547-574",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Diana Lipton and Meira Polliack",
+          "authors": [
+            "Diana Lipton",
+            "Meira Polliack",
+            "Dan Millman 1980",
+            "Geoffrey Khan"
+          ],
+          "pdf_start_index": 590,
+          "pdf_end_index": 624,
+          "citation_pages": "575-610",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "María Ángeles Gallego",
+          "authors": [
+            "Ángeles Gallego"
+          ],
+          "pdf_start_index": 626,
+          "pdf_end_index": 652,
+          "citation_pages": "611-640",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Alessandro Mengozzi",
+          "authors": [
+            "Garbell",
+            "Persian Azerbaijan"
+          ],
+          "pdf_start_index": 688,
+          "pdf_end_index": 708,
+          "citation_pages": "673-694",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Phillip Yu. Burlakov, Anna S. Cherkashina, Charles G. Häberl, and Sergey V. Loesov",
+          "authors": [
+            "Phillip Yu",
+            "Burlakov",
+            "Anna S. Cherkashina",
+            "Charles \nG. Häberl",
+            "Sergey V. Loesov",
+            "Arabic Maʿlūlah",
+            "al-Qutayfah"
+          ],
+          "pdf_start_index": 710,
+          "pdf_end_index": 735,
+          "citation_pages": "695-720",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Otto Jastrow",
+          "authors": [
+            "Otto Jastrow",
+            "Geoffrey Khan"
+          ],
+          "pdf_start_index": 736,
+          "pdf_end_index": 753,
+          "citation_pages": "721-738",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Charles G. Häberl",
+          "authors": [
+            "Charles G. Häberl \nFestschriften",
+            "Geoffrey Khan’s"
+          ],
+          "pdf_start_index": 754,
+          "pdf_end_index": 769,
+          "citation_pages": "739-754",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Dorota Molin",
+          "authors": [],
+          "pdf_start_index": 770,
+          "pdf_end_index": 796,
+          "citation_pages": "755-784",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Paul M. Noorlander",
+          "authors": [
+            "Khan",
+            "Geoffrey",
+            "Masoud Mohammadirad",
+            "Paul \nM. Noorlander",
+            "Neo-Aramaic",
+            "Glossed Texts",
+            "Neo"
+          ],
+          "pdf_start_index": 797,
+          "pdf_end_index": 837,
+          "citation_pages": "785-822",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Lidia Napiorkowska",
+          "authors": [],
+          "pdf_start_index": 838,
+          "pdf_end_index": 869,
+          "citation_pages": "823-854",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Eleanor Coghill",
+          "authors": [],
+          "pdf_start_index": 870,
+          "pdf_end_index": 909,
+          "citation_pages": "855-894",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hezy Mutzafi",
+          "authors": [
+            "Hezy Mutzafi",
+            "Neo -\nMandaic",
+            "Neo -Aramaic"
+          ],
+          "pdf_start_index": 910,
+          "pdf_end_index": 928,
+          "citation_pages": "895-913",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 162.72788845199966,
+      "demand_at_run": 0
+    }
+  },
+  "generated_at": "2026-08-13T05:29:51.104785+00:00"
+}

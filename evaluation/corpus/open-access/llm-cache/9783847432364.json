@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T05:35:32.191909+00:00",
+  "generated_at": "2026-08-13T05:47:58.529497+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -109,8 +109,18 @@
           ],
           "pdf_start_index": 177,
           "pdf_end_index": 197,
-          "citation_pages": "177-200",
+          "citation_pages": "177-241",
           "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rewriting als feministische Intervention",
+          "authors": [],
+          "pdf_start_index": 199,
+          "pdf_end_index": 199,
+          "citation_pages": "242-200",
+          "confidence": 0.95,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -160,21 +170,9 @@
             "Eigenlogiken"
           ],
           "pdf_start_index": 229,
-          "pdf_end_index": 241,
-          "citation_pages": "229-241",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Rewriting als feministische Reflexion über den Gewerkschaftsbegriff im deutschen Arbeitsrecht",
-          "authors": [
-            "Joanna Bronowicka\nZusammenfassung"
-          ],
-          "pdf_start_index": 242,
           "pdf_end_index": 256,
-          "citation_pages": "242-256",
-          "confidence": 0.9,
+          "citation_pages": "229-256",
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -286,7 +284,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 88.25738999500004,
+      "elapsed_seconds": 87.15266699600033,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {

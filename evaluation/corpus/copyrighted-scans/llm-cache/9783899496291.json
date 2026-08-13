@@ -16,13 +16,13 @@
           ],
           "pdf_start_index": 216,
           "pdf_end_index": 1369,
-          "citation_pages": "xv-1350",
+          "citation_pages": "14-1350",
           "confidence": 0.82,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 29.609762590999935,
+      "elapsed_seconds": 37.254179977000035,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -2305,5 +2305,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-12T05:35:31.275096+00:00"
+  "generated_at": "2026-08-13T05:00:37.440085+00:00"
 }

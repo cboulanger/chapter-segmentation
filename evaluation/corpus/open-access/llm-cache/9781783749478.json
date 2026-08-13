@@ -127,9 +127,21 @@
             "Hezy Mutzafi"
           ],
           "pdf_start_index": 415,
-          "pdf_end_index": 468,
-          "citation_pages": "389-442",
+          "pdf_end_index": 439,
+          "citation_pages": "389-414",
           "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Corpus-Based Swadesh Word List for Literary Christian Urmi (New Alphabet Texts)",
+          "authors": [
+            "Literary Christian Urmi"
+          ],
+          "pdf_start_index": 441,
+          "pdf_end_index": 468,
+          "citation_pages": "415-442",
+          "confidence": 0.96,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -175,7 +187,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 33.673383263999995,
+      "elapsed_seconds": 35.809447913999975,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -1139,5 +1151,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-12T05:35:33.033382+00:00"
+  "generated_at": "2026-08-13T05:07:56.415894+00:00"
 }

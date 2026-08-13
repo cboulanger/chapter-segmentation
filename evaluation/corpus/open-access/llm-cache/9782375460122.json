@@ -1,9 +1,370 @@
 {
-  "generated_at": "2026-08-12T05:35:31.876581+00:00",
+  "generated_at": "2026-08-13T05:35:59.872511+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
-      "chapters": [],
-      "elapsed_seconds": 17.80849889199999,
+      "chapters": [
+        {
+          "title": "FRANCE, SOCIÉTÉ MULTICULTURELLE",
+          "authors": [
+            "Patrick Simon\nIl",
+            "que l’ampleur de la diversité",
+            "cadre de la"
+          ],
+          "pdf_start_index": 29,
+          "pdf_end_index": 30,
+          "citation_pages": "29-30",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "L’IMMIGRATION POST-COLONIALE",
+          "authors": [],
+          "pdf_start_index": 31,
+          "pdf_end_index": 35,
+          "citation_pages": "31-35",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "MÉLANGES SOCIAUX ET STRUCTURE INÉGALITAIRE",
+          "authors": [
+            "mais aussi"
+          ],
+          "pdf_start_index": 36,
+          "pdf_end_index": 37,
+          "citation_pages": "36-37",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "LANGUES ET POLITIQUES PUBLIQUES : LE PAYSAGE FRANÇAIS",
+          "authors": [
+            "Alexandra",
+            "ainsi de \nmieux"
+          ],
+          "pdf_start_index": 38,
+          "pdf_end_index": 38,
+          "citation_pages": "38-38",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "LES LANGUES D’IMMIGRATION EN FRANCE",
+          "authors": [
+            "reçu de leurs"
+          ],
+          "pdf_start_index": 39,
+          "pdf_end_index": 41,
+          "citation_pages": "39-41",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "POLITIQUES PUBLIQUES EN MATIÈRE LINGUISTIQUE",
+          "authors": [],
+          "pdf_start_index": 42,
+          "pdf_end_index": 45,
+          "citation_pages": "42-45",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "QUELS RÔLES À JOUER POUR LES BIBLIOTHÈQUES ?",
+          "authors": [],
+          "pdf_start_index": 46,
+          "pdf_end_index": 47,
+          "citation_pages": "46-49",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ATELIERS EN BIBLIOTHÈQUE : QUELLE VALEUR AJOUTÉE POUR DES ADULTES EN APPRENTISSAGE LINGUISTIQUE ?",
+          "authors": [
+            "Julie Peugeot",
+            "Vénissieux",
+            "d’abord"
+          ],
+          "pdf_start_index": 50,
+          "pdf_end_index": 50,
+          "citation_pages": "50-50",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "DE LA FORMATION LINGUISTIQUE À L’OFFRE D’ATELIERS CULTURELS",
+          "authors": [
+            "de la médiathèque"
+          ],
+          "pdf_start_index": 51,
+          "pdf_end_index": 54,
+          "citation_pages": "51-147",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ADAPTER LES PRATIQUES PROFESSIONNELLES",
+          "authors": [
+            "autour de la",
+            "connaître le lieu \net"
+          ],
+          "pdf_start_index": 55,
+          "pdf_end_index": 55,
+          "citation_pages": "148-55",
+          "confidence": 0.84,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "POINTS DE VIGILANCE : PARTENARIAT, BIENVEILLANCE, FORMATION CONTINUE",
+          "authors": [
+            "FORMATION CONTINUE\n+++++++++++++++++++++++++++++++++++++++++++++++++++ +++++++++++++++\n",
+            "eu la chance de béné"
+          ],
+          "pdf_start_index": 56,
+          "pdf_end_index": 59,
+          "citation_pages": "56-59",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "S’ENTOURER AVANT D’AGIR : UN PRÉALABLE INDISPENSABLE",
+          "authors": [],
+          "pdf_start_index": 60,
+          "pdf_end_index": 68,
+          "citation_pages": "60-68",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "DES OUTILS D’APPRENTISSAGE POUR QUI ?",
+          "authors": [],
+          "pdf_start_index": 69,
+          "pdf_end_index": 74,
+          "citation_pages": "69-74",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "DISPOSITIFS D’ACCUEIL DES ÉTUDIANTS ÉTRANGERS : QUELQUES BONNES PRATIQUES EN BU",
+          "authors": [
+            "Raoul Weber",
+            "Les BU"
+          ],
+          "pdf_start_index": 75,
+          "pdf_end_index": 76,
+          "citation_pages": "75-76",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ACCOMPAGNER LES ÉTUDIANTS ÉTRANGERS DANS LEURS PARCOURS",
+          "authors": [],
+          "pdf_start_index": 77,
+          "pdf_end_index": 80,
+          "citation_pages": "77-80",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "EN INTERNE : METTRE EN PLACE DES OUTILS, RECHERCHER OU DÉVELOPPER DES COMPÉTENCES",
+          "authors": [
+            "Lydie Ducolomb"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 84,
+          "citation_pages": "81-85",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "UN PUBLIC SPÉCIFIQUE, DES BESOINS DIFFICILES À CERNER",
+          "authors": [
+            "Catherine  \nDi Sciullo",
+            "Bien"
+          ],
+          "pdf_start_index": 86,
+          "pdf_end_index": 89,
+          "citation_pages": "86-90",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "PUBLICS MIGRANTS À LA MÉDIATHÈQUE DE CALAIS",
+          "authors": [
+            "Calais"
+          ],
+          "pdf_start_index": 91,
+          "pdf_end_index": 95,
+          "citation_pages": "91-95",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "PUBLICS ROMS À LA MÉDIATHÈQUE AIMÉ CÉSAIRE À LA COURNEUVE",
+          "authors": [
+            "centré sur l’accueil"
+          ],
+          "pdf_start_index": 96,
+          "pdf_end_index": 100,
+          "citation_pages": "96-101",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "DES SERVICES À INVENTER",
+          "authors": [
+            "mesure  de notre"
+          ],
+          "pdf_start_index": 102,
+          "pdf_end_index": 107,
+          "citation_pages": "102-107",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "UN CADRE QUI RESTE À POSER EN TERMES DE POLITIQUE PUBLIQUE",
+          "authors": [],
+          "pdf_start_index": 108,
+          "pdf_end_index": 108,
+          "citation_pages": "108-108",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "CHANGER LES REGARDS : LES APPORTS DU MUSÉE NATIONAL DE L’HISTOIRE DE L’IMMIGRATION ET DE LA MÉDIATHÈQUE ABDELMALEK SAYAD",
+          "authors": [],
+          "pdf_start_index": 109,
+          "pdf_end_index": 116,
+          "citation_pages": "109-116",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "IDENTIFIER DES ASSOCIATIONS RESSOURCES",
+          "authors": [
+            "Stéphanie",
+            "Alexandre",
+            "Lucie Daudin"
+          ],
+          "pdf_start_index": 117,
+          "pdf_end_index": 121,
+          "citation_pages": "117-123",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "UNE BIBLIOTHÈQUE 100 % INTERCULTURELLE : L’EXEMPLE DE GLOBLIVRES",
+          "authors": [
+            "Monica Prodon\nInstitution",
+            "Globlivres",
+            "Renens",
+            "ancienne banlieue"
+          ],
+          "pdf_start_index": 124,
+          "pdf_end_index": 124,
+          "citation_pages": "124-61",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "34 000 DOCUMENTS DANS 282 LANGUES",
+          "authors": [
+            "Au départ"
+          ],
+          "pdf_start_index": 125,
+          "pdf_end_index": 131,
+          "citation_pages": "125-131",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "« L’ODYSSÉE DES LANGUES DU MONDE » : UNE EXPÉRIENCE MULTILINGUE ET PARTICIPATIVE",
+          "authors": [
+            "MONDE",
+            "UNE EXPÉRIENCE \nMULTILINGUE",
+            "de Lyon"
+          ],
+          "pdf_start_index": 132,
+          "pdf_end_index": 140,
+          "citation_pages": "132-140",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "LA DIVERSITÉ CULTURELLE DANS LES MÉDIATHÈQUES DE PLAINE COMMUNE, UNE APPROCHE PAR LES LANGUES",
+          "authors": [
+            "LANGUES",
+            "Épinay"
+          ],
+          "pdf_start_index": 141,
+          "pdf_end_index": 144,
+          "citation_pages": "141-144",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "RENDRE POSSIBLES LES RENCONTRES",
+          "authors": [
+            "de Plaine Commune",
+            "leur rôle de facilitateur et"
+          ],
+          "pdf_start_index": 145,
+          "pdf_end_index": 150,
+          "citation_pages": "145-150",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "QUELLE POSTURE PROFESSIONNELLE EN SITUATION INTERCULTURELLE ?",
+          "authors": [
+            "la salle"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 157,
+          "citation_pages": "151-157",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "UN TRAVAIL SUR SOI",
+          "authors": [],
+          "pdf_start_index": 158,
+          "pdf_end_index": 159,
+          "citation_pages": "158-160",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 209.796040919,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {

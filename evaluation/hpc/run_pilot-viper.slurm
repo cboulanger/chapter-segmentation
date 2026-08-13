@@ -47,12 +47,22 @@
 # to evaluating the resource request itself.
 #SBATCH --time=02:00:00
 
-# See evaluation/hpc/README.md for the full setup this assumes (adjusted
-# for Viper): repo cloned at $REPO_DIR, evaluation/finetune/data/{train,eval}.jsonl
-# already rsynced over from a local run of prepare_nuextract_finetune_data.py
-# (this script never touches the PDFs themselves), the container built at
+# See evaluation/hpc/README.md's "Running on Viper-GPU instead" for the
+# full setup this assumes (adjusted for Viper): repo cloned at $REPO_DIR,
+# evaluation/finetune/data/{train,eval}.jsonl already rsynced over from a
+# local run of prepare_nuextract_finetune_data.py (this script never
+# touches the PDFs themselves), the container built at
 # $REPO_DIR/evaluation/hpc/nuextract-viper.sif, and the model weights + base
 # GGUF already pre-fetched into $HF_HOME from a login node (compute nodes
+#
+# IMPORTANT: $REPO_DIR/$PTMP below resolve to whatever /u and /ptmp mean
+# on whichever node this job actually runs on. Viper-CPU and Viper-GPU
+# have completely separate filesystems at those same paths -- a checkout
+# done from viper01/02 is invisible to the vipa* compute nodes this job
+# runs on. Everything must already live under Viper-GPU's own /u and
+# /ptmp (clone and rsync directly from viper11/12/13) before submitting
+# -- see the README section above for the cross-filesystem copy command
+# if you set up on Viper-CPU first.
 # have no internet).
 
 set -e

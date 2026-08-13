@@ -3,11 +3,21 @@
 This package offloads the fine-tuning pilot described in
 `docs/superpowers/specs/2026-08-10-nuextract2-finetuning-pilot-design.md`
 (and documented for local runs in `evaluation/README.md`'s "NuExtract-2.0-4B
-fine-tuning pilot" section) onto MPCDF's SLURM/Apptainer HPC systems
-(Raven), instead of running it on a local machine. It reuses the exact
-same scripts (`prepare_nuextract_finetune_data.py`, `finetune_nuextract.py`,
+fine-tuning pilot" section) onto MPCDF's SLURM/Apptainer HPC systems,
+instead of running it on a local machine. It reuses the exact same
+scripts (`prepare_nuextract_finetune_data.py`, `finetune_nuextract.py`,
 `merge_nuextract_lora.py`, `evaluate_nuextract_finetune.py`) unmodified --
 only the container and orchestration are new.
+
+Two independent targets exist, each a fully separate pair of files (not
+a shared/parameterized template) so either can be edited freely without
+the other silently breaking:
+
+- **Raven** (NVIDIA/A100) -- `nuextract.def` + `run_pilot.slurm`. Steps
+  1-6 below.
+- **Viper-GPU** (AMD MI300A/ROCm) -- `nuextract-viper.def` +
+  `run_pilot-viper.slurm`. See "Running on Viper-GPU instead" further
+  down for everything that differs.
 
 Blueprints for this were adapted from
 [`ai_containers`](https://gitlab.mpcdf.mpg.de/dataanalytics-public/ai_containers)
@@ -59,22 +69,18 @@ rsync -av evaluation/finetune/data/ \
     cboul@raven.mpcdf.mpg.de:/u/cboul/projects/chapter-segmentation/evaluation/finetune/data/
 ```
 
-This whole package targets **Raven** specifically (NVIDIA/A100 -- see
-`nuextract.def`'s CUDA base image and `run_pilot.slurm`'s `--gres=gpu:a100:1`
-and `--nv`), not Viper (AMD/ROCm, which needs a different base image,
-`-DGGML_HIP=ON` instead of `-DGGML_CUDA=ON`, `--rocm` instead of `--nv`,
-and Viper's own `--constraint`/`--gres` syntax -- none of that is done
-here). Double-check `raven.mpcdf.mpg.de` above, not `viper.mpcdf.mpg.de`.
+Steps 1-6 below are **Raven**-specific (`raven.mpcdf.mpg.de`, `nuextract.def`,
+`run_pilot.slurm`). For Viper-GPU, skip to "Running on Viper-GPU instead"
+after step 6 -- data transfer works the same way in spirit, but the
+target host/path and, if you're already on a Raven checkout, the
+cross-filesystem gotchas are different enough to warrant its own section
+rather than a footnote here.
 
-(Swap in your actual remote username/host/path -- and note the `:`
+(Swap in your actual remote username/host/path above -- and note the `:`
 immediately after the host: `rsync` treats anything without it as a
 second local path, which silently recreates the whole destination as a
 nested local directory instead of transferring anywhere, so double-check
-this before running it for real. If MPCDF's `$HOME`/project filesystem is
-shared across Raven and Viper for your account -- check with `ssh
-raven.mpcdf.mpg.de 'ls ~/projects/chapter-segmentation'` -- you may not
-need to re-clone/re-transfer anything at all, just log into Raven instead
-of Viper and pick up from step 3 below.)
+this before running it for real.)
 
 The existing `evaluation/.gitignore` rule (`finetune/`) means this
 directory is never committed to git on either machine -- transfer it out
@@ -218,6 +224,125 @@ The adapter/merged/GGUF artifacts stay under `/ptmp/$USER/nuextract-pilot/`
 -- copy them back with `scp`/`rsync` only if you want to keep the
 fine-tuned weights around; they're not needed to record the pilot's
 result.
+
+## Running on Viper-GPU instead
+
+Same pipeline, same JSONL data, different container/orchestration pair
+(`nuextract-viper.def` / `run_pilot-viper.slurm`). Everything below was
+found the hard way while getting the pilot running for the first time --
+none of it is documented together anywhere else, so treat this as the
+canonical reference rather than re-discovering it per job.
+
+**Filesystem separation -- clone directly onto Viper-GPU, don't detour
+through Viper-CPU.** Viper-CPU and Viper-GPU are two logically separate
+clusters with **entirely separate filesystems** that happen to both be
+mounted at `/u` and `/ptmp` -- Viper-CPU's are physically
+`/viper/u1`/`/viper/ptmp1`, Viper-GPU's are `/viper/u2`/`/viper/ptmp2`.
+A checkout under `/u` on `viper01`/`viper02` (Viper-CPU-side login
+nodes) is **invisible** from `viper11`/`viper12`/`viper13` (Viper-GPU
+login nodes) and from GPU compute nodes -- `$HOME` looks the same path
+but is a different physical home directory. Avoid the whole problem by
+doing everything (git clone, data rsync, container build) directly from
+a `viper11`/`12`/`13` login node from the start. If you've already set
+up on Viper-CPU, login nodes mount all four filesystems, so copy across
+from either side, e.g. from a Viper-GPU login node:
+
+```bash
+rsync -av /viper/u1/$USER/projects/chapter-segmentation/ /viper/u2/$USER/projects/chapter-segmentation/
+mkdir -p /viper/ptmp2/$USER/huggingface
+rsync -av /viper/ptmp1/$USER/huggingface/ /viper/ptmp2/$USER/huggingface/
+```
+
+This isn't just a login-node convenience issue: `run_pilot-viper.slurm`'s
+`$PTMP`/`$REPO_DIR` resolve to whatever `/u`/`/ptmp` mean on the node the
+job actually runs on, and GPU **compute** nodes only see Viper-GPU's own
+filesystem, not the login-node cross-mount. Everything the job touches
+(repo checkout, `evaluation/finetune/data/*.jsonl`, `nuextract-viper.sif`,
+the `$HF_HOME` model cache) must already be under Viper-GPU's `/u`/`/ptmp`
+before you `sbatch`.
+
+**SLURM account and partition are both required, not defaulted.**
+`sacctmgr -p show assoc user=$USER format=Account,Partition,QOS` showed
+two separate accounts (`mrg_apu`, `mrg_cpu`) with no partition tied to
+either, and `scontrol show partition` shows none of Viper-GPU's GPU
+partitions (`apu`, `apu1`, `apudev`) are `Default=YES` -- so every
+`srun`/`sbatch` needs both `--account=mrg_apu` and an explicit
+`--partition=`. `run_pilot-viper.slurm` already has both baked in
+(`apu1`, the single-node partition matching this job's single-GPU
+shape; its own `DefCpuPerGPU=48`/`DefMemPerNode=110000` happen to match
+this job's `--cpus-per-task`/`--mem`, which is a reassuring sign those
+values are actually sane for the hardware, not just a proportional
+guess). `apudev` (nodes `vipa[1001,1300]`, 15-minute cap) is a
+lower-contention sandbox worth knowing about for quick interactive
+checks like the one below.
+
+**`apu`/`apu1`/`apudev` can only be submitted to from `viper11`,
+`viper12`, or `viper13`.** `scontrol show partition` lists
+`AllocNodes=viper[11-13]` for all three GPU partitions -- submitting
+from `viper01`/`viper02` (which is fine for everything else, including
+building the `.sif` itself) fails with `srun: error: Unable to allocate
+resources: Access/permission denied`, a permission-layer rejection that
+happens before Slurm even evaluates the resource request, so it looks
+identical whether the real problem is the wrong login node, missing
+`--account`, or missing `--partition` -- check all three if you hit it.
+
+**ROCm driver only supports >=6.3.** A driver update on Viper-GPU
+dropped support for ROCm <=6.2 and now requires loading an explicit
+module version (`module load rocm/7.0`, no bare `rocm` default) if you
+ever need the host's own ROCm toolchain directly (not needed for the
+container build/run steps below, which bundle their own ROCm userspace
+-- only relevant if you're debugging outside Apptainer). The container's
+ROCm 6.4.4 clears this floor comfortably.
+
+**Base image and dependency pins.** `nuextract-viper.def`'s header
+comment has the full story, but briefly: the AMD `rocm/pytorch` image
+family's naming convention is `rocm<X>_ubuntu<Y>_py<Z>_pytorch_release_<V>`
+(confirmed via `curl -s https://hub.docker.com/v2/repositories/rocm/pytorch/tags/?page_size=100`).
+No `rocm6.3`-family tag ever paired with a PyTorch >=2.5, so the image
+here is `rocm6.4.4_ubuntu22.04_py3.10_pytorch_release_2.7.1`. This
+mattered in practice: `transformers`/`peft`/`accelerate`/`huggingface-hub`
+are pinned to **exact** versions (matching `../../uv.lock`) rather than
+`nuextract.def`'s floor-only `>=` bounds, because a floor-only
+`transformers>=4.46.0` resolved to whatever was newest on PyPI at build
+time, which had quietly raised its own minimum PyTorch to 2.5+ -- with
+an older base image that manifested as `peft` crashing on a bare
+`NameError: name 'torch' is not defined` deep inside transformers' own
+`tensor_parallel` module (transformers had disabled its own PyTorch
+integration due to the version mismatch, but a submodule imported later
+in the chain still referenced `torch` unconditionally).
+
+**Steps** (mirrors 1-6 above; only the divergences are called out):
+
+```bash
+# from viper11/12/13 -- see filesystem note above
+git clone -b worktree-nuextract-baseline-spike \
+    https://github.com/cboulanger/chapter-segmentation.git
+cd chapter-segmentation
+# rsync evaluation/finetune/data/ here too, as in step 2 above
+
+module load apptainer/1.4.3
+cd evaluation/hpc
+apptainer build --fakeroot nuextract-viper.sif nuextract-viper.def
+apptainer test nuextract-viper.sif
+```
+
+Real-GPU smoke test before committing to the full job (also from
+viper11/12/13, and note the `-A`/`-p`):
+
+```bash
+srun -A mrg_apu -p apu1 --constraint="apu" --gres=gpu:1 --cpus-per-task=24 \
+    --mem=110000 --time=00:05:00 --pty bash
+# inside the allocation:
+apptainer exec --rocm nuextract-viper.sif python3 -c \
+    "import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0))"
+apptainer exec --rocm nuextract-viper.sif python3 -c "import llama_cpp; print('llama_cpp ok')"
+```
+
+Model prefetch (step 4 above) is identical, just run from a
+`viper11`/`12`/`13` login node this time. Submit with
+`sbatch evaluation/hpc/run_pilot-viper.slurm` -- also from
+`viper11`/`12`/`13`, same `AllocNodes` restriction as the interactive
+test.
 
 ## A note on the llama.cpp-only eval constraint
 

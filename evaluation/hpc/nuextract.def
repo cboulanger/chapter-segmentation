@@ -40,12 +40,26 @@ From: nvcr.io/nvidia/pytorch:25.01-py3
         "langdetect>=1.0.9" \
         "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
 
-    # pyproject.toml's "nuextract-finetune" optional-dependency group.
+    # pyproject.toml's "nuextract-finetune" optional-dependency group,
+    # pinned to the exact versions in ../../uv.lock (the combination
+    # already validated locally against finetune_nuextract.py/
+    # merge_nuextract_lora.py/evaluate_nuextract_finetune.py) rather than
+    # floor-only `>=` bounds. This used to be floor-only here too, until
+    # the identical pattern broke the Viper sibling container
+    # (nuextract-viper.def): `transformers>=4.46.0` resolved to whatever
+    # was newest on PyPI at build time, which had quietly raised its own
+    # minimum PyTorch to 2.5+, and an older-than-that base image made
+    # `peft` crash on a bare `NameError: name 'torch' is not defined`
+    # deep inside transformers' own tensor_parallel module. This base
+    # image (nvcr.io/nvidia/pytorch:25.01-py3) is new enough that it may
+    # never have hit this in practice, but pinning removes the
+    # uncertainty rather than relying on that -- see nuextract-viper.def
+    # for the full writeup of the failure.
     pip3 install --no-cache-dir \
-        "transformers>=4.46.0" \
-        "peft>=0.13.0" \
-        "accelerate>=0.34.0" \
-        "huggingface-hub>=0.25.0"
+        "transformers==5.15.0" \
+        "peft==0.20.0" \
+        "accelerate==1.14.0" \
+        "huggingface-hub==1.27.0"
 
     # CUDA-accelerated build -- the base image ships the full CUDA
     # toolkit (nvcc etc.), so this picks up GPU offload automatically.

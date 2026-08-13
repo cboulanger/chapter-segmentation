@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T05:12:58.307557+00:00",
+  "generated_at": "2026-08-13T05:50:06.696998+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -322,13 +322,13 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 99.26106083799999,
+      "elapsed_seconds": 99.43612578,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
       "chapters": [
         {
-          "title": "Der Anteil gerichtlicher Verfahren bei der Austragung sozialer Konflikte",
+          "title": "Erhard Blankenburg: Der Anteil gerichtlicher Verfahren bei der Austragung sozialer Konflikte",
           "authors": [
             "Erhard Blankenburg \nDer Anteil",
             "Verfahren",
@@ -343,12 +343,12 @@
           "pdf_start_index": 83,
           "pdf_end_index": 96,
           "citation_pages": "84-98",
-          "confidence": 1.0,
+          "confidence": 0.99,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Political justice and system maintenance: An overview of some major variables",
+          "title": "Joel B. Grossman: Political justice and system maintenance: An overview of some major variables",
           "authors": [
             "Joel B. Grossman",
             "Spiel",
@@ -360,12 +360,12 @@
           "pdf_start_index": 97,
           "pdf_end_index": 119,
           "citation_pages": "99-122",
-          "confidence": 0.99,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Zum Problem der Klassenjustiz",
+          "title": "Thomas Raiser: Zum Problem der Klassenjustiz",
           "authors": [
             "Thomas Raiser \n",
             "Zum Problem",
@@ -384,12 +384,12 @@
           "pdf_start_index": 120,
           "pdf_end_index": 133,
           "citation_pages": "123-136",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Criminal courts as organizational phenomena",
+          "title": "Herbert Jacob: Criminal courts as organizational phenomena",
           "authors": [
             "Herbert Jacob \n",
             "einigen da gegen",
@@ -399,12 +399,12 @@
           "pdf_start_index": 152,
           "pdf_end_index": 169,
           "citation_pages": "155-172",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "The choice between litigation and arbitration",
+          "title": "Britt-Mari Blegvad: The choice between litigation and arbitration",
           "authors": [
             "Britt-Mari Blegvad",
             "früh Wort",
@@ -419,12 +419,12 @@
           "pdf_start_index": 171,
           "pdf_end_index": 181,
           "citation_pages": "174-184",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Judicial decision-making and administrative tasks",
+          "title": "Jeffrey J owell: Judicial decision-making and administrative tasks",
           "authors": [
             "Jeffrey J",
             "Auge",
@@ -437,12 +437,12 @@
           "pdf_start_index": 182,
           "pdf_end_index": 202,
           "citation_pages": "185-206",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Civil trial and social justice in Italy. A sociological analysis of the proceedings under art. 28 of the Workers' Statute",
+          "title": "Ernesto Ugo Savona: Civil trial and social justice in Italy. A sociological analysis of the proceedings under art. 28 of the Workers' Statute",
           "authors": [
             "Ernesto Ugo Savona \nCivil Trial",
             "bin unser",
@@ -458,7 +458,7 @@
           "source": "llm"
         },
         {
-          "title": "Social reform groups and the legal system: Enforcement problems",
+          "title": "Joel F. Handler: Social reform groups and the legal system: Enforcement problems",
           "authors": [
             "Joel F. Handler",
             "McCarthy",
@@ -472,12 +472,12 @@
           "pdf_start_index": 213,
           "pdf_end_index": 238,
           "citation_pages": "218-244",
-          "confidence": 1.0,
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "The distribution of advantages in the litigation process",
+          "title": "Marc Galanter: The distribution of advantages in the litigation process",
           "authors": [
             "Marc Galanter",
             "Haus",
@@ -490,12 +490,12 @@
           "pdf_start_index": 239,
           "pdf_end_index": 264,
           "citation_pages": "245-270",
-          "confidence": 1.0,
+          "confidence": 0.99,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Defamation : Reputation and encounter",
+          "title": "P.S.C. Lewis: Defamation : Reputation and encounter",
           "authors": [
             "Philip Lewis* \n",
             "Jahr da Weihnachten",
@@ -504,12 +504,12 @@
           "pdf_start_index": 265,
           "pdf_end_index": 278,
           "citation_pages": "271-284",
-          "confidence": 0.97,
+          "confidence": 0.86,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Citizen participation in the administration of justice: Research and policy in Poland",
+          "title": "Maria Borucka-Arctowa: Citizen participation in the administration of justice: Research and policy in Poland",
           "authors": [
             "Maria Borucka-Arctowa",
             "Freude",
@@ -519,12 +519,12 @@
           "pdf_start_index": 280,
           "pdf_end_index": 293,
           "citation_pages": "286-300",
-          "confidence": 0.99,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "The function of the lay judge in Czechoslovakia",
+          "title": "Zdenek Krystufek: The function of the lay judge in Czechoslovakia",
           "authors": [
             "Zdenek Krystufek \n",
             "Fröhlich",
@@ -539,12 +539,12 @@
           "pdf_start_index": 294,
           "pdf_end_index": 299,
           "citation_pages": "301-306",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Die rechtliche Erheblichkeit gesellschaftlicher Unwissenheit",
+          "title": "Jutta Limbach: Die rechtliche Erheblichkeit gesellschaftlicher Unwissenheit",
           "authors": [
             "Jutta Limbach",
             "Unwissenheit",
@@ -561,12 +561,12 @@
           "pdf_start_index": 300,
           "pdf_end_index": 312,
           "citation_pages": "307-320",
-          "confidence": 1.0,
+          "confidence": 0.99,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Sachverstandigengutachten und Urteilsfindung im ZivilprozeB",
+          "title": "Helmut Pieper: Sachverstandigengutachten und Urteilsfindung im ZivilprozeB",
           "authors": [
             "Urteilsfindung",
             "I. Ausgangspunkte \nDie",
@@ -586,7 +586,7 @@
           "source": "llm"
         },
         {
-          "title": "Das Problem des Musterprozesses",
+          "title": "Peter Arens: Das Problem des Musterprozesses",
           "authors": [
             "Peter Arens",
             "Abgrenzung von anderen",
@@ -602,12 +602,12 @@
           "pdf_start_index": 336,
           "pdf_end_index": 347,
           "citation_pages": "344-356",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Das rechtliche Verfahren in der Rechtsethnologie: Versuch zu einem interkulturell anwendbaren Bezugsrahmen",
+          "title": "Franz von Benda-Beckmann: Das rechtliche Verfahren in der Rechtsethnologie: Versuch zu einem interkulturell anwendbaren Bezugsrahmen",
           "authors": [
             "Franz von Benda-Beckmann \nDas",
             "Verfahren",
@@ -624,12 +624,12 @@
           "pdf_start_index": 348,
           "pdf_end_index": 367,
           "citation_pages": "357-376",
-          "confidence": 0.99,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Zugangsbarrieren zur Justiz",
+          "title": "Rolf Bender/Christoph Strecker: Zugangsbarrieren zur Justiz",
           "authors": [
             "Rolf Bender",
             "Christoph Strecker",
@@ -645,12 +645,12 @@
           "pdf_start_index": 368,
           "pdf_end_index": 385,
           "citation_pages": "377-394",
-          "confidence": 1.0,
+          "confidence": 0.9,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Die Kosten der Rechtsverfolgung als Zugangsbarriere der Rechtspflege",
+          "title": "Manfred Rehbinder: Die Kosten der Rechtsverfolgung als Zugangsbarriere der Rechtspflege",
           "authors": [
             "Bundesrepublik Deutschland",
             "vielleicht Himmel",
@@ -661,18 +661,18 @@
           "pdf_start_index": 386,
           "pdf_end_index": 398,
           "citation_pages": "395-407",
-          "confidence": 1.0,
+          "confidence": 0.99,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 22.302578487999995,
+      "elapsed_seconds": 81.18399351299968,
       "demand_at_run": 0
     },
     "glm-4.7": {
       "chapters": [
         {
-          "title": "Der Anteil gerichtlicher Verfahren bei der Austragung sozialer Konflikte",
+          "title": "Erhard Blankenburg: Der Anteil gerichtlicher Verfahren bei der Austragung sozialer Konflikte",
           "authors": [
             "Erhard Blankenburg \nDer Anteil",
             "Verfahren",
@@ -687,12 +687,12 @@
           "pdf_start_index": 83,
           "pdf_end_index": 96,
           "citation_pages": "84-98",
-          "confidence": 1.0,
+          "confidence": 0.99,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Political justice and system maintenance: An overview of some major variables",
+          "title": "Joel B. Grossman: Political justice and system maintenance: An overview of some major variables",
           "authors": [
             "Joel B. Grossman",
             "Spiel",
@@ -704,12 +704,12 @@
           "pdf_start_index": 97,
           "pdf_end_index": 119,
           "citation_pages": "99-122",
-          "confidence": 0.99,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Zum Problem der Klassenjustiz",
+          "title": "Thomas Raiser: Zum Problem der Klassenjustiz",
           "authors": [
             "Thomas Raiser \n",
             "Zum Problem",
@@ -726,14 +726,14 @@
             "Eigentlich"
           ],
           "pdf_start_index": 120,
-          "pdf_end_index": 151,
-          "citation_pages": "123-154",
-          "confidence": 1.0,
+          "pdf_end_index": 133,
+          "citation_pages": "123-136",
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Criminal courts as organizational phenomena",
+          "title": "Herbert Jacob: Criminal courts as organizational phenomena",
           "authors": [
             "Herbert Jacob \n",
             "einigen da gegen",
@@ -742,13 +742,13 @@
           ],
           "pdf_start_index": 152,
           "pdf_end_index": 169,
-          "citation_pages": "155-173",
-          "confidence": 1.0,
+          "citation_pages": "155-172",
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "The choice between litigation and arbitration",
+          "title": "Britt-Mari Blegvad: The choice between litigation and arbitration",
           "authors": [
             "Britt-Mari Blegvad",
             "früh Wort",
@@ -763,12 +763,12 @@
           "pdf_start_index": 171,
           "pdf_end_index": 181,
           "citation_pages": "174-184",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Judicial decision-making and administrative tasks",
+          "title": "Jeffrey J owell: Judicial decision-making and administrative tasks",
           "authors": [
             "Jeffrey J",
             "Auge",
@@ -781,12 +781,12 @@
           "pdf_start_index": 182,
           "pdf_end_index": 202,
           "citation_pages": "185-206",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Civil trial and social justice in Italy. A sociological analysis of the proceedings under art. 28 of the Workers' Statute",
+          "title": "Ernesto Ugo Savona: Civil trial and social justice in Italy. A sociological analysis of the proceedings under art. 28 of the Workers' Statute",
           "authors": [
             "Ernesto Ugo Savona \nCivil Trial",
             "bin unser",
@@ -796,13 +796,13 @@
           ],
           "pdf_start_index": 203,
           "pdf_end_index": 211,
-          "citation_pages": "207-217",
+          "citation_pages": "207-216",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Social reform groups and the legal system: Enforcement problems",
+          "title": "Joel F. Handler: Social reform groups and the legal system: Enforcement problems",
           "authors": [
             "Joel F. Handler",
             "McCarthy",
@@ -816,12 +816,12 @@
           "pdf_start_index": 213,
           "pdf_end_index": 238,
           "citation_pages": "218-244",
-          "confidence": 1.0,
+          "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "The distribution of advantages in the litigation process",
+          "title": "Marc Galanter: The distribution of advantages in the litigation process",
           "authors": [
             "Marc Galanter",
             "Haus",
@@ -834,12 +834,12 @@
           "pdf_start_index": 239,
           "pdf_end_index": 264,
           "citation_pages": "245-270",
-          "confidence": 1.0,
+          "confidence": 0.99,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Defamation : Reputation and encounter",
+          "title": "P.S.C. Lewis: Defamation : Reputation and encounter",
           "authors": [
             "Philip Lewis* \n",
             "Jahr da Weihnachten",
@@ -847,13 +847,13 @@
           ],
           "pdf_start_index": 265,
           "pdf_end_index": 278,
-          "citation_pages": "271-285",
-          "confidence": 0.97,
+          "citation_pages": "271-284",
+          "confidence": 0.86,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Citizen participation in the administration of justice: Research and policy in Poland",
+          "title": "Maria Borucka-Arctowa: Citizen participation in the administration of justice: Research and policy in Poland",
           "authors": [
             "Maria Borucka-Arctowa",
             "Freude",
@@ -863,12 +863,12 @@
           "pdf_start_index": 280,
           "pdf_end_index": 293,
           "citation_pages": "286-300",
-          "confidence": 0.99,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "The function of the lay judge in Czechoslovakia",
+          "title": "Zdenek Krystufek: The function of the lay judge in Czechoslovakia",
           "authors": [
             "Zdenek Krystufek \n",
             "Fröhlich",
@@ -883,12 +883,12 @@
           "pdf_start_index": 294,
           "pdf_end_index": 299,
           "citation_pages": "301-306",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Die rechtliche Erheblichkeit gesellschaftlicher Unwissenheit",
+          "title": "b) Sachverstandige:",
           "authors": [
             "Jutta Limbach",
             "Unwissenheit",
@@ -905,12 +905,12 @@
           "pdf_start_index": 300,
           "pdf_end_index": 312,
           "citation_pages": "307-320",
-          "confidence": 1.0,
+          "confidence": 0.71,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Sachverstandigengutachten und Urteilsfindung im ZivilprozeB",
+          "title": "Helmut Pieper: Sachverstandigengutachten und Urteilsfindung im ZivilprozeB",
           "authors": [
             "Urteilsfindung",
             "I. Ausgangspunkte \nDie",
@@ -924,13 +924,13 @@
           ],
           "pdf_start_index": 313,
           "pdf_end_index": 334,
-          "citation_pages": "321-343",
+          "citation_pages": "321-342",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Das Problem des Musterprozesses",
+          "title": "Peter Arens: Das Problem des Musterprozesses",
           "authors": [
             "Peter Arens",
             "Abgrenzung von anderen",
@@ -946,12 +946,12 @@
           "pdf_start_index": 336,
           "pdf_end_index": 347,
           "citation_pages": "344-356",
-          "confidence": 1.0,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Das rechtliche Verfahren in der Rechtsethnologie: Versuch zu einem interkulturell anwendbaren Bezugsrahmen",
+          "title": "Franz von Benda-Beckmann: Das rechtliche Verfahren in der Rechtsethnologie: Versuch zu einem interkulturell anwendbaren Bezugsrahmen",
           "authors": [
             "Franz von Benda-Beckmann \nDas",
             "Verfahren",
@@ -968,12 +968,12 @@
           "pdf_start_index": 348,
           "pdf_end_index": 367,
           "citation_pages": "357-376",
-          "confidence": 0.99,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Zugangsbarrieren zur Justiz",
+          "title": "Rolf Bender/Christoph Strecker: Zugangsbarrieren zur Justiz",
           "authors": [
             "Rolf Bender",
             "Christoph Strecker",
@@ -989,12 +989,12 @@
           "pdf_start_index": 368,
           "pdf_end_index": 385,
           "citation_pages": "377-394",
-          "confidence": 1.0,
+          "confidence": 0.9,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Die Kosten der Rechtsverfolgung als Zugangsbarriere der Rechtspflege",
+          "title": "Manfred Rehbinder: Die Kosten der Rechtsverfolgung als Zugangsbarriere der Rechtspflege",
           "authors": [
             "Bundesrepublik Deutschland",
             "vielleicht Himmel",
@@ -1005,12 +1005,12 @@
           "pdf_start_index": 386,
           "pdf_end_index": 398,
           "citation_pages": "395-407",
-          "confidence": 1.0,
+          "confidence": 0.99,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 120.31081076800001,
+      "elapsed_seconds": 41.429222815,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -1354,7 +1354,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 17.890981124946848,
+      "elapsed_seconds": 19.08313047600018,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -1767,7 +1767,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 18.821275916998275,
+      "elapsed_seconds": 19.472897288999775,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
@@ -1776,761 +1776,14 @@
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
-      "chapters": [
-        {
-          "title": "Politische und soziale Determinanten richterlicher Tätigkeit",
-          "authors": [],
-          "pdf_start_index": 82,
-          "pdf_end_index": 82,
-          "citation_pages": "83-83",
-          "confidence": 0.95,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Der Anteil gerichtlicher Verfahren bei der Austragung sozialer Konflikte",
-          "authors": [
-            "Erhard Blankenburg \nDer Anteil",
-            "Verfahren",
-            "Austragung",
-            "Konflikte \nGerichtliche Verfahren",
-            "Reihe von Merkmalen",
-            "Vergessen",
-            "Gewinnen See",
-            "spielen Leicht",
-            "Musik los Dein"
-          ],
-          "pdf_start_index": 83,
-          "pdf_end_index": 96,
-          "citation_pages": "84-98",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Political justice and system maintenance: An overview of some major variables",
-          "authors": [
-            "Joel B. Grossman",
-            "Spiel",
-            "wissen von lassen",
-            "wo schreien",
-            "Hase",
-            "Schwester"
-          ],
-          "pdf_start_index": 97,
-          "pdf_end_index": 119,
-          "citation_pages": "99-122",
-          "confidence": 0.99,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Zum Problem der Klassenjustiz",
-          "authors": [
-            "Thomas Raiser \n",
-            "Zum Problem",
-            "Klassenjustiz \nI. Der",
-            "der Klassenjustiz kommt",
-            "Bundesrepublik",
-            "der sich mit",
-            "Justiz beschaftigenden",
-            "Richtig",
-            "Weihnachten Hier",
-            "Weihnachten Erschrecken",
-            "Bein",
-            "Denken zu Ding",
-            "Eigentlich"
-          ],
-          "pdf_start_index": 120,
-          "pdf_end_index": 133,
-          "citation_pages": "123-136",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Richterliche Entscheidungsfindung",
-          "authors": [],
-          "pdf_start_index": 134,
-          "pdf_end_index": 151,
-          "citation_pages": "137-154",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Criminal courts as organizational phenomena",
-          "authors": [
-            "Herbert Jacob \n",
-            "einigen da gegen",
-            "Stück \nSchwester",
-            "Tag Wiese"
-          ],
-          "pdf_start_index": 152,
-          "pdf_end_index": 169,
-          "citation_pages": "155-172",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Alternativmodelle für die Rechtspflege",
-          "authors": [
-            "Rechtspflege"
-          ],
-          "pdf_start_index": 170,
-          "pdf_end_index": 170,
-          "citation_pages": "173-173",
-          "confidence": 0.89,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "The choice between litigation and arbitration",
-          "authors": [
-            "Britt-Mari Blegvad",
-            "früh Wort",
-            "Minutenmir",
-            "Kurz Tisch",
-            "dem schreiben",
-            "Sommer",
-            "Weihnachten ob Maus",
-            "schreiben",
-            "Milch"
-          ],
-          "pdf_start_index": 171,
-          "pdf_end_index": 181,
-          "citation_pages": "174-184",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Judicial decision-making and administrative tasks",
-          "authors": [
-            "Jeffrey J",
-            "Auge",
-            "dick essen ob er",
-            "schreien dort gefährlich",
-            "Zur",
-            "Minutenmir",
-            "Der"
-          ],
-          "pdf_start_index": 182,
-          "pdf_end_index": 202,
-          "citation_pages": "185-206",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Civil trial and social justice in Italy. A sociological analysis of the proceedings under art. 28 of the Workers' Statute",
-          "authors": [
-            "Ernesto Ugo Savona \nCivil Trial",
-            "bin unser",
-            "gar haben­",
-            "das Weihnachten",
-            "daran ein ihn"
-          ],
-          "pdf_start_index": 203,
-          "pdf_end_index": 211,
-          "citation_pages": "207-216",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Die Auswirkung gerichtlicher Verfahren auf die Gesellschaft",
-          "authors": [
-            "V. Die Auswirkung",
-            "Verfahren"
-          ],
-          "pdf_start_index": 212,
-          "pdf_end_index": 212,
-          "citation_pages": "217-217",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Social reform groups and the legal system: Enforcement problems",
-          "authors": [
-            "Joel F. Handler",
-            "McCarthy",
-            "Wetter",
-            "Zug Weihnachten",
-            "schreiben",
-            "Schule",
-            "Sprechen Groß",
-            "nie w"
-          ],
-          "pdf_start_index": 213,
-          "pdf_end_index": 238,
-          "citation_pages": "218-244",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "The distribution of advantages in the litigation process",
-          "authors": [
-            "Marc Galanter",
-            "Haus",
-            "Gleich Schule",
-            "Fuß Feuer",
-            "Stück Affe",
-            "ja vom anfangen",
-            "heut"
-          ],
-          "pdf_start_index": 239,
-          "pdf_end_index": 264,
-          "citation_pages": "245-270",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Defamation : Reputation and encounter",
-          "authors": [
-            "Philip Lewis* \n",
-            "Jahr da Weihnachten",
-            "nah natürlich"
-          ],
-          "pdf_start_index": 265,
-          "pdf_end_index": 278,
-          "citation_pages": "271-284",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Die Rollen im Gerichtsverfahren",
-          "authors": [
-            "Die RoUen"
-          ],
-          "pdf_start_index": 279,
-          "pdf_end_index": 279,
-          "citation_pages": "285-285",
-          "confidence": 0.94,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Citizen participation in the administration of justice: Research and policy in Poland",
-          "authors": [
-            "Maria Borucka-Arctowa",
-            "Freude",
-            "Rad Weihnachten",
-            "Fußball Weihnachten Weihnachte"
-          ],
-          "pdf_start_index": 280,
-          "pdf_end_index": 293,
-          "citation_pages": "286-300",
-          "confidence": 0.99,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "The function of the lay judge in Czechoslovakia",
-          "authors": [
-            "Zdenek Krystufek \n",
-            "Fröhlich",
-            "Kind",
-            "Erschrecken",
-            "Tante",
-            "mein unser",
-            "Bringen von Sicher",
-            "Weihnachten",
-            "Erschrecken Plötzlich"
-          ],
-          "pdf_start_index": 294,
-          "pdf_end_index": 299,
-          "citation_pages": "301-306",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Die rechtliche Erheblichkeit gesellschaftlicher Unwissenheit",
-          "authors": [
-            "Jutta Limbach",
-            "Unwissenheit",
-            "Der",
-            "Glücklich",
-            "Minutenmir",
-            "Geschichte",
-            "Rad",
-            "Gehören",
-            "Onkel-Weiß",
-            "Weihnachten Weihnachten",
-            "Weihnachten von Bleiben"
-          ],
-          "pdf_start_index": 300,
-          "pdf_end_index": 312,
-          "citation_pages": "307-320",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Sachverständigengutachten und Urteilsfindung im Zivilprozeß",
-          "authors": [
-            "Urteilsfindung",
-            "I. Ausgangspunkte \nDie",
-            "Fuß Weihnachten Erschrecken",
-            "Eigentlich Uhr Erschrecken",
-            "Gewinnen Winter",
-            "Weihnachten Allein Weihnachten­",
-            "Gestern",
-            "Langsam",
-            "Dorf Affe Ball Opa Glü"
-          ],
-          "pdf_start_index": 313,
-          "pdf_end_index": 334,
-          "citation_pages": "321-342",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Probleme der Forschung und Rechtsreform",
-          "authors": [
-            "Forschung"
-          ],
-          "pdf_start_index": 335,
-          "pdf_end_index": 335,
-          "citation_pages": "343-343",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Das Problem des Musterprozesses",
-          "authors": [
-            "Peter Arens",
-            "Abgrenzung von anderen",
-            "Verfahren",
-            "Der Begriff",
-            "Gewinnen Hase Straße",
-            "Weihnachten Natürlich",
-            "Herr Tante",
-            "Fröhlich Mädchen",
-            "kurz erschrecken lieb",
-            "Nichts"
-          ],
-          "pdf_start_index": 336,
-          "pdf_end_index": 347,
-          "citation_pages": "344-356",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Das rechtliche Verfahren in der Rechtsethnologie: Versuch zu einem interkulturell anwendbaren Bezugsrahmen",
-          "authors": [
-            "Franz von Benda-Beckmann \nDas",
-            "Verfahren",
-            "Rechtsethnologie",
-            "Behandlung",
-            "Schwester",
-            "Suchen",
-            "Weihnachten Weihnachten",
-            "Rennen­",
-            "Wetter Erschrecken",
-            "Jahr Nächste",
-            "Weihnachten Schwimmen"
-          ],
-          "pdf_start_index": 348,
-          "pdf_end_index": 367,
-          "citation_pages": "357-376",
-          "confidence": 0.99,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Zugangsbarrieren zur Justiz",
-          "authors": [
-            "Rolf Bender",
-            "Christoph Strecker",
-            "Zugangsbarrieren",
-            "zur Justiz \nUnser Beitrag",
-            "Untersuchung",
-            "Stuttgart e.V.",
-            "Auf",
-            "Gott",
-            "Erschrecken",
-            "Geschichte"
-          ],
-          "pdf_start_index": 368,
-          "pdf_end_index": 385,
-          "citation_pages": "377-394",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Die Kosten der Rechtsverfolgung als Zugangsbarriere der Rechtspflege",
-          "authors": [
-            "Bundesrepublik Deutschland",
-            "vielleicht Himmel",
-            "Rennen Opa Erschrecken Weg",
-            "Weihnachten Weihnachten",
-            "Erschrecken Beispiel"
-          ],
-          "pdf_start_index": 386,
-          "pdf_end_index": 398,
-          "citation_pages": "395-407",
-          "confidence": 1.0,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 16.136911541922018,
+      "chapters": [],
+      "elapsed_seconds": 0.8216774830002578,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
-      "chapters": [
-        {
-          "title": "Der Anteil gerichtlicher Verfahren bei der Austragung sozialer Konflikte",
-          "authors": [
-            "Erhard Blankenburg \nDer Anteil",
-            "Verfahren",
-            "Austragung",
-            "Konflikte \nGerichtliche Verfahren",
-            "Reihe von Merkmalen",
-            "Vergessen",
-            "Gewinnen See",
-            "spielen Leicht",
-            "Musik los Dein"
-          ],
-          "pdf_start_index": 83,
-          "pdf_end_index": 96,
-          "citation_pages": "84-98",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Political justice and system maintenance: An overview of some major variables",
-          "authors": [
-            "Joel B. Grossman",
-            "Spiel",
-            "wissen von lassen",
-            "wo schreien",
-            "Hase",
-            "Schwester"
-          ],
-          "pdf_start_index": 97,
-          "pdf_end_index": 119,
-          "citation_pages": "99-122",
-          "confidence": 0.99,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Zum Problem der Klassenjustiz",
-          "authors": [
-            "Thomas Raiser \n",
-            "Zum Problem",
-            "Klassenjustiz \nI. Der",
-            "der Klassenjustiz kommt",
-            "Bundesrepublik",
-            "der sich mit",
-            "Justiz beschaftigenden",
-            "Richtig",
-            "Weihnachten Hier",
-            "Weihnachten Erschrecken",
-            "Bein",
-            "Denken zu Ding",
-            "Eigentlich"
-          ],
-          "pdf_start_index": 120,
-          "pdf_end_index": 151,
-          "citation_pages": "123-154",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Criminal courts as organizational phenomena",
-          "authors": [
-            "Herbert Jacob \n",
-            "einigen da gegen",
-            "Stück \nSchwester",
-            "Tag Wiese"
-          ],
-          "pdf_start_index": 152,
-          "pdf_end_index": 169,
-          "citation_pages": "155-173",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "The choice between litigation and arbitration",
-          "authors": [
-            "Britt-Mari Blegvad",
-            "früh Wort",
-            "Minutenmir",
-            "Kurz Tisch",
-            "dem schreiben",
-            "Sommer",
-            "Weihnachten ob Maus",
-            "schreiben",
-            "Milch"
-          ],
-          "pdf_start_index": 171,
-          "pdf_end_index": 181,
-          "citation_pages": "174-184",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Judicial decision-making and administrative tasks",
-          "authors": [
-            "Jeffrey J",
-            "Auge",
-            "dick essen ob er",
-            "schreien dort gefährlich",
-            "Zur",
-            "Minutenmir",
-            "Der"
-          ],
-          "pdf_start_index": 182,
-          "pdf_end_index": 202,
-          "citation_pages": "185-206",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Civil trial and social justice in Italy. A sociological analysis of the proceedings under art. 28 of the Workers' Statute",
-          "authors": [
-            "Ernesto Ugo Savona \nCivil Trial",
-            "bin unser",
-            "gar haben­",
-            "das Weihnachten",
-            "daran ein ihn"
-          ],
-          "pdf_start_index": 203,
-          "pdf_end_index": 211,
-          "citation_pages": "207-217",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Social reform groups and the legal system: Enforcement problems",
-          "authors": [
-            "Joel F. Handler",
-            "McCarthy",
-            "Wetter",
-            "Zug Weihnachten",
-            "schreiben",
-            "Schule",
-            "Sprechen Groß",
-            "nie w"
-          ],
-          "pdf_start_index": 213,
-          "pdf_end_index": 238,
-          "citation_pages": "218-244",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "The distribution of advantages in the litigation process",
-          "authors": [
-            "Marc Galanter",
-            "Haus",
-            "Gleich Schule",
-            "Fuß Feuer",
-            "Stück Affe",
-            "ja vom anfangen",
-            "heut"
-          ],
-          "pdf_start_index": 239,
-          "pdf_end_index": 264,
-          "citation_pages": "245-270",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Defamation: Reputation and encounter",
-          "authors": [
-            "Philip Lewis* \n",
-            "Jahr da Weihnachten",
-            "nah natürlich"
-          ],
-          "pdf_start_index": 265,
-          "pdf_end_index": 278,
-          "citation_pages": "271-285",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Citizen participation in the administration of justice: Research and policy in Poland",
-          "authors": [
-            "Maria Borucka-Arctowa",
-            "Freude",
-            "Rad Weihnachten",
-            "Fußball Weihnachten Weihnachte"
-          ],
-          "pdf_start_index": 280,
-          "pdf_end_index": 293,
-          "citation_pages": "286-300",
-          "confidence": 0.99,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "The function of the lay judge in Czechoslovakia",
-          "authors": [
-            "Zdenek Krystufek \n",
-            "Fröhlich",
-            "Kind",
-            "Erschrecken",
-            "Tante",
-            "mein unser",
-            "Bringen von Sicher",
-            "Weihnachten",
-            "Erschrecken Plötzlich"
-          ],
-          "pdf_start_index": 294,
-          "pdf_end_index": 299,
-          "citation_pages": "301-306",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Die rechtliche Erheblichkeit gesellschaftlicher Unwissenheit",
-          "authors": [
-            "Jutta Limbach",
-            "Unwissenheit",
-            "Der",
-            "Glücklich",
-            "Minutenmir",
-            "Geschichte",
-            "Rad",
-            "Gehören",
-            "Onkel-Weiß",
-            "Weihnachten Weihnachten",
-            "Weihnachten von Bleiben"
-          ],
-          "pdf_start_index": 300,
-          "pdf_end_index": 312,
-          "citation_pages": "307-320",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Sachverstandigengutachten und Urteilsfindung im Zivilprozeß",
-          "authors": [
-            "Urteilsfindung",
-            "I. Ausgangspunkte \nDie",
-            "Fuß Weihnachten Erschrecken",
-            "Eigentlich Uhr Erschrecken",
-            "Gewinnen Winter",
-            "Weihnachten Allein Weihnachten­",
-            "Gestern",
-            "Langsam",
-            "Dorf Affe Ball Opa Glü"
-          ],
-          "pdf_start_index": 313,
-          "pdf_end_index": 334,
-          "citation_pages": "321-343",
-          "confidence": 0.98,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Das Problem des Musterprozesses",
-          "authors": [
-            "Peter Arens",
-            "Abgrenzung von anderen",
-            "Verfahren",
-            "Der Begriff",
-            "Gewinnen Hase Straße",
-            "Weihnachten Natürlich",
-            "Herr Tante",
-            "Fröhlich Mädchen",
-            "kurz erschrecken lieb",
-            "Nichts"
-          ],
-          "pdf_start_index": 336,
-          "pdf_end_index": 347,
-          "citation_pages": "344-356",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Das rechtliche Verfahren in der Rechtsethnologie: Versuch zu einem interkulturell anwendbaren Bezugsrahmen",
-          "authors": [
-            "Franz von Benda-Beckmann \nDas",
-            "Verfahren",
-            "Rechtsethnologie",
-            "Behandlung",
-            "Schwester",
-            "Suchen",
-            "Weihnachten Weihnachten",
-            "Rennen­",
-            "Wetter Erschrecken",
-            "Jahr Nächste",
-            "Weihnachten Schwimmen"
-          ],
-          "pdf_start_index": 348,
-          "pdf_end_index": 367,
-          "citation_pages": "357-376",
-          "confidence": 0.99,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Zugangsbarrieren zur Justiz",
-          "authors": [
-            "Rolf Bender",
-            "Christoph Strecker",
-            "Zugangsbarrieren",
-            "zur Justiz \nUnser Beitrag",
-            "Untersuchung",
-            "Stuttgart e.V.",
-            "Auf",
-            "Gott",
-            "Erschrecken",
-            "Geschichte"
-          ],
-          "pdf_start_index": 368,
-          "pdf_end_index": 385,
-          "citation_pages": "377-394",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Die Kosten der Rechtsverfolgung als Zugangsbarriere der Rechtspflege",
-          "authors": [
-            "Bundesrepublik Deutschland",
-            "vielleicht Himmel",
-            "Rennen Opa Erschrecken Weg",
-            "Weihnachten Weihnachten",
-            "Erschrecken Beispiel"
-          ],
-          "pdf_start_index": 386,
-          "pdf_end_index": 398,
-          "citation_pages": "395-407",
-          "confidence": 1.0,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 18.268793083028868,
-      "demand_at_run": 1
+      "chapters": [],
+      "elapsed_seconds": 0.8403176470001199,
+      "demand_at_run": 0
     },
     "qwen3.6-35b-a3b": {
       "chapters": [

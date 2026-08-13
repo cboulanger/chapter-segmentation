@@ -3,19 +3,19 @@
     "apertus-70b-instruct-2509": {
       "chapters": [
         {
-          "title": "Narratives of Fundamentalism, Negative Capability and the Democratic Imperative",
+          "title": "3. Narratives of Fundamentalism, Negative Capability and the Democratic Imperative",
           "authors": [
             "Keats"
           ],
           "pdf_start_index": 105,
           "pdf_end_index": 111,
           "citation_pages": "73-90",
-          "confidence": 0.81,
+          "confidence": 0.83,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Understandings of the Natural World from a Generational Perspective",
+          "title": "4. Understandings of the Natural World from a Generational Perspective",
           "authors": [
             "Hazel R. Wright"
           ],
@@ -27,7 +27,7 @@
           "source": "llm"
         },
         {
-          "title": "Opposing Cultures: Science and Humanities Teaching in Danish Schools",
+          "title": "5. Opposing Cultures: Science and Humanities Teaching in Danish Schools",
           "authors": [
             "Opposing Cultures",
             "Marianne Høyen",
@@ -43,7 +43,7 @@
           "source": "llm"
         },
         {
-          "title": "Shaping ‘the Good Teacher’ in Danish and Kenyan Teacher Education",
+          "title": "6. Shaping ‘the Good Teacher’ in Danish and Kenyan Teacher Education",
           "authors": [
             "Denma"
           ],
@@ -55,7 +55,7 @@
           "source": "llm"
         },
         {
-          "title": "Irish Adult Educators Find Fulfilment amid Poor Employment Conditions",
+          "title": "7. Irish Adult Educators Find Fulfilment amid Poor Employment Conditions",
           "authors": [
             "Sarah Bates Evoy"
           ],
@@ -67,7 +67,7 @@
           "source": "llm"
         },
         {
-          "title": "Nurture Groups: Perspectives from Teaching Assistants Who Lead Them in Britain",
+          "title": "8. Nurture Groups: Perspectives from Teaching Assistants Who Lead Them in Britain",
           "authors": [
             "Nurture Groups",
             "Tristan Middleton\nTristan Middleton"
@@ -80,7 +80,7 @@
           "source": "llm"
         },
         {
-          "title": "Punishment Discourses in Everyday Life",
+          "title": "9. Punishment Discourses in Everyday Life",
           "authors": [],
           "pdf_start_index": 233,
           "pdf_end_index": 246,
@@ -90,7 +90,7 @@
           "source": "llm"
         },
         {
-          "title": "Irish Students Turning First-Year Transition Obstacles into Successful Progression",
+          "title": "10. Irish Students Turning First-Year Transition Obstacles into Successful Progression",
           "authors": [],
           "pdf_start_index": 247,
           "pdf_end_index": 266,
@@ -100,7 +100,7 @@
           "source": "llm"
         },
         {
-          "title": "Care Leavers in Italy: From ‘Vulnerable’ Children to ‘Autonomous’ Adults?",
+          "title": "11. Care Leavers in Italy: From ‘Vulnerable’ Children to ‘Autonomous’ Adults?",
           "authors": [
             "Laura Formenti",
             "Andrea Galimberti",
@@ -109,12 +109,12 @@
           "pdf_start_index": 267,
           "pdf_end_index": 290,
           "citation_pages": "245-268",
-          "confidence": 0.91,
+          "confidence": 0.95,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "What Game Are We Playing? Narrative Work that Supports Gamblers",
+          "title": "12. What Game Are We Playing? Narrative Work that Supports Gamblers",
           "authors": [
             "C. Girotti",
             "Micaela Castiglioni"
@@ -127,7 +127,7 @@
           "source": "llm"
         },
         {
-          "title": "A Danish Prisoner Narrative: The Tension from a Multifaceted Identity During (Re-)Entry to Society",
+          "title": "13. A Danish Prisoner Narrative: The Tension from a Multifaceted Identity During (Re-)Entry to Society",
           "authors": [
             "Charlotte Mathiassen"
           ],
@@ -139,7 +139,7 @@
           "source": "llm"
         },
         {
-          "title": "Inclusion and Exclusion in Colombian Education, Captured Through Life Stories",
+          "title": "14. Inclusion and Exclusion in Colombian Education, Captured Through Life Stories",
           "authors": [
             "Miguel Alberto González González",
             "Miguel Alberto González González \n"
@@ -147,12 +147,12 @@
           "pdf_start_index": 333,
           "pdf_end_index": 354,
           "citation_pages": "311-332",
-          "confidence": 0.97,
+          "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "Navigating Grades and Learning in the Swedish Upper Secondary School Where Neoliberal Values Prevail",
+          "title": "15. Navigating Grades and Learning in the Swedish Upper Secondary School Where Neoliberal Values Prevail",
           "authors": [
             "Patric Wallin",
             "Patric Wallin’s"
@@ -165,7 +165,7 @@
           "source": "llm"
         },
         {
-          "title": "Adult Education as a Means to Enable Polish Citizens to Question Media Coverage of Political Messages",
+          "title": "16. Adult Education as a Means to Enable Polish Citizens to Question Media Coverage of Political Messages",
           "authors": [],
           "pdf_start_index": 375,
           "pdf_end_index": 555,
@@ -175,7 +175,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 36.10368481599971,
+      "elapsed_seconds": 37.40665402700006,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -533,7 +533,551 @@
       ],
       "elapsed_seconds": 69.53576811499988,
       "demand_at_run": 0
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Narratives of Fundamentalism, Negative Capability and the Democratic Imperative",
+          "authors": [
+            "Keats"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 111,
+          "citation_pages": "73-90",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Understandings of the Natural World from a Generational Perspective",
+          "authors": [
+            "Hazel R. Wright"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 139,
+          "citation_pages": "91-118",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Opposing Cultures: Science and Humanities Teaching in Danish Schools",
+          "authors": [
+            "Opposing Cultures",
+            "Marianne Høyen",
+            "Mumiah Rasmusen\nMarianne Høyen",
+            "Mumiah Rasmusen",
+            "Snow’s ‘"
+          ],
+          "pdf_start_index": 141,
+          "pdf_end_index": 161,
+          "citation_pages": "119-140",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Shaping ‘the Good Teacher’ in Danish and Kenyan Teacher Education",
+          "authors": [
+            "Denma"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 183,
+          "citation_pages": "141-162",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Irish Adult Educators Find Fulfilment amid Poor Employment Conditions",
+          "authors": [
+            "Sarah Bates Evoy"
+          ],
+          "pdf_start_index": 185,
+          "pdf_end_index": 205,
+          "citation_pages": "163-184",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nurture Groups: Perspectives from Teaching Assistants Who Lead Them in Britain",
+          "authors": [
+            "Nurture Groups",
+            "Tristan Middleton\nTristan Middleton"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 231,
+          "citation_pages": "185-210",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Punishment Discourses in Everyday Life",
+          "authors": [],
+          "pdf_start_index": 233,
+          "pdf_end_index": 246,
+          "citation_pages": "211-224",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Irish Students Turning First-Year Transition Obstacles into Successful Progression",
+          "authors": [],
+          "pdf_start_index": 247,
+          "pdf_end_index": 266,
+          "citation_pages": "225-244",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Care Leavers in Italy: From ‘Vulnerable’ Children to ‘ Autonomous’ Adults?",
+          "authors": [
+            "Laura Formenti",
+            "Andrea Galimberti",
+            "Mirella Ferrari"
+          ],
+          "pdf_start_index": 267,
+          "pdf_end_index": 290,
+          "citation_pages": "245-268",
+          "confidence": 0.9,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "What Game Are We Playing? Narrative Work that Supports Gamblers",
+          "authors": [
+            "C. Girotti",
+            "Micaela Castiglioni"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 309,
+          "citation_pages": "269-288",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Danish Prisoner Narrative: The Tension from a Multifaceted Identity During (Re-)Entry to Society",
+          "authors": [
+            "Charlotte Mathiassen"
+          ],
+          "pdf_start_index": 311,
+          "pdf_end_index": 331,
+          "citation_pages": "289-310",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inclusion and Exclusion in Colombian Education, Captured Through Life Stories",
+          "authors": [
+            "Miguel Alberto González González",
+            "Miguel Alberto González González \n"
+          ],
+          "pdf_start_index": 333,
+          "pdf_end_index": 354,
+          "citation_pages": "311-332",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Navigating Grades and Learning in the Swedish Upper Secondary School Where Neoliberal Values Prevail",
+          "authors": [
+            "Patric Wallin",
+            "Patric Wallin’s"
+          ],
+          "pdf_start_index": 355,
+          "pdf_end_index": 374,
+          "citation_pages": "333-352",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Adult Education as a Means to Enable Polish Citizens to Question Media Coverage of Political Messages",
+          "authors": [],
+          "pdf_start_index": 375,
+          "pdf_end_index": 632,
+          "citation_pages": "353-610",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 15.999736169000016,
+      "demand_at_run": 0
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Narratives of Fundamentalism, Negative Capability and the Democratic Imperative",
+          "authors": [
+            "Keats"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 111,
+          "citation_pages": "73-90",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Understandings of the Natural World from a Generational Perspective",
+          "authors": [
+            "Hazel R. Wright"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 139,
+          "citation_pages": "91-118",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Opposing Cultures: Science and Humanities Teaching in Danish Schools",
+          "authors": [
+            "Opposing Cultures",
+            "Marianne Høyen",
+            "Mumiah Rasmusen\nMarianne Høyen",
+            "Mumiah Rasmusen",
+            "Snow’s ‘"
+          ],
+          "pdf_start_index": 141,
+          "pdf_end_index": 161,
+          "citation_pages": "119-140",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Shaping ‘the Good Teacher’ in Danish and Kenyan Teacher Education",
+          "authors": [
+            "Denma"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 183,
+          "citation_pages": "141-162",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Irish Adult Educators Find Fulfilment amid Poor Employment Conditions",
+          "authors": [
+            "Sarah Bates Evoy"
+          ],
+          "pdf_start_index": 185,
+          "pdf_end_index": 205,
+          "citation_pages": "163-184",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nurture Groups: Perspectives from Teaching Assistants Who Lead Them in Britain",
+          "authors": [
+            "Nurture Groups",
+            "Tristan Middleton\nTristan Middleton"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 231,
+          "citation_pages": "185-210",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Punishment Discourses in Everyday Life",
+          "authors": [],
+          "pdf_start_index": 233,
+          "pdf_end_index": 246,
+          "citation_pages": "211-224",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Irish Students Turning First-Year Transition Obstacles into Successful Progression",
+          "authors": [],
+          "pdf_start_index": 247,
+          "pdf_end_index": 266,
+          "citation_pages": "225-244",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Care Leavers in Italy: From ‘Vulnerable’ Children to ‘Autonomous’ Adults?",
+          "authors": [
+            "Laura Formenti",
+            "Andrea Galimberti",
+            "Mirella Ferrari"
+          ],
+          "pdf_start_index": 267,
+          "pdf_end_index": 290,
+          "citation_pages": "245-268",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "What Game Are We Playing? Narrative Work that Supports Gamblers",
+          "authors": [
+            "C. Girotti",
+            "Micaela Castiglioni"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 309,
+          "citation_pages": "269-288",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Danish Prisoner Narrative: The Tension from a Multifaceted Identity During (Re-)Entry to Society",
+          "authors": [
+            "Charlotte Mathiassen"
+          ],
+          "pdf_start_index": 311,
+          "pdf_end_index": 331,
+          "citation_pages": "289-310",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inclusion and Exclusion in Colombian Education, Captured Through Life Stories",
+          "authors": [
+            "Miguel Alberto González González",
+            "Miguel Alberto González González \n"
+          ],
+          "pdf_start_index": 333,
+          "pdf_end_index": 354,
+          "citation_pages": "311-332",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Navigating Grades and Learning in the Swedish Upper Secondary School Where Neoliberal Values Prevail",
+          "authors": [
+            "Patric Wallin",
+            "Patric Wallin’s"
+          ],
+          "pdf_start_index": 355,
+          "pdf_end_index": 374,
+          "citation_pages": "333-352",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Adult Education as a Means to Enable Polish Citizens to Question Media Coverage of Political Messages",
+          "authors": [],
+          "pdf_start_index": 375,
+          "pdf_end_index": 632,
+          "citation_pages": "353-610",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 16.52564421499983,
+      "demand_at_run": 0
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [
+        {
+          "title": "Narratives of Fundamentalism, Negative Capability and the Democratic Imperative",
+          "authors": [
+            "Keats"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 111,
+          "citation_pages": "73-90",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Understandings of the Natural World from a Generational Perspective",
+          "authors": [
+            "Hazel R. Wright"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 139,
+          "citation_pages": "91-118",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Opposing Cultures: Science and Humanities Teaching in Danish Schools",
+          "authors": [
+            "Opposing Cultures",
+            "Marianne Høyen",
+            "Mumiah Rasmusen\nMarianne Høyen",
+            "Mumiah Rasmusen",
+            "Snow’s ‘"
+          ],
+          "pdf_start_index": 141,
+          "pdf_end_index": 161,
+          "citation_pages": "119-140",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Shaping ‘the Good Teacher’ in Danish and Kenyan Teacher Education",
+          "authors": [
+            "Denma"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 183,
+          "citation_pages": "141-162",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Irish Adult Educators Find Fulfilment amid Poor Employment Conditions",
+          "authors": [
+            "Sarah Bates Evoy"
+          ],
+          "pdf_start_index": 185,
+          "pdf_end_index": 205,
+          "citation_pages": "163-184",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nurture Groups: Perspectives from Teaching Assistants Who Lead Them in Britain",
+          "authors": [
+            "Nurture Groups",
+            "Tristan Middleton\nTristan Middleton"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 231,
+          "citation_pages": "185-210",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Punishment Discourses in Everyday Life",
+          "authors": [],
+          "pdf_start_index": 233,
+          "pdf_end_index": 246,
+          "citation_pages": "211-224",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Irish Students Turning First-Year Transition Obstacles into Successful Progression",
+          "authors": [],
+          "pdf_start_index": 247,
+          "pdf_end_index": 266,
+          "citation_pages": "225-244",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Care Leavers in Italy: From ‘Vulnerable’ Children to ‘Autonomous’ Adults?",
+          "authors": [
+            "Laura Formenti",
+            "Andrea Galimberti",
+            "Mirella Ferrari"
+          ],
+          "pdf_start_index": 267,
+          "pdf_end_index": 290,
+          "citation_pages": "245-268",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "What Game Are We Playing? Narrative Work that Supports Gamblers",
+          "authors": [
+            "C. Girotti",
+            "Micaela Castiglioni"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 309,
+          "citation_pages": "269-288",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Danish Prisoner Narrative: The Tension from a Multifaceted Identity During (Re-)Entry to Society",
+          "authors": [
+            "Charlotte Mathiassen"
+          ],
+          "pdf_start_index": 311,
+          "pdf_end_index": 331,
+          "citation_pages": "289-310",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inclusion and Exclusion in Colombian Education, Captured Through Life Stories",
+          "authors": [
+            "Miguel Alberto González González",
+            "Miguel Alberto González González \n"
+          ],
+          "pdf_start_index": 333,
+          "pdf_end_index": 354,
+          "citation_pages": "311-332",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Navigating Grades and Learning in the Swedish Upper Secondary School Where Neoliberal Values Prevail",
+          "authors": [
+            "Patric Wallin",
+            "Patric Wallin’s"
+          ],
+          "pdf_start_index": 355,
+          "pdf_end_index": 374,
+          "citation_pages": "333-352",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Adult Education as a Means to Enable Polish Citizens to Question Media Coverage of Political Messages",
+          "authors": [],
+          "pdf_start_index": 375,
+          "pdf_end_index": 632,
+          "citation_pages": "353-610",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 7.354205320999881,
+      "demand_at_run": 0
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 0.17581331399969713,
+      "demand_at_run": 0
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 0.1699351460001708,
+      "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-11T05:05:33.398832+00:00"
+  "generated_at": "2026-08-13T05:06:40.122241+00:00"
 }

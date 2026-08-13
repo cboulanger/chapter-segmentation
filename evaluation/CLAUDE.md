@@ -87,8 +87,14 @@ Before anything else, pick one:
   `evaluation/scripts/pdfalto_runner.py`), so a text-layer-less PDF silently
   starves that pilot of signal no matter what the text-based harness sees.
 - **No ground truth built yet** (you only have the PDF and basic metadata
-  so far) → `pending/`. Move the entry into `open-access/` or
-  `copyrighted-scans/` once its `.expected.json` exists.
+  so far) → `pending/`. Once its `.expected.json` exists, promote it into
+  `open-access/` or `copyrighted-scans/` with
+  `uv run python evaluation/scripts/promote_pending_book.py <isbn> --corpus <open-access|copyrighted-scans>`
+  (add `--dry-run` to preview first) -- it re-runs the Step 4 bounds/overlap
+  check as a gate and, for `open-access/`, resolves `license`/`license_source`
+  via Crossref/Unpaywall automatically. Only entries already in that
+  corpus's committed `manifest.json` are supported (not
+  `manifest.local.json` -- promote those by hand).
 
 Every path in this document below (`evaluation/<filename>`,
 `evaluation/manifest.local.json`, etc.) means
@@ -251,7 +257,11 @@ Save as `evaluation/<name>.expected.json`
 (schema: `{"chapters": [{"title", "authors", "pdf_start_index",
 "pdf_end_index", "citation_pages"}, ...]}` — see any existing `.expected.json`
 in this directory for a worked example). Then run the bounds/overlap sanity
-check before committing (or before considering a local-only entry "done"):
+check before committing (or before considering a local-only entry "done") --
+the same check also runs automatically for every corpus's ground truth via
+`tests/test_ground_truth_integrity.py` (part of the default `uv run pytest`)
+and as a hard gate inside `evaluation/scripts/promote_pending_book.py`, but
+running it by hand here catches a mistake before it's even written to disk:
 
 ```bash
 uv run python -c "

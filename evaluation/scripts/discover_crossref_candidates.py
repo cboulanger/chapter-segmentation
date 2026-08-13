@@ -49,11 +49,11 @@ from chapter_segmentation.evidence.crossref_strategy import (
     _DEFAULT_RETRY_DELAY_SECONDS,
     _MAX_RETRIES,
 )
-from evaluation.scripts.fetch_crossref_gt_corpus import (
-    _DEFAULT_CONTACT_EMAIL,
-    _UNPAYWALL_BASE_URL,
-    _item_license_url,
-    _unpaywall_license_url,
+from evaluation.oa_license import (
+    DEFAULT_CONTACT_EMAIL,
+    UNPAYWALL_BASE_URL,
+    item_license_url,
+    unpaywall_license_url,
 )
 
 _CROSSREF_DIR = Path(__file__).resolve().parent.parent / "crossref_gt"
@@ -110,9 +110,9 @@ def _unpaywall_pdf_url(doi: Optional[str], client: httpx.Client, contact_email: 
     the batch."""
     if not doi:
         return None
-    email = contact_email or _DEFAULT_CONTACT_EMAIL
+    email = contact_email or DEFAULT_CONTACT_EMAIL
     try:
-        response = client.get(f"{_UNPAYWALL_BASE_URL}/{doi}", params={"email": email}, timeout=10.0)
+        response = client.get(f"{UNPAYWALL_BASE_URL}/{doi}", params={"email": email}, timeout=10.0)
         response.raise_for_status()
         location = response.json().get("best_oa_location")
     except Exception as exc:
@@ -292,10 +292,10 @@ def discover(max_per_language: int, dry_run: bool, contact_email: Optional[str])
                     if not download_url:
                         print(f"  [skip] {isbn}: no download URL found (Crossref/Unpaywall/OpenAlex)")
                         continue
-                    license_url = _item_license_url(item)
+                    license_url = item_license_url(item)
                     license_source = "crossref" if license_url else None
                     if license_url is None:
-                        license_url = _unpaywall_license_url(doi, client, contact_email)
+                        license_url = unpaywall_license_url(doi, client, contact_email)
                         license_source = "unpaywall" if license_url else None
                     candidate = _build_candidate(item, seed, download_url, license_url, license_source)
                     candidates_by_language.setdefault(candidate["language"], []).append(candidate)
@@ -328,7 +328,7 @@ def main() -> int:
             f"so one prolific publisher's catalog can't monopolize a run. Default: {_DEFAULT_MAX_PER_LANGUAGE}."
         ),
     )
-    parser.add_argument("--contact-email", default=_DEFAULT_CONTACT_EMAIL, help="Crossref/Unpaywall polite-pool contact email")
+    parser.add_argument("--contact-email", default=DEFAULT_CONTACT_EMAIL, help="Crossref/Unpaywall polite-pool contact email")
     args = parser.parse_args()
     return discover(args.max_per_language, args.dry_run, args.contact_email)
 

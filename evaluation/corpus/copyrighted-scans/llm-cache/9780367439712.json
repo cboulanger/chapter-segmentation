@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T05:17:43.243982+00:00",
+  "generated_at": "2026-08-13T04:57:18.236236+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -91,7 +91,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 28.580270407,
+      "elapsed_seconds": 23.454669859999967,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -277,7 +277,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 71.45036463299994,
+      "elapsed_seconds": 11.674199856000001,
       "demand_at_run": 0
     },
     "devstral-2-123b-instruct-2512": {
@@ -370,7 +370,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 13.112003208952956,
+      "elapsed_seconds": 13.576838272000032,
       "demand_at_run": 0
     },
     "qwen3-omni-30b-a3b-instruct": {
@@ -463,7 +463,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 4.732095583924092,
+      "elapsed_seconds": 4.945204709999871,
       "demand_at_run": 0
     },
     "qwen3.5-122b-a10b": {
@@ -472,190 +472,14 @@
       "demand_at_run": 0
     },
     "qwen3-coder-next": {
-      "chapters": [
-        {
-          "title": "Is there a need for a critical systems theory?",
-          "authors": [
-            "Amstutz",
-            "Di Movie"
-          ],
-          "pdf_start_index": 42,
-          "pdf_end_index": 43,
-          "citation_pages": "23-32",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Changing maps: Empirical legal autopoiesis",
-          "authors": [
-            "John Paterson",
-            "Gunther Teubner"
-          ],
-          "pdf_start_index": 44,
-          "pdf_end_index": 106,
-          "citation_pages": "33-95",
-          "confidence": 0.95,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Free floating or free riding? Recursive norm-building in the German energy transition using the example of the approval of e-scooters in German cities",
-          "authors": [
-            "Cristina Besio",
-            "Margrit Seckelmann"
-          ],
-          "pdf_start_index": 107,
-          "pdf_end_index": 120,
-          "citation_pages": "96-109",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Law and economy without ‘law and economics’? From new institutional economics to social systems theory",
-          "authors": [],
-          "pdf_start_index": 121,
-          "pdf_end_index": 176,
-          "citation_pages": "110-165",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Casting off from the rock of uncertainty: Observations on the empirical application of Luhmann’s sociological theory and a case study on the concept of normative expectations",
-          "authors": [
-            "Mark Hanna"
-          ],
-          "pdf_start_index": 177,
-          "pdf_end_index": 233,
-          "citation_pages": "166-222",
-          "confidence": 0.96,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Politics, law and legitimacy: Re-constructing Brexit from a systems theory perspective",
-          "authors": [
-            "Brexit",
-            "John Paterson"
-          ],
-          "pdf_start_index": 234,
-          "pdf_end_index": 257,
-          "citation_pages": "223-246",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "A historical sociology of constitutions and democracy: An interview",
-          "authors": [
-            "Chris Thornhill",
-            "Result Purpose\n"
-          ],
-          "pdf_start_index": 258,
-          "pdf_end_index": 270,
-          "citation_pages": "247-259",
-          "confidence": 0.96,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 3.8228146670153365,
+      "chapters": [],
+      "elapsed_seconds": 0.15604819100008172,
       "demand_at_run": 0
     },
     "mistral-medium-3.5-128b": {
-      "chapters": [
-        {
-          "title": "Is there a need for a critical systems theory?",
-          "authors": [
-            "Amstutz",
-            "Di Movie"
-          ],
-          "pdf_start_index": 42,
-          "pdf_end_index": 43,
-          "citation_pages": "23-32",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Changing maps: Empirical legal autopoiesis",
-          "authors": [
-            "John Paterson",
-            "Gunther Teubner"
-          ],
-          "pdf_start_index": 44,
-          "pdf_end_index": 106,
-          "citation_pages": "33-95",
-          "confidence": 0.95,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Free floating or free riding? Recursive norm-building in the German energy transition using the example of the approval of e-scooters in German cities",
-          "authors": [
-            "Cristina Besio",
-            "Margrit Seckelmann"
-          ],
-          "pdf_start_index": 107,
-          "pdf_end_index": 120,
-          "citation_pages": "96-109",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Law and economy without ‘law and economics’? From new institutional economics to social systems theory",
-          "authors": [],
-          "pdf_start_index": 121,
-          "pdf_end_index": 176,
-          "citation_pages": "110-165",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Casting off from the rock of uncertainty: Observations on the empirical application of Luhmann’s sociological theory and a case study on the concept of normative expectations",
-          "authors": [
-            "Mark Hanna"
-          ],
-          "pdf_start_index": 177,
-          "pdf_end_index": 233,
-          "citation_pages": "166-222",
-          "confidence": 0.96,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "Politics, law and legitimacy: Re-constructing Brexit from a systems theory perspective",
-          "authors": [
-            "Brexit",
-            "John Paterson"
-          ],
-          "pdf_start_index": 234,
-          "pdf_end_index": 257,
-          "citation_pages": "223-246",
-          "confidence": 0.97,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "A historical sociology of constitutions and democracy: An interview",
-          "authors": [
-            "Chris Thornhill",
-            "Result Purpose\n"
-          ],
-          "pdf_start_index": 258,
-          "pdf_end_index": 270,
-          "citation_pages": "247-259",
-          "confidence": 0.96,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        }
-      ],
-      "elapsed_seconds": 11.931235915981233,
-      "demand_at_run": 1
+      "chapters": [],
+      "elapsed_seconds": 0.1505801519997476,
+      "demand_at_run": 0
     },
     "qwen3.6-35b-a3b": {
       "chapters": [],

@@ -80,7 +80,17 @@ Before anything else, pick one:
   (`extract_page_texts_for_analysis(pdf_bytes)` then `pages_need_ocr(pages)`,
   both in `src/chapter_segmentation/segmentation.py`); if it returns `True`,
   OCR the PDF itself first (e.g. `ocrmypdf --force-ocr -l <lang> in.pdf
-  out.pdf`) and add the OCR'ed version, not the raw scan. `.ocr-cache/`
+  out.pdf`) and add the OCR'ed version, not the raw scan. **But first check
+  whether the scan itself is bad, not just its text layer** -- a black
+  scanner-bed background, the scanning operator's hand visible around page
+  edges, heavy skew, or wildly inconsistent page sizes/aspect ratios from
+  page to page are all pixel-level defects that plain `ocrmypdf --force-ocr`
+  does not fix (it re-OCRs whatever image is there, artifacts included --
+  and can even misread the artifacts themselves as spurious glyphs). Run
+  `evaluation/scripts/clean_scanned_pdf.py` instead in that case -- see
+  `README.md`'s "Cleaning a badly-scanned PDF" -- which handles the
+  re-OCR step itself via `--ocr-lang`, so it replaces the plain `ocrmypdf`
+  invocation rather than running alongside it. `.ocr-cache/`
   (`evaluation/scripts/ocr_evaluation_pdfs.py`) only caches extracted text
   for the accuracy harness -- it does not touch the PDF the layout-based
   TOC/chapter-first-page classifier pilot reads directly (`pdfalto`, via

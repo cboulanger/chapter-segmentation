@@ -128,6 +128,65 @@ known failure modes. Short version:
    inspecting the real PDF — never guessed or extrapolated from the TOC
    alone (`CLAUDE.md` explains why).
 
+## Cleaning a badly-scanned PDF
+
+Some personal-library scans have real defects beyond a missing/degenerate text
+layer: a black scanner-bed background and the scanning operator's hand visible
+around the page edges, heavy skew, and/or wildly inconsistent page sizes (each
+page cropped to its own detected content, so a viewer that fits pages to a
+column width jitters around from page to page).
+`evaluation/scripts/clean_scanned_pdf.py` fixes these at the pixel level (not
+a simple rectangular crop) before OCR ever sees the page, using `unpaper`'s
+auto page-content detection plus a horizontal ink-trim fix for a defect found
+in unpaper's own crop-width detection (it can leave a wide leftover blank
+margin on one side, mis-centering the page once normalized).
+
+```bash
+uv run python evaluation/scripts/clean_scanned_pdf.py \
+  evaluation/corpus/<corpus>/<name>.raw-scan.pdf \
+  evaluation/corpus/<corpus>/<name>.pdf \
+  --page-size a5 --color-mode monochrome --ocr-lang deu
+```
+
+Key flags (only the two positional paths are required):
+
+- `--page-size` — target page size to normalize every cleaned page to:
+  `auto` (default; uses the max width/height actually seen across the
+  processed pages, so no page ever needs shrinking), a standard name (`a5`,
+  `a4`, `a3`, `letter`, `legal` — match the book's real trim size when known),
+  or an explicit `WIDTHxHEIGHTunit` (e.g. `148mmx210mm`). `--no-normalize-page-size`
+  skips normalization entirely, leaving every page its own unpaper-detected
+  size.
+- `--color-mode` — `grayscale` (default), `monochrome` (smallest, converted
+  via an Otsu threshold *after* cleaning — never dithered, and never
+  rasterized directly to monochrome, since that breaks unpaper's noise
+  filter), or `color`.
+- `--ocr-lang` — a tesseract language code (e.g. `deu`, `eng`) to re-OCR the
+  cleaned pages with `ocrmypdf --force-ocr`. Omit to produce an image-only
+  PDF with no text layer. Re-OCRing the *original* noisy scan instead is not
+  a substitute for this — OCR misreads the black background/hand as spurious
+  glyphs.
+- `--optimize` (1-3) / `--jbig2-lossy` — post-OCR compression, only takes
+  effect together with `--ocr-lang`; level 1 (the default) is lossless.
+- `--dpi`, `--start-page`/`--end-page` — rasterization resolution and page
+  range.
+
+Requires `pdftoppm`+`img2pdf` (poppler), `unpaper`, ImageMagick's `magick`,
+and `ocrmypdf` on `PATH` (or the matching `--<tool>-bin` flag /
+`<TOOL>_BIN` env var) — `brew install poppler unpaper imagemagick ocrmypdf`.
+Keep a copy of the original scan (e.g. save it as `<name>.raw-scan.pdf`
+before overwriting `<name>.pdf`) — this re-rasterizes and recompresses every
+page, so it is not a reversible metadata-only edit.
+
+**Run this before `CLAUDE.md`'s Step 0a `pages_need_ocr`/`ocrmypdf` step
+whenever the scan itself looks bad, not just when the text layer is
+missing.** Signs it's worth running: a black or dark background visible
+around page edges, a hand/finger/arm visible in the scan, wildly different
+page sizes or aspect ratios from page to page, or heavy skew. Plain
+`ocrmypdf --force-ocr` on the raw scan cleans up the text layer but leaves
+the underlying page image — and its defects — untouched; use `--ocr-lang`
+here instead, which does both in one pass on the cleaned image.
+
 ## Reviewing ground truth visually
 
 `evaluation/app/` is a small, local, backend-free web app for spot-checking

@@ -5,6 +5,8 @@
 #SBATCH -D ./
 #SBATCH -J nuextract-lora-pilot-viper
 #
+#SBATCH --account=mrg_apu
+#SBATCH --partition=apu1
 #SBATCH --constraint="apu"
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=24
@@ -25,13 +27,24 @@
 # that APU's physical core share, per the guide's own example
 # (ntasks-per-node * cpus-per-task must not exceed 96).
 #
-# UNVERIFIED: --mem=110000 is a naive half-of-220GB guess, carried over
-# from run_pilot.slurm's "proportional share of the node" logic for
-# Raven's A100s. That logic assumed separate host-RAM/GPU-VRAM pools;
-# MI300A is an APU with a single unified HBM3 pool shared by CPU and
-# GPU, so the whole accounting model this number is based on may not
-# even apply the same way here. Confirm with `sinfo`/MPCDF docs or a
-# quick interactive job before trusting this for a real run.
+# --account/--partition are both required, not optional defaults:
+# `sacctmgr -p show assoc user=$USER` showed two separate accounts
+# (mrg_apu, mrg_cpu) with no default partition, and none of Viper-GPU's
+# apu/apu1/apudev partitions are Default=YES (`scontrol show partition`).
+# apu1 (not plain apu) is a single-node partition matching this job's
+# single-GPU shape, and its own DefCpuPerGPU=48/DefMemPerNode=110000
+# happen to match --cpus-per-task/--mem below exactly -- confirms
+# --mem=110000 (previously an unverified half-of-220GB guess ported from
+# Raven's separate-host-RAM/GPU-VRAM accounting, which doesn't obviously
+# apply to MI300A's unified-memory APU design) is a sane value after all.
+#
+# CRITICAL: sbatch/srun for apu/apu1/apudev must be run from viper11,
+# viper12, or viper13 specifically -- `scontrol show partition`'s
+# AllocNodes=viper[11-13] for all three restricts which login nodes may
+# even submit to them. Submitting from viper01/02 (fine for everything
+# else, including building the .sif itself) fails with "Unable to
+# allocate resources: Access/permission denied" before Slurm even gets
+# to evaluating the resource request itself.
 #SBATCH --time=02:00:00
 
 # See evaluation/hpc/README.md for the full setup this assumes (adjusted

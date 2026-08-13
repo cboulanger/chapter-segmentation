@@ -79,6 +79,13 @@ BIND="${REPO_DIR}:${REPO_DIR},${PTMP}"
 
 export HF_HOME="${PTMP}/huggingface"
 export HF_HUB_OFFLINE=1
+# See run_pilot.slurm's identical comment: the pipeline scripts each
+# sys.path.insert their own repo root (makes evaluation.* importable)
+# but never add src/, where chapter_segmentation actually lives --
+# masked locally by .venv's editable install, which the container never
+# gets. Apptainer passes the host environment through by default (no
+# --cleanenv used below), so this reaches every apptainer exec call.
+export PYTHONPATH="${REPO_DIR}/src:${REPO_DIR}"
 
 ADAPTER_DIR="${PTMP}/nuextract-pilot/adapter"
 MERGED_DIR="${PTMP}/nuextract-pilot/merged"

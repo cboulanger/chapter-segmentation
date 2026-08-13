@@ -49,6 +49,17 @@ BIND="${REPO_DIR}:${REPO_DIR},${PTMP}"
 
 export HF_HOME="${PTMP}/huggingface"
 export HF_HUB_OFFLINE=1
+# The pipeline scripts each `sys.path.insert` their own repo root, which
+# makes `evaluation.*` importable but NOT `chapter_segmentation.*` --
+# that package actually lives at src/chapter_segmentation, a different
+# directory none of the scripts add to sys.path themselves. Locally this
+# is masked by .venv's editable install of the project; the container
+# never gets one (deliberately -- it only bind-mounts the repo, see the
+# "Data transfer" note above), so it needs this instead. Apptainer
+# passes the host environment through by default (no --cleanenv used
+# anywhere below), so this reaches every `apptainer exec ... python`
+# call that follows.
+export PYTHONPATH="${REPO_DIR}/src:${REPO_DIR}"
 
 ADAPTER_DIR="${PTMP}/nuextract-pilot/adapter"
 MERGED_DIR="${PTMP}/nuextract-pilot/merged"

@@ -26,7 +26,7 @@ and
 (MPCDF's own example repos). Neither had a ready-made single-GPU LoRA
 example -- `llms-meet-mpcdf`'s closest match, `sft_with_fsdp`, is an
 8-node/32-GPU full fine-tune of a 70B model, which is unnecessary here: a
-4B-param LoRA adapter trained on ~59 examples fits comfortably on one GPU.
+4B-param LoRA adapter trained on ~78 examples fits comfortably on one GPU.
 
 Files in this directory:
 

@@ -12,7 +12,7 @@
 #
 #SBATCH --mail-type=none
 #
-# A single A100 is comfortably enough for a 4B-param LoRA job on ~59
+# A single A100 is comfortably enough for a 4B-param LoRA job on ~78
 # training examples -- no multi-node/torchrun complexity needed (unlike
 # every multi-GPU example in ai_containers/llms-meet-mpcdf). Raven's GPU
 # nodes have 4x A100 (40GB each) + 512GB RAM total; requesting 1 of 4

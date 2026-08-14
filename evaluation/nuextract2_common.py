@@ -94,12 +94,16 @@ def stratified_split(
     return {"train": train, "eval": eval_}
 
 
+_DEFAULT_MAX_PROMPT_TOKENS = 4096
+
+
 def tokenize_training_example(
     text: str,
     target: dict,
     apply_chat_template: Callable[..., str],
     encode: Callable[[str], list[int]],
     eos_token_id: int,
+    max_prompt_tokens: int = _DEFAULT_MAX_PROMPT_TOKENS,
 ) -> dict:
     """Builds one training example's input_ids/labels/attention_mask as
     plain Python lists (no torch dependency -- see pad_batch for
@@ -116,12 +120,31 @@ def tokenize_training_example(
     (matching evaluation.nuextract_baseline.NUEXTRACT_TEMPLATE) rather
     than importing it, to avoid a second import path for the same
     literal -- callers needing the real constant should import it from
-    evaluation.nuextract_baseline directly."""
+    evaluation.nuextract_baseline directly.
+
+    `max_prompt_tokens` truncates an oversized prompt by keeping its
+    LAST `max_prompt_tokens` tokens, never its first -- `build_chat_prompt`
+    appends the chat template's generation-prompt marker (the "now
+    respond as assistant" turn opener) at the very end, and truncating
+    from the front instead would silently corrupt that structure rather
+    than just dropping some of the book's earlier scan-window text.
+    Found necessary in practice: `_llm_scan_indices`' blind-fraction
+    fallback (see its docstring in segmentation.py) can select a wide
+    page span when the regex TOC heuristic finds nothing, producing a
+    ~25K-token prompt for at least one training book -- cross_entropy's
+    internal upcast-to-float32 loss computation over Qwen2.5's ~152K
+    vocab tried to allocate 15GB for that single example's logits and
+    OOM'd a 40GB A100 mid-epoch, on an otherwise-healthy run (gradient
+    checkpointing already applied, every other example fine at
+    batch_size=1). The completion (target JSON) is never truncated --
+    it's what's actually being trained on and is always short."""
     template = {"chapters": [{"title": "", "authors": [""], "printed_page_number": ""}]}
     prompt = build_chat_prompt(text, template, apply_chat_template)
     completion = json.dumps(target)
 
     prompt_ids = encode(prompt)
+    if len(prompt_ids) > max_prompt_tokens:
+        prompt_ids = prompt_ids[-max_prompt_tokens:]
     completion_ids = encode(completion) + [eos_token_id]
 
     return {

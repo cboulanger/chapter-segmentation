@@ -121,6 +121,24 @@ class TestTokenizeTrainingExample(unittest.TestCase):
         self.assertEqual(len(result["input_ids"]), len(result["labels"]))
         self.assertEqual(result["attention_mask"], [1] * len(result["input_ids"]))
 
+    def test_truncates_oversized_prompt_keeping_its_tail(self):
+        long_text = "x" * 50  # _fake_encode: one token per char
+        full_prompt = self._fake_apply_chat_template([{"content": long_text}])
+        full_prompt_ids = self._fake_encode(full_prompt)
+
+        result = tokenize_training_example(
+            long_text, {"chapters": []}, self._fake_apply_chat_template, self._fake_encode,
+            eos_token_id=999, max_prompt_tokens=10,
+        )
+        completion_ids = self._fake_encode(json.dumps({"chapters": []}))
+
+        # kept the LAST 10 prompt tokens (preserves the chat template's
+        # trailing generation-prompt marker), not the first 10
+        self.assertEqual(result["input_ids"][:10], full_prompt_ids[-10:])
+        self.assertEqual(result["labels"][:10], [-100] * 10)
+        self.assertEqual(result["labels"][10:-1], completion_ids)
+        self.assertEqual(len(result["input_ids"]), 10 + len(completion_ids) + 1)
+
 
 class TestPadBatch(unittest.TestCase):
     def test_pads_to_longest_example(self):

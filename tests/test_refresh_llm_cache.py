@@ -2,6 +2,7 @@
 computation and cache upserts. The network-calling _main() orchestration
 is exercised manually (see evaluation/README.md), not here."""
 
+import asyncio
 import json
 import tempfile
 import unittest
@@ -9,6 +10,7 @@ from pathlib import Path
 
 from evaluation.refresh_llm_cache import (
     _all_cached_model_ids,
+    _call_with_retry,
     _fully_covered_model_ids,
     _has_cached_entry,
     _upsert_cache,
@@ -143,6 +145,49 @@ class TestHasCachedEntry(unittest.TestCase):
                 encoding="utf-8",
             )
             self.assertTrue(_has_cached_entry(cache_dir, "book-a", "model-x"))
+
+
+class TestCallWithRetry(unittest.IsolatedAsyncioTestCase):
+    async def test_succeeds_on_first_try_without_sleeping(self):
+        sleeps = []
+
+        async def sleep(delay):
+            sleeps.append(delay)
+
+        async def fn():
+            return "ok"
+
+        result = await _call_with_retry(fn, sleep=sleep)
+        self.assertEqual(result, "ok")
+        self.assertEqual(sleeps, [])
+
+    async def test_retries_then_succeeds(self):
+        attempts = []
+        sleeps = []
+
+        async def fn():
+            attempts.append(1)
+            if len(attempts) < 3:
+                raise RuntimeError("transient")
+            return "ok"
+
+        async def sleep(delay):
+            sleeps.append(delay)
+
+        result = await _call_with_retry(fn, attempts=3, base_delay=1.0, sleep=sleep)
+        self.assertEqual(result, "ok")
+        self.assertEqual(len(attempts), 3)
+        self.assertEqual(sleeps, [1.0, 2.0])
+
+    async def test_raises_after_exhausting_all_attempts(self):
+        async def fn():
+            raise RuntimeError("permanent")
+
+        async def sleep(delay):
+            pass
+
+        with self.assertRaises(RuntimeError):
+            await _call_with_retry(fn, attempts=3, base_delay=0.01, sleep=sleep)
 
 
 class TestUpsertCache(unittest.TestCase):

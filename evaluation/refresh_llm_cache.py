@@ -64,7 +64,7 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable, Optional
+from typing import Awaitable, Callable, Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -133,6 +133,27 @@ def _has_cached_entry(cache_dir: Path, manifest_key: str, model_id: str) -> bool
     if not cache_path.exists():
         return False
     return model_id in json.loads(cache_path.read_text(encoding="utf-8")).get("models", {})
+
+
+async def _call_with_retry(
+    fn: Callable[[], Awaitable],
+    attempts: int = 3,
+    base_delay: float = 1.0,
+    sleep: Callable[[float], Awaitable] = asyncio.sleep,
+):
+    """Awaits fn() up to `attempts` times with exponential backoff
+    (base_delay, base_delay*2, base_delay*4, ...) between failures,
+    re-raising the last exception once every attempt is exhausted. `sleep`
+    is injectable so tests don't pay real wall-clock delay."""
+    last_exc: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            return await fn()
+        except Exception as exc:
+            last_exc = exc
+            if attempt < attempts - 1:
+                await sleep(base_delay * (2**attempt))
+    raise last_exc
 
 
 def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:

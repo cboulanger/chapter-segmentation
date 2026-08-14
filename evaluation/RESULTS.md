@@ -1661,3 +1661,93 @@ pattern the model-architecture follow-up already found once with
 handful of hand-picked books are not a reliable predictor of a feature's
 effect once it's added to a 17-way logistic regression trained across an
 89-book pool; only a full LOBO re-run answers that.
+
+### Follow-up: document-relative candidate-budget selection -- implemented and kept
+
+The previous section's "more principled retry" idea was implemented and
+tested rather than left as a proposal: `select_candidates_by_document_budget`
+and `evaluate_leave_one_book_out_document_budget`
+(`evaluation/scripts/evaluate_layout_toc_classifier.py`, wired up behind a
+new `--candidate-fraction-cap` flag, mutually exclusive with
+`--recall-target`) replace `select_threshold`'s training-calibrated,
+uniformly-applied absolute probability threshold with a per-document one:
+for each held-out book, rank its own pages by `max(prob_toc,
+prob_chapter_first)` and take the top `candidate_fraction_cap` share as
+candidates -- a single shared top-K selection across both labels, requiring
+no ground truth for the document being scored, only its own model output.
+
+**Result: a clear, broad improvement, not a regression, at every operating
+point checked -- kept, not reverted.** On the full 89-book corpus (the
+mixed pool every earlier `recall_target` sweep in this file struggled
+with):
+
+| `candidate_fraction_cap` | `full_recall_fraction` | `avg_candidate_fraction` |
+| --- | --- | --- |
+| 0.10 | 62% | 9.9% |
+| 0.12 | 70% | 11.8% |
+| **0.15** | **79%** | **14.9%** |
+| 0.18 | 83% | 17.8% |
+| 0.20 | 83% | 19.9% |
+
+At `cap=0.15` -- the exact value of the pilot's own candidate-fraction
+budget -- this reaches **79% full_recall_fraction at 14.9%
+avg_candidate_fraction**, comfortably the best result this file has ever
+recorded on the full mixed corpus at or under the 15% cap: far above the
+shipped `recall_target=0.90` default's 64%/10.4% at a similar-order
+candidate cost, and above even the best single global `recall_target`
+found in the previous follow-up's budget-constrained search (73.0%/13.9%
+at `recall_target=0.94`) -- approaching the extraction-type-split result
+(82.0%/14.5%) with a single constant and no need to know or detect
+`extraction_type` at all. On open-access alone, `cap=0.15` reaches
+**91.2%/14.9%**, clearing this pilot's 90%/15% bar on that corpus in
+isolation (fractionally below the hand-tuned `recall_target=0.988`'s
+94.7%/13.8%, but without any corpus-specific retuning -- the same `0.15`
+constant that works for the full mixed corpus also clears the bar for
+open-access alone). Still **NOT MET overall** on the full 89-book corpus
+(79% vs. the 90% bar) -- this doesn't change the pilot's bottom line, but
+it is the strongest configuration found for the mixed corpus across this
+entire investigation.
+
+**A second, independently useful property, beyond the raw numbers: per-book
+candidate_fraction becomes almost perfectly uniform.** Under
+`recall_target`-based selection, individual books' `candidate_fraction`
+ranged from under 2% to over 58% in this file's own tables above (e.g.
+`9781783748471` at 58.3% while `9783839470619` sat at 4.8%, both at the
+same `recall_target=0.988`) -- a single global threshold produces wildly
+different per-book cost depending on how separated that book's own
+probabilities happen to be. Under the budget cap, every book in the
+89-book corpus landed within 0.7 points of the 15% target (14.5%-15.0%) at
+`cap=0.15`, by construction: a well-separated book's threshold
+self-adjusts higher (fewer pages clear the bar for the same rank cutoff)
+and a noisy book's self-adjusts lower, but the *volume* handed to whatever
+consumes these candidates is predictable per document either way. This
+matters operationally if candidates feed something with a per-page cost
+(e.g. an LLM confirmation pass): a runaway 58%-of-the-book candidate set
+for one hard book is a cost spike a uniform ~15% never produces.
+
+Verified this is purely additive, not a change to existing behavior: a
+re-run with no `--candidate-fraction-cap` flag reproduces the exact
+`recall_target=0.90` baseline (64%/10.4%, identical per-book numbers) from
+before this change, since the new code path is only reachable via the new
+flag.
+
+**Update (same day): promoted to the default.** The comparison above was
+conclusive enough (equal-or-better recall than any `recall_target` value
+found in this pilot's history, at comparable-or-tighter candidate cost, on
+both the full corpus and open-access alone, with no per-corpus retuning
+needed) that `--candidate-fraction-cap` replaced `--recall-target` as
+`main()`'s default code path rather than staying a same-session-only
+opt-in flag. `_CANDIDATE_FRACTION_CAP = 0.15` is now the module default;
+`--recall-target` remains available but is now the explicit override --
+passing it switches back to the legacy training-quantile-calibrated
+strategy and `--candidate-fraction-cap` is ignored (inverted from this
+follow-up's original wiring, where `--candidate-fraction-cap` was the
+opt-in). Verified both directions after the flip: no flags reproduces
+today's 79%/14.9% (was previously only reachable via
+`--candidate-fraction-cap 0.15`), and `--recall-target 0.90` reproduces
+the historical 64%/10.4% shipped-default numbers exactly, confirming nothing
+else in the evaluation logic changed. Every `recall_target=...` figure
+elsewhere in this file (including "shipped default" language in earlier
+follow-ups) describes what was true when it was written and remains an
+accurate record of that measurement -- it does not describe today's
+default going forward.

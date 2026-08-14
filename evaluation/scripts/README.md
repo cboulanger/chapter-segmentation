@@ -188,16 +188,21 @@ usage: evaluate_layout_toc_classifier.py [-h] [--pdfalto-bin PDFALTO_BIN]
                                          [--chapter-first-recall-tolerance CHAPTER_FIRST_RECALL_TOLERANCE]
                                          [--corpora CORPORA]
                                          [--scan-noise-augment]
+                                         [--candidate-fraction-cap CANDIDATE_FRACTION_CAP]
 
 options:
   -h, --help            show this help message and exit
   --pdfalto-bin PDFALTO_BIN
   --recall-target RECALL_TARGET
-                        Per-fold threshold-calibration target: how much recall
-                        on training positives to require before accepting a
-                        page as a candidate. Higher catches more real pages at
-                        the cost of more false-positive candidates. Default:
-                        0.9.
+                        Legacy selection strategy: per-fold threshold-
+                        calibration target -- how much recall on training
+                        positives to require before accepting a page as a
+                        candidate, applied as one absolute threshold to every
+                        held-out book. Passing this explicitly switches
+                        selection to this strategy and --candidate-fraction-
+                        cap is ignored -- omit both to use the default
+                        --candidate-fraction-cap strategy instead. (Historical
+                        default: 0.9.)
   --chapter-first-recall-tolerance CHAPTER_FIRST_RECALL_TOLERANCE
                         Per-book chapter_first recall required to count that
                         book as 'fully recalled' in this script's own report.
@@ -211,6 +216,15 @@ options:
                         scan-noise-perturbed copy of its ALTO XML (cached as
                         <key>.aug.alto.xml). Augmented rows are only ever used
                         for training, never evaluated.
+  --candidate-fraction-cap CANDIDATE_FRACTION_CAP
+                        Default selection strategy: document-relative
+                        candidate selection -- rank each held-out book's own
+                        pages by max(prob_toc, prob_chapter_first) and take
+                        the top candidate_fraction_cap share as candidates,
+                        instead of a threshold calibrated once from training-
+                        positive quantiles. Ignored if --recall-target is
+                        explicitly set. Default: 0.15. See
+                        select_candidates_by_document_budget's docstring.
 ```
 
 ## `fetch_crossref_gt_corpus.py`

@@ -124,6 +124,66 @@ class TestRenderStrategyTables(unittest.TestCase):
         )
         self.assertNotIn("Start accuracy", html)
 
+    def test_renders_classifier_column_and_row(self):
+        classifier = {
+            "label": "Layout/TOC classifier (LOBO, as of 2026-08-14)",
+            "note": (
+                "The layout/TOC classifier row measures per-page classification "
+                "recall via leave-one-book-out cross-validation -- not directly "
+                "comparable to the chapter-boundary precision/recall/F1 columns above."
+            ),
+            "per_document": {
+                "book-a": {"toc_recall": 1.0, "chapter_first_recall": 0.9, "candidate_fraction": 0.08},
+            },
+            "full_recall_fraction": 0.67,
+            "avg_candidate_fraction": 0.09,
+        }
+        html = render_strategy_tables(
+            title="Test report", description_html="",
+            strategy_names=["heuristic"],
+            per_document={"book-a": {"heuristic": (_metrics(1.0, 1.0, 1.0), 1.0)}},
+            aggregates={"heuristic": _metrics(1.0, 1.0, 1.0)},
+            aggregate_times={"heuristic": 1.0},
+            classifier=classifier,
+        )
+        self.assertIn("Layout/TOC classifier (LOBO, as of 2026-08-14)", html)
+        self.assertIn("TOC recall=100%, chapter-first recall=90%, candidates=8%", html)
+        self.assertIn("Full recall", html)
+        self.assertIn("Avg candidates", html)
+        self.assertIn("67%", html)
+        self.assertIn(">9%<", html)
+        self.assertIn("not directly comparable", html)
+
+    def test_renders_na_for_book_missing_from_classifier_results(self):
+        classifier = {
+            "label": "Classifier",
+            "note": "note text",
+            "per_document": {},
+            "full_recall_fraction": 0.5,
+            "avg_candidate_fraction": 0.1,
+        }
+        html = render_strategy_tables(
+            title="Test report", description_html="",
+            strategy_names=["heuristic"],
+            per_document={"book-a": {"heuristic": (_metrics(1.0, 1.0, 1.0), 1.0)}},
+            aggregates={"heuristic": _metrics(1.0, 1.0, 1.0)},
+            aggregate_times={"heuristic": 1.0},
+            classifier=classifier,
+        )
+        doc_section = html[html.index("Per document"):html.index("Per strategy")]
+        self.assertIn("<td>N/A</td>", doc_section)
+
+    def test_omits_classifier_extras_when_not_provided(self):
+        html = render_strategy_tables(
+            title="Test report", description_html="",
+            strategy_names=["heuristic"],
+            per_document={},
+            aggregates={"heuristic": _metrics(1.0, 1.0, 1.0)},
+            aggregate_times={"heuristic": 1.0},
+        )
+        self.assertNotIn("Full recall", html)
+        self.assertNotIn("Avg candidates", html)
+
 
 if __name__ == "__main__":
     unittest.main()

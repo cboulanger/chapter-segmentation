@@ -189,6 +189,11 @@ usage: evaluate_layout_toc_classifier.py [-h] [--pdfalto-bin PDFALTO_BIN]
                                          [--corpora CORPORA]
                                          [--scan-noise-augment]
                                          [--candidate-fraction-cap CANDIDATE_FRACTION_CAP]
+                                         [--save-results]
+
+Pilot: leave-one-book-out evaluation of a layout-geometry TOC/ chapter-first-
+page classifier. See docs/superpowers/specs/2026-08-10-layout-based-toc-
+classifier-pilot-design.md.
 
 options:
   -h, --help            show this help message and exit
@@ -225,6 +230,11 @@ options:
                         positive quantiles. Ignored if --recall-target is
                         explicitly set. Default: 0.15. See
                         select_candidates_by_document_budget's docstring.
+  --save-results        Write per-book results to
+                        evaluation/corpus/<corpus>/classifier-results.json
+                        (split by each book's own corpus), for
+                        generate_report.py to fold into the published report.
+                        Default: off (stdout-only, current behavior).
 ```
 
 ## `fetch_crossref_gt_corpus.py`

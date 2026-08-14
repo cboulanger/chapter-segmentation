@@ -40,36 +40,54 @@ From: nvcr.io/nvidia/pytorch:25.01-py3
         "langdetect>=1.0.9" \
         "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
 
-    # pyproject.toml's "nuextract-finetune" optional-dependency group,
-    # pinned to the project's ORIGINAL floor versions -- not floor-only
-    # `>=` bounds, and not ../../uv.lock's exact versions either. Both of
-    # those were tried here first and both broke:
+    # pyproject.toml's "nuextract-finetune" optional-dependency group.
+    # Three prior pins were each tried here and each broke, for three
+    # distinct, now fully root-caused reasons (see
+    # https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel-25-01.html
+    # for this base image's exact bundled torch):
     #   - floor-only `>=4.46.0` let pip grab whatever was newest on PyPI
     #     at build time, which had quietly raised its own minimum PyTorch
-    #     to 2.5+; this base image's older torch made `peft` crash with a
-    #     bare `NameError: name 'torch' is not defined` deep inside
-    #     transformers' own tensor_parallel module.
-    #   - Pinning to uv.lock's exact versions (transformers==5.15.0 etc.)
-    #     fixed that but traded it for the same problem one layer down:
-    #     uv.lock's versions were resolved locally together with
-    #     torch==2.13.0, far newer than what any HPC base image actually
-    #     ships. transformers 5.15.0's Trainer passes an `in_order` kwarg
-    #     straight into torch.utils.data.DataLoader, assuming a torch new
-    #     enough to accept it -- this base image's older torch doesn't,
-    #     so training crashed with `TypeError: DataLoader.__init__() got
-    #     an unexpected keyword argument 'in_order'`.
-    #   - These exact versions are what the pilot's `transformers>=4.46.0`
-    #     floor originally meant in practice (4.46.0 is also specifically
-    #     when AutoModelForImageTextToText, which finetune_nuextract.py
-    #     imports, first shipped) -- i.e. what the scripts were actually
-    #     developed and tested against, and contemporaneous with this
-    #     early-2025 base image's own torch, rather than a >1-year-newer
-    #     resolution that happens to work on a Mac with its own fresh
-    #     torch install.
+    #     to 2.5+; this base image's torch (see below) made `peft` crash
+    #     with a bare `NameError: name 'torch' is not defined` deep
+    #     inside transformers' own tensor_parallel module.
+    #   - Pinning to ../../uv.lock's exact versions (transformers==5.15.0)
+    #     fixed that but broke on `TypeError: DataLoader.__init__() got
+    #     an unexpected keyword argument 'in_order'`. Root cause: this
+    #     base image's torch self-reports as `2.6.0a0+ecf3bae40a` -- an
+    #     NVIDIA snapshot of upstream torch dated 2024-11-21 -- but
+    #     `DataLoader.in_order` wasn't added upstream until
+    #     pytorch/pytorch#141833, merged 2024-12-06, two weeks later. The
+    #     *installed* DataLoader doesn't have the param despite the
+    #     version string. transformers 5.15.0's own gate
+    #     (`is_torch_greater_or_equal("2.6", accept_dev=True)`) strips
+    #     the `+ecf3bae40a` suffix via `packaging.version.base_version`,
+    #     so it reads as ">=2.6" and passes `in_order=True` anyway. This
+    #     exact bug is unique to transformers v5.15.0 (its
+    #     `dataloader_in_order` Trainer arg, huggingface/transformers#47164,
+    #     merged 2026-07-30) -- no version before it has this code path.
+    #   - Reverting to `transformers==4.46.0` (the pilot's original
+    #     floor, and when AutoModelForImageTextToText first shipped)
+    #     fixed *that* but was actually too old in a different way:
+    #     NuExtract-2.0-4B is `Qwen2_5_VLForConditionalGeneration`
+    #     (config.json declares `"transformers_version": "4.49.0"`), and
+    #     native `qwen2_5_vl` architecture support didn't land until
+    #     transformers 4.49.0 -- almost certainly why AutoProcessor
+    #     returned a bare tokenizer instead of the proper composite
+    #     processor (see finetune_nuextract.py/evaluate_nuextract_finetune.py's
+    #     `getattr(processor, "tokenizer", processor)` fallback, kept as
+    #     cheap defense-in-depth regardless).
+    # 4.49.0 is the actual sweet spot: new enough for native qwen2_5_vl
+    # support, old enough (predates 5.15.0 by ~18 months) that the
+    # `dataloader_in_order` code path doesn't exist at all, sidestepping
+    # the torch dev-version ambiguity entirely rather than needing to
+    # out-guess it. peft==0.14.0/accelerate==1.4.0 are contemporaneous
+    # (accelerate 1.4.0 shipped the same day as transformers 4.49.0,
+    # 2025-02-17). huggingface-hub is left at the original floor --
+    # no evidence it's ever been part of any of the three failures above.
     pip3 install --no-cache-dir \
-        "transformers==4.46.0" \
-        "peft==0.13.0" \
-        "accelerate==0.34.0" \
+        "transformers==4.49.0" \
+        "peft==0.14.0" \
+        "accelerate==1.4.0" \
         "huggingface-hub==0.25.0"
 
     # CUDA-accelerated build -- the base image ships the full CUDA

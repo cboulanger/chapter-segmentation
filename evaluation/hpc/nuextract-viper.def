@@ -60,27 +60,26 @@ From: rocm/pytorch:rocm6.4.4_ubuntu22.04_py3.10_pytorch_release_2.7.1
         "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
 
     # pyproject.toml's "nuextract-finetune" optional-dependency group,
-    # pinned to the project's ORIGINAL floor versions -- see
+    # pinned to transformers==4.49.0/peft==0.14.0/accelerate==1.4.0 -- see
     # ../nuextract.def's much longer comment on this exact block for the
-    # full story. Short version: floor-only `>=4.46.0` broke here first
-    # (transformers quietly raised its own torch floor past what this
-    # base image ships); pinning to ../../uv.lock's exact versions
-    # (transformers==5.15.0 etc.) fixed that but broke Raven one layer
-    # down instead (5.15.0's Trainer needs a torch new enough for a
-    # DataLoader kwarg neither HPC base image actually has -- uv.lock's
-    # versions were resolved locally against torch==2.13.0, far newer
-    # than anything shipped here or on Raven). These older versions are
-    # what the code was actually developed against (4.46.0 is when
-    # AutoModelForImageTextToText, which finetune_nuextract.py imports,
-    # first shipped) and contemporaneous with both base images' own
-    # torch, rather than a >1-year-newer resolution that only happens to
-    # work on a Mac with its own fresh torch install. These are
-    # GPU-agnostic pure-Python packages -- only torch itself needs to be
-    # a ROCm build (comes from the base image).
+    # fully-sourced story (three prior pins each tried and broken on
+    # Raven, root-caused precisely). Short version: 4.49.0 is the first
+    # version with native `qwen2_5_vl` architecture support (what
+    # NuExtract-2.0-4B actually is), and the last one before transformers
+    # v5.15.0 introduced a `dataloader_in_order` Trainer feature that
+    # breaks on an ambiguously-versioned torch dev build. This base
+    # image's torch (a real `pytorch_release_2.7.1` tag, not a dev
+    # snapshot) likely wouldn't hit that specific ambiguity the way
+    # Raven's `2.6.0a0+<hash>` build does, but there's no reason to
+    # introduce an untested variable between the two containers when
+    # this exact combination is already known to dodge every failure
+    # mode found so far. These are GPU-agnostic pure-Python packages --
+    # only torch itself needs to be a ROCm build (comes from the base
+    # image).
     pip3 install --no-cache-dir \
-        "transformers==4.46.0" \
-        "peft==0.13.0" \
-        "accelerate==0.34.0" \
+        "transformers==4.49.0" \
+        "peft==0.14.0" \
+        "accelerate==1.4.0" \
         "huggingface-hub==0.25.0"
 
     # HIP-accelerated build -- the AMD equivalent of ../nuextract.def's

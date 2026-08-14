@@ -257,6 +257,36 @@ options:
                         Crossref polite-pool contact email
 ```
 
+## `fetch_dnb_toc_corpus.py`
+
+Acquires real DNB-scanned table-of-contents PDFs via the lobid-resources
+API into evaluation/corpus/dnb-toc-only/.
+
+```
+usage: fetch_dnb_toc_corpus.py [-h] (--from-dump | --isbns-file ISBNS_FILE)
+                               [--dump-url DUMP_URL] [--limit LIMIT]
+                               [--rate-limit-seconds RATE_LIMIT_SECONDS]
+
+Acquires real DNB-scanned table-of-contents PDFs via the lobid-resources
+API (lobid.org/resources) into evaluation/corpus/dnb-toc-only/ -- see
+docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md.
+
+options:
+  -h, --help            show this help message and exit
+  --from-dump           Scan the full lobid-resources JSON-Lines dump for
+                        matching records (hours-long; see module docstring)
+  --isbns-file ISBNS_FILE
+                        Path to a text file of ISBNs (one per line, '#'
+                        comments allowed) to look up individually
+  --dump-url DUMP_URL   lobid-resources dump URL for --from-dump (default:
+                        https://lobid.org/download/dumps/lobid-
+                        resources/latestLobidResources.jsonl.gz)
+  --limit LIMIT         Stop after acquiring this many new books
+  --rate-limit-seconds RATE_LIMIT_SECONDS
+                        Delay after each TOC PDF download, to stay polite to
+                        DNB's servers (default: 1.0)
+```
+
 ## `fetch_evaluation_pdfs.py`
 
 Downloads the open-access chapter-segmentation evaluation PDFs on demand
@@ -317,6 +347,31 @@ options:
   --pdf PDF        Path to the real PDF
   --toc TOC        JSON file: [{title, authors, skip?}] in reading order
   --output OUTPUT  Write draft JSON here instead of stdout
+```
+
+## `measure_dnb_scan_noise_stats.py`
+
+Measures real font-size contrast/dispersion from the dnb-toc-only corpus's
+ALTO to calibrate alto_scan_noise.py's synthetic constants.
+
+```
+usage: measure_dnb_scan_noise_stats.py [-h] [--corpus CORPUS]
+                                       [--pdfalto-bin PDFALTO_BIN]
+
+Measures real font-size contrast and per-line dispersion from the
+dnb-toc-only corpus's ALTO output, to calibrate alto_scan_noise.py's
+hand-picked synthetic constants (_CONTRAST_ALPHA, _FONT_JITTER) against
+real scanned data -- see
+docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md
+section 3. Every page in this corpus is a confirmed TOC page by
+construction (DNB only digitizes the TOC itself), so no per-page
+labeling step is needed.
+
+options:
+  -h, --help            show this help message and exit
+  --corpus CORPUS       Corpus to measure (default: dnb-toc-only)
+  --pdfalto-bin PDFALTO_BIN
+                        Path to the pdfalto binary (see pdfalto_runner.py)
 ```
 
 ## `ocr_evaluation_pdfs.py`

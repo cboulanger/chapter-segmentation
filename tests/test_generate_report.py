@@ -161,6 +161,31 @@ class TestGenerateCorpus(unittest.TestCase):
             self.assertIn("LLM (good-model)", main_html)
             self.assertNotIn("as of", main_html)
 
+    def test_llm_detail_page_shows_per_model_as_of_dates(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            root = tmp_path / "corpus"
+            chapters = [{"pdf_start_index": 0, "pdf_end_index": 3}]
+            _write_corpus_fixture(root, "test-corpus", chapters, ["Introduction\nBody text.", "more", "more", "more"])
+            (root / "test-corpus" / "llm-cache" / "book-a.json").write_text(json.dumps({
+                "models": {
+                    "model-fresh": {
+                        "chapters": chapters, "elapsed_seconds": 1.0, "demand_at_run": 0,
+                        "generated_at": "2026-08-14T00:00:00+00:00",
+                    },
+                    "model-old": {"chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0},
+                }
+            }), encoding="utf-8")
+            out_dir = tmp_path / "public" / "test-corpus"
+
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch("evaluation.generate_report.public_outline_candidates_for", return_value=None):
+                generate_corpus("test-corpus", out_dir)
+
+            llm_html = (out_dir / "llm" / "index.html").read_text(encoding="utf-8")
+            self.assertIn("model-fresh (as of 2026-08-14)", llm_html)
+            self.assertIn(">model-old<", llm_html)  # no date available -- bare id
+
     def test_main_report_includes_citation_accuracy_columns(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)

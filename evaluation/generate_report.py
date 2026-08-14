@@ -222,26 +222,36 @@ def _generate_llm_detail_page(corpus: str, out_dir: Path, books: list[tuple[str,
             "<code>evaluation/refresh_llm_cache.py</code>.</p></body></html>"
         )
     else:
+        manifest_keys = [manifest_key for manifest_key, _expected in books]
+        label_by_model = {
+            model_id: (
+                f"{model_id} (as of {date})"
+                if (date := _latest_model_date(corpus, model_id, manifest_keys))
+                else model_id
+            )
+            for model_id in model_ids
+        }
+
         per_document: dict[str, dict] = {}
-        aggregates_acc = {model_id: MicroAggregate() for model_id in model_ids}
-        citation_aggregates_acc = {model_id: CitationPageAggregate() for model_id in model_ids}
+        aggregates_acc = {label: MicroAggregate() for label in label_by_model.values()}
+        citation_aggregates_acc = {label: CitationPageAggregate() for label in label_by_model.values()}
         for manifest_key, expected in books:
             cache = _load_llm_cache(corpus, manifest_key)
             cells: dict = {}
-            for model_id in model_ids:
+            for model_id, label in label_by_model.items():
                 entry = cache.get(model_id)
                 if entry is None:
-                    cells[model_id] = None
+                    cells[label] = None
                     continue
                 metrics = precision_recall_f1(expected, entry["chapters"])
-                aggregates_acc[model_id].add(metrics, entry["elapsed_seconds"])
-                citation_aggregates_acc[model_id].add(citation_pages_metrics(expected, entry["chapters"]))
-                cells[model_id] = (metrics, entry["elapsed_seconds"])
+                aggregates_acc[label].add(metrics, entry["elapsed_seconds"])
+                citation_aggregates_acc[label].add(citation_pages_metrics(expected, entry["chapters"]))
+                cells[label] = (metrics, entry["elapsed_seconds"])
             per_document[manifest_key] = cells
 
-        aggregates = {model_id: acc.compute() for model_id, acc in aggregates_acc.items()}
-        aggregate_times = {model_id: acc.total_elapsed_seconds for model_id, acc in aggregates_acc.items()}
-        citation_aggregates = {model_id: acc.compute() for model_id, acc in citation_aggregates_acc.items()}
+        aggregates = {label: acc.compute() for label, acc in aggregates_acc.items()}
+        aggregate_times = {label: acc.total_elapsed_seconds for label, acc in aggregates_acc.items()}
+        citation_aggregates = {label: acc.compute() for label, acc in citation_aggregates_acc.items()}
         html = render_strategy_tables(
             title=f"chapter-segmentation: {corpus} LLM strategy results (all cached models)",
             description_html=(
@@ -253,7 +263,7 @@ def _generate_llm_detail_page(corpus: str, out_dir: Path, books: list[tuple[str,
                 "best-performing model compares against the heuristic and outline "
                 "strategies.</p>"
             ),
-            strategy_names=sorted(model_ids),
+            strategy_names=sorted(label_by_model.values()),
             per_document=per_document,
             aggregates=aggregates,
             aggregate_times=aggregate_times,

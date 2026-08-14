@@ -43,6 +43,19 @@ class TestListCorpora(unittest.TestCase):
             with patch("evaluation.harness.CORPUS_ROOT", Path(tmp) / "does-not-exist"):
                 self.assertEqual(list_corpora(), [])
 
+    def test_excludes_toc_only_corpus_by_default(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "corpus-a").mkdir()
+            (root / "corpus-a" / "manifest.json").write_text('{"books": []}', encoding="utf-8")
+            (root / "dnb-toc-only").mkdir()
+            (root / "dnb-toc-only" / "manifest.json").write_text(
+                '{"toc_only": true, "books": []}', encoding="utf-8",
+            )
+            with patch("evaluation.harness.CORPUS_ROOT", root):
+                self.assertEqual(list_corpora(), ["corpus-a"])
+                self.assertEqual(list_corpora(include_toc_only=True), ["corpus-a", "dnb-toc-only"])
+
 
 class TestChapterBoundsErrors(unittest.TestCase):
     def test_no_errors_for_valid_non_overlapping_chapters(self):

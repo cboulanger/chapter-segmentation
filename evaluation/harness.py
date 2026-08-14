@@ -38,16 +38,27 @@ EVAL_DIR = Path(__file__).resolve().parent
 CORPUS_ROOT = EVAL_DIR / "corpus"
 
 
-def list_corpora() -> list[str]:
+def list_corpora(include_toc_only: bool = False) -> list[str]:
     """Sorted names of every subfolder under evaluation/corpus/ that has a
     manifest.json -- the single source of truth for "what corpora exist"
-    that every runner iterates over."""
+    that every runner iterates over. A corpus whose manifest.json sets
+    "toc_only": true (see dnb-toc-only/) is excluded unless
+    include_toc_only=True: every existing caller assumes a corpus has
+    fetchable PDFs and full .expected.json chapter fields, neither of
+    which a toc-only corpus has."""
     if not CORPUS_ROOT.is_dir():
         return []
-    return sorted(
-        p.name for p in CORPUS_ROOT.iterdir()
-        if p.is_dir() and (p / "manifest.json").exists()
-    )
+    names = []
+    for p in CORPUS_ROOT.iterdir():
+        manifest_path = p / "manifest.json"
+        if not (p.is_dir() and manifest_path.exists()):
+            continue
+        if not include_toc_only:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            if manifest.get("toc_only"):
+                continue
+        names.append(p.name)
+    return sorted(names)
 
 
 def corpus_dir(corpus: str) -> Path:

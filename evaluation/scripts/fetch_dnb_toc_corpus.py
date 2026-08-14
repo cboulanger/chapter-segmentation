@@ -208,28 +208,37 @@ def _acquire_record(
     client: httpx.Client,
     rate_limit_seconds: float,
     seen_keys: set[str],
-) -> bool:
+) -> Optional[str]:
     """Downloads one matched record's TOC PDF and appends its manifest
-    entry. Returns True iff a new book was acquired (so callers can count
-    toward --limit); False for a non-match, an already-acquired key, or a
-    record with no resolvable TOC URL."""
+    entry. Returns None iff a new book was acquired (so callers can count
+    toward --limit); otherwise a short skip-reason string -- a non-match
+    ("no matching type/toc"), an already-acquired key ("already acquired"),
+    a record with no resolvable TOC URL ("no toc url"), or a network error
+    downloading the PDF ("download failed: <exc>"). A download failure is
+    caught here rather than propagated so one bad record (a dead link, a
+    dropped connection, a transient 5xx) skips that record instead of
+    aborting the whole run -- see the module docstring on why that matters
+    for --from-dump's hours-long scans."""
     if not _record_matches(record):
-        return False
+        return "no matching type/toc"
     key = _record_key(record)
     if key in seen_keys:
-        return False
+        return "already acquired"
     toc_url = _toc_download_url(record)
     if not toc_url:
-        return False
+        return "no toc url"
     filename = f"{key}.pdf"
-    response = client.get(toc_url)
-    response.raise_for_status()
+    try:
+        response = client.get(toc_url)
+        response.raise_for_status()
+    except httpx.HTTPError as exc:
+        return f"download failed: {exc}"
     (cdir / filename).write_bytes(response.content)
     _append_book(manifest_path, manifest_entry_from_record(record, filename))
     seen_keys.add(key)
     print(f"[fetch] {filename} <- {toc_url}")
     time.sleep(rate_limit_seconds)
-    return True
+    return None
 
 
 def _run_isbns_file(args: argparse.Namespace, cdir: Path, manifest_path: Path, client: httpx.Client) -> None:
@@ -238,14 +247,19 @@ def _run_isbns_file(args: argparse.Namespace, cdir: Path, manifest_path: Path, c
     for isbn in _read_isbns_file(Path(args.isbns_file)):
         if args.limit is not None and acquired >= args.limit:
             break
-        record = _search_by_isbn(isbn, client)
+        try:
+            record = _search_by_isbn(isbn, client)
+        except httpx.HTTPError as exc:
+            print(f"[skip] {isbn}: lookup failed: {exc}")
+            continue
         if record is None:
             print(f"[skip] {isbn}: no lobid-resources record found")
             continue
-        if _acquire_record(record, cdir, manifest_path, client, args.rate_limit_seconds, seen_keys):
+        reason = _acquire_record(record, cdir, manifest_path, client, args.rate_limit_seconds, seen_keys)
+        if reason is None:
             acquired += 1
         else:
-            print(f"[skip] {isbn}: not a usable Book/EditedVolume-with-TOC record")
+            print(f"[skip] {isbn}: {reason}")
     print(f"Acquired {acquired} new book(s).")
 
 
@@ -259,8 +273,16 @@ def _run_from_dump(args: argparse.Namespace, cdir: Path, manifest_path: Path, cl
             print(f"[scan] {scanned:,} records scanned, {acquired} acquired so far")
         if args.limit is not None and acquired >= args.limit:
             break
-        if _acquire_record(record, cdir, manifest_path, client, args.rate_limit_seconds, seen_keys):
+        reason = _acquire_record(record, cdir, manifest_path, client, args.rate_limit_seconds, seen_keys)
+        if reason is None:
             acquired += 1
+        elif reason.startswith("download failed"):
+            # A network error is worth surfacing even during a --from-dump
+            # scan (unlike the ordinary "record doesn't match"/"already
+            # acquired"/"no toc url" skips, which are far too common across
+            # millions of scanned records to print without spamming the
+            # run's output).
+            print(f"[skip] {_record_key(record)}: {reason}")
     print(f"Scanned {scanned:,} records, acquired {acquired} new book(s).")
 
 

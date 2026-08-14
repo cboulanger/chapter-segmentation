@@ -15,8 +15,11 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock
 
+import httpx
+
 from evaluation.scripts.fetch_dnb_toc_corpus import (
     _ChunkStreamReader,
+    _acquire_record,
     _append_book,
     _ensure_manifest_shell,
     _iter_dump_records_from_chunks,
@@ -131,6 +134,85 @@ class TestSearchByIsbn(unittest.TestCase):
         client = Mock()
         client.get.return_value = _json_response({"member": []})
         self.assertIsNone(_search_by_isbn("0000000000000", client))
+
+
+class TestAcquireRecord(unittest.TestCase):
+    """rate_limit_seconds=0 everywhere below to avoid a real time.sleep()
+    per test -- simplest option since it's already a parameter, per the
+    fix task's own guidance."""
+
+    def _setup(self, tmp):
+        cdir = Path(tmp)
+        manifest_path = cdir / "manifest.json"
+        _ensure_manifest_shell(manifest_path)
+        return cdir, manifest_path
+
+    def test_acquires_new_matching_record(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir, manifest_path = self._setup(tmp)
+            client = Mock()
+            response = Mock()
+            response.raise_for_status = Mock()
+            response.content = b"%PDF-1.4 fake toc bytes"
+            client.get.return_value = response
+            seen_keys = set()
+
+            result = _acquire_record(_SAMPLE_RECORD, cdir, manifest_path, client, 0, seen_keys)
+
+            self.assertIsNone(result)
+            pdf_path = cdir / "9783899718188.pdf"
+            self.assertTrue(pdf_path.exists())
+            self.assertEqual(pdf_path.read_bytes(), b"%PDF-1.4 fake toc bytes")
+            data = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual(len(data["books"]), 1)
+            self.assertEqual(data["books"][0]["filename"], "9783899718188.pdf")
+            self.assertIn("9783899718188", seen_keys)
+
+    def test_skips_already_acquired_key(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir, manifest_path = self._setup(tmp)
+            client = Mock()
+            seen_keys = {"9783899718188"}
+
+            result = _acquire_record(_SAMPLE_RECORD, cdir, manifest_path, client, 0, seen_keys)
+
+            self.assertIsNotNone(result)
+            client.get.assert_not_called()
+            data = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual(data["books"], [])
+
+    def test_skips_non_matching_record_without_any_network_call(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir, manifest_path = self._setup(tmp)
+            client = Mock()
+            record = {**_SAMPLE_RECORD, "type": ["BibliographicResource", "Article"]}
+            seen_keys = set()
+
+            result = _acquire_record(record, cdir, manifest_path, client, 0, seen_keys)
+
+            self.assertIsNotNone(result)
+            client.get.assert_not_called()
+            data = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual(data["books"], [])
+            self.assertEqual(seen_keys, set())
+
+    def test_download_http_error_is_caught_and_skipped(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir, manifest_path = self._setup(tmp)
+            client = Mock()
+            response = Mock()
+            response.raise_for_status = Mock(side_effect=httpx.HTTPError("boom"))
+            client.get.return_value = response
+            seen_keys = set()
+
+            result = _acquire_record(_SAMPLE_RECORD, cdir, manifest_path, client, 0, seen_keys)
+
+            self.assertIsNotNone(result)
+            self.assertIn("boom", result)
+            self.assertFalse((cdir / "9783899718188.pdf").exists())
+            data = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual(data["books"], [])
+            self.assertEqual(seen_keys, set())
 
 
 class TestChunkStreamReader(unittest.TestCase):

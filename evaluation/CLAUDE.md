@@ -15,7 +15,10 @@ Three documents, three different lifetimes -- know which one to write to:
   cache refresh script, the strategy-pipeline script). Changes rarely,
   only when the *procedure*
   itself changes (a new evaluation script, a new page-loading mechanism,
-  a new manifest field).
+  a new manifest field). For the exact CLI flags/defaults of any script
+  under `evaluation/scripts/`, don't re-derive them from source -- see
+  `evaluation/scripts/README.md`, a `--help`-dump reference kept alongside
+  the scripts themselves.
 - **`RESULTS.md`** — a snapshot: current precision/recall numbers, per-book
   `strategies_used`/recovery-route diagnostics, known remaining gaps, and
   root-cause investigation findings from the last time each evaluation was

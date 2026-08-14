@@ -9,7 +9,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from evaluation.generate_report import _best_llm_model, generate, generate_corpus
+from evaluation.generate_report import _best_llm_model, _latest_model_date, generate, generate_corpus
 
 
 def _expected_json(chapters: list[dict]) -> str:
@@ -56,6 +56,48 @@ class TestBestLlmModel(unittest.TestCase):
             self.assertEqual(best, "good-model")
 
 
+class TestLatestModelDate(unittest.TestCase):
+    def test_returns_none_when_no_entry_has_a_timestamp(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            llm_cache_dir = root / "test-corpus" / "llm-cache"
+            llm_cache_dir.mkdir(parents=True)
+            (llm_cache_dir / "book-a.json").write_text(json.dumps({
+                "models": {"model-x": {"chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0}}
+            }), encoding="utf-8")
+            with patch("evaluation.harness.CORPUS_ROOT", root):
+                self.assertIsNone(_latest_model_date("test-corpus", "model-x", ["book-a"]))
+
+    def test_returns_the_max_date_across_books(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            llm_cache_dir = root / "test-corpus" / "llm-cache"
+            llm_cache_dir.mkdir(parents=True)
+            (llm_cache_dir / "book-a.json").write_text(json.dumps({
+                "models": {"model-x": {
+                    "chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0,
+                    "generated_at": "2026-08-10T00:00:00+00:00",
+                }}
+            }), encoding="utf-8")
+            (llm_cache_dir / "book-b.json").write_text(json.dumps({
+                "models": {"model-x": {
+                    "chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0,
+                    "generated_at": "2026-08-14T00:00:00+00:00",
+                }}
+            }), encoding="utf-8")
+            with patch("evaluation.harness.CORPUS_ROOT", root):
+                self.assertEqual(_latest_model_date("test-corpus", "model-x", ["book-a", "book-b"]), "2026-08-14")
+
+    def test_ignores_books_missing_the_requested_model(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            llm_cache_dir = root / "test-corpus" / "llm-cache"
+            llm_cache_dir.mkdir(parents=True)
+            (llm_cache_dir / "book-a.json").write_text(json.dumps({"models": {}}), encoding="utf-8")
+            with patch("evaluation.harness.CORPUS_ROOT", root):
+                self.assertIsNone(_latest_model_date("test-corpus", "model-x", ["book-a"]))
+
+
 class TestGenerateCorpus(unittest.TestCase):
     def test_writes_main_report_and_llm_detail_page(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -77,6 +119,47 @@ class TestGenerateCorpus(unittest.TestCase):
             self.assertIn("N/A", main_html)  # outline has no cache entry in this fixture
             llm_html = (out_dir / "llm" / "index.html").read_text(encoding="utf-8")
             self.assertIn("No cached LLM results yet", llm_html)
+
+    def test_main_report_llm_column_shows_as_of_date_when_available(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            root = tmp_path / "corpus"
+            chapters = [{"pdf_start_index": 0, "pdf_end_index": 3}]
+            _write_corpus_fixture(root, "test-corpus", chapters, ["Introduction\nBody text.", "more", "more", "more"])
+            (root / "test-corpus" / "llm-cache" / "book-a.json").write_text(json.dumps({
+                "models": {"good-model": {
+                    "chapters": chapters, "elapsed_seconds": 1.0, "demand_at_run": 0,
+                    "generated_at": "2026-08-14T03:00:00+00:00",
+                }}
+            }), encoding="utf-8")
+            out_dir = tmp_path / "public" / "test-corpus"
+
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch("evaluation.generate_report.public_outline_candidates_for", return_value=None):
+                generate_corpus("test-corpus", out_dir)
+
+            main_html = (out_dir / "index.html").read_text(encoding="utf-8")
+            self.assertIn("LLM (good-model, as of 2026-08-14)", main_html)
+
+    def test_main_report_llm_column_falls_back_without_a_date(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            root = tmp_path / "corpus"
+            chapters = [{"pdf_start_index": 0, "pdf_end_index": 3}]
+            _write_corpus_fixture(root, "test-corpus", chapters, ["Introduction\nBody text.", "more", "more", "more"])
+            # Old-format cache entry: no per-model "generated_at" key.
+            (root / "test-corpus" / "llm-cache" / "book-a.json").write_text(json.dumps({
+                "models": {"good-model": {"chapters": chapters, "elapsed_seconds": 1.0, "demand_at_run": 0}}
+            }), encoding="utf-8")
+            out_dir = tmp_path / "public" / "test-corpus"
+
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch("evaluation.generate_report.public_outline_candidates_for", return_value=None):
+                generate_corpus("test-corpus", out_dir)
+
+            main_html = (out_dir / "index.html").read_text(encoding="utf-8")
+            self.assertIn("LLM (good-model)", main_html)
+            self.assertNotIn("as of", main_html)
 
     def test_main_report_includes_citation_accuracy_columns(self):
         with tempfile.TemporaryDirectory() as tmp:

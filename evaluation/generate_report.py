@@ -80,6 +80,21 @@ def _best_llm_model(corpus: str, books: list[tuple[str, list[dict]]]) -> str | N
     )
 
 
+def _latest_model_date(corpus: str, model_id: str, manifest_keys: list[str]) -> str | None:
+    """Latest per-model generated_at (date part only, YYYY-MM-DD) across
+    every book's cache entry for model_id -- "since not all model runs
+    necessarily take place at the same time, use the latest date" (books
+    can be refreshed for the same model on different nights). Returns None
+    if no book's entry for this model carries the field at all (cache
+    entries written before the per-model timestamp was added)."""
+    dates = [
+        entry["generated_at"][:10]
+        for manifest_key in manifest_keys
+        if (entry := _load_llm_cache(corpus, manifest_key).get(model_id)) and "generated_at" in entry
+    ]
+    return max(dates) if dates else None
+
+
 def generate_corpus(corpus: str, out_dir: Path) -> bool:
     """Writes out_dir/index.html and out_dir/llm/index.html for one
     corpus. Returns False (and writes nothing) if the corpus has no
@@ -94,7 +109,12 @@ def generate_corpus(corpus: str, out_dir: Path) -> bool:
     }
 
     best_llm_model = _best_llm_model(corpus, list(expected_by_key.items()))
-    llm_strategy_name = f"LLM ({best_llm_model})" if best_llm_model else None
+    llm_strategy_name = None
+    if best_llm_model:
+        llm_date = _latest_model_date(corpus, best_llm_model, list(expected_by_key.keys()))
+        llm_strategy_name = (
+            f"LLM ({best_llm_model}, as of {llm_date})" if llm_date else f"LLM ({best_llm_model})"
+        )
     strategy_names = [HEURISTIC, OUTLINE] + ([llm_strategy_name] if llm_strategy_name else [])
 
     per_document: dict[str, dict] = {}

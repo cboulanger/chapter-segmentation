@@ -126,11 +126,23 @@ def _all_cached_model_ids(book_specs: list[tuple[Path, str]]) -> set[str]:
 
 
 def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:
+    """Writes/updates model_id's cache entry for one book. Each model entry
+    carries its own generated_at timestamp (not just the file-level one,
+    which reflects whichever model was upserted most recently across the
+    whole file) -- generate_report.py needs a per-model date to show how
+    fresh THAT model's specific numbers are, since different models in the
+    same file can have been refreshed on different nights."""
     cache_dir.mkdir(parents=True, exist_ok=True)
     cache_path = cache_dir / f"{manifest_key}.json"
     data = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {"models": {}}
-    data["generated_at"] = datetime.now(timezone.utc).isoformat()
-    data["models"][model_id] = {"chapters": chapters, "elapsed_seconds": elapsed_seconds, "demand_at_run": demand}
+    now = datetime.now(timezone.utc).isoformat()
+    data["generated_at"] = now
+    data["models"][model_id] = {
+        "chapters": chapters,
+        "elapsed_seconds": elapsed_seconds,
+        "demand_at_run": demand,
+        "generated_at": now,
+    }
     cache_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 

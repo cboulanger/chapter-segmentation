@@ -140,6 +140,26 @@ class TestUpsertCache(unittest.TestCase):
             self.assertIn("model-old", data["models"])
             self.assertIn("model-new", data["models"])
 
+    def test_records_a_per_model_generated_at_timestamp(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            _upsert_cache(cache_dir, "book-a", "model-x", [], 1.0, demand=0)
+            data = json.loads((cache_dir / "book-a.json").read_text(encoding="utf-8"))
+            self.assertRegex(data["models"]["model-x"]["generated_at"], r"^\d{4}-\d{2}-\d{2}T")
+
+    def test_a_second_models_generated_at_does_not_overwrite_the_first(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            _upsert_cache(cache_dir, "book-a", "model-old", [], 1.0, demand=0)
+            first_data = json.loads((cache_dir / "book-a.json").read_text(encoding="utf-8"))
+            first_timestamp = first_data["models"]["model-old"]["generated_at"]
+
+            _upsert_cache(cache_dir, "book-a", "model-new", [], 1.0, demand=0)
+            second_data = json.loads((cache_dir / "book-a.json").read_text(encoding="utf-8"))
+
+            self.assertEqual(second_data["models"]["model-old"]["generated_at"], first_timestamp)
+            self.assertIn("generated_at", second_data["models"]["model-new"])
+
 
 if __name__ == "__main__":
     unittest.main()

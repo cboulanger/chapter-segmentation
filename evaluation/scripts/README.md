@@ -188,6 +188,11 @@ usage: evaluate_layout_toc_classifier.py [-h] [--pdfalto-bin PDFALTO_BIN]
                                          [--chapter-first-recall-tolerance CHAPTER_FIRST_RECALL_TOLERANCE]
                                          [--corpora CORPORA]
                                          [--scan-noise-augment]
+                                         [--save-results]
+
+Pilot: leave-one-book-out evaluation of a layout-geometry TOC/ chapter-first-
+page classifier. See docs/superpowers/specs/2026-08-10-layout-based-toc-
+classifier-pilot-design.md.
 
 options:
   -h, --help            show this help message and exit
@@ -211,6 +216,11 @@ options:
                         scan-noise-perturbed copy of its ALTO XML (cached as
                         <key>.aug.alto.xml). Augmented rows are only ever used
                         for training, never evaluated.
+  --save-results        Write per-book results to
+                        evaluation/corpus/<corpus>/classifier-results.json
+                        (split by each book's own corpus), for
+                        generate_report.py to fold into the published report.
+                        Default: off (stdout-only, current behavior).
 ```
 
 ## `fetch_crossref_gt_corpus.py`

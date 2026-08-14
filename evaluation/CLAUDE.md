@@ -301,6 +301,20 @@ changes or a new evaluation book is added.
 
 ## Step 1: Transcribe the table of contents
 
+**Before transcribing by hand, check whether a DNB-digitized TOC scan
+already exists** for this book: look in
+`evaluation/corpus/dnb-toc-only/manifest.json` (see
+`evaluation/scripts/fetch_dnb_toc_corpus.py` --
+`docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md`)
+for an entry with this book's ISBN, or query live:
+`curl -s "https://lobid.org/resources/search?q=isbn:<isbn>&format=json"`
+and check for a populated `tableOfContents` field. When present, it's a
+ready-made, already-OCR'd TOC scan to transcribe from instead of locating
+and reading the TOC pages inside the raw book PDF from scratch -- you
+still verify every entry by hand against the actual book exactly as Step
+3 below describes; this only saves the step of finding the TOC pages
+visually.
+
 Open the PDF and write out its chapters as a small JSON file (anywhere,
 e.g. `/tmp/<name>_toc.json`):
 

@@ -163,15 +163,20 @@ async def _process_model(
 ) -> None:
     """Runs worker(corpus, manifest_key, cache_dir) for every book_entries
     tuple concurrently, bounded by `concurrency` in-flight at once. worker
-    is expected to handle its own errors (it must not raise) -- one book's
-    failure must not cancel the others via asyncio.gather."""
+    is expected to handle its own errors and not raise -- but
+    return_exceptions=True is passed defensively anyway, so even a
+    surprise exception from one book can't cancel the others still
+    in-flight via asyncio.gather's default all-or-nothing behavior."""
     semaphore = asyncio.Semaphore(concurrency)
 
     async def _bounded(corpus: str, manifest_key: str, cache_dir: Path) -> None:
         async with semaphore:
             await worker(corpus, manifest_key, cache_dir)
 
-    await asyncio.gather(*(_bounded(corpus, manifest_key, cache_dir) for corpus, manifest_key, cache_dir in book_entries))
+    await asyncio.gather(
+        *(_bounded(corpus, manifest_key, cache_dir) for corpus, manifest_key, cache_dir in book_entries),
+        return_exceptions=True,
+    )
 
 
 def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:

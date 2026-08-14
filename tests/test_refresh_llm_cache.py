@@ -218,6 +218,18 @@ class TestProcessModel(unittest.IsolatedAsyncioTestCase):
         self.assertLessEqual(max_in_flight, 3)
         self.assertGreater(max_in_flight, 1)
 
+    async def test_a_raising_worker_does_not_cancel_sibling_tasks(self):
+        completed = []
+
+        async def worker(corpus, manifest_key, cache_dir):
+            if manifest_key == "book-1":
+                raise RuntimeError("boom")
+            completed.append(manifest_key)
+
+        book_entries = [("c", "book-1", Path("/x")), ("c", "book-2", Path("/x")), ("c", "book-3", Path("/x"))]
+        await _process_model(book_entries, concurrency=4, worker=worker)
+        self.assertEqual(sorted(completed), ["book-2", "book-3"])
+
 
 class TestUpsertCache(unittest.TestCase):
     def test_creates_new_cache_file(self):

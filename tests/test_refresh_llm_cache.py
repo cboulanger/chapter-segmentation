@@ -6,7 +6,9 @@ import asyncio
 import json
 import tempfile
 import unittest
+import unittest.mock
 from pathlib import Path
+from types import SimpleNamespace
 
 from evaluation.refresh_llm_cache import (
     _all_cached_model_ids,
@@ -14,6 +16,7 @@ from evaluation.refresh_llm_cache import (
     _fully_covered_model_ids,
     _has_cached_entry,
     _process_model,
+    _run_book_for_model,
     _upsert_cache,
 )
 
@@ -229,6 +232,79 @@ class TestProcessModel(unittest.IsolatedAsyncioTestCase):
         book_entries = [("c", "book-1", Path("/x")), ("c", "book-2", Path("/x")), ("c", "book-3", Path("/x"))]
         await _process_model(book_entries, concurrency=4, worker=worker)
         self.assertEqual(sorted(completed), ["book-2", "book-3"])
+
+
+class TestRunBookForModel(unittest.IsolatedAsyncioTestCase):
+    def _model(self):
+        return SimpleNamespace(id="model-x", demand=0)
+
+    async def test_fill_gaps_skips_when_already_cached(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            (cache_dir / "book-a.json").write_text(
+                json.dumps({"models": {"model-x": {"chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0}}}),
+                encoding="utf-8",
+            )
+            with (
+                unittest.mock.patch("evaluation.refresh_llm_cache.public_pages_for") as pages_mock,
+                unittest.mock.patch("evaluation.refresh_llm_cache.analyze_attachment_llm_only") as analyze_mock,
+            ):
+                await _run_book_for_model("corpus-a", "book-a", cache_dir, self._model(), "fill-gaps", llm_client=None)
+                pages_mock.assert_not_called()
+                analyze_mock.assert_not_called()
+
+    async def test_fill_gaps_processes_when_not_cached(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+
+            async def fake_analyze(pages, llm_client):
+                return {"chapters": [{"title": "Intro"}]}
+
+            with (
+                unittest.mock.patch("evaluation.refresh_llm_cache.public_pages_for", return_value=["page text"]),
+                unittest.mock.patch("evaluation.refresh_llm_cache.analyze_attachment_llm_only", side_effect=fake_analyze),
+            ):
+                await _run_book_for_model("corpus-a", "book-a", cache_dir, self._model(), "fill-gaps", llm_client=None)
+            data = json.loads((cache_dir / "book-a.json").read_text(encoding="utf-8"))
+            self.assertIn("model-x", data["models"])
+
+    async def test_top5_reprocesses_even_when_already_cached(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            (cache_dir / "book-a.json").write_text(
+                json.dumps({"models": {"model-x": {"chapters": [{"title": "Old"}], "elapsed_seconds": 1.0, "demand_at_run": 0}}}),
+                encoding="utf-8",
+            )
+
+            async def fake_analyze(pages, llm_client):
+                return {"chapters": [{"title": "New"}]}
+
+            with (
+                unittest.mock.patch("evaluation.refresh_llm_cache.public_pages_for", return_value=["page text"]),
+                unittest.mock.patch("evaluation.refresh_llm_cache.analyze_attachment_llm_only", side_effect=fake_analyze),
+            ):
+                await _run_book_for_model("corpus-a", "book-a", cache_dir, self._model(), "top5", llm_client=None)
+            data = json.loads((cache_dir / "book-a.json").read_text(encoding="utf-8"))
+            self.assertEqual(data["models"]["model-x"]["chapters"], [{"title": "New"}])
+
+    async def test_failure_after_retries_is_logged_not_raised(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+
+            async def always_fails(pages, llm_client):
+                raise RuntimeError("boom")
+
+            async def fast_sleep(delay):
+                pass
+
+            with (
+                unittest.mock.patch("evaluation.refresh_llm_cache.public_pages_for", return_value=["page text"]),
+                unittest.mock.patch("evaluation.refresh_llm_cache.analyze_attachment_llm_only", side_effect=always_fails),
+            ):
+                await _run_book_for_model(
+                    "corpus-a", "book-a", cache_dir, self._model(), "fill-gaps", llm_client=None, sleep=fast_sleep,
+                )
+            self.assertFalse((cache_dir / "book-a.json").exists())
 
 
 class TestUpsertCache(unittest.TestCase):

@@ -21,7 +21,12 @@ check.
 --mode fill-gaps: finds non-"very busy" models not yet cached for EVERY
 book across every corpus's current public books, and runs up to 5
 (--limit) of those -- how the cache grows to cover every model over time
-(see the nightly schedule in the workflow above).
+(see the nightly schedule in the workflow above). Within a fill-gaps run,
+a (book, model) pair that's already cached is skipped rather than redone
+-- so an interrupted run (job timeout, a transient failure) picks up
+where it left off next time, instead of restarting the selected model's
+whole book set from scratch. (--mode top5/full always rerun
+unconditionally, regardless of what's already cached -- see below.)
 
 --limit (default 5, applies to top5/fill-gaps only -- full is
 deliberately uncapped): how many models to run this invocation. Lower it
@@ -47,6 +52,14 @@ scratch) rather than --mode top5, which would refresh only its 5 models
 unconditionally and leave the rest of the now-cleared cache empty until
 something else fills it back in.
 
+--concurrency (default 4): how many books to process concurrently for
+the currently-selected model. KISSKI publishes no documented rate limit,
+so this default is a conservative guess -- raise it if you don't observe
+429/503 errors. Each request also retries up to 3 times with exponential
+backoff (1s, 2s, 4s) on any failure before being logged as FAILED, so
+transient errors under concurrency don't permanently block a book/model
+pair.
+
 --mode full: re-runs EVERY model that already has at least one cached
 entry (its full historical footprint), across all books in all corpora,
 regardless of current busy/demand status -- use after a change to the
@@ -58,6 +71,7 @@ skipped with a warning (nothing to run it against).
 
 import argparse
 import asyncio
+import functools
 import json
 import os
 import sys
@@ -179,6 +193,33 @@ async def _process_model(
     )
 
 
+async def _run_book_for_model(
+    corpus: str,
+    manifest_key: str,
+    cache_dir: Path,
+    model,
+    mode: str,
+    llm_client,
+    sleep: Callable[[float], Awaitable] = asyncio.sleep,
+) -> None:
+    if mode == "fill-gaps" and _has_cached_entry(cache_dir, manifest_key, model.id):
+        print(f"{corpus}/{manifest_key} / {model.id}: SKIP (already cached)")
+        return
+    try:
+        pages = public_pages_for(corpus, manifest_key)
+        start = time.perf_counter()
+        result = await _call_with_retry(lambda: analyze_attachment_llm_only(pages, llm_client), sleep=sleep)
+        elapsed = time.perf_counter() - start
+        _upsert_cache(cache_dir, manifest_key, model.id, result["chapters"], elapsed, model.demand)
+        print(f"{corpus}/{manifest_key} / {model.id}: {len(result['chapters'])} chapters, {elapsed:.1f}s")
+    except Exception as exc:
+        # One book/model failure (after retries) must not strand the whole
+        # batch or discard cache entries already written for other books/
+        # models in this same run -- same catch-log-continue convention as
+        # generate_public_evaluation_cache.py.
+        print(f"{corpus}/{manifest_key} / {model.id}: FAILED ({exc}) -- skipping")
+
+
 def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:
     """Writes/updates model_id's cache entry for one book. Each model entry
     carries its own generated_at timestamp (not just the file-level one,
@@ -200,7 +241,7 @@ def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: l
     cache_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], clear: bool) -> int:
+async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], clear: bool, concurrency: int) -> int:
     api_key = os.environ["KISSKI_API_KEY"]
     corpora = [corpus] if corpus else list_corpora()
     # (corpus, manifest_key, cache_dir) for every scorable book across every in-scope corpus.
@@ -247,20 +288,8 @@ async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], cle
     print(f"Selected models: {[m.id for m in selected]}")
     for model in selected:
         llm_client = _OpenAICompatibleLLMClient(model=model.id, base_url=base_url, api_key=api_key)
-        for corpus, manifest_key, cache_dir in book_entries:
-            try:
-                pages = public_pages_for(corpus, manifest_key)
-                start = time.perf_counter()
-                result = await analyze_attachment_llm_only(pages, llm_client)
-                elapsed = time.perf_counter() - start
-                _upsert_cache(cache_dir, manifest_key, model.id, result["chapters"], elapsed, model.demand)
-                print(f"{corpus}/{manifest_key} / {model.id}: {len(result['chapters'])} chapters, {elapsed:.1f}s")
-            except Exception as exc:
-                # One book/model failure must not strand the whole batch or
-                # discard cache entries already written for other books/
-                # models in this same run -- same catch-log-continue
-                # convention as generate_public_evaluation_cache.py.
-                print(f"{corpus}/{manifest_key} / {model.id}: FAILED ({exc}) -- skipping")
+        worker = functools.partial(_run_book_for_model, model=model, mode=mode, llm_client=llm_client)
+        await _process_model(book_entries, concurrency, worker)
     return 0
 
 
@@ -277,7 +306,13 @@ if __name__ == "__main__":
         "--clear", action="store_true",
         help="Delete every cache file in scope before regenerating (use when the underlying public-cache text changed).",
     )
+    parser.add_argument(
+        "--concurrency", type=int, default=4,
+        help="Max concurrent book requests per model. KISSKI publishes no documented rate limit, "
+             "so this is a conservative default -- raise it if you don't observe 429s. Default 4.",
+    )
     args = parser.parse_args()
     raise SystemExit(asyncio.run(_main(
         mode=args.mode, base_url=args.base_url, limit=args.limit, corpus=args.corpus, clear=args.clear,
+        concurrency=args.concurrency,
     )))

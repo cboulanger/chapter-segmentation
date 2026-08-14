@@ -3,7 +3,7 @@
 mocked httpx responses and an in-memory gzip stream -- no live network,
 matching tests/test_discover_crossref_candidates.py's convention. The real
 network-calling main()/_run_isbns_file()/_run_from_dump() orchestration is
-exercised manually (see docs/superpowers/plans/2026-08-14-dnb-toc-corpus-acquisition-plan.md
+exercised manually (see docs/superpowers/plans/2026-08-14-dnb-toc-corpus-acquisition.md
 Task 4's smoke test), matching fetch_crossref_gt_corpus.py's existing
 convention of no pytest coverage for its own network-calling entry point."""
 

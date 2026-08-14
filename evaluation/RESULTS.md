@@ -1751,3 +1751,55 @@ elsewhere in this file (including "shipped default" language in earlier
 follow-ups) describes what was true when it was written and remains an
 accurate record of that measurement -- it does not describe today's
 default going forward.
+
+### Follow-up: first real-scan measurement from the DNB TOC-scan corpus (preliminary, smoke-test scale)
+
+`evaluation/scripts/fetch_dnb_toc_corpus.py` and
+`evaluation/scripts/measure_dnb_scan_noise_stats.py` were added (see
+`docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md`)
+to eventually replace the "resembles real scan noise" hand-picked
+constants in `alto_scan_noise.py` (`_CONTRAST_ALPHA = (0.3, 0.7)`,
+`_FONT_JITTER = (0.96, 1.04)`) with numbers measured directly from real
+DNB-digitized table-of-contents scans, sourced via the `lobid-resources`
+API. As of this writing, `evaluation/corpus/dnb-toc-only/manifest.json`
+holds a **9-book smoke-test batch** (acquired via `--isbns-file`, to prove
+the acquisition pipeline works end-to-end) -- not the "few hundred books"
+scale the design spec's decision criteria calls for, which requires a
+separate, hours-long `--from-dump` bulk run against the full ~21.5GB
+lobid-resources dump that hasn't been done yet. The numbers below are a
+preliminary preview from that small batch, not a calibration-grade
+measurement:
+
+```
+uv run python evaluation/scripts/measure_dnb_scan_noise_stats.py --pdfalto-bin <path-to-pdfalto>
+
+Title/body contrast ratio (font_size_max_ratio, n=15):
+  measured: {'count': 15, 'min': 1.0, 'max': 1.46, 'mean': 1.11, 'median': 1.05, 'stdev': 0.14}
+  current _CONTRAST_ALPHA range: (0.3, 0.7)
+
+Body-line font-size dispersion (ratio to page modal size, within +/-10%, n=426):
+  measured: {'count': 426, 'min': 0.92, 'max': 1.08, 'mean': 1.00, 'median': 1.0, 'stdev': 0.016}
+  current _FONT_JITTER range: (0.96, 1.04)
+```
+
+`n=15` non-empty pages across the 9 books (most DNB TOC scans are 1-3
+pages) and `n=426` body-like line samples within those pages.
+`_CONTRAST_ALPHA` isn't directly comparable in the same units as the
+measured contrast ratio -- it's a compression factor applied to
+born-digital ALTO's own (much larger) title/body ratio, not a target
+ratio itself -- so this table doesn't yet answer whether `_CONTRAST_ALPHA`
+needs to change; it establishes what the real title/body ratio distribution
+on DNB TOC scans actually looks like (median 1.05, i.e. many TOC pages
+have little or no distinct title styling at all, consistent with these
+being plain "Inhalt"/"Inhaltsverzeichnis" listings rather than illustrated
+title pages), which the eventual calibration will compress born-digital
+ratios toward. The dispersion figure is more directly comparable:
+measured real body-line sizes stayed within about ±8% of their page's
+modal size (`min` 0.92, `max` 1.08) with a tight stdev of 0.016, noticeably
+tighter than `_FONT_JITTER`'s current full ±4% per-clone range would
+suggest if read as a typical spread -- but at `n=426` samples drawn from
+only 9 books, this is far too small a sample to revise the constant on;
+it's a first data point, not a verdict. **Re-run this measurement after a
+real `--from-dump` acquisition** (see this corpus's manifest for how many
+books have accumulated) before treating either number as calibration-grade,
+per the design spec's decision criteria.

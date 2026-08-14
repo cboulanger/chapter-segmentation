@@ -186,6 +186,46 @@ class TestGenerateCorpus(unittest.TestCase):
             self.assertIn("model-fresh (as of 2026-08-14)", llm_html)
             self.assertIn(">model-old<", llm_html)  # no date available -- bare id
 
+    def test_main_report_includes_classifier_column_when_results_present(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            root = tmp_path / "corpus"
+            chapters = [{"pdf_start_index": 0, "pdf_end_index": 3}]
+            _write_corpus_fixture(root, "test-corpus", chapters, ["Introduction\nBody text.", "more", "more", "more"])
+            (root / "test-corpus" / "classifier-results.json").write_text(json.dumps({
+                "generated_at": "2026-08-14T09:00:00+00:00",
+                "full_recall_fraction": 0.75,
+                "avg_candidate_fraction": 0.1,
+                "per_book": {
+                    "book-a": {"toc_recall": 1.0, "chapter_first_recall": 1.0, "candidate_fraction": 0.05},
+                },
+            }), encoding="utf-8")
+            out_dir = tmp_path / "public" / "test-corpus"
+
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch("evaluation.generate_report.public_outline_candidates_for", return_value=None):
+                generate_corpus("test-corpus", out_dir)
+
+            main_html = (out_dir / "index.html").read_text(encoding="utf-8")
+            self.assertIn("Layout/TOC classifier", main_html)
+            self.assertIn("as of 2026-08-14", main_html)
+            self.assertIn("not directly comparable", main_html)
+
+    def test_main_report_omits_classifier_column_when_no_results_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            root = tmp_path / "corpus"
+            chapters = [{"pdf_start_index": 0, "pdf_end_index": 3}]
+            _write_corpus_fixture(root, "test-corpus", chapters, ["Introduction\nBody text.", "more", "more", "more"])
+            out_dir = tmp_path / "public" / "test-corpus"
+
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch("evaluation.generate_report.public_outline_candidates_for", return_value=None):
+                generate_corpus("test-corpus", out_dir)
+
+            main_html = (out_dir / "index.html").read_text(encoding="utf-8")
+            self.assertNotIn("Layout/TOC classifier", main_html)
+
     def test_main_report_includes_citation_accuracy_columns(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)

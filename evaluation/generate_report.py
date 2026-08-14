@@ -27,6 +27,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from chapter_segmentation.segmentation import analyze_attachment, analyze_attachment_outline_only
 from evaluation.harness import (
     available_public_books,
+    corpus_dir,
     list_corpora,
     llm_cache_dir,
     public_outline_candidates_for,
@@ -55,6 +56,16 @@ def _load_llm_cache(corpus: str, manifest_key: str) -> dict:
     if not cache_path.exists():
         return {}
     return json.loads(cache_path.read_text(encoding="utf-8")).get("models", {})
+
+
+def _load_classifier_results(corpus: str) -> dict | None:
+    """evaluation/corpus/<corpus>/classifier-results.json, written by
+    evaluate_layout_toc_classifier.py --save-results, or None if that
+    script has never been run (with --save-results) against this corpus."""
+    path = corpus_dir(corpus) / "classifier-results.json"
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _best_llm_model(corpus: str, books: list[tuple[str, list[dict]]]) -> str | None:
@@ -187,6 +198,23 @@ a production routing decision. A match requires the exact same page range
 The full breakdown of every LLM model ever evaluated (not just the best)
 is at <a href="llm/index.html">llm/index.html</a>.</p>"""
 
+    classifier_data = _load_classifier_results(corpus)
+    classifier_param = None
+    if classifier_data is not None:
+        classifier_param = {
+            "label": f"Layout/TOC classifier (LOBO, as of {classifier_data['generated_at'][:10]})",
+            "note": (
+                "The layout/TOC classifier row/column above measures per-page "
+                "table-of-contents/chapter-opening-page classification recall via "
+                "leave-one-book-out cross-validation (evaluate_layout_toc_classifier.py) -- "
+                "a different methodology than the chapter-boundary precision/recall/F1 the "
+                "other rows measure, so it is not directly comparable to them."
+            ),
+            "per_document": classifier_data["per_book"],
+            "full_recall_fraction": classifier_data["full_recall_fraction"],
+            "avg_candidate_fraction": classifier_data["avg_candidate_fraction"],
+        }
+
     html = render_strategy_tables(
         title=f"chapter-segmentation: {corpus} corpus results",
         description_html=description,
@@ -195,6 +223,7 @@ is at <a href="llm/index.html">llm/index.html</a>.</p>"""
         aggregates=aggregates,
         aggregate_times=aggregate_times,
         citation_aggregates=citation_aggregates,
+        classifier=classifier_param,
     )
     html = html.replace(
         "</body></html>",

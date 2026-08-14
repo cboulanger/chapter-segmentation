@@ -1372,3 +1372,292 @@ follow-up doesn't change that overall picture -- it's a targeted fix for
 one identified false-negative mechanism (mid-book in-chapter mini-TOCs and
 back-of-book TOCs sharing a layout signature with real front-matter TOCs),
 not a step toward a fundamentally different recall ceiling.
+
+### Follow-up: isolating the open-access corpus -- recall_target retuned, per-feature weighting tested and ruled out
+
+Motivated by a direct question: why does this pilot score so far below its
+own 90%/15% bar on `open-access` alone, given that corpus's clean, native,
+well-produced layout should carry the strongest geometric signal of any
+corpus here -- and would manually reweighting the model's input features
+help close the gap? Both questions were tested empirically, restricting
+every run in this section to `--corpora open-access`
+(`load_book_corpus`'s LOBO training pool then contains *only* open-access
+rows -- not just excluded from the reported metric, excluded from training
+too, unlike the "concentrate on open-access first" follow-up above, which
+kept `copyrighted-scans` in the training pool throughout):
+
+```bash
+uv run python evaluation/scripts/evaluate_layout_toc_classifier.py \
+  --pdfalto-bin ../pdfalto/pdfalto --corpora open-access --recall-target 0.988
+```
+
+At the shipped defaults (17 features, `recall_target=0.90`, unchanged
+model): **72% `full_recall_fraction`, 8.0% `avg_candidate_fraction`**
+across the 57 open-access books -- still NOT MET, but with less than half
+the 15% candidate budget spent, unlike the mixed 89-book run (10.0%) or
+`copyrighted-scans`, where candidate-fraction budget is the binding
+constraint.
+
+**Per-feature weighting was tested directly and ruled out as the fix.**
+Averaging |standardized coefficient| across several LOBO folds' fitted
+models found one feature, `edge_distance`, at ~15 for the `toc` label --
+three times the next-highest feature (`line_count`, ~5.3) and roughly the
+size of the fitted intercept (~-19) with the opposite sign. That looks
+exactly like textbook quasi-complete-separation overfitting (real TOC
+pages in this corpus sit almost perfectly at the extreme low end of
+`edge_distance`, so an under-regularized linear model drives its
+coefficient toward the largest value the L2 penalty allows, to squeeze out
+training likelihood). The natural fix hypothesis -- strengthen L2
+regularization (`LogisticRegression`'s `C`, sklearn default `1.0`) to
+shrink this coefficient toward a more modest, better-generalizing value --
+was swept from `C=100` down to `C=0.003` and produced **zero change** in
+`full_recall_fraction` or in any individual book's `toc_recall`, over three
+orders of magnitude. Root cause: `select_threshold` recalibrates the
+accept/reject threshold to each fold's own fitted training-probability
+distribution, so uniform L2 shrinkage rescales every coefficient (and the
+resulting probabilities) together without changing pages' *relative*
+ranking within a book -- and it's the ranking, not the raw probability
+scale, that decides which pages clear the bar. Only far more extreme
+regularization (`C` below roughly `0.0003`, i.e. multiple further orders of
+magnitude past any value a normal hyperparameter search would try) started
+changing outcomes at all, and even there it flipped only 2 of the 5
+originally-zero-`toc_recall` books to 100% while leaving overall
+`full_recall_fraction` at 73.7% -- a much weaker, less comprehensive fix
+than the one below, reached only by pushing regularization into a regime
+that behaves like a blunt "flag nearly everything" fallback (similar in
+character to `recall_target -> 1.0`'s own cliff, documented in the first
+follow-up in this section). **Conclusion: no realistic amount of feature
+reweighting (via regularization or, by the same logic, via hand-assigned
+per-feature priors) is the lever that closes this corpus's gap** -- the
+features and their learned relative importance are not the bottleneck.
+
+**`recall_target` -- the pilot's existing, already-exposed calibration
+knob -- is the lever that works.** Unlike `C`, it does not scale
+coefficients uniformly; it moves the accept threshold non-uniformly along
+each fold's own training-positive probability distribution, which is
+exactly where this corpus had slack. A sweep restricted to open-access
+alone:
+
+| `recall_target` | `full_recall_fraction` | `avg_candidate_fraction` |
+| --- | --- | --- |
+| 0.80 | 52.6% | 6.6% |
+| 0.85 | 64.9% | 7.1% |
+| 0.90 (shipped default) | 71.9% | 8.0% |
+| 0.93 | 75.4% | 8.7% |
+| 0.95 | 82.5% | 9.2% |
+| 0.97 | 84.2% | 10.2% |
+| 0.98 | 87.7% | 10.7% |
+| 0.987 | 93.0% | 12.7% |
+| **0.988** | **94.7%** | **13.8%** |
+| 0.99 | 94.7% | 15.2% |
+| 1.00 | 98.2% | 58.4% |
+
+**At `recall_target=0.988`, open-access alone clears the pilot's own
+90%/15% decision bar for the first time in this pilot's whole history** --
+94.7% full recall at 13.8% candidate fraction, both sides of the bar
+satisfied with real margin (4.7 points of recall headroom, 1.2 points of
+candidate headroom). The crossing is still narrow, not a wide plateau like
+the earlier corpus-wide 0.97-0.99 plateau: `0.99` itself -- one thousandth
+higher -- already exceeds the 15% cap (94.7%/15.2%, same recall, more
+candidates), so this operating point sits close to a cliff edge and should
+be expected to move if the open-access corpus grows further, unlike the
+earlier, comfortably-wide plateaus found in prior follow-ups. (These
+numbers reflect the ground-truth fix below -- rerunning the identical
+sweep before that fix put the crossing a full point higher, at
+`recall_target=0.99`, with a tighter margin.)
+
+Only 3 of 57 books still fail at `recall_target=0.988`, all the same,
+already-diagnosed structural gap:
+
+| book | `chapter_first_recall` | root cause |
+| --- | --- | --- |
+| `9781783749478` | 89% | Weak title/body font-size contrast (already-diagnosed structural gap) |
+| `9783837681192` | 85% | Same |
+| `9783907297285` | 77% | Same |
+
+A fourth book, `9783837660944`, originally failed here too
+(`toc_recall=0%`) -- but this traced to a **ground-truth defect, not a
+classifier gap, and has been fixed** rather than left as a residual. Its
+`.expected.json` listed a chapter titled `"Inhalt"` (German for "table of
+contents") spanning `pdf_start_index=5, pdf_end_index=6` -- the *exact same
+page range* as its own `"toc": {"toc_start_index": 5, "toc_end_index": 6}`
+field, credited to the same four names as the book's real `"Vorwort"`
+chapter (its editors). `layout_labels.page_labels()` applies `chapters`
+after `toc`, so this entry overwrote page 5's true `toc` label with
+`chapter_first`, leaving only page 6 as a real toc-positive test row
+(confirmed: `n_true_pages=1` for this book pre-fix, not the true 2) and
+injecting a spurious `chapter_first` positive at a page that is not a real
+chapter opening. Per `evaluation/CLAUDE.md`'s own transcription workflow, a
+front-matter TOC section is supposed to be recorded as `{"skip": true}`
+during Step 1 specifically so it never lands in the final `chapters`
+list -- this was exactly that step being missed when this book's ground
+truth was built. **Fixed** by deleting the spurious `"Inhalt"` entry from
+`evaluation/corpus/open-access/9783837660944.expected.json`; re-verified
+with the Step-4 bounds/overlap check, `tests/test_ground_truth_integrity.py`
+(89/89 subtests still pass), and `tests/test_segmentation_accuracy.py`
+(this book's heuristic-pipeline recall is unaffected -- still clears the
+hard `recall > 0` regression gate, at 0.40 -- so the fix is isolated to
+this pilot's own labels, not a change to the main harness's behavior for
+this book). Post-fix, this book scores `toc_recall=50%` (page 6 now
+correctly recognized) and `chapter_first_recall=100%` (the spurious
+positive is gone) at `recall_target=0.988` -- a full pass. A structurally
+identical overlap exists in `9781783743339` (a `"Preface"` chapter
+starting on the toc's own first page) but was left alone there, since that
+book's remaining toc page already satisfies the lenient "≥1 hit" bar on
+its own, so the overlap costs it nothing.
+
+Two further partial `toc_recall` cases were checked and are *not* the same
+bug, and don't fail the aggregate bar either (its "≥1 hit" pass condition
+is lenient): `9782375460122` (25%, a 4-page TOC) and `9783031538391` (50%,
+also 4 pages) have no chapter/toc range overlap. Multi-page TOCs aren't
+rare in this corpus (12 of 57 books have a 4-page TOC, most scoring
+cleanly), so length alone doesn't explain either one -- both are left as
+an open, lower-priority layout-diversity gap.
+
+**The mini-TOC hypothesis -- the specific exception this investigation was
+framed around -- was checked directly and ruled out for every one of the
+originally-failing books.** All 5 books that started this investigation at
+`toc_recall=0%` have their real TOC at pages 5-8, the extreme front of the
+book, and `edge_distance` (added in the previous follow-up specifically to
+separate front/back real TOCs from mid-book mini-TOCs) scores it correctly
+in every one of them -- it is consistently that page's *single largest*
+positive contributor toward the `toc` label (see the coefficient
+discussion above). Pages are also scored independently, with no book-level
+"top-k" competition, so a mid-book mini-TOC page cannot suppress or
+outrank a genuine front-matter TOC's own probability even in principle.
+Every one of those 5 traces to something else: one ground-truth defect
+(now fixed), three already-diagnosed weak-font-contrast chapter openings,
+and one unexplained-but-structurally-unremarkable TOC layout (the other,
+`9781783748471`, is fully fixed by the recalibration alone).
+
+**Verdict: MET for open-access, in isolation, at `recall_target=0.988`.**
+This is the first configuration in this pilot's whole history to clear its
+own 90%/15% bar. Not proposed as a change to the shipped global default
+(`_RECALL_TARGET=0.90`): the "recall-target tuning" follow-up above already
+found `copyrighted-scans`' candidate-fraction cost rises faster with
+`recall_target` than open-access's does, so applying `0.988` to the
+mixed/scans corpus would blow the 15% cap rather than approach it. Whether
+a per-corpus (or otherwise input-adaptive) `recall_target` is worth
+formalizing as a product decision, versus keeping one global knob and
+accepting weaker open-access recall as its cost, is taken up in the next
+follow-up.
+
+### Follow-up: is `recall_target` worth splitting by source type? And a rejected feature
+
+Two follow-on questions from the previous section, tested empirically
+rather than answered speculatively.
+
+**Does `extraction_type` (native vs. scan) predict how much `recall_target`
+headroom a book has, well enough to calibrate separately by type?** First
+finding: `extraction_type` is *not* the same axis as corpus name --
+`copyrighted-scans/`'s 32 books split 18 native / 14 scan (only the latter
+are actually scanned; the corpus name predates the manifest field and
+groups by provenance, not by extraction method). So "native vs. scan"
+and "open-access vs. copyrighted-scans" are different, overlapping splits,
+and the more precise one is extraction_type.
+
+A LOBO run over the full 89-book corpus (one shared model per fold, as
+always -- only the *threshold* is calibrated separately) with the
+per-fold threshold for label L computed twice -- once from that fold's
+native-book training rows at `recall_target_native`, once from its
+scan-book training rows at `recall_target_scan` -- then applying whichever
+threshold matches the held-out book's own type:
+
+| config | overall full_recall | overall avg_cand | native full_recall / avg_cand | scan full_recall / avg_cand |
+| --- | --- | --- | --- | --- |
+| single `recall_target=0.94` (closest single-knob budget match) | 73.0% | 13.9% | 74.7% / 10.8% | 64.3% / 30.4% |
+| split: `native=0.97, scan=0.75` | **82.0%** | **14.5%** | 89.3% / 14.8% | 42.9% / 12.7% |
+
+At essentially the same overall candidate budget, splitting by
+`extraction_type` buys **+9 points of overall full_recall_fraction** --
+a real, reproducible win, and cheap (no model or feature change, just two
+constants instead of one). The mechanism is reallocation, not a new
+capability: native books can absorb a much more aggressive threshold than
+one global knob calibrated for the whole mixed pool would ever allow them,
+without spending scan books' share of the 15% budget on a target that
+barely moves their recall anyway. That's also the split's limit --
+**scan's own `full_recall_fraction` stays stuck around 43% across every
+`recall_target_scan` tested (0.75-0.85 all gave the identical 42.9%,
+suspiciously flat -- likely `select_threshold`'s `ceil()` quantile snapping
+to the same few discrete thresholds with only 14 scan books' worth of
+positive rows to calibrate against)**, consistent with every earlier
+follow-up's finding that scans' *underlying* signal, not calibration, is
+the ceiling. **Recommendation: yes, split by `extraction_type` if this
+pilot ships -- it's a strictly-better use of the same candidate-fraction
+budget than one global constant -- but budget for scans staying well under
+open-access's recall regardless of how its own target is tuned.** Not
+implemented in `evaluate_layout_toc_classifier.py` here, since the pilot
+overall is still NOT MET and this is a calibration recommendation for
+*if*/when it ships, not a standalone change.
+
+**Would a per-document "retry with different targets" work instead of a
+fixed type-based bucket?** Worth separating two different ideas that
+phrase could mean. Retrying at *evaluation* time (as this whole
+investigation already does, repeatedly) only works because LOBO has
+ground truth for the held-out book to score each retry against -- that
+signal doesn't exist for a real, unlabeled document in production, so
+there's no way to "try `recall_target=0.99`, check the recall, try
+`0.95`, check again" against a book with no known chapters. What
+*does* carry over to a real, unlabeled document is the other half of what
+this whole section has been trading against: not recall, but
+**candidate_fraction**, which is directly observable for any document
+(count how many of its own pages clear a given threshold) with no ground
+truth needed at all. A more principled version of "retry with different
+targets" is therefore document-relative rather than type-bucketed: score
+every page of the new document, then pick the *lowest* probability
+threshold such that this specific document's own resulting
+candidate_fraction stays under a fixed cap (e.g. 15%) -- equivalent to
+always taking the top-N-percent highest-scoring pages of that document,
+rather than a threshold calibrated once on training data and applied
+uniformly. This should automatically behave like the type split above
+without needing to know or detect extraction_type at all: an easy,
+high-contrast book's probabilities are naturally more separated, so the
+same candidate-fraction cap admits a much higher effective recall target
+for it than for a noisy book where many pages sit near the decision
+boundary. This is a different selection strategy, not just a different
+constant -- it would replace `select_threshold`'s recall-target semantics
+with a candidate-budget-target one -- so it's a real design change,
+untested here, not a same-session tweak; flagging it as the more promising
+direction if this axis gets picked up again, rather than further
+type-bucket tuning.
+
+**A new feature was tried and rejected: `early_gap_ratio`.** Motivated by
+the three books still failing `chapter_first_recall` at
+`recall_target=0.988` (`9781783749478`, `9783837681192`, `9783907297285`)
+being labeled "weak font-size contrast" without that actually being
+re-verified for each -- checking directly found `9783907297285`'s misses
+are dominated by `left_margin_var`/`left_margin_mean` contributions (large,
+irregular left-indentation, not font size), so that label was too coarse.
+Hypothesis: a chapter heading can lack font-size contrast with body text
+and still leave a visually larger vertical *gap* before the body starts
+(extra leading/whitespace after a heading line, same font). Prototyped
+directly against cached ALTO XML (not yet wired into the shipped feature
+set): for each page, the ratio of the largest gap among its first 8
+line-to-line transitions to its own median line-to-line gap. Checked in
+isolation against the three target books' true `chapter_first` pages vs. a
+random sample of other pages: real separation for 2 of 3
+(`9781783749478`: median ratio 14.8 vs. 9.2; `9783907297285`: 12.7 vs.
+4.7) but not the third (`9783837681192`: 7.2 vs. 6.2, confirming that
+book's issue is something else, consistent with the margin-variance
+finding above).
+
+Despite the promising isolated signal, wiring it into
+`layout_features.py` as an 18th feature (`early_gap_ratio`, added to
+`PAGE_FEATURE_NAMES`) and re-running the full LOBO suite made things
+*worse*, not better, at the operating point that matters: open-access
+alone at `recall_target=0.988` dropped from 94.7%/13.8% to
+93.0%/13.5% -- one point of avg_candidate_fraction improvement bought by
+losing a previously-passing book (`9783839446270`'s
+`chapter_first_recall` fell from 91% to 73%) for no gain on either of the
+two target books it was meant to help (`9783837681192` and
+`9783907297285` both scored identically with or without it). The full
+89-book corpus at the shipped `recall_target=0.90` default moved
++1 point (64%->65% full_recall, 10.4%->10.3% avg_cand) -- within
+noise, not a real signal either way. **Reverted** (net negative at the
+one operating point it was targeted at, neutral everywhere else) -- the
+same "looked promising in isolation, hurt in the full LOBO context"
+pattern the model-architecture follow-up already found once with
+`max_font_vpos_fraction`. Isolated single-feature separation checks on a
+handful of hand-picked books are not a reliable predictor of a feature's
+effect once it's added to a 17-way logistic regression trained across an
+89-book pool; only a full LOBO re-run answers that.

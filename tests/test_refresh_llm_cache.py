@@ -7,7 +7,12 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from evaluation.refresh_llm_cache import _all_cached_model_ids, _fully_covered_model_ids, _upsert_cache
+from evaluation.refresh_llm_cache import (
+    _all_cached_model_ids,
+    _fully_covered_model_ids,
+    _has_cached_entry,
+    _upsert_cache,
+)
 
 
 class TestFullyCoveredModelIds(unittest.TestCase):
@@ -117,6 +122,27 @@ class TestAllCachedModelIds(unittest.TestCase):
             self.assertEqual(
                 _all_cached_model_ids([(cache_dir, "book-a"), (cache_dir, "book-b")]), {"model-x"},
             )
+
+
+class TestHasCachedEntry(unittest.TestCase):
+    def test_no_cache_file_returns_false(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertFalse(_has_cached_entry(Path(tmp), "book-a", "model-x"))
+
+    def test_cache_file_without_model_returns_false(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            (cache_dir / "book-a.json").write_text(json.dumps({"models": {}}), encoding="utf-8")
+            self.assertFalse(_has_cached_entry(cache_dir, "book-a", "model-x"))
+
+    def test_cache_file_with_model_returns_true(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            (cache_dir / "book-a.json").write_text(
+                json.dumps({"models": {"model-x": {"chapters": [], "elapsed_seconds": 1.0, "demand_at_run": 0}}}),
+                encoding="utf-8",
+            )
+            self.assertTrue(_has_cached_entry(cache_dir, "book-a", "model-x"))
 
 
 class TestUpsertCache(unittest.TestCase):

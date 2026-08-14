@@ -125,6 +125,16 @@ def _all_cached_model_ids(book_specs: list[tuple[Path, str]]) -> set[str]:
     return ids
 
 
+def _has_cached_entry(cache_dir: Path, manifest_key: str, model_id: str) -> bool:
+    """True if this book's cache file already has an entry for model_id --
+    used by fill-gaps mode to skip work already done, so an interrupted run
+    doesn't get redone from scratch the next time this model is selected."""
+    cache_path = cache_dir / f"{manifest_key}.json"
+    if not cache_path.exists():
+        return False
+    return model_id in json.loads(cache_path.read_text(encoding="utf-8")).get("models", {})
+
+
 def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:
     """Writes/updates model_id's cache entry for one book. Each model entry
     carries its own generated_at timestamp (not just the file-level one,

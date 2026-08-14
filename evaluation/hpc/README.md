@@ -40,9 +40,15 @@ Files in this directory:
   pipeline steps in order: train, merge, convert+quantize, score (both
   the fine-tuned and base checkpoints, on the same held-out split).
 
-Nothing under this directory needs `--nv`/GPU access except the training
-and scoring steps -- GGUF conversion/quantization is CPU work and runs
-without it, so it doesn't waste GPU allocation time.
+`convert_hf_to_gguf.py` (plain Python) doesn't need `--nv`/GPU access,
+but `llama-quantize` does -- not because quantization itself runs on
+the GPU, but because `nuextract.def` builds the whole `llama.cpp` tree
+with CUDA support on, which dynamically links the binary against
+`libcuda.so.1` regardless. Without `--nv`, it fails to even load
+("error while loading shared libraries: libcuda.so.1..."), found the
+hard way on a real run -- `run_pilot.slurm`'s quantize step passes
+`--nv` for exactly this reason. Costs nothing extra either way: the
+whole job already reserves 1 GPU for its full duration.
 
 ## 0. Data transfer: ship the extracted text, not the PDFs
 

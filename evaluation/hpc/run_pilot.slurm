@@ -102,7 +102,15 @@ echo "Using llama-quantize at: $QUANTIZE_BIN"
 
 srun apptainer exec -B "$BIND" "$SIF" \
     python /opt/llama.cpp/convert_hf_to_gguf.py "$MERGED_DIR" --outfile "$FP16_GGUF"
-srun apptainer exec -B "$BIND" "$SIF" \
+# --nv IS needed here, unlike convert_hf_to_gguf.py above -- nuextract.def
+# builds the whole llama.cpp tree with -DGGML_CUDA=ON, so llama-quantize
+# is dynamically linked against libcuda.so.1 even though quantization
+# itself never executes GPU code. Without --nv (bind-mounting the host's
+# CUDA driver libs), the binary fails to even load: "error while loading
+# shared libraries: libcuda.so.1: cannot open shared object file". Costs
+# nothing extra -- the whole job already reserves 1 GPU throughout via
+# #SBATCH --gres=gpu:a100:1, this doesn't request anything additional.
+srun apptainer exec --nv -B "$BIND" "$SIF" \
     "$QUANTIZE_BIN" "$FP16_GGUF" "$Q4_GGUF" Q4_K_M
 
 echo "=== [4/5] score fine-tuned checkpoint on held-out split ($(date)) ==="

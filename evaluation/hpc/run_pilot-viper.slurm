@@ -127,7 +127,15 @@ echo "Using llama-quantize at: $QUANTIZE_BIN"
 
 srun apptainer exec -B "$BIND" "$SIF" \
     python /opt/llama.cpp/convert_hf_to_gguf.py "$MERGED_DIR" --outfile "$FP16_GGUF"
-srun apptainer exec -B "$BIND" "$SIF" \
+# --rocm IS needed here -- found the hard way on the Raven sibling
+# (run_pilot.slurm): nuextract-viper.def builds the whole llama.cpp tree
+# with -DGGML_HIP=ON, so llama-quantize is dynamically linked against
+# the HIP runtime even though quantization itself never executes GPU
+# code. Without --rocm (bind-mounting the host's ROCm driver libs), the
+# binary fails to even load ("error while loading shared libraries").
+# Costs nothing extra -- the whole job already reserves the APU
+# throughout via #SBATCH --gres=gpu:1.
+srun apptainer exec --rocm -B "$BIND" "$SIF" \
     "$QUANTIZE_BIN" "$FP16_GGUF" "$Q4_GGUF" Q4_K_M
 
 echo "=== [4/5] score fine-tuned checkpoint on held-out split ($(date)) ==="

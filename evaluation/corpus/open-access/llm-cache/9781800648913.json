@@ -35,15 +35,15 @@
           "source": "llm"
         },
         {
-          "title": "5. How Playwork in the United Kingdom Coped with Covid-19 and the 23 March Lockdown",
+          "title": "Introduction",
           "authors": [
             "Pete King"
           ],
           "pdf_start_index": 129,
           "pdf_end_index": 150,
-          "citation_pages": "97-118",
-          "confidence": 0.93,
-          "page_mapping_confidence": "inferred",
+          "citation_pages": "xix-118",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -55,16 +55,201 @@
             "Hitoshi Shimamura\nChildren"
           ],
           "pdf_start_index": 151,
-          "pdf_end_index": 497,
-          "citation_pages": "119-465",
+          "pdf_end_index": 172,
+          "citation_pages": "119-142",
           "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Objects of Resilience: Plush Perspectives on Pandemic Toy Play in Finland",
+          "authors": [
+            "Katriina Heljakka",
+            "Susan Pearce",
+            "Csikszentmihalyi"
+          ],
+          "pdf_start_index": 175,
+          "pdf_end_index": 197,
+          "citation_pages": "143-166",
+          "confidence": 0.9,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. ‘This Is the Ambulance, This Truck’: Covid as Frame, Theme and Provocation in Philadelphia, USA",
+          "authors": [
+            "Anna Beresin"
+          ],
+          "pdf_start_index": 199,
+          "pdf_end_index": 221,
+          "citation_pages": "167-190",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9. Parents’ Perspectives on Their Children’s Play and Friendships during the Covid-19 Pandemic in England",
+          "authors": [
+            "Friendships",
+            "Caron Carter"
+          ],
+          "pdf_start_index": 223,
+          "pdf_end_index": 245,
+          "citation_pages": "191-214",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10. Digital Heroes of the Imagination: An Exploration of Disabled-Led Play in England during the Covid-19 Pandemic",
+          "authors": [
+            "William Renel",
+            "Jessica Thom\nIntroduction \nSince",
+            "Abrams",
+            "Abbott"
+          ],
+          "pdf_start_index": 247,
+          "pdf_end_index": 270,
+          "citation_pages": "215-238",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "11. Play and Vulnerability in Scotland during the Covid-19 Pandemic",
+          "authors": [
+            "Nicolas Le Bigre\nIntroduction"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 296,
+          "citation_pages": "239-264",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "12. How Young Children Played during the Covid-19 Lockdown in 2020 in Ireland: Findings from the Play and Learning in the Early Years (PLEY) Covid-19 Study",
+          "authors": [
+            "Learning",
+            "Suzanne M. Egan",
+            "Jennifer Pope",
+            "Chloé Beatty",
+            "Clara Hoyne\nIntroduction"
+          ],
+          "pdf_start_index": 297,
+          "pdf_end_index": 316,
+          "citation_pages": "265-284",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "13. Children’s Emerging Play and Experience in the Covid-19 Era: Educational Endeavours and Changes in South Korea",
+          "authors": [],
+          "pdf_start_index": 317,
+          "pdf_end_index": 329,
+          "citation_pages": "285-298",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "14. The Observatory of Children’s Play Experiences during Covid-19: A Photo Essay",
+          "authors": [
+            "John Potter",
+            "Michelle Cannon\nIntroduction\nThe Play Observatory"
+          ],
+          "pdf_start_index": 331,
+          "pdf_end_index": 349,
+          "citation_pages": "299-318",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "15. Happy Yardi Gras! Playing with Carnival in New Orleans during the Covid-19 Pandemic",
+          "authors": [
+            "Yardi Gras",
+            "Martha Radice\nIntroduction"
+          ],
+          "pdf_start_index": 351,
+          "pdf_end_index": 374,
+          "citation_pages": "319-342",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "16. ‘We Stayed Home and Found New Ways to Play’: A Study of Playfulness, Creativity and Resilience in Australian Children during the Covid-19 Pandemic",
+          "authors": [
+            "Judy McKinty",
+            "Ruth Hazleton",
+            "Danni von der"
+          ],
+          "pdf_start_index": 375,
+          "pdf_end_index": 402,
+          "citation_pages": "343-370",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "17. Techno-Mischief: Negotiating Exaggeration Online in Quarantine",
+          "authors": [
+            "Anna Beresin\nZoom",
+            "Zoom",
+            "Beresin"
+          ],
+          "pdf_start_index": 403,
+          "pdf_end_index": 425,
+          "citation_pages": "371-394",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "18. What’s behind the Mask? Family, Fandoms and Playful Caring around Children’s Masks during the Covid-19 Pandemic",
+          "authors": [
+            "Mask",
+            "Playful Caring",
+            "Yinka Olusoga",
+            "Catherine Bannister"
+          ],
+          "pdf_start_index": 427,
+          "pdf_end_index": 458,
+          "citation_pages": "395-426",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "19. Art in the Streets: Playful Politics in the Work of The Velvet Bandit and SudaLove",
+          "authors": [],
+          "pdf_start_index": 459,
+          "pdf_end_index": 472,
+          "citation_pages": "427-440",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Conclusion: Covid in a Play Frame",
+          "authors": [
+            "Anna Beresin",
+            "Julia Bishop",
+            "Biden"
+          ],
+          "pdf_start_index": 473,
+          "pdf_end_index": 497,
+          "citation_pages": "441-465",
+          "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 18.981180915000095,
+      "elapsed_seconds": 97.83761204199982,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T05:15:37.667391+00:00"
+  "generated_at": "2026-08-14T05:30:48.881503+00:00"
 }

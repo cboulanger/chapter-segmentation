@@ -20,7 +20,7 @@
           ],
           "pdf_start_index": 187,
           "pdf_end_index": 221,
-          "citation_pages": "231-244",
+          "citation_pages": "245-276",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -37,7 +37,7 @@
           ],
           "pdf_start_index": 223,
           "pdf_end_index": 229,
-          "citation_pages": "245-245",
+          "citation_pages": "277-288",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -61,7 +61,7 @@
           ],
           "pdf_start_index": 231,
           "pdf_end_index": 244,
-          "citation_pages": "246-254",
+          "citation_pages": "289-300",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -73,7 +73,7 @@
           ],
           "pdf_start_index": 245,
           "pdf_end_index": 245,
-          "citation_pages": "255-245",
+          "citation_pages": "301-320",
           "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -93,7 +93,7 @@
           ],
           "pdf_start_index": 246,
           "pdf_end_index": 253,
-          "citation_pages": "246-254",
+          "citation_pages": "321-346",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -111,7 +111,7 @@
           ],
           "pdf_start_index": 255,
           "pdf_end_index": 276,
-          "citation_pages": "255-276",
+          "citation_pages": "347-360",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -131,7 +131,7 @@
           ],
           "pdf_start_index": 277,
           "pdf_end_index": 288,
-          "citation_pages": "277-288",
+          "citation_pages": "361-388",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -154,7 +154,7 @@
           ],
           "pdf_start_index": 289,
           "pdf_end_index": 299,
-          "citation_pages": "289-300",
+          "citation_pages": "389-438",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -176,7 +176,7 @@
           ],
           "pdf_start_index": 301,
           "pdf_end_index": 320,
-          "citation_pages": "301-320",
+          "citation_pages": "439-446",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -186,7 +186,7 @@
           "authors": [],
           "pdf_start_index": 321,
           "pdf_end_index": 321,
-          "citation_pages": "321-321",
+          "citation_pages": "447-466",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -207,7 +207,7 @@
           ],
           "pdf_start_index": 322,
           "pdf_end_index": 346,
-          "citation_pages": "322-346",
+          "citation_pages": "467-480",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -230,7 +230,7 @@
           ],
           "pdf_start_index": 347,
           "pdf_end_index": 362,
-          "citation_pages": "347-360",
+          "citation_pages": "481-481",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -253,7 +253,7 @@
           ],
           "pdf_start_index": 363,
           "pdf_end_index": 373,
-          "citation_pages": "361-388",
+          "citation_pages": "482-502",
           "confidence": 0.96,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -271,8 +271,18 @@
           ],
           "pdf_start_index": 375,
           "pdf_end_index": 390,
-          "citation_pages": "389-389",
+          "citation_pages": "503-522",
           "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sprachtheorie und Argumentationstheorie des Rechts",
+          "authors": [],
+          "pdf_start_index": 391,
+          "pdf_end_index": 391,
+          "citation_pages": "523-523",
+          "confidence": 0.89,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -295,7 +305,7 @@
           ],
           "pdf_start_index": 392,
           "pdf_end_index": 439,
-          "citation_pages": "390-438",
+          "citation_pages": "524-542",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -312,7 +322,7 @@
           ],
           "pdf_start_index": 441,
           "pdf_end_index": 448,
-          "citation_pages": "439-446",
+          "citation_pages": "543-560",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -328,7 +338,7 @@
           ],
           "pdf_start_index": 449,
           "pdf_end_index": 457,
-          "citation_pages": "447-79",
+          "citation_pages": "561-79",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -348,7 +358,7 @@
           ],
           "pdf_start_index": 458,
           "pdf_end_index": 467,
-          "citation_pages": "80-466",
+          "citation_pages": "80-576",
           "confidence": 0.64,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -366,7 +376,7 @@
           ],
           "pdf_start_index": 469,
           "pdf_end_index": 482,
-          "citation_pages": "467-480",
+          "citation_pages": "577-577",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -376,7 +386,7 @@
           "authors": [],
           "pdf_start_index": 483,
           "pdf_end_index": 483,
-          "citation_pages": "481-481",
+          "citation_pages": "578-590",
           "confidence": 0.87,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -393,7 +403,7 @@
           ],
           "pdf_start_index": 484,
           "pdf_end_index": 492,
-          "citation_pages": "482-490",
+          "citation_pages": "591-602",
           "confidence": 0.96,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -414,7 +424,7 @@
           ],
           "pdf_start_index": 493,
           "pdf_end_index": 504,
-          "citation_pages": "491-502",
+          "citation_pages": "603-622",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -436,7 +446,7 @@
           ],
           "pdf_start_index": 505,
           "pdf_end_index": 524,
-          "citation_pages": "503-522",
+          "citation_pages": "623-642",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -446,9 +456,9 @@
           "authors": [],
           "pdf_start_index": 525,
           "pdf_end_index": 543,
-          "citation_pages": "iv-541",
+          "citation_pages": "1-660",
           "confidence": 0.68,
-          "page_mapping_confidence": "high",
+          "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
@@ -465,7 +475,7 @@
           ],
           "pdf_start_index": 545,
           "pdf_end_index": 547,
-          "citation_pages": "543-78",
+          "citation_pages": "661-78",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -489,9 +499,9 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 117.09485304099508,
+      "elapsed_seconds": 120.19320437900001,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T15:56:54.072312+00:00"
+  "generated_at": "2026-08-14T05:02:15.378957+00:00"
 }

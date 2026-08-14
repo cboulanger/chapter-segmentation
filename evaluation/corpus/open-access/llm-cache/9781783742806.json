@@ -6,8 +6,18 @@
           "title": "Introduction",
           "authors": [],
           "pdf_start_index": 76,
+          "pdf_end_index": 97,
+          "citation_pages": "1-2",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Open Education Movement",
+          "authors": [],
+          "pdf_start_index": 98,
           "pdf_end_index": 98,
-          "citation_pages": "1-65",
+          "citation_pages": "3-258",
           "confidence": 0.82,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -17,7 +27,7 @@
           "authors": [],
           "pdf_start_index": 99,
           "pdf_end_index": 138,
-          "citation_pages": "66-23",
+          "citation_pages": "259-115",
           "confidence": 0.81,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -29,19 +39,9 @@
             "Carina Bossu\nOpen Educational Policy"
           ],
           "pdf_start_index": 139,
-          "pdf_end_index": 145,
-          "citation_pages": "76-2",
-          "confidence": 0.7,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "The Open Education Movement",
-          "authors": [],
-          "pdf_start_index": 146,
           "pdf_end_index": 201,
-          "citation_pages": "7-17",
-          "confidence": 0.74,
+          "citation_pages": "301-17",
+          "confidence": 0.7,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -54,7 +54,7 @@
           ],
           "pdf_start_index": 203,
           "pdf_end_index": 221,
-          "citation_pages": "18-10",
+          "citation_pages": "18-5",
           "confidence": 0.82,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -73,7 +73,7 @@
           ],
           "pdf_start_index": 223,
           "pdf_end_index": 239,
-          "citation_pages": "11-92",
+          "citation_pages": "6-343",
           "confidence": 0.79,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -82,21 +82,9 @@
           "title": "Conclusion",
           "authors": [],
           "pdf_start_index": 240,
-          "pdf_end_index": 260,
-          "citation_pages": "93-4",
-          "confidence": 0.82,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "The History of Open Education",
-          "authors": [
-            "Howard Miller\nEntering"
-          ],
-          "pdf_start_index": 261,
           "pdf_end_index": 299,
-          "citation_pages": "5-45",
-          "confidence": 0.83,
+          "citation_pages": "344-335",
+          "confidence": 0.82,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -108,9 +96,22 @@
             "L."
           ],
           "pdf_start_index": 300,
-          "pdf_end_index": 348,
-          "citation_pages": "46-343",
+          "pdf_end_index": 342,
+          "citation_pages": "336-321",
           "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Open Education and Research",
+          "authors": [
+            "Giving Credit",
+            "http://www.unesco"
+          ],
+          "pdf_start_index": 343,
+          "pdf_end_index": 354,
+          "citation_pages": "322-320",
+          "confidence": 0.63,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
@@ -119,13 +120,13 @@
           "authors": [],
           "pdf_start_index": 355,
           "pdf_end_index": 362,
-          "citation_pages": "40-338",
+          "citation_pages": "321-338",
           "confidence": 0.91,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 46.659610488,
+      "elapsed_seconds": 41.592221049000045,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -329,5 +330,5 @@
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T05:02:36.675931+00:00"
+  "generated_at": "2026-08-14T05:16:46.449560+00:00"
 }

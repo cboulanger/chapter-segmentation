@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T05:51:36.267065+00:00",
+  "generated_at": "2026-08-14T05:07:26.323251+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -185,7 +185,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 32.45637174799998,
+      "elapsed_seconds": 32.3977125240001,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {

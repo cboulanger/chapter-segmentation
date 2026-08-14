@@ -16,9 +16,9 @@
           ],
           "pdf_start_index": 59,
           "pdf_end_index": 94,
-          "citation_pages": "22-29",
+          "citation_pages": "22-im",
           "confidence": 0.8,
-          "page_mapping_confidence": "inferred",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -37,9 +37,9 @@
           ],
           "pdf_start_index": 95,
           "pdf_end_index": 97,
-          "citation_pages": "30-43",
+          "citation_pages": "97-99",
           "confidence": 0.86,
-          "page_mapping_confidence": "inferred",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -54,9 +54,9 @@
           ],
           "pdf_start_index": 98,
           "pdf_end_index": 117,
-          "citation_pages": "44-44",
+          "citation_pages": "100-119",
           "confidence": 0.62,
-          "page_mapping_confidence": "inferred",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -71,9 +71,9 @@
           ],
           "pdf_start_index": 118,
           "pdf_end_index": 147,
-          "citation_pages": "45-45",
+          "citation_pages": "120-149",
           "confidence": 0.8,
-          "page_mapping_confidence": "inferred",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -90,9 +90,9 @@
           ],
           "pdf_start_index": 148,
           "pdf_end_index": 157,
-          "citation_pages": "46-46",
+          "citation_pages": "150-159",
           "confidence": 0.62,
-          "page_mapping_confidence": "inferred",
+          "page_mapping_confidence": "high",
           "source": "llm"
         },
         {
@@ -112,7 +112,7 @@
           ],
           "pdf_start_index": 158,
           "pdf_end_index": 169,
-          "citation_pages": "47-47",
+          "citation_pages": "160-171",
           "confidence": 0.8,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -130,15 +130,15 @@
           ],
           "pdf_start_index": 170,
           "pdf_end_index": 186,
-          "citation_pages": "48-188",
+          "citation_pages": "172-188",
           "confidence": 0.62,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 36.81209187512286,
+      "elapsed_seconds": 34.01801341800001,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T15:48:08.037757+00:00"
+  "generated_at": "2026-08-14T04:55:39.663129+00:00"
 }

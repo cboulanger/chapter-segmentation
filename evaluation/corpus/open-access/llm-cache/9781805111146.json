@@ -47,8 +47,8 @@
             "Existential Risk"
           ],
           "pdf_start_index": 185,
-          "pdf_end_index": 228,
-          "citation_pages": "177-220",
+          "pdf_end_index": 217,
+          "citation_pages": "177-210",
           "confidence": 1.0,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -143,8 +143,8 @@
             "Lara Mani"
           ],
           "pdf_start_index": 345,
-          "pdf_end_index": 368,
-          "citation_pages": "337-360",
+          "pdf_end_index": 361,
+          "citation_pages": "337-354",
           "confidence": 0.97,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -240,8 +240,8 @@
             "Jess Whittlestone\nHighlights"
           ],
           "pdf_start_index": 493,
-          "pdf_end_index": 527,
-          "citation_pages": "485-520",
+          "pdf_end_index": 519,
+          "citation_pages": "485-512",
           "confidence": 0.98,
           "page_mapping_confidence": "inferred",
           "source": "llm"
@@ -328,9 +328,9 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 107.17642010999998,
+      "elapsed_seconds": 112.12373362400012,
       "demand_at_run": 0
     }
   },
-  "generated_at": "2026-08-13T05:18:58.481203+00:00"
+  "generated_at": "2026-08-14T05:34:14.432296+00:00"
 }

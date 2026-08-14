@@ -82,13 +82,18 @@ From: nvcr.io/nvidia/pytorch:25.01-py3
     # the torch dev-version ambiguity entirely rather than needing to
     # out-guess it. peft==0.14.0/accelerate==1.4.0 are contemporaneous
     # (accelerate 1.4.0 shipped the same day as transformers 4.49.0,
-    # 2025-02-17). huggingface-hub is left at the original floor --
-    # no evidence it's ever been part of any of the three failures above.
+    # 2025-02-17). huggingface-hub==0.28.1 (2025-01-30, ~2.5 weeks
+    # earlier -- the closest real release to that date) replaces the
+    # original floor: transformers==4.49.0 hard-requires
+    # huggingface-hub>=0.26.0,<1.0 (`pip` refuses to resolve
+    # transformers==4.49.0 against huggingface-hub==0.25.0 at all), so
+    # the original floor is no longer installable now that transformers
+    # is pinned past it.
     pip3 install --no-cache-dir \
         "transformers==4.49.0" \
         "peft==0.14.0" \
         "accelerate==1.4.0" \
-        "huggingface-hub==0.25.0"
+        "huggingface-hub==0.28.1"
 
     # CUDA-accelerated build -- the base image ships the full CUDA
     # toolkit (nvcc etc.), so this picks up GPU offload automatically.

@@ -73,14 +73,19 @@ From: rocm/pytorch:rocm6.4.4_ubuntu22.04_py3.10_pytorch_release_2.7.1
     # Raven's `2.6.0a0+<hash>` build does, but there's no reason to
     # introduce an untested variable between the two containers when
     # this exact combination is already known to dodge every failure
-    # mode found so far. These are GPU-agnostic pure-Python packages --
-    # only torch itself needs to be a ROCm build (comes from the base
-    # image).
+    # mode found so far. huggingface-hub==0.28.1 (2025-01-30, the closest
+    # real release to transformers==4.49.0's date) replaces the original
+    # 0.25.0 floor -- transformers==4.49.0 hard-requires
+    # huggingface-hub>=0.26.0,<1.0, so 0.25.0 is no longer installable
+    # alongside it at all (pip's resolver refuses outright, found on
+    # Raven's identical pin). These are GPU-agnostic pure-Python
+    # packages -- only torch itself needs to be a ROCm build (comes from
+    # the base image).
     pip3 install --no-cache-dir \
         "transformers==4.49.0" \
         "peft==0.14.0" \
         "accelerate==1.4.0" \
-        "huggingface-hub==0.25.0"
+        "huggingface-hub==0.28.1"
 
     # HIP-accelerated build -- the AMD equivalent of ../nuextract.def's
     # CUDA build section. Two things carry over from that file's own

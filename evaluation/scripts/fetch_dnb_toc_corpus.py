@@ -1,0 +1,308 @@
+#!/usr/bin/env python3
+"""Acquires real DNB-scanned table-of-contents PDFs via the lobid-resources
+API (lobid.org/resources) into evaluation/corpus/dnb-toc-only/ -- see
+docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md.
+
+Every acquired record's PDF is a CC0-licensed, DNB-digitized TOC scan
+(the "Kataloganreicherung" program), never the surrounding book, so this
+corpus is deliberately shaped differently from open-access/copyrighted-scans
+(see manifest_entry_from_record below and the design spec) -- no
+extraction_type/embedded_toc/oa/download_url fields, and no
+<id>.expected.json is produced by this script.
+
+Two acquisition modes, because tableOfContents is not queryable
+server-side in lobid-resources (confirmed empirically -- see design spec):
+
+    uv run python evaluation/scripts/fetch_dnb_toc_corpus.py \\
+        --isbns-file /tmp/isbns.txt --limit 20
+    uv run python evaluation/scripts/fetch_dnb_toc_corpus.py \\
+        --from-dump --limit 500
+
+--from-dump streams the full weekly lobid-resources JSON-Lines dump
+(~21.5GB gzip as of 2026-08-14, one bibliographic record per line) and
+filters client-side -- there is no per-request cost per scanned record,
+only per acquired match (one PDF download + a rate-limit sleep), but a
+full scan is still an hours-long, many-GB operation against a shared
+public service. Run it deliberately, not as part of routine development.
+
+manifest.json is the only file this script writes to git -- PDFs stay
+gitignored (evaluation/.gitignore's blanket *.pdf), same as every other
+corpus. See "PDFs are never committed" in the design spec: this corpus's
+full PDF set is meant for a separate Zenodo dataset upload, not this repo.
+"""
+
+import argparse
+import gzip
+import json
+import sys
+import time
+from pathlib import Path
+from typing import Iterator, Optional
+
+import httpx
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+
+from evaluation.harness import corpus_dir
+
+_DUMP_URL_DEFAULT = "https://lobid.org/download/dumps/lobid-resources/latestLobidResources.jsonl.gz"
+_SEARCH_URL = "https://lobid.org/resources/search"
+_CORPUS_NAME = "dnb-toc-only"
+
+# lobid-resources carries language as a full ISO 639-2 URI
+# (.../iso639-2/ger); every other corpus's manifest.json uses ISO 639-1
+# two-letter codes ("de", "en") -- map the common cases so this field
+# stays consistent with the shared manifest shape, falling back to the
+# raw three-letter code for anything not in this short list.
+_ISO_639_2_TO_1 = {
+    "ger": "de", "eng": "en", "fre": "fr", "fra": "fr", "spa": "es",
+    "ita": "it", "dut": "nl", "nld": "nl", "lat": "la", "rus": "ru",
+}
+
+
+def _record_matches(record: dict) -> bool:
+    """A lobid-resources record is a usable acquisition target if it's
+    typed as a Book or EditedVolume and carries a non-empty
+    tableOfContents array."""
+    types = record.get("type") or []
+    if not any(t in ("Book", "EditedVolume") for t in types):
+        return False
+    return bool(record.get("tableOfContents"))
+
+
+def _toc_download_url(record: dict) -> Optional[str]:
+    for entry in record.get("tableOfContents") or []:
+        url = entry.get("id")
+        if url:
+            return url
+    return None
+
+
+def _record_key(record: dict) -> str:
+    """Manifest key (and PDF filename stem): the record's first ISBN when
+    present, otherwise the numeric ID from its own lobid URI -- not every
+    lobid-resources record carries an ISBN (confirmed empirically against
+    the live dump)."""
+    isbns = record.get("isbn") or []
+    if isbns:
+        return isbns[0]
+    record_id = (record.get("id") or "").rstrip("#!")
+    return record_id.rsplit("/", 1)[-1] or "unknown"
+
+
+def _record_language(record: dict) -> Optional[str]:
+    languages = record.get("language") or []
+    if not languages:
+        return None
+    code = (languages[0].get("id") or "").rsplit("/", 1)[-1]
+    if not code:
+        return None
+    return _ISO_639_2_TO_1.get(code, code)
+
+
+def _record_doi(record: dict) -> Optional[str]:
+    # lobid-resources records rarely carry a DOI (confirmed empirically --
+    # unlike Crossref, DNB/hbz catalog records don't reliably have one).
+    return record.get("doi")
+
+
+def manifest_entry_from_record(record: dict, filename: str) -> dict:
+    """Builds this corpus's manifest.json book entry. lobid_record holds
+    the full record verbatim, nested under its own key rather than
+    flattened -- it cost nothing extra to fetch (the whole record already
+    has to be pulled to read tableOfContents) so it's kept in full for
+    future analysis this script doesn't otherwise use; no other code in
+    this repo reads that key."""
+    return {
+        "filename": filename,
+        "title": record.get("title") or "",
+        "language": _record_language(record),
+        "doi": _record_doi(record),
+        "toc_download_url": _toc_download_url(record),
+        "license": "CC0-1.0",
+        "license_source": "dnb",
+        "lobid_record": record,
+    }
+
+
+def _search_by_isbn(isbn: str, client: httpx.Client) -> Optional[dict]:
+    response = client.get(_SEARCH_URL, params={"q": f"isbn:{isbn}", "format": "json"})
+    response.raise_for_status()
+    members = response.json().get("member", [])
+    return members[0] if members else None
+
+
+class _ChunkStreamReader:
+    """Minimal file-like adapter so gzip.GzipFile can decompress an
+    iterator of byte chunks (httpx's streaming response body) without
+    buffering the whole multi-GB response in memory."""
+
+    def __init__(self, chunks: Iterator[bytes]):
+        self._chunks = chunks
+        self._buffer = b""
+
+    def read(self, size: int = -1) -> bytes:
+        while size < 0 or len(self._buffer) < size:
+            try:
+                self._buffer += next(self._chunks)
+            except StopIteration:
+                break
+        if size < 0:
+            result, self._buffer = self._buffer, b""
+        else:
+            result, self._buffer = self._buffer[:size], self._buffer[size:]
+        return result
+
+
+def _iter_dump_records_from_chunks(chunks: Iterator[bytes]) -> Iterator[dict]:
+    with gzip.GzipFile(fileobj=_ChunkStreamReader(chunks)) as gz:
+        for raw_line in gz:
+            line = raw_line.strip()
+            if line:
+                yield json.loads(line)
+
+
+def _iter_dump_records(url: str, client: httpx.Client) -> Iterator[dict]:
+    with client.stream("GET", url) as response:
+        response.raise_for_status()
+        yield from _iter_dump_records_from_chunks(response.iter_bytes())
+
+
+def _read_isbns_file(path: Path) -> list[str]:
+    isbns = []
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if line and not line.startswith("#"):
+            isbns.append(line)
+    return isbns
+
+
+def _load_existing_keys(manifest_path: Path) -> set[str]:
+    if not manifest_path.exists():
+        return set()
+    data = json.loads(manifest_path.read_text(encoding="utf-8"))
+    return {Path(book["filename"]).stem for book in data.get("books", [])}
+
+
+def _ensure_manifest_shell(manifest_path: Path) -> None:
+    if manifest_path.exists():
+        return
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    manifest_path.write_text(
+        json.dumps({"toc_only": True, "books": []}, indent=2) + "\n", encoding="utf-8",
+    )
+
+
+def _append_book(manifest_path: Path, entry: dict) -> None:
+    data = json.loads(manifest_path.read_text(encoding="utf-8"))
+    data["books"].append(entry)
+    manifest_path.write_text(
+        json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8",
+    )
+
+
+def _acquire_record(
+    record: dict,
+    cdir: Path,
+    manifest_path: Path,
+    client: httpx.Client,
+    rate_limit_seconds: float,
+    seen_keys: set[str],
+) -> bool:
+    """Downloads one matched record's TOC PDF and appends its manifest
+    entry. Returns True iff a new book was acquired (so callers can count
+    toward --limit); False for a non-match, an already-acquired key, or a
+    record with no resolvable TOC URL."""
+    if not _record_matches(record):
+        return False
+    key = _record_key(record)
+    if key in seen_keys:
+        return False
+    toc_url = _toc_download_url(record)
+    if not toc_url:
+        return False
+    filename = f"{key}.pdf"
+    response = client.get(toc_url)
+    response.raise_for_status()
+    (cdir / filename).write_bytes(response.content)
+    _append_book(manifest_path, manifest_entry_from_record(record, filename))
+    seen_keys.add(key)
+    print(f"[fetch] {filename} <- {toc_url}")
+    time.sleep(rate_limit_seconds)
+    return True
+
+
+def _run_isbns_file(args: argparse.Namespace, cdir: Path, manifest_path: Path, client: httpx.Client) -> None:
+    seen_keys = _load_existing_keys(manifest_path)
+    acquired = 0
+    for isbn in _read_isbns_file(Path(args.isbns_file)):
+        if args.limit is not None and acquired >= args.limit:
+            break
+        record = _search_by_isbn(isbn, client)
+        if record is None:
+            print(f"[skip] {isbn}: no lobid-resources record found")
+            continue
+        if _acquire_record(record, cdir, manifest_path, client, args.rate_limit_seconds, seen_keys):
+            acquired += 1
+        else:
+            print(f"[skip] {isbn}: not a usable Book/EditedVolume-with-TOC record")
+    print(f"Acquired {acquired} new book(s).")
+
+
+def _run_from_dump(args: argparse.Namespace, cdir: Path, manifest_path: Path, client: httpx.Client) -> None:
+    seen_keys = _load_existing_keys(manifest_path)
+    acquired = 0
+    scanned = 0
+    for record in _iter_dump_records(args.dump_url, client):
+        scanned += 1
+        if scanned % 100_000 == 0:
+            print(f"[scan] {scanned:,} records scanned, {acquired} acquired so far")
+        if args.limit is not None and acquired >= args.limit:
+            break
+        if _acquire_record(record, cdir, manifest_path, client, args.rate_limit_seconds, seen_keys):
+            acquired += 1
+    print(f"Scanned {scanned:,} records, acquired {acquired} new book(s).")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description=__doc__.split("\n\n")[0], formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument(
+        "--from-dump", action="store_true",
+        help="Scan the full lobid-resources JSON-Lines dump for matching records (hours-long; see module docstring)",
+    )
+    mode.add_argument(
+        "--isbns-file",
+        help="Path to a text file of ISBNs (one per line, '#' comments allowed) to look up individually",
+    )
+    parser.add_argument(
+        "--dump-url", default=_DUMP_URL_DEFAULT,
+        help=f"lobid-resources dump URL for --from-dump (default: {_DUMP_URL_DEFAULT})",
+    )
+    parser.add_argument("--limit", type=int, default=None, help="Stop after acquiring this many new books")
+    parser.add_argument(
+        "--rate-limit-seconds", type=float, default=1.0,
+        help="Delay after each TOC PDF download, to stay polite to DNB's servers (default: 1.0)",
+    )
+    args = parser.parse_args()
+
+    cdir = corpus_dir(_CORPUS_NAME)
+    cdir.mkdir(parents=True, exist_ok=True)
+    manifest_path = cdir / "manifest.json"
+    _ensure_manifest_shell(manifest_path)
+
+    with httpx.Client(
+        follow_redirects=True,
+        timeout=httpx.Timeout(connect=30.0, read=120.0, write=30.0, pool=30.0),
+    ) as client:
+        if args.isbns_file:
+            _run_isbns_file(args, cdir, manifest_path, client)
+        else:
+            _run_from_dump(args, cdir, manifest_path, client)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

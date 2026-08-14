@@ -60,6 +60,12 @@ export HF_HUB_OFFLINE=1
 # anywhere below), so this reaches every `apptainer exec ... python`
 # call that follows.
 export PYTHONPATH="${REPO_DIR}/src:${REPO_DIR}"
+# Free mitigation against allocator fragmentation, straight from the CUDA
+# OOM error's own suggested fix -- doesn't replace the real fix
+# (gradient checkpointing, in finetune_nuextract.py) but costs nothing
+# to also set. Must be set before the first CUDA allocation, so exported
+# here rather than inside the script.
+export PYTORCH_CUDA_ALLOC_CONF="expandable_segments:True"
 
 ADAPTER_DIR="${PTMP}/nuextract-pilot/adapter"
 MERGED_DIR="${PTMP}/nuextract-pilot/merged"

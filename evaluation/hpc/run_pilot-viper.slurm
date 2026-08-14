@@ -86,6 +86,11 @@ export HF_HUB_OFFLINE=1
 # gets. Apptainer passes the host environment through by default (no
 # --cleanenv used below), so this reaches every apptainer exec call.
 export PYTHONPATH="${REPO_DIR}/src:${REPO_DIR}"
+# See run_pilot.slurm's identical export: free allocator-fragmentation
+# mitigation, doesn't replace the real fix (gradient checkpointing, in
+# finetune_nuextract.py) but costs nothing. Must be set before the first
+# CUDA/HIP allocation.
+export PYTORCH_CUDA_ALLOC_CONF="expandable_segments:True"
 
 ADAPTER_DIR="${PTMP}/nuextract-pilot/adapter"
 MERGED_DIR="${PTMP}/nuextract-pilot/merged"

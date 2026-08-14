@@ -76,6 +76,16 @@ def _main() -> int:
     )
     model = get_peft_model(model, lora_config)
     model.print_trainable_parameters()
+    # Gradient checkpointing trades recomputation for activation memory --
+    # necessary headroom for a 4B-param model even at batch_size=1 (hit a
+    # CUDA OOM on a 40GB A100 without it, ~38GB used just before the first
+    # backward pass completed). enable_input_require_grads() is required
+    # alongside it specifically because the base model is frozen (LoRA):
+    # without it, the frozen input embeddings have no grad_fn for
+    # checkpointing to hook into and gradients never reach the LoRA
+    # adapters at all -- a well-known PEFT+gradient-checkpointing gotcha,
+    # not optional here.
+    model.enable_input_require_grads()
 
     raw_examples = _load_examples(_TRAIN_PATH)
     pad_token_id = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id
@@ -94,6 +104,8 @@ def _main() -> int:
         num_train_epochs=args.epochs,
         per_device_train_batch_size=1,
         gradient_accumulation_steps=4,
+        gradient_checkpointing=True,
+        gradient_checkpointing_kwargs={"use_reentrant": False},
         learning_rate=args.learning_rate,
         logging_steps=1,
         save_strategy="epoch",

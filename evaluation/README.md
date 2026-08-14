@@ -314,11 +314,19 @@ models. `--mode fill-gaps` instead finds non-busy models not yet cached
 for every book in the corpus and runs up to 5 of those -- this is what
 `.github/workflows/refresh-llm-cache.yml`'s nightly schedule uses, so the
 cache grows to cover every available/busy model over time without paying
-to re-run models it already has complete data for. The same workflow also
-exposes a manual `workflow_dispatch` trigger (using `--mode top5`) for an
-on-demand refresh, e.g. right after a prompt change, to sanity-check the
-current best models. Either trigger commits the updated cache files
-straight to `main`, which republishes the report automatically.
+to re-run models it already has complete data for. Within a fill-gaps
+run, a (book, model) pair that's already cached is skipped, so an
+interrupted run (job timeout, a transient failure) resumes from where it
+left off next time rather than redoing the selected model's whole book
+set from scratch. Books are processed concurrently per model (`--concurrency`,
+default 4 -- KISSKI publishes no documented rate limit, so this is a
+conservative default), with up to 3 retries (exponential backoff) per
+request before a book/model pair is logged as failed and skipped. The
+same workflow also exposes a manual `workflow_dispatch` trigger (using
+`--mode top5`) for an on-demand refresh, e.g. right after a prompt
+change, to sanity-check the current best models. Either trigger commits
+the updated cache files straight to `main`, which republishes the report
+automatically.
 
 ### Strategy-pipeline evaluation
 

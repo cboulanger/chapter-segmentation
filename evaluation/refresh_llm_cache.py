@@ -156,6 +156,24 @@ async def _call_with_retry(
     raise last_exc
 
 
+async def _process_model(
+    book_entries: list[tuple[str, str, Path]],
+    concurrency: int,
+    worker: Callable[[str, str, Path], Awaitable],
+) -> None:
+    """Runs worker(corpus, manifest_key, cache_dir) for every book_entries
+    tuple concurrently, bounded by `concurrency` in-flight at once. worker
+    is expected to handle its own errors (it must not raise) -- one book's
+    failure must not cancel the others via asyncio.gather."""
+    semaphore = asyncio.Semaphore(concurrency)
+
+    async def _bounded(corpus: str, manifest_key: str, cache_dir: Path) -> None:
+        async with semaphore:
+            await worker(corpus, manifest_key, cache_dir)
+
+    await asyncio.gather(*(_bounded(corpus, manifest_key, cache_dir) for corpus, manifest_key, cache_dir in book_entries))
+
+
 def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:
     """Writes/updates model_id's cache entry for one book. Each model entry
     carries its own generated_at timestamp (not just the file-level one,

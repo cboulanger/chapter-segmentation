@@ -13,6 +13,7 @@ from evaluation.refresh_llm_cache import (
     _call_with_retry,
     _fully_covered_model_ids,
     _has_cached_entry,
+    _process_model,
     _upsert_cache,
 )
 
@@ -188,6 +189,34 @@ class TestCallWithRetry(unittest.IsolatedAsyncioTestCase):
 
         with self.assertRaises(RuntimeError):
             await _call_with_retry(fn, attempts=3, base_delay=0.01, sleep=sleep)
+
+
+class TestProcessModel(unittest.IsolatedAsyncioTestCase):
+    async def test_calls_worker_once_per_book_entry(self):
+        calls = []
+
+        async def worker(corpus, manifest_key, cache_dir):
+            calls.append((corpus, manifest_key, cache_dir))
+
+        book_entries = [("corpus-a", "book-1", Path("/x")), ("corpus-a", "book-2", Path("/x"))]
+        await _process_model(book_entries, concurrency=4, worker=worker)
+        self.assertEqual(len(calls), 2)
+
+    async def test_never_exceeds_concurrency_limit(self):
+        in_flight = 0
+        max_in_flight = 0
+
+        async def worker(corpus, manifest_key, cache_dir):
+            nonlocal in_flight, max_in_flight
+            in_flight += 1
+            max_in_flight = max(max_in_flight, in_flight)
+            await asyncio.sleep(0.01)
+            in_flight -= 1
+
+        book_entries = [("c", f"book-{i}", Path("/x")) for i in range(10)]
+        await _process_model(book_entries, concurrency=3, worker=worker)
+        self.assertLessEqual(max_in_flight, 3)
+        self.assertGreater(max_in_flight, 1)
 
 
 class TestUpsertCache(unittest.TestCase):

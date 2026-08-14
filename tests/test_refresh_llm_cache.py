@@ -150,6 +150,12 @@ class TestHasCachedEntry(unittest.TestCase):
             )
             self.assertTrue(_has_cached_entry(cache_dir, "book-a", "model-x"))
 
+    def test_malformed_cache_file_is_treated_as_not_cached(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            (cache_dir / "book-a.json").write_text("{not valid json", encoding="utf-8")
+            self.assertFalse(_has_cached_entry(cache_dir, "book-a", "model-x"))
+
 
 class TestCallWithRetry(unittest.IsolatedAsyncioTestCase):
     async def test_succeeds_on_first_try_without_sleeping(self):
@@ -347,6 +353,12 @@ class TestUpsertCache(unittest.TestCase):
 
             self.assertEqual(second_data["models"]["model-old"]["generated_at"], first_timestamp)
             self.assertIn("generated_at", second_data["models"]["model-new"])
+
+    def test_no_leftover_tmp_file_after_write(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            _upsert_cache(cache_dir, "book-a", "model-x", [], 1.0, demand=0)
+            self.assertEqual(sorted(p.name for p in cache_dir.iterdir()), ["book-a.json"])
 
 
 if __name__ == "__main__":

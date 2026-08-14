@@ -142,11 +142,19 @@ def _all_cached_model_ids(book_specs: list[tuple[Path, str]]) -> set[str]:
 def _has_cached_entry(cache_dir: Path, manifest_key: str, model_id: str) -> bool:
     """True if this book's cache file already has an entry for model_id --
     used by fill-gaps mode to skip work already done, so an interrupted run
-    doesn't get redone from scratch the next time this model is selected."""
+    doesn't get redone from scratch the next time this model is selected.
+    A malformed/corrupt cache file (e.g. from a process killed mid-write,
+    before _upsert_cache wrote atomically) is treated as not-cached, so
+    fill-gaps mode reprocesses and overwrites (self-heals) it instead of
+    silently and permanently losing that book/model pair."""
     cache_path = cache_dir / f"{manifest_key}.json"
     if not cache_path.exists():
         return False
-    return model_id in json.loads(cache_path.read_text(encoding="utf-8")).get("models", {})
+    try:
+        models = json.loads(cache_path.read_text(encoding="utf-8")).get("models", {})
+    except json.JSONDecodeError:
+        return False
+    return model_id in models
 
 
 async def _call_with_retry(
@@ -226,7 +234,9 @@ def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: l
     which reflects whichever model was upserted most recently across the
     whole file) -- generate_report.py needs a per-model date to show how
     fresh THAT model's specific numbers are, since different models in the
-    same file can have been refreshed on different nights."""
+    same file can have been refreshed on different nights. Writes
+    atomically (temp file + rename) so a process killed mid-write (e.g. a
+    job timeout) can never leave a truncated/corrupt cache file behind."""
     cache_dir.mkdir(parents=True, exist_ok=True)
     cache_path = cache_dir / f"{manifest_key}.json"
     data = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {"models": {}}
@@ -238,7 +248,9 @@ def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: l
         "demand_at_run": demand,
         "generated_at": now,
     }
-    cache_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp_path = cache_path.with_name(cache_path.name + ".tmp")
+    tmp_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp_path.replace(cache_path)
 
 
 async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], clear: bool, concurrency: int) -> int:

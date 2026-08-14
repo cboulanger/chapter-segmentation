@@ -94,6 +94,21 @@ class TestGenerateCorpus(unittest.TestCase):
             self.assertIn("Start accuracy", main_html)
             self.assertIn("End accuracy", main_html)
 
+    def test_main_report_footer_includes_generation_date(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            root = tmp_path / "corpus"
+            chapters = [{"pdf_start_index": 0, "pdf_end_index": 3}]
+            _write_corpus_fixture(root, "test-corpus", chapters, ["Introduction\nBody text.", "more", "more", "more"])
+            out_dir = tmp_path / "public" / "test-corpus"
+
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch("evaluation.generate_report.public_outline_candidates_for", return_value=None):
+                generate_corpus("test-corpus", out_dir)
+
+            main_html = (out_dir / "index.html").read_text(encoding="utf-8")
+            self.assertRegex(main_html, r"Generated on \d{4}-\d{2}-\d{2} from commit")
+
     def test_returns_false_and_writes_nothing_for_a_corpus_with_no_scorable_books(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
@@ -131,6 +146,21 @@ class TestGenerate(unittest.TestCase):
             landing_html = (out_dir / "index.html").read_text(encoding="utf-8")
             self.assertIn("scored-corpus", landing_html)
             self.assertNotIn("empty-corpus", landing_html)
+
+    def test_landing_page_footer_includes_generation_date(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            root = tmp_path / "corpus"
+            chapters = [{"pdf_start_index": 0, "pdf_end_index": 3}]
+            _write_corpus_fixture(root, "scored-corpus", chapters, ["Introduction\nBody text.", "more", "more", "more"])
+            out_dir = tmp_path / "public"
+
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch("evaluation.generate_report.public_outline_candidates_for", return_value=None):
+                generate(out_dir)
+
+            landing_html = (out_dir / "index.html").read_text(encoding="utf-8")
+            self.assertRegex(landing_html, r"Generated on \d{4}-\d{2}-\d{2} from commit")
 
 
 if __name__ == "__main__":

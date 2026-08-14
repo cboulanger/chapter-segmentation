@@ -19,6 +19,7 @@ import json
 import subprocess
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -43,6 +44,10 @@ def _git_sha() -> str:
         return subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
     except Exception:
         return "unknown"
+
+
+def _today() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
 def _load_llm_cache(corpus: str, manifest_key: str) -> dict:
@@ -173,7 +178,7 @@ is at <a href="llm/index.html">llm/index.html</a>.</p>"""
     )
     html = html.replace(
         "</body></html>",
-        f"<p>Generated from commit {_git_sha()}.</p></body></html>",
+        f"<p>Generated on {_today()} from commit {_git_sha()}.</p></body></html>",
     )
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -252,7 +257,7 @@ for what distinguishes them.</p>
 <ul>
 {links}
 </ul>
-<p>Generated from commit {_git_sha()}.</p>
+<p>Generated on {_today()} from commit {_git_sha()}.</p>
 </body></html>
 """
     out_dir.mkdir(parents=True, exist_ok=True)

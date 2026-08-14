@@ -17,6 +17,7 @@ from evaluation.scripts.evaluate_layout_toc_classifier import (
     load_book_corpus,
     main,
     select_threshold,
+    _write_classifier_results,
 )
 from evaluation.scripts.layout_features import FEATURE_NAMES
 
@@ -606,6 +607,58 @@ class TestAugmentedRowFoldRules(unittest.TestCase):
             self.assertEqual(result["total_pages"], 5)
         # Perfectly-separable synthetic data must still fully recall.
         self.assertEqual(summary["full_recall_fraction"], 1.0)
+
+
+class TestWriteClassifierResults(unittest.TestCase):
+    def test_splits_results_by_corpus_and_computes_aggregates_per_corpus(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            (tmp_path / "open-access").mkdir()
+            (tmp_path / "copyrighted-scans").mkdir()
+            books = [
+                {"key": "oa-book", "corpus": "open-access"},
+                {"key": "scan-book", "corpus": "copyrighted-scans"},
+            ]
+            summary = {
+                "per_book": [
+                    {"book_key": "oa-book", "toc_recall": 1.0, "chapter_first_recall": 0.9,
+                     "candidate_fraction": 0.1, "full_recall": True},
+                    {"book_key": "scan-book", "toc_recall": 0.0, "chapter_first_recall": 0.5,
+                     "candidate_fraction": 0.2, "full_recall": False},
+                ],
+            }
+            with patch("evaluation.scripts.evaluate_layout_toc_classifier._CORPUS_DIR", tmp_path):
+                _write_classifier_results(summary, books)
+
+            oa_data = json.loads((tmp_path / "open-access" / "classifier-results.json").read_text(encoding="utf-8"))
+            self.assertEqual(oa_data["full_recall_fraction"], 1.0)
+            self.assertEqual(oa_data["avg_candidate_fraction"], 0.1)
+            self.assertEqual(oa_data["per_book"]["oa-book"]["toc_recall"], 1.0)
+            self.assertNotIn("scan-book", oa_data["per_book"])
+            self.assertRegex(oa_data["generated_at"], r"^\d{4}-\d{2}-\d{2}T")
+
+            scan_data = json.loads(
+                (tmp_path / "copyrighted-scans" / "classifier-results.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(scan_data["full_recall_fraction"], 0.0)
+            self.assertEqual(scan_data["per_book"]["scan-book"]["candidate_fraction"], 0.2)
+
+    def test_preserves_null_recall_for_a_vacuous_pass(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            (tmp_path / "open-access").mkdir()
+            books = [{"key": "book-a", "corpus": "open-access"}]
+            summary = {
+                "per_book": [
+                    {"book_key": "book-a", "toc_recall": None, "chapter_first_recall": 1.0,
+                     "candidate_fraction": 0.05, "full_recall": True},
+                ],
+            }
+            with patch("evaluation.scripts.evaluate_layout_toc_classifier._CORPUS_DIR", tmp_path):
+                _write_classifier_results(summary, books)
+
+            data = json.loads((tmp_path / "open-access" / "classifier-results.json").read_text(encoding="utf-8"))
+            self.assertIsNone(data["per_book"]["book-a"]["toc_recall"])
 
 
 if __name__ == "__main__":

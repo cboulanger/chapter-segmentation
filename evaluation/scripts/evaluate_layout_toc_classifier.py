@@ -23,6 +23,7 @@ evaluation/scripts/alto_scan_noise.py.
 import argparse
 import math
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
@@ -334,6 +335,46 @@ def evaluate_leave_one_book_out(
     }
 
 
+def _write_classifier_results(summary: dict, books: list[dict]) -> None:
+    """Writes evaluate_leave_one_book_out's per-book summary to
+    evaluation/corpus/<corpus>/classifier-results.json, split by each
+    book's own corpus (one LOBO run can span multiple corpora at once via
+    --corpora) -- generate_report.py reads this to fold the classifier's
+    results into the published report. See design spec
+    docs/superpowers/specs/2026-08-14-report-generator-enhancements-design.md.
+
+    full_recall_fraction/avg_candidate_fraction are recomputed per corpus
+    here rather than reusing summary's own (whole-run) values -- a report
+    page is generated per corpus, so its aggregate numbers must reflect
+    only that corpus's books, not a blend with whatever other corpus was
+    also in scope for this invocation."""
+    books_by_key = {book["key"]: book for book in books}
+    by_corpus: dict[str, list[dict]] = {}
+    for result in summary["per_book"]:
+        corpus = books_by_key[result["book_key"]]["corpus"]
+        by_corpus.setdefault(corpus, []).append(result)
+
+    generated_at = datetime.now(timezone.utc).isoformat()
+    for corpus, results in by_corpus.items():
+        n = len(results)
+        payload = {
+            "generated_at": generated_at,
+            "full_recall_fraction": sum(1 for r in results if r["full_recall"]) / n,
+            "avg_candidate_fraction": sum(r["candidate_fraction"] for r in results) / n,
+            "per_book": {
+                r["book_key"]: {
+                    "toc_recall": r.get("toc_recall"),
+                    "chapter_first_recall": r.get("chapter_first_recall"),
+                    "candidate_fraction": r["candidate_fraction"],
+                }
+                for r in results
+            },
+        }
+        out_path = _CORPUS_DIR / corpus / "classifier-results.json"
+        out_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(f"Wrote {out_path} ({n} books)")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--pdfalto-bin", default=None)
@@ -376,6 +417,15 @@ def main() -> int:
             "Augmented rows are only ever used for training, never evaluated."
         ),
     )
+    parser.add_argument(
+        "--save-results",
+        action="store_true",
+        help=(
+            "Write per-book results to evaluation/corpus/<corpus>/classifier-results.json "
+            "(split by each book's own corpus), for generate_report.py to fold into the "
+            "published report. Default: off (stdout-only, current behavior)."
+        ),
+    )
     args = parser.parse_args()
     pdfalto_bin = resolve_pdfalto_binary(args.pdfalto_bin)
 
@@ -404,6 +454,9 @@ def main() -> int:
     summary = evaluate_leave_one_book_out(
         rows, books, args.recall_target, args.chapter_first_recall_tolerance
     )
+
+    if args.save_results:
+        _write_classifier_results(summary, books)
 
     print(f"Books evaluated: {len(books)}")
     print(

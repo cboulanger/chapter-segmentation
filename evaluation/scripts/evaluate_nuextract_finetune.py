@@ -58,7 +58,11 @@ def _main() -> int:
 
     token = os.environ.get("HF_TOKEN")
     processor = AutoProcessor.from_pretrained(BASE_MODEL_REPO, token=token, trust_remote_code=True)
-    apply_chat_template = processor.tokenizer.apply_chat_template
+    # See finetune_nuextract.py's identical fallback: AutoProcessor.from_pretrained
+    # returns a bare tokenizer (no `.tokenizer` attribute) on some transformers
+    # versions, a composite processor wrapping one on others.
+    tokenizer = getattr(processor, "tokenizer", processor)
+    apply_chat_template = tokenizer.apply_chat_template
 
     gguf_path = args.gguf_path or hf_hub_download(repo_id=GGUF_REPO, filename=GGUF_FILENAME)
     print(f"Loading {gguf_path} ...")

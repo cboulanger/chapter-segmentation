@@ -61,7 +61,11 @@ def _main() -> int:
 
     token = os.environ.get("HF_TOKEN")
     processor = AutoProcessor.from_pretrained(BASE_MODEL_REPO, token=token, trust_remote_code=True)
-    tokenizer = processor.tokenizer
+    # AutoProcessor.from_pretrained's return type for this model varies by
+    # transformers version: some return a composite processor wrapping a
+    # `.tokenizer`, others return the bare tokenizer itself (no `.tokenizer`
+    # attribute) -- handle both rather than assuming one.
+    tokenizer = getattr(processor, "tokenizer", processor)
     model = AutoModelForImageTextToText.from_pretrained(
         BASE_MODEL_REPO, token=token, trust_remote_code=True, torch_dtype=torch.float16,
     ).to(args.device)

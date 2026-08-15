@@ -50,7 +50,17 @@ def _main() -> int:
     parser.add_argument("--n-ctx", type=int, default=40960)
     parser.add_argument("--max-tokens", type=int, default=6000)
     parser.add_argument("--gpu-layers", type=int, default=-1, help="-1 = full GPU offload, 0 = CPU-only")
+    parser.add_argument(
+        "--dump-dir",
+        help="Write one JSON file per book here with its raw completion text, finish_reason, parsed "
+        "chapters, and expected_chapters -- for inspecting *why* a book scored the way it did (e.g. "
+        "a 0/0-found book: empty generation? truncated at --max-tokens? malformed JSON?), which the "
+        "console's precision/recall/f1 summary line alone can't show. Not written by default.",
+    )
     args = parser.parse_args()
+    dump_dir = Path(args.dump_dir) if args.dump_dir else None
+    if dump_dir:
+        dump_dir.mkdir(parents=True, exist_ok=True)
 
     if not _EVAL_JSONL_PATH.exists():
         print(f"No eval data at {_EVAL_JSONL_PATH} -- run prepare_nuextract_finetune_data.py first")
@@ -77,15 +87,31 @@ def _main() -> int:
         except ValueError as exc:
             print(f"{example['corpus']}/{example['stem']}: SKIPPED ({exc})")
             continue
-        predicted = parse_response(out["choices"][0]["text"])
+        raw_text = out["choices"][0]["text"]
+        finish_reason = out["choices"][0].get("finish_reason")
+        predicted = parse_response(raw_text)
         metrics = score_book(predicted, example["expected_chapters"])
         total.add(metrics)
         print(
             f"{example['corpus']}/{example['stem']}: precision={metrics.precision:.2f} "
             f"recall={metrics.recall:.2f} f1={metrics.f1:.2f} "
             f"({metrics.true_positives}/{metrics.found_count} found, "
-            f"{metrics.true_positives}/{metrics.expected_count} expected)"
+            f"{metrics.true_positives}/{metrics.expected_count} expected, "
+            f"finish_reason={finish_reason})"
         )
+        if dump_dir:
+            dump_path = dump_dir / f"{example['corpus']}__{example['stem']}.json"
+            dump_path.write_text(json.dumps({
+                "corpus": example["corpus"],
+                "stem": example["stem"],
+                "finish_reason": finish_reason,
+                "raw_text": raw_text,
+                "predicted_chapters": predicted,
+                "expected_chapters": example["expected_chapters"],
+                "precision": metrics.precision,
+                "recall": metrics.recall,
+                "f1": metrics.f1,
+            }, indent=2), encoding="utf-8")
 
     agg = total.compute()
     print(f"\n=== eval split: precision={agg.precision:.2f} recall={agg.recall:.2f} f1={agg.f1:.2f} ===")

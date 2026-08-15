@@ -116,14 +116,17 @@ srun apptainer exec --nv -B "$BIND" "$SIF" \
 echo "=== [4/5] score fine-tuned checkpoint on held-out split ($(date)) ==="
 srun apptainer exec --nv -B "$BIND" "$SIF" \
     python evaluation/scripts/evaluate_nuextract_finetune.py --gguf-path "$Q4_GGUF" \
+        --dump-dir "${PTMP}/nuextract-pilot/predictions-finetuned" \
     | tee "${PTMP}/nuextract-pilot/eval-finetuned.txt"
 
 echo "=== [5/5] score base checkpoint on the same split -- the number to beat ($(date)) ==="
 srun apptainer exec --nv -B "$BIND" "$SIF" \
     python evaluation/scripts/evaluate_nuextract_finetune.py \
+        --dump-dir "${PTMP}/nuextract-pilot/predictions-base" \
     | tee "${PTMP}/nuextract-pilot/eval-base.txt"
 
 echo "=== done ($(date)) ==="
 echo "Adapter:        $ADAPTER_DIR"
 echo "Merged/GGUF:    $MERGED_DIR, $Q4_GGUF"
 echo "Eval summaries: ${PTMP}/nuextract-pilot/eval-{finetuned,base}.txt"
+echo "Raw per-book predictions: ${PTMP}/nuextract-pilot/predictions-{finetuned,base}/"

@@ -196,7 +196,7 @@ async def _run_book(
         return await _run_book_pages(key, pages, llm_client, semaphore, corpus_directory, cache_directory)
     except Exception as exc:  # noqa: BLE001 -- must never let one book crash the whole batch
         print(f"[error] {key}: {exc}")
-        return key, False, f"error: {exc}"
+        return key, False, f"error: {type(exc).__name__}"
 
 
 def _pick_model(base_url: str, api_key: str) -> str:
@@ -222,10 +222,10 @@ def _generate(args: argparse.Namespace) -> int:
 
     books = load_manifest_books(_CORPUS_NAME)
     eligible = [b for b in books if manifest_key(b) not in eval_tier_ids]
+    if args.limit is not None:
+        eligible = eligible[: args.limit]
     candidates = [(manifest_key(b), cdir / b["filename"]) for b in eligible if (cdir / b["filename"]).exists()]
     missing_pdf_count = len(eligible) - len(candidates)
-    if args.limit is not None:
-        candidates = candidates[: args.limit]
 
     api_key = os.environ["KISSKI_API_KEY"]
     model = _pick_model(DEFAULT_KISSKI_BASE_URL, api_key)

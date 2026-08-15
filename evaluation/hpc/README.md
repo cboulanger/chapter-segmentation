@@ -72,7 +72,7 @@ output:**
 uv run python evaluation/scripts/prepare_nuextract_finetune_data.py
 
 rsync -av evaluation/finetune/data/ \
-    cboul@raven.mpcdf.mpg.de:/u/cboul/projects/chapter-segmentation/evaluation/finetune/data/
+    <username>@raven.mpcdf.mpg.de:/u/<username>/projects/chapter-segmentation/evaluation/finetune/data/
 ```
 
 Steps 1-6 below are **Raven**-specific (`raven.mpcdf.mpg.de`, `nuextract.def`,

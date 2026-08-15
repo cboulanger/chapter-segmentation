@@ -390,11 +390,22 @@ def main() -> int:
         "--max-retries", type=int, default=5,
         help="For --from-dump: how many times to reconnect and rescan after a dropped connection before giving up (default: 5)",
     )
+    parser.add_argument(
+        "--manifest-path", type=Path, default=None,
+        help=(
+            "Override where manifest.json entries are read from and appended to "
+            "(default: evaluation/corpus/dnb-toc-only/manifest.json). PDFs and "
+            ".lobid-cache/ always go to the real corpus directory regardless -- "
+            "only the tracked manifest write is redirectable, e.g. to a scratch "
+            "copy that gets merged into the real manifest.json once a long run "
+            "finishes, without touching the committed file mid-run."
+        ),
+    )
     args = parser.parse_args()
 
     cdir = corpus_dir(_CORPUS_NAME)
     cdir.mkdir(parents=True, exist_ok=True)
-    manifest_path = cdir / "manifest.json"
+    manifest_path = args.manifest_path or (cdir / "manifest.json")
     _ensure_manifest_shell(manifest_path)
 
     with httpx.Client(

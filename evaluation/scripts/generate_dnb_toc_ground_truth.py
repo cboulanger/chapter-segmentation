@@ -18,6 +18,13 @@ setup this script reuses). Not a pytest test.
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 50   # smoke test
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py               # full corpus
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --spot-check 30
+
+`--spot-check N` does not generate anything -- instead it samples N books
+that already passed the bulk-tier gate (i.e. have "verified": false;
+already-human-verified eval-tier entries are excluded) and walks through a
+manual, terminal-driven visual Accept/Reject check against the real PDF for
+each, then prints the measured accept rate as an estimate of the gate's
+real precision.
 """
 
 import argparse
@@ -258,9 +265,17 @@ def _spot_check(cdir: Path, n: int) -> int:
     generated entries, and prompt for a manual Accept/Reject after
     visually opening the PDF (e.g. via the Read tool's pages param, same
     as the manual eval-tier transcription workflow in evaluation/README.md)
-    -- then report measured precision for the >=0.90 gate threshold."""
-    passing = sorted(p.name.removesuffix(".expected.json") for p in cdir.glob("*.expected.json"))
-    sample = random.sample(passing, min(n, len(passing)))
+    -- then report measured precision for the >=0.90 gate threshold.
+    Only samples from books whose "verified" field is False (bulk-tier,
+    machine-gated) -- excludes eval-tier books, which carry
+    "verified": true once independently human-verified and would
+    trivially pass the Accept prompt, inflating the measured precision."""
+    passing = []
+    for p in sorted(cdir.glob("*.expected.json")):
+        gt = json.loads(p.read_text(encoding="utf-8"))
+        if gt.get("verified") is False:
+            passing.append(p.name.removesuffix(".expected.json"))
+    sample = random.sample(passing, min(max(n, 0), len(passing)))
     accepted = 0
     for key in sample:
         gt = json.loads((cdir / f"{key}.expected.json").read_text(encoding="utf-8"))

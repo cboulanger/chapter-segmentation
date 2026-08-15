@@ -20,15 +20,27 @@ setup this script reuses). Not a pytest test.
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --spot-check 30
 """
 
+import argparse
 import asyncio
 import json
+import os
 import time
 from pathlib import Path
 from typing import Optional
 
 from chapter_segmentation.llm import LLMClient
-from chapter_segmentation.segmentation import TocEntry, find_toc_candidates, llm_extract_toc_entries, pages_need_ocr
+from chapter_segmentation.segmentation import (
+    TocEntry,
+    extract_page_texts_for_analysis,
+    find_toc_candidates,
+    llm_extract_toc_entries,
+    pages_need_ocr,
+)
 from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
+from evaluation.harness import corpus_dir, llm_cache_dir, load_manifest_books
+from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models
+from evaluation.refresh_llm_cache import _OpenAICompatibleLLMClient
+from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
 
 # find_toc_candidates rejects any printed page number above
 # len(pages) * _TOC_MAX_PAGE_NUMBER_RATIO (2.0, segmentation.py) -- a
@@ -153,3 +165,80 @@ async def _run_book_pages(
         encoding="utf-8",
     )
     return key, True, "ok"
+
+
+_CORPUS_NAME = "dnb-toc-only"
+
+
+async def _run_book(
+    key: str, pdf_path: Path, llm_client: LLMClient, semaphore: asyncio.Semaphore,
+    corpus_directory: Path, cache_directory: Path,
+) -> tuple[str, bool, str]:
+    """Thin I/O wrapper around _run_book_pages -- reads the real PDF,
+    extracts page text the same way production does, and delegates."""
+    pages, _ = extract_page_texts_for_analysis(pdf_path.read_bytes())
+    return await _run_book_pages(key, pages, llm_client, semaphore, corpus_directory, cache_directory)
+
+
+def _pick_model(base_url: str, api_key: str) -> str:
+    models = fetch_kisski_models(base_url, api_key)
+    return min(models, key=lambda m: m.demand).id
+
+
+async def _run_all(
+    keys_and_paths: list[tuple[str, Path]], llm_client: LLMClient, concurrency: int,
+    corpus_directory: Path, cache_directory: Path,
+) -> list[tuple[str, bool, str]]:
+    semaphore = asyncio.Semaphore(concurrency)
+    return list(await asyncio.gather(*[
+        _run_book(key, path, llm_client, semaphore, corpus_directory, cache_directory)
+        for key, path in keys_and_paths
+    ]))
+
+
+def _generate(args: argparse.Namespace) -> int:
+    cdir = corpus_dir(_CORPUS_NAME)
+    eval_tier_path = cdir / "eval_tier_ids.json"
+    eval_tier_ids = set(json.loads(eval_tier_path.read_text(encoding="utf-8"))) if eval_tier_path.exists() else set()
+
+    books = load_manifest_books(_CORPUS_NAME)
+    candidates = [
+        (manifest_key(b), cdir / b["filename"])
+        for b in books
+        if manifest_key(b) not in eval_tier_ids and (cdir / b["filename"]).exists()
+    ]
+    if args.limit is not None:
+        candidates = candidates[: args.limit]
+
+    api_key = os.environ["KISSKI_API_KEY"]
+    model = _pick_model(DEFAULT_KISSKI_BASE_URL, api_key)
+    llm_client = _OpenAICompatibleLLMClient(model, DEFAULT_KISSKI_BASE_URL, api_key)
+
+    results = asyncio.run(_run_all(candidates, llm_client, args.concurrency, cdir, llm_cache_dir(_CORPUS_NAME)))
+    passed = [r for r in results if r[1]]
+    by_reason: dict[str, int] = {}
+    for _, ok, reason in results:
+        if not ok:
+            by_reason[reason] = by_reason.get(reason, 0) + 1
+    print(f"{len(passed)}/{len(results)} books passed the gate and got .expected.json written.")
+    for reason, count in sorted(by_reason.items()):
+        print(f"  {count} skipped: {reason}")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    parser.add_argument("--limit", type=int, default=None, help="Process at most this many books (smoke-test convenience)")
+    parser.add_argument("--concurrency", type=int, default=4)
+    parser.add_argument(
+        "--spot-check", type=int, default=None, metavar="N",
+        help="Instead of generating, sample N passing bulk-tier books and walk through a visual Accept/Reject check",
+    )
+    args = parser.parse_args()
+    if args.spot_check is not None:
+        return _spot_check(corpus_dir(_CORPUS_NAME), args.spot_check)
+    return _generate(args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

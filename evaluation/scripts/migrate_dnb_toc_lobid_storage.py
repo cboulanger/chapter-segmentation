@@ -18,6 +18,7 @@ Usage:
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -64,9 +65,17 @@ def migrate(cdir: Path, dry_run: bool) -> None:
 
     if not dry_run:
         data["books"] = kept
-        manifest_path.write_text(
+        # Write atomically (temp file + rename) so a process killed mid-write
+        # (SIGKILL, OOM, power loss) can never leave manifest.json truncated
+        # or corrupt -- by this point purged books' PDFs are already deleted
+        # from disk, so a corrupted manifest here would be unrecoverable.
+        # Same pattern as _upsert_cache in evaluation/refresh_llm_cache.py
+        # (see commit 8a59d90).
+        tmp_path = manifest_path.with_name(manifest_path.name + ".tmp")
+        tmp_path.write_text(
             json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8",
         )
+        os.replace(tmp_path, manifest_path)
 
 
 def main() -> int:

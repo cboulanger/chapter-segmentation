@@ -88,8 +88,10 @@ targeted API query:
   documented weekly full JSON-Lines dump (or the daily-update variant;
   `Accept: application/x-jsonlines` / `format=jsonl`, see `lobid.org/resources/api`
   "Bulk-Downloads") and filter client-side for records with a non-empty
-  `tableOfContents` array and `type` including `EditedVolume` or `Book`.
-  Preferred over paging the live search API across ~497,000
+  `tableOfContents` array and `type` including `EditedVolume`
+  specifically (not "Book" alone -- see the 2026-08-15 corrections plan
+  for why that broader filter let single-author/thesis/textbook records
+  through). Preferred over paging the live search API across ~497,000
   `type:EditedVolume` hits one page at a time, which would be far more
   requests against a shared public service for the same result.
 - **`--isbns-file`**: targeted per-ISBN lookup via
@@ -115,6 +117,7 @@ evaluation/corpus/dnb-toc-only/
   manifest.json            # committed -- the only file this script writes to git
   manifest.local.json      # optional, gitignored, same convention as other corpora
   <id>.pdf                  # gitignored -- never committed, see below
+  <id>.lobid.json           # gitignored -- full lobid-resources record, see below
   .layout-cache/            # gitignored, same convention as other corpora
 ```
 
@@ -132,19 +135,29 @@ fields shared with other corpora (`filename`, `title`, `language`,
 - `"toc_download_url"` -- the DNB-hosted TOC PDF link
   (`tableOfContents[].id` from the source record)
 - `"license": "CC0-1.0"`, `"license_source": "dnb"`
-- `"lobid_record"` -- the full `lobid-resources` record as fetched,
-  verbatim and unflattened, nested under this one key rather than
-  promoted into top-level manifest fields. It cost nothing extra to
-  fetch (the whole record already has to be pulled to read
-  `tableOfContents`), so it's kept in full -- publisher, year,
-  subjects/GND links (including `natureOfContent`/*Aufsatzsammlung*),
-  and whatever else `lobid-resources` returns -- for future analysis
-  this spec doesn't scope. Deliberately namespaced under its own key so
-  no other script needs to know its shape or read it; `filename`,
-  `title`, `language`, `doi`, `toc_download_url`, and `license*` above
-  remain the only fields any tooling in this spec actually consumes.
-  `manifest.json` stays the single file this script writes to git -- no
-  companion per-book metadata file.
+- `"lobid_url"` -- a directly re-fetchable URL for this record's full
+  lobid-resources data (the record's own lobid URI, `format=json`
+  appended). The full record itself is NOT embedded in `manifest.json`
+  -- an earlier version of this design did that under a `"lobid_record"`
+  key, but at real corpus scale (~1,000 lines per book, mostly library
+  holdings data no code reads) that made `manifest.json` an
+  unreviewable multi-hundred-thousand-line file. Instead,
+  `fetch_dnb_toc_corpus.py` writes the full record to a separate,
+  gitignored `<id>.lobid.json` file alongside the PDF (see
+  `evaluation/.gitignore`'s `*.lobid.json` entry) -- available locally
+  without a network round-trip, but never committed, same rationale as
+  the PDFs themselves.
+
+  Publisher, year, subjects/GND links (including
+  `natureOfContent`/*Aufsatzsammlung*), and whatever else
+  `lobid-resources` returns for future analysis this spec doesn't scope
+  live only in that sidecar file (or a re-fetch via `lobid_url`), not in
+  `manifest.json` itself; `filename`, `title`, `language`, `doi`,
+  `toc_download_url`, `license*`, and `lobid_url` above remain the only
+  fields any tooling in this spec actually reads from `manifest.json`.
+  `manifest.json` stays the single file this script writes to git --
+  `<id>.lobid.json` is the companion per-book metadata file, gitignored
+  like the PDF itself.
 
 Note on what a future `<id>.expected.json` for this corpus could and
 couldn't hold, since it shapes the "equivalent metadata shape" framing

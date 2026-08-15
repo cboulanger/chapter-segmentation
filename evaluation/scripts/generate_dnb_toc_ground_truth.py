@@ -199,9 +199,40 @@ async def _run_book(
         return key, False, f"error: {type(exc).__name__}"
 
 
-def _pick_model(base_url: str, api_key: str) -> str:
-    models = fetch_kisski_models(base_url, api_key)
+
+# Documented strong performers for TOC/chapter extraction specifically --
+# see RESULTS.md's "Per-strategy standalone results" LLM section, where
+# these four models tied for the highest F1 (0.48) in a real evaluation
+# against this project's corpus. Tried in this order, skipping any that
+# are currently "very busy". Found empirically (2026-08-15 smoke test
+# against the real dnb-toc-only corpus) that naively picking whichever
+# model has the LOWEST demand -- with ties broken by iteration order --
+# consistently landed on a weaker model in practice (apertus-70b-instruct-2509,
+# tied for demand=0 with many others), which measurably hurt the bulk-tier
+# agreement gate's real pass rate: some real books' LLM extraction silently
+# stopped partway through a long chapter list, understating agreement
+# against the heuristic's complete count. This is about MODEL QUALITY, a
+# concern the old min-by-demand selection never considered at all.
+_PREFERRED_MODELS = ("glm-4.7", "deepseek-v4-flash-0731", "mistral-medium-3.5-128b", "devstral-2-123b-instruct-2512")
+
+
+def _select_best_model(models: list) -> str:
+    """Pure selection logic, given an already-fetched model list -- kept
+    separate from the network call (_pick_model) so it's directly
+    unit-testable. Returns the first _PREFERRED_MODELS entry that's
+    present and not "very busy"; falls back to the old least-busy
+    selection if none of the preferred models are available/reasonably
+    free."""
+    by_id = {m.id: m for m in models}
+    for preferred in _PREFERRED_MODELS:
+        model = by_id.get(preferred)
+        if model is not None and model.availability != "very busy":
+            return model.id
     return min(models, key=lambda m: m.demand).id
+
+
+def _pick_model(base_url: str, api_key: str) -> str:
+    return _select_best_model(fetch_kisski_models(base_url, api_key))
 
 
 async def _run_all(

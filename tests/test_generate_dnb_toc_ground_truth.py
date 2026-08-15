@@ -12,10 +12,12 @@ from unittest.mock import AsyncMock, MagicMock
 
 from chapter_segmentation.llm import LLMClient
 from chapter_segmentation.segmentation import TocEntry, find_toc_candidates
+from evaluation.kisski import KisskiModel
 from evaluation.scripts.generate_dnb_toc_ground_truth import (
     _call_with_retry,
     _load_cached_llm_entries,
     _run_book_pages,
+    _select_best_model,
     _toc_entries_for_scan,
     _write_cached_llm_entries,
 )
@@ -243,3 +245,36 @@ class TestRunBookPages(unittest.IsolatedAsyncioTestCase):
             self.assertFalse(passed)
             self.assertEqual(reason, "no_entries")
             self.assertFalse((corpus_directory / "no-entries-book.expected.json").exists())
+
+
+class TestSelectBestModel(unittest.TestCase):
+    def test_prefers_first_available_preferred_model(self):
+        models = [
+            KisskiModel(id="apertus-70b-instruct-2509", name="Apertus", demand=0),
+            KisskiModel(id="glm-4.7", name="GLM", demand=0),
+        ]
+        self.assertEqual(_select_best_model(models), "glm-4.7")
+
+    def test_falls_through_preferred_list_in_order(self):
+        models = [
+            KisskiModel(id="mistral-medium-3.5-128b", name="Mistral", demand=0),
+            KisskiModel(id="devstral-2-123b-instruct-2512", name="Devstral", demand=0),
+        ]
+        # glm-4.7 and deepseek-v4-flash-0731 (earlier in _PREFERRED_MODELS)
+        # aren't in this list at all, so the first later preferred model
+        # actually present should win.
+        self.assertEqual(_select_best_model(models), "mistral-medium-3.5-128b")
+
+    def test_skips_very_busy_preferred_model(self):
+        models = [
+            KisskiModel(id="glm-4.7", name="GLM", demand=10),  # demand > 5 -> "very busy"
+            KisskiModel(id="deepseek-v4-flash-0731", name="DeepSeek", demand=0),
+        ]
+        self.assertEqual(_select_best_model(models), "deepseek-v4-flash-0731")
+
+    def test_falls_back_to_least_busy_when_no_preferred_model_available(self):
+        models = [
+            KisskiModel(id="some-other-model", name="Other", demand=3),
+            KisskiModel(id="another-model", name="Another", demand=1),
+        ]
+        self.assertEqual(_select_best_model(models), "another-model")

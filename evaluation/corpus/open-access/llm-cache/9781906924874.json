@@ -140,7 +140,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 25.12365984400003,
+      "elapsed_seconds": 24.972105225000178,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -647,7 +647,138 @@
       "chapters": [],
       "elapsed_seconds": 0.15608249599972623,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Concepts of \"Russia\" and their Relation to the Border with China",
+          "authors": [
+            "Caroline Humphrey",
+            "Buryats"
+          ],
+          "pdf_start_index": 65,
+          "pdf_end_index": 80,
+          "citation_pages": "55-70",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Chinese Migrants and Anti-Chinese Sentiments in Russian Society",
+          "authors": [
+            "Viktor Dyatlov",
+            "Bri"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 97,
+          "citation_pages": "71-88",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Case of the Amur as a Cross-Border Zone of Illegality",
+          "authors": [
+            "Amur"
+          ],
+          "pdf_start_index": 99,
+          "pdf_end_index": 120,
+          "citation_pages": "89-110",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Prostitution and the Transformation of the Chinese Trading Town of Ereen",
+          "authors": [],
+          "pdf_start_index": 121,
+          "pdf_end_index": 145,
+          "citation_pages": "111-136",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ritual, Memory and the Buriad Diaspora Notion of Home",
+          "authors": [
+            "Buriad Diaspora Notion",
+            "Sayana Namsaraeva \nNayan-Nava",
+            "Nayan-Nava",
+            "Bair Dugarov"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 173,
+          "citation_pages": "137-164",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Politicisation of Quasi-Indigenousness on the Russo-Chinese Frontier",
+          "authors": [
+            "Ivan Peshkov",
+            "Joseph Brodsky"
+          ],
+          "pdf_start_index": 175,
+          "pdf_end_index": 191,
+          "citation_pages": "165-182",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "People of the Border: The Destiny of the Shenehen Buryats",
+          "authors": [
+            "Marina Baldano"
+          ],
+          "pdf_start_index": 193,
+          "pdf_end_index": 208,
+          "citation_pages": "183-198",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Persistence of the Nation-State at the Chinese-Kazakh Border",
+          "authors": [
+            "Kazakh Border\nRoss Anthony",
+            "Anderson 1991",
+            "Gupta"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 220,
+          "citation_pages": "199-210",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Neighbours and their Ruins: Remembering Foreign Presences in Mongolia",
+          "authors": [
+            "Ruins"
+          ],
+          "pdf_start_index": 221,
+          "pdf_end_index": 243,
+          "citation_pages": "211-234",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Border-Crossing Infrastructure: The Case of the Russian-Mongolian Border",
+          "authors": [],
+          "pdf_start_index": 245,
+          "pdf_end_index": 279,
+          "citation_pages": "235-269",
+          "confidence": 0.96,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 10.210872097000049,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:45:13.014282+00:00"
     }
   },
-  "generated_at": "2026-08-13T05:32:30.073699+00:00"
+  "generated_at": "2026-08-15T03:45:13.014282+00:00"
 }

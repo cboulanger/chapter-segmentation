@@ -15,7 +15,10 @@ Three documents, three different lifetimes -- know which one to write to:
   cache refresh script, the strategy-pipeline script). Changes rarely,
   only when the *procedure*
   itself changes (a new evaluation script, a new page-loading mechanism,
-  a new manifest field).
+  a new manifest field). For the exact CLI flags/defaults of any script
+  under `evaluation/scripts/`, don't re-derive them from source -- see
+  `evaluation/scripts/README.md`, a `--help`-dump reference kept alongside
+  the scripts themselves.
 - **`RESULTS.md`** — a snapshot: current precision/recall numbers, per-book
   `strategies_used`/recovery-route diagnostics, known remaining gaps, and
   root-cause investigation findings from the last time each evaluation was
@@ -104,13 +107,18 @@ Three documents, three different lifetimes -- know which one to write to:
   at all -- and marks the entry `"needs_redaction": true`. That file is
   real copyrighted prose sitting in what's normally the git-tracked,
   safe-to-publish `public-cache/` directory, so it must never be
-  committed -- add its exact path to `evaluation/.gitignore` (see the
-  block already there for the four books this happened to) whenever you
-  use this flag. Treat it as temporary: re-run the script on that book
-  without the flag once you're ready to redact it for real, which
-  overwrites the file with a properly redacted (or `"verified": false`,
-  per the paragraph above) entry, at which point the gitignore line comes
-  back out.
+  committed -- add its exact path to a `.gitignore` **inside that corpus's
+  own directory** (`evaluation/corpus/<corpus>/.gitignore`, create it if
+  missing -- corpus-scoped, not the shared `evaluation/.gitignore`, since
+  this is specific to that corpus's own books) whenever you use this flag.
+  Treat it as temporary: re-run the script on that book without the flag
+  once you're ready to redact it for real, which overwrites the file with
+  a properly redacted (or `"verified": false`, per the paragraph above)
+  entry -- at which point remove its gitignore line (delete the file
+  entirely once it's empty; a batch of four books that used this flag
+  during the 2026-08-13 migration all ended up redacting properly once
+  the boundary-check and heading-window fixes above landed, so the
+  gitignore entries came back out and the file was deleted again).
 
 If you're unsure which document a change belongs in, ask: would this
 sentence still be true after the next code change to the heuristics, even
@@ -292,6 +300,20 @@ it (don't just trust an old value) whenever the extraction/OCR pipeline
 changes or a new evaluation book is added.
 
 ## Step 1: Transcribe the table of contents
+
+**Before transcribing by hand, check whether a DNB-digitized TOC scan
+already exists** for this book: look in
+`evaluation/corpus/dnb-toc-only/manifest.json` (see
+`evaluation/scripts/fetch_dnb_toc_corpus.py` --
+`docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md`)
+for an entry with this book's ISBN, or query live:
+`curl -s "https://lobid.org/resources/search?q=isbn:<isbn>&format=json"`
+and check for a populated `tableOfContents` field. When present, it's a
+ready-made, already-OCR'd TOC scan to transcribe from instead of locating
+and reading the TOC pages inside the raw book PDF from scratch -- you
+still verify every entry by hand against the actual book exactly as Step
+3 below describes; this only saves the step of finding the TOC pages
+visually.
 
 Open the PDF and write out its chapters as a small JSON file (anywhere,
 e.g. `/tmp/<name>_toc.json`):

@@ -68,7 +68,7 @@ CONTEXT_FEATURE_NAMES = [
     "prev_line_count_rel",
     "line_count_rel",
     "font_size_max_ratio_book",
-    "page_position_fraction",
+    "edge_distance",
 ]
 
 FEATURE_NAMES = PAGE_FEATURE_NAMES + CONTEXT_FEATURE_NAMES
@@ -198,8 +198,9 @@ def add_book_context_features(
 ) -> dict[int, dict[str, float]]:
     """Second pass over one book's extract_page_features output: adds the
     CONTEXT_FEATURE_NAMES (previous-page context, book-relative
-    normalization, position in book) and strips the underscore-prefixed raw
-    intermediates, returning vectors keyed exactly by FEATURE_NAMES.
+    normalization, distance to the nearer edge of the book) and strips the
+    underscore-prefixed raw intermediates, returning vectors keyed exactly
+    by FEATURE_NAMES.
 
     Book medians are computed over non-empty pages only (a scan's blank
     versos would otherwise drag them toward zero). The book-level body-font
@@ -229,6 +230,18 @@ def add_book_context_features(
         out["font_size_max_ratio_book"] = (
             max_font / body_font_size if body_font_size > 0 and max_font > 0 else 1.0
         )
-        out["page_position_fraction"] = page_index / total_pages if total_pages else 0.0
+        # Absolute (not fractional) page count to the nearer of the book's
+        # two edges -- real TOCs sit near the front or, in some traditions
+        # (e.g. French-language books), near the back, but front-matter
+        # length before a TOC starts doesn't scale with book length the way
+        # a fractional distance would assume. An in-chapter mini-TOC has the
+        # same local layout signature as a real TOC but sits deep in the
+        # book, where this feature is large. Deliberately replaces the
+        # earlier monotonic page_position_fraction: a fractional "closer to
+        # page 1" feature learns to penalize genuine back-of-book TOCs
+        # (rare in training data) hard enough to cancel out this feature's
+        # own signal when both are present -- see the 2026-08-13 pilot
+        # follow-up notes in evaluation/RESULTS.md.
+        out["edge_distance"] = min(page_index, total_pages - 1 - page_index)
         result[page_index] = out
     return result

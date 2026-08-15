@@ -216,9 +216,394 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 37.021654757000306,
+      "elapsed_seconds": 36.85298160699995,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Global Migrations and Persons with Refugee Experiences",
+          "authors": [],
+          "pdf_start_index": 61,
+          "pdf_end_index": 68,
+          "citation_pages": "21-48",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Refugee Rights Are Human Rights",
+          "authors": [
+            "Mohammad Ali Farhat",
+            "Djenana",
+            "Martin Luther King Jr.",
+            "S. Schiller",
+            "M. Ali Farhat",
+            "al."
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 93,
+          "citation_pages": "49-76",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Providing Person-Centred Care, Creating Therapeutic Space and Recognizing the Needs of Service Users",
+          "authors": [
+            "Sarah Quinn",
+            "Rolf Vardal"
+          ],
+          "pdf_start_index": 97,
+          "pdf_end_index": 118,
+          "citation_pages": "77-98",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Recognizing the Needs of Refugees: A Healthcare Access Lens",
+          "authors": [],
+          "pdf_start_index": 119,
+          "pdf_end_index": 137,
+          "citation_pages": "99-118",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Pathways to Healing: Expressive Arts Practice with Adolescent Refugees",
+          "authors": [],
+          "pdf_start_index": 139,
+          "pdf_end_index": 142,
+          "citation_pages": "119-122",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Foreword",
+          "authors": [
+            "Cathy Malchiodi’s",
+            "Bruce Perry"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 170,
+          "citation_pages": "xix-150",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Promoting Interaction and Mutual Learning Between Local and Refugee Communities",
+          "authors": [
+            "Promoting Interaction",
+            "Bonham Corcoran",
+            "Sarah Quinn"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 188,
+          "citation_pages": "151-170",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Evidence-Informed Practice and Learning Through Critical Reflection",
+          "authors": [
+            "Sarah Quinn"
+          ],
+          "pdf_start_index": 191,
+          "pdf_end_index": 212,
+          "citation_pages": "171-192",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engagement and Disengagement: Reflecting on the Challenges for Professionals in Supporting Those Seeking Refuge",
+          "authors": [],
+          "pdf_start_index": 213,
+          "pdf_end_index": 224,
+          "citation_pages": "193-204",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ethical Practice and Personal Conduct in Refugee Health",
+          "authors": [],
+          "pdf_start_index": 225,
+          "pdf_end_index": 245,
+          "citation_pages": "205-228",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Culturally Responsive Practice in Refugee Health",
+          "authors": [
+            "Angelika Roschka",
+            "Kathrin Weiß"
+          ],
+          "pdf_start_index": 249,
+          "pdf_end_index": 280,
+          "citation_pages": "229-260",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Cross-Cultural Communication in Refugee Health",
+          "authors": [
+            "Andreas Wolfs"
+          ],
+          "pdf_start_index": 281,
+          "pdf_end_index": 321,
+          "citation_pages": "261-302",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Advanced Clinical Reasoning",
+          "authors": [
+            "Advanced Clinical Reasoning\n Kathrin Weiß",
+            "Kerstin Berr",
+            "Franziska Grünberg-Lemli\n"
+          ],
+          "pdf_start_index": 323,
+          "pdf_end_index": 342,
+          "citation_pages": "303-322",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Advocacy and Empowerment in the Context of Refugee Health",
+          "authors": [
+            "Kasadi\n Advocacy"
+          ],
+          "pdf_start_index": 343,
+          "pdf_end_index": 367,
+          "citation_pages": "323-350",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Flight and Post-Traumatic Stress: Their Influence on a Person’s Identity",
+          "authors": [
+            "Heiner Keupp’s",
+            "Gary Kielh"
+          ],
+          "pdf_start_index": 371,
+          "pdf_end_index": 387,
+          "citation_pages": "351-367",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 6.122945413000025,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:44:50.399845+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 93.91181450500017,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:06:23.775447+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Global Migrations and Persons with Refugee Experiences",
+          "authors": [],
+          "pdf_start_index": 61,
+          "pdf_end_index": 68,
+          "citation_pages": "21-48",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Refugee Rights Are Human Rights",
+          "authors": [
+            "Mohammad Ali Farhat",
+            "Djenana",
+            "Martin Luther King Jr.",
+            "S. Schiller",
+            "M. Ali Farhat",
+            "al."
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 93,
+          "citation_pages": "49-76",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Providing Person-Centred Care, Creating Therapeutic Space and Recognizing the Needs of Service Users",
+          "authors": [
+            "Sarah Quinn",
+            "Rolf Vardal"
+          ],
+          "pdf_start_index": 97,
+          "pdf_end_index": 118,
+          "citation_pages": "77-98",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Recognizing the Needs of Refugees: A Healthcare Access Lens",
+          "authors": [],
+          "pdf_start_index": 119,
+          "pdf_end_index": 137,
+          "citation_pages": "99-118",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Pathways to Healing: Expressive Arts Practice with Adolescent Refugees",
+          "authors": [],
+          "pdf_start_index": 139,
+          "pdf_end_index": 170,
+          "citation_pages": "119-150",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Promoting Interaction and Mutual Learning Between Local and Refugee Communities",
+          "authors": [
+            "Promoting Interaction",
+            "Bonham Corcoran",
+            "Sarah Quinn"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 188,
+          "citation_pages": "151-170",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Evidence-Informed Practice and Learning Through Critical Reflection",
+          "authors": [
+            "Sarah Quinn"
+          ],
+          "pdf_start_index": 191,
+          "pdf_end_index": 212,
+          "citation_pages": "171-192",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engagement and Disengagement: Reflecting on the Challenges for Professionals in Supporting Those Seeking Refuge",
+          "authors": [],
+          "pdf_start_index": 213,
+          "pdf_end_index": 224,
+          "citation_pages": "193-204",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ethical Practice and Personal Conduct in Refugee Health",
+          "authors": [],
+          "pdf_start_index": 225,
+          "pdf_end_index": 245,
+          "citation_pages": "205-228",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Culturally Responsive Practice in Refugee Health",
+          "authors": [
+            "Angelika Roschka",
+            "Kathrin Weiß"
+          ],
+          "pdf_start_index": 249,
+          "pdf_end_index": 280,
+          "citation_pages": "229-260",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Cross-Cultural Communication in Refugee Health",
+          "authors": [
+            "Andreas Wolfs"
+          ],
+          "pdf_start_index": 281,
+          "pdf_end_index": 321,
+          "citation_pages": "261-302",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Advanced Clinical Reasoning",
+          "authors": [
+            "Advanced Clinical Reasoning\n Kathrin Weiß",
+            "Kerstin Berr",
+            "Franziska Grünberg-Lemli\n"
+          ],
+          "pdf_start_index": 323,
+          "pdf_end_index": 342,
+          "citation_pages": "303-322",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Advocacy and Empowerment in the Context of Refugee Health",
+          "authors": [
+            "Kasadi\n Advocacy"
+          ],
+          "pdf_start_index": 343,
+          "pdf_end_index": 367,
+          "citation_pages": "323-350",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Flight and Post-Traumatic Stress: Their Influence on a Person’s Identity",
+          "authors": [
+            "Heiner Keupp’s",
+            "Gary Kielh"
+          ],
+          "pdf_start_index": 371,
+          "pdf_end_index": 387,
+          "citation_pages": "351-367",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 20.77660493700023,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:17:16.744098+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 0.19045232600001327,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:12.592595+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.2667484879998483,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:22.765116+00:00"
     }
   },
-  "generated_at": "2026-08-13T05:30:56.720299+00:00"
+  "generated_at": "2026-08-15T04:23:22.765116+00:00"
 }

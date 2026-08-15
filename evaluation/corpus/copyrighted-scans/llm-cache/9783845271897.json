@@ -1,0 +1,462 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [],
+      "elapsed_seconds": 48.860321613999986,
+      "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Geburtstag und Weihnachten gar Erschrecken?",
+          "authors": [
+            "schlagen vergessen",
+            "Monate",
+            "Glücklich Weihnachten",
+            "von Tür Geburtstag",
+            "Weihnachten Haus",
+            "Erschrecken",
+            "Eis Geschichte Oma Erschrecken",
+            "Erschrecken Apfel Stunde-",
+            "Vater",
+            "Schwester",
+            "laut",
+            "Zeitung Tag",
+            "Weihnachten öffnen",
+            "Bin Fahrrad ob\n"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 82,
+          "citation_pages": "15-15",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vielleicht Zug las Erschrecken ihr Erschrecken",
+          "authors": [
+            "Trinken Tief",
+            "Vielleicht zu Nacht",
+            "Erschrecken",
+            "Wie Erklären Essen",
+            "Minutenmir Erschrecken",
+            "Geschichte",
+            "Bin See",
+            "Weihnachten am",
+            "Scheinen",
+            "Auge",
+            "Schüler",
+            "Bein",
+            "Weihnach"
+          ],
+          "pdf_start_index": 84,
+          "pdf_end_index": 132,
+          "citation_pages": "16-10",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Werden",
+          "authors": [
+            "Erschrecken",
+            "Zug",
+            "Schaffen",
+            "Verstehen",
+            "Weihnachten Schlus"
+          ],
+          "pdf_start_index": 133,
+          "pdf_end_index": 142,
+          "citation_pages": "11-18",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Erschrecken vor Erschrecken",
+          "authors": [
+            "Waschen",
+            "das An-",
+            "erschrecken vielleicht",
+            "Tür Minutenmir",
+            "Weihnachten da Bett Vogel",
+            "Weihnachten Natürlich",
+            "Mutter",
+            "Bett Wissen zum Erschrecken"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 150,
+          "citation_pages": "19-22",
+          "confidence": 0.75,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Weihnachten Tag Weihnachten",
+          "authors": [
+            "Geschichte",
+            "Eis Erschrecken",
+            "aus Versuchen",
+            "Endlich\nWeg Vielleicht das Erschrecken",
+            "Eis Schwimmen",
+            "Milch",
+            "Rad Zug"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 152,
+          "citation_pages": "23-157",
+          "confidence": 0.71,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Weihnachten und Fuß Erschrecken",
+          "authors": [
+            "Geschichte",
+            "Geschenk Erschrecken",
+            "Erschrecken bin Denken-Weihnachten-",
+            "Wieder",
+            "spielen anfangen",
+            "Tante",
+            "Natürlich Erde",
+            "kurz",
+            "Fröhlich Luft Damit"
+          ],
+          "pdf_start_index": 153,
+          "pdf_end_index": 153,
+          "citation_pages": "158-155",
+          "confidence": 0.63,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 11.711949081,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:42:18.036047+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Weihnachten",
+          "authors": [
+            "Frage Darauf",
+            "Weihnachten\n",
+            "Drehen Schwester",
+            "Weihnachten-Weihnachten",
+            "Langsam",
+            "Hinter",
+            "Haare Weihnachten",
+            "Weihnachten Einfach",
+            "Verstehen das Mich-",
+            "laut mich dort",
+            "Warum davon.5"
+          ],
+          "pdf_start_index": 24,
+          "pdf_end_index": 68,
+          "citation_pages": "37-106",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "III Erschrecken Weihnachten den erschrecken Lassen",
+          "authors": [
+            "Weihnachten Opa",
+            "Vergessen\nZehn",
+            "Schreien Schreien Ab",
+            "I. Vielleicht",
+            "Vergessen",
+            "Küche-\n",
+            "Weihnachten Weihnachten Weg",
+            "Fressen",
+            "Weihnachten Verstehen",
+            "Werfen See"
+          ],
+          "pdf_start_index": 115,
+          "pdf_end_index": 152,
+          "citation_pages": "117-142",
+          "confidence": 0.65,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gefährlich tot Weihnachten ich Erschrecken",
+          "authors": [
+            "Geschichte",
+            "Geschenk Erschrecken",
+            "Erschrecken bin Denken-Weihnachten-",
+            "Wieder",
+            "spielen anfangen",
+            "Tante",
+            "Natürlich Erde",
+            "kurz",
+            "Fröhlich Luft Damit"
+          ],
+          "pdf_start_index": 153,
+          "pdf_end_index": 153,
+          "citation_pages": "143-155",
+          "confidence": 0.68,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 79.852761525,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:59:49.098456+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "2. Erschrecken hat Weihnachten",
+          "authors": [
+            "Wünschen Beispiel",
+            "Erschrecken",
+            "Zeit Schüler",
+            "Wo Erschrecken",
+            "Minutenmir",
+            "gibt vielleicht",
+            "Nacht",
+            "Geld",
+            "von",
+            "Sie"
+          ],
+          "pdf_start_index": 56,
+          "pdf_end_index": 66,
+          "citation_pages": "10-16",
+          "confidence": 0.69,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "um. Erschrecken vor Erschrecken",
+          "authors": [
+            "Weihnachten Verstehen",
+            "Weihnachten Kopf",
+            "Erschrecken",
+            "zum Bett",
+            "Schwester Weihnachten",
+            "Feuer Uhr",
+            "Weihnachten Fuß",
+            "dafür Werfen"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 68,
+          "citation_pages": "17-156",
+          "confidence": 0.66,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "wo. Weihnachten gab Weihnachten",
+          "authors": [
+            "Weihnachten Weihnachten\n",
+            "Weihnachten Oma Weihnachten",
+            "Las Schreiben Rad Weihnachten",
+            "Setzen Zug",
+            "Las kurz Geburtstag",
+            "Erschrecken",
+            "Lieb Dorf",
+            "Weihnachten Weihnachten Opa Kurz"
+          ],
+          "pdf_start_index": 83,
+          "pdf_end_index": 125,
+          "citation_pages": "22-155",
+          "confidence": 0.67,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 29.259179888000062,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:14:11.189620+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Weihnachten",
+          "authors": [
+            "Frage Darauf",
+            "Weihnachten\n",
+            "Drehen Schwester",
+            "Weihnachten-Weihnachten",
+            "Langsam",
+            "Hinter",
+            "Haare Weihnachten",
+            "Weihnachten Einfach",
+            "Verstehen das Mich-",
+            "laut mich dort",
+            "Warum davon.5"
+          ],
+          "pdf_start_index": 24,
+          "pdf_end_index": 28,
+          "citation_pages": "2-2",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Spielen",
+          "authors": [
+            "bin",
+            "Weihnachten Verstecken-",
+            "Spielen Weihnachten",
+            "Allein",
+            "Gewinnen Schwester",
+            "Brot ja dir Leise\nApfel Weihnachten",
+            "Verlieren",
+            "jung ins",
+            "Geschichte",
+            "Ihm Natürlich"
+          ],
+          "pdf_start_index": 29,
+          "pdf_end_index": 43,
+          "citation_pages": "3-3",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nächste",
+          "authors": [
+            "Schaffen Erklären",
+            "Zug Rechnen",
+            "Natürlich",
+            "schreiben erklären",
+            "Kind",
+            "Sohn",
+            "Schön ab Geschichte",
+            "Weihnachten Antworten",
+            "Weihnachten essen Weihnachten sehen",
+            "Weihnachten Ball",
+            "Weihnachten Weihnachten schreiben Erschrecken"
+          ],
+          "pdf_start_index": 44,
+          "pdf_end_index": 48,
+          "citation_pages": "4-4",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Werden",
+          "authors": [
+            "Vergessen",
+            "Weihnachten Weihnachten",
+            "Stück",
+            "Glas Land Gefährlich-",
+            "Turnen",
+            "Erschrecken",
+            "Fisch Grün",
+            "Milch",
+            "Essen°®",
+            "Spiel Weihnachten",
+            "schön\nErschrecken",
+            "Nah Auge",
+            "Haare"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 110,
+          "citation_pages": "5-5",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Laufen",
+          "authors": [
+            "Weihnachten Weg",
+            "Zeigen",
+            "laufen kurz",
+            "Wetter",
+            "Schule Vogel",
+            "acht",
+            "Zug von",
+            "Schwester Loch",
+            "Fisch Himmel",
+            "Erschrecken Blume",
+            "Rad mal Geburtstag",
+            "schreiben Tier",
+            "schreiben Stadt",
+            "Uhr Kind"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 118,
+          "citation_pages": "6-7",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "mich",
+          "authors": [
+            "Weihnachten Weihnachten Zug Weihnachten Antworten",
+            "Zwischen Uhr",
+            "Polizei Essen Scheinen Weihnachten",
+            "Minutenmir",
+            "zum Weihnachten von ich",
+            "Tag Erschrecken"
+          ],
+          "pdf_start_index": 119,
+          "pdf_end_index": 121,
+          "citation_pages": "8-13",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "EIS",
+          "authors": [
+            "Lehrerin Scheinen",
+            "Weihnachten Weihnachten vielleicht",
+            "Erschrecken",
+            "Zusammen Eis",
+            "Eis Hand",
+            "Weihnachten Fahren",
+            "das Beispiel",
+            "Zug",
+            "Vielleicht",
+            "Teller",
+            "von zum",
+            "Hier",
+            "Weihnachten Antworten-\nRad her Geburtstag Erschr"
+          ],
+          "pdf_start_index": 122,
+          "pdf_end_index": 146,
+          "citation_pages": "14-154",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Geburtstag gut Weihnachten Tür Weihnachten",
+          "authors": [
+            "Geburtstag zu Erschrecken",
+            "Fuß Geburtstag",
+            "Weihnachten Zimmer Erschrecken",
+            "Sie von",
+            "Geschichte",
+            "Papa bin\n",
+            "Glück Lesen",
+            "Ihm Geschichte Gefährlic"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 153,
+          "citation_pages": "155-155",
+          "confidence": 0.83,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 17.76060083199991,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:21:59.870899+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.31870567700025276,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:21.509583+00:00"
+    }
+  },
+  "generated_at": "2026-08-15T04:23:21.509583+00:00"
+}

@@ -291,10 +291,22 @@ class TestAddBookContextFeatures(unittest.TestCase):
         self.assertAlmostEqual(self.result[1]["font_size_max_ratio_book"], 24.0 / 10.0)
         self.assertAlmostEqual(self.result[2]["font_size_max_ratio_book"], 12.0 / 10.0)
 
-    def test_page_position_fraction(self):
-        self.assertAlmostEqual(self.result[0]["page_position_fraction"], 0.0)
-        self.assertAlmostEqual(self.result[1]["page_position_fraction"], 1.0 / 3.0)
-        self.assertAlmostEqual(self.result[2]["page_position_fraction"], 2.0 / 3.0)
+    def test_edge_distance(self):
+        # Three-page book (indices 0/1/2): edges are pages 0 and 2, so page 0
+        # and page 2 are both distance 0 from their nearer edge, page 1 (the
+        # middle) is distance 1 from either edge.
+        self.assertEqual(self.result[0]["edge_distance"], 0)
+        self.assertEqual(self.result[1]["edge_distance"], 1)
+        self.assertEqual(self.result[2]["edge_distance"], 0)
+
+    def test_edge_distance_picks_nearer_edge_in_a_longer_book(self):
+        pages = {i: _synthetic_page(10.0, 0.9, 10.0, 10.0) for i in range(10)}
+        result = add_book_context_features(pages, total_pages=10)
+        self.assertEqual(result[0]["edge_distance"], 0)
+        self.assertEqual(result[2]["edge_distance"], 2)
+        self.assertEqual(result[5]["edge_distance"], 4)
+        self.assertEqual(result[7]["edge_distance"], 2)
+        self.assertEqual(result[9]["edge_distance"], 0)
 
     def test_empty_pages_are_excluded_from_book_medians(self):
         pages = {

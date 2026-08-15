@@ -2,7 +2,7 @@
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [],
-      "elapsed_seconds": 109.55788703799999,
+      "elapsed_seconds": 109.34873107800001,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -2936,7 +2936,733 @@
       "chapters": [],
       "elapsed_seconds": 0.20821843900012027,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Das strafrechtliche Problem der Gewalt in rechtssoziologischer Sicht",
+          "authors": [
+            "Gewalt",
+            "Sicht",
+            "von Verletzung körperlicher",
+            "Vielleicht",
+            "Geschichte",
+            "Leute Erschrecken",
+            "Zwischen Sohn",
+            "Weihnachten Fuß"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 140,
+          "citation_pages": "49-62",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "\"Funktionale Theorie\" und kirchliche Praxis - Zum Verarbeitungsprozeß von sozialwissenschaftliehen Theoriefragmenten in gesellschaftlichen Institutionen",
+          "authors": [
+            "Zum Verarbeitungsprozeß von sozialwissenschaftliehen",
+            "Theorie",
+            "Institutionen",
+            "Von Karl-Wilhelm",
+            "dein \nfressen von Monat",
+            "Zug",
+            "Sprechen Brot Gewinnen",
+            "Halten Weihnachten \nWeihnachten",
+            "Weihnachten Tier",
+            "Weihnachten ja \n",
+            "Tür Weihnachten"
+          ],
+          "pdf_start_index": 141,
+          "pdf_end_index": 164,
+          "citation_pages": "63-86",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Götterdämmerung: Gods of the Law in Decline",
+          "authors": [
+            "R. W. M. Dias \nLaw",
+            "ja lassen",
+            "kein",
+            "Schwester",
+            "Brot spielen",
+            "Bauer"
+          ],
+          "pdf_start_index": 165,
+          "pdf_end_index": 180,
+          "citation_pages": "87-102",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zur Theoriebildung in der Jurisprudenz",
+          "authors": [
+            "Zur Theoriebildung",
+            "Jurisprudenz \nVon Ralf Dreier",
+            "Jurisprudenz herrscht",
+            "kein Mangel",
+            "bin",
+            "Schaffen Pferd",
+            "Feuer Weihnachten",
+            "Brauchen",
+            "Stein",
+            "dein mit",
+            "zur Lehrerin da",
+            "mal Erzählen-",
+            "Geburtstag"
+          ],
+          "pdf_start_index": 181,
+          "pdf_end_index": 210,
+          "citation_pages": "103-132",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Law and positive morality",
+          "authors": [
+            "Hendrik J",
+            "an van Eikema Hommes \n",
+            "Rudolf",
+            "Schwarz",
+            "Sich Kein",
+            "Küche \nMinutenmir",
+            "Gelb",
+            "Natürlich Schreiben",
+            "Geld",
+            "Geld Zug zum",
+            "bin Wald",
+            "Weihnachten spielen bei man"
+          ],
+          "pdf_start_index": 211,
+          "pdf_end_index": 218,
+          "citation_pages": "133-140",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der kooperative Verfassungsstaat",
+          "authors": [
+            "Der",
+            "Verfassungsstaat",
+            "Von Peter Häberle",
+            "Ausgangsthesen",
+            "Notwendigkeiten",
+            "Struk-",
+            "Opa Machen",
+            "Einigen",
+            "dir Erschrecken",
+            "Weihnachten Minutenmir",
+            "Familie Tür Weihnachten \nII",
+            "Ges"
+          ],
+          "pdf_start_index": 219,
+          "pdf_end_index": 256,
+          "citation_pages": "141-178",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Individuum und Gesellschaft",
+          "authors": [
+            "Peter Hartmann",
+            "Der Beitrag",
+            "Ziele",
+            "Die Ziele",
+            "Gewinnung",
+            "Weihnachten Erschrecken",
+            "Schüler Erschrecken",
+            "Weihnachten Straße Spiel",
+            "Minutenmir Weihnachten Weihnachten vielleicht",
+            "Versuchen Brief-\n",
+            "Weihnachten Werden",
+            "las Weihnachten",
+            "Dabei"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 288,
+          "citation_pages": "179-210",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zur Rechtserheblichkeit des Normirrtums in juristischer und soziologischer Sicht",
+          "authors": [
+            "Zur Rechtserheblichkeil des Normirrtums",
+            "Sicht",
+            "Rahmenthema \"Recht und Gesellschaft",
+            "Stehen Wirklich",
+            "Erschrecken",
+            "Nase Opa Schlafen Weihnachten",
+            "Familie Frei",
+            "Weihnachten Opa \nErschrecken"
+          ],
+          "pdf_start_index": 289,
+          "pdf_end_index": 306,
+          "citation_pages": "211-228",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Prinzip der Mehrheitsregel",
+          "authors": [
+            "Mehrheitsregel",
+            "Menschenrechte",
+            "Garten \nLehrerin",
+            "Bild",
+            "Weihnachten Hunger",
+            "Leute Wasser",
+            "gar \nKlettern",
+            "Tante",
+            "Erklären"
+          ],
+          "pdf_start_index": 307,
+          "pdf_end_index": 326,
+          "citation_pages": "229-248",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Begriff des Eigentums in geschichtlicher und gegenwärtiger Betrachtung im Bereich der öffentlichen Planung",
+          "authors": [
+            "Bereich",
+            "Planung \nVon Stig",
+            "Der",
+            "Philosoph S\"ren Kirkegaard",
+            "Ball",
+            "aus ganz Mädchen",
+            "Einige",
+            "bin Anfangen"
+          ],
+          "pdf_start_index": 327,
+          "pdf_end_index": 340,
+          "citation_pages": "249-262",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das transzendental-juridische Grundverhältnis im Vernunftbegriff Kants und der Bezug zwischen Recht und Gesellschaft",
+          "authors": [
+            "Grundverhältnis",
+            "Vernunftbegriff Kants",
+            "Von Friedrich Kaulbach",
+            "Untersuchung werde",
+            "zeigen",
+            "von Kant",
+            "Wirklich",
+            "Treffen Fuß Schreien",
+            "Weihnachten Gestern",
+            "Minutenmir Vielleicht",
+            "Opa"
+          ],
+          "pdf_start_index": 341,
+          "pdf_end_index": 364,
+          "citation_pages": "263-286",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ius praetensum. Preußisches Zivil- und Zivilprozeßrecht, richterliche Methode und Naturrecht im Spiegel einer Reflexion Kants zur Logik",
+          "authors": [
+            "Zivil",
+            "Naturrecht",
+            "Spiegel",
+            "Von Hans Kiefner",
+            "desgleichen Beißen",
+            "Erschrecken",
+            "d. ja",
+            "Hängen",
+            "Tisch Land",
+            "las Drehen gut Weihnachten",
+            "Rad",
+            "Natürlich Tisch",
+            "Glauben Zimmer Schüler",
+            "Gehören"
+          ],
+          "pdf_start_index": 365,
+          "pdf_end_index": 396,
+          "citation_pages": "287-318",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Evolution des Rechts und der Menschenrechte",
+          "authors": [
+            "Menschenrechte*",
+            "Von Werner Krawietz",
+            "Menschenrechte",
+            "Dem Schutze",
+            "Küche Haare",
+            "Langsam am dem Werfen-\nWeihnachten",
+            "Endlich",
+            "Weihnachten Erschrecken",
+            "Weihnachten zusa"
+          ],
+          "pdf_start_index": 397,
+          "pdf_end_index": 420,
+          "citation_pages": "319-342",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verdienste und Grenzen moderner Rechtsanthropologie",
+          "authors": [
+            "Von Luigi",
+            "extrem",
+            "Ausführungen",
+            "Minutenmir",
+            "kein Beißen \nKind Wagen",
+            "Zug Weihnachten Legen",
+            "Glas Weihnachten Sieben",
+            "Klein Minutenmir",
+            "Fertig"
+          ],
+          "pdf_start_index": 421,
+          "pdf_end_index": 430,
+          "citation_pages": "343-352",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wert und Wirklichkeit",
+          "authors": [
+            "Zur Möglichkeit",
+            "Gesetzgebung",
+            "Von Peter N",
+            "Zentrum",
+            "Forschung der Uni-",
+            "Bielefeld",
+            "Garten",
+            "Dunkel Zwischen",
+            "Rufen",
+            "Musik",
+            "Verkaufen \nmein Weihnach"
+          ],
+          "pdf_start_index": 431,
+          "pdf_end_index": 448,
+          "citation_pages": "353-370",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Causation and Fault in Torts. How to save the lawyers from the philosophers",
+          "authors": [
+            "Alexander Peczenik",
+            "Eis Papa",
+            "Weg"
+          ],
+          "pdf_start_index": 449,
+          "pdf_end_index": 468,
+          "citation_pages": "371-390",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtsfindung und Bindungen des Richters im sozialistischen Rechtskreis",
+          "authors": [
+            "Rechtskreis",
+            "Auf Weihnachten schreiben",
+            "Monate Kopf",
+            "Tisch",
+            "Schreiben",
+            "Geschichte aus von Erschrecken",
+            "Geschichte",
+            "Erschrecken Geschichte",
+            "Bei Junge",
+            "Sprechen",
+            "Erschrecken",
+            "dir w"
+          ],
+          "pdf_start_index": 469,
+          "pdf_end_index": 480,
+          "citation_pages": "391-402",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Neues über Leben und Werk von Eugen Ehrlich",
+          "authors": [
+            "Kreise",
+            "Juristen",
+            "Geiger",
+            "Weihnachten Weihnachten Weihnachten",
+            "Viel Allein Lehrer Die",
+            "Lesen",
+            "Reich",
+            "Herr",
+            "kein ja weg",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 481,
+          "pdf_end_index": 496,
+          "citation_pages": "403-418",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Forschung und Bildung. Wilhelm von Humboldts ursprünglicher Begriff der Wissenschaft",
+          "authors": [
+            "Wilhelm von Humboldts",
+            "Werk von Humboldt",
+            "Überall-Geschichte Weihnachten",
+            "Nie-\nApfel Ferien",
+            "Geschichte Helfen",
+            "Minutenmir Weihnachten",
+            "Affe Rad Weihnachten",
+            "las Schlecht",
+            "Sollen \nTür"
+          ],
+          "pdf_start_index": 497,
+          "pdf_end_index": 512,
+          "citation_pages": "419-434",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "über außervertragliche Voraussetzungen des Vertrages",
+          "authors": [
+            "von Emile Durkheim",
+            "bin von",
+            "Vergessen weit ja ins",
+            "laut",
+            "Bein",
+            "Kennen bin Anfa"
+          ],
+          "pdf_start_index": 513,
+          "pdf_end_index": 558,
+          "citation_pages": "435-480",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der personfunktionale Ansatz in der Rechtssoziologie. Eine Auseinandersetzung mit dem Ansatz von Helmut Schelsky",
+          "authors": [
+            "Der",
+            "Ansatz",
+            "Rechtssoziologie \nEine Auseinandersetzung",
+            "Ansatz von Helmut Scbelsky \nVon Frank Rotter",
+            "Ansätze",
+            "Gehören Opa",
+            "Minutenmir",
+            "Endlich",
+            "Glas",
+            "Nur Schwester"
+          ],
+          "pdf_start_index": 559,
+          "pdf_end_index": 604,
+          "citation_pages": "481-526",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "über einige Zusammenhänge und Differenzen von Recht und Erziehung in der Gesellschaftstheorie, unter besonderer Berücksichtigung von Emile Durkheim und Max Weber",
+          "authors": [
+            "Gesellschaftstheorie",
+            "Berücksichtigung von \n",
+            "Emile Durkheim",
+            "Max Weher",
+            "vielleicht Weihnachten",
+            "Glauben",
+            "Erde Seite",
+            "Herr bin",
+            "Vergessen",
+            "Weihnachten Weihnachten",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 605,
+          "pdf_end_index": 626,
+          "citation_pages": "527-548",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "\"Begründung\" - Einige Probleme eines rechtstheoretischen Problems",
+          "authors": [
+            "Von Jürgen Schmidt",
+            "I. Divergenzen",
+            "Einige Worte",
+            "Wenn",
+            "zu Maus",
+            "Mögen",
+            "Buch Herr"
+          ],
+          "pdf_start_index": 627,
+          "pdf_end_index": 656,
+          "citation_pages": "549-578",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Stadtplanung und Baugestaltung im Dienste der Verbrechensvorbeugung",
+          "authors": [
+            "Baugestaltung",
+            "Verbrechensvorbeugung \nVon Hans J",
+            "Moderne Dunkelfeldforschungen",
+            "Tür Weihnachten",
+            "Minutenmir Erschrecken",
+            "Weihnachten Waschen",
+            "Name Rad",
+            "Geld"
+          ],
+          "pdf_start_index": 657,
+          "pdf_end_index": 666,
+          "citation_pages": "579-588",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vera Politica. Grundlagen der Politiktheorie bei G. W. Leibniz",
+          "authors": [
+            "Grundlagen",
+            "Politiktheorie",
+            "G. W. Leibniz*",
+            "Von W",
+            "zwischen Theorie",
+            "von Marx",
+            "laut es von",
+            "Möglich da Platz",
+            "Verkaufen",
+            "Erschrecken",
+            "Richtig-",
+            "Zug Erschrecken",
+            "Musik Weg",
+            "Weg Weihnachten",
+            "Natürlich"
+          ],
+          "pdf_start_index": 667,
+          "pdf_end_index": 682,
+          "citation_pages": "589-604",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Recht gegen das Gesetz: Traditionelle Vorstellungen und moderne Rechtsprechung bei den Bulsa in Nordghana",
+          "authors": [
+            "Traditionelle Vorstellungen",
+            "Rechtsprechung",
+            "Von Rüdiger Schott",
+            "zum Uhr \nErschrecken",
+            "Schluss",
+            "Gefährlich \nBin \"Gesicht Beide",
+            "Leute ob Verstehen",
+            "Familie Erschrecken Opa Schreiben"
+          ],
+          "pdf_start_index": 683,
+          "pdf_end_index": 714,
+          "citation_pages": "605-636",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Untrennbarkeit von Staat und Gesellschaft in der Frühneuzeit. Althusius und Bodin",
+          "authors": [
+            "Untrennbarkeil von Staat",
+            "Frühneuzeit",
+            "Bodin",
+            "Von Hans Ulrich Scupin",
+            "I. Voraussetzungen",
+            "Ziel der Untersuchung \nDer",
+            "Milch",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 715,
+          "pdf_end_index": 736,
+          "citation_pages": "637-658",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zur innenpolitischen Neutralität des Staates",
+          "authors": [
+            "Zur",
+            "Kontroversen",
+            "z. T. grund-\nlegenden",
+            "Strafrecht",
+            "Weihnachten Ziehen",
+            "Wirklich",
+            "Eigentlich \nName",
+            "Erschrecken Nacht",
+            "Hören Rad",
+            "Fressen",
+            "Verstecken",
+            "Berg"
+          ],
+          "pdf_start_index": 737,
+          "pdf_end_index": 758,
+          "citation_pages": "659-680",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Analyse und Prognose. Zwei Typen der rechtlichen Entscheidungsbildung",
+          "authors": [
+            "Zwei Typen",
+            "Von Stig Strömholm",
+            "Rahmen",
+            "Geschichte",
+            "Erschrecken Weihnachten",
+            "bin Glücklich",
+            "Sohn",
+            "Kopf",
+            "zum ob"
+          ],
+          "pdf_start_index": 759,
+          "pdf_end_index": 774,
+          "citation_pages": "681-696",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "über die Anonymisierung von Verantwortung",
+          "authors": [
+            "Anonymisierung von Verantwortung",
+            "Von Paul Trappe",
+            "Küche Weg",
+            "Essen Weihnachten",
+            "Natürlich",
+            "Minutenmir",
+            "zur da jeder",
+            "Braun-",
+            "Stein Fuß schreiben Erschrecken"
+          ],
+          "pdf_start_index": 775,
+          "pdf_end_index": 794,
+          "citation_pages": "697-716",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rhetorik, Sprachpragmatik, Rechtstheorie",
+          "authors": [
+            "Rechtstheorie \nVon Theodor Viehweg \n",
+            "Rechtstheorie",
+            "Vater",
+            "Weihnachten Weihnachten",
+            "Minutenmir",
+            "Dauern- los Erschrecken",
+            "Schreiben",
+            "Zug",
+            "Weihnachten Bringen"
+          ],
+          "pdf_start_index": 795,
+          "pdf_end_index": 798,
+          "citation_pages": "717-720",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rationales und irrationales Handeln",
+          "authors": [
+            "Der Rahmen",
+            "Weihnachten Heiß",
+            "Versuchen",
+            "zum Woche Deshalb",
+            "Weihnachten Weiter neu Schicken",
+            "Gut Plötzlich",
+            "los Springen Schule Erschrecken",
+            "Zurück de"
+          ],
+          "pdf_start_index": 799,
+          "pdf_end_index": 822,
+          "citation_pages": "721-744",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vom Nutzen und Nachteil des Szientismus in der Rechtswissenschaft",
+          "authors": [
+            "Vom Nutzen",
+            "Von Franz Wieacker",
+            "Versuchen tun Heißen Schenken",
+            "Erschrecken",
+            "Schule",
+            "Antworten können vielleicht bei",
+            "Versuchen wo eige"
+          ],
+          "pdf_start_index": 823,
+          "pdf_end_index": 842,
+          "citation_pages": "745-764",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Axiological Problems of Legal Informatics",
+          "authors": [
+            "Geschichte aus",
+            "Weihnachten",
+            "Fenster Geburtstag",
+            "Schwester",
+            "Wiese stark-\nWohnung",
+            "von verlieren"
+          ],
+          "pdf_start_index": 843,
+          "pdf_end_index": 854,
+          "citation_pages": "765-776",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verlust der Orientierungsgewißheit?",
+          "authors": [
+            "Orientierungsgewißheit",
+            "Von Reinhold",
+            "I. Der Bedarf",
+            "Der Bedarf",
+            "Der Mensch",
+            "Drei",
+            "Geld",
+            "Erschrecken Weihnachten",
+            "Ding Luft",
+            "Lesen Führen",
+            "Trinken Weihnachten",
+            "Zug",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 855,
+          "pdf_end_index": 872,
+          "citation_pages": "777-794",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 30.211340062000005,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:41:29.856975+00:00"
     }
   },
-  "generated_at": "2026-08-13T05:00:00.168402+00:00"
+  "generated_at": "2026-08-15T03:41:29.856975+00:00"
 }

@@ -6,3 +6,4 @@ hpc/*.sif
 hpc/job.out.*
 hpc/job.err.*
 .layout-cache/
+.lobid-cache/

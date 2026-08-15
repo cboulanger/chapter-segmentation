@@ -228,9 +228,943 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 88.11806137600001,
+      "elapsed_seconds": 87.60137709799983,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Education on the Move: How Migration Affects Learning Outcomes",
+          "authors": [],
+          "pdf_start_index": 73,
+          "pdf_end_index": 98,
+          "citation_pages": "45-76",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Teaching at the Bottom of the Pyramid: Teacher Education in Poor and Marginalized Communities",
+          "authors": [
+            "Kwame Akyeampong\nIntroduction \nAchieving SDG4"
+          ],
+          "pdf_start_index": 99,
+          "pdf_end_index": 133,
+          "citation_pages": "77-112",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Improving the Impact of Educational Technologies on Learning Within Low-Income Contexts",
+          "authors": [
+            "Nathan M. Castillo",
+            "Taskeen Adam",
+            "Björn Haßler",
+            "Jansen"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 169,
+          "citation_pages": "113-148",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reducing Inequality in Education Using “Smaller, Quicker, Cheaper” Assessments",
+          "authors": [
+            "Luis Crouch",
+            "Timothy S. Slade"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 202,
+          "citation_pages": "149-180",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Not All Pyramids Are the Same: Relative Learning Exclusion and Its Evolution Over Time",
+          "authors": [
+            "Tijana Prokic-Breuer",
+            "Stan Vermeulen",
+            "Wolf"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 213,
+          "citation_pages": "181-192",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Financing Education at the Bottom of the Pyramid",
+          "authors": [
+            "Luis Benveniste"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 243,
+          "citation_pages": "193-222",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mexico: Education and Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Sylvia Schmelkes",
+            "Annette Santos"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 298,
+          "citation_pages": "223-276",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: Learning in the Margin: Reflections on Indian Policies and Programs for Education of the Disadvantaged",
+          "authors": [
+            "Rangachar Govinda\nIntroduction\nIndia"
+          ],
+          "pdf_start_index": 299,
+          "pdf_end_index": 314,
+          "citation_pages": "277-292",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: Learning Challenges for the Marginalized",
+          "authors": [
+            "Learning Challenges",
+            "Rajarshi Singh",
+            "Padmakali Banerjee"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 330,
+          "citation_pages": "293-308",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: The Role of Civil Society Organizations and Scalable Technology Solutions for Marginalized Communities",
+          "authors": [
+            "Rajarshi Singh",
+            "Annapoorni Chandrashekar",
+            "Nishant Baghel\nIntroduction"
+          ],
+          "pdf_start_index": 331,
+          "pdf_end_index": 343,
+          "citation_pages": "309-322",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivory Coast: Children at the Bottom of the Pyramid and Government Policies",
+          "authors": [
+            "François Joseph Azoh",
+            "Zamblé Théodore Goin"
+          ],
+          "pdf_start_index": 345,
+          "pdf_end_index": 363,
+          "citation_pages": "323-342",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivory Coast: Promoting Learning Outcomes at the Bottom of the Pyramid",
+          "authors": [
+            "Sosthène Guei\nIntroduction\nMillions"
+          ],
+          "pdf_start_index": 365,
+          "pdf_end_index": 381,
+          "citation_pages": "343-360",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Education, Learning, and Policy-Framing for Children at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "Ann Gachoya",
+            "Virginia Ngindiru\nIntroduction \n",
+            "COVID-19"
+          ],
+          "pdf_start_index": 383,
+          "pdf_end_index": 401,
+          "citation_pages": "361-380",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Free Primary and Day Secondary Education Policies and Their Contributions to Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "Mercy G. Karogo\nIntroduction\n",
+            "Millennium Declaration"
+          ],
+          "pdf_start_index": 403,
+          "pdf_end_index": 418,
+          "citation_pages": "381-396",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Disability and Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "John K. Mugo",
+            "Diana Makau",
+            "David K. Njengere"
+          ],
+          "pdf_start_index": 419,
+          "pdf_end_index": 437,
+          "citation_pages": "397-416",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Education in Marginalized Communities",
+          "authors": [
+            "Kenya",
+            "Joyce Kinyanjui"
+          ],
+          "pdf_start_index": 439,
+          "pdf_end_index": 460,
+          "citation_pages": "417-438",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Afterword: The Challenge Ahead for Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Afterword",
+            "Rachel Hinton",
+            "Asyia Kazmi"
+          ],
+          "pdf_start_index": 461,
+          "pdf_end_index": 465,
+          "citation_pages": "439-129",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 10.65996257499998,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:43:37.504824+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Education on the Move: How Migration Affects Learning Outcomes",
+          "authors": [],
+          "pdf_start_index": 73,
+          "pdf_end_index": 98,
+          "citation_pages": "45-76",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Teaching at the Bottom of the Pyramid: Teacher Education in Poor and Marginalized Communities",
+          "authors": [
+            "Kwame Akyeampong\nIntroduction \nAchieving SDG4"
+          ],
+          "pdf_start_index": 99,
+          "pdf_end_index": 133,
+          "citation_pages": "77-112",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Improving the Impact of Educational Technologies on Learning Within Low-Income Contexts",
+          "authors": [
+            "Nathan M. Castillo",
+            "Taskeen Adam",
+            "Björn Haßler",
+            "Jansen"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 169,
+          "citation_pages": "113-148",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reducing Inequality in Education Using “Smaller, Quicker, Cheaper” Assessments",
+          "authors": [
+            "Luis Crouch",
+            "Timothy S. Slade"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 202,
+          "citation_pages": "149-180",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Not All Pyramids Are the Same: Relative Learning Exclusion and Its Evolution Over Time",
+          "authors": [
+            "Tijana Prokic-Breuer",
+            "Stan Vermeulen",
+            "Wolf"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 213,
+          "citation_pages": "181-192",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Financing Education at the Bottom of the Pyramid",
+          "authors": [
+            "Luis Benveniste"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 243,
+          "citation_pages": "193-222",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mexico: Education and Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Sylvia Schmelkes",
+            "Annette Santos"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 298,
+          "citation_pages": "223-276",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: Learning in the Margin: Reflections on Indian Policies and Programs for Education of the Disadvantaged",
+          "authors": [
+            "Rangachar Govinda\nIntroduction\nIndia"
+          ],
+          "pdf_start_index": 299,
+          "pdf_end_index": 314,
+          "citation_pages": "277-292",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: Learning Challenges for the Marginalized",
+          "authors": [
+            "Learning Challenges",
+            "Rajarshi Singh",
+            "Padmakali Banerjee"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 330,
+          "citation_pages": "293-308",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: The Role of Civil Society Organizations and Scalable Technology Solutions for Marginalized Communities",
+          "authors": [
+            "Rajarshi Singh",
+            "Annapoorni Chandrashekar",
+            "Nishant Baghel\nIntroduction"
+          ],
+          "pdf_start_index": 331,
+          "pdf_end_index": 343,
+          "citation_pages": "309-322",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivory Coast: Children at the Bottom of the Pyramid and Government Policies",
+          "authors": [
+            "François Joseph Azoh",
+            "Zamblé Théodore Goin"
+          ],
+          "pdf_start_index": 345,
+          "pdf_end_index": 363,
+          "citation_pages": "323-342",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivory Coast: Promoting Learning Outcomes at the Bottom of the Pyramid",
+          "authors": [
+            "Sosthène Guei\nIntroduction\nMillions"
+          ],
+          "pdf_start_index": 365,
+          "pdf_end_index": 381,
+          "citation_pages": "343-360",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Education, Learning, and Policy-Framing for Children at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "Ann Gachoya",
+            "Virginia Ngindiru\nIntroduction \n",
+            "COVID-19"
+          ],
+          "pdf_start_index": 383,
+          "pdf_end_index": 401,
+          "citation_pages": "361-380",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Free Primary and Day Secondary Education Policies and Their Contributions to Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "Mercy G. Karogo\nIntroduction\n",
+            "Millennium Declaration"
+          ],
+          "pdf_start_index": 403,
+          "pdf_end_index": 418,
+          "citation_pages": "381-396",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Disability and Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "John K. Mugo",
+            "Diana Makau",
+            "David K. Njengere"
+          ],
+          "pdf_start_index": 419,
+          "pdf_end_index": 437,
+          "citation_pages": "397-416",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Education in Marginalized Communities",
+          "authors": [
+            "Kenya",
+            "Joyce Kinyanjui"
+          ],
+          "pdf_start_index": 439,
+          "pdf_end_index": 460,
+          "citation_pages": "417-438",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Afterword: The Challenge Ahead for Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Afterword",
+            "Rachel Hinton",
+            "Asyia Kazmi"
+          ],
+          "pdf_start_index": 461,
+          "pdf_end_index": 465,
+          "citation_pages": "439-129",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 89.74832948899984,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:02:19.473833+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Education on the Move: How Migration Affects Learning Outcomes",
+          "authors": [],
+          "pdf_start_index": 73,
+          "pdf_end_index": 98,
+          "citation_pages": "45-76",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Teaching at the Bottom of the Pyramid: Teacher Education in Poor and Marginalized Communities",
+          "authors": [
+            "Kwame Akyeampong\nIntroduction \nAchieving SDG4"
+          ],
+          "pdf_start_index": 99,
+          "pdf_end_index": 133,
+          "citation_pages": "77-112",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Improving the Impact of Educational Technologies on Learning Within Low-Income Contexts",
+          "authors": [
+            "Nathan M. Castillo",
+            "Taskeen Adam",
+            "Björn Haßler",
+            "Jansen"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 169,
+          "citation_pages": "113-148",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reducing Inequality in Education Using “Smaller, Quicker, Cheaper” Assessments",
+          "authors": [
+            "Luis Crouch",
+            "Timothy S. Slade"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 202,
+          "citation_pages": "149-180",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Not All Pyramids Are the Same: Relative Learning Exclusion and Its Evolution Over Time",
+          "authors": [
+            "Tijana Prokic-Breuer",
+            "Stan Vermeulen",
+            "Wolf"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 213,
+          "citation_pages": "181-192",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Financing Education at the Bottom of the Pyramid",
+          "authors": [
+            "Luis Benveniste"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 243,
+          "citation_pages": "193-222",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mexico: Education and Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Sylvia Schmelkes",
+            "Annette Santos"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 298,
+          "citation_pages": "223-276",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: Learning in the Margin: Reflections on Indian Policies and Programs for Education of the Disadvantaged",
+          "authors": [
+            "Rangachar Govinda\nIntroduction\nIndia"
+          ],
+          "pdf_start_index": 299,
+          "pdf_end_index": 314,
+          "citation_pages": "277-292",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: Learning Challenges for the Marginalized",
+          "authors": [
+            "Learning Challenges",
+            "Rajarshi Singh",
+            "Padmakali Banerjee"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 330,
+          "citation_pages": "293-308",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: The Role of Civil Society Organizations and Scalable Technology Solutions for Marginalized Communities",
+          "authors": [
+            "Rajarshi Singh",
+            "Annapoorni Chandrashekar",
+            "Nishant Baghel\nIntroduction"
+          ],
+          "pdf_start_index": 331,
+          "pdf_end_index": 343,
+          "citation_pages": "309-322",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivory Coast: Children at the Bottom of the Pyramid and Government Policies",
+          "authors": [
+            "François Joseph Azoh",
+            "Zamblé Théodore Goin"
+          ],
+          "pdf_start_index": 345,
+          "pdf_end_index": 363,
+          "citation_pages": "323-342",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivory Coast: Promoting Learning Outcomes at the Bottom of the Pyramid",
+          "authors": [
+            "Sosthène Guei\nIntroduction\nMillions"
+          ],
+          "pdf_start_index": 365,
+          "pdf_end_index": 381,
+          "citation_pages": "343-360",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Education, Learning, and Policy-Framing for Children at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "Ann Gachoya",
+            "Virginia Ngindiru\nIntroduction \n",
+            "COVID-19"
+          ],
+          "pdf_start_index": 383,
+          "pdf_end_index": 401,
+          "citation_pages": "361-380",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Free Primary and Day Secondary Education Policies and Their Contributions to Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "Mercy G. Karogo\nIntroduction\n",
+            "Millennium Declaration"
+          ],
+          "pdf_start_index": 403,
+          "pdf_end_index": 418,
+          "citation_pages": "381-396",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Disability and Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "John K. Mugo",
+            "Diana Makau",
+            "David K. Njengere"
+          ],
+          "pdf_start_index": 419,
+          "pdf_end_index": 437,
+          "citation_pages": "397-416",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Education in Marginalized Communities",
+          "authors": [
+            "Kenya",
+            "Joyce Kinyanjui"
+          ],
+          "pdf_start_index": 439,
+          "pdf_end_index": 460,
+          "citation_pages": "417-438",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Afterword: The Challenge Ahead for Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Afterword",
+            "Rachel Hinton",
+            "Asyia Kazmi"
+          ],
+          "pdf_start_index": 461,
+          "pdf_end_index": 465,
+          "citation_pages": "439-129",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 59.42265631700002,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:15:38.665811+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Education on the Move: How Migration Affects Learning Outcomes",
+          "authors": [],
+          "pdf_start_index": 73,
+          "pdf_end_index": 98,
+          "citation_pages": "45-76",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Teaching at the Bottom of the Pyramid: Teacher Education in Poor and Marginalized Communities",
+          "authors": [
+            "Kwame Akyeampong\nIntroduction \nAchieving SDG4"
+          ],
+          "pdf_start_index": 99,
+          "pdf_end_index": 133,
+          "citation_pages": "77-112",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Improving the Impact of Educational Technologies on Learning Within Low-Income Contexts",
+          "authors": [
+            "Nathan M. Castillo",
+            "Taskeen Adam",
+            "Björn Haßler",
+            "Jansen"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 169,
+          "citation_pages": "113-148",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reducing Inequality in Education Using “Smaller, Quicker, Cheaper” Assessments",
+          "authors": [
+            "Luis Crouch",
+            "Timothy S. Slade"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 202,
+          "citation_pages": "149-180",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Not All Pyramids Are the Same: Relative Learning Exclusion and Its Evolution Over Time",
+          "authors": [
+            "Tijana Prokic-Breuer",
+            "Stan Vermeulen",
+            "Wolf"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 213,
+          "citation_pages": "181-192",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Financing Education at the Bottom of the Pyramid",
+          "authors": [
+            "Luis Benveniste"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 243,
+          "citation_pages": "193-222",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mexico: Education and Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Sylvia Schmelkes",
+            "Annette Santos"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 298,
+          "citation_pages": "223-276",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: Learning in the Margin: Reflections on Indian Policies and Programs for Education of the Disadvantaged",
+          "authors": [
+            "Rangachar Govinda\nIntroduction\nIndia"
+          ],
+          "pdf_start_index": 299,
+          "pdf_end_index": 314,
+          "citation_pages": "277-292",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: Learning Challenges for the Marginalized",
+          "authors": [
+            "Learning Challenges",
+            "Rajarshi Singh",
+            "Padmakali Banerjee"
+          ],
+          "pdf_start_index": 315,
+          "pdf_end_index": 330,
+          "citation_pages": "293-308",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India: The Role of Civil Society Organizations and Scalable Technology Solutions for Marginalized Communities",
+          "authors": [
+            "Rajarshi Singh",
+            "Annapoorni Chandrashekar",
+            "Nishant Baghel\nIntroduction"
+          ],
+          "pdf_start_index": 331,
+          "pdf_end_index": 343,
+          "citation_pages": "309-322",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivory Coast: Children at the Bottom of the Pyramid and Government Policies",
+          "authors": [
+            "François Joseph Azoh",
+            "Zamblé Théodore Goin"
+          ],
+          "pdf_start_index": 345,
+          "pdf_end_index": 363,
+          "citation_pages": "323-342",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ivory Coast: Promoting Learning Outcomes at the Bottom of the Pyramid",
+          "authors": [
+            "Sosthène Guei\nIntroduction\nMillions"
+          ],
+          "pdf_start_index": 365,
+          "pdf_end_index": 381,
+          "citation_pages": "343-360",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Education, Learning, and Policy-Framing for Children at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "Ann Gachoya",
+            "Virginia Ngindiru\nIntroduction \n",
+            "COVID-19"
+          ],
+          "pdf_start_index": 383,
+          "pdf_end_index": 401,
+          "citation_pages": "361-380",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Free Primary and Day Secondary Education Policies and Their Contributions to Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "Mercy G. Karogo\nIntroduction\n",
+            "Millennium Declaration"
+          ],
+          "pdf_start_index": 403,
+          "pdf_end_index": 418,
+          "citation_pages": "381-396",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Disability and Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Kenya",
+            "John K. Mugo",
+            "Diana Makau",
+            "David K. Njengere"
+          ],
+          "pdf_start_index": 419,
+          "pdf_end_index": 437,
+          "citation_pages": "397-416",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kenya: Education in Marginalized Communities",
+          "authors": [
+            "Kenya",
+            "Joyce Kinyanjui"
+          ],
+          "pdf_start_index": 439,
+          "pdf_end_index": 460,
+          "citation_pages": "417-438",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Afterword: The Challenge Ahead for Learning at the Bottom of the Pyramid",
+          "authors": [
+            "Afterword",
+            "Rachel Hinton",
+            "Asyia Kazmi"
+          ],
+          "pdf_start_index": 461,
+          "pdf_end_index": 465,
+          "citation_pages": "439-129",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 25.330364190999717,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:22:47.940202+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.22935739300010027,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:21.877407+00:00"
     }
   },
-  "generated_at": "2026-08-13T05:12:31.720794+00:00"
+  "generated_at": "2026-08-15T04:23:21.877407+00:00"
 }

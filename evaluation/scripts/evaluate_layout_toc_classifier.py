@@ -9,9 +9,24 @@ evaluation/scripts/fetch_evaluation_pdfs.py.
 Usage:
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --pdfalto-bin /path/to/pdfalto
-    uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --recall-target 0.95
+    uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --candidate-fraction-cap 0.20
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --corpora open-access,pending
     uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --scan-noise-augment
+    uv run python evaluation/scripts/evaluate_layout_toc_classifier.py --recall-target 0.95
+
+The default selection strategy is document-relative candidate-budget
+selection (`--candidate-fraction-cap`, default 0.15 -- see
+`select_candidates_by_document_budget`'s docstring): it needs no
+per-corpus retuning and reaches equal-or-better full_recall_fraction than
+any `recall_target` value found in this pilot's history, at a comparable
+or tighter candidate-fraction cost, with per-book candidate_fraction
+landing in a narrow band around the cap instead of ranging from under 2%
+to over 50% for a single global probability threshold -- see
+evaluation/RESULTS.md's "document-relative candidate-budget selection"
+follow-up for the full comparison. `--recall-target` (the pilot's
+original, training-quantile-calibrated absolute-threshold strategy) is
+kept as an explicit override for comparison/experimentation -- passing it
+switches back to that strategy and `--candidate-fraction-cap` is ignored.
 
 `--scan-noise-augment` writes `<key>.aug.alto.xml` files next to each
 open-access book's cached ALTO XML the first time it runs; like the rest of
@@ -23,6 +38,7 @@ evaluation/scripts/alto_scan_noise.py.
 import argparse
 import math
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
@@ -45,9 +61,21 @@ from evaluation.scripts.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_b
 _CORPUS_DIR = Path(__file__).resolve().parent.parent / "corpus"
 _CORPORA = ["open-access", "copyrighted-scans"]
 
-_RECALL_TARGET = 0.90  # threshold picked per fold to hit this recall on training pages; the
-# actual "how many false-positive candidate pages am I willing to live with" dial -- this is
-# what a real consumer of the classifier would tune. An empirical comparison found
+_CANDIDATE_FRACTION_CAP = 0.15  # default selection strategy: document-relative top-K by
+# max(prob_toc, prob_chapter_first), capped at this share of each held-out book's own pages
+# (select_candidates_by_document_budget). Promoted to the default 2026-08-14 after reaching
+# equal-or-better full_recall_fraction than any recall_target value at a comparable or
+# tighter candidate cost, on both the full 89-book corpus and open-access alone, with no
+# per-corpus retuning needed -- see evaluation/RESULTS.md's "document-relative
+# candidate-budget selection" follow-up for the comparison this promotion is based on. 0.15
+# matches the pilot's own avg_candidate_fraction decision-bar budget.
+
+_RECALL_TARGET = 0.90  # legacy selection strategy, kept for comparison/experimentation --
+# pass --recall-target explicitly to use it instead of --candidate-fraction-cap. Threshold
+# picked per fold to hit this recall on training pages, then applied as one absolute
+# probability cutoff to every held-out book regardless of how separated that book's own
+# probabilities are (unlike --candidate-fraction-cap's per-document calibration) -- this is
+# what made it a weaker choice once compared directly. An empirical comparison found
 # LogisticRegression (below) generalizes recall across held-out books much better than the
 # tree-based HistGradientBoostingClassifier tried first, whose per-fold leaf-region
 # thresholds transfer poorly to a book with a slightly different feature distribution; a
@@ -56,12 +84,11 @@ _RECALL_TARGET = 0.90  # threshold picked per fold to hit this recall on trainin
 # features-and-scan-augmentation-design.md) made training probabilities on the 17-feature
 # model materially more separable, which shifted this curve enough that the old 0.80 default
 # now UNDERSHOOTS the previous 50/70-book baseline's full_recall_fraction (56% vs. 64%) even
-# though it stays comfortably inside the avg_candidate_fraction budget (7.2% vs. 15%). 0.90 is
-# the new default because it's the first point on the 17-feature curve that beats the baseline
-# on both axes at once (67% full recall, 9.0% candidates) -- see evaluation/RESULTS.md's
-# "context/normalized features and scan-noise augmentation" follow-up for the full sweep.
-# Callers who don't mind more candidate "noise" (e.g. because a cheap downstream model
-# reviews every candidate anyway) can still raise this further.
+# though it stays comfortably inside the avg_candidate_fraction budget (7.2% vs. 15%). 0.90
+# was the default (before --candidate-fraction-cap's promotion above) because it's the first
+# point on the 17-feature curve that beats the baseline on both axes at once (67% full
+# recall, 9.0% candidates) -- see evaluation/RESULTS.md's "context/normalized features and
+# scan-noise augmentation" follow-up for the full sweep.
 
 _CHAPTER_FIRST_RECALL_TOLERANCE = 0.90  # per-book chapter_first recall needed to "pass" in
 # this script's own aggregate report -- NOT a knob a real consumer of the classifier would
@@ -255,6 +282,119 @@ def _evaluate_label(
     return recall, passed, predicted_indices
 
 
+def select_candidates_by_document_budget(
+    probs_by_label: dict[str, list[float]], candidate_fraction_cap: float
+) -> set[int]:
+    """Document-relative alternative to select_threshold/recall_target:
+    ranks a single held-out document's own pages by
+    max(prob_toc, prob_chapter_first) and takes the top
+    floor(candidate_fraction_cap * n_pages) as candidates -- a shared
+    top-K selection across both labels (so a page qualifies if EITHER
+    label's probability is high enough to place it in the combined top-K,
+    equivalent to one shared threshold on the max of the two probabilities)
+    rather than a per-label absolute threshold calibrated once from
+    training-positive quantiles.
+
+    Motivation: recall_target's threshold is calibrated from TRAINING data
+    and applied uniformly to every held-out book regardless of how
+    separated *that specific* book's own probability distribution is --
+    unlike recall (which needs ground truth a real unlabeled document
+    never has), candidate_fraction is directly observable per document
+    with no ground truth required, so calibrating against it directly is
+    possible even in production. Always returns at least 1 page (floor
+    would return 0 for a very short document or a very small cap)."""
+    if not 0.0 < candidate_fraction_cap <= 1.0:
+        raise ValueError(
+            f"candidate_fraction_cap must be in (0.0, 1.0], got {candidate_fraction_cap!r}"
+        )
+    label_names = list(probs_by_label)
+    n_pages = len(probs_by_label[label_names[0]])
+    combined = [
+        max(probs_by_label[label][i] for label in label_names) for i in range(n_pages)
+    ]
+    k = max(1, math.floor(candidate_fraction_cap * n_pages))
+    ranked = sorted(range(n_pages), key=lambda i: combined[i], reverse=True)
+    return set(ranked[:k])
+
+
+def evaluate_leave_one_book_out_document_budget(
+    rows: list[dict],
+    books: list[dict],
+    candidate_fraction_cap: float,
+    chapter_first_recall_tolerance: float = _CHAPTER_FIRST_RECALL_TOLERANCE,
+) -> dict:
+    """Same LOBO structure and return shape as evaluate_leave_one_book_out,
+    but replaces select_threshold/recall_target's training-calibrated,
+    uniformly-applied absolute threshold with
+    select_candidates_by_document_budget's per-document, ground-truth-free
+    top-K-by-combined-score selection -- see that function's docstring for
+    the rationale. `recall_target` has no equivalent here: there is no
+    absolute-probability threshold to calibrate, only the candidate-volume
+    cap."""
+    books_by_key = {book["key"]: book for book in books}
+    book_keys = sorted({row["book_key"] for row in rows if not row.get("augmented")})
+    per_book_results = []
+
+    for held_out in book_keys:
+        train_rows = [r for r in rows if r["book_key"] != held_out]
+        test_rows = [
+            r for r in rows if r["book_key"] == held_out and not r.get("augmented")
+        ]
+        ground_truth_labels = books_by_key[held_out]["labels"]
+
+        X_train = [[r["features"][name] for name in FEATURE_NAMES] for r in train_rows]
+        X_test = [[r["features"][name] for name in FEATURE_NAMES] for r in test_rows]
+
+        probs_by_label: dict[str, list[float]] = {}
+        for label in (LABEL_TOC, LABEL_CHAPTER_FIRST):
+            y_train = [r["label"] == label for r in train_rows]
+            if sum(y_train) > 0:
+                scaler = StandardScaler().fit(X_train)
+                X_train_scaled = scaler.transform(X_train)
+                X_test_scaled = scaler.transform(X_test)
+                clf = LogisticRegression(class_weight="balanced", max_iter=2000)
+                clf.fit(X_train_scaled, y_train)
+                probs_by_label[label] = [p[1] for p in clf.predict_proba(X_test_scaled)]
+            else:
+                probs_by_label[label] = [0.0] * len(test_rows)
+
+        candidate_pages = select_candidates_by_document_budget(
+            probs_by_label, candidate_fraction_cap
+        )
+
+        result: dict = {"book_key": held_out, "total_pages": len(test_rows)}
+        label_pass: dict[str, bool] = {}
+        for label in (LABEL_TOC, LABEL_CHAPTER_FIRST):
+            ground_truth_count = ground_truth_labels.count(label)
+            true_positive_indices = {i for i, r in enumerate(test_rows) if r["label"] == label}
+            if ground_truth_count == 0:
+                result[f"{label}_recall"] = None
+                label_pass[label] = True
+                continue
+            hit_indices = true_positive_indices & candidate_pages
+            recall = len(hit_indices) / ground_truth_count
+            result[f"{label}_recall"] = recall
+            label_pass[label] = (
+                recall >= chapter_first_recall_tolerance
+                if label == LABEL_CHAPTER_FIRST
+                else bool(hit_indices)
+            )
+
+        result["candidate_fraction"] = len(candidate_pages) / result["total_pages"]
+        result["full_recall"] = label_pass[LABEL_TOC] and label_pass[LABEL_CHAPTER_FIRST]
+        per_book_results.append(result)
+
+    n_books = len(per_book_results)
+    n_full_recall = sum(1 for r in per_book_results if r["full_recall"])
+    avg_candidate_fraction = sum(r["candidate_fraction"] for r in per_book_results) / n_books
+
+    return {
+        "per_book": per_book_results,
+        "full_recall_fraction": n_full_recall / n_books,
+        "avg_candidate_fraction": avg_candidate_fraction,
+    }
+
+
 def evaluate_leave_one_book_out(
     rows: list[dict],
     books: list[dict],
@@ -334,18 +474,60 @@ def evaluate_leave_one_book_out(
     }
 
 
+def _write_classifier_results(summary: dict, books: list[dict]) -> None:
+    """Writes evaluate_leave_one_book_out's per-book summary to
+    evaluation/corpus/<corpus>/classifier-results.json, split by each
+    book's own corpus (one LOBO run can span multiple corpora at once via
+    --corpora) -- generate_report.py reads this to fold the classifier's
+    results into the published report. See design spec
+    docs/superpowers/specs/2026-08-14-report-generator-enhancements-design.md.
+
+    full_recall_fraction/avg_candidate_fraction are recomputed per corpus
+    here rather than reusing summary's own (whole-run) values -- a report
+    page is generated per corpus, so its aggregate numbers must reflect
+    only that corpus's books, not a blend with whatever other corpus was
+    also in scope for this invocation."""
+    books_by_key = {book["key"]: book for book in books}
+    by_corpus: dict[str, list[dict]] = {}
+    for result in summary["per_book"]:
+        corpus = books_by_key[result["book_key"]]["corpus"]
+        by_corpus.setdefault(corpus, []).append(result)
+
+    generated_at = datetime.now(timezone.utc).isoformat()
+    for corpus, results in by_corpus.items():
+        n = len(results)
+        payload = {
+            "generated_at": generated_at,
+            "full_recall_fraction": sum(1 for r in results if r["full_recall"]) / n,
+            "avg_candidate_fraction": sum(r["candidate_fraction"] for r in results) / n,
+            "per_book": {
+                r["book_key"]: {
+                    "toc_recall": r.get("toc_recall"),
+                    "chapter_first_recall": r.get("chapter_first_recall"),
+                    "candidate_fraction": r["candidate_fraction"],
+                }
+                for r in results
+            },
+        }
+        out_path = _CORPUS_DIR / corpus / "classifier-results.json"
+        out_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(f"Wrote {out_path} ({n} books)")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--pdfalto-bin", default=None)
     parser.add_argument(
         "--recall-target",
         type=float,
-        default=_RECALL_TARGET,
+        default=None,
         help=(
-            "Per-fold threshold-calibration target: how much recall on training "
-            "positives to require before accepting a page as a candidate. Higher "
-            "catches more real pages at the cost of more false-positive candidates. "
-            f"Default: {_RECALL_TARGET}."
+            "Legacy selection strategy: per-fold threshold-calibration target -- how "
+            "much recall on training positives to require before accepting a page as "
+            "a candidate, applied as one absolute threshold to every held-out book. "
+            "Passing this explicitly switches selection to this strategy and "
+            "--candidate-fraction-cap is ignored -- omit both to use the default "
+            f"--candidate-fraction-cap strategy instead. (Historical default: {_RECALL_TARGET}.)"
         ),
     )
     parser.add_argument(
@@ -376,6 +558,29 @@ def main() -> int:
             "Augmented rows are only ever used for training, never evaluated."
         ),
     )
+    parser.add_argument(
+        "--candidate-fraction-cap",
+        type=float,
+        default=_CANDIDATE_FRACTION_CAP,
+        help=(
+            "Default selection strategy: document-relative candidate selection -- "
+            "rank each held-out book's own pages by max(prob_toc, "
+            "prob_chapter_first) and take the top candidate_fraction_cap share as "
+            "candidates, instead of a threshold calibrated once from "
+            "training-positive quantiles. Ignored if --recall-target is explicitly "
+            f"set. Default: {_CANDIDATE_FRACTION_CAP}. See "
+            "select_candidates_by_document_budget's docstring."
+        ),
+    )
+    parser.add_argument(
+        "--save-results",
+        action="store_true",
+        help=(
+            "Write per-book results to evaluation/corpus/<corpus>/classifier-results.json "
+            "(split by each book's own corpus), for generate_report.py to fold into the "
+            "published report. Default: off (stdout-only, current behavior)."
+        ),
+    )
     args = parser.parse_args()
     pdfalto_bin = resolve_pdfalto_binary(args.pdfalto_bin)
 
@@ -401,9 +606,17 @@ def main() -> int:
     rows = build_feature_table(
         books, cache_dir_for, pdfalto_bin, augment=args.scan_noise_augment
     )
-    summary = evaluate_leave_one_book_out(
-        rows, books, args.recall_target, args.chapter_first_recall_tolerance
-    )
+    if args.recall_target is not None:
+        summary = evaluate_leave_one_book_out(
+            rows, books, args.recall_target, args.chapter_first_recall_tolerance
+        )
+    else:
+        summary = evaluate_leave_one_book_out_document_budget(
+            rows, books, args.candidate_fraction_cap, args.chapter_first_recall_tolerance
+        )
+
+    if args.save_results:
+        _write_classifier_results(summary, books)
 
     print(f"Books evaluated: {len(books)}")
     print(

@@ -24,7 +24,9 @@ evaluation set change.
 `evaluation.harness.list_corpora()` auto-discovers every subfolder of
 `evaluation/corpus/` that has a `manifest.json` -- every runner below loops
 over all of them by default, with an optional `--corpus <name>` flag to
-restrict to one. Three corpora exist today:
+restrict to one. Three corpora exist today for end-to-end chapter
+segmentation (a fourth, `dnb-toc-only/`, is a different kind of corpus --
+see below):
 
 - **`open-access/`** (37 books) -- well-produced, OA, parseable embedded
   TOCs. The case the pure-heuristic pipeline already handles well. The
@@ -53,7 +55,23 @@ restrict to one. Three corpora exist today:
   builds ground truth for them (see `CLAUDE.md`'s "Step 0a"), at which point
   the entry moves into whichever real corpus it belongs in.
 
-Each corpus directory has the same shape:
+A fourth directory, **`dnb-toc-only/`** (542 books), holds real
+DNB-digitized table-of-contents *scans* -- not full books -- sourced via
+the `lobid-resources` API (see
+`docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md`
+and `evaluation/scripts/fetch_dnb_toc_corpus.py`). It's for training and
+calibrating layout-only *parts* of the pipeline (currently the
+scan-noise constants in `evaluation/scripts/alto_scan_noise.py` --
+see `RESULTS.md`'s "real-scan measurement" follow-up) against real
+scanned TOC pages, not for evaluating chapter segmentation end-to-end --
+there is no surrounding book, no `.expected.json`, and no chapter
+boundaries to score. Its manifest sets `"toc_only": true` and is
+therefore excluded from `list_corpora()`'s default iteration (every
+runner above ignores it unless it opts in via
+`include_toc_only=True`), so it doesn't follow the directory shape below
+either -- see the design spec for its own shape and schema.
+
+Each corpus directory (except `dnb-toc-only/`, above) has the same shape:
 
 ```text
 evaluation/corpus/<name>/
@@ -314,11 +332,19 @@ models. `--mode fill-gaps` instead finds non-busy models not yet cached
 for every book in the corpus and runs up to 5 of those -- this is what
 `.github/workflows/refresh-llm-cache.yml`'s nightly schedule uses, so the
 cache grows to cover every available/busy model over time without paying
-to re-run models it already has complete data for. The same workflow also
-exposes a manual `workflow_dispatch` trigger (using `--mode top5`) for an
-on-demand refresh, e.g. right after a prompt change, to sanity-check the
-current best models. Either trigger commits the updated cache files
-straight to `main`, which republishes the report automatically.
+to re-run models it already has complete data for. Within a fill-gaps
+run, a (book, model) pair that's already cached is skipped, so an
+interrupted run (job timeout, a transient failure) resumes from where it
+left off next time rather than redoing the selected model's whole book
+set from scratch. Books are processed concurrently per model (`--concurrency`,
+default 4 -- KISSKI publishes no documented rate limit, so this is a
+conservative default), with up to 3 retries (exponential backoff) per
+request before a book/model pair is logged as failed and skipped. The
+same workflow also exposes a manual `workflow_dispatch` trigger (using
+`--mode top5`) for an on-demand refresh, e.g. right after a prompt
+change, to sanity-check the current best models. Either trigger commits
+the updated cache files straight to `main`, which republishes the report
+automatically.
 
 ### NuExtract baseline spike
 

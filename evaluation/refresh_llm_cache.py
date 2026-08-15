@@ -14,13 +14,51 @@ zotero-rag's .env, e.g.:
 In CI it comes from a repository secret (see
 .github/workflows/refresh-llm-cache.yml). Not a pytest test.
 
---mode top5 (default): refreshes the current 5 least-busy models,
-unconditionally, even if already cached -- a quick manual sanity check.
+--mode top5 (default): refreshes the current 5 (--limit) least-busy
+models, unconditionally, even if already cached -- a quick manual sanity
+check.
 
 --mode fill-gaps: finds non-"very busy" models not yet cached for EVERY
-book across every corpus's current public books, and runs up to 5 of
-those -- how the cache grows to cover every model over time (see the
-nightly schedule in the workflow above).
+book across every corpus's current public books, and runs up to 5
+(--limit) of those -- how the cache grows to cover every model over time
+(see the nightly schedule in the workflow above). Within a fill-gaps run,
+a (book, model) pair that's already cached is skipped rather than redone
+-- so an interrupted run (job timeout, a transient failure) picks up
+where it left off next time, instead of restarting the selected model's
+whole book set from scratch. (--mode top5/full always rerun
+unconditionally, regardless of what's already cached -- see below.)
+
+--limit (default 5, applies to top5/fill-gaps only -- full is
+deliberately uncapped): how many models to run this invocation. Lower it
+(e.g. --limit 1) for a quick single-model pass right after a change that
+invalidated cached entries (a redaction/extraction change, a manifest
+promotion) -- rather than paying for a full 5-model refresh immediately,
+run one model now to get *something* current, and let the nightly
+fill-gaps job (which always uses the default) pick up the rest of the
+models over subsequent runs.
+
+--corpus restricts everything (coverage checks, clearing, execution) to
+one corpus, e.g. --corpus copyrighted-scans -- default is every corpus
+`evaluation.harness.list_corpora()` finds.
+
+--clear deletes every book's cache file within the --corpus scope (or all
+corpora, if --corpus is omitted) before selecting/running models --
+because the cache holds an LLM's output for a specific input, invalidating
+that input (public-cache text changed -- a redaction fix, a corpus
+promotion) invalidates every model's entry, not just the ones this
+invocation happens to re-run. Combine with --mode fill-gaps (which then
+sees a completely uncovered corpus and picks --limit models from
+scratch) rather than --mode top5, which would refresh only its 5 models
+unconditionally and leave the rest of the now-cleared cache empty until
+something else fills it back in.
+
+--concurrency (default 4): how many books to process concurrently for
+the currently-selected model. KISSKI publishes no documented rate limit,
+so this default is a conservative guess -- raise it if you don't observe
+429/503 errors. Each request also retries up to 3 times with exponential
+backoff (1s, 2s, 4s) on any failure before being logged as FAILED, so
+transient errors under concurrency don't permanently block a book/model
+pair.
 
 --mode full: re-runs EVERY model that already has at least one cached
 entry (its full historical footprint), across all books in all corpora,
@@ -33,13 +71,14 @@ skipped with a warning (nothing to run it against).
 
 import argparse
 import asyncio
+import functools
 import json
 import os
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable, Optional
+from typing import Awaitable, Callable, Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -100,33 +139,148 @@ def _all_cached_model_ids(book_specs: list[tuple[Path, str]]) -> set[str]:
     return ids
 
 
+def _has_cached_entry(cache_dir: Path, manifest_key: str, model_id: str) -> bool:
+    """True if this book's cache file already has an entry for model_id --
+    used by fill-gaps mode to skip work already done, so an interrupted run
+    doesn't get redone from scratch the next time this model is selected.
+    A malformed/corrupt cache file (e.g. from a process killed mid-write,
+    before _upsert_cache wrote atomically) is treated as not-cached, so
+    fill-gaps mode reprocesses and overwrites (self-heals) it instead of
+    silently and permanently losing that book/model pair."""
+    cache_path = cache_dir / f"{manifest_key}.json"
+    if not cache_path.exists():
+        return False
+    try:
+        models = json.loads(cache_path.read_text(encoding="utf-8")).get("models", {})
+    except json.JSONDecodeError:
+        return False
+    return model_id in models
+
+
+async def _call_with_retry(
+    fn: Callable[[], Awaitable],
+    attempts: int = 3,
+    base_delay: float = 1.0,
+    sleep: Callable[[float], Awaitable] = asyncio.sleep,
+):
+    """Awaits fn() up to `attempts` times with exponential backoff
+    (base_delay, base_delay*2, base_delay*4, ...) between failures,
+    re-raising the last exception once every attempt is exhausted. `sleep`
+    is injectable so tests don't pay real wall-clock delay."""
+    last_exc: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            return await fn()
+        except Exception as exc:
+            last_exc = exc
+            if attempt < attempts - 1:
+                await sleep(base_delay * (2**attempt))
+    raise last_exc
+
+
+async def _process_model(
+    book_entries: list[tuple[str, str, Path]],
+    concurrency: int,
+    worker: Callable[[str, str, Path], Awaitable],
+) -> None:
+    """Runs worker(corpus, manifest_key, cache_dir) for every book_entries
+    tuple concurrently, bounded by `concurrency` in-flight at once. worker
+    is expected to handle its own errors and not raise -- but
+    return_exceptions=True is passed defensively anyway, so even a
+    surprise exception from one book can't cancel the others still
+    in-flight via asyncio.gather's default all-or-nothing behavior."""
+    semaphore = asyncio.Semaphore(concurrency)
+
+    async def _bounded(corpus: str, manifest_key: str, cache_dir: Path) -> None:
+        async with semaphore:
+            await worker(corpus, manifest_key, cache_dir)
+
+    await asyncio.gather(
+        *(_bounded(corpus, manifest_key, cache_dir) for corpus, manifest_key, cache_dir in book_entries),
+        return_exceptions=True,
+    )
+
+
+async def _run_book_for_model(
+    corpus: str,
+    manifest_key: str,
+    cache_dir: Path,
+    model,
+    mode: str,
+    llm_client,
+    sleep: Callable[[float], Awaitable] = asyncio.sleep,
+) -> None:
+    if mode == "fill-gaps" and _has_cached_entry(cache_dir, manifest_key, model.id):
+        print(f"{corpus}/{manifest_key} / {model.id}: SKIP (already cached)")
+        return
+    try:
+        pages = public_pages_for(corpus, manifest_key)
+        start = time.perf_counter()
+        result = await _call_with_retry(lambda: analyze_attachment_llm_only(pages, llm_client), sleep=sleep)
+        elapsed = time.perf_counter() - start
+        _upsert_cache(cache_dir, manifest_key, model.id, result["chapters"], elapsed, model.demand)
+        print(f"{corpus}/{manifest_key} / {model.id}: {len(result['chapters'])} chapters, {elapsed:.1f}s")
+    except Exception as exc:
+        # One book/model failure (after retries) must not strand the whole
+        # batch or discard cache entries already written for other books/
+        # models in this same run -- same catch-log-continue convention as
+        # generate_public_evaluation_cache.py.
+        print(f"{corpus}/{manifest_key} / {model.id}: FAILED ({exc}) -- skipping")
+
+
 def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: list[dict], elapsed_seconds: float, demand: int) -> None:
+    """Writes/updates model_id's cache entry for one book. Each model entry
+    carries its own generated_at timestamp (not just the file-level one,
+    which reflects whichever model was upserted most recently across the
+    whole file) -- generate_report.py needs a per-model date to show how
+    fresh THAT model's specific numbers are, since different models in the
+    same file can have been refreshed on different nights. Writes
+    atomically (temp file + rename) so a process killed mid-write (e.g. a
+    job timeout) can never leave a truncated/corrupt cache file behind."""
     cache_dir.mkdir(parents=True, exist_ok=True)
     cache_path = cache_dir / f"{manifest_key}.json"
     data = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {"models": {}}
-    data["generated_at"] = datetime.now(timezone.utc).isoformat()
-    data["models"][model_id] = {"chapters": chapters, "elapsed_seconds": elapsed_seconds, "demand_at_run": demand}
-    cache_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    now = datetime.now(timezone.utc).isoformat()
+    data["generated_at"] = now
+    data["models"][model_id] = {
+        "chapters": chapters,
+        "elapsed_seconds": elapsed_seconds,
+        "demand_at_run": demand,
+        "generated_at": now,
+    }
+    tmp_path = cache_path.with_name(cache_path.name + ".tmp")
+    tmp_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp_path.replace(cache_path)
 
 
-async def _main(mode: str, base_url: str) -> int:
+async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], clear: bool, concurrency: int) -> int:
     api_key = os.environ["KISSKI_API_KEY"]
-    # (corpus, manifest_key, cache_dir) for every scorable book across every corpus.
+    corpora = [corpus] if corpus else list_corpora()
+    # (corpus, manifest_key, cache_dir) for every scorable book across every in-scope corpus.
     book_entries: list[tuple[str, str, Path]] = [
-        (corpus, manifest_key, llm_cache_dir(corpus))
-        for corpus in list_corpora()
-        for manifest_key, _expected_path, _book in available_public_books(corpus)
+        (c, manifest_key, llm_cache_dir(c))
+        for c in corpora
+        for manifest_key, _expected_path, _book in available_public_books(c)
     ]
     if not book_entries:
         print("No public-cache evaluation books present.")
         return 1
     book_specs = [(cache_dir, manifest_key) for _corpus, manifest_key, cache_dir in book_entries]
 
+    if clear:
+        cleared = 0
+        for _corpus, manifest_key, cache_dir in book_entries:
+            cache_path = cache_dir / f"{manifest_key}.json"
+            if cache_path.exists():
+                cache_path.unlink()
+                cleared += 1
+        print(f"--clear: removed {cleared} cache file(s) across {len(corpora)} corpus/corpora before regenerating.")
+
     all_models = fetch_kisski_models(base_url, api_key)
     if mode == "top5":
-        selected = select_top5(all_models)
+        selected = select_top5(all_models, limit=limit)
     elif mode == "fill-gaps":
-        selected = select_gap_fill(all_models, _fully_covered_model_ids(book_specs))
+        selected = select_gap_fill(all_models, _fully_covered_model_ids(book_specs), limit=limit)
     else:
         cached_ids = _all_cached_model_ids(book_specs)
         selected = select_full_regen(all_models, cached_ids)
@@ -146,20 +300,8 @@ async def _main(mode: str, base_url: str) -> int:
     print(f"Selected models: {[m.id for m in selected]}")
     for model in selected:
         llm_client = _OpenAICompatibleLLMClient(model=model.id, base_url=base_url, api_key=api_key)
-        for corpus, manifest_key, cache_dir in book_entries:
-            try:
-                pages = public_pages_for(corpus, manifest_key)
-                start = time.perf_counter()
-                result = await analyze_attachment_llm_only(pages, llm_client)
-                elapsed = time.perf_counter() - start
-                _upsert_cache(cache_dir, manifest_key, model.id, result["chapters"], elapsed, model.demand)
-                print(f"{corpus}/{manifest_key} / {model.id}: {len(result['chapters'])} chapters, {elapsed:.1f}s")
-            except Exception as exc:
-                # One book/model failure must not strand the whole batch or
-                # discard cache entries already written for other books/
-                # models in this same run -- same catch-log-continue
-                # convention as generate_public_evaluation_cache.py.
-                print(f"{corpus}/{manifest_key} / {model.id}: FAILED ({exc}) -- skipping")
+        worker = functools.partial(_run_book_for_model, model=model, mode=mode, llm_client=llm_client)
+        await _process_model(book_entries, concurrency, worker)
     return 0
 
 
@@ -167,5 +309,22 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--mode", choices=["top5", "fill-gaps", "full"], default="top5")
     parser.add_argument("--base-url", default=DEFAULT_KISSKI_BASE_URL)
+    parser.add_argument(
+        "--limit", type=int, default=5,
+        help="Max models to run this invocation (top5/fill-gaps only; full is always uncapped). Default 5.",
+    )
+    parser.add_argument("--corpus", help="Only refresh this corpus (default: every corpus under evaluation/corpus/)")
+    parser.add_argument(
+        "--clear", action="store_true",
+        help="Delete every cache file in scope before regenerating (use when the underlying public-cache text changed).",
+    )
+    parser.add_argument(
+        "--concurrency", type=int, default=4,
+        help="Max concurrent book requests per model. KISSKI publishes no documented rate limit, "
+             "so this is a conservative default -- raise it if you don't observe 429s. Default 4.",
+    )
     args = parser.parse_args()
-    raise SystemExit(asyncio.run(_main(mode=args.mode, base_url=args.base_url)))
+    raise SystemExit(asyncio.run(_main(
+        mode=args.mode, base_url=args.base_url, limit=args.limit, corpus=args.corpus, clear=args.clear,
+        concurrency=args.concurrency,
+    )))

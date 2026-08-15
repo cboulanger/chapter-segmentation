@@ -79,9 +79,359 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 16.84622135899997,
+      "elapsed_seconds": 16.792829515999983,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Adjacency Pairs and Argumentative Steps in the Halakhic Give-and-Take Conversations in the Mishnah",
+          "authors": [],
+          "pdf_start_index": 65,
+          "pdf_end_index": 103,
+          "citation_pages": "57-96",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Tannaitic Aramaic: Methodological Remarks and a Test Case",
+          "authors": [
+            "Amoraic Hebrew",
+            "Aramaic"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 125,
+          "citation_pages": "97-118",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rabbinic Entries in R. Judah Ibn-Tibbon’s Translation of Duties of the Hearts",
+          "authors": [
+            "Barak Avirbach",
+            "Rabbi Bahye Ibn-Paquda",
+            "Farāʾiḍ al-Qulūb"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 161,
+          "citation_pages": "119-154",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Distinction between Branches of Rabbinic Hebrew in Light of the Hebrew of the Late Midrash",
+          "authors": [
+            "Zacharias Frankel",
+            "Jacob Nahum Epstein"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 175,
+          "citation_pages": "155-168",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Two Textual Versions of Psiqata of the Ten Commandments",
+          "authors": [
+            "Norman J. Cohen",
+            "Pesiqta Rabbati’s Midrash",
+            "ʿAseret"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 199,
+          "citation_pages": "169-191",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Vowel Reduction in Greek Loanwords in the Mishnah: The Phenomenon and Its Significance",
+          "authors": [
+            "Mishnah"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 227,
+          "citation_pages": "193-219",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 4.2174981500000115,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:42:42.463296+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "2. The Vocalisation of MS Cambridge of the Mishnah: An Encounter Between Traditions",
+          "authors": [
+            "Parma A"
+          ],
+          "pdf_start_index": 57,
+          "pdf_end_index": 64,
+          "citation_pages": "25-56",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Adjacency Pairs and Argumentative Steps in the Halakhic Give-and-Take Conversations in the Mishnah",
+          "authors": [],
+          "pdf_start_index": 65,
+          "pdf_end_index": 103,
+          "citation_pages": "57-96",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Tannaitic Aramaic: Methodological Remarks and a Test Case",
+          "authors": [
+            "Amoraic Hebrew",
+            "Aramaic"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 125,
+          "citation_pages": "97-118",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Rabbinic Entries in R. Judah Ibn-Tibbon’s Translation of Duties of the Hearts",
+          "authors": [
+            "Barak Avirbach",
+            "Rabbi Bahye Ibn-Paquda",
+            "Farāʾiḍ al-Qulūb"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 161,
+          "citation_pages": "119-154",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. The Distinction between Branches of Rabbinic Hebrew in Light of the Hebrew of the Late Midrash",
+          "authors": [
+            "Zacharias Frankel",
+            "Jacob Nahum Epstein"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 175,
+          "citation_pages": "155-168",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Two Textual Versions of Psiqata of the Ten Commandments",
+          "authors": [
+            "Norman J. Cohen",
+            "Pesiqta Rabbati’s Midrash",
+            "ʿAseret"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 199,
+          "citation_pages": "169-191",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "8. Vowel Reduction in Greek Loanwords in the Mishnah: The Phenomenon and Its Significance",
+          "authors": [
+            "Mishnah"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 227,
+          "citation_pages": "193-219",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 84.65819575,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:00:49.719600+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Adjacency Pairs and Argumentative Steps in the Halakhic Give-and-Take Conversations in the Mishnah",
+          "authors": [],
+          "pdf_start_index": 65,
+          "pdf_end_index": 103,
+          "citation_pages": "57-96",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Tannaitic Aramaic: Methodological Remarks and a Test Case",
+          "authors": [
+            "Amoraic Hebrew",
+            "Aramaic"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 125,
+          "citation_pages": "97-118",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rabbinic Entries in R. Judah Ibn-Tibbon’s Translation of Duties of the Hearts",
+          "authors": [
+            "Barak Avirbach",
+            "Rabbi Bahye Ibn-Paquda",
+            "Farāʾiḍ al-Qulūb"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 161,
+          "citation_pages": "119-154",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Distinction between Branches of Rabbinic Hebrew in Light of the Hebrew of the Late Midrash",
+          "authors": [
+            "Zacharias Frankel",
+            "Jacob Nahum Epstein"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 175,
+          "citation_pages": "155-168",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Two Textual Versions of Psiqata of the Ten Commandments",
+          "authors": [
+            "Norman J. Cohen",
+            "Pesiqta Rabbati’s Midrash",
+            "ʿAseret"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 199,
+          "citation_pages": "169-191",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Vowel Reduction in Greek Loanwords in the Mishnah: The Phenomenon and Its Significance",
+          "authors": [
+            "Mishnah"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 227,
+          "citation_pages": "193-219",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 15.418315248999988,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:14:26.611997+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Adjacency Pairs and Argumentative Steps in the Halakhic Give-and-Take Conversations in the Mishnah",
+          "authors": [],
+          "pdf_start_index": 65,
+          "pdf_end_index": 103,
+          "citation_pages": "57-96",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Tannaitic Aramaic: Methodological Remarks and a Test Case",
+          "authors": [
+            "Amoraic Hebrew",
+            "Aramaic"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 125,
+          "citation_pages": "97-118",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rabbinic Entries in R. Judah Ibn-Tibbon’s Translation of Duties of the Hearts",
+          "authors": [
+            "Barak Avirbach",
+            "Rabbi Bahye Ibn-Paquda",
+            "Farāʾiḍ al-Qulūb"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 161,
+          "citation_pages": "119-154",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Distinction between Branches of Rabbinic Hebrew in Light of the Hebrew of the Late Midrash",
+          "authors": [
+            "Zacharias Frankel",
+            "Jacob Nahum Epstein"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 175,
+          "citation_pages": "155-168",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Two Textual Versions of Psiqata of the Ten Commandments",
+          "authors": [
+            "Norman J. Cohen",
+            "Pesiqta Rabbati’s Midrash",
+            "ʿAseret"
+          ],
+          "pdf_start_index": 177,
+          "pdf_end_index": 199,
+          "citation_pages": "169-191",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Vowel Reduction in Greek Loanwords in the Mishnah: The Phenomenon and Its Significance",
+          "authors": [
+            "Mishnah"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 227,
+          "citation_pages": "193-219",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 9.566369788999964,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:22:02.935100+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.23003795800013904,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:21.641543+00:00"
     }
   },
-  "generated_at": "2026-08-13T05:03:32.948433+00:00"
+  "generated_at": "2026-08-15T04:23:21.641543+00:00"
 }

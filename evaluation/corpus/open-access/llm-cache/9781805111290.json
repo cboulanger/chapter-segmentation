@@ -301,7 +301,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 104.78635231899989,
+      "elapsed_seconds": 104.62673771699974,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -1708,7 +1708,349 @@
       "chapters": [],
       "elapsed_seconds": 0.172973168000226,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "On public goods, cursing, and finding hope in the (neoliberal) twilight zone",
+          "authors": [
+            "Bataille"
+          ],
+          "pdf_start_index": 101,
+          "pdf_end_index": 119,
+          "citation_pages": "91-110",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Imagining higher education as infrastructures of care",
+          "authors": [
+            "Leslie Chan",
+            "Mona Ghali",
+            "Paul Prinsloo\nUniversities"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 146,
+          "citation_pages": "111-136",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Why decolonising “knowledge” matters: Deliberations for educators on that made fragile",
+          "authors": [],
+          "pdf_start_index": 147,
+          "pdf_end_index": 169,
+          "citation_pages": "137-160",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Closing the factory: Reimagining higher education as commons",
+          "authors": [
+            "Jim Luke\nLearning"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 191,
+          "citation_pages": "161-182",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Fostering the gift: On property regimes and teaching pedagogies in higher education",
+          "authors": [
+            "Andreas Wittel"
+          ],
+          "pdf_start_index": 193,
+          "pdf_end_index": 207,
+          "citation_pages": "183-198",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A meditation on global further education, in haiku form",
+          "authors": [],
+          "pdf_start_index": 209,
+          "pdf_end_index": 248,
+          "citation_pages": "199-238",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Artificial intelligence for good? Challenges and possibilities of AI in higher education from a data justice perspective",
+          "authors": [
+            "Ekaterina Pechenkina\nArtificial"
+          ],
+          "pdf_start_index": 249,
+          "pdf_end_index": 276,
+          "citation_pages": "239-266",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "HE4Good assemblages: FemEdTech Quilt of Care and Justice in Open Education",
+          "authors": [
+            "FemEdTech Quilt",
+            "Frances Bell",
+            "Lorna Campbell",
+            "Lou Mycroft"
+          ],
+          "pdf_start_index": 277,
+          "pdf_end_index": 302,
+          "citation_pages": "267-292",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Calm in the storm",
+          "authors": [
+            "Chrissi Nerantzi\nNote",
+            "Chrissi"
+          ],
+          "pdf_start_index": 303,
+          "pdf_end_index": 312,
+          "citation_pages": "293-36",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Visioning futures of higher education for the common good",
+          "authors": [
+            "Makoe"
+          ],
+          "pdf_start_index": 313,
+          "pdf_end_index": 326,
+          "citation_pages": "303-316",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Speculative futures for higher education: weaving perspectives for good",
+          "authors": [
+            "Elizabeth Childs",
+            "George Veletsianos",
+            "Donahue",
+            "Tamara Leary",
+            "Kyla McLeod"
+          ],
+          "pdf_start_index": 327,
+          "pdf_end_index": 344,
+          "citation_pages": "317-334",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "“Vibrant, open and accessible”: Students’ visions of higher education futures",
+          "authors": [
+            "Sharon Flynn",
+            "Julie Byrne",
+            "Maeve Devoy",
+            "Rob Lowney",
+            "Eimer Magee",
+            "Kate Molloy",
+            "David \nMoloney",
+            "Morag Munro",
+            "Fernandos Ongolly",
+            "Jasmine Ryan",
+            "Suzanne Stone",
+            "Michaela Waters",
+            "Kyle Wright"
+          ],
+          "pdf_start_index": 345,
+          "pdf_end_index": 362,
+          "citation_pages": "335-352",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vulnerability and generosity: The good future for Australian higher education",
+          "authors": [
+            "Kate Bowles",
+            "Davidson"
+          ],
+          "pdf_start_index": 363,
+          "pdf_end_index": 382,
+          "citation_pages": "353-372",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A design justice approach to Universal Design for Learning: Perspectives from the Global South",
+          "authors": [
+            "Philip Dambisya",
+            "Benedict",
+            "Kristin van Tonder"
+          ],
+          "pdf_start_index": 383,
+          "pdf_end_index": 405,
+          "citation_pages": "373-396",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Humanising learning design with digital pragmatism",
+          "authors": [
+            "Kate Molloy",
+            "Clare Thomson"
+          ],
+          "pdf_start_index": 407,
+          "pdf_end_index": 430,
+          "citation_pages": "397-420",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Advancing ‘openness’ as a strategy against platformisation in education",
+          "authors": [
+            "Tel Amiel",
+            "Rozário Diniz",
+            "Paulo Freire"
+          ],
+          "pdf_start_index": 431,
+          "pdf_end_index": 454,
+          "citation_pages": "421-444",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Imagination and justice: Teaching the future(s) of higher education through Africanfuturist speculative fiction",
+          "authors": [
+            "Eamon Costello"
+          ],
+          "pdf_start_index": 455,
+          "pdf_end_index": 481,
+          "citation_pages": "445-472",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "One-one coco full basket — on the value of critical pedagogy of caring for learning and teaching in higher education",
+          "authors": [
+            "Carol Hordatt Gentles"
+          ],
+          "pdf_start_index": 483,
+          "pdf_end_index": 499,
+          "citation_pages": "473-490",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Critical data literacies for good",
+          "authors": [
+            "Caroline Kuhn",
+            "Judith Pete",
+            "Juliana E. Raffaghelli"
+          ],
+          "pdf_start_index": 501,
+          "pdf_end_index": 518,
+          "citation_pages": "491-508",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Collaboratively reimagining teaching and learning",
+          "authors": [
+            "Flora Fabian",
+            "Jonathan Harle",
+            "Perpetua Kalimasi",
+            "Rehema \nKilonzo",
+            "Gloria Lamaro",
+            "Albert Luswata",
+            "David Monk",
+            "Edwin Ngowi",
+            "Damary Sikalieh"
+          ],
+          "pdf_start_index": 519,
+          "pdf_end_index": 542,
+          "citation_pages": "509-532",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The only way is ethics:A dialogue of assessment and social good",
+          "authors": [
+            "Tim Fawns",
+            "Juuso Nieminen"
+          ],
+          "pdf_start_index": 543,
+          "pdf_end_index": 566,
+          "citation_pages": "533-556",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Cultivating sustainable blended and open learning ecosystems",
+          "authors": [
+            "Patricia Arinto",
+            "Primo Garcia"
+          ],
+          "pdf_start_index": 567,
+          "pdf_end_index": 583,
+          "citation_pages": "557-574",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Making higher education institutions as open knowledge institutions",
+          "authors": [],
+          "pdf_start_index": 585,
+          "pdf_end_index": 600,
+          "citation_pages": "575-590",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "“It’s about transforming lives!”: Supporting students in post pandemic higher education",
+          "authors": [
+            "Vicki Trowler"
+          ],
+          "pdf_start_index": 601,
+          "pdf_end_index": 612,
+          "citation_pages": "591-602",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Who cares about procurement?",
+          "authors": [
+            "Brenna Clarke Gray",
+            "Williamson"
+          ],
+          "pdf_start_index": 613,
+          "pdf_end_index": 626,
+          "citation_pages": "603-616",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 24.33772437099998,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:44:23.932859+00:00"
     }
   },
-  "generated_at": "2026-08-13T05:20:43.273212+00:00"
+  "generated_at": "2026-08-15T03:44:23.932859+00:00"
 }

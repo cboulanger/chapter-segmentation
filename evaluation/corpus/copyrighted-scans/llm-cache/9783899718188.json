@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T05:52:02.734896+00:00",
+  "generated_at": "2026-08-15T03:42:22.174635+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -145,7 +145,7 @@
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 20.693585165000002,
+      "elapsed_seconds": 20.64552179700013,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -1186,6 +1186,154 @@
       ],
       "elapsed_seconds": 192.36871687497478,
       "demand_at_run": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Systemtheorie und Politik(wissenschaft) - Missverständnis oder produktive Herausforderung?",
+          "authors": [
+            "Michael Hein",
+            "Systemtheorie",
+            "Sprechen aus Erschrecken Vielleicht",
+            "Verstecken",
+            "Schaffen nie",
+            "Leben"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 73,
+          "citation_pages": "53-78",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "»Die Dame hat Romane gelesen und kennt den Code« - Zur Rezeption der Systemtheorie und systemtheoretischer Operationen in der Literaturwissenschaft",
+          "authors": [
+            "Elisabeth Böhm",
+            "Systemtheorie",
+            "Operationen",
+            "Literaturwissenschaft",
+            "Weiß Oma Mutter",
+            "Reiten Mensch",
+            "schreiben",
+            "Beispiel\n                               ",
+            "Frage Wenig"
+          ],
+          "pdf_start_index": 75,
+          "pdf_end_index": 76,
+          "citation_pages": "79-98",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Systemtheorie in der Geographie",
+          "authors": [
+            "Systemtheorie",
+            "jetzt Haare schreiben",
+            "Dich",
+            "Weihnachten Natürlich",
+            "Schüler",
+            "Weihnachten Geschichte",
+            "Affe"
+          ],
+          "pdf_start_index": 77,
+          "pdf_end_index": 120,
+          "citation_pages": "99-124",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Urbane Wohn(t)räume am Beispiel des professionell vermittelten Immobilienverkaufsangebots aus textlinguistisch-systemtheoretischer Sicht",
+          "authors": [
+            "Jana Möller-Kiero",
+            "Beispiel des professionell",
+            "Sicht",
+            "Vielleicht",
+            "Erschrecken Weg",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 147,
+          "citation_pages": "125-152",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zur Leistung und Funktion von Flyern in unterschiedlichen Kommunikationsbereichen",
+          "authors": [
+            "Werner",
+            "Zur Leistung",
+            "zum Sprechen",
+            "Schwester Mädchen",
+            "Erschrecken",
+            "Traurig",
+            "Fröhlich",
+            "zum gelb",
+            "Brauchen",
+            "Weihnachten Erschrecken"
+          ],
+          "pdf_start_index": 149,
+          "pdf_end_index": 167,
+          "citation_pages": "153-172",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Stil und sozialer Sinn. Sakrale Sprache in päpstlichen Enzykliken",
+          "authors": [
+            "Iris Kroll\n\n\n\nStil",
+            "Geschichte Scheinen",
+            "Weihnachten Erschrecken",
+            "Weihnachten Schaffen",
+            "der las Dafür",
+            "Ging"
+          ],
+          "pdf_start_index": 169,
+          "pdf_end_index": 195,
+          "citation_pages": "173-200",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Textsorten als Operationen von sozialen Systemen am Beispiel des Notizzettels für die Hochschulsprechstunde",
+          "authors": [
+            "Stefan Buchholz",
+            "Operationen von",
+            "Operationen",
+            "Luft ins Haus\n                                            Schwimmen Weihnachten",
+            "Monate Tante",
+            "Geschichte Eis von Weihnachten Uhr Erschrecken",
+            "Schwarz"
+          ],
+          "pdf_start_index": 197,
+          "pdf_end_index": 208,
+          "citation_pages": "201-212",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Von der systemtheoretisch orientierten Textsortenlinguistik zur linguistischen Diskursanalyse nach Foucault",
+          "authors": [
+            "Christina Gansel",
+            "Textsortenlinguistik"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 215,
+          "citation_pages": "213-219",
+          "confidence": 0.99,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 5.184277469999984,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:42:22.174635+00:00"
     }
   }
 }

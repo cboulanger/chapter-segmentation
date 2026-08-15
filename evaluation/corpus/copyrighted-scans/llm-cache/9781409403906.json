@@ -1,77 +1,44 @@
 {
-  "generated_at": "2026-08-13T04:57:33.336338+00:00",
+  "generated_at": "2026-08-15T03:40:43.040116+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
         {
-          "title": "Shoulder",
-          "authors": [],
-          "pdf_start_index": 65,
-          "pdf_end_index": 184,
-          "citation_pages": "13-174",
-          "confidence": 0.82,
-          "page_mapping_confidence": "high",
-          "source": "llm"
-        },
-        {
-          "title": "7 The Democratization and Modernization of Post-communist Judiciaries",
-          "authors": [],
-          "pdf_start_index": 193,
-          "pdf_end_index": 210,
-          "citation_pages": "177-200",
-          "confidence": 0.81,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "8 Bureaucratic and Managerial Cultures in Central Eastern European Courts",
+          "title": "42 ol Central and Eastern Europe After Transition",
           "authors": [
-            "Managerial Cultures",
-            "Daniela Piana"
+            "Dr"
           ],
-          "pdf_start_index": 211,
-          "pdf_end_index": 228,
-          "citation_pages": "201-218",
-          "confidence": 1.0,
+          "pdf_start_index": 80,
+          "pdf_end_index": 187,
+          "citation_pages": "53-53",
+          "confidence": 0.72,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "9 Polish Prosecutors, Political Corruption, and Legal Culture",
+          "title": "43 Central and Eastern Europe After Transition",
           "authors": [
-            "David Nelken"
+            "Mrs"
           ],
-          "pdf_start_index": 229,
-          "pdf_end_index": 263,
-          "citation_pages": "219-254",
-          "confidence": 0.98,
+          "pdf_start_index": 188,
+          "pdf_end_index": 205,
+          "citation_pages": "54-54",
+          "confidence": 0.78,
           "page_mapping_confidence": "inferred",
           "source": "llm"
         },
         {
-          "title": "10 Notaries in Central Europe: From State Employment to Professional Independence — A Rocky Path",
+          "title": "44 Central and Eastern Europe After Transition",
           "authors": [],
-          "pdf_start_index": 265,
-          "pdf_end_index": 283,
-          "citation_pages": "255-276",
-          "confidence": 1.0,
-          "page_mapping_confidence": "inferred",
-          "source": "llm"
-        },
-        {
-          "title": "11 Multiple Transitions to the EU Constitutional Project: The Case of Eastern European Legal Professions",
-          "authors": [
-            "Vittorio Olgiati"
-          ],
-          "pdf_start_index": 285,
+          "pdf_start_index": 206,
           "pdf_end_index": 353,
-          "citation_pages": "277-345",
-          "confidence": 1.0,
+          "citation_pages": "55-345",
+          "confidence": 0.78,
           "page_mapping_confidence": "high",
           "source": "llm"
         }
       ],
-      "elapsed_seconds": 14.264914321999981,
+      "elapsed_seconds": 5.3673032910000416,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -604,6 +571,12 @@
       ],
       "elapsed_seconds": 129.38127212505788,
       "demand_at_run": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [],
+      "elapsed_seconds": 1.0079923869999945,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:40:43.040116+00:00"
     }
   }
 }

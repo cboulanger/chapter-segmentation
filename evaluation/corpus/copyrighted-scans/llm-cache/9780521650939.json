@@ -1,0 +1,475 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Transnational activism and political change in Kenya and Uganda",
+          "authors": [
+            "Hans Peter Schmitz",
+            "Idi Room",
+            "Only’I"
+          ],
+          "pdf_start_index": 50,
+          "pdf_end_index": 88,
+          "citation_pages": "39-77",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The long and winding road: international norms and domestic political change in South Africa",
+          "authors": [
+            "David Black\nIntroduction\nSouth Africa",
+            "heid"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 119,
+          "citation_pages": "78-108",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Changing discourse: transnational advocacy networks in Tunisia and Morocco",
+          "authors": [],
+          "pdf_start_index": 120,
+          "pdf_end_index": 144,
+          "citation_pages": "109-133",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Linking the unlinkable? International norms and nationalism in Indonesia and the Philippines",
+          "authors": [],
+          "pdf_start_index": 145,
+          "pdf_end_index": 182,
+          "citation_pages": "134-171",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International norms and domestic politics in Chile and Guatemala",
+          "authors": [
+            "Stephen C. Ropp",
+            "Kathryn Sikkink\nIntroduction\nHuman"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 215,
+          "citation_pages": "172-204",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Helsinki accords and political change in Eastern Europe",
+          "authors": [
+            "Daniel C. Thomas",
+            "Read mention'a avoid-"
+          ],
+          "pdf_start_index": 216,
+          "pdf_end_index": 244,
+          "citation_pages": "205-233",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International human rights norms and domestic change: conclusions",
+          "authors": [
+            "Thomas Risse",
+            "Stephen C. Ropp"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 319,
+          "citation_pages": "234-308",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 13.986216514999967,
+      "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Transnational activism and political change in Kenya and Uganda",
+          "authors": [
+            "Hans Peter Schmitz",
+            "Idi Room",
+            "Only’I"
+          ],
+          "pdf_start_index": 50,
+          "pdf_end_index": 88,
+          "citation_pages": "39-77",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The long and winding road: international norms and domestic political change in South Africa",
+          "authors": [
+            "David Black\nIntroduction\nSouth Africa",
+            "heid"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 119,
+          "citation_pages": "78-108",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Changing discourse: transnational advocacy networks in Tunisia and Morocco",
+          "authors": [],
+          "pdf_start_index": 120,
+          "pdf_end_index": 144,
+          "citation_pages": "109-133",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Linking the unlinkable? International norms and nationalism in Indonesia and the Philippines",
+          "authors": [],
+          "pdf_start_index": 145,
+          "pdf_end_index": 182,
+          "citation_pages": "134-171",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International norms and domestic politics in Chile and Guatemala",
+          "authors": [
+            "Stephen C. Ropp",
+            "Kathryn Sikkink\nIntroduction\nHuman"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 215,
+          "citation_pages": "172-204",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Helsinki accords and political change in Eastern Europe",
+          "authors": [
+            "Daniel C. Thomas",
+            "Read mention'a avoid-"
+          ],
+          "pdf_start_index": 216,
+          "pdf_end_index": 244,
+          "citation_pages": "205-233",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International human rights norms and domestic change: conclusions",
+          "authors": [
+            "Thomas Risse",
+            "Stephen C. Ropp"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 319,
+          "citation_pages": "234-308",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 7.319174293000003,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:40:49.333761+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Transnational activism and political change in Kenya and Uganda",
+          "authors": [
+            "Hans Peter Schmitz",
+            "Idi Room",
+            "Only’I"
+          ],
+          "pdf_start_index": 50,
+          "pdf_end_index": 88,
+          "citation_pages": "39-77",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The long and winding road: international norms and domestic political change in South Africa",
+          "authors": [
+            "David Black\nIntroduction\nSouth Africa",
+            "heid"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 119,
+          "citation_pages": "78-108",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Changing discourse: transnational advocacy networks in Tunisia and Morocco",
+          "authors": [],
+          "pdf_start_index": 120,
+          "pdf_end_index": 144,
+          "citation_pages": "109-133",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Linking the unlinkable? International norms and nationalism in Indonesia and the Philippines",
+          "authors": [],
+          "pdf_start_index": 145,
+          "pdf_end_index": 182,
+          "citation_pages": "134-171",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International norms and domestic politics in Chile and Guatemala",
+          "authors": [
+            "Stephen C. Ropp",
+            "Kathryn Sikkink\nIntroduction\nHuman"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 215,
+          "citation_pages": "172-204",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Helsinki accords and political change in Eastern Europe",
+          "authors": [
+            "Daniel C. Thomas",
+            "Read mention'a avoid-"
+          ],
+          "pdf_start_index": 216,
+          "pdf_end_index": 244,
+          "citation_pages": "205-233",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International human rights norms and domestic change: conclusions",
+          "authors": [
+            "Thomas Risse",
+            "Stephen C. Ropp"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 319,
+          "citation_pages": "234-308",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 69.95761976200004,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:54:22.795991+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Transnational activism and political change in Kenya and Uganda",
+          "authors": [
+            "Hans Peter Schmitz",
+            "Idi Room",
+            "Only’I"
+          ],
+          "pdf_start_index": 50,
+          "pdf_end_index": 88,
+          "citation_pages": "39-77",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The long and winding road: international norms and domestic political change in South Africa",
+          "authors": [
+            "David Black\nIntroduction\nSouth Africa",
+            "heid"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 119,
+          "citation_pages": "78-108",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Changing discourse: transnational advocacy networks in Tunisia and Morocco",
+          "authors": [],
+          "pdf_start_index": 120,
+          "pdf_end_index": 144,
+          "citation_pages": "109-133",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Linking the unlinkable? International norms and nationalism in Indonesia and the Philippines",
+          "authors": [],
+          "pdf_start_index": 145,
+          "pdf_end_index": 182,
+          "citation_pages": "134-171",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International norms and domestic politics in Chile and Guatemala",
+          "authors": [
+            "Stephen C. Ropp",
+            "Kathryn Sikkink\nIntroduction\nHuman"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 215,
+          "citation_pages": "172-204",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Helsinki accords and political change in Eastern Europe",
+          "authors": [
+            "Daniel C. Thomas",
+            "Read mention'a avoid-"
+          ],
+          "pdf_start_index": 216,
+          "pdf_end_index": 244,
+          "citation_pages": "205-233",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International human rights norms and domestic change: conclusions",
+          "authors": [
+            "Thomas Risse",
+            "Stephen C. Ropp"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 319,
+          "citation_pages": "234-308",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 31.31368409499987,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:09:09.191953+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Transnational activism and political change in Kenya and Uganda",
+          "authors": [
+            "Hans Peter Schmitz",
+            "Idi Room",
+            "Only’I"
+          ],
+          "pdf_start_index": 50,
+          "pdf_end_index": 88,
+          "citation_pages": "39-77",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The long and winding road: international norms and domestic political change in South Africa",
+          "authors": [
+            "David Black\nIntroduction\nSouth Africa",
+            "heid"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 119,
+          "citation_pages": "78-108",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Changing discourse: transnational advocacy networks in Tunisia and Morocco",
+          "authors": [],
+          "pdf_start_index": 120,
+          "pdf_end_index": 144,
+          "citation_pages": "109-133",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Linking the unlinkable? International norms and nationalism in Indonesia and the Philippines",
+          "authors": [],
+          "pdf_start_index": 145,
+          "pdf_end_index": 182,
+          "citation_pages": "134-171",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International norms and domestic politics in Chile and Guatemala",
+          "authors": [
+            "Stephen C. Ropp",
+            "Kathryn Sikkink\nIntroduction\nHuman"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 215,
+          "citation_pages": "172-204",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Helsinki accords and political change in Eastern Europe",
+          "authors": [
+            "Daniel C. Thomas",
+            "Read mention'a avoid-"
+          ],
+          "pdf_start_index": 216,
+          "pdf_end_index": 244,
+          "citation_pages": "205-233",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "International human rights norms and domestic change: conclusions",
+          "authors": [
+            "Thomas Risse",
+            "Stephen C. Ropp"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 319,
+          "citation_pages": "234-308",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 12.645893117000014,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:19:04.340545+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.7871415169997817,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:20.426048+00:00"
+    }
+  },
+  "generated_at": "2026-08-15T04:23:20.426048+00:00"
+}

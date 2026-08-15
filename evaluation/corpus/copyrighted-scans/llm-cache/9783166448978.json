@@ -1,0 +1,425 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Rechtssoziologıie und Rechtswirksamkeıtsforschung - Warum es so schwierig ist, die Wirksamkeit von Gesetzen zu erforschen",
+          "authors": [
+            "Von ERHARD BLANKENBURG\nSummary\nLevels",
+            "Geschichte",
+            "Wissen",
+            "Mädchen",
+            "für auf",
+            "nie fressen",
+            "da£",
+            "schreiben",
+            "Schreiben"
+          ],
+          "pdf_start_index": 44,
+          "pdf_end_index": 66,
+          "citation_pages": "45-68",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtssozıiologie und Rechtspraxis - Zur Rezeption empirischer Rechtsforschung",
+          "authors": [
+            "Zur Rezeption",
+            "Rechtsforschung",
+            "Von VOLKMAR",
+            "Summar",
+            "Rechnen",
+            "dafür schreiben",
+            "Viel",
+            "gar da Zug",
+            "Gesicht"
+          ],
+          "pdf_start_index": 68,
+          "pdf_end_index": 70,
+          "citation_pages": "69-14",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "EINLEITUNG",
+          "authors": [
+            "Platz Gesicht",
+            "Maus Erschrecken",
+            "Weihnachten Zeitung",
+            "Weg gar Eigentlich\nVielleicht",
+            "Weihnachten Zwischen - Uhr",
+            "Bild",
+            "Brot Scheinen -\n",
+            "Erschrecken",
+            "Versuchen Geschichte",
+            "Mehr"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 120,
+          "citation_pages": "15-121",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtssoziologie und Wissenschaft - Recent als okologıscher Wırkungszusammenhang",
+          "authors": [
+            "Wirkungszusammenhang",
+            "Berg",
+            "Wei"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 155,
+          "citation_pages": "122-158",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Erfahruny rechtssoziologischer Forschung im internationalen Vergleich - zugleich eine Zusammenfassung über Länderberichte",
+          "authors": [
+            "Zugleich",
+            "Zusammenfassung der",
+            "Länderberichte\nVon KLAUS A. ZIEGERT",
+            "I. Ubiquitäre Probleme",
+            "Rechtsforscnung\nWie Wissenschaft",
+            "natürlich Eis-\n",
+            "Mann See",
+            "Endlich",
+            "Weihnachten Sieben"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 183,
+          "citation_pages": "159-179",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Some Notes on the Danish Experience",
+          "authors": [
+            "LINDA DICKENS",
+            "springen scheinen",
+            "Oma Geschenk",
+            "Gab\nGefährlich Schwimmen Schaffen Grün",
+            "Rad MAUS'da dafür-"
+          ],
+          "pdf_start_index": 184,
+          "pdf_end_index": 228,
+          "citation_pages": "192-229",
+          "confidence": 0.91,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 27.28890298400006,
+      "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Rechtssoziologie und Rechtswirksamkeitsforschung - Warum es so schwierig ist, die Wirksamkeit von Gesetzen zu erforschen",
+          "authors": [
+            "Von ERHARD BLANKENBURG\nSummary\nLevels",
+            "Geschichte",
+            "Wissen",
+            "Mädchen",
+            "für auf",
+            "nie fressen",
+            "da£",
+            "schreiben",
+            "Schreiben"
+          ],
+          "pdf_start_index": 44,
+          "pdf_end_index": 66,
+          "citation_pages": "45-68",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtssoziologie und Rechtspraxis - Zur Rezeption empirischer Rechtsforschung",
+          "authors": [
+            "Zur Rezeption",
+            "Rechtsforschung",
+            "Von VOLKMAR",
+            "Summar",
+            "Rechnen",
+            "dafür schreiben",
+            "Viel",
+            "gar da Zug",
+            "Gesicht"
+          ],
+          "pdf_start_index": 68,
+          "pdf_end_index": 120,
+          "citation_pages": "69-121",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtssoziologie und Wissenschaft - Recent als ökologischer Wirkungszusammenhang",
+          "authors": [
+            "Wirkungszusammenhang",
+            "Berg",
+            "Wei"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 155,
+          "citation_pages": "122-158",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Erfahrung rechtssoziologischer Forschung im internationalen Vergleich - zugleich eine Zusammenfassung der Länderberichte",
+          "authors": [
+            "Zugleich",
+            "Zusammenfassung der",
+            "Länderberichte\nVon KLAUS A. ZIEGERT",
+            "I. Ubiquitäre Probleme",
+            "Rechtsforscnung\nWie Wissenschaft",
+            "natürlich Eis-\n",
+            "Mann See",
+            "Endlich",
+            "Weihnachten Sieben"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 183,
+          "citation_pages": "159-179",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Some Notes on the Danish Experience",
+          "authors": [
+            "LINDA DICKENS",
+            "springen scheinen",
+            "Oma Geschenk",
+            "Gab\nGefährlich Schwimmen Schaffen Grün",
+            "Rad MAUS'da dafür-"
+          ],
+          "pdf_start_index": 184,
+          "pdf_end_index": 228,
+          "citation_pages": "185-229",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 5.970859040999997,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:40:53.071547+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 77.81587186899992,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:55:40.614850+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Rechtssoziologie und Rechtswirksamkeitsforschung - Warum es so schwierig ist, die Wirksamkeit von Gesetzen zu erforschen",
+          "authors": [
+            "Von ERHARD BLANKENBURG\nSummary\nLevels",
+            "Geschichte",
+            "Wissen",
+            "Mädchen",
+            "für auf",
+            "nie fressen",
+            "da£",
+            "schreiben",
+            "Schreiben"
+          ],
+          "pdf_start_index": 44,
+          "pdf_end_index": 66,
+          "citation_pages": "45-68",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtssoziologie und Rechtspraxis - Zur Rezeption empirischer Rechtsforschung",
+          "authors": [
+            "Zur Rezeption",
+            "Rechtsforschung",
+            "Von VOLKMAR",
+            "Summar",
+            "Rechnen",
+            "dafür schreiben",
+            "Viel",
+            "gar da Zug",
+            "Gesicht"
+          ],
+          "pdf_start_index": 68,
+          "pdf_end_index": 120,
+          "citation_pages": "69-121",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtssoziologie und Wissenschaft - Recht als ökologischer Wirkungszusammenhang",
+          "authors": [
+            "Wirkungszusammenhang",
+            "Berg",
+            "Wei"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 155,
+          "citation_pages": "122-158",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Erfahrung rechtssoziologischer Forschung im internationalen Vergleich - zugleich eine Zusammenfassung der Länderberichte",
+          "authors": [
+            "Zugleich",
+            "Zusammenfassung der",
+            "Länderberichte\nVon KLAUS A. ZIEGERT",
+            "I. Ubiquitäre Probleme",
+            "Rechtsforscnung\nWie Wissenschaft",
+            "natürlich Eis-\n",
+            "Mann See",
+            "Endlich",
+            "Weihnachten Sieben"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 183,
+          "citation_pages": "159-179",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Some Notes on the Danish Experience",
+          "authors": [
+            "LINDA DICKENS",
+            "springen scheinen",
+            "Oma Geschenk",
+            "Gab\nGefährlich Schwimmen Schaffen Grün",
+            "Rad MAUS'da dafür-"
+          ],
+          "pdf_start_index": 184,
+          "pdf_end_index": 228,
+          "citation_pages": "185-229",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 39.05572345600012,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:09:20.491792+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Rechtssoziologie und Rechtswirksamkeitsforschung - Warum es so schwierig ist, die Wirksamkeit von Gesetzen zu erforschen",
+          "authors": [
+            "Von ERHARD BLANKENBURG\nSummary\nLevels",
+            "Geschichte",
+            "Wissen",
+            "Mädchen",
+            "für auf",
+            "nie fressen",
+            "da£",
+            "schreiben",
+            "Schreiben"
+          ],
+          "pdf_start_index": 44,
+          "pdf_end_index": 66,
+          "citation_pages": "45-68",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtssoziologie und Rechtspraxis - Zur Rezeption empirischer Rechtsforschung",
+          "authors": [
+            "Zur Rezeption",
+            "Rechtsforschung",
+            "Von VOLKMAR",
+            "Summar",
+            "Rechnen",
+            "dafür schreiben",
+            "Viel",
+            "gar da Zug",
+            "Gesicht"
+          ],
+          "pdf_start_index": 68,
+          "pdf_end_index": 120,
+          "citation_pages": "69-121",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtssoziologie und Wissenschaft - Recht als ökologischer Wirkungszusammenhang",
+          "authors": [
+            "Wirkungszusammenhang",
+            "Berg",
+            "Wei"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 155,
+          "citation_pages": "122-158",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Erfahrungen rechtssoziologischer Forschung im internationalen Vergleich - zugleich eine Zusammenfassung der Länderberichte",
+          "authors": [
+            "Zugleich",
+            "Zusammenfassung der",
+            "Länderberichte\nVon KLAUS A. ZIEGERT",
+            "I. Ubiquitäre Probleme",
+            "Rechtsforscnung\nWie Wissenschaft",
+            "natürlich Eis-\n",
+            "Mann See",
+            "Endlich",
+            "Weihnachten Sieben"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 183,
+          "citation_pages": "159-179",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Some Notes on the Danish Experience",
+          "authors": [
+            "LINDA DICKENS",
+            "springen scheinen",
+            "Oma Geschenk",
+            "Gab\nGefährlich Schwimmen Schaffen Grün",
+            "Rad MAUS'da dafür-"
+          ],
+          "pdf_start_index": 184,
+          "pdf_end_index": 228,
+          "citation_pages": "185-229",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 26.119838331999745,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:19:25.577209+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.1839377549999881,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:20.591027+00:00"
+    }
+  },
+  "generated_at": "2026-08-15T04:23:20.591027+00:00"
+}

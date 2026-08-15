@@ -1,0 +1,570 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Brazil",
+          "authors": [],
+          "pdf_start_index": 164,
+          "pdf_end_index": 208,
+          "citation_pages": "113-148",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bulgaria",
+          "authors": [],
+          "pdf_start_index": 209,
+          "pdf_end_index": 226,
+          "citation_pages": "149-170",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Canada",
+          "authors": [],
+          "pdf_start_index": 227,
+          "pdf_end_index": 240,
+          "citation_pages": "171-188",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "China",
+          "authors": [],
+          "pdf_start_index": 241,
+          "pdf_end_index": 282,
+          "citation_pages": "189-218",
+          "confidence": 0.87,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Denmark",
+          "authors": [
+            "I. 246-81"
+          ],
+          "pdf_start_index": 283,
+          "pdf_end_index": 288,
+          "citation_pages": "219-238",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Finland",
+          "authors": [
+            "Olaus MagnU-S\nGothus"
+          ],
+          "pdf_start_index": 289,
+          "pdf_end_index": 310,
+          "citation_pages": "239-252",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "France",
+          "authors": [],
+          "pdf_start_index": 311,
+          "pdf_end_index": 334,
+          "citation_pages": "253-282",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Fed. Rep. of Germany",
+          "authors": [
+            "Speech Price"
+          ],
+          "pdf_start_index": 335,
+          "pdf_end_index": 366,
+          "citation_pages": "283-316",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Greece",
+          "authors": [],
+          "pdf_start_index": 367,
+          "pdf_end_index": 442,
+          "citation_pages": "317-364",
+          "confidence": 0.65,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hungary",
+          "authors": [
+            "Ball"
+          ],
+          "pdf_start_index": 443,
+          "pdf_end_index": 447,
+          "citation_pages": "365-396",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "India",
+          "authors": [],
+          "pdf_start_index": 448,
+          "pdf_end_index": 482,
+          "citation_pages": "397-424",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Italy",
+          "authors": [
+            "Drive"
+          ],
+          "pdf_start_index": 483,
+          "pdf_end_index": 548,
+          "citation_pages": "425-486",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mexico",
+          "authors": [
+            "Alli"
+          ],
+          "pdf_start_index": 549,
+          "pdf_end_index": 598,
+          "citation_pages": "487-508",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Netherlands",
+          "authors": [
+            "Hoekema A.J.",
+            "Detail"
+          ],
+          "pdf_start_index": 599,
+          "pdf_end_index": 644,
+          "citation_pages": "509-592",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nigeria",
+          "authors": [],
+          "pdf_start_index": 645,
+          "pdf_end_index": 653,
+          "citation_pages": "593-604",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Norway",
+          "authors": [],
+          "pdf_start_index": 654,
+          "pdf_end_index": 688,
+          "citation_pages": "605-630",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Poland",
+          "authors": [],
+          "pdf_start_index": 689,
+          "pdf_end_index": 734,
+          "citation_pages": "631-686",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Romania",
+          "authors": [],
+          "pdf_start_index": 736,
+          "pdf_end_index": 751,
+          "citation_pages": "687-700",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Spain",
+          "authors": [
+            "Manuel Atienza - Juan A. Perez Lledti            703"
+          ],
+          "pdf_start_index": 752,
+          "pdf_end_index": 802,
+          "citation_pages": "701-744",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sweden",
+          "authors": [],
+          "pdf_start_index": 803,
+          "pdf_end_index": 832,
+          "citation_pages": "745-778",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "United Kingdom",
+          "authors": [],
+          "pdf_start_index": 833,
+          "pdf_end_index": 852,
+          "citation_pages": "779-804",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "United States of America",
+          "authors": [
+            "JOYCE S. STERLING"
+          ],
+          "pdf_start_index": 854,
+          "pdf_end_index": 917,
+          "citation_pages": "805-868",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Venezuela",
+          "authors": [
+            "NETWORK SMILE WITHOUT",
+            "a.  Be"
+          ],
+          "pdf_start_index": 918,
+          "pdf_end_index": 926,
+          "citation_pages": "869-872",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Yugoslavia",
+          "authors": [],
+          "pdf_start_index": 927,
+          "pdf_end_index": 931,
+          "citation_pages": "873-882",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 100.21432176999997,
+      "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Sociology of Law in Norway",
+          "authors": [],
+          "pdf_start_index": 654,
+          "pdf_end_index": 655,
+          "citation_pages": "605-606",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [
+            "Thomas Mathiesen                              "
+          ],
+          "pdf_start_index": 656,
+          "pdf_end_index": 688,
+          "citation_pages": "xv-639",
+          "confidence": 0.95,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Finland",
+          "authors": [],
+          "pdf_start_index": 689,
+          "pdf_end_index": 734,
+          "citation_pages": "239-686",
+          "confidence": 0.63,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Development of Sociology of Law in the Socialist Republic of Romania",
+          "authors": [],
+          "pdf_start_index": 736,
+          "pdf_end_index": 768,
+          "citation_pages": "687-570",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in New Zealand",
+          "authors": [
+            "Diaz E.",
+            "Sociologta del Derecho",
+            "Race A."
+          ],
+          "pdf_start_index": 769,
+          "pdf_end_index": 802,
+          "citation_pages": "571-744",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Sweden",
+          "authors": [],
+          "pdf_start_index": 803,
+          "pdf_end_index": 852,
+          "citation_pages": "745-804",
+          "confidence": 0.74,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The State of American Sociology of Law",
+          "authors": [
+            "JOYCE S. STERLING"
+          ],
+          "pdf_start_index": 854,
+          "pdf_end_index": 926,
+          "citation_pages": "805-872",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Yugoslavia",
+          "authors": [],
+          "pdf_start_index": 927,
+          "pdf_end_index": 931,
+          "citation_pages": "873-882",
+          "confidence": 0.83,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 44.75744016600001,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:43:02.803756+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 110.15258956800017,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:01:10.326078+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Sociology of Law in Norway",
+          "authors": [],
+          "pdf_start_index": 654,
+          "pdf_end_index": 655,
+          "citation_pages": "605-606",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [
+            "Thomas Mathiesen                              "
+          ],
+          "pdf_start_index": 656,
+          "pdf_end_index": 688,
+          "citation_pages": "xv-639",
+          "confidence": 0.95,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Finland",
+          "authors": [],
+          "pdf_start_index": 689,
+          "pdf_end_index": 734,
+          "citation_pages": "239-686",
+          "confidence": 0.63,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Development of Sociology of Law in the Socialist Republic of Romania",
+          "authors": [],
+          "pdf_start_index": 736,
+          "pdf_end_index": 768,
+          "citation_pages": "687-570",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in New Zealand",
+          "authors": [
+            "Diaz E.",
+            "Sociologta del Derecho",
+            "Race A."
+          ],
+          "pdf_start_index": 769,
+          "pdf_end_index": 802,
+          "citation_pages": "571-744",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Sweden",
+          "authors": [],
+          "pdf_start_index": 803,
+          "pdf_end_index": 852,
+          "citation_pages": "745-804",
+          "confidence": 0.74,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The State of American Sociology of Law",
+          "authors": [
+            "JOYCE S. STERLING"
+          ],
+          "pdf_start_index": 854,
+          "pdf_end_index": 926,
+          "citation_pages": "805-872",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Yugoslavia",
+          "authors": [],
+          "pdf_start_index": 927,
+          "pdf_end_index": 931,
+          "citation_pages": "873-882",
+          "confidence": 0.83,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 88.41416993500025,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:15:32.332290+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Sociology of Law in Norway",
+          "authors": [],
+          "pdf_start_index": 654,
+          "pdf_end_index": 655,
+          "citation_pages": "605-606",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [
+            "Thomas Mathiesen                              "
+          ],
+          "pdf_start_index": 656,
+          "pdf_end_index": 688,
+          "citation_pages": "xv-639",
+          "confidence": 0.95,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Finland",
+          "authors": [],
+          "pdf_start_index": 689,
+          "pdf_end_index": 734,
+          "citation_pages": "239-686",
+          "confidence": 0.63,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Development of Sociology of Law in the Socialist Republic of Romania",
+          "authors": [],
+          "pdf_start_index": 736,
+          "pdf_end_index": 768,
+          "citation_pages": "687-570",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in New Zealand",
+          "authors": [
+            "Diaz E.",
+            "Sociologta del Derecho",
+            "Race A."
+          ],
+          "pdf_start_index": 769,
+          "pdf_end_index": 802,
+          "citation_pages": "571-744",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Sweden",
+          "authors": [],
+          "pdf_start_index": 803,
+          "pdf_end_index": 852,
+          "citation_pages": "745-804",
+          "confidence": 0.74,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The State of American Sociology of Law",
+          "authors": [
+            "JOYCE S. STERLING"
+          ],
+          "pdf_start_index": 854,
+          "pdf_end_index": 926,
+          "citation_pages": "805-872",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Yugoslavia",
+          "authors": [],
+          "pdf_start_index": 927,
+          "pdf_end_index": 931,
+          "citation_pages": "873-882",
+          "confidence": 0.83,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 65.12704400500024,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:22:52.319541+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.23824725000031322,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:21.603953+00:00"
+    }
+  },
+  "generated_at": "2026-08-15T04:23:21.603953+00:00"
+}

@@ -2,7 +2,7 @@
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [],
-      "elapsed_seconds": 0.8439053109999577,
+      "elapsed_seconds": 1.3723705390002578,
       "demand_at_run": 0
     },
     "deepseek-v4-flash": {
@@ -1591,7 +1591,326 @@
       "chapters": [],
       "elapsed_seconds": 0.2742864560000271,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Politics and Law",
+          "authors": [
+            "Law",
+            "Elizabeth May",
+            "Gaylord Nelson"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 51,
+          "citation_pages": "33-42",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Carbon",
+          "authors": [
+            "David Archer"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 59,
+          "citation_pages": "43-50",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Everyday Biodiversity",
+          "authors": [
+            "Jeffrey R. Smith",
+            "Gretchen C. Daily"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 68,
+          "citation_pages": "51-58",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Energy",
+          "authors": [
+            "Elizabeth J. Wilson",
+            "Elias Grove Nielsen\nH",
+            "Odysseus"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 76,
+          "citation_pages": "59-66",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Forests",
+          "authors": [
+            "Sally N. Aitken"
+          ],
+          "pdf_start_index": 77,
+          "pdf_end_index": 85,
+          "citation_pages": "67-76",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Environmental Economics",
+          "authors": [
+            "Don Fullerton"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 93,
+          "citation_pages": "77-84",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Air",
+          "authors": [
+            "Jon Abbatt"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 102,
+          "citation_pages": "85-92",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Geoengineering",
+          "authors": [
+            "Douglas G. MacMartin",
+            "Katharine L. Ricke",
+            "Katharine L. Ricke\nW"
+          ],
+          "pdf_start_index": 103,
+          "pdf_end_index": 110,
+          "citation_pages": "93-100",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ice",
+          "authors": [
+            "Julian Dowdeswell",
+            "sta"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 119,
+          "citation_pages": "101-110",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Imaging Earth",
+          "authors": [
+            "Edward Burtynsky\nH"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 142,
+          "citation_pages": "111-132",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mother Earth",
+          "authors": [
+            "Deborah McGregor"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 149,
+          "citation_pages": "133-140",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sea Level Rise, 1970–2070: A View from the Future",
+          "authors": [
+            "Robert E. Kopp\n"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 159,
+          "citation_pages": "141-150",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Climate Negotiations",
+          "authors": [
+            "Rosemary Lyster"
+          ],
+          "pdf_start_index": 161,
+          "pdf_end_index": 169,
+          "citation_pages": "151-160",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Weather",
+          "authors": [],
+          "pdf_start_index": 171,
+          "pdf_end_index": 177,
+          "citation_pages": "161-168",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Knowing Earth",
+          "authors": [
+            "Sheila Jasanoff"
+          ],
+          "pdf_start_index": 179,
+          "pdf_end_index": 180,
+          "citation_pages": "169-2020",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [],
+          "pdf_start_index": 181,
+          "pdf_end_index": 186,
+          "citation_pages": "1-176",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Fish",
+          "authors": [
+            "Daniel Pauly"
+          ],
+          "pdf_start_index": 187,
+          "pdf_end_index": 194,
+          "citation_pages": "177-184",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Global Chemical Experiment",
+          "authors": [
+            "Charlotte C. Wagner"
+          ],
+          "pdf_start_index": 195,
+          "pdf_end_index": 203,
+          "citation_pages": "185-194",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Land",
+          "authors": [
+            "Hannah Wittman"
+          ],
+          "pdf_start_index": 205,
+          "pdf_end_index": 212,
+          "citation_pages": "195-202",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Oceans 2020",
+          "authors": [
+            "David M. Karl",
+            "Paul \nEhrlich’s"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 220,
+          "citation_pages": "203-212",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Earth and Plastic",
+          "authors": [
+            "Julian Dowdeswell",
+            "David Archer",
+            "Roland Geyer"
+          ],
+          "pdf_start_index": 221,
+          "pdf_end_index": 230,
+          "citation_pages": "213-220",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Fresh Water",
+          "authors": [
+            "Janet G. Hering",
+            "Janet G. Hering\nL"
+          ],
+          "pdf_start_index": 231,
+          "pdf_end_index": 239,
+          "citation_pages": "221-230",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Media",
+          "authors": [
+            "Candis Callison",
+            "Earthrise",
+            "Bill Anders"
+          ],
+          "pdf_start_index": 241,
+          "pdf_end_index": 248,
+          "citation_pages": "231-238",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Space Junk",
+          "authors": [
+            "Alice Gorman",
+            "’s Sput"
+          ],
+          "pdf_start_index": 249,
+          "pdf_end_index": 255,
+          "citation_pages": "239-246",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Saving the Boat",
+          "authors": [
+            "Zoe Craig-Sparrow",
+            "Grace Nosek"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 275,
+          "citation_pages": "247-265",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 10.109851881999987,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:43:12.916961+00:00"
     }
   },
-  "generated_at": "2026-08-13T05:06:02.709249+00:00"
+  "generated_at": "2026-08-15T03:43:12.916961+00:00"
 }

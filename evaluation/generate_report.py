@@ -19,6 +19,7 @@ import json
 import subprocess
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -26,6 +27,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from chapter_segmentation.segmentation import analyze_attachment, analyze_attachment_outline_only
 from evaluation.harness import (
     available_public_books,
+    corpus_dir,
     list_corpora,
     llm_cache_dir,
     public_outline_candidates_for,
@@ -45,11 +47,25 @@ def _git_sha() -> str:
         return "unknown"
 
 
+def _today() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
 def _load_llm_cache(corpus: str, manifest_key: str) -> dict:
     cache_path = llm_cache_dir(corpus) / f"{manifest_key}.json"
     if not cache_path.exists():
         return {}
     return json.loads(cache_path.read_text(encoding="utf-8")).get("models", {})
+
+
+def _load_classifier_results(corpus: str) -> dict | None:
+    """evaluation/corpus/<corpus>/classifier-results.json, written by
+    evaluate_layout_toc_classifier.py --save-results, or None if that
+    script has never been run (with --save-results) against this corpus."""
+    path = corpus_dir(corpus) / "classifier-results.json"
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _best_llm_model(corpus: str, books: list[tuple[str, list[dict]]]) -> str | None:
@@ -75,6 +91,21 @@ def _best_llm_model(corpus: str, books: list[tuple[str, list[dict]]]) -> str | N
     )
 
 
+def _latest_model_date(corpus: str, model_id: str, manifest_keys: list[str]) -> str | None:
+    """Latest per-model generated_at (date part only, YYYY-MM-DD) across
+    every book's cache entry for model_id -- "since not all model runs
+    necessarily take place at the same time, use the latest date" (books
+    can be refreshed for the same model on different nights). Returns None
+    if no book's entry for this model carries the field at all (cache
+    entries written before the per-model timestamp was added)."""
+    dates = [
+        entry["generated_at"][:10]
+        for manifest_key in manifest_keys
+        if (entry := _load_llm_cache(corpus, manifest_key).get(model_id)) and "generated_at" in entry
+    ]
+    return max(dates) if dates else None
+
+
 def generate_corpus(corpus: str, out_dir: Path) -> bool:
     """Writes out_dir/index.html and out_dir/llm/index.html for one
     corpus. Returns False (and writes nothing) if the corpus has no
@@ -89,7 +120,12 @@ def generate_corpus(corpus: str, out_dir: Path) -> bool:
     }
 
     best_llm_model = _best_llm_model(corpus, list(expected_by_key.items()))
-    llm_strategy_name = f"LLM ({best_llm_model})" if best_llm_model else None
+    llm_strategy_name = None
+    if best_llm_model:
+        llm_date = _latest_model_date(corpus, best_llm_model, list(expected_by_key.keys()))
+        llm_strategy_name = (
+            f"LLM ({best_llm_model}, as of {llm_date})" if llm_date else f"LLM ({best_llm_model})"
+        )
     strategy_names = [HEURISTIC, OUTLINE] + ([llm_strategy_name] if llm_strategy_name else [])
 
     per_document: dict[str, dict] = {}
@@ -162,6 +198,23 @@ a production routing decision. A match requires the exact same page range
 The full breakdown of every LLM model ever evaluated (not just the best)
 is at <a href="llm/index.html">llm/index.html</a>.</p>"""
 
+    classifier_data = _load_classifier_results(corpus)
+    classifier_param = None
+    if classifier_data is not None:
+        classifier_param = {
+            "label": f"Layout/TOC classifier (LOBO, as of {classifier_data['generated_at'][:10]})",
+            "note": (
+                "The layout/TOC classifier row/column above measures per-page "
+                "table-of-contents/chapter-opening-page classification recall via "
+                "leave-one-book-out cross-validation (evaluate_layout_toc_classifier.py) -- "
+                "a different methodology than the chapter-boundary precision/recall/F1 the "
+                "other rows measure, so it is not directly comparable to them."
+            ),
+            "per_document": classifier_data["per_book"],
+            "full_recall_fraction": classifier_data["full_recall_fraction"],
+            "avg_candidate_fraction": classifier_data["avg_candidate_fraction"],
+        }
+
     html = render_strategy_tables(
         title=f"chapter-segmentation: {corpus} corpus results",
         description_html=description,
@@ -170,10 +223,11 @@ is at <a href="llm/index.html">llm/index.html</a>.</p>"""
         aggregates=aggregates,
         aggregate_times=aggregate_times,
         citation_aggregates=citation_aggregates,
+        classifier=classifier_param,
     )
     html = html.replace(
         "</body></html>",
-        f"<p>Generated from commit {_git_sha()}.</p></body></html>",
+        f"<p>Generated on {_today()} from commit {_git_sha()}.</p></body></html>",
     )
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -197,26 +251,36 @@ def _generate_llm_detail_page(corpus: str, out_dir: Path, books: list[tuple[str,
             "<code>evaluation/refresh_llm_cache.py</code>.</p></body></html>"
         )
     else:
+        manifest_keys = [manifest_key for manifest_key, _expected in books]
+        label_by_model = {
+            model_id: (
+                f"{model_id} (as of {date})"
+                if (date := _latest_model_date(corpus, model_id, manifest_keys))
+                else model_id
+            )
+            for model_id in model_ids
+        }
+
         per_document: dict[str, dict] = {}
-        aggregates_acc = {model_id: MicroAggregate() for model_id in model_ids}
-        citation_aggregates_acc = {model_id: CitationPageAggregate() for model_id in model_ids}
+        aggregates_acc = {label: MicroAggregate() for label in label_by_model.values()}
+        citation_aggregates_acc = {label: CitationPageAggregate() for label in label_by_model.values()}
         for manifest_key, expected in books:
             cache = _load_llm_cache(corpus, manifest_key)
             cells: dict = {}
-            for model_id in model_ids:
+            for model_id, label in label_by_model.items():
                 entry = cache.get(model_id)
                 if entry is None:
-                    cells[model_id] = None
+                    cells[label] = None
                     continue
                 metrics = precision_recall_f1(expected, entry["chapters"])
-                aggregates_acc[model_id].add(metrics, entry["elapsed_seconds"])
-                citation_aggregates_acc[model_id].add(citation_pages_metrics(expected, entry["chapters"]))
-                cells[model_id] = (metrics, entry["elapsed_seconds"])
+                aggregates_acc[label].add(metrics, entry["elapsed_seconds"])
+                citation_aggregates_acc[label].add(citation_pages_metrics(expected, entry["chapters"]))
+                cells[label] = (metrics, entry["elapsed_seconds"])
             per_document[manifest_key] = cells
 
-        aggregates = {model_id: acc.compute() for model_id, acc in aggregates_acc.items()}
-        aggregate_times = {model_id: acc.total_elapsed_seconds for model_id, acc in aggregates_acc.items()}
-        citation_aggregates = {model_id: acc.compute() for model_id, acc in citation_aggregates_acc.items()}
+        aggregates = {label: acc.compute() for label, acc in aggregates_acc.items()}
+        aggregate_times = {label: acc.total_elapsed_seconds for label, acc in aggregates_acc.items()}
+        citation_aggregates = {label: acc.compute() for label, acc in citation_aggregates_acc.items()}
         html = render_strategy_tables(
             title=f"chapter-segmentation: {corpus} LLM strategy results (all cached models)",
             description_html=(
@@ -228,7 +292,7 @@ def _generate_llm_detail_page(corpus: str, out_dir: Path, books: list[tuple[str,
                 "best-performing model compares against the heuristic and outline "
                 "strategies.</p>"
             ),
-            strategy_names=sorted(model_ids),
+            strategy_names=sorted(label_by_model.values()),
             per_document=per_document,
             aggregates=aggregates,
             aggregate_times=aggregate_times,
@@ -252,7 +316,7 @@ for what distinguishes them.</p>
 <ul>
 {links}
 </ul>
-<p>Generated from commit {_git_sha()}.</p>
+<p>Generated on {_today()} from commit {_git_sha()}.</p>
 </body></html>
 """
     out_dir.mkdir(parents=True, exist_ok=True)

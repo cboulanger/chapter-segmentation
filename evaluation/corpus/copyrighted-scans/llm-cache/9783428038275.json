@@ -1,0 +1,297 @@
+{
+  "models": {
+    "apertus-70b-instruct-2509": {
+      "chapters": [
+        {
+          "title": "Einleitung",
+          "authors": [
+            "Fuß Erschrecken",
+            "Weihnachten Zeitung",
+            "Weihnachten Legen",
+            "viel Legen",
+            "Minutenmir",
+            "Opa Warm",
+            "Erschrecken Opa",
+            "dazu verstecken"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 94,
+          "citation_pages": "22-im",
+          "confidence": 0.8,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Ulrich Drobnig: Soziologische Forschungsmethoden in der Rechtsvergleichung (1971)",
+          "authors": [
+            "Soziologische Forschungsmethoden",
+            "Rechtsvergleichung 97",
+            "Der Nutzen",
+            "Daten",
+            "jedoch von ihrer",
+            "Zwecke",
+            "Fragebogen",
+            "Rechts",
+            "Rahmen",
+            "essiert jedoch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 97,
+          "citation_pages": "97-99",
+          "confidence": 0.86,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "101",
+          "authors": [
+            "Dir Ding",
+            "Weihnachten Erschrecken",
+            "schreiben",
+            "Langsam vom Deshalb",
+            "Versuchen",
+            "haben heiß"
+          ],
+          "pdf_start_index": 98,
+          "pdf_end_index": 117,
+          "citation_pages": "100-119",
+          "confidence": 0.62,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "123",
+          "authors": [
+            "Monate Glück",
+            "Rad Schüler",
+            "Einfach",
+            "Minutenmir Dorf",
+            "las schreiben",
+            "Verkaufen gab Erschrecken"
+          ],
+          "pdf_start_index": 118,
+          "pdf_end_index": 147,
+          "citation_pages": "120-149",
+          "confidence": 0.8,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "151",
+          "authors": [
+            "lernen Berg müssen\nOpa",
+            "Nämlich Ab",
+            "Drei Um",
+            "Erschrecken Schlafen",
+            "Weihnachten Geschichte Zur",
+            "Natürlich",
+            "Weihnachten Erschrecken",
+            "Weiter Um klettern"
+          ],
+          "pdf_start_index": 148,
+          "pdf_end_index": 157,
+          "citation_pages": "150-159",
+          "confidence": 0.62,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "169",
+          "authors": [
+            "Dürfen Schicken",
+            "Blume",
+            "Geschichte Weihnachten",
+            "Weihnachten Weihnachten",
+            "Geburtstag Vielleicht",
+            "bin Weihnachten\n",
+            "Mann",
+            "Weihnachten Hilfe-",
+            "Weihnachten Erschrecken",
+            "Minutenmir",
+            "Legen"
+          ],
+          "pdf_start_index": 158,
+          "pdf_end_index": 169,
+          "citation_pages": "160-171",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "171",
+          "authors": [
+            "Wieder Eis Erschrecken",
+            "Geburtstag",
+            "Erschrecken",
+            "Weihnachten leben Seite-",
+            "Zeitung Langsam",
+            "Weihnachten Glas",
+            "Schwester"
+          ],
+          "pdf_start_index": 170,
+          "pdf_end_index": 186,
+          "citation_pages": "172-188",
+          "confidence": 0.62,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 34.01801341800001,
+      "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Einleitung",
+          "authors": [
+            "Fuß Erschrecken",
+            "Weihnachten Zeitung",
+            "Weihnachten Legen",
+            "viel Legen",
+            "Minutenmir",
+            "Opa Warm",
+            "Erschrecken Opa",
+            "dazu verstecken"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 94,
+          "citation_pages": "11-122",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ulrich Drobnig: Soziologische Forschungsmethoden in der Rechtsvergleichung (1971)",
+          "authors": [
+            "Soziologische Forschungsmethoden",
+            "Rechtsvergleichung 97",
+            "Der Nutzen",
+            "Daten",
+            "jedoch von ihrer",
+            "Zwecke",
+            "Fragebogen",
+            "Rechts",
+            "Rahmen",
+            "essiert jedoch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 186,
+          "citation_pages": "123-188",
+          "confidence": 0.86,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 6.558038491999994,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:40:59.632116+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 105.37638469500007,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:56:19.827437+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Einleitung",
+          "authors": [
+            "Fuß Erschrecken",
+            "Weihnachten Zeitung",
+            "Weihnachten Legen",
+            "viel Legen",
+            "Minutenmir",
+            "Opa Warm",
+            "Erschrecken Opa",
+            "dazu verstecken"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 94,
+          "citation_pages": "22-90",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ulrich Drobnig: Soziologische Forschungsmethoden in der Rechtsvergleichung (1971)",
+          "authors": [
+            "Soziologische Forschungsmethoden",
+            "Rechtsvergleichung 97",
+            "Der Nutzen",
+            "Daten",
+            "jedoch von ihrer",
+            "Zwecke",
+            "Fragebogen",
+            "Rechts",
+            "Rahmen",
+            "essiert jedoch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 186,
+          "citation_pages": "91-188",
+          "confidence": 0.86,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 23.76332900400007,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:09:32.958411+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Einleitung",
+          "authors": [
+            "Fuß Erschrecken",
+            "Weihnachten Zeitung",
+            "Weihnachten Legen",
+            "viel Legen",
+            "Minutenmir",
+            "Opa Warm",
+            "Erschrecken Opa",
+            "dazu verstecken"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 94,
+          "citation_pages": "61-im",
+          "confidence": 0.8,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Ulrich Drobnig: Soziologische Forschungsmethoden in der Rechtsvergleichung (1971)",
+          "authors": [
+            "Soziologische Forschungsmethoden",
+            "Rechtsvergleichung 97",
+            "Der Nutzen",
+            "Daten",
+            "jedoch von ihrer",
+            "Zwecke",
+            "Fragebogen",
+            "Rechts",
+            "Rahmen",
+            "essiert jedoch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 186,
+          "citation_pages": "97-188",
+          "confidence": 0.86,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 18.145029840999996,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:19:43.725363+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.19162954499961415,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:20.758865+00:00"
+    }
+  },
+  "generated_at": "2026-08-15T04:23:20.758865+00:00"
+}

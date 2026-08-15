@@ -96,6 +96,16 @@ class TestTocDownloadUrl(unittest.TestCase):
     def test_returns_none_when_absent(self):
         self.assertIsNone(_toc_download_url({}))
 
+    def test_returns_none_for_schemeless_url(self):
+        # A real lobid-resources record (found 2026-08-15) had a
+        # tableOfContents[].id missing its scheme entirely
+        # ("/www.folkwang-uni.de/.../HT016325725.pdf") -- httpx raises
+        # ValueError (not httpx.HTTPError) for such a URL, which
+        # _acquire_record's retry handling doesn't catch, so this must be
+        # filtered out here rather than passed through.
+        record = {"tableOfContents": [{"id": "/www.example.edu/fileadmin/toc.pdf"}]}
+        self.assertIsNone(_toc_download_url(record))
+
 
 class TestRecordKey(unittest.TestCase):
     def test_prefers_isbn(self):

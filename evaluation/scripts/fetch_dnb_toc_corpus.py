@@ -38,6 +38,7 @@ import sys
 import time
 from pathlib import Path
 from typing import Iterator, Optional
+from urllib.parse import urlsplit
 
 import httpx
 
@@ -81,9 +82,18 @@ def _record_matches(record: dict) -> bool:
 
 
 def _toc_download_url(record: dict) -> Optional[str]:
+    """A record's tableOfContents[].id, or None. Rejects a schemeless/
+    relative URL (e.g. "/www.example.edu/toc.pdf" -- found live in the
+    lobid-resources dump for at least one record, 2026-08-15) rather than
+    returning it: httpx.Client.get() raises ValueError for such a URL
+    (not an httpx.HTTPError subclass), which _acquire_record's retry
+    handling doesn't catch -- an uncaught ValueError previously killed an
+    entire --from-dump run outright instead of skipping the one bad
+    record. Treating it as "no toc url" here reuses the existing skip
+    path instead."""
     for entry in record.get("tableOfContents") or []:
         url = entry.get("id")
-        if url:
+        if url and urlsplit(url).scheme in ("http", "https"):
             return url
     return None
 

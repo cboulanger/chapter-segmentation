@@ -115,13 +115,28 @@ def _record_doi(record: dict) -> Optional[str]:
     return record.get("doi")
 
 
+def _record_api_url(record: dict) -> Optional[str]:
+    """The stable, directly-fetchable URL for re-downloading this
+    record's full lobid-resources data on demand (see
+    manifest_entry_from_record) -- the record's own lobid URI with the
+    "#!" JSON-LD fragment stripped and format=json appended so it
+    resolves to plain JSON with no Accept header needed."""
+    record_id = (record.get("id") or "").rstrip("#!")
+    if not record_id:
+        return None
+    return f"{record_id}?format=json"
+
+
 def manifest_entry_from_record(record: dict, filename: str) -> dict:
-    """Builds this corpus's manifest.json book entry. lobid_record holds
-    the full record verbatim, nested under its own key rather than
-    flattened -- it cost nothing extra to fetch (the whole record already
-    has to be pulled to read tableOfContents) so it's kept in full for
-    future analysis this script doesn't otherwise use; no other code in
-    this repo reads that key."""
+    """Builds this corpus's manifest.json book entry. The full lobid
+    record is NOT embedded here -- it used to be, under a "lobid_record"
+    key, but at real corpus scale that bloated manifest.json into an
+    unreviewable multi-hundred-thousand-line file (~1,000 lines per book,
+    mostly library holdings data ("hasItem") no code reads). lobid_url
+    points back to the same data instead, re-fetchable on demand;
+    _acquire_record separately writes the full record to
+    <key>.lobid.json (gitignored, like the PDF) for anything that wants
+    it locally without a network round-trip."""
     return {
         "filename": filename,
         "title": record.get("title") or "",
@@ -130,7 +145,7 @@ def manifest_entry_from_record(record: dict, filename: str) -> dict:
         "toc_download_url": _toc_download_url(record),
         "license": "CC0-1.0",
         "license_source": "dnb",
-        "lobid_record": record,
+        "lobid_url": _record_api_url(record),
     }
 
 
@@ -243,6 +258,9 @@ def _acquire_record(
     except httpx.HTTPError as exc:
         return f"download failed: {exc}"
     (cdir / filename).write_bytes(response.content)
+    (cdir / f"{key}.lobid.json").write_text(
+        json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8",
+    )
     _append_book(manifest_path, manifest_entry_from_record(record, filename))
     seen_keys.add(key)
     print(f"[fetch] {filename} <- {toc_url}")

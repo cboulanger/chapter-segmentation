@@ -25,6 +25,7 @@ from evaluation.scripts.fetch_dnb_toc_corpus import (
     _iter_dump_records_from_chunks,
     _load_existing_keys,
     _read_isbns_file,
+    _record_api_url,
     _record_key,
     _record_language,
     _record_matches,
@@ -116,6 +117,17 @@ class TestRecordLanguage(unittest.TestCase):
         self.assertIsNone(_record_language({}))
 
 
+class TestRecordApiUrl(unittest.TestCase):
+    def test_strips_jsonld_fragment_and_adds_format(self):
+        self.assertEqual(
+            _record_api_url(_SAMPLE_RECORD),
+            "http://lobid.org/resources/990183806670206441?format=json",
+        )
+
+    def test_none_when_id_absent(self):
+        self.assertIsNone(_record_api_url({}))
+
+
 class TestManifestEntryFromRecord(unittest.TestCase):
     def test_builds_expected_shape(self):
         entry = manifest_entry_from_record(_SAMPLE_RECORD, "9783899718188.pdf")
@@ -129,7 +141,11 @@ class TestManifestEntryFromRecord(unittest.TestCase):
         )
         self.assertEqual(entry["license"], "CC0-1.0")
         self.assertEqual(entry["license_source"], "dnb")
-        self.assertEqual(entry["lobid_record"], _SAMPLE_RECORD)
+        self.assertEqual(
+            entry["lobid_url"],
+            "http://lobid.org/resources/990183806670206441?format=json",
+        )
+        self.assertNotIn("lobid_record", entry)
 
 
 class TestSearchByIsbn(unittest.TestCase):
@@ -175,6 +191,9 @@ class TestAcquireRecord(unittest.TestCase):
             self.assertEqual(len(data["books"]), 1)
             self.assertEqual(data["books"][0]["filename"], "9783899718188.pdf")
             self.assertIn("9783899718188", seen_keys)
+            lobid_path = cdir / "9783899718188.lobid.json"
+            self.assertTrue(lobid_path.exists())
+            self.assertEqual(json.loads(lobid_path.read_text(encoding="utf-8")), _SAMPLE_RECORD)
 
     def test_skips_already_acquired_key(self):
         with tempfile.TemporaryDirectory() as tmp:

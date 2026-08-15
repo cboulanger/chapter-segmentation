@@ -65,6 +65,7 @@ def _load_cached_llm_entries(cache_directory: Path, key: str) -> Optional[list[T
         TocEntry(
             title=e["title"], printed_page_number=e["printed_page_number"],
             source_page_index=e["source_page_index"], authors=tuple(e["authors"]),
+            printed_roman=e["printed_roman"],
         )
         for e in data["entries"]
     ]
@@ -79,6 +80,7 @@ def _write_cached_llm_entries(cache_directory: Path, key: str, entries: list[Toc
             {
                 "title": e.title, "printed_page_number": e.printed_page_number,
                 "source_page_index": e.source_page_index, "authors": list(e.authors),
+                "printed_roman": e.printed_roman,
             }
             for e in entries
         ],

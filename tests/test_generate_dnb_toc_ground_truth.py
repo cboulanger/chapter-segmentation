@@ -54,6 +54,21 @@ class TestLlmCacheRoundTrip(unittest.TestCase):
             loaded = _load_cached_llm_entries(cache_dir, "book1")
             self.assertEqual(loaded, entries)
 
+    def test_round_trip_preserves_printed_roman(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            entries = [
+                TocEntry(
+                    title="Vorwort", printed_page_number=7, source_page_index=0,
+                    printed_roman=True,
+                ),
+            ]
+            _write_cached_llm_entries(cache_dir, "book2", entries)
+            loaded = _load_cached_llm_entries(cache_dir, "book2")
+            self.assertEqual(loaded, entries)
+            self.assertTrue(loaded[0].printed_roman)
+
 
 class TestCallWithRetry(unittest.IsolatedAsyncioTestCase):
     async def test_returns_first_success(self):

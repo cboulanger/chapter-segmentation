@@ -11,11 +11,12 @@ from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock
 
 from chapter_segmentation.llm import LLMClient
-from chapter_segmentation.segmentation import TocEntry, find_toc_candidates
+from chapter_segmentation.segmentation import TocEntry, _llm_scan_indices, find_toc_candidates
 from evaluation.kisski import KisskiModel
 from evaluation.scripts.generate_dnb_toc_ground_truth import (
     _call_with_retry,
     _load_cached_llm_entries,
+    _pad_pages_for_scan,
     _run_book_pages,
     _select_best_model,
     _toc_entries_for_scan,
@@ -45,6 +46,29 @@ class TestTocEntriesForScan(unittest.TestCase):
         self.assertEqual(entries[0].title, "Einleitung")
         self.assertEqual(entries[0].printed_page_number, 9)
         self.assertEqual(entries[2].printed_page_number, 89)
+
+
+class TestPadPagesForScan(unittest.TestCase):
+    def test_llm_scan_indices_skips_a_middle_page_unpadded_but_not_padded(self):
+        # Mirrors a real bug found in a 2026-08-15 smoke test (book
+        # 9783161636820): on an unpadded 3-page dnb-toc-only scan,
+        # find_toc_candidates' raw call finds nothing (the same
+        # _TOC_MAX_PAGE_NUMBER_RATIO rejection _toc_entries_for_scan
+        # already works around), so llm_extract_toc_entries's own
+        # internal _llm_scan_indices falls back to a blind front-15%/
+        # back-5% page window -- which, for a 3-page book, only ever
+        # selects indices {0, 2}, never the middle page {1}, regardless
+        # of what it contains. Padding first fixes both extractors at
+        # once: the padded find_toc_candidates succeeds, so
+        # _llm_scan_indices' preferred (non-blind) branch fires and
+        # correctly windows around every real content page.
+        pages = [
+            "Contents\nFirst Chapter ..... 9\n",
+            "Second Chapter ..... 155\nThird Chapter ..... 177\n",
+            "Fourth Chapter ..... 365\n",
+        ]
+        self.assertNotIn(1, _llm_scan_indices(pages))
+        self.assertIn(1, _llm_scan_indices(_pad_pages_for_scan(pages)))
 
 
 class TestLlmCacheRoundTrip(unittest.TestCase):

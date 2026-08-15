@@ -66,12 +66,38 @@ from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
 _PAGE_NUMBER_GUARD_PADDING = 1000
 
 
+def _pad_pages_for_scan(pages: list[str]) -> list[str]:
+    """Appends _PAGE_NUMBER_GUARD_PADDING harmless filler pages -- shared
+    by BOTH extractors' page-selection logic, not just the heuristic.
+
+    Fixes a second, related bug found empirically (2026-08-15 smoke test
+    against the real corpus, book 9783161636820): llm_extract_toc_entries
+    doesn't scan every page verbatim either -- its own internal
+    _llm_scan_indices (segmentation.py) first calls the RAW (unpadded)
+    find_toc_candidates, and only falls back to a blind front/back-
+    fraction page window (_toc_scan_indices, front 15%/back 5%) when that
+    finds nothing. On an unpadded dnb-toc-only PDF it always finds
+    nothing (the same _TOC_MAX_PAGE_NUMBER_RATIO rejection this padding
+    already works around for the heuristic), so it always falls into that
+    blind-fraction path -- which is sized for a full-length book and can
+    structurally exclude a whole MIDDLE page of a short multi-page TOC
+    scan: on a real 3-page book, front 15%/back 5% of 3 pages selects
+    only indices {0, 2}, never {1}, no matter what that middle page
+    contains. Confirmed directly: that book's page 1 held roughly half
+    its real chapter entries (pages 155-351 of the original book), which
+    the LLM was never even shown -- not a token-limit truncation, an
+    input-selection gap. Padding before EITHER extractor call fixes both
+    at once: the padded find_toc_candidates succeeds, so
+    _llm_scan_indices' preferred (non-blind) branch fires instead and
+    correctly windows +-1 page around every real content page."""
+    return pages + ["Filler page, not part of the digitized TOC scan."] * _PAGE_NUMBER_GUARD_PADDING
+
+
 def _toc_entries_for_scan(pages: list[str]) -> list[TocEntry]:
     """Runs the heuristic regex extractor on a dnb-toc-only book's own
     page texts, working around _TOC_MAX_PAGE_NUMBER_RATIO's tiny-PDF
-    false-rejection (see module docstring)."""
-    padded = pages + ["Filler page, not part of the digitized TOC scan."] * _PAGE_NUMBER_GUARD_PADDING
-    return find_toc_candidates(padded)
+    false-rejection (see _pad_pages_for_scan)."""
+    return find_toc_candidates(_pad_pages_for_scan(pages))
 
 
 def _cache_path(cache_directory: Path, key: str) -> Path:
@@ -152,7 +178,8 @@ async def _run_book_pages(
         if cached is not None:
             llm_entries = cached
         else:
-            llm_entries = await _call_with_retry(lambda: llm_extract_toc_entries(pages, llm_client))
+            padded_pages = _pad_pages_for_scan(pages)
+            llm_entries = await _call_with_retry(lambda: llm_extract_toc_entries(padded_pages, llm_client))
             # llm_extract_toc_entries never raises to us -- any real failure
             # (network, rate limit, timeout) is caught internally and
             # returns [], indistinguishable from a genuine "no TOC found"

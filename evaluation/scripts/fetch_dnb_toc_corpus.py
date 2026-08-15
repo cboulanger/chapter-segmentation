@@ -62,10 +62,19 @@ _ISO_639_2_TO_1 = {
 
 def _record_matches(record: dict) -> bool:
     """A lobid-resources record is a usable acquisition target if it's
-    typed as a Book or EditedVolume and carries a non-empty
-    tableOfContents array."""
+    typed as an EditedVolume (an edited collection/Festschrift/reference
+    volume -- the book template this project's evaluation corpus already
+    targets, per the design spec) and carries a non-empty tableOfContents
+    array. Deliberately requires "EditedVolume" specifically, not just
+    "Book": confirmed live (2026-08-15) that lobid-resources types
+    single-author monographs and theses as bare ["...", "Book"] too --
+    e.g. isbn:9783844019384 (["BibliographicResource", "Thesis", "Book"])
+    and isbn:9783868674095 (["BibliographicResource", "Book"], a
+    Lehrbuch/textbook) -- so the original any(Book-or-EditedVolume) filter
+    let single-author and textbook TOCs into a corpus meant to target
+    edited-volume TOC layouts specifically."""
     types = record.get("type") or []
-    if not any(t in ("Book", "EditedVolume") for t in types):
+    if "EditedVolume" not in types:
         return False
     return bool(record.get("tableOfContents"))
 
@@ -106,13 +115,28 @@ def _record_doi(record: dict) -> Optional[str]:
     return record.get("doi")
 
 
+def _record_api_url(record: dict) -> Optional[str]:
+    """The stable, directly-fetchable URL for re-downloading this
+    record's full lobid-resources data on demand (see
+    manifest_entry_from_record) -- the record's own lobid URI with the
+    "#!" JSON-LD fragment stripped and format=json appended so it
+    resolves to plain JSON with no Accept header needed."""
+    record_id = (record.get("id") or "").rstrip("#!")
+    if not record_id:
+        return None
+    return f"{record_id}?format=json"
+
+
 def manifest_entry_from_record(record: dict, filename: str) -> dict:
-    """Builds this corpus's manifest.json book entry. lobid_record holds
-    the full record verbatim, nested under its own key rather than
-    flattened -- it cost nothing extra to fetch (the whole record already
-    has to be pulled to read tableOfContents) so it's kept in full for
-    future analysis this script doesn't otherwise use; no other code in
-    this repo reads that key."""
+    """Builds this corpus's manifest.json book entry. The full lobid
+    record is NOT embedded here -- it used to be, under a "lobid_record"
+    key, but at real corpus scale that bloated manifest.json into an
+    unreviewable multi-hundred-thousand-line file (~1,000 lines per book,
+    mostly library holdings data ("hasItem") no code reads). lobid_url
+    points back to the same data instead, re-fetchable on demand;
+    _acquire_record separately writes the full record to
+    <key>.lobid.json (gitignored, like the PDF) for anything that wants
+    it locally without a network round-trip."""
     return {
         "filename": filename,
         "title": record.get("title") or "",
@@ -121,7 +145,7 @@ def manifest_entry_from_record(record: dict, filename: str) -> dict:
         "toc_download_url": _toc_download_url(record),
         "license": "CC0-1.0",
         "license_source": "dnb",
-        "lobid_record": record,
+        "lobid_url": _record_api_url(record),
     }
 
 
@@ -234,6 +258,9 @@ def _acquire_record(
     except httpx.HTTPError as exc:
         return f"download failed: {exc}"
     (cdir / filename).write_bytes(response.content)
+    (cdir / f"{key}.lobid.json").write_text(
+        json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8",
+    )
     _append_book(manifest_path, manifest_entry_from_record(record, filename))
     seen_keys.add(key)
     print(f"[fetch] {filename} <- {toc_url}")
@@ -263,17 +290,33 @@ def _run_isbns_file(args: argparse.Namespace, cdir: Path, manifest_path: Path, c
     print(f"Acquired {acquired} new book(s).")
 
 
-def _run_from_dump(args: argparse.Namespace, cdir: Path, manifest_path: Path, client: httpx.Client) -> None:
-    seen_keys = _load_existing_keys(manifest_path)
-    acquired = 0
+def _scan_and_acquire(
+    records: Iterator[dict],
+    cdir: Path,
+    manifest_path: Path,
+    client: httpx.Client,
+    rate_limit_seconds: float,
+    limit: Optional[int],
+    seen_keys: set[str],
+    acquired_so_far: int,
+) -> tuple[int, int]:
+    """Consumes records from the given iterator, acquiring matches until
+    either the iterator is exhausted or acquired_so_far plus newly
+    acquired reaches limit -- stops consuming immediately once the limit
+    is hit, rather than draining the rest of the iterator. Returns
+    (records_scanned_this_call, newly_acquired_this_call). Pulled out of
+    _run_from_dump as a pure, retry-agnostic unit so a dropped dump
+    connection can be retried by simply calling this again with a fresh
+    iterator and an updated acquired_so_far -- see _run_from_dump."""
     scanned = 0
-    for record in _iter_dump_records(args.dump_url, client):
+    acquired = 0
+    for record in records:
         scanned += 1
         if scanned % 100_000 == 0:
-            print(f"[scan] {scanned:,} records scanned, {acquired} acquired so far")
-        if args.limit is not None and acquired >= args.limit:
+            print(f"[scan] {scanned:,} records scanned this attempt, {acquired_so_far + acquired} acquired so far")
+        if limit is not None and acquired_so_far + acquired >= limit:
             break
-        reason = _acquire_record(record, cdir, manifest_path, client, args.rate_limit_seconds, seen_keys)
+        reason = _acquire_record(record, cdir, manifest_path, client, rate_limit_seconds, seen_keys)
         if reason is None:
             acquired += 1
         elif reason.startswith("download failed"):
@@ -283,7 +326,37 @@ def _run_from_dump(args: argparse.Namespace, cdir: Path, manifest_path: Path, cl
             # millions of scanned records to print without spamming the
             # run's output).
             print(f"[skip] {_record_key(record)}: {reason}")
-    print(f"Scanned {scanned:,} records, acquired {acquired} new book(s).")
+    return scanned, acquired
+
+
+def _run_from_dump(args: argparse.Namespace, cdir: Path, manifest_path: Path, client: httpx.Client) -> None:
+    seen_keys = _load_existing_keys(manifest_path)
+    acquired = 0
+    attempt = 0
+    while True:
+        try:
+            scanned, newly = _scan_and_acquire(
+                _iter_dump_records(args.dump_url, client), cdir, manifest_path, client,
+                args.rate_limit_seconds, args.limit, seen_keys, acquired,
+            )
+            acquired += newly
+            if args.limit is not None and acquired >= args.limit:
+                print(f"Acquired {acquired} new book(s) (limit reached).")
+                return
+            print(f"Scanned {scanned:,} records this attempt (dump exhausted), acquired {acquired} new book(s) total.")
+            return
+        except httpx.HTTPError as exc:
+            attempt += 1
+            if attempt > args.max_retries:
+                print(f"[error] dump stream failed {attempt} time(s), giving up: {exc}")
+                raise
+            backoff = min(2 ** attempt, 60)
+            print(
+                f"[retry {attempt}/{args.max_retries}] dump stream dropped ({exc}); "
+                f"reconnecting in {backoff}s and rescanning from the start "
+                f"(already-acquired books are skipped via seen_keys, so this only costs time)"
+            )
+            time.sleep(backoff)
 
 
 def main() -> int:
@@ -307,6 +380,10 @@ def main() -> int:
     parser.add_argument(
         "--rate-limit-seconds", type=float, default=1.0,
         help="Delay after each TOC PDF download, to stay polite to DNB's servers (default: 1.0)",
+    )
+    parser.add_argument(
+        "--max-retries", type=int, default=5,
+        help="For --from-dump: how many times to reconnect and rescan after a dropped connection before giving up (default: 5)",
     )
     args = parser.parse_args()
 

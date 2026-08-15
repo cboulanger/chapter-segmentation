@@ -25,9 +25,11 @@ from evaluation.scripts.fetch_dnb_toc_corpus import (
     _iter_dump_records_from_chunks,
     _load_existing_keys,
     _read_isbns_file,
+    _record_api_url,
     _record_key,
     _record_language,
     _record_matches,
+    _scan_and_acquire,
     _search_by_isbn,
     _toc_download_url,
     manifest_entry_from_record,
@@ -75,6 +77,14 @@ class TestRecordMatches(unittest.TestCase):
         record = {k: v for k, v in _SAMPLE_RECORD.items() if k != "tableOfContents"}
         self.assertFalse(_record_matches(record))
 
+    def test_rejects_plain_book_without_edited_volume(self):
+        # Confirmed live 2026-08-15 (isbn:9783868674095): a Lehrbuch
+        # typed just ["BibliographicResource", "Book"] -- no
+        # "EditedVolume" -- must NOT match even though it has a TOC and
+        # "Book" is technically in its type list.
+        record = {**_SAMPLE_RECORD, "type": ["BibliographicResource", "Book"]}
+        self.assertFalse(_record_matches(record))
+
 
 class TestTocDownloadUrl(unittest.TestCase):
     def test_returns_first_entry_id(self):
@@ -108,6 +118,17 @@ class TestRecordLanguage(unittest.TestCase):
         self.assertIsNone(_record_language({}))
 
 
+class TestRecordApiUrl(unittest.TestCase):
+    def test_strips_jsonld_fragment_and_adds_format(self):
+        self.assertEqual(
+            _record_api_url(_SAMPLE_RECORD),
+            "http://lobid.org/resources/990183806670206441?format=json",
+        )
+
+    def test_none_when_id_absent(self):
+        self.assertIsNone(_record_api_url({}))
+
+
 class TestManifestEntryFromRecord(unittest.TestCase):
     def test_builds_expected_shape(self):
         entry = manifest_entry_from_record(_SAMPLE_RECORD, "9783899718188.pdf")
@@ -121,7 +142,11 @@ class TestManifestEntryFromRecord(unittest.TestCase):
         )
         self.assertEqual(entry["license"], "CC0-1.0")
         self.assertEqual(entry["license_source"], "dnb")
-        self.assertEqual(entry["lobid_record"], _SAMPLE_RECORD)
+        self.assertEqual(
+            entry["lobid_url"],
+            "http://lobid.org/resources/990183806670206441?format=json",
+        )
+        self.assertNotIn("lobid_record", entry)
 
 
 class TestSearchByIsbn(unittest.TestCase):
@@ -167,6 +192,9 @@ class TestAcquireRecord(unittest.TestCase):
             self.assertEqual(len(data["books"]), 1)
             self.assertEqual(data["books"][0]["filename"], "9783899718188.pdf")
             self.assertIn("9783899718188", seen_keys)
+            lobid_path = cdir / "9783899718188.lobid.json"
+            self.assertTrue(lobid_path.exists())
+            self.assertEqual(json.loads(lobid_path.read_text(encoding="utf-8")), _SAMPLE_RECORD)
 
     def test_skips_already_acquired_key(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -213,6 +241,55 @@ class TestAcquireRecord(unittest.TestCase):
             data = json.loads(manifest_path.read_text(encoding="utf-8"))
             self.assertEqual(data["books"], [])
             self.assertEqual(seen_keys, set())
+
+
+class TestScanAndAcquire(unittest.TestCase):
+    def test_stops_early_once_cumulative_limit_reached(self):
+        # Three matching records, but acquired_so_far=1 and limit=2, so
+        # only one more should be acquired before the loop stops -- and
+        # it must stop consuming the iterator immediately, not drain it.
+        records = [
+            {**_SAMPLE_RECORD, "isbn": ["1111111111111"]},
+            {**_SAMPLE_RECORD, "isbn": ["2222222222222"]},
+            {**_SAMPLE_RECORD, "isbn": ["3333333333333"]},
+        ]
+
+        def _record_stream():
+            yield from records
+            self.fail("iterator was drained past the limit")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            manifest_path = cdir / "manifest.json"
+            _ensure_manifest_shell(manifest_path)
+            client = Mock()
+            client.get.return_value = _json_response({})  # PDF download response; content below
+            client.get.return_value.content = b"%PDF-fake"
+            scanned, newly_acquired = _scan_and_acquire(
+                _record_stream(), cdir, manifest_path, client,
+                rate_limit_seconds=0, limit=2, seen_keys=set(), acquired_so_far=1,
+            )
+        self.assertEqual(newly_acquired, 1)
+        self.assertEqual(scanned, 2)
+
+    def test_consumes_whole_iterator_when_no_limit(self):
+        records = [
+            {**_SAMPLE_RECORD, "isbn": ["1111111111111"]},
+            {**_SAMPLE_RECORD, "isbn": ["2222222222222"]},
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            manifest_path = cdir / "manifest.json"
+            _ensure_manifest_shell(manifest_path)
+            client = Mock()
+            client.get.return_value = _json_response({})
+            client.get.return_value.content = b"%PDF-fake"
+            scanned, newly_acquired = _scan_and_acquire(
+                iter(records), cdir, manifest_path, client,
+                rate_limit_seconds=0, limit=None, seen_keys=set(), acquired_so_far=0,
+            )
+        self.assertEqual(newly_acquired, 2)
+        self.assertEqual(scanned, 2)
 
 
 class TestChunkStreamReader(unittest.TestCase):

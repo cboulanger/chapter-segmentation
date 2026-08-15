@@ -71,6 +71,57 @@ runner above ignores it unless it opts in via
 `include_toc_only=True`), so it doesn't follow the directory shape below
 either -- see the design spec for its own shape and schema.
 
+## Building dnb-toc-only ground truth
+
+See
+`docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md`
+for the full design. Two tiers, both writing
+`evaluation/corpus/dnb-toc-only/<id>.expected.json`
+(`{"entries": [{"title", "authors", "printed_page_number"}, ...],
+"verified": bool}`):
+
+**Bulk tier** (`"verified": false`, no human review) --
+`evaluation/scripts/select_dnb_toc_eval_sample.py` first, then:
+
+```bash
+uv run python evaluation/scripts/select_dnb_toc_eval_sample.py --sample-size 75
+export KISSKI_API_KEY=$(grep '^KISSKI_API_KEY=' ../zotero-rag/.env | cut -d= -f2-)
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py
+```
+
+Runs two independent extractors per book (the regex heuristic and a
+KISSKI LLM pass) and writes `.expected.json` only when they agree on at
+least 90% of the book's entries -- see `evaluation/dnb_toc_matching.py`.
+Books that don't clear that bar are skipped and reported, not partially
+written.
+
+**Eval tier** (`"verified": true`, hand-transcribed, held out of the bulk
+tier and never drafted by either extractor) -- for every ID in
+`evaluation/corpus/dnb-toc-only/eval_tier_ids.json`:
+
+1. Open the book's `<id>.pdf` (1-3 pages -- the TOC scan itself, no
+   chapter-locate search needed, unlike the full-book workflow
+   `CLAUDE.md` documents, since the target page *is* the whole PDF).
+2. View it directly (`Read` tool, `pages` param).
+3. Transcribe every entry the page actually prints, including lines a
+   full-book `.expected.json` would mark `skip: true` (bibliography,
+   index headers, part dividers) -- this file measures extraction
+   fidelity against what's printed, not "which of these are real
+   chapters."
+4. Save as `<id>.expected.json` with `"verified": true`.
+
+**Spot-checking the bulk tier's real precision:**
+
+```bash
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --spot-check 30
+```
+
+Samples passing bulk-tier books, prints each one's PDF path and generated
+entries, and prompts for a manual Accept/Reject after opening the PDF --
+reports a measured precision for the 90% agreement gate. Record the
+result in `RESULTS.md`, same convention as every other one-off measurement
+in this project.
+
 Each corpus directory (except `dnb-toc-only/`, above) has the same shape:
 
 ```text

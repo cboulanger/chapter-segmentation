@@ -60,6 +60,19 @@ def _main() -> int:
         "llama.cpp's own commonly-used default in its other tooling.",
     )
     parser.add_argument(
+        "--repeat-last-n", type=int, default=16,
+        help="Lookback window (in tokens) the repeat penalty above applies over -- passed to Llama's "
+        "own last_n_tokens_size (default 64). 64 was too wide for this task: our output is a JSON "
+        "LIST of chapter dicts, each repeating the same field names (\"title\"/\"authors\"/"
+        "\"printed_page_number\") every ~20-40 tokens -- a 64-token window reaches back into the "
+        "PREVIOUS chapter entry and penalizes that legitimate, required repetition, not just a "
+        "genuine degenerate loop. Confirmed empirically: --repeat-penalty 1.1 at the 64-token default "
+        "fixed the two collapsed books but broke four others that were previously correct (aggregate "
+        "f1 0.59 -> 0.41, worse overall). The pathological loops seen so far repeat every 1-4 tokens "
+        "(e.g. a single repeated diacritic pair), so a much shorter window should still suppress them "
+        "while staying short enough to never reach the previous chapter entry's field names.",
+    )
+    parser.add_argument(
         "--dump-dir",
         help="Write one JSON file per book here with its raw completion text, finish_reason, parsed "
         "chapters, and expected_chapters -- for inspecting *why* a book scored the way it did (e.g. "
@@ -85,7 +98,10 @@ def _main() -> int:
 
     gguf_path = args.gguf_path or hf_hub_download(repo_id=GGUF_REPO, filename=GGUF_FILENAME)
     print(f"Loading {gguf_path} ...")
-    llm = Llama(model_path=gguf_path, n_gpu_layers=args.gpu_layers, n_ctx=args.n_ctx, verbose=False)
+    llm = Llama(
+        model_path=gguf_path, n_gpu_layers=args.gpu_layers, n_ctx=args.n_ctx,
+        last_n_tokens_size=args.repeat_last_n, verbose=False,
+    )
 
     total = MicroAggregate()
     for line in _EVAL_JSONL_PATH.read_text(encoding="utf-8").splitlines():

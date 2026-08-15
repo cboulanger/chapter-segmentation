@@ -7,7 +7,7 @@ the regression is tracked instead of silently re-discovered later.
 
 ## Document organization in this directory
 
-Three documents, three different lifetimes -- know which one to write to:
+Four documents, four different lifetimes -- know which one to write to:
 
 - **`README.md`** — permanent reference: what the evaluation set is, its
   schema, how to fetch/add books, and how to run each evaluation
@@ -30,7 +30,33 @@ Three documents, three different lifetimes -- know which one to write to:
   explanation (see `RESULTS.md`'s "Diverse real-library evaluation set"
   section for a worked example of a fairly involved investigation writeup
   that still belongs there, not in `README.md`, because it's tied to a
-  specific measured snapshot that will itself go stale).
+  specific measured snapshot that will itself go stale). **Always document
+  the latest results and data in `RESULTS.md`; move outdated/superseded
+  text to `EXPERIMENTS.md`, and leave only a summary/mention linked to
+  there.** Concretely: when a new run's numbers supersede an existing
+  `RESULTS.md` write-up (a whole "Follow-up: ..." subsection, a superseded
+  snapshot table, an experiment that a later one has fully moved past --
+  not every single backward-looking sentence; narrative reasoning that
+  explains *why* the current numbers look the way they do can stay inline
+  in the current write-up), move that old write-up's full text to
+  `EXPERIMENTS.md` verbatim (don't delete it, don't shorten it there) and
+  replace it in `RESULTS.md` with a short summary (what was tried, the
+  headline result, why it was superseded) plus a markdown link into the
+  matching `EXPERIMENTS.md` heading. The same "would this sentence still
+  be true after the next code change, even if no evaluation book changed"
+  test that decides README vs. `RESULTS.md` extends one step further here:
+  a `RESULTS.md` write-up graduates to `EXPERIMENTS.md` the moment a newer
+  run's numbers make it no longer *the latest data* for its topic -- at
+  that point it's no longer describing the current measured state, only
+  the history behind it, which is exactly what `EXPERIMENTS.md` is for.
+- **`EXPERIMENTS.md`** — the permanent, unabridged archive of every
+  superseded `RESULTS.md` write-up: full prose, tables, and root-cause
+  detail preserved exactly, organized under the same section headings as
+  `RESULTS.md` so a `RESULTS.md` summary's link lands on the matching
+  heading here. Never trimmed or rewritten away once something lands here
+  -- only appended to, as more of `RESULTS.md` gets superseded over time.
+  Reading `RESULTS.md` and `EXPERIMENTS.md` together should never lose
+  information that was ever recorded in `RESULTS.md`.
 - **`CLAUDE.md`** (this file) — permanent workflow reference for adding a
   new evaluation book by hand (ground-truth transcription, the helper
   script, verification steps, known failure modes in that *process*, not

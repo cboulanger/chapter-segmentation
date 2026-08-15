@@ -26,7 +26,9 @@ import time
 from pathlib import Path
 from typing import Optional
 
-from chapter_segmentation.segmentation import TocEntry, find_toc_candidates
+from chapter_segmentation.llm import LLMClient
+from chapter_segmentation.segmentation import TocEntry, find_toc_candidates, llm_extract_toc_entries, pages_need_ocr
+from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
 
 # find_toc_candidates rejects any printed page number above
 # len(pages) * _TOC_MAX_PAGE_NUMBER_RATIO (2.0, segmentation.py) -- a
@@ -103,3 +105,38 @@ async def _call_with_retry(coro_fn, attempts: int = 3, base_delay: float = 1.0, 
             if attempt < attempts - 1:
                 await sleep(base_delay * 2 ** attempt)
     raise last_exc
+
+
+_GATE_THRESHOLD = 0.90
+
+
+async def _run_book_pages(
+    key: str, pages: list[str], llm_client: LLMClient, semaphore: asyncio.Semaphore,
+    corpus_directory: Path, cache_directory: Path,
+) -> tuple[str, bool, str]:
+    """Core per-book logic, given already-extracted page texts -- kept
+    separate from PDF/file reading so it's directly unit-testable with
+    synthetic pages and a fake LLMClient, no real PDF needed. Returns
+    (key, passed, reason); reason is "ok" on success, else why the book
+    was skipped/rejected ("needs_ocr", "no_entries", "below_threshold")."""
+    if pages_need_ocr(pages):
+        return key, False, "needs_ocr"
+    heuristic_entries = _toc_entries_for_scan(pages)
+    cached = _load_cached_llm_entries(cache_directory, key)
+    async with semaphore:
+        if cached is not None:
+            llm_entries = cached
+        else:
+            llm_entries = await _call_with_retry(lambda: llm_extract_toc_entries(pages, llm_client))
+            _write_cached_llm_entries(cache_directory, key, llm_entries)
+    if not heuristic_entries and not llm_entries:
+        return key, False, "no_entries"
+    passed, entries = gate_book(heuristic_entries, llm_entries, threshold=_GATE_THRESHOLD)
+    if not passed:
+        return key, False, "below_threshold"
+    gt_path = corpus_directory / f"{key}.expected.json"
+    gt_path.write_text(
+        json.dumps({"entries": [toc_entry_to_gt_dict(e) for e in entries], "verified": False}, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return key, True, "ok"

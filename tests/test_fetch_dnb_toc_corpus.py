@@ -75,6 +75,14 @@ class TestRecordMatches(unittest.TestCase):
         record = {k: v for k, v in _SAMPLE_RECORD.items() if k != "tableOfContents"}
         self.assertFalse(_record_matches(record))
 
+    def test_rejects_plain_book_without_edited_volume(self):
+        # Confirmed live 2026-08-15 (isbn:9783868674095): a Lehrbuch
+        # typed just ["BibliographicResource", "Book"] -- no
+        # "EditedVolume" -- must NOT match even though it has a TOC and
+        # "Book" is technically in its type list.
+        record = {**_SAMPLE_RECORD, "type": ["BibliographicResource", "Book"]}
+        self.assertFalse(_record_matches(record))
+
 
 class TestTocDownloadUrl(unittest.TestCase):
     def test_returns_first_entry_id(self):

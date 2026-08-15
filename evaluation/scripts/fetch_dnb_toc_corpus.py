@@ -62,10 +62,19 @@ _ISO_639_2_TO_1 = {
 
 def _record_matches(record: dict) -> bool:
     """A lobid-resources record is a usable acquisition target if it's
-    typed as a Book or EditedVolume and carries a non-empty
-    tableOfContents array."""
+    typed as an EditedVolume (an edited collection/Festschrift/reference
+    volume -- the book template this project's evaluation corpus already
+    targets, per the design spec) and carries a non-empty tableOfContents
+    array. Deliberately requires "EditedVolume" specifically, not just
+    "Book": confirmed live (2026-08-15) that lobid-resources types
+    single-author monographs and theses as bare ["...", "Book"] too --
+    e.g. isbn:9783844019384 (["BibliographicResource", "Thesis", "Book"])
+    and isbn:9783868674095 (["BibliographicResource", "Book"], a
+    Lehrbuch/textbook) -- so the original any(Book-or-EditedVolume) filter
+    let single-author and textbook TOCs into a corpus meant to target
+    edited-volume TOC layouts specifically."""
     types = record.get("type") or []
-    if not any(t in ("Book", "EditedVolume") for t in types):
+    if "EditedVolume" not in types:
         return False
     return bool(record.get("tableOfContents"))
 

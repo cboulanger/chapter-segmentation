@@ -266,6 +266,7 @@ API into evaluation/corpus/dnb-toc-only/.
 usage: fetch_dnb_toc_corpus.py [-h] (--from-dump | --isbns-file ISBNS_FILE)
                                [--dump-url DUMP_URL] [--limit LIMIT]
                                [--rate-limit-seconds RATE_LIMIT_SECONDS]
+                               [--max-retries MAX_RETRIES]
 
 Acquires real DNB-scanned table-of-contents PDFs via the lobid-resources
 API (lobid.org/resources) into evaluation/corpus/dnb-toc-only/ -- see
@@ -285,6 +286,10 @@ options:
   --rate-limit-seconds RATE_LIMIT_SECONDS
                         Delay after each TOC PDF download, to stay polite to
                         DNB's servers (default: 1.0)
+  --max-retries MAX_RETRIES
+                        For --from-dump: how many times to reconnect and
+                        rescan after a dropped connection before giving up
+                        (default: 5)
 ```
 
 ## `fetch_evaluation_pdfs.py`

@@ -48,6 +48,7 @@ from evaluation.harness import corpus_dir
 _DUMP_URL_DEFAULT = "https://lobid.org/download/dumps/lobid-resources/latestLobidResources.jsonl.gz"
 _SEARCH_URL = "https://lobid.org/resources/search"
 _CORPUS_NAME = "dnb-toc-only"
+_LOBID_CACHE_DIRNAME = ".lobid-cache"
 
 # lobid-resources carries language as a full ISO 639-2 URI
 # (.../iso639-2/ger); every other corpus's manifest.json uses ISO 639-1
@@ -135,8 +136,10 @@ def manifest_entry_from_record(record: dict, filename: str) -> dict:
     mostly library holdings data ("hasItem") no code reads). lobid_url
     points back to the same data instead, re-fetchable on demand;
     _acquire_record separately writes the full record to
-    <key>.lobid.json (gitignored, like the PDF) for anything that wants
-    it locally without a network round-trip."""
+    .lobid-cache/<key>.lobid.json (gitignored, like the PDF) for anything
+    that wants it locally without a network round-trip -- kept in its own
+    subdirectory, out of the corpus dir's top level, the same way
+    .ocr-cache/ and .layout-cache/ already are for other corpora."""
     return {
         "filename": filename,
         "title": record.get("title") or "",
@@ -258,7 +261,9 @@ def _acquire_record(
     except httpx.HTTPError as exc:
         return f"download failed: {exc}"
     (cdir / filename).write_bytes(response.content)
-    (cdir / f"{key}.lobid.json").write_text(
+    lobid_cache_dir = cdir / _LOBID_CACHE_DIRNAME
+    lobid_cache_dir.mkdir(parents=True, exist_ok=True)
+    (lobid_cache_dir / f"{key}.lobid.json").write_text(
         json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8",
     )
     _append_book(manifest_path, manifest_entry_from_record(record, filename))

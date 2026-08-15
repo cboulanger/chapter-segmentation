@@ -192,7 +192,7 @@ class TestAcquireRecord(unittest.TestCase):
             self.assertEqual(len(data["books"]), 1)
             self.assertEqual(data["books"][0]["filename"], "9783899718188.pdf")
             self.assertIn("9783899718188", seen_keys)
-            lobid_path = cdir / "9783899718188.lobid.json"
+            lobid_path = cdir / ".lobid-cache" / "9783899718188.lobid.json"
             self.assertTrue(lobid_path.exists())
             self.assertEqual(json.loads(lobid_path.read_text(encoding="utf-8")), _SAMPLE_RECORD)
 

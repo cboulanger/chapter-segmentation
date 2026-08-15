@@ -24,7 +24,9 @@ evaluation set change.
 `evaluation.harness.list_corpora()` auto-discovers every subfolder of
 `evaluation/corpus/` that has a `manifest.json` -- every runner below loops
 over all of them by default, with an optional `--corpus <name>` flag to
-restrict to one. Three corpora exist today:
+restrict to one. Three corpora exist today for end-to-end chapter
+segmentation (a fourth, `dnb-toc-only/`, is a different kind of corpus --
+see below):
 
 - **`open-access/`** (37 books) -- well-produced, OA, parseable embedded
   TOCs. The case the pure-heuristic pipeline already handles well. The
@@ -53,7 +55,23 @@ restrict to one. Three corpora exist today:
   builds ground truth for them (see `CLAUDE.md`'s "Step 0a"), at which point
   the entry moves into whichever real corpus it belongs in.
 
-Each corpus directory has the same shape:
+A fourth directory, **`dnb-toc-only/`** (542 books), holds real
+DNB-digitized table-of-contents *scans* -- not full books -- sourced via
+the `lobid-resources` API (see
+`docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md`
+and `evaluation/scripts/fetch_dnb_toc_corpus.py`). It's for training and
+calibrating layout-only *parts* of the pipeline (currently the
+scan-noise constants in `evaluation/scripts/alto_scan_noise.py` --
+see `RESULTS.md`'s "real-scan measurement" follow-up) against real
+scanned TOC pages, not for evaluating chapter segmentation end-to-end --
+there is no surrounding book, no `.expected.json`, and no chapter
+boundaries to score. Its manifest sets `"toc_only": true` and is
+therefore excluded from `list_corpora()`'s default iteration (every
+runner above ignores it unless it opts in via
+`include_toc_only=True`), so it doesn't follow the directory shape below
+either -- see the design spec for its own shape and schema.
+
+Each corpus directory (except `dnb-toc-only/`, above) has the same shape:
 
 ```text
 evaluation/corpus/<name>/

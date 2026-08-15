@@ -1,5 +1,5 @@
 *.pdf
-*.lobid.json
 manifest.local.json
 .ocr-cache/
 .layout-cache/
+.lobid-cache/

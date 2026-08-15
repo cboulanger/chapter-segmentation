@@ -117,7 +117,8 @@ evaluation/corpus/dnb-toc-only/
   manifest.json            # committed -- the only file this script writes to git
   manifest.local.json      # optional, gitignored, same convention as other corpora
   <id>.pdf                  # gitignored -- never committed, see below
-  <id>.lobid.json           # gitignored -- full lobid-resources record, see below
+  .lobid-cache/              # gitignored -- full lobid-resources record per book, see below
+    <id>.lobid.json
   .layout-cache/            # gitignored, same convention as other corpora
 ```
 
@@ -143,10 +144,14 @@ fields shared with other corpora (`filename`, `title`, `language`,
   holdings data no code reads) that made `manifest.json` an
   unreviewable multi-hundred-thousand-line file. Instead,
   `fetch_dnb_toc_corpus.py` writes the full record to a separate,
-  gitignored `<id>.lobid.json` file alongside the PDF (see
-  `evaluation/.gitignore`'s `*.lobid.json` entry) -- available locally
+  gitignored `.lobid-cache/<id>.lobid.json` file (see
+  `evaluation/.gitignore`'s `.lobid-cache/` entry) -- available locally
   without a network round-trip, but never committed, same rationale as
-  the PDFs themselves.
+  the PDFs themselves. Kept in its own subdirectory rather than loose in
+  the corpus dir's top level, the same way `.ocr-cache/`/`.layout-cache/`
+  already are for other corpora, so the directory listing stays readable
+  at real corpus scale (500+ books) instead of interleaving two files per
+  book with the PDFs.
 
   Publisher, year, subjects/GND links (including
   `natureOfContent`/*Aufsatzsammlung*), and whatever else
@@ -156,8 +161,8 @@ fields shared with other corpora (`filename`, `title`, `language`,
   `toc_download_url`, `license*`, and `lobid_url` above remain the only
   fields any tooling in this spec actually reads from `manifest.json`.
   `manifest.json` stays the single file this script writes to git --
-  `<id>.lobid.json` is the companion per-book metadata file, gitignored
-  like the PDF itself.
+  `.lobid-cache/<id>.lobid.json` is the companion per-book metadata file,
+  gitignored like the PDF itself.
 
 Note on what a future `<id>.expected.json` for this corpus could and
 couldn't hold, since it shapes the "equivalent metadata shape" framing

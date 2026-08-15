@@ -175,9 +175,20 @@ async def _run_book(
     corpus_directory: Path, cache_directory: Path,
 ) -> tuple[str, bool, str]:
     """Thin I/O wrapper around _run_book_pages -- reads the real PDF,
-    extracts page text the same way production does, and delegates."""
-    pages, _ = extract_page_texts_for_analysis(pdf_path.read_bytes())
-    return await _run_book_pages(key, pages, llm_client, semaphore, corpus_directory, cache_directory)
+    extracts page text the same way production does, and delegates.
+    Catches any exception (a corrupt/unreadable PDF, a network error not
+    already absorbed by llm_extract_toc_entries' own handling, etc.) and
+    reports it as a failed-but-tuple-shaped result instead of letting it
+    propagate -- same "catch-log-continue" convention
+    evaluation/refresh_llm_cache.py already established for this same
+    kind of long, unattended, budget-spending batch job. One book's
+    failure must never abort the rest of a ~1000-book run."""
+    try:
+        pages, _ = extract_page_texts_for_analysis(pdf_path.read_bytes())
+        return await _run_book_pages(key, pages, llm_client, semaphore, corpus_directory, cache_directory)
+    except Exception as exc:  # noqa: BLE001 -- must never let one book crash the whole batch
+        print(f"[error] {key}: {exc}")
+        return key, False, f"error: {exc}"
 
 
 def _pick_model(base_url: str, api_key: str) -> str:
@@ -202,11 +213,9 @@ def _generate(args: argparse.Namespace) -> int:
     eval_tier_ids = set(json.loads(eval_tier_path.read_text(encoding="utf-8"))) if eval_tier_path.exists() else set()
 
     books = load_manifest_books(_CORPUS_NAME)
-    candidates = [
-        (manifest_key(b), cdir / b["filename"])
-        for b in books
-        if manifest_key(b) not in eval_tier_ids and (cdir / b["filename"]).exists()
-    ]
+    eligible = [b for b in books if manifest_key(b) not in eval_tier_ids]
+    candidates = [(manifest_key(b), cdir / b["filename"]) for b in eligible if (cdir / b["filename"]).exists()]
+    missing_pdf_count = len(eligible) - len(candidates)
     if args.limit is not None:
         candidates = candidates[: args.limit]
 
@@ -223,13 +232,15 @@ def _generate(args: argparse.Namespace) -> int:
     print(f"{len(passed)}/{len(results)} books passed the gate and got .expected.json written.")
     for reason, count in sorted(by_reason.items()):
         print(f"  {count} skipped: {reason}")
+    if missing_pdf_count:
+        print(f"  {missing_pdf_count} skipped: missing_pdf (not downloaded locally)")
     return 0
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--limit", type=int, default=None, help="Process at most this many books (smoke-test convenience)")
-    parser.add_argument("--concurrency", type=int, default=4)
+    parser.add_argument("--concurrency", type=int, default=4, help="How many books to process concurrently (default: 4)")
     parser.add_argument(
         "--spot-check", type=int, default=None, metavar="N",
         help="Instead of generating, sample N passing bulk-tier books and walk through a visual Accept/Reject check",

@@ -55,7 +55,7 @@ see below):
   builds ground truth for them (see `CLAUDE.md`'s "Step 0a"), at which point
   the entry moves into whichever real corpus it belongs in.
 
-A fourth directory, **`dnb-toc-only/`** (542 books), holds real
+A fourth directory, **`dnb-toc-only/`** (1251 books), holds real
 DNB-digitized table-of-contents *scans* -- not full books -- sourced via
 the `lobid-resources` API (see
 `docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md`

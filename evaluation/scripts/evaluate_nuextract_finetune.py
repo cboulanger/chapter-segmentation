@@ -51,26 +51,27 @@ def _main() -> int:
     parser.add_argument("--max-tokens", type=int, default=6000)
     parser.add_argument("--gpu-layers", type=int, default=-1, help="-1 = full GPU offload, 0 = CPU-only")
     parser.add_argument(
-        "--repeat-penalty", type=float, default=1.1,
-        help="llama-cpp-python's own default is 1.0 (off) -- greedy decoding (temperature=0.0, no "
-        "penalty) got stuck in an infinite <diacritic><diacritic>... repetition loop on at least one "
-        "held-out book (open-access/9781800641648, a Hebrew-linguistics text), burning the full "
-        "--max-tokens budget without ever closing the JSON, so parse_response saw truncated/invalid "
-        "JSON and scored 0/0 found despite several early chapters being extracted correctly. 1.1 is "
-        "llama.cpp's own commonly-used default in its other tooling.",
+        "--repeat-penalty", type=float, default=1.0,
+        help="llama-cpp-python's own default (1.0 = off). Available for experimentation, but NOT "
+        "recommended based on two real runs against this task: greedy decoding (temperature=0.0, no "
+        "penalty) got stuck in an infinite <diacritic><diacritic>... repetition loop on 2/11 held-out "
+        "books (burning the full --max-tokens budget without ever closing the JSON, so parse_response "
+        "saw truncated/invalid JSON and scored 0/0 found despite several early chapters being "
+        "extracted correctly beforehand) -- but applying a penalty to fix that made the aggregate "
+        "WORSE both times tried: 1.1 at the 64-token default last_n_tokens_size fixed those 2 books "
+        "but broke 4 others (f1 0.59 -> 0.41); narrowing to a 16-token window (--repeat-last-n) still "
+        "broke 2 of those 4 (f1 -> 0.34). Our output is a JSON LIST of chapter dicts repeating the "
+        "same field names every ~20-40 tokens -- a blanket repeat penalty seems to disrupt this "
+        "model's ability to produce that legitimate, required repetition, not just genuine degenerate "
+        "loops, regardless of window size. A more targeted fix (e.g. detecting the loop and salvaging "
+        "the valid JSON prefix generated before it, at the application layer rather than the sampler) "
+        "is the more promising direction if the 2/11 failure rate turns out to matter in practice.",
     )
     parser.add_argument(
         "--repeat-last-n", type=int, default=16,
-        help="Lookback window (in tokens) the repeat penalty above applies over -- passed to Llama's "
-        "own last_n_tokens_size (default 64). 64 was too wide for this task: our output is a JSON "
-        "LIST of chapter dicts, each repeating the same field names (\"title\"/\"authors\"/"
-        "\"printed_page_number\") every ~20-40 tokens -- a 64-token window reaches back into the "
-        "PREVIOUS chapter entry and penalizes that legitimate, required repetition, not just a "
-        "genuine degenerate loop. Confirmed empirically: --repeat-penalty 1.1 at the 64-token default "
-        "fixed the two collapsed books but broke four others that were previously correct (aggregate "
-        "f1 0.59 -> 0.41, worse overall). The pathological loops seen so far repeat every 1-4 tokens "
-        "(e.g. a single repeated diacritic pair), so a much shorter window should still suppress them "
-        "while staying short enough to never reach the previous chapter entry's field names.",
+        help="Lookback window (in tokens) --repeat-penalty applies over, passed to Llama's own "
+        "last_n_tokens_size (default 64) -- see --repeat-penalty's help for why neither this nor the "
+        "64-token default worked out in practice.",
     )
     parser.add_argument(
         "--dump-dir",

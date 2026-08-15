@@ -51,6 +51,15 @@ def _main() -> int:
     parser.add_argument("--max-tokens", type=int, default=6000)
     parser.add_argument("--gpu-layers", type=int, default=-1, help="-1 = full GPU offload, 0 = CPU-only")
     parser.add_argument(
+        "--repeat-penalty", type=float, default=1.1,
+        help="llama-cpp-python's own default is 1.0 (off) -- greedy decoding (temperature=0.0, no "
+        "penalty) got stuck in an infinite <diacritic><diacritic>... repetition loop on at least one "
+        "held-out book (open-access/9781800641648, a Hebrew-linguistics text), burning the full "
+        "--max-tokens budget without ever closing the JSON, so parse_response saw truncated/invalid "
+        "JSON and scored 0/0 found despite several early chapters being extracted correctly. 1.1 is "
+        "llama.cpp's own commonly-used default in its other tooling.",
+    )
+    parser.add_argument(
         "--dump-dir",
         help="Write one JSON file per book here with its raw completion text, finish_reason, parsed "
         "chapters, and expected_chapters -- for inspecting *why* a book scored the way it did (e.g. "
@@ -83,7 +92,9 @@ def _main() -> int:
         example = json.loads(line)
         prompt = build_chat_prompt(example["text"], NUEXTRACT_TEMPLATE, apply_chat_template)
         try:
-            out = llm.create_completion(prompt, max_tokens=args.max_tokens, temperature=0.0)
+            out = llm.create_completion(
+                prompt, max_tokens=args.max_tokens, temperature=0.0, repeat_penalty=args.repeat_penalty,
+            )
         except ValueError as exc:
             print(f"{example['corpus']}/{example['stem']}: SKIPPED ({exc})")
             continue

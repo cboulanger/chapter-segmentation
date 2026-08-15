@@ -5,6 +5,8 @@ existing extractors (find_toc_candidates, llm_extract_toc_entries --
 src/chapter_segmentation/segmentation.py), which already return the
 identical list[TocEntry] shape."""
 
+from dataclasses import replace
+
 from rapidfuzz import fuzz
 
 from chapter_segmentation.segmentation import TocEntry
@@ -59,9 +61,12 @@ def gate_book(
     result for it.
 
     At or above `threshold`, `entries` is the UNION of matched pairs
-    (the heuristic's own TocEntry preferred over its LLM counterpart,
-    since its title/author split comes from structured regex capture
-    rather than LLM reformatting) plus every singleton entry either
+    (the heuristic's title kept, but falling back to the LLM's authors
+    when the heuristic's own are empty -- the heuristic's title comes from
+    structured regex capture rather than LLM reformatting, but the heuristic
+    almost never populates authors except in a narrow marker-line case, so
+    this preserves real author info the LLM extracted while preferring the
+    more reliable regex-captured title) plus every singleton entry either
     extractor found alone, ordered by printed_page_number (the -1
     "unknown" sentinel sorts last). This is deliberate: once a book
     clears the trust bar, a line only one extractor caught is far likelier
@@ -77,7 +82,10 @@ def gate_book(
         return False, []
     matched_h = {i for i, _ in pairs}
     matched_l = {j for _, j in pairs}
-    merged = [heuristic[i] for i, _ in pairs]
+    merged = [
+        replace(heuristic[i], authors=heuristic[i].authors or llm[j].authors)
+        for i, j in pairs
+    ]
     merged += [entry for i, entry in enumerate(heuristic) if i not in matched_h]
     merged += [entry for j, entry in enumerate(llm) if j not in matched_l]
     merged.sort(key=lambda e: (e.printed_page_number == -1, e.printed_page_number))

@@ -93,3 +93,24 @@ class TestGateBook(unittest.TestCase):
         passed, entries = gate_book(h, l)
         self.assertTrue(passed)
         self.assertEqual([e.printed_page_number for e in entries], [9, 40])
+
+    def test_matched_pair_keeps_heuristic_title_but_falls_back_to_llm_authors(self):
+        # The heuristic (find_toc_candidates) almost never populates
+        # authors -- only in a narrow "by <Name>" marker-line case -- so
+        # always preferring the heuristic's own (empty) authors on a
+        # matched pair would silently discard real author info the LLM
+        # extracted. Falling back to the LLM's authors when the
+        # heuristic's own are empty avoids that.
+        h = [_entry("Einleitung", 9, authors=())]
+        l = [_entry("Einleitung", 9, authors=("Jane Author",))]
+        passed, entries = gate_book(h, l)
+        self.assertTrue(passed)
+        self.assertEqual(entries[0].title, "Einleitung")  # heuristic's title kept
+        self.assertEqual(entries[0].authors, ("Jane Author",))  # LLM's authors used
+
+    def test_matched_pair_keeps_heuristic_authors_when_heuristic_has_them(self):
+        h = [_entry("Einleitung", 9, authors=("Regex Author",))]
+        l = [_entry("Einleitung", 9, authors=("Different LLM Reading",))]
+        passed, entries = gate_book(h, l)
+        self.assertTrue(passed)
+        self.assertEqual(entries[0].authors, ("Regex Author",))  # heuristic's own authors preferred when present

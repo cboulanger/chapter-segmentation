@@ -16,6 +16,21 @@ from chapter_segmentation.segmentation import TocEntry
 _ALIGN_SCORE_THRESHOLD = 70.0
 
 
+def _candidate_titles(entry: TocEntry) -> tuple[str, ...]:
+    """Every title reading worth trying for a fuzzy match: the primary
+    regex-captured title, plus any longer wrapped-title variants
+    (TocEntry.title_variants -- see its own docstring in
+    segmentation.py). A heuristic-found entry whose title wrapped across
+    multiple TOC-page lines has its FULL title only in title_variants,
+    not title itself (the regex only captures the last line, where the
+    page number sits) -- comparing only .title against an LLM entry's
+    full, whole-read title systematically under-scores a real match.
+    Found empirically: a real book's wrapped page-33 title matched its
+    own title_variants near-verbatim but scored well below threshold
+    against .title alone (2026-08-15 smoke test, book 9783899718188)."""
+    return (entry.title,) + entry.title_variants
+
+
 def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, int]]:
     """Greedy, order-preserving alignment between two independently-
     produced TocEntry lists for the same TOC scan. A pair (i, j) counts as
@@ -39,7 +54,11 @@ def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, i
             entry_b = b[j]
             if entry_b.printed_page_number != entry_a.printed_page_number:
                 continue
-            score = fuzz.token_sort_ratio(entry_a.title.lower(), entry_b.title.lower())
+            score = max(
+                fuzz.token_sort_ratio(title_a.lower(), title_b.lower())
+                for title_a in _candidate_titles(entry_a)
+                for title_b in _candidate_titles(entry_b)
+            )
             if score >= best_score:
                 best_score = score
                 best_j = j

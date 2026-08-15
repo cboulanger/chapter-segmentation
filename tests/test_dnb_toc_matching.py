@@ -54,6 +54,27 @@ class TestAlignTocEntries(unittest.TestCase):
         self.assertEqual(align_toc_entries([_entry("X", 1)], []), [])
         self.assertEqual(align_toc_entries([], [_entry("X", 1)]), [])
 
+    def test_matches_via_title_variant_when_primary_title_is_a_wrapped_fragment(self):
+        # Real case found in a 2026-08-15 smoke test (book 9783899718188):
+        # the heuristic's regex only captures a wrapped title's last
+        # line as .title, with the full title in title_variants. The
+        # LLM reads the title whole. Without checking title_variants,
+        # this real match was scored below the alignment threshold.
+        a = [TocEntry(
+            title="Systemtheorie für Recht und Rechtswissenschaft",
+            printed_page_number=33, source_page_index=0,
+            title_variants=(
+                "Niklas Luhmann und das Recht - Über die Nutzlosigkeit der "
+                "Systemtheorie für Recht und Rechtswissenschaft",
+            ),
+        )]
+        b = [_entry(
+            "Niklas Luhmann und das Recht - Über die Nutzlosigkeit der "
+            "Systemtheorie für Recht und Rechtswissenschaft",
+            33,
+        )]
+        self.assertEqual(align_toc_entries(a, b), [(0, 0)])
+
 
 class TestGateBook(unittest.TestCase):
     def test_perfect_agreement_passes_with_union_equal_to_either_list(self):

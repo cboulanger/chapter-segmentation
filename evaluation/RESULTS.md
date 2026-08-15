@@ -1752,7 +1752,7 @@ follow-ups) describes what was true when it was written and remains an
 accurate record of that measurement -- it does not describe today's
 default going forward.
 
-### Follow-up: first real-scan measurement from the DNB TOC-scan corpus (preliminary, smoke-test scale)
+### Follow-up: real-scan measurement from the DNB TOC-scan corpus (calibration-grade)
 
 `evaluation/scripts/fetch_dnb_toc_corpus.py` and
 `evaluation/scripts/measure_dnb_scan_noise_stats.py` were added (see
@@ -1761,45 +1761,58 @@ to eventually replace the "resembles real scan noise" hand-picked
 constants in `alto_scan_noise.py` (`_CONTRAST_ALPHA = (0.3, 0.7)`,
 `_FONT_JITTER = (0.96, 1.04)`) with numbers measured directly from real
 DNB-digitized table-of-contents scans, sourced via the `lobid-resources`
-API. As of this writing, `evaluation/corpus/dnb-toc-only/manifest.json`
-holds a **9-book smoke-test batch** (acquired via `--isbns-file`, to prove
-the acquisition pipeline works end-to-end) -- not the "few hundred books"
-scale the design spec's decision criteria calls for, which requires a
-separate, hours-long `--from-dump` bulk run against the full ~21.5GB
-lobid-resources dump that hasn't been done yet. The numbers below are a
-preliminary preview from that small batch, not a calibration-grade
-measurement:
+API. An initial 9-book smoke-test batch (see the earlier version of this
+subsection, superseded below) proved the acquisition pipeline worked
+end-to-end; a real `--from-dump` bulk run against the live ~21.5GB
+lobid-resources dump (2026-08-15) then grew the corpus to the design
+spec's "few hundred books" decision-criteria scale. That run also
+surfaced and fixed two real acquisition bugs along the way (see
+`docs/superpowers/plans/2026-08-15-dnb-toc-corpus-corrections.md`): the
+original type filter was too broad and let single-author/thesis/textbook
+records into a corpus meant to target edited-volume TOC layouts
+specifically (256 of the smoke-test batch's 305 books were purged for
+this), and 7 of the newly-acquired 549 had a `toc_download_url` pointing
+to an HTML link-out page rather than a real PDF (removed). The corpus now holds **542 verified `EditedVolume`-typed books, all with
+a PDF present locally** (5 of the original smoke-test batch's PDFs were
+briefly lost when their worktree was cleaned up after merging -- a
+lesson-learned noted in the corrections plan -- and were re-downloaded
+directly from their already-known `toc_download_url` to complete the set).
 
 ```
 uv run python evaluation/scripts/measure_dnb_scan_noise_stats.py --pdfalto-bin <path-to-pdfalto>
 
-Title/body contrast ratio (font_size_max_ratio, n=15):
-  measured: {'count': 15, 'min': 1.0, 'max': 1.46, 'mean': 1.11, 'median': 1.05, 'stdev': 0.14}
+Title/body contrast ratio (font_size_max_ratio, n=1050):
+  measured: {'count': 1050, 'min': 1.0, 'max': 11.26, 'mean': 1.29, 'median': 1.10, 'stdev': 0.65}
   current _CONTRAST_ALPHA range: (0.3, 0.7)
 
-Body-line font-size dispersion (ratio to page modal size, within +/-10%, n=426):
-  measured: {'count': 426, 'min': 0.92, 'max': 1.08, 'mean': 1.00, 'median': 1.0, 'stdev': 0.016}
+Body-line font-size dispersion (ratio to page modal size, within +/-10%, n=37838):
+  measured: {'count': 37838, 'min': 0.90, 'max': 1.10, 'mean': 1.00, 'median': 1.0, 'stdev': 0.0166}
   current _FONT_JITTER range: (0.96, 1.04)
 ```
 
-`n=15` non-empty pages across the 9 books (most DNB TOC scans are 1-3
-pages) and `n=426` body-like line samples within those pages.
-`_CONTRAST_ALPHA` isn't directly comparable in the same units as the
-measured contrast ratio -- it's a compression factor applied to
-born-digital ALTO's own (much larger) title/body ratio, not a target
-ratio itself -- so this table doesn't yet answer whether `_CONTRAST_ALPHA`
-needs to change; it establishes what the real title/body ratio distribution
-on DNB TOC scans actually looks like (median 1.05, i.e. many TOC pages
-have little or no distinct title styling at all, consistent with these
-being plain "Inhalt"/"Inhaltsverzeichnis" listings rather than illustrated
-title pages), which the eventual calibration will compress born-digital
-ratios toward. The dispersion figure is more directly comparable:
-measured real body-line sizes stayed within about ±8% of their page's
-modal size (`min` 0.92, `max` 1.08) with a tight stdev of 0.016, noticeably
-tighter than `_FONT_JITTER`'s current full ±4% per-clone range would
-suggest if read as a typical spread -- but at `n=426` samples drawn from
-only 9 books, this is far too small a sample to revise the constant on;
-it's a first data point, not a verdict. **Re-run this measurement after a
-real `--from-dump` acquisition** (see this corpus's manifest for how many
-books have accumulated) before treating either number as calibration-grade,
-per the design spec's decision criteria.
+`n=1050` non-empty pages and `n=37838` body-like line samples across all
+542 real DNB TOC scans -- comfortably calibration-grade, not a preview. As
+before, `_CONTRAST_ALPHA` isn't directly unit-comparable to the measured
+contrast ratio (it's a compression factor applied to born-digital ALTO's
+own, much larger, raw title/body ratio, not a target ratio itself), so
+this table alone doesn't resolve whether `_CONTRAST_ALPHA` needs to
+change -- that requires a follow-up comparing this measured real
+distribution against born-digital `open-access` ALTO's own *uncompressed*
+title/body ratio, not done here. What it does establish: the real
+distribution is right-skewed (median 1.10 well below the mean 1.29, with
+a long tail up to 11.26 -- almost certainly a handful of pages with a
+genuinely large decorative heading or an OCR font-size misdetection, not
+representative of the median case), and most DNB TOC pages have only mild
+title/body contrast, consistent with plain "Inhalt"/"Inhaltsverzeichnis"
+listings rather than illustrated title pages.
+
+**The dispersion figure is directly comparable, and is a real, actionable
+result: `_FONT_JITTER`'s current `(0.96, 1.04)` range looks well-calibrated.**
+Measured real body-line sizes have stdev 0.0166 around their page's modal
+size; `_FONT_JITTER`'s half-width of 0.04 is about 2.4 real standard
+deviations -- a sensible coverage for a uniform jitter range meant to
+approximate a real, roughly bell-shaped noise distribution without
+needing to change. At this sample size (37,838 line samples, 542 books),
+this is a confirmation that the original hand-picked guess was
+well-calibrated, not just an unconfirmed guess -- **no change recommended
+to `_FONT_JITTER`.**

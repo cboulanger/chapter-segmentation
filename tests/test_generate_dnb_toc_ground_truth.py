@@ -206,3 +206,40 @@ class TestRunBookPages(unittest.IsolatedAsyncioTestCase):
 
             self.assertTrue(passed)
             llm.generate.assert_not_called()
+
+    async def test_empty_llm_result_is_not_cached(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            corpus_directory = Path(tmp) / "corpus"
+            cache_directory = Path(tmp) / "cache"
+            corpus_directory.mkdir()
+            pages = [_TOC_PAGE, _NOT_TOC_FILLER_PAGE]
+            llm = _fake_llm("[]")
+            semaphore = asyncio.Semaphore(1)
+
+            await _run_book_pages("flaky-book", pages, llm, semaphore, corpus_directory, cache_directory)
+            self.assertIsNone(_load_cached_llm_entries(cache_directory, "flaky-book"))
+
+            # A second run must call the LLM again rather than trusting a
+            # stale/failed empty result -- this is what actually protects
+            # a transient API failure from permanently poisoning the book.
+            await _run_book_pages("flaky-book", pages, llm, semaphore, corpus_directory, cache_directory)
+            self.assertEqual(llm.generate.call_count, 2)
+
+    async def test_no_entries_from_either_extractor_writes_nothing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            corpus_directory = Path(tmp) / "corpus"
+            cache_directory = Path(tmp) / "cache"
+            corpus_directory.mkdir()
+            # A page with no TOC-line-shaped content at all -- the
+            # heuristic finds nothing, and the mocked LLM also returns [].
+            pages = [_NOT_TOC_FILLER_PAGE, _NOT_TOC_FILLER_PAGE]
+            llm = _fake_llm("[]")
+            semaphore = asyncio.Semaphore(1)
+
+            key, passed, reason = await _run_book_pages(
+                "no-entries-book", pages, llm, semaphore, corpus_directory, cache_directory,
+            )
+
+            self.assertFalse(passed)
+            self.assertEqual(reason, "no_entries")
+            self.assertFalse((corpus_directory / "no-entries-book.expected.json").exists())

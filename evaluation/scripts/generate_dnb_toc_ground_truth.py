@@ -122,13 +122,26 @@ async def _run_book_pages(
     if pages_need_ocr(pages):
         return key, False, "needs_ocr"
     heuristic_entries = _toc_entries_for_scan(pages)
+    # Read outside the semaphore (cheap, no network); relies on the
+    # caller never invoking this twice concurrently for the same `key`
+    # (true today -- Task 8's driver builds one call per unique manifest
+    # key) -- if that ever changes, two concurrent calls for the same
+    # uncached book could both miss the cache and both call the LLM.
     cached = _load_cached_llm_entries(cache_directory, key)
     async with semaphore:
         if cached is not None:
             llm_entries = cached
         else:
             llm_entries = await _call_with_retry(lambda: llm_extract_toc_entries(pages, llm_client))
-            _write_cached_llm_entries(cache_directory, key, llm_entries)
+            # llm_extract_toc_entries never raises to us -- any real failure
+            # (network, rate limit, timeout) is caught internally and
+            # returns [], indistinguishable from a genuine "no TOC found"
+            # result. Caching that [] would be permanent: a later re-run
+            # would trust the stale empty cache entry forever instead of
+            # retrying. Only caching a non-empty result means a future run
+            # simply re-queries the LLM for this book instead.
+            if llm_entries:
+                _write_cached_llm_entries(cache_directory, key, llm_entries)
     if not heuristic_entries and not llm_entries:
         return key, False, "no_entries"
     passed, entries = gate_book(heuristic_entries, llm_entries, threshold=_GATE_THRESHOLD)

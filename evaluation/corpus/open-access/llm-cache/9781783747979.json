@@ -4,7 +4,1311 @@
       "chapters": [],
       "elapsed_seconds": 113.40565902599997,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "How to Use this Cookbook",
+          "authors": [],
+          "pdf_start_index": 25,
+          "pdf_end_index": 25,
+          "citation_pages": "10-15",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Research Data Management Policy: The Holy Grail of Data Management Support?",
+          "authors": [],
+          "pdf_start_index": 30,
+          "pdf_end_index": 31,
+          "citation_pages": "16-17",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Are You a Research Data Superhero? One Person Making a Big Difference at Makerere University",
+          "authors": [
+            "Joseph Ssebulime\n",
+            "Joseph Ssebulime"
+          ],
+          "pdf_start_index": 33,
+          "pdf_end_index": 37,
+          "citation_pages": "18-23",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Does a Policy Solve Everything? Policy as a Driver for Engagement at Leiden University",
+          "authors": [
+            "Joanne Yeomans\nContributors: Fieke Schoots"
+          ],
+          "pdf_start_index": 39,
+          "pdf_end_index": 44,
+          "citation_pages": "24-31",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Finding Triggers for Engagement",
+          "authors": [],
+          "pdf_start_index": 46,
+          "pdf_end_index": 47,
+          "citation_pages": "32-33",
+          "confidence": 0.79,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Taking Advantage of Existing Administrative Systems: MRC/CSO Social and Public Health Sciences Unit, University of Glasgow",
+          "authors": [
+            "Joanne Yeomans",
+            "Iza Witkowska",
+            "Mary-Kate Hannah\nPiggybacking",
+            "Witko"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 53,
+          "citation_pages": "34-39",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engaging with Researchers through Data Management Planning at the University of Manchester",
+          "authors": [
+            "Joanne Yeomans\nContributors",
+            "Rosie Higman",
+            "Christopher Gibson",
+            "Higman",
+            "Gibson"
+          ],
+          "pdf_start_index": 55,
+          "pdf_end_index": 59,
+          "citation_pages": "40-45",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Timing Is Everything When It Comes to Engaging with Researchers at the University of Technology Sydney",
+          "authors": [
+            "Iza Witkowska\nContributors",
+            "Wendy Liu",
+            "Duncan Loxton",
+            "Elizabeth Stokes",
+            "Sharyn Wise",
+            "Liu",
+            "Loxton",
+            "Stokes"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 63,
+          "citation_pages": "46-49",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engagement through Training",
+          "authors": [],
+          "pdf_start_index": 64,
+          "pdf_end_index": 66,
+          "citation_pages": "50-51",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bring Your Own Data (B.Y.O.D.) Workshop at the University of Cambridge",
+          "authors": [
+            "Connie Clare",
+            "Annemarie Hildegard Eckes-Shephard",
+            "Clare",
+            "Hildegard Eckes-Shephard"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 68,
+          "citation_pages": "52-1",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [
+            "Annemarie"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 70,
+          "citation_pages": "2-55",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Introducing Data Management into Existing Courses at the University of Minnesota",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Alicia Hofelich Mohr",
+            "Jenny McBurney",
+            "Wang",
+            "Hofelich Mohr",
+            "McBurney"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 74,
+          "citation_pages": "56-59",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engaging with RDM through a PhD Course on Academic Integrity and Open Science at UiT The Arctic University of Norway",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Helene N. Andreassen",
+            "Yan Wang",
+            "Helene N. Andreassen"
+          ],
+          "pdf_start_index": 75,
+          "pdf_end_index": 78,
+          "citation_pages": "60-63",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Open Courses at UiT The Arctic University of Norway",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Helene N. Andreassen\nLessons",
+            "Yan Wang",
+            "Helene N. Andreassen"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 81,
+          "citation_pages": "64-67",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Dedicated Events to Gauge Interest and Build Networks",
+          "authors": [],
+          "pdf_start_index": 82,
+          "pdf_end_index": 83,
+          "citation_pages": "68-69",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "'Dealing with Data' Conference at the University of Edinburgh",
+          "authors": [
+            "Elli Papadopoulou\nContributor",
+            "Kerry Miller\n",
+            "Kerry Miller"
+          ],
+          "pdf_start_index": 85,
+          "pdf_end_index": 87,
+          "citation_pages": "70-73",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "DuoDi: The 'Days of Data' at Vilnius University",
+          "authors": [
+            "DuoDi"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 91,
+          "citation_pages": "74-77",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Let's Talk Data: Data Conversations at Lancaster University",
+          "authors": [
+            "Joshua Sendall",
+            "Hardy Schwamm"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 96,
+          "citation_pages": "78-81",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Starting New Data Conversations at Vrije Universiteit Amsterdam",
+          "authors": [
+            "Vrije Universiteit Amsterdam",
+            "Maria Cruz\nStaff",
+            "Maria Cruz"
+          ],
+          "pdf_start_index": 97,
+          "pdf_end_index": 100,
+          "citation_pages": "82-85",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Talk to Understand Your Community Better: Informal Events at the Open University",
+          "authors": [
+            "Dan Crane\nReflections",
+            "Dan Crane"
+          ],
+          "pdf_start_index": 101,
+          "pdf_end_index": 103,
+          "citation_pages": "86-89",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Networks of Data Champions",
+          "authors": [],
+          "pdf_start_index": 104,
+          "pdf_end_index": 106,
+          "citation_pages": "90-91",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Data Champion Programme at the University of Cambridge",
+          "authors": [
+            "Connie Clare\nContributors:",
+            "Lauren Cadwallader",
+            "James Savage",
+            "Clare",
+            "Cadwallader",
+            "Jones"
+          ],
+          "pdf_start_index": 107,
+          "pdf_end_index": 110,
+          "citation_pages": "92-97",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "TU Delft Data Champions",
+          "authors": [
+            "James"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 117,
+          "citation_pages": "98-103",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Data Stewards at Wageningen University and Research",
+          "authors": [
+            "Connie Clare\nContributors:",
+            "Saskia van Marrewijk",
+            "Erik van Den",
+            "Clare",
+            "van Marrewijk",
+            "van Den"
+          ],
+          "pdf_start_index": 119,
+          "pdf_end_index": 122,
+          "citation_pages": "104-109",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Dedicated Consultants to Offer One-to-One Support with Data",
+          "authors": [],
+          "pdf_start_index": 124,
+          "pdf_end_index": 126,
+          "citation_pages": "110-111",
+          "confidence": 0.77,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Data Stewards at TU Delft: A Reality Check for Disciplinary RDM",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Yan Wang",
+            "Alastair"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 130,
+          "citation_pages": "112-115",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Cultural Change Happens One Person at a Time: Informatics Lab at Virginia Tech",
+          "authors": [
+            "Jonathan Petters",
+            "Virginia Tech",
+            "Jonathan Petters"
+          ],
+          "pdf_start_index": 131,
+          "pdf_end_index": 134,
+          "citation_pages": "116-119",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ever Heard of Five-Legged Sheep? Data Managers at Utrecht University Give Researchers a Leg-Up!",
+          "authors": [
+            "Iza Witkowska",
+            "Martine Pronk\nUtrecht University",
+            "Martine"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 138,
+          "citation_pages": "120-125",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Interviews and Case Studies",
+          "authors": [],
+          "pdf_start_index": 140,
+          "pdf_end_index": 141,
+          "citation_pages": "126-127",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Showcasing Peers and their Good Practice: Researcher Interviews at Vrije Universiteit Amsterdam and Utrecht University",
+          "authors": [
+            "Showcasing Peers",
+            "Iza Witkowska",
+            "Annemiek van der Kuil",
+            "van der Kuil"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 147,
+          "citation_pages": "128-133",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engage with Senior Researchers through Archiving",
+          "authors": [],
+          "pdf_start_index": 148,
+          "pdf_end_index": 150,
+          "citation_pages": "134-135",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Soliciting Deposit and Preservation of University-Produced Research Data as Part of Broader Archives and Records Management Work",
+          "authors": [
+            "Katherine McNeill",
+            "Rachel Wise\nStaff",
+            "McNeill"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 154,
+          "citation_pages": "136-139",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Starting at the End: Seniors' Research Data Project at the UiT The Arctic University of Norway",
+          "authors": [
+            "Elli Papadopoulou\nContributors:",
+            "Stein Høydalsvik",
+            "Leif Longva",
+            "Longva"
+          ],
+          "pdf_start_index": 155,
+          "pdf_end_index": 163,
+          "citation_pages": "140-148",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 630.349858352,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:53:12.814844+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 89.67238680800006,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:01:17.634056+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "1. Research Data Management Policy: The Holy Grail of Data Management Support?",
+          "authors": [],
+          "pdf_start_index": 30,
+          "pdf_end_index": 31,
+          "citation_pages": "16-17",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "1.1. Are You a Research Data Superhero? One Person Making a Big Difference at Makerere University",
+          "authors": [
+            "Joseph Ssebulime\n",
+            "Joseph Ssebulime"
+          ],
+          "pdf_start_index": 33,
+          "pdf_end_index": 37,
+          "citation_pages": "18-23",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "1.2. Does a Policy Solve Everything? Policy as a Driver for Engagement at Leiden University",
+          "authors": [
+            "Joanne Yeomans\nContributors: Fieke Schoots"
+          ],
+          "pdf_start_index": 39,
+          "pdf_end_index": 44,
+          "citation_pages": "24-31",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2. Finding Triggers for Engagement",
+          "authors": [],
+          "pdf_start_index": 46,
+          "pdf_end_index": 47,
+          "citation_pages": "32-33",
+          "confidence": 0.79,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.1. Taking Advantage of Existing Administrative Systems: MRC/CSO Social and Public Health Sciences Unit, University of Glasgow",
+          "authors": [
+            "Joanne Yeomans",
+            "Iza Witkowska",
+            "Mary-Kate Hannah\nPiggybacking",
+            "Witko"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 53,
+          "citation_pages": "34-39",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.2. Engaging with Researchers through Data Management Planning at the University of Manchester",
+          "authors": [
+            "Joanne Yeomans\nContributors",
+            "Rosie Higman",
+            "Christopher Gibson",
+            "Higman",
+            "Gibson"
+          ],
+          "pdf_start_index": 55,
+          "pdf_end_index": 59,
+          "citation_pages": "40-45",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.3. Timing Is Everything When It Comes to Engaging with Researchers at the University of Technology Sydney",
+          "authors": [
+            "Iza Witkowska\nContributors",
+            "Wendy Liu",
+            "Duncan Loxton",
+            "Elizabeth Stokes",
+            "Sharyn Wise",
+            "Liu",
+            "Loxton",
+            "Stokes"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 63,
+          "citation_pages": "46-49",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Engagement through Training",
+          "authors": [],
+          "pdf_start_index": 64,
+          "pdf_end_index": 66,
+          "citation_pages": "50-51",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.1. Bring Your Own Data (B.Y.O.D.) Workshop at the University of Cambridge",
+          "authors": [
+            "Connie Clare",
+            "Annemarie Hildegard Eckes-Shephard",
+            "Clare",
+            "Hildegard Eckes-Shephard"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 70,
+          "citation_pages": "52-1",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.2. Introducing Data Management into Existing Courses at the University of Minnesota",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Alicia Hofelich Mohr",
+            "Jenny McBurney",
+            "Wang",
+            "Hofelich Mohr",
+            "McBurney"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 74,
+          "citation_pages": "56-59",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.3. Engaging with RDM through a PhD Course on Academic Integrity and Open Science at UiT The Arctic University of Norway",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Helene N. Andreassen",
+            "Yan Wang",
+            "Helene N. Andreassen"
+          ],
+          "pdf_start_index": 75,
+          "pdf_end_index": 78,
+          "citation_pages": "60-63",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.4. Open Courses at UiT The Arctic University of Norway",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Helene N. Andreassen\nLessons",
+            "Yan Wang",
+            "Helene N. Andreassen"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 81,
+          "citation_pages": "64-67",
+          "confidence": 0.9,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Dedicated Events to Gauge Interest and Build Networks",
+          "authors": [],
+          "pdf_start_index": 82,
+          "pdf_end_index": 83,
+          "citation_pages": "68-69",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.1. ‘Dealing with Data’ Conference at the University of Edinburgh",
+          "authors": [
+            "Elli Papadopoulou\nContributor",
+            "Kerry Miller\n",
+            "Kerry Miller"
+          ],
+          "pdf_start_index": 85,
+          "pdf_end_index": 87,
+          "citation_pages": "70-73",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.2. DuoDi: The ‘Days of Data’ at Vilnius University",
+          "authors": [
+            "DuoDi"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 91,
+          "citation_pages": "74-77",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.3. Let’s Talk Data: Data Conversations at Lancaster University",
+          "authors": [
+            "Joshua Sendall",
+            "Hardy Schwamm"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 96,
+          "citation_pages": "78-81",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.4. Starting New Data Conversations at Vrije Universiteit Amsterdam",
+          "authors": [
+            "Vrije Universiteit Amsterdam",
+            "Maria Cruz\nStaff",
+            "Maria Cruz"
+          ],
+          "pdf_start_index": 97,
+          "pdf_end_index": 100,
+          "citation_pages": "82-85",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.5. Talk to Understand Your Community Better: Informal Events at the Open University",
+          "authors": [
+            "Dan Crane\nReflections",
+            "Dan Crane"
+          ],
+          "pdf_start_index": 101,
+          "pdf_end_index": 103,
+          "citation_pages": "86-89",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Networks of Data Champions",
+          "authors": [],
+          "pdf_start_index": 104,
+          "pdf_end_index": 106,
+          "citation_pages": "90-91",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.1. Data Champion Programme at the University of Cambridge",
+          "authors": [
+            "Connie Clare\nContributors:",
+            "Lauren Cadwallader",
+            "James Savage",
+            "Clare",
+            "Cadwallader",
+            "Jones"
+          ],
+          "pdf_start_index": 107,
+          "pdf_end_index": 111,
+          "citation_pages": "92-97",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.2. TU Delft Data Champions",
+          "authors": [
+            "Connie Clare",
+            "Türkyilmaz-van",
+            "Velden\nRDM",
+            "Clare",
+            "Velden"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 117,
+          "citation_pages": "98-103",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.3. Data Stewards at Wageningen University and Research",
+          "authors": [
+            "Connie Clare\nContributors:",
+            "Saskia van Marrewijk",
+            "Erik van Den",
+            "Clare",
+            "van Marrewijk",
+            "van Den"
+          ],
+          "pdf_start_index": 119,
+          "pdf_end_index": 122,
+          "citation_pages": "104-109",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. Dedicated Consultants to Offer One-to-One Support with Data",
+          "authors": [],
+          "pdf_start_index": 124,
+          "pdf_end_index": 126,
+          "citation_pages": "110-111",
+          "confidence": 0.77,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.1. Data Stewards at TU Delft: A Reality Check for Disciplinary RDM",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Yan Wang",
+            "Alastair"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 130,
+          "citation_pages": "112-115",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.2. Cultural Change Happens One Person at a Time: Informatics Lab at Virginia Tech",
+          "authors": [
+            "Jonathan Petters",
+            "Virginia Tech",
+            "Jonathan Petters"
+          ],
+          "pdf_start_index": 131,
+          "pdf_end_index": 134,
+          "citation_pages": "116-119",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.3. Ever Heard of Five-Legged Sheep? Data Managers at Utrecht University Give Researchers a Leg-Up!",
+          "authors": [
+            "Iza Witkowska",
+            "Martine Pronk\nUtrecht University",
+            "Martine"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 138,
+          "citation_pages": "120-125",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Interviews and Case Studies",
+          "authors": [],
+          "pdf_start_index": 140,
+          "pdf_end_index": 141,
+          "citation_pages": "126-127",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.1. Showcasing Peers and their Good Practice: Researcher Interviews at Vrije Universiteit Amsterdam and Utrecht University",
+          "authors": [
+            "Showcasing Peers",
+            "Iza Witkowska",
+            "Annemiek van der Kuil",
+            "van der Kuil"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 147,
+          "citation_pages": "128-133",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. Engage with Senior Researchers through Archiving",
+          "authors": [],
+          "pdf_start_index": 148,
+          "pdf_end_index": 150,
+          "citation_pages": "134-135",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.1. Soliciting Deposit and Preservation of University-Produced Research Data as Part of Broader Archives and Records Management Work",
+          "authors": [
+            "Katherine McNeill",
+            "Rachel Wise\nStaff",
+            "McNeill"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 154,
+          "citation_pages": "136-139",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8.2. Starting at the End: Seniors’ Research Data Project at the UiT The Arctic University of Norway",
+          "authors": [
+            "Elli Papadopoulou\nContributors:",
+            "Stein Høydalsvik",
+            "Leif Longva",
+            "Longva"
+          ],
+          "pdf_start_index": 155,
+          "pdf_end_index": 163,
+          "citation_pages": "140-148",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 66.72313662000033,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:15:24.539549+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Research Data Management Policy: The Holy Grail of Data Management Support?",
+          "authors": [],
+          "pdf_start_index": 30,
+          "pdf_end_index": 31,
+          "citation_pages": "16-17",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Are You a Research Data Superhero? One Person Making a Big Difference at Makerere University",
+          "authors": [
+            "Joseph Ssebulime\n",
+            "Joseph Ssebulime"
+          ],
+          "pdf_start_index": 33,
+          "pdf_end_index": 37,
+          "citation_pages": "18-23",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Does a Policy Solve Everything? Policy as a Driver for Engagement at Leiden University",
+          "authors": [
+            "Joanne Yeomans\nContributors: Fieke Schoots"
+          ],
+          "pdf_start_index": 39,
+          "pdf_end_index": 44,
+          "citation_pages": "24-31",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Finding Triggers for Engagement",
+          "authors": [],
+          "pdf_start_index": 46,
+          "pdf_end_index": 47,
+          "citation_pages": "32-33",
+          "confidence": 0.79,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Taking Advantage of Existing Administrative Systems: MRC/CSO Social and Public Health Sciences Unit, University of Glasgow",
+          "authors": [
+            "Joanne Yeomans",
+            "Iza Witkowska",
+            "Mary-Kate Hannah\nPiggybacking",
+            "Witko"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 53,
+          "citation_pages": "34-39",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engaging with Researchers through Data Management Planning at the University of Manchester",
+          "authors": [
+            "Joanne Yeomans\nContributors",
+            "Rosie Higman",
+            "Christopher Gibson",
+            "Higman",
+            "Gibson"
+          ],
+          "pdf_start_index": 55,
+          "pdf_end_index": 59,
+          "citation_pages": "40-45",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Timing Is Everything When It Comes to Engaging with Researchers at the University of Technology Sydney",
+          "authors": [
+            "Iza Witkowska\nContributors",
+            "Wendy Liu",
+            "Duncan Loxton",
+            "Elizabeth Stokes",
+            "Sharyn Wise",
+            "Liu",
+            "Loxton",
+            "Stokes"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 63,
+          "citation_pages": "46-49",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engagement through Training",
+          "authors": [],
+          "pdf_start_index": 64,
+          "pdf_end_index": 66,
+          "citation_pages": "50-51",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bring Your Own Data (B.Y.O.D.) Workshop at the University of Cambridge",
+          "authors": [
+            "Connie Clare",
+            "Annemarie Hildegard Eckes-Shephard",
+            "Clare",
+            "Hildegard Eckes-Shephard"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 70,
+          "citation_pages": "52-1",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Introducing Data Management into Existing Courses at the University of Minnesota",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Alicia Hofelich Mohr",
+            "Jenny McBurney",
+            "Wang",
+            "Hofelich Mohr",
+            "McBurney"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 74,
+          "citation_pages": "56-59",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engaging with RDM through a PhD Course on Academic Integrity and Open Science at UiT The Arctic University of Norway",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Helene N. Andreassen",
+            "Yan Wang",
+            "Helene N. Andreassen"
+          ],
+          "pdf_start_index": 75,
+          "pdf_end_index": 78,
+          "citation_pages": "60-63",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Open Courses at UiT The Arctic University of Norway",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Helene N. Andreassen\nLessons",
+            "Yan Wang",
+            "Helene N. Andreassen"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 81,
+          "citation_pages": "64-67",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Dedicated Events to Gauge Interest and Build Networks",
+          "authors": [],
+          "pdf_start_index": 82,
+          "pdf_end_index": 83,
+          "citation_pages": "68-69",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "'Dealing with Data' Conference at the University of Edinburgh",
+          "authors": [
+            "Elli Papadopoulou\nContributor",
+            "Kerry Miller\n",
+            "Kerry Miller"
+          ],
+          "pdf_start_index": 85,
+          "pdf_end_index": 87,
+          "citation_pages": "70-73",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "DuoDi: The 'Days of Data' at Vilnius University",
+          "authors": [
+            "DuoDi"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 91,
+          "citation_pages": "74-77",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Let's Talk Data: Data Conversations at Lancaster University",
+          "authors": [
+            "Joshua Sendall",
+            "Hardy Schwamm"
+          ],
+          "pdf_start_index": 93,
+          "pdf_end_index": 96,
+          "citation_pages": "78-81",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Starting New Data Conversations at Vrije Universiteit Amsterdam",
+          "authors": [
+            "Vrije Universiteit Amsterdam",
+            "Maria Cruz\nStaff",
+            "Maria Cruz"
+          ],
+          "pdf_start_index": 97,
+          "pdf_end_index": 100,
+          "citation_pages": "82-85",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Talk to Understand Your Community Better: Informal Events at the Open University",
+          "authors": [
+            "Dan Crane\nReflections",
+            "Dan Crane"
+          ],
+          "pdf_start_index": 101,
+          "pdf_end_index": 103,
+          "citation_pages": "86-89",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Networks of Data Champions",
+          "authors": [],
+          "pdf_start_index": 104,
+          "pdf_end_index": 106,
+          "citation_pages": "90-91",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Data Champion Programme at the University of Cambridge",
+          "authors": [
+            "Connie Clare\nContributors:",
+            "Lauren Cadwallader",
+            "James Savage",
+            "Clare",
+            "Cadwallader",
+            "Jones"
+          ],
+          "pdf_start_index": 107,
+          "pdf_end_index": 110,
+          "citation_pages": "92-97",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "TU Delft Data Champions",
+          "authors": [
+            "James"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 117,
+          "citation_pages": "98-103",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Data Stewards at Wageningen University and Research",
+          "authors": [
+            "Connie Clare\nContributors:",
+            "Saskia van Marrewijk",
+            "Erik van Den",
+            "Clare",
+            "van Marrewijk",
+            "van Den"
+          ],
+          "pdf_start_index": 119,
+          "pdf_end_index": 122,
+          "citation_pages": "104-109",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Dedicated Consultants to Offer One-to-One Support with Data",
+          "authors": [],
+          "pdf_start_index": 124,
+          "pdf_end_index": 126,
+          "citation_pages": "110-111",
+          "confidence": 0.77,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Data Stewards at TU Delft: A Reality Check for Disciplinary RDM",
+          "authors": [
+            "Yan Wang\nContributor",
+            "Yan Wang",
+            "Alastair"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 130,
+          "citation_pages": "112-115",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Cultural Change Happens One Person at a Time: Informatics Lab at Virginia Tech",
+          "authors": [
+            "Jonathan Petters",
+            "Virginia Tech",
+            "Jonathan Petters"
+          ],
+          "pdf_start_index": 131,
+          "pdf_end_index": 134,
+          "citation_pages": "116-119",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ever Heard of Five-Legged Sheep? Data Managers at Utrecht University Give Researchers a Leg-Up!",
+          "authors": [
+            "Iza Witkowska",
+            "Martine Pronk\nUtrecht University",
+            "Martine"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 138,
+          "citation_pages": "120-125",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Interviews and Case Studies",
+          "authors": [],
+          "pdf_start_index": 140,
+          "pdf_end_index": 141,
+          "citation_pages": "126-127",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Showcasing Peers and their Good Practice: Researcher Interviews at Vrije Universiteit Amsterdam and Utrecht University",
+          "authors": [
+            "Showcasing Peers",
+            "Iza Witkowska",
+            "Annemiek van der Kuil",
+            "van der Kuil"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 147,
+          "citation_pages": "128-133",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engage with Senior Researchers through Archiving",
+          "authors": [],
+          "pdf_start_index": 148,
+          "pdf_end_index": 150,
+          "citation_pages": "134-135",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Soliciting Deposit and Preservation of University-Produced Research Data as Part of Broader Archives and Records Management Work",
+          "authors": [
+            "Katherine McNeill",
+            "Rachel Wise\nStaff",
+            "McNeill"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 154,
+          "citation_pages": "136-139",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Starting at the End: Seniors' Research Data Project at the UiT The Arctic University of Norway",
+          "authors": [
+            "Elli Papadopoulou\nContributors:",
+            "Stein Høydalsvik",
+            "Leif Longva",
+            "Longva"
+          ],
+          "pdf_start_index": 155,
+          "pdf_end_index": 163,
+          "citation_pages": "140-148",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 50.56599664500027,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:22:50.439315+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.1762162999998509,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:21.688202+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:19:21.406656+00:00"
+  "generated_at": "2026-08-15T04:23:21.688202+00:00"
 }

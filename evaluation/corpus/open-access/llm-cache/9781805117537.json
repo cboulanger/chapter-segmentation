@@ -166,7 +166,523 @@
       ],
       "elapsed_seconds": 34.903419708,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Chrome Yellow: American Mineral, American Fancy",
+          "authors": [
+            "Chrome Yellow",
+            "Vauquelin"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 89,
+          "citation_pages": "49-72",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wavelengths and Potato Starch: The (Im)material in Colour Photography",
+          "authors": [
+            "Gabriel  Lippmann"
+          ],
+          "pdf_start_index": 91,
+          "pdf_end_index": 108,
+          "citation_pages": "73-92",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Whitewashing the Wards? Colour, Health, and Victorian Hospital Interiors",
+          "authors": [
+            "Wards",
+            "Kay Simpson"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 134,
+          "citation_pages": "93-116",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Hysteria to Healing: Félix Vallotton’s Bon Marché and the Ambiguous Nature of Colour in Fin-de-Siècle Culture",
+          "authors": [
+            "Alessandra Ronetti"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 158,
+          "citation_pages": "117-142",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Masculinities, Colour, Dyeing and the Design of Tweeds 1829–1914",
+          "authors": [
+            "Dyeing",
+            "Fiona Anderson\nIntroduction\nColour"
+          ],
+          "pdf_start_index": 161,
+          "pdf_end_index": 184,
+          "citation_pages": "143-166",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Queerly Racialised Colours of Religion and Decadence at the Universities of Oxford and Cambridge",
+          "authors": [
+            "Decadence"
+          ],
+          "pdf_start_index": 185,
+          "pdf_end_index": 213,
+          "citation_pages": "167-196",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘The Look of Measurement’: Colour and Sight in Victor Fulconis’s Depictions of the Indo-Caribbean in Martinique, 1883",
+          "authors": [
+            "Colour"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 237,
+          "citation_pages": "197-222",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Annotating Syme: Nineteenth-Century Marks and Marginalia in Werner’s Nomenclature of Colours (1814/1821)",
+          "authors": [
+            "Syme",
+            "Botany"
+          ],
+          "pdf_start_index": 241,
+          "pdf_end_index": 264,
+          "citation_pages": "223-246",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Between Heritage, Militaria and Concept: The Magenta Case",
+          "authors": [
+            "Between Heritage",
+            "Militaria"
+          ],
+          "pdf_start_index": 265,
+          "pdf_end_index": 285,
+          "citation_pages": "247-268",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Hayters and the Controversy on Colour",
+          "authors": [
+            "Charles Hayter"
+          ],
+          "pdf_start_index": 287,
+          "pdf_end_index": 310,
+          "citation_pages": "269-294",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "John Ruskin’s Painting Materials: A Quest for Durable Colour between Industry and Nature",
+          "authors": [
+            "John  Ruskin’s Painting Materials",
+            "Johann Jacob Diesbach"
+          ],
+          "pdf_start_index": 313,
+          "pdf_end_index": 335,
+          "citation_pages": "295-318",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘Rather Revolution than Evolution’: Chinese White and Watercolour Painting Techniques in England 1850–1880",
+          "authors": [
+            "Fiona Mann",
+            "George  Field"
+          ],
+          "pdf_start_index": 337,
+          "pdf_end_index": 359,
+          "citation_pages": "319-342",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Colour on Trial: Concerns about the Quality of Artists’ Pigments",
+          "authors": [],
+          "pdf_start_index": 361,
+          "pdf_end_index": 389,
+          "citation_pages": "343-371",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 12.149941963000003,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:45:14.290648+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "2. Chrome Yellow: American Mineral, American Fancy",
+          "authors": [
+            "Chrome Yellow",
+            "Vauquelin"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 89,
+          "citation_pages": "49-72",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Wavelengths and Potato Starch: The (Im)material in Colour Photography",
+          "authors": [
+            "Gabriel  Lippmann"
+          ],
+          "pdf_start_index": 91,
+          "pdf_end_index": 108,
+          "citation_pages": "73-92",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Whitewashing the Wards? Colour, Health, and Victorian Hospital Interiors",
+          "authors": [
+            "Wards",
+            "Kay Simpson"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 134,
+          "citation_pages": "93-116",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. From Hysteria to Healing: Félix Vallotton’s Bon Marché and the Ambiguous Nature of Colour in Fin-de-Siècle Culture",
+          "authors": [
+            "Alessandra Ronetti"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 158,
+          "citation_pages": "117-142",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. Masculinities, Colour, Dyeing and the Design of Tweeds 1829–1914",
+          "authors": [
+            "Dyeing",
+            "Fiona Anderson\nIntroduction\nColour"
+          ],
+          "pdf_start_index": 161,
+          "pdf_end_index": 184,
+          "citation_pages": "143-166",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. The Queerly Racialised Colours of Religion and Decadence at the Universities of Oxford and Cambridge",
+          "authors": [
+            "Decadence"
+          ],
+          "pdf_start_index": 185,
+          "pdf_end_index": 213,
+          "citation_pages": "167-196",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. ‘The Look of Measurement’: Colour and Sight in Victor Fulconis’s Depictions of the Indo-Caribbean in Martinique, 1883",
+          "authors": [
+            "Colour"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 237,
+          "citation_pages": "197-222",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9. Annotating Syme: Nineteenth-Century Marks and Marginalia in Werner’s Nomenclature of Colours (1814/1821)",
+          "authors": [
+            "Syme",
+            "Botany"
+          ],
+          "pdf_start_index": 241,
+          "pdf_end_index": 264,
+          "citation_pages": "223-246",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10. Between Heritage, Militaria and Concept: The Magenta Case",
+          "authors": [
+            "Between Heritage",
+            "Militaria"
+          ],
+          "pdf_start_index": 265,
+          "pdf_end_index": 285,
+          "citation_pages": "247-268",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "11. The Hayters and the Controversy on Colour",
+          "authors": [
+            "Charles Hayter"
+          ],
+          "pdf_start_index": 287,
+          "pdf_end_index": 310,
+          "citation_pages": "269-294",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "12. John Ruskin’s Painting Materials: A Quest for Durable Colour between Industry and Nature",
+          "authors": [
+            "John  Ruskin’s Painting Materials",
+            "Johann Jacob Diesbach"
+          ],
+          "pdf_start_index": 313,
+          "pdf_end_index": 335,
+          "citation_pages": "295-318",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "13. ‘Rather Revolution than Evolution’: Chinese White and Watercolour Painting Techniques in England 1850–1880",
+          "authors": [
+            "Fiona Mann",
+            "George  Field"
+          ],
+          "pdf_start_index": 337,
+          "pdf_end_index": 359,
+          "citation_pages": "319-342",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "14. Colour on Trial: Concerns about the Quality of Artists’ Pigments",
+          "authors": [],
+          "pdf_start_index": 361,
+          "pdf_end_index": 389,
+          "citation_pages": "343-371",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 51.70294738000007,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:06:16.238441+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Chrome Yellow: American Mineral, American Fancy",
+          "authors": [
+            "Chrome Yellow",
+            "Vauquelin"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 89,
+          "citation_pages": "49-72",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wavelengths and Potato Starch: The (Im)material in Colour Photography",
+          "authors": [
+            "Gabriel  Lippmann"
+          ],
+          "pdf_start_index": 91,
+          "pdf_end_index": 108,
+          "citation_pages": "73-92",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Whitewashing the Wards? Colour, Health, and Victorian Hospital Interiors",
+          "authors": [
+            "Wards",
+            "Kay Simpson"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 134,
+          "citation_pages": "93-116",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Hysteria to Healing: Félix Vallotton’s Bon Marché and the Ambiguous Nature of Colour in Fin-de-Siècle Culture",
+          "authors": [
+            "Alessandra Ronetti"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 158,
+          "citation_pages": "117-142",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Masculinities, Colour, Dyeing and the Design of Tweeds 1829–1914",
+          "authors": [
+            "Dyeing",
+            "Fiona Anderson\nIntroduction\nColour"
+          ],
+          "pdf_start_index": 161,
+          "pdf_end_index": 184,
+          "citation_pages": "143-166",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Queerly Racialised Colours of Religion and Decadence at the Universities of Oxford and Cambridge",
+          "authors": [
+            "Decadence"
+          ],
+          "pdf_start_index": 185,
+          "pdf_end_index": 213,
+          "citation_pages": "167-196",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘The Look of Measurement’: Colour and Sight in Victor Fulconis’s Depictions of the Indo-Caribbean in Martinique, 1883",
+          "authors": [
+            "Colour"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 237,
+          "citation_pages": "197-222",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Annotating Syme: Nineteenth-Century Marks and Marginalia in Werner’s Nomenclature of Colours (1814/1821)",
+          "authors": [
+            "Syme",
+            "Botany"
+          ],
+          "pdf_start_index": 241,
+          "pdf_end_index": 264,
+          "citation_pages": "223-246",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Between Heritage, Militaria and Concept: The Magenta Case",
+          "authors": [
+            "Between Heritage",
+            "Militaria"
+          ],
+          "pdf_start_index": 265,
+          "pdf_end_index": 285,
+          "citation_pages": "247-268",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Hayters and the Controversy on Colour",
+          "authors": [
+            "Charles Hayter"
+          ],
+          "pdf_start_index": 287,
+          "pdf_end_index": 310,
+          "citation_pages": "269-294",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "John Ruskin’s Painting Materials: A Quest for Durable Colour between Industry and Nature",
+          "authors": [
+            "John  Ruskin’s Painting Materials",
+            "Johann Jacob Diesbach"
+          ],
+          "pdf_start_index": 313,
+          "pdf_end_index": 335,
+          "citation_pages": "295-318",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘Rather Revolution than Evolution’: Chinese White and Watercolour Painting Techniques in England 1850–1880",
+          "authors": [
+            "Fiona Mann",
+            "George  Field"
+          ],
+          "pdf_start_index": 337,
+          "pdf_end_index": 359,
+          "citation_pages": "319-342",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Colour on Trial: Concerns about the Quality of Artists’ Pigments",
+          "authors": [],
+          "pdf_start_index": 361,
+          "pdf_end_index": 389,
+          "citation_pages": "343-371",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 22.265324956999848,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:17:39.014497+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 0.2057953130001806,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:12.803526+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.2382982690000972,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:22.944391+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:48:44.291414+00:00"
+  "generated_at": "2026-08-15T04:23:22.944391+00:00"
 }

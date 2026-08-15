@@ -760,7 +760,1349 @@
       ],
       "elapsed_seconds": 172.98824083199997,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Iannis Xenakis’s Free Stochastic Music Program as an Aid to Analysis",
+          "authors": [
+            "Iannis Xenakis’s Free Stochastic Music \nProgram",
+            "Ronald Squibbs",
+            "Iannis Xenakis’s Free"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 145,
+          "citation_pages": "103-114",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Continuum versus Disruptum: A Poetic-philosophical Approach to the Instrumental and Vocal Works of Iannis Xenakis",
+          "authors": [
+            "Continuum",
+            "Sharon Kanach)1",
+            "Friedrich"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 173,
+          "citation_pages": "115-142",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis’s Materialism: On the Dialectic of Real-time Computation",
+          "authors": [
+            "Iannis Xenakis’s",
+            "Oswaldo Emiddio Vasquez",
+            "Hadjilyra"
+          ],
+          "pdf_start_index": 175,
+          "pdf_end_index": 188,
+          "citation_pages": "143-156",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis’s Philosophy of Music, Stochastics, and the Postmodern Sublime",
+          "authors": [
+            "Iannis Xenakis’s",
+            "Stochastics",
+            "Iannis Xenakis",
+            "Milan Kundera"
+          ],
+          "pdf_start_index": 189,
+          "pdf_end_index": 198,
+          "citation_pages": "157-166",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Jean-Étienne Marie and Iannis Xenakis: The Vision of an Artistic Engineer and a Theorist of Microtonal Music",
+          "authors": [
+            "Jean-Étienne Marie",
+            "Judith Romero Porras",
+            "Messiaen"
+          ],
+          "pdf_start_index": 199,
+          "pdf_end_index": 211,
+          "citation_pages": "167-180",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On the Link between the Exact Sciences and Music in Iannis Xenakis’s Creative Work",
+          "authors": [
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 230,
+          "citation_pages": "181-198",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Activating Sound Phenomena in the Music of Iannis Xenakis",
+          "authors": [
+            "Mauricio García de la",
+            "Maurice"
+          ],
+          "pdf_start_index": 231,
+          "pdf_end_index": 244,
+          "citation_pages": "199-212",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Spatial Movement of Sound Vectors",
+          "authors": [
+            "Ambrosio Salvador Rodríguez Lara"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 267,
+          "citation_pages": "213-236",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The CIX Archives: Revalorizations and Hidden Treasures",
+          "authors": [
+            "Hidden Treasures\nCyrille",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 269,
+          "pdf_end_index": 284,
+          "citation_pages": "237-252",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Game Theory and Formal Structure in Iannis Xenakis’s Duel (1959)",
+          "authors": [
+            "Mikhail Malt",
+            "Benny"
+          ],
+          "pdf_start_index": 285,
+          "pdf_end_index": 303,
+          "citation_pages": "253-272",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Myth of Recurrence in Iannis Xenakis’s La Légende d’Eer",
+          "authors": [
+            "Anton"
+          ],
+          "pdf_start_index": 305,
+          "pdf_end_index": 316,
+          "citation_pages": "273-284",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis’s Hibiki Hana Ma and the Japanese Team for Tekkhokan (Steel Pavilion) at Expo ’70, Osaka",
+          "authors": [
+            "Iannis Xenakis’s Hibiki",
+            "Hana Ma",
+            "Mikako Mizuno",
+            "Hibiki Hana \nMa"
+          ],
+          "pdf_start_index": 317,
+          "pdf_end_index": 327,
+          "citation_pages": "285-296",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis’s Pithoprakta: A Phenomenological Approach",
+          "authors": [
+            "Iannis Xenakis’s",
+            "Erik Christensen",
+            "Lise C. Bjerno1",
+            "Thomas Clifton",
+            "Lawrence Ferrara",
+            "Don Ihde",
+            "Edmund Husserl",
+            "Martin Heidegger",
+            "Maurice Me"
+          ],
+          "pdf_start_index": 329,
+          "pdf_end_index": 349,
+          "citation_pages": "297-318",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Performing Iannis Xenakis’s Polyrhythms: A Perception-informed Approach to Renotation",
+          "authors": [
+            "Evryali"
+          ],
+          "pdf_start_index": 351,
+          "pdf_end_index": 367,
+          "citation_pages": "319-336",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "An Approach to the Epistemic Potential of the UPIC",
+          "authors": [
+            "Mauricio Arturo Meza"
+          ],
+          "pdf_start_index": 369,
+          "pdf_end_index": 386,
+          "citation_pages": "337-354",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Seeing Music and Listening to Architecture: Iannis Xenakis and La Philharmonie de Paris",
+          "authors": [
+            "Brigitte Métra\n",
+            "Jean Nouvel"
+          ],
+          "pdf_start_index": 387,
+          "pdf_end_index": 391,
+          "citation_pages": "355-360",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis/Le Corbusier: A Confrontation en sol dur",
+          "authors": [
+            "Guy Pimienta  \n",
+            "Sharon Kanach)1\n",
+            "Pierre Jeanneret",
+            "Charlotte Perriand",
+            "Pierre Faucheux"
+          ],
+          "pdf_start_index": 393,
+          "pdf_end_index": 406,
+          "citation_pages": "361-374",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Polytropos: Iannis Xenakis, Engineer in Music and Architecture",
+          "authors": [
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 407,
+          "pdf_end_index": 430,
+          "citation_pages": "375-400",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Liberated Music. A Loving Testimony",
+          "authors": [
+            "Nikos Kornilios",
+            "Iannis",
+            "Manolis"
+          ],
+          "pdf_start_index": 433,
+          "pdf_end_index": 440,
+          "citation_pages": "401-408",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La Légende de Xenakis: Meta Xenakis",
+          "authors": [
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 441,
+          "pdf_end_index": 460,
+          "citation_pages": "409-428",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Creating and Learning with UPIC",
+          "authors": [
+            "Learning",
+            "Takehito Shimazu"
+          ],
+          "pdf_start_index": 461,
+          "pdf_end_index": 469,
+          "citation_pages": "429-438",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Music, Science, Architecture: Two Conversations with Iannis Xenakis",
+          "authors": [
+            "Julio",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 471,
+          "pdf_end_index": 497,
+          "citation_pages": "439-466",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Pythagorean Wall: A Visual and Auditory Drama",
+          "authors": [
+            "Julio",
+            "Iannis Xenakis",
+            "Athenian Dekemvriana"
+          ],
+          "pdf_start_index": 499,
+          "pdf_end_index": 514,
+          "citation_pages": "467-482",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis, Inventor of Music—Composer, Engineer, and Architect: The Voice of the “Inexpressible” and of “Revelation”",
+          "authors": [
+            "Iannis Xenakis",
+            "Composer",
+            "Cândido Lima",
+            "Olivier Messiaen"
+          ],
+          "pdf_start_index": 515,
+          "pdf_end_index": 531,
+          "citation_pages": "483-500",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The UPIC System of Iannis Xenakis: Autoethnography as Rapprochement",
+          "authors": [
+            "Peter",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 533,
+          "pdf_end_index": 548,
+          "citation_pages": "501-516",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "UPISketch: New Perspectives",
+          "authors": [
+            "Rodolphe Bourotte"
+          ],
+          "pdf_start_index": 549,
+          "pdf_end_index": 566,
+          "citation_pages": "517-50",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis in Berlin",
+          "authors": [
+            "Peter",
+            "Iannis Xenakis",
+            "Zuordnung zu einem",
+            "https://monoskop",
+            "Pauline"
+          ],
+          "pdf_start_index": 567,
+          "pdf_end_index": 567,
+          "citation_pages": "51-536",
+          "confidence": 0.74,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Somax2 and Reinterpreting Iannis Xenakis",
+          "authors": [
+            "Mikhail Malt",
+            "Benny Sluchin",
+            "Joakim Borg",
+            "Gérard Assayag",
+            "Marco \nFiorini",
+            "OmMax"
+          ],
+          "pdf_start_index": 569,
+          "pdf_end_index": 574,
+          "citation_pages": "537-542",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Xenos: A Xenharmonic Dynamic Stochastic Synthesis Virtual Instrument",
+          "authors": [
+            "Xenos",
+            "Raphael Radna\nIntroduction\nXenos",
+            "C++",
+            "JUCE"
+          ],
+          "pdf_start_index": 575,
+          "pdf_end_index": 594,
+          "citation_pages": "543-562",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Light Tectonics: The New Aesthetics in Iannis Xenakis’s Work",
+          "authors": [
+            "Yin Yu"
+          ],
+          "pdf_start_index": 595,
+          "pdf_end_index": 612,
+          "citation_pages": "563-580",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Phoenix-Albatross: An Approach to Iannis Xenakis’s Work on Game Theory through Live Coding and Networked Dance",
+          "authors": [
+            "Iannis Xenakis’s",
+            "Takumi"
+          ],
+          "pdf_start_index": 613,
+          "pdf_end_index": 622,
+          "citation_pages": "581-590",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mapping the Influence: Iannis Xenakis’s GENDYN Algorithms as a Means for Creative Explorations in Live Improvised Feedback Music",
+          "authors": [
+            "Algorithms",
+            "Iannis Xenakis’s"
+          ],
+          "pdf_start_index": 623,
+          "pdf_end_index": 636,
+          "citation_pages": "591-604",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Notes on A Catalog of Difference",
+          "authors": [
+            "Andrew Lucia"
+          ],
+          "pdf_start_index": 637,
+          "pdf_end_index": 666,
+          "citation_pages": "605-634",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Algorithmic Music of Iannis Xenakis—What’s Next?",
+          "authors": [
+            "Bill"
+          ],
+          "pdf_start_index": 667,
+          "pdf_end_index": 692,
+          "citation_pages": "635-660",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Process of Creating a Computational System: A Collective Audiovisual Composition",
+          "authors": [
+            "Mizky Bernal",
+            "Diego Jiménez",
+            "Guillermo \nLeonardini",
+            "Eunice Pérez\nIntroduction",
+            "Hugo Solís"
+          ],
+          "pdf_start_index": 693,
+          "pdf_end_index": 710,
+          "citation_pages": "661-678",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Xenakis Networked Performance Marathon 2022: An Experiment in Networked Performance Collaboration Inspired by Iannis Xenakis",
+          "authors": [
+            "Martin Carlé",
+            "Takumi Ikeda",
+            "Hanako",
+            "Xenakis’s"
+          ],
+          "pdf_start_index": 711,
+          "pdf_end_index": 730,
+          "citation_pages": "679-698",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Xenakis Networked Performance Marathon 2022 (Sustainable Resources)",
+          "authors": [
+            "Iannis Zannos",
+            "Martin Carlé",
+            "Takumi Ikeda",
+            "Hanako Atake",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 731,
+          "pdf_end_index": 743,
+          "citation_pages": "699-712",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Japanese Society for Electronic Music (JSEM) Concert—A Tribute Celebrating Iannis Xenakis’s Centennial",
+          "authors": [
+            "Mikako Mizuno",
+            "Takehito Shimazu",
+            "JSEM"
+          ],
+          "pdf_start_index": 745,
+          "pdf_end_index": 746,
+          "citation_pages": "713-714",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Meta-Xenakis Concert at Suntory Hall, Tokyo",
+          "authors": [
+            "Meta-Xenakis Concert",
+            "Kuniko Kato",
+            "Suntory Hall",
+            "Solo Percussion",
+            "Hana Ma"
+          ],
+          "pdf_start_index": 747,
+          "pdf_end_index": 748,
+          "citation_pages": "715-716",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Establishment of the CMRC—KSYME in Athens: A Virtual Exhibit",
+          "authors": [
+            "Nickos Harizanos",
+            "Katerina Tsioukra",
+            "Dana",
+            "Κέντρο Σύγχρονης Μουσικής \n",
+            "Έρευνας",
+            "Iannis Xenakis",
+            "John G. Papaioannou",
+            "Stephanos Vassileiadis"
+          ],
+          "pdf_start_index": 749,
+          "pdf_end_index": 750,
+          "citation_pages": "717-718",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "In Memoriam, Joel Chadabe",
+          "authors": [
+            "Joel Chadabe",
+            "Sharon Kanach",
+            "Bill Blakeney",
+            "Mike Kupietz",
+            "Lori Freedman",
+            "Peter Beyls",
+            "Roger Reynolds"
+          ],
+          "pdf_start_index": 751,
+          "pdf_end_index": 752,
+          "citation_pages": "719-720",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A New Documentary: Iannis Xenakis: Music of the Universe",
+          "authors": [
+            "Apostolos Loufopoulos",
+            "Renata Dalianoudi",
+            "Panagopoulos"
+          ],
+          "pdf_start_index": 753,
+          "pdf_end_index": 757,
+          "citation_pages": "721-726",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reportage of a UPISketch Workshop in Japan",
+          "authors": [
+            "Yoshihisa Suzuki",
+            "Rodolphe Bourotte"
+          ],
+          "pdf_start_index": 759,
+          "pdf_end_index": 760,
+          "citation_pages": "727-728",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Polytope XXI: A Tribute to Iannis Xenakis",
+          "authors": [
+            "Myriam Boucher",
+            "Dominic Thibault",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 761,
+          "pdf_end_index": 763,
+          "citation_pages": "729-732",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "An Architecture of Alchemy: A Cinematic Painting",
+          "authors": [
+            "David J. Lieberman\nFig",
+            "David J. Lieberman"
+          ],
+          "pdf_start_index": 765,
+          "pdf_end_index": 768,
+          "citation_pages": "733-736",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Iranian Context of Iannis Xenakis’s Persepolis",
+          "authors": [
+            "Iannis Xenakis’s"
+          ],
+          "pdf_start_index": 769,
+          "pdf_end_index": 777,
+          "citation_pages": "737-746",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis, 1922–2001",
+          "authors": [
+            "Benny Sluchin",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 779,
+          "pdf_end_index": 794,
+          "citation_pages": "747-762",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 38.19217840800002,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:45:02.135454+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 77.70575213100005,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:04:00.687514+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Iannis Xenakis’s Free Stochastic Music Program as an Aid to Analysis",
+          "authors": [
+            "Iannis Xenakis’s Free Stochastic Music \nProgram",
+            "Ronald Squibbs",
+            "Iannis Xenakis’s Free"
+          ],
+          "pdf_start_index": 135,
+          "pdf_end_index": 145,
+          "citation_pages": "103-114",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Continuum versus Disruptum: A Poetic-philosophical Approach to the Instrumental and Vocal Works of Iannis Xenakis",
+          "authors": [
+            "Continuum",
+            "Sharon Kanach)1",
+            "Friedrich"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 173,
+          "citation_pages": "115-142",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis’s Materialism: On the Dialectic of Real-time Computation",
+          "authors": [
+            "Iannis Xenakis’s",
+            "Oswaldo Emiddio Vasquez",
+            "Hadjilyra"
+          ],
+          "pdf_start_index": 175,
+          "pdf_end_index": 188,
+          "citation_pages": "143-156",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis’s Philosophy of Music, Stochastics, and the Postmodern Sublime",
+          "authors": [
+            "Iannis Xenakis’s",
+            "Stochastics",
+            "Iannis Xenakis",
+            "Milan Kundera"
+          ],
+          "pdf_start_index": 189,
+          "pdf_end_index": 198,
+          "citation_pages": "157-166",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Jean-Étienne Marie and Iannis Xenakis: The Vision of an Artistic Engineer and a Theorist of Microtonal Music",
+          "authors": [
+            "Jean-Étienne Marie",
+            "Judith Romero Porras",
+            "Messiaen"
+          ],
+          "pdf_start_index": 199,
+          "pdf_end_index": 211,
+          "citation_pages": "167-180",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "On the Link between the Exact Sciences and Music in Iannis Xenakis’s Creative Work",
+          "authors": [
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 230,
+          "citation_pages": "181-198",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Activating Sound Phenomena in the Music of Iannis Xenakis",
+          "authors": [
+            "Mauricio García de la",
+            "Maurice"
+          ],
+          "pdf_start_index": 231,
+          "pdf_end_index": 244,
+          "citation_pages": "199-212",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Spatial Movement of Sound Vectors",
+          "authors": [
+            "Ambrosio Salvador Rodríguez Lara"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 267,
+          "citation_pages": "213-236",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The CIX Archives: Revalorizations and Hidden Treasures",
+          "authors": [
+            "Hidden Treasures\nCyrille",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 269,
+          "pdf_end_index": 284,
+          "citation_pages": "237-252",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Game Theory and Formal Structure in Iannis Xenakis’s Duel (1959)",
+          "authors": [
+            "Mikhail Malt",
+            "Benny"
+          ],
+          "pdf_start_index": 285,
+          "pdf_end_index": 303,
+          "citation_pages": "253-272",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Myth of Recurrence in Iannis Xenakis’s La Légende d’Eer",
+          "authors": [
+            "Anton"
+          ],
+          "pdf_start_index": 305,
+          "pdf_end_index": 316,
+          "citation_pages": "273-284",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis’s Hibiki Hana Ma and the Japanese Team for Tekkhokan (Steel Pavilion) at Expo ’70, Osaka",
+          "authors": [
+            "Iannis Xenakis’s Hibiki",
+            "Hana Ma",
+            "Mikako Mizuno",
+            "Hibiki Hana \nMa"
+          ],
+          "pdf_start_index": 317,
+          "pdf_end_index": 327,
+          "citation_pages": "285-296",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis’s Pithoprakta: A Phenomenological Approach",
+          "authors": [
+            "Iannis Xenakis’s",
+            "Erik Christensen",
+            "Lise C. Bjerno1",
+            "Thomas Clifton",
+            "Lawrence Ferrara",
+            "Don Ihde",
+            "Edmund Husserl",
+            "Martin Heidegger",
+            "Maurice Me"
+          ],
+          "pdf_start_index": 329,
+          "pdf_end_index": 349,
+          "citation_pages": "297-318",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Performing Iannis Xenakis’s Polyrhythms: A Perception-informed Approach to Renotation",
+          "authors": [
+            "Evryali"
+          ],
+          "pdf_start_index": 351,
+          "pdf_end_index": 367,
+          "citation_pages": "319-336",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "An Approach to the Epistemic Potential of the UPIC",
+          "authors": [
+            "Mauricio Arturo Meza"
+          ],
+          "pdf_start_index": 369,
+          "pdf_end_index": 386,
+          "citation_pages": "337-354",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Seeing Music and Listening to Architecture: Iannis Xenakis and La Philharmonie de Paris",
+          "authors": [
+            "Brigitte Métra\n",
+            "Jean Nouvel"
+          ],
+          "pdf_start_index": 387,
+          "pdf_end_index": 391,
+          "citation_pages": "355-360",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis/Le Corbusier:A Confrontation en sol dur",
+          "authors": [
+            "Guy Pimienta  \n",
+            "Sharon Kanach)1\n",
+            "Pierre Jeanneret",
+            "Charlotte Perriand",
+            "Pierre Faucheux"
+          ],
+          "pdf_start_index": 393,
+          "pdf_end_index": 406,
+          "citation_pages": "361-374",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Polytropos: Iannis Xenakis, Engineer in Music and Architecture",
+          "authors": [
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 407,
+          "pdf_end_index": 430,
+          "citation_pages": "375-400",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Liberated Music. A Loving Testimony",
+          "authors": [
+            "Nikos Kornilios",
+            "Iannis",
+            "Manolis"
+          ],
+          "pdf_start_index": 433,
+          "pdf_end_index": 440,
+          "citation_pages": "401-408",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "La Légende de Xenakis: Meta Xenakis",
+          "authors": [
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 441,
+          "pdf_end_index": 460,
+          "citation_pages": "409-428",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Creating and Learning with UPIC",
+          "authors": [
+            "Learning",
+            "Takehito Shimazu"
+          ],
+          "pdf_start_index": 461,
+          "pdf_end_index": 469,
+          "citation_pages": "429-438",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Music, Science, Architecture: Two Conversations with Iannis Xenakis",
+          "authors": [
+            "Julio",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 471,
+          "pdf_end_index": 497,
+          "citation_pages": "439-466",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Pythagorean Wall: A Visual and Auditory Drama",
+          "authors": [
+            "Julio",
+            "Iannis Xenakis",
+            "Athenian Dekemvriana"
+          ],
+          "pdf_start_index": 499,
+          "pdf_end_index": 514,
+          "citation_pages": "467-482",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis, Inventor of Music—Composer, Engineer, and Architect: The Voice of the “Inexpressible” and of “Revelation”",
+          "authors": [
+            "Iannis Xenakis",
+            "Composer",
+            "Cândido Lima",
+            "Olivier Messiaen"
+          ],
+          "pdf_start_index": 515,
+          "pdf_end_index": 531,
+          "citation_pages": "483-500",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The UPIC System of Iannis Xenakis: Autoethnography as Rapprochement",
+          "authors": [
+            "Peter",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 533,
+          "pdf_end_index": 548,
+          "citation_pages": "501-516",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "UPISketch: New Perspectives",
+          "authors": [
+            "Rodolphe Bourotte"
+          ],
+          "pdf_start_index": 549,
+          "pdf_end_index": 566,
+          "citation_pages": "517-50",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis in Berlin",
+          "authors": [
+            "Peter",
+            "Iannis Xenakis",
+            "Zuordnung zu einem",
+            "https://monoskop",
+            "Pauline"
+          ],
+          "pdf_start_index": 567,
+          "pdf_end_index": 567,
+          "citation_pages": "51-536",
+          "confidence": 0.74,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Somax2 and Reinterpreting Iannis Xenakis",
+          "authors": [
+            "Mikhail Malt",
+            "Benny Sluchin",
+            "Joakim Borg",
+            "Gérard Assayag",
+            "Marco \nFiorini",
+            "OmMax"
+          ],
+          "pdf_start_index": 569,
+          "pdf_end_index": 574,
+          "citation_pages": "537-542",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Xenos: A Xenharmonic Dynamic Stochastic Synthesis Virtual Instrument",
+          "authors": [
+            "Xenos",
+            "Raphael Radna\nIntroduction\nXenos",
+            "C++",
+            "JUCE"
+          ],
+          "pdf_start_index": 575,
+          "pdf_end_index": 594,
+          "citation_pages": "543-562",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Light Tectonics: The New Aesthetics in Iannis Xenakis’s Work",
+          "authors": [
+            "Yin Yu"
+          ],
+          "pdf_start_index": 595,
+          "pdf_end_index": 612,
+          "citation_pages": "563-580",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Phoenix-Albatross: An Approach to Iannis Xenakis’s Work on Game Theory through Live Coding and Networked Dance",
+          "authors": [
+            "Iannis Xenakis’s",
+            "Takumi"
+          ],
+          "pdf_start_index": 613,
+          "pdf_end_index": 622,
+          "citation_pages": "581-590",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Mapping the Influence: Iannis Xenakis’s GENDYN Algorithms as a Means for Creative Explorations in Live Improvised Feedback Music",
+          "authors": [
+            "Algorithms",
+            "Iannis Xenakis’s"
+          ],
+          "pdf_start_index": 623,
+          "pdf_end_index": 636,
+          "citation_pages": "591-604",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Notes on A Catalog of Difference",
+          "authors": [
+            "Andrew Lucia"
+          ],
+          "pdf_start_index": 637,
+          "pdf_end_index": 666,
+          "citation_pages": "605-634",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Algorithmic Music of Iannis Xenakis—What’s Next?",
+          "authors": [
+            "Bill"
+          ],
+          "pdf_start_index": 667,
+          "pdf_end_index": 692,
+          "citation_pages": "635-660",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Process of Creating a Computational System: A Collective Audiovisual Composition",
+          "authors": [
+            "Mizky Bernal",
+            "Diego Jiménez",
+            "Guillermo \nLeonardini",
+            "Eunice Pérez\nIntroduction",
+            "Hugo Solís"
+          ],
+          "pdf_start_index": 693,
+          "pdf_end_index": 710,
+          "citation_pages": "661-678",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Xenakis Networked Performance Marathon 2022: An Experiment in Networked Performance Collaboration Inspired by Iannis Xenakis",
+          "authors": [
+            "Martin Carlé",
+            "Takumi Ikeda",
+            "Hanako",
+            "Xenakis’s"
+          ],
+          "pdf_start_index": 711,
+          "pdf_end_index": 730,
+          "citation_pages": "679-698",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Xenakis Networked Performance Marathon 2022 (Sustainable Resources)",
+          "authors": [
+            "Iannis Zannos",
+            "Martin Carlé",
+            "Takumi Ikeda",
+            "Hanako Atake",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 731,
+          "pdf_end_index": 743,
+          "citation_pages": "699-712",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Japanese Society for Electronic Music (JSEM) Concert—A Tribute Celebrating Iannis Xenakis’s Centennial",
+          "authors": [
+            "Mikako Mizuno",
+            "Takehito Shimazu",
+            "JSEM"
+          ],
+          "pdf_start_index": 745,
+          "pdf_end_index": 746,
+          "citation_pages": "713-714",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Meta-Xenakis Concert at Suntory Hall, Tokyo",
+          "authors": [
+            "Meta-Xenakis Concert",
+            "Kuniko Kato",
+            "Suntory Hall",
+            "Solo Percussion",
+            "Hana Ma"
+          ],
+          "pdf_start_index": 747,
+          "pdf_end_index": 748,
+          "citation_pages": "715-716",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Establishment of the CMRC—KSYME in Athens: A Virtual Exhibit",
+          "authors": [
+            "Nickos Harizanos",
+            "Katerina Tsioukra",
+            "Dana",
+            "Κέντρο Σύγχρονης Μουσικής \n",
+            "Έρευνας",
+            "Iannis Xenakis",
+            "John G. Papaioannou",
+            "Stephanos Vassileiadis"
+          ],
+          "pdf_start_index": 749,
+          "pdf_end_index": 750,
+          "citation_pages": "717-718",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "In Memoriam, Joel Chadabe",
+          "authors": [
+            "Joel Chadabe",
+            "Sharon Kanach",
+            "Bill Blakeney",
+            "Mike Kupietz",
+            "Lori Freedman",
+            "Peter Beyls",
+            "Roger Reynolds"
+          ],
+          "pdf_start_index": 751,
+          "pdf_end_index": 752,
+          "citation_pages": "719-720",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A New Documentary: Iannis Xenakis: Music of the Universe",
+          "authors": [
+            "Apostolos Loufopoulos",
+            "Renata Dalianoudi",
+            "Panagopoulos"
+          ],
+          "pdf_start_index": 753,
+          "pdf_end_index": 757,
+          "citation_pages": "721-726",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reportage of a UPISketch Workshop in Japan",
+          "authors": [
+            "Yoshihisa Suzuki",
+            "Rodolphe Bourotte"
+          ],
+          "pdf_start_index": 759,
+          "pdf_end_index": 760,
+          "citation_pages": "727-728",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Polytope XXI: A Tribute to Iannis Xenakis",
+          "authors": [
+            "Myriam Boucher",
+            "Dominic Thibault",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 761,
+          "pdf_end_index": 763,
+          "citation_pages": "729-732",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "An Architecture of Alchemy: A Cinematic Painting",
+          "authors": [
+            "David J. Lieberman\nFig",
+            "David J. Lieberman"
+          ],
+          "pdf_start_index": 765,
+          "pdf_end_index": 768,
+          "citation_pages": "733-736",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Iranian Context of Iannis Xenakis’s Persepolis",
+          "authors": [
+            "Iannis Xenakis’s"
+          ],
+          "pdf_start_index": 769,
+          "pdf_end_index": 777,
+          "citation_pages": "737-746",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Iannis Xenakis, 1922–2001",
+          "authors": [
+            "Benny Sluchin",
+            "Iannis Xenakis"
+          ],
+          "pdf_start_index": 779,
+          "pdf_end_index": 794,
+          "citation_pages": "747-762",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 101.00363738700025,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:17:44.259782+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 0.2282488949999788,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:11.363842+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.22843110900021202,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:22.314258+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:41:11.003453+00:00"
+  "generated_at": "2026-08-15T04:23:22.314258+00:00"
 }

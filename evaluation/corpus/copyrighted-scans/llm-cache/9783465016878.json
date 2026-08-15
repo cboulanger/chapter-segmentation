@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T04:57:30.123532+00:00",
+  "generated_at": "2026-08-15T03:41:08.622804+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [],
@@ -725,6 +725,78 @@
       ],
       "elapsed_seconds": 86.19864312501159,
       "demand_at_run": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "GESTERN SCHLIMM",
+          "authors": [
+            "GESTERN M. SCHLAGEN\nGewinnen",
+            "Geschichte Geschichte",
+            "Klasse£ ab vom traurig krank",
+            "langsam Geschichte",
+            "Minutenmir",
+            "Geburtstag",
+            "Wissen",
+            "Weihnachten das"
+          ],
+          "pdf_start_index": 125,
+          "pdf_end_index": 260,
+          "citation_pages": "173-36",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "VERSUCHEN ENDLICH",
+          "authors": [
+            "Schön Arbeit",
+            "Erzählen Fuß Schwester\nSchreien",
+            "Zahl Gott",
+            "Endlich",
+            "Lehrerin Kennen",
+            "Weihnachten Geburtstag",
+            "Lehrerin Geschichte",
+            "gar Erschrecken",
+            "Loch",
+            "Zurück",
+            "Fiel „Erschrecken",
+            "Kopf Pferd"
+          ],
+          "pdf_start_index": 261,
+          "pdf_end_index": 289,
+          "citation_pages": "37-252",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "LIEGEN ERSCHRECKEN",
+          "authors": [
+            "Vielleicht",
+            "Rennen",
+            "Erschrecken",
+            "Leise Gehen",
+            "Nennen",
+            "Sohn",
+            "Weihnachten Weihnachten Schaffen",
+            "Glas",
+            "Weihnachten Arbeiten",
+            "davon Weihnachten",
+            "Vergessen der",
+            "Rad Weihnachten"
+          ],
+          "pdf_start_index": 291,
+          "pdf_end_index": 305,
+          "citation_pages": "253-287",
+          "confidence": 0.76,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 8.861868575999992,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:41:08.622804+00:00"
     }
   }
 }

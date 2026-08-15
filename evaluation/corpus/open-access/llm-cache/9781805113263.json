@@ -171,7 +171,384 @@
       ],
       "elapsed_seconds": 25.038133272999858,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "1. De Morgan and Mathematics",
+          "authors": [
+            "De Morgan",
+            "Whewell’s"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 68,
+          "citation_pages": "3-30",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2. De Morgan and Logic",
+          "authors": [
+            "De Morgan",
+            "Logic\n Anna-Sophie Heinemann\nLogic",
+            "Augustus De",
+            "Augustus De Morgan’s"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 94,
+          "citation_pages": "31-56",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3. Augustus De Morgan, Astronomy and Almanacs",
+          "authors": [
+            "Augustus De Morgan",
+            "Daniel Belteki\n Astronomy",
+            "Augustus De",
+            "Augustus De Morgan’s"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 120,
+          "citation_pages": "57-82",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. De Morgan, Periodicals and Encyclopaedias",
+          "authors": [
+            "De Morgan",
+            "Bruneau\nDe Morgan’s",
+            "Sally Shuttleworth"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 144,
+          "citation_pages": "83-106",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Augustus De Morgan: Meta-Scientific Rebel",
+          "authors": [
+            "Augustus De Morgan",
+            "William  Whewell",
+            "Augustus De",
+            "Baconianism",
+            "De Morgan"
+          ],
+          "pdf_start_index": 145,
+          "pdf_end_index": 190,
+          "citation_pages": "107-152",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. De Morgan and Mathematics Education",
+          "authors": [
+            "De Morgan",
+            "Christopher Stray",
+            "Augustus De"
+          ],
+          "pdf_start_index": 191,
+          "pdf_end_index": 212,
+          "citation_pages": "153-174",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. De Morgan’s A Budget of Paradoxes",
+          "authors": [
+            "De Morgan’s A Budget of Paradoxes\n Adrian Rice\nGreat",
+            "Augustus De Morgan",
+            "Augustus De Morgan’s"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 234,
+          "citation_pages": "175-196",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. Augustus De Morgan and the Bloomsbury Milieu",
+          "authors": [
+            "Augustus De Morgan",
+            "Rosemary Ashton\n",
+            "Sophia Elizabeth De"
+          ],
+          "pdf_start_index": 235,
+          "pdf_end_index": 258,
+          "citation_pages": "197-220",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9. De Morgan’s Family: Sophia and the Children",
+          "authors": [
+            "De Morgan’s Family",
+            "Joan L. Richards",
+            "De Morgan",
+            "Augustus De Morgan",
+            "William  Frend"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 286,
+          "citation_pages": "221-248",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10. Augustus De Morgan’s Library Revisited: Its Context and Its Afterlife",
+          "authors": [
+            "Augustus De Morgan’s",
+            "Context",
+            "De Morgan"
+          ],
+          "pdf_start_index": 287,
+          "pdf_end_index": 316,
+          "citation_pages": "249-278",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "11. Augustus De Morgan: The Archival Record",
+          "authors": [
+            "Augustus De Morgan",
+            "Alexander Lock",
+            "Katy Makin",
+            "Jane Maxwell",
+            "Diana Smith",
+            "Augustus De",
+            "De Morgan",
+            "Augustus De Morgan’s"
+          ],
+          "pdf_start_index": 317,
+          "pdf_end_index": 342,
+          "citation_pages": "279-304",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "12. Bibliography of the Works of Augustus De Morgan",
+          "authors": [
+            "Augustus De Morgan\n William Hale",
+            "De Morgan’s",
+            "Sophia De Morgan’s",
+            "Clarendon Press"
+          ],
+          "pdf_start_index": 343,
+          "pdf_end_index": 367,
+          "citation_pages": "305-329",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 6.759326328999975,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:44:31.367719+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 76.6469834070001,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:04:49.859463+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "De Morgan and Logic",
+          "authors": [
+            "De Morgan",
+            "Logic\n Anna-Sophie Heinemann\nLogic",
+            "Augustus De",
+            "Augustus De Morgan’s"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 94,
+          "citation_pages": "31-56",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Augustus De Morgan, Astronomy and Almanacs",
+          "authors": [
+            "Augustus De Morgan",
+            "Daniel Belteki\n Astronomy",
+            "Augustus De",
+            "Augustus De Morgan’s"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 120,
+          "citation_pages": "57-82",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "De Morgan, Periodicals and Encyclopaedias",
+          "authors": [
+            "De Morgan",
+            "Bruneau\nDe Morgan’s",
+            "Sally Shuttleworth"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 144,
+          "citation_pages": "83-106",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Augustus De Morgan: Meta-Scientific Rebel",
+          "authors": [
+            "Augustus De Morgan",
+            "William  Whewell",
+            "Augustus De",
+            "Baconianism",
+            "De Morgan"
+          ],
+          "pdf_start_index": 145,
+          "pdf_end_index": 190,
+          "citation_pages": "107-152",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "De Morgan and Mathematics",
+          "authors": [
+            "De Morgan",
+            "Christopher Stray",
+            "Augustus De"
+          ],
+          "pdf_start_index": 191,
+          "pdf_end_index": 212,
+          "citation_pages": "3-174",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "De Morgan’s A Budget of Paradoxes",
+          "authors": [
+            "De Morgan’s A Budget of Paradoxes\n Adrian Rice\nGreat",
+            "Augustus De Morgan",
+            "Augustus De Morgan’s"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 234,
+          "citation_pages": "175-196",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Augustus De Morgan and the Bloomsbury Milieu",
+          "authors": [
+            "Augustus De Morgan",
+            "Rosemary Ashton\n",
+            "Sophia Elizabeth De"
+          ],
+          "pdf_start_index": 235,
+          "pdf_end_index": 258,
+          "citation_pages": "197-220",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "De Morgan’s Family: Sophia and the Children",
+          "authors": [
+            "De Morgan’s Family",
+            "Joan L. Richards",
+            "De Morgan",
+            "Augustus De Morgan",
+            "William  Frend"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 286,
+          "citation_pages": "221-248",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Augustus De Morgan’s Library Revisited: Its Context and Its Afterlife",
+          "authors": [
+            "Augustus De Morgan’s",
+            "Context",
+            "De Morgan"
+          ],
+          "pdf_start_index": 287,
+          "pdf_end_index": 316,
+          "citation_pages": "249-278",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Augustus De Morgan: The Archival Record",
+          "authors": [
+            "Augustus De Morgan",
+            "Alexander Lock",
+            "Katy Makin",
+            "Jane Maxwell",
+            "Diana Smith",
+            "Augustus De",
+            "De Morgan",
+            "Augustus De Morgan’s"
+          ],
+          "pdf_start_index": 317,
+          "pdf_end_index": 342,
+          "citation_pages": "279-304",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bibliography of the Works of Augustus De Morgan",
+          "authors": [
+            "Augustus De Morgan\n William Hale",
+            "De Morgan’s",
+            "Sophia De Morgan’s",
+            "Clarendon Press"
+          ],
+          "pdf_start_index": 343,
+          "pdf_end_index": 367,
+          "citation_pages": "305-329",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 15.186664987999848,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:16:40.326074+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 0.1868249780000042,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:11.556359+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.2569935550000082,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:22.409492+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:41:36.045573+00:00"
+  "generated_at": "2026-08-15T04:23:22.409492+00:00"
 }

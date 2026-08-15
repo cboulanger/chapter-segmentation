@@ -149,7 +149,617 @@
       ],
       "elapsed_seconds": 15.066775807999875,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Nachdenken über Verfassung in den Bielefelder Jahren",
+          "authors": [
+            "Bielefelder Jahren",
+            "Auflösung der",
+            "Dich",
+            "Vielleicht Vater",
+            "Verkaufen ab Weihnachten\".23 Sprechen",
+            "Oma Plötzlich",
+            "Erschrecken Baum „Vielleicht",
+            "Sohn",
+            "zum Arzt",
+            "Verkaufen",
+            "Weihnachten Beispiel"
+          ],
+          "pdf_start_index": 23,
+          "pdf_end_index": 31,
+          "citation_pages": "13-34",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verfassung gestern: Verfassungsentwicklung des 19. Jahrhunderts",
+          "authors": [
+            "Verfassung gestern",
+            "Michael Stolleis",
+            "Trias von „gestern",
+            "Katze",
+            "Blume",
+            "Schreiben",
+            "Weihnachten Selbst",
+            "Wald­",
+            "Weihnachten kein",
+            "steigen neu"
+          ],
+          "pdf_start_index": 33,
+          "pdf_end_index": 42,
+          "citation_pages": "35-44",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verfassung gestern: Rebell in Robe?",
+          "authors": [
+            "Verfassung gestern",
+            "Rebell",
+            "Vermittlung\nKüche Arbeit",
+            "Vielleicht",
+            "Rad Weihnachten",
+            "Geschichte Schiff Herz da Weihnachten­\nZimmer"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 59,
+          "citation_pages": "45-62",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Phänomen Verfassung: Zehn Annäherungen",
+          "authors": [
+            "I. Vergangenheit",
+            "Dein Thema",
+            "Podiums",
+            "kann",
+            "Zeitung­\nlesen Weihnachten",
+            "Dorf",
+            "Natürlich",
+            "Eigentlich Geburtstag",
+            "Weihnachten Erschrecken schaffen­",
+            "Fallen Holen",
+            "Erschr"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 77,
+          "citation_pages": "63-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Konstitutionalismus am Scheideweg. Zur Gegenwartslage der Verfassung",
+          "authors": [
+            "Konstitutionalismus am Scheideweg",
+            "Zur Gegenwartslage",
+            "Verfassung *",
+            "Hans Vorländer",
+            "Sorge",
+            "Verfassungsstaat",
+            "Transnationalismus",
+            "Nationalpopulismus",
+            "Geschichte Vogel",
+            "nie verlieren­",
+            "Gesicht Fliegen",
+            "Rad Lesen",
+            "Jahr Verstecken",
+            "Weihnachten Schwester"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 104,
+          "citation_pages": "81-106",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft der Verfassung",
+          "authors": [
+            "Verfassung\n\nRainer",
+            "I. Einleitung",
+            "Darauf",
+            "Zahl­\nWeihnachten",
+            "Den Weihnachten Blume",
+            "Wort",
+            "Rad",
+            "Natürlich von",
+            "Fenster",
+            "Ruf"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 126,
+          "citation_pages": "107-128",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft der europäischen Verfassung. Fragen und Einwände zu Dieter Grimms Sicht auf Legitimation und Finalität der Europäischen Union",
+          "authors": [
+            "Die Zukunft",
+            "Minutenmir",
+            "Erschrecken",
+            "Rad",
+            "Liegen"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 146,
+          "citation_pages": "129-148",
+          "confidence": 0.99,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 3.1927411109999753,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:42:16.986321+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Nachdenken über Verfassung in den Bielefelder Jahren",
+          "authors": [
+            "Bielefelder Jahren",
+            "Auflösung der",
+            "Dich",
+            "Vielleicht Vater",
+            "Verkaufen ab Weihnachten\".23 Sprechen",
+            "Oma Plötzlich",
+            "Erschrecken Baum „Vielleicht",
+            "Sohn",
+            "zum Arzt",
+            "Verkaufen",
+            "Weihnachten Beispiel"
+          ],
+          "pdf_start_index": 23,
+          "pdf_end_index": 31,
+          "citation_pages": "13-34",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verfassung gestern: Verfassungsentwicklung des 19. Jahrhunderts",
+          "authors": [
+            "Verfassung gestern",
+            "Michael Stolleis",
+            "Trias von „gestern",
+            "Katze",
+            "Blume",
+            "Schreiben",
+            "Weihnachten Selbst",
+            "Wald­",
+            "Weihnachten kein",
+            "steigen neu"
+          ],
+          "pdf_start_index": 33,
+          "pdf_end_index": 42,
+          "citation_pages": "35-44",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verfassung gestern: Rebell in Robe?",
+          "authors": [
+            "Verfassung gestern",
+            "Rebell",
+            "Vermittlung\nKüche Arbeit",
+            "Vielleicht",
+            "Rad Weihnachten",
+            "Geschichte Schiff Herz da Weihnachten­\nZimmer"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 59,
+          "citation_pages": "45-62",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Phänomen Verfassung: Zehn Annäherungen",
+          "authors": [
+            "I. Vergangenheit",
+            "Dein Thema",
+            "Podiums",
+            "kann",
+            "Zeitung­\nlesen Weihnachten",
+            "Dorf",
+            "Natürlich",
+            "Eigentlich Geburtstag",
+            "Weihnachten Erschrecken schaffen­",
+            "Fallen Holen",
+            "Erschr"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 77,
+          "citation_pages": "63-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Konstitutionalismus am Scheideweg. Zur Gegenwartslage der Verfassung",
+          "authors": [
+            "Konstitutionalismus am Scheideweg",
+            "Zur Gegenwartslage",
+            "Verfassung *",
+            "Hans Vorländer",
+            "Sorge",
+            "Verfassungsstaat",
+            "Transnationalismus",
+            "Nationalpopulismus",
+            "Geschichte Vogel",
+            "nie verlieren­",
+            "Gesicht Fliegen",
+            "Rad Lesen",
+            "Jahr Verstecken",
+            "Weihnachten Schwester"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 104,
+          "citation_pages": "81-106",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft der Verfassung",
+          "authors": [
+            "Verfassung\n\nRainer",
+            "I. Einleitung",
+            "Darauf",
+            "Zahl­\nWeihnachten",
+            "Den Weihnachten Blume",
+            "Wort",
+            "Rad",
+            "Natürlich von",
+            "Fenster",
+            "Ruf"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 126,
+          "citation_pages": "107-128",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft der europäischen Verfassung. Fragen und Einwände zu Dieter Grimms Sicht auf Legitimation und Finalität der Europäischen Union",
+          "authors": [
+            "Die Zukunft",
+            "Minutenmir",
+            "Erschrecken",
+            "Rad",
+            "Liegen"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 146,
+          "citation_pages": "129-148",
+          "confidence": 0.99,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 59.80119837500001,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:59:47.959691+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Nachdenken über Verfassung in den Bielefelder Jahren",
+          "authors": [
+            "Bielefelder Jahren",
+            "Auflösung der",
+            "Dich",
+            "Vielleicht Vater",
+            "Verkaufen ab Weihnachten\".23 Sprechen",
+            "Oma Plötzlich",
+            "Erschrecken Baum „Vielleicht",
+            "Sohn",
+            "zum Arzt",
+            "Verkaufen",
+            "Weihnachten Beispiel"
+          ],
+          "pdf_start_index": 23,
+          "pdf_end_index": 31,
+          "citation_pages": "13-34",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verfassung gestern: Verfassungsentwicklung des 19. Jahrhunderts",
+          "authors": [
+            "Verfassung gestern",
+            "Michael Stolleis",
+            "Trias von „gestern",
+            "Katze",
+            "Blume",
+            "Schreiben",
+            "Weihnachten Selbst",
+            "Wald­",
+            "Weihnachten kein",
+            "steigen neu"
+          ],
+          "pdf_start_index": 33,
+          "pdf_end_index": 42,
+          "citation_pages": "35-44",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verfassung gestern: Rebell in Robe?",
+          "authors": [
+            "Verfassung gestern",
+            "Rebell",
+            "Vermittlung\nKüche Arbeit",
+            "Vielleicht",
+            "Rad Weihnachten",
+            "Geschichte Schiff Herz da Weihnachten­\nZimmer"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 59,
+          "citation_pages": "45-62",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Phänomen Verfassung: Zehn Annäherungen",
+          "authors": [
+            "I. Vergangenheit",
+            "Dein Thema",
+            "Podiums",
+            "kann",
+            "Zeitung­\nlesen Weihnachten",
+            "Dorf",
+            "Natürlich",
+            "Eigentlich Geburtstag",
+            "Weihnachten Erschrecken schaffen­",
+            "Fallen Holen",
+            "Erschr"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 77,
+          "citation_pages": "63-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Konstitutionalismus am Scheideweg. Zur Gegenwartslage der Verfassung",
+          "authors": [
+            "Konstitutionalismus am Scheideweg",
+            "Zur Gegenwartslage",
+            "Verfassung *",
+            "Hans Vorländer",
+            "Sorge",
+            "Verfassungsstaat",
+            "Transnationalismus",
+            "Nationalpopulismus",
+            "Geschichte Vogel",
+            "nie verlieren­",
+            "Gesicht Fliegen",
+            "Rad Lesen",
+            "Jahr Verstecken",
+            "Weihnachten Schwester"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 104,
+          "citation_pages": "81-106",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft der Verfassung",
+          "authors": [
+            "Verfassung\n\nRainer",
+            "I. Einleitung",
+            "Darauf",
+            "Zahl­\nWeihnachten",
+            "Den Weihnachten Blume",
+            "Wort",
+            "Rad",
+            "Natürlich von",
+            "Fenster",
+            "Ruf"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 126,
+          "citation_pages": "107-128",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft der europäischen Verfassung. Fragen und Einwände zu Dieter Grimms Sicht auf Legitimation und Finalität der Europäischen Union",
+          "authors": [
+            "Die Zukunft",
+            "Minutenmir",
+            "Erschrecken",
+            "Rad",
+            "Liegen"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 146,
+          "citation_pages": "129-148",
+          "confidence": 0.99,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 11.659909255999764,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:14:03.907562+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Nachdenken über Verfassung in den Bielefelder Jahren",
+          "authors": [
+            "Bielefelder Jahren",
+            "Auflösung der",
+            "Dich",
+            "Vielleicht Vater",
+            "Verkaufen ab Weihnachten\".23 Sprechen",
+            "Oma Plötzlich",
+            "Erschrecken Baum „Vielleicht",
+            "Sohn",
+            "zum Arzt",
+            "Verkaufen",
+            "Weihnachten Beispiel"
+          ],
+          "pdf_start_index": 23,
+          "pdf_end_index": 31,
+          "citation_pages": "13-34",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verfassung gestern: Verfassungsentwicklung des 19. Jahrhunderts",
+          "authors": [
+            "Verfassung gestern",
+            "Michael Stolleis",
+            "Trias von „gestern",
+            "Katze",
+            "Blume",
+            "Schreiben",
+            "Weihnachten Selbst",
+            "Wald­",
+            "Weihnachten kein",
+            "steigen neu"
+          ],
+          "pdf_start_index": 33,
+          "pdf_end_index": 42,
+          "citation_pages": "35-44",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verfassung gestern: Rebell in Robe?",
+          "authors": [
+            "Verfassung gestern",
+            "Rebell",
+            "Vermittlung\nKüche Arbeit",
+            "Vielleicht",
+            "Rad Weihnachten",
+            "Geschichte Schiff Herz da Weihnachten­\nZimmer"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 59,
+          "citation_pages": "45-62",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Phänomen Verfassung: Zehn Annäherungen",
+          "authors": [
+            "I. Vergangenheit",
+            "Dein Thema",
+            "Podiums",
+            "kann",
+            "Zeitung­\nlesen Weihnachten",
+            "Dorf",
+            "Natürlich",
+            "Eigentlich Geburtstag",
+            "Weihnachten Erschrecken schaffen­",
+            "Fallen Holen",
+            "Erschr"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 77,
+          "citation_pages": "63-80",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Konstitutionalismus am Scheideweg. Zur Gegenwartslage der Verfassung",
+          "authors": [
+            "Konstitutionalismus am Scheideweg",
+            "Zur Gegenwartslage",
+            "Verfassung *",
+            "Hans Vorländer",
+            "Sorge",
+            "Verfassungsstaat",
+            "Transnationalismus",
+            "Nationalpopulismus",
+            "Geschichte Vogel",
+            "nie verlieren­",
+            "Gesicht Fliegen",
+            "Rad Lesen",
+            "Jahr Verstecken",
+            "Weihnachten Schwester"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 104,
+          "citation_pages": "81-106",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft der Verfassung",
+          "authors": [
+            "Verfassung\n\nRainer",
+            "I. Einleitung",
+            "Darauf",
+            "Zahl­\nWeihnachten",
+            "Den Weihnachten Blume",
+            "Wort",
+            "Rad",
+            "Natürlich von",
+            "Fenster",
+            "Ruf"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 126,
+          "citation_pages": "107-128",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zukunft der europäischen Verfassung. Fragen und Einwände zu Dieter Grimms Sicht auf Legitimation und Finalität der Europäischen Union",
+          "authors": [
+            "Die Zukunft",
+            "Minutenmir",
+            "Erschrecken",
+            "Rad",
+            "Liegen"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 146,
+          "citation_pages": "129-148",
+          "confidence": 0.99,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 7.228583351999987,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:21:53.363412+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.23592922800025917,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:21.566868+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:11:50.360029+00:00"
+  "generated_at": "2026-08-15T04:23:21.566868+00:00"
 }

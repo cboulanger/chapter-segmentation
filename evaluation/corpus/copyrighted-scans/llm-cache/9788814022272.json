@@ -267,7 +267,304 @@
       ],
       "elapsed_seconds": 100.21432176999997,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Sociology of Law in Norway",
+          "authors": [],
+          "pdf_start_index": 654,
+          "pdf_end_index": 655,
+          "citation_pages": "605-606",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [
+            "Thomas Mathiesen                              "
+          ],
+          "pdf_start_index": 656,
+          "pdf_end_index": 688,
+          "citation_pages": "xv-639",
+          "confidence": 0.95,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Finland",
+          "authors": [],
+          "pdf_start_index": 689,
+          "pdf_end_index": 734,
+          "citation_pages": "239-686",
+          "confidence": 0.63,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Development of Sociology of Law in the Socialist Republic of Romania",
+          "authors": [],
+          "pdf_start_index": 736,
+          "pdf_end_index": 768,
+          "citation_pages": "687-570",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in New Zealand",
+          "authors": [
+            "Diaz E.",
+            "Sociologta del Derecho",
+            "Race A."
+          ],
+          "pdf_start_index": 769,
+          "pdf_end_index": 802,
+          "citation_pages": "571-744",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Sweden",
+          "authors": [],
+          "pdf_start_index": 803,
+          "pdf_end_index": 852,
+          "citation_pages": "745-804",
+          "confidence": 0.74,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The State of American Sociology of Law",
+          "authors": [
+            "JOYCE S. STERLING"
+          ],
+          "pdf_start_index": 854,
+          "pdf_end_index": 926,
+          "citation_pages": "805-872",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Yugoslavia",
+          "authors": [],
+          "pdf_start_index": 927,
+          "pdf_end_index": 931,
+          "citation_pages": "873-882",
+          "confidence": 0.83,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 44.75744016600001,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:43:02.803756+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 110.15258956800017,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:01:10.326078+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Sociology of Law in Norway",
+          "authors": [],
+          "pdf_start_index": 654,
+          "pdf_end_index": 655,
+          "citation_pages": "605-606",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [
+            "Thomas Mathiesen                              "
+          ],
+          "pdf_start_index": 656,
+          "pdf_end_index": 688,
+          "citation_pages": "xv-639",
+          "confidence": 0.95,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Finland",
+          "authors": [],
+          "pdf_start_index": 689,
+          "pdf_end_index": 734,
+          "citation_pages": "239-686",
+          "confidence": 0.63,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Development of Sociology of Law in the Socialist Republic of Romania",
+          "authors": [],
+          "pdf_start_index": 736,
+          "pdf_end_index": 768,
+          "citation_pages": "687-570",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in New Zealand",
+          "authors": [
+            "Diaz E.",
+            "Sociologta del Derecho",
+            "Race A."
+          ],
+          "pdf_start_index": 769,
+          "pdf_end_index": 802,
+          "citation_pages": "571-744",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Sweden",
+          "authors": [],
+          "pdf_start_index": 803,
+          "pdf_end_index": 852,
+          "citation_pages": "745-804",
+          "confidence": 0.74,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The State of American Sociology of Law",
+          "authors": [
+            "JOYCE S. STERLING"
+          ],
+          "pdf_start_index": 854,
+          "pdf_end_index": 926,
+          "citation_pages": "805-872",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Yugoslavia",
+          "authors": [],
+          "pdf_start_index": 927,
+          "pdf_end_index": 931,
+          "citation_pages": "873-882",
+          "confidence": 0.83,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 88.41416993500025,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:15:32.332290+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Sociology of Law in Norway",
+          "authors": [],
+          "pdf_start_index": 654,
+          "pdf_end_index": 655,
+          "citation_pages": "605-606",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [
+            "Thomas Mathiesen                              "
+          ],
+          "pdf_start_index": 656,
+          "pdf_end_index": 688,
+          "citation_pages": "xv-639",
+          "confidence": 0.95,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Finland",
+          "authors": [],
+          "pdf_start_index": 689,
+          "pdf_end_index": 734,
+          "citation_pages": "239-686",
+          "confidence": 0.63,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Development of Sociology of Law in the Socialist Republic of Romania",
+          "authors": [],
+          "pdf_start_index": 736,
+          "pdf_end_index": 768,
+          "citation_pages": "687-570",
+          "confidence": 0.86,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in New Zealand",
+          "authors": [
+            "Diaz E.",
+            "Sociologta del Derecho",
+            "Race A."
+          ],
+          "pdf_start_index": 769,
+          "pdf_end_index": 802,
+          "citation_pages": "571-744",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Sweden",
+          "authors": [],
+          "pdf_start_index": 803,
+          "pdf_end_index": 852,
+          "citation_pages": "745-804",
+          "confidence": 0.74,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The State of American Sociology of Law",
+          "authors": [
+            "JOYCE S. STERLING"
+          ],
+          "pdf_start_index": 854,
+          "pdf_end_index": 926,
+          "citation_pages": "805-872",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sociology of Law in Yugoslavia",
+          "authors": [],
+          "pdf_start_index": 927,
+          "pdf_end_index": 931,
+          "citation_pages": "873-882",
+          "confidence": 0.83,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 65.12704400500024,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:22:52.319541+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.23824725000031322,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:21.603953+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:14:26.299539+00:00"
+  "generated_at": "2026-08-15T04:23:21.603953+00:00"
 }

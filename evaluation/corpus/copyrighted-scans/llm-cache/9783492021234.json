@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T04:58:28.641318+00:00",
+  "generated_at": "2026-08-15T03:41:15.760915+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -1540,6 +1540,221 @@
       ],
       "elapsed_seconds": 176.88694787491113,
       "demand_at_run": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Die Beobachtung",
+          "authors": [
+            "Gerichtssaal",
+            "Von Karl F. Schumann",
+            "von der",
+            "Verhandlungen",
+            "Zivilprozeß",
+            "Geburtstag Papa",
+            "Fuß Erschrecken",
+            "kann Geschichte",
+            "Hand Stellen",
+            "Fröhlich"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 97,
+          "citation_pages": "23-96",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Interview",
+          "authors": [
+            "das Interview",
+            "Formen",
+            "praktischen Sozial­\nforschung",
+            "Daran Erschrecken",
+            "Geburtstag Minutenmir",
+            "Minutenmir",
+            "los Weihnachten Geburtstag",
+            "Schenken­\nRad"
+          ],
+          "pdf_start_index": 99,
+          "pdf_end_index": 104,
+          "citation_pages": "97-102",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zur Einstellung der Unterschicht zum Rechtswesen",
+          "authors": [
+            "Zur Einstellung",
+            "zum Rechtswesen'\n",
+            "Von Theo Rasehorn",
+            "Jahren Umfragen",
+            "das Ausmaß der Kenntnis",
+            "jeweiligen\nErschrecken",
+            "Erschrecken",
+            "Arbeiten Weihnachten",
+            "Verstecken",
+            "klein Zeitung",
+            "Dann",
+            "Natürlich Weihnachten",
+            "Reich",
+            "Mann",
+            "Schwester"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 117,
+          "citation_pages": "103-115",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Bedingungen richterlicher Karriere",
+          "authors": [
+            "Die Bedingungen",
+            "Von Wolfgang Kaupen",
+            "Theo Rasehorn",
+            "Jahre 1965",
+            "Tisch Ball",
+            "Eigentlich",
+            "wissen am glauben",
+            "Fahren",
+            "Rad",
+            "Verlieren\nnatürlich hinein kaufen",
+            "Geschichte Musi"
+          ],
+          "pdf_start_index": 118,
+          "pdf_end_index": 135,
+          "citation_pages": "116-133",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Eine empirische Untersuchung über die Höhe des Strafmaßes",
+          "authors": [
+            "Von Karl-Dieter Opp",
+            "Kopf Tag­\nfressen",
+            "Tot Weinen",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 136,
+          "pdf_end_index": 147,
+          "citation_pages": "134-145",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Unabhängigkeit der Richter aus der Sicht der Richter",
+          "authors": [
+            "Sicht",
+            "Erschrecken",
+            "Geschichte Schiff",
+            "Tier Weihnachten",
+            "mal zum Öffnen"
+          ],
+          "pdf_start_index": 148,
+          "pdf_end_index": 174,
+          "citation_pages": "146-172",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Soziale Faktoren der Studienwahl - ein Vergleich von Soziologie- und Jurastudenten",
+          "authors": [
+            "Ein Vergleich von Soziologie-",
+            "Erschrecken",
+            "Eigentlich Weihnachten"
+          ],
+          "pdf_start_index": 175,
+          "pdf_end_index": 193,
+          "citation_pages": "173-192",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Aktenanalyse",
+          "authors": [
+            "geprägt von der",
+            "Organisationen",
+            "Sohn Haare",
+            "Rad dunkel Geburtstag",
+            "Überall Weihnachten Erschrecken­",
+            "das Weihnachten Junge"
+          ],
+          "pdf_start_index": 195,
+          "pdf_end_index": 200,
+          "citation_pages": "193-198",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Dokumente formeller Kontrolle - zur quantitativen Analyse von Jugendamtsakten",
+          "authors": [
+            "Analyse\nvon Jugendamtsakten1",
+            "von Vertretern",
+            "Regel",
+            "Geschichte Sonne Freude",
+            "Schwester",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 201,
+          "pdf_end_index": 236,
+          "citation_pages": "199-234",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Dauer der Zivilprozesse",
+          "authors": [
+            "Hellmut Morasch",
+            "Heimfrid Wolff\n\n\n\n\n\n\n\n\n\nBei",
+            "Verfahren",
+            "Rolle",
+            "das Motiv",
+            "Tier Turnen",
+            "Schwester",
+            "Dem Eltern",
+            "Fliegen Nase Brauchen",
+            "Dick",
+            "Herr Polizei"
+          ],
+          "pdf_start_index": 237,
+          "pdf_end_index": 270,
+          "citation_pages": "235-6",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Gewinnung von Theorien und ihre Überprüfung - zwei Methodologien?",
+          "authors": [
+            "Erhard Blankenburg",
+            "Methodologien",
+            "Kosten des Rechtsstaats",
+            "Gewinnen",
+            "Luft Verstecken",
+            "Dazu",
+            "Stück",
+            "Weihnachten Tag"
+          ],
+          "pdf_start_index": 271,
+          "pdf_end_index": 281,
+          "citation_pages": "7-279",
+          "confidence": 0.93,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 7.133179342999995,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:41:15.760915+00:00"
     }
   }
 }

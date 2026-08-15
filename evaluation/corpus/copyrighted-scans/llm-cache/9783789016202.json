@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T05:07:26.323251+00:00",
+  "generated_at": "2026-08-15T03:41:47.224690+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -1324,6 +1324,194 @@
       ],
       "elapsed_seconds": 146.95897149993107,
       "demand_at_run": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Rechtsproduktion der Juristen im Umweltrecht - Eine Profession stößt an ihre Grenzen",
+          "authors": [
+            "Joachim Nocke\nRechtsproduktion",
+            "Umweltrecht",
+            "Familie gab Geburtstag",
+            "Doch",
+            "Leise",
+            "Geschichte",
+            "bin Hören"
+          ],
+          "pdf_start_index": 78,
+          "pdf_end_index": 119,
+          "citation_pages": "81-122",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zwischen Rechtsbewußtsein und produziertem Recht - Plädoyer für eine gesetzgebungsorientierte Rechtssoziologie",
+          "authors": [
+            "Professionen",
+            "Zwischen             Rechtsbewußtsein",
+            "Recht -Plädoyer",
+            "Rechts­",
+            "das Unter",
+            "Minutenmir",
+            "Schwimmen dem"
+          ],
+          "pdf_start_index": 120,
+          "pdf_end_index": 137,
+          "citation_pages": "123-140",
+          "confidence": 0.91,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hoffnung auf - Furcht vor dem Recht Zur Semi-Professionalisierung des Lehrerberufs",
+          "authors": [
+            "Recht\nZur Semi-Professionalisierung des Lehrerberufs",
+            "Der Lehrer",
+            "Gefängnis",
+            "ein Geburtstag",
+            "Anfangen",
+            "Verstehen",
+            "Lehrerin Spiel",
+            "Wetter Weihnachten jung",
+            "Weihnachten Erschrecken Tür Glauben",
+            "Nimmt"
+          ],
+          "pdf_start_index": 138,
+          "pdf_end_index": 150,
+          "citation_pages": "141-154",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das moralische Niveau des Strafrechts",
+          "authors": [
+            "Gefühle",
+            "Hubert Rottleuthner",
+            "Urteils",
+            "Minutenmir Bauer",
+            "Arzt­\nErde los Erschrecken",
+            "Schwester",
+            "Sehen jung",
+            "Erschrecken",
+            "Tante"
+          ],
+          "pdf_start_index": 152,
+          "pdf_end_index": 168,
+          "citation_pages": "155-172",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Heinz-Dilemma - Ein Prüfungsgespräch",
+          "authors": [
+            "Monika Frommei\nHeinz-Dilemma\n",
+            "Rottleuthners Feststellung",
+            "Schwester",
+            "gab Verlieren",
+            "zur Antworten­",
+            "Minutenmir",
+            "Schuh Vater",
+            "Weihnachten",
+            "Erschrecken",
+            "Wirklich Papa",
+            "Schwester Land",
+            "Minutenmir Bruder"
+          ],
+          "pdf_start_index": 170,
+          "pdf_end_index": 173,
+          "citation_pages": "173-176",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die non-rationalen Elemente der strafrechtlichen Rationalisierung. Die Lehre Emile Dürkheims",
+          "authors": [
+            "Werner Gephart\nDie",
+            "Vorbemerkung\n\nDer",
+            "Rationalisierung",
+            "Tag Platz",
+            "Nun",
+            "Geschichte Schicken",
+            "Wollen bin",
+            "Tante Kind",
+            "bin Weihnachten",
+            "Wetter Hilfe",
+            "Geschichte",
+            "Papa"
+          ],
+          "pdf_start_index": 174,
+          "pdf_end_index": 191,
+          "citation_pages": "177-194",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Entschuldigungen und Rechtfertigungen im Alltag",
+          "authors": [
+            "Rechtsbewußtsein",
+            "Wolfgang Schild",
+            "Rechtfertigungen",
+            "Alltag",
+            "verlieren ging",
+            "Erschrecken",
+            "Schreien"
+          ],
+          "pdf_start_index": 192,
+          "pdf_end_index": 217,
+          "citation_pages": "195-220",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Weibliche Moral versus männliche Gerechtigkeitsmathematik? Zum geschlechtsspezifischen Rechtsbewußtsein",
+          "authors": [
+            "Gerechtigkeits­\nmathematik",
+            "Zum",
+            "Rechtsbewußtsein",
+            "Kategorie",
+            "los Weihnachten",
+            "zum Tür Schreiben Eis Versuchen",
+            "zur\n",
+            "Minutenmir",
+            "Rad"
+          ],
+          "pdf_start_index": 218,
+          "pdf_end_index": 235,
+          "citation_pages": "221-238",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtsvorstellungen von Bürgern in Eingaben an das Bundessozialgericht",
+          "authors": [
+            "Rechtsvorstellungen von Bürgern",
+            "kurz",
+            "langsam Geschichte- bin Weihnachten­",
+            "Fenster Natürlich",
+            "Erschrecken",
+            "Essen Schenken",
+            "ziehen ein",
+            "Rad Springen",
+            "Monate Rad"
+          ],
+          "pdf_start_index": 236,
+          "pdf_end_index": 242,
+          "citation_pages": "239-245",
+          "confidence": 0.99,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 5.218527608000002,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:41:47.224690+00:00"
     }
   }
 }

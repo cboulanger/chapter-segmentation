@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T05:11:35.289603+00:00",
+  "generated_at": "2026-08-15T03:42:33.893501+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -2675,6 +2675,387 @@
       ],
       "elapsed_seconds": 150.04764100001194,
       "demand_at_run": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Cooperation of Law and Politics: How Shared Meaning of Words is Established",
+          "authors": [
+            "Liesbeth Huppes-Cluysenaer",
+            "Minutenmir",
+            "Musik",
+            "Wald"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 104,
+          "citation_pages": "85-108",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Richter schließen nicht; sie urteilen. Ein philosophisches Plädoyer gegen die Logifizierung richterlicher Urteilsbildung",
+          "authors": [
+            "Plädoyer",
+            "Logifizierung",
+            "Urteilsbildung",
+            "Fortsetzung",
+            "Anliegens von",
+            "Rechnen",
+            "Milch",
+            "Wasser",
+            "Sicher",
+            "Verstehen",
+            "Musik Sechs",
+            "Fuß Weihnachten Weihnachten"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 128,
+          "citation_pages": "109-132",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtspositivismus als Demokratisierungsprogramm? Neue Paradigmen in der bundesdeutschen Staatsrechtslehre zwischen Politik und Recht",
+          "authors": [
+            "Rechtspositivismus als Demokratisierungsprogramm",
+            "zwischen Politik",
+            "Jahren",
+            "Hans Kelsen",
+            "kann ja tot",
+            "Erschrecken",
+            "Geschichte Weihnachten",
+            "Lehrerin Uhr",
+            "Geschichte"
+          ],
+          "pdf_start_index": 129,
+          "pdf_end_index": 150,
+          "citation_pages": "133-154",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rechtskritik als Unterscheidung – Die (neo-)marxistische Kritik der Rechtsform zwischen Utopie und Pragmatismus",
+          "authors": [
+            "Alexander Neupert-Doppler",
+            "von ein",
+            "Dein",
+            "Mensch",
+            "Sohn",
+            "Sechs Schüler",
+            "Leicht-",
+            "Opa"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 165,
+          "citation_pages": "155-172",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Nullifikationskrise: Ein Verfassungskonflikt im Vorfeld des amerikanischen Bürgerkriegs",
+          "authors": [
+            "Jörn Ketelhut",
+            "Weise verehrt1",
+            "Stück",
+            "Garten",
+            "Vielleicht",
+            "Darauf",
+            "Tisch Poliz"
+          ],
+          "pdf_start_index": 169,
+          "pdf_end_index": 191,
+          "citation_pages": "173-196",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sola Scriptura: Amerikanische Verfassungstreue und die Textimmanenz als politische Leitidee. Ein Konzeptualisierungsversuch",
+          "authors": [
+            "Sola Scriptura",
+            "Leitidee",
+            "Ein Konzeptualisierungsversuch",
+            "Jared Sonnicksen\n\n\n\n\n\n    ",
+            "L. Gesicht",
+            "Geschichte",
+            "Sprechen Weihnachten",
+            "Beispiel Weihnachten Ding",
+            "Schlagen Erde"
+          ],
+          "pdf_start_index": 193,
+          "pdf_end_index": 209,
+          "citation_pages": "197-214",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Politik der Werte in der Judikatur des Bundesverfassungsgerichts",
+          "authors": [
+            "Judikatur",
+            "Die Rechtsprechung",
+            "Traditionen",
+            "kein fiel",
+            "Geburtstag Erschrecken",
+            "Erschrecken",
+            "Versuchen ob zusammen",
+            "Baum",
+            "Bruder Fuß",
+            "Legen",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 211,
+          "pdf_end_index": 226,
+          "citation_pages": "215-230",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Lotse oder Boje? ›Interpretation‹ als Opportunitätsressource in der Rechtsprechung des Bundesverfassungsgerichts",
+          "authors": [
+            "Boje",
+            "›Interpretation‹",
+            "Rechtsprechung",
+            "Bundesverfassungsgericht",
+            "Weihnachten Schlafen",
+            "doch ob Gehören",
+            "Jahr Zeitung",
+            "Geschichte",
+            "Minutenmir Gefährlich"
+          ],
+          "pdf_start_index": 227,
+          "pdf_end_index": 240,
+          "citation_pages": "231-244",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ausgezählt? Die demokratischen Grenzen der Erfolgschancengleichheit in der Rechtsprechung des Bundesverfassungsgerichts",
+          "authors": [
+            "Rechtsprechung",
+            "Vielzahl von wahlrechtsbezogenen",
+            "Urteilen von\nGefährlich",
+            "Verlieren",
+            "Sache Weihnachten Erschrecken",
+            "Wetter",
+            "Letzte neu",
+            "Tür Weihnachten Stück Tag gab Gefährlich"
+          ],
+          "pdf_start_index": 241,
+          "pdf_end_index": 255,
+          "citation_pages": "245-260",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die gesetzgeberische Tätigkeit des US-Supreme Court als Rules und Standards an ausgewählten Beispielen – Rules und Standards als Indikatoren der politischen Ausrichtung des Gerichts?",
+          "authors": [
+            "Beispielen",
+            "Indikatoren",
+            "Ausrichtung des Gerichts",
+            "Sebastian Dregger",
+            "Eigentlich\n\nViel",
+            "Fahrrad Stadt",
+            "Verstecken",
+            "Erschrecken Glück",
+            "Wohl Freund Tür",
+            "Weihnachten Erschrecken"
+          ],
+          "pdf_start_index": 257,
+          "pdf_end_index": 275,
+          "citation_pages": "261-280",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die vierte Gesetzeslesung. Verfassungsgerichte des deutsch-österreichischen Modells als Vetospieler",
+          "authors": [
+            "Verfassungsgerichte\ndes deutsch",
+            "Vetospieler",
+            "Benjamin G. Engst",
+            "Kompetenz",
+            "Sind Verfassungsgerichte",
+            "Zur",
+            "weiter vergessen",
+            "Weihnachten Minutenmir",
+            "viel Berg"
+          ],
+          "pdf_start_index": 277,
+          "pdf_end_index": 297,
+          "citation_pages": "281-302",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zur Interpretationsoffenheit europäischer Grundrechte. Sondervoten und Abstimmungsverhalten im Europäischen Gerichtshof für Menschenrechte",
+          "authors": [
+            "Zur Interpretationsoffenheit",
+            "Grundrechte",
+            "Europäi-",
+            "Sebastian Wolf",
+            "Wirklich",
+            "jung  Weihnachten",
+            "Schlagen",
+            "Weihnachten Brot Luft",
+            "Weihnachten ihm Erschrecken"
+          ],
+          "pdf_start_index": 299,
+          "pdf_end_index": 317,
+          "citation_pages": "303-324",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der politische Kompromiß als Chance und Gefahr für die Rationalität der Gesetzgebung",
+          "authors": [
+            "Kompromiß",
+            "Gesetzgebung*",
+            "Jahr Gestern Hase",
+            "Leben Ließ",
+            "Schlimm",
+            "Trinken W"
+          ],
+          "pdf_start_index": 321,
+          "pdf_end_index": 371,
+          "citation_pages": "325-376",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Recht in einer Politik des Konflikts",
+          "authors": [
+            "Manon Westphal",
+            "Gehören",
+            "Verstecken Auge Weihnachten",
+            "Apfel Nennen Oma",
+            "Weihnachten vielleicht",
+            "Brauchen\nErschrecken",
+            "Mensch Schaffen Weihnachten"
+          ],
+          "pdf_start_index": 373,
+          "pdf_end_index": 390,
+          "citation_pages": "377-394",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zwischen Interpretation und Instrumentalisierung: Regulierung von Moscheebauvorhaben in Deutschland",
+          "authors": [
+            "gulierung von Moscheebauvorhaben",
+            "Rad Geschichte",
+            "ein Vergessen",
+            "Erschrecken",
+            "Geschichte",
+            "Junge Erschrecken",
+            "Musik",
+            "Dabei Tante"
+          ],
+          "pdf_start_index": 391,
+          "pdf_end_index": 409,
+          "citation_pages": "395-414",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Regionale Energiekonzepte durch informelle Planung? Eine Skizze",
+          "authors": [
+            "informelle Planung",
+            "Eine Skizze",
+            "Thomas Gawron",
+            "Gefolge",
+            "Energiebeschlüsse der Bundesregierung",
+            "zum verstehen laut",
+            "Zusammen-)Wirklich",
+            "Lehrerin\nich",
+            "Gegen",
+            "Geburtstag zum",
+            "Erschrecken Bein Apfel"
+          ],
+          "pdf_start_index": 411,
+          "pdf_end_index": 431,
+          "citation_pages": "415-436",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Terrorismusbekämpfung im Spannungsfeld von Politik und Recht",
+          "authors": [
+            "Spannungsfeld von Politik",
+            "Zwei Abhandlungen",
+            "Regierung",
+            "John Locke",
+            "Idee der Übertragung dem Einigen",
+            "Gab",
+            "Schnee Freude",
+            "Loch",
+            "bald gestern",
+            "Schule",
+            "Geschichte"
+          ],
+          "pdf_start_index": 433,
+          "pdf_end_index": 448,
+          "citation_pages": "437-452",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Steuer des Steuerstaates",
+          "authors": [
+            "Jahren",
+            "bizarr",
+            "Verkaufen",
+            "Erschrecken",
+            "Einige- zum Erschrecken",
+            "Eis Weihnachten Geschichte",
+            "von Weihnachten Weihnachten Haare"
+          ],
+          "pdf_start_index": 449,
+          "pdf_end_index": 468,
+          "citation_pages": "453-472",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vollzugsbenchmarking als Instrument besserer Rechtsetzung",
+          "authors": [
+            "Recht-\nsetzung1",
+            "Vollzug von rechtlichen",
+            "Antworten von Weihnachten",
+            "Eis Eigentlich",
+            "Natürlich",
+            "Gewinnen",
+            "Essen Eigentlich",
+            "gut laut",
+            "dein Weihnachten",
+            "Weihnachten Sch"
+          ],
+          "pdf_start_index": 469,
+          "pdf_end_index": 477,
+          "citation_pages": "473-481",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 21.309479377000002,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:42:33.893501+00:00"
     }
   }
 }

@@ -702,7 +702,2116 @@
       ],
       "elapsed_seconds": 154.02207291900004,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Das Bundesverfassungsgericht in der Perspektive der Rechtssoziologie",
+          "authors": [
+            "Rechtssoziologie 141",
+            "Schüler bin gab Wagen",
+            "schreiben",
+            "Nicht",
+            "Opa Arzt",
+            "Garten",
+            "Ein Neu von"
+          ],
+          "pdf_start_index": 144,
+          "pdf_end_index": 156,
+          "citation_pages": "137-152",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Wirkung des Bundesverfassungsgerichts",
+          "authors": [
+            "Beginn",
+            "Verstehen",
+            "Jahr",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 170,
+          "citation_pages": "153-168",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Streit um die Staatsgerichtsbarkeit in Weimar aus demokratietheoretischer Sicht. Triepel – Kelsen – Schmitt – Leibholz",
+          "authors": [
+            "Der Streit",
+            "Robert Chr",
+            "van Ooyen",
+            "Verfassungsgerichtsbarkeit",
+            "Opa Vier",
+            "Teller",
+            "Weihnachten Schluss",
+            "‚ Brot",
+            "Glauben",
+            "von Fisch",
+            "Buch Oma See",
+            "zu l"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 192,
+          "citation_pages": "169-190",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Parlamentarische Rat und das Bundesverfassungsgericht",
+          "authors": [
+            "Der Parlamentarische",
+            "Fuß Weihnachten",
+            "Weihnachten Lachen-",
+            "Nehmen Zug Scheinen Gesicht",
+            "Welt Weihnachten",
+            "Weihnachten ja Minutenmir",
+            "Vielleicht",
+            "Gewinnen Gewinnen"
+          ],
+          "pdf_start_index": 193,
+          "pdf_end_index": 204,
+          "citation_pages": "191-204",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wer beeinflusst hier wen? Die westdeutsche Staatsrechtslehre und das Bundesverfassungsgericht während der 1950er und 1960er Jahre",
+          "authors": [
+            "hier wen",
+            "Bundesverfassungsgericht",
+            "der 1950er",
+            "Natürlich",
+            "lassen dem",
+            "Boden Verlieren",
+            "spielen Natürlich und Erschrecken",
+            "Anfangen",
+            "Geschichte Weihnachten"
+          ],
+          "pdf_start_index": 205,
+          "pdf_end_index": 217,
+          "citation_pages": "205-218",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "„Smend oder Hennis“. Bedeutung, Rezeption und Problematik der ,Lüth-Entscheidung‘ des Bundesverfassungsgerichts von 1958",
+          "authors": [
+            "Bedeutung",
+            "Thomas Henne\n1 \nEs",
+            "Donnerhall",
+            "bin Vielleicht",
+            "Tür Erschrecken",
+            "Eis Weihnachten",
+            "Versuchen Erschrecken",
+            "Ließ Schnell",
+            "Arbeit Wald"
+          ],
+          "pdf_start_index": 218,
+          "pdf_end_index": 229,
+          "citation_pages": "219-230",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und die Regierung Adenauer – vom Streit um den Status zur Anerkennung der Autorität",
+          "authors": [
+            "Regierung Adenauer",
+            "Status",
+            "Anerkennung der Autorität\nOliver W. Lembcke\n1 „Karlsruhe",
+            "ein Dir „Geschichte Geburtstag",
+            "Schreiben",
+            "Überall Sommer Nämlich",
+            "Kommen",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 230,
+          "pdf_end_index": 242,
+          "citation_pages": "231-244",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und sozialliberale Koalition unter Willy Brandt. Der Streit um den Grundvertrag",
+          "authors": [
+            "Willy Brandt",
+            "Der Streit",
+            "Glauben",
+            "Minutenmir",
+            "Weihnachten Warten",
+            "Erschrecken Weihnachten",
+            "Weihnachten"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 257,
+          "citation_pages": "245-260",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Crisis! What Crisis? Der „Kruzifix-Beschluss“ und seine Folgen",
+          "authors": [
+            "Der „",
+            "Gary S. Schaal",
+            "1990er Jahre",
+            "Kreuzfeuer",
+            "Wieder Fußball",
+            "Müssen",
+            "Jahr Schwester",
+            "bin nämlich Spät-\n",
+            "Fuß Erschrecken",
+            "Fressen"
+          ],
+          "pdf_start_index": 258,
+          "pdf_end_index": 277,
+          "citation_pages": "261-280",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Konfliktlagen des Bundesverfassungsgerichts mit den Regierungen Schröder und Merkel, 1998–2013",
+          "authors": [
+            "Merkel",
+            "zum Wesen",
+            "Zwischen Fuß Uhr Fußball",
+            "gehören",
+            "Erschrecken Weihnachten Gewinnen",
+            "Weihnachten Dann",
+            "halten da",
+            "bin",
+            "Geld Zahl Spielen zu kein-"
+          ],
+          "pdf_start_index": 278,
+          "pdf_end_index": 307,
+          "citation_pages": "281-312",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Warum mögen die Deutschen ihr Verfassungsgericht so sehr?",
+          "authors": [
+            "Verfassungsgericht",
+            "Werner J. Patzelt",
+            "alle demoskopischen Befunde1",
+            "Doch",
+            "Folgenden",
+            "Glücklich",
+            "natürlich Weihnachten",
+            "zum Hase",
+            "Mit Weihnachten",
+            "Stark",
+            "kein leben"
+          ],
+          "pdf_start_index": 308,
+          "pdf_end_index": 328,
+          "citation_pages": "313-332",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Verfassungsbeschwerde",
+          "authors": [
+            "lisierung der Bürger",
+            "Fahrrad Weihnachten Weihnachten",
+            "Bett",
+            "Jahr Gewinnen",
+            "Minutenmir",
+            "Minutenmir Rad Führen",
+            "natürlich",
+            "Spielen fiel",
+            "Berg Geburtstag",
+            "Fuß Loch"
+          ],
+          "pdf_start_index": 329,
+          "pdf_end_index": 351,
+          "citation_pages": "333-348",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und Opposition",
+          "authors": [
+            "Nachweis",
+            "fällt hier",
+            "Schaffen ein",
+            "Verlieren",
+            "Alt Schicken",
+            "Weihnachten Spiel",
+            "Blume",
+            "Weihnachten Schnell"
+          ],
+          "pdf_start_index": 352,
+          "pdf_end_index": 360,
+          "citation_pages": "349-368",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Wahl der Bundesverfassungsrichter und ihre Folgen für die Legitimität der Verfassungsgerichtsbarkeit",
+          "authors": [
+            "Bundesverfassungsrichter",
+            "Legitimität \nder",
+            "gab zum",
+            "Erschrecken",
+            "Vielleicht Zug",
+            "Rennen Rad Schwester",
+            "Vielleicht",
+            "Erschrecken Opa Schlimm",
+            "Weihnach"
+          ],
+          "pdf_start_index": 361,
+          "pdf_end_index": 379,
+          "citation_pages": "369-388",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Fernsehen, Demokratie und Verfassungsgerichtsbarkeit",
+          "authors": [
+            "Demokratie",
+            "Verfassungsgerichtsbarkeit",
+            "Geschichte",
+            "Fernsehens",
+            "das Bundesverfassungsgericht",
+            "Stadt Schwester Berg",
+            "Langsam",
+            "Weihnachte"
+          ],
+          "pdf_start_index": 380,
+          "pdf_end_index": 393,
+          "citation_pages": "389-402",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Pressearbeit und Diskursmacht des Bundesverfassungsgerichts",
+          "authors": [
+            "Diskursmacht",
+            "Diskurse",
+            "zum einen",
+            "Erschrecken",
+            "Tier \nOma",
+            "Minutenmir Gefährlich",
+            "Geschichte",
+            "Sechs"
+          ],
+          "pdf_start_index": 394,
+          "pdf_end_index": 403,
+          "citation_pages": "403-412",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und die Frauen",
+          "authors": [
+            "Frauen *\n",
+            "Christine Hohmann-Dennhardt",
+            "Doch",
+            "Wetter Weihnachten",
+            "Verkaufen helfen",
+            "Spiel",
+            "Teller",
+            "Milch"
+          ],
+          "pdf_start_index": 404,
+          "pdf_end_index": 421,
+          "citation_pages": "413-430",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Interne Einflussfaktoren auf Entscheidungen des Bundesverfassungsgerichts",
+          "authors": [
+            "Entscheidungen",
+            "Erörterung aufsehenerregender",
+            "kein nie",
+            "Eigentlich bin Erschrecken"
+          ],
+          "pdf_start_index": 422,
+          "pdf_end_index": 432,
+          "citation_pages": "431-442",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Wissenschaftlichen Mitarbeiter des Bundesverfassungsgerichts",
+          "authors": [
+            "Sein Ansehen",
+            "Uns Antworten",
+            "Geschichte Holen",
+            "Erschrecken",
+            "Sprechen Brot Weinen",
+            "Dem Suchen"
+          ],
+          "pdf_start_index": 433,
+          "pdf_end_index": 447,
+          "citation_pages": "443-458",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kontingenz und Geheimnis. Die Veröffentlichung der Sondervoten beim Bundesverfassungsgericht",
+          "authors": [
+            "Kontingenz",
+            "Sondervoten",
+            "Bundesverfassungsgericht",
+            "Hans J. Lietzmann",
+            "verdeutlichen kennen",
+            "Weihnachten Schwester",
+            "Bild Erschrecken",
+            "Singen Familie",
+            "Ball",
+            "Erschrecken",
+            "Gefährlich Geld",
+            "Glauben"
+          ],
+          "pdf_start_index": 448,
+          "pdf_end_index": 464,
+          "citation_pages": "459-478",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ordnungsdenken in der Rechtsprechung des Bundesverfassungsgerichts. Wertordnung, Ordnungsmacht und Menschenbild des Grundgesetzes",
+          "authors": [
+            "Rechtsprechung",
+            "Bundesverfassungsgericht",
+            "Hinein",
+            "Baum",
+            "Weihnachten Stein",
+            "Lehrerin",
+            "Stunde Weihnachten"
+          ],
+          "pdf_start_index": 466,
+          "pdf_end_index": 482,
+          "citation_pages": "479-496",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Beitrag des Bundesverfassungsgerichts zur Demokratisierung der Bundesrepublik",
+          "authors": [
+            "Der Beitrag",
+            "Demokratie",
+            "Themen Verfassungsgerichtsbarkeit",
+            "Mensch",
+            "Lesen Bruder Schaffen",
+            "Schwester Frau",
+            "Leise Zahl",
+            "Erschrecken Tür",
+            "Zug Eigentlich",
+            "Müssen",
+            "Wohnen",
+            "zwischen Verlieren"
+          ],
+          "pdf_start_index": 483,
+          "pdf_end_index": 500,
+          "citation_pages": "497-510",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und Wahlrecht",
+          "authors": [
+            "Bundesverfassungsgericht",
+            "kein hinreichender Grund",
+            "Aus Vergessen bin Platz Uns",
+            "Erschrecken",
+            "Deshalb Schwester Stein Schreiben Tür 16",
+            "Legen",
+            "Geschichte",
+            "Familie kennen"
+          ],
+          "pdf_start_index": 501,
+          "pdf_end_index": 509,
+          "citation_pages": "511-524",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Parteiverbotsverfahren vor dem Bundesverfassungsgericht",
+          "authors": [
+            "Bundesverfassungsgericht",
+            "Robert Chr",
+            "van Ooyen",
+            "Demokratie",
+            "deren",
+            "sicherlich von Sollen Boden",
+            "Geschichte",
+            "Ja lassen mal",
+            "Erschrecken",
+            "Stück",
+            "Weihnachten schreiben",
+            "Treffen Essen"
+          ],
+          "pdf_start_index": 510,
+          "pdf_end_index": 535,
+          "citation_pages": "525-550",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Demonstrationsrecht des Bundesverfassungsgerichts in liberal-etatistischer Tradition zwischen Bürgerfreiheit und Staatsräson",
+          "authors": [
+            "Martin H. W. Möllers",
+            "Entwicklung",
+            "Gehen Schwimmen",
+            "Erschrecken",
+            "las Erschrecken",
+            "Eis Jeder",
+            "Richtig",
+            "wei"
+          ],
+          "pdf_start_index": 536,
+          "pdf_end_index": 571,
+          "citation_pages": "551-586",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Einfluss der Staatsrechtslehre auf die Rechtsprechung des Bundesverfassungsgerichts bei der Abwägung der Menschenwürde. Lauschangriff, Abhörurteil, Luftsicherheit, Sicherungsverwahrung",
+          "authors": [
+            "Abwägung der Menschenwürde\nLauschangriff",
+            "Martin H. An",
+            "Familie\n1 Vielleicht\n„Erschrecken als Plötzlich",
+            "Weihnachten Opa",
+            "Kind",
+            "Stein",
+            "Weihnachten Oma Weihnachten",
+            "brauchen von rufen ja dir helfen-\nWeihnachten „Verkaufen"
+          ],
+          "pdf_start_index": 572,
+          "pdf_end_index": 610,
+          "citation_pages": "587-626",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Grundsatzentscheidungen zum Datenschutz im Bereich der inneren Sicherheit. Rasterfahndung, Online-Durchsuchung, Kfz-Kennzeichenerfassung, Vorratsdatenspeicherung und Antiterrordatei in der Rechtsprechung des Bundesverfassungsgerichts",
+          "authors": [
+            "zum Datenschutz",
+            "Bereich",
+            "Sicherheit",
+            "Rasterfahndung",
+            "Kfz-Kennzeichenerfassung",
+            "Rechtsprechung",
+            "Platz Acht",
+            "Vergessen\nZug",
+            "Mädchen",
+            "zur „Dann Tür Weg Ab-",
+            "Tür Erschrecken"
+          ],
+          "pdf_start_index": 611,
+          "pdf_end_index": 647,
+          "citation_pages": "627-664",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht als außen- und sicherheitspolitischer Akteur. Etatistische Regierungsdomänen à la Hobbes/Locke und „kalte“ Verfassungsänderungen beim Aus- (und In)landseinsatz der Bundeswehr",
+          "authors": [
+            "la Hobbes/\nLocke",
+            "Lernen Den",
+            "Zug Leute\nAffe Stehen da ich",
+            "Vergessen Vielleicht Oma \n"
+          ],
+          "pdf_start_index": 648,
+          "pdf_end_index": 677,
+          "citation_pages": "665-692",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Rechtsprechung des Bundesverfassungsgerichts zum Bundesstaat",
+          "authors": [
+            "Besonderheit Gewinnen",
+            "Vielleicht",
+            "Weihnachten Erschrecken",
+            "Geschichte",
+            "Schlimm Rad gern-\n",
+            "dem Erschrecken"
+          ],
+          "pdf_start_index": 678,
+          "pdf_end_index": 695,
+          "citation_pages": "693-712",
+          "confidence": 0.84,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und der Sozialstaat",
+          "authors": [
+            "Sozialstaat\nFrank Pilz\nVon",
+            "Bundesverfassungsgericht",
+            "dem Gesetzgeber",
+            "Dafür Stein Erde Weihnachten",
+            "Weihnachten Minutenmir Erschrecken",
+            "Weihnachten",
+            "Rad Erschrecken",
+            "Erschrecken",
+            "Schluss Tür Flasche"
+          ],
+          "pdf_start_index": 696,
+          "pdf_end_index": 718,
+          "citation_pages": "713-734",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Rechtsprechung des Bundesverfassungsgerichts zum Umweltschutz",
+          "authors": [
+            "Grundrechtsschutz",
+            "Der",
+            "Umweltschutz",
+            "Lücken",
+            "Minutenmir Bauer-",
+            "Minutenmir Weihnachten",
+            "gibt Erschrecken",
+            "Mädchen",
+            "Ding",
+            "zur Weihnachten"
+          ],
+          "pdf_start_index": 719,
+          "pdf_end_index": 742,
+          "citation_pages": "735-758",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und das Religionsverfassungsrecht",
+          "authors": [
+            "das Religionsverfassungsrecht 761",
+            "Fundament stellt",
+            "Glücklich Sonne",
+            "Scheinen",
+            "Erschrecken Weihnachten",
+            "Zug Weihnachten Geschichte",
+            "Weihnachten Schlafen"
+          ],
+          "pdf_start_index": 743,
+          "pdf_end_index": 803,
+          "citation_pages": "759-824",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht im europäischen und internationalen Umfeld",
+          "authors": [
+            "Bundesverfassungsgericht"
+          ],
+          "pdf_start_index": 804,
+          "pdf_end_index": 826,
+          "citation_pages": "825-844",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und Europäische Integration",
+          "authors": [
+            "Vorbehalte",
+            "zwar suspendierte",
+            "Tag Vielleicht-Selbst Bauer",
+            "nein",
+            "setzen Erschrecken",
+            "Erschrecken",
+            "Vielleicht",
+            "Weihnachten Zug-\nschlagen"
+          ],
+          "pdf_start_index": 827,
+          "pdf_end_index": 889,
+          "citation_pages": "845-910",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vergleichende Verfassungsgerichtsforschung: Konjunkturen verfassungsgerichtlicher Autorität am Beispiel Bundesverfassungsgericht und ungarisches Verfassungsgericht",
+          "authors": [
+            "Konjunkturen",
+            "Beispiel Bundesverfassungsgericht",
+            "Verfassungsgericht\nChristian Boulanger\n",
+            "Brot Essen",
+            "Tisch",
+            "Drehen",
+            "Natürlich W"
+          ],
+          "pdf_start_index": 890,
+          "pdf_end_index": 905,
+          "citation_pages": "911-926",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Modell für neue Demokratien? Die Vorbildrolle des Bundesverfassungsgerichts",
+          "authors": [
+            "Demokratien",
+            "Klaus von Beyme\nEinleitung",
+            "Kontrast",
+            "zum amerikanischen",
+            "Weihnachten Erschrecken",
+            "Lieb Lernen",
+            "Ball",
+            "Weihnachten Weihnachten",
+            "An Bruder",
+            "vielleicht Wollen",
+            "Heißen Geschichte Weihna"
+          ],
+          "pdf_start_index": 906,
+          "pdf_end_index": 914,
+          "citation_pages": "927-935",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 42.31749871199999,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:41:58.090279+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 94.89636578799991,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:57:54.672504+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Das Bundesverfassungsgericht in der Perspektive der Rechtssoziologie",
+          "authors": [
+            "Rechtssoziologie 141",
+            "Schüler bin gab Wagen",
+            "schreiben",
+            "Nicht",
+            "Opa Arzt",
+            "Garten",
+            "Ein Neu von"
+          ],
+          "pdf_start_index": 144,
+          "pdf_end_index": 156,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die Wirkung des Bundesverfassungsgerichts",
+          "authors": [
+            "Beginn",
+            "Verstehen",
+            "Jahr",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 170,
+          "citation_pages": "155-168",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Streit um die Staatsgerichtsbarkeit in Weimar aus demokratietheoretischer Sicht. Triepel – Kelsen – Schmitt – Leibholz",
+          "authors": [
+            "Der Streit",
+            "Robert Chr",
+            "van Ooyen",
+            "Verfassungsgerichtsbarkeit",
+            "Opa Vier",
+            "Teller",
+            "Weihnachten Schluss",
+            "‚ Brot",
+            "Glauben",
+            "von Fisch",
+            "Buch Oma See",
+            "zu l"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 192,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Der Parlamentarische Rat und das Bundesverfassungsgericht",
+          "authors": [
+            "Der Parlamentarische",
+            "Fuß Weihnachten",
+            "Weihnachten Lachen-",
+            "Nehmen Zug Scheinen Gesicht",
+            "Welt Weihnachten",
+            "Weihnachten ja Minutenmir",
+            "Vielleicht",
+            "Gewinnen Gewinnen"
+          ],
+          "pdf_start_index": 193,
+          "pdf_end_index": 204,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Wer beeinflusst hier wen ? Die westdeutsche Staatsrechtslehre und das Bundesverfassungsgericht während der 1950er und 1960er Jahre",
+          "authors": [
+            "hier wen",
+            "Bundesverfassungsgericht",
+            "der 1950er",
+            "Natürlich",
+            "lassen dem",
+            "Boden Verlieren",
+            "spielen Natürlich und Erschrecken",
+            "Anfangen",
+            "Geschichte Weihnachten"
+          ],
+          "pdf_start_index": 205,
+          "pdf_end_index": 217,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "„Smend oder Hennis“. Bedeutung, Rezeption und Problematik der ,Lüth-Entscheidung‘ des Bundesverfassungsgerichts von 1958",
+          "authors": [
+            "Bedeutung",
+            "Thomas Henne\n1 \nEs",
+            "Donnerhall",
+            "bin Vielleicht",
+            "Tür Erschrecken",
+            "Eis Weihnachten",
+            "Versuchen Erschrecken",
+            "Ließ Schnell",
+            "Arbeit Wald"
+          ],
+          "pdf_start_index": 218,
+          "pdf_end_index": 229,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und die Regierung Adenauer – vom Streit um den Status zur Anerkennung der Autorität",
+          "authors": [
+            "Regierung Adenauer",
+            "Status",
+            "Anerkennung der Autorität\nOliver W. Lembcke\n1 „Karlsruhe",
+            "ein Dir „Geschichte Geburtstag",
+            "Schreiben",
+            "Überall Sommer Nämlich",
+            "Kommen",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 230,
+          "pdf_end_index": 242,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und sozialliberale Koalition unter Willy Brandt. Der Streit um den Grundvertrag",
+          "authors": [
+            "Willy Brandt",
+            "Der Streit",
+            "Glauben",
+            "Minutenmir",
+            "Weihnachten Warten",
+            "Erschrecken Weihnachten",
+            "Weihnachten"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 257,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Crisis ! What Crisis ? Der „Kruzifix-Beschluss“ und seine Folgen",
+          "authors": [
+            "Der „",
+            "Gary S. Schaal",
+            "1990er Jahre",
+            "Kreuzfeuer",
+            "Wieder Fußball",
+            "Müssen",
+            "Jahr Schwester",
+            "bin nämlich Spät-\n",
+            "Fuß Erschrecken",
+            "Fressen"
+          ],
+          "pdf_start_index": 258,
+          "pdf_end_index": 277,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Konfliktlagen des Bundesverfassungsgerichts mit den Regierungen Schröder und Merkel, 1998 – 2013",
+          "authors": [
+            "Merkel",
+            "zum Wesen",
+            "Zwischen Fuß Uhr Fußball",
+            "gehören",
+            "Erschrecken Weihnachten Gewinnen",
+            "Weihnachten Dann",
+            "halten da",
+            "bin",
+            "Geld Zahl Spielen zu kein-"
+          ],
+          "pdf_start_index": 278,
+          "pdf_end_index": 307,
+          "citation_pages": "281-312",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Warum mögen die Deutschen ihr Verfassungsgericht so sehr ?",
+          "authors": [
+            "Verfassungsgericht",
+            "Werner J. Patzelt",
+            "alle demoskopischen Befunde1",
+            "Doch",
+            "Folgenden",
+            "Glücklich",
+            "natürlich Weihnachten",
+            "zum Hase",
+            "Mit Weihnachten",
+            "Stark",
+            "kein leben"
+          ],
+          "pdf_start_index": 308,
+          "pdf_end_index": 328,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die Verfassungsbeschwerde",
+          "authors": [
+            "lisierung der Bürger",
+            "Fahrrad Weihnachten Weihnachten",
+            "Bett",
+            "Jahr Gewinnen",
+            "Minutenmir",
+            "Minutenmir Rad Führen",
+            "natürlich",
+            "Spielen fiel",
+            "Berg Geburtstag",
+            "Fuß Loch"
+          ],
+          "pdf_start_index": 329,
+          "pdf_end_index": 351,
+          "citation_pages": "335-358",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und Opposition",
+          "authors": [
+            "Nachweis",
+            "fällt hier",
+            "Schaffen ein",
+            "Verlieren",
+            "Alt Schicken",
+            "Weihnachten Spiel",
+            "Blume",
+            "Weihnachten Schnell"
+          ],
+          "pdf_start_index": 352,
+          "pdf_end_index": 360,
+          "citation_pages": "359-367",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Die Wahl der Bundesverfassungsrichter und ihre Folgen für die Legitimität der Verfassungsgerichtsbarkeit",
+          "authors": [
+            "Bundesverfassungsrichter",
+            "Legitimität \nder",
+            "gab zum",
+            "Erschrecken",
+            "Vielleicht Zug",
+            "Rennen Rad Schwester",
+            "Vielleicht",
+            "Erschrecken Opa Schlimm",
+            "Weihnach"
+          ],
+          "pdf_start_index": 361,
+          "pdf_end_index": 379,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Fernsehen, Demokratie und Verfassungsgerichtsbarkeit",
+          "authors": [
+            "Demokratie",
+            "Verfassungsgerichtsbarkeit",
+            "Geschichte",
+            "Fernsehens",
+            "das Bundesverfassungsgericht",
+            "Stadt Schwester Berg",
+            "Langsam",
+            "Weihnachte"
+          ],
+          "pdf_start_index": 380,
+          "pdf_end_index": 393,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Pressearbeit und Diskursmacht des Bundesverfassungsgerichts",
+          "authors": [
+            "Diskursmacht",
+            "Diskurse",
+            "zum einen",
+            "Erschrecken",
+            "Tier \nOma",
+            "Minutenmir Gefährlich",
+            "Geschichte",
+            "Sechs"
+          ],
+          "pdf_start_index": 394,
+          "pdf_end_index": 403,
+          "citation_pages": "403-412",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und die Frauen",
+          "authors": [
+            "Frauen *\n",
+            "Christine Hohmann-Dennhardt",
+            "Doch",
+            "Wetter Weihnachten",
+            "Verkaufen helfen",
+            "Spiel",
+            "Teller",
+            "Milch"
+          ],
+          "pdf_start_index": 404,
+          "pdf_end_index": 421,
+          "citation_pages": "413-430",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Interne Einflussfaktoren auf Entscheidungen des Bundesverfassungsgerichts",
+          "authors": [
+            "Entscheidungen",
+            "Erörterung aufsehenerregender",
+            "kein nie",
+            "Eigentlich bin Erschrecken"
+          ],
+          "pdf_start_index": 422,
+          "pdf_end_index": 432,
+          "citation_pages": "431-441",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Wissenschaftlichen Mitarbeiter des Bundesverfassungsgerichts",
+          "authors": [
+            "Sein Ansehen",
+            "Uns Antworten",
+            "Geschichte Holen",
+            "Erschrecken",
+            "Sprechen Brot Weinen",
+            "Dem Suchen"
+          ],
+          "pdf_start_index": 433,
+          "pdf_end_index": 447,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Kontingenz und Geheimnis. Die Veröffentlichung der Sondervoten beim Bundesverfassungsgericht",
+          "authors": [
+            "Kontingenz",
+            "Sondervoten",
+            "Bundesverfassungsgericht",
+            "Hans J. Lietzmann",
+            "verdeutlichen kennen",
+            "Weihnachten Schwester",
+            "Bild Erschrecken",
+            "Singen Familie",
+            "Ball",
+            "Erschrecken",
+            "Gefährlich Geld",
+            "Glauben"
+          ],
+          "pdf_start_index": 448,
+          "pdf_end_index": 464,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Ordnungsdenken in der Rechtsprechung des Bundesverfassungsgerichts. Wertordnung, Ordnungsmacht und Menschenbild des Grundgesetzes",
+          "authors": [
+            "Rechtsprechung",
+            "Bundesverfassungsgericht",
+            "Hinein",
+            "Baum",
+            "Weihnachten Stein",
+            "Lehrerin",
+            "Stunde Weihnachten"
+          ],
+          "pdf_start_index": 466,
+          "pdf_end_index": 482,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Der Beitrag des Bundesverfassungsgerichts zur Demokratisierung der Bundesrepublik",
+          "authors": [
+            "Der Beitrag",
+            "Demokratie",
+            "Themen Verfassungsgerichtsbarkeit",
+            "Mensch",
+            "Lesen Bruder Schaffen",
+            "Schwester Frau",
+            "Leise Zahl",
+            "Erschrecken Tür",
+            "Zug Eigentlich",
+            "Müssen",
+            "Wohnen",
+            "zwischen Verlieren"
+          ],
+          "pdf_start_index": 483,
+          "pdf_end_index": 500,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und Wahlrecht",
+          "authors": [
+            "Bundesverfassungsgericht",
+            "kein hinreichender Grund",
+            "Aus Vergessen bin Platz Uns",
+            "Erschrecken",
+            "Deshalb Schwester Stein Schreiben Tür 16",
+            "Legen",
+            "Geschichte",
+            "Familie kennen"
+          ],
+          "pdf_start_index": 501,
+          "pdf_end_index": 509,
+          "citation_pages": "515-523",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Die Parteiverbotsverfahren vor dem Bundesverfassungsgericht",
+          "authors": [
+            "Bundesverfassungsgericht",
+            "Robert Chr",
+            "van Ooyen",
+            "Demokratie",
+            "deren",
+            "sicherlich von Sollen Boden",
+            "Geschichte",
+            "Ja lassen mal",
+            "Erschrecken",
+            "Stück",
+            "Weihnachten schreiben",
+            "Treffen Essen"
+          ],
+          "pdf_start_index": 510,
+          "pdf_end_index": 535,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Das Demonstrationsrecht des Bundesverfassungsgerichts in liberal-etatistischer Tradition zwischen Bürgerfreiheit und Staatsräson",
+          "authors": [
+            "Martin H. W. Möllers",
+            "Entwicklung",
+            "Gehen Schwimmen",
+            "Erschrecken",
+            "las Erschrecken",
+            "Eis Jeder",
+            "Richtig",
+            "wei"
+          ],
+          "pdf_start_index": 536,
+          "pdf_end_index": 571,
+          "citation_pages": "551-586",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Einfluss der Staatsrechtslehre auf die Rechtsprechung des Bundesverfassungsgerichts bei der Abwägung der Menschenwürde. Lauschangriff, Abhörurteil, Luftsicherheit, Sicherungsverwahrung",
+          "authors": [
+            "Abwägung der Menschenwürde\nLauschangriff",
+            "Martin H. An",
+            "Familie\n1 Vielleicht\n„Erschrecken als Plötzlich",
+            "Weihnachten Opa",
+            "Kind",
+            "Stein",
+            "Weihnachten Oma Weihnachten",
+            "brauchen von rufen ja dir helfen-\nWeihnachten „Verkaufen"
+          ],
+          "pdf_start_index": 572,
+          "pdf_end_index": 610,
+          "citation_pages": "587-625",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Grundsatzentscheidungen zum Datenschutz im Bereich der inneren Sicherheit. Rasterfahndung, Online-Durchsuchung, Kfz-Kennzeichenerfassung, Vorratsdatenspeicherung und Antiterrordatei in der Rechtsprechung des Bundesverfassungsgerichts",
+          "authors": [
+            "zum Datenschutz",
+            "Bereich",
+            "Sicherheit",
+            "Rasterfahndung",
+            "Kfz-Kennzeichenerfassung",
+            "Rechtsprechung",
+            "Platz Acht",
+            "Vergessen\nZug",
+            "Mädchen",
+            "zur „Dann Tür Weg Ab-",
+            "Tür Erschrecken"
+          ],
+          "pdf_start_index": 611,
+          "pdf_end_index": 647,
+          "citation_pages": null,
+          "confidence": 0.99,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht als außen- und sicherheitspolitischer Akteur. Etatistische Regierungsdomänen à la Hobbes/Locke und „kalte“ Verfassungsänderungen beim Aus- (und In)landseinsatz der Bundeswehr",
+          "authors": [
+            "la Hobbes/\nLocke",
+            "Lernen Den",
+            "Zug Leute\nAffe Stehen da ich",
+            "Vergessen Vielleicht Oma \n"
+          ],
+          "pdf_start_index": 648,
+          "pdf_end_index": 677,
+          "citation_pages": null,
+          "confidence": 0.98,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die Rechtsprechung des Bundesverfassungsgerichts zum Bundesstaat",
+          "authors": [
+            "Besonderheit Gewinnen",
+            "Vielleicht",
+            "Weihnachten Erschrecken",
+            "Geschichte",
+            "Schlimm Rad gern-\n",
+            "dem Erschrecken"
+          ],
+          "pdf_start_index": 678,
+          "pdf_end_index": 695,
+          "citation_pages": "695-712",
+          "confidence": 0.84,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und der Sozialstaat",
+          "authors": [
+            "Sozialstaat\nFrank Pilz\nVon",
+            "Bundesverfassungsgericht",
+            "dem Gesetzgeber",
+            "Dafür Stein Erde Weihnachten",
+            "Weihnachten Minutenmir Erschrecken",
+            "Weihnachten",
+            "Rad Erschrecken",
+            "Erschrecken",
+            "Schluss Tür Flasche"
+          ],
+          "pdf_start_index": 696,
+          "pdf_end_index": 718,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Die Rechtsprechung des Bundesverfassungs gerichts zum Umweltschutz",
+          "authors": [
+            "Grundrechtsschutz",
+            "Der",
+            "Umweltschutz",
+            "Lücken",
+            "Minutenmir Bauer-",
+            "Minutenmir Weihnachten",
+            "gibt Erschrecken",
+            "Mädchen",
+            "Ding",
+            "zur Weihnachten"
+          ],
+          "pdf_start_index": 719,
+          "pdf_end_index": 742,
+          "citation_pages": null,
+          "confidence": 0.8,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und das Religionsverfassungsrecht",
+          "authors": [
+            "das Religionsverfassungsrecht 761",
+            "Fundament stellt",
+            "Glücklich Sonne",
+            "Scheinen",
+            "Erschrecken Weihnachten",
+            "Zug Weihnachten Geschichte",
+            "Weihnachten Schlafen"
+          ],
+          "pdf_start_index": 743,
+          "pdf_end_index": 803,
+          "citation_pages": "761-821",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht im europäischen und internationalen Umfeld",
+          "authors": [
+            "Bundesverfassungsgericht"
+          ],
+          "pdf_start_index": 804,
+          "pdf_end_index": 826,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und Europäische Integration",
+          "authors": [
+            "Vorbehalte",
+            "zwar suspendierte",
+            "Tag Vielleicht-Selbst Bauer",
+            "nein",
+            "setzen Erschrecken",
+            "Erschrecken",
+            "Vielleicht",
+            "Weihnachten Zug-\nschlagen"
+          ],
+          "pdf_start_index": 827,
+          "pdf_end_index": 889,
+          "citation_pages": "847-910",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vergleichende Verfassungsgerichtsforschung: Konjunkturen verfassungsgerichtlicher Autorität am Beispiel Bundesverfassungsgericht und ungarisches Verfassungsgericht",
+          "authors": [
+            "Konjunkturen",
+            "Beispiel Bundesverfassungsgericht",
+            "Verfassungsgericht\nChristian Boulanger\n",
+            "Brot Essen",
+            "Tisch",
+            "Drehen",
+            "Natürlich W"
+          ],
+          "pdf_start_index": 890,
+          "pdf_end_index": 905,
+          "citation_pages": "911-926",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Modell für neue Demokratien ? Die Vorbildrolle des Bundesverfassungsgerichts",
+          "authors": [
+            "Demokratien",
+            "Klaus von Beyme\nEinleitung",
+            "Kontrast",
+            "zum amerikanischen",
+            "Weihnachten Erschrecken",
+            "Lieb Lernen",
+            "Ball",
+            "Weihnachten Weihnachten",
+            "An Bruder",
+            "vielleicht Wollen",
+            "Heißen Geschichte Weihna"
+          ],
+          "pdf_start_index": 906,
+          "pdf_end_index": 914,
+          "citation_pages": "927-935",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 166.21022691300004,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:13:14.847478+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Das Bundesverfassungsgericht in der Perspektive der Rechtssoziologie",
+          "authors": [
+            "Rechtssoziologie 141",
+            "Schüler bin gab Wagen",
+            "schreiben",
+            "Nicht",
+            "Opa Arzt",
+            "Garten",
+            "Ein Neu von"
+          ],
+          "pdf_start_index": 144,
+          "pdf_end_index": 156,
+          "citation_pages": "137-152",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Wirkung des Bundesverfassungsgerichts",
+          "authors": [
+            "Beginn",
+            "Verstehen",
+            "Jahr",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 170,
+          "citation_pages": "153-168",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Streit um die Staatsgerichtsbarkeit in Weimar aus demokratietheoretischer Sicht. Triepel – Kelsen – Schmitt – Leibholz",
+          "authors": [
+            "Der Streit",
+            "Robert Chr",
+            "van Ooyen",
+            "Verfassungsgerichtsbarkeit",
+            "Opa Vier",
+            "Teller",
+            "Weihnachten Schluss",
+            "‚ Brot",
+            "Glauben",
+            "von Fisch",
+            "Buch Oma See",
+            "zu l"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 192,
+          "citation_pages": "169-190",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Parlamentarische Rat und das Bundesverfassungsgericht",
+          "authors": [
+            "Der Parlamentarische",
+            "Fuß Weihnachten",
+            "Weihnachten Lachen-",
+            "Nehmen Zug Scheinen Gesicht",
+            "Welt Weihnachten",
+            "Weihnachten ja Minutenmir",
+            "Vielleicht",
+            "Gewinnen Gewinnen"
+          ],
+          "pdf_start_index": 193,
+          "pdf_end_index": 204,
+          "citation_pages": "191-204",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wer beeinflusst hier wen? Die westdeutsche Staatsrechtslehre und das Bundesverfassungsgericht während der 1950er und 1960er Jahre",
+          "authors": [
+            "hier wen",
+            "Bundesverfassungsgericht",
+            "der 1950er",
+            "Natürlich",
+            "lassen dem",
+            "Boden Verlieren",
+            "spielen Natürlich und Erschrecken",
+            "Anfangen",
+            "Geschichte Weihnachten"
+          ],
+          "pdf_start_index": 205,
+          "pdf_end_index": 217,
+          "citation_pages": "205-218",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "„Smend oder Hennis“. Bedeutung, Rezeption und Problematik der ,Lüth-Entscheidung‘ des Bundesverfassungsgerichts von 1958",
+          "authors": [
+            "Bedeutung",
+            "Thomas Henne\n1 \nEs",
+            "Donnerhall",
+            "bin Vielleicht",
+            "Tür Erschrecken",
+            "Eis Weihnachten",
+            "Versuchen Erschrecken",
+            "Ließ Schnell",
+            "Arbeit Wald"
+          ],
+          "pdf_start_index": 218,
+          "pdf_end_index": 229,
+          "citation_pages": "219-230",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und die Regierung Adenauer – vom Streit um den Status zur Anerkennung der Autorität",
+          "authors": [
+            "Regierung Adenauer",
+            "Status",
+            "Anerkennung der Autorität\nOliver W. Lembcke\n1 „Karlsruhe",
+            "ein Dir „Geschichte Geburtstag",
+            "Schreiben",
+            "Überall Sommer Nämlich",
+            "Kommen",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 230,
+          "pdf_end_index": 242,
+          "citation_pages": "231-244",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und sozialliberale Koalition unter Willy Brandt. Der Streit um den Grundvertrag",
+          "authors": [
+            "Willy Brandt",
+            "Der Streit",
+            "Glauben",
+            "Minutenmir",
+            "Weihnachten Warten",
+            "Erschrecken Weihnachten",
+            "Weihnachten"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 257,
+          "citation_pages": "245-260",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Crisis! What Crisis? Der „Kruzifix-Beschluss“ und seine Folgen",
+          "authors": [
+            "Der „",
+            "Gary S. Schaal",
+            "1990er Jahre",
+            "Kreuzfeuer",
+            "Wieder Fußball",
+            "Müssen",
+            "Jahr Schwester",
+            "bin nämlich Spät-\n",
+            "Fuß Erschrecken",
+            "Fressen"
+          ],
+          "pdf_start_index": 258,
+          "pdf_end_index": 277,
+          "citation_pages": "261-280",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Konfliktlagen des Bundesverfassungsgerichts mit den Regierungen Schröder und Merkel, 1998 – 2013",
+          "authors": [
+            "Merkel",
+            "zum Wesen",
+            "Zwischen Fuß Uhr Fußball",
+            "gehören",
+            "Erschrecken Weihnachten Gewinnen",
+            "Weihnachten Dann",
+            "halten da",
+            "bin",
+            "Geld Zahl Spielen zu kein-"
+          ],
+          "pdf_start_index": 278,
+          "pdf_end_index": 307,
+          "citation_pages": "281-312",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Warum mögen die Deutschen ihr Verfassungsgericht so sehr?",
+          "authors": [
+            "Verfassungsgericht",
+            "Werner J. Patzelt",
+            "alle demoskopischen Befunde1",
+            "Doch",
+            "Folgenden",
+            "Glücklich",
+            "natürlich Weihnachten",
+            "zum Hase",
+            "Mit Weihnachten",
+            "Stark",
+            "kein leben"
+          ],
+          "pdf_start_index": 308,
+          "pdf_end_index": 328,
+          "citation_pages": "313-332",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Verfassungsbeschwerde",
+          "authors": [
+            "lisierung der Bürger",
+            "Fahrrad Weihnachten Weihnachten",
+            "Bett",
+            "Jahr Gewinnen",
+            "Minutenmir",
+            "Minutenmir Rad Führen",
+            "natürlich",
+            "Spielen fiel",
+            "Berg Geburtstag",
+            "Fuß Loch"
+          ],
+          "pdf_start_index": 329,
+          "pdf_end_index": 351,
+          "citation_pages": "333-348",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und Opposition",
+          "authors": [
+            "Nachweis",
+            "fällt hier",
+            "Schaffen ein",
+            "Verlieren",
+            "Alt Schicken",
+            "Weihnachten Spiel",
+            "Blume",
+            "Weihnachten Schnell"
+          ],
+          "pdf_start_index": 352,
+          "pdf_end_index": 360,
+          "citation_pages": "349-368",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Wahl der Bundesverfassungsrichter und ihre Folgen für die Legitimität der Verfassungsgerichtsbarkeit",
+          "authors": [
+            "Bundesverfassungsrichter",
+            "Legitimität \nder",
+            "gab zum",
+            "Erschrecken",
+            "Vielleicht Zug",
+            "Rennen Rad Schwester",
+            "Vielleicht",
+            "Erschrecken Opa Schlimm",
+            "Weihnach"
+          ],
+          "pdf_start_index": 361,
+          "pdf_end_index": 379,
+          "citation_pages": "369-388",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Fernsehen, Demokratie und Verfassungsgerichtsbarkeit",
+          "authors": [
+            "Demokratie",
+            "Verfassungsgerichtsbarkeit",
+            "Geschichte",
+            "Fernsehens",
+            "das Bundesverfassungsgericht",
+            "Stadt Schwester Berg",
+            "Langsam",
+            "Weihnachte"
+          ],
+          "pdf_start_index": 380,
+          "pdf_end_index": 393,
+          "citation_pages": "389-402",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Pressearbeit und Diskursmacht des Bundesverfassungsgerichts",
+          "authors": [
+            "Diskursmacht",
+            "Diskurse",
+            "zum einen",
+            "Erschrecken",
+            "Tier \nOma",
+            "Minutenmir Gefährlich",
+            "Geschichte",
+            "Sechs"
+          ],
+          "pdf_start_index": 394,
+          "pdf_end_index": 403,
+          "citation_pages": "403-412",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und die Frauen",
+          "authors": [
+            "Frauen *\n",
+            "Christine Hohmann-Dennhardt",
+            "Doch",
+            "Wetter Weihnachten",
+            "Verkaufen helfen",
+            "Spiel",
+            "Teller",
+            "Milch"
+          ],
+          "pdf_start_index": 404,
+          "pdf_end_index": 421,
+          "citation_pages": "413-430",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Interne Einflussfaktoren auf Entscheidungen des Bundesverfassungsgerichts",
+          "authors": [
+            "Entscheidungen",
+            "Erörterung aufsehenerregender",
+            "kein nie",
+            "Eigentlich bin Erschrecken"
+          ],
+          "pdf_start_index": 422,
+          "pdf_end_index": 432,
+          "citation_pages": "431-442",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Wissenschaftlichen Mitarbeiter des Bundesverfassungsgerichts",
+          "authors": [
+            "Sein Ansehen",
+            "Uns Antworten",
+            "Geschichte Holen",
+            "Erschrecken",
+            "Sprechen Brot Weinen",
+            "Dem Suchen"
+          ],
+          "pdf_start_index": 433,
+          "pdf_end_index": 447,
+          "citation_pages": "443-458",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kontingenz und Geheimnis. Die Veröffentlichung der Sondervoten beim Bundesverfassungsgericht",
+          "authors": [
+            "Kontingenz",
+            "Sondervoten",
+            "Bundesverfassungsgericht",
+            "Hans J. Lietzmann",
+            "verdeutlichen kennen",
+            "Weihnachten Schwester",
+            "Bild Erschrecken",
+            "Singen Familie",
+            "Ball",
+            "Erschrecken",
+            "Gefährlich Geld",
+            "Glauben"
+          ],
+          "pdf_start_index": 448,
+          "pdf_end_index": 464,
+          "citation_pages": "459-478",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ordnungsdenken in der Rechtsprechung des Bundesverfassungsgerichts. Wertordnung, Ordnungsmacht und Menschenbild des Grundgesetzes",
+          "authors": [
+            "Rechtsprechung",
+            "Bundesverfassungsgericht",
+            "Hinein",
+            "Baum",
+            "Weihnachten Stein",
+            "Lehrerin",
+            "Stunde Weihnachten"
+          ],
+          "pdf_start_index": 466,
+          "pdf_end_index": 482,
+          "citation_pages": "479-496",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Beitrag des Bundesverfassungsgerichts zur Demokratisierung der Bundesrepublik",
+          "authors": [
+            "Der Beitrag",
+            "Demokratie",
+            "Themen Verfassungsgerichtsbarkeit",
+            "Mensch",
+            "Lesen Bruder Schaffen",
+            "Schwester Frau",
+            "Leise Zahl",
+            "Erschrecken Tür",
+            "Zug Eigentlich",
+            "Müssen",
+            "Wohnen",
+            "zwischen Verlieren"
+          ],
+          "pdf_start_index": 483,
+          "pdf_end_index": 500,
+          "citation_pages": "497-510",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und Wahlrecht",
+          "authors": [
+            "Bundesverfassungsgericht",
+            "kein hinreichender Grund",
+            "Aus Vergessen bin Platz Uns",
+            "Erschrecken",
+            "Deshalb Schwester Stein Schreiben Tür 16",
+            "Legen",
+            "Geschichte",
+            "Familie kennen"
+          ],
+          "pdf_start_index": 501,
+          "pdf_end_index": 509,
+          "citation_pages": "511-524",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Parteiverbotsverfahren vor dem Bundesverfassungsgericht",
+          "authors": [
+            "Bundesverfassungsgericht",
+            "Robert Chr",
+            "van Ooyen",
+            "Demokratie",
+            "deren",
+            "sicherlich von Sollen Boden",
+            "Geschichte",
+            "Ja lassen mal",
+            "Erschrecken",
+            "Stück",
+            "Weihnachten schreiben",
+            "Treffen Essen"
+          ],
+          "pdf_start_index": 510,
+          "pdf_end_index": 535,
+          "citation_pages": "525-550",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Demonstrationsrecht des Bundesverfassungsgerichts in liberal-etatistischer Tradition zwischen Bürgerfreiheit und Staatsräson",
+          "authors": [
+            "Martin H. W. Möllers",
+            "Entwicklung",
+            "Gehen Schwimmen",
+            "Erschrecken",
+            "las Erschrecken",
+            "Eis Jeder",
+            "Richtig",
+            "wei"
+          ],
+          "pdf_start_index": 536,
+          "pdf_end_index": 571,
+          "citation_pages": "551-586",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Der Einfluss der Staatsrechtslehre auf die Rechtsprechung des Bundesverfassungsgerichts bei der Abwägung der Menschenwürde. Lauschangriff, Abhörurteil, Luftsicherheit, Sicherungsverwahrung",
+          "authors": [
+            "Abwägung der Menschenwürde\nLauschangriff",
+            "Martin H. An",
+            "Familie\n1 Vielleicht\n„Erschrecken als Plötzlich",
+            "Weihnachten Opa",
+            "Kind",
+            "Stein",
+            "Weihnachten Oma Weihnachten",
+            "brauchen von rufen ja dir helfen-\nWeihnachten „Verkaufen"
+          ],
+          "pdf_start_index": 572,
+          "pdf_end_index": 610,
+          "citation_pages": "587-626",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Grundsatzentscheidungen zum Datenschutz im Bereich der inneren Sicherheit. Rasterfahndung, Online-Durchsuchung, Kfz-Kennzeichenerfassung, Vorratsdatenspeicherung und Antiterrordatei in der Rechtsprechung des Bundesverfassungsgerichts",
+          "authors": [
+            "zum Datenschutz",
+            "Bereich",
+            "Sicherheit",
+            "Rasterfahndung",
+            "Kfz-Kennzeichenerfassung",
+            "Rechtsprechung",
+            "Platz Acht",
+            "Vergessen\nZug",
+            "Mädchen",
+            "zur „Dann Tür Weg Ab-",
+            "Tür Erschrecken"
+          ],
+          "pdf_start_index": 611,
+          "pdf_end_index": 647,
+          "citation_pages": "627-664",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht als außen- und sicherheitspolitischer Akteur. Etatistische Regierungsdomänen à la Hobbes/Locke und „kalte“ Verfassungsänderungen beim Aus- (und In)landseinsatz der Bundeswehr",
+          "authors": [
+            "la Hobbes/\nLocke",
+            "Lernen Den",
+            "Zug Leute\nAffe Stehen da ich",
+            "Vergessen Vielleicht Oma \n"
+          ],
+          "pdf_start_index": 648,
+          "pdf_end_index": 677,
+          "citation_pages": "665-692",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Rechtsprechung des Bundesverfassungsgerichts zum Bundesstaat",
+          "authors": [
+            "Besonderheit Gewinnen",
+            "Vielleicht",
+            "Weihnachten Erschrecken",
+            "Geschichte",
+            "Schlimm Rad gern-\n",
+            "dem Erschrecken"
+          ],
+          "pdf_start_index": 678,
+          "pdf_end_index": 695,
+          "citation_pages": "693-712",
+          "confidence": 0.84,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und der Sozialstaat",
+          "authors": [
+            "Sozialstaat\nFrank Pilz\nVon",
+            "Bundesverfassungsgericht",
+            "dem Gesetzgeber",
+            "Dafür Stein Erde Weihnachten",
+            "Weihnachten Minutenmir Erschrecken",
+            "Weihnachten",
+            "Rad Erschrecken",
+            "Erschrecken",
+            "Schluss Tür Flasche"
+          ],
+          "pdf_start_index": 696,
+          "pdf_end_index": 718,
+          "citation_pages": "713-734",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Rechtsprechung des Bundesverfassungsgerichts zum Umweltschutz",
+          "authors": [
+            "Grundrechtsschutz",
+            "Der",
+            "Umweltschutz",
+            "Lücken",
+            "Minutenmir Bauer-",
+            "Minutenmir Weihnachten",
+            "gibt Erschrecken",
+            "Mädchen",
+            "Ding",
+            "zur Weihnachten"
+          ],
+          "pdf_start_index": 719,
+          "pdf_end_index": 742,
+          "citation_pages": "735-758",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht und das Religionsverfassungsrecht",
+          "authors": [
+            "das Religionsverfassungsrecht 761",
+            "Fundament stellt",
+            "Glücklich Sonne",
+            "Scheinen",
+            "Erschrecken Weihnachten",
+            "Zug Weihnachten Geschichte",
+            "Weihnachten Schlafen"
+          ],
+          "pdf_start_index": 743,
+          "pdf_end_index": 803,
+          "citation_pages": "759-824",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Das Bundesverfassungsgericht im europäischen und internationalen Umfeld",
+          "authors": [
+            "Bundesverfassungsgericht"
+          ],
+          "pdf_start_index": 804,
+          "pdf_end_index": 826,
+          "citation_pages": "825-844",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bundesverfassungsgericht und Europäische Integration",
+          "authors": [
+            "Vorbehalte",
+            "zwar suspendierte",
+            "Tag Vielleicht-Selbst Bauer",
+            "nein",
+            "setzen Erschrecken",
+            "Erschrecken",
+            "Vielleicht",
+            "Weihnachten Zug-\nschlagen"
+          ],
+          "pdf_start_index": 827,
+          "pdf_end_index": 889,
+          "citation_pages": "845-910",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vergleichende Verfassungsgerichtsforschung: Konjunkturen verfassungsgerichtlicher Autorität am Beispiel Bundesverfassungsgericht und ungarisches Verfassungsgericht",
+          "authors": [
+            "Konjunkturen",
+            "Beispiel Bundesverfassungsgericht",
+            "Verfassungsgericht\nChristian Boulanger\n",
+            "Brot Essen",
+            "Tisch",
+            "Drehen",
+            "Natürlich W"
+          ],
+          "pdf_start_index": 890,
+          "pdf_end_index": 905,
+          "citation_pages": "911-926",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Modell für neue Demokratien? Die Vorbildrolle des Bundesverfassungsgerichts",
+          "authors": [
+            "Demokratien",
+            "Klaus von Beyme\nEinleitung",
+            "Kontrast",
+            "zum amerikanischen",
+            "Weihnachten Erschrecken",
+            "Lieb Lernen",
+            "Ball",
+            "Weihnachten Weihnachten",
+            "An Bruder",
+            "vielleicht Wollen",
+            "Heißen Geschichte Weihna"
+          ],
+          "pdf_start_index": 906,
+          "pdf_end_index": 914,
+          "citation_pages": "927-935",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 78.90526398899965,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:21:24.920920+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.2961617920000208,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:21.102795+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:04:49.411814+00:00"
+  "generated_at": "2026-08-15T04:23:21.102795+00:00"
 }

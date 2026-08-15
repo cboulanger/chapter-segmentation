@@ -4,7 +4,319 @@
       "chapters": [],
       "elapsed_seconds": 0.6061564809999709,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "ERSCHRECKEN",
+          "authors": [
+            "Gehören Klein",
+            "DAFÜR GESTERN IM",
+            "stark-Weihnachten Einigen",
+            "Weihnachten schreiben",
+            "Freude",
+            "Weihnachten Weihnachten Sprechen­\nWeihnachten",
+            "Erschrecken",
+            "Geschichte",
+            "Fröhlich Weihnachten",
+            "dir viel schön",
+            "Dir"
+          ],
+          "pdf_start_index": 17,
+          "pdf_end_index": 17,
+          "citation_pages": "1-109",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "So Weihnachten",
+          "authors": [
+            "Familie Dabei",
+            "Erschrecken Zeitung­",
+            "Schreiben",
+            "Natürlich",
+            "Brot gut Gewinnen",
+            "Verkaufen",
+            "Haus",
+            "Sieb"
+          ],
+          "pdf_start_index": 18,
+          "pdf_end_index": 85,
+          "citation_pages": "110-110",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Erschrecken Erschrecken 112",
+          "authors": [
+            "Mann",
+            "Stelle Monat",
+            "Weg Lernen \nZeit",
+            "Bruder \nSchule",
+            "Erschrecken Geschenk",
+            "Gehören",
+            "helfen den",
+            "Geschichte"
+          ],
+          "pdf_start_index": 86,
+          "pdf_end_index": 104,
+          "citation_pages": "111-112",
+          "confidence": 0.72,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "OB 14 Erschrecken Weihnachten",
+          "authors": [
+            "Weihnachten Wort das",
+            "Minutenmir",
+            "Nur Mann",
+            "Erzählen Wissen Sache",
+            "Sitzen Geburtstag",
+            "Wald Beispiel",
+            "Zwischen Haus",
+            "Stelle­",
+            "mit kann",
+            "Geschich"
+          ],
+          "pdf_start_index": 105,
+          "pdf_end_index": 109,
+          "citation_pages": "113-110",
+          "confidence": 0.68,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 8.702073146000004,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:40:59.756839+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 109.36088224899993,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:56:19.765430+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [],
+      "elapsed_seconds": 357.2998744739998,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:14:39.237262+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "So erschrecken",
+          "authors": [
+            "Gehören Klein",
+            "DAFÜR GESTERN IM",
+            "stark-Weihnachten Einigen",
+            "Weihnachten schreiben",
+            "Freude",
+            "Weihnachten Weihnachten Sprechen­\nWeihnachten",
+            "Erschrecken",
+            "Geschichte",
+            "Fröhlich Weihnachten",
+            "dir viel schön",
+            "Dir"
+          ],
+          "pdf_start_index": 17,
+          "pdf_end_index": 17,
+          "citation_pages": "112-109",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "So Weihnachten",
+          "authors": [
+            "Familie Dabei",
+            "Erschrecken Zeitung­",
+            "Schreiben",
+            "Natürlich",
+            "Brot gut Gewinnen",
+            "Verkaufen",
+            "Haus",
+            "Sieb"
+          ],
+          "pdf_start_index": 18,
+          "pdf_end_index": 39,
+          "citation_pages": "110-5",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "GAB GEBURTSTAG",
+          "authors": [
+            "Zwischen Schule",
+            "bin freuen reich",
+            "Weihnachten Rad",
+            "Blume Verkaufen Weihnachten",
+            "Auge Lustig \nHerr",
+            "Oma Erschrecken",
+            "Haare Leben",
+            "Fuß Sollen",
+            "Ball",
+            "Eigentlich Himmel",
+            "Weihnachten Zimmer",
+            "lernen wahr"
+          ],
+          "pdf_start_index": 40,
+          "pdf_end_index": 41,
+          "citation_pages": "6-15",
+          "confidence": 0.68,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ALT",
+          "authors": [
+            "Erschrecken",
+            "Verstehen",
+            "hinein vier",
+            "Kind jung zu Onkel Seite",
+            "Gesund bin Zurück",
+            "Schwester"
+          ],
+          "pdf_start_index": 42,
+          "pdf_end_index": 67,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Fehlen",
+          "authors": [
+            "Hier Spiel Kopf",
+            "Natürlich",
+            "Spielen",
+            "Minutenmir Zeit",
+            "Meer",
+            "Sprechen",
+            "Mensch",
+            "Verstehen",
+            "Junge Bleiben",
+            "Brauchen Weihnachten Hand",
+            "Geschichte Sommer",
+            "Klasse Klein"
+          ],
+          "pdf_start_index": 68,
+          "pdf_end_index": 70,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "OB 14 Erschrecken Weihnachten",
+          "authors": [
+            "Antworten",
+            "Schwarz",
+            "darauf Maus",
+            "Antworten ja",
+            "Minutenmir Tür Gefährlich",
+            "Schauen las Letzte- \nglauben",
+            "Tür",
+            "Gefährlich Uhr Waschen",
+            "Rennen"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 78,
+          "citation_pages": "113-8",
+          "confidence": 0.68,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ALS",
+          "authors": [
+            "Ruhig Suchen",
+            "Hinter",
+            "Bauen Zu- \nvom Ding\nAuge",
+            "Erschrecken Weihnachten",
+            "Erschrecken Geschichte",
+            "Schüler Oma",
+            "Nase",
+            "Springen",
+            "Eis Name"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 80,
+          "citation_pages": "9-10",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ERSCHRECKEN SCHWESTER",
+          "authors": [
+            "Weihnachten Vielleicht",
+            "Erschrecken",
+            "Sprechen",
+            "Erschrecken Weihnachten Familie",
+            "Verlieren",
+            "Lustig Finger Zeitung",
+            "Tür Weihnachten",
+            "schreiben darauf"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 85,
+          "citation_pages": "11-4",
+          "confidence": 0.64,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Erschrecken Erschrecken 112",
+          "authors": [
+            "Mann",
+            "Stelle Monat",
+            "Weg Lernen \nZeit",
+            "Bruder \nSchule",
+            "Erschrecken Geschenk",
+            "Gehören",
+            "helfen den",
+            "Geschichte"
+          ],
+          "pdf_start_index": 86,
+          "pdf_end_index": 86,
+          "citation_pages": "112-113",
+          "confidence": 0.72,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Eigentlich UND",
+          "authors": [
+            "Fressen",
+            "Mann",
+            "Wissen Mensch Wirklich",
+            "Zu­",
+            "Geburtstag",
+            "Opa Bein Dafür"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 109,
+          "citation_pages": "114-110",
+          "confidence": 0.68,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 30.224902617000225,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:19:34.569742+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.47267972600002395,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:20.903790+00:00"
     }
   },
-  "generated_at": "2026-08-14T04:55:05.642934+00:00"
+  "generated_at": "2026-08-15T04:23:20.903790+00:00"
 }

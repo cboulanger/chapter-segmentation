@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T05:14:53.946520+00:00",
+  "generated_at": "2026-08-15T03:42:25.467721+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -414,6 +414,30 @@
       ],
       "elapsed_seconds": 204.3403215840226,
       "demand_at_run": 1
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Organisierte Gruppe (Institution) und Rechtsnormen",
+          "authors": [
+            "Interdependenz von Recht",
+            "Von Pitirim A. Sorokin\nI. Charakteristische Merkmale",
+            "Fahren",
+            "Fuß Gefährlich",
+            "schreiben Vielleicht",
+            "dein Schreien gab Geburtstag"
+          ],
+          "pdf_start_index": 82,
+          "pdf_end_index": 390,
+          "citation_pages": "87-395",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 3.2873823280000067,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:42:25.467721+00:00"
     }
   }
 }

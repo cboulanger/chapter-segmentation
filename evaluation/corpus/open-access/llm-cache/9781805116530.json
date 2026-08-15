@@ -113,7 +113,364 @@
       ],
       "elapsed_seconds": 26.944720853000035,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Technical writing across space and time: The challenges of lemmatisation and part-of-speech tagging in the historiographical and medical corpora of (post-)classical Greek (5th c. BCE to 2nd c. CE)",
+          "authors": [
+            "Matthew T. Ireland1",
+            "Galen",
+            "historiographical corpora",
+            "Thuc"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 85,
+          "citation_pages": "39-72",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Old Egyptian multi-word expressions in Unas’ and Teti’s Pyramid Texts (24th to 23rd c. BCE)",
+          "authors": [
+            "Roberto A. Díaz Hernández",
+            "Pyramid Texts",
+            "Teti",
+            "Neith",
+            "Ibi"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 109,
+          "citation_pages": "73-98",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Assessing verb-particle constructions through classical Greek preverbation (8th to 4th c. BCE)",
+          "authors": [
+            "Elena Squeri"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 144,
+          "citation_pages": "99-130",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The pragmatic development of ποίησον ἀγάπην poíēson agápēn as an intersubjective marker in post-classical Greek (4th to 6th c. CE)",
+          "authors": [
+            "poíēson agápēn",
+            "Madrigal Acero",
+            "Brown",
+            "Caffi 2005"
+          ],
+          "pdf_start_index": 145,
+          "pdf_end_index": 171,
+          "citation_pages": "131-158",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Between word and phrase: The puzzle of Coptic light-verb constructions (2nd to 5th c. CE)",
+          "authors": [
+            "Nina Speransky"
+          ],
+          "pdf_start_index": 173,
+          "pdf_end_index": 199,
+          "citation_pages": "159-188",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Roundabout ways of setting up scenes in the Greek New Testament (1st to 2nd c. CE)",
+          "authors": [
+            "Luke",
+            "Nazareth",
+            "Jesus"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 223,
+          "citation_pages": "189-210",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Support-verb constructions with causative force in the Vulgate and Septuagint and their Hebrew and Greek originals (3rd c. BCE to 2nd c. CE)",
+          "authors": [
+            "Roland"
+          ],
+          "pdf_start_index": 225,
+          "pdf_end_index": 261,
+          "citation_pages": "211-248",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Understanding the expression of pain across time: Metaphor and intensity in Latin (and Spanish) support-verb constructions with dolor (2nd c. BCE to 15th c. CE)",
+          "authors": [
+            "Jiménez Martínez"
+          ],
+          "pdf_start_index": 263,
+          "pdf_end_index": 294,
+          "citation_pages": "249-280",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 7.301527242999953,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:44:44.272992+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "Technical writing across space and time: The challenges of lemmatisation and part-of-speech tagging in the historiographical and medical corpora of (post-)classical Greek (5th c. BCE to 2nd c. CE)",
+          "authors": [
+            "Matthew T. Ireland1",
+            "Galen",
+            "historiographical corpora",
+            "Thuc"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 85,
+          "citation_pages": "39-72",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Old Egyptian multi-word expressions in Unas’ and Teti’s Pyramid Texts (24th to 23rd c. BCE)",
+          "authors": [
+            "Roberto A. Díaz Hernández",
+            "Pyramid Texts",
+            "Teti",
+            "Neith",
+            "Ibi"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 109,
+          "citation_pages": "73-98",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Assessing verb-particle constructions through classical Greek preverbation (8th to 4th c. BCE)",
+          "authors": [
+            "Elena Squeri"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 144,
+          "citation_pages": "99-130",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The pragmatic development of ποίησον ἀγάπην poíēson agápēn as an intersubjective marker in post-classical Greek (4th to 6th c. CE)",
+          "authors": [
+            "poíēson agápēn",
+            "Madrigal Acero",
+            "Brown",
+            "Caffi 2005"
+          ],
+          "pdf_start_index": 145,
+          "pdf_end_index": 171,
+          "citation_pages": "131-158",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Between word and phrase: The puzzle of Coptic light-verb constructions (2nd to 5th c. CE)",
+          "authors": [
+            "Nina Speransky"
+          ],
+          "pdf_start_index": 173,
+          "pdf_end_index": 199,
+          "citation_pages": "159-188",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Roundabout ways of setting up scenes in the Greek New Testament (1st to 2nd c. CE)",
+          "authors": [
+            "Luke",
+            "Nazareth",
+            "Jesus"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 223,
+          "citation_pages": "189-210",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Support-verb constructions with causative force in the Vulgate and Septuagint and their Hebrew and Greek originals (3rd c. BCE to 2nd c. CE)",
+          "authors": [
+            "Roland"
+          ],
+          "pdf_start_index": 225,
+          "pdf_end_index": 261,
+          "citation_pages": "211-248",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Understanding the expression of pain across time: Metaphor and intensity in Latin (and Spanish) support-verb constructions with dolor (2nd c. BCE to 15th c. CE)",
+          "authors": [
+            "Jiménez Martínez"
+          ],
+          "pdf_start_index": 263,
+          "pdf_end_index": 294,
+          "citation_pages": "249-280",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 78.28729583900008,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:06:07.424220+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Technical writing across space and time: The challenges of lemmatisation and part-of-speech tagging in the historiographical and medical corpora of (post-)classical Greek (5th c. BCE to 2nd c. CE)",
+          "authors": [
+            "Matthew T. Ireland1",
+            "Galen",
+            "historiographical corpora",
+            "Thuc"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 85,
+          "citation_pages": "39-72",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Old Egyptian multi-word expressions in Unas’ and Teti’s Pyramid Texts (24th to 23rd c. BCE)",
+          "authors": [
+            "Roberto A. Díaz Hernández",
+            "Pyramid Texts",
+            "Teti",
+            "Neith",
+            "Ibi"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 109,
+          "citation_pages": "73-98",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Assessing verb-particle constructions through classical Greek preverbation (8th to 4th c. BCE)",
+          "authors": [
+            "Elena Squeri"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 144,
+          "citation_pages": "99-130",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The pragmatic development of ποίησον ἀγάπην poíēson agápēn as an intersubjective marker in post-classical Greek (4th to 6th c. CE)",
+          "authors": [
+            "poíēson agápēn",
+            "Madrigal Acero",
+            "Brown",
+            "Caffi 2005"
+          ],
+          "pdf_start_index": 145,
+          "pdf_end_index": 171,
+          "citation_pages": "131-158",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Between word and phrase: The puzzle of Coptic light-verb constructions (2nd to 5th c. CE)",
+          "authors": [
+            "Nina Speransky"
+          ],
+          "pdf_start_index": 173,
+          "pdf_end_index": 199,
+          "citation_pages": "159-188",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Roundabout ways of setting up scenes in the Greek New Testament (1st to 2nd c. CE)",
+          "authors": [
+            "Luke",
+            "Nazareth",
+            "Jesus"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 223,
+          "citation_pages": "189-210",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Support-verb constructions with causative force in the Vulgate and Septuagint and their Hebrew and Greek originals (3rd c. BCE to 2nd c. CE)",
+          "authors": [
+            "Roland"
+          ],
+          "pdf_start_index": 225,
+          "pdf_end_index": 261,
+          "citation_pages": "211-248",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Understanding the expression of pain across time: Metaphor and intensity in Latin (and Spanish) support-verb constructions with dolor (2nd c. BCE to 15th c. CE)",
+          "authors": [
+            "Jiménez Martínez"
+          ],
+          "pdf_start_index": 263,
+          "pdf_end_index": 294,
+          "citation_pages": "249-280",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 18.463699771999927,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:17:07.696446+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 0.20929725600035454,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:12.565754+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.25016804299957585,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:22.735022+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:46:59.399678+00:00"
+  "generated_at": "2026-08-15T04:23:22.735022+00:00"
 }

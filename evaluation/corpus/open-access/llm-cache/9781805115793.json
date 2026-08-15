@@ -386,7 +386,777 @@
       ],
       "elapsed_seconds": 245.48988160099998,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "Does the Cairo Codex Represent a Scribal School?",
+          "authors": [],
+          "pdf_start_index": 146,
+          "pdf_end_index": 160,
+          "citation_pages": "111-146",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hebrew Script Terminology in Cairo Geniza Book Lists",
+          "authors": [
+            "Judith Olszowy-Schlanger \nWriting"
+          ],
+          "pdf_start_index": 162,
+          "pdf_end_index": 191,
+          "citation_pages": "147-176",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Geniza Book Lists as Indirect Sources of Medieval Jewish Book History in the Near East",
+          "authors": [
+            "Geoffrey Khan",
+            "Ben Ezra"
+          ],
+          "pdf_start_index": 192,
+          "pdf_end_index": 230,
+          "citation_pages": "177-216",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "An Exploration of Geniza Targum Fragments as Objects of Personal Study and Everyday Use",
+          "authors": [
+            "Estara Arrant"
+          ],
+          "pdf_start_index": 232,
+          "pdf_end_index": 270,
+          "citation_pages": "217-256",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Two Judaeo-Arabic Letters to Abraham Maimonides: A Recommendation and a Condemnation of a Communal Leader",
+          "authors": [
+            "Mordechai Akiva",
+            "Ben Outhwaite",
+            "Taylor",
+            "Library"
+          ],
+          "pdf_start_index": 272,
+          "pdf_end_index": 301,
+          "citation_pages": "257-286",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Fragment of the Maḥberot ʿAzarʾel ben Yosef",
+          "authors": [
+            "BEN YOSEF \n",
+            "Michael Rand z\"l",
+            "Schirmann",
+            "Geniza"
+          ],
+          "pdf_start_index": 302,
+          "pdf_end_index": 325,
+          "citation_pages": "287-310",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Some Notes on Melody: Saʿadya Gaon and Why ‘naghma’ Means ‘vowel’ in Judaeo-Arabic",
+          "authors": [
+            "Nick Posegay"
+          ],
+          "pdf_start_index": 326,
+          "pdf_end_index": 355,
+          "citation_pages": "311-340",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "“You Shall Not Boil a Kid in Its Mother’s Milk” in Saʿadya Gaon’s Translation of the Pentateuch",
+          "authors": [
+            "Tamar Zewi"
+          ],
+          "pdf_start_index": 356,
+          "pdf_end_index": 377,
+          "citation_pages": "341-362",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Judaeo-Arabic Translations from the Bible to Robinson Crusoe: Centre versus Periphery",
+          "authors": [
+            "Ofra Tirosh-Becker",
+            "Judaeo -Arabic"
+          ],
+          "pdf_start_index": 378,
+          "pdf_end_index": 412,
+          "citation_pages": "363-398",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Comparative Notes on the Jewish Arabic Dialects of Gabes and Djerba (Tunisia)",
+          "authors": [
+            "Wiktor Gębski",
+            "Gębski",
+            "Saada",
+            "Behnstedt"
+          ],
+          "pdf_start_index": 414,
+          "pdf_end_index": 443,
+          "citation_pages": "399-428",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Written Egyptian Judaeo-Arabic: Implications for the Spoken Variety",
+          "authors": [
+            "Benjamin Hary",
+            "EJA"
+          ],
+          "pdf_start_index": 444,
+          "pdf_end_index": 472,
+          "citation_pages": "429-458",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Arabic Counterpart of the Byzantine Karaite Treatise Marpe la-ʿAṣem",
+          "authors": [
+            "MARPE LA-ʿAṢEM* \n",
+            "Gregor Schwarb",
+            "Sefer Marpe la-ʿAṣem",
+            "Faith",
+            "Byzantine Karaite Hebrew"
+          ],
+          "pdf_start_index": 474,
+          "pdf_end_index": 503,
+          "citation_pages": "459-488",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Early Tenth-Century Judaeo-Arabic Exegesis on the Visit to Abraham",
+          "authors": [
+            "Miriam Goldstein \n",
+            "Jacob al-Qirqisānī",
+            "Yūsuf Ya",
+            "al-Qirqisānī",
+            "Karaite"
+          ],
+          "pdf_start_index": 504,
+          "pdf_end_index": 536,
+          "citation_pages": "489-522",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Yūsuf ibn Nūḥ and Yūsuf ibn Baḫtawayh: One Grammarian or Two?",
+          "authors": [
+            "YŪSUF IBN NŪḤ",
+            "YŪSUF IBN",
+            "Ibn Nūḥ",
+            "Al-D"
+          ],
+          "pdf_start_index": 538,
+          "pdf_end_index": 560,
+          "citation_pages": "523-546",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Lexicographical Analysis of Sharḥ al-ʾAlfāẓ by Abū al-Faraj Hārūn (Parashat Bereshit)",
+          "authors": [
+            "ABŪ AL-FARAJ",
+            "José Martínez Delgado",
+            "fī al-Miqra"
+          ],
+          "pdf_start_index": 562,
+          "pdf_end_index": 588,
+          "citation_pages": "547-574",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wrestlers before the King: Image and Text in Ancient and Medieval Representations of the First Murder",
+          "authors": [
+            "Diana Lipton",
+            "Meira Polliack",
+            "Dan Millman 1980",
+            "Geoffrey Khan"
+          ],
+          "pdf_start_index": 590,
+          "pdf_end_index": 624,
+          "citation_pages": "575-610",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Bibliography to History: The Early Study of Andalusi Judaism in the Modern Era",
+          "authors": [
+            "Ángeles Gallego"
+          ],
+          "pdf_start_index": 626,
+          "pdf_end_index": 652,
+          "citation_pages": "611-640",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Neo-Aramaic 2MS and 2FS Genitive Pronominal Suffixes in the Light of Earlier Aramaic",
+          "authors": [
+            "Steven E. Fassberg \nAramaic"
+          ],
+          "pdf_start_index": 656,
+          "pdf_end_index": 669,
+          "citation_pages": "641-654",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Being Born in Neo-Aramaic",
+          "authors": [
+            "Samuel E. Fox"
+          ],
+          "pdf_start_index": 670,
+          "pdf_end_index": 687,
+          "citation_pages": "655-672",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Not Such a Dummy or Otiose After All: NENA Verbs with Non-referential 3FS Object Pronouns",
+          "authors": [
+            "Garbell",
+            "Persian Azerbaijan"
+          ],
+          "pdf_start_index": 688,
+          "pdf_end_index": 708,
+          "citation_pages": "673-694",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Church Militant: A Modern Western Aramaic Account",
+          "authors": [
+            "Phillip Yu",
+            "Burlakov",
+            "Anna S. Cherkashina",
+            "Charles \nG. Häberl",
+            "Sergey V. Loesov",
+            "Arabic Maʿlūlah",
+            "al-Qutayfah"
+          ],
+          "pdf_start_index": 710,
+          "pdf_end_index": 735,
+          "citation_pages": "695-720",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Syriac Christian in the Turkish Army: A Text in the Ṭuroyo Dialect of Midin",
+          "authors": [
+            "Otto Jastrow",
+            "Geoffrey Khan"
+          ],
+          "pdf_start_index": 736,
+          "pdf_end_index": 753,
+          "citation_pages": "721-738",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "War and Fieldwork",
+          "authors": [
+            "Charles G. Häberl \nFestschriften",
+            "Geoffrey Khan’s"
+          ],
+          "pdf_start_index": 754,
+          "pdf_end_index": 769,
+          "citation_pages": "739-754",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Indefiniteness Marking: NENA and Its Areal and Semitic Parallels",
+          "authors": [],
+          "pdf_start_index": 770,
+          "pdf_end_index": 798,
+          "citation_pages": "755-784",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Miracles of Saint Ephrem: Legends in the Neo-Aramaic Dialect of Umra d-Shish",
+          "authors": [
+            "Paul M. Noorlander",
+            "Dêr Şîş",
+            "Khan"
+          ],
+          "pdf_start_index": 800,
+          "pdf_end_index": 837,
+          "citation_pages": "785-822",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Relating Morphological and Sociolinguistic Variety in Modern Hebrew to Neo-Aramaic",
+          "authors": [],
+          "pdf_start_index": 838,
+          "pdf_end_index": 869,
+          "citation_pages": "823-854",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The North-Eastern Neo-Aramaic Dialect of Tin",
+          "authors": [],
+          "pdf_start_index": 870,
+          "pdf_end_index": 909,
+          "citation_pages": "855-894",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Five Enigmatic Neo-Aramaic Lexemes and Their Possible Etymologies",
+          "authors": [
+            "Hezy Mutzafi",
+            "Neo -\nMandaic",
+            "Neo -Aramaic"
+          ],
+          "pdf_start_index": 910,
+          "pdf_end_index": 928,
+          "citation_pages": "895-913",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 29.175340173999984,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:45:05.924757+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 74.04822101100012,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:05:16.373535+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "Does the Cairo Codex Represent a Scribal School?",
+          "authors": [],
+          "pdf_start_index": 146,
+          "pdf_end_index": 160,
+          "citation_pages": "111-146",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hebrew Script Terminology in Cairo Geniza Book Lists",
+          "authors": [
+            "Judith Olszowy-Schlanger \nWriting"
+          ],
+          "pdf_start_index": 162,
+          "pdf_end_index": 191,
+          "citation_pages": "147-176",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Geniza Book Lists as Indirect Sources of Medieval Jewish Book History in the Near East",
+          "authors": [
+            "Geoffrey Khan",
+            "Ben Ezra"
+          ],
+          "pdf_start_index": 192,
+          "pdf_end_index": 230,
+          "citation_pages": "177-216",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "An Exploration of Geniza Targum Fragments as Objects of Personal Study and Everyday Use",
+          "authors": [
+            "Estara Arrant"
+          ],
+          "pdf_start_index": 232,
+          "pdf_end_index": 270,
+          "citation_pages": "217-256",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Two Judaeo-Arabic Letters to Abraham Maimonides: A Recommendation and a Condemnation of a Communal Leader",
+          "authors": [
+            "Mordechai Akiva",
+            "Ben Outhwaite",
+            "Taylor",
+            "Library"
+          ],
+          "pdf_start_index": 272,
+          "pdf_end_index": 301,
+          "citation_pages": "257-286",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Fragment of the Maḥberot ʿAzarʾel ben Yosef",
+          "authors": [
+            "BEN YOSEF \n",
+            "Michael Rand z\"l",
+            "Schirmann",
+            "Geniza"
+          ],
+          "pdf_start_index": 302,
+          "pdf_end_index": 325,
+          "citation_pages": "287-310",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Some Notes on Melody: Saʿadya Gaon and Why ‘naghma’ Means ‘vowel’ in Judaeo-Arabic",
+          "authors": [
+            "Nick Posegay"
+          ],
+          "pdf_start_index": 326,
+          "pdf_end_index": 355,
+          "citation_pages": "311-340",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "“You Shall Not Boil a Kid in Its Mother’s Milk” in Saʿadya Gaon’s Translation of the Pentateuch",
+          "authors": [
+            "Tamar Zewi"
+          ],
+          "pdf_start_index": 356,
+          "pdf_end_index": 377,
+          "citation_pages": "341-362",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Judaeo-Arabic Translations from the Bible to Robinson Crusoe: Centre versus Periphery",
+          "authors": [
+            "Ofra Tirosh-Becker",
+            "Judaeo -Arabic"
+          ],
+          "pdf_start_index": 378,
+          "pdf_end_index": 412,
+          "citation_pages": "363-398",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Comparative Notes on the Jewish Arabic Dialects of Gabes and Djerba (Tunisia)",
+          "authors": [
+            "Wiktor Gębski",
+            "Gębski",
+            "Saada",
+            "Behnstedt"
+          ],
+          "pdf_start_index": 414,
+          "pdf_end_index": 443,
+          "citation_pages": "399-428",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Written Egyptian Judaeo-Arabic: Implications for the Spoken Variety",
+          "authors": [
+            "Benjamin Hary",
+            "EJA"
+          ],
+          "pdf_start_index": 444,
+          "pdf_end_index": 472,
+          "citation_pages": "429-458",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Arabic Counterpart of the Byzantine Karaite Treatise Marpe la-ʿAṣem",
+          "authors": [
+            "MARPE LA-ʿAṢEM* \n",
+            "Gregor Schwarb",
+            "Sefer Marpe la-ʿAṣem",
+            "Faith",
+            "Byzantine Karaite Hebrew"
+          ],
+          "pdf_start_index": 474,
+          "pdf_end_index": 503,
+          "citation_pages": "459-488",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Early Tenth-Century Judaeo-Arabic Exegesis on the Visit to Abraham",
+          "authors": [
+            "Miriam Goldstein \n",
+            "Jacob al-Qirqisānī",
+            "Yūsuf Ya",
+            "al-Qirqisānī",
+            "Karaite"
+          ],
+          "pdf_start_index": 504,
+          "pdf_end_index": 536,
+          "citation_pages": "489-522",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Yūsuf ibn Nūḥ and Yūsuf ibn Baḫtawayh: One Grammarian or Two?",
+          "authors": [
+            "YŪSUF IBN NŪḤ",
+            "YŪSUF IBN",
+            "Ibn Nūḥ",
+            "Al-D"
+          ],
+          "pdf_start_index": 538,
+          "pdf_end_index": 560,
+          "citation_pages": "523-546",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Lexicographical Analysis of Sharḥ al-ʾAlfāẓ by Abū al-Faraj Hārūn (Parashat Bereshit)",
+          "authors": [
+            "ABŪ AL-FARAJ",
+            "José Martínez Delgado",
+            "fī al-Miqra"
+          ],
+          "pdf_start_index": 562,
+          "pdf_end_index": 588,
+          "citation_pages": "547-574",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wrestlers before the King: Image and Text in Ancient and Medieval Representations of the First Murder",
+          "authors": [
+            "Diana Lipton",
+            "Meira Polliack",
+            "Dan Millman 1980",
+            "Geoffrey Khan"
+          ],
+          "pdf_start_index": 590,
+          "pdf_end_index": 624,
+          "citation_pages": "575-610",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Bibliography to History: The Early Study of Andalusi Judaism in the Modern Era",
+          "authors": [
+            "Ángeles Gallego"
+          ],
+          "pdf_start_index": 626,
+          "pdf_end_index": 652,
+          "citation_pages": "611-640",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Neo-Aramaic 2MS and 2FS Genitive Pronominal Suffixes in the Light of Earlier Aramaic",
+          "authors": [
+            "Steven E. Fassberg \nAramaic"
+          ],
+          "pdf_start_index": 656,
+          "pdf_end_index": 669,
+          "citation_pages": "641-654",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Being Born in Neo-Aramaic",
+          "authors": [
+            "Samuel E. Fox"
+          ],
+          "pdf_start_index": 670,
+          "pdf_end_index": 687,
+          "citation_pages": "655-672",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Not Such a Dummy or Otiose After All: NENA Verbs with Non-referential 3FS Object Pronouns",
+          "authors": [
+            "Garbell",
+            "Persian Azerbaijan"
+          ],
+          "pdf_start_index": 688,
+          "pdf_end_index": 708,
+          "citation_pages": "673-694",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Church Militant: A Modern Western Aramaic Account",
+          "authors": [
+            "Phillip Yu",
+            "Burlakov",
+            "Anna S. Cherkashina",
+            "Charles \nG. Häberl",
+            "Sergey V. Loesov",
+            "Arabic Maʿlūlah",
+            "al-Qutayfah"
+          ],
+          "pdf_start_index": 710,
+          "pdf_end_index": 735,
+          "citation_pages": "695-720",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Syriac Christian in the Turkish Army: A Text in the Ṭuroyo Dialect of Midin",
+          "authors": [
+            "Otto Jastrow",
+            "Geoffrey Khan"
+          ],
+          "pdf_start_index": 736,
+          "pdf_end_index": 753,
+          "citation_pages": "721-738",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "War and Fieldwork",
+          "authors": [
+            "Charles G. Häberl \nFestschriften",
+            "Geoffrey Khan’s"
+          ],
+          "pdf_start_index": 754,
+          "pdf_end_index": 769,
+          "citation_pages": "739-754",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Indefiniteness Marking: NENA and Its Areal and Semitic Parallels",
+          "authors": [],
+          "pdf_start_index": 770,
+          "pdf_end_index": 798,
+          "citation_pages": "755-784",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Miracles of Saint Ephrem: Legends in the Neo-Aramaic Dialect of Umra d-Shish",
+          "authors": [
+            "Paul M. Noorlander",
+            "Dêr Şîş",
+            "Khan"
+          ],
+          "pdf_start_index": 800,
+          "pdf_end_index": 837,
+          "citation_pages": "785-822",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Relating Morphological and Sociolinguistic Variety in Modern Hebrew to Neo-Aramaic",
+          "authors": [],
+          "pdf_start_index": 838,
+          "pdf_end_index": 869,
+          "citation_pages": "823-854",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The North-Eastern Neo-Aramaic Dialect of Tin",
+          "authors": [],
+          "pdf_start_index": 870,
+          "pdf_end_index": 909,
+          "citation_pages": "855-894",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Five Enigmatic Neo-Aramaic Lexemes and Their Possible Etymologies",
+          "authors": [
+            "Hezy Mutzafi",
+            "Neo -\nMandaic",
+            "Neo -Aramaic"
+          ],
+          "pdf_start_index": 910,
+          "pdf_end_index": 928,
+          "citation_pages": "895-913",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 73.46484101899978,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:17:58.584397+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 0.2217508089997864,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:12.351274+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.2826817369996206,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:22.700834+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:46:32.451166+00:00"
+  "generated_at": "2026-08-15T04:23:22.700834+00:00"
 }

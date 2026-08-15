@@ -19,7 +19,37 @@
       ],
       "elapsed_seconds": 3.1283068749999074,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [],
+      "elapsed_seconds": 1.1167262060000098,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:44:36.741842+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [],
+      "elapsed_seconds": 83.83698092899999,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:05:24.531482+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [],
+      "elapsed_seconds": 0.5693148489999658,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:16:45.111502+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 0.19441519399970275,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:12.121107+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.21308553600010782,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:22.535274+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:42:26.954263+00:00"
+  "generated_at": "2026-08-15T04:23:22.535274+00:00"
 }

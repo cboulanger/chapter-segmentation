@@ -4,7 +4,379 @@
       "chapters": [],
       "elapsed_seconds": 2.7666271289999713,
       "demand_at_run": 0
+    },
+    "deepseek-v4-flash-0731": {
+      "chapters": [
+        {
+          "title": "French Opera: A Professional World Haunted by Gender-Based Violence",
+          "authors": [
+            "Marie Buscatto",
+            "Soline Helbert",
+            "Ionela \nRoharik \nIntroduction\nIn",
+            "MeToo",
+            "Chloé Briot"
+          ],
+          "pdf_start_index": 37,
+          "pdf_end_index": 58,
+          "citation_pages": "27-48",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Navigating the Boundary between Subjection and Agency: Gender-Based Violence in the Japanese Popular Music Industry",
+          "authors": [
+            "Johnny \nKitagawa"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 82,
+          "citation_pages": "49-72",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender-Based Violence in French Art Schools and the Reproduction of Gender Inequality in Contemporary Art",
+          "authors": [],
+          "pdf_start_index": 83,
+          "pdf_end_index": 110,
+          "citation_pages": "73-100",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Helsinki School: Gendered Image Shaping and Gender-Based Violence in a Photography Branding Project",
+          "authors": [
+            "Leena-Maija  Rossi",
+            "Sari  Karttunen\nVarieties"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 135,
+          "citation_pages": "101-126",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Creating Content about Gender-Based Violence and Sexuality while Being Subjected to Sexual Harassment: Experiences of UK Screen Industries Workers",
+          "authors": [
+            "Being Subjected",
+            "MeToo"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 162,
+          "citation_pages": "127-152",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Playing Is Not Consenting: Sexual Harassment in New York Theatre",
+          "authors": [
+            "Bleuwenn  Lechaux"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 181,
+          "citation_pages": "153-172",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Rumours to Calling Out: Denunciations of Gender-Based Violence in Electronic Dance Music in France",
+          "authors": [
+            "Marc"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 205,
+          "citation_pages": "173-196",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Conclusion",
+          "authors": [
+            "Marie  Buscatto",
+            "Sari  Karttunen"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 209,
+          "citation_pages": "197-200",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Afterword",
+          "authors": [
+            "Afterword \nPaula-Irene  "
+          ],
+          "pdf_start_index": 211,
+          "pdf_end_index": 221,
+          "citation_pages": "201-211",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 4.248408800999982,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T03:44:35.619027+00:00"
+    },
+    "qwen3.5-122b-a10b": {
+      "chapters": [
+        {
+          "title": "French Opera: A Professional World Haunted by Gender-Based Violence",
+          "authors": [
+            "Marie Buscatto",
+            "Soline Helbert",
+            "Ionela \nRoharik \nIntroduction\nIn",
+            "MeToo",
+            "Chloé Briot"
+          ],
+          "pdf_start_index": 37,
+          "pdf_end_index": 58,
+          "citation_pages": "27-48",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Navigating the Boundary between Subjection and Agency: Gender-Based Violence in the Japanese Popular Music Industry",
+          "authors": [
+            "Johnny \nKitagawa"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 82,
+          "citation_pages": "49-72",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender-Based Violence in French Art Schools and the Reproduction of Gender Inequality in Contemporary Art",
+          "authors": [],
+          "pdf_start_index": 83,
+          "pdf_end_index": 110,
+          "citation_pages": "73-100",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Helsinki School: Gendered Image Shaping and Gender-Based Violence in a Photography Branding Project",
+          "authors": [
+            "Leena-Maija  Rossi",
+            "Sari  Karttunen\nVarieties"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 135,
+          "citation_pages": "101-126",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Creating Content about Gender-Based Violence and Sexuality while Being Subjected to Sexual Harassment: Experiences of UK Screen Industries Workers",
+          "authors": [
+            "Being Subjected",
+            "MeToo"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 162,
+          "citation_pages": "127-152",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Playing Is Not Consenting: Sexual Harassment in New York Theatre",
+          "authors": [
+            "Bleuwenn  Lechaux"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 181,
+          "citation_pages": "153-172",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Rumours to Calling Out: Denunciations of Gender-Based Violence in Electronic Dance Music in France",
+          "authors": [
+            "Marc"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 205,
+          "citation_pages": "173-196",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Conclusion",
+          "authors": [
+            "Marie  Buscatto",
+            "Sari  Karttunen"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 209,
+          "citation_pages": "197-200",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Afterword",
+          "authors": [
+            "Afterword \nPaula-Irene  "
+          ],
+          "pdf_start_index": 211,
+          "pdf_end_index": 221,
+          "citation_pages": "201-211",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 56.739360132,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:04:49.132975+00:00"
+    },
+    "glm-4.7": {
+      "chapters": [
+        {
+          "title": "French Opera: A Professional World Haunted by Gender-Based Violence",
+          "authors": [
+            "Marie Buscatto",
+            "Soline Helbert",
+            "Ionela \nRoharik \nIntroduction\nIn",
+            "MeToo",
+            "Chloé Briot"
+          ],
+          "pdf_start_index": 37,
+          "pdf_end_index": 58,
+          "citation_pages": "27-48",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Navigating the Boundary between Subjection and Agency: Gender-Based Violence in the Japanese Popular Music Industry",
+          "authors": [
+            "Johnny \nKitagawa"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 82,
+          "citation_pages": "49-72",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender-Based Violence in French Art Schools and the Reproduction of Gender Inequality in Contemporary Art",
+          "authors": [],
+          "pdf_start_index": 83,
+          "pdf_end_index": 110,
+          "citation_pages": "73-100",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Helsinki School: Gendered Image Shaping and Gender-Based Violence in a Photography Branding Project",
+          "authors": [
+            "Leena-Maija  Rossi",
+            "Sari  Karttunen\nVarieties"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 135,
+          "citation_pages": "101-126",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Creating Content about Gender-Based Violence and Sexuality while Being Subjected to Sexual Harassment: Experiences of UK Screen Industries Workers",
+          "authors": [
+            "Being Subjected",
+            "MeToo"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 162,
+          "citation_pages": "127-152",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Playing Is Not Consenting: Sexual Harassment in New York Theatre",
+          "authors": [
+            "Bleuwenn  Lechaux"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 181,
+          "citation_pages": "153-172",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Rumours to Calling Out: Denunciations of Gender-Based Violence in Electronic Dance Music in France",
+          "authors": [
+            "Marc"
+          ],
+          "pdf_start_index": 183,
+          "pdf_end_index": 205,
+          "citation_pages": "173-196",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Conclusion",
+          "authors": [
+            "Marie  Buscatto",
+            "Sari  Karttunen"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 209,
+          "citation_pages": "197-200",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Afterword",
+          "authors": [
+            "Afterword \nPaula-Irene  "
+          ],
+          "pdf_start_index": 211,
+          "pdf_end_index": 221,
+          "citation_pages": "201-211",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 14.935113949999959,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:16:55.963232+00:00"
+    },
+    "devstral-2-123b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 0.17353025600004912,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:11.920139+00:00"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.23864683500005412,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-15T04:23:22.480228+00:00"
     }
   },
-  "generated_at": "2026-08-14T05:42:23.820381+00:00"
+  "generated_at": "2026-08-15T04:23:22.480228+00:00"
 }

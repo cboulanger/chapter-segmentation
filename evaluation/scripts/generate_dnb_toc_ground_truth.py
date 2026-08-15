@@ -24,6 +24,7 @@ import argparse
 import asyncio
 import json
 import os
+import random
 import time
 from pathlib import Path
 from typing import Optional
@@ -249,6 +250,30 @@ def main() -> int:
     if args.spot_check is not None:
         return _spot_check(corpus_dir(_CORPUS_NAME), args.spot_check)
     return _generate(args)
+
+
+def _spot_check(cdir: Path, n: int) -> int:
+    """Terminal-driven precision check (design spec section 7): sample n
+    books that passed the bulk-tier gate, print each one's PDF path and
+    generated entries, and prompt for a manual Accept/Reject after
+    visually opening the PDF (e.g. via the Read tool's pages param, same
+    as the manual eval-tier transcription workflow in evaluation/README.md)
+    -- then report measured precision for the >=0.90 gate threshold."""
+    passing = sorted(p.name.removesuffix(".expected.json") for p in cdir.glob("*.expected.json"))
+    sample = random.sample(passing, min(n, len(passing)))
+    accepted = 0
+    for key in sample:
+        gt = json.loads((cdir / f"{key}.expected.json").read_text(encoding="utf-8"))
+        print(f"\n=== {key} ===\nPDF: {cdir / f'{key}.pdf'}")
+        print(json.dumps(gt["entries"], indent=2, ensure_ascii=False))
+        answer = input("Matches the scan? [y/N] ").strip().lower()
+        if answer == "y":
+            accepted += 1
+    if sample:
+        print(f"\nSpot-check precision: {accepted}/{len(sample)} = {accepted / len(sample):.0%}")
+    else:
+        print("No passing books found to spot-check yet.")
+    return 0
 
 
 if __name__ == "__main__":

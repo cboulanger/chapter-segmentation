@@ -90,3 +90,18 @@ def gate_book(
     merged += [entry for j, entry in enumerate(llm) if j not in matched_l]
     merged.sort(key=lambda e: (e.printed_page_number == -1, e.printed_page_number))
     return True, merged
+
+
+def toc_entry_to_gt_dict(entry: TocEntry) -> dict:
+    """Serializes one TocEntry to this corpus's <id>.expected.json entry
+    shape (design spec section 2) -- printed_page_number as a string, or
+    None for the -1 "unknown" sentinel. Matches
+    evaluation/nuextract2_common.py's build_target output shape directly
+    (its primary downstream consumer, per the parent program spec's
+    section 3), and mirrors how citation_pages is already stored as a
+    string elsewhere in this project's ground truth."""
+    return {
+        "title": entry.title,
+        "authors": list(entry.authors),
+        "printed_page_number": str(entry.printed_page_number) if entry.printed_page_number != -1 else None,
+    }

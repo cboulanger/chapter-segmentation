@@ -8,7 +8,7 @@ TocEntry lists."""
 import unittest
 
 from chapter_segmentation.segmentation import TocEntry
-from evaluation.dnb_toc_matching import align_toc_entries, gate_book
+from evaluation.dnb_toc_matching import align_toc_entries, gate_book, toc_entry_to_gt_dict
 
 
 def _entry(title: str, page: int, authors: tuple[str, ...] = ()) -> TocEntry:
@@ -114,3 +114,19 @@ class TestGateBook(unittest.TestCase):
         passed, entries = gate_book(h, l)
         self.assertTrue(passed)
         self.assertEqual(entries[0].authors, ("Regex Author",))  # heuristic's own authors preferred when present
+
+
+class TestTocEntryToGtDict(unittest.TestCase):
+    def test_known_page_number_becomes_string(self):
+        entry = _entry("Einleitung", 9, authors=("Jane Author",))
+        self.assertEqual(
+            toc_entry_to_gt_dict(entry),
+            {"title": "Einleitung", "authors": ["Jane Author"], "printed_page_number": "9"},
+        )
+
+    def test_unknown_page_number_becomes_none(self):
+        entry = _entry("Bibliographie", -1)
+        self.assertEqual(
+            toc_entry_to_gt_dict(entry),
+            {"title": "Bibliographie", "authors": [], "printed_page_number": None},
+        )

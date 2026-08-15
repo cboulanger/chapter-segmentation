@@ -200,26 +200,72 @@ listing (bibliography/citation index) outscoring a degraded real TOC, and
 multi-line title merging. This harness becomes the regression guard and
 tuning target for any future change to `_TOC_LINE_RE`/`find_toc_candidates`.
 
-## 5. Consumer priority 3 — Layout-based TOC classifier (weak match, capped ROI — defer)
+## 5. Consumer priority 3 — Layout-based TOC classifier (high potential value, unproven link to this GT)
 
-Per §1, this classifier's current design (geometry-only, per-book context
-features, no production wiring, model never persisted) is a poor fit for
-what dnb-toc-only's *structured entry* ground truth specifically adds — it
-already gets free, GT-free positive-page examples from the corpus
-acquisition alone (every page in every book is a confirmed `toc` page by
-construction, per the 2026-08-14 spec), and §2's title/author/page-number
-transcription is a different signal type (text content) than what this
-classifier consumes (page geometry). A later spec, if picked up, has two
-directions to choose between rather than one obvious path: (a) restructure
-into a two-stage pipeline — a context-free, page-local pre-filter trained on
-a much larger pool (dnb-toc-only positives plus negative/non-TOC pages
-sourced from the existing corpora) feeding into the existing context-aware
-re-scorer only for pages that survive stage 1; or (b) keep dnb-toc-only to
-the out-of-population recall sanity check the 2026-08-14 spec already
-scoped, and invest no further. **Recommendation: defer real investment
-here until this classifier has an actual production consumer** — right now
-it is an evaluation pilot with no deployment path, so improving its
-LOBO numbers further has no measurable downstream effect.
+**Correction to an earlier framing of this section:** the classifier having
+no production wiring today is a *consequence* of it never having cleared its
+own accuracy bar (§ "Layout-based TOC/chapter-first-page classifier pilot"
+in `RESULTS.md` — never met the 90%/15% bar across eleven follow-ups), not a
+sign the idea itself is low-value. A classifier that *did* clear that bar
+would have real production use: an upstream noise filter that keeps
+non-TOC pages away from the heuristic and LLM-based parsers entirely, which
+neither of those parsers can currently do for itself (both are directly
+exposed to lookalike pages today — see the "secondary listing wins over the
+real TOC" failure mode below). The question this section actually needs to
+answer, per that correction, is narrower: **does the structured entry-level
+GT this document builds (§2) move the needle on that accuracy bar, or does
+it not, distinct from the corpus's mere existence** (which already supplies
+free page-level positive labels with no work from this document — every
+page in every dnb-toc-only book is a confirmed `toc` page by construction,
+per the 2026-08-14 spec, independent of whether anyone ever transcribes its
+entries).
+
+**The honest answer is: probably not directly, but there is one concrete,
+testable indirect path.** The classifier's features are pure page geometry
+(font size, position, spacing from ALTO) — parsed titles/authors/page
+numbers aren't a geometric signal and can't be fed to the current feature
+set as-is. The one real connection: a **new content-derived feature**,
+something like "what fraction of this page's text parses as valid
+`title...page-number` lines" (reusing `find_toc_candidates`'s own line
+matching, or a looser density measure). §2's structured GT is exactly what
+would be needed to *calibrate* such a feature — measuring how reliably
+parse-density actually distinguishes a genuine TOC page from a structurally
+similar lookalike (a bibliography or citation-index page — the same
+"secondary listing wins over the real TOC" failure already documented as
+unresolved in `RESULTS.md`, and the closest thing to a named root cause
+behind the classifier's persistent shortfall across its whole follow-up
+history).
+
+**That path has a real risk, not just an upside, worth naming rather than
+glossing over:** a feature derived from the same regex the pure heuristic
+already uses would tend to fail on exactly the OCR-degraded pages where the
+regex already fails — which is precisely the case where an independent,
+geometry-based filter would be most valuable. Leaning on it risks
+correlating the classifier's blind spots with the heuristic's instead of
+complementing them, undercutting the whole "catches what text-based parsing
+misses" rationale for wanting this classifier in production in the first
+place. A later spec would need to check this directly (does the feature
+help specifically on pages where the pure regex already fails, or only on
+pages it already handles fine) before trusting it.
+
+**Separately, and unaffected by any of this document's GT work:**
+dnb-toc-only still cannot supply what the classifier's own follow-up history
+names as its most persistent blocker — hard negatives (pages that are
+geometrically TOC-shaped but aren't real TOC pages). DNB only digitizes
+confirmed TOC pages, so this corpus is one-class by construction regardless
+of what ground truth gets built on top of it; that gap has to be closed some
+other way (e.g. mined from the existing corpora's own non-`toc`-labeled
+pages) irrespective of §2.
+
+**Recommendation:** don't scope a full follow-up spec for this yet. Instead,
+gate it on a cheap pilot check once §2's eval tier exists: engineer the
+parse-density feature, add it to the existing LOBO harness, and measure
+whether `full_recall_fraction` moves — and specifically whether any gain
+concentrates on already-easy pages (feature not worth it) or on pages the
+pure heuristic currently gets wrong (feature worth pursuing, and worth a
+real spec). This is a half-day measurement, not a design decision, and it
+should happen before either committing to or ruling out real investment
+here.
 
 ## 6. Recommended sequencing for follow-up specs
 
@@ -230,9 +276,10 @@ LOBO numbers further has no measurable downstream effect.
 3. §4 (heuristic line-parsing harness) — fills a real, currently-total gap
    in what this project can measure, moderate implementation cost (mirrors
    an existing pattern in `nuextract_baseline.py`).
-4. §5 (layout classifier) — defer; revisit only once/if the classifier gains
-   a production consumer, at which point re-evaluate which of the two
-   directions in §5 actually matters.
+4. §5 (layout classifier) — not a follow-up spec yet. Run the pilot
+   parse-density-feature check described in §5 once §2's eval tier exists;
+   only write a real spec if that pilot shows a gain concentrated on pages
+   the pure heuristic currently gets wrong, not just already-easy pages.
 
 ## 7. Decision criteria
 

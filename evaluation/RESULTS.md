@@ -1815,3 +1815,104 @@ known zero-recall cluster) rather than a bigger `max_tokens`. `f1=0.44`
 at `max_tokens=6000` stands as the baseline; raising it beyond 6000 buys
 nothing further on this corpus and should not be adopted as the
 production/evaluation default.
+
+## NuExtract-2.0-4B LoRA fine-tuning pilot: result (2026-08-14)
+
+Ran the pilot for real on MPCDF Raven (see
+`docs/superpowers/specs/2026-08-10-nuextract2-finetuning-pilot-design.md`
+for the design, `evaluation/hpc/README.md` for the HPC deployment itself
+-- getting it running surfaced a long chain of environment/dependency
+bugs, all fixed and documented there and in `nuextract.def`/
+`run_pilot.slurm`'s own comments; nothing environment-specific belongs
+here). Trained a LoRA adapter (rank 16, 4 epochs, gradient checkpointing)
+on 78 books' TOC-scan-window text (89-book corpus, 78 train / 11 eval,
+stratified split seed 42), merged, converted to GGUF Q4_K_M, and scored
+both the fine-tuned and unmodified base checkpoint on the same 11-book
+held-out split via the same `llama.cpp`-only scoring path
+(`evaluate_nuextract_finetune.py`) -- an apples-to-apples comparison,
+not directly comparable to the full-corpus `f1=0.44` baseline above
+(different, much smaller subset).
+
+| | precision | recall | f1 |
+| --- | --- | --- | --- |
+| Fine-tuned | 0.83 | 0.46 | **0.59** |
+| Base (same split, same code) | 0.57 | 0.48 | **0.52** |
+
+**Aggregate f1 improved (0.52 -> 0.59), but the per-book picture is more
+complicated than "fine-tuning helps" -- it's propped up by big wins on a
+few books while masking a real regression on two others:**
+
+| Book | Fine-tuned f1 | Base f1 | Δ |
+| --- | --- | --- | --- |
+| copyrighted-scans/9783848736829 | 0.98 | 0.47 | +0.51 |
+| copyrighted-scans/9783161538315 | 0.00 | 0.00 | — (both fail, pre-existing) |
+| copyrighted-scans/9783428042241 | 0.95 | 0.94 | ~even |
+| open-access/9781800641648 | **0.00** | 0.96 | **−0.96** |
+| open-access/9781771993661 | 0.95 | 0.95 | ~even |
+| open-access/9783839458013 | **0.00** | 0.30 | **−0.30** |
+| open-access/9781906924874 | 0.96 | 0.90 | +0.06 |
+| open-access/9783031466373 | 1.00 | 0.91 | +0.09 |
+| open-access/9783907297285 | 0.96 | 0.96 | ~even |
+| open-access/9781805111856 | 0.49 | 0.00 | +0.49 |
+| open-access/9781805115717 | 0.00 | 0.00 | — (both fail, pre-existing) |
+
+**Root cause of the two collapses: a decoding-time degenerate-repetition
+loop, not a fine-tuning capability regression.** Added `--dump-dir` to
+`evaluate_nuextract_finetune.py` (writes each book's raw completion
+text, `finish_reason`, and parsed/expected chapters) to inspect why two
+books scored 0/0 despite the model clearly having the right knowledge.
+Both books' raw output showed `finish_reason: length` -- the model
+correctly extracted several early chapters completely correctly (real
+titles, real authors, real page numbers) before falling into an
+infinite loop (`9781800641648`: repeating Hebrew transliteration
+diacritics; `9783839458013`: repeating `…`) that burned the entire
+`--max-tokens` budget without ever closing the JSON, so `parse_response`
+saw truncated/invalid JSON and scored 0/0 -- not because the model didn't
+know the answer, but because greedy decoding (`temperature=0.0`, no
+repetition penalty) got stuck. `9783839458013` was already a known
+repetition-prone book in the zero-shot baseline above (one of the four
+`[HIT_MAX_TOKENS]` books that didn't recover even at `max_tokens=12000`)
+-- this pilot didn't introduce that tendency, though `9781800641648` collapsing
+is new (it scored 0.96 zero-shot in this same run).
+
+**Tried fixing it with a repeat penalty; made the aggregate worse both
+times.** The zero-shot baseline section above speculated
+"repetition-penalty sampling" as a possible fix for exactly this failure
+shape -- tested it for real here, twice:
+
+| Config | `9781800641648` | `9783839458013` | 4 other previously-fine books | Aggregate f1 |
+| --- | --- | --- | --- | --- |
+| No penalty (baseline) | 0.00 | 0.00 | all 0.49-1.00 | **0.59** |
+| `repeat_penalty=1.1`, 64-token window (llama-cpp-python default) | 0.83 | 0.09 | 3 collapsed to 0.00, 1 dropped to 0.62 | 0.41 |
+| `repeat_penalty=1.1`, 16-token window | 0.38 | 0.22 | 2 still 0.00, 1 dropped to 0.56 | 0.34 |
+
+Fixed the two target books (partially) but broke others every time: our
+output is a JSON *list* of chapter dicts, repeating the same field names
+(`"title"`/`"authors"`/`"printed_page_number"`) every ~20-40 tokens --
+any blanket repeat penalty, at any window size tried, seems to disrupt
+this model's ability to produce that legitimate, required repetition,
+not just the genuine 1-4-token degenerate loops. Reverted to no penalty
+(`--repeat-penalty`/`--repeat-last-n` remain available as documented,
+off-by-default flags for future experimentation, not because they're
+expected to work as-is). A more promising direction, if this failure
+rate turns out to matter: detect the loop and salvage the valid JSON
+prefix generated before it, at the application layer instead of the
+sampler.
+
+**Against the design spec's actual decision criterion -- a promising
+but genuinely noisy signal, not a clean go.** The spec calls for
+checking whether the *null-page-number rate* specifically dropped, not
+just the aggregate f1; that specific check wasn't done here (would need
+inspecting more of the `--dump-dir` output by hand across the 7 correctly
+-scoring books), but the raw dumps for the two collapsed books are
+suggestive -- every chapter extracted before the loop struck had a
+correct, non-null `printed_page_number`, not the null-page-number
+failure the pilot was meant to fix. Per the spec's own caution, an
+11-book split is "powered to detect obviously helps' vs 'clearly
+doesn't help,' not to measure a precise effect size" -- and this result
+is neither: real wins on some books, a real new failure mode on two
+others, aggregate f1 up but not overwhelmingly so. Worth a follow-up
+decision (extend ground truth for a bigger/more stable split? pursue the
+JSON-prefix-salvage fix for the repetition failures first?) rather than
+either shipping this adapter or abandoning the approach on this result
+alone.

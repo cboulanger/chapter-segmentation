@@ -1267,369 +1267,40 @@ constraints before the LLM would be consulted. This run predated the
 layout-mode fallback and OCR route described above, and only covered the 7
 originally-committed books, not the 10 "diverse real-library" books.
 
-## NuExtract-1.5-tiny zero-shot baseline (2026-08-09)
+## NuExtract: lessons learned from earlier models (2026-08-09)
 
-`evaluation/scripts/evaluate_nuextract_baseline.py` against Ollama serving
-`hf.co/QuantFactory/NuExtract-1.5-tiny-GGUF:Q8_0` (the script's documented
-default -- see
-`docs/superpowers/specs/2026-08-09-nuextract-baseline-evaluation-design.md`).
-Scores only TOC-listing extraction (title + printed_page_number), not full
-chapter-boundary localization.
+Before settling on NuExtract-2.0-4B (below), two earlier/larger models in
+the same family were evaluated and rejected. Kept as a short pointer so
+they aren't re-tried blindly; full investigation detail for both has been
+trimmed from this file since neither is in active use.
 
-| Corpus | Books | Expected chapters | Precision | Recall | F1 |
-| --- | --- | --- | --- | --- | --- |
-| open-access | 37 | 601 | 0.00 | 0.00 | 0.00 |
-| copyrighted-scans | 13 | 312 | 0.00 | 0.00 | 0.00 |
-| **Total** | **50** | **913** | **0.00** | **0.00** | **0.00** |
+- **NuExtract-1.5-tiny: rejected, a genuine model-capability limit.**
+  Zero-shot full 50-book run scored **0.00/0.00/0.00**. Root-caused (via
+  direct Ollama API probing, ruling out a prompt/parsing bug in this
+  repo, plus a follow-up retest through the original `transformers`
+  checkpoint, ruling out GGUF-conversion fidelity as the cause) to the
+  model having no instruction channel to ignore surrounding non-ToC
+  noise: given a real book's scan window, it either stops generating
+  immediately (empty output) or echoes the input back verbatim instead of
+  filling the template. Even best-case, hand-curated ToC-only input (no
+  realistic noise) only reached f1=0.09. Not a serving-path artifact --
+  a real capability ceiling at the "tiny" size.
+- **NuExtract3 (4B): worked well zero-shot, but dropped for deployment
+  reasons, not accuracy.** A materially newer/larger model (Qwen3.5-4B-
+  based) that closed nearly the entire gap: full 50-book run scored
+  **f1=0.60** (open-access 0.69, copyrighted-scans 0.39) via `mlx-vlm`,
+  competitive with or better than the cloud-LLM baseline's f1=0.43-0.48
+  despite no fine-tuning and no `instructions` prompt-tuning. Dropped
+  anyway after a CPU-only deployment check (the actual target: a no-GPU,
+  16GB RAM, 4-vCPU Linux box, where MLX can't run at all and Ollama
+  didn't yet support Qwen3.5-architecture GGUFs) found NuExtract-2.0-4B
+  **1.42x faster** with equal-or-better accuracy (f1=0.97 vs 0.96 on a
+  5-book `llama.cpp`/CPU sample) on that hardware profile, on top of
+  already having mature Ollama support via its older, better-optimized
+  Qwen2.5-VL architecture. All further work targets `numind/
+  NuExtract-2.0-4B` only.
 
-**Decision (per the spec's "Decision criteria"): NuExtract-1.5-tiny does
-not clear the bar for the companion spec's production wiring.** The
-initial 0.00/0.00 result (via Ollama/GGUF) turned out to be a real but
-*partial* explanation -- a follow-up retest via the original `transformers`
-checkpoint (see "Follow-up" below) rules out GGUF-conversion fidelity as
-the sole cause and shows the model has a genuine, load-bearing capability
-gap on this task: it cannot reliably extract structured chapter data from
-scan-window text that includes any surrounding non-TOC content, which is
-exactly what this project's scan-window selection always produces.
-
-**Root cause: the model stops generating almost immediately (empty output)
-on real book front-matter text, independent of this project's code.**
-Investigated directly against Ollama's `/api/generate` endpoint, bypassing
-`evaluation/nuextract_baseline.py` entirely, to rule out a bug in this
-repo's prompt-building or response-parsing:
-
-- A short, clean synthetic example (`<|input|>/### Template/### Text/
-  <|output|>` with `"My name is John."` as the text) works correctly --
-  the model fills the template as expected (`{"name": "John"}`), and a
-  short synthetic TOC snippet ("Introduction ... 1 / Chapter One:
-  Foundations ... 12") also produces syntactically valid, mostly-correct
-  JSON.
-- The *same* template against a real book's front-matter text (a ~1,300-
-  token excerpt of `9781771993661.pdf`'s copyright/title-page text, well
-  under the 16,384-token `num_ctx` budget -- see `call_ollama`'s
-  docstring) reliably produces **zero generated tokens**
-  (`eval_count: 1, done_reason: "stop"`, i.e. the very first sampled
-  token is an end-of-sequence token) at `temperature=0`. Binary-searching
-  truncations of that same text (2,500 / 3,000 / 3,500 / 3,800 / 4,000 /
-  4,200 / 4,400 / 4,600 / 4,800 / 4,971 characters) shows this isn't a
-  fixed length threshold -- pass/fail flips unpredictably between nearby
-  cutoffs, which points to greedy-decoding brittleness on this specific
-  (quantized, community-converted) checkpoint rather than a clean
-  context-length cliff.
-- Raising `temperature` to 0.3 avoids the immediate stop but the model
-  then **echoes the input text back verbatim** instead of extracting a
-  template -- also not usable output, just a different failure mode.
-- This reproduces **identically across two independently-produced
-  third-party GGUF conversions** -- `QuantFactory/NuExtract-1.5-tiny-GGUF`
-  (this script's default) and `mradermacher/NuExtract-1.5-tiny-GGUF` --
-  ruling out a single bad upload. `ollama show <model> --modelfile` on
-  both shows Ollama auto-detected a **generic Qwen2 ChatML template**
-  (`<|im_start|>`/`<|im_end|>`, with FIM/tool-call scaffolding), not
-  NuExtract's own fine-tuned `<|input|>`/`<|output|>` format -- consistent
-  with (though not proven to be the sole cause of) the conversion not
-  faithfully carrying over whatever made the original HF checkpoint
-  reliably respond to that format. (`raw: true` bypasses Ollama's own
-  templating for the actual generate call either way -- this is a signal
-  about the conversion, not evidence the wrong template was applied to
-  our requests.)
-- The full 50-book run above is the direct consequence: 44 of 50 books
-  return zero predicted entries outright (immediate-stop failure on every
-  scanned page range), and the other 6 return exactly one spurious,
-  non-matching entry -- none of the 913 expected chapters across either
-  corpus are recovered.
-
-### Follow-up: original Hugging Face checkpoint (2026-08-09)
-
-Retested by loading `numind/NuExtract-1.5-tiny` directly through
-`transformers` (`AutoModelForCausalLM`/`AutoTokenizer`, fp32, greedy
-decoding, run on this machine's Apple Silicon GPU via `mps`), bypassing
-GGUF conversion and Ollama entirely -- the one genuinely unmeasured
-possibility identified above. Ad hoc script, not committed (probe only);
-used `evaluation/nuextract_baseline.py`'s own `build_prompt`/
-`parse_response`/`score_book` against real pages loaded via
-`evaluation/harness.py`, so results are directly comparable to the table
-above.
-
-- **The immediate-EOS failure does not reproduce.** On the exact same real
-  front-matter text that produced `eval_count: 1` under Ollama, the
-  original checkpoint generates fluently for hundreds of tokens. This
-  rules out "GGUF conversion broke the model's stopping behavior" as a
-  complete explanation.
-- **But it does not extract, either -- it echoes.** Given a scan window
-  that mixes the actual table of contents with surrounding noise (the
-  book's copyright/front-matter page before it, or the start of the
-  Foreword body text after it -- i.e. exactly what
-  `chapter_segmentation.segmentation._llm_scan_indices` selects for every
-  real book, by design, since it can't know in advance which lines are
-  the ToC), the model does not fill the JSON template at all. It falls
-  into a degenerate mode: copying the input text back verbatim (with
-  occasional token substitutions, e.g. quote-mark hallucinations), then
-  looping on a repeated phrase until the token budget runs out. This
-  reproduced on all three tested windows (page 3+4+5, page 4+5+6, and the
-  original 4-page window) for `9781771993661.pdf`.
-- **Given a hand-curated, TOC-only window (no noise), the model does
-  attempt genuine extraction** -- it emits syntactically valid JSON
-  matching the template, and gets several `printed_page_number` values
-  right. But entity binding is unreliable: it collapses numbered chapters
-  (e.g. "1. Race and Colonialism in Socio-legal Studies in Canada") down
-  to their enclosing part labels ("Part I"), losing the actual chapter
-  titles, and it misattributes authors -- reusing chapter 1's author list
-  ("Carmela Murdocca, Shaira Vadasaria, Timothy Bryan") for several
-  unrelated later entries instead of each entry's real contributors.
-  Scored against `9781771993661.expected.json` via `score_book`, this
-  best-case, hand-cleaned input still only reaches **precision=0.08,
-  recall=0.10, f1=0.09** (1 of 10 expected chapters correctly matched).
-
-**Conclusion: this is a genuine model-capability limit, not a serving-path
-artifact.** NuExtract-1.5-tiny's "template-fill" paradigm assumes the
-input text is already close to the target structure -- it has no
-instruction channel to say "ignore the surrounding noise and extract only
-the table of contents," unlike the instruction-following cloud LLMs
-(`llm_extract_toc_entries` in `segmentation.py`) this spike was evaluating
-it as a local replacement for. Because real scan windows always carry
-that noise, and because even the noise-free best case scores far below
-useful (f1=0.09 on the one book tested), NuExtract-1.5-tiny at the "tiny"
-size is not a viable zero-shot drop-in for this task. See the next section
-for a retest against a larger, newer model in the same family, which
-closes most of this gap.
-
-## NuExtract3 (4B): a larger, newer model closes the gap (2026-08-09)
-
-This machine (Apple M4, 32 GB unified memory) can comfortably run
-NuExtract's newer, larger models locally -- checked actual download sizes
-via the Hugging Face API: `numind/NuExtract-2.0-4B` (7.5 GB fp16),
-`numind/NuExtract-2.0-8B` (16.6 GB fp16), `numind/NuExtract3` (9.3 GB
-fp16, the current flagship, released after this spike's original design
-and built on `Qwen3.5-4B` rather than 1.5-tiny's `Qwen2.5-0.5B`). Retested
-using `numind/NuExtract3` -- a materially different, more capable
-generation, not just a scaled-up copy of the same weak checkpoint. Ad hoc
-scripts, not committed; loaded via `transformers`
-(`AutoModelForImageTextToText`/`AutoProcessor`, fp16, greedy decoding,
-`mps`), reusing this repo's `NUEXTRACT_TEMPLATE`/`parse_response`/
-`score_book`/`evaluation/harness.py` for direct comparability with the
-tables above. NuExtract3 uses a proper chat template (`apply_chat_template`
-with `template`/`instructions`/`enable_thinking` kwargs) rather than
-1.5-tiny's raw `<|input|>`/`<|output|>` convention.
-
-- **Single-book check, same noisy window that broke NuExtract-1.5-tiny**
-  (`9781771993661.pdf`, pages 3-6, front-matter + ToC + start of Foreword,
-  no `instructions` kwarg used): **precision=0.91, recall=1.00, f1=0.95**
-  (10/10 expected chapters correctly matched, correct titles, correct
-  authors, correct page numbers; one spurious extra entry). Adding an
-  `instructions` string ("extract only the table-of-contents entries...
-  ignore copyright notices... and body/prose text") or hand-cleaning the
-  window down to ToC-only text both produced the same result
-  (f1=0.91, one additional spurious "Contributors" entry) -- unlike
-  1.5-tiny, this model doesn't need the noise removed to work.
-- **10-book random sample from the open-access corpus** (seeded,
-  `evaluation/metrics.py`'s `MicroAggregate`, real scan windows via
-  `_llm_scan_indices`, no OCR-only books in the sample): **aggregate
-  precision=0.95, recall=0.73, f1=0.83** -- 8 of 10 books scored f1
-  between 0.72 and 1.00 (four of them exactly 1.00); the other 2 scored
-  0.00 and were investigated individually rather than averaged over
-  blindly:
-  - `9782375460122.pdf` (French-language, a "SOMMAIRE" spanning 6 dense
-    pages with many nested sub-headings): a genuine extraction miss, not
-    a budget issue -- confirmed by rerunning with the output budget raised
-    from 1,500 to 3,500 tokens, which changed nothing (still only 46
-    tokens generated). The model latched onto the book's own
-    cataloging-in-publication bibliographic entry on the noise page before
-    the ToC and extracted that as a single spurious "chapter," never
-    reaching the actual SOMMAIRE on the following pages.
-  - `9781783741953.pdf` (a deeply hierarchical ToC -- top-level chapters
-    each with many numbered sub-sections, e.g. "4.1", "4.2", "4.2.1"):
-    **this one was a genuine truncation** at the original 1,500-token
-    output budget (0 parseable entries). Raised to 3,500 tokens, the model
-    completed cleanly (2,973 output tokens) and correctly extracted the
-    *entire* hierarchy -- all top-level chapters and every numbered
-    sub-section, with correct titles and page numbers throughout. But the
-    ground truth only counts 7 top-level chapters, so the 89 extracted
-    entries score precision=0.01 -- **a template/instructions mismatch
-    (we never told it to extract top-level entries only), not a
-    comprehension failure.** The model demonstrably parsed this book's
-    full multi-level structure correctly.
-
-**Decision: NuExtract3 (4B) is a credible local zero-shot candidate for
-this task, unlike NuExtract-1.5-tiny, and is worth a full-corpus run and
-production-wiring spike before deciding against a local-model approach.**
-Both zero-score books point at fixable gaps rather than a hard capability
-ceiling: the French-language miss suggests either a prompt-language
-adjustment or accepting some recall loss on non-English ToCs, and the
-over-extraction case is resolved by adding an `instructions` string that
-scopes extraction to top-level entries (already shown above not to hurt
-the good case) and/or raising the output token budget for long books.
-Trade-offs versus the cloud-LLM baseline this spike was benchmarking
-against: **speed** (70-250 seconds per book on this machine's `mps`
-backend vs. a cloud API call) and **setup cost** (9.3 GB download, 32 GB
-RAM headroom, ~20-90 second model load even from local disk cache) are
-real costs a production decision would need to weigh against not
-depending on a paid API.
-
-**Recommended next step:** run the full two-corpus, 50-book baseline
-(mirroring the table at the top of this document) against NuExtract3 with
-an `instructions` string added, and compare against the existing cloud-LLM
-strategy numbers before deciding whether to wire this into
-`evaluation/scripts/evaluate_nuextract_baseline.py` as a first-class,
-committed option.
-
-### Optimization: MLX vs. `transformers`+`mps` (2026-08-09)
-
-Before running the full corpus, checked whether the serving path used
-above (`transformers`, fp16, `mps`) was leaving speed on the table. It
-was: the model load explicitly warned `The fast path is not available
-because one of the required library is not installed` (`flash-linear-
-attention`/`causal-conv1d` -- both CUDA/Triton-only, not installable on
-Apple Silicon), meaning Qwen3.5's hybrid linear-attention layers were
-running through a slow generic fallback rather than a fused kernel.
-Retested with `mlx-vlm` against `numind/NuExtract3-mlx-4bits` -- the
-NuMind-published 4-bit quantization (3.0 GB vs. 9.3 GB fp16) run through
-MLX, Apple's native array framework, instead of PyTorch's `mps` backend.
-
-- **Single-book check** (`9781771993661.pdf`, same window as above):
-  **25.3s vs. 69.6s** (2.75x faster), 27 tokens/sec vs. ~8.6 tokens/sec,
-  for essentially the same output (f1=0.95 both ways).
-- **10-book sample** (same seeded sample as the `transformers` run
-  above): total raw generation time **323s vs. 1,080s (3.3x faster)**;
-  aggregate **precision=0.82, recall=0.74, f1=0.78** vs. the fp16 run's
-  **precision=0.95, recall=0.73, f1=0.83** -- a modest precision dip
-  consistent with 4-bit quantization noise, recall essentially unchanged.
-  The same two previously-diagnosed problem books (the French-language
-  miss and the deeply-nested-ToC over-extraction) show the same failure
-  modes, not new ones -- nothing about switching to MLX changed *what*
-  fails, only *how fast* the successful cases run.
-- Model load is also far cheaper once weights are cached locally: 2.5s
-  (MLX, warm) vs. 18.8-381.8s observed for `transformers` (dependent on OS
-  disk-cache state).
-
-**Decision: use `numind/NuExtract3-mlx-4bits` via `mlx-vlm` as the runner
-for the full-corpus run** -- same architecture, same accuracy class, ~3x
-less wall-clock time, and a much smaller download.
-
-### Full 50-book, two-corpus run (2026-08-09)
-
-Same conditions as the NuExtract-1.5-tiny table at the top of this
-document -- `numind/NuExtract3-mlx-4bits`, no `instructions` kwarg (this
-is the zero-shot baseline; instructions weren't re-added here to keep the
-comparison to 1.5-tiny apples-to-apples), `max_tokens=2000`, both
-corpora, real scan windows via `_llm_scan_indices`. Ad hoc script, not
-committed. Total wall-clock: 3,180s (~53 minutes) for 50 books.
-
-| Corpus | Books | Expected chapters | Precision | Recall | F1 |
-| --- | --- | --- | --- | --- | --- |
-| open-access | 37 | 601 | 0.64 | 0.73 | 0.69 |
-| copyrighted-scans | 13 | 312 | 0.49 | 0.32 | 0.39 |
-| **Total** | **50** | **913** | **0.61** | **0.59** | **0.60** |
-
-(A third `evaluation/corpus/pending/` directory exists with an empty
-book list -- `available_books()` correctly returns nothing for it, not a
-bug.)
-
-**This is the headline result of the whole NuExtract investigation:
-0.00/0.00/0.00 -> 0.61/0.59/0.60**, on the same 50 books, same metric,
-same TOC-listing-only scope, just a newer/larger model in the same
-family. Two things stand out in the breakdown:
-
-- **`copyrighted-scans` (f1=0.39) trails `open-access` (f1=0.69)
-  substantially** -- this corpus is OCR'd (see `evaluation/harness.py`'s
-  `analysis_pages_for`), and several books logged `Rotated text
-  discovered. Output will be incomplete.` during page extraction, a
-  pre-existing OCR-pipeline limitation, not a NuExtract3 issue.
-- **The worst-scoring books overlap exactly with an independently
-  diagnosed, pre-existing data-quality problem.** `9783789057366.pdf`
-  (0/56), `9783848704316.pdf` (0/15), and `dnb-36942798X.pdf` (0/9) all
-  score zero here -- and per "Per-strategy standalone results" above,
-  these are the *same three books* that score at or near 0.00 across
-  **every** cloud LLM model and the heuristic pipeline too, attributed
-  there to "degenerate/absent text layers, OCR quality" shared across
-  every text-based strategy. NuExtract3 hits the same wall, which is
-  reassuring rather than concerning -- it's not a new, NuExtract-specific
-  failure, it's the same known corpus limitation every other strategy
-  already hits.
-- **Two more failure clusters, consistent with what the smaller samples
-  already found:** the French-language miss (`9782375460122.pdf`,
-  0/17) and the deeply-nested-ToC granularity mismatch
-  (`9781783741953.pdf`, 1/7, extracting sub-headings as if they were
-  top-level chapters) both reproduce at full scale. A third, new-at-this-
-  scale pattern: several books show **long generation times paired with
-  zero valid entries** (`9783848704316.pdf` 211s/0 found,
-  `9781800649057.pdf` 110s/0 found, `9783839458013.pdf` 113s/0 found,
-  `9781783742806.pdf` 109s/0 found) -- consistent with the truncation
-  failure mode already root-caused on `9781783741953.pdf` above (output
-  budget exhausted before valid JSON completes), suggesting
-  `max_tokens=2000` is still too low for a meaningful minority of books
-  and a production version of this would need either a larger cap or a
-  retry-on-truncation strategy (mirroring the fix already applied to the
-  cloud-LLM path's `llm_extract_toc_entries`, per "Per-strategy
-  standalone results" above).
-
-**Directional comparison to the cloud-LLM baseline** (caveat: different
-corpus -- the LLM standalone table above runs on the 17-book
-public-cache corpus, not these 50 books, so this is not a strict
-apples-to-apples number): the cloud-LLM cluster there scores F1
-0.43-0.48 across its top models. NuExtract3's zero-shot 0.60 overall (and
-0.69 on the clean-text `open-access` corpus alone) is in the same range
-or better, using a free, local, 4-bit-quantized 4B model with **no
-fine-tuning and no `instructions` prompt tuning** -- there's real headroom
-left untapped. That's a genuinely striking result for what started this
-spike as a "does the tiny model work zero-shot" check.
-
-**Updated recommendation:** this result is strong enough to justify
-wiring NuExtract3 into `evaluation/scripts/evaluate_nuextract_baseline.py`
-as a first-class, committed option (via `mlx-vlm`, matching the runner
-used here) rather than treating it as a dead end -- with two concrete
-follow-ups before that: add an `instructions` string scoping extraction
-to top-level entries only (already shown above to fix the over-extraction
-case without hurting the good case), and raise/retry the output token
-budget for the truncation cluster identified above.
-
-### CPU-only deployment check: NuExtract3 vs. NuExtract-2.0-4B (2026-08-09)
-
-MLX is Apple-Silicon-only. A real deployment target under consideration
-is a no-GPU, 16 GB RAM, 4-vCPU Linux box (AMD EPYC, KVM-virtualized) --
-MLX cannot run there at all, and Ollama currently cannot serve NuExtract3's
-Qwen3.5-architecture GGUF either (a known gap: separate `mmproj`
-vision-file handling not yet supported in Ollama for this architecture;
-`llama.cpp`'s own server/CLI does support it). To get a same-machine,
-same-backend comparison isolated from Apple's GPU, both `numind/
-NuExtract3-GGUF` (Q4_K_M, 2.71 GB) and `numind/NuExtract-2.0-4B-GGUF`
-(Q4_K_M, 1.93 GB, the previous generation, built on the much more
-mature/optimized Qwen2.5-VL architecture) were run through `llama-cpp-
-python` with `n_gpu_layers=0` and `n_threads=4` (matching the target
-box's vCPU count) on this same M4 machine, over a 5-book sample. Ad hoc
-script, not committed.
-
-| | NuExtract3 | NuExtract-2.0-4B |
-| --- | --- | --- |
-| Total time (5-book sample) | 955.6s | 675.0s (**1.42x faster**) |
-| Aggregate precision / recall / f1 | 0.97 / 0.94 / 0.96 | 0.99 / 0.96 / 0.97 |
-| Model load time | 31.5s | 4.0s |
-| Per-book tokens/sec range | 2.0-3.8 | 2.3-6.3 |
-
-NuExtract-2.0-4B was faster on every book in the sample (1.1x-2.2x per
-book) and matched or slightly exceeded NuExtract3's accuracy on every one
-of them, consistent with `llama.cpp`'s CPU kernels for the older,
-standard Qwen2.5-VL transformer architecture being far more mature than
-its very recent support for Qwen3.5's hybrid linear-attention layers (the
-same gap seen earlier as a missing `flash-linear-attention`/
-`causal-conv1d` fast path on the GPU/`transformers` side).
-
-**Caveat:** this ran on the M4's CPU cores, not the target AMD EPYC
-vCPUs -- absolute throughput will differ on the real host (their
-single-thread performance and memory bandwidth are unknowns from here),
-so treat the *relative* result (2.0-4B ~1.4x faster, equal-or-better
-accuracy) as the reliable takeaway, not the absolute tokens/sec.
-
-**Recommendation for a no-GPU deployment specifically:**
-`numind/NuExtract-2.0-4B` over `NuExtract3` -- faster, smaller download,
-equal or better accuracy in this test, and it already has mature Ollama
-support today, avoiding the Qwen3.5/Ollama gap entirely.
-
-## NuExtract3 dropped; NuExtract-2.0-4B full-corpus zero-shot baseline (2026-08-10)
-
-Following the CPU-deployment comparison above, NuExtract3 was dropped from
-consideration entirely (deleted its `transformers`/GGUF/MLX weight caches,
-13.8GB total -- no production code ever referenced it, so nothing else to
-remove). All further work targets `numind/NuExtract-2.0-4B` only.
+## NuExtract-2.0-4B zero-shot baseline (2026-08-10)
 
 ### Backend-dependent bug: `transformers`/MPS silently drops `printed_page_number`
 

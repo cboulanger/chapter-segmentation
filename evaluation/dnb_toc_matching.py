@@ -45,3 +45,40 @@ def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, i
             pairs.append((i, best_j))
             last_j = best_j
     return pairs
+
+
+def gate_book(
+    heuristic: list[TocEntry], llm: list[TocEntry], threshold: float = 0.90,
+) -> tuple[bool, list[TocEntry]]:
+    """Whole-book agreement gate (design spec section 4.2).
+    agreement_rate = matched-pair count / max(len(heuristic), len(llm)).
+    Below `threshold`, the book is rejected outright (passed=False,
+    entries=[]) rather than trimmed down to just the agreeing entries -- a
+    partially-agreeing book is exactly the case this design distrusts
+    most, and a caller must not silently write a partial/incomplete
+    result for it.
+
+    At or above `threshold`, `entries` is the UNION of matched pairs
+    (the heuristic's own TocEntry preferred over its LLM counterpart,
+    since its title/author split comes from structured regex capture
+    rather than LLM reformatting) plus every singleton entry either
+    extractor found alone, ordered by printed_page_number (the -1
+    "unknown" sentinel sorts last). This is deliberate: once a book
+    clears the trust bar, a line only one extractor caught is far likelier
+    a real entry the other missed (OCR noise, an unusual title format)
+    than a hallucination -- trimming it out would silently understate the
+    page's real content, which is exactly the "incomplete training
+    target" failure mode this design exists to avoid."""
+    if not heuristic and not llm:
+        return False, []
+    pairs = align_toc_entries(heuristic, llm)
+    agreement_rate = len(pairs) / max(len(heuristic), len(llm))
+    if agreement_rate < threshold:
+        return False, []
+    matched_h = {i for i, _ in pairs}
+    matched_l = {j for _, j in pairs}
+    merged = [heuristic[i] for i, _ in pairs]
+    merged += [entry for i, entry in enumerate(heuristic) if i not in matched_h]
+    merged += [entry for j, entry in enumerate(llm) if j not in matched_l]
+    merged.sort(key=lambda e: (e.printed_page_number == -1, e.printed_page_number))
+    return True, merged

@@ -8,7 +8,7 @@ TocEntry lists."""
 import unittest
 
 from chapter_segmentation.segmentation import TocEntry
-from evaluation.dnb_toc_matching import align_toc_entries
+from evaluation.dnb_toc_matching import align_toc_entries, gate_book
 
 
 def _entry(title: str, page: int, authors: tuple[str, ...] = ()) -> TocEntry:
@@ -53,3 +53,43 @@ class TestAlignTocEntries(unittest.TestCase):
         self.assertEqual(align_toc_entries([], []), [])
         self.assertEqual(align_toc_entries([_entry("X", 1)], []), [])
         self.assertEqual(align_toc_entries([], [_entry("X", 1)]), [])
+
+
+class TestGateBook(unittest.TestCase):
+    def test_perfect_agreement_passes_with_union_equal_to_either_list(self):
+        h = [_entry("Einleitung", 9), _entry("Schluss", 40)]
+        l = [_entry("Einleitung", 9), _entry("Schluss", 40)]
+        passed, entries = gate_book(h, l)
+        self.assertTrue(passed)
+        self.assertEqual([e.title for e in entries], ["Einleitung", "Schluss"])
+
+    def test_below_threshold_rejects_whole_book(self):
+        h = [_entry("Einleitung", 9), _entry("A", 20), _entry("B", 30), _entry("C", 40)]
+        l = [_entry("Einleitung", 9)]  # agreement_rate = 1/4 = 0.25
+        passed, entries = gate_book(h, l)
+        self.assertFalse(passed)
+        self.assertEqual(entries, [])
+
+    def test_above_threshold_unions_singleton_entries_rather_than_dropping_them(self):
+        # 9 of 10 heuristic entries agree with the LLM list -- rate 0.90.
+        # The heuristic's 10th, LLM-missed entry must survive in the
+        # merged result rather than being silently trimmed: the design's
+        # core "no incomplete training target" requirement (spec section
+        # 4.2) -- once a book clears the trust bar, a line only one
+        # extractor caught is more likely a real miss than a hallucination.
+        h = [_entry(f"Chapter {i}", i * 10) for i in range(1, 11)]
+        l = h[:9]
+        passed, entries = gate_book(h, l, threshold=0.90)
+        self.assertTrue(passed)
+        self.assertEqual(len(entries), 10)
+        self.assertIn("Chapter 10", [e.title for e in entries])
+
+    def test_empty_both_lists_rejects(self):
+        self.assertEqual(gate_book([], []), (False, []))
+
+    def test_merged_entries_sorted_by_printed_page_number(self):
+        h = [_entry("Schluss", 40), _entry("Einleitung", 9)]
+        l = [_entry("Schluss", 40), _entry("Einleitung", 9)]
+        passed, entries = gate_book(h, l)
+        self.assertTrue(passed)
+        self.assertEqual([e.printed_page_number for e in entries], [9, 40])

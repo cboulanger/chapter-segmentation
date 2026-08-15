@@ -290,17 +290,33 @@ def _run_isbns_file(args: argparse.Namespace, cdir: Path, manifest_path: Path, c
     print(f"Acquired {acquired} new book(s).")
 
 
-def _run_from_dump(args: argparse.Namespace, cdir: Path, manifest_path: Path, client: httpx.Client) -> None:
-    seen_keys = _load_existing_keys(manifest_path)
-    acquired = 0
+def _scan_and_acquire(
+    records: Iterator[dict],
+    cdir: Path,
+    manifest_path: Path,
+    client: httpx.Client,
+    rate_limit_seconds: float,
+    limit: Optional[int],
+    seen_keys: set[str],
+    acquired_so_far: int,
+) -> tuple[int, int]:
+    """Consumes records from the given iterator, acquiring matches until
+    either the iterator is exhausted or acquired_so_far plus newly
+    acquired reaches limit -- stops consuming immediately once the limit
+    is hit, rather than draining the rest of the iterator. Returns
+    (records_scanned_this_call, newly_acquired_this_call). Pulled out of
+    _run_from_dump as a pure, retry-agnostic unit so a dropped dump
+    connection can be retried by simply calling this again with a fresh
+    iterator and an updated acquired_so_far -- see _run_from_dump."""
     scanned = 0
-    for record in _iter_dump_records(args.dump_url, client):
+    acquired = 0
+    for record in records:
         scanned += 1
         if scanned % 100_000 == 0:
-            print(f"[scan] {scanned:,} records scanned, {acquired} acquired so far")
-        if args.limit is not None and acquired >= args.limit:
+            print(f"[scan] {scanned:,} records scanned this attempt, {acquired_so_far + acquired} acquired so far")
+        if limit is not None and acquired_so_far + acquired >= limit:
             break
-        reason = _acquire_record(record, cdir, manifest_path, client, args.rate_limit_seconds, seen_keys)
+        reason = _acquire_record(record, cdir, manifest_path, client, rate_limit_seconds, seen_keys)
         if reason is None:
             acquired += 1
         elif reason.startswith("download failed"):
@@ -310,7 +326,37 @@ def _run_from_dump(args: argparse.Namespace, cdir: Path, manifest_path: Path, cl
             # millions of scanned records to print without spamming the
             # run's output).
             print(f"[skip] {_record_key(record)}: {reason}")
-    print(f"Scanned {scanned:,} records, acquired {acquired} new book(s).")
+    return scanned, acquired
+
+
+def _run_from_dump(args: argparse.Namespace, cdir: Path, manifest_path: Path, client: httpx.Client) -> None:
+    seen_keys = _load_existing_keys(manifest_path)
+    acquired = 0
+    attempt = 0
+    while True:
+        try:
+            scanned, newly = _scan_and_acquire(
+                _iter_dump_records(args.dump_url, client), cdir, manifest_path, client,
+                args.rate_limit_seconds, args.limit, seen_keys, acquired,
+            )
+            acquired += newly
+            if args.limit is not None and acquired >= args.limit:
+                print(f"Acquired {acquired} new book(s) (limit reached).")
+                return
+            print(f"Scanned {scanned:,} records this attempt (dump exhausted), acquired {acquired} new book(s) total.")
+            return
+        except httpx.HTTPError as exc:
+            attempt += 1
+            if attempt > args.max_retries:
+                print(f"[error] dump stream failed {attempt} time(s), giving up: {exc}")
+                raise
+            backoff = min(2 ** attempt, 60)
+            print(
+                f"[retry {attempt}/{args.max_retries}] dump stream dropped ({exc}); "
+                f"reconnecting in {backoff}s and rescanning from the start "
+                f"(already-acquired books are skipped via seen_keys, so this only costs time)"
+            )
+            time.sleep(backoff)
 
 
 def main() -> int:
@@ -334,6 +380,10 @@ def main() -> int:
     parser.add_argument(
         "--rate-limit-seconds", type=float, default=1.0,
         help="Delay after each TOC PDF download, to stay polite to DNB's servers (default: 1.0)",
+    )
+    parser.add_argument(
+        "--max-retries", type=int, default=5,
+        help="For --from-dump: how many times to reconnect and rescan after a dropped connection before giving up (default: 5)",
     )
     args = parser.parse_args()
 

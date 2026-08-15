@@ -29,6 +29,7 @@ from evaluation.scripts.fetch_dnb_toc_corpus import (
     _record_key,
     _record_language,
     _record_matches,
+    _scan_and_acquire,
     _search_by_isbn,
     _toc_download_url,
     manifest_entry_from_record,
@@ -240,6 +241,55 @@ class TestAcquireRecord(unittest.TestCase):
             data = json.loads(manifest_path.read_text(encoding="utf-8"))
             self.assertEqual(data["books"], [])
             self.assertEqual(seen_keys, set())
+
+
+class TestScanAndAcquire(unittest.TestCase):
+    def test_stops_early_once_cumulative_limit_reached(self):
+        # Three matching records, but acquired_so_far=1 and limit=2, so
+        # only one more should be acquired before the loop stops -- and
+        # it must stop consuming the iterator immediately, not drain it.
+        records = [
+            {**_SAMPLE_RECORD, "isbn": ["1111111111111"]},
+            {**_SAMPLE_RECORD, "isbn": ["2222222222222"]},
+            {**_SAMPLE_RECORD, "isbn": ["3333333333333"]},
+        ]
+
+        def _record_stream():
+            yield from records
+            self.fail("iterator was drained past the limit")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            manifest_path = cdir / "manifest.json"
+            _ensure_manifest_shell(manifest_path)
+            client = Mock()
+            client.get.return_value = _json_response({})  # PDF download response; content below
+            client.get.return_value.content = b"%PDF-fake"
+            scanned, newly_acquired = _scan_and_acquire(
+                _record_stream(), cdir, manifest_path, client,
+                rate_limit_seconds=0, limit=2, seen_keys=set(), acquired_so_far=1,
+            )
+        self.assertEqual(newly_acquired, 1)
+        self.assertEqual(scanned, 2)
+
+    def test_consumes_whole_iterator_when_no_limit(self):
+        records = [
+            {**_SAMPLE_RECORD, "isbn": ["1111111111111"]},
+            {**_SAMPLE_RECORD, "isbn": ["2222222222222"]},
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            manifest_path = cdir / "manifest.json"
+            _ensure_manifest_shell(manifest_path)
+            client = Mock()
+            client.get.return_value = _json_response({})
+            client.get.return_value.content = b"%PDF-fake"
+            scanned, newly_acquired = _scan_and_acquire(
+                iter(records), cdir, manifest_path, client,
+                rate_limit_seconds=0, limit=None, seen_keys=set(), acquired_so_far=0,
+            )
+        self.assertEqual(newly_acquired, 2)
+        self.assertEqual(scanned, 2)
 
 
 class TestChunkStreamReader(unittest.TestCase):

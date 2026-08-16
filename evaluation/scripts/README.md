@@ -33,6 +33,52 @@ options:
                         ['open-access', 'copyrighted-scans'].
 ```
 
+## `arbitrate_dnb_toc.py`
+
+Surfaces dnb-toc-only books whose two vision-model TOC extractions didn't
+clear `generate_dnb_toc_ground_truth.py`'s agreement gate, so a Claude Code
+session can arbitrate the conflict directly (design spec
+`docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md`). Reports
+and records rejections only -- never writes `.expected.json` itself; see
+`evaluation/CLAUDE.md`'s "Arbitrating below-gate dnb-toc-only books" for the
+full workflow.
+
+```
+usage: arbitrate_dnb_toc.py [-h] {list,reject} ...
+
+Surfaces dnb-toc-only books whose two vision-model TOC extractions didn't
+clear generate_dnb_toc_ground_truth.py's agreement gate, so a Claude Code
+session can arbitrate the conflict directly -- see design spec
+docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md. This script
+only REPORTS and records rejections; it never decides. The arbitrator reads a
+book's report, opens the PDF's actual TOC pages via the Read tool when the
+text alone doesn't settle it, then either writes evaluation/corpus/dnb-toc-
+only/<key>.expected.json directly (same schema as a passing book, "verified":
+true) or runs this script's `reject` subcommand to permanently record the book
+as unrecoverable.
+
+positional arguments:
+  {list,reject}
+    list         List books needing arbitration (default)
+    reject       Permanently mark a book as unrecoverable
+
+options:
+  -h, --help     show this help message and exit
+```
+
+The `reject` subcommand:
+
+```
+usage: arbitrate_dnb_toc.py reject [-h] key reason
+
+positional arguments:
+  key
+  reason
+
+options:
+  -h, --help  show this help message and exit
+```
+
 ## `build_crossref_gt_ground_truth.py`
 
 One-time reconciliation: turns `evaluation/crossref_gt/` (Crossref-sourced

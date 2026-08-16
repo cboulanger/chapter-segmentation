@@ -95,9 +95,11 @@ Sends each book's page images (rendered via `pdftoppm`, no OCR) to two
 independent vision-capable KISSKI models and writes `.expected.json` only
 when they agree on at least 90% of the book's entries -- see
 `evaluation/dnb_toc_matching.py` and `evaluation/dnb_toc_vision.py`. Books
-that don't clear that bar are skipped and reported, not partially written.
-Requires `pdftoppm` (poppler) on `PATH` -- see this file's "Cleaning a
-badly-scanned PDF" section for the install command.
+that don't clear that bar are skipped and reported, not partially written --
+`evaluation/CLAUDE.md`'s "Arbitrating below-gate dnb-toc-only books" section
+covers resolving those instead of discarding them. Requires `pdftoppm`
+(poppler) on `PATH` -- see this file's "Cleaning a badly-scanned PDF" section
+for the install command.
 
 **Eval tier** (`"verified": true`, hand-transcribed, held out of the bulk
 tier and never drafted by either extractor) -- for every ID in

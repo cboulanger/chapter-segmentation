@@ -1,19 +1,20 @@
 """Generates bulk-tier structured ground truth for dnb-toc-only (design
-spec
+spec docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md,
+which supersedes the two-text-extractor design in
 docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md).
 For every manifest book not held out in eval_tier_ids.json (see
 select_dnb_toc_eval_sample.py and evaluation/README.md's "Building
-dnb-toc-only ground truth"), runs two independent extractors -- the regex
-heuristic (find_toc_candidates) and a KISSKI LLM pass
-(llm_extract_toc_entries) -- and writes <id>.expected.json with
-"verified": false only when they agree well enough
-(evaluation.dnb_toc_matching.gate_book, >=0.90 whole-book agreement).
-Books that don't clear the gate are skipped and reported, not partially
-written.
+dnb-toc-only ground truth"), sends the book's page images to two
+independent vision-capable KISSKI models
+(evaluation.dnb_toc_vision.vision_extract_toc_entries) and writes
+<id>.expected.json with "verified": false only when they agree well
+enough (evaluation.dnb_toc_matching.gate_book, >=0.90 whole-book
+agreement). Books that don't clear the gate are skipped and reported, not
+partially written.
 
-Spends real KISSKI API budget (one call per book, not per-model -- see
-evaluation/refresh_llm_cache.py's docstring for the shared KISSKI_API_KEY
-setup this script reuses). Not a pytest test.
+Spends real KISSKI API budget (two calls per book, one per vision model --
+see evaluation/refresh_llm_cache.py's docstring for the shared
+KISSKI_API_KEY setup this script reuses). Not a pytest test.
 
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 50   # smoke test
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py               # full corpus
@@ -37,76 +38,22 @@ import time
 from pathlib import Path
 from typing import Optional
 
-from chapter_segmentation.llm import LLMClient
-from chapter_segmentation.segmentation import (
-    TocEntry,
-    extract_page_texts_for_analysis,
-    find_toc_candidates,
-    llm_extract_toc_entries,
-    pages_need_ocr,
-)
+from openai import AsyncOpenAI
+
+from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
+from evaluation.dnb_toc_vision import vision_extract_toc_entries
 from evaluation.harness import corpus_dir, llm_cache_dir, load_manifest_books
 from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models
-from evaluation.refresh_llm_cache import _OpenAICompatibleLLMClient
 from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
 
-# find_toc_candidates rejects any printed page number above
-# len(pages) * _TOC_MAX_PAGE_NUMBER_RATIO (2.0, segmentation.py) -- a
-# guard against mistaking book-internal noise for a real TOC elsewhere in
-# a full book. A dnb-toc-only PDF *is* the TOC (1-3 pages) but prints page
-# numbers from the ORIGINAL BOOK (which can run into the hundreds), so
-# calling find_toc_candidates on it unpadded silently rejects nearly every
-# real entry. Padding with harmless filler pages before the call -- same
-# technique tests/test_segmentation.py's own _FILLER_PAGES fixture already
-# uses -- raises the ratio guard's ceiling comfortably above any real
-# book's page count without touching segmentation.py. The real content is
-# always at the front of the padded list, well within
-# find_toc_candidates' default 15% front-scan window regardless of how
-# much padding is appended.
-_PAGE_NUMBER_GUARD_PADDING = 1000
+
+def _cache_path(cache_directory: Path, key: str, model: str) -> Path:
+    return cache_directory / f"{key}.{model}.json"
 
 
-def _pad_pages_for_scan(pages: list[str]) -> list[str]:
-    """Appends _PAGE_NUMBER_GUARD_PADDING harmless filler pages -- shared
-    by BOTH extractors' page-selection logic, not just the heuristic.
-
-    Fixes a second, related bug found empirically (2026-08-15 smoke test
-    against the real corpus, book 9783161636820): llm_extract_toc_entries
-    doesn't scan every page verbatim either -- its own internal
-    _llm_scan_indices (segmentation.py) first calls the RAW (unpadded)
-    find_toc_candidates, and only falls back to a blind front/back-
-    fraction page window (_toc_scan_indices, front 15%/back 5%) when that
-    finds nothing. On an unpadded dnb-toc-only PDF it always finds
-    nothing (the same _TOC_MAX_PAGE_NUMBER_RATIO rejection this padding
-    already works around for the heuristic), so it always falls into that
-    blind-fraction path -- which is sized for a full-length book and can
-    structurally exclude a whole MIDDLE page of a short multi-page TOC
-    scan: on a real 3-page book, front 15%/back 5% of 3 pages selects
-    only indices {0, 2}, never {1}, no matter what that middle page
-    contains. Confirmed directly: that book's page 1 held roughly half
-    its real chapter entries (pages 155-351 of the original book), which
-    the LLM was never even shown -- not a token-limit truncation, an
-    input-selection gap. Padding before EITHER extractor call fixes both
-    at once: the padded find_toc_candidates succeeds, so
-    _llm_scan_indices' preferred (non-blind) branch fires instead and
-    correctly windows +-1 page around every real content page."""
-    return pages + ["Filler page, not part of the digitized TOC scan."] * _PAGE_NUMBER_GUARD_PADDING
-
-
-def _toc_entries_for_scan(pages: list[str]) -> list[TocEntry]:
-    """Runs the heuristic regex extractor on a dnb-toc-only book's own
-    page texts, working around _TOC_MAX_PAGE_NUMBER_RATIO's tiny-PDF
-    false-rejection (see _pad_pages_for_scan)."""
-    return find_toc_candidates(_pad_pages_for_scan(pages))
-
-
-def _cache_path(cache_directory: Path, key: str) -> Path:
-    return cache_directory / f"{key}.json"
-
-
-def _load_cached_llm_entries(cache_directory: Path, key: str) -> Optional[list[TocEntry]]:
-    path = _cache_path(cache_directory, key)
+def _load_cached_llm_entries(cache_directory: Path, key: str, model: str) -> Optional[list[TocEntry]]:
+    path = _cache_path(cache_directory, key, model)
     if not path.exists():
         return None
     data = json.loads(path.read_text(encoding="utf-8"))
@@ -120,9 +67,9 @@ def _load_cached_llm_entries(cache_directory: Path, key: str) -> Optional[list[T
     ]
 
 
-def _write_cached_llm_entries(cache_directory: Path, key: str, entries: list[TocEntry]) -> None:
+def _write_cached_llm_entries(cache_directory: Path, key: str, model: str, entries: list[TocEntry]) -> None:
     cache_directory.mkdir(parents=True, exist_ok=True)
-    path = _cache_path(cache_directory, key)
+    path = _cache_path(cache_directory, key, model)
     data = {
         "generated_at": time.time(),
         "entries": [
@@ -157,42 +104,17 @@ async def _call_with_retry(coro_fn, attempts: int = 3, base_delay: float = 1.0, 
 _GATE_THRESHOLD = 0.90
 
 
-async def _run_book_pages(
-    key: str, pages: list[str], llm_client: LLMClient, semaphore: asyncio.Semaphore,
-    corpus_directory: Path, cache_directory: Path,
+def _run_book_entries(
+    key: str, entries_a: list[TocEntry], entries_b: list[TocEntry], corpus_directory: Path,
 ) -> tuple[str, bool, str]:
-    """Core per-book logic, given already-extracted page texts -- kept
-    separate from PDF/file reading so it's directly unit-testable with
-    synthetic pages and a fake LLMClient, no real PDF needed. Returns
-    (key, passed, reason); reason is "ok" on success, else why the book
-    was skipped/rejected ("needs_ocr", "no_entries", "below_threshold")."""
-    if pages_need_ocr(pages):
-        return key, False, "needs_ocr"
-    heuristic_entries = _toc_entries_for_scan(pages)
-    # Read outside the semaphore (cheap, no network); relies on the
-    # caller never invoking this twice concurrently for the same `key`
-    # (true today -- Task 8's driver builds one call per unique manifest
-    # key) -- if that ever changes, two concurrent calls for the same
-    # uncached book could both miss the cache and both call the LLM.
-    cached = _load_cached_llm_entries(cache_directory, key)
-    async with semaphore:
-        if cached is not None:
-            llm_entries = cached
-        else:
-            padded_pages = _pad_pages_for_scan(pages)
-            llm_entries = await _call_with_retry(lambda: llm_extract_toc_entries(padded_pages, llm_client))
-            # llm_extract_toc_entries never raises to us -- any real failure
-            # (network, rate limit, timeout) is caught internally and
-            # returns [], indistinguishable from a genuine "no TOC found"
-            # result. Caching that [] would be permanent: a later re-run
-            # would trust the stale empty cache entry forever instead of
-            # retrying. Only caching a non-empty result means a future run
-            # simply re-queries the LLM for this book instead.
-            if llm_entries:
-                _write_cached_llm_entries(cache_directory, key, llm_entries)
-    if not heuristic_entries and not llm_entries:
+    """Core per-book gating logic, given two already-extracted TocEntry
+    lists -- kept separate from PDF/vision-call I/O so it's directly
+    unit-testable with synthetic entries, no real PDF or network call
+    needed. Returns (key, passed, reason); reason is "ok" on success, else
+    why the book was skipped/rejected ("no_entries", "below_threshold")."""
+    if not entries_a and not entries_b:
         return key, False, "no_entries"
-    passed, entries = gate_book(heuristic_entries, llm_entries, threshold=_GATE_THRESHOLD)
+    passed, entries = gate_book(entries_a, entries_b, threshold=_GATE_THRESHOLD)
     if not passed:
         return key, False, "below_threshold"
     gt_path = corpus_directory / f"{key}.expected.json"
@@ -207,72 +129,43 @@ _CORPUS_NAME = "dnb-toc-only"
 
 
 async def _run_book(
-    key: str, pdf_path: Path, llm_client: LLMClient, semaphore: asyncio.Semaphore,
+    key: str, pdf_path: Path, models: tuple[str, str], client, semaphore: asyncio.Semaphore,
     corpus_directory: Path, cache_directory: Path,
 ) -> tuple[str, bool, str]:
-    """Thin I/O wrapper around _run_book_pages -- reads the real PDF,
-    extracts page text the same way production does, and delegates.
-    Catches any exception (a corrupt/unreadable PDF, a network error not
-    already absorbed by llm_extract_toc_entries' own handling, etc.) and
-    reports it as a failed-but-tuple-shaped result instead of letting it
-    propagate -- same "catch-log-continue" convention
-    evaluation/refresh_llm_cache.py already established for this same
-    kind of long, unattended, budget-spending batch job. One book's
-    failure must never abort the rest of a ~1000-book run."""
+    """Thin I/O wrapper around _run_book_entries -- calls
+    vision_extract_toc_entries once per model (through the cache, then
+    _call_with_retry on a miss), and delegates the two resulting entry
+    lists to _run_book_entries. Catches any exception (a corrupt/unreadable
+    PDF, a network error that survives _call_with_retry's own retries,
+    etc.) and reports it as a failed-but-tuple-shaped result instead of
+    letting it propagate -- same "catch-log-continue" convention
+    evaluation/refresh_llm_cache.py already established for this kind of
+    long, unattended, budget-spending batch job. One book's failure must
+    never abort the rest of a ~1000-book run."""
     try:
-        pages, _ = extract_page_texts_for_analysis(pdf_path.read_bytes())
-        return await _run_book_pages(key, pages, llm_client, semaphore, corpus_directory, cache_directory)
+        entries_by_model = []
+        for model in models:
+            cached = _load_cached_llm_entries(cache_directory, key, model)
+            async with semaphore:
+                if cached is not None:
+                    entries = cached
+                else:
+                    entries = await _call_with_retry(
+                        lambda m=model: vision_extract_toc_entries(pdf_path, m, client)
+                    )
+                    # Only cache a non-empty result -- an empty list here
+                    # could be a genuine "no TOC content on these pages" or
+                    # a transient failure already exhausted by
+                    # _call_with_retry; caching it either way would make a
+                    # later re-run trust a possibly-transient empty result
+                    # forever instead of retrying.
+                    if entries:
+                        _write_cached_llm_entries(cache_directory, key, model, entries)
+            entries_by_model.append(entries)
+        return _run_book_entries(key, entries_by_model[0], entries_by_model[1], corpus_directory)
     except Exception as exc:  # noqa: BLE001 -- must never let one book crash the whole batch
         print(f"[error] {key}: {exc}")
         return key, False, f"error: {type(exc).__name__}"
-
-
-
-# Documented strong performers for TOC/chapter extraction specifically --
-# see RESULTS.md's "Per-strategy standalone results" LLM section, where
-# these four model FAMILIES tied for the highest F1 (0.48) in a real
-# evaluation against this project's corpus. Tried in this order, skipping
-# any that are currently "very busy". Found empirically (2026-08-15 smoke
-# test against the real dnb-toc-only corpus) that naively picking
-# whichever model has the LOWEST demand -- with ties broken by iteration
-# order -- consistently landed on a weaker model in practice
-# (apertus-70b-instruct-2509, tied for demand=0 with many others), which
-# measurably hurt the bulk-tier agreement gate's real pass rate: some real
-# books' LLM extraction silently stopped partway through a long chapter
-# list, understating agreement against the heuristic's complete count.
-# This is about MODEL QUALITY, a concern the old min-by-demand selection
-# never considered at all.
-#
-# Regex prefixes, not exact model IDs: KISSKI's own IDs embed a version/
-# date suffix (e.g. "deepseek-v4-flash-0731", "devstral-2-123b-instruct-2512")
-# that changes as the provider rotates in a newer build -- pinning the
-# exact ID would silently stop matching the moment that happens. Only one
-# build of each family is ever live in the catalog at a time, so a prefix
-# match is unambiguous.
-_PREFERRED_MODEL_PATTERNS = (
-    re.compile(r"^glm-"),
-    re.compile(r"^deepseek-v4-flash"),
-    re.compile(r"^mistral-medium-"),
-    re.compile(r"^devstral-"),
-)
-
-
-def _select_best_model(models: list) -> str:
-    """Pure selection logic, given an already-fetched model list -- kept
-    separate from the network call (_pick_model) so it's directly
-    unit-testable. Returns the least-busy model matching the first
-    _PREFERRED_MODEL_PATTERNS entry that has any non-"very busy" match;
-    falls back to the old global least-busy selection if none of the
-    preferred families are available/reasonably free."""
-    for pattern in _PREFERRED_MODEL_PATTERNS:
-        candidates = [m for m in models if pattern.match(m.id) and m.availability != "very busy"]
-        if candidates:
-            return min(candidates, key=lambda m: m.demand).id
-    return min(models, key=lambda m: m.demand).id
-
-
-def _pick_model(base_url: str, api_key: str) -> str:
-    return _select_best_model(fetch_kisski_models(base_url, api_key))
 
 
 # Vision-capable KISSKI model families, confirmed by direct experiment
@@ -316,12 +209,12 @@ def _pick_models(base_url: str, api_key: str) -> list[str]:
 
 
 async def _run_all(
-    keys_and_paths: list[tuple[str, Path]], llm_client: LLMClient, concurrency: int,
+    keys_and_paths: list[tuple[str, Path]], models: tuple[str, str], client, concurrency: int,
     corpus_directory: Path, cache_directory: Path,
 ) -> list[tuple[str, bool, str]]:
     semaphore = asyncio.Semaphore(concurrency)
     return list(await asyncio.gather(*[
-        _run_book(key, path, llm_client, semaphore, corpus_directory, cache_directory)
+        _run_book(key, path, models, client, semaphore, corpus_directory, cache_directory)
         for key, path in keys_and_paths
     ]))
 
@@ -339,15 +232,16 @@ def _generate(args: argparse.Namespace) -> int:
     missing_pdf_count = len(eligible) - len(candidates)
 
     api_key = os.environ["KISSKI_API_KEY"]
-    model = _pick_model(DEFAULT_KISSKI_BASE_URL, api_key)
-    llm_client = _OpenAICompatibleLLMClient(model, DEFAULT_KISSKI_BASE_URL, api_key)
+    models = tuple(_pick_models(DEFAULT_KISSKI_BASE_URL, api_key))
+    client = AsyncOpenAI(base_url=DEFAULT_KISSKI_BASE_URL, api_key=api_key)
 
-    results = asyncio.run(_run_all(candidates, llm_client, args.concurrency, cdir, llm_cache_dir(_CORPUS_NAME)))
+    results = asyncio.run(_run_all(candidates, models, client, args.concurrency, cdir, llm_cache_dir(_CORPUS_NAME)))
     passed = [r for r in results if r[1]]
     by_reason: dict[str, int] = {}
     for _, ok, reason in results:
         if not ok:
             by_reason[reason] = by_reason.get(reason, 0) + 1
+    print(f"Vision models used: {models[0]}, {models[1]}")
     print(f"{len(passed)}/{len(results)} books passed the gate and got .expected.json written.")
     for reason, count in sorted(by_reason.items()):
         print(f"  {count} skipped: {reason}")

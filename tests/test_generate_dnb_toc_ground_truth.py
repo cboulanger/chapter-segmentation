@@ -268,10 +268,32 @@ class TestSelectBestModels(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             _select_best_models(models)
 
-    def test_picks_least_busy_among_multiple_matches_in_the_same_pattern(self):
+    def test_picks_both_models_from_one_pattern_when_it_alone_has_enough(self):
+        # A single pattern with >= count available candidates satisfies
+        # count entirely on its own (least-busy first) -- it does NOT fall
+        # through to a later pattern just because one exists. Contrast
+        # with test_falls_through_to_next_pattern_when_first_has_too_few
+        # below, where the first pattern genuinely doesn't have enough.
         models = [
             KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni A", demand=2),
             KisskiModel(id="qwen4-omni-30b-a3b-instruct", name="Qwen Omni B", demand=0),
             KisskiModel(id="gemma-4-31b-it", name="Gemma", demand=0),
         ]
-        self.assertEqual(_select_best_models(models), ["qwen4-omni-30b-a3b-instruct", "gemma-4-31b-it"])
+        self.assertEqual(
+            _select_best_models(models),
+            ["qwen4-omni-30b-a3b-instruct", "qwen3-omni-30b-a3b-instruct"],
+        )
+
+    def test_falls_through_to_next_pattern_when_first_has_too_few_candidates(self):
+        # Only one qwen candidate exists -- not enough to satisfy count=2
+        # alone, so the loop must fall through to the gemma pattern for
+        # the second pick, per design spec section 3.1.
+        models = [
+            KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni", demand=0),
+            KisskiModel(id="gemma-4-31b-it", name="Gemma A", demand=2),
+            KisskiModel(id="gemma-5-31b-it", name="Gemma B", demand=0),
+        ]
+        self.assertEqual(
+            _select_best_models(models),
+            ["qwen3-omni-30b-a3b-instruct", "gemma-5-31b-it"],
+        )

@@ -181,22 +181,29 @@ _VISION_MODEL_PATTERNS = (
 
 
 def _select_best_models(models: list, patterns=_VISION_MODEL_PATTERNS, count: int = 2) -> list[str]:
-    """Picks `count` DISTINCT vision-capable model ids, one per pattern in
-    preference order. Deliberately does NOT fall back to an arbitrary
-    global least-busy model: a non-vision-capable model given image
-    content would either error or silently ignore the images, and the
-    whole point of the agreement gate is two INDEPENDENT reads -- gating a
-    single model against itself (or against a model that never saw the
-    images at all) would measure something other than what it claims to.
-    Raises loudly rather than silently degrading to fewer models."""
+    """Picks `count` DISTINCT vision-capable model ids. Walks `patterns` in
+    preference order, taking as many least-busy candidates as a pattern
+    has available (falling through to the next pattern only once the
+    current one is exhausted) until `count` is reached -- so a busy/absent
+    family doesn't abort the run when an earlier family alone has enough
+    distinct, available candidates to satisfy `count`. Deliberately does
+    NOT fall back to an arbitrary global least-busy model: a non-vision-
+    capable model given image content would either error or silently
+    ignore the images, and the whole point of the agreement gate is two
+    INDEPENDENT reads -- gating a single model against itself (or against
+    a model that never saw the images at all) would measure something
+    other than what it claims to. Raises loudly rather than silently
+    degrading to fewer models."""
     selected: list[str] = []
     for pattern in patterns:
-        candidates = [
-            m for m in models
-            if pattern.match(m.id) and m.availability != "very busy" and m.id not in selected
-        ]
-        if candidates:
-            selected.append(min(candidates, key=lambda m: m.demand).id)
+        candidates = sorted(
+            (m for m in models if pattern.match(m.id) and m.availability != "very busy" and m.id not in selected),
+            key=lambda m: m.demand,
+        )
+        for candidate in candidates:
+            selected.append(candidate.id)
+            if len(selected) >= count:
+                break
         if len(selected) >= count:
             break
     if len(selected) < count:

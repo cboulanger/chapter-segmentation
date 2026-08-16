@@ -23,6 +23,12 @@ others print the author's name on its own line above or below the title, \
 or right-align the page number with no leader at all -- read the images \
 directly rather than assuming one fixed layout.
 
+A heading can have indented, numbered, or lettered sub-points listed \
+below it (e.g. "I.", "II.", "1.", "2.") that each carry their OWN page \
+number -- each such sub-point is its own separate entry too, exactly as \
+printed, not merged into its parent heading. Do not collapse or omit a \
+sub-point just because it is indented under a larger heading.
+
 Return ONLY a JSON array, one entry per real chapter -- skip \
 acknowledgements, bibliography, index, and part-divider pages:
 [{"title": "...", "authors": ["First Last", ...], "printed_page_number": "12"}]

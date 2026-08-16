@@ -251,9 +251,9 @@ class TestSelectBestModels(unittest.TestCase):
     def test_matches_omni_family_regardless_of_version(self):
         models = [
             KisskiModel(id="qwen5-omni-99b-instruct", name="Qwen Omni next", demand=0),
-            KisskiModel(id="qwen4.0-40b", name="Qwen next", demand=0),
+            KisskiModel(id="qwen3.6-40b", name="Qwen 3.6 next", demand=0),
         ]
-        self.assertEqual(_select_best_models(models), ["qwen5-omni-99b-instruct", "qwen4.0-40b"])
+        self.assertEqual(_select_best_models(models), ["qwen5-omni-99b-instruct", "qwen3.6-40b"])
 
     def test_skips_very_busy_candidate_within_a_pattern(self):
         models = [
@@ -291,9 +291,9 @@ class TestSelectBestModels(unittest.TestCase):
         models = [
             KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni", demand=0),
             KisskiModel(id="qwen3.6-27b", name="Qwen 3.6 A", demand=2),
-            KisskiModel(id="qwen3.7-27b", name="Qwen 3.6 B", demand=0),
+            KisskiModel(id="qwen3.6-99b", name="Qwen 3.6 B", demand=0),
         ]
         self.assertEqual(
             _select_best_models(models),
-            ["qwen3-omni-30b-a3b-instruct", "qwen3.7-27b"],
+            ["qwen3-omni-30b-a3b-instruct", "qwen3.6-99b"],
         )

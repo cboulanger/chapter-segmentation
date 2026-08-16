@@ -184,9 +184,18 @@ async def _run_book(
 # page range every time (matching qwen-omni's own range), so it replaced
 # gemma as the second family -- slower per call, but reliable, which
 # matters far more for an agreement gate than speed.
+#
+# Pinned to qwen3.6 specifically, NOT a version-agnostic "any qwenX.Y"
+# pattern: a broader pattern once picked qwen3.5-122b-a10b instead (lower
+# demand at request time), which turned out measurably less reliable on
+# this exact task -- it returned an empty response or malformed JSON on
+# 2 of 3 books tested with the (more verbose, nested-sub-point-inclusive)
+# prompt below, where qwen3.6-27b succeeded on all of them. Sibling
+# versions of the same model family are not interchangeable in practice;
+# re-validate before widening this again.
 _VISION_MODEL_PATTERNS = (
     re.compile(r"^qwen\d+-omni"),
-    re.compile(r"^qwen\d+\.\d+-"),
+    re.compile(r"^qwen3\.6-"),
 )
 
 

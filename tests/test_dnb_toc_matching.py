@@ -75,6 +75,24 @@ class TestAlignTocEntries(unittest.TestCase):
         )]
         self.assertEqual(align_toc_entries(a, b), [(0, 0)])
 
+    def test_matches_despite_trailing_ocr_noise_via_partial_ratio(self):
+        # Real garbled-dot-leader-OCR cases measured in the investigation
+        # behind docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md
+        # section 1d: token_sort_ratio alone scores these well below the
+        # 70.0 threshold (a handful of garbage tokens dominates a short
+        # real title's token multiset) even though one title is exactly
+        # the other's real content plus a trailing noise run.
+        a = [_entry("Ein Interview ss m onen een ee eee eee ees", 81)]
+        b = [_entry("Ein Interview", 81)]
+        self.assertEqual(align_toc_entries(a, b), [(0, 0)])
+
+    def test_still_rejects_genuinely_different_titles_on_the_same_page(self):
+        # Negative control: partial_ratio must not become so permissive
+        # that two different real entries sharing a page number align.
+        a = [_entry("Die Einheit der Vernunft in der Vielfalt ihrer Stimmen", 117)]
+        b = [_entry("Metaphysik nach Kant", 117)]
+        self.assertEqual(align_toc_entries(a, b), [])
+
 
 class TestGateBook(unittest.TestCase):
     def test_perfect_agreement_passes_with_union_equal_to_either_list(self):

@@ -1,9 +1,10 @@
 """Whole-book agreement gate for dnb-toc-only ground truth -- see design
 spec docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md
-section 4. Pure functions over TocEntry lists produced by the two
-existing extractors (find_toc_candidates, llm_extract_toc_entries --
-src/chapter_segmentation/segmentation.py), which already return the
-identical list[TocEntry] shape."""
+section 4, and docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md
+for the follow-up redesign. Pure functions over TocEntry lists produced by
+two independent vision_extract_toc_entries calls
+(evaluation/dnb_toc_vision.py), which already return the identical
+list[TocEntry] shape."""
 
 from dataclasses import replace
 
@@ -36,8 +37,13 @@ def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, i
     produced TocEntry lists for the same TOC scan. A pair (i, j) counts as
     a match only when both sides have a KNOWN printed_page_number (neither
     is the -1 "unknown" sentinel) that's numerically equal, AND their
-    titles score >= _ALIGN_SCORE_THRESHOLD on rapidfuzz's
-    token_sort_ratio -- mirrors evaluation/nuextract_baseline.py's
+    titles score >= _ALIGN_SCORE_THRESHOLD on the better of rapidfuzz's
+    token_sort_ratio and partial_ratio (the latter added 2026-08-16 to
+    tolerate a trailing noise run on one side -- e.g. garbled OCR tokens
+    following an otherwise-exact-match title -- without inflating false
+    positives; see design spec
+    docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md
+    section 1d/3.2 for the measurements behind this) -- mirrors evaluation/nuextract_baseline.py's
     match_toc_entries (page-number-first, then title) and
     src/chapter_segmentation/evidence/fusion.py's _align (greedy scan from
     the last matched b-index, "TOC order is book order"), but returns
@@ -55,7 +61,10 @@ def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, i
             if entry_b.printed_page_number != entry_a.printed_page_number:
                 continue
             score = max(
-                fuzz.token_sort_ratio(title_a.lower(), title_b.lower())
+                max(
+                    fuzz.token_sort_ratio(title_a.lower(), title_b.lower()),
+                    fuzz.partial_ratio(title_a.lower(), title_b.lower()),
+                )
                 for title_a in _candidate_titles(entry_a)
                 for title_b in _candidate_titles(entry_b)
             )
@@ -69,44 +78,44 @@ def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, i
 
 
 def gate_book(
-    heuristic: list[TocEntry], llm: list[TocEntry], threshold: float = 0.90,
+    a: list[TocEntry], b: list[TocEntry], threshold: float = 0.90,
 ) -> tuple[bool, list[TocEntry]]:
-    """Whole-book agreement gate (design spec section 4.2).
-    agreement_rate = matched-pair count / max(len(heuristic), len(llm)).
+    """Whole-book agreement gate (design spec section 4.2 of the original
+    2026-08-15 design; the two inputs are now two independent vision-model
+    extractions rather than a regex heuristic and a text-LLM pass -- see
+    docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md section
+    3.1). agreement_rate = matched-pair count / max(len(a), len(b)).
     Below `threshold`, the book is rejected outright (passed=False,
     entries=[]) rather than trimmed down to just the agreeing entries -- a
     partially-agreeing book is exactly the case this design distrusts
     most, and a caller must not silently write a partial/incomplete
     result for it.
 
-    At or above `threshold`, `entries` is the UNION of matched pairs
-    (the heuristic's title kept, but falling back to the LLM's authors
-    when the heuristic's own are empty -- the heuristic's title comes from
-    structured regex capture rather than LLM reformatting, but the heuristic
-    almost never populates authors except in a narrow marker-line case, so
-    this preserves real author info the LLM extracted while preferring the
-    more reliable regex-captured title) plus every singleton entry either
-    extractor found alone, ordered by printed_page_number (the -1
-    "unknown" sentinel sorts last). This is deliberate: once a book
-    clears the trust bar, a line only one extractor caught is far likelier
-    a real entry the other missed (OCR noise, an unusual title format)
-    than a hallucination -- trimming it out would silently understate the
-    page's real content, which is exactly the "incomplete training
-    target" failure mode this design exists to avoid."""
-    if not heuristic and not llm:
+    At or above `threshold`, `entries` is the UNION of matched pairs (`a`'s
+    title kept -- an arbitrary but deterministic choice between two
+    equally-produced extractions -- falling back to `b`'s authors when
+    `a`'s own are empty, in case one model dropped them) plus every
+    singleton entry either side found alone, ordered by
+    printed_page_number (the -1 "unknown" sentinel sorts last). This is
+    deliberate: once a book clears the trust bar, a line only one side
+    caught is far likelier a real entry the other missed than a
+    hallucination -- trimming it out would silently understate the page's
+    real content, which is exactly the "incomplete training target"
+    failure mode this design exists to avoid."""
+    if not a and not b:
         return False, []
-    pairs = align_toc_entries(heuristic, llm)
-    agreement_rate = len(pairs) / max(len(heuristic), len(llm))
+    pairs = align_toc_entries(a, b)
+    agreement_rate = len(pairs) / max(len(a), len(b))
     if agreement_rate < threshold:
         return False, []
-    matched_h = {i for i, _ in pairs}
-    matched_l = {j for _, j in pairs}
+    matched_a = {i for i, _ in pairs}
+    matched_b = {j for _, j in pairs}
     merged = [
-        replace(heuristic[i], authors=heuristic[i].authors or llm[j].authors)
+        replace(a[i], authors=a[i].authors or b[j].authors)
         for i, j in pairs
     ]
-    merged += [entry for i, entry in enumerate(heuristic) if i not in matched_h]
-    merged += [entry for j, entry in enumerate(llm) if j not in matched_l]
+    merged += [entry for i, entry in enumerate(a) if i not in matched_a]
+    merged += [entry for j, entry in enumerate(b) if j not in matched_b]
     merged.sort(key=lambda e: (e.printed_page_number == -1, e.printed_page_number))
     return True, merged
 

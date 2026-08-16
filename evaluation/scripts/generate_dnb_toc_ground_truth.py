@@ -80,7 +80,10 @@ def _run_book_entries(
         return key, False, "below_threshold"
     gt_path = corpus_directory / f"{key}.expected.json"
     gt_path.write_text(
-        json.dumps({"entries": [toc_entry_to_gt_dict(e) for e in entries], "verified": False}, indent=2) + "\n",
+        json.dumps(
+            {"entries": [toc_entry_to_gt_dict(e) for e in entries], "verified": False, "source": "bulk_gate"},
+            indent=2,
+        ) + "\n",
         encoding="utf-8",
     )
     return key, True, "ok"

@@ -64,6 +64,7 @@ class TestRunBookEntries(unittest.TestCase):
             self.assertTrue(gt_path.exists())
             data = json.loads(gt_path.read_text(encoding="utf-8"))
             self.assertFalse(data["verified"])
+            self.assertEqual(data["source"], "bulk_gate")
             self.assertEqual(len(data["entries"]), 2)
 
     def test_below_threshold_book_writes_nothing(self):

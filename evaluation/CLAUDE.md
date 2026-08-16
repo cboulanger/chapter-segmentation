@@ -541,14 +541,20 @@ docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md):
 
 4. Write the final `evaluation/corpus/dnb-toc-only/<key>.expected.json`
    yourself -- same schema as a passing book
-   (`{"entries": [...], "verified": true}`, each entry via
-   `evaluation.dnb_toc_matching.toc_entry_to_gt_dict`), but with
-   `"verified": true` rather than `false`: unlike the bulk-tier gate's
-   own output, this went through direct scrutiny (including the images,
-   when needed), the same standard `_spot_check`'s docstring in
+   (`{"entries": [...], "verified": true, "source": "claude_arbitration"}`,
+   each entry via `evaluation.dnb_toc_matching.toc_entry_to_gt_dict`), but
+   with `"verified": true` rather than `false`: unlike the bulk-tier
+   gate's own output, this went through direct scrutiny (including the
+   images, when needed), the same standard `_spot_check`'s docstring in
    `generate_dnb_toc_ground_truth.py` already treats as
    "independently human-verified" -- so it's also correctly excluded
-   from that function's own sampling pool going forward.
+   from that function's own sampling pool going forward. The
+   `"source": "claude_arbitration"` field (vs. the bulk gate's own
+   `"source": "bulk_gate"`) records that this entry's ground truth came
+   from an arbitrated review, not the automated agreement gate -- keep
+   this field whether the book was reconciled between the two models'
+   partial agreement or fully hand-transcribed from the page images
+   because neither model's output was usable.
 
 5. If a book is genuinely unrecoverable (both models hallucinate, the
    scan itself is too degraded to read even directly), record that

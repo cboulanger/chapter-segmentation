@@ -3,7 +3,13 @@ images directly (no OCR, no text layer at all), per design spec
 docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md section 3.
 dnb-toc-only's PDFs are pre-filtered to just their TOC pages during
 acquisition (1-3 pages typically), so rendering every page unconditionally
-is cheap and bounded -- this does NOT generalize to whole-book PDFs."""
+is cheap and bounded -- this does NOT generalize to whole-book PDFs.
+
+Also owns caching vision_extract_toc_entries's own per-(book, model)
+results (cache_path/load_cached_llm_entries/write_cached_llm_entries) --
+kept here rather than in a calling script so more than one script
+(generate_dnb_toc_ground_truth.py, arbitrate_dnb_toc.py) can read the
+same cache without importing one script from another."""
 
 import base64
 import json
@@ -20,10 +26,17 @@ from chapter_segmentation.segmentation import TocEntry, _toc_items_to_entries
 
 
 def cache_path(cache_directory: Path, key: str, model: str) -> Path:
+    """Where one (book, model) pair's cached vision_extract_toc_entries
+    result lives -- <key>.<model>.json, so two independent models never
+    collide for the same book."""
     return cache_directory / f"{key}.{model}.json"
 
 
 def load_cached_llm_entries(cache_directory: Path, key: str, model: str) -> Optional[list[TocEntry]]:
+    """Returns the cached result for (key, model), or None on a cache
+    miss (never seen this pair, or the call that would have populated it
+    failed/returned empty -- write_cached_llm_entries only caches
+    non-empty results, see its own docstring)."""
     path = cache_path(cache_directory, key, model)
     if not path.exists():
         return None
@@ -39,6 +52,11 @@ def load_cached_llm_entries(cache_directory: Path, key: str, model: str) -> Opti
 
 
 def write_cached_llm_entries(cache_directory: Path, key: str, model: str, entries: list[TocEntry]) -> None:
+    """Caches entries for (key, model). Callers should only call this
+    with a non-empty entries list -- an empty result could be a genuine
+    "no TOC content" or a transient failure, and caching it either way
+    would make a later re-run trust a possibly-transient empty result
+    forever instead of retrying."""
     cache_directory.mkdir(parents=True, exist_ok=True)
     path = cache_path(cache_directory, key, model)
     data = {

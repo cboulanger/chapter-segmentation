@@ -19,16 +19,21 @@ _ALIGN_SCORE_THRESHOLD = 70.0
 
 def _candidate_titles(entry: TocEntry) -> tuple[str, ...]:
     """Every title reading worth trying for a fuzzy match: the primary
-    regex-captured title, plus any longer wrapped-title variants
-    (TocEntry.title_variants -- see its own docstring in
-    segmentation.py). A heuristic-found entry whose title wrapped across
-    multiple TOC-page lines has its FULL title only in title_variants,
-    not title itself (the regex only captures the last line, where the
-    page number sits) -- comparing only .title against an LLM entry's
-    full, whole-read title systematically under-scores a real match.
-    Found empirically: a real book's wrapped page-33 title matched its
-    own title_variants near-verbatim but scored well below threshold
-    against .title alone (2026-08-15 smoke test, book 9783899718188)."""
+    title, plus any longer wrapped-title variants (TocEntry.title_variants
+    -- see its own docstring in segmentation.py). An entry whose title
+    wrapped across multiple TOC-page lines can have its FULL title only in
+    title_variants, not title itself (a line-based capture may record just
+    the last line, where the page number sits) -- comparing only .title
+    against the other side's full, whole-read title would systematically
+    under-score a real match. Found empirically: a real book's wrapped
+    page-33 title matched its own title_variants near-verbatim but scored
+    well below threshold against .title alone (2026-08-15 smoke test, book
+    9783899718188). Note that of this module's current callers, only
+    find_toc_candidates' regex path ever populates title_variants --
+    _toc_items_to_entries (shared by both the text-LLM and vision-LLM
+    paths) never does, so for two vision-extraction inputs this tuple is
+    just (entry.title,) on both sides; the mechanism stays in place for
+    whichever future extractor populates it."""
     return (entry.title,) + entry.title_variants
 
 

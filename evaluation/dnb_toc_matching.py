@@ -82,6 +82,28 @@ def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, i
     return pairs
 
 
+def diff_toc_entries(
+    a: list[TocEntry], b: list[TocEntry],
+) -> tuple[list[tuple[TocEntry, TocEntry]], list[TocEntry], list[TocEntry]]:
+    """Aligns a and b via align_toc_entries and returns (matched_pairs,
+    only_in_a, only_in_b) -- matched_pairs holds the actual TocEntry
+    objects (not indices) from each side for each matched line,
+    only_in_a/only_in_b hold every entry from that side with no match on
+    the other. Same underlying alignment gate_book uses to decide
+    pass/fail; this exposes the full breakdown for a human (or Claude,
+    arbitrating a below-threshold book) to review the actual
+    disagreement -- see
+    docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md
+    section 4.1."""
+    pairs = align_toc_entries(a, b)
+    matched_a = {i for i, _ in pairs}
+    matched_b = {j for _, j in pairs}
+    matched_pairs = [(a[i], b[j]) for i, j in pairs]
+    only_in_a = [entry for i, entry in enumerate(a) if i not in matched_a]
+    only_in_b = [entry for j, entry in enumerate(b) if j not in matched_b]
+    return matched_pairs, only_in_a, only_in_b
+
+
 def gate_book(
     a: list[TocEntry], b: list[TocEntry], threshold: float = 0.90,
 ) -> tuple[bool, list[TocEntry]]:
@@ -109,18 +131,16 @@ def gate_book(
     failure mode this design exists to avoid."""
     if not a and not b:
         return False, []
-    pairs = align_toc_entries(a, b)
-    agreement_rate = len(pairs) / max(len(a), len(b))
+    matched_pairs, only_in_a, only_in_b = diff_toc_entries(a, b)
+    agreement_rate = len(matched_pairs) / max(len(a), len(b))
     if agreement_rate < threshold:
         return False, []
-    matched_a = {i for i, _ in pairs}
-    matched_b = {j for _, j in pairs}
     merged = [
-        replace(a[i], authors=a[i].authors or b[j].authors)
-        for i, j in pairs
+        replace(entry_a, authors=entry_a.authors or entry_b.authors)
+        for entry_a, entry_b in matched_pairs
     ]
-    merged += [entry for i, entry in enumerate(a) if i not in matched_a]
-    merged += [entry for j, entry in enumerate(b) if j not in matched_b]
+    merged += only_in_a
+    merged += only_in_b
     merged.sort(key=lambda e: (e.printed_page_number == -1, e.printed_page_number))
     return True, merged
 

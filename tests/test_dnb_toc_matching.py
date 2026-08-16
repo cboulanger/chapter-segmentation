@@ -8,7 +8,7 @@ TocEntry lists."""
 import unittest
 
 from chapter_segmentation.segmentation import TocEntry
-from evaluation.dnb_toc_matching import align_toc_entries, gate_book, toc_entry_to_gt_dict
+from evaluation.dnb_toc_matching import align_toc_entries, diff_toc_entries, gate_book, toc_entry_to_gt_dict
 
 
 def _entry(title: str, page: int, authors: tuple[str, ...] = ()) -> TocEntry:
@@ -92,6 +92,41 @@ class TestAlignTocEntries(unittest.TestCase):
         a = [_entry("Die Einheit der Vernunft in der Vielfalt ihrer Stimmen", 117)]
         b = [_entry("Metaphysik nach Kant", 117)]
         self.assertEqual(align_toc_entries(a, b), [])
+
+
+class TestDiffTocEntries(unittest.TestCase):
+    def test_full_agreement_has_no_singletons(self):
+        a = [_entry("Einleitung", 9), _entry("Schluss", 40)]
+        b = [_entry("Einleitung", 9), _entry("Schluss", 40)]
+        matched, only_a, only_b = diff_toc_entries(a, b)
+        self.assertEqual(len(matched), 2)
+        self.assertEqual(only_a, [])
+        self.assertEqual(only_b, [])
+
+    def test_partial_agreement_separates_singletons_per_side(self):
+        a = [_entry("Einleitung", 9), _entry("Only in A", 20)]
+        b = [_entry("Einleitung", 9), _entry("Only in B", 30)]
+        matched, only_a, only_b = diff_toc_entries(a, b)
+        self.assertEqual(len(matched), 1)
+        self.assertEqual([e.title for e in only_a], ["Only in A"])
+        self.assertEqual([e.title for e in only_b], ["Only in B"])
+
+    def test_complete_disagreement_puts_everything_in_singletons(self):
+        a = [_entry("A", 1)]
+        b = [_entry("B", 2)]
+        matched, only_a, only_b = diff_toc_entries(a, b)
+        self.assertEqual(matched, [])
+        self.assertEqual([e.title for e in only_a], ["A"])
+        self.assertEqual([e.title for e in only_b], ["B"])
+
+    def test_matched_pairs_hold_entry_objects_not_indices(self):
+        a = [_entry("Einleitung", 9, authors=("A Author",))]
+        b = [_entry("Einleitung", 9, authors=("B Author",))]
+        matched, _, _ = diff_toc_entries(a, b)
+        self.assertEqual(len(matched), 1)
+        entry_a, entry_b = matched[0]
+        self.assertEqual(entry_a.authors, ("A Author",))
+        self.assertEqual(entry_b.authors, ("B Author",))
 
 
 class TestGateBook(unittest.TestCase):

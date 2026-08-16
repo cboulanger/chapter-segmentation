@@ -102,6 +102,23 @@ class TestFormatBookReport(unittest.TestCase):
         self.assertIn("Only model-a returned usable output", report)
         self.assertIn("Einleitung", report)
 
+    def test_more_than_two_models_falls_back_to_a_plain_per_model_listing(self):
+        report = format_book_report(
+            "book3", "Some Title", Path("/tmp/book3.pdf"),
+            {
+                "model-a": [_entry("From A", 1)],
+                "model-b": [_entry("From B", 2)],
+                "model-c": [_entry("From C", 3)],
+            },
+        )
+        self.assertIn("found 3", report)
+        self.assertIn("model-a", report)
+        self.assertIn("model-b", report)
+        self.assertIn("model-c", report)
+        self.assertIn("From A", report)
+        self.assertIn("From B", report)
+        self.assertIn("From C", report)
+
 
 class TestRejectBook(unittest.TestCase):
     def test_creates_the_file_on_first_rejection(self):

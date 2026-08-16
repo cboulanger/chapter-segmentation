@@ -41,7 +41,10 @@ def _load_rejected_keys(cdir: Path) -> set[str]:
 
 def _cached_book_keys(cache_directory: Path) -> list[str]:
     """Every distinct book key with at least one <key>.<model>.json file
-    in cache_directory, sorted for stable output."""
+    in cache_directory, sorted for stable output. Splitting on the FIRST
+    "." is safe here (unlike _cached_models_for_book's model-id slicing
+    below) because book keys are manifest filenames' stems -- ISBNs or
+    DNB ids -- which never themselves contain a dot."""
     return sorted({p.name.split(".", 1)[0] for p in cache_directory.glob("*.json")})
 
 

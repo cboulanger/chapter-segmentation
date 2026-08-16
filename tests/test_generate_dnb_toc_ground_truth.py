@@ -279,13 +279,25 @@ class TestSelectBestModel(unittest.TestCase):
         ]
         self.assertEqual(_select_best_model(models), "glm-4.7")
 
+    def test_matches_a_preferred_family_regardless_of_version_suffix(self):
+        # KISSKI's own IDs embed a version/date suffix that changes as the
+        # provider rotates in a newer build (e.g. "-0731", "-2512") --
+        # matching should track the family, not a pinned exact ID, so this
+        # keeps working once the live catalog moves to glm-5.0 or a later
+        # deepseek-v4-flash build without any code change here.
+        models = [
+            KisskiModel(id="glm-5.0", name="GLM next", demand=0),
+            KisskiModel(id="deepseek-v4-flash-9999", name="DeepSeek next", demand=0),
+        ]
+        self.assertEqual(_select_best_model(models), "glm-5.0")
+
     def test_falls_through_preferred_list_in_order(self):
         models = [
             KisskiModel(id="mistral-medium-3.5-128b", name="Mistral", demand=0),
             KisskiModel(id="devstral-2-123b-instruct-2512", name="Devstral", demand=0),
         ]
-        # glm-4.7 and deepseek-v4-flash-0731 (earlier in _PREFERRED_MODELS)
-        # aren't in this list at all, so the first later preferred model
+        # glm-* and deepseek-v4-flash* (earlier in _PREFERRED_MODEL_PATTERNS)
+        # aren't in this list at all, so the first later preferred family
         # actually present should win.
         self.assertEqual(_select_best_model(models), "mistral-medium-3.5-128b")
 
@@ -295,6 +307,16 @@ class TestSelectBestModel(unittest.TestCase):
             KisskiModel(id="deepseek-v4-flash-0731", name="DeepSeek", demand=0),
         ]
         self.assertEqual(_select_best_model(models), "deepseek-v4-flash-0731")
+
+    def test_picks_least_busy_among_multiple_matches_in_the_same_family(self):
+        # Only one build per family is expected live at a time in
+        # practice, but the selection should still behave sensibly if
+        # more than one ever matches the same pattern.
+        models = [
+            KisskiModel(id="glm-4.7", name="GLM old", demand=2),
+            KisskiModel(id="glm-5.0", name="GLM new", demand=0),
+        ]
+        self.assertEqual(_select_best_model(models), "glm-5.0")
 
     def test_falls_back_to_least_busy_when_no_preferred_model_available(self):
         models = [

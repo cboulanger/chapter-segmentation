@@ -32,6 +32,7 @@ import asyncio
 import json
 import os
 import random
+import re
 import time
 from pathlib import Path
 from typing import Optional
@@ -229,32 +230,44 @@ async def _run_book(
 
 # Documented strong performers for TOC/chapter extraction specifically --
 # see RESULTS.md's "Per-strategy standalone results" LLM section, where
-# these four models tied for the highest F1 (0.48) in a real evaluation
-# against this project's corpus. Tried in this order, skipping any that
-# are currently "very busy". Found empirically (2026-08-15 smoke test
-# against the real dnb-toc-only corpus) that naively picking whichever
-# model has the LOWEST demand -- with ties broken by iteration order --
-# consistently landed on a weaker model in practice (apertus-70b-instruct-2509,
-# tied for demand=0 with many others), which measurably hurt the bulk-tier
-# agreement gate's real pass rate: some real books' LLM extraction silently
-# stopped partway through a long chapter list, understating agreement
-# against the heuristic's complete count. This is about MODEL QUALITY, a
-# concern the old min-by-demand selection never considered at all.
-_PREFERRED_MODELS = ("glm-4.7", "deepseek-v4-flash-0731", "mistral-medium-3.5-128b", "devstral-2-123b-instruct-2512")
+# these four model FAMILIES tied for the highest F1 (0.48) in a real
+# evaluation against this project's corpus. Tried in this order, skipping
+# any that are currently "very busy". Found empirically (2026-08-15 smoke
+# test against the real dnb-toc-only corpus) that naively picking
+# whichever model has the LOWEST demand -- with ties broken by iteration
+# order -- consistently landed on a weaker model in practice
+# (apertus-70b-instruct-2509, tied for demand=0 with many others), which
+# measurably hurt the bulk-tier agreement gate's real pass rate: some real
+# books' LLM extraction silently stopped partway through a long chapter
+# list, understating agreement against the heuristic's complete count.
+# This is about MODEL QUALITY, a concern the old min-by-demand selection
+# never considered at all.
+#
+# Regex prefixes, not exact model IDs: KISSKI's own IDs embed a version/
+# date suffix (e.g. "deepseek-v4-flash-0731", "devstral-2-123b-instruct-2512")
+# that changes as the provider rotates in a newer build -- pinning the
+# exact ID would silently stop matching the moment that happens. Only one
+# build of each family is ever live in the catalog at a time, so a prefix
+# match is unambiguous.
+_PREFERRED_MODEL_PATTERNS = (
+    re.compile(r"^glm-"),
+    re.compile(r"^deepseek-v4-flash"),
+    re.compile(r"^mistral-medium-"),
+    re.compile(r"^devstral-"),
+)
 
 
 def _select_best_model(models: list) -> str:
     """Pure selection logic, given an already-fetched model list -- kept
     separate from the network call (_pick_model) so it's directly
-    unit-testable. Returns the first _PREFERRED_MODELS entry that's
-    present and not "very busy"; falls back to the old least-busy
-    selection if none of the preferred models are available/reasonably
-    free."""
-    by_id = {m.id: m for m in models}
-    for preferred in _PREFERRED_MODELS:
-        model = by_id.get(preferred)
-        if model is not None and model.availability != "very busy":
-            return model.id
+    unit-testable. Returns the least-busy model matching the first
+    _PREFERRED_MODEL_PATTERNS entry that has any non-"very busy" match;
+    falls back to the old global least-busy selection if none of the
+    preferred families are available/reasonably free."""
+    for pattern in _PREFERRED_MODEL_PATTERNS:
+        candidates = [m for m in models if pattern.match(m.id) and m.availability != "very busy"]
+        if candidates:
+            return min(candidates, key=lambda m: m.demand).id
     return min(models, key=lambda m: m.demand).id
 
 

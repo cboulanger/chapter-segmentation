@@ -211,6 +211,34 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             self.assertFalse(passed)
             self.assertTrue(reason.startswith("error:"))
 
+    async def test_one_model_failing_preserves_the_others_cache_entry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            corpus_directory = tmp_path / "corpus"
+            cache_directory = tmp_path / "cache"
+            corpus_directory.mkdir()
+            pdf_path = _make_pdf(tmp_path / "book.pdf")
+            client = MagicMock()
+            good_message = MagicMock()
+            good_message.content = _VISION_RESPONSE
+            good_choice = MagicMock()
+            good_choice.message = good_message
+            good_response = MagicMock()
+            good_response.choices = [good_choice]
+            client.chat.completions.create = AsyncMock(
+                side_effect=[good_response, RuntimeError("boom"), RuntimeError("boom"), RuntimeError("boom")]
+            )
+            semaphore = asyncio.Semaphore(1)
+
+            key, passed, reason = await _run_book(
+                "book4", pdf_path, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+            )
+
+            self.assertFalse(passed)
+            self.assertTrue(reason.startswith("error:"))
+            self.assertIsNotNone(_load_cached_llm_entries(cache_directory, "book4", "model-a"))
+            self.assertIsNone(_load_cached_llm_entries(cache_directory, "book4", "model-b"))
+
 
 class TestSelectBestModels(unittest.TestCase):
     def test_picks_one_from_each_pattern_in_order(self):

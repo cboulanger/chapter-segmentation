@@ -1,7 +1,7 @@
-# Uniform layout-sensitive OCR for dnb-toc-only
+# Vision-LLM TOC extraction for dnb-toc-only
 
 Status: proposed
-Date: 2026-08-16
+Date: 2026-08-16 (revised same day — see §2 for the pivot)
 
 Follow-up to `docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md`
 (the GT-generation script this modifies). Triggered by two real findings
@@ -14,16 +14,19 @@ from smoke-testing that script against the live corpus:
    extraction quality varies for reasons unrelated to either extractor's
    logic.
 
-This spec covers replacing per-PDF embedded/inconsistent text with a single,
-project-controlled, layout-sensitive OCR pass applied uniformly across the
-whole corpus, plus a smaller independent fix to the agreement-gate's title
-matching that the investigation below turned up along the way.
+The original brief was to fix this with a uniform, project-controlled OCR
+pass. That investigation (§1) found a working fix for the *layout*
+problem (column/block misassociation) but ran into a harder, only
+partially fixable *dot-leader garbage* problem. A follow-up experiment
+(§2) tested KISSKI's vision-capable models reading page images directly,
+bypassing OCR text entirely — results were strong enough (§2.1) that the
+design now replaces the OCR pipeline rather than building it (§3).
 
-## 1. Investigation summary
+## 1. OCR-pipeline investigation (superseded by §2-3, kept for the record)
 
-Four things were tested directly against the corpus before proposing a
-design, using book `9783518585306.pdf` (the known "shredded", one-word-
-per-line worst case) as the running example.
+Four things were tested directly against the corpus before proposing the
+original OCR design, using book `9783518585306.pdf` (the known "shredded",
+one-word-per-line worst case) as the running example.
 
 **a) Plain `ocrmypdf --force-ocr -l deu+eng` (tesseract's own reading
 order).** Fixes the one-word-per-line fragmentation, but introduces a worse
@@ -33,7 +36,7 @@ numbers into a separate block that follows, e.g. the reconstructed page
 text ends with a disconnected `"...33\n81\n100\n117\n155\n174\n203"` list.
 `find_toc_candidates`'s regex requires title and number on the same
 physical line, so this produces **zero** heuristic entries. Confirms the
-user's original concern: naive OCR does not solve column-based TOCs.
+original concern: naive OCR does not solve column-based TOCs.
 
 **b) `pdfalto` word-position reconstruction.** `pdfalto` (sibling checkout
 at `/Users/cboulanger/Code/pdfalto/pdfalto`, already used elsewhere in this
@@ -101,113 +104,202 @@ of. Confirms text-level tolerance (partial_ratio) is the right layer to fix
 this at, not more geometry.
 
 **e) Runtime cost.** `ocrmypdf --force-ocr -l deu+eng` + `pdfalto` on the
-2-page test book: 8.4s wall-clock. Corpus is 1251 PDFs. At this per-book
-cost, sequential processing is ~3 hours; with the existing script's
-concurrency pattern (currently `--concurrency 4` for the LLM calls, easily
-reused for OCR since `ocrmypdf`/`pdfalto` are both subprocess calls) this
-comes down to well under an hour. User has already accepted "a significant
-time cost" for this.
+2-page test book: 8.4s wall-clock — a workable cost, but see §2.2 for how
+it compares to the vision alternative.
 
-## 2. Design
+## 2. Pivot: vision-model extraction
 
-Two independent changes come out of this investigation. They ship
-separately since they fix different problems and have very different
-cost/risk profiles.
+The OCR/ALTO pipeline in §1 fixes the layout problem but only partially
+fixes dot-leader garbage, and still depends on `ocrmypdf` producing a
+usable text layer at all. Since `find_toc_candidates`/`llm_extract_toc_entries`
+only need the TOC's *content*, not literally its text layer, the next
+question was whether a vision-capable LLM reading the page image directly
+could skip text extraction altogether — no OCR, no ALTO, no row
+reconstruction, no dot-leader garbling because there's no text layer to
+garble.
 
-### 2.1 Title-matching robustness fix (small, immediate, no pipeline needed)
+### 2.1 Experiment
 
-In `evaluation/dnb_toc_matching.py`, change the scoring inside
-`align_toc_entries`'s candidate-title loop from
+Rendered page images directly from the original PDFs with
+`pdftoppm -r 200 -png` (no OCR step at all) and sent them to KISSKI's
+`qwen3-omni-30b-a3b-instruct` (`demand=0` at test time) via a single
+OpenAI-compatible chat completion with `image_url` content blocks, using a
+prompt adapted from `_LLM_TOC_EXTRACTION_PROMPT`
+(`src/chapter_segmentation/segmentation.py:488`) for image input. Two
+books, chosen for different failure modes:
+
+| Book | Layout | Result | Time |
+| --- | --- | --- | --- |
+| `9783518585306.pdf` (the §1 "shredded"/dot-leader book, 2 pages) | numbered chapters, dotted leaders | **18/18 entries**, every title clean (verified against the rendered image by eye), every page number correct | 6.9s |
+| `3110139642.pdf` (a `needs_ocr` book — no usable embedded text layer at all, 3 pages) | edited-volume TOC, author name in caps on its own line above each title, right-aligned page numbers, *no* dot leaders | **18/18 entries**, titles and page numbers correct, **and** every all-caps author name correctly parsed into `authors` | 10.5s |
+
+The second result matters beyond raw accuracy: `find_toc_candidates`
+can only ever recover authors when a marker word (`par`/`by`/`et`,
+`_TOC_AUTHOR_MARKER_RE` at `segmentation.py:155`) appears on the line —
+this book's layout has no marker word, so the regex heuristic would return
+zero authors here regardless of text quality. The vision model recovered
+them anyway, from typographic cues (a distinct all-caps line) a
+text-only extractor structurally can't see.
+
+Two more KISSKI models were spot-checked for vision support as a second
+independent signal (needed because the whole-book agreement gate requires
+two *independent* extractions, not one extractor plus a rubber stamp):
+`gemma-4-31b-it` (accurate on a partial read of the first test book, 15.3s)
+and `qwen3.6-27b` (accurate but slower — 71-76s — and applied its own
+judgment call to omit the back-matter entries `Textnachweise`/`Register`/
+`Gesamtinhaltsverzeichnis`, plus left numbering prefixes like `"1. "` on
+titles the other models stripped). Both confirm vision support exists
+beyond a single model, though `qwen3-omni-30b-a3b-instruct` is clearly the
+stronger and faster of the three tested.
+
+### 2.2 Why this replaces the OCR pipeline rather than supplementing it
+
+- It fixes the `needs_ocr` cases directly — `3110139642.pdf` above has no
+  usable text layer today and would have needed the full §1 OCR pipeline
+  to produce any text at all; vision extraction doesn't care, since it
+  never reads the text layer.
+- It fixes the dot-leader garbage problem at the source rather than
+  compensating for it downstream (§1d's `partial_ratio` fix becomes a
+  nice-to-have robustness improvement rather than a load-bearing fix — see
+  §3.2).
+- It fixes an accuracy gap (`authors` recovery on marker-word-free layouts)
+  the OCR pipeline was never going to fix, since that's a limitation of
+  the regex heuristic's own logic, not of its input text quality.
+- It is simpler to build: no new `ocrmypdf`/`pdfalto`/row-reconstruction
+  module, no new cache layer for intermediate OCR text, no row-clustering
+  tolerance tuning (§1's open question about 8px being font-size-specific
+  disappears entirely). What's needed instead — page-image rendering and a
+  vision-capable chat completion call — is less code than §1's design, and
+  reuses the existing async/retry/cache machinery in
+  `generate_dnb_toc_ground_truth.py` almost as-is (see §3).
+- Per-book cost is comparable or better: 6.9-10.5s for one vision call
+  vs. 8.4s for OCR+ALTO *alone*, before a text-LLM call still had to run
+  on top of that in the old design.
+
+The tradeoff: this corpus (`dnb-toc-only`) is specifically PDFs
+pre-filtered to just their TOC pages during acquisition, so "render every
+page as an image" is cheap and bounded (1-3 pages typically — confirmed by
+spot-checking the manifest). This finding does not generalize to sending
+whole-book PDFs as images; it works here because the input is already
+small.
+
+## 3. Design
+
+### 3.1 Two-vision-model agreement gate replaces the heuristic/LLM gate
+
+`gate_book`/`align_toc_entries` (`evaluation/dnb_toc_matching.py`) are
+already generic over any two `list[TocEntry]` — nothing about them assumes
+one side came from regex matching. The gate's two inputs become two
+independent vision-model extractions instead of
+(`find_toc_candidates` output, `llm_extract_toc_entries` output):
+
+- **New function** `vision_extract_toc_entries(pdf_path: Path, model: str, llm_client) -> list[TocEntry]`
+  in `src/chapter_segmentation/segmentation.py` (alongside the existing
+  `llm_extract_toc_entries`, same return shape) — renders every page of
+  `pdf_path` via `pdftoppm -r 200 -png` to a temp dir, builds one chat
+  completion with the adapted prompt (§2.1) plus one `image_url` block per
+  page, parses the JSON response the same way `_extract_with_retry`
+  already does (reused as-is — it's response-shape-agnostic).
+- `_run_book` in `generate_dnb_toc_ground_truth.py` calls
+  `vision_extract_toc_entries` twice, once per model, instead of calling
+  `find_toc_candidates` once and `llm_extract_toc_entries` once. Both
+  calls go through the existing cache
+  (`_load_cached_llm_entries`/`_write_cached_llm_entries`), keyed by
+  `(book, model)` as it already is — no schema change needed there, since
+  the cache is already model-keyed.
+- **Model selection.** KISSKI's `/models` endpoint doesn't expose a
+  "supports vision" flag (`fetch_kisski_models` only returns
+  `id`/`name`/`demand`), so vision-capable models must be identified by a
+  curated allowlist, the same pattern `_PREFERRED_MODEL_PATTERNS`
+  (`generate_dnb_toc_ground_truth.py`) already uses for the text-LLM
+  model, but a separate list since not every strong text model is
+  vision-capable: `_VISION_MODEL_PATTERNS = (re.compile(r"^qwen\d+-omni"),
+  re.compile(r"^gemma-\d+-"))`, in that preference order (matches §2.1's
+  finding that the omni model is faster and more consistent than
+  `gemma-4-31b-it`). `_select_best_model`'s existing logic is reused, but
+  needs two picks instead of one — extract a `_select_best_models(models,
+  patterns, count=2) -> list[str]` that walks the same preference-ordered
+  loop but keeps collecting until it has `count` distinct model ids
+  (falling through if a pattern doesn't resolve to two candidates
+  eventually) instead of returning on the first hit. If only one
+  vision-capable model is reachable at run time (e.g. the other is fully
+  down), fail loudly rather than silently gating against a single model
+  called twice — the whole point of the gate is two *independent* reads,
+  and calling one model twice measures its self-consistency, not
+  agreement.
+- `find_toc_candidates` and `llm_extract_toc_entries` (text-based) are
+  **not called** in this pipeline anymore. They remain untouched, in
+  production use elsewhere (`analyze_attachment_with_llm_fallback` and
+  friends) — this change is scoped to `dnb-toc-only` GT generation only,
+  same boundary the §1 design already had.
+- `needs_ocr`/`pages_need_ocr` and the whole `extract_page_texts_for_analysis`
+  call in `_run_book` are **deleted** from this script — nothing in the
+  new path reads the embedded text layer at all, so there's nothing left
+  to check it for.
+
+### 3.2 Title-matching robustness fix (kept from the original design)
+
+Still worth doing even though vision output is far cleaner than
+OCR-garbled text: change `align_toc_entries`'s scoring from
 `fuzz.token_sort_ratio(...)` to `max(fuzz.token_sort_ratio(...),
-fuzz.partial_ratio(...))`. This is a pure quality improvement to the
-existing gate — independent of whether/how OCR changes — and should land
-first since it's cheap to implement, test, and verify, and it reduces
-noise in subsequent OCR-pipeline experiments too.
+fuzz.partial_ratio(...))`. §2.1's `qwen3.6-27b` run showed a live example
+of why it's still useful even post-vision — its titles kept a `"1. "`
+numbering prefix the other model stripped, which is exactly the kind of
+"real match, extra leading tokens" case `partial_ratio` handles and
+`token_sort_ratio` doesn't. Small, independent, no dependency on anything
+else in this spec — land it first.
 
-### 2.2 Uniform layout-sensitive OCR pipeline
+### 3.3 Caching and cost
 
-**New module** `evaluation/scripts/dnb_toc_ocr.py`:
+Vision responses are cached exactly like today's text-LLM responses (same
+`llm_cache_dir`/JSON-per-book-per-model file, no new cache directory
+needed — this removes the `.ocr-cache/` addition §1's design would have
+needed). Per-book cost: two sequential-per-model but concurrent-per-book
+vision calls, ~7-15s each for the faster model pairing tested. At the
+existing script's `--concurrency` pattern (already used for the text-LLM
+calls) this should clear the full ~1251-book corpus in well under the
+"significant time cost" the user already accepted for this work — no
+OCR/ALTO subprocess overhead is added on top, unlike §1's design.
 
-- `ocr_pdf(src: Path, dest: Path) -> None` — runs
-  `ocrmypdf --force-ocr -l deu+eng <src> <dest>` via `subprocess`. Always
-  force-OCRs (never conditional on the existing text layer) — this is the
-  "uniform" part the user asked for: every book gets the same treatment
-  regardless of whether its original text layer was present, absent, or
-  degenerate. Removes `needs_ocr` as a skip reason entirely, since there's
-  no longer a dependency on the original layer.
-- `reconstruct_page_text(alto_xml_path: Path) -> list[str]` — parses
-  `pdfalto`'s ALTO output, clusters `<String>` tokens per `<Page>` into
-  rows by `VPOS` (reusing the 8px tolerance validated above — tune only if
-  a false-merge/false-split shows up in broader testing), sorts tokens
-  within a row by `HPOS`, joins with single spaces, joins rows with
-  newlines. Returns one string per page, in the same shape
-  `extract_page_texts_for_analysis` already returns, so it's a drop-in
-  replacement at the call site.
-- `get_ocr_page_texts(pdf_path: Path, cache_dir: Path) -> list[str]` —
-  orchestrates: check cache (see below) → else run `ocr_pdf` to a temp
-  file → run `pdfalto` on it → `reconstruct_page_text` → cache the result →
-  return it.
+## 4. Testing
 
-**Caching.** OCR is the expensive step and the corpus is static once
-downloaded, so cache the *reconstructed page texts* (not the intermediate
-OCR'd PDF or ALTO XML — those are large and only useful as debugging
-artifacts) keyed by book id, alongside the existing LLM cache convention:
-new `ocr_cache_dir(corpus_name)` helper in `evaluation/harness.py`
-mirroring the existing `llm_cache_dir`, writing
-`evaluation/corpus/dnb-toc-only/.ocr-cache/<key>.json` (`{"pages": [...]}`).
-Gitignored, same as `.lobid-cache/`.
-
-**Integration point.** In
-`evaluation/scripts/generate_dnb_toc_ground_truth.py`, `_run_book`
-currently does:
-
-```python
-pages, _ = extract_page_texts_for_analysis(pdf_path.read_bytes())
-```
-
-This becomes a call to `get_ocr_page_texts(pdf_path, ocr_cache_dir(_CORPUS_NAME))`.
-Both `find_toc_candidates` and `llm_extract_toc_entries` then read from the
-same uniform, layout-reconstructed text — this is the specific "consistent
-basis for both heuristic and LLM results" the user asked for. The
-`needs_ocr` check and skip branch are deleted (no longer applicable — see
-above).
-
-**Not in scope:** re-running this against every consumer of
-`extract_page_texts_for_analysis` project-wide. This is scoped to
-`dnb-toc-only`'s ground-truth generation specifically, per the parent
-spec's boundary. Other corpora keep using the embedded text layer as-is.
-
-## 3. Testing
-
-- Unit tests for `reconstruct_page_text` against a small hand-built ALTO
-  XML fixture (a handful of `<String>` elements across two rows and two
-  columns) — asserts row grouping and left-to-right ordering, independent
-  of any real OCR run.
-- Unit tests for `get_ocr_page_texts`'s cache read/write, following the
-  existing `_load_cached_llm_entries`/`_write_cached_llm_entries` pattern
-  in the same file for consistency.
-- `ocr_pdf` itself (a thin subprocess wrapper) is integration-tested via a
-  smoke run against 3-5 real corpus books, not unit-tested with mocks —
-  matching how `pdfalto_runner.py` is already tested elsewhere in this
+- `vision_extract_toc_entries`: integration-tested against 3-5 real corpus
+  books (including the two from §2.1, since their correct output is now
+  known), not unit-tested with a mocked vision response — matches how
+  `llm_extract_toc_entries` itself is tested today (real KISSKI calls in
+  its test suite) and how `pdfalto_runner.py` is tested elsewhere in this
   project.
+- `_select_best_models`: unit-tested against a fabricated model list
+  covering "both patterns resolve", "only one pattern resolves, need a
+  second from a lower-preference pattern", and "fewer than 2 vision models
+  available anywhere → raises" — mirroring the existing
+  `_select_best_model` test structure.
+- The §3.2 `partial_ratio` change: unit-tested directly in
+  `tests/test_dnb_toc_matching.py` with the exact garbled/clean pairs
+  measured in §1d, plus the existing negative-control pairs already
+  verified there.
 - Re-run the existing 60-book smoke test after integration and compare
   pass-rate/skip-reason breakdown against the last recorded run (6/60
   passed, 35 below_threshold, 19 needs_ocr) to quantify the actual
   improvement before declaring this done.
 
-## 4. Open questions for review
+## 5. Open questions for review
 
-- 8px row-clustering tolerance was validated on one book's font size; if
-  the corpus has meaningfully different scan resolutions/font sizes, this
-  may need to be relative (e.g. a fraction of median token height on the
-  page) rather than a fixed pixel value. Flagging rather than
-  pre-solving — worth checking against a wider book sample before
-  committing to fixed vs. adaptive.
-- `ocrmypdf --force-ocr` on already-OCR'd (or already-good) pages destroys
-  the existing layer and fully re-rasterizes+re-recognizes. This is
-  intentional (uniformity is the whole point) but means the corpus's disk
-  footprint temporarily doubles during the OCR pass (original + `.ocr.pdf`
-  intermediate) unless intermediates are written to a temp dir and
-  discarded after `pdfalto` runs and the cache is written — the design
-  above already does this (only the reconstructed text is cached), but
-  flagging so it's an explicit decision, not an oversight.
+- §2.1's two-book sample is promising but small — worth widening to
+  10-20 books spanning different eras/layouts before fully trusting
+  `qwen3-omni-30b-a3b-instruct` + `gemma-4-31b-it` as the standing model
+  pair, ideally as part of task 1 of the implementation plan rather than a
+  separate up-front step, since the real integration test doubles as that
+  wider sample.
+- `qwen3.6-27b`'s judgment call to skip `Textnachweise`/`Register`/
+  `Gesamtinhaltsverzeichnis` raises a prompt-wording question: is
+  "skip acknowledgements, bibliography, index" (carried over from the
+  text prompt) making some models over-eager to drop legitimate back-matter
+  entries with generic-sounding titles? Worth checking whether the chosen
+  model pair agrees on this category consistently, or whether the prompt
+  needs a clarifying example.
+- No image-count/size ceiling has been chosen yet for
+  `vision_extract_toc_entries` — this corpus's PDFs are short today, but
+  the function should probably still cap or warn past some page count
+  (e.g. 20) rather than silently building an arbitrarily large multi-image
+  request if an outlier book slips through acquisition filtering.

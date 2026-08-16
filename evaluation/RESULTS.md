@@ -60,70 +60,90 @@ Per `docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md` and
 `generate_dnb_toc_ground_truth.py` was migrated from a regex-heuristic +
 text-LLM gate to a two-independent-vision-model gate (each model reads
 the book's page images directly via `pdftoppm`, no OCR/text layer at
-all). A first 15-book smoke test against `qwen3-omni-30b-a3b-instruct` +
-`gemma-4-31b-it` passed only 6/15 (40%) -- see
+all). Two earlier smoke tests (40% with `gemma-4-31b-it` as the second
+model, then 60% after swapping to the qwen3.6 family) diagnosed and fixed
+a content-dropping reliability gap, then found a narrower remaining
+problem -- inconsistent chapter granularity on densely-nested TOCs --
+see
 [EXPERIMENTS.md § dnb-toc-only ground truth: two-vision-model gate](EXPERIMENTS.md#dnb-toc-only-ground-truth-two-vision-model-gate)
-for that run's full write-up and its initial (incomplete) diagnosis.
+for both runs' full write-ups.
 
-**Corrected root cause:** comparing entry page-number *ranges* (not just
-counts) across all 15 books showed `gemma-4-31b-it`'s range started
-dramatically later than `qwen3-omni`'s on 5 of 8 mismatched books --
-including a clean, flat 8-entry numbered list (`0745309941`) that came
-back with only its last 2 entries. This is a reliability gap in
-`gemma-4-31b-it` on this task (silently dropping the early portion of a
-multi-image request), not a considered editorial choice about chapter
-granularity. Spot-checked `qwen3.6-27b` directly
-(`vision_extract_toc_entries`, live KISSKI) against the same books: it
-correctly covered the full page range every time, matching
-`qwen3-omni`'s own range. `_VISION_MODEL_PATTERNS`' second pattern was
-changed from `gemma-<N>-` to `qwen<N>.<M>-` accordingly.
-
-**Re-run with the corrected model pair, same 15 books:**
+**Granularity-prompt fix and re-run (2026-08-16):** `_VISION_TOC_EXTRACTION_PROMPT`
+was clarified to explicitly call out that indented/numbered/lettered
+sub-points each carry their own page number and are their own entry, not
+to be collapsed into their parent heading. Clean re-run, same 15 books,
+fresh cache:
 
 ```
 uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
 
-Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.5-122b-a10b
-9/15 books passed the gate and got .expected.json written.
-  4 skipped: below_threshold
-  1 skipped: error: JSONDecodeError
-  1 skipped: error: ValueError
+Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.6-35b-a3b
+8/15 books passed the gate and got .expected.json written.
+  5 skipped: below_threshold
+  2 skipped: error: ValueError
 ```
 
-**Pass rate improved from 40% to 60%, and the improvement is for the
-right reason** -- confirmed by comparing page-number ranges again
-across all 15 books: every single book now shows matching or
-near-matching ranges between the two models, with zero "dropped early
-content" cases remaining. The 4 remaining `below_threshold` books
-(`3465016874`: 17 vs 14 entries; `3571092120`: 41 vs 33;
-`9783842331976`: 57 vs 12; and the still-failing `3492038174`, see
-below) all have matching ranges but differing entry *counts* -- this is
-the genuine chapter-granularity disagreement on densely-nested TOCs
-(numbered theses/sub-points under a numbered heading) originally
-(mis)diagnosed in the first run. This is a narrower, better-understood
-remaining problem than before: pipeline reliability is no longer in
-question, only how consistently the two models segment deeply nested
-TOC hierarchies into "one entry per chapter."
+**The fix worked exactly as intended on the case it targeted**:
+`9783842331976` (the deeply-nested book previously diagnosed as 57 vs 12
+entries) now matches 56 of 57 entries (rate 0.98, PASS) -- the nesting
+instruction resolved that specific failure mode cleanly.
 
-The `1 error: ValueError` is new in this run: `3492038174` (the
-7-page, most deeply-nested book) got an *empty* response from
-`qwen3.5-122b-a10b` (`"No JSON array found in LLM response: ''"`) --
-not yet root-caused; may be specific to that model/book pair rather
-than the family generally, since `_VISION_MODEL_PATTERNS`' second
-pattern matches any `qwen<N>.<M>-` model and a busy-driven re-run could
-pick a different specific model next time. The pre-existing
-`1 error: JSONDecodeError` (`383050277X`) is unchanged from the first
-run -- still not root-caused, still survives the `max_tokens`
-escalation (so it's a genuinely malformed response shape, not
-truncation).
+**But the aggregate pass rate did not improve (53% vs the prior run's
+60%)**, because a different, previously-undiagnosed cluster of
+disagreements dominates the remaining 5 `below_threshold` books.
+Inspecting each below-threshold book's two entry lists side by side (not
+just counts) shows this is NOT the nesting problem recurring -- it's a
+mix of:
 
-**Open question, not yet resolved:** whether to (a) tune the prompt to
-make "chapter" granularity more explicit/consistent on deeply-nested
-TOCs specifically, (b) accept a lower gate threshold for such books,
-or (c) accept the current ~60% pass rate as-is (still positive-only
-ground truth, no worse than a conservative gate rejecting ambiguous
-books outright). Not decided in this session -- flagged for follow-up
-before a full-corpus run.
+- **Genuine content omission, reliability not editorial choice**:
+  `0745309941` -- `qwen3-omni` silently dropped one entire chapter
+  ("Gender, Migration and Cross-Ethnic Coalition Building", p.48) that
+  `qwen3.6` caught; a flat, simple 8-vs-9-entry book with no nesting at
+  all. Note the direction is reversed from the earlier gemma finding --
+  this time it's `qwen3-omni` that drops content, on a book unrelated to
+  granularity.
+- **Whether front/back matter should be its own entry at all**
+  (`380061832X`: `qwen3.6` added "Vorwort" and "Autorenverzeichnis" that
+  `qwen3-omni` correctly omitted per the "skip acknowledgements..."
+  instruction; `3823350242`: `qwen3-omni` included a bibliography-like
+  "Verzeichnis der Schriften von..." appendix entry that should have been
+  skipped). This is the same "bulk vs eval tier target definition"
+  question flagged as an open, undecided issue in the vision-extraction
+  implementation's final code review -- not a new problem, but now
+  visibly the dominant cause of gate failures.
+- **Two-line TOC entries (a title line plus a subtitle/continuation
+  line) being split into two entries by one model but correctly merged
+  by the other** (`3779912511`, `9783515114868`): one model sometimes
+  treats a part-header ("Geschichte der Pädagogik") and the chapter title
+  that follows it as two separate entries (one with `printed_page_number:
+  null`), while the other merges the header into the chapter's own title.
+  This is the mirror image of the nesting problem the prompt fix just
+  solved -- there, sub-points were wrongly merged into a parent; here,
+  a title and its own continuation are wrongly split apart.
+
+**The `2 error: ValueError` books both got an empty response** (`"No
+JSON array found in LLM response: ''"`) from one model:
+`qwen3.6-35b-a3b` on `3465016874`, and (no cache file written at all,
+implying the failure happened before any content came back)
+`qwen3.6-35b-a3b` on `3492038174` -- the same still-unresolved empty-
+response failure mode as previous runs, now hitting a different specific
+qwen3.6 sub-model (`_select_best_models` picks whichever qwen3.6 variant
+is least busy at request time, so the exact model varies run to run).
+The pre-existing `383050277X` `JSONDecodeError` from earlier runs did
+NOT recur this time -- it happened to pass cleanly (rate 1.00) in this
+run instead, consistent with it being a live-service flakiness case
+rather than a deterministic per-book failure.
+
+**Open question, not yet resolved:** the granularity-nesting fix is
+validated and should stay, but the dominant remaining failure mode is
+now the front/back-matter inclusion question -- the same one already
+flagged (and explicitly deferred) in the vision-extraction
+implementation's code review. Fixing that (making the prompt's
+skip-instruction more precisely followed, symmetric with the nesting
+instruction that just worked) is likely the highest-leverage next step,
+but is a genuine "what counts as a chapter for this ground truth"
+product decision, not something to resolve unilaterally in a prompt
+tweak. Flagged for the user's decision before further tuning.
 
 ## Pure-heuristic results
 

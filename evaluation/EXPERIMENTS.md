@@ -80,6 +80,76 @@ editorial choice. `3492038174`'s matching final entry was a coincidence
 of that book happening to also have a genuine granularity disagreement
 layered on top of the range problem, not evidence against it.
 
+### Model swap to qwen3.6 family (2026-08-16) -- pass rate 60%, before the granularity-prompt fix
+
+See [RESULTS.md § dnb-toc-only ground truth: two-vision-model gate](RESULTS.md#dnb-toc-only-ground-truth-two-vision-model-gate)
+for the current shipped prompt and latest measured pass rate. This
+subsection is the write-up of the run immediately after
+`_VISION_MODEL_PATTERNS`' second pattern was swapped from `gemma-4-31b-it`
+to the qwen3.6 family (fixing the content-dropping reliability gap above),
+but before `_VISION_TOC_EXTRACTION_PROMPT` was clarified to handle
+nested-TOC sub-points consistently -- that follow-up fix is what
+superseded this run's numbers.
+
+**Corrected root cause (of the first smoke test's 40%):** comparing entry
+page-number *ranges* (not just counts) across all 15 books showed
+`gemma-4-31b-it`'s range started dramatically later than `qwen3-omni`'s on
+5 of 8 mismatched books -- including a clean, flat 8-entry numbered list
+(`0745309941`) that came back with only its last 2 entries. This is a
+reliability gap in `gemma-4-31b-it` on this task (silently dropping the
+early portion of a multi-image request), not a considered editorial
+choice about chapter granularity. Spot-checked `qwen3.6-27b` directly
+(`vision_extract_toc_entries`, live KISSKI) against the same books: it
+correctly covered the full page range every time, matching
+`qwen3-omni`'s own range. `_VISION_MODEL_PATTERNS`' second pattern was
+changed from `gemma-<N>-` to `qwen<N>.<M>-` accordingly.
+
+**Re-run with the corrected model pair, same 15 books:**
+
+```
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
+
+Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.5-122b-a10b
+9/15 books passed the gate and got .expected.json written.
+  4 skipped: below_threshold
+  1 skipped: error: JSONDecodeError
+  1 skipped: error: ValueError
+```
+
+**Pass rate improved from 40% to 60%, and the improvement is for the
+right reason** -- confirmed by comparing page-number ranges again
+across all 15 books: every single book now shows matching or
+near-matching ranges between the two models, with zero "dropped early
+content" cases remaining. The 4 remaining `below_threshold` books
+(`3465016874`: 17 vs 14 entries; `3571092120`: 41 vs 33;
+`9783842331976`: 57 vs 12; and the still-failing `3492038174`, see
+below) all have matching ranges but differing entry *counts* -- this is
+the genuine chapter-granularity disagreement on densely-nested TOCs
+(numbered theses/sub-points under a numbered heading) originally
+(mis)diagnosed in the first run. This is a narrower, better-understood
+remaining problem than before: pipeline reliability is no longer in
+question, only how consistently the two models segment deeply nested
+TOC hierarchies into "one entry per chapter."
+
+The `1 error: ValueError` is new in this run: `3492038174` (the
+7-page, most deeply-nested book) got an *empty* response from
+`qwen3.5-122b-a10b` (`"No JSON array found in LLM response: ''"`) --
+not yet root-caused; may be specific to that model/book pair rather
+than the family generally, since `_VISION_MODEL_PATTERNS`' second
+pattern matches any `qwen<N>.<M>-` model and a busy-driven re-run could
+pick a different specific model next time. The pre-existing
+`1 error: JSONDecodeError` (`383050277X`) is unchanged from the first
+run -- still not root-caused, still survives the `max_tokens`
+escalation (so it's a genuinely malformed response shape, not
+truncation).
+
+**Open question, not yet resolved at the time:** whether to (a) tune the
+prompt to make "chapter" granularity more explicit/consistent on
+deeply-nested TOCs specifically, (b) accept a lower gate threshold for
+such books, or (c) accept the current ~60% pass rate as-is. Resolved by
+the granularity-prompt fix described in the current `RESULTS.md` section
+-- see there for what was tried and its effect.
+
 ## Layout-based TOC/chapter-first-page classifier pilot
 
 See [RESULTS.md § Layout-based TOC/chapter-first-page classifier pilot](RESULTS.md#layout-based-tocchapter-first-page-classifier-pilot)

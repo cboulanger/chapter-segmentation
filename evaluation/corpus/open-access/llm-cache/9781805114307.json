@@ -49,7 +49,37 @@
       "elapsed_seconds": 0.2441758300001311,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:22.468939+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [],
+      "elapsed_seconds": 0.32671757700006765,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:52:30.515160+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 0.4480957410000883,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:58:14.451688+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [],
+      "elapsed_seconds": 12.214123759000131,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:07:45.081648+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 0.12246054200022627,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:20:24.157797+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.16182120899975416,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:23:00.039282+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:22.468939+00:00"
+  "generated_at": "2026-08-16T04:23:00.039282+00:00"
 }

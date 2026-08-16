@@ -2912,7 +2912,25 @@
       "elapsed_seconds": 37.23984962099999,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T03:42:53.990368+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [],
+      "elapsed_seconds": 46.26916362899988,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:04:08.740819+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 0.2033145250002235,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:20:20.011895+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.2572677799998928,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:58.373230+00:00"
     }
   },
-  "generated_at": "2026-08-15T03:42:53.990368+00:00"
+  "generated_at": "2026-08-16T04:22:58.373230+00:00"
 }

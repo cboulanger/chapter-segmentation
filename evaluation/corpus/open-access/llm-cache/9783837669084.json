@@ -1078,7 +1078,1081 @@
       "elapsed_seconds": 0.2140424629997142,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:23.162999+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Protokoll 05",
+          "authors": [
+            "Autonomie",
+            "einem Sprach-\nmodell",
+            "das darauf",
+            "wurde",
+            "Konversationen",
+            "zu führen",
+            "Mengen von Texten",
+            "‚Training‘ ein",
+            "Der Output"
+          ],
+          "pdf_start_index": 45,
+          "pdf_end_index": 50,
+          "citation_pages": "45-50",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 06",
+          "authors": [],
+          "pdf_start_index": 51,
+          "pdf_end_index": 63,
+          "citation_pages": "51-63",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 08",
+          "authors": [
+            "Alltag",
+            "David Gugerli",
+            "Kriegsjahr",
+            "Sonne",
+            "hatte mich mit",
+            "viel Mut",
+            "Dutzend Marginalien",
+            "nik zu schreiben",
+            "Meine Frage"
+          ],
+          "pdf_start_index": 64,
+          "pdf_end_index": 70,
+          "citation_pages": "64-70",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 09",
+          "authors": [
+            "ASCII-Art",
+            "Bilder",
+            "Diagramme zu \n",
+            "Nein",
+            "Modell",
+            "Zugriff",
+            "aus Texten"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 75,
+          "citation_pages": "71-75",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 11",
+          "authors": [
+            "Assoziieren",
+            "Wie",
+            "Antworten von ChatGPT",
+            "Diskurs",
+            "Verfüg-\nbarmachung von Large Language Models",
+            "OpenAI",
+            "Platz",
+            "von Daten"
+          ],
+          "pdf_start_index": 76,
+          "pdf_end_index": 85,
+          "citation_pages": "79-85",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 12",
+          "authors": [
+            "Philologische Forschung",
+            "KI",
+            "Judith Kasper",
+            "Forschung",
+            "Hintergrund"
+          ],
+          "pdf_start_index": 86,
+          "pdf_end_index": 94,
+          "citation_pages": "86-94",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 13",
+          "authors": [
+            "Wolf Kittler",
+            "Narcissism",
+            "Claude E. Shannon"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 102,
+          "citation_pages": "95-102",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 14",
+          "authors": [
+            "Franziska Kollinger  \n \n \nUnschärfen",
+            "Wochenzeitung Die Zeit",
+            "Disziplinen",
+            "Antworten und Einschätzungen von Fachvertreter",
+            "nerieren"
+          ],
+          "pdf_start_index": 103,
+          "pdf_end_index": 108,
+          "citation_pages": "103-108",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 16",
+          "authors": [
+            "Kevin",
+            "Antworter",
+            "Chatbot",
+            "kann nicht",
+            "Antworten",
+            "Wie",
+            "Darauf",
+            "Intelligenz",
+            "Lernen"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 125,
+          "citation_pages": "112-125",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 17",
+          "authors": [
+            "Florian Mundhenke",
+            "Bereich",
+            "Regel",
+            "Animationen",
+            "von Rezeption",
+            "Inhalte übe"
+          ],
+          "pdf_start_index": 126,
+          "pdf_end_index": 131,
+          "citation_pages": "126-131",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 19",
+          "authors": [
+            "Ben Peters  \n \n \n"
+          ],
+          "pdf_start_index": 132,
+          "pdf_end_index": 146,
+          "citation_pages": "133-146",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 20",
+          "authors": [
+            "Claus -Michael Schlesinger",
+            "Statt",
+            "Entwicklung",
+            "kann sich",
+            "Eglunden",
+            "kann zu sein",
+            "Häufig zum \ndie",
+            "Gesetzungen",
+            "zum zweite",
+            "Gegen",
+            "zu wurde"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 150,
+          "citation_pages": "147-150",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 21",
+          "authors": [
+            "Mary Shnayien & Ute Kalender & Tobias",
+            "Mary Shnayien",
+            "Maschinen",
+            "Nullerjahre",
+            "Handy",
+            "Gegensatz"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 162,
+          "citation_pages": "151-162",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 22",
+          "authors": [
+            "Roberto Simanowski  \n \n \nDie Praxis",
+            "Geiste der",
+            "mich von Anfang",
+            "Denn ein bisschen mutet",
+            "Textmaschine",
+            "Tod",
+            "Herr"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 166,
+          "citation_pages": "163-166",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 24",
+          "authors": [
+            "Reihe von \nVarianten",
+            "Augen",
+            "regelmäßigen Recher-\nche",
+            "Selbst bin ich",
+            "Existenzen"
+          ],
+          "pdf_start_index": 167,
+          "pdf_end_index": 191,
+          "citation_pages": "170-191",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 26",
+          "authors": [
+            "Kränkung der",
+            "Kurznachrichten-Plattform Mastodon",
+            "viel über",
+            "Art",
+            "Technik",
+            "versucht",
+            "Kunst",
+            "Teil"
+          ],
+          "pdf_start_index": 192,
+          "pdf_end_index": 216,
+          "citation_pages": "195-216",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 27",
+          "authors": [
+            "Axel Volmar  & Florian Cramer & Christoph Borbach & Anja Schürmann & Oliver Ruf  \n \n \nKettenbrief",
+            "Gefährliches Halbwissen",
+            "Über",
+            "Automatisierung",
+            "Epistemologien",
+            "Camouflage",
+            "Axel Volmar",
+            "Fähigkeiten von ChatGPT"
+          ],
+          "pdf_start_index": 217,
+          "pdf_end_index": 245,
+          "citation_pages": "217-245",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 28",
+          "authors": [
+            "macht Quatsch",
+            "Martin Warnke",
+            "der Web-Suchmaschinen",
+            "Aber das englischsprachige",
+            "8.2.2023 über",
+            "kritischen Kreisen"
+          ],
+          "pdf_start_index": 246,
+          "pdf_end_index": 254,
+          "citation_pages": "246-254",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 29",
+          "authors": [
+            "Guido Zurstiege",
+            "Künstlichen",
+            "Cyber Valley",
+            "dem Berg",
+            "Jahren",
+            "Unte n",
+            "Sozialwissenschaften",
+            "Teilen"
+          ],
+          "pdf_start_index": 255,
+          "pdf_end_index": 261,
+          "citation_pages": "255-262",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Trialog über den Versuch, eine medienhistorische Passage zu dokumentieren",
+          "authors": [
+            "Anna Tuschling",
+            "Bernhard J. Dotzler",
+            "Andreas Sudmann",
+            "Jacques Lacan",
+            "keiner Nei-\ngung zu",
+            "Komplexität Vorschub",
+            "innen der \nAnalyse"
+          ],
+          "pdf_start_index": 263,
+          "pdf_end_index": 274,
+          "citation_pages": "263-274",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 54.5889154649999,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:54:28.002590+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Protokoll 05",
+          "authors": [
+            "Autonomie",
+            "einem Sprach-\nmodell",
+            "das darauf",
+            "wurde",
+            "Konversationen",
+            "zu führen",
+            "Mengen von Texten",
+            "‚Training‘ ein",
+            "Der Output"
+          ],
+          "pdf_start_index": 45,
+          "pdf_end_index": 50,
+          "citation_pages": "45-50",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 06",
+          "authors": [],
+          "pdf_start_index": 51,
+          "pdf_end_index": 63,
+          "citation_pages": "51-63",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 08",
+          "authors": [
+            "Alltag",
+            "David Gugerli",
+            "Kriegsjahr",
+            "Sonne",
+            "hatte mich mit",
+            "viel Mut",
+            "Dutzend Marginalien",
+            "nik zu schreiben",
+            "Meine Frage"
+          ],
+          "pdf_start_index": 64,
+          "pdf_end_index": 70,
+          "citation_pages": "64-70",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 09",
+          "authors": [
+            "ASCII-Art",
+            "Bilder",
+            "Diagramme zu \n",
+            "Nein",
+            "Modell",
+            "Zugriff",
+            "aus Texten"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 75,
+          "citation_pages": "71-75",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 11",
+          "authors": [
+            "Assoziieren",
+            "Wie",
+            "Antworten von ChatGPT",
+            "Diskurs",
+            "Verfüg-\nbarmachung von Large Language Models",
+            "OpenAI",
+            "Platz",
+            "von Daten"
+          ],
+          "pdf_start_index": 76,
+          "pdf_end_index": 85,
+          "citation_pages": "79-85",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 12",
+          "authors": [
+            "Philologische Forschung",
+            "KI",
+            "Judith Kasper",
+            "Forschung",
+            "Hintergrund"
+          ],
+          "pdf_start_index": 86,
+          "pdf_end_index": 94,
+          "citation_pages": "86-94",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 13",
+          "authors": [
+            "Wolf Kittler",
+            "Narcissism",
+            "Claude E. Shannon"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 102,
+          "citation_pages": "95-102",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 14",
+          "authors": [
+            "Franziska Kollinger  \n \n \nUnschärfen",
+            "Wochenzeitung Die Zeit",
+            "Disziplinen",
+            "Antworten und Einschätzungen von Fachvertreter",
+            "nerieren"
+          ],
+          "pdf_start_index": 103,
+          "pdf_end_index": 108,
+          "citation_pages": "103-108",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 16",
+          "authors": [
+            "Kevin",
+            "Antworter",
+            "Chatbot",
+            "kann nicht",
+            "Antworten",
+            "Wie",
+            "Darauf",
+            "Intelligenz",
+            "Lernen"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 125,
+          "citation_pages": "112-125",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 17",
+          "authors": [
+            "Florian Mundhenke",
+            "Bereich",
+            "Regel",
+            "Animationen",
+            "von Rezeption",
+            "Inhalte übe"
+          ],
+          "pdf_start_index": 126,
+          "pdf_end_index": 131,
+          "citation_pages": "126-131",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 19",
+          "authors": [
+            "Ben Peters  \n \n \n"
+          ],
+          "pdf_start_index": 132,
+          "pdf_end_index": 146,
+          "citation_pages": "133-146",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 20",
+          "authors": [
+            "Claus -Michael Schlesinger",
+            "Statt",
+            "Entwicklung",
+            "kann sich",
+            "Eglunden",
+            "kann zu sein",
+            "Häufig zum \ndie",
+            "Gesetzungen",
+            "zum zweite",
+            "Gegen",
+            "zu wurde"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 150,
+          "citation_pages": "147-150",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 21",
+          "authors": [
+            "Mary Shnayien & Ute Kalender & Tobias",
+            "Mary Shnayien",
+            "Maschinen",
+            "Nullerjahre",
+            "Handy",
+            "Gegensatz"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 162,
+          "citation_pages": "151-162",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 22",
+          "authors": [
+            "Roberto Simanowski  \n \n \nDie Praxis",
+            "Geiste der",
+            "mich von Anfang",
+            "Denn ein bisschen mutet",
+            "Textmaschine",
+            "Tod",
+            "Herr"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 166,
+          "citation_pages": "163-166",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 24",
+          "authors": [
+            "Reihe von \nVarianten",
+            "Augen",
+            "regelmäßigen Recher-\nche",
+            "Selbst bin ich",
+            "Existenzen"
+          ],
+          "pdf_start_index": 167,
+          "pdf_end_index": 191,
+          "citation_pages": "170-191",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 26",
+          "authors": [
+            "Kränkung der",
+            "Kurznachrichten-Plattform Mastodon",
+            "viel über",
+            "Art",
+            "Technik",
+            "versucht",
+            "Kunst",
+            "Teil"
+          ],
+          "pdf_start_index": 192,
+          "pdf_end_index": 216,
+          "citation_pages": "195-216",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 27",
+          "authors": [
+            "Axel Volmar  & Florian Cramer & Christoph Borbach & Anja Schürmann & Oliver Ruf  \n \n \nKettenbrief",
+            "Gefährliches Halbwissen",
+            "Über",
+            "Automatisierung",
+            "Epistemologien",
+            "Camouflage",
+            "Axel Volmar",
+            "Fähigkeiten von ChatGPT"
+          ],
+          "pdf_start_index": 217,
+          "pdf_end_index": 245,
+          "citation_pages": "217-245",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 28",
+          "authors": [
+            "macht Quatsch",
+            "Martin Warnke",
+            "der Web-Suchmaschinen",
+            "Aber das englischsprachige",
+            "8.2.2023 über",
+            "kritischen Kreisen"
+          ],
+          "pdf_start_index": 246,
+          "pdf_end_index": 254,
+          "citation_pages": "246-254",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 29",
+          "authors": [
+            "Guido Zurstiege",
+            "Künstlichen",
+            "Cyber Valley",
+            "dem Berg",
+            "Jahren",
+            "Unte n",
+            "Sozialwissenschaften",
+            "Teilen"
+          ],
+          "pdf_start_index": 255,
+          "pdf_end_index": 261,
+          "citation_pages": "255-262",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Trialog über den Versuch, eine medienhistorische Passage zu dokumentieren",
+          "authors": [
+            "Anna Tuschling",
+            "Bernhard J. Dotzler",
+            "Andreas Sudmann",
+            "Jacques Lacan",
+            "keiner Nei-\ngung zu",
+            "Komplexität Vorschub",
+            "innen der \nAnalyse"
+          ],
+          "pdf_start_index": 263,
+          "pdf_end_index": 274,
+          "citation_pages": "263-274",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 51.2895302500001,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:00:17.945663+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "Protokoll 05",
+          "authors": [
+            "Autonomie",
+            "einem Sprach-\nmodell",
+            "das darauf",
+            "wurde",
+            "Konversationen",
+            "zu führen",
+            "Mengen von Texten",
+            "‚Training‘ ein",
+            "Der Output"
+          ],
+          "pdf_start_index": 45,
+          "pdf_end_index": 50,
+          "citation_pages": "45-50",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 06",
+          "authors": [],
+          "pdf_start_index": 51,
+          "pdf_end_index": 63,
+          "citation_pages": "51-63",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 08",
+          "authors": [
+            "Alltag",
+            "David Gugerli",
+            "Kriegsjahr",
+            "Sonne",
+            "hatte mich mit",
+            "viel Mut",
+            "Dutzend Marginalien",
+            "nik zu schreiben",
+            "Meine Frage"
+          ],
+          "pdf_start_index": 64,
+          "pdf_end_index": 70,
+          "citation_pages": "64-70",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 09",
+          "authors": [
+            "ASCII-Art",
+            "Bilder",
+            "Diagramme zu \n",
+            "Nein",
+            "Modell",
+            "Zugriff",
+            "aus Texten"
+          ],
+          "pdf_start_index": 71,
+          "pdf_end_index": 75,
+          "citation_pages": "71-75",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 11",
+          "authors": [
+            "Assoziieren",
+            "Wie",
+            "Antworten von ChatGPT",
+            "Diskurs",
+            "Verfüg-\nbarmachung von Large Language Models",
+            "OpenAI",
+            "Platz",
+            "von Daten"
+          ],
+          "pdf_start_index": 76,
+          "pdf_end_index": 85,
+          "citation_pages": "79-85",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 12",
+          "authors": [
+            "Philologische Forschung",
+            "KI",
+            "Judith Kasper",
+            "Forschung",
+            "Hintergrund"
+          ],
+          "pdf_start_index": 86,
+          "pdf_end_index": 94,
+          "citation_pages": "86-94",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 13",
+          "authors": [
+            "Wolf Kittler",
+            "Narcissism",
+            "Claude E. Shannon"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 102,
+          "citation_pages": "95-102",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 14",
+          "authors": [
+            "Franziska Kollinger  \n \n \nUnschärfen",
+            "Wochenzeitung Die Zeit",
+            "Disziplinen",
+            "Antworten und Einschätzungen von Fachvertreter",
+            "nerieren"
+          ],
+          "pdf_start_index": 103,
+          "pdf_end_index": 108,
+          "citation_pages": "103-108",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 16",
+          "authors": [
+            "Kevin",
+            "Antworter",
+            "Chatbot",
+            "kann nicht",
+            "Antworten",
+            "Wie",
+            "Darauf",
+            "Intelligenz",
+            "Lernen"
+          ],
+          "pdf_start_index": 109,
+          "pdf_end_index": 125,
+          "citation_pages": "112-125",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 17",
+          "authors": [
+            "Florian Mundhenke",
+            "Bereich",
+            "Regel",
+            "Animationen",
+            "von Rezeption",
+            "Inhalte übe"
+          ],
+          "pdf_start_index": 126,
+          "pdf_end_index": 131,
+          "citation_pages": "126-131",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 19",
+          "authors": [
+            "Ben Peters  \n \n \n"
+          ],
+          "pdf_start_index": 132,
+          "pdf_end_index": 146,
+          "citation_pages": "133-146",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 20",
+          "authors": [
+            "Claus -Michael Schlesinger",
+            "Statt",
+            "Entwicklung",
+            "kann sich",
+            "Eglunden",
+            "kann zu sein",
+            "Häufig zum \ndie",
+            "Gesetzungen",
+            "zum zweite",
+            "Gegen",
+            "zu wurde"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 150,
+          "citation_pages": "147-150",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 21",
+          "authors": [
+            "Mary Shnayien & Ute Kalender & Tobias",
+            "Mary Shnayien",
+            "Maschinen",
+            "Nullerjahre",
+            "Handy",
+            "Gegensatz"
+          ],
+          "pdf_start_index": 151,
+          "pdf_end_index": 162,
+          "citation_pages": "151-162",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 22",
+          "authors": [
+            "Roberto Simanowski  \n \n \nDie Praxis",
+            "Geiste der",
+            "mich von Anfang",
+            "Denn ein bisschen mutet",
+            "Textmaschine",
+            "Tod",
+            "Herr"
+          ],
+          "pdf_start_index": 163,
+          "pdf_end_index": 166,
+          "citation_pages": "163-166",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 24",
+          "authors": [
+            "Reihe von \nVarianten",
+            "Augen",
+            "regelmäßigen Recher-\nche",
+            "Selbst bin ich",
+            "Existenzen"
+          ],
+          "pdf_start_index": 167,
+          "pdf_end_index": 191,
+          "citation_pages": "170-191",
+          "confidence": 0.88,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 26",
+          "authors": [
+            "Kränkung der",
+            "Kurznachrichten-Plattform Mastodon",
+            "viel über",
+            "Art",
+            "Technik",
+            "versucht",
+            "Kunst",
+            "Teil"
+          ],
+          "pdf_start_index": 192,
+          "pdf_end_index": 216,
+          "citation_pages": "195-216",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 27",
+          "authors": [
+            "Axel Volmar  & Florian Cramer & Christoph Borbach & Anja Schürmann & Oliver Ruf  \n \n \nKettenbrief",
+            "Gefährliches Halbwissen",
+            "Über",
+            "Automatisierung",
+            "Epistemologien",
+            "Camouflage",
+            "Axel Volmar",
+            "Fähigkeiten von ChatGPT"
+          ],
+          "pdf_start_index": 217,
+          "pdf_end_index": 245,
+          "citation_pages": "217-245",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 28",
+          "authors": [
+            "macht Quatsch",
+            "Martin Warnke",
+            "der Web-Suchmaschinen",
+            "Aber das englischsprachige",
+            "8.2.2023 über",
+            "kritischen Kreisen"
+          ],
+          "pdf_start_index": 246,
+          "pdf_end_index": 254,
+          "citation_pages": "246-254",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Protokoll 29",
+          "authors": [
+            "Guido Zurstiege",
+            "Künstlichen",
+            "Cyber Valley",
+            "dem Berg",
+            "Jahren",
+            "Unte n",
+            "Sozialwissenschaften",
+            "Teilen"
+          ],
+          "pdf_start_index": 255,
+          "pdf_end_index": 261,
+          "citation_pages": "255-262",
+          "confidence": 0.78,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Trialog über den Versuch, eine medienhistorische Passage zu dokumentieren",
+          "authors": [
+            "Anna Tuschling",
+            "Bernhard J. Dotzler",
+            "Andreas Sudmann",
+            "Jacques Lacan",
+            "keiner Nei-\ngung zu",
+            "Komplexität Vorschub",
+            "innen der \nAnalyse"
+          ],
+          "pdf_start_index": 263,
+          "pdf_end_index": 274,
+          "citation_pages": "263-274",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 47.473524262999945,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:10:22.314727+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 0.11336190400015766,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:20:26.079922+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.19783242499988773,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:23:00.884460+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:23.162999+00:00"
+  "generated_at": "2026-08-16T04:23:00.884460+00:00"
 }

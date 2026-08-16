@@ -1121,7 +1121,169 @@
       "elapsed_seconds": 33.40647543900002,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T03:46:13.895984+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "1 Epistemologische Grundlegung",
+          "authors": [
+            "Droysen",
+            "auch von einem",
+            "Zugriff auszugehen",
+            "WelcheWirklichkeitistgemeint?Istesdiejenige"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 120,
+          "citation_pages": "45-120",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3 Warum nun Hypertext?",
+          "authors": [
+            "Hypertext",
+            "AndieserStelledrängtsichmit HypertexteinbestimmtesMediumgeradezuauf",
+            "Grundlegung herleitet",
+            "Gestaltens"
+          ],
+          "pdf_start_index": 121,
+          "pdf_end_index": 136,
+          "citation_pages": "121-136",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4 In medias res – ein analytischer Blick auf Hypertext und Typografie",
+          "authors": [
+            "Hypertext",
+            "von Bush",
+            "Nelson",
+            "Zwischenresümee konstatieren"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 205,
+          "citation_pages": "137-206",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5 Konsequenzen aus den Medienanalysen",
+          "authors": [
+            "Drucktext",
+            "konstruktiv",
+            "Ansprüchen",
+            "Zielen",
+            "Strategien"
+          ],
+          "pdf_start_index": 207,
+          "pdf_end_index": 232,
+          "citation_pages": "207-232",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6 Sprachlogische Fundierung",
+          "authors": [
+            "Vermittlung",
+            "Nutzen"
+          ],
+          "pdf_start_index": 233,
+          "pdf_end_index": 248,
+          "citation_pages": "233-248",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7 Belege und Inspiration aus der Praxis",
+          "authors": [
+            "der Praxis\nHistoriker*innen",
+            "Hypertexte",
+            "Folgenden",
+            "Bestand",
+            "Projekte",
+            "zu besprechen",
+            "Dokumentation",
+            "Argumentationsgang"
+          ],
+          "pdf_start_index": 249,
+          "pdf_end_index": 291,
+          "citation_pages": "249-16",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "0 Einleitung",
+          "authors": [
+            "Geschichte",
+            "schreiben",
+            "Reihung",
+            "Einleitung",
+            "Gordon",
+            "kritisch gegenüber gängigen Erklärmotiven",
+            "Entstehung der Ungleichheiten",
+            "Kapitel"
+          ],
+          "pdf_start_index": 292,
+          "pdf_end_index": 298,
+          "citation_pages": "17-298",
+          "confidence": 0.92,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8 Fazit",
+          "authors": [
+            "Hypertext",
+            "entpupptesichalsessenzielleHerausforderungfürunsereEntscheidungen",
+            "Medien",
+            "Weise"
+          ],
+          "pdf_start_index": 299,
+          "pdf_end_index": 315,
+          "citation_pages": "299-316",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9 Ausblick",
+          "authors": [
+            "Ausblick\nMedienkulturelle Konsequenzen",
+            "Vermittlung\nvon",
+            "Geschichte",
+            "Ausbildung\nvon",
+            "Disziplin"
+          ],
+          "pdf_start_index": 317,
+          "pdf_end_index": 331,
+          "citation_pages": "317-331",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 25.486214364000034,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:10:44.384186+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 0.12113526199982516,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:20:26.591920+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.17404808699984642,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:23:01.065190+00:00"
     }
   },
-  "generated_at": "2026-08-15T03:46:13.895984+00:00"
+  "generated_at": "2026-08-16T04:23:01.065190+00:00"
 }

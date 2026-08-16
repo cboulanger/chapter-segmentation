@@ -532,7 +532,479 @@
       "elapsed_seconds": 0.19845139400013068,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:20.794266+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Roland Dubischar: Juristisches Denken als Objekt juristischer Selbstreflexion und sozialwissenschaftlicher Forschung",
+          "authors": [
+            "Roland Dubischar",
+            "Juristisches Denken",
+            "jemand leugnen",
+            "Sitzen",
+            "Schwester",
+            "Zug Glauben",
+            "Schön Tag"
+          ],
+          "pdf_start_index": 88,
+          "pdf_end_index": 105,
+          "citation_pages": "89-106",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Peter Thoss: Kriminalpolitische Juristenausbildung",
+          "authors": [
+            "Peter Thoss",
+            "Kriminalpolitische Juristenausbildung",
+            "Der Titel",
+            "nicht länger strafrechtlich",
+            "Dafür",
+            "zum\nWeihnachten Verstecken",
+            "Tag Erschrecken",
+            "Turnen",
+            "Ab Geschichte das"
+          ],
+          "pdf_start_index": 106,
+          "pdf_end_index": 119,
+          "citation_pages": "107-120",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rolf-Richard Grauhan: Verwaltungsausbildung und Juristenausbildung",
+          "authors": [
+            "nicht gibt",
+            "Schwester",
+            "zum Weihnachten Wald",
+            "Buch",
+            "Weihnachten Weihnachten",
+            "Vielleicht",
+            "Apfel Wald"
+          ],
+          "pdf_start_index": 120,
+          "pdf_end_index": 131,
+          "citation_pages": "121-132",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Reinhard Hoffmann: Inhaltliche Verklammerung von Theorie und Praxis",
+          "authors": [
+            "Reinhard Hoflmann",
+            "Verklammerung von Theorie",
+            "Vermittlung von Theorie",
+            "nun klettern-\ndafür",
+            "Vielleicht",
+            "Natürlich bin",
+            "Weihnachten Erschrecken",
+            "Mann Wei"
+          ],
+          "pdf_start_index": 132,
+          "pdf_end_index": 156,
+          "citation_pages": "133-157",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wolfgang Däubler: Projektorientierte Juristenausbildung in Kooperation mit der Arbeitskammer?",
+          "authors": [
+            "Wolfgang Däubler",
+            "Arbeiterkammer",
+            "Kooperationsvertrag",
+            "zur Weihnachten",
+            "Erschrecken",
+            "Freuen",
+            "Minutenmir",
+            "Anfangen",
+            "Rad Weihnachten",
+            "Minutenmir Arbeit",
+            "Dick\nHeraus",
+            "Wald",
+            "Opa Weihnachten See"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 271,
+          "citation_pages": "158-272",
+          "confidence": 0.96,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 6.438866449999978,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:50:17.327308+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Ziele und Inhalte des sozialwissenschaftlichen Eingangsstudiums",
+          "authors": [
+            "das Fazit",
+            "Zweite Organisationsphuse",
+            "Glauben"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 69,
+          "citation_pages": "71-70",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Juristisches Denken als Objekt juristischer Selbstreflexion und sozialwissenschaftlicher Forschung",
+          "authors": [
+            "Roland Dubischar",
+            "Juristisches Denken",
+            "jemand leugnen",
+            "Sitzen",
+            "Schwester",
+            "Zug Glauben",
+            "Schön Tag"
+          ],
+          "pdf_start_index": 88,
+          "pdf_end_index": 105,
+          "citation_pages": "89-106",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kriminalpolitische Juristenausbildung",
+          "authors": [
+            "Peter Thoss",
+            "Kriminalpolitische Juristenausbildung",
+            "Der Titel",
+            "nicht länger strafrechtlich",
+            "Dafür",
+            "zum\nWeihnachten Verstecken",
+            "Tag Erschrecken",
+            "Turnen",
+            "Ab Geschichte das"
+          ],
+          "pdf_start_index": 106,
+          "pdf_end_index": 119,
+          "citation_pages": "107-120",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verwaltungsausbildung und Juristenausbildung",
+          "authors": [
+            "nicht gibt",
+            "Schwester",
+            "zum Weihnachten Wald",
+            "Buch",
+            "Weihnachten Weihnachten",
+            "Vielleicht",
+            "Apfel Wald"
+          ],
+          "pdf_start_index": 120,
+          "pdf_end_index": 131,
+          "citation_pages": "121-132",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Inhaltliche Verklammerung von Theorie und Praxis",
+          "authors": [
+            "Reinhard Hoflmann",
+            "Verklammerung von Theorie",
+            "Vermittlung von Theorie",
+            "nun klettern-\ndafür",
+            "Vielleicht",
+            "Natürlich bin",
+            "Weihnachten Erschrecken",
+            "Mann Wei"
+          ],
+          "pdf_start_index": 132,
+          "pdf_end_index": 156,
+          "citation_pages": "133-157",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Projektorientierte Juristenausbildung in Kooperation mit der Arbeitskammer?",
+          "authors": [
+            "Wolfgang Däubler",
+            "Arbeiterkammer",
+            "Kooperationsvertrag",
+            "zur Weihnachten",
+            "Erschrecken",
+            "Freuen",
+            "Minutenmir",
+            "Anfangen",
+            "Rad Weihnachten",
+            "Minutenmir Arbeit",
+            "Dick\nHeraus",
+            "Wald",
+            "Opa Weihnachten See"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 271,
+          "citation_pages": "158-272",
+          "confidence": 0.96,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 9.622375089000116,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:55:02.840338+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "Ziele und Inhalte des sozialwissenschaftlichen Eingangsstudiums",
+          "authors": [
+            "das Fazit",
+            "Zweite Organisationsphuse",
+            "Glauben"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 87,
+          "citation_pages": "71-88",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Juristisches Denken als Objekt juristischer Selbstreflexion und sozialwissenschaftlicher Forschung",
+          "authors": [
+            "Roland Dubischar",
+            "Juristisches Denken",
+            "jemand leugnen",
+            "Sitzen",
+            "Schwester",
+            "Zug Glauben",
+            "Schön Tag"
+          ],
+          "pdf_start_index": 88,
+          "pdf_end_index": 105,
+          "citation_pages": "89-106",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kriminalpolitische Juristenausbildung",
+          "authors": [
+            "Peter Thoss",
+            "Kriminalpolitische Juristenausbildung",
+            "Der Titel",
+            "nicht länger strafrechtlich",
+            "Dafür",
+            "zum\nWeihnachten Verstecken",
+            "Tag Erschrecken",
+            "Turnen",
+            "Ab Geschichte das"
+          ],
+          "pdf_start_index": 106,
+          "pdf_end_index": 119,
+          "citation_pages": "107-120",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verwaltungsausbildung und Juristenausbildung",
+          "authors": [
+            "nicht gibt",
+            "Schwester",
+            "zum Weihnachten Wald",
+            "Buch",
+            "Weihnachten Weihnachten",
+            "Vielleicht",
+            "Apfel Wald"
+          ],
+          "pdf_start_index": 120,
+          "pdf_end_index": 131,
+          "citation_pages": "121-132",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inhaltliche Verklammerung von Theorie und Praxis",
+          "authors": [
+            "Reinhard Hoflmann",
+            "Verklammerung von Theorie",
+            "Vermittlung von Theorie",
+            "nun klettern-\ndafür",
+            "Vielleicht",
+            "Natürlich bin",
+            "Weihnachten Erschrecken",
+            "Mann Wei"
+          ],
+          "pdf_start_index": 132,
+          "pdf_end_index": 156,
+          "citation_pages": "133-157",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Projektorientierte Juristenausbildung in Kooperation mit der Arbeitskammer?",
+          "authors": [
+            "Wolfgang Däubler",
+            "Arbeiterkammer",
+            "Kooperationsvertrag",
+            "zur Weihnachten",
+            "Erschrecken",
+            "Freuen",
+            "Minutenmir",
+            "Anfangen",
+            "Rad Weihnachten",
+            "Minutenmir Arbeit",
+            "Dick\nHeraus",
+            "Wald",
+            "Opa Weihnachten See"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 271,
+          "citation_pages": "158-272",
+          "confidence": 0.96,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 33.63386470199998,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:01:50.479406+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [
+        {
+          "title": "Ziele und Inhalte des sozialwissenschaftlichen Eingangsstudiums",
+          "authors": [
+            "das Fazit",
+            "Zweite Organisationsphuse",
+            "Glauben"
+          ],
+          "pdf_start_index": 53,
+          "pdf_end_index": 87,
+          "citation_pages": "71-88",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Juristisches Denken als Objekt juristischer Selbstreflexion und sozialwissenschaftlicher Forschung",
+          "authors": [
+            "Roland Dubischar",
+            "Juristisches Denken",
+            "jemand leugnen",
+            "Sitzen",
+            "Schwester",
+            "Zug Glauben",
+            "Schön Tag"
+          ],
+          "pdf_start_index": 88,
+          "pdf_end_index": 105,
+          "citation_pages": "89-106",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kriminalpolitische Juristenausbildung",
+          "authors": [
+            "Peter Thoss",
+            "Kriminalpolitische Juristenausbildung",
+            "Der Titel",
+            "nicht länger strafrechtlich",
+            "Dafür",
+            "zum\nWeihnachten Verstecken",
+            "Tag Erschrecken",
+            "Turnen",
+            "Ab Geschichte das"
+          ],
+          "pdf_start_index": 106,
+          "pdf_end_index": 119,
+          "citation_pages": "107-120",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verwaltungsausbildung und Juristenausbildung",
+          "authors": [
+            "nicht gibt",
+            "Schwester",
+            "zum Weihnachten Wald",
+            "Buch",
+            "Weihnachten Weihnachten",
+            "Vielleicht",
+            "Apfel Wald"
+          ],
+          "pdf_start_index": 120,
+          "pdf_end_index": 131,
+          "citation_pages": "121-132",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Inhaltliche Verklammerung von Theorie und Praxis",
+          "authors": [
+            "Reinhard Hoflmann",
+            "Verklammerung von Theorie",
+            "Vermittlung von Theorie",
+            "nun klettern-\ndafür",
+            "Vielleicht",
+            "Natürlich bin",
+            "Weihnachten Erschrecken",
+            "Mann Wei"
+          ],
+          "pdf_start_index": 132,
+          "pdf_end_index": 156,
+          "citation_pages": "133-157",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Projektorientierte Juristenausbildung in Kooperation mit der Arbeitskammer?",
+          "authors": [
+            "Wolfgang Däubler",
+            "Arbeiterkammer",
+            "Kooperationsvertrag",
+            "zur Weihnachten",
+            "Erschrecken",
+            "Freuen",
+            "Minutenmir",
+            "Anfangen",
+            "Rad Weihnachten",
+            "Minutenmir Arbeit",
+            "Dick\nHeraus",
+            "Wald",
+            "Opa Weihnachten See"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 271,
+          "citation_pages": "158-272",
+          "confidence": 0.96,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 142.83441411900003,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:17:57.616696+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.11297288499963543,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:57.348707+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:20.794266+00:00"
+  "generated_at": "2026-08-16T04:22:57.348707+00:00"
 }

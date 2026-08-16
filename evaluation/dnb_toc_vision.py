@@ -39,6 +39,16 @@ empty list."""
 # mis-filtered outlier ever slips through (design spec section 5).
 _MAX_VISION_PAGES = 20
 
+# Mirrors segmentation.py's _LLM_TOC_RETRY_MAX_TOKENS escalation: a dense
+# multi-page edited-volume TOC (60-80 entries, long German titles, author
+# lists) can plausibly overrun the first attempt's budget. A truncated JSON
+# array reliably fails parse_json_array (no closing "]") regardless of
+# cause, so JSON-parseability alone is a sufficient, client-agnostic retry
+# trigger -- without this, _call_with_retry's outer wrapper would reissue an
+# IDENTICAL request at temperature=0.0 and fail the same way every time.
+_VISION_MAX_TOKENS = 4096
+_VISION_MAX_TOKENS_RETRY = 8192
+
 
 def render_pages_to_images(pdf_path: Path, dpi: int = 200, pdftoppm_bin: str = "pdftoppm") -> list[bytes]:
     """Rasterizes every page of pdf_path to PNG bytes, in page order, via
@@ -70,7 +80,13 @@ async def vision_extract_toc_entries(pdf_path: Path, model: str, client: Any, *,
     rather than catching and returning [] the way llm_extract_toc_entries
     does -- that swallowing made the text pipeline's _call_with_retry
     wrapper dead code (llm_extract_toc_entries never actually raised to
-    it). Here, the caller's retry wrapper does real work."""
+    it). Here, the caller's retry wrapper does real work.
+
+    Escalates max_tokens once (_VISION_MAX_TOKENS -> _VISION_MAX_TOKENS_RETRY)
+    if the first response doesn't parse as a complete JSON array, mirroring
+    segmentation.py's _extract_with_retry -- otherwise a truncated response
+    would fail identically on every one of the caller's retry attempts
+    (same images, same prompt, temperature=0.0)."""
     page_count = len(PdfReader(str(pdf_path)).pages)
     if page_count > _MAX_VISION_PAGES:
         raise ValueError(f"{pdf_path}: {page_count} pages exceeds vision-extraction cap of {_MAX_VISION_PAGES}")
@@ -79,12 +95,17 @@ async def vision_extract_toc_entries(pdf_path: Path, model: str, client: Any, *,
     for image_bytes in images:
         b64 = base64.b64encode(image_bytes).decode("ascii")
         content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{b64}"}})
-    response = await client.chat.completions.create(
-        model=model,
-        messages=[{"role": "user", "content": content}],
-        max_tokens=4096,
-        temperature=0.0,
-    )
-    raw = response.choices[0].message.content or ""
-    items = parse_json_array(raw)
-    return _toc_items_to_entries(items)
+    messages = [{"role": "user", "content": content}]
+
+    last_error: Exception | None = None
+    for max_tokens in (_VISION_MAX_TOKENS, _VISION_MAX_TOKENS_RETRY):
+        response = await client.chat.completions.create(
+            model=model, messages=messages, max_tokens=max_tokens, temperature=0.0,
+        )
+        raw = response.choices[0].message.content or ""
+        try:
+            items = parse_json_array(raw)
+            return _toc_items_to_entries(items)
+        except Exception as exc:  # noqa: BLE001 -- any parse failure triggers the escalation retry
+            last_error = exc
+    raise last_error

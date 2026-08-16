@@ -43,15 +43,25 @@ class TestRenderPagesToImages(unittest.TestCase):
             render_pages_to_images(Path("/nonexistent/does-not-exist.pdf"))
 
 
-def _fake_vision_client(response_text: str):
+def _fake_response(response_text: str):
     message = MagicMock()
     message.content = response_text
     choice = MagicMock()
     choice.message = message
     response = MagicMock()
     response.choices = [choice]
+    return response
+
+
+def _fake_vision_client(response_text: str):
     client = MagicMock()
-    client.chat.completions.create = AsyncMock(return_value=response)
+    client.chat.completions.create = AsyncMock(return_value=_fake_response(response_text))
+    return client
+
+
+def _fake_vision_client_sequence(*response_texts: str):
+    client = MagicMock()
+    client.chat.completions.create = AsyncMock(side_effect=[_fake_response(t) for t in response_texts])
     return client
 
 
@@ -101,3 +111,22 @@ class TestVisionExtractTocEntries(unittest.IsolatedAsyncioTestCase):
             with self.assertRaises(ValueError):
                 await vision_extract_toc_entries(pdf_path, "some-model", client)
             client.chat.completions.create.assert_not_called()
+
+    async def test_escalates_max_tokens_and_recovers_from_a_truncated_first_response(self):
+        # A truncated JSON array (no closing "]") reliably fails
+        # parse_json_array regardless of cause -- vision_extract_toc_entries
+        # escalates max_tokens once and retries the SAME images/prompt
+        # before giving up, mirroring segmentation.py's _extract_with_retry.
+        truncated = '[{"title": "Einleitung", "authors": [], "printed_page_number": "9"}'
+        complete = '[{"title": "Einleitung", "authors": [], "printed_page_number": "9"}]'
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf_path = _make_pdf(Path(tmp) / "book.pdf", 1)
+            client = _fake_vision_client_sequence(truncated, complete)
+            entries = await vision_extract_toc_entries(pdf_path, "some-model", client)
+            self.assertEqual(len(entries), 1)
+            self.assertEqual(entries[0].title, "Einleitung")
+            self.assertEqual(client.chat.completions.create.await_count, 2)
+            first_call_kwargs = client.chat.completions.create.call_args_list[0].kwargs
+            second_call_kwargs = client.chat.completions.create.call_args_list[1].kwargs
+            self.assertEqual(first_call_kwargs["max_tokens"], 4096)
+            self.assertEqual(second_call_kwargs["max_tokens"], 8192)

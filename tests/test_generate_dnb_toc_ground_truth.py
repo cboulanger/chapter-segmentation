@@ -244,21 +244,21 @@ class TestSelectBestModels(unittest.TestCase):
     def test_picks_one_from_each_pattern_in_order(self):
         models = [
             KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni", demand=0),
-            KisskiModel(id="gemma-4-31b-it", name="Gemma", demand=1),
+            KisskiModel(id="qwen3.6-27b", name="Qwen 3.6", demand=1),
         ]
-        self.assertEqual(_select_best_models(models), ["qwen3-omni-30b-a3b-instruct", "gemma-4-31b-it"])
+        self.assertEqual(_select_best_models(models), ["qwen3-omni-30b-a3b-instruct", "qwen3.6-27b"])
 
     def test_matches_omni_family_regardless_of_version(self):
         models = [
             KisskiModel(id="qwen5-omni-99b-instruct", name="Qwen Omni next", demand=0),
-            KisskiModel(id="gemma-7-40b-it", name="Gemma next", demand=0),
+            KisskiModel(id="qwen4.0-40b", name="Qwen next", demand=0),
         ]
-        self.assertEqual(_select_best_models(models), ["qwen5-omni-99b-instruct", "gemma-7-40b-it"])
+        self.assertEqual(_select_best_models(models), ["qwen5-omni-99b-instruct", "qwen4.0-40b"])
 
     def test_skips_very_busy_candidate_within_a_pattern(self):
         models = [
             KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni busy", demand=10),
-            KisskiModel(id="gemma-4-31b-it", name="Gemma", demand=0),
+            KisskiModel(id="qwen3.6-27b", name="Qwen 3.6", demand=0),
         ]
         with self.assertRaises(RuntimeError):
             _select_best_models(models)
@@ -277,7 +277,7 @@ class TestSelectBestModels(unittest.TestCase):
         models = [
             KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni A", demand=2),
             KisskiModel(id="qwen4-omni-30b-a3b-instruct", name="Qwen Omni B", demand=0),
-            KisskiModel(id="gemma-4-31b-it", name="Gemma", demand=0),
+            KisskiModel(id="qwen3.6-27b", name="Qwen 3.6", demand=0),
         ]
         self.assertEqual(
             _select_best_models(models),
@@ -285,15 +285,15 @@ class TestSelectBestModels(unittest.TestCase):
         )
 
     def test_falls_through_to_next_pattern_when_first_has_too_few_candidates(self):
-        # Only one qwen candidate exists -- not enough to satisfy count=2
-        # alone, so the loop must fall through to the gemma pattern for
-        # the second pick, per design spec section 3.1.
+        # Only one qwen-omni candidate exists -- not enough to satisfy
+        # count=2 alone, so the loop must fall through to the qwen3.6
+        # pattern for the second pick, per design spec section 3.1.
         models = [
             KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni", demand=0),
-            KisskiModel(id="gemma-4-31b-it", name="Gemma A", demand=2),
-            KisskiModel(id="gemma-5-31b-it", name="Gemma B", demand=0),
+            KisskiModel(id="qwen3.6-27b", name="Qwen 3.6 A", demand=2),
+            KisskiModel(id="qwen3.7-27b", name="Qwen 3.6 B", demand=0),
         ]
         self.assertEqual(
             _select_best_models(models),
-            ["qwen3-omni-30b-a3b-instruct", "gemma-5-31b-it"],
+            ["qwen3-omni-30b-a3b-instruct", "qwen3.7-27b"],
         )

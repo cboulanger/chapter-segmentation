@@ -172,11 +172,21 @@ async def _run_book(
 # (design spec docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md
 # section 2.1) -- KISSKI's /models endpoint has no "supports vision" flag,
 # so this is a curated allowlist, not something discoverable from the API
-# response. Tried in this order: qwen-omni was faster and more accurate
-# than gemma in the tested cases.
+# response.
+#
+# gemma-4-31b-it was the original second pattern but was dropped after a
+# real 15-book smoke test (evaluation/RESULTS.md, 2026-08-16) found it
+# doesn't just extract at a coarser granularity than qwen-omni -- on 5 of
+# 8 below-threshold books it silently DROPPED the entire early portion of
+# the TOC (e.g. one clean 8-entry numbered list came back with only the
+# last 2 entries), even on short, simple 2-page scans. qwen3.6-27b was
+# spot-checked against the same books and correctly covered the full
+# page range every time (matching qwen-omni's own range), so it replaced
+# gemma as the second family -- slower per call, but reliable, which
+# matters far more for an agreement gate than speed.
 _VISION_MODEL_PATTERNS = (
     re.compile(r"^qwen\d+-omni"),
-    re.compile(r"^gemma-\d+-"),
+    re.compile(r"^qwen\d+\.\d+-"),
 )
 
 

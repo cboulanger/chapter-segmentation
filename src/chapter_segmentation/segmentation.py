@@ -583,31 +583,14 @@ async def _extract_with_retry(prompt: str, llm_client: LLMClient) -> list:
     raise last_error
 
 
-async def llm_extract_toc_entries(pages: list[str], llm_client: LLMClient) -> list[TocEntry]:
-    """Reads the same front/back-matter page range find_toc_candidates
-    already scans (_toc_scan_indices), sends their raw text verbatim to the
-    LLM, and asks it to return the book's chapter listing as it actually
-    appears -- for layouts too irregular for the regex (no dot leaders,
-    multi-column, unconventional spacing/punctuation) but readable by
-    inspection. Never asks the LLM for a physical page index -- only
-    title/authors/printed_page_number, exactly like a regex-found TocEntry,
-    so the result flows into the SAME locate_chapter_start content-search
-    step used for every other TOC entry (design spec §4).
-    """
-    scan_indices = _llm_scan_indices(pages)
-    if not scan_indices:
-        return []
-    page_blocks = "\n\n".join(f"[PAGE {i}]\n{pages[i]}" for i in scan_indices)
-    prompt = _LLM_TOC_EXTRACTION_PROMPT.format(page_blocks=page_blocks)
-
-    try:
-        items = await _extract_with_retry(prompt, llm_client)
-    except Exception as exc:
-        logger.warning(
-            "llm_extract_toc_entries: giving up (%s)", _classify_llm_failure(exc), exc_info=True,
-        )
-        return []
-
+def _toc_items_to_entries(items: list) -> list[TocEntry]:
+    """Converts a parsed JSON array of {"title", "authors",
+    "printed_page_number"} dicts -- the shape both llm_extract_toc_entries'
+    text prompt and evaluation/dnb_toc_vision.py's image prompt ask an LLM
+    to return -- into TocEntry objects, tolerating the malformed-response
+    shapes a real model occasionally produces. Shared so both extraction
+    paths parse identically instead of maintaining two copies of the same
+    tolerance logic."""
     entries: list[TocEntry] = []
     for item in items:
         if not isinstance(item, dict):
@@ -642,6 +625,33 @@ async def llm_extract_toc_entries(pages: list[str], llm_client: LLMClient) -> li
             authors=authors, printed_roman=printed_roman,
         ))
     return entries
+
+
+async def llm_extract_toc_entries(pages: list[str], llm_client: LLMClient) -> list[TocEntry]:
+    """Reads the same front/back-matter page range find_toc_candidates
+    already scans (_toc_scan_indices), sends their raw text verbatim to the
+    LLM, and asks it to return the book's chapter listing as it actually
+    appears -- for layouts too irregular for the regex (no dot leaders,
+    multi-column, unconventional spacing/punctuation) but readable by
+    inspection. Never asks the LLM for a physical page index -- only
+    title/authors/printed_page_number, exactly like a regex-found TocEntry,
+    so the result flows into the SAME locate_chapter_start content-search
+    step used for every other TOC entry (design spec §4).
+    """
+    scan_indices = _llm_scan_indices(pages)
+    if not scan_indices:
+        return []
+    page_blocks = "\n\n".join(f"[PAGE {i}]\n{pages[i]}" for i in scan_indices)
+    prompt = _LLM_TOC_EXTRACTION_PROMPT.format(page_blocks=page_blocks)
+
+    try:
+        items = await _extract_with_retry(prompt, llm_client)
+    except Exception as exc:
+        logger.warning(
+            "llm_extract_toc_entries: giving up (%s)", _classify_llm_failure(exc), exc_info=True,
+        )
+        return []
+    return _toc_items_to_entries(items)
 
 
 # Running-header detection: a line whose digit-stripped, whitespace-collapsed

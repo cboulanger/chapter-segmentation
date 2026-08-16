@@ -19,6 +19,7 @@ from evaluation.scripts.generate_dnb_toc_ground_truth import (
     _pad_pages_for_scan,
     _run_book_pages,
     _select_best_model,
+    _select_best_models,
     _toc_entries_for_scan,
     _write_cached_llm_entries,
 )
@@ -324,3 +325,51 @@ class TestSelectBestModel(unittest.TestCase):
             KisskiModel(id="another-model", name="Another", demand=1),
         ]
         self.assertEqual(_select_best_model(models), "another-model")
+
+
+class TestSelectBestModels(unittest.TestCase):
+    def test_picks_one_from_each_pattern_in_order(self):
+        models = [
+            KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni", demand=0),
+            KisskiModel(id="gemma-4-31b-it", name="Gemma", demand=1),
+        ]
+        self.assertEqual(
+            _select_best_models(models),
+            ["qwen3-omni-30b-a3b-instruct", "gemma-4-31b-it"],
+        )
+
+    def test_matches_omni_family_regardless_of_version(self):
+        models = [
+            KisskiModel(id="qwen5-omni-99b-instruct", name="Qwen Omni next", demand=0),
+            KisskiModel(id="gemma-7-40b-it", name="Gemma next", demand=0),
+        ]
+        self.assertEqual(
+            _select_best_models(models),
+            ["qwen5-omni-99b-instruct", "gemma-7-40b-it"],
+        )
+
+    def test_skips_very_busy_candidate_within_a_pattern(self):
+        models = [
+            KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni busy", demand=10),
+            KisskiModel(id="gemma-4-31b-it", name="Gemma", demand=0),
+        ]
+        with self.assertRaises(RuntimeError):
+            _select_best_models(models)
+
+    def test_raises_when_fewer_than_two_vision_models_available(self):
+        models = [
+            KisskiModel(id="glm-4.7", name="GLM (not vision)", demand=0),
+        ]
+        with self.assertRaises(RuntimeError):
+            _select_best_models(models)
+
+    def test_picks_least_busy_among_multiple_matches_in_the_same_pattern(self):
+        models = [
+            KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni A", demand=2),
+            KisskiModel(id="qwen4-omni-30b-a3b-instruct", name="Qwen Omni B", demand=0),
+            KisskiModel(id="gemma-4-31b-it", name="Gemma", demand=0),
+        ]
+        self.assertEqual(
+            _select_best_models(models),
+            ["qwen4-omni-30b-a3b-instruct", "gemma-4-31b-it"],
+        )

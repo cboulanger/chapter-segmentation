@@ -275,6 +275,46 @@ def _pick_model(base_url: str, api_key: str) -> str:
     return _select_best_model(fetch_kisski_models(base_url, api_key))
 
 
+# Vision-capable KISSKI model families, confirmed by direct experiment
+# (design spec docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md
+# section 2.1) -- KISSKI's /models endpoint has no "supports vision" flag,
+# so this is a curated allowlist, not something discoverable from the API
+# response. Tried in this order: qwen-omni was faster and more accurate
+# than gemma in the tested cases.
+_VISION_MODEL_PATTERNS = (
+    re.compile(r"^qwen\d+-omni"),
+    re.compile(r"^gemma-\d+-"),
+)
+
+
+def _select_best_models(models: list, patterns=_VISION_MODEL_PATTERNS, count: int = 2) -> list[str]:
+    """Picks `count` DISTINCT vision-capable model ids, one per pattern in
+    preference order. Deliberately does NOT fall back to an arbitrary
+    global least-busy model: a non-vision-capable model given image
+    content would either error or silently ignore the images, and the
+    whole point of the agreement gate is two INDEPENDENT reads -- gating a
+    single model against itself (or against a model that never saw the
+    images at all) would measure something other than what it claims to.
+    Raises loudly rather than silently degrading to fewer models."""
+    selected: list[str] = []
+    for pattern in patterns:
+        candidates = [
+            m for m in models
+            if pattern.match(m.id) and m.availability != "very busy" and m.id not in selected
+        ]
+        if candidates:
+            selected.append(min(candidates, key=lambda m: m.demand).id)
+        if len(selected) >= count:
+            break
+    if len(selected) < count:
+        raise RuntimeError(f"Need {count} distinct vision-capable models, found {len(selected)}: {selected}")
+    return selected
+
+
+def _pick_models(base_url: str, api_key: str) -> list[str]:
+    return _select_best_models(fetch_kisski_models(base_url, api_key))
+
+
 async def _run_all(
     keys_and_paths: list[tuple[str, Path]], llm_client: LLMClient, concurrency: int,
     corpus_directory: Path, cache_directory: Path,

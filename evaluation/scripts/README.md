@@ -309,6 +309,41 @@ options:
                    evaluation/corpus/)
 ```
 
+## `generate_dnb_toc_ground_truth.py`
+
+Generates bulk-tier `dnb-toc-only` ground truth by sending each book's page
+images to two independent vision-capable KISSKI models and writing
+`.expected.json` only when they agree well enough -- see
+`evaluation/README.md`'s "Building dnb-toc-only ground truth".
+
+```
+usage: generate_dnb_toc_ground_truth.py [-h] [--limit LIMIT]
+                                        [--concurrency CONCURRENCY]
+                                        [--spot-check N]
+
+Generates bulk-tier structured ground truth for dnb-toc-only (design spec
+docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md, which
+supersedes the two-text-extractor design in
+docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md).
+For every manifest book not held out in eval_tier_ids.json (see
+select_dnb_toc_eval_sample.py and evaluation/README.md's "Building dnb-toc-
+only ground truth"), sends the book's page images to two independent vision-
+capable KISSKI models (evaluation.dnb_toc_vision.vision_extract_toc_entries)
+and writes <id>.expected.json with "verified": false only when they agree well
+enough (evaluation.dnb_toc_matching.gate_book, >=0.90 whole-book agreement).
+Books that don't clear the gate are skipped and reported, not partially
+written.
+
+options:
+  -h, --help            show this help message and exit
+  --limit LIMIT         Process at most this many books (smoke-test
+                        convenience)
+  --concurrency CONCURRENCY
+                        How many books to process concurrently (default: 4)
+  --spot-check N        Instead of generating, sample N passing bulk-tier
+                        books and walk through a visual Accept/Reject check
+```
+
 ## `generate_public_evaluation_cache.py`
 
 Generates each corpus's `public-cache/` (a git-trackable, safe-to-distribute

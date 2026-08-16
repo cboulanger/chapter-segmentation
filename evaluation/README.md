@@ -74,8 +74,10 @@ either -- see the design spec for its own shape and schema.
 ## Building dnb-toc-only ground truth
 
 See
-`docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md`
-for the full design. Two tiers, both writing
+`docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md`
+for the full design (supersedes the two-text-extractor design in
+`docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md`).
+Two tiers, both writing
 `evaluation/corpus/dnb-toc-only/<id>.expected.json`
 (`{"entries": [{"title", "authors", "printed_page_number"}, ...],
 "verified": bool}`):
@@ -89,11 +91,13 @@ export KISSKI_API_KEY=$(grep '^KISSKI_API_KEY=' ../zotero-rag/.env | cut -d= -f2
 uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py
 ```
 
-Runs two independent extractors per book (the regex heuristic and a
-KISSKI LLM pass) and writes `.expected.json` only when they agree on at
-least 90% of the book's entries -- see `evaluation/dnb_toc_matching.py`.
-Books that don't clear that bar are skipped and reported, not partially
-written.
+Sends each book's page images (rendered via `pdftoppm`, no OCR) to two
+independent vision-capable KISSKI models and writes `.expected.json` only
+when they agree on at least 90% of the book's entries -- see
+`evaluation/dnb_toc_matching.py` and `evaluation/dnb_toc_vision.py`. Books
+that don't clear that bar are skipped and reported, not partially written.
+Requires `pdftoppm` (poppler) on `PATH` -- see this file's "Cleaning a
+badly-scanned PDF" section for the install command.
 
 **Eval tier** (`"verified": true`, hand-transcribed, held out of the bulk
 tier and never drafted by either extractor) -- for every ID in

@@ -504,6 +504,65 @@ though the book has a perfectly real, visually obvious TOC. There is no
 substitute for opening the PDF (see the visual-viewing note in Step 3 above)
 and confirming the exact page range by eye every time.
 
+## Arbitrating below-gate dnb-toc-only books
+
+`evaluation/scripts/generate_dnb_toc_ground_truth.py`'s two-vision-model
+gate discards a book outright when the two models disagree too much
+(below 0.90 agreement) or one of them fails outright -- but it never
+deletes either model's cached raw extraction
+(`evaluation/corpus/dnb-toc-only/llm-cache/<key>.<model>.json`). Rather
+than re-running the whole book from scratch or leaving it discarded,
+walk through the following after a generation run leaves books below
+the gate (design spec
+docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md):
+
+1. List every book still needing a decision:
+
+   ```bash
+   uv run python evaluation/scripts/arbitrate_dnb_toc.py
+   ```
+
+   This prints, per book: its title and PDF path, both models' entry
+   counts and agreement rate, and every entry each side found that the
+   other didn't (or, if only one model produced usable output, that
+   model's full list with a note to verify it directly).
+
+2. For each book, read the printed diff. The disagreement patterns
+   found in practice so far (`evaluation/RESULTS.md` § "dnb-toc-only
+   ground truth: two-vision-model gate") usually make the right call
+   obvious from the text alone: one side dropping real content, one
+   side including front/back matter or a part-divider that should have
+   been skipped, a two-line title wrongly split into two entries, or a
+   deeply nested TOC segmented at different granularities.
+
+3. When the text alone doesn't settle it, open the book's actual TOC
+   page images directly: use the `Read` tool on the PDF with a `pages`
+   parameter (1-based viewer pages, same convention as Step 3 above).
+
+4. Write the final `evaluation/corpus/dnb-toc-only/<key>.expected.json`
+   yourself -- same schema as a passing book
+   (`{"entries": [...], "verified": true}`, each entry via
+   `evaluation.dnb_toc_matching.toc_entry_to_gt_dict`), but with
+   `"verified": true` rather than `false`: unlike the bulk-tier gate's
+   own output, this went through direct scrutiny (including the images,
+   when needed), the same standard `_spot_check`'s docstring in
+   `generate_dnb_toc_ground_truth.py` already treats as
+   "independently human-verified" -- so it's also correctly excluded
+   from that function's own sampling pool going forward.
+
+5. If a book is genuinely unrecoverable (both models hallucinate, the
+   scan itself is too degraded to read even directly), record that
+   instead of leaving it to resurface every run:
+
+   ```bash
+   uv run python evaluation/scripts/arbitrate_dnb_toc.py reject <key> "<short reason>"
+   ```
+
+   This writes to the committed
+   `evaluation/corpus/dnb-toc-only/arbitration-rejected.json` -- refuses
+   (rather than silently overwriting) if `<key>` is already present, so
+   re-running this step is safe.
+
 ## Known failure modes (found the hard way while building this evaluation set)
 
 - **PDF-index ≠ printed page number, and the offset is often not constant.**

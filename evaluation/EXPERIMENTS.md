@@ -12,6 +12,74 @@ lost. Sections below are organized in the same order as the matching
 material in `RESULTS.md`, and headings match wherever `RESULTS.md` links to
 one directly.
 
+## dnb-toc-only ground truth: two-vision-model gate
+
+See [RESULTS.md § dnb-toc-only ground truth: two-vision-model gate](RESULTS.md#dnb-toc-only-ground-truth-two-vision-model-gate)
+for the current shipped model pair and latest measured pass rate. The
+subsection below is the first real smoke test's write-up, whose root-cause
+diagnosis (a genuine editorial granularity difference between the two
+models) was itself superseded by a more careful follow-up investigation
+that found the real cause was `gemma-4-31b-it` silently dropping content,
+not a deliberate judgment call -- see the current `RESULTS.md` section for
+the corrected diagnosis and the fix.
+
+### First real smoke test (2026-08-16) -- initial (incomplete) diagnosis
+
+Per `docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md` and
+`docs/superpowers/plans/2026-08-16-dnb-toc-vision-extraction.md`,
+`generate_dnb_toc_ground_truth.py` was migrated from a regex-heuristic +
+text-LLM gate to a two-independent-vision-model gate (each model reads
+the book's page images directly via `pdftoppm`, no OCR/text layer at
+all). First real run against the live corpus and live KISSKI models,
+after the migration and two follow-up robustness fixes (`max_tokens`
+escalation on truncated responses; `_select_best_models` now takes
+multiple candidates from one pattern before falling through):
+
+```
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
+
+Vision models used: qwen3-omni-30b-a3b-instruct, gemma-4-31b-it
+6/15 books passed the gate and got .expected.json written.
+  8 skipped: below_threshold
+  1 skipped: error: JSONDecodeError
+```
+
+**40% pass rate is much lower than the near-perfect results the design
+spec's own two-book prototype found** (18/18 and ~18/18 entries,
+§2.1). Root-caused by comparing the two models' cached raw responses
+directly for four `below_threshold` books:
+
+| Book | Pages | qwen entries | gemma entries |
+| --- | --- | --- | --- |
+| `0745309941` | 2 | 8 | 2 |
+| `3465016874` | 2 | 17 | 3 |
+| `3492038174` | 7 | 135 | 24 |
+| `3571092120` | 3 | 41 | 32 |
+
+`gemma-4-31b-it` isn't truncating -- confirmed directly for
+`3492038174` (the most extreme case): both models' entry lists end at
+the exact same final item (page 313, "Zur Gründung einer »Stiftung
+Weltethos«"), so gemma read every page and reached the true end of the
+document. **The two models are making a genuinely different editorial
+judgment about what counts as one "chapter" entry** on TOCs with deep
+hierarchical nesting (numbered theses/aphorisms, sub-points under a
+numbered heading): qwen extracts nearly every numbered sub-line as its
+own entry, gemma collapses them into far fewer higher-level entries.
+Where a TOC is flat (the design spec's two prototype books, and this
+run's simpler passing books), both models agree closely and the gate
+passes fine -- the mismatch is specific to densely-nested layouts.
+
+**This diagnosis turned out to be incomplete** -- see the current
+`RESULTS.md` section: comparing entry *page-number ranges* (not just
+counts) across all 15 books showed gemma's range started dramatically
+later than qwen's on 5 of 8 mismatched books, including flat, simple
+TOCs where no granularity judgment call was plausible (a clean 8-entry
+numbered list came back with only its last 2 entries) -- a real
+reliability gap in `gemma-4-31b-it` on this task, not a considered
+editorial choice. `3492038174`'s matching final entry was a coincidence
+of that book happening to also have a genuine granularity disagreement
+layered on top of the range problem, not evidence against it.
+
 ## Layout-based TOC/chapter-first-page classifier pilot
 
 See [RESULTS.md § Layout-based TOC/chapter-first-page classifier pilot](RESULTS.md#layout-based-tocchapter-first-page-classifier-pilot)

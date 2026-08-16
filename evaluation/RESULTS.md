@@ -53,69 +53,77 @@ other sections on this page (pure-heuristic, strategy-pipeline, diverse
 real-library set, per-strategy standalone) still describe the 57/13 split
 and have not been re-verified against the new scans books.
 
-## dnb-toc-only ground truth: two-vision-model gate, first real smoke test (2026-08-16)
+## dnb-toc-only ground truth: two-vision-model gate
 
 Per `docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md` and
 `docs/superpowers/plans/2026-08-16-dnb-toc-vision-extraction.md`,
 `generate_dnb_toc_ground_truth.py` was migrated from a regex-heuristic +
 text-LLM gate to a two-independent-vision-model gate (each model reads
 the book's page images directly via `pdftoppm`, no OCR/text layer at
-all). First real run against the live corpus and live KISSKI models,
-after the migration and two follow-up robustness fixes (`max_tokens`
-escalation on truncated responses; `_select_best_models` now takes
-multiple candidates from one pattern before falling through):
+all). A first 15-book smoke test against `qwen3-omni-30b-a3b-instruct` +
+`gemma-4-31b-it` passed only 6/15 (40%) -- see
+[EXPERIMENTS.md § dnb-toc-only ground truth: two-vision-model gate](EXPERIMENTS.md#dnb-toc-only-ground-truth-two-vision-model-gate)
+for that run's full write-up and its initial (incomplete) diagnosis.
+
+**Corrected root cause:** comparing entry page-number *ranges* (not just
+counts) across all 15 books showed `gemma-4-31b-it`'s range started
+dramatically later than `qwen3-omni`'s on 5 of 8 mismatched books --
+including a clean, flat 8-entry numbered list (`0745309941`) that came
+back with only its last 2 entries. This is a reliability gap in
+`gemma-4-31b-it` on this task (silently dropping the early portion of a
+multi-image request), not a considered editorial choice about chapter
+granularity. Spot-checked `qwen3.6-27b` directly
+(`vision_extract_toc_entries`, live KISSKI) against the same books: it
+correctly covered the full page range every time, matching
+`qwen3-omni`'s own range. `_VISION_MODEL_PATTERNS`' second pattern was
+changed from `gemma-<N>-` to `qwen<N>.<M>-` accordingly.
+
+**Re-run with the corrected model pair, same 15 books:**
 
 ```
 uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
 
-Vision models used: qwen3-omni-30b-a3b-instruct, gemma-4-31b-it
-6/15 books passed the gate and got .expected.json written.
-  8 skipped: below_threshold
+Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.5-122b-a10b
+9/15 books passed the gate and got .expected.json written.
+  4 skipped: below_threshold
   1 skipped: error: JSONDecodeError
+  1 skipped: error: ValueError
 ```
 
-**40% pass rate is much lower than the near-perfect results the design
-spec's own two-book prototype found** (18/18 and ~18/18 entries,
-§2.1). Root-caused by comparing the two models' cached raw responses
-directly for four `below_threshold` books:
+**Pass rate improved from 40% to 60%, and the improvement is for the
+right reason** -- confirmed by comparing page-number ranges again
+across all 15 books: every single book now shows matching or
+near-matching ranges between the two models, with zero "dropped early
+content" cases remaining. The 4 remaining `below_threshold` books
+(`3465016874`: 17 vs 14 entries; `3571092120`: 41 vs 33;
+`9783842331976`: 57 vs 12; and the still-failing `3492038174`, see
+below) all have matching ranges but differing entry *counts* -- this is
+the genuine chapter-granularity disagreement on densely-nested TOCs
+(numbered theses/sub-points under a numbered heading) originally
+(mis)diagnosed in the first run. This is a narrower, better-understood
+remaining problem than before: pipeline reliability is no longer in
+question, only how consistently the two models segment deeply nested
+TOC hierarchies into "one entry per chapter."
 
-| Book | Pages | qwen entries | gemma entries |
-| --- | --- | --- | --- |
-| `0745309941` | 2 | 8 | 2 |
-| `3465016874` | 2 | 17 | 3 |
-| `3492038174` | 7 | 135 | 24 |
-| `3571092120` | 3 | 41 | 32 |
-
-`gemma-4-31b-it` isn't truncating -- confirmed directly for
-`3492038174` (the most extreme case): both models' entry lists end at
-the exact same final item (page 313, "Zur Gründung einer »Stiftung
-Weltethos«"), so gemma read every page and reached the true end of the
-document. **The two models are making a genuinely different editorial
-judgment about what counts as one "chapter" entry** on TOCs with deep
-hierarchical nesting (numbered theses/aphorisms, sub-points under a
-numbered heading): qwen extracts nearly every numbered sub-line as its
-own entry, gemma collapses them into far fewer higher-level entries.
-Where a TOC is flat (the design spec's two prototype books, and this
-run's simpler passing books), both models agree closely and the gate
-passes fine -- the mismatch is specific to densely-nested layouts.
-
-This is a real, unresolved finding, not a code bug: the pipeline itself
-works correctly (model selection, dual-call caching, retry escalation,
-the agreement gate) -- verified via the two follow-up fixes' own tests
-plus this run's clean model-selection log line and per-model cache
-files. The 1 `JSONDecodeError` is a separate, single-book parse failure
-that survived the `max_tokens` escalation (a genuinely malformed
-response shape, not truncation) -- not yet root-caused further.
+The `1 error: ValueError` is new in this run: `3492038174` (the
+7-page, most deeply-nested book) got an *empty* response from
+`qwen3.5-122b-a10b` (`"No JSON array found in LLM response: ''"`) --
+not yet root-caused; may be specific to that model/book pair rather
+than the family generally, since `_VISION_MODEL_PATTERNS`' second
+pattern matches any `qwen<N>.<M>-` model and a busy-driven re-run could
+pick a different specific model next time. The pre-existing
+`1 error: JSONDecodeError` (`383050277X`) is unchanged from the first
+run -- still not root-caused, still survives the `max_tokens`
+escalation (so it's a genuinely malformed response shape, not
+truncation).
 
 **Open question, not yet resolved:** whether to (a) tune the prompt to
-make "chapter" granularity more explicit/consistent across models, (b)
-swap `gemma-4-31b-it` for a different second vision model, (c) accept a
-lower gate threshold specifically for deeply-nested TOCs, or (d) accept
-the current ~40% pass rate as-is (still positive-only ground truth, no
-worse than a conservative gate rejecting ambiguous books outright). Not
-decided in this session -- flagged for follow-up before a full-corpus
-run, since a full run at this pass rate would only yield GT for a
-minority of the ~1000-book target and burn real budget on the rest.
+make "chapter" granularity more explicit/consistent on deeply-nested
+TOCs specifically, (b) accept a lower gate threshold for such books,
+or (c) accept the current ~60% pass rate as-is (still positive-only
+ground truth, no worse than a conservative gate rejecting ambiguous
+books outright). Not decided in this session -- flagged for follow-up
+before a full-corpus run.
 
 ## Pure-heuristic results
 

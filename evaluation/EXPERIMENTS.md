@@ -150,6 +150,89 @@ such books, or (c) accept the current ~60% pass rate as-is. Resolved by
 the granularity-prompt fix described in the current `RESULTS.md` section
 -- see there for what was tried and its effect.
 
+### Granularity-prompt fix and re-run (2026-08-16) -- pass rate 53%, before the arbitration tool
+
+See [RESULTS.md § dnb-toc-only ground truth: two-vision-model gate](RESULTS.md#dnb-toc-only-ground-truth-two-vision-model-gate)
+for the current shipped pipeline (bulk gate plus the arbitration tool)
+and its measured coverage. This subsection is the write-up of the run
+immediately after `_VISION_TOC_EXTRACTION_PROMPT` was clarified to fix
+the nested-sub-point granularity problem, but before
+`arbitrate_dnb_toc.py` existed to resolve the books that still didn't
+clear the gate -- at this point in the investigation, a below-threshold
+book was still simply discarded.
+
+`_VISION_TOC_EXTRACTION_PROMPT` was clarified to explicitly call out
+that indented/numbered/lettered sub-points each carry their own page
+number and are their own entry, not to be collapsed into their parent
+heading. Clean re-run, same 15 books, fresh cache:
+
+```
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
+
+Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.6-35b-a3b
+8/15 books passed the gate and got .expected.json written.
+  5 skipped: below_threshold
+  2 skipped: error: ValueError
+```
+
+**The fix worked exactly as intended on the case it targeted**:
+`9783842331976` (the deeply-nested book previously diagnosed as 57 vs 12
+entries) now matches 56 of 57 entries (rate 0.98, PASS) -- the nesting
+instruction resolved that specific failure mode cleanly.
+
+**But the aggregate pass rate did not improve (53% vs the prior run's
+60%)**, because a different, previously-undiagnosed cluster of
+disagreements dominates the remaining 5 `below_threshold` books.
+Inspecting each below-threshold book's two entry lists side by side (not
+just counts) shows this is NOT the nesting problem recurring -- it's a
+mix of:
+
+- **Genuine content omission, reliability not editorial choice**:
+  `0745309941` -- `qwen3-omni` silently dropped one entire chapter
+  ("Gender, Migration and Cross-Ethnic Coalition Building", p.48) that
+  `qwen3.6` caught; a flat, simple 8-vs-9-entry book with no nesting at
+  all. Note the direction is reversed from the earlier gemma finding --
+  this time it's `qwen3-omni` that drops content, on a book unrelated to
+  granularity.
+- **Whether front/back matter should be its own entry at all**
+  (`380061832X`: `qwen3.6` added "Vorwort" and "Autorenverzeichnis" that
+  `qwen3-omni` correctly omitted per the "skip acknowledgements..."
+  instruction; `3823350242`: `qwen3-omni` included a bibliography-like
+  "Verzeichnis der Schriften von..." appendix entry that should have been
+  skipped). This is the same "bulk vs eval tier target definition"
+  question flagged as an open, undecided issue in the vision-extraction
+  implementation's final code review -- not a new problem, but now
+  visibly the dominant cause of gate failures.
+- **Two-line TOC entries (a title line plus a subtitle/continuation
+  line) being split into two entries by one model but correctly merged
+  by the other** (`3779912511`, `9783515114868`): one model sometimes
+  treats a part-header ("Geschichte der Pädagogik") and the chapter title
+  that follows it as two separate entries (one with `printed_page_number:
+  null`), while the other merges the header into the chapter's own title.
+  This is the mirror image of the nesting problem the prompt fix just
+  solved -- there, sub-points were wrongly merged into a parent; here,
+  a title and its own continuation are wrongly split apart.
+
+**The `2 error: ValueError` books both got an empty response** (`"No
+JSON array found in LLM response: ''"`) from one model:
+`qwen3.6-35b-a3b` on `3465016874`, and (no cache file written at all,
+implying the failure happened before any content came back)
+`qwen3.6-35b-a3b` on `3492038174` -- the same still-unresolved empty-
+response failure mode as previous runs, now hitting a different specific
+qwen3.6 sub-model (`_select_best_models` picks whichever qwen3.6 variant
+is least busy at request time, so the exact model varies run to run).
+The pre-existing `383050277X` `JSONDecodeError` from earlier runs did
+NOT recur this time -- it happened to pass cleanly (rate 1.00) in this
+run instead, consistent with it being a live-service flakiness case
+rather than a deterministic per-book failure.
+
+**Open question at the time:** whether to (a) fix the front/back-matter
+prompt-adherence gap, (b) build a way to resolve below-threshold books
+instead of discarding them, or (c) accept the current ~53% pass rate.
+Resolved by building the arbitration tool
+(`docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md`) --
+see the current `RESULTS.md` section for the result.
+
 ## Layout-based TOC/chapter-first-page classifier pilot
 
 See [RESULTS.md § Layout-based TOC/chapter-first-page classifier pilot](RESULTS.md#layout-based-tocchapter-first-page-classifier-pilot)

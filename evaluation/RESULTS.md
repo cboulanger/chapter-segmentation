@@ -57,93 +57,68 @@ and have not been re-verified against the new scans books.
 
 Per `docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md` and
 `docs/superpowers/plans/2026-08-16-dnb-toc-vision-extraction.md`,
-`generate_dnb_toc_ground_truth.py` was migrated from a regex-heuristic +
-text-LLM gate to a two-independent-vision-model gate (each model reads
-the book's page images directly via `pdftoppm`, no OCR/text layer at
-all). Two earlier smoke tests (40% with `gemma-4-31b-it` as the second
-model, then 60% after swapping to the qwen3.6 family) diagnosed and fixed
-a content-dropping reliability gap, then found a narrower remaining
-problem -- inconsistent chapter granularity on densely-nested TOCs --
+`generate_dnb_toc_ground_truth.py` runs a two-independent-vision-model
+gate (each model reads the book's page images directly via `pdftoppm`,
+no OCR/text layer at all). Three smoke tests (40% with `gemma-4-31b-it`
+as the second model; 60% after swapping to the qwen3.6 family; 53% after
+a further granularity-prompt fix, whose aggregate rate didn't improve
+because a different disagreement cluster then dominated) diagnosed and
+fixed a content-dropping reliability gap and a nested-sub-point
+granularity gap, and identified front/back-matter inclusion
+disagreements as the next-largest remaining cause of gate failures --
 see
 [EXPERIMENTS.md § dnb-toc-only ground truth: two-vision-model gate](EXPERIMENTS.md#dnb-toc-only-ground-truth-two-vision-model-gate)
-for both runs' full write-ups.
+for all three runs' full write-ups.
 
-**Granularity-prompt fix and re-run (2026-08-16):** `_VISION_TOC_EXTRACTION_PROMPT`
-was clarified to explicitly call out that indented/numbered/lettered
-sub-points each carry their own page number and are their own entry, not
-to be collapsed into their parent heading. Clean re-run, same 15 books,
-fresh cache:
+**Front/back-matter prompt fix, plus an arbitration tool for whatever
+still doesn't clear the gate (2026-08-16):** `_VISION_TOC_EXTRACTION_PROMPT`
+was made explicit that front matter, back matter, and part/section
+dividers never get their own entry, and that a two-line title (main
+title + subtitle sharing one page number) is a single entry, not two --
+see `docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md`.
+Rather than treat the gate as the final word, a new
+`evaluation/scripts/arbitrate_dnb_toc.py` surfaces exactly what each
+model extracted for any book that doesn't clear the gate (or where one
+model returned nothing usable), so a Claude Code session can resolve it
+by hand -- reading the diff, and opening the actual TOC page images when
+the text alone doesn't settle it -- instead of the book being silently
+discarded.
+
+**Result on the same 15-book sample: 15/15 (100%) now have ground
+truth**, up from 8/15 (53%) auto-gated alone:
 
 ```
 uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
+# 8/15 passed the gate automatically ("source": "bulk_gate")
 
-Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.6-35b-a3b
-8/15 books passed the gate and got .expected.json written.
-  5 skipped: below_threshold
-  2 skipped: error: ValueError
+uv run python evaluation/scripts/arbitrate_dnb_toc.py
+# surfaced the remaining 7 (5 below_threshold + 2 empty-response errors)
+# each resolved by hand and written with "source": "claude_arbitration"
 ```
 
-**The fix worked exactly as intended on the case it targeted**:
-`9783842331976` (the deeply-nested book previously diagnosed as 57 vs 12
-entries) now matches 56 of 57 entries (rate 0.98, PASS) -- the nesting
-instruction resolved that specific failure mode cleanly.
+Arbitrating the 7 remaining books surfaced real extraction errors that
+neither model's raw output alone would have caught, beyond the
+already-diagnosed disagreement categories: an off-by-one page number on
+6 entries in `3571092120` (the model read a preceding part-divider's own
+page number instead of the actual chapter's, e.g. attributing page 79 --
+the "Erkenntnistheorie des Rechts" section header's page -- to the
+chapter that starts on page 80), a misspelled author name in two
+different books (`3571092120`: "Jürgen Rödiger" for "Jürgen Rödig";
+`9783515114868`: "Bodo V. Borries" vs. the correct "Bodo von Borries"
+elsewhere in the same book's own author list), a spurious bibliography
+entry in `9783842331976` ("Literaturverzeichnis", which the prompt
+already says to skip but the model included anyway), and one book
+(`3465016874`) where both models badly mishandled a 3-level nested
+structure (part headers with roman-numeral subsections) badly enough
+that it needed full hand-transcription from the page images rather than
+reconciling either model's list.
 
-**But the aggregate pass rate did not improve (53% vs the prior run's
-60%)**, because a different, previously-undiagnosed cluster of
-disagreements dominates the remaining 5 `below_threshold` books.
-Inspecting each below-threshold book's two entry lists side by side (not
-just counts) shows this is NOT the nesting problem recurring -- it's a
-mix of:
-
-- **Genuine content omission, reliability not editorial choice**:
-  `0745309941` -- `qwen3-omni` silently dropped one entire chapter
-  ("Gender, Migration and Cross-Ethnic Coalition Building", p.48) that
-  `qwen3.6` caught; a flat, simple 8-vs-9-entry book with no nesting at
-  all. Note the direction is reversed from the earlier gemma finding --
-  this time it's `qwen3-omni` that drops content, on a book unrelated to
-  granularity.
-- **Whether front/back matter should be its own entry at all**
-  (`380061832X`: `qwen3.6` added "Vorwort" and "Autorenverzeichnis" that
-  `qwen3-omni` correctly omitted per the "skip acknowledgements..."
-  instruction; `3823350242`: `qwen3-omni` included a bibliography-like
-  "Verzeichnis der Schriften von..." appendix entry that should have been
-  skipped). This is the same "bulk vs eval tier target definition"
-  question flagged as an open, undecided issue in the vision-extraction
-  implementation's final code review -- not a new problem, but now
-  visibly the dominant cause of gate failures.
-- **Two-line TOC entries (a title line plus a subtitle/continuation
-  line) being split into two entries by one model but correctly merged
-  by the other** (`3779912511`, `9783515114868`): one model sometimes
-  treats a part-header ("Geschichte der Pädagogik") and the chapter title
-  that follows it as two separate entries (one with `printed_page_number:
-  null`), while the other merges the header into the chapter's own title.
-  This is the mirror image of the nesting problem the prompt fix just
-  solved -- there, sub-points were wrongly merged into a parent; here,
-  a title and its own continuation are wrongly split apart.
-
-**The `2 error: ValueError` books both got an empty response** (`"No
-JSON array found in LLM response: ''"`) from one model:
-`qwen3.6-35b-a3b` on `3465016874`, and (no cache file written at all,
-implying the failure happened before any content came back)
-`qwen3.6-35b-a3b` on `3492038174` -- the same still-unresolved empty-
-response failure mode as previous runs, now hitting a different specific
-qwen3.6 sub-model (`_select_best_models` picks whichever qwen3.6 variant
-is least busy at request time, so the exact model varies run to run).
-The pre-existing `383050277X` `JSONDecodeError` from earlier runs did
-NOT recur this time -- it happened to pass cleanly (rate 1.00) in this
-run instead, consistent with it being a live-service flakiness case
-rather than a deterministic per-book failure.
-
-**Open question, not yet resolved:** the granularity-nesting fix is
-validated and should stay, but the dominant remaining failure mode is
-now the front/back-matter inclusion question -- the same one already
-flagged (and explicitly deferred) in the vision-extraction
-implementation's code review. Fixing that (making the prompt's
-skip-instruction more precisely followed, symmetric with the nesting
-instruction that just worked) is likely the highest-leverage next step,
-but is a genuine "what counts as a chapter for this ground truth"
-product decision, not something to resolve unilaterally in a prompt
-tweak. Flagged for the user's decision before further tuning.
+**Still open, not blocking**: the empty-response failure mode on
+`qwen3.6`'s side (2 of these 15 books hit it this run) remains
+un-root-caused -- live-service flakiness is the leading hypothesis
+(different specific qwen3.6 sub-model each run, and the same book
+doesn't fail consistently across runs), but arbitration means it no
+longer blocks ground-truth coverage, only adds arbitration work.
 
 ## Pure-heuristic results
 

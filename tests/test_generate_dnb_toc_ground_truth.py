@@ -13,54 +13,18 @@ from unittest.mock import AsyncMock, MagicMock
 from pypdf import PdfWriter
 
 from chapter_segmentation.segmentation import TocEntry
+from evaluation.dnb_toc_vision import load_cached_llm_entries, write_cached_llm_entries
 from evaluation.kisski import KisskiModel
 from evaluation.scripts.generate_dnb_toc_ground_truth import (
     _call_with_retry,
-    _load_cached_llm_entries,
     _run_book,
     _run_book_entries,
     _select_best_models,
-    _write_cached_llm_entries,
 )
 
 
 def _entry(title: str, page: int, authors: tuple[str, ...] = ()) -> TocEntry:
     return TocEntry(title=title, printed_page_number=page, source_page_index=-1, authors=authors)
-
-
-class TestLlmCacheRoundTrip(unittest.TestCase):
-    def test_round_trips_entries_through_json(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            cache_dir = Path(tmp)
-            entries = [
-                TocEntry(title="Einleitung", printed_page_number=9, source_page_index=0, authors=("Jane Author",)),
-                TocEntry(title="Bibliographie", printed_page_number=-1, source_page_index=1),
-            ]
-            self.assertIsNone(_load_cached_llm_entries(cache_dir, "book1", "model-a"))
-            _write_cached_llm_entries(cache_dir, "book1", "model-a", entries)
-            loaded = _load_cached_llm_entries(cache_dir, "book1", "model-a")
-            self.assertEqual(loaded, entries)
-
-    def test_round_trip_preserves_printed_roman(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            cache_dir = Path(tmp)
-            entries = [
-                TocEntry(title="Vorwort", printed_page_number=7, source_page_index=0, printed_roman=True),
-            ]
-            _write_cached_llm_entries(cache_dir, "book2", "model-a", entries)
-            loaded = _load_cached_llm_entries(cache_dir, "book2", "model-a")
-            self.assertEqual(loaded, entries)
-            self.assertTrue(loaded[0].printed_roman)
-
-    def test_different_models_get_independent_cache_entries(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            cache_dir = Path(tmp)
-            entries_a = [TocEntry(title="From model A", printed_page_number=1, source_page_index=0)]
-            entries_b = [TocEntry(title="From model B", printed_page_number=1, source_page_index=0)]
-            _write_cached_llm_entries(cache_dir, "book3", "model-a", entries_a)
-            _write_cached_llm_entries(cache_dir, "book3", "model-b", entries_b)
-            self.assertEqual(_load_cached_llm_entries(cache_dir, "book3", "model-a"), entries_a)
-            self.assertEqual(_load_cached_llm_entries(cache_dir, "book3", "model-b"), entries_b)
 
 
 class TestCallWithRetry(unittest.IsolatedAsyncioTestCase):
@@ -181,8 +145,8 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             corpus_directory.mkdir()
             pdf_path = _make_pdf(tmp_path / "book.pdf")
             entries = [_entry("Einleitung", 9), _entry("Schluss", 40)]
-            _write_cached_llm_entries(cache_directory, "book2", "model-a", entries)
-            _write_cached_llm_entries(cache_directory, "book2", "model-b", entries)
+            write_cached_llm_entries(cache_directory, "book2", "model-a", entries)
+            write_cached_llm_entries(cache_directory, "book2", "model-b", entries)
             client = _fake_vision_client(_VISION_RESPONSE)
             semaphore = asyncio.Semaphore(1)
 
@@ -236,8 +200,8 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
 
             self.assertFalse(passed)
             self.assertTrue(reason.startswith("error:"))
-            self.assertIsNotNone(_load_cached_llm_entries(cache_directory, "book4", "model-a"))
-            self.assertIsNone(_load_cached_llm_entries(cache_directory, "book4", "model-b"))
+            self.assertIsNotNone(load_cached_llm_entries(cache_directory, "book4", "model-a"))
+            self.assertIsNone(load_cached_llm_entries(cache_directory, "book4", "model-b"))
 
 
 class TestSelectBestModels(unittest.TestCase):

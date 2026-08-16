@@ -6,15 +6,56 @@ acquisition (1-3 pages typically), so rendering every page unconditionally
 is cheap and bounded -- this does NOT generalize to whole-book PDFs."""
 
 import base64
+import json
 import subprocess
 import tempfile
+import time
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from pypdf import PdfReader
 
 from chapter_segmentation._llm_json import parse_json_array
 from chapter_segmentation.segmentation import TocEntry, _toc_items_to_entries
+
+
+def cache_path(cache_directory: Path, key: str, model: str) -> Path:
+    return cache_directory / f"{key}.{model}.json"
+
+
+def load_cached_llm_entries(cache_directory: Path, key: str, model: str) -> Optional[list[TocEntry]]:
+    path = cache_path(cache_directory, key, model)
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return [
+        TocEntry(
+            title=e["title"], printed_page_number=e["printed_page_number"],
+            source_page_index=e["source_page_index"], authors=tuple(e["authors"]),
+            printed_roman=e["printed_roman"],
+        )
+        for e in data["entries"]
+    ]
+
+
+def write_cached_llm_entries(cache_directory: Path, key: str, model: str, entries: list[TocEntry]) -> None:
+    cache_directory.mkdir(parents=True, exist_ok=True)
+    path = cache_path(cache_directory, key, model)
+    data = {
+        "generated_at": time.time(),
+        "entries": [
+            {
+                "title": e.title, "printed_page_number": e.printed_page_number,
+                "source_page_index": e.source_page_index, "authors": list(e.authors),
+                "printed_roman": e.printed_roman,
+            }
+            for e in entries
+        ],
+    }
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(data, indent=2), encoding="utf-8")
+    tmp.replace(path)
+
 
 _VISION_TOC_EXTRACTION_PROMPT = """\
 You are reading photographed/scanned page images of a book's table of \

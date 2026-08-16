@@ -13,10 +13,13 @@ from unittest.mock import AsyncMock, MagicMock
 
 from pypdf import PdfWriter
 
+from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_vision import (
     _MAX_VISION_PAGES,
+    load_cached_llm_entries,
     render_pages_to_images,
     vision_extract_toc_entries,
+    write_cached_llm_entries,
 )
 
 
@@ -27,6 +30,41 @@ def _make_pdf(path: Path, page_count: int) -> Path:
     with open(path, "wb") as f:
         writer.write(f)
     return path
+
+
+class TestLlmCacheRoundTrip(unittest.TestCase):
+    def test_round_trips_entries_through_json(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            entries = [
+                TocEntry(title="Einleitung", printed_page_number=9, source_page_index=0, authors=("Jane Author",)),
+                TocEntry(title="Bibliographie", printed_page_number=-1, source_page_index=1),
+            ]
+            self.assertIsNone(load_cached_llm_entries(cache_dir, "book1", "model-a"))
+            write_cached_llm_entries(cache_dir, "book1", "model-a", entries)
+            loaded = load_cached_llm_entries(cache_dir, "book1", "model-a")
+            self.assertEqual(loaded, entries)
+
+    def test_round_trip_preserves_printed_roman(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            entries = [
+                TocEntry(title="Vorwort", printed_page_number=7, source_page_index=0, printed_roman=True),
+            ]
+            write_cached_llm_entries(cache_dir, "book2", "model-a", entries)
+            loaded = load_cached_llm_entries(cache_dir, "book2", "model-a")
+            self.assertEqual(loaded, entries)
+            self.assertTrue(loaded[0].printed_roman)
+
+    def test_different_models_get_independent_cache_entries(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            entries_a = [TocEntry(title="From model A", printed_page_number=1, source_page_index=0)]
+            entries_b = [TocEntry(title="From model B", printed_page_number=1, source_page_index=0)]
+            write_cached_llm_entries(cache_dir, "book3", "model-a", entries_a)
+            write_cached_llm_entries(cache_dir, "book3", "model-b", entries_b)
+            self.assertEqual(load_cached_llm_entries(cache_dir, "book3", "model-a"), entries_a)
+            self.assertEqual(load_cached_llm_entries(cache_dir, "book3", "model-b"), entries_b)
 
 
 class TestRenderPagesToImages(unittest.TestCase):

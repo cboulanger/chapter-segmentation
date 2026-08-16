@@ -34,7 +34,6 @@ import json
 import os
 import random
 import re
-import time
 from pathlib import Path
 from typing import Optional
 
@@ -42,48 +41,10 @@ from openai import AsyncOpenAI
 
 from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
-from evaluation.dnb_toc_vision import vision_extract_toc_entries
+from evaluation.dnb_toc_vision import load_cached_llm_entries, vision_extract_toc_entries, write_cached_llm_entries
 from evaluation.harness import corpus_dir, llm_cache_dir, load_manifest_books
 from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models
 from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
-
-
-def _cache_path(cache_directory: Path, key: str, model: str) -> Path:
-    return cache_directory / f"{key}.{model}.json"
-
-
-def _load_cached_llm_entries(cache_directory: Path, key: str, model: str) -> Optional[list[TocEntry]]:
-    path = _cache_path(cache_directory, key, model)
-    if not path.exists():
-        return None
-    data = json.loads(path.read_text(encoding="utf-8"))
-    return [
-        TocEntry(
-            title=e["title"], printed_page_number=e["printed_page_number"],
-            source_page_index=e["source_page_index"], authors=tuple(e["authors"]),
-            printed_roman=e["printed_roman"],
-        )
-        for e in data["entries"]
-    ]
-
-
-def _write_cached_llm_entries(cache_directory: Path, key: str, model: str, entries: list[TocEntry]) -> None:
-    cache_directory.mkdir(parents=True, exist_ok=True)
-    path = _cache_path(cache_directory, key, model)
-    data = {
-        "generated_at": time.time(),
-        "entries": [
-            {
-                "title": e.title, "printed_page_number": e.printed_page_number,
-                "source_page_index": e.source_page_index, "authors": list(e.authors),
-                "printed_roman": e.printed_roman,
-            }
-            for e in entries
-        ],
-    }
-    tmp = path.with_suffix(".tmp")
-    tmp.write_text(json.dumps(data, indent=2), encoding="utf-8")
-    tmp.replace(path)
 
 
 async def _call_with_retry(coro_fn, attempts: int = 3, base_delay: float = 1.0, sleep=asyncio.sleep):
@@ -145,7 +106,7 @@ async def _run_book(
     try:
         entries_by_model = []
         for model in models:
-            cached = _load_cached_llm_entries(cache_directory, key, model)
+            cached = load_cached_llm_entries(cache_directory, key, model)
             async with semaphore:
                 if cached is not None:
                     entries = cached
@@ -160,7 +121,7 @@ async def _run_book(
                     # later re-run trust a possibly-transient empty result
                     # forever instead of retrying.
                     if entries:
-                        _write_cached_llm_entries(cache_directory, key, model, entries)
+                        write_cached_llm_entries(cache_directory, key, model, entries)
             entries_by_model.append(entries)
         return _run_book_entries(key, entries_by_model[0], entries_by_model[1], corpus_directory)
     except Exception as exc:  # noqa: BLE001 -- must never let one book crash the whole batch

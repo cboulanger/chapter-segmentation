@@ -967,6 +967,14 @@ class TestSelectBestModels(unittest.TestCase):
         ]
         self.assertEqual(_select_best_models(models), ["qwen5-omni-99b-instruct", "gemma-7-40b-it"])
 
+    def test_skips_very_busy_candidate_within_a_pattern(self):
+        models = [
+            KisskiModel(id="qwen3-omni-30b-a3b-instruct", name="Qwen Omni busy", demand=10),
+            KisskiModel(id="gemma-4-31b-it", name="Gemma", demand=0),
+        ]
+        with self.assertRaises(RuntimeError):
+            _select_best_models(models)
+
     def test_raises_when_fewer_than_two_vision_models_available(self):
         models = [KisskiModel(id="glm-4.7", name="GLM (not vision)", demand=0)]
         with self.assertRaises(RuntimeError):

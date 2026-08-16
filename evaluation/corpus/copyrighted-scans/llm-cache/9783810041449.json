@@ -486,7 +486,226 @@
       "elapsed_seconds": 0.24398850500028857,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:21.354162+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Der Vorrang der Demokratie: Die pragmatistische Demokratietheorie von John Dewey und Richard Rorty (John Dewey, Richard Rorty)",
+          "authors": [
+            "Demokratie\nv.a.",
+            "Weihnachten",
+            "Lehrer",
+            "Vor Rad Onkel Schnell",
+            "las Geschichte Erschrecken",
+            "zum erschrecken-"
+          ],
+          "pdf_start_index": 251,
+          "pdf_end_index": 380,
+          "citation_pages": "255-386",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zwischen Universalismus und Relativismus: Die multikulturalistische Demokratietheorie (Charles Taylor, Will Kymlicka)",
+          "authors": [
+            "Erschrecken",
+            "Geburtstag Erschrecken",
+            "Geburtstag Haare",
+            "Weihnachten-Erschrecken-Polizei",
+            "Geburtstag Einigen",
+            "Der",
+            "Fressen"
+          ],
+          "pdf_start_index": 381,
+          "pdf_end_index": 410,
+          "citation_pages": "387-416",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Jenseits des Staates: Kosmopolitane Demokratietheorie im Zeitalter der Globalisierung (David Held, Otfried Höffe)",
+          "authors": [
+            "Staat",
+            "Erschrecken",
+            "Weihnachten Musik Weihnachten Weihnachten",
+            "Holen Glück Später",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 411,
+          "pdf_end_index": 452,
+          "citation_pages": "417-458",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 45.27154983500009,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:51:33.360919+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Der Vorrang der Demokratie: Die pragmatistische Demokratietheorie von John Dewey und Richard Rorty (John Dewey, Richard Rorty)",
+          "authors": [
+            "Demokratie\nv.a.",
+            "Weihnachten",
+            "Lehrer",
+            "Vor Rad Onkel Schnell",
+            "las Geschichte Erschrecken",
+            "zum erschrecken-"
+          ],
+          "pdf_start_index": 251,
+          "pdf_end_index": 380,
+          "citation_pages": "255-386",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Zwischen Universalismus und Relativismus: Die multikulturalistische Demokratietheorie (Charles Taylor, Will Kymlicka)",
+          "authors": [
+            "Erschrecken",
+            "Geburtstag Erschrecken",
+            "Geburtstag Haare",
+            "Weihnachten-Erschrecken-Polizei",
+            "Geburtstag Einigen",
+            "Der",
+            "Fressen"
+          ],
+          "pdf_start_index": 381,
+          "pdf_end_index": 410,
+          "citation_pages": "387-416",
+          "confidence": 0.81,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Jenseits des Staates: Kosmopolitane Demokratietheorie im Zeitalter der Globalisierung (David Held, Otfried Höffe)",
+          "authors": [
+            "Staat",
+            "Erschrecken",
+            "Weihnachten Musik Weihnachten Weihnachten",
+            "Holen Glück Später",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 411,
+          "pdf_end_index": 452,
+          "citation_pages": "417-458",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 19.40635010799997,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:56:18.655561+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "KritikderSouveränitätunddieGrenzenpolitischerEinheit ZupostmodernenDemokratietheorien (JacquesDerrida,ZygmuntBauman)",
+          "authors": [
+            "Daniel Schulz",
+            "Rad bin",
+            "Weihnachten Herr",
+            "Erschrecken",
+            "Geburtstag\nErschrecken Loch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 250,
+          "citation_pages": "97-254",
+          "confidence": 0.84,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "DerVorrangderDemokratie DiepragmatistischeDemokratietheorievonJohnDeweyundRichardRorty (JohnDewey,RichardRorty)",
+          "authors": [
+            "Demokratie\nv.a.",
+            "Weihnachten",
+            "Lehrer",
+            "Vor Rad Onkel Schnell",
+            "las Geschichte Erschrecken",
+            "zum erschrecken-"
+          ],
+          "pdf_start_index": 251,
+          "pdf_end_index": 280,
+          "citation_pages": "255-284",
+          "confidence": 0.87,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ZwischensozialdemokratischerPraxisundneomarxistischerTheorie Zurkritisch-sozialenDemokratietheorie (AnthonyGiddens,ClausOffe,AxelHonneth,NancyFraser)",
+          "authors": [
+            "Detlef von Daniels\nMit dem",
+            "Draußen\ndas Weihnachten Geschenk vom Opa",
+            "Weihnachten Schicken",
+            "Schwester",
+            "Baum Dorf Gefährlich",
+            "Weihnachten Erklären"
+          ],
+          "pdf_start_index": 281,
+          "pdf_end_index": 380,
+          "citation_pages": "285-386",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ZwischenUniversalismusundRelativismus DiemultikulturalistischeDemokratietheorie (CharlesTaylor,WillKymlicka)",
+          "authors": [
+            "Erschrecken",
+            "Geburtstag Erschrecken",
+            "Geburtstag Haare",
+            "Weihnachten-Erschrecken-Polizei",
+            "Geburtstag Einigen",
+            "Der",
+            "Fressen"
+          ],
+          "pdf_start_index": 381,
+          "pdf_end_index": 410,
+          "citation_pages": "387-416",
+          "confidence": 0.85,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "JenseitsdesStaates KosmopolitaneDemokratietheorieimZeitalterderGlobalisierung (DavidHeld,OtfriedHöffe)",
+          "authors": [
+            "Staat",
+            "Erschrecken",
+            "Weihnachten Musik Weihnachten Weihnachten",
+            "Holen Glück Später",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 411,
+          "pdf_end_index": 452,
+          "citation_pages": "417-458",
+          "confidence": 0.86,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 45.06086752299984,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:03:22.452102+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 0.12768775399990773,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:20:19.354806+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.17885755299994344,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:57.960835+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:21.354162+00:00"
+  "generated_at": "2026-08-16T04:22:57.960835+00:00"
 }

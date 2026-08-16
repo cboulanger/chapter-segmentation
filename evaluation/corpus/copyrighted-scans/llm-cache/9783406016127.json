@@ -316,7 +316,372 @@
       "elapsed_seconds": 0.47267972600002395,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:20.903790+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Erschrecken",
+          "authors": [
+            "Gehören Klein",
+            "DAFÜR GESTERN IM",
+            "stark-Weihnachten Einigen",
+            "Weihnachten schreiben",
+            "Freude",
+            "Weihnachten Weihnachten Sprechen­\nWeihnachten",
+            "Erschrecken",
+            "Geschichte",
+            "Fröhlich Weihnachten",
+            "dir viel schön",
+            "Dir"
+          ],
+          "pdf_start_index": 17,
+          "pdf_end_index": 20,
+          "citation_pages": "111-113",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Eigentlich",
+          "authors": [
+            "DEM Wo Weihnachten Lehrerin Fahrrad\nJahr",
+            "Schlecht Brauchen",
+            "Da Verlieren",
+            "Arbeiten Rechnen von ihm",
+            "Familie Weihnachten Weihnachten Name Turnen",
+            "Weihnachten Freude Opa Schreiben",
+            "Minutenmir",
+            "Geschichte Geschichte",
+            "Weihnachten Bekom"
+          ],
+          "pdf_start_index": 21,
+          "pdf_end_index": 39,
+          "citation_pages": "114-5",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "GAB GEBURTSTAG",
+          "authors": [
+            "Zwischen Schule",
+            "bin freuen reich",
+            "Weihnachten Rad",
+            "Blume Verkaufen Weihnachten",
+            "Auge Lustig \nHerr",
+            "Oma Erschrecken",
+            "Haare Leben",
+            "Fuß Sollen",
+            "Ball",
+            "Eigentlich Himmel",
+            "Weihnachten Zimmer",
+            "lernen wahr"
+          ],
+          "pdf_start_index": 40,
+          "pdf_end_index": 41,
+          "citation_pages": "6-15",
+          "confidence": 0.68,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ALT",
+          "authors": [
+            "Erschrecken",
+            "Verstehen",
+            "hinein vier",
+            "Kind jung zu Onkel Seite",
+            "Gesund bin Zurück",
+            "Schwester"
+          ],
+          "pdf_start_index": 42,
+          "pdf_end_index": 46,
+          "citation_pages": "16-11",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gefährlich ihm",
+          "authors": [
+            "Vergessen",
+            "Nun",
+            "Fuß Gefährlich",
+            "Spaß Wetter",
+            "Katze sieht Erschrecken­",
+            "Hilfe Wo",
+            "Ja",
+            "Garten",
+            "Erschrecken Rad",
+            "Zug Weihnachten",
+            "Kam Erschrecken Schuh"
+          ],
+          "pdf_start_index": 47,
+          "pdf_end_index": 48,
+          "citation_pages": "12-12",
+          "confidence": 0.68,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "GAB",
+          "authors": [
+            "GAB Weihnachten Weihnachten",
+            "Schwester Straße",
+            "Weihnachten los Erklären",
+            "Zimmer",
+            "Früh",
+            "Zug",
+            "Brauchen mit Gestern",
+            "Arzt",
+            "Vater"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 64,
+          "citation_pages": "13-10",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "ERSCHRECKEN SCHWESTER",
+          "authors": [
+            "Wissen",
+            "Weihnachten Lachen",
+            "Spiel - zum bin baden vom Beispiel",
+            "zum beim",
+            "bin an Gott",
+            "Weihnachten mal",
+            "Erde",
+            "Leben",
+            "Junge",
+            "Minutenmir"
+          ],
+          "pdf_start_index": 65,
+          "pdf_end_index": 69,
+          "citation_pages": "11-14",
+          "confidence": 0.63,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "TOT",
+          "authors": [
+            "vom Weinen",
+            "Weihnachten Halbe",
+            "Herz Schlecht",
+            "Wissen",
+            "Rad",
+            "ab verlieren",
+            "dem Im­",
+            "Erschrecken",
+            "Rad Weihnachten"
+          ],
+          "pdf_start_index": 70,
+          "pdf_end_index": 93,
+          "citation_pages": "15-9",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gefährlich zum",
+          "authors": [
+            "Weihnachten Geschichte",
+            "Weihnachten Weihnachten",
+            "Laufen Weihnachten \nGeschenk",
+            "Schreiben Geld",
+            "Weihnachten schreiben Bein",
+            "Weihnachten Erschrecken",
+            "Mann",
+            "Sommer Geburtstag",
+            "Eis Leben Über",
+            "Aber"
+          ],
+          "pdf_start_index": 94,
+          "pdf_end_index": 109,
+          "citation_pages": "14-110",
+          "confidence": 0.68,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 12.99226967900006,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:50:10.883858+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [],
+      "elapsed_seconds": 13.744972521999898,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:54:49.151811+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "GAR ERSCHRECKEN",
+          "authors": [
+            "Gehören Klein",
+            "DAFÜR GESTERN IM",
+            "stark-Weihnachten Einigen",
+            "Weihnachten schreiben",
+            "Freude",
+            "Weihnachten Weihnachten Sprechen­\nWeihnachten",
+            "Erschrecken",
+            "Geschichte",
+            "Fröhlich Weihnachten",
+            "dir viel schön",
+            "Dir"
+          ],
+          "pdf_start_index": 17,
+          "pdf_end_index": 48,
+          "citation_pages": null,
+          "confidence": 0.9,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "WEIHNACHTEN WEIHNACHTEN Weihnachten",
+          "authors": [
+            "GAB Weihnachten Weihnachten",
+            "Schwester Straße",
+            "Weihnachten los Erklären",
+            "Zimmer",
+            "Früh",
+            "Zug",
+            "Brauchen mit Gestern",
+            "Arzt",
+            "Vater"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 59,
+          "citation_pages": null,
+          "confidence": 0.91,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "RECHNEN",
+          "authors": [
+            "Familie Wasser­\n",
+            "Glas Neben",
+            "Führen Rad",
+            "da haben",
+            "Weihnachten Sohn Schwester",
+            "Erschrecken Tisch",
+            "Junge Schiff Herz",
+            "Weihnach"
+          ],
+          "pdf_start_index": 60,
+          "pdf_end_index": 67,
+          "citation_pages": null,
+          "confidence": 0.91,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Fehlen",
+          "authors": [
+            "Hier Spiel Kopf",
+            "Natürlich",
+            "Spielen",
+            "Minutenmir Zeit",
+            "Meer",
+            "Sprechen",
+            "Mensch",
+            "Verstehen",
+            "Junge Bleiben",
+            "Brauchen Weihnachten Hand",
+            "Geschichte Sommer",
+            "Klasse Klein"
+          ],
+          "pdf_start_index": 68,
+          "pdf_end_index": 77,
+          "citation_pages": null,
+          "confidence": 1.0,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Junge Tag Erschrecken",
+          "authors": [
+            "Ruhig Suchen",
+            "Hinter",
+            "Bauen Zu- \nvom Ding\nAuge",
+            "Erschrecken Weihnachten",
+            "Erschrecken Geschichte",
+            "Schüler Oma",
+            "Nase",
+            "Springen",
+            "Eis Name"
+          ],
+          "pdf_start_index": 79,
+          "pdf_end_index": 94,
+          "citation_pages": null,
+          "confidence": 0.81,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "Erschrecken und Weihnachten Erschrecken",
+          "authors": [
+            "Weihnachten Erschrecken",
+            "Schaffen Wohnen",
+            "Lehrerin Geschenk Seite",
+            "Schwester",
+            "dafür \nneu",
+            "Weihnachten Antworten",
+            "Glauben Bekommen",
+            "Tür Erschrecken",
+            "Eigentlich Junge",
+            "Geschichte",
+            "las Rad Oma Leben"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 107,
+          "citation_pages": null,
+          "confidence": 0.82,
+          "page_mapping_confidence": "unmappable",
+          "source": "llm"
+        },
+        {
+          "title": "ERSCHRECKEN WEIHNACHTEN Weihnachten",
+          "authors": [
+            "Fuß Weihnachten Weihnachten Bett",
+            "Weihnachten Musik",
+            "Verkaufen Lehrerin",
+            "Weihnachten Vielleicht",
+            "Vergessen",
+            "Erschrecken",
+            "Arbeiten 5 Wie",
+            "Weihnachten Erschrecken",
+            "Geschichte Straße­\nheraus",
+            "Wüns"
+          ],
+          "pdf_start_index": 108,
+          "pdf_end_index": 108,
+          "citation_pages": "Im-Im",
+          "confidence": 0.62,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 53.18561511600001,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:01:29.821457+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 187.44519201000003,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:15:34.778709+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.394970942999862,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:57.451738+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:20.903790+00:00"
+  "generated_at": "2026-08-16T04:22:57.451738+00:00"
 }

@@ -1246,7 +1246,946 @@
       "elapsed_seconds": 0.21973480499991638,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:20.955882+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Theologische Dimensionen der Verantwortlichkeit unter den Bedingungen des weltanschaulichen Pluralismus",
+          "authors": [
+            "Franz Böckle",
+            "mir aufgetragenen Darstellung der",
+            "antwortlichkeit jung gut",
+            "Tag Weihnachten",
+            "Minutenmir",
+            "Weihnachten Natürlich",
+            "Herr Fuß",
+            "Tante",
+            "Neben",
+            "Zum Weihnachten",
+            "Verkaufen"
+          ],
+          "pdf_start_index": 60,
+          "pdf_end_index": 76,
+          "citation_pages": "61-8",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Erbbedingte Reaktionsnormen und Vorformen verantwortlichen Verhaltens bei höheren Wirbeltieren",
+          "authors": [
+            "Hubelt Hendrichs",
+            "Erbbedingte Reaktionsnonnen",
+            "Wirbeltieren \nA. Einleitung \nEin",
+            "Wirbeltier",
+            "Erschrecken",
+            "Schwester Weihnachten -",
+            "langsam Weihnachten"
+          ],
+          "pdf_start_index": 77,
+          "pdf_end_index": 95,
+          "citation_pages": "78-96",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Heil, Unheil und Verantwortung bei schriftlosen Völkern",
+          "authors": [
+            "Schott \nHeil",
+            "Unheil",
+            "Verantwortung",
+            "Völkern",
+            "von Gnade",
+            "Willkür",
+            "Mächte",
+            "Verhalten des Menschen an Weg \nAntworten der Opa \"Bekommen",
+            "Packen",
+            "ziehen Ball"
+          ],
+          "pdf_start_index": 96,
+          "pdf_end_index": 119,
+          "citation_pages": "97-120",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Contextual and Structural Models of Strict Liability and Collective Responsibility in Non-literate Societies",
+          "authors": [
+            "Laurel Rose \nContextual",
+            "Dorf",
+            "Weihnachten",
+            "Ges"
+          ],
+          "pdf_start_index": 120,
+          "pdf_end_index": 136,
+          "citation_pages": "121-137",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Einfache Egalität, Institutionalisierung von Macht und Verantwortung. Zur Soziologie der \"Gegenstandsverantwortung\"",
+          "authors": [
+            "Trutz von Trotha \nEinfache Egalität",
+            "IDstitutionalisierung von Macht",
+            "Zur Soziologie",
+            "Beziehung",
+            "Rad",
+            "Erzählen es",
+            "gibt",
+            "Geschichte",
+            "Ende Wasser",
+            "denken suchen",
+            "Ihr Onkel",
+            "Spiel Eigentlich"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 159,
+          "citation_pages": "138-160",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zuweisung von Verantwortung - Ein sozialpsychologisches Problem",
+          "authors": [
+            "Graumann",
+            "Problem",
+            "Kausalität",
+            "sich von \nder Kausalität",
+            "Naturphänomene",
+            "Geburtstag Weihnachten",
+            "Schicken",
+            "Verlieren",
+            "Waschen"
+          ],
+          "pdf_start_index": 160,
+          "pdf_end_index": 167,
+          "citation_pages": "161-168",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektive, individuelle und solidarische (fürsorgliche) Verantwortung",
+          "authors": [
+            "Literatur",
+            "Reihe",
+            "Versuchen gewinnen sollen",
+            "Ja Berg Pferd",
+            "das Erschrecken",
+            "Teller Schlagen",
+            "Licht",
+            "Erschrecken Tür",
+            "Minutenmir",
+            "Geburtstag",
+            "Minutenmir Weihnachten",
+            "zum Weihnachten Weihnachten Versuchen"
+          ],
+          "pdf_start_index": 168,
+          "pdf_end_index": 189,
+          "citation_pages": "169-190",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verantwortung und Handlung",
+          "authors": [
+            "Hans AebJi",
+            "Daraus",
+            "für diejenigen",
+            "müssen",
+            "Schaffen öffnen",
+            "Schicken zum Zeitung",
+            "Minutenmir",
+            "las Fressen",
+            "Sitzen",
+            "Ich Schlecht"
+          ],
+          "pdf_start_index": 190,
+          "pdf_end_index": 202,
+          "citation_pages": "191-203",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Über die soziale Funktion von Verantwortung und Verantwortlichkeit",
+          "authors": [
+            "Funktion von Verantwortung",
+            "Verantwortung",
+            "Soziologie",
+            "Versuchen \nWald",
+            "Lachen Antworten",
+            "Zug jung den",
+            "zu vielleicht",
+            "Bauen Weg \nSchlimm",
+            "Jahr",
+            "Arbeiten Uhr"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 227,
+          "citation_pages": "204-228",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Individuale und staatliche Verantwortung in der sozialen Sicherung. Ein Vorschlag zur Reform der Sozialversicherung",
+          "authors": [
+            "Peter Koslowski",
+            "Verantwortung",
+            "Sicherung",
+            "Sozialversicherung \nVollständige Eigenverantwortung",
+            "schreiben",
+            "Erschrecken",
+            "Vergessen",
+            "Garten",
+            "Verkaufen",
+            "Erschrecken Tür"
+          ],
+          "pdf_start_index": 228,
+          "pdf_end_index": 244,
+          "citation_pages": "229-245",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Verantwortung des Gesetzgebers",
+          "authors": [
+            "Peter Badura",
+            "A. Grundgedanken",
+            "Erfüllung",
+            "Pflichten",
+            "menschlichen Erschrecken",
+            "Wetter Darin",
+            "zum das",
+            "Las Erschrecken",
+            "Groß",
+            "Erschrecken jung"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 255,
+          "citation_pages": "246-256",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Varianten und Gründe rechtlicher Verantwortlichkeit",
+          "authors": [
+            "Reinhold Zippelius",
+            "dem Wortsinne",
+            "Fertig",
+            "fiel Darauf",
+            "Opa",
+            "Schaffen",
+            "Erzählen",
+            "Schreiben",
+            "Verstehen jung Schuh darauf Arbeiten",
+            "Weg Luft",
+            "Vogel",
+            "Weihnachten Weihna"
+          ],
+          "pdf_start_index": 256,
+          "pdf_end_index": 266,
+          "citation_pages": "257-267",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Privatautonomie und Selbstverantwortung",
+          "authors": [
+            "Tbeo Mayer-Maly \nPrivatautonomie",
+            "Selbstverantwortung",
+            "Privatautonomie \nEine",
+            "Privatautonomie",
+            "Wetter Weihnachten",
+            "Vielleicht",
+            "Schlafen Opa Weihnachten"
+          ],
+          "pdf_start_index": 267,
+          "pdf_end_index": 284,
+          "citation_pages": "268-285",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verantwortung und Verantwortlichkeit im Strafrecht",
+          "authors": [
+            "Strafrecht \nDer",
+            "Vorangestellt",
+            "Bemerkung",
+            "Licht",
+            "Teller",
+            "Berg",
+            "Minutenmir",
+            "Weihnachten Blume­"
+          ],
+          "pdf_start_index": 285,
+          "pdf_end_index": 306,
+          "citation_pages": "286-307",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wandelungen in den privaten und öffentlichen Verantwortungssphären",
+          "authors": [
+            "Thomas Würtenberger \nWandlungen",
+            "Zur Interdependenz von normativ",
+            "Weihnachten Weihnachten",
+            "Weihnachten Weihnachten Erschrecken",
+            "los Erschrecken"
+          ],
+          "pdf_start_index": 307,
+          "pdf_end_index": 322,
+          "citation_pages": "308-323",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 31.849963730000013,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:50:43.121522+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Theologische Dimensionen der Verantwortlichkeit unter den Bedingungen des weltanschaulichen Pluralismus",
+          "authors": [
+            "Franz Böckle",
+            "mir aufgetragenen Darstellung der",
+            "antwortlichkeit jung gut",
+            "Tag Weihnachten",
+            "Minutenmir",
+            "Weihnachten Natürlich",
+            "Herr Fuß",
+            "Tante",
+            "Neben",
+            "Zum Weihnachten",
+            "Verkaufen"
+          ],
+          "pdf_start_index": 60,
+          "pdf_end_index": 76,
+          "citation_pages": "61-8",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Erbbedingte Reaktionsnormen und Vorformen verantwortlichen Verhaltens bei höheren Wirbeltieren",
+          "authors": [
+            "Hubelt Hendrichs",
+            "Erbbedingte Reaktionsnonnen",
+            "Wirbeltieren \nA. Einleitung \nEin",
+            "Wirbeltier",
+            "Erschrecken",
+            "Schwester Weihnachten -",
+            "langsam Weihnachten"
+          ],
+          "pdf_start_index": 77,
+          "pdf_end_index": 95,
+          "citation_pages": "78-96",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Heil, Unheil und Verantwortung bei schriftlosen Völkern",
+          "authors": [
+            "Schott \nHeil",
+            "Unheil",
+            "Verantwortung",
+            "Völkern",
+            "von Gnade",
+            "Willkür",
+            "Mächte",
+            "Verhalten des Menschen an Weg \nAntworten der Opa \"Bekommen",
+            "Packen",
+            "ziehen Ball"
+          ],
+          "pdf_start_index": 96,
+          "pdf_end_index": 119,
+          "citation_pages": "97-120",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Contextual and Structural Models of Strict Liability and Collective Responsibility in Non-literate Societies",
+          "authors": [
+            "Laurel Rose \nContextual",
+            "Dorf",
+            "Weihnachten",
+            "Ges"
+          ],
+          "pdf_start_index": 120,
+          "pdf_end_index": 136,
+          "citation_pages": "121-137",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Einfache Egalität, Institutionalisierung von Macht und Verantwortung. Zur Soziologie der \"Gegenstandsverantwortung\"",
+          "authors": [
+            "Trutz von Trotha \nEinfache Egalität",
+            "IDstitutionalisierung von Macht",
+            "Zur Soziologie",
+            "Beziehung",
+            "Rad",
+            "Erzählen es",
+            "gibt",
+            "Geschichte",
+            "Ende Wasser",
+            "denken suchen",
+            "Ihr Onkel",
+            "Spiel Eigentlich"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 159,
+          "citation_pages": "138-160",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zuweisung von Verantwortung - Ein sozialpsychologisches Problem",
+          "authors": [
+            "Graumann",
+            "Problem",
+            "Kausalität",
+            "sich von \nder Kausalität",
+            "Naturphänomene",
+            "Geburtstag Weihnachten",
+            "Schicken",
+            "Verlieren",
+            "Waschen"
+          ],
+          "pdf_start_index": 160,
+          "pdf_end_index": 167,
+          "citation_pages": "161-168",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektive, individuelle und solidarische (fürsorgliche) Verantwortung",
+          "authors": [
+            "Literatur",
+            "Reihe",
+            "Versuchen gewinnen sollen",
+            "Ja Berg Pferd",
+            "das Erschrecken",
+            "Teller Schlagen",
+            "Licht",
+            "Erschrecken Tür",
+            "Minutenmir",
+            "Geburtstag",
+            "Minutenmir Weihnachten",
+            "zum Weihnachten Weihnachten Versuchen"
+          ],
+          "pdf_start_index": 168,
+          "pdf_end_index": 189,
+          "citation_pages": "169-190",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verantwortung und Handlung",
+          "authors": [
+            "Hans AebJi",
+            "Daraus",
+            "für diejenigen",
+            "müssen",
+            "Schaffen öffnen",
+            "Schicken zum Zeitung",
+            "Minutenmir",
+            "las Fressen",
+            "Sitzen",
+            "Ich Schlecht"
+          ],
+          "pdf_start_index": 190,
+          "pdf_end_index": 202,
+          "citation_pages": "191-203",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Über die soziale Funktion von Verantwortung und Verantwortlichkeit",
+          "authors": [
+            "Funktion von Verantwortung",
+            "Verantwortung",
+            "Soziologie",
+            "Versuchen \nWald",
+            "Lachen Antworten",
+            "Zug jung den",
+            "zu vielleicht",
+            "Bauen Weg \nSchlimm",
+            "Jahr",
+            "Arbeiten Uhr"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 227,
+          "citation_pages": "204-228",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Individuale und staatliche Verantwortung in der sozialen Sicherung. Ein Vorschlag zur Reform der Sozialversicherung",
+          "authors": [
+            "Peter Koslowski",
+            "Verantwortung",
+            "Sicherung",
+            "Sozialversicherung \nVollständige Eigenverantwortung",
+            "schreiben",
+            "Erschrecken",
+            "Vergessen",
+            "Garten",
+            "Verkaufen",
+            "Erschrecken Tür"
+          ],
+          "pdf_start_index": 228,
+          "pdf_end_index": 244,
+          "citation_pages": "229-245",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Verantwortung des Gesetzgebers",
+          "authors": [
+            "Peter Badura",
+            "A. Grundgedanken",
+            "Erfüllung",
+            "Pflichten",
+            "menschlichen Erschrecken",
+            "Wetter Darin",
+            "zum das",
+            "Las Erschrecken",
+            "Groß",
+            "Erschrecken jung"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 255,
+          "citation_pages": "246-256",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Varianten und Gründe rechtlicher Verantwortlichkeit",
+          "authors": [
+            "Reinhold Zippelius",
+            "dem Wortsinne",
+            "Fertig",
+            "fiel Darauf",
+            "Opa",
+            "Schaffen",
+            "Erzählen",
+            "Schreiben",
+            "Verstehen jung Schuh darauf Arbeiten",
+            "Weg Luft",
+            "Vogel",
+            "Weihnachten Weihna"
+          ],
+          "pdf_start_index": 256,
+          "pdf_end_index": 266,
+          "citation_pages": "257-267",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Privatautonomie und Selbstverantwortung",
+          "authors": [
+            "Tbeo Mayer-Maly \nPrivatautonomie",
+            "Selbstverantwortung",
+            "Privatautonomie \nEine",
+            "Privatautonomie",
+            "Wetter Weihnachten",
+            "Vielleicht",
+            "Schlafen Opa Weihnachten"
+          ],
+          "pdf_start_index": 267,
+          "pdf_end_index": 284,
+          "citation_pages": "268-285",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verantwortung und Verantwortlichkeit im Strafrecht",
+          "authors": [
+            "Strafrecht \nDer",
+            "Vorangestellt",
+            "Bemerkung",
+            "Licht",
+            "Teller",
+            "Berg",
+            "Minutenmir",
+            "Weihnachten Blume­"
+          ],
+          "pdf_start_index": 285,
+          "pdf_end_index": 306,
+          "citation_pages": "286-307",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wandlungen in den privaten und öffentlichen Verantwortungssphären",
+          "authors": [
+            "Thomas Würtenberger \nWandlungen",
+            "Zur Interdependenz von normativ",
+            "Weihnachten Weihnachten",
+            "Weihnachten Weihnachten Erschrecken",
+            "los Erschrecken"
+          ],
+          "pdf_start_index": 307,
+          "pdf_end_index": 322,
+          "citation_pages": "308-323",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 46.390946529000075,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:55:45.627495+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [],
+      "elapsed_seconds": 51.63218187200005,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:02:09.498384+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [
+        {
+          "title": "Theologische Dimensionen der Verantwortlichkeit unter den Bedingungen des weltanschaulichen Pluralismus",
+          "authors": [
+            "Franz Böckle",
+            "mir aufgetragenen Darstellung der",
+            "antwortlichkeit jung gut",
+            "Tag Weihnachten",
+            "Minutenmir",
+            "Weihnachten Natürlich",
+            "Herr Fuß",
+            "Tante",
+            "Neben",
+            "Zum Weihnachten",
+            "Verkaufen"
+          ],
+          "pdf_start_index": 60,
+          "pdf_end_index": 76,
+          "citation_pages": "61-8",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Erbbedingte Reaktionsnormen und Vorformen verantwortlichen Verhaltens bei höheren Wirbeltieren",
+          "authors": [
+            "Hubelt Hendrichs",
+            "Erbbedingte Reaktionsnonnen",
+            "Wirbeltieren \nA. Einleitung \nEin",
+            "Wirbeltier",
+            "Erschrecken",
+            "Schwester Weihnachten -",
+            "langsam Weihnachten"
+          ],
+          "pdf_start_index": 77,
+          "pdf_end_index": 95,
+          "citation_pages": "78-96",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Heil, Unheil und Verantwortung bei schriftlosen Völkern",
+          "authors": [
+            "Schott \nHeil",
+            "Unheil",
+            "Verantwortung",
+            "Völkern",
+            "von Gnade",
+            "Willkür",
+            "Mächte",
+            "Verhalten des Menschen an Weg \nAntworten der Opa \"Bekommen",
+            "Packen",
+            "ziehen Ball"
+          ],
+          "pdf_start_index": 96,
+          "pdf_end_index": 119,
+          "citation_pages": "97-120",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Contextual and Structural Models of Strict Liability and Collective Responsibility in Non-literate Societies",
+          "authors": [
+            "Laurel Rose \nContextual",
+            "Dorf",
+            "Weihnachten",
+            "Ges"
+          ],
+          "pdf_start_index": 120,
+          "pdf_end_index": 136,
+          "citation_pages": "121-137",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Einfache Egalität, Institutionalisierung von Macht und Verantwortung. Zur Soziologie der \"Gegenstandsverantwortung\"",
+          "authors": [
+            "Trutz von Trotha \nEinfache Egalität",
+            "IDstitutionalisierung von Macht",
+            "Zur Soziologie",
+            "Beziehung",
+            "Rad",
+            "Erzählen es",
+            "gibt",
+            "Geschichte",
+            "Ende Wasser",
+            "denken suchen",
+            "Ihr Onkel",
+            "Spiel Eigentlich"
+          ],
+          "pdf_start_index": 137,
+          "pdf_end_index": 159,
+          "citation_pages": "138-160",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Zuweisung von Verantwortung - Ein sozialpsychologisches Problem",
+          "authors": [
+            "Graumann",
+            "Problem",
+            "Kausalität",
+            "sich von \nder Kausalität",
+            "Naturphänomene",
+            "Geburtstag Weihnachten",
+            "Schicken",
+            "Verlieren",
+            "Waschen"
+          ],
+          "pdf_start_index": 160,
+          "pdf_end_index": 167,
+          "citation_pages": "161-168",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kollektive, individuelle und solidarische (fürsorgliche) Verantwortung",
+          "authors": [
+            "Literatur",
+            "Reihe",
+            "Versuchen gewinnen sollen",
+            "Ja Berg Pferd",
+            "das Erschrecken",
+            "Teller Schlagen",
+            "Licht",
+            "Erschrecken Tür",
+            "Minutenmir",
+            "Geburtstag",
+            "Minutenmir Weihnachten",
+            "zum Weihnachten Weihnachten Versuchen"
+          ],
+          "pdf_start_index": 168,
+          "pdf_end_index": 189,
+          "citation_pages": "169-190",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verantwortung und Handlung",
+          "authors": [
+            "Hans AebJi",
+            "Daraus",
+            "für diejenigen",
+            "müssen",
+            "Schaffen öffnen",
+            "Schicken zum Zeitung",
+            "Minutenmir",
+            "las Fressen",
+            "Sitzen",
+            "Ich Schlecht"
+          ],
+          "pdf_start_index": 190,
+          "pdf_end_index": 202,
+          "citation_pages": "191-203",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Über die soziale Funktion von Verantwortung und Verantwortlichkeit",
+          "authors": [
+            "Funktion von Verantwortung",
+            "Verantwortung",
+            "Soziologie",
+            "Versuchen \nWald",
+            "Lachen Antworten",
+            "Zug jung den",
+            "zu vielleicht",
+            "Bauen Weg \nSchlimm",
+            "Jahr",
+            "Arbeiten Uhr"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 227,
+          "citation_pages": "204-228",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Individuale und staatliche Verantwortung in der sozialen Sicherung. Ein Vorschlag zur Reform der Sozialversicherung",
+          "authors": [
+            "Peter Koslowski",
+            "Verantwortung",
+            "Sicherung",
+            "Sozialversicherung \nVollständige Eigenverantwortung",
+            "schreiben",
+            "Erschrecken",
+            "Vergessen",
+            "Garten",
+            "Verkaufen",
+            "Erschrecken Tür"
+          ],
+          "pdf_start_index": 228,
+          "pdf_end_index": 244,
+          "citation_pages": "229-245",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Verantwortung des Gesetzgebers",
+          "authors": [
+            "Peter Badura",
+            "A. Grundgedanken",
+            "Erfüllung",
+            "Pflichten",
+            "menschlichen Erschrecken",
+            "Wetter Darin",
+            "zum das",
+            "Las Erschrecken",
+            "Groß",
+            "Erschrecken jung"
+          ],
+          "pdf_start_index": 245,
+          "pdf_end_index": 255,
+          "citation_pages": "246-256",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Varianten und Gründe rechtlicher Verantwortlichkeit",
+          "authors": [
+            "Reinhold Zippelius",
+            "dem Wortsinne",
+            "Fertig",
+            "fiel Darauf",
+            "Opa",
+            "Schaffen",
+            "Erzählen",
+            "Schreiben",
+            "Verstehen jung Schuh darauf Arbeiten",
+            "Weg Luft",
+            "Vogel",
+            "Weihnachten Weihna"
+          ],
+          "pdf_start_index": 256,
+          "pdf_end_index": 266,
+          "citation_pages": "257-267",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Privatautonomie und Selbstverantwortung",
+          "authors": [
+            "Tbeo Mayer-Maly \nPrivatautonomie",
+            "Selbstverantwortung",
+            "Privatautonomie \nEine",
+            "Privatautonomie",
+            "Wetter Weihnachten",
+            "Vielleicht",
+            "Schlafen Opa Weihnachten"
+          ],
+          "pdf_start_index": 267,
+          "pdf_end_index": 284,
+          "citation_pages": "268-285",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Verantwortung und Verantwortlichkeit im Strafrecht",
+          "authors": [
+            "Strafrecht \nDer",
+            "Vorangestellt",
+            "Bemerkung",
+            "Licht",
+            "Teller",
+            "Berg",
+            "Minutenmir",
+            "Weihnachten Blume­"
+          ],
+          "pdf_start_index": 285,
+          "pdf_end_index": 306,
+          "citation_pages": "286-307",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Wandlungen in den privaten und öffentlichen Verantwortungssphären",
+          "authors": [
+            "Thomas Würtenberger \nWandlungen",
+            "Zur Interdependenz von normativ",
+            "Weihnachten Weihnachten",
+            "Weihnachten Weihnachten Erschrecken",
+            "los Erschrecken"
+          ],
+          "pdf_start_index": 307,
+          "pdf_end_index": 322,
+          "citation_pages": "308-323",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 194.898065546,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:19:32.649669+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.16708210499973575,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:57.521100+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:20.955882+00:00"
+  "generated_at": "2026-08-16T04:22:57.521100+00:00"
 }

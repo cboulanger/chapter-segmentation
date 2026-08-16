@@ -1193,7 +1193,189 @@
       "elapsed_seconds": 7.35886628099999,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T03:43:53.534154+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "Public Investment and Low-carbon Transition in France: Not Enough of a Good Thing?",
+          "authors": [
+            "Paul Malliet",
+            "Mathieu Plane",
+            "Frederic Reynes",
+            "Francesco Saraceno",
+            "Alexandre Tourbah\nIntroduction\nInfrastructure"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 65,
+          "citation_pages": "23-40",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Public Investment in Germany: Squaring the Circle",
+          "authors": [
+            "Katja Rietzler",
+            "Andrew Watt",
+            "Rietzler"
+          ],
+          "pdf_start_index": 67,
+          "pdf_end_index": 79,
+          "citation_pages": "41-54",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "NRRP—Italy’s Strategic Reform and Investment Programme: Sustaining an Ecological Transition",
+          "authors": [
+            "Giovanni Barbieri",
+            "Giuseppe F. Gori"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 96,
+          "citation_pages": "55-70",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Current Challenges in the Spanish Energy Market",
+          "authors": [
+            "José Villaverde",
+            "Daniel Balsalobre-Lorente"
+          ],
+          "pdf_start_index": 97,
+          "pdf_end_index": 110,
+          "citation_pages": "71-86",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "How Big Are Green Spending Multipliers?",
+          "authors": [
+            "Nicoletta Batini",
+            "Mario Di Serio",
+            "Fragetta",
+            "Giovanni Melina",
+            "Anthony Waldron\nIntroduction\n Fixing",
+            "Georgieva 2020"
+          ],
+          "pdf_start_index": 113,
+          "pdf_end_index": 122,
+          "citation_pages": "87-96",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Europe’s Green Investment Requirements and the Role of Next Generation EU",
+          "authors": [
+            "Klaas Lenaerts",
+            "Simone Tagliapietra",
+            "Guntram B. Wolff\nIntroduction\nPolicymakers"
+          ],
+          "pdf_start_index": 123,
+          "pdf_end_index": 131,
+          "citation_pages": "97-106",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Public Spending Needs of Reaching the EU’s Climate Targets",
+          "authors": [
+            "Claudio Baccianti\nIntroduction"
+          ],
+          "pdf_start_index": 133,
+          "pdf_end_index": 153,
+          "citation_pages": "107-128",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Investment Needs for REPowerEU",
+          "authors": [
+            "Miguel Gil Tertre",
+            "Bert Saveyn"
+          ],
+          "pdf_start_index": 155,
+          "pdf_end_index": 168,
+          "citation_pages": "129-144",
+          "confidence": 0.93,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Public Spending for Future Generations: Recent Trends in EU Countries",
+          "authors": [
+            "Lorenzo Ferrari",
+            "Valentina Meliciani"
+          ],
+          "pdf_start_index": 171,
+          "pdf_end_index": 190,
+          "citation_pages": "145-164",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Assessing the Quality of Green Finance Standards",
+          "authors": [
+            "Hannah Gao"
+          ],
+          "pdf_start_index": 191,
+          "pdf_end_index": 202,
+          "citation_pages": "165-176",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Green Investments: Two Possible Interpretations of the “Do No Significant Harm” Principle",
+          "authors": [
+            "Claudio De Vincenti"
+          ],
+          "pdf_start_index": 203,
+          "pdf_end_index": 212,
+          "citation_pages": "177-186",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Towards a Socially Just Green Transition: The Role of Welfare States and Public Finances",
+          "authors": [
+            "Cinzia Alcidi",
+            "Francesco Corti",
+            "Daniel Gros"
+          ],
+          "pdf_start_index": 213,
+          "pdf_end_index": 233,
+          "citation_pages": "187-207",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 24.53603285500003,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:06:39.923569+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 0.11167436100004124,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:20:22.915329+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.18305020400021021,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:59.641619+00:00"
     }
   },
-  "generated_at": "2026-08-15T03:43:53.534154+00:00"
+  "generated_at": "2026-08-16T04:22:59.641619+00:00"
 }

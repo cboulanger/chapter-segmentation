@@ -349,7 +349,233 @@
       "elapsed_seconds": 0.2892400840000846,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:21.326707+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Comment: Critical Empiricism",
+          "authors": [],
+          "pdf_start_index": 109,
+          "pdf_end_index": 222,
+          "citation_pages": "177-212",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Divide and Conquer: The Legal Foundations of Postwar U.S. Labor Policy",
+          "authors": [],
+          "pdf_start_index": 223,
+          "pdf_end_index": 254,
+          "citation_pages": "213-248",
+          "confidence": 0.78,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Liberal Rights and Critical Legal Theory",
+          "authors": [],
+          "pdf_start_index": 255,
+          "pdf_end_index": 350,
+          "citation_pages": "249-344",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Down by Law: Irony, Seriousness, and Reason",
+          "authors": [
+            "Seriousness",
+            "Reason"
+          ],
+          "pdf_start_index": 351,
+          "pdf_end_index": 382,
+          "citation_pages": "345-376",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "A Rotation in Contemporary Legal Scholarship",
+          "authors": [],
+          "pdf_start_index": 383,
+          "pdf_end_index": 440,
+          "citation_pages": "377-434",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Pragmatic and Functional Indeterminacy of Law",
+          "authors": [
+            "Various Types"
+          ],
+          "pdf_start_index": 441,
+          "pdf_end_index": 476,
+          "citation_pages": "435-460",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Government Assistance in the Exercise of Basic Rights (Procedure and Organization)",
+          "authors": [],
+          "pdf_start_index": 477,
+          "pdf_end_index": 494,
+          "citation_pages": "461-484",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Effective Enjoyment of Rights",
+          "authors": [],
+          "pdf_start_index": 495,
+          "pdf_end_index": 572,
+          "citation_pages": "485-566",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Universalitic Law to the Law of Uncertainty: On the Decay of the Legal Order’s \"Totalizing Teleology\" as Treated in the Methodological Discussion and its Critique from the Left",
+          "authors": [
+            "Benefit"
+          ],
+          "pdf_start_index": 573,
+          "pdf_end_index": 630,
+          "citation_pages": "567-624",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 51.356493367999974,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:51:34.486214+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Comment: Critical Empiricism",
+          "authors": [],
+          "pdf_start_index": 109,
+          "pdf_end_index": 222,
+          "citation_pages": "177-212",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Divide and Conquer: The Legal Foundations of Postwar U.S. Labor Policy",
+          "authors": [],
+          "pdf_start_index": 223,
+          "pdf_end_index": 254,
+          "citation_pages": "213-248",
+          "confidence": 0.78,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Liberal Rights and Critical Legal Theory",
+          "authors": [],
+          "pdf_start_index": 255,
+          "pdf_end_index": 350,
+          "citation_pages": "249-344",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Down by Law: Irony, Seriousness, and Reason",
+          "authors": [
+            "Seriousness",
+            "Reason"
+          ],
+          "pdf_start_index": 351,
+          "pdf_end_index": 382,
+          "citation_pages": "345-376",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "A Rotation in Contemporary Legal Scholarship",
+          "authors": [],
+          "pdf_start_index": 383,
+          "pdf_end_index": 440,
+          "citation_pages": "377-434",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Pragmatic and Functional Indeterminacy of Law",
+          "authors": [
+            "Various Types"
+          ],
+          "pdf_start_index": 441,
+          "pdf_end_index": 476,
+          "citation_pages": "435-460",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Government Assistance in the Exercise of Basic Rights (Procedure and Organization)",
+          "authors": [],
+          "pdf_start_index": 477,
+          "pdf_end_index": 494,
+          "citation_pages": "461-484",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Effective Enjoyment of Rights",
+          "authors": [],
+          "pdf_start_index": 495,
+          "pdf_end_index": 572,
+          "citation_pages": "485-566",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "From Universalistic Law to the Law of Uncertainty: On the Decay of the Legal Order’s \"Totalizing Teleology\" as Treated in the Methodological Discussion and its Critique from the Left",
+          "authors": [
+            "Benefit"
+          ],
+          "pdf_start_index": 573,
+          "pdf_end_index": 630,
+          "citation_pages": "567-624",
+          "confidence": 0.98,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 60.308548801999905,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:56:51.581761+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [],
+      "elapsed_seconds": 49.160946169,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:03:11.266515+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 200.2184588240002,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:56.224247+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.21397365299981175,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:57.902450+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:21.326707+00:00"
+  "generated_at": "2026-08-16T04:22:57.902450+00:00"
 }

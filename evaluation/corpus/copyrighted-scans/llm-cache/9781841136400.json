@@ -1122,7 +1122,1125 @@
       "elapsed_seconds": 1.0728561099999752,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:20.729883+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Profiles in Leadership: Eminent Women Judges in the United States",
+          "authors": [],
+          "pdf_start_index": 96,
+          "pdf_end_index": 109,
+          "citation_pages": "67-80",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Entry and Integration of Women into Judicial Positions in Israel",
+          "authors": [],
+          "pdf_start_index": 110,
+          "pdf_end_index": 128,
+          "citation_pages": "81-100",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "First Female Judges in the Weimar Republic in Germany: Reflections on Difference",
+          "authors": [],
+          "pdf_start_index": 130,
+          "pdf_end_index": 148,
+          "citation_pages": "101-120",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Feminisation of the French ‘Magistrature’: Gender and Judging in a Feminised Context",
+          "authors": [
+            "Gender",
+            "Feminised Context\nANNE BOIGEOL\n"
+          ],
+          "pdf_start_index": 150,
+          "pdf_end_index": 168,
+          "citation_pages": "121-140",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘I was noticed and I was asked …’ Women’s Careers in the Judiciary. Results of an Empirical Study for the Ministry of Justice in Northrhine-Westfalia, Germany",
+          "authors": [],
+          "pdf_start_index": 170,
+          "pdf_end_index": 191,
+          "citation_pages": "141-162",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Women Judges and Magistrates in Kenya: Challenges, Opportunities and Contributions",
+          "authors": [],
+          "pdf_start_index": 192,
+          "pdf_end_index": 215,
+          "citation_pages": "163-186",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Impact of Women on the Administration of Justice in Syria and the Judicial Selection Process",
+          "authors": [],
+          "pdf_start_index": 216,
+          "pdf_end_index": 234,
+          "citation_pages": "187-206",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Skills for Judicial Work: Comparing Women Judges and Women Magistrates",
+          "authors": [],
+          "pdf_start_index": 236,
+          "pdf_end_index": 257,
+          "citation_pages": "207-228",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Professional Stress, Discrimination and Coping Strategies: Similarities and Differences between Female and Male Judges in Switzerland",
+          "authors": [],
+          "pdf_start_index": 258,
+          "pdf_end_index": 277,
+          "citation_pages": "229-248",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gendered Experiences of a Judge in Germany",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 278,
+          "pdf_end_index": 288,
+          "citation_pages": "249-260",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Women Judges in the Netherlands",
+          "authors": [],
+          "pdf_start_index": 290,
+          "pdf_end_index": 305,
+          "citation_pages": "261-276",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender and Judging in Traditional and Modern Societies: A Comparison of Two Case Studies (Ivory Coast and Italy)",
+          "authors": [],
+          "pdf_start_index": 306,
+          "pdf_end_index": 324,
+          "citation_pages": "277-296",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender Arguments and Gender Perspective in Legal Judgments in Argentina",
+          "authors": [
+            "ANDREA L GASTRON"
+          ],
+          "pdf_start_index": 326,
+          "pdf_end_index": 338,
+          "citation_pages": "297-310",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Do Women on South Africa’s Courts Make a Difference?",
+          "authors": [],
+          "pdf_start_index": 340,
+          "pdf_end_index": 356,
+          "citation_pages": "311-328",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘May it Please the Court’. Forming Sexualities as Judicial Virtues in Judicial Swearing-in Ceremonies",
+          "authors": [
+            "Judicial Swearing",
+            "Produce Store"
+          ],
+          "pdf_start_index": 358,
+          "pdf_end_index": 374,
+          "citation_pages": "329-346",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Let History Judge? Gender, Race, Class and Performative Identity: A Study of Women Judges in England and Wales",
+          "authors": [],
+          "pdf_start_index": 376,
+          "pdf_end_index": 396,
+          "citation_pages": "347-368",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Must Feminist Judges Self-identify as Feminists?",
+          "authors": [
+            "Rosemary Hunter"
+          ],
+          "pdf_start_index": 398,
+          "pdf_end_index": 417,
+          "citation_pages": "369-388",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Justice Marcia Neave: Case Study of a Feminist Judge",
+          "authors": [
+            "Marcia Neave",
+            "Hunter"
+          ],
+          "pdf_start_index": 418,
+          "pdf_end_index": 437,
+          "citation_pages": "389-408",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "What’s in a Label? Argentine Judges’ Reluctance to Call Themselves Feminists",
+          "authors": [
+            "Rosemary Hunter"
+          ],
+          "pdf_start_index": 438,
+          "pdf_end_index": 453,
+          "citation_pages": "409-424",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Feminist Adjudication Process: Is There Such a Thing?",
+          "authors": [
+            "Jane Wangmann"
+          ],
+          "pdf_start_index": 454,
+          "pdf_end_index": 476,
+          "citation_pages": "425-448",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Which Judicial Selection Systems Generate the most Women Judges? Lessons from the United States",
+          "authors": [],
+          "pdf_start_index": 478,
+          "pdf_end_index": 496,
+          "citation_pages": "449-468",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender Quotas for the Judiciary in England and Wales",
+          "authors": [
+            "Offer"
+          ],
+          "pdf_start_index": 498,
+          "pdf_end_index": 516,
+          "citation_pages": "469-488",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rethinking Judicial Diversity",
+          "authors": [],
+          "pdf_start_index": 518,
+          "pdf_end_index": 536,
+          "citation_pages": "489-508",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender and Judicial Education in Japan",
+          "authors": [],
+          "pdf_start_index": 538,
+          "pdf_end_index": 570,
+          "citation_pages": "529-542",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engendering the Judiciary—Lessons from the Philippines",
+          "authors": [],
+          "pdf_start_index": 572,
+          "pdf_end_index": 583,
+          "citation_pages": "543-554",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 38.29759104699997,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:50:31.621280+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Profiles in Leadership: Eminent Women Judges in the United States",
+          "authors": [],
+          "pdf_start_index": 96,
+          "pdf_end_index": 109,
+          "citation_pages": "67-80",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Entry and Integration of Women into Judicial Positions in Israel",
+          "authors": [],
+          "pdf_start_index": 110,
+          "pdf_end_index": 128,
+          "citation_pages": "81-100",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "First Female Judges in the Weimar Republic in Germany: Reflections on Difference",
+          "authors": [],
+          "pdf_start_index": 130,
+          "pdf_end_index": 148,
+          "citation_pages": "101-120",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Feminisation of the French ‘Magistrature’: Gender and Judging in a Feminised Context",
+          "authors": [
+            "Gender",
+            "Feminised Context\nANNE BOIGEOL\n"
+          ],
+          "pdf_start_index": 150,
+          "pdf_end_index": 168,
+          "citation_pages": "121-140",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘I was noticed and I was asked …’ Women’s Careers in the Judiciary. Results of an Empirical Study for the Ministry of Justice in Northrhine-Westfalia, Germany",
+          "authors": [],
+          "pdf_start_index": 170,
+          "pdf_end_index": 191,
+          "citation_pages": "141-162",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Women Judges and Magistrates in Kenya: Challenges, Opportunities and Contributions",
+          "authors": [],
+          "pdf_start_index": 192,
+          "pdf_end_index": 215,
+          "citation_pages": "163-186",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Impact of Women on the Administration of Justice in Syria and the Judicial Selection Process",
+          "authors": [],
+          "pdf_start_index": 216,
+          "pdf_end_index": 234,
+          "citation_pages": "187-206",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Skills for Judicial Work: Comparing Women Judges and Women Magistrates",
+          "authors": [],
+          "pdf_start_index": 236,
+          "pdf_end_index": 257,
+          "citation_pages": "207-228",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Professional Stress, Discrimination and Coping Strategies: Similarities and Differences between Female and Male Judges in Switzerland",
+          "authors": [],
+          "pdf_start_index": 258,
+          "pdf_end_index": 277,
+          "citation_pages": "229-248",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gendered Experiences of a Judge in Germany",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 278,
+          "pdf_end_index": 288,
+          "citation_pages": "249-260",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Women Judges in the Netherlands",
+          "authors": [],
+          "pdf_start_index": 290,
+          "pdf_end_index": 305,
+          "citation_pages": "261-276",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender and Judging in Traditional and Modern Societies: A Comparison of Two Case Studies (Ivory Coast and Italy)",
+          "authors": [],
+          "pdf_start_index": 306,
+          "pdf_end_index": 324,
+          "citation_pages": "277-296",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender Arguments and Gender Perspective in Legal Judgments in Argentina",
+          "authors": [
+            "ANDREA L GASTRON"
+          ],
+          "pdf_start_index": 326,
+          "pdf_end_index": 338,
+          "citation_pages": "297-310",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Do Women on South Africa’s Courts Make a Difference?",
+          "authors": [],
+          "pdf_start_index": 340,
+          "pdf_end_index": 356,
+          "citation_pages": "311-328",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "‘May it Please the Court’. Forming Sexualities as Judicial Virtues in Judicial Swearing-in Ceremonies",
+          "authors": [
+            "Judicial Swearing",
+            "Produce Store"
+          ],
+          "pdf_start_index": 358,
+          "pdf_end_index": 374,
+          "citation_pages": "329-346",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Let History Judge? Gender, Race, Class and Performative Identity: A Study of Women Judges in England and Wales",
+          "authors": [],
+          "pdf_start_index": 376,
+          "pdf_end_index": 396,
+          "citation_pages": "347-368",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Must Feminist Judges Self-identify as Feminists?",
+          "authors": [
+            "Rosemary Hunter"
+          ],
+          "pdf_start_index": 398,
+          "pdf_end_index": 417,
+          "citation_pages": "369-388",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Justice Marcia Neave: Case Study of a Feminist Judge",
+          "authors": [
+            "Marcia Neave",
+            "Hunter"
+          ],
+          "pdf_start_index": 418,
+          "pdf_end_index": 437,
+          "citation_pages": "389-408",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "What’s in a Label? Argentine Judges’ Reluctance to Call Themselves Feminists",
+          "authors": [
+            "Rosemary Hunter"
+          ],
+          "pdf_start_index": 438,
+          "pdf_end_index": 453,
+          "citation_pages": "409-424",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Feminist Adjudication Process: Is There Such a Thing?",
+          "authors": [
+            "Jane Wangmann"
+          ],
+          "pdf_start_index": 454,
+          "pdf_end_index": 476,
+          "citation_pages": "425-448",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Which Judicial Selection Systems Generate the most Women Judges? Lessons from the United States",
+          "authors": [],
+          "pdf_start_index": 478,
+          "pdf_end_index": 496,
+          "citation_pages": "449-468",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender Quotas for the Judiciary in England and Wales",
+          "authors": [
+            "Offer"
+          ],
+          "pdf_start_index": 498,
+          "pdf_end_index": 516,
+          "citation_pages": "469-488",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rethinking Judicial Diversity",
+          "authors": [],
+          "pdf_start_index": 518,
+          "pdf_end_index": 536,
+          "citation_pages": "489-508",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gender and Judicial Education in Japan",
+          "authors": [],
+          "pdf_start_index": 538,
+          "pdf_end_index": 570,
+          "citation_pages": "529-542",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engendering the Judiciary—Lessons from the Philippines",
+          "authors": [],
+          "pdf_start_index": 572,
+          "pdf_end_index": 583,
+          "citation_pages": "543-554",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 67.19190488800018,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:55:35.235878+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "1.2. Profiles in Leadership: Eminent Women Judges in the United States",
+          "authors": [],
+          "pdf_start_index": 96,
+          "pdf_end_index": 109,
+          "citation_pages": "67-80",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "1.3. The Entry and Integration of Women into Judicial Positions in Israel",
+          "authors": [],
+          "pdf_start_index": 110,
+          "pdf_end_index": 128,
+          "citation_pages": "81-100",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "1.4. First Female Judges in the Weimar Republic in Germany: Reflections on Difference",
+          "authors": [],
+          "pdf_start_index": 130,
+          "pdf_end_index": 148,
+          "citation_pages": "101-120",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.1. Feminisation of the French ‘Magistrature’: Gender and Judging in a Feminised Context",
+          "authors": [
+            "Gender",
+            "Feminised Context\nANNE BOIGEOL\n"
+          ],
+          "pdf_start_index": 150,
+          "pdf_end_index": 168,
+          "citation_pages": "121-140",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.2. ‘I was noticed and I was asked …’ Women’s Careers in the Judiciary. Results of an Empirical Study for the Ministry of Justice in Northrhine-Westfalia, Germany",
+          "authors": [],
+          "pdf_start_index": 170,
+          "pdf_end_index": 191,
+          "citation_pages": "141-162",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.3. Women Judges and Magistrates in Kenya: Challenges, Opportunities and Contributions",
+          "authors": [],
+          "pdf_start_index": 192,
+          "pdf_end_index": 215,
+          "citation_pages": "163-186",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.4. The Impact of Women on the Administration of Justice in Syria and the Judicial Selection Process",
+          "authors": [],
+          "pdf_start_index": 216,
+          "pdf_end_index": 234,
+          "citation_pages": "187-206",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.5. Skills for Judicial Work: Comparing Women Judges and Women Magistrates",
+          "authors": [],
+          "pdf_start_index": 236,
+          "pdf_end_index": 257,
+          "citation_pages": "207-228",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.6. Professional Stress, Discrimination and Coping Strategies: Similarities and Differences between Female and Male Judges in Switzerland",
+          "authors": [],
+          "pdf_start_index": 258,
+          "pdf_end_index": 277,
+          "citation_pages": "229-248",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.1. Gendered Experiences of a Judge in Germany",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 278,
+          "pdf_end_index": 288,
+          "citation_pages": "249-260",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.2. Women Judges in the Netherlands",
+          "authors": [],
+          "pdf_start_index": 290,
+          "pdf_end_index": 305,
+          "citation_pages": "261-276",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.3. Gender and Judging in Traditional and Modern Societies: A Comparison of Two Case Studies (Ivory Coast and Italy)",
+          "authors": [],
+          "pdf_start_index": 306,
+          "pdf_end_index": 324,
+          "citation_pages": "277-296",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.4. Gender Arguments and Gender Perspective in Legal Judgments in Argentina",
+          "authors": [
+            "ANDREA L GASTRON"
+          ],
+          "pdf_start_index": 326,
+          "pdf_end_index": 338,
+          "citation_pages": "297-310",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.5. Do Women on South Africa’s Courts Make a Difference?",
+          "authors": [],
+          "pdf_start_index": 340,
+          "pdf_end_index": 356,
+          "citation_pages": "311-328",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.1. ‘May it Please the Court’. Forming Sexualities as Judicial Virtues in Judicial Swearing-in Ceremonies",
+          "authors": [
+            "Judicial Swearing",
+            "Produce Store"
+          ],
+          "pdf_start_index": 358,
+          "pdf_end_index": 374,
+          "citation_pages": "329-346",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.2. Let History Judge? Gender, Race, Class and Performative Identity: A Study of Women Judges in England and Wales",
+          "authors": [],
+          "pdf_start_index": 376,
+          "pdf_end_index": 396,
+          "citation_pages": "347-368",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.1. Must Feminist Judges Self-identify as Feminists?",
+          "authors": [
+            "Rosemary Hunter"
+          ],
+          "pdf_start_index": 398,
+          "pdf_end_index": 417,
+          "citation_pages": "369-388",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.2. Justice Marcia Neave: Case Study of a Feminist Judge",
+          "authors": [
+            "Marcia Neave",
+            "Hunter"
+          ],
+          "pdf_start_index": 418,
+          "pdf_end_index": 437,
+          "citation_pages": "389-408",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.3. What’s in a Label? Argentine Judges’ Reluctance to Call Themselves Feminists",
+          "authors": [
+            "Rosemary Hunter"
+          ],
+          "pdf_start_index": 438,
+          "pdf_end_index": 453,
+          "citation_pages": "409-424",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.4. A Feminist Adjudication Process: Is There Such a Thing?",
+          "authors": [
+            "Jane Wangmann"
+          ],
+          "pdf_start_index": 454,
+          "pdf_end_index": 476,
+          "citation_pages": "425-448",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.1. Which Judicial Selection Systems Generate the most Women Judges? Lessons from the United States",
+          "authors": [],
+          "pdf_start_index": 478,
+          "pdf_end_index": 496,
+          "citation_pages": "449-468",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.2. Gender Quotas for the Judiciary in England and Wales",
+          "authors": [
+            "Offer"
+          ],
+          "pdf_start_index": 498,
+          "pdf_end_index": 516,
+          "citation_pages": "469-488",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.3. Rethinking Judicial Diversity",
+          "authors": [],
+          "pdf_start_index": 518,
+          "pdf_end_index": 536,
+          "citation_pages": "489-508",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.2. Gender and Judicial Education in Japan",
+          "authors": [],
+          "pdf_start_index": 538,
+          "pdf_end_index": 570,
+          "citation_pages": "529-542",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.3. Engendering the Judiciary—Lessons from the Philippines",
+          "authors": [],
+          "pdf_start_index": 572,
+          "pdf_end_index": 583,
+          "citation_pages": "543-554",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 50.37607162199993,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:01:08.363110+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [
+        {
+          "title": "1.2. Profiles in Leadership: Eminent Women Judges in the United States",
+          "authors": [],
+          "pdf_start_index": 96,
+          "pdf_end_index": 109,
+          "citation_pages": "67-80",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "1.3. The Entry and Integration of Women into Judicial Positions in Israel",
+          "authors": [],
+          "pdf_start_index": 110,
+          "pdf_end_index": 128,
+          "citation_pages": "81-100",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "1.4. First Female Judges in the Weimar Republic in Germany: Reflections on Difference",
+          "authors": [],
+          "pdf_start_index": 130,
+          "pdf_end_index": 148,
+          "citation_pages": "101-120",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.1. Feminisation of the French ‘Magistrature’: Gender and Judging in a Feminised Context",
+          "authors": [
+            "Gender",
+            "Feminised Context\nANNE BOIGEOL\n"
+          ],
+          "pdf_start_index": 150,
+          "pdf_end_index": 168,
+          "citation_pages": "121-140",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.2. ‘I was noticed and I was asked …’ Women’s Careers in the Judiciary. Results of an Empirical Study for the Ministry of Justice in Northrhine-Westfalia, Germany",
+          "authors": [],
+          "pdf_start_index": 170,
+          "pdf_end_index": 191,
+          "citation_pages": "141-162",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.3. Women Judges and Magistrates in Kenya: Challenges, Opportunities and Contributions",
+          "authors": [],
+          "pdf_start_index": 192,
+          "pdf_end_index": 215,
+          "citation_pages": "163-186",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.4. The Impact of Women on the Administration of Justice in Syria and the Judicial Selection Process",
+          "authors": [],
+          "pdf_start_index": 216,
+          "pdf_end_index": 234,
+          "citation_pages": "187-206",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.5. Skills for Judicial Work: Comparing Women Judges and Women Magistrates",
+          "authors": [],
+          "pdf_start_index": 236,
+          "pdf_end_index": 257,
+          "citation_pages": "207-228",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2.6. Professional Stress, Discrimination and Coping Strategies: Similarities and Differences between Female and Male Judges in Switzerland",
+          "authors": [],
+          "pdf_start_index": 258,
+          "pdf_end_index": 277,
+          "citation_pages": "229-248",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.1. Gendered Experiences of a Judge in Germany",
+          "authors": [
+            "Mrs"
+          ],
+          "pdf_start_index": 278,
+          "pdf_end_index": 288,
+          "citation_pages": "249-260",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.2. Women Judges in the Netherlands",
+          "authors": [],
+          "pdf_start_index": 290,
+          "pdf_end_index": 305,
+          "citation_pages": "261-276",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.3. Gender and Judging in Traditional and Modern Societies: A Comparison of Two Case Studies (Ivory Coast and Italy)",
+          "authors": [],
+          "pdf_start_index": 306,
+          "pdf_end_index": 324,
+          "citation_pages": "277-296",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.4. Gender Arguments and Gender Perspective in Legal Judgments in Argentina",
+          "authors": [
+            "ANDREA L GASTRON"
+          ],
+          "pdf_start_index": 326,
+          "pdf_end_index": 338,
+          "citation_pages": "297-310",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "3.5. Do Women on South Africa’s Courts Make a Difference?",
+          "authors": [],
+          "pdf_start_index": 340,
+          "pdf_end_index": 356,
+          "citation_pages": "311-328",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.1. ‘May it Please the Court’. Forming Sexualities as Judicial Virtues in Judicial Swearing-in Ceremonies",
+          "authors": [
+            "Judicial Swearing",
+            "Produce Store"
+          ],
+          "pdf_start_index": 358,
+          "pdf_end_index": 374,
+          "citation_pages": "329-346",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4.2. Let History Judge? Gender, Race, Class and Performative Identity: A Study of Women Judges in England and Wales",
+          "authors": [],
+          "pdf_start_index": 376,
+          "pdf_end_index": 396,
+          "citation_pages": "347-368",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.1. Must Feminist Judges Self-identify as Feminists?",
+          "authors": [
+            "Rosemary Hunter"
+          ],
+          "pdf_start_index": 398,
+          "pdf_end_index": 417,
+          "citation_pages": "369-388",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.2. Justice Marcia Neave: Case Study of a Feminist Judge",
+          "authors": [
+            "Marcia Neave",
+            "Hunter"
+          ],
+          "pdf_start_index": 418,
+          "pdf_end_index": 437,
+          "citation_pages": "389-408",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.3. What’s in a Label? Argentine Judges’ Reluctance to Call Themselves Feminists",
+          "authors": [
+            "Rosemary Hunter"
+          ],
+          "pdf_start_index": 438,
+          "pdf_end_index": 453,
+          "citation_pages": "409-424",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5.4. A Feminist Adjudication Process: Is There Such a Thing?",
+          "authors": [
+            "Jane Wangmann"
+          ],
+          "pdf_start_index": 454,
+          "pdf_end_index": 476,
+          "citation_pages": "425-448",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.1. Which Judicial Selection Systems Generate the most Women Judges? Lessons from the United States",
+          "authors": [],
+          "pdf_start_index": 478,
+          "pdf_end_index": 496,
+          "citation_pages": "449-468",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.2. Gender Quotas for the Judiciary in England and Wales",
+          "authors": [
+            "Offer"
+          ],
+          "pdf_start_index": 498,
+          "pdf_end_index": 516,
+          "citation_pages": "469-488",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6.3. Rethinking Judicial Diversity",
+          "authors": [],
+          "pdf_start_index": 518,
+          "pdf_end_index": 536,
+          "citation_pages": "489-508",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.2. Gender and Judicial Education in Japan",
+          "authors": [],
+          "pdf_start_index": 538,
+          "pdf_end_index": 570,
+          "citation_pages": "529-542",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7.3. Engendering the Judiciary—Lessons from the Philippines",
+          "authors": [],
+          "pdf_start_index": 572,
+          "pdf_end_index": 583,
+          "citation_pages": "543-554",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 173.796859089,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:13:52.736921+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.7916625220000242,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:57.086936+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:20.729883+00:00"
+  "generated_at": "2026-08-16T04:22:57.086936+00:00"
 }

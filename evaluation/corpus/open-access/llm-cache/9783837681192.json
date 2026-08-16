@@ -403,7 +403,406 @@
       "elapsed_seconds": 0.17831423600000562,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:23.178190+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Poets of the Heart Friedrich Nietzsche and Sri Aurobindo",
+          "authors": [
+            "Friedrich Nietzsche",
+            "Sri Aurobindo Ghose",
+            "Böhler",
+            "Granzer"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 87,
+          "citation_pages": "43-88",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Melancholic’s Survival Kit",
+          "authors": [
+            "Avital Ronell",
+            "Wiped"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 109,
+          "citation_pages": "89-110",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hölderlin’s ‘Celebration of Peace’ and Kant’s Treaty ‘Toward Perpetual Peace’ Performative Types of Writing in Poetry and Philosophy",
+          "authors": [
+            "Hölderlin’s ‘Celebration of Peace",
+            "Violetta L. Waibel",
+            "Kunst",
+            "Kultur",
+            "Hegel",
+            "Jahr"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 156,
+          "citation_pages": "111-156",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Thinking, Evaluating, Enjoying On the Aesthetic Materiality of Thought",
+          "authors": [
+            "Martin Heidegger’s"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 177,
+          "citation_pages": "157-178",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Balloon Universe",
+          "authors": [
+            "Reinhold A. Bertlmann\n"
+          ],
+          "pdf_start_index": 179,
+          "pdf_end_index": 198,
+          "citation_pages": "179-198",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nothing to Fix Performative Strategies of Incompleteness and the Right to Bodily Integrity",
+          "authors": [],
+          "pdf_start_index": 199,
+          "pdf_end_index": 214,
+          "citation_pages": "199-214",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Along Each Other. On Shown and Told by Meg Stuart and Tim Etchells Con-Fusions Between Movement and Linguistic Figures, Between Performance and Critique",
+          "authors": [
+            "Shown",
+            "Tim",
+            "Krassimira Kruschkova",
+            "Tim Etchells"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 242,
+          "citation_pages": "215-242",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Feeling of Thinking Stories on Artists Reading Theory",
+          "authors": [
+            "Heidegger\nSandy"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 258,
+          "citation_pages": "243-258",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gay Troublemakers None but Fools",
+          "authors": [
+            "Gay Troublemakers\nNone",
+            "Fools 1\n",
+            "Susanne Valerie Granzer",
+            "Shakespeare",
+            "Narr"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 278,
+          "citation_pages": "259-278",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 11.527223090999996,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:53:48.967955+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Poets of the Heart Friedrich Nietzsche and Sri Aurobindo",
+          "authors": [
+            "Friedrich Nietzsche",
+            "Sri Aurobindo Ghose",
+            "Böhler",
+            "Granzer"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 87,
+          "citation_pages": "43-88",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Melancholic’s Survival Kit",
+          "authors": [
+            "Avital Ronell",
+            "Wiped"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 109,
+          "citation_pages": "89-110",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hölderlin’s ‘Celebration of Peace’ and Kant’s Treaty ‘Toward Perpetual Peace’ Performative Types of Writing in Poetry and Philosophy",
+          "authors": [
+            "Hölderlin’s ‘Celebration of Peace",
+            "Violetta L. Waibel",
+            "Kunst",
+            "Kultur",
+            "Hegel",
+            "Jahr"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 156,
+          "citation_pages": "111-156",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Thinking, Evaluating, Enjoying On the Aesthetic Materiality of Thought",
+          "authors": [
+            "Martin Heidegger’s"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 177,
+          "citation_pages": "157-178",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Balloon Universe",
+          "authors": [
+            "Reinhold A. Bertlmann\n"
+          ],
+          "pdf_start_index": 179,
+          "pdf_end_index": 198,
+          "citation_pages": "179-198",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nothing to Fix Performative Strategies of Incompleteness and the Right to Bodily Integrity",
+          "authors": [],
+          "pdf_start_index": 199,
+          "pdf_end_index": 214,
+          "citation_pages": "199-214",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Along Each Other. On Shown and Told by Meg Stuart and Tim Etchells Con-Fusions Between Movement and Linguistic Figures, Between Performance and Critique",
+          "authors": [
+            "Shown",
+            "Tim",
+            "Krassimira Kruschkova",
+            "Tim Etchells"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 242,
+          "citation_pages": "215-242",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Feeling of Thinking Stories on Artists Reading Theory",
+          "authors": [
+            "Heidegger\nSandy"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 258,
+          "citation_pages": "243-258",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gay Troublemakers None but Fools",
+          "authors": [
+            "Gay Troublemakers\nNone",
+            "Fools 1\n",
+            "Susanne Valerie Granzer",
+            "Shakespeare",
+            "Narr"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 278,
+          "citation_pages": "259-278",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 9.794951559999845,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:59:38.932904+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "Poets of the Heart Friedrich Nietzsche and Sri Aurobindo",
+          "authors": [
+            "Friedrich Nietzsche",
+            "Sri Aurobindo Ghose",
+            "Böhler",
+            "Granzer"
+          ],
+          "pdf_start_index": 43,
+          "pdf_end_index": 87,
+          "citation_pages": "43-88",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "A Melancholic’s Survival Kit Avital Ronell",
+          "authors": [
+            "Avital Ronell",
+            "Wiped"
+          ],
+          "pdf_start_index": 89,
+          "pdf_end_index": 109,
+          "citation_pages": "89-110",
+          "confidence": 0.89,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Hölderlin’s ‘Celebration of Peace’ and Kant’s Treaty ‘Toward Perpetual Peace’ Performative Types of Writing in Poetry and Philosophy",
+          "authors": [
+            "Hölderlin’s ‘Celebration of Peace",
+            "Violetta L. Waibel",
+            "Kunst",
+            "Kultur",
+            "Hegel",
+            "Jahr"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 156,
+          "citation_pages": "111-156",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Thinking, Evaluating, Enjoying On the Aesthetic Materiality of Thought",
+          "authors": [
+            "Martin Heidegger’s"
+          ],
+          "pdf_start_index": 157,
+          "pdf_end_index": 177,
+          "citation_pages": "157-178",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Balloon Universe",
+          "authors": [
+            "Reinhold A. Bertlmann\n"
+          ],
+          "pdf_start_index": 179,
+          "pdf_end_index": 198,
+          "citation_pages": "179-198",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nothing to Fix Performative Strategies of Incompleteness and the Right to Bodily Integrity",
+          "authors": [],
+          "pdf_start_index": 199,
+          "pdf_end_index": 214,
+          "citation_pages": "199-214",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Along Each Other. On Shown and Told by Meg Stuart and Tim Etchells Con-Fusions Between Movement and Linguistic Figures, Between Performance and Critique",
+          "authors": [
+            "Shown",
+            "Tim",
+            "Krassimira Kruschkova",
+            "Tim Etchells"
+          ],
+          "pdf_start_index": 215,
+          "pdf_end_index": 242,
+          "citation_pages": "215-242",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "The Feeling of Thinking Stories on Artists Reading Theory",
+          "authors": [
+            "Heidegger\nSandy"
+          ],
+          "pdf_start_index": 243,
+          "pdf_end_index": 258,
+          "citation_pages": "243-258",
+          "confidence": 0.98,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gay Troublemakers None but Fools",
+          "authors": [
+            "Gay Troublemakers\nNone",
+            "Fools 1\n",
+            "Susanne Valerie Granzer",
+            "Shakespeare",
+            "Narr"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 278,
+          "citation_pages": "259-278",
+          "confidence": 0.97,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 31.22036426900013,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:10:18.892957+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 0.11287468000000445,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:20:26.197783+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.11567764299979899,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:23:00.835402+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:23.178190+00:00"
+  "generated_at": "2026-08-16T04:23:00.835402+00:00"
 }

@@ -291,7 +291,201 @@
       "elapsed_seconds": 0.19162954499961415,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:20.758865+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Einleitung",
+          "authors": [
+            "Fuß Erschrecken",
+            "Weihnachten Zeitung",
+            "Weihnachten Legen",
+            "viel Legen",
+            "Minutenmir",
+            "Opa Warm",
+            "Erschrecken Opa",
+            "dazu verstecken"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 94,
+          "citation_pages": "22-90",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ulrich Drobnig: Soziologische Forschungsmethoden in der Rechtsvergleichung (1971)",
+          "authors": [
+            "Soziologische Forschungsmethoden",
+            "Rechtsvergleichung 97",
+            "Der Nutzen",
+            "Daten",
+            "jedoch von ihrer",
+            "Zwecke",
+            "Fragebogen",
+            "Rechts",
+            "Rahmen",
+            "essiert jedoch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 186,
+          "citation_pages": "91-188",
+          "confidence": 0.86,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 8.432028954999964,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:50:15.684441+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "Einleitung",
+          "authors": [
+            "Fuß Erschrecken",
+            "Weihnachten Zeitung",
+            "Weihnachten Legen",
+            "viel Legen",
+            "Minutenmir",
+            "Opa Warm",
+            "Erschrecken Opa",
+            "dazu verstecken"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 94,
+          "citation_pages": "22-74",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Ulrich Drobnig: Soziologische Forschungsmethoden in der Rechtsvergleichung (1971)",
+          "authors": [
+            "Soziologische Forschungsmethoden",
+            "Rechtsvergleichung 97",
+            "Der Nutzen",
+            "Daten",
+            "jedoch von ihrer",
+            "Zwecke",
+            "Fragebogen",
+            "Rechts",
+            "Rahmen",
+            "essiert jedoch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 186,
+          "citation_pages": "75-188",
+          "confidence": 0.86,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 14.400208238000005,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:55:03.554787+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "Einleitung",
+          "authors": [
+            "Fuß Erschrecken",
+            "Weihnachten Zeitung",
+            "Weihnachten Legen",
+            "viel Legen",
+            "Minutenmir",
+            "Opa Warm",
+            "Erschrecken Opa",
+            "dazu verstecken"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 94,
+          "citation_pages": "11-100",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Soziologische Methoden in der Rechtsvergleichung (1973)",
+          "authors": [
+            "Soziologische Forschungsmethoden",
+            "Rechtsvergleichung 97",
+            "Der Nutzen",
+            "Daten",
+            "jedoch von ihrer",
+            "Zwecke",
+            "Fragebogen",
+            "Rechts",
+            "Rahmen",
+            "essiert jedoch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 186,
+          "citation_pages": "151-188",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 34.626947843999915,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:01:17.859808+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [
+        {
+          "title": "Einleitung",
+          "authors": [
+            "Fuß Erschrecken",
+            "Weihnachten Zeitung",
+            "Weihnachten Legen",
+            "viel Legen",
+            "Minutenmir",
+            "Opa Warm",
+            "Erschrecken Opa",
+            "dazu verstecken"
+          ],
+          "pdf_start_index": 59,
+          "pdf_end_index": 94,
+          "citation_pages": "11-74",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Soziologische Methoden in der Rechtsvergleichung (1973)",
+          "authors": [
+            "Soziologische Forschungsmethoden",
+            "Rechtsvergleichung 97",
+            "Der Nutzen",
+            "Daten",
+            "jedoch von ihrer",
+            "Zwecke",
+            "Fragebogen",
+            "Rechts",
+            "Rahmen",
+            "essiert jedoch"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 186,
+          "citation_pages": "101-188",
+          "confidence": 0.82,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 145.00492634800003,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:16:17.746188+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.140951460999986,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:57.232401+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:20.758865+00:00"
+  "generated_at": "2026-08-16T04:22:57.232401+00:00"
 }

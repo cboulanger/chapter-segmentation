@@ -456,7 +456,293 @@
       "elapsed_seconds": 0.31870567700025276,
       "demand_at_run": 0,
       "generated_at": "2026-08-15T04:23:21.509583+00:00"
+    },
+    "qwen3-coder-next": {
+      "chapters": [
+        {
+          "title": "Spielen",
+          "authors": [
+            "bin",
+            "Weihnachten Verstecken-",
+            "Spielen Weihnachten",
+            "Allein",
+            "Gewinnen Schwester",
+            "Brot ja dir Leise\nApfel Weihnachten",
+            "Verlieren",
+            "jung ins",
+            "Geschichte",
+            "Ihm Natürlich"
+          ],
+          "pdf_start_index": 29,
+          "pdf_end_index": 43,
+          "citation_pages": "3-3",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nächste",
+          "authors": [
+            "Schaffen Erklären",
+            "Zug Rechnen",
+            "Natürlich",
+            "schreiben erklären",
+            "Kind",
+            "Sohn",
+            "Schön ab Geschichte",
+            "Weihnachten Antworten",
+            "Weihnachten essen Weihnachten sehen",
+            "Weihnachten Ball",
+            "Weihnachten Weihnachten schreiben Erschrecken"
+          ],
+          "pdf_start_index": 44,
+          "pdf_end_index": 48,
+          "citation_pages": "4-4",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Werden",
+          "authors": [
+            "Vergessen",
+            "Weihnachten Weihnachten",
+            "Stück",
+            "Glas Land Gefährlich-",
+            "Turnen",
+            "Erschrecken",
+            "Fisch Grün",
+            "Milch",
+            "Essen°®",
+            "Spiel Weihnachten",
+            "schön\nErschrecken",
+            "Nah Auge",
+            "Haare"
+          ],
+          "pdf_start_index": 49,
+          "pdf_end_index": 110,
+          "citation_pages": "5-5",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Laufen",
+          "authors": [
+            "Weihnachten Weg",
+            "Zeigen",
+            "laufen kurz",
+            "Wetter",
+            "Schule Vogel",
+            "acht",
+            "Zug von",
+            "Schwester Loch",
+            "Fisch Himmel",
+            "Erschrecken Blume",
+            "Rad mal Geburtstag",
+            "schreiben Tier",
+            "schreiben Stadt",
+            "Uhr Kind"
+          ],
+          "pdf_start_index": 111,
+          "pdf_end_index": 126,
+          "citation_pages": "6-17",
+          "confidence": 0.95,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Nacht Mensch",
+          "authors": [
+            "Weihnachten Weihnachten",
+            "Weihnachten Schwester",
+            "Opa bin neu",
+            "vergessen sehr",
+            "Welt ob Mädchen",
+            "Verkaufen",
+            "Minutenmir Weihnachten",
+            "Schreien da Erschrecken",
+            "Geschichte",
+            "Erschrecken",
+            "Kopf",
+            "Maus",
+            "Auch Tür Verlieren"
+          ],
+          "pdf_start_index": 127,
+          "pdf_end_index": 131,
+          "citation_pages": "18-21",
+          "confidence": 0.65,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "EIS",
+          "authors": [
+            "Kann",
+            "Minutenmir Vielleicht",
+            "Schwester",
+            "Weihnachten Weihnachten",
+            "vielleicht viel"
+          ],
+          "pdf_start_index": 132,
+          "pdf_end_index": 146,
+          "citation_pages": "22-154",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Geburtstag gut Weihnachten Tür Weihnachten",
+          "authors": [
+            "Geburtstag zu Erschrecken",
+            "Fuß Geburtstag",
+            "Weihnachten Zimmer Erschrecken",
+            "Sie von",
+            "Geschichte",
+            "Papa bin\n",
+            "Glück Lesen",
+            "Ihm Geschichte Gefährlic"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 153,
+          "citation_pages": "155-155",
+          "confidence": 0.83,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 22.06929796399993,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:51:36.947098+00:00"
+    },
+    "mistral-medium-3.5-128b": {
+      "chapters": [
+        {
+          "title": "1. Gesicht",
+          "authors": [
+            "Unten Sommer",
+            "Weihnachten Wünschen",
+            "Schwester",
+            "Schwester Wiese",
+            "Erschrecken",
+            "Glück",
+            "Geld",
+            "Mutter Sollen"
+          ],
+          "pdf_start_index": 30,
+          "pdf_end_index": 47,
+          "citation_pages": "2-2",
+          "confidence": 0.62,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "4. Erklären",
+          "authors": [
+            "Arbeiten Lehrerin",
+            "Eigentlich\nErschrecken Weihnachten",
+            "Erklären",
+            "von Schwester",
+            "Schlagen",
+            "müssen",
+            "Geburtstag Schreiben",
+            "Rad - Tisch\nWelt mit Küche",
+            "Baum Tier"
+          ],
+          "pdf_start_index": 48,
+          "pdf_end_index": 56,
+          "citation_pages": "3-4",
+          "confidence": 0.66,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "2. Erschrecken hat Weihnachten",
+          "authors": [
+            "Ding",
+            "kurz her",
+            "Erschrecken",
+            "Glücklich",
+            "schreiben klettern",
+            "Weihnachten Wasser"
+          ],
+          "pdf_start_index": 95,
+          "pdf_end_index": 153,
+          "citation_pages": "10-155",
+          "confidence": 0.69,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 16.201344411000036,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T03:56:35.552616+00:00"
+    },
+    "qwen3.6-35b-a3b": {
+      "chapters": [
+        {
+          "title": "II. Erschrecken Weihnachten hat erschrecken Halten",
+          "authors": [
+            "Weihnachten Opa",
+            "Vergessen\nWeihnachten Fahrrad Weihnachten",
+            "Weihnachten Zeitung",
+            "schreiben",
+            "Weihnachten Sehen",
+            "Brauchen vier böse nie",
+            "kurz\n° der",
+            "Klettern",
+            "zum Leben",
+            "laut"
+          ],
+          "pdf_start_index": 57,
+          "pdf_end_index": 68,
+          "citation_pages": "37-156",
+          "confidence": 0.67,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "VI. Weihnachten bei Einmal",
+          "authors": [
+            "schlagen vergessen",
+            "Monate",
+            "Glücklich Weihnachten",
+            "von Tür Geburtstag",
+            "Weihnachten Haus",
+            "Erschrecken",
+            "Eis Geschichte Oma Erschrecken",
+            "Erschrecken Apfel Stunde-",
+            "Vater",
+            "Schwester",
+            "laut",
+            "Zeitung Tag",
+            "Weihnachten öffnen",
+            "Bin Fahrrad ob\n"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 153,
+          "citation_pages": "157-155",
+          "confidence": 0.85,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 42.057621079,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:03:24.712250+00:00"
+    },
+    "qwen3.6-27b": {
+      "chapters": [],
+      "elapsed_seconds": 0.1967579309998655,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:20:19.683177+00:00"
+    },
+    "qwen3.5-397b-a17b": {
+      "chapters": [],
+      "elapsed_seconds": 0.19376973899989025,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-16T04:22:58.098789+00:00"
     }
   },
-  "generated_at": "2026-08-15T04:23:21.509583+00:00"
+  "generated_at": "2026-08-16T04:22:58.098789+00:00"
 }

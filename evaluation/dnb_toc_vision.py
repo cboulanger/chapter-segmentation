@@ -29,8 +29,24 @@ number -- each such sub-point is its own separate entry too, exactly as \
 printed, not merged into its parent heading. Do not collapse or omit a \
 sub-point just because it is indented under a larger heading.
 
-Return ONLY a JSON array, one entry per real chapter -- skip \
-acknowledgements, bibliography, index, and part-divider pages:
+A single chapter's title sometimes spans two printed lines -- a short \
+main title followed by a longer explanatory subtitle right below it \
+(or vice versa) -- with only ONE page number for the pair. That is ONE \
+entry, not two: join both lines into a single title string. Do not \
+create a separate entry for the subtitle line, and do not create a \
+separate entry with no page number just because a line of text sits \
+above a chapter's title.
+
+Return ONLY a JSON array, one entry per real chapter. Never emit an \
+entry for a part/section divider (e.g. "Teil 1", "I. Historische \
+Grundlagen", an unnumbered section-title line that groups several \
+chapters under it but is not itself a chapter) -- these never get their \
+own entry, even when they appear on their own printed line with no \
+page number of their own. Also skip front matter (preface, foreword, \
+acknowledgements, list of contributors/authors) and back matter \
+(bibliography, index, an appendix listing an author's or honoree's own \
+prior publications) -- none of these are chapters either, regardless of \
+whether they carry a printed page number:
 [{"title": "...", "authors": ["First Last", ...], "printed_page_number": "12"}]
 
 printed_page_number is the page number exactly AS PRINTED on the page -- \

@@ -186,13 +186,13 @@ class TestFindTocCandidates(unittest.TestCase):
         entries = find_toc_candidates(pages)
         self.assertEqual(len(entries), 3)
         self.assertEqual(entries[0].title, "Introduction to Reference Management")
-        self.assertEqual(entries[0].printed_page_number, 1)
+        self.assertEqual(entries[0].printed_page_number, "1")
         self.assertEqual(entries[0].source_page_index, 0)
         # The listing's own "CONTENTS" heading is never merged into a
         # wrapped-title variant (see _TOC_MAX_CONTINUATION_LINES walk).
         self.assertEqual(entries[0].title_variants, ())
         self.assertEqual(entries[2].title, "Zotero in Practice")
-        self.assertEqual(entries[2].printed_page_number, 89)
+        self.assertEqual(entries[2].printed_page_number, "89")
 
     def test_entries_default_to_empty_authors(self):
         pages = [
@@ -222,7 +222,7 @@ class TestFindTocCandidates(unittest.TestCase):
         entries = find_toc_candidates(pages)
         self.assertEqual(len(entries), 3)
         self.assertEqual(entries[0].title, "Bibliographic Software Overview")
-        self.assertEqual(entries[0].printed_page_number, 12)
+        self.assertEqual(entries[0].printed_page_number, "12")
 
     def test_ignores_isolated_lines_on_ordinary_pages(self):
         # Only 1-2 matching lines on a page (below _TOC_MIN_LINES_PER_PAGE)
@@ -370,7 +370,7 @@ class TestFindTocCandidates(unittest.TestCase):
         ] + self._FILLER_PAGES
         entries = find_toc_candidates(pages)
         foreword = next(e for e in entries if e.title == "Foreword")
-        self.assertEqual(foreword.printed_page_number, 7)
+        self.assertEqual(foreword.printed_page_number, "vii")
         self.assertTrue(foreword.printed_roman)
         self.assertFalse(next(e for e in entries if e.title == "Zotero in Practice").printed_roman)
 
@@ -401,7 +401,7 @@ class TestFindTocCandidates(unittest.TestCase):
         entries = find_toc_candidates(pages)
         adopted = next((e for e in entries if e.title == "Comparing Citation Styles"), None)
         self.assertIsNotNone(adopted)
-        self.assertEqual(adopted.printed_page_number, 45)
+        self.assertEqual(adopted.printed_page_number, "45")
 
     def test_author_marker_toc_keeps_only_chapter_level_entries(self):
         # French/OpenEdition-style TOC: each chapter's page number sits on a

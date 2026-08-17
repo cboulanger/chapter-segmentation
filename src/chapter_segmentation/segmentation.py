@@ -410,8 +410,13 @@ def find_toc_candidates(pages: list[str], max_front_fraction: float = 0.15, max_
             if _looks_like_url_or_doi(m.group(0)) or _looks_like_imprint_line(m.group(0)):
                 continue
             title = m.group("title").strip(" .")
-            page_number = _parse_toc_page_number(m.group("page"))
-            if page_number is None or page_number > max_plausible_page_number:
+            # _parse_toc_page_number is still the plausibility gate here
+            # (an implausible value never becomes an entry at all) -- but
+            # the TEXT stored on the entry is the original captured
+            # string, not the parsed int, so a page reads back exactly as
+            # printed.
+            parsed_page_number = _parse_toc_page_number(m.group("page"))
+            if parsed_page_number is None or parsed_page_number > max_plausible_page_number:
                 continue
             if len(title) < 3:
                 # A bare dot-leader line (".......... 60") carries only the
@@ -454,7 +459,7 @@ def find_toc_candidates(pages: list[str], max_front_fraction: float = 0.15, max_
                 prefix_parts.insert(0, prev)
                 variants.append(" ".join(prefix_parts + [title]).strip(" ."))
             out.append(TocEntry(
-                title=title, printed_page_number=page_number, source_page_index=page_index,
+                title=title, printed_page_number=m.group("page"), source_page_index=page_index,
                 printed_roman=not m.group("page").isdigit(),
                 title_variants=tuple(variants),
             ))

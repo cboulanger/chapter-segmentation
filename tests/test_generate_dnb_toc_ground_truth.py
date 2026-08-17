@@ -10,6 +10,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock
 
+import httpx
+from openai import RateLimitError
 from pypdf import PdfWriter
 
 from chapter_segmentation.segmentation import TocEntry
@@ -17,9 +19,11 @@ from evaluation.dnb_toc_vision import load_cached_llm_entries, write_cached_llm_
 from evaluation.kisski import KisskiModel
 from evaluation.scripts.generate_dnb_toc_ground_truth import (
     _call_with_retry,
+    _is_stale_bulk_gate_entry,
     _run_book,
     _run_book_entries,
     _select_best_models,
+    _still_needs_a_decision,
 )
 
 
@@ -46,6 +50,28 @@ class TestCallWithRetry(unittest.IsolatedAsyncioTestCase):
             await _call_with_retry(coro_fn, attempts=2, sleep=AsyncMock())
         self.assertEqual(coro_fn.await_count, 2)
 
+    async def test_rate_limit_error_gets_the_longer_linear_backoff(self):
+        rate_limit_error = RateLimitError(
+            "rate limited", response=httpx.Response(429, request=httpx.Request("POST", "https://example.com")), body=None,
+        )
+        coro_fn = AsyncMock(side_effect=[rate_limit_error, rate_limit_error, "ok"])
+        sleep = AsyncMock()
+
+        result = await _call_with_retry(coro_fn, attempts=3, base_delay=2.0, rate_limit_delay=20.0, sleep=sleep)
+
+        self.assertEqual(result, "ok")
+        sleep.assert_any_call(20.0)
+        sleep.assert_any_call(40.0)
+
+    async def test_non_rate_limit_error_keeps_the_short_exponential_backoff(self):
+        coro_fn = AsyncMock(side_effect=[RuntimeError("boom"), "ok"])
+        sleep = AsyncMock()
+
+        result = await _call_with_retry(coro_fn, attempts=2, base_delay=2.0, rate_limit_delay=20.0, sleep=sleep)
+
+        self.assertEqual(result, "ok")
+        sleep.assert_called_once_with(2.0)
+
 
 class TestRunBookEntries(unittest.TestCase):
     def test_passing_book_writes_expected_json(self):
@@ -66,6 +92,7 @@ class TestRunBookEntries(unittest.TestCase):
             self.assertFalse(data["verified"])
             self.assertEqual(data["source"], "bulk_gate")
             self.assertEqual(len(data["entries"]), 2)
+            self.assertIn("skip", data["entries"][0])
 
     def test_below_threshold_book_writes_nothing(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -131,6 +158,7 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
 
             key, passed, reason = await _run_book(
                 "book1", pdf_path, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                sleep=AsyncMock(),
             )
 
             self.assertTrue(passed)
@@ -153,6 +181,7 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
 
             key, passed, reason = await _run_book(
                 "book2", pdf_path, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                sleep=AsyncMock(),
             )
 
             self.assertTrue(passed)
@@ -171,6 +200,7 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
 
             key, passed, reason = await _run_book(
                 "book3", bad_pdf, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                sleep=AsyncMock(),
             )
 
             self.assertFalse(passed)
@@ -197,12 +227,156 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
 
             key, passed, reason = await _run_book(
                 "book4", pdf_path, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                sleep=AsyncMock(),
             )
 
             self.assertFalse(passed)
             self.assertTrue(reason.startswith("error:"))
             self.assertIsNotNone(load_cached_llm_entries(cache_directory, "book4", "model-a"))
             self.assertIsNone(load_cached_llm_entries(cache_directory, "book4", "model-b"))
+
+    async def test_semaphore_is_released_during_backoff_sleep(self):
+        # Regression test for a real 2026-08-17 batch stall: the semaphore
+        # used to wrap the whole retry sequence, so a backoff sleep held a
+        # concurrency slot hostage -- if enough books hit RateLimitError
+        # around the same time, every slot ended up asleep simultaneously
+        # and the batch stalled with zero throughput even though nothing
+        # had crashed. It must be released before each sleep so other
+        # books can make progress while this one backs off.
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            corpus_directory = tmp_path / "corpus"
+            cache_directory = tmp_path / "cache"
+            corpus_directory.mkdir()
+            pdf_path = _make_pdf(tmp_path / "book.pdf")
+            client = MagicMock()
+            client.chat.completions.create = AsyncMock(side_effect=RuntimeError("boom"))
+            semaphore = asyncio.Semaphore(1)
+            observed_lock_state_during_sleep = []
+
+            async def spying_sleep(_delay):
+                observed_lock_state_during_sleep.append(semaphore.locked())
+
+            await _run_book(
+                "book5", pdf_path, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                sleep=spying_sleep,
+            )
+
+            self.assertTrue(observed_lock_state_during_sleep, "sleep (backoff) was never invoked")
+            self.assertTrue(
+                all(not locked for locked in observed_lock_state_during_sleep),
+                "semaphore was still held during a backoff sleep",
+            )
+
+
+class TestStillNeedsADecision(unittest.TestCase):
+    def test_true_for_a_fresh_book(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            book = {"filename": "book1.pdf"}
+            self.assertTrue(_still_needs_a_decision(book, cdir, set(), set()))
+
+    def test_false_when_held_out_for_eval_tier(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            book = {"filename": "book1.pdf"}
+            self.assertFalse(_still_needs_a_decision(book, cdir, {"book1"}, set()))
+
+    def test_false_when_permanently_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            book = {"filename": "book1.pdf"}
+            self.assertFalse(_still_needs_a_decision(book, cdir, set(), {"book1"}))
+
+    def test_false_when_expected_json_already_exists(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            (cdir / "book1.expected.json").write_text("{}", encoding="utf-8")
+            book = {"filename": "book1.pdf"}
+            self.assertFalse(_still_needs_a_decision(book, cdir, set(), set()))
+
+    def test_true_for_a_stale_pre_skip_field_bulk_gate_file(self):
+        # A bulk_gate file written before the 2026-08-17 extraction-standard
+        # change has entries with no "skip" key at all -- it's missing
+        # whatever lines the old prompt told the model to omit outright, so
+        # it counts as undecided again rather than staying stuck forever.
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            (cdir / "book1.expected.json").write_text(
+                json.dumps({"entries": [{"title": "Einleitung", "authors": [], "printed_page_number": "9"}],
+                            "verified": False, "source": "bulk_gate"}),
+                encoding="utf-8",
+            )
+            book = {"filename": "book1.pdf"}
+            self.assertTrue(_still_needs_a_decision(book, cdir, set(), set()))
+
+    def test_false_for_a_current_schema_bulk_gate_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            (cdir / "book1.expected.json").write_text(
+                json.dumps({"entries": [{"title": "Einleitung", "authors": [], "printed_page_number": "9",
+                                          "skip": False}],
+                            "verified": False, "source": "bulk_gate"}),
+                encoding="utf-8",
+            )
+            book = {"filename": "book1.pdf"}
+            self.assertFalse(_still_needs_a_decision(book, cdir, set(), set()))
+
+    def test_false_for_a_stale_arbitration_file_never_auto_reprocessed(self):
+        # Unlike a stale bulk_gate file, a claude_arbitration file went
+        # through direct human/Claude review -- it must never be silently
+        # overwritten by an automated, unreviewed re-run just because it
+        # also predates the "skip" key. Retrofitting it is a deliberate
+        # manual task, not this function's job.
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            (cdir / "book1.expected.json").write_text(
+                json.dumps({"entries": [{"title": "Einleitung", "authors": [], "printed_page_number": "9"}],
+                            "verified": True, "source": "claude_arbitration"}),
+                encoding="utf-8",
+            )
+            book = {"filename": "book1.pdf"}
+            self.assertFalse(_still_needs_a_decision(book, cdir, set(), set()))
+
+
+class TestIsStaleBulkGateEntry(unittest.TestCase):
+    def test_true_when_bulk_gate_entries_lack_skip_key(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "book1.expected.json"
+            path.write_text(
+                json.dumps({"entries": [{"title": "X", "authors": [], "printed_page_number": "1"}],
+                            "verified": False, "source": "bulk_gate"}),
+                encoding="utf-8",
+            )
+            self.assertTrue(_is_stale_bulk_gate_entry(path))
+
+    def test_false_when_skip_key_present(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "book1.expected.json"
+            path.write_text(
+                json.dumps({"entries": [{"title": "X", "authors": [], "printed_page_number": "1", "skip": False}],
+                            "verified": False, "source": "bulk_gate"}),
+                encoding="utf-8",
+            )
+            self.assertFalse(_is_stale_bulk_gate_entry(path))
+
+    def test_false_for_non_bulk_gate_source(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "book1.expected.json"
+            path.write_text(
+                json.dumps({"entries": [{"title": "X", "authors": [], "printed_page_number": "1"}],
+                            "verified": True, "source": "claude_arbitration"}),
+                encoding="utf-8",
+            )
+            self.assertFalse(_is_stale_bulk_gate_entry(path))
+
+    def test_false_for_empty_entries(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "book1.expected.json"
+            path.write_text(
+                json.dumps({"entries": [], "verified": False, "source": "bulk_gate"}), encoding="utf-8",
+            )
+            self.assertFalse(_is_stale_bulk_gate_entry(path))
 
 
 class TestSelectBestModels(unittest.TestCase):

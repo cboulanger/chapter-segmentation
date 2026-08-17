@@ -79,8 +79,15 @@ for the full design (supersedes the two-text-extractor design in
 `docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md`).
 Two tiers, both writing
 `evaluation/corpus/dnb-toc-only/<id>.expected.json`
-(`{"entries": [{"title", "authors", "printed_page_number"}, ...],
-"verified": bool}`):
+(`{"entries": [{"title", "authors", "printed_page_number", "skip"}, ...],
+"verified": bool}`). `"skip"` (added 2026-08-17) marks an entry that isn't
+itself a real chapter -- a part/section divider, or front/back matter
+(preface, bibliography, index, ...) -- but every printed line still gets
+an entry either way; extraction is deliberately verbatim, not editorial,
+so two independent extractions of the same page can only disagree over
+what's actually printed, never over which lines "count" (see
+`TocEntry.skip`'s docstring in `src/chapter_segmentation/segmentation.py`
+for the full reasoning and the pre-2026-08-17 behavior this replaced):
 
 **Bulk tier** (`"verified": false`, no human review) --
 `evaluation/scripts/select_dnb_toc_eval_sample.py` first, then:
@@ -113,7 +120,10 @@ tier and never drafted by either extractor) -- for every ID in
    full-book `.expected.json` would mark `skip: true` (bibliography,
    index headers, part dividers) -- this file measures extraction
    fidelity against what's printed, not "which of these are real
-   chapters."
+   chapters." Mark each such non-chapter line `"skip": true` in the entry
+   itself (real chapters get `"skip": false`) -- same field the bulk tier
+   now writes (above), so both tiers are directly comparable rather than
+   measuring different things.
 4. Save as `<id>.expected.json` with `"verified": true`.
 
 **Spot-checking the bulk tier's real precision:**

@@ -6,6 +6,7 @@ section 4). No PDFs, no network -- pure functions over synthetic
 TocEntry lists."""
 
 import unittest
+from dataclasses import replace
 
 from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import align_toc_entries, diff_toc_entries, gate_book, toc_entry_to_gt_dict
@@ -195,12 +196,19 @@ class TestTocEntryToGtDict(unittest.TestCase):
         entry = _entry("Einleitung", 9, authors=("Jane Author",))
         self.assertEqual(
             toc_entry_to_gt_dict(entry),
-            {"title": "Einleitung", "authors": ["Jane Author"], "printed_page_number": "9"},
+            {"title": "Einleitung", "authors": ["Jane Author"], "printed_page_number": "9", "skip": False},
         )
 
     def test_unknown_page_number_becomes_none(self):
         entry = _entry("Bibliographie", -1)
         self.assertEqual(
             toc_entry_to_gt_dict(entry),
-            {"title": "Bibliographie", "authors": [], "printed_page_number": None},
+            {"title": "Bibliographie", "authors": [], "printed_page_number": None, "skip": False},
+        )
+
+    def test_skip_true_is_carried_through(self):
+        entry = replace(_entry("Bibliographie", 200), skip=True)
+        self.assertEqual(
+            toc_entry_to_gt_dict(entry),
+            {"title": "Bibliographie", "authors": [], "printed_page_number": "200", "skip": True},
         )

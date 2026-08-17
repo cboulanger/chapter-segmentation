@@ -16,8 +16,10 @@ from pypdf import PdfWriter
 from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_vision import (
     _MAX_VISION_PAGES,
+    cache_path,
     load_cached_llm_entries,
     render_pages_to_images,
+    versioned_cache_dir,
     vision_extract_toc_entries,
     write_cached_llm_entries,
 )
@@ -65,6 +67,47 @@ class TestLlmCacheRoundTrip(unittest.TestCase):
             write_cached_llm_entries(cache_dir, "book3", "model-b", entries_b)
             self.assertEqual(load_cached_llm_entries(cache_dir, "book3", "model-a"), entries_a)
             self.assertEqual(load_cached_llm_entries(cache_dir, "book3", "model-b"), entries_b)
+
+    def test_round_trip_preserves_skip(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            entries = [
+                TocEntry(title="Einleitung", printed_page_number=9, source_page_index=0, skip=False),
+                TocEntry(title="Bibliographie", printed_page_number=200, source_page_index=0, skip=True),
+            ]
+            write_cached_llm_entries(cache_dir, "book4", "model-a", entries)
+            loaded = load_cached_llm_entries(cache_dir, "book4", "model-a")
+            self.assertEqual(loaded, entries)
+            self.assertFalse(loaded[0].skip)
+            self.assertTrue(loaded[1].skip)
+
+    def test_cache_files_live_under_the_versioned_subdirectory(self):
+        # Regression test for the 2026-08-17 extraction-standard change:
+        # cache_path/write_cached_llm_entries must write inside
+        # versioned_cache_dir(cache_directory), not cache_directory itself,
+        # so a schema bump can never be mistaken for the previous
+        # version's (now-incomplete) cached results.
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            entries = [TocEntry(title="Einleitung", printed_page_number=9, source_page_index=0)]
+            write_cached_llm_entries(cache_dir, "book5", "model-a", entries)
+            self.assertTrue(cache_path(cache_dir, "book5", "model-a").exists())
+            self.assertEqual(cache_path(cache_dir, "book5", "model-a").parent, versioned_cache_dir(cache_dir))
+            self.assertFalse((cache_dir / "book5.model-a.json").exists())
+
+    def test_an_older_schema_versions_leftover_file_is_never_read(self):
+        # Simulates a pre-2026-08-17 cache file sitting directly in
+        # cache_directory (the old, unversioned layout) -- it must be a
+        # cache MISS under the current code, not silently trusted.
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            cache_dir.mkdir(exist_ok=True)
+            (cache_dir / "book6.model-a.json").write_text(
+                '{"generated_at": 0, "entries": [{"title": "Old", "printed_page_number": 1, '
+                '"source_page_index": 0, "authors": [], "printed_roman": false}]}',
+                encoding="utf-8",
+            )
+            self.assertIsNone(load_cached_llm_entries(cache_dir, "book6", "model-a"))
 
 
 class TestRenderPagesToImages(unittest.TestCase):
@@ -119,6 +162,18 @@ class TestVisionExtractTocEntries(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(entries[0].title, "Einleitung")
             self.assertEqual(entries[0].printed_page_number, 9)
             self.assertEqual(entries[1].authors, ("Jane Author",))
+
+    async def test_parses_skip_flag_per_entry(self):
+        response = (
+            '[{"title": "Einleitung", "authors": [], "printed_page_number": "9", "skip": false}, '
+            '{"title": "Bibliographie", "authors": [], "printed_page_number": "200", "skip": true}]'
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf_path = _make_pdf(Path(tmp) / "book.pdf", 1)
+            client = _fake_vision_client(response)
+            entries = await vision_extract_toc_entries(pdf_path, "some-model", client)
+            self.assertFalse(entries[0].skip)
+            self.assertTrue(entries[1].skip)
 
     async def test_sends_one_image_content_block_per_page(self):
         with tempfile.TemporaryDirectory() as tmp:

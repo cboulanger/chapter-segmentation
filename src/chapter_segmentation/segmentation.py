@@ -228,6 +228,19 @@ class TocEntry:
     # carried and _locate_toc_entries picks whichever variant actually
     # locates best in the book body. Empty for LLM-extracted entries, whose
     # titles are already read whole.
+    skip: bool = False  # True when this entry is not itself a real chapter --
+    # a part/section divider, or front/back matter (preface, bibliography,
+    # index, ...). Only ever set by evaluation/dnb_toc_vision.py's vision
+    # extraction (see its prompt): that path deliberately extracts EVERY
+    # printed TOC line verbatim rather than omitting non-chapter lines
+    # outright, so a two-model disagreement over what to extract can never
+    # cause an editorial-judgment mismatch to fail the whole-book agreement
+    # gate (evaluation/dnb_toc_matching.py) -- only a genuine reading
+    # mismatch can. Which lines count as "real chapters" is then a
+    # separate, revisable downstream decision instead of being baked
+    # irreversibly into the extraction step. llm_extract_toc_entries'
+    # production text prompt never asks for this field, so it's always
+    # False there -- unrelated to this dnb-toc-only-specific concern.
 
 
 def extract_page_texts_from_pdf_bytes(content: bytes, layout: bool = False) -> list[str]:
@@ -590,7 +603,9 @@ def _toc_items_to_entries(items: list) -> list[TocEntry]:
     to return -- into TocEntry objects, tolerating the malformed-response
     shapes a real model occasionally produces. Shared so both extraction
     paths parse identically instead of maintaining two copies of the same
-    tolerance logic."""
+    tolerance logic. An optional "skip" key becomes TocEntry.skip (default
+    False when absent, e.g. for llm_extract_toc_entries' text prompt, which
+    never asks for it) -- see TocEntry.skip's own docstring."""
     entries: list[TocEntry] = []
     for item in items:
         if not isinstance(item, dict):
@@ -622,7 +637,7 @@ def _toc_items_to_entries(items: list) -> list[TocEntry]:
         # front/back-matter range instead (see _toc_scan_indices).
         entries.append(TocEntry(
             title=title, printed_page_number=printed_page_number, source_page_index=-1,
-            authors=authors, printed_roman=printed_roman,
+            authors=authors, printed_roman=printed_roman, skip=bool(item.get("skip", False)),
         ))
     return entries
 

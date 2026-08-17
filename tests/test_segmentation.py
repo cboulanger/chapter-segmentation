@@ -532,6 +532,22 @@ class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(entries, [])
         llm.generate.assert_not_called()
 
+    async def test_skip_defaults_to_false_when_absent(self):
+        # The production text prompt never asks for "skip" (that's a
+        # dnb-toc-only vision-extraction-specific concern -- see
+        # TocEntry.skip's docstring) -- confirm the shared parser doesn't
+        # require it.
+        llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": 1}]')
+        entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
+        self.assertFalse(entries[0].skip)
+
+    async def test_skip_is_parsed_when_present(self):
+        llm = self._fake_llm(
+            '[{"title": "Bibliographie", "authors": [], "printed_page_number": 1, "skip": true}]'
+        )
+        entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
+        self.assertTrue(entries[0].skip)
+
     async def test_ignores_non_list_authors_instead_of_corrupting(self):
         # A malformed LLM response giving a plain string instead of a list
         # (e.g. "authors": "Jane Doe") must not be iterated character-by-

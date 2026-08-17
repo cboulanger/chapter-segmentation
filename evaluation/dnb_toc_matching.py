@@ -152,9 +152,16 @@ def toc_entry_to_gt_dict(entry: TocEntry) -> dict:
     evaluation/nuextract2_common.py's build_target output shape directly
     (its primary downstream consumer, per the parent program spec's
     section 3), and mirrors how citation_pages is already stored as a
-    string elsewhere in this project's ground truth."""
+    string elsewhere in this project's ground truth.
+
+    "skip" (added 2026-08-17, see TocEntry.skip's own docstring) records
+    the vision extraction's own hint about whether this entry is a real
+    chapter, but is NOT authoritative -- a downstream consumer that wants
+    "which of these are real chapters" should be free to reclassify from
+    the verbatim title/page data without needing new vision-model calls."""
     return {
         "title": entry.title,
         "authors": list(entry.authors),
         "printed_page_number": str(entry.printed_page_number) if entry.printed_page_number != -1 else None,
+        "skip": entry.skip,
     }

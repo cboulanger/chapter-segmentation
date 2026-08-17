@@ -18,12 +18,27 @@ list of what the TOC page prints, not a chapter-location result:
 ```json
 {
   "entries": [
-    {"title": "...", "authors": ["..."], "printed_page_number": "N"}
+    {"title": "...", "authors": ["..."], "printed_page_number": "N", "skip": false}
   ],
   "verified": true,
   "source": "claude_arbitration"
 }
 ```
+
+Extraction is deliberately **verbatim, not editorial**: every line the TOC
+page actually prints gets an entry, including part/section dividers and
+front/back matter (preface, bibliography, index, ...) — `"skip": true`
+marks those, `"skip": false` marks an actual chapter, but nothing is ever
+omitted outright. This is a 2026-08-17 change (see `TocEntry.skip`'s
+docstring in `src/chapter_segmentation/segmentation.py`) — before it, the
+extraction prompt told the vision models to leave non-chapter lines out
+entirely, which made two independent models' agreement rate sensitive to
+editorial judgment calls ("is this back matter or a chapter?") on top of
+genuine reading mismatches, and meant a below-threshold book could just as
+easily be a disagreement about what to *call* a line as about what was
+actually printed. Any `.expected.json` written before this change has no
+`"skip"` key on its entries at all and is missing whatever lines its
+extraction chose to omit.
 
 `manifest.json` carries `"toc_only": true` at the top level and, per book,
 `filename`, `title`, `language`, `doi`, `toc_download_url` (the original DNB
@@ -58,9 +73,14 @@ independent vision-capable KISSKI models
 (`evaluation.dnb_toc_vision.vision_extract_toc_entries`); a book's
 `.expected.json` is written only when the two models agree on at least 90%
 of entries (`evaluation.dnb_toc_matching.gate_book`). Already-decided books
-(an existing `.expected.json`) and rejected ones (below) are skipped
-automatically, so re-running the same command just picks up where the last
-run left off:
+(an existing, current-schema `.expected.json`) and rejected ones (below)
+are skipped automatically, so re-running the same command just picks up
+where the last run left off. A pre-2026-08-17 `bulk_gate` file (missing
+the `"skip"` key -- see above) is the one exception: it's treated as
+undecided and silently regenerated under the current verbatim standard,
+since it was never human-reviewed anyway; a pre-2026-08-17
+`claude_arbitration` file is left untouched instead, per
+`evaluation/CLAUDE.md`'s note on retrofitting those by hand:
 
 ```bash
 export KISSKI_API_KEY=$(grep '^KISSKI_API_KEY=' ../zotero-rag/.env | cut -d= -f2-)
@@ -70,15 +90,24 @@ uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 100 --
 **Arbitration** (`"verified": true, "source": "claude_arbitration"`) — for
 books the bulk tier skipped (models disagreed, or one/both failed outright).
 `evaluation/scripts/arbitrate_dnb_toc.py` surfaces each one's two raw
-extractions (from `llm-cache/<key>.<model>.json`, kept regardless of gate
-outcome) side by side; a human (or Claude Code, per
+extractions (from `llm-cache/<schema-version>/<key>.<model>.json`, kept
+regardless of gate outcome) side by side; a human (or Claude Code, per
 `evaluation/CLAUDE.md`'s "Arbitrating below-gate dnb-toc-only books") reads
 the disagreement, opens the actual TOC page images when the text diff alone
-doesn't settle it, and hand-writes the final `.expected.json`. A book that
-turns out genuinely unrecoverable (both models hallucinate, the scan is too
-degraded to read even directly) gets recorded in `arbitration-rejected.json`
-via `arbitrate_dnb_toc.py reject <key> "<reason>"` instead of resurfacing on
+doesn't settle it, and hand-writes the final `.expected.json`, transcribing
+every printed line (not just chapters) with the same `"skip"` flag
+convention as the bulk tier. A book that turns out genuinely unrecoverable
+(both models hallucinate, the scan is too degraded to read even directly)
+gets recorded in `arbitration-rejected.json` via
+`arbitrate_dnb_toc.py reject <key> "<reason>"` instead of resurfacing on
 every run.
+
+`llm-cache/`'s per-(book, model) files are versioned by extraction standard
+(`dnb_toc_vision.py`'s `versioned_cache_dir`, currently `v2`) rather than
+overwritten in place when the standard changes -- an older version's files
+are left alone on disk (some are already git-committed) but never read by
+current code, so a schema change can't silently resurrect a stale,
+incomplete extraction from cache instead of asking the model again.
 
 See `evaluation/README.md`'s "Building dnb-toc-only ground truth" for the
 eval-tier (fully hand-transcribed, held-out) sample and the bulk-tier

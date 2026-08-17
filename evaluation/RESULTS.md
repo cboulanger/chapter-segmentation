@@ -120,6 +120,69 @@ un-root-caused -- live-service flakiness is the leading hypothesis
 doesn't fail consistently across runs), but arbitration means it no
 longer blocks ground-truth coverage, only adds arbitration work.
 
+**Scaling generation to the rest of the corpus (2026-08-17):**
+`generate_dnb_toc_ground_truth.py` was changed to skip books that already
+have a `.expected.json` or are in `arbitration-rejected.json` (previously
+`--limit N` always re-processed the same first-N books in manifest order,
+which made repeated invocations useless for advancing through a large
+corpus) -- see the function's own `_still_needs_a_decision` docstring.
+Running it in successive `--limit 100` batches, each followed by
+`arbitrate_dnb_toc.py`, took `dnb-toc-only` from 15 to 170 books with
+ground truth. KISSKI rate-limited 30-60% of a typical 100-book batch even
+at `--concurrency 4`; per-book errors are cheap to retry (a book without
+`.expected.json` just gets re-attempted in the next batch, and any model
+whose response was already cached is reused for free), so this cost wall
+time, not correctness.
+
+A real batch run did stall completely for several minutes with zero
+throughput, though -- root cause: `_run_book`'s concurrency semaphore
+wrapped the *entire* per-model retry sequence, including the backoff
+`sleep()` between attempts. When enough books hit `RateLimitError` around
+the same time, every concurrency slot ended up asleep in backoff
+simultaneously, blocking all other pending books from even starting a new
+attempt -- confirmed live via `ps` (the stalled process had accrued only
+~8s of CPU time across ~3h of wall time) and `lsof` (zero open
+connections, so it wasn't hung on a frozen socket, just sleeping). Fixed
+by narrowing the semaphore to wrap only the individual API call inside
+the retry closure, so it's released during backoff and other books can
+proceed -- regression test:
+`test_semaphore_is_released_during_backoff_sleep` in
+`tests/test_generate_dnb_toc_ground_truth.py`. The same fix incidentally
+un-broke a test-suite slowdown introduced alongside the rate-limit-aware
+backoff (attempts 3->6, base delay 1s->2s): tests exercising `_run_book`'s
+retry paths didn't inject a mock `sleep`, so they burned real wall time on
+every real backoff -- `_run_book` now accepts an injectable `sleep` too.
+
+A second, distinct stall showed up immediately after that fix, on the very
+next batch: `lsof` on the running process showed 4 TCP connections to
+KISSKI's real host stuck `ESTABLISHED` for 20+ minutes with the process
+barely using any CPU -- not a client-side backoff sleep this time (no
+connections would be open for that), but requests actually in flight and
+not returning. Root cause: the `AsyncOpenAI` client was constructed with
+no explicit `timeout`, so it fell back to the SDK's own default (600s read
+timeout) -- one slow/stuck KISSKI response could occupy a concurrency
+slot for up to 10 minutes per attempt, times up to 6 retry attempts, a
+worst case over an hour for a single book. Fixed by passing `timeout=90.0`
+to the `AsyncOpenAI(...)` call in `_generate` -- generous for a 1-4 page
+TOC scan's vision call, but bounds the worst case to something a retry
+loop can actually recover from within a batch's lifetime.
+
+**Third stall, same session: a genuine daily quota, not a bug.** After
+both fixes above, a fresh batch still made zero progress in its first
+3 minutes, repeatedly -- but an isolated single call (no retry wrapper,
+no concurrency) failed in 1.6s with `RateLimitError`, ruling out a hang.
+The 429 response's own headers settled it precisely (`e.response.headers`
+on the raised `RateLimitError`):
+`x-ratelimit-limit-day: 1000` / `x-ratelimit-remaining-day: 0` /
+`retry-after: 54179` (seconds) -- the account's daily quota (1000
+requests) was fully spent by this session's batches 1-4, resetting at a
+clean midnight UTC (minute/hour/month limits still had headroom, so day
+was specifically the binding one). No further batches are worth
+attempting until the daily reset; `_call_with_retry`'s backoff, however
+long, cannot recover from a quota that's already at zero. Corpus stood at
+206/1251 `dnb-toc-only` books with ground truth (up from 15) when this
+was hit.
+
 ## Pure-heuristic results
 
 From `uv run pytest tests/test_segmentation_accuracy.py -q -s -m integration`

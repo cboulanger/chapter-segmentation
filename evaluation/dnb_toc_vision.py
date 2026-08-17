@@ -25,11 +25,36 @@ from chapter_segmentation._llm_json import parse_json_array
 from chapter_segmentation.segmentation import TocEntry, _toc_items_to_entries
 
 
+# Bump whenever vision_extract_toc_entries' output shape or the prompt's
+# extraction standard changes in a way that makes a previously-cached
+# result stale (not just wrong on some books, but built to a different
+# spec) -- 2026-08-17: switched from "omit non-chapter lines entirely" to
+# "include every printed line verbatim, flag non-chapters via
+# TocEntry.skip instead" (see TocEntry.skip's own docstring for why). Old
+# cache under a previous version is deliberately left on disk rather than
+# deleted -- some of it is already git-committed -- but lives in its own
+# subdirectory so a version bump here can never be mistaken for fresh data;
+# only load_cached_llm_entries/write_cached_llm_entries/cache_path need to
+# know about this constant, since every caller already goes through them
+# rather than computing cache paths itself (arbitrate_dnb_toc.py's own
+# globbing uses the versioned_cache_dir helper below for the same reason).
+_CACHE_SCHEMA_VERSION = "v2"
+
+
+def versioned_cache_dir(cache_directory: Path) -> Path:
+    """The actual directory this schema version's cache files live in --
+    cache_directory itself may also hold one or more OLDER versions'
+    files, never read by current code. Exposed (not `_`-prefixed) so
+    arbitrate_dnb_toc.py's own cache-directory globbing stays in sync
+    without duplicating the version constant."""
+    return cache_directory / _CACHE_SCHEMA_VERSION
+
+
 def cache_path(cache_directory: Path, key: str, model: str) -> Path:
     """Where one (book, model) pair's cached vision_extract_toc_entries
     result lives -- <key>.<model>.json, so two independent models never
     collide for the same book."""
-    return cache_directory / f"{key}.{model}.json"
+    return versioned_cache_dir(cache_directory) / f"{key}.{model}.json"
 
 
 def load_cached_llm_entries(cache_directory: Path, key: str, model: str) -> Optional[list[TocEntry]]:
@@ -45,7 +70,7 @@ def load_cached_llm_entries(cache_directory: Path, key: str, model: str) -> Opti
         TocEntry(
             title=e["title"], printed_page_number=e["printed_page_number"],
             source_page_index=e["source_page_index"], authors=tuple(e["authors"]),
-            printed_roman=e["printed_roman"],
+            printed_roman=e["printed_roman"], skip=e.get("skip", False),
         )
         for e in data["entries"]
     ]
@@ -57,15 +82,15 @@ def write_cached_llm_entries(cache_directory: Path, key: str, model: str, entrie
     "no TOC content" or a transient failure, and caching it either way
     would make a later re-run trust a possibly-transient empty result
     forever instead of retrying."""
-    cache_directory.mkdir(parents=True, exist_ok=True)
     path = cache_path(cache_directory, key, model)
+    path.parent.mkdir(parents=True, exist_ok=True)
     data = {
         "generated_at": time.time(),
         "entries": [
             {
                 "title": e.title, "printed_page_number": e.printed_page_number,
                 "source_page_index": e.source_page_index, "authors": list(e.authors),
-                "printed_roman": e.printed_roman,
+                "printed_roman": e.printed_roman, "skip": e.skip,
             }
             for e in entries
         ],
@@ -96,23 +121,28 @@ create a separate entry for the subtitle line, and do not create a \
 separate entry with no page number just because a line of text sits \
 above a chapter's title.
 
-Return ONLY a JSON array, one entry per real chapter. Never emit an \
-entry for a part/section divider (e.g. "Teil 1", "I. Historische \
-Grundlagen", an unnumbered section-title line that groups several \
-chapters under it but is not itself a chapter) -- these never get their \
-own entry, even when they appear on their own printed line with no \
-page number of their own. Also skip front matter (preface, foreword, \
-acknowledgements, list of contributors/authors) and back matter \
-(bibliography, index, an appendix listing an author's or honoree's own \
-prior publications) -- none of these are chapters either, regardless of \
-whether they carry a printed page number:
-[{"title": "...", "authors": ["First Last", ...], "printed_page_number": "12"}]
+Return ONLY a JSON array, one entry for EVERY line printed on the page \
+that names a titled section and (usually) a page number -- transcribe \
+what is actually printed, do not decide which lines matter. This \
+includes lines you might not think of as a "real chapter": a \
+part/section divider (e.g. "Teil 1", "I. Historische Grundlagen", an \
+unnumbered section-title line that groups several chapters under it), \
+front matter (preface, foreword, acknowledgements, list of \
+contributors/authors), and back matter (bibliography, index, an \
+appendix listing an author's or honoree's own prior publications) all \
+get their own entry too, exactly like any other line, even when they \
+carry no page number of their own. Mark each entry "skip": true if it is \
+one of these non-chapter lines (a divider, front matter, or back \
+matter) and "skip": false if it is an actual chapter -- but include the \
+entry either way; never omit a printed line because of what "skip" \
+value it would get:
+[{"title": "...", "authors": ["First Last", ...], "printed_page_number": "12", "skip": false}]
 
 printed_page_number is the page number exactly AS PRINTED on the page -- \
 copy it verbatim, including roman numerals for front-matter chapters \
-(e.g. "vii", not 7). If a chapter's printed page number is not visible, \
-use null for printed_page_number. If authors are not identifiable, use an \
-empty list."""
+(e.g. "vii", not 7). If a line's printed page number is not visible, use \
+null for printed_page_number -- never leave the line out just because it \
+has no page number. If authors are not identifiable, use an empty list."""
 
 # Rendered image count this corpus's PDFs never exceed today (1-3 pages,
 # per the acquisition pipeline's own TOC-only filtering) -- guards against

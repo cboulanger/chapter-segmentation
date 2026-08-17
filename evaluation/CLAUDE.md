@@ -556,6 +556,25 @@ docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md):
    partial agreement or fully hand-transcribed from the page images
    because neither model's output was usable.
 
+   **Transcribe every printed line, not just the ones you'd call real
+   chapters** -- part/section dividers and front/back matter
+   (preface, bibliography, index, ...) get their own entry too, with
+   `"skip": true`; real chapters get `"skip": false` (added 2026-08-17,
+   see `TocEntry.skip`'s docstring in
+   `src/chapter_segmentation/segmentation.py`). This replaces an earlier
+   version of this workflow that omitted non-chapter lines outright --
+   the same change made to the bulk-tier vision prompt, for the same
+   reason: which lines are "real chapters" is an editorial judgment call
+   that shouldn't be baked irreversibly into ground truth two independent
+   reads are supposed to verify mechanically. **Any `claude_arbitration`
+   file written before 2026-08-17 predates this and is missing its
+   omitted lines** -- `generate_dnb_toc_ground_truth.py`'s
+   `_still_needs_a_decision` deliberately leaves these alone (unlike
+   stale `bulk_gate` files, which it silently regenerates) rather than
+   risking an automated, unreviewed overwrite of already-verified work;
+   retrofitting one means reopening its PDF and adding back the omitted
+   lines by hand, not re-running the bulk gate on it.
+
 5. If a book is genuinely unrecoverable (both models hallucinate, the
    scan itself is too degraded to read even directly), record that
    instead of leaving it to resurface every run:

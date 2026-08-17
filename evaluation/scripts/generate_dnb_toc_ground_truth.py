@@ -4,20 +4,31 @@ which supersedes the two-text-extractor design in
 docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md).
 For every manifest book not held out in eval_tier_ids.json (see
 select_dnb_toc_eval_sample.py and evaluation/README.md's "Building
-dnb-toc-only ground truth"), sends the book's page images to two
+dnb-toc-only ground truth"), not already carrying a `.expected.json`
+(bulk-gated or arbitrated), and not permanently rejected
+(arbitration-rejected.json), sends the book's page images to two
 independent vision-capable KISSKI models
 (evaluation.dnb_toc_vision.vision_extract_toc_entries) and writes
 <id>.expected.json with "verified": false only when they agree well
 enough (evaluation.dnb_toc_matching.gate_book, >=0.90 whole-book
 agreement). Books that don't clear the gate are skipped and reported, not
-partially written.
+partially written -- run evaluation/scripts/arbitrate_dnb_toc.py on them
+next. Skipping already-decided and rejected books means `--limit N` always
+means "the next N books that still need a decision," so repeated
+invocations advance through the corpus in batches instead of reprocessing
+the same prefix every time. A bulk-gate `.expected.json` written before
+the 2026-08-17 extraction-standard change (verbatim per-line extraction
+plus a "skip" flag, replacing outright omission of front/back matter and
+dividers -- see TocEntry.skip's docstring) counts as undecided again and
+gets regenerated; an arbitrated one never does (see
+`_is_stale_bulk_gate_entry`).
 
 Spends real KISSKI API budget (two calls per book, one per vision model --
 see evaluation/refresh_llm_cache.py's docstring for the shared
 KISSKI_API_KEY setup this script reuses). Not a pytest test.
 
-    uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 50   # smoke test
-    uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py               # full corpus
+    uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 50   # next batch of 50
+    uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py               # all remaining books
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --spot-check 30
 
 `--spot-check N` does not generate anything -- instead it samples N books
@@ -37,7 +48,7 @@ import re
 from pathlib import Path
 from typing import Optional
 
-from openai import AsyncOpenAI
+from openai import AsyncOpenAI, RateLimitError
 
 from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
@@ -47,10 +58,18 @@ from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models
 from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
 
 
-async def _call_with_retry(coro_fn, attempts: int = 3, base_delay: float = 1.0, sleep=asyncio.sleep):
+async def _call_with_retry(
+    coro_fn, attempts: int = 6, base_delay: float = 2.0, rate_limit_delay: float = 20.0, sleep=asyncio.sleep,
+):
     """Same shape as evaluation/refresh_llm_cache.py's own retry helper
-    (3 attempts, exponential backoff from base_delay) -- `sleep` is
-    injectable so tests don't actually wait."""
+    (exponential backoff from base_delay), except a 429 gets its own much
+    longer, linearly-growing backoff (rate_limit_delay * attempt_number)
+    instead of the short exponential one -- found empirically (2026-08-17
+    batch runs) that KISSKI's rate limit is a real per-key quota, not a
+    transient blip, and the original 3-attempts/1s-base backoff gave up
+    long before the quota window had a chance to reset (30-60% of a
+    100-book batch lost to RateLimitError alone at both concurrency=8 and
+    concurrency=4). `sleep` is injectable so tests don't actually wait."""
     last_exc: Optional[Exception] = None
     for attempt in range(attempts):
         try:
@@ -58,7 +77,8 @@ async def _call_with_retry(coro_fn, attempts: int = 3, base_delay: float = 1.0, 
         except Exception as exc:  # noqa: BLE001 -- any failure here (network, parse) is retryable
             last_exc = exc
             if attempt < attempts - 1:
-                await sleep(base_delay * 2 ** attempt)
+                delay = rate_limit_delay * (attempt + 1) if isinstance(exc, RateLimitError) else base_delay * 2 ** attempt
+                await sleep(delay)
     raise last_exc
 
 
@@ -94,7 +114,7 @@ _CORPUS_NAME = "dnb-toc-only"
 
 async def _run_book(
     key: str, pdf_path: Path, models: tuple[str, str], client, semaphore: asyncio.Semaphore,
-    corpus_directory: Path, cache_directory: Path,
+    corpus_directory: Path, cache_directory: Path, sleep=asyncio.sleep,
 ) -> tuple[str, bool, str]:
     """Thin I/O wrapper around _run_book_entries -- calls
     vision_extract_toc_entries once per model (through the cache, then
@@ -105,26 +125,36 @@ async def _run_book(
     letting it propagate -- same "catch-log-continue" convention
     evaluation/refresh_llm_cache.py already established for this kind of
     long, unattended, budget-spending batch job. One book's failure must
-    never abort the rest of a ~1000-book run."""
+    never abort the rest of a ~1000-book run.
+
+    `semaphore` is acquired only around each individual API call attempt
+    (inside the closure passed to _call_with_retry), NOT around the whole
+    retry sequence -- found the hard way (2026-08-17 batch run) that
+    holding it for the full sequence lets a backoff sleep occupy a
+    concurrency slot for up to minutes, and if enough books hit
+    RateLimitError around the same time, every slot ends up asleep at once
+    and the entire batch stalls with zero throughput even though nothing
+    actually crashed. Releasing it between attempts lets other books make
+    progress while one book backs off."""
     try:
         entries_by_model = []
         for model in models:
             cached = load_cached_llm_entries(cache_directory, key, model)
-            async with semaphore:
-                if cached is not None:
-                    entries = cached
-                else:
-                    entries = await _call_with_retry(
-                        lambda m=model: vision_extract_toc_entries(pdf_path, m, client)
-                    )
-                    # Only cache a non-empty result -- an empty list here
-                    # could be a genuine "no TOC content on these pages" or
-                    # a transient failure already exhausted by
-                    # _call_with_retry; caching it either way would make a
-                    # later re-run trust a possibly-transient empty result
-                    # forever instead of retrying.
-                    if entries:
-                        write_cached_llm_entries(cache_directory, key, model, entries)
+            if cached is not None:
+                entries = cached
+            else:
+                async def _call(m=model):
+                    async with semaphore:
+                        return await vision_extract_toc_entries(pdf_path, m, client)
+                entries = await _call_with_retry(_call, sleep=sleep)
+                # Only cache a non-empty result -- an empty list here
+                # could be a genuine "no TOC content on these pages" or
+                # a transient failure already exhausted by
+                # _call_with_retry; caching it either way would make a
+                # later re-run trust a possibly-transient empty result
+                # forever instead of retrying.
+                if entries:
+                    write_cached_llm_entries(cache_directory, key, model, entries)
             entries_by_model.append(entries)
         return _run_book_entries(key, entries_by_model[0], entries_by_model[1], corpus_directory)
     except Exception as exc:  # noqa: BLE001 -- must never let one book crash the whole batch
@@ -209,13 +239,63 @@ async def _run_all(
     ]))
 
 
+def _is_stale_bulk_gate_entry(gt_path: Path) -> bool:
+    """True if gt_path is a BULK-tier (`"source": "bulk_gate"`) file
+    written before the 2026-08-17 extraction-standard change (verbatim
+    per-line extraction with a `"skip"` flag, replacing the vision
+    prompt's own outright omission of front/back matter and dividers --
+    see TocEntry.skip's docstring) -- recognized by at least one entry
+    missing the "skip" key, since that key didn't exist before the
+    change. Deliberately restricted to `bulk_gate`: a `claude_arbitration`
+    file went through direct human/Claude review and must never be
+    silently overwritten by a fresh, unreviewed automated gate result just
+    because it also predates this key -- those need a deliberate manual
+    retrofit (reopen the PDF, add the previously-omitted lines with
+    "skip": true) instead, tracked separately rather than reprocessed by
+    this script."""
+    try:
+        data = json.loads(gt_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return False
+    if data.get("source") != "bulk_gate":
+        return False
+    entries = data.get("entries", [])
+    return bool(entries) and not all("skip" in e for e in entries)
+
+
+def _still_needs_a_decision(book: dict, cdir: Path, eval_tier_ids: set[str], rejected_ids: set[str]) -> bool:
+    """True if `book` hasn't already been settled one way or another --
+    held out for the eval tier, already carrying a current-schema
+    `.expected.json` (bulk-gated or arbitrated), or permanently rejected.
+    A pre-2026-08-17 bulk-gate file (see `_is_stale_bulk_gate_entry`)
+    counts as NOT yet decided, so it's regenerated under the current
+    verbatim-extraction standard rather than left stale forever; a
+    pre-2026-08-17 arbitration file is left alone (not this script's job
+    to touch). Factored out of `_generate` so repeated invocations
+    naturally advance to the next undecided books instead of reprocessing
+    the same prefix, and so this filtering is unit-testable without a
+    real corpus/API key."""
+    key = manifest_key(book)
+    if key in eval_tier_ids or key in rejected_ids:
+        return False
+    gt_path = cdir / f"{key}.expected.json"
+    if not gt_path.exists():
+        return True
+    return _is_stale_bulk_gate_entry(gt_path)
+
+
 def _generate(args: argparse.Namespace) -> int:
     cdir = corpus_dir(_CORPUS_NAME)
     eval_tier_path = cdir / "eval_tier_ids.json"
     eval_tier_ids = set(json.loads(eval_tier_path.read_text(encoding="utf-8"))) if eval_tier_path.exists() else set()
+    rejected_path = cdir / "arbitration-rejected.json"
+    rejected_ids = (
+        {entry["key"] for entry in json.loads(rejected_path.read_text(encoding="utf-8"))["rejected"]}
+        if rejected_path.exists() else set()
+    )
 
     books = load_manifest_books(_CORPUS_NAME)
-    eligible = [b for b in books if manifest_key(b) not in eval_tier_ids]
+    eligible = [b for b in books if _still_needs_a_decision(b, cdir, eval_tier_ids, rejected_ids)]
     if args.limit is not None:
         eligible = eligible[: args.limit]
     candidates = [(manifest_key(b), cdir / b["filename"]) for b in eligible if (cdir / b["filename"]).exists()]
@@ -223,7 +303,15 @@ def _generate(args: argparse.Namespace) -> int:
 
     api_key = os.environ["KISSKI_API_KEY"]
     models = tuple(_pick_models(DEFAULT_KISSKI_BASE_URL, api_key))
-    client = AsyncOpenAI(base_url=DEFAULT_KISSKI_BASE_URL, api_key=api_key)
+    # Explicit per-request timeout -- the openai SDK's own default (600s
+    # read timeout) let one slow/hung KISSKI response occupy a concurrency
+    # slot for up to 10 minutes PER ATTEMPT, times up to 6 retry attempts
+    # (_call_with_retry's default), a worst case over an hour for a single
+    # book (found live, 2026-08-17: a batch stalled with 4 connections to
+    # KISSKI stuck ESTABLISHED for 20+ minutes, well past this script's
+    # typical successful per-call latency). 90s is generous for a 1-4 page
+    # TOC scan's vision call while still bounding the worst case.
+    client = AsyncOpenAI(base_url=DEFAULT_KISSKI_BASE_URL, api_key=api_key, timeout=90.0)
 
     results = asyncio.run(_run_all(candidates, models, client, args.concurrency, cdir, llm_cache_dir(_CORPUS_NAME)))
     passed = [r for r in results if r[1]]

@@ -12,7 +12,7 @@ from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import align_toc_entries, diff_toc_entries, gate_book, toc_entry_to_gt_dict
 
 
-def _entry(title: str, page: int, authors: tuple[str, ...] = ()) -> TocEntry:
+def _entry(title: str, page: str | int | None, authors: tuple[str, ...] = ()) -> TocEntry:
     return TocEntry(title=title, printed_page_number=page, source_page_index=0, authors=authors)
 
 
@@ -94,6 +94,31 @@ class TestAlignTocEntries(unittest.TestCase):
         b = [_entry("Metaphysik nach Kant", 117)]
         self.assertEqual(align_toc_entries(a, b), [])
 
+    def test_matches_on_prefixed_page_marker(self):
+        # The real reported bug this whole change exists for: two
+        # independent extractions that both correctly read "R42" for the
+        # same line must be able to align -- the old int-with--1-sentinel
+        # representation collapsed both to the same "unknown" value and
+        # skipped them before matching was even attempted.
+        a = [_entry("Appendix", "R42")]
+        b = [_entry("Appendix", "R42")]
+        self.assertEqual(align_toc_entries(a, b), [(0, 0)])
+
+    def test_matches_prefixed_marker_case_insensitively(self):
+        a = [_entry("Appendix", "R42")]
+        b = [_entry("Appendix", "r42")]
+        self.assertEqual(align_toc_entries(a, b), [(0, 0)])
+
+    def test_matches_roman_numeral_case_difference(self):
+        a = [_entry("Foreword", "VII")]
+        b = [_entry("Foreword", "vii")]
+        self.assertEqual(align_toc_entries(a, b), [(0, 0)])
+
+    def test_matches_arabic_page_with_leading_zero(self):
+        a = [_entry("Einleitung", "07")]
+        b = [_entry("Einleitung", "7")]
+        self.assertEqual(align_toc_entries(a, b), [(0, 0)])
+
 
 class TestDiffTocEntries(unittest.TestCase):
     def test_full_agreement_has_no_singletons(self):
@@ -167,7 +192,7 @@ class TestGateBook(unittest.TestCase):
         l = [_entry("Schluss", 40), _entry("Einleitung", 9)]
         passed, entries = gate_book(h, l)
         self.assertTrue(passed)
-        self.assertEqual([e.printed_page_number for e in entries], [9, 40])
+        self.assertEqual([e.printed_page_number for e in entries], ["9", "40"])
 
     def test_matched_pair_keeps_heuristic_title_but_falls_back_to_llm_authors(self):
         # The heuristic (find_toc_candidates) almost never populates

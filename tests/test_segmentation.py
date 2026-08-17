@@ -28,6 +28,7 @@ from chapter_segmentation.segmentation import (
     _to_roman,
     _toc_declared_page,
     _fallback_end_printed,
+    _normalize_printed_page_number,
     analyze_attachment_with_llm_fallback,
     analyze_attachment_outline_only,
     analyze_attachment_llm_only,
@@ -46,6 +47,7 @@ from chapter_segmentation.segmentation import (
 from chapter_segmentation.segmentation import _chapters_from_located
 from chapter_segmentation.segmentation import extract_authors_near
 from chapter_segmentation.segmentation import analyze_attachment
+from chapter_segmentation.segmentation import _candidate_to_toc_entry
 from chapter_segmentation.evidence.outline_strategy import extract_outline_candidates
 from chapter_segmentation.evidence.types import ChapterCandidate
 
@@ -106,6 +108,65 @@ _TWO_CHAPTER_PAGES = [
 ]
 
 
+class TestNormalizePrintedPageNumber(unittest.TestCase):
+    def test_passes_through_a_plain_string_verbatim(self):
+        self.assertEqual(_normalize_printed_page_number("R42"), "R42")
+
+    def test_strips_whitespace(self):
+        self.assertEqual(_normalize_printed_page_number("  42  "), "42")
+
+    def test_empty_string_becomes_none(self):
+        self.assertIsNone(_normalize_printed_page_number(""))
+
+    def test_string_null_becomes_none(self):
+        self.assertIsNone(_normalize_printed_page_number("null"))
+
+    def test_none_stays_none(self):
+        self.assertIsNone(_normalize_printed_page_number(None))
+
+    def test_legacy_negative_one_sentinel_becomes_none(self):
+        self.assertIsNone(_normalize_printed_page_number(-1))
+
+    def test_legacy_bare_int_becomes_str(self):
+        self.assertEqual(_normalize_printed_page_number(12), "12")
+
+    def test_legacy_bare_float_becomes_str(self):
+        self.assertEqual(_normalize_printed_page_number(12.0), "12")
+
+    def test_bool_true_becomes_none(self):
+        # bool is a subclass of int -- must not fall through to the
+        # int/float branch and stringify as "1"/"0".
+        self.assertIsNone(_normalize_printed_page_number(True))
+
+    def test_bool_false_becomes_none(self):
+        self.assertIsNone(_normalize_printed_page_number(False))
+
+    def test_nan_becomes_none(self):
+        # Python's json module accepts bare NaN literals by default, so a
+        # malformed LLM/cache response could hand this function a float
+        # NaN -- must degrade to None like any other unusable input,
+        # not raise ValueError from the int() cast.
+        self.assertIsNone(_normalize_printed_page_number(float("nan")))
+
+
+class TestTocEntryConstructionBc(unittest.TestCase):
+    def test_legacy_bare_int_construction_normalizes_to_str(self):
+        entry = TocEntry(title="Introduction", printed_page_number=12, source_page_index=0)
+        self.assertEqual(entry.printed_page_number, "12")
+
+    def test_legacy_negative_one_sentinel_construction_normalizes_to_none(self):
+        entry = TocEntry(title="Introduction", printed_page_number=-1, source_page_index=-1)
+        self.assertIsNone(entry.printed_page_number)
+
+    def test_string_construction_passes_through_verbatim(self):
+        entry = TocEntry(title="Appendix", printed_page_number="R42", source_page_index=-1)
+        self.assertEqual(entry.printed_page_number, "R42")
+
+    def test_none_construction_stays_none(self):
+        entry = TocEntry(title="Introduction", printed_page_number=None, source_page_index=-1)
+        self.assertIsNone(entry.printed_page_number)
+
+
 class TestFindTocCandidates(unittest.TestCase):
     # Padded well past any page number used in these fixtures' TOC lines --
     # find_toc_candidates rejects a printed page number that looks
@@ -126,13 +187,13 @@ class TestFindTocCandidates(unittest.TestCase):
         entries = find_toc_candidates(pages)
         self.assertEqual(len(entries), 3)
         self.assertEqual(entries[0].title, "Introduction to Reference Management")
-        self.assertEqual(entries[0].printed_page_number, 1)
+        self.assertEqual(entries[0].printed_page_number, "1")
         self.assertEqual(entries[0].source_page_index, 0)
         # The listing's own "CONTENTS" heading is never merged into a
         # wrapped-title variant (see _TOC_MAX_CONTINUATION_LINES walk).
         self.assertEqual(entries[0].title_variants, ())
         self.assertEqual(entries[2].title, "Zotero in Practice")
-        self.assertEqual(entries[2].printed_page_number, 89)
+        self.assertEqual(entries[2].printed_page_number, "89")
 
     def test_entries_default_to_empty_authors(self):
         pages = [
@@ -162,7 +223,7 @@ class TestFindTocCandidates(unittest.TestCase):
         entries = find_toc_candidates(pages)
         self.assertEqual(len(entries), 3)
         self.assertEqual(entries[0].title, "Bibliographic Software Overview")
-        self.assertEqual(entries[0].printed_page_number, 12)
+        self.assertEqual(entries[0].printed_page_number, "12")
 
     def test_ignores_isolated_lines_on_ordinary_pages(self):
         # Only 1-2 matching lines on a page (below _TOC_MIN_LINES_PER_PAGE)
@@ -310,7 +371,7 @@ class TestFindTocCandidates(unittest.TestCase):
         ] + self._FILLER_PAGES
         entries = find_toc_candidates(pages)
         foreword = next(e for e in entries if e.title == "Foreword")
-        self.assertEqual(foreword.printed_page_number, 7)
+        self.assertEqual(foreword.printed_page_number, "vii")
         self.assertTrue(foreword.printed_roman)
         self.assertFalse(next(e for e in entries if e.title == "Zotero in Practice").printed_roman)
 
@@ -341,7 +402,7 @@ class TestFindTocCandidates(unittest.TestCase):
         entries = find_toc_candidates(pages)
         adopted = next((e for e in entries if e.title == "Comparing Citation Styles"), None)
         self.assertIsNotNone(adopted)
-        self.assertEqual(adopted.printed_page_number, 45)
+        self.assertEqual(adopted.printed_page_number, "45")
 
     def test_author_marker_toc_keeps_only_chapter_level_entries(self):
         # French/OpenEdition-style TOC: each chapter's page number sits on a
@@ -513,8 +574,8 @@ class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(len(entries), 2)
         self.assertEqual(entries[0].title, "Introduction")
         self.assertEqual(entries[0].authors, ("Jane Author",))
-        self.assertEqual(entries[0].printed_page_number, 1)
-        self.assertEqual(entries[1].printed_page_number, -1)  # null -> sentinel, unused downstream
+        self.assertEqual(entries[0].printed_page_number, "1")
+        self.assertIsNone(entries[1].printed_page_number)  # null -> None
 
     async def test_returns_empty_list_on_malformed_response(self):
         llm = self._fake_llm("not json at all")
@@ -589,33 +650,48 @@ class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):
     async def test_parses_roman_numeral_page_string(self):
         llm = self._fake_llm('[{"title": "Foreword", "authors": [], "printed_page_number": "vii"}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, 7)
+        self.assertEqual(entries[0].printed_page_number, "vii")
         self.assertTrue(entries[0].printed_roman)
 
     async def test_parses_arabic_page_string(self):
         llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": "12"}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, 12)
+        self.assertEqual(entries[0].printed_page_number, "12")
         self.assertFalse(entries[0].printed_roman)
 
     async def test_tolerates_legacy_bare_int_page_number(self):
         llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": 12}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, 12)
+        self.assertEqual(entries[0].printed_page_number, "12")
         self.assertFalse(entries[0].printed_roman)
 
-    async def test_null_page_number_still_uses_sentinel(self):
+    async def test_null_page_number_becomes_none(self):
         llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": null}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, -1)
+        self.assertIsNone(entries[0].printed_page_number)
         self.assertFalse(entries[0].printed_roman)
 
-    async def test_implausible_roman_string_uses_sentinel(self):
-        # Over _ROMAN_PAGE_MAX_VALUE (50) -- _parse_toc_page_number rejects
-        # it as an implausible roman numeral, same as a heuristic-found one.
+    async def test_implausible_roman_string_is_stored_verbatim(self):
+        # Over _ROMAN_PAGE_MAX_VALUE (50), and not even a validly-shaped
+        # roman numeral either (4 "m"s is not valid roman notation) --
+        # stored verbatim regardless, matching the "copy it verbatim"
+        # prompt instruction. See TestTocDeclaredPage (added in a later
+        # task) for where this gets treated as unknown for citation-page
+        # purposes.
         llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": "mmmm"}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, -1)
+        self.assertEqual(entries[0].printed_page_number, "mmmm")
+        self.assertFalse(entries[0].printed_roman)
+
+    async def test_section_prefixed_page_marker_survives_verbatim(self):
+        # The real-world case this whole change exists for: a DNB-digitized
+        # TOC scan's page marker like "R42" is neither a pure digit run nor
+        # a valid roman numeral, so _parse_toc_page_number can't interpret
+        # it -- but it must not be discarded the way the old int-with--1-
+        # sentinel representation discarded it.
+        llm = self._fake_llm('[{"title": "Appendix", "authors": [], "printed_page_number": "R42"}]')
+        entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
+        self.assertEqual(entries[0].printed_page_number, "R42")
         self.assertFalse(entries[0].printed_roman)
 
 
@@ -969,6 +1045,29 @@ class TestTocDeclaredPage(unittest.TestCase):
         # rejects (a round-trip break later callers rely on not happening).
         entry = TocEntry(title="Foreword", printed_page_number=1000, source_page_index=-1, printed_roman=True)
         self.assertIsNone(_toc_declared_page(entry, total_pages=600))
+
+    def test_prefixed_marker_with_digit_returned_verbatim(self):
+        # The real reported bug this whole change exists for: "R42" is
+        # neither a pure digit run nor a valid roman numeral, so
+        # _parse_toc_page_number can't interpret it -- but it carries a
+        # digit, so it's a real alternate-scheme page marker, not noise.
+        entry = TocEntry(title="Appendix", printed_page_number="R42", source_page_index=-1)
+        self.assertEqual(_toc_declared_page(entry, total_pages=200), "R42")
+
+    def test_digitless_implausible_string_returns_none(self):
+        # "mmmm" has no digit at all and isn't a valid roman numeral (4
+        # "m"s is invalid roman notation) -- far more likely OCR/model
+        # noise than a real page marker, so still "unknown", matching the
+        # old int-sentinel path's behavior for this exact case.
+        entry = TocEntry(title="Introduction", printed_page_number="mmmm", source_page_index=-1)
+        self.assertIsNone(_toc_declared_page(entry, total_pages=200))
+
+    def test_negative_number_string_returns_none(self):
+        # "-5" contains a digit but is a malformed negative value, not a
+        # real alternate-scheme marker like "R42" -- must not bypass the
+        # plausibility ceiling below by being returned verbatim.
+        entry = TocEntry(title="Introduction", printed_page_number="-5", source_page_index=-1)
+        self.assertIsNone(_toc_declared_page(entry, total_pages=200))
 
 
 class TestFallbackEndPrinted(unittest.TestCase):
@@ -1426,6 +1525,28 @@ class TestChaptersFromLocatedPageNumberPriority(unittest.TestCase):
         self.assertEqual(chapters[0]["citation_pages"], "12-20")
         self.assertEqual(chapters[0]["page_mapping_confidence"], "inferred")
 
+    def test_prefixed_next_entry_marker_skips_fast_path_without_crashing(self):
+        # next_entry.printed_page_number is "R42" -- _parse_toc_page_number
+        # can't turn that into an int to subtract 1 from, so the fast
+        # "next entry's declared start minus one" path must be skipped
+        # (not raise a TypeError), falling through to on-page extraction
+        # of this chapter's own (trimmed) end page instead. Page numbers
+        # kept small (1, not e.g. 10): _toc_declared_page's plausibility
+        # ceiling is total_pages * _TOC_MAX_PAGE_NUMBER_RATIO(2.0) -- with
+        # only 2 pages in this fixture, anything above 4 would be
+        # (correctly) rejected as implausible before this test could even
+        # exercise the fast-path-skip it's meant to check.
+        pages = [self._FILLER + "\n\n12", self._FILLER + "\n\n13"]
+        first = TocEntry(title="Introduction", printed_page_number="1", source_page_index=0)
+        second = TocEntry(title="Appendix", printed_page_number="R42", source_page_index=1)
+        located = [
+            (first, ChapterStartMatch(index=0, score=100.0, margin=20.0)),
+            (second, ChapterStartMatch(index=1, score=100.0, margin=20.0)),
+        ]
+        chapters = _chapters_from_located(pages, located)
+        self.assertEqual(chapters[0]["citation_pages"], "1-12")
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "high")
+
     def test_unmappable_when_nothing_resolves(self):
         pages = [self._FILLER, self._FILLER]
         entry = TocEntry(title="Introduction", printed_page_number=-1, source_page_index=-1)
@@ -1714,6 +1835,18 @@ class TestAnalyzeAttachmentLlmOnly(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(result["diagnostics"]["llm_disambiguation_used"], 1)
         sources = {c["title"]: c["source"] for c in result["chapters"]}
         self.assertEqual(sources.get("Comparing Citation Styles"), "llm")
+
+
+class TestCandidateToTocEntry(unittest.TestCase):
+    def test_known_page_number_becomes_str(self):
+        candidate = ChapterCandidate(title="Introduction", printed_page_number=42)
+        entry = _candidate_to_toc_entry(candidate)
+        self.assertEqual(entry.printed_page_number, "42")
+
+    def test_none_page_number_stays_none(self):
+        candidate = ChapterCandidate(title="Introduction", printed_page_number=None)
+        entry = _candidate_to_toc_entry(candidate)
+        self.assertIsNone(entry.printed_page_number)
 
 
 if __name__ == "__main__":

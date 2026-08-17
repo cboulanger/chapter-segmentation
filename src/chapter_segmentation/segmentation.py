@@ -13,6 +13,7 @@ import hashlib
 import io
 import json
 import logging
+import math
 import re
 from collections import Counter
 from functools import lru_cache
@@ -101,6 +102,34 @@ def _parse_toc_page_number(raw: str) -> int | None:
         value = _ROMAN_VALUES[ch]
         total += -value if nxt != " " and _ROMAN_VALUES.get(nxt, 0) > value else value
     return total if total <= _ROMAN_PAGE_MAX_VALUE else None
+
+
+def _normalize_printed_page_number(value: object) -> str | None:
+    """Coerces any of TocEntry.printed_page_number's legal input shapes
+    into the canonical str | None form -- the single place every producer
+    (and every historical caller/on-disk cache file) gets normalized, via
+    TocEntry.__post_init__. A str is returned verbatim (just stripped) --
+    preserving whatever text an extractor actually read, including a
+    section-prefixed marker like "R42" -- which is the entire point of
+    this type. int/float only ever arrives from a legacy caller: the old
+    -1 "unknown" sentinel (now None), or a bare numeric JSON value some
+    LLM response used instead of the requested string.
+    """
+    if isinstance(value, str):
+        text = value.strip()
+        return None if not text or text.lower() == "null" else text
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, (int, float)):
+        if isinstance(value, float) and math.isnan(value):
+            # Python's json module accepts bare NaN literals by default,
+            # so a malformed LLM/cache response can hand this a float
+            # NaN -- degrade to None like any other unusable input,
+            # rather than letting int() raise ValueError.
+            return None
+        value = int(value)
+        return None if value == -1 else str(value)
+    return None
 
 # A real chapter TOC page has several title-like lines close together; a
 # back-of-book subject index, a bibliography, or an ordinary content page
@@ -208,7 +237,7 @@ def _looks_like_imprint_line(line: str) -> bool:
 @dataclass(frozen=True)
 class TocEntry:
     title: str
-    printed_page_number: int
+    printed_page_number: str | None
     source_page_index: int  # which page (0-based) the TOC entry itself was found on
     authors: tuple[str, ...] = ()  # populated only by llm_extract_toc_entries (see
     # docs/superpowers/specs/2026-07-25-llm-chapter-segmentation-fallback-design.md §4)
@@ -241,6 +270,13 @@ class TocEntry:
     # irreversibly into the extraction step. llm_extract_toc_entries'
     # production text prompt never asks for this field, so it's always
     # False there -- unrelated to this dnb-toc-only-specific concern.
+
+    def __post_init__(self) -> None:
+        # Normalizes every legal input shape (str, legacy bare int/float,
+        # the old -1 sentinel, None) into the canonical str | None form --
+        # see _normalize_printed_page_number's own docstring. object.
+        # __setattr__ is required: this dataclass is frozen.
+        object.__setattr__(self, "printed_page_number", _normalize_printed_page_number(self.printed_page_number))
 
 
 def extract_page_texts_from_pdf_bytes(content: bytes, layout: bool = False) -> list[str]:
@@ -387,8 +423,13 @@ def find_toc_candidates(pages: list[str], max_front_fraction: float = 0.15, max_
             if _looks_like_url_or_doi(m.group(0)) or _looks_like_imprint_line(m.group(0)):
                 continue
             title = m.group("title").strip(" .")
-            page_number = _parse_toc_page_number(m.group("page"))
-            if page_number is None or page_number > max_plausible_page_number:
+            # _parse_toc_page_number is still the plausibility gate here
+            # (an implausible value never becomes an entry at all) -- but
+            # the TEXT stored on the entry is the original captured
+            # string, not the parsed int, so a page reads back exactly as
+            # printed.
+            parsed_page_number = _parse_toc_page_number(m.group("page"))
+            if parsed_page_number is None or parsed_page_number > max_plausible_page_number:
                 continue
             if len(title) < 3:
                 # A bare dot-leader line (".......... 60") carries only the
@@ -431,7 +472,7 @@ def find_toc_candidates(pages: list[str], max_front_fraction: float = 0.15, max_
                 prefix_parts.insert(0, prev)
                 variants.append(" ".join(prefix_parts + [title]).strip(" ."))
             out.append(TocEntry(
-                title=title, printed_page_number=page_number, source_page_index=page_index,
+                title=title, printed_page_number=m.group("page"), source_page_index=page_index,
                 printed_roman=not m.group("page").isdigit(),
                 title_variants=tuple(variants),
             ))
@@ -619,18 +660,17 @@ def _toc_items_to_entries(items: list) -> list[TocEntry]:
         # string yields one entry per character, silently corrupting
         # author-aware disambiguation downstream.
         authors = tuple(str(a).strip() for a in raw_authors if str(a).strip()) if isinstance(raw_authors, list) else ()
-        printed = item.get("printed_page_number")
-        if isinstance(printed, (int, float)):
-            # Tolerate a model that ignores the string instruction and
-            # returns a bare number anyway -- still unambiguous for the
-            # arabic case.
-            printed = str(int(printed))
-        parsed_value = _parse_toc_page_number(printed.strip()) if isinstance(printed, str) else None
-        # -1 is a sentinel for "unknown" (LLM returned null, an unparseable
-        # value, or an implausible one, e.g. a roman numeral over
-        # _ROMAN_PAGE_MAX_VALUE) -- never a real printed page number.
-        printed_page_number = parsed_value if parsed_value is not None else -1
-        printed_roman = parsed_value is not None and not printed.strip().isdigit()
+        printed_page_number = _normalize_printed_page_number(item.get("printed_page_number"))
+        # Roman iff it parses via _parse_toc_page_number AND isn't a plain
+        # digit string -- same semantics as before, just checked against
+        # the normalized (verbatim) string instead of a pre-parsed int.
+        # A section-prefixed marker like "R42" correctly comes out False:
+        # it isn't a digit run, but it also doesn't parse as roman either.
+        printed_roman = (
+            printed_page_number is not None
+            and not printed_page_number.isdigit()
+            and _parse_toc_page_number(printed_page_number) is not None
+        )
         # source_page_index is a sentinel here -- unlike a regex-found entry,
         # an LLM-extracted entry has no single "the TOC line was on this
         # page" origin; the orchestration layer excludes the whole scanned
@@ -1090,23 +1130,40 @@ def _format_page_number(value: int, is_roman: bool) -> str:
 
 def _toc_declared_page(entry: TocEntry, total_pages: int) -> str | None:
     """entry's own printed_page_number, formatted, when the TOC (heuristic
-    or LLM) supplied a plausible one. -1 is the sentinel both sources use
-    for "not identified" (a regex-found entry always has a real, valid
-    value -- find_toc_candidates never constructs one otherwise; an
-    LLM-found entry uses -1 when it couldn't read one, see
-    llm_extract_toc_entries). Two independent plausibility ceilings mirror
-    find_toc_candidates'/​_parse_toc_page_number's own guards -- the LLM
-    path has no equivalent check of its own, and an LLM could hallucinate
-    an implausible value where the heuristic regex parser structurally
-    cannot: _TOC_MAX_PAGE_NUMBER_RATIO bounds any page number relative to
-    the book's length, and _ROMAN_PAGE_MAX_VALUE additionally bounds a
+    or LLM) supplied a plausible one. None is what both sources use for
+    "not identified" (a regex-found entry always has a real, valid value --
+    find_toc_candidates never constructs one otherwise; an LLM-found entry
+    is None when it couldn't read one, see llm_extract_toc_entries). Two
+    independent plausibility ceilings mirror find_toc_candidates'/​
+    _parse_toc_page_number's own guards -- the LLM path has no equivalent
+    check of its own, and an LLM could hallucinate an implausible value
+    where the heuristic regex parser structurally cannot:
+    _TOC_MAX_PAGE_NUMBER_RATIO bounds any page number relative to the
+    book's length, and _ROMAN_PAGE_MAX_VALUE additionally bounds a
     roman-numeral value on its own terms (front matter is never realistically
     hundreds of pages, regardless of how long the whole book is) -- without
     this second check, a formatted roman string could come out of this
     function that _parse_toc_page_number itself would then reject, breaking
     the round-trip later callers rely on.
     """
-    value = entry.printed_page_number
+    raw = entry.printed_page_number
+    if raw is None:
+        return None
+    value = _parse_toc_page_number(raw)
+    if value is None:
+        # A real alternate-scheme page marker ("R42", "12a") always
+        # carries at least one digit -- return it verbatim. A string with
+        # no digit at all that also isn't a valid roman numeral ("mmmm",
+        # "civil") is far more likely OCR/model noise than a genuine page
+        # marker -- treat it as unknown, same outcome the old int-
+        # sentinel path already produced for this case. A leading-minus
+        # digit run ("-5") is neither -- it's a malformed negative value,
+        # not a real marker -- and must not bypass the plausibility
+        # ceiling below by being returned verbatim.
+        text = raw.strip()
+        if text.startswith("-") and text[1:].isdigit():
+            return None
+        return raw if any(ch.isdigit() for ch in raw) else None
     if value <= 0 or value > total_pages * _TOC_MAX_PAGE_NUMBER_RATIO:
         return None
     if entry.printed_roman and value > _ROMAN_PAGE_MAX_VALUE:
@@ -1415,13 +1472,19 @@ def _chapters_from_located(
 
         end_printed = None
         next_entry = located[i + 1][0] if i + 1 < len(located) else None
+        next_value = (
+            _parse_toc_page_number(next_entry.printed_page_number)
+            if next_entry is not None and next_entry.printed_page_number is not None
+            else None
+        )
         if (
             next_entry is not None
             and next_entry.printed_roman == entry.printed_roman
             and _toc_declared_page(next_entry, total_pages) is not None
-            and next_entry.printed_page_number - 1 > 0
+            and next_value is not None
+            and next_value - 1 > 0
         ):
-            end_printed = _format_page_number(next_entry.printed_page_number - 1, entry.printed_roman)
+            end_printed = _format_page_number(next_value - 1, entry.printed_roman)
         end_is_high = False
         if end_printed is None:
             end_printed = extract_printed_page_number(pages[end_index])
@@ -1669,7 +1732,7 @@ def _candidate_to_toc_entry(candidate: ChapterCandidate) -> TocEntry:
     return TocEntry(
         title=candidate.title,
         authors=candidate.authors,
-        printed_page_number=candidate.printed_page_number if candidate.printed_page_number is not None else -1,
+        printed_page_number=str(candidate.printed_page_number) if candidate.printed_page_number is not None else None,
         source_page_index=-1,
     )
 

@@ -119,6 +119,13 @@ class TestFormatBookReport(unittest.TestCase):
         self.assertIn("From B", report)
         self.assertIn("From C", report)
 
+    def test_unknown_page_number_renders_as_question_mark(self):
+        report = format_book_report(
+            "book4", "Some Title", Path("/tmp/book4.pdf"),
+            {"model-a": [TocEntry(title="Mystery", printed_page_number=None, source_page_index=0)]},
+        )
+        self.assertIn("p.   ?", report)
+
 
 class TestRejectBook(unittest.TestCase):
     def test_creates_the_file_on_first_rejection(self):

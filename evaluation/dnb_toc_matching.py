@@ -10,11 +10,41 @@ from dataclasses import replace
 
 from rapidfuzz import fuzz
 
-from chapter_segmentation.segmentation import TocEntry
+from chapter_segmentation.segmentation import TocEntry, _parse_toc_page_number
 
 # Same constant src/chapter_segmentation/evidence/fusion.py's _align uses
 # for its own title-similarity matching.
 _ALIGN_SCORE_THRESHOLD = 70.0
+
+
+def _pages_equivalent(a: str | None, b: str | None) -> bool:
+    """True when two entries' printed_page_number values represent the
+    same page. None never matches None (or anything else) -- "unknown"
+    on either side means there is nothing to compare, same policy the
+    old -1-sentinel-skip already enforced. Otherwise: exact string match
+    first (handles a shared alternate-scheme marker like "R42" directly,
+    with no numeric parsing needed at all); then numeric equality via
+    _parse_toc_page_number (handles a case difference in a roman numeral,
+    "VII" vs "vii", or a leading zero, "07" vs "7"); then a
+    case-insensitive string match (handles a case difference in a
+    non-roman marker, "R42" vs "r42").
+
+    Known limitation: the numeric tier does not consult printed_roman,
+    so a roman marker can numerically collide with an unrelated arabic
+    marker of the same value ("L" vs "50", both 50) -- accepted rather
+    than threading printed_roman through this function and every
+    align_toc_entries call site, since align_toc_entries' own
+    title-similarity gate already makes a real false-positive rare (it
+    additionally requires the two entries' titles to score >=
+    _ALIGN_SCORE_THRESHOLD)."""
+    if a is None or b is None:
+        return False
+    if a == b:
+        return True
+    parsed_a, parsed_b = _parse_toc_page_number(a), _parse_toc_page_number(b)
+    if parsed_a is not None and parsed_a == parsed_b:
+        return True
+    return a.casefold() == b.casefold()
 
 
 def _candidate_titles(entry: TocEntry) -> tuple[str, ...]:
@@ -41,7 +71,8 @@ def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, i
     """Greedy, order-preserving alignment between two independently-
     produced TocEntry lists for the same TOC scan. A pair (i, j) counts as
     a match only when both sides have a KNOWN printed_page_number (neither
-    is the -1 "unknown" sentinel) that's numerically equal, AND their
+    is None) that's equivalent per _pages_equivalent (exact string match,
+    numeric match, or case-insensitive string match), AND their
     titles score >= _ALIGN_SCORE_THRESHOLD on the better of rapidfuzz's
     token_sort_ratio and partial_ratio (the latter added 2026-08-16 to
     tolerate a trailing noise run on one side -- e.g. garbled OCR tokens
@@ -57,13 +88,13 @@ def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, i
     pairs: list[tuple[int, int]] = []
     last_j = -1
     for i, entry_a in enumerate(a):
-        if entry_a.printed_page_number == -1:
+        if entry_a.printed_page_number is None:
             continue
         best_j = None
         best_score = _ALIGN_SCORE_THRESHOLD
         for j in range(last_j + 1, len(b)):
             entry_b = b[j]
-            if entry_b.printed_page_number != entry_a.printed_page_number:
+            if not _pages_equivalent(entry_a.printed_page_number, entry_b.printed_page_number):
                 continue
             score = max(
                 max(
@@ -123,7 +154,7 @@ def gate_book(
     equally-produced extractions -- falling back to `b`'s authors when
     `a`'s own are empty, in case one model dropped them) plus every
     singleton entry either side found alone, ordered by
-    printed_page_number (the -1 "unknown" sentinel sorts last). This is
+    printed_page_number (an unknown, i.e. None, value sorts last). This is
     deliberate: once a book clears the trust bar, a line only one side
     caught is far likelier a real entry the other missed than a
     hallucination -- trimming it out would silently understate the page's
@@ -141,18 +172,24 @@ def gate_book(
     ]
     merged += only_in_a
     merged += only_in_b
-    merged.sort(key=lambda e: (e.printed_page_number == -1, e.printed_page_number))
+
+    def _page_sort_key(entry: TocEntry) -> tuple:
+        value = _parse_toc_page_number(entry.printed_page_number) if entry.printed_page_number else None
+        return (entry.printed_page_number is None, value if value is not None else 0, entry.printed_page_number or "")
+
+    merged.sort(key=_page_sort_key)
     return True, merged
 
 
 def toc_entry_to_gt_dict(entry: TocEntry) -> dict:
     """Serializes one TocEntry to this corpus's <id>.expected.json entry
-    shape (design spec section 2) -- printed_page_number as a string, or
-    None for the -1 "unknown" sentinel. Matches
-    evaluation/nuextract2_common.py's build_target output shape directly
-    (its primary downstream consumer, per the parent program spec's
-    section 3), and mirrors how citation_pages is already stored as a
-    string elsewhere in this project's ground truth.
+    shape (design spec section 2) -- printed_page_number is already
+    str | None on TocEntry (see docs/superpowers/specs/2026-08-17-printed-page-number-string-design.md),
+    so it's passed through as-is. Matches evaluation/nuextract2_common.py's
+    build_target output shape directly (its primary downstream consumer,
+    per the parent program spec's section 3), and mirrors how
+    citation_pages is already stored as a string elsewhere in this
+    project's ground truth.
 
     "skip" (added 2026-08-17, see TocEntry.skip's own docstring) records
     the vision extraction's own hint about whether this entry is a real
@@ -162,6 +199,6 @@ def toc_entry_to_gt_dict(entry: TocEntry) -> dict:
     return {
         "title": entry.title,
         "authors": list(entry.authors),
-        "printed_page_number": str(entry.printed_page_number) if entry.printed_page_number != -1 else None,
+        "printed_page_number": entry.printed_page_number,
         "skip": entry.skip,
     }

@@ -113,6 +113,11 @@ class TestAlignTocEntries(unittest.TestCase):
         b = [_entry("Foreword", "vii")]
         self.assertEqual(align_toc_entries(a, b), [(0, 0)])
 
+    def test_matches_arabic_page_with_leading_zero(self):
+        a = [_entry("Einleitung", "07")]
+        b = [_entry("Einleitung", "7")]
+        self.assertEqual(align_toc_entries(a, b), [(0, 0)])
+
 
 class TestDiffTocEntries(unittest.TestCase):
     def test_full_agreement_has_no_singletons(self):

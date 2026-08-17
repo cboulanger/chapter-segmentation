@@ -28,6 +28,7 @@ from chapter_segmentation.segmentation import (
     _to_roman,
     _toc_declared_page,
     _fallback_end_printed,
+    _normalize_printed_page_number,
     analyze_attachment_with_llm_fallback,
     analyze_attachment_outline_only,
     analyze_attachment_llm_only,
@@ -104,6 +105,50 @@ _TWO_CHAPTER_PAGES = [
     _FILLER,  # 18
     _FILLER,  # 19
 ]
+
+
+class TestNormalizePrintedPageNumber(unittest.TestCase):
+    def test_passes_through_a_plain_string_verbatim(self):
+        self.assertEqual(_normalize_printed_page_number("R42"), "R42")
+
+    def test_strips_whitespace(self):
+        self.assertEqual(_normalize_printed_page_number("  42  "), "42")
+
+    def test_empty_string_becomes_none(self):
+        self.assertIsNone(_normalize_printed_page_number(""))
+
+    def test_string_null_becomes_none(self):
+        self.assertIsNone(_normalize_printed_page_number("null"))
+
+    def test_none_stays_none(self):
+        self.assertIsNone(_normalize_printed_page_number(None))
+
+    def test_legacy_negative_one_sentinel_becomes_none(self):
+        self.assertIsNone(_normalize_printed_page_number(-1))
+
+    def test_legacy_bare_int_becomes_str(self):
+        self.assertEqual(_normalize_printed_page_number(12), "12")
+
+    def test_legacy_bare_float_becomes_str(self):
+        self.assertEqual(_normalize_printed_page_number(12.0), "12")
+
+
+class TestTocEntryConstructionBc(unittest.TestCase):
+    def test_legacy_bare_int_construction_normalizes_to_str(self):
+        entry = TocEntry(title="Introduction", printed_page_number=12, source_page_index=0)
+        self.assertEqual(entry.printed_page_number, "12")
+
+    def test_legacy_negative_one_sentinel_construction_normalizes_to_none(self):
+        entry = TocEntry(title="Introduction", printed_page_number=-1, source_page_index=-1)
+        self.assertIsNone(entry.printed_page_number)
+
+    def test_string_construction_passes_through_verbatim(self):
+        entry = TocEntry(title="Appendix", printed_page_number="R42", source_page_index=-1)
+        self.assertEqual(entry.printed_page_number, "R42")
+
+    def test_none_construction_stays_none(self):
+        entry = TocEntry(title="Introduction", printed_page_number=None, source_page_index=-1)
+        self.assertIsNone(entry.printed_page_number)
 
 
 class TestFindTocCandidates(unittest.TestCase):

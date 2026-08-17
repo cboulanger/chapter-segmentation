@@ -102,6 +102,28 @@ def _parse_toc_page_number(raw: str) -> int | None:
         total += -value if nxt != " " and _ROMAN_VALUES.get(nxt, 0) > value else value
     return total if total <= _ROMAN_PAGE_MAX_VALUE else None
 
+
+def _normalize_printed_page_number(value: object) -> str | None:
+    """Coerces any of TocEntry.printed_page_number's legal input shapes
+    into the canonical str | None form -- the single place every producer
+    (and every historical caller/on-disk cache file) gets normalized, via
+    TocEntry.__post_init__. A str is returned verbatim (just stripped) --
+    preserving whatever text an extractor actually read, including a
+    section-prefixed marker like "R42" -- which is the entire point of
+    this type. int/float only ever arrives from a legacy caller: the old
+    -1 "unknown" sentinel (now None), or a bare numeric JSON value some
+    LLM response used instead of the requested string.
+    """
+    if isinstance(value, str):
+        text = value.strip()
+        return None if not text or text.lower() == "null" else text
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, (int, float)):
+        value = int(value)
+        return None if value == -1 else str(value)
+    return None
+
 # A real chapter TOC page has several title-like lines close together; a
 # back-of-book subject index, a bibliography, or an ordinary content page
 # can each contribute one or two incidental lines (a footnote reference, a
@@ -208,7 +230,7 @@ def _looks_like_imprint_line(line: str) -> bool:
 @dataclass(frozen=True)
 class TocEntry:
     title: str
-    printed_page_number: int
+    printed_page_number: str | None
     source_page_index: int  # which page (0-based) the TOC entry itself was found on
     authors: tuple[str, ...] = ()  # populated only by llm_extract_toc_entries (see
     # docs/superpowers/specs/2026-07-25-llm-chapter-segmentation-fallback-design.md §4)
@@ -228,6 +250,13 @@ class TocEntry:
     # carried and _locate_toc_entries picks whichever variant actually
     # locates best in the book body. Empty for LLM-extracted entries, whose
     # titles are already read whole.
+
+    def __post_init__(self) -> None:
+        # Normalizes every legal input shape (str, legacy bare int/float,
+        # the old -1 sentinel, None) into the canonical str | None form --
+        # see _normalize_printed_page_number's own docstring. object.
+        # __setattr__ is required: this dataclass is frozen.
+        object.__setattr__(self, "printed_page_number", _normalize_printed_page_number(self.printed_page_number))
 
 
 def extract_page_texts_from_pdf_bytes(content: bytes, layout: bool = False) -> list[str]:

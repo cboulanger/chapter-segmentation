@@ -47,6 +47,7 @@ from chapter_segmentation.segmentation import (
 from chapter_segmentation.segmentation import _chapters_from_located
 from chapter_segmentation.segmentation import extract_authors_near
 from chapter_segmentation.segmentation import analyze_attachment
+from chapter_segmentation.segmentation import _candidate_to_toc_entry
 from chapter_segmentation.evidence.outline_strategy import extract_outline_candidates
 from chapter_segmentation.evidence.types import ChapterCandidate
 
@@ -1818,6 +1819,18 @@ class TestAnalyzeAttachmentLlmOnly(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(result["diagnostics"]["llm_disambiguation_used"], 1)
         sources = {c["title"]: c["source"] for c in result["chapters"]}
         self.assertEqual(sources.get("Comparing Citation Styles"), "llm")
+
+
+class TestCandidateToTocEntry(unittest.TestCase):
+    def test_known_page_number_becomes_str(self):
+        candidate = ChapterCandidate(title="Introduction", printed_page_number=42)
+        entry = _candidate_to_toc_entry(candidate)
+        self.assertEqual(entry.printed_page_number, "42")
+
+    def test_none_page_number_stays_none(self):
+        candidate = ChapterCandidate(title="Introduction", printed_page_number=None)
+        entry = _candidate_to_toc_entry(candidate)
+        self.assertIsNone(entry.printed_page_number)
 
 
 if __name__ == "__main__":

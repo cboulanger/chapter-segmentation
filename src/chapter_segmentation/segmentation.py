@@ -1717,7 +1717,7 @@ def _candidate_to_toc_entry(candidate: ChapterCandidate) -> TocEntry:
     return TocEntry(
         title=candidate.title,
         authors=candidate.authors,
-        printed_page_number=candidate.printed_page_number if candidate.printed_page_number is not None else -1,
+        printed_page_number=str(candidate.printed_page_number) if candidate.printed_page_number is not None else None,
         source_page_index=-1,
     )
 

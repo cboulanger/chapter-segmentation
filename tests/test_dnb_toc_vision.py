@@ -117,7 +117,7 @@ class TestVisionExtractTocEntries(unittest.IsolatedAsyncioTestCase):
             entries = await vision_extract_toc_entries(pdf_path, "some-model", client)
             self.assertEqual(len(entries), 2)
             self.assertEqual(entries[0].title, "Einleitung")
-            self.assertEqual(entries[0].printed_page_number, 9)
+            self.assertEqual(entries[0].printed_page_number, "9")
             self.assertEqual(entries[1].authors, ("Jane Author",))
 
     async def test_sends_one_image_content_block_per_page(self):

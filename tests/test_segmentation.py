@@ -573,8 +573,8 @@ class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(len(entries), 2)
         self.assertEqual(entries[0].title, "Introduction")
         self.assertEqual(entries[0].authors, ("Jane Author",))
-        self.assertEqual(entries[0].printed_page_number, 1)
-        self.assertEqual(entries[1].printed_page_number, -1)  # null -> sentinel, unused downstream
+        self.assertEqual(entries[0].printed_page_number, "1")
+        self.assertIsNone(entries[1].printed_page_number)  # null -> None
 
     async def test_returns_empty_list_on_malformed_response(self):
         llm = self._fake_llm("not json at all")
@@ -633,33 +633,48 @@ class TestLlmExtractTocEntries(unittest.IsolatedAsyncioTestCase):
     async def test_parses_roman_numeral_page_string(self):
         llm = self._fake_llm('[{"title": "Foreword", "authors": [], "printed_page_number": "vii"}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, 7)
+        self.assertEqual(entries[0].printed_page_number, "vii")
         self.assertTrue(entries[0].printed_roman)
 
     async def test_parses_arabic_page_string(self):
         llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": "12"}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, 12)
+        self.assertEqual(entries[0].printed_page_number, "12")
         self.assertFalse(entries[0].printed_roman)
 
     async def test_tolerates_legacy_bare_int_page_number(self):
         llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": 12}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, 12)
+        self.assertEqual(entries[0].printed_page_number, "12")
         self.assertFalse(entries[0].printed_roman)
 
-    async def test_null_page_number_still_uses_sentinel(self):
+    async def test_null_page_number_becomes_none(self):
         llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": null}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, -1)
+        self.assertIsNone(entries[0].printed_page_number)
         self.assertFalse(entries[0].printed_roman)
 
-    async def test_implausible_roman_string_uses_sentinel(self):
-        # Over _ROMAN_PAGE_MAX_VALUE (50) -- _parse_toc_page_number rejects
-        # it as an implausible roman numeral, same as a heuristic-found one.
+    async def test_implausible_roman_string_is_stored_verbatim(self):
+        # Over _ROMAN_PAGE_MAX_VALUE (50), and not even a validly-shaped
+        # roman numeral either (4 "m"s is not valid roman notation) --
+        # stored verbatim regardless, matching the "copy it verbatim"
+        # prompt instruction. See TestTocDeclaredPage (added in a later
+        # task) for where this gets treated as unknown for citation-page
+        # purposes.
         llm = self._fake_llm('[{"title": "Introduction", "authors": [], "printed_page_number": "mmmm"}]')
         entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
-        self.assertEqual(entries[0].printed_page_number, -1)
+        self.assertEqual(entries[0].printed_page_number, "mmmm")
+        self.assertFalse(entries[0].printed_roman)
+
+    async def test_section_prefixed_page_marker_survives_verbatim(self):
+        # The real-world case this whole change exists for: a DNB-digitized
+        # TOC scan's page marker like "R42" is neither a pure digit run nor
+        # a valid roman numeral, so _parse_toc_page_number can't interpret
+        # it -- but it must not be discarded the way the old int-with--1-
+        # sentinel representation discarded it.
+        llm = self._fake_llm('[{"title": "Appendix", "authors": [], "printed_page_number": "R42"}]')
+        entries = await llm_extract_toc_entries(["front matter"] * 5, llm)
+        self.assertEqual(entries[0].printed_page_number, "R42")
         self.assertFalse(entries[0].printed_roman)
 
 

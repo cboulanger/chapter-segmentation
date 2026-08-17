@@ -640,18 +640,17 @@ def _toc_items_to_entries(items: list) -> list[TocEntry]:
         # string yields one entry per character, silently corrupting
         # author-aware disambiguation downstream.
         authors = tuple(str(a).strip() for a in raw_authors if str(a).strip()) if isinstance(raw_authors, list) else ()
-        printed = item.get("printed_page_number")
-        if isinstance(printed, (int, float)):
-            # Tolerate a model that ignores the string instruction and
-            # returns a bare number anyway -- still unambiguous for the
-            # arabic case.
-            printed = str(int(printed))
-        parsed_value = _parse_toc_page_number(printed.strip()) if isinstance(printed, str) else None
-        # -1 is a sentinel for "unknown" (LLM returned null, an unparseable
-        # value, or an implausible one, e.g. a roman numeral over
-        # _ROMAN_PAGE_MAX_VALUE) -- never a real printed page number.
-        printed_page_number = parsed_value if parsed_value is not None else -1
-        printed_roman = parsed_value is not None and not printed.strip().isdigit()
+        printed_page_number = _normalize_printed_page_number(item.get("printed_page_number"))
+        # Roman iff it parses via _parse_toc_page_number AND isn't a plain
+        # digit string -- same semantics as before, just checked against
+        # the normalized (verbatim) string instead of a pre-parsed int.
+        # A section-prefixed marker like "R42" correctly comes out False:
+        # it isn't a digit run, but it also doesn't parse as roman either.
+        printed_roman = (
+            printed_page_number is not None
+            and not printed_page_number.isdigit()
+            and _parse_toc_page_number(printed_page_number) is not None
+        )
         # source_page_index is a sentinel here -- unlike a regex-found entry,
         # an LLM-extracted entry has no single "the TOC line was on this
         # page" origin; the orchestration layer excludes the whole scanned

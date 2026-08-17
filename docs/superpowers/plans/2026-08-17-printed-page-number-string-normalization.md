@@ -101,7 +101,9 @@ def _normalize_printed_page_number(value: object) -> str | None:
     return None
 ```
 
-Then change `TocEntry` (lines 208-244) so the `printed_page_number` field is `str | None` and gets normalized on construction. The dataclass is `frozen=True`, so `__post_init__` must use `object.__setattr__`:
+Then change `TocEntry` (lines 208-244) so the `printed_page_number` field is `str | None` and gets normalized on construction. The dataclass is `frozen=True`, so `__post_init__` must use `object.__setattr__`.
+
+**Note:** `TocEntry` on `main` (this branch's base) has exactly the fields shown below -- no `skip` field. A `skip` field exists on the separate, not-yet-merged `dnb-toc-ground-truth-wip` branch (added there 2026-08-17 for an unrelated "verbatim/skip extraction schema" change); it is out of scope here and must NOT be added as part of this task. If your read of the current file shows a `skip` field already present, leave it exactly as you found it -- that would mean the branches were merged since this plan was written -- but do not introduce it if it's absent.
 
 ```python
 @dataclass(frozen=True)
@@ -127,19 +129,6 @@ class TocEntry:
     # carried and _locate_toc_entries picks whichever variant actually
     # locates best in the book body. Empty for LLM-extracted entries, whose
     # titles are already read whole.
-    skip: bool = False  # True when this entry is not itself a real chapter --
-    # a part/section divider, or front/back matter (preface, bibliography,
-    # index, ...). Only ever set by evaluation/dnb_toc_vision.py's vision
-    # extraction (see its prompt): that path deliberately extracts EVERY
-    # printed TOC line verbatim rather than omitting non-chapter lines
-    # outright, so a two-model disagreement over what to extract can never
-    # cause an editorial-judgment mismatch to fail the whole-book agreement
-    # gate (evaluation/dnb_toc_matching.py) -- only a genuine reading
-    # mismatch can. Which lines count as "real chapters" is then a
-    # separate, revisable downstream decision instead of being baked
-    # irreversibly into the extraction step. llm_extract_toc_entries'
-    # production text prompt never asks for this field, so it's always
-    # False there -- unrelated to this dnb-toc-only-specific concern.
 
     def __post_init__(self) -> None:
         # Normalizes every legal input shape (str, legacy bare int/float,

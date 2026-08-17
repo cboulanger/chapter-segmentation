@@ -132,6 +132,21 @@ class TestNormalizePrintedPageNumber(unittest.TestCase):
     def test_legacy_bare_float_becomes_str(self):
         self.assertEqual(_normalize_printed_page_number(12.0), "12")
 
+    def test_bool_true_becomes_none(self):
+        # bool is a subclass of int -- must not fall through to the
+        # int/float branch and stringify as "1"/"0".
+        self.assertIsNone(_normalize_printed_page_number(True))
+
+    def test_bool_false_becomes_none(self):
+        self.assertIsNone(_normalize_printed_page_number(False))
+
+    def test_nan_becomes_none(self):
+        # Python's json module accepts bare NaN literals by default, so a
+        # malformed LLM/cache response could hand this function a float
+        # NaN -- must degrade to None like any other unusable input,
+        # not raise ValueError from the int() cast.
+        self.assertIsNone(_normalize_printed_page_number(float("nan")))
+
 
 class TestTocEntryConstructionBc(unittest.TestCase):
     def test_legacy_bare_int_construction_normalizes_to_str(self):

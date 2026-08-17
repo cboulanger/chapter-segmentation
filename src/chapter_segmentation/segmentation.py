@@ -13,6 +13,7 @@ import hashlib
 import io
 import json
 import logging
+import math
 import re
 from collections import Counter
 from functools import lru_cache
@@ -120,6 +121,12 @@ def _normalize_printed_page_number(value: object) -> str | None:
     if isinstance(value, bool):
         return None
     if isinstance(value, (int, float)):
+        if isinstance(value, float) and math.isnan(value):
+            # Python's json module accepts bare NaN literals by default,
+            # so a malformed LLM/cache response can hand this a float
+            # NaN -- degrade to None like any other unusable input,
+            # rather than letting int() raise ValueError.
+            return None
         value = int(value)
         return None if value == -1 else str(value)
     return None

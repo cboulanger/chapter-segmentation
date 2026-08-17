@@ -77,7 +77,7 @@ def books_needing_arbitration(cdir: Path, cache_directory: Path) -> list[str]:
 
 
 def _format_entry(entry: TocEntry) -> str:
-    page = entry.printed_page_number if entry.printed_page_number != -1 else "?"
+    page = entry.printed_page_number if entry.printed_page_number is not None else "?"
     return f"    p.{page!s:>4}  {entry.title}"
 
 

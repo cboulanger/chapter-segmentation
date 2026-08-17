@@ -1659,7 +1659,37 @@
       "elapsed_seconds": 0.20243951200018273,
       "demand_at_run": 0,
       "generated_at": "2026-08-16T04:23:01.106991+00:00"
+    },
+    "gemma-4-31b-it": {
+      "chapters": [],
+      "elapsed_seconds": 0.2192122210000207,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:19.355023+00:00"
+    },
+    "meta-llama-3.1-8b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.21655886899998222,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:26.388634+00:00"
+    },
+    "openai-gpt-oss-120b": {
+      "chapters": [],
+      "elapsed_seconds": 0.21947392700008095,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:33.079664+00:00"
+    },
+    "qwen3-30b-a3b-instruct-2507": {
+      "chapters": [],
+      "elapsed_seconds": 0.2600632039999482,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:39.955591+00:00"
+    },
+    "medgemma-27b-it": {
+      "chapters": [],
+      "elapsed_seconds": 0.2590520239999705,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:46.958683+00:00"
     }
   },
-  "generated_at": "2026-08-16T04:23:01.106991+00:00"
+  "generated_at": "2026-08-17T03:52:46.958683+00:00"
 }

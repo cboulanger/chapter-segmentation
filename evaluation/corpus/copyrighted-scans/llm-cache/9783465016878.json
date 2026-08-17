@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T04:22:57.561479+00:00",
+  "generated_at": "2026-08-17T03:52:42.046681+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [],
@@ -803,6 +803,36 @@
       "elapsed_seconds": 0.3472287970002981,
       "demand_at_run": 0,
       "generated_at": "2026-08-16T04:22:57.561479+00:00"
+    },
+    "gemma-4-31b-it": {
+      "chapters": [],
+      "elapsed_seconds": 0.5659028840000246,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:14.444287+00:00"
+    },
+    "meta-llama-3.1-8b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.5628837479999902,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:21.439585+00:00"
+    },
+    "openai-gpt-oss-120b": {
+      "chapters": [],
+      "elapsed_seconds": 0.5482178749999775,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:28.507222+00:00"
+    },
+    "qwen3-30b-a3b-instruct-2507": {
+      "chapters": [],
+      "elapsed_seconds": 0.5420651419999558,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:34.875101+00:00"
+    },
+    "medgemma-27b-it": {
+      "chapters": [],
+      "elapsed_seconds": 0.548422538000068,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:42.046681+00:00"
     }
   }
 }

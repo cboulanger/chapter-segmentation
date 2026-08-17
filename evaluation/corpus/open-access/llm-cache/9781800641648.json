@@ -1959,7 +1959,37 @@
       "elapsed_seconds": 0.1547381650002535,
       "demand_at_run": 0,
       "generated_at": "2026-08-16T04:22:59.261622+00:00"
+    },
+    "gemma-4-31b-it": {
+      "chapters": [],
+      "elapsed_seconds": 0.3156870359999857,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:16.720961+00:00"
+    },
+    "meta-llama-3.1-8b-instruct": {
+      "chapters": [],
+      "elapsed_seconds": 0.2504971309999746,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:23.745575+00:00"
+    },
+    "openai-gpt-oss-120b": {
+      "chapters": [],
+      "elapsed_seconds": 0.2397996489999059,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:30.782043+00:00"
+    },
+    "qwen3-30b-a3b-instruct-2507": {
+      "chapters": [],
+      "elapsed_seconds": 0.29864365599996745,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:37.032260+00:00"
+    },
+    "medgemma-27b-it": {
+      "chapters": [],
+      "elapsed_seconds": 0.27522567299990897,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-17T03:52:44.350702+00:00"
     }
   },
-  "generated_at": "2026-08-16T04:22:59.261622+00:00"
+  "generated_at": "2026-08-17T03:52:44.350702+00:00"
 }

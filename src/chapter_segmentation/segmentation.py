@@ -1141,7 +1141,13 @@ def _toc_declared_page(entry: TocEntry, total_pages: int) -> str | None:
         # no digit at all that also isn't a valid roman numeral ("mmmm",
         # "civil") is far more likely OCR/model noise than a genuine page
         # marker -- treat it as unknown, same outcome the old int-
-        # sentinel path already produced for this case.
+        # sentinel path already produced for this case. A leading-minus
+        # digit run ("-5") is neither -- it's a malformed negative value,
+        # not a real marker -- and must not bypass the plausibility
+        # ceiling below by being returned verbatim.
+        text = raw.strip()
+        if text.startswith("-") and text[1:].isdigit():
+            return None
         return raw if any(ch.isdigit() for ch in raw) else None
     if value <= 0 or value > total_pages * _TOC_MAX_PAGE_NUMBER_RATIO:
         return None

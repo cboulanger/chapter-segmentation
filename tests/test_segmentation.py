@@ -1045,6 +1045,13 @@ class TestTocDeclaredPage(unittest.TestCase):
         entry = TocEntry(title="Introduction", printed_page_number="mmmm", source_page_index=-1)
         self.assertIsNone(_toc_declared_page(entry, total_pages=200))
 
+    def test_negative_number_string_returns_none(self):
+        # "-5" contains a digit but is a malformed negative value, not a
+        # real alternate-scheme marker like "R42" -- must not bypass the
+        # plausibility ceiling below by being returned verbatim.
+        entry = TocEntry(title="Introduction", printed_page_number="-5", source_page_index=-1)
+        self.assertIsNone(_toc_declared_page(entry, total_pages=200))
+
 
 class TestFallbackEndPrinted(unittest.TestCase):
     def _located(self, indices: list[int]) -> list[tuple[TocEntry, ChapterStartMatch]]:

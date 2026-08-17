@@ -6,14 +6,22 @@
         "Horst Niesyto",
         "Peter Imort"
       ],
-      "printed_page_number": "9"
+      "printed_page_number": "9",
+      "skip": false
+    },
+    {
+      "title": "Grundbildung Medien – Beiträge aus dem erziehungswissenschaftlichen Bereich",
+      "authors": [],
+      "printed_page_number": null,
+      "skip": true
     },
     {
       "title": "Medienpädagogik in der Lehrerbildung der Universität Mainz",
       "authors": [
         "Stefan Aufenanger"
       ],
-      "printed_page_number": "53"
+      "printed_page_number": "53",
+      "skip": false
     },
     {
       "title": "Grundbildung Medien im Profilstudium im Lehramt",
@@ -22,7 +30,8 @@
         "Sandra Aßmann",
         "Tilman-Mathies Klar"
       ],
-      "printed_page_number": "65"
+      "printed_page_number": "65",
+      "skip": false
     },
     {
       "title": "Medienpädagogik in der Lehrerbildung Zum Status quo dreier Standorte in verschiedenen deutschen Bundesländern",
@@ -30,7 +39,8 @@
         "Rudolf Kammerl",
         "Kerstin Mayrberger"
       ],
-      "printed_page_number": "81"
+      "printed_page_number": "81",
+      "skip": false
     },
     {
       "title": "Grundbildung Medien an der Universität Der Studiengang BME an der Universität der Bundeswehr München",
@@ -38,7 +48,8 @@
         "Manuela Pietraß",
         "Burkhard Schäffer"
       ],
-      "printed_page_number": "95"
+      "printed_page_number": "95",
+      "skip": false
     },
     {
       "title": "Mediale Grundbildung Das Modell der Pädagogischen Hochschule Zürich",
@@ -47,28 +58,32 @@
         "Sara Signer",
         "Heinz Moser"
       ],
-      "printed_page_number": "109"
+      "printed_page_number": "109",
+      "skip": false
     },
     {
       "title": "Grundbildung Medien an der Pädagogischen Hochschule Ludwigsburg",
       "authors": [
         "Horst Niesyto"
       ],
-      "printed_page_number": "125"
+      "printed_page_number": "125",
+      "skip": false
     },
     {
       "title": "Die Mediatisierung der Kindheit als Herausforderung für sozialpädagogische Studiengänge",
       "authors": [
         "Nadia Kutscher"
       ],
-      "printed_page_number": "139"
+      "printed_page_number": "139",
+      "skip": false
     },
     {
       "title": "Medienpädagogik an Fach-Hochschulen",
       "authors": [
         "Franz Josef Röll"
       ],
-      "printed_page_number": "153"
+      "printed_page_number": "153",
+      "skip": false
     },
     {
       "title": "Medienpädagogische Grundbildung in den Studiengängen der Fakultät für Angewandte Sozialwissenschaften an der Fachhochschule Köln",
@@ -77,7 +92,14 @@
         "Angela Tillmann",
         "Winfred Kaminski"
       ],
-      "printed_page_number": "167"
+      "printed_page_number": "167",
+      "skip": false
+    },
+    {
+      "title": "Grundbildung Medien – Beiträge aus Fachwissenschaften & Fachdidaktiken",
+      "authors": [],
+      "printed_page_number": null,
+      "skip": true
     },
     {
       "title": "Integrative Perspektiven auf Medien und Bildung zwischen Medienpädagogik und Medienwissenschaften",
@@ -86,21 +108,24 @@
         "Dorothee Meister",
         "Dagmar Hoffmann"
       ],
-      "printed_page_number": "183"
+      "printed_page_number": "183",
+      "skip": false
     },
     {
       "title": "Grundbildung Medien mitdenken Überlegungen zur Medienbildung im Fach Deutsch in Lehramtsausbildung und Schule",
       "authors": [
         "Gudrun Marci-Boehncke"
       ],
-      "printed_page_number": "195"
+      "printed_page_number": "195",
+      "skip": false
     },
     {
       "title": "E-Learning im Studium und medienpädagogische Grundbildung am Beispiel der Lehrerbildung im Fach Englisch",
       "authors": [
         "Thanh-Thu Phan Tan"
       ],
-      "printed_page_number": "211"
+      "printed_page_number": "211",
+      "skip": false
     },
     {
       "title": "Aspekte einer Grundbildung Medien in den gesellschaftskundlichen Fächern Geschichte und Erdkunde",
@@ -108,7 +133,8 @@
         "Christian Igelbrink",
         "Gerd Homberg"
       ],
-      "printed_page_number": "225"
+      "printed_page_number": "225",
+      "skip": false
     },
     {
       "title": "Neue Medien in der politischen Bildung Exemplarische Projekte der Lehrerbildung an der Universität Münster",
@@ -118,7 +144,8 @@
         "Gerd Homberg",
         "Christian Igelbrink"
       ],
-      "printed_page_number": "241"
+      "printed_page_number": "241",
+      "skip": false
     },
     {
       "title": "Medien als ethisches Thema in Hochschullehre und Forschung",
@@ -126,7 +153,8 @@
         "Matthias Rath",
         "Nina Köberer"
       ],
-      "printed_page_number": "255"
+      "printed_page_number": "255",
+      "skip": false
     },
     {
       "title": "Draußen ist die Natur – oder vielleicht doch auch ein bisschen am Computer?! Grundbildung (digitale) Medien für Lehrkräfte aus der Sicht der Naturwissenschaftsdidaktik",
@@ -134,21 +162,30 @@
         "Steffen Schaal",
         "Antony Crossley"
       ],
-      "printed_page_number": "271"
+      "printed_page_number": "271",
+      "skip": false
     },
     {
       "title": "Kollaborationen. Entwendungen. Vernetzungen. Das Lehramtsstudium Kunst als Erprobungsfeld für kritisch-reflexive und produktive Medienbildung",
       "authors": [
         "Sara Burkhardt"
       ],
-      "printed_page_number": "289"
+      "printed_page_number": "289",
+      "skip": false
     },
     {
       "title": "Musikpädagogik und Grundbildung Medien Überlegungen im Kontext von Musiklehrerbildung und außerschulischen musikbezogenen Bildungsbereichen",
       "authors": [
         "Peter Imort"
       ],
-      "printed_page_number": "303"
+      "printed_page_number": "303",
+      "skip": false
+    },
+    {
+      "title": "Grundbildung Medien – spezielle Aufgabenfelder",
+      "authors": [],
+      "printed_page_number": null,
+      "skip": true
     },
     {
       "title": "Akademische Medienkompetenz im Schnittfeld von Lehren, Lernen, Forschen und Verwalten",
@@ -157,21 +194,30 @@
         "Silvia Hartung",
         "Alexander Florian"
       ],
-      "printed_page_number": "319"
+      "printed_page_number": "319",
+      "skip": false
     },
     {
       "title": "Filmbildung in der Lehrerbildung",
       "authors": [
         "Björn Maurer"
       ],
-      "printed_page_number": "333"
+      "printed_page_number": "333",
+      "skip": false
     },
     {
       "title": "Medien, Bildung und Inklusion (Rahmen)Curriculare Perspektiven für die Lehrerbildung",
       "authors": [
         "Jan-René Schluchter"
       ],
-      "printed_page_number": "351"
+      "printed_page_number": "351",
+      "skip": false
+    },
+    {
+      "title": "Autorinnen und Autoren",
+      "authors": [],
+      "printed_page_number": "365",
+      "skip": true
     }
   ],
   "verified": true,

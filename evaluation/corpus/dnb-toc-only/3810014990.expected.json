@@ -1,11 +1,24 @@
 {
   "entries": [
     {
-      "title": "Kinder als Gegenstand der Sozialberichterstattung - Konzepte, Methoden und Befunde im Überblick",
+      "title": "Vorwort",
+      "authors": [],
+      "printed_page_number": "1",
+      "skip": true
+    },
+    {
+      "title": "Kinder als Gegenstand der Sozialberichterstattung - Konzepte, Methoden und Befunde im \u00dcberblick",
       "authors": [
         "Bernhard Nauck"
       ],
-      "printed_page_number": "11"
+      "printed_page_number": "11",
+      "skip": false
+    },
+    {
+      "title": "Die famili\u00e4re Lebenssituation von Kindern in Ost- und Westdeutschland",
+      "authors": [],
+      "printed_page_number": null,
+      "skip": true
     },
     {
       "title": "Eltern und Kinder. Zeit, Werte und Beziehungen zu Kindern",
@@ -13,36 +26,47 @@
         "Hans Bertram",
         "Marina Hennig"
       ],
-      "printed_page_number": "91"
+      "printed_page_number": "91",
+      "skip": false
     },
     {
       "title": "Geschwisterlosigkeit in Ost- und Westdeutschland",
       "authors": [
         "Thomas Klein"
       ],
-      "printed_page_number": "121"
+      "printed_page_number": "121",
+      "skip": false
     },
     {
       "title": "Lebensbedingungen von Kindern in Einkind-, Mehrkind- und Vielkindfamilien",
       "authors": [
         "Bernhard Nauck"
       ],
-      "printed_page_number": "137"
+      "printed_page_number": "137",
+      "skip": false
     },
     {
       "title": "Selektive Kontexte. Umwelten von Kindern und Erwachsenen in Ost- und Westdeutschland",
       "authors": [
         "Magdalena Joos"
       ],
-      "printed_page_number": "171"
+      "printed_page_number": "171",
+      "skip": false
     },
     {
-      "title": "Erwerbsunterbrechung von Müttern",
+      "title": "Familiale Ereignisse im Lebensverlauf von Kindern",
+      "authors": [],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "Erwerbsunterbrechung von M\u00fcttern",
       "authors": [
         "Wolfgang Lauterbach",
         "Thomas Klein"
       ],
-      "printed_page_number": "207"
+      "printed_page_number": "207",
+      "skip": false
     },
     {
       "title": "Der berufliche Wiedereinstieg der Mutter im Lebensverlauf der Kinder",
@@ -50,37 +74,54 @@
         "Uwe Braun",
         "Thomas Klein"
       ],
-      "printed_page_number": "231"
+      "printed_page_number": "231",
+      "skip": false
     },
     {
       "title": "Scheidungsbetroffenheit im Lebensverlauf der Kinder",
       "authors": [
         "Thomas Klein"
       ],
-      "printed_page_number": "253"
+      "printed_page_number": "253",
+      "skip": false
     },
     {
-      "title": "Das katholische Arbeitermädchen vom Lande: Milieus und Lebensführung in regionaler Perspektive",
+      "title": "Regionale Differenzierung der Lebensbedingungen von Kindern",
+      "authors": [],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "Das katholische Arbeiterm\u00e4dchen vom Lande: Milieus und Lebensf\u00fchrung in regionaler Perspektive",
       "authors": [
         "Hans Bertram",
         "Marina Hennig"
       ],
-      "printed_page_number": "267"
+      "printed_page_number": "267",
+      "skip": false
     },
     {
-      "title": "Regionale Bildungsdisparitäten in Ostdeutschland",
+      "title": "Regionale Bildungsdisparit\u00e4ten in Ostdeutschland",
       "authors": [
-        "Irene Müller-Hartmann",
+        "Irene M\u00fcller-Hartmann",
         "Sabine Henneberger"
       ],
-      "printed_page_number": "295"
+      "printed_page_number": "295",
+      "skip": false
     },
     {
-      "title": "Der Staat hat viele Väter - wo bleiben die Mütter? Ein Beitrag zur Vereinbarkeit von Erwerbstätigen- und Mutterrolle in Deutschland-Ost und -West",
+      "title": "Der Staat hat viele V\u00e4ter - wo bleiben die M\u00fctter? Ein Beitrag zur Vereinbarkeit von Erwerbst\u00e4tigen- und Mutterrolle in Deutschland-Ost und -West",
       "authors": [
-        "Marianne Höckner"
+        "Marianne H\u00f6ckner"
       ],
-      "printed_page_number": "333"
+      "printed_page_number": "333",
+      "skip": false
+    },
+    {
+      "title": "Autorenverzeichnis",
+      "authors": [],
+      "printed_page_number": "357",
+      "skip": true
     }
   ],
   "verified": true,

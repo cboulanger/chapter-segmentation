@@ -1,59 +1,82 @@
 {
   "entries": [
     {
-      "title": "Öffentliche Meinung",
+      "title": "Vorwort",
       "authors": [],
-      "printed_page_number": "9"
+      "printed_page_number": "5",
+      "skip": true
     },
     {
-      "title": "Komplexität und Demokratie",
+      "title": "Drucknachweise",
       "authors": [],
-      "printed_page_number": "35"
+      "printed_page_number": "8",
+      "skip": true
+    },
+    {
+      "title": "\u00d6ffentliche Meinung",
+      "authors": [],
+      "printed_page_number": "9",
+      "skip": false
+    },
+    {
+      "title": "Komplexit\u00e4t und Demokratie",
+      "authors": [],
+      "printed_page_number": "35",
+      "skip": false
     },
     {
       "title": "Funktionen der Rechtsprechung im politischen System",
       "authors": [],
-      "printed_page_number": "46"
+      "printed_page_number": "46",
+      "skip": false
     },
     {
       "title": "Gesellschaftliche und politische Bedingungen des Rechtsstaates",
       "authors": [],
-      "printed_page_number": "53"
+      "printed_page_number": "53",
+      "skip": false
     },
     {
       "title": "Politische Planung",
       "authors": [],
-      "printed_page_number": "66"
+      "printed_page_number": "66",
+      "skip": false
     },
     {
-      "title": "Zweck – Herrschaft – System: Grundbegriffe und Prämissen Max Webers",
+      "title": "Zweck \u2013 Herrschaft \u2013 System: Grundbegriffe und Pr\u00e4missen Max Webers",
       "authors": [],
-      "printed_page_number": "90"
+      "printed_page_number": "90",
+      "skip": false
     },
     {
       "title": "Lob der Routine",
       "authors": [],
-      "printed_page_number": "113"
+      "printed_page_number": "113",
+      "skip": false
     },
     {
       "title": "Die Knappheit der Zeit und die Vordringlichkeit des Befristeten",
       "authors": [],
-      "printed_page_number": "143"
+      "printed_page_number": "143",
+      "skip": false
     },
     {
-      "title": "Opportunismus und Programmatik in der öffentlichen Verwaltung",
+      "title": "Opportunismus und Programmatik in der \u00f6ffentlichen Verwaltung",
       "authors": [],
-      "printed_page_number": "165"
+      "printed_page_number": "165",
+      "skip": false
     },
     {
-      "title": "Reform und Information: Theoretische Überlegungen zur Reform der Verwaltung",
+      "title": "Reform und Information: Theoretische \u00dcberlegungen zur Reform der Verwaltung",
       "authors": [],
-      "printed_page_number": "181"
+      "printed_page_number": "181",
+      "skip": false
     },
     {
-      "title": "Reform des öffentlichen Dienstes: Zum Problem ihrer Probleme",
+      "title": "Reform des \u00f6ffentlichen Dienstes: Zum Problem ihrer Probleme",
       "authors": [],
-      "printed_page_number": "203"
+      "printed_page_number": "203",
+      "skip": false
     }
   ],
   "verified": true,

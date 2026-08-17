@@ -1115,23 +1115,34 @@ def _format_page_number(value: int, is_roman: bool) -> str:
 
 def _toc_declared_page(entry: TocEntry, total_pages: int) -> str | None:
     """entry's own printed_page_number, formatted, when the TOC (heuristic
-    or LLM) supplied a plausible one. -1 is the sentinel both sources use
-    for "not identified" (a regex-found entry always has a real, valid
-    value -- find_toc_candidates never constructs one otherwise; an
-    LLM-found entry uses -1 when it couldn't read one, see
-    llm_extract_toc_entries). Two independent plausibility ceilings mirror
-    find_toc_candidates'/​_parse_toc_page_number's own guards -- the LLM
-    path has no equivalent check of its own, and an LLM could hallucinate
-    an implausible value where the heuristic regex parser structurally
-    cannot: _TOC_MAX_PAGE_NUMBER_RATIO bounds any page number relative to
-    the book's length, and _ROMAN_PAGE_MAX_VALUE additionally bounds a
+    or LLM) supplied a plausible one. None is what both sources use for
+    "not identified" (a regex-found entry always has a real, valid value --
+    find_toc_candidates never constructs one otherwise; an LLM-found entry
+    is None when it couldn't read one, see llm_extract_toc_entries). Two
+    independent plausibility ceilings mirror find_toc_candidates'/​
+    _parse_toc_page_number's own guards -- the LLM path has no equivalent
+    check of its own, and an LLM could hallucinate an implausible value
+    where the heuristic regex parser structurally cannot:
+    _TOC_MAX_PAGE_NUMBER_RATIO bounds any page number relative to the
+    book's length, and _ROMAN_PAGE_MAX_VALUE additionally bounds a
     roman-numeral value on its own terms (front matter is never realistically
     hundreds of pages, regardless of how long the whole book is) -- without
     this second check, a formatted roman string could come out of this
     function that _parse_toc_page_number itself would then reject, breaking
     the round-trip later callers rely on.
     """
-    value = entry.printed_page_number
+    raw = entry.printed_page_number
+    if raw is None:
+        return None
+    value = _parse_toc_page_number(raw)
+    if value is None:
+        # A real alternate-scheme page marker ("R42", "12a") always
+        # carries at least one digit -- return it verbatim. A string with
+        # no digit at all that also isn't a valid roman numeral ("mmmm",
+        # "civil") is far more likely OCR/model noise than a genuine page
+        # marker -- treat it as unknown, same outcome the old int-
+        # sentinel path already produced for this case.
+        return raw if any(ch.isdigit() for ch in raw) else None
     if value <= 0 or value > total_pages * _TOC_MAX_PAGE_NUMBER_RATIO:
         return None
     if entry.printed_roman and value > _ROMAN_PAGE_MAX_VALUE:
@@ -1440,13 +1451,19 @@ def _chapters_from_located(
 
         end_printed = None
         next_entry = located[i + 1][0] if i + 1 < len(located) else None
+        next_value = (
+            _parse_toc_page_number(next_entry.printed_page_number)
+            if next_entry is not None and next_entry.printed_page_number is not None
+            else None
+        )
         if (
             next_entry is not None
             and next_entry.printed_roman == entry.printed_roman
             and _toc_declared_page(next_entry, total_pages) is not None
-            and next_entry.printed_page_number - 1 > 0
+            and next_value is not None
+            and next_value - 1 > 0
         ):
-            end_printed = _format_page_number(next_entry.printed_page_number - 1, entry.printed_roman)
+            end_printed = _format_page_number(next_value - 1, entry.printed_roman)
         end_is_high = False
         if end_printed is None:
             end_printed = extract_printed_page_number(pages[end_index])

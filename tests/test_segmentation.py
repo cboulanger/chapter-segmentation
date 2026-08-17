@@ -1029,6 +1029,22 @@ class TestTocDeclaredPage(unittest.TestCase):
         entry = TocEntry(title="Foreword", printed_page_number=1000, source_page_index=-1, printed_roman=True)
         self.assertIsNone(_toc_declared_page(entry, total_pages=600))
 
+    def test_prefixed_marker_with_digit_returned_verbatim(self):
+        # The real reported bug this whole change exists for: "R42" is
+        # neither a pure digit run nor a valid roman numeral, so
+        # _parse_toc_page_number can't interpret it -- but it carries a
+        # digit, so it's a real alternate-scheme page marker, not noise.
+        entry = TocEntry(title="Appendix", printed_page_number="R42", source_page_index=-1)
+        self.assertEqual(_toc_declared_page(entry, total_pages=200), "R42")
+
+    def test_digitless_implausible_string_returns_none(self):
+        # "mmmm" has no digit at all and isn't a valid roman numeral (4
+        # "m"s is invalid roman notation) -- far more likely OCR/model
+        # noise than a real page marker, so still "unknown", matching the
+        # old int-sentinel path's behavior for this exact case.
+        entry = TocEntry(title="Introduction", printed_page_number="mmmm", source_page_index=-1)
+        self.assertIsNone(_toc_declared_page(entry, total_pages=200))
+
 
 class TestFallbackEndPrinted(unittest.TestCase):
     def _located(self, indices: list[int]) -> list[tuple[TocEntry, ChapterStartMatch]]:
@@ -1484,6 +1500,28 @@ class TestChaptersFromLocatedPageNumberPriority(unittest.TestCase):
         self.assertEqual(chapters[0]["pdf_end_index"], 1)  # trimmed past the divider page
         self.assertEqual(chapters[0]["citation_pages"], "12-20")
         self.assertEqual(chapters[0]["page_mapping_confidence"], "inferred")
+
+    def test_prefixed_next_entry_marker_skips_fast_path_without_crashing(self):
+        # next_entry.printed_page_number is "R42" -- _parse_toc_page_number
+        # can't turn that into an int to subtract 1 from, so the fast
+        # "next entry's declared start minus one" path must be skipped
+        # (not raise a TypeError), falling through to on-page extraction
+        # of this chapter's own (trimmed) end page instead. Page numbers
+        # kept small (1, not e.g. 10): _toc_declared_page's plausibility
+        # ceiling is total_pages * _TOC_MAX_PAGE_NUMBER_RATIO(2.0) -- with
+        # only 2 pages in this fixture, anything above 4 would be
+        # (correctly) rejected as implausible before this test could even
+        # exercise the fast-path-skip it's meant to check.
+        pages = [self._FILLER + "\n\n12", self._FILLER + "\n\n13"]
+        first = TocEntry(title="Introduction", printed_page_number="1", source_page_index=0)
+        second = TocEntry(title="Appendix", printed_page_number="R42", source_page_index=1)
+        located = [
+            (first, ChapterStartMatch(index=0, score=100.0, margin=20.0)),
+            (second, ChapterStartMatch(index=1, score=100.0, margin=20.0)),
+        ]
+        chapters = _chapters_from_located(pages, located)
+        self.assertEqual(chapters[0]["citation_pages"], "1-12")
+        self.assertEqual(chapters[0]["page_mapping_confidence"], "high")
 
     def test_unmappable_when_nothing_resolves(self):
         pages = [self._FILLER, self._FILLER]

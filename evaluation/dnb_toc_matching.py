@@ -27,7 +27,16 @@ def _pages_equivalent(a: str | None, b: str | None) -> bool:
     _parse_toc_page_number (handles a case difference in a roman numeral,
     "VII" vs "vii", or a leading zero, "07" vs "7"); then a
     case-insensitive string match (handles a case difference in a
-    non-roman marker, "R42" vs "r42")."""
+    non-roman marker, "R42" vs "r42").
+
+    Known limitation: the numeric tier does not consult printed_roman,
+    so a roman marker can numerically collide with an unrelated arabic
+    marker of the same value ("L" vs "50", both 50) -- accepted rather
+    than threading printed_roman through this function and every
+    align_toc_entries call site, since align_toc_entries' own
+    title-similarity gate already makes a real false-positive rare (it
+    additionally requires the two entries' titles to score >=
+    _ALIGN_SCORE_THRESHOLD)."""
     if a is None or b is None:
         return False
     if a == b:

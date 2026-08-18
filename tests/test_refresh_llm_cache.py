@@ -1,6 +1,10 @@
 """Unit tests for evaluation/refresh_llm_cache.py's pure logic: coverage
 computation and cache upserts. The network-calling _main() orchestration
-is exercised manually (see evaluation/README.md), not here."""
+is exercised manually (see evaluation/README.md), not here -- except for
+TestMainEndpointBranch below, which exercises _main's `--endpoint` branch
+with everything (corpus discovery, endpoint resolution, KISSKI discovery,
+per-book dispatch) mocked out, to prove that branch bypasses KISSKI
+discovery entirely and actually drives the resolved endpoint's model_id."""
 
 import asyncio
 import json
@@ -17,6 +21,7 @@ from evaluation.refresh_llm_cache import (
     _call_with_retry,
     _fully_covered_model_ids,
     _has_cached_entry,
+    _main,
     _model_and_client_for_endpoint,
     _process_model,
     _run_book_for_model,
@@ -55,6 +60,43 @@ class TestModelAndClientForEndpoint(unittest.TestCase):
         self.assertEqual(model.demand, 0)
         self.assertIsInstance(llm_client, _OpenAICompatibleLLMClient)
         self.assertIs(llm_client._client, fake_client)
+
+
+class TestMainEndpointBranch(unittest.IsolatedAsyncioTestCase):
+    async def test_endpoint_flag_bypasses_kisski_discovery_and_drives_the_resolved_model(self):
+        fake_client = unittest.mock.MagicMock()
+        endpoint = ModelEndpoint(label="MPCDF_A", model_id="Qwen/Qwen3-VL-30B", client=fake_client)
+        book = ("book-a", Path("/x/book-a.expected.json"), {"filename": "book-a.pdf"})
+
+        with (
+            unittest.mock.patch("evaluation.refresh_llm_cache.list_corpora", return_value=["corpus-a"]),
+            unittest.mock.patch("evaluation.refresh_llm_cache.available_public_books", return_value=[book]),
+            unittest.mock.patch("evaluation.refresh_llm_cache.llm_cache_dir", return_value=Path("/cache")),
+            unittest.mock.patch(
+                "evaluation.refresh_llm_cache.resolve_endpoint_from_env", return_value=endpoint,
+            ) as resolve_mock,
+            unittest.mock.patch("evaluation.refresh_llm_cache.fetch_kisski_models") as fetch_mock,
+            unittest.mock.patch(
+                "evaluation.refresh_llm_cache._process_model", new_callable=unittest.mock.AsyncMock,
+            ) as process_mock,
+        ):
+            result = await _main(
+                mode=None, endpoint_aliases=["MPCDF_A"], base_url="https://kisski.invalid/v1",
+                limit=5, corpus=None, clear=False, concurrency=4,
+            )
+
+        self.assertEqual(result, 0)
+        # The whole point of --endpoint: no KISSKI model-discovery call at all.
+        fetch_mock.assert_not_called()
+        resolve_mock.assert_called_once_with("MPCDF_A")
+        process_mock.assert_called_once()
+        _book_entries, _concurrency, worker = process_mock.call_args.args
+        # worker is functools.partial(_run_book_for_model, model=..., mode="endpoint", llm_client=...)
+        # -- assert the resolved endpoint's model_id actually reaches it.
+        self.assertEqual(worker.keywords["model"].id, "Qwen/Qwen3-VL-30B")
+        self.assertEqual(worker.keywords["mode"], "endpoint")
+        self.assertIsInstance(worker.keywords["llm_client"], _OpenAICompatibleLLMClient)
+        self.assertIs(worker.keywords["llm_client"]._client, fake_client)
 
 
 class TestFullyCoveredModelIds(unittest.TestCase):

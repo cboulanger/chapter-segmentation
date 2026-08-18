@@ -54,6 +54,7 @@ from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
 from evaluation.dnb_toc_vision import load_cached_llm_entries, vision_extract_toc_entries, write_cached_llm_entries
 from evaluation.harness import corpus_dir, llm_cache_dir, load_manifest_books
+from evaluation.inference_endpoints import ModelEndpoint, resolve_endpoint_from_env
 from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models
 from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
 
@@ -183,19 +184,23 @@ _CORPUS_NAME = "dnb-toc-only"
 
 
 async def _run_book(
-    key: str, pdf_path: Path, models: tuple[str, str], client, semaphore: asyncio.Semaphore,
+    key: str, pdf_path: Path, endpoints: tuple[ModelEndpoint, ModelEndpoint], semaphore: asyncio.Semaphore,
     corpus_directory: Path, cache_directory: Path, sleep=asyncio.sleep,
 ) -> tuple[str, bool, str]:
     """Thin I/O wrapper around _run_book_entries -- calls
-    vision_extract_toc_entries once per model (through the cache, then
+    vision_extract_toc_entries once per endpoint (through the cache, then
     _call_with_retry on a miss), and delegates the two resulting entry
-    lists to _run_book_entries. Catches any exception (a corrupt/unreadable
-    PDF, a network error that survives _call_with_retry's own retries,
-    etc.) and reports it as a failed-but-tuple-shaped result instead of
-    letting it propagate -- same "catch-log-continue" convention
-    evaluation/refresh_llm_cache.py already established for this kind of
-    long, unattended, budget-spending batch job. One book's failure must
-    never abort the rest of a ~1000-book run.
+    lists to _run_book_entries. `endpoints` carries each side's own
+    client, not a single shared one -- the two independent vision reads
+    can come from entirely different inference endpoints (e.g. two MPCDF
+    sessions, or one MPCDF + one KISSKI model), not just two models
+    behind KISSKI's single base URL. Catches any exception (a corrupt/
+    unreadable PDF, a network error that survives _call_with_retry's own
+    retries, etc.) and reports it as a failed-but-tuple-shaped result
+    instead of letting it propagate -- same "catch-log-continue"
+    convention evaluation/refresh_llm_cache.py already established for
+    this kind of long, unattended, budget-spending batch job. One book's
+    failure must never abort the rest of a ~1000-book run.
 
     `semaphore` is acquired only around each individual API call attempt
     (inside the closure passed to _call_with_retry), NOT around the whole
@@ -208,14 +213,14 @@ async def _run_book(
     progress while one book backs off."""
     try:
         entries_by_model = []
-        for model in models:
-            cached = load_cached_llm_entries(cache_directory, key, model)
+        for endpoint in endpoints:
+            cached = load_cached_llm_entries(cache_directory, key, endpoint.model_id)
             if cached is not None:
                 entries = cached
             else:
-                async def _call(m=model):
+                async def _call(ep=endpoint):
                     async with semaphore:
-                        return await vision_extract_toc_entries(pdf_path, m, client)
+                        return await vision_extract_toc_entries(pdf_path, ep.model_id, ep.client)
                 entries = await _call_with_retry(_call, sleep=sleep)
                 # Only cache a non-empty result -- an empty list here
                 # could be a genuine "no TOC content on these pages" or
@@ -224,7 +229,7 @@ async def _run_book(
                 # later re-run trust a possibly-transient empty result
                 # forever instead of retrying.
                 if entries:
-                    write_cached_llm_entries(cache_directory, key, model, entries)
+                    write_cached_llm_entries(cache_directory, key, endpoint.model_id, entries)
             entries_by_model.append(entries)
         return _run_book_entries(key, entries_by_model[0], entries_by_model[1], corpus_directory)
     except Exception as exc:  # noqa: BLE001 -- must never let one book crash the whole batch
@@ -316,12 +321,12 @@ def _pick_models(base_url: str, api_key: str) -> list[str]:
 
 
 async def _run_all(
-    keys_and_paths: list[tuple[str, Path]], models: tuple[str, str], client, concurrency: int,
+    keys_and_paths: list[tuple[str, Path]], endpoints: tuple[ModelEndpoint, ModelEndpoint], concurrency: int,
     corpus_directory: Path, cache_directory: Path,
 ) -> list[tuple[str, bool, str]]:
     semaphore = asyncio.Semaphore(concurrency)
     return list(await asyncio.gather(*[
-        _run_book(key, path, models, client, semaphore, corpus_directory, cache_directory)
+        _run_book(key, path, endpoints, semaphore, corpus_directory, cache_directory)
         for key, path in keys_and_paths
     ]))
 

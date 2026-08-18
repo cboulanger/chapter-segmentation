@@ -16,6 +16,7 @@ from pypdf import PdfWriter
 
 from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_vision import load_cached_llm_entries, write_cached_llm_entries
+from evaluation.inference_endpoints import ModelEndpoint
 from evaluation.kisski import KisskiModel
 from evaluation.scripts.generate_dnb_toc_ground_truth import (
     _binding_rate_limit_window,
@@ -224,6 +225,10 @@ def _fake_vision_client(response_text: str):
     return client
 
 
+def _endpoint(model_id: str, client) -> ModelEndpoint:
+    return ModelEndpoint(label="test", model_id=model_id, client=client)
+
+
 def _make_pdf(path: Path) -> Path:
     writer = PdfWriter()
     writer.add_blank_page(width=200, height=200)
@@ -247,10 +252,11 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             corpus_directory.mkdir()
             pdf_path = _make_pdf(tmp_path / "book.pdf")
             client = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("model-a", client), _endpoint("model-b", client))
             semaphore = asyncio.Semaphore(1)
 
             key, passed, reason = await _run_book(
-                "book1", pdf_path, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                "book1", pdf_path, endpoints, semaphore, corpus_directory, cache_directory,
                 sleep=AsyncMock(),
             )
 
@@ -270,10 +276,11 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             write_cached_llm_entries(cache_directory, "book2", "model-a", entries)
             write_cached_llm_entries(cache_directory, "book2", "model-b", entries)
             client = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("model-a", client), _endpoint("model-b", client))
             semaphore = asyncio.Semaphore(1)
 
             key, passed, reason = await _run_book(
-                "book2", pdf_path, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                "book2", pdf_path, endpoints, semaphore, corpus_directory, cache_directory,
                 sleep=AsyncMock(),
             )
 
@@ -289,10 +296,11 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             bad_pdf = tmp_path / "not-a-pdf.pdf"
             bad_pdf.write_text("this is not a pdf")
             client = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("model-a", client), _endpoint("model-b", client))
             semaphore = asyncio.Semaphore(1)
 
             key, passed, reason = await _run_book(
-                "book3", bad_pdf, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                "book3", bad_pdf, endpoints, semaphore, corpus_directory, cache_directory,
                 sleep=AsyncMock(),
             )
 
@@ -316,10 +324,11 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             client.chat.completions.create = AsyncMock(
                 side_effect=[good_response, RuntimeError("boom"), RuntimeError("boom"), RuntimeError("boom")]
             )
+            endpoints = (_endpoint("model-a", client), _endpoint("model-b", client))
             semaphore = asyncio.Semaphore(1)
 
             key, passed, reason = await _run_book(
-                "book4", pdf_path, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                "book4", pdf_path, endpoints, semaphore, corpus_directory, cache_directory,
                 sleep=AsyncMock(),
             )
 
@@ -344,6 +353,7 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             pdf_path = _make_pdf(tmp_path / "book.pdf")
             client = MagicMock()
             client.chat.completions.create = AsyncMock(side_effect=RuntimeError("boom"))
+            endpoints = (_endpoint("model-a", client), _endpoint("model-b", client))
             semaphore = asyncio.Semaphore(1)
             observed_lock_state_during_sleep = []
 
@@ -351,7 +361,7 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
                 observed_lock_state_during_sleep.append(semaphore.locked())
 
             await _run_book(
-                "book5", pdf_path, ("model-a", "model-b"), client, semaphore, corpus_directory, cache_directory,
+                "book5", pdf_path, endpoints, semaphore, corpus_directory, cache_directory,
                 sleep=spying_sleep,
             )
 
@@ -360,6 +370,29 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
                 all(not locked for locked in observed_lock_state_during_sleep),
                 "semaphore was still held during a backoff sleep",
             )
+
+    async def test_two_independent_endpoints_each_get_their_own_client_called(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            corpus_directory = tmp_path / "corpus"
+            cache_directory = tmp_path / "cache"
+            corpus_directory.mkdir()
+            pdf_path = _make_pdf(tmp_path / "book.pdf")
+            client_a = _fake_vision_client(_VISION_RESPONSE)
+            client_b = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("model-a", client_a), _endpoint("model-b", client_b))
+            semaphore = asyncio.Semaphore(1)
+
+            key, passed, reason = await _run_book(
+                "book6", pdf_path, endpoints, semaphore, corpus_directory, cache_directory,
+                sleep=AsyncMock(),
+            )
+
+            self.assertTrue(passed)
+            client_a.chat.completions.create.assert_awaited_once()
+            client_b.chat.completions.create.assert_awaited_once()
+            self.assertEqual(client_a.chat.completions.create.await_args.kwargs["model"], "model-a")
+            self.assertEqual(client_b.chat.completions.create.await_args.kwargs["model"], "model-b")
 
 
 class TestStillNeedsADecision(unittest.TestCase):

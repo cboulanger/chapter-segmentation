@@ -53,8 +53,14 @@ def versioned_cache_dir(cache_directory: Path) -> Path:
 def cache_path(cache_directory: Path, key: str, model: str) -> Path:
     """Where one (book, model) pair's cached vision_extract_toc_entries
     result lives -- <key>.<model>.json, so two independent models never
-    collide for the same book."""
-    return versioned_cache_dir(cache_directory) / f"{key}.{model}.json"
+    collide for the same book. `model` is sanitized ("/" -> "__") before
+    interpolation -- some OpenAI-compatible endpoints (e.g. MPCDF) use a
+    real HuggingFace repo id as their model id (e.g.
+    "Qwen/Qwen2.5-VL-7B-Instruct"), and an un-sanitized "/" would be
+    interpreted as a path separator, turning this into a nested directory
+    instead of a flat file. A no-op for KISSKI's slash-free slugs."""
+    safe_model = model.replace("/", "__")
+    return versioned_cache_dir(cache_directory) / f"{key}.{safe_model}.json"
 
 
 def load_cached_llm_entries(cache_directory: Path, key: str, model: str) -> Optional[list[TocEntry]]:

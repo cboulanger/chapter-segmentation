@@ -109,6 +109,29 @@ class TestLlmCacheRoundTrip(unittest.TestCase):
             )
             self.assertIsNone(load_cached_llm_entries(cache_dir, "book6", "model-a"))
 
+    def test_cache_path_sanitizes_a_model_id_containing_a_slash(self):
+        # Regression test: an MPCDF-style model id is a real HuggingFace
+        # repo id (e.g. "Qwen/Qwen2.5-VL-7B-Instruct"), which contains a
+        # "/". cache_path must not let that "/" become a new path
+        # separator -- the result must still be a single flat filename
+        # living directly inside versioned_cache_dir, never a nested
+        # subdirectory one level deeper.
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            path = cache_path(cache_dir, "book7", "Qwen/Qwen2.5-VL-7B-Instruct")
+            self.assertEqual(path.parent, versioned_cache_dir(cache_dir))
+
+    def test_write_and_load_round_trip_with_a_slash_containing_model_id(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            entries = [TocEntry(title="Einleitung", printed_page_number=9, source_page_index=0)]
+            write_cached_llm_entries(cache_dir, "book8", "Qwen/Qwen2.5-VL-7B-Instruct", entries)
+            path = cache_path(cache_dir, "book8", "Qwen/Qwen2.5-VL-7B-Instruct")
+            self.assertTrue(path.is_file())
+            self.assertEqual(path.parent, versioned_cache_dir(cache_dir))
+            loaded = load_cached_llm_entries(cache_dir, "book8", "Qwen/Qwen2.5-VL-7B-Instruct")
+            self.assertEqual(loaded, entries)
+
 
 class TestRenderPagesToImages(unittest.TestCase):
     def test_renders_one_png_per_page_in_order(self):

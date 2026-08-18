@@ -365,3 +365,13 @@ class TestTitleNearIdenticalNormalization(unittest.TestCase):
         a = _entry("Zur Einführung", 9)
         b = _entry("Krise der Kritik? Zur Einführung", 9)
         self.assertFalse(_title_near_identical(a, b))
+
+    def test_trailing_parenthetical_stripped_even_with_a_trailing_period(self):
+        # Real case (book 9783161636820): one model appended a trailing
+        # period after the closing paren, the other didn't -- the period
+        # defeated _TRAILING_PARENTHETICAL_RE's end-of-string anchor, so
+        # only one side's parenthetical got stripped, scoring an
+        # otherwise-identical pair below threshold.
+        a = _entry('"Therefore I Quit, and I Am Consoled Over Dust and Ashes" (Job 42:6).', 315)
+        b = _entry('"Therefore I Quit, and I Am Consoled Over Dust and Ashes" (Job 42:6)', 315)
+        self.assertTrue(_title_near_identical(a, b))

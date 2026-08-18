@@ -32,8 +32,12 @@ _PUNCTUATION_NORMALIZATION = str.maketrans({
 # only before the strict near-identical comparison (see _title_sort_score)
 # -- the main alignment score (_title_score) doesn't need this, since
 # partial_ratio already scores the shared prefix highly enough to align
-# regardless.
-_TRAILING_PARENTHETICAL_RE = re.compile(r"\s*\([^()]*\)\s*$")
+# regardless. The optional trailing "." (found 2026-08-18, book
+# 9783161636820) matters: one vision model ending its title with a period
+# right after the closing paren otherwise defeats the "$" anchor, so only
+# the OTHER, period-less side gets its parenthetical stripped -- an
+# asymmetric strip that scores an otherwise-identical pair below threshold.
+_TRAILING_PARENTHETICAL_RE = re.compile(r"\s*\([^()]*\)\.?\s*$")
 
 # A leading chapter/section number one model includes in the title text
 # ("2 Decision-making", "1.4 Extraordinary revenues", "Chapter 1:

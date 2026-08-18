@@ -1,322 +1,395 @@
 {
   "entries": [
     {
-      "title": "Einf\u00fchrung",
+      "title": "Vorwort",
+      "authors": [],
+      "printed_page_number": "3",
+      "skip": true
+    },
+    {
+      "title": "Autoren",
+      "authors": [],
+      "printed_page_number": "5",
+      "skip": true
+    },
+    {
+      "title": "Inhalt",
+      "authors": [],
+      "printed_page_number": "7",
+      "skip": true
+    },
+    {
+      "title": "1 Einf\u00fchrung (Klaus Fr\u00f6hlich-Gildhoff, Christoph Mischo & D\u00f6rte Weltzien)",
       "authors": [
         "Klaus Fr\u00f6hlich-Gildhoff",
         "Christoph Mischo",
         "D\u00f6rte Weltzien"
       ],
-      "printed_page_number": "9"
+      "printed_page_number": "9",
+      "skip": false
     },
     {
-      "title": "Ziel und Aufbau dieses Buches",
+      "title": "1.1 Ziel und Aufbau dieses Buches",
       "authors": [],
-      "printed_page_number": "9"
+      "printed_page_number": "9",
+      "skip": false
     },
     {
-      "title": "Der Fachdiskurs um Beobachtungs- und Dokumentationsverfahren in der Fr\u00fchp\u00e4dagogik und ihren Bezugsdisziplinen",
+      "title": "1.2 Der Fachdiskurs um Beobachtungs- und Dokumentationsverfahren in der Fr\u00fchp\u00e4dagogik und ihren Bezugsdisziplinen",
       "authors": [],
-      "printed_page_number": "11"
+      "printed_page_number": "11",
+      "skip": false
     },
     {
-      "title": "Beobachtungsverfahren mit qualitativ-hermeneutischer Ausrichtung",
+      "title": "2 Beobachtungsverfahren mit qualitativ-hermeneutischer Ausrichtung",
       "authors": [],
-      "printed_page_number": "19"
+      "printed_page_number": "19",
+      "skip": false
     },
     {
-      "title": "Methodische Grundlagen hermeneutischer und prozessbezogener Verfahren",
+      "title": "2.1 Methodische Grundlagen hermeneutischer und prozessbezogener Verfahren (D\u00f6rte Weltzien)",
       "authors": [
         "D\u00f6rte Weltzien"
       ],
-      "printed_page_number": "19"
+      "printed_page_number": "19",
+      "skip": false
     },
     {
-      "title": "Kindbezogene Verfahren",
+      "title": "2.2 Kindbezogene Verfahren",
       "authors": [],
-      "printed_page_number": "28"
+      "printed_page_number": "28",
+      "skip": false
     },
     {
-      "title": "Leuvener Engagertheitsskala",
+      "title": "2.2.1 Leuvener Engagertheitsskala (D\u00f6rte Weltzien)",
       "authors": [
         "D\u00f6rte Weltzien"
       ],
-      "printed_page_number": "28"
+      "printed_page_number": "28",
+      "skip": false
     },
     {
-      "title": "Beobachtungsverfahren nach infans",
+      "title": "2.2.2 Beobachtungsverfahren nach infans (Michael W\u00fcnsche)",
       "authors": [
         "Michael W\u00fcnsche"
       ],
-      "printed_page_number": "34"
+      "printed_page_number": "34",
+      "skip": false
     },
     {
-      "title": "Learning Stories",
+      "title": "2.2.3 Learning Stories (D\u00f6rte Weltzien)",
       "authors": [
         "D\u00f6rte Weltzien"
       ],
-      "printed_page_number": "42"
+      "printed_page_number": "42",
+      "skip": false
     },
     {
-      "title": "Bildungs- und Lerngeschichten",
+      "title": "2.2.4 Bildungs- und Lerngeschichten (D\u00f6rte Weltzien)",
       "authors": [
         "D\u00f6rte Weltzien"
       ],
-      "printed_page_number": "46"
+      "printed_page_number": "46",
+      "skip": false
     },
     {
-      "title": "Das Beobachtungsverfahren nach Schemata (\u201eEarly Excellence\u201c)",
+      "title": "2.2.5 Das Beobachtungsverfahren nach Schemata (\u201eEarly Excellence\u201c) (D\u00f6rte Weltzien)",
       "authors": [
         "D\u00f6rte Weltzien"
       ],
-      "printed_page_number": "52"
+      "printed_page_number": "52",
+      "skip": false
     },
     {
-      "title": "Das Beobachtende Wahrnehmen nach Gerd E. Sch\u00e4fer",
+      "title": "2.2.6 Das Beobachtende Wahrnehmen nach Gerd E. Sch\u00e4fer (D\u00f6rte Weltzien)",
       "authors": [
         "D\u00f6rte Weltzien"
       ],
-      "printed_page_number": "56"
+      "printed_page_number": "56",
+      "skip": false
     },
     {
-      "title": "Projektive Verfahren im Rahmen klinisch-psychologischer Diagnostik",
+      "title": "2.2.7 Projektive Verfahren im Rahmen klinisch-psychologischer Diagnostik (Klaus Fr\u00f6hlich-Gildhoff)",
       "authors": [
         "Klaus Fr\u00f6hlich-Gildhoff"
       ],
-      "printed_page_number": "58"
+      "printed_page_number": "58",
+      "skip": false
     },
     {
-      "title": "Interaktionsorientierte Ans\u00e4tze in der p\u00e4dagogischen Arbeit mit Kindern unter drei Jahren.",
+      "title": "2.3 Interaktionsorientierte Ans\u00e4tze in der p\u00e4dagogischen Arbeit mit Kindern unter drei Jahren.",
       "authors": [],
-      "printed_page_number": "70"
+      "printed_page_number": "70",
+      "skip": false
     },
     {
-      "title": "Das Kinaesthetik Infant Handling nach Maietta und Hatch \u2013 Beobachtung und Analyse der Fachkraft-Kind-Bewegungsinteraktion",
+      "title": "2.3.1 Das Kinaesthetik Infant Handling nach Maietta und Hatch \u2013 Beobachtung und Analyse der Fachkraft-Kind-Bewegungsinteraktion (Dorothee Gutknecht)",
       "authors": [
         "Dorothee Gutknecht"
       ],
-      "printed_page_number": "70"
+      "printed_page_number": "70",
+      "skip": false
     },
     {
-      "title": "Die S\u00e4uglings- und Kleinkind-P\u00e4dagogik nach Pikler",
+      "title": "2.3.2 Die S\u00e4uglings- und Kleinkind-P\u00e4dagogik nach Pikler (Dorothee Gutknecht)",
       "authors": [
         "Dorothee Gutknecht"
       ],
-      "printed_page_number": "79"
+      "printed_page_number": "79",
+      "skip": false
     },
     {
-      "title": "Professionelle Responsivit\u00e4t",
+      "title": "2.3.3 Professionelle Responsivit\u00e4t (Dorothee Gutknecht)",
       "authors": [
         "Dorothee Gutknecht"
       ],
-      "printed_page_number": "84"
+      "printed_page_number": "84",
+      "skip": false
     },
     {
-      "title": "Lernprogramm Baby-Lesen",
+      "title": "2.3.4 Lernprogramm Baby-Lesen (D\u00f6rte Weltzien)",
       "authors": [
         "D\u00f6rte Weltzien"
       ],
-      "printed_page_number": "89"
+      "printed_page_number": "89",
+      "skip": false
     },
     {
-      "title": "Marte Meo Modell",
+      "title": "2.3.5 Marte Meo Modell (Armin Castello)",
       "authors": [
         "Armin Castello"
       ],
-      "printed_page_number": "95"
+      "printed_page_number": "95",
+      "skip": false
     },
     {
-      "title": "Sprache \u2013 eher qualitativ-hermeneutische Verfahren",
+      "title": "2.4 Sprache \u2013 eher qualitativ-hermeneutische Verfahren (Petra Gretsch)",
       "authors": [
         "Petra Gretsch"
       ],
-      "printed_page_number": "100"
+      "printed_page_number": "100",
+      "skip": false
     },
     {
-      "title": "Verfahren mit hoher Standardisierung",
+      "title": "3 Verfahren mit hoher Standardisierung",
       "authors": [],
-      "printed_page_number": "106"
+      "printed_page_number": "106",
+      "skip": false
     },
     {
-      "title": "Methodische Grundlagen standardisierter Verfahren",
+      "title": "3.1 Methodische Grundlagen standardisierter Verfahren (Christoph Mischo)",
       "authors": [
         "Christoph Mischo"
       ],
-      "printed_page_number": "106"
+      "printed_page_number": "106",
+      "skip": false
     },
     {
-      "title": "Verortung standardisierter Verfahren",
+      "title": "3.1.1 Verortung standardisierter Verfahren",
       "authors": [],
-      "printed_page_number": "106"
+      "printed_page_number": "106",
+      "skip": false
     },
     {
-      "title": "Objektivit\u00e4t",
+      "title": "3.1.2 Objektivit\u00e4t",
       "authors": [],
-      "printed_page_number": "106"
+      "printed_page_number": "106",
+      "skip": false
     },
     {
-      "title": "Genauigkeit (Reliabilit\u00e4t)",
+      "title": "3.1.3 Genauigkeit (Reliabilit\u00e4t)",
       "authors": [],
-      "printed_page_number": "109"
+      "printed_page_number": "109",
+      "skip": false
     },
     {
-      "title": "G\u00fcltigkeit (Validit\u00e4t)",
+      "title": "3.1.4 G\u00fcltigkeit (Validit\u00e4t)",
       "authors": [],
-      "printed_page_number": "111"
+      "printed_page_number": "111",
+      "skip": false
     },
     {
-      "title": "Normierung",
+      "title": "3.1.5 Normierung",
       "authors": [],
-      "printed_page_number": "113"
+      "printed_page_number": "113",
+      "skip": false
     },
     {
-      "title": "Der Zusammenhang von Objektivit\u00e4t, Reliabilit\u00e4t und Validit\u00e4t",
+      "title": "3.1.6 Der Zusammenhang von Objektivit\u00e4t, Reliabilit\u00e4t und Validit\u00e4t",
       "authors": [],
-      "printed_page_number": "115"
+      "printed_page_number": "115",
+      "skip": false
     },
     {
-      "title": "Kindbezogene Verfahren",
+      "title": "3.2 Kindbezogene Verfahren",
       "authors": [],
-      "printed_page_number": "116"
+      "printed_page_number": "116",
+      "skip": false
     },
     {
-      "title": "Allgemeine Entwicklung",
+      "title": "3.2.1 Allgemeine Entwicklung (Armin Castello, Christoph Mischo & Toni Mayr)",
       "authors": [
         "Armin Castello",
         "Christoph Mischo",
         "Toni Mayr"
       ],
-      "printed_page_number": "116"
+      "printed_page_number": "116",
+      "skip": false
     },
     {
-      "title": "Kognitive F\u00e4higkeiten und Intelligenz",
+      "title": "3.2.2 Kognitive F\u00e4higkeiten und Intelligenz (Christoph Mischo)",
       "authors": [
         "Christoph Mischo"
       ],
-      "printed_page_number": "128"
+      "printed_page_number": "128",
+      "skip": false
     },
     {
-      "title": "Konzentration",
+      "title": "3.2.3 Konzentration (Christoph Mischo)",
       "authors": [
         "Christoph Mischo"
       ],
-      "printed_page_number": "146"
+      "printed_page_number": "146",
+      "skip": false
     },
     {
-      "title": "Motorik und Wahrnehmung",
+      "title": "3.2.4 Motorik und Wahrnehmung (Armin Castello)",
       "authors": [
         "Armin Castello"
       ],
-      "printed_page_number": "151"
+      "printed_page_number": "151",
+      "skip": false
     },
     {
-      "title": "Sprache - standardisierte Verfahren",
+      "title": "3.2.5 Sprache - standardisierte Verfahren (Petra Gretsch)",
       "authors": [
         "Petra Gretsch"
       ],
-      "printed_page_number": "155"
+      "printed_page_number": "155",
+      "skip": false
     },
     {
-      "title": "Vorl\u00e4uferf\u00e4higkeiten f\u00fcr Lesen und Schreiben",
+      "title": "3.2.6 Vorl\u00e4uferf\u00e4higkeiten f\u00fcr Lesen und Schreiben (Christoph Mischo)",
       "authors": [
         "Christoph Mischo"
       ],
-      "printed_page_number": "167"
+      "printed_page_number": "167",
+      "skip": false
     },
     {
-      "title": "Mathematische Kompetenzen",
+      "title": "3.2.7 Mathematische Kompetenzen (Sabine Peucker)",
       "authors": [
         "Sabine Peucker"
       ],
-      "printed_page_number": "171"
+      "printed_page_number": "171",
+      "skip": false
     },
     {
-      "title": "Soziale und emotionale Entwicklung",
+      "title": "3.2.8 Soziale und emotionale Entwicklung (Klaus Fr\u00f6hlich-Gildhoff & Armin Castello)",
       "authors": [
         "Klaus Fr\u00f6hlich-Gildhoff",
         "Armin Castello"
       ],
-      "printed_page_number": "207"
+      "printed_page_number": "207",
+      "skip": false
     },
     {
-      "title": "Interessen: Adaption des deutschsprachigen Inventory of Childrens Activities \u2013 Revised (ICA-D)",
+      "title": "3.2.9 Interessen: Adaption des deutschsprachigen Inventory of Childrens Activities \u2013 Revised (ICA-D) (von Maurice, 2007) (Janina Strohmer)",
       "authors": [
-        "Maurice",
         "Janina Strohmer"
       ],
-      "printed_page_number": "223"
+      "printed_page_number": "223",
+      "skip": false
     },
     {
-      "title": "Diagnoseverfahren zur Beurteilung von Verhaltensauff\u00e4lligkeiten",
+      "title": "3.2.10 Diagnoseverfahren zur Beurteilung von Verhaltensauff\u00e4lligkeiten (Klaus Fr\u00f6hlich-Gildhoff)",
       "authors": [
         "Klaus Fr\u00f6hlich-Gildhoff"
       ],
-      "printed_page_number": "228"
+      "printed_page_number": "228",
+      "skip": false
     },
     {
-      "title": "Umwelt- und interaktionsbezogene Verfahren",
+      "title": "3.3 Umwelt- und interaktionsbezogene Verfahren",
       "authors": [],
-      "printed_page_number": "244"
+      "printed_page_number": "244",
+      "skip": false
     },
     {
-      "title": "Strukturqualit\u00e4t, Orientierungsqualit\u00e4t und Prozessqualit\u00e4t als relevante Umweltdimensionen",
+      "title": "3.3.1 Strukturqualit\u00e4t, Orientierungsqualit\u00e4t und Prozessqualit\u00e4t als relevante Umweltdimensionen (Christoph Mischo)",
       "authors": [
         "Christoph Mischo"
       ],
-      "printed_page_number": "244"
+      "printed_page_number": "244",
+      "skip": false
     },
     {
-      "title": "Famili\u00e4re Umwelt des Kindes und Bindungsqualit\u00e4t",
+      "title": "3.3.2 Famili\u00e4re Umwelt des Kindes und Bindungsqualit\u00e4t (Christoph Mischo, Meike R\u00f6nnau-B\u00f6se & Sybille Fischer)",
       "authors": [
         "Christoph Mischo",
         "Meike R\u00f6nnau-B\u00f6se",
         "Sybille Fischer"
       ],
-      "printed_page_number": "246"
+      "printed_page_number": "246",
+      "skip": false
     },
     {
-      "title": "Institutionelle Umwelt des Kindes und fr\u00fchp\u00e4dagogische Fachkr\u00e4fte",
+      "title": "3.3.3 Institutionelle Umwelt des Kindes und fr\u00fchp\u00e4dagogische Fachkr\u00e4fte (Christoph Mischo)",
       "authors": [
         "Christoph Mischo"
       ],
-      "printed_page_number": "263"
+      "printed_page_number": "263",
+      "skip": false
     },
     {
-      "title": "Beobachtungs- und Diagnoseverfahren f\u00fcr fr\u00fchp\u00e4dagogische Fachkr\u00e4fte: Fazit",
+      "title": "4 Beobachtungs- und Diagnoseverfahren f\u00fcr fr\u00fchp\u00e4dagogische Fachkr\u00e4fte: Fazit (Christoph Mischo)",
       "authors": [
         "Christoph Mischo"
       ],
-      "printed_page_number": "270"
+      "printed_page_number": "270",
+      "skip": false
     },
     {
-      "title": "Wie sind die vorliegenden Verfahren insgesamt zu bewerten?",
+      "title": "4.1 Wie sind die vorliegenden Verfahren insgesamt zu bewerten?",
       "authors": [],
-      "printed_page_number": "270"
+      "printed_page_number": "270",
+      "skip": false
     },
     {
-      "title": "F\u00fcr welche Bereiche sollten noch mehr Verfahren entwickelt werden?",
+      "title": "4.2 F\u00fcr welche Bereiche sollten noch mehr Verfahren entwickelt werden?",
       "authors": [],
-      "printed_page_number": "275"
+      "printed_page_number": "275",
+      "skip": false
     },
     {
-      "title": "Desiderata f\u00fcr die weitere Entwicklung von Beobachtungs- und Diagnoseverfahren",
+      "title": "4.3 Desiderata f\u00fcr die weitere Entwicklung von Beobachtungs- und Diagnoseverfahren",
       "authors": [],
-      "printed_page_number": "278"
+      "printed_page_number": "278",
+      "skip": false
     },
     {
-      "title": "Stimmen der Bildungspl\u00e4ne zu Beobachtung und Dokumentation.",
+      "title": "5 Stimmen der Bildungspl\u00e4ne zu Beobachtung und Dokumentation",
       "authors": [],
-      "printed_page_number": "281"
+      "printed_page_number": "281",
+      "skip": false
     },
     {
-      "title": "Literaturverzeichnis",
+      "title": "6 Literaturverzeichnis",
       "authors": [],
-      "printed_page_number": "333"
+      "printed_page_number": "333",
+      "skip": true
     },
     {
       "title": "Alphabetisches Verzeichnis der Beobachtungsverfahren und diagnostischen Verfahren",
       "authors": [],
-      "printed_page_number": "360"
+      "printed_page_number": "360",
+      "skip": true
+    },
+    {
+      "title": "Inhalt",
+      "authors": [],
+      "printed_page_number": null,
+      "skip": true
     }
   ],
   "verified": false,

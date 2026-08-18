@@ -229,29 +229,51 @@ sampled books already on the current schema -- i.e. what the pipeline
 actually produces today -- gives **7/9 (78%) precision**, a small but
 real sample.
 
-The two current-schema rejects are genuinely informative:
+The two current-schema rejects are genuinely informative, and inspecting
+both models' raw cached responses for `9783495485019` directly
+(`evaluation/corpus/dnb-toc-only/llm-cache/v2/9783495485019.<model>.json`)
+pins down the exact mechanism for that one -- **neither defect there is
+actually a hallucination**:
 
-- `9783495485019`: a two-line heading ("Einleitung: / Endlichkeit und
-  Verantwortung", both halves on one page) was wrongly split into two
-  separate entries, and a page-number-less "Anhang:" divider was
-  duplicated into two hallucinated entries instead of appearing once.
+- `9783495485019`'s "Anhang:" duplicate: both models independently read
+  the exact same real text, both correctly with an unknown (`null`) page
+  number -- not a disagreement at all. But `align_toc_entries` skips any
+  pair where *either* side's `printed_page_number` is `None` before ever
+  attempting a title comparison (`if entry_a.printed_page_number is None:
+  continue`), so two entries that agree perfectly can never be recognized
+  as a match; both survive into the merged output as unmatched
+  singletons, producing a duplicate. A page-number-less-entry blind spot
+  in the alignment algorithm, not a hallucination and not really an
+  "unconfirmed singleton" either -- the second model DID confirm it, the
+  merge logic just has no way to record that.
+- `9783495485019`'s split heading: `qwen3.6` (side `b`) read
+  "Einleitung: Endlichkeit und Verantwortung" correctly as one entry;
+  `qwen3-omni` (side `a`) split it into "Einleitung:" and "Endlichkeit
+  und Verantwortung". Because "Einleitung:" is a prefix of `b`'s full
+  title, it fuzzy-matched above threshold and consumed that pairing --
+  and `gate_book` always keeps side `a`'s title verbatim on a matched
+  pair, never side `b`'s, so the objectively worse (split) reading won;
+  `a`'s own leftover second half then had nothing left to match and
+  became a stray singleton. Real text on both sides throughout; the
+  defect is entirely `gate_book`'s "always trust `a`" merge policy.
 - `0292746245`: an author name typo ("Irving Davis" for the correctly-
   printed "Irvine Davis"), plus an internally-inconsistent `skip`
   classification (its own "Index" entry marked `skip: false` despite the
-  file correctly marking its own "Contents" entry `skip: true`).
+  file correctly marking its own "Contents" entry `skip: true`) -- raw
+  per-model cache not inspected for this one, so whether this specific
+  typo came from one model or both is unconfirmed.
 
-Neither looks like the two models independently making the *same*
+None of this looks like the two models independently making the *same*
 mistake (contrast with the earlier `gemma-4-31b-it` content-dropping bug,
 independently confirmed via page-range comparison against a third
-reading) -- both are more consistent with a **`gate_book` merge-policy
-gap**: a matched pair unconditionally keeps side `a`'s title/authors
-verbatim once the fuzzy-similarity threshold is cleared (no exact-match
-cross-check), and a singleton entry found by only one model is
-unconditionally trusted into the merged result on the theory that it's a
-real line the other model missed. Both design choices (deliberate, see
-`gate_book`'s own docstring) let a single model's individual error survive
-into `"verified": false` ground truth undetected -- a risk that would
-exist for any two-model pairing, not specifically a same-family one. Real
+reading) -- both `9783495485019` defects are `gate_book` merge-policy
+gaps with real, model-agreed-upon text on both sides. This narrows (does
+not eliminate) the "risk of trusting a singleton" concern that motivated
+this whole spot-check: at least in this sample, a singleton's title text
+itself was never fabricated -- the risk actually realized was a null-page
+entry never getting matched at all (pure duplication) and a matched
+pair's arbitrary side-`a`-wins tiebreak discarding a better available
+reading, not invented content slipping through unchecked. Real
 chapter-level content (titles/authors/page numbers for actual chapters,
 as opposed to the divider/front/back-matter lines `skip` exists to mark)
 was reliably accurate across nearly all 25 books, current- and
@@ -266,11 +288,18 @@ model-family-independent) plus the two isolated single-model errors above,
 with no case found of both models independently producing the identical
 wrong answer. The bulk of the naive 28% number is pipeline staleness
 (pending regeneration once quota allows), not a correlated-bias finding.
-Not yet acted on: tightening `gate_book` to flag a near-but-not-exact
-matched-pair title (or an unconfirmed singleton) for arbitration instead
-of silently trusting it would directly address the two real defects found
-here, at the cost of routing more books to `arbitrate_dnb_toc.py` instead
-of the fully-automatic bulk tier.
+Not yet acted on: two concrete, differently-costed fixes the raw-cache
+inspection above points to directly. Cheap, low-risk: let
+`align_toc_entries` also match two entries whose page numbers are BOTH
+`None` when their titles agree closely (today it skips the pair check
+entirely in that case) -- would have deduplicated `9783495485019`'s
+"Anhang:" for free, no arbitration needed, since the two models already
+agreed. More invasive: replacing `gate_book`'s unconditional
+"matched pair keeps side `a`'s title" rule with something that flags a
+pair for arbitration when `a` and `b`'s titles aren't near-identical
+(only fuzzy-similar) rather than silently picking `a` -- would catch the
+split-heading case, at the cost of routing more books to
+`arbitrate_dnb_toc.py` instead of the fully-automatic bulk tier.
 
 ## Pure-heuristic results
 

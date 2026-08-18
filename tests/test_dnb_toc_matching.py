@@ -9,7 +9,13 @@ import unittest
 from dataclasses import replace
 
 from chapter_segmentation.segmentation import TocEntry
-from evaluation.dnb_toc_matching import align_toc_entries, diff_toc_entries, gate_book, toc_entry_to_gt_dict
+from evaluation.dnb_toc_matching import (
+    _title_near_identical,
+    align_toc_entries,
+    diff_toc_entries,
+    gate_book,
+    toc_entry_to_gt_dict,
+)
 
 
 def _entry(title: str, page: str | int | None, authors: tuple[str, ...] = ()) -> TocEntry:
@@ -92,6 +98,39 @@ class TestAlignTocEntries(unittest.TestCase):
         # that two different real entries sharing a page number align.
         a = [_entry("Die Einheit der Vernunft in der Vielfalt ihrer Stimmen", 117)]
         b = [_entry("Metaphysik nach Kant", 117)]
+        self.assertEqual(align_toc_entries(a, b), [])
+
+    def test_matches_two_null_page_entries_with_identical_titles(self):
+        # Real case found via RESULTS.md's dnb-toc-only bulk-gate
+        # spot-check (2026-08-19, book 9783495485019): both models
+        # independently read a page-number-less "Anhang:" divider
+        # identically, but the old blanket "either side None -> never
+        # match" rule meant two IDENTICAL readings could never align,
+        # silently duplicating the entry downstream in gate_book.
+        a = [_entry("Anhang:", None)]
+        b = [_entry("Anhang:", None)]
+        self.assertEqual(align_toc_entries(a, b), [(0, 0)])
+
+    def test_does_not_match_two_null_page_entries_with_different_titles(self):
+        # Without a page number to confirm the pair, a looser bar would
+        # risk merging two genuinely different unrelated dividers.
+        a = [_entry("Anhang:", None)]
+        b = [_entry("Vorwort", None)]
+        self.assertEqual(align_toc_entries(a, b), [])
+
+    def test_does_not_match_null_page_against_known_page(self):
+        a = [_entry("Anhang:", None)]
+        b = [_entry("Anhang:", 331)]
+        self.assertEqual(align_toc_entries(a, b), [])
+
+    def test_null_page_match_requires_near_exact_title_not_just_fuzzy(self):
+        # A truncated/split title still scores ~100 via partial_ratio
+        # (it's a strict prefix), which is exactly what the null-page
+        # path must NOT accept without a page number to confirm the pair
+        # -- token_sort_ratio (~42 for this real pair) is what actually
+        # distinguishes it from a genuine near-duplicate.
+        a = [_entry("Einleitung:", None)]
+        b = [_entry("Einleitung: Endlichkeit und Verantwortung", None)]
         self.assertEqual(align_toc_entries(a, b), [])
 
     def test_matches_on_prefixed_page_marker(self):
@@ -215,6 +254,37 @@ class TestGateBook(unittest.TestCase):
         self.assertTrue(passed)
         self.assertEqual(entries[0].authors, ("Regex Author",))  # heuristic's own authors preferred when present
 
+    def test_rejects_whole_book_when_a_matched_pair_has_near_but_not_exact_titles(self):
+        # Real case (RESULTS.md's dnb-toc-only bulk-gate spot-check,
+        # 2026-08-19, book 9783495485019): one side split a heading the
+        # other read whole. The pair still aligns (page match + a high
+        # partial_ratio score, since "Einleitung:" is a strict prefix of
+        # the other), so the OLD gate_book would have silently kept the
+        # worse (split) reading. Now the whole book must fail instead of
+        # picking a side by fiat.
+        a = [
+            _entry("Einleitung:", 9),
+            _entry("Endlichkeit und Verantwortung", 9),
+            _entry("Biographie", 331),
+        ]
+        b = [
+            _entry("Einleitung: Endlichkeit und Verantwortung", 9),
+            _entry("Biographie", 331),
+        ]
+        passed, entries = gate_book(a, b)
+        self.assertFalse(passed)
+        self.assertEqual(entries, [])
+
+    def test_null_page_agreement_merges_into_one_entry_not_a_duplicate(self):
+        # Companion to the align_toc_entries null-page test: once the two
+        # models' identical page-number-less readings actually align, the
+        # merged book output must contain it ONCE, not twice.
+        h = [_entry("Einleitung", 9), _entry("Anhang:", None)]
+        l = [_entry("Einleitung", 9), _entry("Anhang:", None)]
+        passed, entries = gate_book(h, l)
+        self.assertTrue(passed)
+        self.assertEqual([e.title for e in entries], ["Einleitung", "Anhang:"])
+
 
 class TestTocEntryToGtDict(unittest.TestCase):
     def test_known_page_number_becomes_string(self):
@@ -237,3 +307,61 @@ class TestTocEntryToGtDict(unittest.TestCase):
             toc_entry_to_gt_dict(entry),
             {"title": "Bibliographie", "authors": [], "printed_page_number": "200", "skip": True},
         )
+
+
+class TestTitleNearIdenticalNormalization(unittest.TestCase):
+    """Regression tests for real false positives found measuring
+    _title_near_identical against all 85 already-cached real dnb-toc-only
+    book pairs (2026-08-19, see RESULTS.md's dnb-toc-only bulk-gate
+    spot-check section) -- each pattern here is a title-FORMATTING
+    difference, not a content disagreement, and must NOT flag a book for
+    arbitration."""
+
+    def test_leading_chapter_number_is_ignored(self):
+        a = _entry("Decision-making", 9, authors=("John Hardman",))
+        b = _entry("2 Decision-making", 9, authors=("John Hardman",))
+        self.assertTrue(_title_near_identical(a, b))
+
+    def test_leading_chapter_label_with_colon_is_ignored(self):
+        a = _entry("Un/thinking Children in Development", 9, authors=("Erica Burman",))
+        b = _entry("Chapter 1: Un/thinking Children in Development", 9, authors=("Erica Burman",))
+        self.assertTrue(_title_near_identical(a, b))
+
+    def test_leading_subsection_number_is_ignored(self):
+        a = _entry("Extraordinary revenues, 1716–88", 9)
+        b = _entry("1.4 Extraordinary revenues, 1716–88", 9)
+        self.assertTrue(_title_near_identical(a, b))
+
+    def test_own_author_embedded_with_dash_is_ignored(self):
+        a = _entry("Introduction—Edward L. Smither", 9, authors=("Edward L. Smither",))
+        b = _entry("Introduction", 9, authors=("Edward L. Smither",))
+        self.assertTrue(_title_near_identical(a, b))
+
+    def test_own_author_embedded_with_leading_period_is_ignored(self):
+        a = _entry("JOSEPH ROTH. Die Eiche Goethes in Buchenwald", 9, authors=("JOSEPH ROTH",))
+        b = _entry("Die Eiche Goethes in Buchenwald", 9, authors=("Joseph Roth",))
+        self.assertTrue(_title_near_identical(a, b))
+
+    def test_own_author_embedded_with_leading_colon_is_ignored(self):
+        a = _entry("Leo Roth: Der Erziehungstheoretiker Erasmus von Rotterdam", 9, authors=("Leo Roth",))
+        b = _entry("Der Erziehungstheoretiker Erasmus von Rotterdam", 9, authors=("Leo Roth",))
+        self.assertTrue(_title_near_identical(a, b))
+
+    def test_german_low_quote_style_is_ignored(self):
+        a = _entry('"Mythologie der Vernunft"', 9, authors=("Uwe Beyer",))
+        b = _entry("„Mythologie der Vernunft“", 9, authors=("Uwe Beyer",))
+        self.assertTrue(_title_near_identical(a, b))
+
+    def test_still_rejects_a_genuine_word_level_reading_difference(self):
+        # Real case (book 0126135169): a genuine misread, not formatting.
+        a = _entry("3. Interpretation of Pima Floating Quantifiers", 9)
+        b = _entry("3. Interpretation of Pima Floated Quantifiers", 9)
+        self.assertFalse(_title_near_identical(a, b))
+
+    def test_still_rejects_a_dropped_subtitle(self):
+        # Real case (book 9783835359208): one side's extra content is a
+        # genuine, non-recoverable subtitle, not redundant metadata --
+        # must still be flagged rather than silently discarded.
+        a = _entry("Zur Einführung", 9)
+        b = _entry("Krise der Kritik? Zur Einführung", 9)
+        self.assertFalse(_title_near_identical(a, b))

@@ -301,6 +301,93 @@ pair for arbitration when `a` and `b`'s titles aren't near-identical
 split-heading case, at the cost of routing more books to
 `arbitrate_dnb_toc.py` instead of the fully-automatic bulk tier.
 
+**Both fixes implemented (2026-08-19), plus three false-positive-driven
+refinements found only by validating against real data:** `align_toc_entries`
+now matches two `None`-page entries via a stricter title-only bar
+(`_NEAR_EXACT_TITLE_THRESHOLD = 95.0`, deliberately NOT using the main
+alignment score's OCR-noise-tolerant `partial_ratio`, since that would
+score a truncated title ~100 against its own full version -- see
+`_title_sort_score`'s docstring); `gate_book` now rejects the whole book
+(routes to arbitration, same as a below-threshold book) when any matched
+pair's titles aren't near-identical, rather than silently keeping side
+`a`'s.
+
+Before trusting either change, both were validated against every
+already-cached real book pair on disk (85 books with exactly 2 cached
+models) rather than just the synthetic unit tests -- a naive first
+implementation (raw `token_sort_ratio` on unmodified titles) wrongly
+flagged 51 of 85 (60%) previously-passing books for arbitration. Sampling
+those showed the false positives weren't random: two systematic, high-
+volume title-FORMATTING differences between the two models, unrelated to
+correctness --
+
+1. one model embedding the author name directly into the title text
+   ("JOSEPH ROTH. Chapter Title", "Chapter Title—Jane Author", "Chapter
+   Title (Jane Author)") while the other keeps title and author separate
+   (title alone, author only in its own `authors` field) -- fixed by
+   stripping each entry's OWN already-agreed-upon `authors` names out of
+   its OWN title before comparing, rather than guessing at every possible
+   name/separator shape by generic pattern;
+2. one model including a leading chapter/section number in the title
+   ("2 Decision-making", "Chapter 1: Un/thinking...", "1.4 Extraordinary
+   revenues...") while the other reports the title alone -- by far the
+   single biggest false-positive source measured, entire multi-chapter
+   books (e.g. `9781107131101`, `9781405187268`, `9781433104503`) were
+   failing almost purely on this; fixed by stripping a leading chapter-
+   number pattern before comparing.
+
+A third, smaller pass added German-style „low-9" opening quotation marks
+to the existing curly-quote-to-ASCII normalization (only the English
+curly style „“ → "" was originally covered) -- found on `3884796925`
+(the Hölderlin Festschrift, 8 of 10 matched pairs affected: e.g.
+"Mythologie der Vernunft" vs German „Mythologie der Vernunft“, otherwise
+word-for-word identical) and `383050277X`.
+
+After all three fixes: 37 of 85 books still newly fail -- but sampling
+those directly shows most are NOT new false positives. Cross-checked
+against the 7 books from the spot-check above that were directly,
+visually confirmed correct against their real PDF scans (`9780190675684`,
+`380061832X`, `3800181967`, `9783534245871`, `9783631725047`,
+`9783823381891`, `9783890863603`): **zero overlap** with the newly-failing
+set. Of the 37: most (`3823350242`, `3896697943`, `9783756030002`,
+`9783779929369`, `9783825248512`, `9783531163789`, `9783948808211`, ...)
+were ALREADY failing on agreement_rate alone, below 0.90, for reasons
+entirely unrelated to the near-identical check (one model catastrophically
+over- or under-segmenting the whole book) -- these were never going to
+pass regardless of this change. A handful are genuine, previously-hidden
+word-level misreadings the near-identical check newly surfaces now that
+shared boilerplate (chapter numbers, author parentheticals) no longer
+dilutes the comparison -- e.g. `9783556061497`: one model read a named
+scale as "Leuvener Engagertheitsskala" (right name, misspelled second
+word), the other as "Leumener Engagiertheitsskala" (misspelled name,
+right second word) -- a genuine reading discrepancy on a real named term,
+invisible before because the identical "2.2.1 ... (Dörte Weltzien)"
+padding around it inflated the raw similarity score enough to clear the
+old, unstripped threshold.
+
+**One more widespread pattern found, deliberately left unfixed:** one
+model capturing only a title's first clause/sentence, the other capturing
+the FULL title+subtitle ("Zur Einführung" vs "Krise der Kritik? Zur
+Einführung"; "Fortdauernder Sturm." vs "Fortdauernder Sturm. Einleitung
+der Herausgeber") -- seen across many books (`9783835359208`: 11 of its
+matched pairs; `9783837643671`: 7). Unlike the author-name/chapter-number
+cases, the extra text here is NOT redundant metadata recoverable from
+elsewhere on the entry -- it's the book's own genuine subtitle, present in
+only one model's read. Silently normalizing this away (e.g. "always keep
+the longer title") would reintroduce exactly the "incomplete training
+target" risk `gate_book`'s whole design exists to avoid, just one level
+down (title text instead of missing entries). Left as a real gate failure,
+routing these books to arbitration -- more arbitration volume than either
+fix alone would suggest, but arbitration is exactly where a human/Claude
+judgment call between two genuinely different-content readings belongs.
+
+Regression tests: `tests/test_dnb_toc_matching.py`'s `TestAlignTocEntries`
+(4 new null-page cases), `TestGateBook` (2 new: the real split-heading
+book and the real null-page-duplicate book), and
+`TestTitleNearIdenticalNormalization` (9 cases covering every false-
+positive pattern found above, plus two negative controls confirming a
+genuine word-level misread and a genuine dropped subtitle still fail).
+
 ## Pure-heuristic results
 
 From `uv run pytest tests/test_segmentation_accuracy.py -q -s -m integration`

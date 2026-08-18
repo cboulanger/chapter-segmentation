@@ -82,18 +82,22 @@ from typing import Awaitable, Callable, Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from openai import AsyncOpenAI
+
 from chapter_segmentation.segmentation import analyze_attachment_llm_only
 from evaluation.harness import available_public_books, list_corpora, llm_cache_dir, public_pages_for
 from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models, select_full_regen, select_gap_fill, select_top5
 
 
 class _OpenAICompatibleLLMClient:
-    """Minimal LLMClient (see chapter_segmentation.llm.LLMClient) backed by
-    any OpenAI-compatible chat completions endpoint."""
+    """Minimal LLMClient (see chapter_segmentation.llm.LLMClient) wrapping
+    an already-built AsyncOpenAI client -- callers construct the client
+    themselves (KISSKI's own base_url/api_key, or a ModelEndpoint's
+    client from evaluation.inference_endpoints), so this class has no
+    provider-specific knowledge at all."""
 
-    def __init__(self, model: str, base_url: str, api_key: str):
-        from openai import AsyncOpenAI
-        self._client = AsyncOpenAI(base_url=base_url, api_key=api_key)
+    def __init__(self, model: str, client: AsyncOpenAI):
+        self._client = client
         self._model = model
 
     async def generate(
@@ -299,7 +303,7 @@ async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], cle
 
     print(f"Selected models: {[m.id for m in selected]}")
     for model in selected:
-        llm_client = _OpenAICompatibleLLMClient(model=model.id, base_url=base_url, api_key=api_key)
+        llm_client = _OpenAICompatibleLLMClient(model=model.id, client=AsyncOpenAI(base_url=base_url, api_key=api_key))
         worker = functools.partial(_run_book_for_model, model=model, mode=mode, llm_client=llm_client)
         await _process_model(book_entries, concurrency, worker)
     return 0

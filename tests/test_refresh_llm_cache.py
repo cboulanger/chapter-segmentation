@@ -11,6 +11,7 @@ from pathlib import Path
 from types import SimpleNamespace
 
 from evaluation.refresh_llm_cache import (
+    _OpenAICompatibleLLMClient,
     _all_cached_model_ids,
     _call_with_retry,
     _fully_covered_model_ids,
@@ -19,6 +20,26 @@ from evaluation.refresh_llm_cache import (
     _run_book_for_model,
     _upsert_cache,
 )
+
+
+class TestOpenAICompatibleLLMClient(unittest.IsolatedAsyncioTestCase):
+    async def test_uses_the_given_client_not_a_new_one(self):
+        fake_client = unittest.mock.MagicMock()
+        message = unittest.mock.MagicMock()
+        message.content = "hello"
+        choice = unittest.mock.MagicMock()
+        choice.message = message
+        response = unittest.mock.MagicMock()
+        response.choices = [choice]
+        fake_client.chat.completions.create = unittest.mock.AsyncMock(return_value=response)
+
+        llm_client = _OpenAICompatibleLLMClient(model="model-x", client=fake_client)
+        result = await llm_client.generate("prompt", max_tokens=10, temperature=0.0)
+
+        self.assertEqual(result, "hello")
+        fake_client.chat.completions.create.assert_awaited_once_with(
+            model="model-x", messages=[{"role": "user", "content": "prompt"}], max_tokens=10, temperature=0.0,
+        )
 
 
 class TestFullyCoveredModelIds(unittest.TestCase):

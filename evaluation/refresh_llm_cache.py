@@ -301,9 +301,9 @@ async def _main(
         print(f"--clear: removed {cleared} cache file(s) across {len(corpora)} corpus/corpora before regenerating.")
 
     if endpoint_aliases:
+        endpoints = [resolve_endpoint_from_env(alias) for alias in endpoint_aliases]
         print(f"Selected endpoints: {endpoint_aliases}")
-        for alias in endpoint_aliases:
-            endpoint = resolve_endpoint_from_env(alias)
+        for endpoint in endpoints:
             model, llm_client = _model_and_client_for_endpoint(endpoint)
             worker = functools.partial(_run_book_for_model, model=model, mode="endpoint", llm_client=llm_client)
             await _process_model(book_entries, concurrency, worker)

@@ -67,6 +67,16 @@ extraction logic itself (prompt, max_tokens, page selection, ...) makes
 every existing cache entry potentially stale, not just the 5 models
 --mode top5 happens to touch. A cached model no longer offered by KISSKI is
 skipped with a warning (nothing to run it against).
+
+--endpoint ALIAS (repeatable): bypasses KISSKI discovery entirely and
+runs the corpus against the given OpenAI-compatible endpoint(s) instead
+-- e.g. an MPCDF LLM Inference Service session
+(https://llm.mpcdf.mpg.de). Each ALIAS must have <ALIAS>_BASE_URL,
+<ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment (see
+evaluation/inference_endpoints.py). Mutually exclusive with --mode --
+there's no discovery/demand concept for a model you deployed yourself,
+so top5/fill-gaps/full's sweep-a-shared-pool semantics don't apply; every
+given endpoint just runs once, unconditionally, over the corpus.
 """
 
 import argparse

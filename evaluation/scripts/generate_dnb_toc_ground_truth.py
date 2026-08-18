@@ -58,27 +58,97 @@ from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models
 from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
 
 
+_RATE_LIMIT_WINDOW_ORDER = ("day", "hour", "minute")
+
+# Windows worth sleeping out inline and retrying within THIS run. "day" is
+# deliberately excluded -- see _call_with_retry's docstring.
+_INLINE_RETRY_WINDOWS = frozenset({"hour", "minute"})
+
+
+def _binding_rate_limit_window(headers) -> Optional[str]:
+    """Which of KISSKI's `x-ratelimit-remaining-<window>` response headers
+    is actually at 0 -- i.e. which window is the real reason this request
+    was rejected (confirmed header shape: RESULTS.md's "genuine daily
+    quota" finding, headers.get() is case-insensitive on both openai's and
+    httpx's Headers types). Returns the LONGEST zeroed window (day > hour >
+    minute) when more than one is reported at 0, since that's the one
+    whose reset actually gates recovery -- waiting out an exhausted
+    per-minute window changes nothing if per-day is also at 0. None if no
+    `remaining-*` header reports exactly "0" (e.g. a 429 for some other
+    reason, or KISSKI changes its header shape without notice) -- callers
+    must treat that the same as an unclassifiable rate limit."""
+    if not headers:
+        return None
+    zeroed = {
+        key.lower().rsplit("-", 1)[-1]
+        for key, value in headers.items()
+        if key.lower().startswith("x-ratelimit-remaining-") and value.strip() == "0"
+    }
+    for window in _RATE_LIMIT_WINDOW_ORDER:
+        if window in zeroed:
+            return window
+    return None
+
+
+def _retry_after_seconds(headers) -> Optional[float]:
+    """Parses KISSKI's `retry-after` response header (seconds until the
+    binding window resets) into a float, or None if absent/unparseable."""
+    if not headers:
+        return None
+    value = headers.get("retry-after")
+    if value is None:
+        return None
+    try:
+        return float(value)
+    except ValueError:
+        return None
+
+
 async def _call_with_retry(
     coro_fn, attempts: int = 6, base_delay: float = 2.0, rate_limit_delay: float = 20.0, sleep=asyncio.sleep,
 ):
     """Same shape as evaluation/refresh_llm_cache.py's own retry helper
-    (exponential backoff from base_delay), except a 429 gets its own much
-    longer, linearly-growing backoff (rate_limit_delay * attempt_number)
-    instead of the short exponential one -- found empirically (2026-08-17
-    batch runs) that KISSKI's rate limit is a real per-key quota, not a
-    transient blip, and the original 3-attempts/1s-base backoff gave up
-    long before the quota window had a chance to reset (30-60% of a
-    100-book batch lost to RateLimitError alone at both concurrency=8 and
-    concurrency=4). `sleep` is injectable so tests don't actually wait."""
+    (exponential backoff from base_delay) for a non-429 failure. A 429
+    instead schedules its retry from the response's own rate-limit headers
+    when present (`retry-after` for the exact delay, `x-ratelimit-remaining-
+    <window>` to identify which window is actually binding -- see
+    _binding_rate_limit_window/_retry_after_seconds), falling back to the
+    old blind `rate_limit_delay * attempt_number` linear backoff only when
+    those headers are missing.
+
+    A 429 whose binding window is "day" gives up immediately instead of
+    sleeping -- found empirically (2026-08-17/18 batch runs) that KISSKI's
+    daily quota, once exhausted, does not reset within a single script
+    invocation's realistic lifetime (`retry-after` observed as high as
+    ~54179s, i.e. ~15h), so blind or even header-precise inline retrying
+    for it just burns wall time one book at a time discovering the same
+    fact the first 429 already established (a ~6.5h run once lost to
+    exactly this). A "day"-bound 429 is instead reported as a failure right
+    away; re-invoking the script once the daily quota actually resets
+    already skips every book with a cached/decided result, so nothing
+    extra is lost by not waiting inline. "hour"/"minute" windows (and an
+    unclassifiable 429 with no headers at all) DO retry inline, since those
+    can plausibly clear before `attempts` is exhausted. `sleep` is
+    injectable so tests don't actually wait."""
     last_exc: Optional[Exception] = None
     for attempt in range(attempts):
         try:
             return await coro_fn()
         except Exception as exc:  # noqa: BLE001 -- any failure here (network, parse) is retryable
             last_exc = exc
-            if attempt < attempts - 1:
-                delay = rate_limit_delay * (attempt + 1) if isinstance(exc, RateLimitError) else base_delay * 2 ** attempt
-                await sleep(delay)
+            if attempt >= attempts - 1:
+                break
+            if isinstance(exc, RateLimitError):
+                response = getattr(exc, "response", None)
+                headers = response.headers if response is not None else None
+                window = _binding_rate_limit_window(headers)
+                if window is not None and window not in _INLINE_RETRY_WINDOWS:
+                    break
+                retry_after = _retry_after_seconds(headers)
+                delay = retry_after if retry_after is not None else rate_limit_delay * (attempt + 1)
+            else:
+                delay = base_delay * 2 ** attempt
+            await sleep(delay)
     raise last_exc
 
 
@@ -158,8 +228,25 @@ async def _run_book(
             entries_by_model.append(entries)
         return _run_book_entries(key, entries_by_model[0], entries_by_model[1], corpus_directory)
     except Exception as exc:  # noqa: BLE001 -- must never let one book crash the whole batch
-        print(f"[error] {key}: {exc}")
+        print(f"[error] {key}: {exc}{_rate_limit_headers_suffix(exc)}")
         return key, False, f"error: {type(exc).__name__}"
+
+
+def _rate_limit_headers_suffix(exc: Exception) -> str:
+    """For a RateLimitError, appends whichever of KISSKI's per-minute/
+    per-hour/per-day limit+remaining response headers are present, so a
+    batch log directly shows which window is actually binding instead of
+    requiring a separate one-off probe script -- see the "genuine daily
+    quota" investigation in RESULTS.md, which had to inspect
+    e.response.headers by hand to establish this. Empty string for any
+    other exception type or a response with no such headers."""
+    response = getattr(exc, "response", None)
+    if not isinstance(exc, RateLimitError) or response is None:
+        return ""
+    relevant = {k: v for k, v in response.headers.items() if "ratelimit" in k.lower() or k.lower() == "retry-after"}
+    if not relevant:
+        return ""
+    return " [" + ", ".join(f"{k}={v}" for k, v in sorted(relevant.items())) + "]"
 
 
 # Vision-capable KISSKI model families, confirmed by direct experiment

@@ -18,13 +18,25 @@ from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_vision import load_cached_llm_entries, write_cached_llm_entries
 from evaluation.kisski import KisskiModel
 from evaluation.scripts.generate_dnb_toc_ground_truth import (
+    _binding_rate_limit_window,
     _call_with_retry,
     _is_stale_bulk_gate_entry,
+    _retry_after_seconds,
     _run_book,
     _run_book_entries,
     _select_best_models,
     _still_needs_a_decision,
 )
+
+
+def _rate_limit_error(headers: dict) -> RateLimitError:
+    return RateLimitError(
+        "rate limited",
+        response=httpx.Response(
+            429, headers=headers, request=httpx.Request("POST", "https://example.com"),
+        ),
+        body=None,
+    )
 
 
 def _entry(title: str, page: int, authors: tuple[str, ...] = ()) -> TocEntry:
@@ -71,6 +83,87 @@ class TestCallWithRetry(unittest.IsolatedAsyncioTestCase):
 
         self.assertEqual(result, "ok")
         sleep.assert_called_once_with(2.0)
+
+    async def test_rate_limit_error_with_retry_after_header_sleeps_that_exact_value(self):
+        # A "minute" window is inline-retryable -- must use the server's own
+        # retry-after value, not the blind rate_limit_delay*attempt formula.
+        error = _rate_limit_error({"retry-after": "37", "x-ratelimit-remaining-minute": "0"})
+        coro_fn = AsyncMock(side_effect=[error, "ok"])
+        sleep = AsyncMock()
+
+        result = await _call_with_retry(coro_fn, attempts=3, base_delay=2.0, rate_limit_delay=20.0, sleep=sleep)
+
+        self.assertEqual(result, "ok")
+        sleep.assert_called_once_with(37.0)
+
+    async def test_rate_limit_error_with_hour_window_also_retries_inline(self):
+        error = _rate_limit_error({"retry-after": "900", "x-ratelimit-remaining-hour": "0"})
+        coro_fn = AsyncMock(side_effect=[error, "ok"])
+        sleep = AsyncMock()
+
+        result = await _call_with_retry(coro_fn, attempts=3, sleep=sleep)
+
+        self.assertEqual(result, "ok")
+        sleep.assert_called_once_with(900.0)
+
+    async def test_rate_limit_error_bound_by_day_window_gives_up_immediately(self):
+        # The whole point: a day-scale quota won't reset within this run,
+        # so no further attempts should even be made, regardless of
+        # `attempts` -- see _call_with_retry's docstring.
+        error = _rate_limit_error({"retry-after": "54179", "x-ratelimit-remaining-day": "0"})
+        coro_fn = AsyncMock(side_effect=error)
+        sleep = AsyncMock()
+
+        with self.assertRaises(RateLimitError):
+            await _call_with_retry(coro_fn, attempts=6, sleep=sleep)
+
+        coro_fn.assert_awaited_once()
+        sleep.assert_not_awaited()
+
+    async def test_rate_limit_error_with_no_headers_falls_back_to_linear_backoff(self):
+        error = _rate_limit_error({})
+        coro_fn = AsyncMock(side_effect=[error, "ok"])
+        sleep = AsyncMock()
+
+        result = await _call_with_retry(coro_fn, attempts=3, base_delay=2.0, rate_limit_delay=20.0, sleep=sleep)
+
+        self.assertEqual(result, "ok")
+        sleep.assert_called_once_with(20.0)
+
+
+class TestBindingRateLimitWindow(unittest.TestCase):
+    def test_none_when_no_headers(self):
+        self.assertIsNone(_binding_rate_limit_window({}))
+        self.assertIsNone(_binding_rate_limit_window(None))
+
+    def test_none_when_no_remaining_header_is_zero(self):
+        headers = {"x-ratelimit-remaining-day": "5", "x-ratelimit-remaining-minute": "1"}
+        self.assertIsNone(_binding_rate_limit_window(headers))
+
+    def test_picks_the_single_zeroed_window(self):
+        self.assertEqual(_binding_rate_limit_window({"x-ratelimit-remaining-minute": "0"}), "minute")
+        self.assertEqual(_binding_rate_limit_window({"x-ratelimit-remaining-hour": "0"}), "hour")
+        self.assertEqual(_binding_rate_limit_window({"x-ratelimit-remaining-day": "0"}), "day")
+
+    def test_prefers_the_longest_window_when_several_are_zeroed(self):
+        headers = {
+            "x-ratelimit-remaining-minute": "0",
+            "x-ratelimit-remaining-hour": "0",
+            "x-ratelimit-remaining-day": "0",
+        }
+        self.assertEqual(_binding_rate_limit_window(headers), "day")
+
+
+class TestRetryAfterSeconds(unittest.TestCase):
+    def test_none_when_absent(self):
+        self.assertIsNone(_retry_after_seconds({}))
+        self.assertIsNone(_retry_after_seconds(None))
+
+    def test_parses_a_numeric_value(self):
+        self.assertEqual(_retry_after_seconds({"retry-after": "54179"}), 54179.0)
+
+    def test_none_for_an_unparseable_value(self):
+        self.assertIsNone(_retry_after_seconds({"retry-after": "not-a-number"}))
 
 
 class TestRunBookEntries(unittest.TestCase):

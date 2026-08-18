@@ -10,12 +10,14 @@ import unittest.mock
 from pathlib import Path
 from types import SimpleNamespace
 
+from evaluation.inference_endpoints import ModelEndpoint
 from evaluation.refresh_llm_cache import (
     _OpenAICompatibleLLMClient,
     _all_cached_model_ids,
     _call_with_retry,
     _fully_covered_model_ids,
     _has_cached_entry,
+    _model_and_client_for_endpoint,
     _process_model,
     _run_book_for_model,
     _upsert_cache,
@@ -40,6 +42,19 @@ class TestOpenAICompatibleLLMClient(unittest.IsolatedAsyncioTestCase):
         fake_client.chat.completions.create.assert_awaited_once_with(
             model="model-x", messages=[{"role": "user", "content": "prompt"}], max_tokens=10, temperature=0.0,
         )
+
+
+class TestModelAndClientForEndpoint(unittest.TestCase):
+    def test_wraps_endpoint_with_demand_zero_and_the_endpoints_own_client(self):
+        fake_client = unittest.mock.MagicMock()
+        endpoint = ModelEndpoint(label="MPCDF_A", model_id="Qwen/Qwen3-VL-30B", client=fake_client)
+
+        model, llm_client = _model_and_client_for_endpoint(endpoint)
+
+        self.assertEqual(model.id, "Qwen/Qwen3-VL-30B")
+        self.assertEqual(model.demand, 0)
+        self.assertIsInstance(llm_client, _OpenAICompatibleLLMClient)
+        self.assertIs(llm_client._client, fake_client)
 
 
 class TestFullyCoveredModelIds(unittest.TestCase):

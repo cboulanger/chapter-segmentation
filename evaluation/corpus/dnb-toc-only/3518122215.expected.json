@@ -1,192 +1,505 @@
 {
   "entries": [
     {
-      "title": "Einleitung: Politik in entgrenzten R\u00e4umen",
+      "title": "Claus Leggewie/Richard Münch",
       "authors": [
         "Claus Leggewie",
-        "Richard M\u00fcnch"
+        "Richard Münch"
       ],
-      "printed_page_number": "9"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Der kapitalistische Wachstumsprozess der Weltwirtschaft",
+      "title": "Einleitung: Politik in entgrenzten Räumen",
       "authors": [
-        "Carl Christian von Weizs\u00e4cker"
+        "Claus Leggewie",
+        "Richard Münch"
       ],
-      "printed_page_number": "15"
+      "printed_page_number": "9",
+      "skip": false
     },
     {
-      "title": "Globale Unternehmen",
+      "title": "I. Transnationale Märkte: Ökonomische Chancen und Herausforderungen",
+      "authors": [
+        "Carl Christian von Weizsäcker"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "Carl Christian von Weizsäcker",
+      "authors": [
+        "Carl Christian von Weizsäcker"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "1. Der kapitalistische Wachstumsprozess der Weltwirtschaft",
+      "authors": [
+        "Carl Christian von Weizsäcker"
+      ],
+      "printed_page_number": "15",
+      "skip": false
+    },
+    {
+      "title": "Johann Engelhard/Silvia Hein",
       "authors": [
         "Johann Engelhard",
         "Silvia Hein"
       ],
-      "printed_page_number": "27"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Die neue Arbeitsgesellschaft",
+      "title": "2. Globale Unternehmen",
       "authors": [
-        "Richard M\u00fcnch"
+        "Johann Engelhard",
+        "Silvia Hein"
       ],
-      "printed_page_number": "51"
+      "printed_page_number": "27",
+      "skip": false
     },
     {
-      "title": "Von der Integration zur sozialen Destabilisierung: Das Sozialmodell der Bundesrepublik und seine Krise",
+      "title": "II. Gesellschaftliche Herausforderungen der Globalisierung I: Sozialer Wandel und soziale Verwerfungen in den Wohlfahrtsstaaten",
+      "authors": [
+        "Richard Münch"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "Richard Münch",
+      "authors": [
+        "Richard Münch"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "3. Die neue Arbeitsgesellschaft",
+      "authors": [
+        "Richard Münch"
+      ],
+      "printed_page_number": "51",
+      "skip": false
+    },
+    {
+      "title": "Michael Vester",
       "authors": [
         "Michael Vester"
       ],
-      "printed_page_number": "75"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Rechtspopulismus und Ethnonationalismus: Erfolgsbedingungen und Zukunftschancen",
+      "title": "4. Von der Integration zur sozialen Destabilisierung: Das Sozialmodell der Bundesrepublik und seine Krise",
+      "authors": [
+        "Michael Vester"
+      ],
+      "printed_page_number": "75",
+      "skip": false
+    },
+    {
+      "title": "Hans-Georg Betz",
       "authors": [
         "Hans-Georg Betz"
       ],
-      "printed_page_number": "122"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Transformation der politischen Systeme in Mittel- und Osteuropa",
+      "title": "5. Rechtspopulismus und Ethnonationalismus: Erfolgsbedingungen und Zukunftschancen",
+      "authors": [
+        "Hans-Georg Betz"
+      ],
+      "printed_page_number": "122",
+      "skip": false
+    },
+    {
+      "title": "III. Gesellschaftliche Herausforderungen der Globalisierung II: Transformation, Entwicklung und Nachhaltigkeit",
       "authors": [
         "Christiane Lemke"
       ],
-      "printed_page_number": "141"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Wo endet Europa? Grenzen der Integration und M\u00f6glichkeiten der Kooperation mit Osteuropa",
+      "title": "Christiane Lemke",
+      "authors": [
+        "Christiane Lemke"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "6. Transformation der politischen Systeme in Mittel- und Osteuropa",
+      "authors": [
+        "Christiane Lemke"
+      ],
+      "printed_page_number": "141",
+      "skip": false
+    },
+    {
+      "title": "Heinz Theisen",
       "authors": [
         "Heinz Theisen"
       ],
-      "printed_page_number": "159"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Wird der S\u00fcden abgeh\u00e4ngt?",
+      "title": "7. Wo endet Europa? Grenzen der Integration und Möglichkeiten der Kooperation mit Osteuropa",
+      "authors": [
+        "Heinz Theisen"
+      ],
+      "printed_page_number": "159",
+      "skip": false
+    },
+    {
+      "title": "Franz Nuscheler",
       "authors": [
         "Franz Nuscheler"
       ],
-      "printed_page_number": "172"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Nachhaltigkeit",
+      "title": "8. Wird der Süden abgehängt?",
       "authors": [
-        "Claudia von Braunm\u00fchl"
+        "Franz Nuscheler"
       ],
-      "printed_page_number": "186"
+      "printed_page_number": "172",
+      "skip": false
     },
     {
-      "title": "Nationale Wohlfahrtsstaaten, Europ\u00e4ische Integration und Globalisierung \u2013 Perspektiven f\u00fcr den westeurop\u00e4ischen Wohlfahrtsstaat",
+      "title": "Claudia von Braunmühl",
+      "authors": [
+        "Claudia von Braunmühl"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "9. Nachhaltigkeit",
+      "authors": [
+        "Claudia von Braunmühl"
+      ],
+      "printed_page_number": "186",
+      "skip": false
+    },
+    {
+      "title": "IV. Gerechtigkeit im globalen System",
       "authors": [
         "Stefan Leibfried"
       ],
-      "printed_page_number": "197"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Verteilungsgerechtigkeit in der Internationalen Umweltpolitik. Theoretische Fundierung und exemplarische Formulierung",
+      "title": "Stefan Leibfried/Carsten Helm/Udo E. Simonis",
+      "authors": [
+        "Stefan Leibfried",
+        "Carsten Helm",
+        "Udo E. Simonis"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "10. Nationale Wohlfahrtsstaaten, Europäische Integration und Globalisierung – Perspektiven für den westeuropäischen Wohlfahrtsstaat",
+      "authors": [
+        "Stefan Leibfried",
+        "Carsten Helm",
+        "Udo E. Simonis"
+      ],
+      "printed_page_number": "197",
+      "skip": false
+    },
+    {
+      "title": "Carsten Helm/Udo E. Simonis",
       "authors": [
         "Carsten Helm",
         "Udo E. Simonis"
       ],
-      "printed_page_number": "211"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Die Achtung der Menschenrechte als Grundlage f\u00fcr politische Gerechtigkeit im 21. Jahrhundert",
+      "title": "11. Verteilungsgerechtigkeit in der Internationalen Umweltpolitik. Theoretische Fundierung und exemplarische Formulierung",
+      "authors": [
+        "Carsten Helm",
+        "Udo E. Simonis"
+      ],
+      "printed_page_number": "211",
+      "skip": false
+    },
+    {
+      "title": "Brigitte Hamm",
       "authors": [
         "Brigitte Hamm"
       ],
-      "printed_page_number": "228"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Vom Glanz und Elend der Demokratie nach 1989",
+      "title": "12. Die Achtung der Menschenrechte als Grundlage für politische Gerechtigkeit im 21. Jahrhundert",
+      "authors": [
+        "Brigitte Hamm"
+      ],
+      "printed_page_number": "228",
+      "skip": false
+    },
+    {
+      "title": "V. Demokratie",
       "authors": [
         "Manfred G. Schmidt"
       ],
-      "printed_page_number": "245"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Postparlamentarische Demokratie und kooperativer Staat",
+      "title": "Manfred G. Schmidt",
+      "authors": [
+        "Manfred G. Schmidt"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "13. Vom Glanz und Elend der Demokratie nach 1989",
+      "authors": [
+        "Manfred G. Schmidt"
+      ],
+      "printed_page_number": "245",
+      "skip": false
+    },
+    {
+      "title": "Arthur Benz",
       "authors": [
         "Arthur Benz"
       ],
-      "printed_page_number": "263"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Perspektiven der Verhandlungsdemokratie \u2013 Governance-Prozesse aus frauenpolitischer Sicht",
+      "title": "14. Postparlamentarische Demokratie und kooperativer Staat",
+      "authors": [
+        "Arthur Benz"
+      ],
+      "printed_page_number": "263",
+      "skip": false
+    },
+    {
+      "title": "Barbara Holland-Cunz",
       "authors": [
         "Barbara Holland-Cunz"
       ],
-      "printed_page_number": "281"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Der aktive B\u00fcrger \u2013 Eine Gestalt der politischen Theorie im Wandel",
+      "title": "15. Perspektiven der Verhandlungsdemokratie – Governance-Prozesse aus frauenpolitischer Sicht",
       "authors": [
-        "H erfried M\u00fcnkler",
+        "Barbara Holland-Cunz"
+      ],
+      "printed_page_number": "281",
+      "skip": false
+    },
+    {
+      "title": "VI. Aktive Bürgergesellschaft",
+      "authors": [
+        "Herfried Münkler",
         "Skadi Krause"
       ],
-      "printed_page_number": "299"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Soziale Bewegungen als Signum demokratischer B\u00fcrgergesellschaft",
+      "title": "Herfried Münkler/Skadi Krause",
+      "authors": [
+        "Herfried Münkler",
+        "Skadi Krause"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "16. Der aktive Bürger – Eine Gestalt der politischen Theorie im Wandel",
+      "authors": [
+        "Herfried Münkler",
+        "Skadi Krause"
+      ],
+      "printed_page_number": "299",
+      "skip": false
+    },
+    {
+      "title": "Dieter Rucht",
       "authors": [
         "Dieter Rucht"
       ],
-      "printed_page_number": "321"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Kleiner Mann ganz gro\u00df? Verwaltung und ihre Klientel im 21. Jahrhundert",
+      "title": "17. Soziale Bewegungen als Signum demokratischer Bürgergesellschaft",
       "authors": [
-        "G\u00f6tttrik Wewer"
+        "Dieter Rucht"
       ],
-      "printed_page_number": "337"
+      "printed_page_number": "321",
+      "skip": false
     },
     {
-      "title": "Kollektive Sicherheit oder Weltnninenpolitik? Die Suche nach den globalen Dorfpolizisten",
+      "title": "Göttrik Wewer",
+      "authors": [
+        "Göttrik Wewer"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "18. Kleiner Mann ganz groß? Verwaltung und ihre Klientel im 21. Jahrhundert",
+      "authors": [
+        "Göttrik Wewer"
+      ],
+      "printed_page_number": "337",
+      "skip": false
+    },
+    {
+      "title": "VII. Sicherheit im internationalen System",
       "authors": [
         "Berthold Meyer"
       ],
-      "printed_page_number": "359"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "20. Hegemonie und Multipolarit\u00e4t unter den Bedingungen von Entgrenzung",
+      "title": "Berthold Meyer",
+      "authors": [
+        "Berthold Meyer"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "19. Kollektive Sicherheit oder Weltinnenpolitik? Die Suche nach dem globalen Dorfpolizisten",
+      "authors": [
+        "Berthold Meyer"
+      ],
+      "printed_page_number": "359",
+      "skip": false
+    },
+    {
+      "title": "Mathias Albert",
       "authors": [
         "Mathias Albert"
       ],
-      "printed_page_number": "375"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "21. Terrorismus \u2013 untersch\u00e4tzte oder \u00fcbersch\u00e4tzte Bedrohung?",
+      "title": "20. Hegemonie und Multipolarität unter den Bedingungen von Entgrenzung",
+      "authors": [
+        "Mathias Albert"
+      ],
+      "printed_page_number": "375",
+      "skip": false
+    },
+    {
+      "title": "Peter Waldmann",
       "authors": [
         "Peter Waldmann"
       ],
-      "printed_page_number": "390"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Politische Organisation in Modernisierungsprozessen. Verfassungspolitische Aspekte",
+      "title": "21. Terrorismus – unterschätzte oder überschätzte Bedrohung?",
       "authors": [
-        "Hermann L\u00fcbbe"
+        "Peter Waldmann"
       ],
-      "printed_page_number": "407"
+      "printed_page_number": "390",
+      "skip": false
     },
     {
-      "title": "Regieren im Zeitalter der Denationalisierung",
+      "title": "VIII. Regieren in entgrenzten Wirtschaftsräumen",
       "authors": [
-        "Michael Z\u00fcrn"
+        "Hermann Lübbe"
       ],
-      "printed_page_number": "423"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Globalisierung und die Regulierung von Finanzm\u00e4rkten im politischen Mehrebenensystem",
+      "title": "Hermann Lübbe",
       "authors": [
-        "Susanne L\u00fctz"
+        "Hermann Lübbe"
       ],
-      "printed_page_number": "443"
+      "printed_page_number": null,
+      "skip": true
     },
     {
-      "title": "Das Erasmus-Programm. Gibt es eine transnationale B\u00fcrgergesellschaft?",
+      "title": "22. Politische Organisation in Modernisierungsprozessen. Verfassungspolitische Aspekte",
+      "authors": [
+        "Hermann Lübbe"
+      ],
+      "printed_page_number": "407",
+      "skip": false
+    },
+    {
+      "title": "Michael Zürn",
+      "authors": [
+        "Michael Zürn"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "23. Regieren im Zeitalter der Denationalisierung",
+      "authors": [
+        "Michael Zürn"
+      ],
+      "printed_page_number": "423",
+      "skip": false
+    },
+    {
+      "title": "Susanne Lütz",
+      "authors": [
+        "Susanne Lütz"
+      ],
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "24. Globalisierung und die Regulierung von Finanzmärkten im politischen Mehrebenensystem",
+      "authors": [
+        "Susanne Lütz"
+      ],
+      "printed_page_number": "443",
+      "skip": false
+    },
+    {
+      "title": "Claus Leggewie",
       "authors": [
         "Claus Leggewie"
       ],
-      "printed_page_number": "458"
+      "printed_page_number": null,
+      "skip": true
+    },
+    {
+      "title": "25. Das Erasmus-Programm. Gibt es eine transnationale Bürgergesellschaft?",
+      "authors": [
+        "Claus Leggewie"
+      ],
+      "printed_page_number": "458",
+      "skip": false
+    },
+    {
+      "title": "Die Autoren",
+      "authors": [],
+      "printed_page_number": "481",
+      "skip": true
     }
   ],
-  "verified": false,
-  "source": "bulk_gate"
+  "verified": true,
+  "source": "claude_arbitration"
 }

@@ -222,9 +222,10 @@ Monitor with `squeue --me` and `tail -f job.out.<jobid>`.
 The two eval passes' full output is both in `job.out.<jobid>` and saved
 separately at `/ptmp/$USER/nuextract-pilot/eval-{finetuned,base}.txt`.
 Record both f1 numbers (and whether the null-page-number rate dropped on
-held-out books -- inspect a couple by hand) in `evaluation/RESULTS.md`,
-per the design spec's "Decision criteria" and the existing pattern for
-every prior NuExtract finding in that file.
+held-out books -- inspect a couple by hand) in
+`evaluation/experiments/nuextract-finetuning.md`, per the design spec's
+"Decision criteria" and the existing pattern for every prior NuExtract
+finding in that file.
 
 The adapter/merged/GGUF artifacts stay under `/ptmp/$USER/nuextract-pilot/`
 -- copy them back with `scp`/`rsync` only if you want to keep the
@@ -355,10 +356,10 @@ test.
 The pilot's design mandates scoring only through `llama.cpp`/GGUF, never
 `transformers`' own generation -- but that rule was root-caused to an
 Apple Silicon **MPS**-specific decoding bug (see
-`evaluation/RESULTS.md`'s transformers/MPS-vs-llama.cpp finding). On an
-NVIDIA GPU, that specific bug likely doesn't apply, so a `transformers`-
-on-CUDA generation pass would be a cheap way to double-check the MPS
-finding really was MPS-specific. `run_pilot.slurm` doesn't do this by
-default (keeping the recorded number directly comparable to the
-already-measured Mac baseline in `RESULTS.md`), but it's a reasonable
+`evaluation/experiments/nuextract-finetuning.md`'s transformers/MPS-vs-llama.cpp
+finding). On an NVIDIA GPU, that specific bug likely doesn't apply, so a
+`transformers`-on-CUDA generation pass would be a cheap way to double-check
+the MPS finding really was MPS-specific. `run_pilot.slurm` doesn't do this
+by default (keeping the recorded number directly comparable to the
+already-measured Mac baseline in `evaluation/experiments/nuextract-finetuning.md`), but it's a reasonable
 follow-up experiment if you want extra confidence in the numbers.

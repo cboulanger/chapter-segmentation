@@ -111,7 +111,7 @@ incomplete extraction from cache instead of asking the model again.
 
 See `evaluation/README.md`'s "Building dnb-toc-only ground truth" for the
 eval-tier (fully hand-transcribed, held-out) sample and the bulk-tier
-spot-check procedure, and `RESULTS.md`'s "dnb-toc-only ground truth:
-two-vision-model gate" section for current coverage numbers, observed
+spot-check procedure, and `evaluation/experiments/dnb-toc-ground-truth.md`'s
+"Current status" section for current coverage numbers, observed
 failure modes, and the KISSKI rate-limit characteristics of running this at
 scale.

@@ -62,7 +62,8 @@ the `lobid-resources` API (see
 and `evaluation/scripts/fetch_dnb_toc_corpus.py`). It's for training and
 calibrating layout-only *parts* of the pipeline (currently the
 scan-noise constants in `evaluation/scripts/alto_scan_noise.py` --
-see `RESULTS.md`'s "real-scan measurement" follow-up) against real
+see `evaluation/experiments/toc-classifier-pilot.md`'s "real-scan
+measurement" follow-up) against real
 scanned TOC pages, not for evaluating chapter segmentation end-to-end --
 there is no surrounding book, no `.expected.json`, and no chapter
 boundaries to score. Its manifest sets `"toc_only": true` and is

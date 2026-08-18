@@ -101,8 +101,8 @@ class TestAlignTocEntries(unittest.TestCase):
         self.assertEqual(align_toc_entries(a, b), [])
 
     def test_matches_two_null_page_entries_with_identical_titles(self):
-        # Real case found via RESULTS.md's dnb-toc-only bulk-gate
-        # spot-check (2026-08-19, book 9783495485019): both models
+        # Real case found via evaluation/experiments/dnb-toc-ground-truth.md's
+        # bulk-gate spot-check (2026-08-19, book 9783495485019): both models
         # independently read a page-number-less "Anhang:" divider
         # identically, but the old blanket "either side None -> never
         # match" rule meant two IDENTICAL readings could never align,
@@ -255,8 +255,8 @@ class TestGateBook(unittest.TestCase):
         self.assertEqual(entries[0].authors, ("Regex Author",))  # heuristic's own authors preferred when present
 
     def test_rejects_whole_book_when_a_matched_pair_has_near_but_not_exact_titles(self):
-        # Real case (RESULTS.md's dnb-toc-only bulk-gate spot-check,
-        # 2026-08-19, book 9783495485019): one side split a heading the
+        # Real case (evaluation/experiments/dnb-toc-ground-truth.md's
+        # bulk-gate spot-check, 2026-08-19, book 9783495485019): one side split a heading the
         # other read whole. The pair still aligns (page match + a high
         # partial_ratio score, since "Einleitung:" is a strict prefix of
         # the other), so the OLD gate_book would have silently kept the
@@ -312,8 +312,8 @@ class TestTocEntryToGtDict(unittest.TestCase):
 class TestTitleNearIdenticalNormalization(unittest.TestCase):
     """Regression tests for real false positives found measuring
     _title_near_identical against all 85 already-cached real dnb-toc-only
-    book pairs (2026-08-19, see RESULTS.md's dnb-toc-only bulk-gate
-    spot-check section) -- each pattern here is a title-FORMATTING
+    book pairs (2026-08-19, see evaluation/experiments/dnb-toc-ground-truth.md's
+    bulk-gate spot-check section) -- each pattern here is a title-FORMATTING
     difference, not a content disagreement, and must NOT flag a book for
     arbitration."""
 

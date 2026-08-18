@@ -183,8 +183,8 @@ def _title_sort_score(entry_a: TocEntry, entry_b: TocEntry) -> float:
     useless at telling a genuinely truncated/split title apart from a
     merely noisy one -- e.g. "Einleitung:" scores 100 by partial_ratio
     against "Einleitung: Endlichkeit und Verantwortung" (a real
-    split-heading defect found via RESULTS.md's dnb-toc-only bulk-gate
-    spot-check, 2026-08-19) despite being a completely different,
+    split-heading defect found via evaluation/experiments/dnb-toc-ground-truth.md's
+    bulk-gate spot-check, 2026-08-19) despite being a completely different,
     incomplete title. token_sort_ratio alone correctly scores that pair
     ~42.
 
@@ -228,8 +228,8 @@ def align_toc_entries(a: list[TocEntry], b: list[TocEntry]) -> list[tuple[int, i
       >= _ALIGN_SCORE_THRESHOLD per _title_score; or
     - both sides have an UNKNOWN printed_page_number (both None) and their
       titles are near-identical per _title_near_identical -- added
-      2026-08-19 after a real case (RESULTS.md's dnb-toc-only bulk-gate
-      spot-check) where two models independently read the exact same
+      2026-08-19 after a real case (evaluation/experiments/dnb-toc-ground-truth.md's
+      bulk-gate spot-check) where two models independently read the exact same
       page-number-less divider ("Anhang:") but the previous blanket "either
       side None -> never match" rule meant two IDENTICAL readings could
       never be recognized as agreeing, silently duplicating the entry in
@@ -309,8 +309,8 @@ def gate_book(
 
     Also rejected outright, even at/above `threshold`: any matched pair
     whose titles aren't near-identical per _title_near_identical -- added
-    2026-08-19 after a real case (RESULTS.md's dnb-toc-only bulk-gate
-    spot-check) where a fuzzy-but-not-exact matched pair (one model split
+    2026-08-19 after a real case (evaluation/experiments/dnb-toc-ground-truth.md's
+    bulk-gate spot-check) where a fuzzy-but-not-exact matched pair (one model split
     a heading the other read whole) silently kept the WORSE of the two
     readings, since the merge below has no way to tell which side is
     actually correct. Both sides having independently produced a real

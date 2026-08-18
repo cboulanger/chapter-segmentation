@@ -68,8 +68,8 @@ _INLINE_RETRY_WINDOWS = frozenset({"hour", "minute"})
 def _binding_rate_limit_window(headers) -> Optional[str]:
     """Which of KISSKI's `x-ratelimit-remaining-<window>` response headers
     is actually at 0 -- i.e. which window is the real reason this request
-    was rejected (confirmed header shape: RESULTS.md's "genuine daily
-    quota" finding, headers.get() is case-insensitive on both openai's and
+    was rejected (confirmed header shape: evaluation/experiments/dnb-toc-ground-truth.md's
+    "genuine daily quota" finding, headers.get() is case-insensitive on both openai's and
     httpx's Headers types). Returns the LONGEST zeroed window (day > hour >
     minute) when more than one is reported at 0, since that's the one
     whose reset actually gates recovery -- waiting out an exhausted
@@ -237,7 +237,7 @@ def _rate_limit_headers_suffix(exc: Exception) -> str:
     per-hour/per-day limit+remaining response headers are present, so a
     batch log directly shows which window is actually binding instead of
     requiring a separate one-off probe script -- see the "genuine daily
-    quota" investigation in RESULTS.md, which had to inspect
+    quota" investigation in evaluation/experiments/dnb-toc-ground-truth.md, which had to inspect
     e.response.headers by hand to establish this. Empty string for any
     other exception type or a response with no such headers."""
     response = getattr(exc, "response", None)
@@ -256,7 +256,7 @@ def _rate_limit_headers_suffix(exc: Exception) -> str:
 # response.
 #
 # gemma-4-31b-it was the original second pattern but was dropped after a
-# real 15-book smoke test (evaluation/RESULTS.md, 2026-08-16) found it
+# real 15-book smoke test (evaluation/experiments/dnb-toc-ground-truth.md, 2026-08-16) found it
 # doesn't just extract at a coarser granularity than qwen-omni -- on 5 of
 # 8 below-threshold books it silently DROPPED the entire early portion of
 # the TOC (e.g. one clean 8-entry numbered list came back with only the

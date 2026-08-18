@@ -7,7 +7,18 @@ the regression is tracked instead of silently re-discovered later.
 
 ## Document organization in this directory
 
-Four documents, four different lifetimes -- know which one to write to:
+Several documents, several different lifetimes -- know which one to write
+to. `README.md`/`RESULTS.md`/`EXPERIMENTS.md`/`CLAUDE.md` (this file)
+cover the main `chapter_segmentation` workflow (the pure heuristic, the
+strategy pipeline, and the standalone heuristic/outline/LLM strategies) --
+`open-access/` and `copyrighted-scans/` corpora. A not-yet-integrated
+experiment toward optimizing one *part* of that pipeline (the `dnb-toc-only`
+ground-truth generation pipeline, the layout-based TOC/chapter-first-page
+classifier pilot, the NuExtract fine-tuning pilot) instead gets its own
+file under `evaluation/experiments/`, kept separate so a reader working on
+the main workflow doesn't have to wade through experiments that don't
+affect it (and vice versa) -- see the `evaluation/experiments/` bullet
+below.
 
 - **`README.md`** — permanent reference: what the evaluation set is, its
   schema, how to fetch/add books, and how to run each evaluation
@@ -56,7 +67,23 @@ Four documents, four different lifetimes -- know which one to write to:
   heading here. Never trimmed or rewritten away once something lands here
   -- only appended to, as more of `RESULTS.md` gets superseded over time.
   Reading `RESULTS.md` and `EXPERIMENTS.md` together should never lose
-  information that was ever recorded in `RESULTS.md`.
+  information that was ever recorded in `RESULTS.md`. As of 2026-08-19
+  both files are scoped to the main workflow only (see above) --
+  `EXPERIMENTS.md` is currently empty, since nothing in `RESULTS.md` has
+  been superseded yet.
+- **`evaluation/experiments/<name>.md`** (one file per not-yet-integrated
+  experiment, e.g. `dnb-toc-ground-truth.md`, `toc-classifier-pilot.md`,
+  `nuextract-finetuning.md`) — each is self-contained: a "Current status"
+  section (the `RESULTS.md` role, current numbers and findings only) plus
+  a "History" section (the `EXPERIMENTS.md` role, the full write-up for
+  every superseded run/follow-up for that same experiment), both living in
+  one file rather than split across two, since a reader opening one of
+  these files is by definition interested in that experiment's whole
+  history, not skimming past it. Apply the exact same "when a new run's
+  numbers supersede an existing write-up, move the full text down into
+  'History' verbatim and leave a short summary in 'Current status'" rule
+  described above for `RESULTS.md`/`EXPERIMENTS.md`, just within the one
+  file instead of across two.
 - **`CLAUDE.md`** (this file) — permanent workflow reference for adding a
   new evaluation book by hand (ground-truth transcription, the helper
   script, verification steps, known failure modes in that *process*, not
@@ -201,8 +228,9 @@ Before anything else, pick one:
 classifier's training pool specifically** (as opposed to the text-heuristic
 accuracy harness), prefer scans, books with unnumbered first chapters, and
 books with weak title/body font contrast over another generic
-well-produced open-access book. A learning-curve check (`RESULTS.md`,
-"Follow-up: relaxing the per-book bar, and a model-architecture swap")
+well-produced open-access book. A learning-curve check
+(`evaluation/experiments/toc-classifier-pilot.md`, "Follow-up: relaxing
+the per-book bar, and a model-architecture swap")
 found `full_recall_fraction` flat across training-pool sizes 10-35 books --
 the classifier is saturated on the kind of book already well-represented in
 the corpus, so another book like those adds little signal; the
@@ -528,8 +556,8 @@ docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md):
    model's full list with a note to verify it directly).
 
 2. For each book, read the printed diff. The disagreement patterns
-   found in practice so far (`evaluation/RESULTS.md` § "dnb-toc-only
-   ground truth: two-vision-model gate") usually make the right call
+   found in practice so far (`evaluation/experiments/dnb-toc-ground-truth.md`
+   § "Current status") usually make the right call
    obvious from the text alone: one side dropping real content, one
    side including front/back matter or a part-divider that should have
    been skipped, a two-line title wrongly split into two entries, or a

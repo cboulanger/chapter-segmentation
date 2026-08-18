@@ -241,7 +241,7 @@ def add_book_context_features(
         # page 1" feature learns to penalize genuine back-of-book TOCs
         # (rare in training data) hard enough to cancel out this feature's
         # own signal when both are present -- see the 2026-08-13 pilot
-        # follow-up notes in evaluation/RESULTS.md.
+        # follow-up notes in evaluation/experiments/toc-classifier-pilot.md.
         out["edge_distance"] = min(page_index, total_pages - 1 - page_index)
         result[page_index] = out
     return result

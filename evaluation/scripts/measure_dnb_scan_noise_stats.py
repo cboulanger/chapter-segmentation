@@ -14,9 +14,9 @@ Usage:
 
 The printed comparison table is the deliverable regardless of whether it
 leads to changing alto_scan_noise.py's constants -- paste it into
-evaluation/RESULTS.md by hand as a new follow-up subsection (this script
-does not write RESULTS.md itself, matching every other evaluation script
-in this directory)."""
+evaluation/experiments/toc-classifier-pilot.md by hand as a new follow-up
+subsection (this script does not write that file itself, matching every
+other evaluation script in this directory)."""
 
 import argparse
 import statistics

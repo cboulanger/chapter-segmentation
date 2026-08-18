@@ -3,8 +3,8 @@
 evaluation/finetune/data/train.jsonl (see
 prepare_nuextract_finetune_data.py). Held-out f1 is NOT computed here --
 only llama.cpp/GGUF produces a trustworthy accuracy number for this
-model (see evaluation/RESULTS.md's transformers/MPS-vs-llama.cpp
-finding), and llama.cpp has no training path, so the real held-out check
+model (see evaluation/experiments/nuextract-finetuning.md's
+transformers/MPS-vs-llama.cpp finding), and llama.cpp has no training path, so the real held-out check
 happens after merge_nuextract_lora.py + a manual GGUF conversion, via
 evaluate_nuextract_finetune.py. See design spec
 docs/superpowers/specs/2026-08-10-nuextract2-finetuning-pilot-design.md.

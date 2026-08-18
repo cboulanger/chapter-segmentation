@@ -5,10 +5,11 @@ spec docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md."""
 
 import asyncio
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import AsyncMock, MagicMock
+from unittest.mock import AsyncMock, MagicMock, patch
 
 import httpx
 from openai import RateLimitError
@@ -22,6 +23,7 @@ from evaluation.scripts.generate_dnb_toc_ground_truth import (
     _binding_rate_limit_window,
     _call_with_retry,
     _is_stale_bulk_gate_entry,
+    _resolve_vision_endpoints,
     _retry_after_seconds,
     _run_book,
     _run_book_entries,
@@ -562,3 +564,42 @@ class TestSelectBestModels(unittest.TestCase):
             _select_best_models(models),
             ["qwen3-omni-30b-a3b-instruct", "qwen3.6-99b"],
         )
+
+
+class TestResolveVisionEndpoints(unittest.TestCase):
+    def test_no_aliases_falls_back_to_kisski_auto_select(self):
+        env = {"KISSKI_API_KEY": "kisski-key"}
+        with patch.dict(os.environ, env, clear=False), patch(
+            "evaluation.scripts.generate_dnb_toc_ground_truth._pick_models",
+            return_value=["model-x", "model-y"],
+        ) as mock_pick:
+            endpoints = _resolve_vision_endpoints(None)
+
+        mock_pick.assert_called_once()
+        self.assertEqual(endpoints[0].label, "kisski")
+        self.assertEqual(endpoints[0].model_id, "model-x")
+        self.assertEqual(endpoints[1].label, "kisski")
+        self.assertEqual(endpoints[1].model_id, "model-y")
+        self.assertIs(endpoints[0].client, endpoints[1].client)
+
+    def test_exactly_two_aliases_resolved_independently(self):
+        env = {
+            "MPCDF_A_BASE_URL": "https://a.invalid/v1", "MPCDF_A_API_KEY": "ka", "MPCDF_A_MODEL": "model-a",
+            "MPCDF_B_BASE_URL": "https://b.invalid/v1", "MPCDF_B_API_KEY": "kb", "MPCDF_B_MODEL": "model-b",
+        }
+        with patch.dict(os.environ, env, clear=False):
+            endpoints = _resolve_vision_endpoints(["MPCDF_A", "MPCDF_B"])
+
+        self.assertEqual(endpoints[0].label, "MPCDF_A")
+        self.assertEqual(endpoints[0].model_id, "model-a")
+        self.assertEqual(endpoints[1].label, "MPCDF_B")
+        self.assertEqual(endpoints[1].model_id, "model-b")
+        self.assertIsNot(endpoints[0].client, endpoints[1].client)
+
+    def test_one_alias_is_a_user_error(self):
+        with self.assertRaises(SystemExit):
+            _resolve_vision_endpoints(["MPCDF_A"])
+
+    def test_three_aliases_is_a_user_error(self):
+        with self.assertRaises(SystemExit):
+            _resolve_vision_endpoints(["MPCDF_A", "MPCDF_B", "MPCDF_C"])

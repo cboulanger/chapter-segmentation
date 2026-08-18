@@ -54,7 +54,7 @@ from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
 from evaluation.dnb_toc_vision import load_cached_llm_entries, vision_extract_toc_entries, write_cached_llm_entries
 from evaluation.harness import corpus_dir, llm_cache_dir, load_manifest_books
-from evaluation.inference_endpoints import ModelEndpoint, resolve_endpoint_from_env
+from evaluation.inference_endpoints import DEFAULT_TIMEOUT, ModelEndpoint, resolve_endpoint_from_env
 from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models
 from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
 
@@ -320,6 +320,42 @@ def _pick_models(base_url: str, api_key: str) -> list[str]:
     return _select_best_models(fetch_kisski_models(base_url, api_key))
 
 
+def _resolve_vision_endpoints(endpoint_aliases: Optional[list[str]]) -> tuple[ModelEndpoint, ModelEndpoint]:
+    """Resolves the two ModelEndpoints the two-independent-vision-model
+    gate calls. No --endpoint given -> today's default: KISSKI discovery
+    picks two distinct vision-capable models, sharing one client (both
+    live behind the same KISSKI base URL, unchanged from before this
+    endpoint abstraction existed). Exactly two --endpoint aliases -> each
+    resolved independently via resolve_endpoint_from_env, letting the two
+    reads come from different endpoints/providers (e.g. two MPCDF
+    sessions, or one MPCDF session + one manually-picked KISSKI model).
+    Any other alias count is a user error -- the gate's independence
+    guarantee requires exactly two reads."""
+    if not endpoint_aliases:
+        api_key = os.environ["KISSKI_API_KEY"]
+        model_ids = tuple(_pick_models(DEFAULT_KISSKI_BASE_URL, api_key))
+        # Explicit per-request timeout -- the openai SDK's own default
+        # (600s read timeout) let one slow/hung KISSKI response occupy a
+        # concurrency slot for up to 10 minutes PER ATTEMPT, times up to 6
+        # retry attempts (_call_with_retry's default), a worst case over
+        # an hour for a single book (found live, 2026-08-17: a batch
+        # stalled with 4 connections to KISSKI stuck ESTABLISHED for 20+
+        # minutes, well past this script's typical successful per-call
+        # latency). 90s is generous for a 1-4 page TOC scan's vision call
+        # while still bounding the worst case.
+        client = AsyncOpenAI(base_url=DEFAULT_KISSKI_BASE_URL, api_key=api_key, timeout=DEFAULT_TIMEOUT)
+        return (
+            ModelEndpoint(label="kisski", model_id=model_ids[0], client=client),
+            ModelEndpoint(label="kisski", model_id=model_ids[1], client=client),
+        )
+    if len(endpoint_aliases) != 2:
+        raise SystemExit(
+            f"--endpoint requires exactly 2 aliases for the two-independent-model gate, "
+            f"got {len(endpoint_aliases)}: {endpoint_aliases}"
+        )
+    return tuple(resolve_endpoint_from_env(alias) for alias in endpoint_aliases)
+
+
 async def _run_all(
     keys_and_paths: list[tuple[str, Path]], endpoints: tuple[ModelEndpoint, ModelEndpoint], concurrency: int,
     corpus_directory: Path, cache_directory: Path,
@@ -393,25 +429,18 @@ def _generate(args: argparse.Namespace) -> int:
     candidates = [(manifest_key(b), cdir / b["filename"]) for b in eligible if (cdir / b["filename"]).exists()]
     missing_pdf_count = len(eligible) - len(candidates)
 
-    api_key = os.environ["KISSKI_API_KEY"]
-    models = tuple(_pick_models(DEFAULT_KISSKI_BASE_URL, api_key))
-    # Explicit per-request timeout -- the openai SDK's own default (600s
-    # read timeout) let one slow/hung KISSKI response occupy a concurrency
-    # slot for up to 10 minutes PER ATTEMPT, times up to 6 retry attempts
-    # (_call_with_retry's default), a worst case over an hour for a single
-    # book (found live, 2026-08-17: a batch stalled with 4 connections to
-    # KISSKI stuck ESTABLISHED for 20+ minutes, well past this script's
-    # typical successful per-call latency). 90s is generous for a 1-4 page
-    # TOC scan's vision call while still bounding the worst case.
-    client = AsyncOpenAI(base_url=DEFAULT_KISSKI_BASE_URL, api_key=api_key, timeout=90.0)
+    endpoints = _resolve_vision_endpoints(args.endpoint)
 
-    results = asyncio.run(_run_all(candidates, models, client, args.concurrency, cdir, llm_cache_dir(_CORPUS_NAME)))
+    results = asyncio.run(_run_all(candidates, endpoints, args.concurrency, cdir, llm_cache_dir(_CORPUS_NAME)))
     passed = [r for r in results if r[1]]
     by_reason: dict[str, int] = {}
     for _, ok, reason in results:
         if not ok:
             by_reason[reason] = by_reason.get(reason, 0) + 1
-    print(f"Vision models used: {models[0]}, {models[1]}")
+    print(
+        f"Vision models used: {endpoints[0].label}:{endpoints[0].model_id}, "
+        f"{endpoints[1].label}:{endpoints[1].model_id}"
+    )
     print(f"{len(passed)}/{len(results)} books passed the gate and got .expected.json written.")
     for reason, count in sorted(by_reason.items()):
         print(f"  {count} skipped: {reason}")
@@ -427,6 +456,12 @@ def main() -> int:
     parser.add_argument(
         "--spot-check", type=int, default=None, metavar="N",
         help="Instead of generating, sample N passing bulk-tier books and walk through a visual Accept/Reject check",
+    )
+    parser.add_argument(
+        "--endpoint", action="append", default=None, metavar="ALIAS",
+        help="Use an explicit OpenAI-compatible endpoint instead of KISSKI auto-discovery -- pass exactly twice "
+             "(the gate needs two independent reads), e.g. --endpoint MPCDF_A --endpoint MPCDF_B. Each ALIAS must "
+             "have <ALIAS>_BASE_URL, <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment.",
     )
     args = parser.parse_args()
     if args.spot_check is not None:

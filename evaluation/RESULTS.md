@@ -183,6 +183,95 @@ long, cannot recover from a quota that's already at zero. Corpus stood at
 206/1251 `dnb-toc-only` books with ground truth (up from 15) when this
 was hit.
 
+**Fourth exhaustion, `retry-after` header now confirms hour AND day are both
+binding simultaneously (2026-08-18):** a fresh batch resumed once daily
+quota reset, made real progress (206 -> 238 books, ~748 individual
+model-calls cached), then hit a wall again. Direct header inspection at the
+moment of failure: `x-ratelimit-limit-day: 1000` / `remaining-day: 0`,
+`x-ratelimit-limit-hour: 200` / `remaining-hour: 0`,
+`x-ratelimit-limit-minute: 30` / `remaining-minute: 30` (untouched),
+`retry-after: 65597` (~18.2h, resetting at the same clean-midnight-UTC
+pattern). Motivated a retry-scheduling fix:
+`_call_with_retry` (`evaluation/scripts/generate_dnb_toc_ground_truth.py`)
+now reads `retry-after`/`x-ratelimit-remaining-<window>` directly off a 429
+response and sleeps the server's own reported delay for an inline-
+recoverable "hour"/"minute" window, but gives up immediately (no further
+attempts) when the binding window is "day" -- a day-scale reset cannot
+happen within one script invocation, so the prior blind linear backoff (up
+to ~5min/book x up to 6 attempts) burned real wall time re-discovering
+that same fact one book at a time (the ~6.5h run above lost ~91% of its
+attempted books this way). See `_binding_rate_limit_window`/
+`_retry_after_seconds`'s own docstrings for the exact window-priority
+logic; regression tests in `tests/test_generate_dnb_toc_ground_truth.py`
+(`TestCallWithRetry`, `TestBindingRateLimitWindow`, `TestRetryAfterSeconds`).
+
+**Spot-check of the bulk-tier gate's real precision (2026-08-19):** the
+two-vision-model >=90%-agreement gate only measures whether the two models
+*agree*, not whether they're both right -- raising the question of whether
+a same-family model pairing (`qwen3-omni-30b-a3b-instruct` +
+`qwen3.6-<N>`, see below) might share a correlated blind spot invisible to
+the gate itself. Measured directly: 25 books randomly sampled from the 179
+`"verified": false` bulk-tier books, each visually reviewed against its
+real PDF scan (5 background Claude Code subagents, 5 books each, using the
+`Read` tool's image rendering the same way `arbitrate_dnb_toc.py`'s
+human-in-the-loop review already works) -- effectively running
+`generate_dnb_toc_ground_truth.py --spot-check`'s Accept/Reject protocol
+without needing a live terminal or new KISSKI calls.
+
+Naive result: only 7/25 (28%) fully matched their scans. But 16 of the 25
+sampled books turned out to still be pre-2026-08-17-schema files (no
+`skip` field on any entry at all -- not yet reprocessed by the current
+pipeline, purely a backlog/staleness artifact, see `_is_stale_bulk_gate_entry`),
+and EVERY one of those 16 failed for the exact same, already-diagnosed,
+already-fixed reason: front-matter/back-matter/part-divider lines silently
+omitted rather than recorded with `skip: true`. Restricting to the 9
+sampled books already on the current schema -- i.e. what the pipeline
+actually produces today -- gives **7/9 (78%) precision**, a small but
+real sample.
+
+The two current-schema rejects are genuinely informative:
+
+- `9783495485019`: a two-line heading ("Einleitung: / Endlichkeit und
+  Verantwortung", both halves on one page) was wrongly split into two
+  separate entries, and a page-number-less "Anhang:" divider was
+  duplicated into two hallucinated entries instead of appearing once.
+- `0292746245`: an author name typo ("Irving Davis" for the correctly-
+  printed "Irvine Davis"), plus an internally-inconsistent `skip`
+  classification (its own "Index" entry marked `skip: false` despite the
+  file correctly marking its own "Contents" entry `skip: true`).
+
+Neither looks like the two models independently making the *same*
+mistake (contrast with the earlier `gemma-4-31b-it` content-dropping bug,
+independently confirmed via page-range comparison against a third
+reading) -- both are more consistent with a **`gate_book` merge-policy
+gap**: a matched pair unconditionally keeps side `a`'s title/authors
+verbatim once the fuzzy-similarity threshold is cleared (no exact-match
+cross-check), and a singleton entry found by only one model is
+unconditionally trusted into the merged result on the theory that it's a
+real line the other model missed. Both design choices (deliberate, see
+`gate_book`'s own docstring) let a single model's individual error survive
+into `"verified": false` ground truth undetected -- a risk that would
+exist for any two-model pairing, not specifically a same-family one. Real
+chapter-level content (titles/authors/page numbers for actual chapters,
+as opposed to the divider/front/back-matter lines `skip` exists to mark)
+was reliably accurate across nearly all 25 books, current- and
+stale-schema alike; the handful of exceptions were isolated single-
+character OCR-style typos (e.g. "Urteitskraft"/"Urteilskraft",
+"Cotidianeidad"/"Cotidianidad"), not a systematic pattern.
+
+**Conclusion**: the same-family model pairing is not obviously the
+dominant risk here -- the measured 78% current-schema precision is
+already explained by `gate_book`'s lenient merge policy (structural,
+model-family-independent) plus the two isolated single-model errors above,
+with no case found of both models independently producing the identical
+wrong answer. The bulk of the naive 28% number is pipeline staleness
+(pending regeneration once quota allows), not a correlated-bias finding.
+Not yet acted on: tightening `gate_book` to flag a near-but-not-exact
+matched-pair title (or an unconfirmed singleton) for arbitration instead
+of silently trusting it would directly address the two real defects found
+here, at the cost of routing more books to `arbitrate_dnb_toc.py` instead
+of the fully-automatic bulk tier.
+
 ## Pure-heuristic results
 
 From `uv run pytest tests/test_segmentation_accuracy.py -q -s -m integration`

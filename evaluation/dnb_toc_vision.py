@@ -148,7 +148,12 @@ printed_page_number is the page number exactly AS PRINTED on the page -- \
 copy it verbatim, including roman numerals for front-matter chapters \
 (e.g. "vii", not 7). If a line's printed page number is not visible, use \
 null for printed_page_number -- never leave the line out just because it \
-has no page number. If authors are not identifiable, use an empty list."""
+has no page number. If authors are not identifiable, use an empty list.
+
+If a title is printed with a leading number, letter, or label (e.g. "1 ", \
+"2.3 ", "I. ", "a) "), that label is part of the title -- include it \
+verbatim as the start of the title string. Do not strip, renumber, or \
+omit any such printed label."""
 
 # Rendered image count this corpus's PDFs never exceed today (1-3 pages,
 # per the acquisition pipeline's own TOC-only filtering) -- guards against

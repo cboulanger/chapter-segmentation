@@ -348,6 +348,36 @@ book and the real null-page-duplicate book), and
 positive pattern found above, plus two negative controls confirming a
 genuine word-level misread and a genuine dropped subtitle still fail).
 
+**MPCDF now available alongside KISSKI (2026-08-19):** both
+`generate_dnb_toc_ground_truth.py` and `refresh_llm_cache.py` accept a
+repeatable `--endpoint ALIAS` flag (see
+`docs/superpowers/specs/2026-08-18-inference-endpoint-abstraction-design.md`)
+that resolves `<ALIAS>_BASE_URL`/`_API_KEY`/`_MODEL` from the environment
+and talks to any OpenAI-compatible endpoint, not just KISSKI's
+discovery/selection path -- lets MPCDF's dedicated per-session vLLM
+endpoints (`https://llm.mpcdf.mpg.de`, up to 8h, no shared-pool rate
+limits) stand in for one or both sides of the two-vision-model gate.
+Omitting `--endpoint` entirely is unchanged, still today's default
+KISSKI auto-select behavior.
+
+First real smoke test against two independent MPCDF sessions
+(`Qwen/Qwen3-Omni-30B-A3B-Instruct` + `OpenGVLab/InternVL2_5-38B`,
+`--endpoint MPCDF_A --endpoint MPCDF_B`, batches of 30 then 5): 6/35
+books passed the gate automatically, the other 29 arbitrated by hand
+against the real TOC page images. Arbitration also caught a real gate
+bug independent of MPCDF itself -- `_TRAILING_PARENTHETICAL_RE` didn't
+tolerate a trailing period after the closing paren, so one vision
+model ending a title with "." right after `(...)` got an asymmetric
+strip that failed an otherwise 100%-agreeing book
+(`evaluation/dnb_toc_matching.py`, fixed with a regression test). Also
+notable for future model-pairing choices: across the arbitrated books,
+`Qwen3-Omni-30B` was right in nearly every individual disagreement,
+while `InternVL2_5-38B` had frequent word-level misreadings and at
+least two outright hallucinated strings -- this specific pairing is
+lopsided enough that most of the 29 arbitrations were resolving
+InternVL's own noise rather than genuine ambiguity, not yet swapped
+for a stronger/more-independent second model.
+
 ## History
 
 

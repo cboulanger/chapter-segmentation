@@ -378,6 +378,41 @@ lopsided enough that most of the 29 arbitrations were resolving
 InternVL's own noise rather than genuine ambiguity, not yet swapped
 for a stronger/more-independent second model.
 
+**Arbitration backlog cleared, generation batch hit widespread connection
+errors (2026-08-19):** `arbitrate_dnb_toc.py` surfaced 479 books with
+cached model output but no decision -- 413 (86%) had only one model's
+read cached (the second, a `qwen3.6-<N>` KISSKI call, never returned
+anything), 66 (14%) had both models' reads but disagreed below the 0.90
+gate. Single-model books aren't real arbitration candidates (nothing to
+cross-check), so they were left for a `generate_dnb_toc_ground_truth.py`
+re-run to fill in the missing second read via the existing per-model
+cache (the already-cached side is free); the 66 genuine disagreements
+were split across 8 parallel Claude subagents (~8-9 books each),
+each following the documented arbitration workflow end to end --
+**all 66 resolved, zero rejections**, root causes matching the
+already-diagnosed patterns above (author-byline-split, front/back-matter
+inclusion, two-line title splitting) plus one new one found repeatedly:
+one model splitting each contributor's `AUTHOR NAME` line off as its own
+spurious page-number-less TOC entry, confirmed against the real page
+image every time.
+
+The follow-up `--limit 100 --concurrency 4` generation batch (KISSKI
+default two-model auto-discovery) made only 7 new bulk-tier passes and
+regenerated 7 stale pre-2026-08-17-schema entries, but **46 of its 100
+books hit `APIConnectionError`** (retries exhausted) -- a distinct
+failure mode from the previously-diagnosed rate-limit/quota exhaustion
+and empty-response flakiness, not yet root-caused (transient KISSKI-side
+outage is the leading hypothesis; worth a straight retry before assuming
+anything code-side broke). Net effect: the single-model-only backlog
+barely moved (413 -> 412), so most of it is still open for a future
+batch, ideally re-attempted when KISSKI connectivity is stable, or with
+the second read routed to a live MPCDF session instead once one covers
+an independent (non-`qwen3-omni`) model. The 3 books this batch *did*
+newly push below the gate (both reads present, genuine disagreement)
+were arbitrated directly, same standard as above -- also zero
+rejections. `dnb-toc-only` ground truth stood at 246 books before this
+session, 315 after.
+
 ## History
 
 

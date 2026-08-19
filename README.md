@@ -46,6 +46,14 @@ https://cboulanger.github.io/chapter-segmentation/ (auto-published, no
 hand-written analysis) and `evaluation/RESULTS.md` (hand-maintained,
 includes mechanism/root-cause notes).
 
+### Ongoing experiments
+
+Candidate improvements that haven't (yet) been folded into the main
+pipeline -- e.g. a layout-based TOC/chapter-page classifier, a small
+locally-runnable TOC-extraction model, and the ground-truth-generation
+pipeline for a new evaluation corpus -- are tracked as living documents in
+`evaluation/experiments/`, see that directory's README for an index.
+
 ## Development
 
 ```bash

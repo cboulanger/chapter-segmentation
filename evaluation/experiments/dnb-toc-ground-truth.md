@@ -413,6 +413,61 @@ were arbitrated directly, same standard as above -- also zero
 rejections. `dnb-toc-only` ground truth stood at 246 books before this
 session, 315 after.
 
+**GLM-4.5V ruled out on startup cost, not capability; Pixtral-12B tried
+as the InternVL replacement, prompt fix for verbatim numbering
+(2026-08-19):** looking for a second MPCDF model that pairs better with
+`Qwen3-Omni-30B-A3B-Instruct` than the noisy `InternVL2_5-38B` above,
+`zai-org/GLM-4.5V` (`Glm4vMoeForConditionalGeneration`, ~108B total/~12B
+active params) was spawned twice -- once on the default
+`rocm7.0.0_vllm_0.11.2_*` image, once on a newer
+`rocm7.13.0_gfx94X-dcgpu_..._vllm_0.19.1` image tried specifically to
+clear other models' version gates (see `evaluation/hpc/llm-mpcdf.md`).
+Both loaded the model and resolved its architecture correctly, but
+neither reached a serving-ready `/v1/models` response within a 2h
+session: weight loading alone took ~618-628s for the ~103GB checkpoint,
+and CUDA/HIP graph capture across vLLM's 51 configured batch sizes for a
+model this size appears to run well past that -- ruled out as a
+practical second-model choice on startup cost alone, not quality (never
+got far enough to evaluate output). Also found on the newer image: a
+stale `.overlay_<jobid>_0.img` left behind by an earlier crashed/killed
+session caused a `FATAL: EXT3 overlay image ... already exists` crash on
+a later spawn attempt -- a new MPCDF gotcha, written up in
+`evaluation/hpc/llm-mpcdf.md`. And confirmed the dashboard status label
+is unreliable in *both* directions, not just "Running-but-not-ready" as
+found earlier: a session that already logged the model fully loaded
+still showed "building," so `/v1/models` is the only real signal either
+way.
+
+Switched to `mistralai/Pixtral-12B-2409` instead -- dense 12B, Mistral
+lineage (independent from both Qwen and InternVL), loads in a fraction
+of GLM-4.5V's time. First 10-book smoke test: 0/10 passed the gate (8
+below-threshold, 2 `APIConnectionError`). Diffing the 8 comparable
+books' raw cached output against Qwen's found a systematic pattern, not
+noise: Pixtral stripped every printed leading section number from titles
+(0/8 books had any numbered Pixtral title, including one book where Qwen
+kept numbering on 36/43 entries) -- a real deviation from the project's
+verbatim-per-line extraction standard, confirmed by a direct before/after
+test against the two most-affected books, then fixed with an explicit
+instruction in `_VISION_TOC_EXTRACTION_PROMPT`
+(`evaluation/dnb_toc_vision.py`, commit `9bea40a`).
+
+Re-running the same 8 books (stale Pixtral cache cleared first) confirms
+the fix works but isn't sufficient on its own: agreement rate rose above
+the 0.90 threshold on 2 of the 8 (`9783407254917`: 0.977; `9782875623980`:
+0.926), but neither actually passed -- both still trip the 2026-08-19
+any-mismatched-pair rule, now on genuine word-level OCR disagreements
+between the two models ("Leseverstehen" vs "Leseverständnis") rather than
+a numbering artifact. The other 6 have structural disagreements unrelated
+to numbering: Pixtral merging part-headers into chapter titles and
+dropping subtitle-continuation lines on one book (rate 0.408), Qwen
+dropping author-byline lines Pixtral caught correctly on another (rate
+0.571), plain entry-count mismatches on the rest. Net read: with the
+numbering fix in place, Pixtral behaves like a genuinely independent
+second model -- its own distinct OCR noise, not systematically weaker or
+stronger than Qwen the way InternVL was -- but this small sample shows no
+clean automatic-pass rate yet; still needs arbitration like any other
+pairing.
+
 ## History
 
 

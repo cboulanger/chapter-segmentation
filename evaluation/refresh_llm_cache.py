@@ -73,10 +73,17 @@ runs the corpus against the given OpenAI-compatible endpoint(s) instead
 -- e.g. an MPCDF LLM Inference Service session
 (https://llm.mpcdf.mpg.de). Each ALIAS must have <ALIAS>_BASE_URL,
 <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment (see
-evaluation/inference_endpoints.py). Mutually exclusive with --mode --
-there's no discovery/demand concept for a model you deployed yourself,
-so top5/fill-gaps/full's sweep-a-shared-pool semantics don't apply; every
-given endpoint just runs once, unconditionally, over the corpus.
+evaluation/inference_endpoints.py). Mutually exclusive with --mode and
+--config-file -- there's no discovery/demand concept for a model you
+deployed yourself, so top5/fill-gaps/full's sweep-a-shared-pool semantics
+don't apply; every given endpoint just runs once, unconditionally, over
+the corpus.
+
+--config-file [PATH]: same endpoint-bypass behavior as --endpoint, but
+sources every endpoint from a pasted-session-table file instead of env
+vars -- one endpoint per table, in file order (see
+evaluation/hpc/llm-mpcdf.md). PATH defaults to .mpcdf-sessions.txt when
+omitted. Mutually exclusive with --mode and --endpoint.
 """
 
 import argparse
@@ -96,7 +103,9 @@ from openai import AsyncOpenAI
 
 from chapter_segmentation.segmentation import analyze_attachment_llm_only
 from evaluation.harness import available_public_books, list_corpora, llm_cache_dir, public_pages_for
-from evaluation.inference_endpoints import ModelEndpoint, resolve_endpoint_from_env
+from evaluation.inference_endpoints import (
+    DEFAULT_SESSIONS_FILENAME, ModelEndpoint, resolve_endpoint_from_env, resolve_endpoints_from_config_file,
+)
 from evaluation.kisski import (
     DEFAULT_KISSKI_BASE_URL, KisskiModel, fetch_kisski_models, select_full_regen, select_gap_fill, select_top5,
 )
@@ -286,8 +295,8 @@ def _model_and_client_for_endpoint(endpoint: ModelEndpoint) -> tuple[KisskiModel
 
 
 async def _main(
-    mode: Optional[str], endpoint_aliases: Optional[list[str]], base_url: str, limit: int,
-    corpus: Optional[str], clear: bool, concurrency: int,
+    mode: Optional[str], endpoint_aliases: Optional[list[str]], config_file: Optional[Path], base_url: str,
+    limit: int, corpus: Optional[str], clear: bool, concurrency: int,
 ) -> int:
     corpora = [corpus] if corpus else list_corpora()
     # (corpus, manifest_key, cache_dir) for every scorable book across every in-scope corpus.
@@ -310,9 +319,13 @@ async def _main(
                 cleared += 1
         print(f"--clear: removed {cleared} cache file(s) across {len(corpora)} corpus/corpora before regenerating.")
 
-    if endpoint_aliases:
-        endpoints = [resolve_endpoint_from_env(alias) for alias in endpoint_aliases]
-        print(f"Selected endpoints: {endpoint_aliases}")
+    if endpoint_aliases or config_file:
+        if config_file:
+            endpoints = resolve_endpoints_from_config_file(config_file)
+            print(f"Selected endpoints from {config_file}: {[e.label for e in endpoints]}")
+        else:
+            endpoints = [resolve_endpoint_from_env(alias) for alias in endpoint_aliases]
+            print(f"Selected endpoints: {endpoint_aliases}")
         for endpoint in endpoints:
             model, llm_client = _model_and_client_for_endpoint(endpoint)
             worker = functools.partial(_run_book_for_model, model=model, mode="endpoint", llm_client=llm_client)
@@ -362,6 +375,14 @@ if __name__ == "__main__":
              "semantics don't apply since there's no discovery involved -- you already know exactly which "
              "model(s) you deployed.",
     )
+    mode_group.add_argument(
+        "--config-file", nargs="?", const=DEFAULT_SESSIONS_FILENAME, default=None, metavar="PATH",
+        help="Use one or more explicit OpenAI-compatible endpoints sourced from a pasted-session-table file "
+             f"instead of KISSKI discovery -- PATH defaults to {DEFAULT_SESSIONS_FILENAME} when omitted. "
+             "Same run-every-endpoint-once semantics as --endpoint, just reading base_url/api_key/model from "
+             "the file's pasted MPCDF dashboard session tables (one per endpoint, in file order) instead of "
+             "<ALIAS>_BASE_URL/_API_KEY/_MODEL env vars -- see evaluation/hpc/llm-mpcdf.md.",
+    )
     parser.add_argument("--base-url", default=DEFAULT_KISSKI_BASE_URL)
     parser.add_argument(
         "--limit", type=int, default=5,
@@ -378,9 +399,11 @@ if __name__ == "__main__":
              "so this is a conservative default -- raise it if you don't observe 429s. Default 4.",
     )
     args = parser.parse_args()
-    if args.mode is None and not args.endpoint:
+    if args.mode is None and not args.endpoint and not args.config_file:
         args.mode = "top5"
     raise SystemExit(asyncio.run(_main(
-        mode=args.mode, endpoint_aliases=args.endpoint, base_url=args.base_url, limit=args.limit,
+        mode=args.mode, endpoint_aliases=args.endpoint,
+        config_file=Path(args.config_file) if args.config_file else None,
+        base_url=args.base_url, limit=args.limit,
         corpus=args.corpus, clear=args.clear, concurrency=args.concurrency,
     )))

@@ -61,7 +61,10 @@ from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
 from evaluation.dnb_toc_vision import load_cached_llm_entries, vision_extract_toc_entries, write_cached_llm_entries
 from evaluation.harness import corpus_dir, llm_cache_dir, load_manifest_books
-from evaluation.inference_endpoints import DEFAULT_TIMEOUT, ModelEndpoint, resolve_endpoint_from_env
+from evaluation.inference_endpoints import (
+    DEFAULT_SESSIONS_FILENAME, DEFAULT_TIMEOUT, ModelEndpoint, resolve_endpoint_from_env,
+    resolve_endpoints_from_config_file,
+)
 from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models
 from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
 
@@ -397,17 +400,31 @@ def _pick_models(base_url: str, api_key: str) -> list[str]:
     return _select_best_models(fetch_kisski_models(base_url, api_key))
 
 
-def _resolve_vision_endpoints(endpoint_aliases: Optional[list[str]]) -> tuple[ModelEndpoint, ModelEndpoint]:
+def _resolve_vision_endpoints(
+    endpoint_aliases: Optional[list[str]], config_file: Optional[Path] = None,
+) -> tuple[ModelEndpoint, ModelEndpoint]:
     """Resolves the two ModelEndpoints the two-independent-vision-model
-    gate calls. No --endpoint given -> today's default: KISSKI discovery
-    picks two distinct vision-capable models, sharing one client (both
-    live behind the same KISSKI base URL, unchanged from before this
-    endpoint abstraction existed). Exactly two --endpoint aliases -> each
-    resolved independently via resolve_endpoint_from_env, letting the two
-    reads come from different endpoints/providers (e.g. two MPCDF
+    gate calls. Neither --endpoint nor --config-file given -> today's
+    default: KISSKI discovery picks two distinct vision-capable models,
+    sharing one client (both live behind the same KISSKI base URL,
+    unchanged from before this endpoint abstraction existed). --config-file
+    PATH -> both endpoints come from PATH's pasted session tables, in file
+    order (must contain exactly two). Exactly two --endpoint aliases ->
+    each resolved independently via resolve_endpoint_from_env, letting the
+    two reads come from different endpoints/providers (e.g. two MPCDF
     sessions, or one MPCDF session + one manually-picked KISSKI model).
-    Any other alias count is a user error -- the gate's independence
-    guarantee requires exactly two reads."""
+    Any other alias count, or a --config-file with a table count != 2, is
+    a user error -- the gate's independence guarantee requires exactly two
+    reads. --endpoint and --config-file are mutually exclusive (enforced
+    by the CLI parser's mutually exclusive group)."""
+    if config_file:
+        endpoints = resolve_endpoints_from_config_file(config_file)
+        if len(endpoints) != 2:
+            raise SystemExit(
+                f"--config-file requires exactly 2 pasted session tables for the two-independent-model gate, "
+                f"got {len(endpoints)} in {config_file}"
+            )
+        return (endpoints[0], endpoints[1])
     if not endpoint_aliases:
         api_key = os.environ["KISSKI_API_KEY"]
         model_ids = tuple(_pick_models(DEFAULT_KISSKI_BASE_URL, api_key))
@@ -506,7 +523,7 @@ def _generate(args: argparse.Namespace) -> int:
     candidates = [(manifest_key(b), cdir / b["filename"]) for b in eligible if (cdir / b["filename"]).exists()]
     missing_pdf_count = len(eligible) - len(candidates)
 
-    endpoints = _resolve_vision_endpoints(args.endpoint)
+    endpoints = _resolve_vision_endpoints(args.endpoint, args.config_file)
 
     results = asyncio.run(_run_all(candidates, endpoints, args.concurrency, cdir, llm_cache_dir(_CORPUS_NAME)))
     passed = [r for r in results if r[1]]
@@ -534,13 +551,22 @@ def main() -> int:
         "--spot-check", type=int, default=None, metavar="N",
         help="Instead of generating, sample N passing bulk-tier books and walk through a visual Accept/Reject check",
     )
-    parser.add_argument(
+    endpoint_group = parser.add_mutually_exclusive_group()
+    endpoint_group.add_argument(
         "--endpoint", action="append", default=None, metavar="ALIAS",
         help="Use an explicit OpenAI-compatible endpoint instead of KISSKI auto-discovery -- pass exactly twice "
              "(the gate needs two independent reads), e.g. --endpoint MPCDF_A --endpoint MPCDF_B. Each ALIAS must "
              "have <ALIAS>_BASE_URL, <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment.",
     )
+    endpoint_group.add_argument(
+        "--config-file", nargs="?", const=DEFAULT_SESSIONS_FILENAME, default=None, metavar="PATH",
+        help="Same as --endpoint, but sources both endpoints from a pasted-session-table file instead of env "
+             f"vars -- PATH defaults to {DEFAULT_SESSIONS_FILENAME} when omitted; must contain exactly 2 pasted "
+             "session tables. See evaluation/hpc/llm-mpcdf.md.",
+    )
     args = parser.parse_args()
+    if args.config_file:
+        args.config_file = Path(args.config_file)
     if args.spot_check is not None:
         return _spot_check(corpus_dir(_CORPUS_NAME), args.spot_check)
     return _generate(args)

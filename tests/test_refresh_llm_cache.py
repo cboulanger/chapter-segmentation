@@ -81,7 +81,7 @@ class TestMainEndpointBranch(unittest.IsolatedAsyncioTestCase):
             ) as process_mock,
         ):
             result = await _main(
-                mode=None, endpoint_aliases=["MPCDF_A"], base_url="https://kisski.invalid/v1",
+                mode=None, endpoint_aliases=["MPCDF_A"], config_file=None, base_url="https://kisski.invalid/v1",
                 limit=5, corpus=None, clear=False, concurrency=4,
             )
 
@@ -96,6 +96,41 @@ class TestMainEndpointBranch(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(worker.keywords["model"].id, "Qwen/Qwen3-VL-30B")
         self.assertEqual(worker.keywords["mode"], "endpoint")
         self.assertIsInstance(worker.keywords["llm_client"], _OpenAICompatibleLLMClient)
+        self.assertIs(worker.keywords["llm_client"]._client, fake_client)
+
+    async def test_config_file_flag_bypasses_kisski_discovery_and_drives_the_resolved_model(self):
+        fake_client = unittest.mock.MagicMock()
+        endpoint = ModelEndpoint(label="config:A", model_id="Qwen/Qwen3-VL-30B", client=fake_client)
+        book = ("book-a", Path("/x/book-a.expected.json"), {"filename": "book-a.pdf"})
+        config_path = Path("/x/.mpcdf-sessions.txt")
+
+        with (
+            unittest.mock.patch("evaluation.refresh_llm_cache.list_corpora", return_value=["corpus-a"]),
+            unittest.mock.patch("evaluation.refresh_llm_cache.available_public_books", return_value=[book]),
+            unittest.mock.patch("evaluation.refresh_llm_cache.llm_cache_dir", return_value=Path("/cache")),
+            unittest.mock.patch(
+                "evaluation.refresh_llm_cache.resolve_endpoints_from_config_file", return_value=[endpoint],
+            ) as resolve_mock,
+            unittest.mock.patch(
+                "evaluation.refresh_llm_cache.resolve_endpoint_from_env",
+            ) as resolve_env_mock,
+            unittest.mock.patch("evaluation.refresh_llm_cache.fetch_kisski_models") as fetch_mock,
+            unittest.mock.patch(
+                "evaluation.refresh_llm_cache._process_model", new_callable=unittest.mock.AsyncMock,
+            ) as process_mock,
+        ):
+            result = await _main(
+                mode=None, endpoint_aliases=None, config_file=config_path, base_url="https://kisski.invalid/v1",
+                limit=5, corpus=None, clear=False, concurrency=4,
+            )
+
+        self.assertEqual(result, 0)
+        fetch_mock.assert_not_called()
+        resolve_env_mock.assert_not_called()
+        resolve_mock.assert_called_once_with(config_path)
+        process_mock.assert_called_once()
+        _book_entries, _concurrency, worker = process_mock.call_args.args
+        self.assertEqual(worker.keywords["model"].id, "Qwen/Qwen3-VL-30B")
         self.assertIs(worker.keywords["llm_client"]._client, fake_client)
 
 

@@ -22,6 +22,54 @@ confirmed by curling the bare session-hash URL first (404) then
 `/v1/models` (real JSON). Set `<ALIAS>_BASE_URL` to the `/v1`-suffixed
 form when populating this project's `--endpoint` env vars.
 
+## Faster setup: paste the dashboard session table directly
+
+Hand-copying `url`/`key`/`--model=...` out of the dashboard's session row
+into three separate `<ALIAS>_BASE_URL`/`<ALIAS>_API_KEY`/`<ALIAS>_MODEL`
+`.env` lines per session is tedious and easy to mistype. As an explicit
+alternative to `--endpoint ALIAS` (env-var-backed), both
+`evaluation/scripts/generate_dnb_toc_ground_truth.py` and
+`evaluation/refresh_llm_cache.py` also accept `--config-file [PATH]`
+(PATH defaults to a gitignored `.mpcdf-sessions.txt` in the repo root
+when omitted) -- mutually exclusive with `--endpoint`, so an invocation
+is either fully env-var-driven or fully config-file-driven, never a mix.
+Paste the session row exactly as copied from the dashboard (tab-separated
+`field<TAB>value` lines, no reformatting) for each session you want to
+use, separated by a blank line between sessions. The first pasted table
+becomes the first endpoint, the second the second, in file order --
+`generate_dnb_toc_ground_truth.py`'s two-independent-model gate requires
+exactly two tables; `refresh_llm_cache.py` runs every table's endpoint
+once, unconditionally, same as `--endpoint`. `url`, `key`, and the
+`--model=` value inside `framework_args` are extracted automatically; a
+`url` missing its `/v1` suffix gets it appended.
+
+Example `.mpcdf-sessions.txt` with two sessions:
+
+```text
+framework	vLLM
+framework_args	--model=mistralai/Pixtral-12B-2409 --tensor-parallel-size=2 --trust-remote-code
+host	10.179.7.234:24100
+key	<key-a>
+url	https://llm.mpcdf.mpg.de/y382b105ryopxy89/v1
+
+framework	vLLM
+framework_args	--model=Qwen/Qwen3-Omni-30B-A3B-Instruct --tensor-parallel-size=2 --trust-remote-code
+host	10.179.7.235:24100
+key	<key-b>
+url	https://llm.mpcdf.mpg.de/yv19vgf4wyyab90l/v1
+```
+
+Then run either script against it:
+
+```bash
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --config-file --limit 50
+uv run python evaluation/refresh_llm_cache.py --config-file
+```
+
+(`--config-file` with no value uses the `.mpcdf-sessions.txt` default;
+pass a path explicitly, e.g. `--config-file /tmp/other-sessions.txt`, to
+use a different file.)
+
 ## Dashboard "Running" ≠ API ready
 
 The dashboard's session table can show a job as `Running` (SLURM job

@@ -698,3 +698,34 @@ class TestResolveVisionEndpoints(unittest.TestCase):
     def test_three_aliases_is_a_user_error(self):
         with self.assertRaises(SystemExit):
             _resolve_vision_endpoints(["MPCDF_A", "MPCDF_B", "MPCDF_C"])
+
+    def test_config_file_with_two_tables_resolved_independently(self):
+        table_a = (
+            "framework_args\t--model=mistralai/Pixtral-12B-2409\n"
+            "key\tka\n"
+            "url\thttps://a.invalid/v1\n"
+        )
+        table_b = (
+            "framework_args\t--model=Qwen/Qwen3-Omni-30B-A3B-Instruct\n"
+            "key\tkb\n"
+            "url\thttps://b.invalid/v1\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "sessions.txt"
+            path.write_text(table_a + "\n" + table_b)
+
+            endpoints = _resolve_vision_endpoints(None, path)
+
+        self.assertEqual(endpoints[0].label, "config:A")
+        self.assertEqual(endpoints[0].model_id, "mistralai/Pixtral-12B-2409")
+        self.assertEqual(endpoints[1].label, "config:B")
+        self.assertEqual(endpoints[1].model_id, "Qwen/Qwen3-Omni-30B-A3B-Instruct")
+        self.assertIsNot(endpoints[0].client, endpoints[1].client)
+
+    def test_config_file_with_one_table_is_a_user_error(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "sessions.txt"
+            path.write_text("framework_args\t--model=x\nkey\tk\nurl\thttps://a.invalid/v1\n")
+
+            with self.assertRaises(SystemExit):
+                _resolve_vision_endpoints(None, path)

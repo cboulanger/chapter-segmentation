@@ -20,9 +20,12 @@ from evaluation.dnb_toc_vision import load_cached_llm_entries, write_cached_llm_
 from evaluation.inference_endpoints import ModelEndpoint
 from evaluation.kisski import KisskiModel
 from evaluation.scripts.generate_dnb_toc_ground_truth import (
+    _acquire_lock,
     _binding_rate_limit_window,
     _call_with_retry,
     _is_stale_bulk_gate_entry,
+    _lock_path,
+    _release_lock,
     _resolve_vision_endpoints,
     _retry_after_seconds,
     _run_book,
@@ -395,6 +398,98 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             client_b.chat.completions.create.assert_awaited_once()
             self.assertEqual(client_a.chat.completions.create.await_args.kwargs["model"], "model-a")
             self.assertEqual(client_b.chat.completions.create.await_args.kwargs["model"], "model-b")
+
+    async def test_a_book_whose_lock_is_already_held_is_skipped_without_calling_any_model(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            corpus_directory = tmp_path / "corpus"
+            cache_directory = tmp_path / "cache"
+            corpus_directory.mkdir()
+            pdf_path = _make_pdf(tmp_path / "book.pdf")
+            client = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("model-a", client), _endpoint("model-b", client))
+            semaphore = asyncio.Semaphore(1)
+            _acquire_lock(corpus_directory, "book7")  # simulate another process already working on it
+
+            key, passed, reason = await _run_book(
+                "book7", pdf_path, endpoints, semaphore, corpus_directory, cache_directory,
+                sleep=AsyncMock(),
+            )
+
+            self.assertFalse(passed)
+            self.assertEqual(reason, "locked_by_another_process")
+            client.chat.completions.create.assert_not_called()
+
+    async def test_the_lock_is_released_after_a_book_finishes_successfully(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            corpus_directory = tmp_path / "corpus"
+            cache_directory = tmp_path / "cache"
+            corpus_directory.mkdir()
+            pdf_path = _make_pdf(tmp_path / "book.pdf")
+            client = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("model-a", client), _endpoint("model-b", client))
+            semaphore = asyncio.Semaphore(1)
+
+            await _run_book(
+                "book8", pdf_path, endpoints, semaphore, corpus_directory, cache_directory,
+                sleep=AsyncMock(),
+            )
+
+            self.assertFalse(_lock_path(corpus_directory, "book8").exists())
+
+    async def test_the_lock_is_released_even_when_the_book_errors(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            corpus_directory = tmp_path / "corpus"
+            cache_directory = tmp_path / "cache"
+            corpus_directory.mkdir()
+            bad_pdf = tmp_path / "not-a-pdf.pdf"
+            bad_pdf.write_text("this is not a pdf")
+            client = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("model-a", client), _endpoint("model-b", client))
+            semaphore = asyncio.Semaphore(1)
+
+            await _run_book(
+                "book9", bad_pdf, endpoints, semaphore, corpus_directory, cache_directory,
+                sleep=AsyncMock(),
+            )
+
+            self.assertFalse(_lock_path(corpus_directory, "book9").exists())
+
+
+class TestAcquireLock(unittest.TestCase):
+    def test_first_acquire_succeeds_and_creates_the_lock_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            self.assertTrue(_acquire_lock(cdir, "book1"))
+            self.assertTrue(_lock_path(cdir, "book1").exists())
+
+    def test_second_acquire_of_a_fresh_lock_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            _acquire_lock(cdir, "book1")
+            self.assertFalse(_acquire_lock(cdir, "book1"))
+
+    def test_acquire_succeeds_again_after_release(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            _acquire_lock(cdir, "book1")
+            _release_lock(cdir, "book1")
+            self.assertTrue(_acquire_lock(cdir, "book1"))
+
+    def test_a_stale_lock_is_reclaimed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            _acquire_lock(cdir, "book1", stale_after=10.0)
+            old = 1_000_000_000  # arbitrary, far enough in the past to be stale under any stale_after
+            os.utime(_lock_path(cdir, "book1"), (old, old))
+            self.assertTrue(_acquire_lock(cdir, "book1", stale_after=10.0))
+
+    def test_release_of_a_lock_that_was_never_acquired_does_not_raise(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp)
+            _release_lock(cdir, "book1")  # must not raise
 
 
 class TestStillNeedsADecision(unittest.TestCase):

@@ -27,6 +27,12 @@ Spends real KISSKI API budget (two calls per book, one per vision model --
 see evaluation/refresh_llm_cache.py's docstring for the shared
 KISSKI_API_KEY setup this script reuses). Not a pytest test.
 
+Safe to run two invocations concurrently against the same checkout (e.g. a
+KISSKI-backed run and an MPCDF-backed `--endpoint` run) -- each book is
+claimed via a per-key lock file under `.locks/` before either process
+touches its cache or spends an API call on it, see `_acquire_lock`'s
+docstring.
+
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 50   # next batch of 50
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py               # all remaining books
     uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --spot-check 30
@@ -45,6 +51,7 @@ import json
 import os
 import random
 import re
+import time
 from pathlib import Path
 from typing import Optional
 
@@ -182,6 +189,65 @@ def _run_book_entries(
 
 _CORPUS_NAME = "dnb-toc-only"
 
+# How long a lock file is trusted before a later run treats it as
+# abandoned (a crashed/killed process that skipped its `finally` release)
+# and reclaims it -- generous relative to one book's worst-case retry
+# sequence (a handful of vision calls plus backoff), short enough that a
+# genuinely dead lock doesn't block a book forever.
+_LOCK_STALE_AFTER_SECONDS = 1800.0
+
+
+def _lock_path(corpus_directory: Path, key: str) -> Path:
+    return corpus_directory / ".locks" / f"{key}.lock"
+
+
+def _acquire_lock(corpus_directory: Path, key: str, *, stale_after: float = _LOCK_STALE_AFTER_SECONDS) -> bool:
+    """Claims `key` for this process via an atomic exclusive file create --
+    the standard cross-process mutex primitive, safe against two separate
+    `generate_dnb_toc_ground_truth.py` invocations (e.g. a KISSKI-backed run
+    and an MPCDF-backed run sharing the same checkout) racing on the same
+    book. `_generate`'s `eligible` list is a snapshot taken once at
+    startup, so it has no way to see a book another already-running process
+    claimed after that snapshot -- the lock is what actually prevents both
+    from spending API budget on it.
+
+    A lock older than `stale_after` is assumed to belong to a process that
+    crashed or was killed before reaching `_release_lock`'s `finally` (a
+    normal exit, including a caught exception, always releases) -- reclaimed
+    by deleting it and retrying the exclusive create once. If a third
+    process wins that retry first, this returns False like any other
+    lost race; the loser simply skips the book this run and picks it up
+    (or finds it already decided) next time."""
+    lock_path = _lock_path(corpus_directory, key)
+    lock_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        lock_path.touch(exist_ok=False)
+        return True
+    except FileExistsError:
+        pass
+    try:
+        age = time.time() - lock_path.stat().st_mtime
+    except FileNotFoundError:
+        age = None  # released between our failed create and this stat -- fall through to retry
+    if age is not None and age < stale_after:
+        return False
+    try:
+        lock_path.unlink()
+    except FileNotFoundError:
+        pass
+    try:
+        lock_path.touch(exist_ok=False)
+        return True
+    except FileExistsError:
+        return False
+
+
+def _release_lock(corpus_directory: Path, key: str) -> None:
+    try:
+        _lock_path(corpus_directory, key).unlink()
+    except FileNotFoundError:
+        pass
+
 
 async def _run_book(
     key: str, pdf_path: Path, endpoints: tuple[ModelEndpoint, ModelEndpoint], semaphore: asyncio.Semaphore,
@@ -210,7 +276,16 @@ async def _run_book(
     RateLimitError around the same time, every slot ends up asleep at once
     and the entire batch stalls with zero throughput even though nothing
     actually crashed. Releasing it between attempts lets other books make
-    progress while one book backs off."""
+    progress while one book backs off.
+
+    Claims `key` via `_acquire_lock` before doing any cache lookup or API
+    call, and always releases it in a `finally` -- guards against a
+    SEPARATE process (not this run's own `semaphore`, which only bounds
+    concurrency within one process) picking up the same book, see
+    `_acquire_lock`'s own docstring. A lost race returns immediately with
+    reason "locked_by_another_process" -- cheap, no cache/API touched."""
+    if not _acquire_lock(corpus_directory, key):
+        return key, False, "locked_by_another_process"
     try:
         entries_by_model = []
         for endpoint in endpoints:
@@ -235,6 +310,8 @@ async def _run_book(
     except Exception as exc:  # noqa: BLE001 -- must never let one book crash the whole batch
         print(f"[error] {key}: {exc}{_rate_limit_headers_suffix(exc)}")
         return key, False, f"error: {type(exc).__name__}"
+    finally:
+        _release_lock(corpus_directory, key)
 
 
 def _rate_limit_headers_suffix(exc: Exception) -> str:

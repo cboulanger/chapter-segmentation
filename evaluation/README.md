@@ -109,12 +109,39 @@ covers resolving those instead of discarding them. Requires `pdftoppm`
 (poppler) on `PATH` -- see this file's "Cleaning a badly-scanned PDF" section
 for the install command.
 
-The text-extraction side of a vision+text pairing (`--text-endpoint`/
-`--text-config-file`, `evaluation/dnb_toc_ocr.py`) OCRs each book's TOC
-pages via `ocrmypdf` -- by default using whatever tesseract language data
-is already installed (Homebrew's `tesseract-lang` formula ships
-`tessdata_fast`). For higher OCR accuracy, download `tessdata_best`'s
-`deu.traineddata`/`eng.traineddata` by hand from
+**Pairing a vision endpoint with a text-only endpoint** (as an alternative
+to two vision reads -- see design spec
+`docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md`):
+a genuinely independent second vision-capable model is hard to find (most
+open VLMs share a Qwen backbone, and MPCDF's own launcher has repeatedly
+made others impractical -- see `evaluation/hpc/llm-mpcdf.md`), while
+strong, architecturally-independent TEXT-only models are far more
+plentiful. `--text-endpoint ALIAS` (or `--text-config-file`, same
+pasted-session-table mechanism as `--config-file`) pairs a single vision
+endpoint (`--endpoint`/`--config-file`, now given exactly once instead of
+twice) with a text-only endpoint fed the book's TOC pages OCR'd and
+reading-order-reconstructed by `evaluation/dnb_toc_ocr.py`
+(`ocr_pages_to_rows` + `text_extract_toc_entries`) instead of a second
+image read:
+
+```bash
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py \
+  --endpoint MPCDF_VISION --text-endpoint MPCDF_TEXT
+```
+
+`gate_book`/`arbitrate_dnb_toc.py` treat this exactly like two vision
+reads -- same 90% agreement threshold, same arbitration workflow -- except
+`arbitrate_dnb_toc.py`'s report labels each side by its cached extraction
+`"kind"` (`"vision: ..."` vs. `"text (OCR'd): ..."`), so a disagreement on
+the text side prompts checking OCR quality first, not just assuming the
+two models disagree. The tradeoff this accepts: a text-side read now also
+depends on this project's own OCR step being correct, unlike two direct
+image reads.
+
+`ocr_pages_to_rows` OCRs via `ocrmypdf` -- by default using whatever
+tesseract language data is already installed (Homebrew's `tesseract-lang`
+formula ships `tessdata_fast`). For higher OCR accuracy, download
+`tessdata_best`'s `deu.traineddata`/`eng.traineddata` by hand from
 https://github.com/tesseract-ocr/tessdata_best into one directory and set
 `TESSDATA_BEST_DIR` to that directory's path -- picked up automatically,
 with no code change, the next time `ocr_pages_to_rows` runs. Unset (the

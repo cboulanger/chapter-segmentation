@@ -369,10 +369,12 @@ def toc_entry_to_gt_dict(entry: TocEntry) -> dict:
     project's ground truth.
 
     "skip" (added 2026-08-17, see TocEntry.skip's own docstring) records
-    the vision extraction's own hint about whether this entry is a real
-    chapter, but is NOT authoritative -- a downstream consumer that wants
-    "which of these are real chapters" should be free to reclassify from
-    the verbatim title/page data without needing new vision-model calls."""
+    the extraction's own hint about whether this entry is a real chapter
+    (from either vision_extract_toc_entries or, since 2026-08-20,
+    text_extract_toc_entries -- both produce the same TocEntry shape), but
+    is NOT authoritative -- a downstream consumer that wants "which of
+    these are real chapters" should be free to reclassify from the
+    verbatim title/page data without needing new model calls."""
     return {
         "title": entry.title,
         "authors": list(entry.authors),

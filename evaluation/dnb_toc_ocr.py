@@ -16,6 +16,8 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
 
+from pypdf import PdfReader
+
 from chapter_segmentation._llm_json import parse_json_array
 from chapter_segmentation.segmentation import TocEntry, _toc_items_to_entries
 from evaluation.inference_endpoints import OpenAICompatibleLLMClient
@@ -199,6 +201,16 @@ omit any such printed label."""
 _TEXT_MAX_TOKENS = 4096
 _TEXT_MAX_TOKENS_RETRY = 8192
 
+# Same guard and reasoning as evaluation/dnb_toc_vision.py's
+# _MAX_VISION_PAGES -- this corpus's PDFs never exceed 1-3 pages today (the
+# acquisition pipeline's own TOC-only filtering), so this only matters if a
+# mis-filtered outlier ever slips through; a text prompt doesn't inflate
+# per-page cost the way a multi-image vision request does, but an unbounded
+# page count could still silently build an arbitrarily long OCR'd-text
+# prompt (and pay for an unbounded ocrmypdf/pdfalto run) for such an
+# outlier, so the same cap applies here too rather than omitting it.
+_MAX_TEXT_PAGES = 20
+
 
 async def text_extract_toc_entries(
     pdf_path: Path, model: str, client: Any, *, pdfalto_bin: str | None = None,
@@ -213,7 +225,13 @@ async def text_extract_toc_entries(
     swallowing failures internally would be wrong here too. Does not catch
     exceptions from ocr_pages_to_rows -- an OCR failure propagates exactly
     like any other extraction failure, no special-casing (design spec
-    section "Error handling")."""
+    section "Error handling"). Raises ValueError before any OCR/network
+    call if pdf_path has more than _MAX_TEXT_PAGES pages -- same guard as
+    vision_extract_toc_entries's _MAX_VISION_PAGES check, see that
+    constant's own docstring."""
+    page_count = len(PdfReader(str(pdf_path)).pages)
+    if page_count > _MAX_TEXT_PAGES:
+        raise ValueError(f"{pdf_path}: {page_count} pages exceeds text-extraction cap of {_MAX_TEXT_PAGES}")
     page_texts = ocr_pages_to_rows(pdf_path, pdfalto_bin=pdfalto_bin)
     pages_block = "\n\n".join(f"--- Page {i + 1} ---\n{text}" for i, text in enumerate(page_texts))
     prompt = f"{_TEXT_TOC_EXTRACTION_PROMPT}\n\n{pages_block}"

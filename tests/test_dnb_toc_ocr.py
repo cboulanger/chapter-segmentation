@@ -14,7 +14,20 @@ import unittest
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
-from evaluation.dnb_toc_ocr import _resolve_tessdata_best_env, _rows_from_alto_xml, ocr_pages_to_rows, text_extract_toc_entries
+from pypdf import PdfWriter
+
+from evaluation.dnb_toc_ocr import (
+    _MAX_TEXT_PAGES, _resolve_tessdata_best_env, _rows_from_alto_xml, ocr_pages_to_rows, text_extract_toc_entries,
+)
+
+
+def _make_pdf(path: Path, page_count: int) -> Path:
+    writer = PdfWriter()
+    for _ in range(page_count):
+        writer.add_blank_page(width=200, height=200)
+    with open(path, "wb") as f:
+        writer.write(f)
+    return path
 
 
 _ALTO_NS_URI = "http://www.loc.gov/standards/alto/ns-v3#"
@@ -184,9 +197,11 @@ _TEXT_RESPONSE = (
 
 class TestTextExtractTocEntries(unittest.IsolatedAsyncioTestCase):
     async def test_parses_a_clean_response_into_entries(self):
-        client = _fake_text_client(_TEXT_RESPONSE)
-        with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", return_value=["Einleitung 9", "Schluss 40"]):
-            entries = await text_extract_toc_entries(Path("/tmp/book.pdf"), "text-model", client)
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf_path = _make_pdf(Path(tmp) / "book.pdf", 1)
+            client = _fake_text_client(_TEXT_RESPONSE)
+            with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", return_value=["Einleitung 9", "Schluss 40"]):
+                entries = await text_extract_toc_entries(pdf_path, "text-model", client)
 
         self.assertEqual(len(entries), 2)
         self.assertEqual(entries[0].title, "Einleitung")
@@ -212,8 +227,10 @@ class TestTextExtractTocEntries(unittest.IsolatedAsyncioTestCase):
         bad_response.choices = [bad_choice]
         client.chat.completions.create = AsyncMock(side_effect=[bad_response, good_response])
 
-        with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", return_value=["Einleitung 9"]):
-            entries = await text_extract_toc_entries(Path("/tmp/book.pdf"), "text-model", client)
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf_path = _make_pdf(Path(tmp) / "book.pdf", 1)
+            with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", return_value=["Einleitung 9"]):
+                entries = await text_extract_toc_entries(pdf_path, "text-model", client)
 
         self.assertEqual(len(entries), 2)
         self.assertEqual(client.chat.completions.create.await_count, 2)
@@ -222,15 +239,29 @@ class TestTextExtractTocEntries(unittest.IsolatedAsyncioTestCase):
         self.assertLess(first_max_tokens, second_max_tokens)
 
     async def test_raises_after_both_attempts_fail_to_parse(self):
-        client = _fake_text_client("not json at all")
-        with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", return_value=["garbage"]):
-            with self.assertRaises(Exception):
-                await text_extract_toc_entries(Path("/tmp/book.pdf"), "text-model", client)
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf_path = _make_pdf(Path(tmp) / "book.pdf", 1)
+            client = _fake_text_client("not json at all")
+            with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", return_value=["garbage"]):
+                with self.assertRaises(Exception):
+                    await text_extract_toc_entries(pdf_path, "text-model", client)
         self.assertEqual(client.chat.completions.create.await_count, 2)
 
     async def test_ocr_failure_propagates_uncaught(self):
-        client = _fake_text_client(_TEXT_RESPONSE)
-        with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", side_effect=RuntimeError("ocrmypdf failed")):
-            with self.assertRaises(RuntimeError):
-                await text_extract_toc_entries(Path("/tmp/book.pdf"), "text-model", client)
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf_path = _make_pdf(Path(tmp) / "book.pdf", 1)
+            client = _fake_text_client(_TEXT_RESPONSE)
+            with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", side_effect=RuntimeError("ocrmypdf failed")):
+                with self.assertRaises(RuntimeError):
+                    await text_extract_toc_entries(pdf_path, "text-model", client)
         client.chat.completions.create.assert_not_called()
+
+    async def test_raises_before_any_ocr_or_network_call_when_page_count_exceeds_cap(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf_path = _make_pdf(Path(tmp) / "book.pdf", _MAX_TEXT_PAGES + 1)
+            client = _fake_text_client(_TEXT_RESPONSE)
+            with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows") as mock_ocr:
+                with self.assertRaises(ValueError):
+                    await text_extract_toc_entries(pdf_path, "text-model", client)
+            mock_ocr.assert_not_called()
+            client.chat.completions.create.assert_not_called()

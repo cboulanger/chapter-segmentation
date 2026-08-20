@@ -612,8 +612,10 @@ import unittest
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
-from evaluation.dnb_toc_ocr import _resolve_tessdata_best_env, _rows_from_alto_xml, ocr_pages_to_rows, text_extract_toc_entries
+from evaluation.dnb_toc_ocr import _resolve_tessdata_best_env, _rows_from_alto_xml, ocr_pages_to_rows
 ```
+
+(Note: at this point in the branch's history, `text_extract_toc_entries` doesn't exist yet -- it's Task 3's deliverable, and Task 2.5 was spliced in between Task 2 and Task 3. Do NOT import it here; none of this task's new tests need it, and importing it would break collection.)
 
 Append this test class to the end of `tests/test_dnb_toc_ocr.py`:
 

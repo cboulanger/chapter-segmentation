@@ -255,15 +255,17 @@ def _release_lock(corpus_directory: Path, key: str) -> None:
 
 async def _run_book(
     key: str, pdf_path: Path, endpoints: tuple[ModelEndpoint, ModelEndpoint], semaphore: asyncio.Semaphore,
-    corpus_directory: Path, cache_directory: Path, sleep=asyncio.sleep,
+    corpus_directory: Path, cache_directory: Path, *, second_kind: str = "vision", sleep=asyncio.sleep,
 ) -> tuple[str, bool, str]:
     """Thin I/O wrapper around _run_book_entries -- calls
-    vision_extract_toc_entries once per endpoint (through the cache, then
-    _call_with_retry on a miss), and delegates the two resulting entry
-    lists to _run_book_entries. `endpoints` carries each side's own
-    client, not a single shared one -- the two independent vision reads
-    can come from entirely different inference endpoints (e.g. two MPCDF
-    sessions, or one MPCDF + one KISSKI model), not just two models
+    vision_extract_toc_entries for the first endpoint and, per
+    `second_kind`, either vision_extract_toc_entries ("vision", the
+    default) or text_extract_toc_entries ("text") for the second endpoint
+    (through the cache, then _call_with_retry on a miss), and delegates
+    the two resulting entry lists to _run_book_entries. `endpoints` carries
+    each side's own client, not a single shared one -- the two independent
+    reads can come from entirely different inference endpoints (e.g. two
+    MPCDF sessions, or one MPCDF + one KISSKI model), not just two models
     behind KISSKI's single base URL. Catches any exception (a corrupt/
     unreadable PDF, a network error that survives _call_with_retry's own
     retries, etc.) and reports it as a failed-but-tuple-shaped result
@@ -292,13 +294,15 @@ async def _run_book(
         return key, False, "locked_by_another_process"
     try:
         entries_by_model = []
-        for endpoint in endpoints:
+        for endpoint, kind in zip(endpoints, ("vision", second_kind)):
             cached = load_cached_llm_entries(cache_directory, key, endpoint.model_id)
             if cached is not None:
                 entries = cached
             else:
-                async def _call(ep=endpoint):
+                async def _call(ep=endpoint, k=kind):
                     async with semaphore:
+                        if k == "text":
+                            return await text_extract_toc_entries(pdf_path, ep.model_id, ep.client)
                         return await vision_extract_toc_entries(pdf_path, ep.model_id, ep.client)
                 entries = await _call_with_retry(_call, sleep=sleep)
                 # Only cache a non-empty result -- an empty list here
@@ -308,7 +312,7 @@ async def _run_book(
                 # later re-run trust a possibly-transient empty result
                 # forever instead of retrying.
                 if entries:
-                    write_cached_llm_entries(cache_directory, key, endpoint.model_id, entries)
+                    write_cached_llm_entries(cache_directory, key, endpoint.model_id, entries, kind=kind)
             entries_by_model.append(entries)
         return _run_book_entries(key, entries_by_model[0], entries_by_model[1], corpus_directory)
     except Exception as exc:  # noqa: BLE001 -- must never let one book crash the whole batch
@@ -515,11 +519,11 @@ def _resolve_endpoints(
 
 async def _run_all(
     keys_and_paths: list[tuple[str, Path]], endpoints: tuple[ModelEndpoint, ModelEndpoint], concurrency: int,
-    corpus_directory: Path, cache_directory: Path,
+    corpus_directory: Path, cache_directory: Path, *, second_kind: str = "vision",
 ) -> list[tuple[str, bool, str]]:
     semaphore = asyncio.Semaphore(concurrency)
     return list(await asyncio.gather(*[
-        _run_book(key, path, endpoints, semaphore, corpus_directory, cache_directory)
+        _run_book(key, path, endpoints, semaphore, corpus_directory, cache_directory, second_kind=second_kind)
         for key, path in keys_and_paths
     ]))
 
@@ -586,17 +590,22 @@ def _generate(args: argparse.Namespace) -> int:
     candidates = [(manifest_key(b), cdir / b["filename"]) for b in eligible if (cdir / b["filename"]).exists()]
     missing_pdf_count = len(eligible) - len(candidates)
 
-    endpoints = _resolve_vision_endpoints(args.endpoint, args.config_file)
+    vision_endpoint, second_endpoint, second_kind = _resolve_endpoints(
+        args.endpoint, args.config_file, args.text_endpoint, args.text_config_file,
+    )
+    endpoints = (vision_endpoint, second_endpoint)
 
-    results = asyncio.run(_run_all(candidates, endpoints, args.concurrency, cdir, llm_cache_dir(_CORPUS_NAME)))
+    results = asyncio.run(
+        _run_all(candidates, endpoints, args.concurrency, cdir, llm_cache_dir(_CORPUS_NAME), second_kind=second_kind)
+    )
     passed = [r for r in results if r[1]]
     by_reason: dict[str, int] = {}
     for _, ok, reason in results:
         if not ok:
             by_reason[reason] = by_reason.get(reason, 0) + 1
     print(
-        f"Vision models used: {endpoints[0].label}:{endpoints[0].model_id}, "
-        f"{endpoints[1].label}:{endpoints[1].model_id}"
+        f"Endpoints used: vision={endpoints[0].label}:{endpoints[0].model_id}, "
+        f"{second_kind}={endpoints[1].label}:{endpoints[1].model_id}"
     )
     print(f"{len(passed)}/{len(results)} books passed the gate and got .expected.json written.")
     for reason, count in sorted(by_reason.items()):

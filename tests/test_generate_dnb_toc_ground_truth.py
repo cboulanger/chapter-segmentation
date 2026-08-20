@@ -16,7 +16,7 @@ from openai import RateLimitError
 from pypdf import PdfWriter
 
 from chapter_segmentation.segmentation import TocEntry
-from evaluation.dnb_toc_vision import load_cached_llm_entries, write_cached_llm_entries
+from evaluation.dnb_toc_vision import load_cached_kind, load_cached_llm_entries, write_cached_llm_entries
 from evaluation.inference_endpoints import ModelEndpoint
 from evaluation.kisski import KisskiModel
 from evaluation.scripts.generate_dnb_toc_ground_truth import (
@@ -457,6 +457,52 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             )
 
             self.assertFalse(_lock_path(corpus_directory, "book9").exists())
+
+    async def test_second_kind_text_dispatches_to_text_extract_toc_entries(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            corpus_directory = tmp_path / "corpus"
+            cache_directory = tmp_path / "cache"
+            corpus_directory.mkdir()
+            pdf_path = _make_pdf(tmp_path / "book.pdf")
+            client = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("vision-model", client), _endpoint("text-model", client))
+            semaphore = asyncio.Semaphore(1)
+
+            with patch(
+                "evaluation.scripts.generate_dnb_toc_ground_truth.text_extract_toc_entries",
+                new=AsyncMock(return_value=[_entry("Einleitung", 9), _entry("Schluss", 40)]),
+            ) as mock_text_extract:
+                key, passed, reason = await _run_book(
+                    "book10", pdf_path, endpoints, semaphore, corpus_directory, cache_directory,
+                    second_kind="text", sleep=AsyncMock(),
+                )
+
+            self.assertTrue(passed)
+            mock_text_extract.assert_awaited_once()
+            self.assertEqual(client.chat.completions.create.await_count, 1)
+            self.assertEqual(load_cached_llm_entries(cache_directory, "book10", "text-model")[0].title, "Einleitung")
+            self.assertEqual(load_cached_kind(cache_directory, "book10", "vision-model"), "vision")
+            self.assertEqual(load_cached_kind(cache_directory, "book10", "text-model"), "text")
+
+    async def test_second_kind_defaults_to_vision_when_not_given(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            corpus_directory = tmp_path / "corpus"
+            cache_directory = tmp_path / "cache"
+            corpus_directory.mkdir()
+            pdf_path = _make_pdf(tmp_path / "book.pdf")
+            client = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("model-a", client), _endpoint("model-b", client))
+            semaphore = asyncio.Semaphore(1)
+
+            key, passed, reason = await _run_book(
+                "book11", pdf_path, endpoints, semaphore, corpus_directory, cache_directory, sleep=AsyncMock(),
+            )
+
+            self.assertTrue(passed)
+            self.assertEqual(load_cached_kind(cache_directory, "book11", "model-a"), "vision")
+            self.assertEqual(load_cached_kind(cache_directory, "book11", "model-b"), "vision")
 
 
 class TestAcquireLock(unittest.TestCase):

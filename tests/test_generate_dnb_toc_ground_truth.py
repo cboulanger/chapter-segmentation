@@ -504,6 +504,40 @@ class TestRunBook(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(load_cached_kind(cache_directory, "book11", "model-a"), "vision")
             self.assertEqual(load_cached_kind(cache_directory, "book11", "model-b"), "vision")
 
+    async def test_a_cache_entry_written_under_a_different_kind_is_not_trusted(self):
+        # Regression test: cache_path keys purely on (key, model_id), not
+        # kind -- if the same model id was previously cached as a vision
+        # endpoint's result and is now being requested as the text
+        # endpoint (or vice versa), the stale wrong-kind entries must NOT
+        # be silently reused. A mismatch must be treated exactly like a
+        # cache miss: re-extract, and overwrite the cache with the
+        # correct kind.
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            corpus_directory = tmp_path / "corpus"
+            cache_directory = tmp_path / "cache"
+            corpus_directory.mkdir()
+            pdf_path = _make_pdf(tmp_path / "book.pdf")
+            stale_entries = [_entry("Stale vision-cached title", 1)]
+            write_cached_llm_entries(cache_directory, "book12", "shared-model", stale_entries, kind="vision")
+            client = _fake_vision_client(_VISION_RESPONSE)
+            endpoints = (_endpoint("model-a", client), _endpoint("shared-model", client))
+            semaphore = asyncio.Semaphore(1)
+
+            with patch(
+                "evaluation.scripts.generate_dnb_toc_ground_truth.text_extract_toc_entries",
+                new=AsyncMock(return_value=[_entry("Einleitung", 9), _entry("Schluss", 40)]),
+            ) as mock_text_extract:
+                key, passed, reason = await _run_book(
+                    "book12", pdf_path, endpoints, semaphore, corpus_directory, cache_directory,
+                    second_kind="text", sleep=AsyncMock(),
+                )
+
+            self.assertTrue(passed)
+            mock_text_extract.assert_awaited_once()
+            self.assertEqual(load_cached_kind(cache_directory, "book12", "shared-model"), "text")
+            self.assertEqual(load_cached_llm_entries(cache_directory, "book12", "shared-model")[0].title, "Einleitung")
+
 
 class TestAcquireLock(unittest.TestCase):
     def test_first_acquire_succeeds_and_creates_the_lock_file(self):

@@ -60,7 +60,9 @@ from openai import AsyncOpenAI, RateLimitError
 from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
 from evaluation.dnb_toc_ocr import text_extract_toc_entries
-from evaluation.dnb_toc_vision import load_cached_llm_entries, vision_extract_toc_entries, write_cached_llm_entries
+from evaluation.dnb_toc_vision import (
+    load_cached_kind, load_cached_llm_entries, vision_extract_toc_entries, write_cached_llm_entries,
+)
 from evaluation.harness import corpus_dir, llm_cache_dir, load_manifest_books
 from evaluation.inference_endpoints import (
     DEFAULT_SESSIONS_FILENAME, DEFAULT_TIMEOUT, ModelEndpoint, resolve_endpoint_from_env,
@@ -296,7 +298,15 @@ async def _run_book(
         entries_by_model = []
         for endpoint, kind in zip(endpoints, ("vision", second_kind)):
             cached = load_cached_llm_entries(cache_directory, key, endpoint.model_id)
-            if cached is not None:
+            # A cache entry is only trusted if it was written for the SAME
+            # kind currently being requested for this model id -- cache_path
+            # keys purely on (key, model_id), so the same model reused as
+            # (say) a vision endpoint in one run and a text endpoint in a
+            # later run would otherwise silently return the earlier run's
+            # stale, wrong-kind entries instead of re-extracting. A
+            # mismatch is treated exactly like a miss: re-extract below,
+            # which then overwrites the stale on-disk kind too.
+            if cached is not None and load_cached_kind(cache_directory, key, endpoint.model_id) == kind:
                 entries = cached
             else:
                 async def _call(ep=endpoint, k=kind):

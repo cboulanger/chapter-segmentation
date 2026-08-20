@@ -136,3 +136,95 @@ def ocr_pages_to_rows(pdf_path: Path, *, pdfalto_bin: str | None = None) -> list
             raise RuntimeError(f"ocrmypdf failed on {pdf_path}: {result.stderr}")
         alto_path = pdfalto_runner.ensure_alto_xml(ocr_pdf_path, tmp_dir, resolved_pdfalto_bin)
         return _rows_from_alto_xml(alto_path)
+
+
+_TEXT_TOC_EXTRACTION_PROMPT = """\
+You are reading a machine-OCR'd transcription of a book's table of \
+contents pages, with each printed line's reading order already \
+reconstructed for you. The OCR process can still introduce scanning \
+artifacts: misrecognized characters, a run of garbled tokens where a \
+printed dot leader ("....") was misread as text, or an occasional \
+dropped or duplicated word. Read past such artifacts and report the \
+actual title/page-number content a human would recognize the line as \
+saying -- do not transcribe OCR noise literally as if it were real text.
+
+A heading can have indented, numbered, or lettered sub-points listed \
+below it (e.g. "I.", "II.", "1.", "2.") that each carry their OWN page \
+number -- each such sub-point is its own separate entry too, exactly as \
+printed, not merged into its parent heading. Do not collapse or omit a \
+sub-point just because it is indented under a larger heading.
+
+A single chapter's title sometimes spans two printed lines -- a short \
+main title followed by a longer explanatory subtitle right below it \
+(or vice versa) -- with only ONE page number for the pair. That is ONE \
+entry, not two: join both lines into a single title string. Do not \
+create a separate entry for the subtitle line, and do not create a \
+separate entry with no page number just because a line of text sits \
+above a chapter's title.
+
+Return ONLY a JSON array, one entry for EVERY line in the transcription \
+that names a titled section and (usually) a page number -- transcribe \
+what is actually printed, do not decide which lines matter. This \
+includes lines you might not think of as a "real chapter": a \
+part/section divider (e.g. "Teil 1", "I. Historische Grundlagen", an \
+unnumbered section-title line that groups several chapters under it), \
+front matter (preface, foreword, acknowledgements, list of \
+contributors/authors), and back matter (bibliography, index, an \
+appendix listing an author's or honoree's own prior publications) all \
+get their own entry too, exactly like any other line, even when they \
+carry no page number of their own. Mark each entry "skip": true if it is \
+one of these non-chapter lines (a divider, front matter, or back \
+matter) and "skip": false if it is an actual chapter -- but include the \
+entry either way; never omit a printed line because of what "skip" \
+value it would get:
+[{"title": "...", "authors": ["First Last", ...], "printed_page_number": "12", "skip": false}]
+
+printed_page_number is the page number exactly AS PRINTED on the page -- \
+copy it verbatim, including roman numerals for front-matter chapters \
+(e.g. "vii", not 7). If a line's printed page number is not visible, use \
+null for printed_page_number -- never leave the line out just because it \
+has no page number. If authors are not identifiable, use an empty list.
+
+If a title is printed with a leading number, letter, or label (e.g. "1 ", \
+"2.3 ", "I. ", "a) "), that label is part of the title -- include it \
+verbatim as the start of the title string. Do not strip, renumber, or \
+omit any such printed label."""
+
+# Same escalation shape as evaluation/dnb_toc_vision.py's
+# _VISION_MAX_TOKENS/_VISION_MAX_TOKENS_RETRY -- a truncated JSON array
+# reliably fails parse_json_array regardless of cause, so JSON-parseability
+# alone is a sufficient retry trigger. A text response has no image tokens
+# inflating the prompt, so budget pressure here is milder than vision, but
+# the escalation costs nothing to keep for consistency.
+_TEXT_MAX_TOKENS = 4096
+_TEXT_MAX_TOKENS_RETRY = 8192
+
+
+async def text_extract_toc_entries(
+    pdf_path: Path, model: str, client: Any, *, pdfalto_bin: str | None = None,
+) -> list[TocEntry]:
+    """OCRs pdf_path (ocr_pages_to_rows) and asks a text-only model (via an
+    already-constructed openai.AsyncOpenAI-shaped `client`, model id
+    `model`) to extract the table of contents from the reconstructed page
+    text. Same return shape as vision_extract_toc_entries, sharing its
+    item-parsing tolerance logic (_toc_items_to_entries) and its
+    raises-on-failure/max_tokens-escalation contract -- see that
+    function's own docstring in evaluation/dnb_toc_vision.py for why
+    swallowing failures internally would be wrong here too. Does not catch
+    exceptions from ocr_pages_to_rows -- an OCR failure propagates exactly
+    like any other extraction failure, no special-casing (design spec
+    section "Error handling")."""
+    page_texts = ocr_pages_to_rows(pdf_path, pdfalto_bin=pdfalto_bin)
+    pages_block = "\n\n".join(f"--- Page {i + 1} ---\n{text}" for i, text in enumerate(page_texts))
+    prompt = f"{_TEXT_TOC_EXTRACTION_PROMPT}\n\n{pages_block}"
+    llm_client = OpenAICompatibleLLMClient(model=model, client=client)
+
+    last_error: Exception | None = None
+    for max_tokens in (_TEXT_MAX_TOKENS, _TEXT_MAX_TOKENS_RETRY):
+        raw = await llm_client.generate(prompt, max_tokens=max_tokens, temperature=0.0)
+        try:
+            items = parse_json_array(raw)
+            return _toc_items_to_entries(items)
+        except Exception as exc:  # noqa: BLE001 -- any parse failure triggers the escalation retry
+            last_error = exc
+    raise last_error

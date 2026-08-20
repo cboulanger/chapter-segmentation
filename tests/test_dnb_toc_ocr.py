@@ -14,7 +14,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
-from evaluation.dnb_toc_ocr import _resolve_tessdata_best_env, _rows_from_alto_xml, ocr_pages_to_rows
+from evaluation.dnb_toc_ocr import _resolve_tessdata_best_env, _rows_from_alto_xml, ocr_pages_to_rows, text_extract_toc_entries
 
 
 _ALTO_NS_URI = "http://www.loc.gov/standards/alto/ns-v3#"
@@ -162,3 +162,75 @@ class TestOcrPagesToRowsTessdataWiring(unittest.TestCase):
 
         mock_run.assert_called_once()
         self.assertIsNone(mock_run.call_args.kwargs["env"])
+
+
+def _fake_text_client(response_text: str):
+    message = MagicMock()
+    message.content = response_text
+    choice = MagicMock()
+    choice.message = message
+    response = MagicMock()
+    response.choices = [choice]
+    client = MagicMock()
+    client.chat.completions.create = AsyncMock(return_value=response)
+    return client
+
+
+_TEXT_RESPONSE = (
+    '[{"title": "Einleitung", "authors": [], "printed_page_number": "9", "skip": false}, '
+    '{"title": "Schluss", "authors": [], "printed_page_number": "40", "skip": false}]'
+)
+
+
+class TestTextExtractTocEntries(unittest.IsolatedAsyncioTestCase):
+    async def test_parses_a_clean_response_into_entries(self):
+        client = _fake_text_client(_TEXT_RESPONSE)
+        with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", return_value=["Einleitung 9", "Schluss 40"]):
+            entries = await text_extract_toc_entries(Path("/tmp/book.pdf"), "text-model", client)
+
+        self.assertEqual(len(entries), 2)
+        self.assertEqual(entries[0].title, "Einleitung")
+        self.assertEqual(entries[1].printed_page_number, "40")
+        client.chat.completions.create.assert_awaited_once()
+        call_kwargs = client.chat.completions.create.await_args.kwargs
+        self.assertEqual(call_kwargs["model"], "text-model")
+        self.assertIn("Einleitung 9", call_kwargs["messages"][0]["content"])
+
+    async def test_escalates_max_tokens_once_on_a_truncated_first_response(self):
+        client = MagicMock()
+        good_message = MagicMock()
+        good_message.content = _TEXT_RESPONSE
+        good_choice = MagicMock()
+        good_choice.message = good_message
+        good_response = MagicMock()
+        good_response.choices = [good_choice]
+        bad_message = MagicMock()
+        bad_message.content = "[{\"title\": \"truncated"  # not valid JSON, no closing bracket
+        bad_choice = MagicMock()
+        bad_choice.message = bad_message
+        bad_response = MagicMock()
+        bad_response.choices = [bad_choice]
+        client.chat.completions.create = AsyncMock(side_effect=[bad_response, good_response])
+
+        with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", return_value=["Einleitung 9"]):
+            entries = await text_extract_toc_entries(Path("/tmp/book.pdf"), "text-model", client)
+
+        self.assertEqual(len(entries), 2)
+        self.assertEqual(client.chat.completions.create.await_count, 2)
+        first_max_tokens = client.chat.completions.create.await_args_list[0].kwargs["max_tokens"]
+        second_max_tokens = client.chat.completions.create.await_args_list[1].kwargs["max_tokens"]
+        self.assertLess(first_max_tokens, second_max_tokens)
+
+    async def test_raises_after_both_attempts_fail_to_parse(self):
+        client = _fake_text_client("not json at all")
+        with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", return_value=["garbage"]):
+            with self.assertRaises(Exception):
+                await text_extract_toc_entries(Path("/tmp/book.pdf"), "text-model", client)
+        self.assertEqual(client.chat.completions.create.await_count, 2)
+
+    async def test_ocr_failure_propagates_uncaught(self):
+        client = _fake_text_client(_TEXT_RESPONSE)
+        with patch("evaluation.dnb_toc_ocr.ocr_pages_to_rows", side_effect=RuntimeError("ocrmypdf failed")):
+            with self.assertRaises(RuntimeError):
+                await text_extract_toc_entries(Path("/tmp/book.pdf"), "text-model", client)
+        client.chat.completions.create.assert_not_called()

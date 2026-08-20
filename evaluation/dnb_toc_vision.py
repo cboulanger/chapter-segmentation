@@ -171,7 +171,13 @@ printed_page_number is the page number exactly AS PRINTED on the page -- \
 copy it verbatim, including roman numerals for front-matter chapters \
 (e.g. "vii", not 7). If a line's printed page number is not visible, use \
 null for printed_page_number -- never leave the line out just because it \
-has no page number. If authors are not identifiable, use an empty list.
+has no page number. If authors are not identifiable, use an empty list. \
+Almost every chapter/section line DOES have a page number printed \
+somewhere on it, even when there is no dot leader connecting it to the \
+title -- look along the whole line, including its far right edge, before \
+writing null; null should be rare, reserved for lines that genuinely show \
+no number anywhere (most commonly a divider or heading with no page of \
+its own), not a default answer.
 
 If a title is printed with a leading number, letter, or label (e.g. "1 ", \
 "2.3 ", "I. ", "a) "), that label is part of the title -- include it \

@@ -185,7 +185,19 @@ printed_page_number is the page number exactly AS PRINTED on the page -- \
 copy it verbatim, including roman numerals for front-matter chapters \
 (e.g. "vii", not 7). If a line's printed page number is not visible, use \
 null for printed_page_number -- never leave the line out just because it \
-has no page number. If authors are not identifiable, use an empty list.
+has no page number. If authors are not identifiable, use an empty list. \
+Almost every chapter/section entry DOES have a page number in the \
+transcription, even when it is not visually separated from the title by \
+a dot leader -- the OCR reconstruction frequently glues it directly onto \
+the end of the entry's own last line with nothing but a single space and \
+no punctuation (e.g. a block ending "...in die\\nThematik 9" means the \
+title text ends at "Thematik" and "9" is that entry's \
+printed_page_number, NOT part of the title). Treat a standalone number \
+appearing at the very end of an entry's text this way. Before writing \
+null, re-check the end of the entry's own text for a trailing number \
+like this; null should be rare, reserved for lines that genuinely show no \
+number anywhere (most commonly a divider or heading with no page of its \
+own), not a default answer.
 
 If a title is printed with a leading number, letter, or label (e.g. "1 ", \
 "2.3 ", "I. ", "a) "), that label is part of the title -- include it \

@@ -468,6 +468,100 @@ stronger than Qwen the way InternVL was -- but this small sample shows no
 clean automatic-pass rate yet; still needs arbitration like any other
 pairing.
 
+**Pixtral ruled out for real: confident hallucination on dense TOCs
+(2026-08-20).** A follow-up 20-book batch made the picture much worse: 1/20
+passed, 16 below-threshold, 3 errored (1 `BadRequestError` -- a book whose
+combined prompt+image token count exceeded the 65536 max_model_len; 2
+`JSONDecodeError`). Of the 16 below-threshold books, most were re-resolved
+by the concurrent KISSKI session's own bulk-gate pass before arbitration
+was needed, leaving 4 genuine Qwen-vs-Pixtral disagreements
+(`9783648200056`, `9783837840452`, `3825220494`, `9783110373912`) --
+all four with a *high* raw agreement rate (0.96-0.98) dragged below
+threshold by a large number (8-48) of near-identical-but-not-exact title
+mismatches, a different shape of disagreement than the earlier 8-book
+batch. Spot-checking `9783648200056` ("KI-Masterclass") against the real
+page image confirmed Qwen correct on every single checked line and
+Pixtral wrong on all of them -- not OCR noise but fluent, plausible-sounding
+fabrication: printed "1.3 Rezession als Stresstest, nicht als Ursache"
+came back from Pixtral as "1.3 Rekursion als Stressfaktor, nicht als
+Ursache"; printed "Selbstberuhigung und Realitätstest" came back
+"Selbstabrufung und Realitätstest"; printed "Der operative »Grind« als
+eigentlicher Engpass" came back "Der operative Grid: als eigentlicher
+Engpass". All three affected books share dense, small-font, multi-level
+numbered TOCs (technical/business or academic-handbook style) -- Pixtral's
+failure mode is specific to that document class, not a general weakness
+(it did fine on the flatter TOCs in the first smoke test). Verdict:
+Pixtral is not a usable second model for this corpus as a whole --
+dropped.
+
+**GLM-4.1V-9B-Thinking tried next: architecturally incompatible with the
+pipeline's JSON extraction, not just weaker (2026-08-20).** Spawned as
+a fast, genuinely-independent (Zhipu/GLM lineage), small (9B dense, 1
+GPU) candidate specifically to fix the two problems above -- on the newer
+`rocm7.13.0_gfx94X-dcgpu_..._vllm_0.19.1` image, since
+`Glm4vForConditionalGeneration` needs vLLM >=0.12.0 (see
+`evaluation/hpc/llm-mpcdf.md`). A 20-book batch scored 0/20: 3
+below-threshold, 1 `BadRequestError` (same context-length-overflow
+failure as Pixtral's), and **15 `JSONDecodeError`**. Root cause: this
+model always answers in a fixed `<think>...reasoning...</think><answer>...`
+format, and `parse_json_array` (`src/chapter_segmentation/_llm_json.py`)
+naively takes the first `[` and last `]` in the *whole* response --
+every model tried before this one answered with no preamble, so the
+assumption had never been tested. The reasoning block's own brackets get
+caught by that naive span, producing malformed JSON on most books; one
+book's raw response showed the reasoning trace visibly running out of its
+token budget and degenerating into a multi-thousand-character run of
+repeated periods before ever reaching an answer.
+
+Confirmed there is no request-level escape hatch: passing
+`extra_body={"chat_template_kwargs": {"enable_thinking": False}}` (the
+convention some Qwen3-style hybrid-reasoning chat templates honor) had
+zero effect on a direct test call -- the `<think>` block is structurally
+fixed into this model's template, not a runtime toggle. A direct
+before/after test (stripping the `<think>...</think>` span before
+`parse_json_array`, `max_tokens` raised to 16000) got a real book to parse
+cleanly (`9783779932819`, 21 entries) but was **not reliably
+reproducible even at temperature=0.0** -- an identical repeat call
+against a second book (`3518006940`) failed to parse on the first try and
+only succeeded on a second identical call. Reasoning alone consumed
+6,600-11,600 completion tokens on these two *small* (8-21 entry) books,
+against this session's 65536-token context ceiling shared with the
+prompt+images -- the same ceiling that already produced a
+`BadRequestError` on a dense book with no reasoning overhead at all,
+meaning the corpus's denser TOCs (150+ entries, the exact class Pixtral
+just failed on) are likely to blow the budget outright even with a code
+fix. Not pursued further as a production pairing: the fix is real but
+partial, and the remaining risk concentrates on precisely the books this
+whole search was trying to make more reliable.
+
+**Why a second model keeps failing for a different reason each time
+(2026-08-20):** across every candidate tried this session
+(`InternVL2_5-38B`, `Pixtral-12B-2409`, `GLM-4.5V`, `GLM-4.1V-9B-Thinking`,
+plus `Qwen/Qwen3.6-35B-A3B` and `deepseek-ai/deepseek-vl2` which never
+even got a quality test), the failures cluster into three independent
+constraints, not one recurring flaw: (1) **architectural independence
+from Qwen is rarer than expected** -- a large share of the open VLM
+ecosystem, InternVL included, is built on a Qwen2/2.5/3 LLM backbone,
+since it's currently the strongest freely-available option to pair a
+vision encoder with, so "not Qwen-derived" and "strong at dense document
+OCR" are anti-correlated in practice; (2) **the labs that are genuinely
+independent mostly aren't optimized for this task** -- Pixtral and
+Llama-Vision are general vision-chat models, not document specialists,
+and it showed as confident fabrication rather than garbled OCR; GLM's
+answer to competing on quality was a reasoning model, which solved
+neither problem and introduced a new output-format incompatibility of its
+own; (3) **pure MPCDF-launcher infrastructure friction, uncorrelated with
+model quality** -- the default image's old vLLM rejects some
+architectures outright (`Qwen3.6-35B-A3B`, `GLM-4.1V` without the newer
+image), the CLI-arguments field's blanket quote-stripping makes
+`deepseek-vl2`'s required `--hf-overrides` unusable regardless of image,
+and a large/MoE checkpoint's graph-capture time (`GLM-4.5V`) can consume
+most of a session before quality is ever testable. Each candidate so far
+has failed a *different* one of these three, which is why the search has
+felt like it keeps finding new problems rather than converging --
+narrowing on any future candidate should check all three before spending
+a batch on it, not just the one that sank the previous attempt.
+
 ## History
 
 

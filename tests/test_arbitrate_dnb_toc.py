@@ -149,6 +149,15 @@ class TestFormatBookReportKindLabels(unittest.TestCase):
         )
         self.assertIn("Only vision: model-a returned usable output", report)
 
+    def test_an_unrecognized_kind_surfaces_as_itself_not_silently_as_text(self):
+        report = format_book_report(
+            "book7", "Some Title", Path("/tmp/book7.pdf"),
+            {"model-a": [_entry("Einleitung", 9)]},
+            {"model-a": "something-unexpected"},
+        )
+        self.assertIn("Only something-unexpected: model-a returned usable output", report)
+        self.assertNotIn("text (OCR'd)", report)
+
 
 class TestCachedKindsForBook(unittest.TestCase):
     def test_reads_each_models_own_kind(self):

@@ -98,7 +98,18 @@ def _format_entry(entry: TocEntry) -> str:
 
 
 def _kind_label(model: str, kind: str) -> str:
-    prefix = "vision" if kind == "vision" else "text (OCR'd)"
+    # "vision"/"text" are the only kinds write_cached_llm_entries writes
+    # today, but an unrecognized value (a future third extraction path, a
+    # typo, hand-edited cache JSON) must surface as itself, not get
+    # silently folded into "text (OCR'd)" -- this report's whole point is
+    # to make a human trust its labels at a glance, so a wrong label here
+    # would actively mislead rather than merely look unpolished.
+    if kind == "vision":
+        prefix = "vision"
+    elif kind == "text":
+        prefix = "text (OCR'd)"
+    else:
+        prefix = kind
     return f"{prefix}: {model}"
 
 

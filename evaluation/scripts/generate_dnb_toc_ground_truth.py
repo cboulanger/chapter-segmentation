@@ -59,6 +59,7 @@ from openai import AsyncOpenAI, RateLimitError
 
 from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import gate_book, toc_entry_to_gt_dict
+from evaluation.dnb_toc_ocr import text_extract_toc_entries
 from evaluation.dnb_toc_vision import load_cached_llm_entries, vision_extract_toc_entries, write_cached_llm_entries
 from evaluation.harness import corpus_dir, llm_cache_dir, load_manifest_books
 from evaluation.inference_endpoints import (
@@ -450,6 +451,68 @@ def _resolve_vision_endpoints(
     return tuple(resolve_endpoint_from_env(alias) for alias in endpoint_aliases)
 
 
+def _resolve_endpoints(
+    endpoint_aliases: Optional[list[str]],
+    config_file: Optional[Path],
+    text_endpoint_alias: Optional[str],
+    text_config_file: Optional[Path],
+) -> tuple[ModelEndpoint, ModelEndpoint, str]:
+    """Resolves the gate's two endpoints plus which extraction path the
+    second one needs ("vision" for vision_extract_toc_entries, "text" for
+    text_extract_toc_entries) -- see design spec
+    docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md
+    section 1's combination table. Neither --text-endpoint nor
+    --text-config-file given delegates entirely to _resolve_vision_endpoints
+    (today's two-vision-model behavior, completely unchanged), second_kind
+    "vision". Either text flag given pairs exactly one vision-side endpoint
+    (--endpoint with exactly 1 alias, or --config-file with exactly 1
+    pasted session table) with exactly one text-side endpoint
+    (--text-endpoint, or --text-config-file with exactly 1 table),
+    second_kind "text" -- the vision and text sides may use different
+    sourcing mechanisms freely (e.g. vision via --endpoint, text via
+    --text-config-file). Any other shape (e.g. 2 vision endpoints ALSO
+    given a text endpoint, or a text flag with no vision side at all) is a
+    user error, raising SystemExit naming exactly what's wrong -- same
+    style as _resolve_vision_endpoints' own existing errors."""
+    if not text_endpoint_alias and not text_config_file:
+        vision_a, vision_b = _resolve_vision_endpoints(endpoint_aliases, config_file)
+        return vision_a, vision_b, "vision"
+
+    if config_file:
+        vision_endpoints = resolve_endpoints_from_config_file(config_file)
+        if len(vision_endpoints) != 1:
+            raise SystemExit(
+                f"--config-file paired with --text-endpoint/--text-config-file requires exactly 1 pasted "
+                f"session table for the vision side, got {len(vision_endpoints)} in {config_file}"
+            )
+        vision_endpoint = vision_endpoints[0]
+    elif endpoint_aliases:
+        if len(endpoint_aliases) != 1:
+            raise SystemExit(
+                f"--endpoint paired with --text-endpoint/--text-config-file requires exactly 1 alias for the "
+                f"vision side, got {len(endpoint_aliases)}: {endpoint_aliases}"
+            )
+        vision_endpoint = resolve_endpoint_from_env(endpoint_aliases[0])
+    else:
+        raise SystemExit(
+            "--text-endpoint/--text-config-file requires a vision-side --endpoint or --config-file too -- "
+            "the gate needs one vision read and one text read"
+        )
+
+    if text_config_file:
+        text_endpoints = resolve_endpoints_from_config_file(text_config_file)
+        if len(text_endpoints) != 1:
+            raise SystemExit(
+                f"--text-config-file requires exactly 1 pasted session table, got {len(text_endpoints)} in "
+                f"{text_config_file}"
+            )
+        text_endpoint = text_endpoints[0]
+    else:
+        text_endpoint = resolve_endpoint_from_env(text_endpoint_alias)
+
+    return vision_endpoint, text_endpoint, "text"
+
+
 async def _run_all(
     keys_and_paths: list[tuple[str, Path]], endpoints: tuple[ModelEndpoint, ModelEndpoint], concurrency: int,
     corpus_directory: Path, cache_directory: Path,
@@ -554,19 +617,36 @@ def main() -> int:
     endpoint_group = parser.add_mutually_exclusive_group()
     endpoint_group.add_argument(
         "--endpoint", action="append", default=None, metavar="ALIAS",
-        help="Use an explicit OpenAI-compatible endpoint instead of KISSKI auto-discovery -- pass exactly twice "
-             "(the gate needs two independent reads), e.g. --endpoint MPCDF_A --endpoint MPCDF_B. Each ALIAS must "
-             "have <ALIAS>_BASE_URL, <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment.",
+        help="Use an explicit OpenAI-compatible endpoint instead of KISSKI auto-discovery for the VISION side -- "
+             "pass exactly twice for two independent vision reads (e.g. --endpoint MPCDF_A --endpoint MPCDF_B), "
+             "or exactly once when paired with --text-endpoint/--text-config-file. Each ALIAS must have "
+             "<ALIAS>_BASE_URL, <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment.",
     )
     endpoint_group.add_argument(
         "--config-file", nargs="?", const=DEFAULT_SESSIONS_FILENAME, default=None, metavar="PATH",
-        help="Same as --endpoint, but sources both endpoints from a pasted-session-table file instead of env "
-             f"vars -- PATH defaults to {DEFAULT_SESSIONS_FILENAME} when omitted; must contain exactly 2 pasted "
-             "session tables. See evaluation/hpc/llm-mpcdf.md.",
+        help="Same as --endpoint, but sources the vision endpoint(s) from a pasted-session-table file instead of "
+             f"env vars -- PATH defaults to {DEFAULT_SESSIONS_FILENAME} when omitted; must contain exactly 2 "
+             "pasted session tables (two vision reads), or exactly 1 when paired with "
+             "--text-endpoint/--text-config-file. See evaluation/hpc/llm-mpcdf.md.",
+    )
+    text_group = parser.add_mutually_exclusive_group()
+    text_group.add_argument(
+        "--text-endpoint", default=None, metavar="ALIAS",
+        help="Pair the vision endpoint (--endpoint or --config-file, exactly 1 either way) with a text-only "
+             "endpoint fed freshly-OCR'd page text instead of a second vision read -- ALIAS must have "
+             "<ALIAS>_BASE_URL, <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment. See design spec "
+             "docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md.",
+    )
+    text_group.add_argument(
+        "--text-config-file", nargs="?", const=DEFAULT_SESSIONS_FILENAME, default=None, metavar="PATH",
+        help="Same as --text-endpoint, but sources the text endpoint from a pasted-session-table file -- PATH "
+             f"defaults to {DEFAULT_SESSIONS_FILENAME} when omitted; must contain exactly 1 pasted session table.",
     )
     args = parser.parse_args()
     if args.config_file:
         args.config_file = Path(args.config_file)
+    if args.text_config_file:
+        args.text_config_file = Path(args.text_config_file)
     if args.spot_check is not None:
         return _spot_check(corpus_dir(_CORPUS_NAME), args.spot_check)
     return _generate(args)

@@ -26,6 +26,7 @@ from evaluation.scripts.generate_dnb_toc_ground_truth import (
     _is_stale_bulk_gate_entry,
     _lock_path,
     _release_lock,
+    _resolve_endpoints,
     _resolve_vision_endpoints,
     _retry_after_seconds,
     _run_book,
@@ -729,3 +730,85 @@ class TestResolveVisionEndpoints(unittest.TestCase):
 
             with self.assertRaises(SystemExit):
                 _resolve_vision_endpoints(None, path)
+
+
+class TestResolveEndpoints(unittest.TestCase):
+    def test_no_text_side_delegates_to_resolve_vision_endpoints(self):
+        env = {
+            "MPCDF_A_BASE_URL": "https://a.invalid/v1", "MPCDF_A_API_KEY": "ka", "MPCDF_A_MODEL": "model-a",
+            "MPCDF_B_BASE_URL": "https://b.invalid/v1", "MPCDF_B_API_KEY": "kb", "MPCDF_B_MODEL": "model-b",
+        }
+        with patch.dict(os.environ, env, clear=False):
+            vision, second, kind = _resolve_endpoints(["MPCDF_A", "MPCDF_B"], None, None, None)
+
+        self.assertEqual(kind, "vision")
+        self.assertEqual(vision.model_id, "model-a")
+        self.assertEqual(second.model_id, "model-b")
+
+    def test_one_vision_alias_plus_one_text_alias_pairs_them(self):
+        env = {
+            "MPCDF_A_BASE_URL": "https://a.invalid/v1", "MPCDF_A_API_KEY": "ka", "MPCDF_A_MODEL": "vision-model",
+            "TEXT_A_BASE_URL": "https://c.invalid/v1", "TEXT_A_API_KEY": "kc", "TEXT_A_MODEL": "text-model",
+        }
+        with patch.dict(os.environ, env, clear=False):
+            vision, second, kind = _resolve_endpoints(["MPCDF_A"], None, "TEXT_A", None)
+
+        self.assertEqual(kind, "text")
+        self.assertEqual(vision.model_id, "vision-model")
+        self.assertEqual(second.model_id, "text-model")
+
+    def test_vision_config_file_plus_text_config_file_pairs_them(self):
+        vision_table = "framework_args\t--model=vision-model\nkey\tkv\nurl\thttps://v.invalid/v1\n"
+        text_table = "framework_args\t--model=text-model\nkey\tkt\nurl\thttps://t.invalid/v1\n"
+        with tempfile.TemporaryDirectory() as tmp:
+            vision_path = Path(tmp) / "vision.txt"
+            text_path = Path(tmp) / "text.txt"
+            vision_path.write_text(vision_table)
+            text_path.write_text(text_table)
+
+            vision, second, kind = _resolve_endpoints(None, vision_path, None, text_path)
+
+        self.assertEqual(kind, "text")
+        self.assertEqual(vision.model_id, "vision-model")
+        self.assertEqual(second.model_id, "text-model")
+
+    def test_vision_endpoint_alias_plus_text_config_file_can_be_mixed(self):
+        env = {"MPCDF_A_BASE_URL": "https://a.invalid/v1", "MPCDF_A_API_KEY": "ka", "MPCDF_A_MODEL": "vision-model"}
+        text_table = "framework_args\t--model=text-model\nkey\tkt\nurl\thttps://t.invalid/v1\n"
+        with tempfile.TemporaryDirectory() as tmp:
+            text_path = Path(tmp) / "text.txt"
+            text_path.write_text(text_table)
+            with patch.dict(os.environ, env, clear=False):
+                vision, second, kind = _resolve_endpoints(["MPCDF_A"], None, None, text_path)
+
+        self.assertEqual(kind, "text")
+        self.assertEqual(vision.model_id, "vision-model")
+        self.assertEqual(second.model_id, "text-model")
+
+    def test_two_vision_aliases_plus_a_text_alias_is_a_user_error(self):
+        with self.assertRaises(SystemExit):
+            _resolve_endpoints(["MPCDF_A", "MPCDF_B"], None, "TEXT_A", None)
+
+    def test_text_alias_with_no_vision_side_is_a_user_error(self):
+        with self.assertRaises(SystemExit):
+            _resolve_endpoints(None, None, "TEXT_A", None)
+
+    def test_text_config_file_with_two_tables_is_a_user_error(self):
+        one_table = "framework_args\t--model=vision-model\nkey\tkv\nurl\thttps://v.invalid/v1\n"
+        with tempfile.TemporaryDirectory() as tmp:
+            vision_path = Path(tmp) / "vision.txt"
+            text_path = Path(tmp) / "text.txt"
+            vision_path.write_text(one_table)
+            text_path.write_text(one_table + "\n" + one_table)
+
+            with self.assertRaises(SystemExit):
+                _resolve_endpoints(None, vision_path, None, text_path)
+
+    def test_vision_config_file_with_two_tables_plus_a_text_alias_is_a_user_error(self):
+        one_table = "framework_args\t--model=x\nkey\tk\nurl\thttps://a.invalid/v1\n"
+        with tempfile.TemporaryDirectory() as tmp:
+            vision_path = Path(tmp) / "vision.txt"
+            vision_path.write_text(one_table + "\n" + one_table)
+
+            with self.assertRaises(SystemExit):
+                _resolve_endpoints(None, vision_path, "TEXT_A", None)

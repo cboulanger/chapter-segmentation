@@ -82,16 +82,21 @@ def load_cached_llm_entries(cache_directory: Path, key: str, model: str) -> Opti
     ]
 
 
-def write_cached_llm_entries(cache_directory: Path, key: str, model: str, entries: list[TocEntry]) -> None:
+def write_cached_llm_entries(
+    cache_directory: Path, key: str, model: str, entries: list[TocEntry], *, kind: str = "vision",
+) -> None:
     """Caches entries for (key, model). Callers should only call this
     with a non-empty entries list -- an empty result could be a genuine
     "no TOC content" or a transient failure, and caching it either way
     would make a later re-run trust a possibly-transient empty result
-    forever instead of retrying."""
+    forever instead of retrying. `kind` ("vision" or "text", default
+    "vision") records which extraction path produced these entries --
+    see load_cached_kind's own docstring for how a caller reads it back."""
     path = cache_path(cache_directory, key, model)
     path.parent.mkdir(parents=True, exist_ok=True)
     data = {
         "generated_at": time.time(),
+        "kind": kind,
         "entries": [
             {
                 "title": e.title, "printed_page_number": e.printed_page_number,
@@ -104,6 +109,24 @@ def write_cached_llm_entries(cache_directory: Path, key: str, model: str, entrie
     tmp = path.with_suffix(".tmp")
     tmp.write_text(json.dumps(data, indent=2), encoding="utf-8")
     tmp.replace(path)
+
+
+def load_cached_kind(cache_directory: Path, key: str, model: str) -> str:
+    """Which extraction path produced (key, model)'s cached entries --
+    "vision" or "text". Reads the "kind" field write_cached_llm_entries
+    writes; absent on any cache file written before this field existed
+    (every cache file to date came from vision_extract_toc_entries), which
+    is treated as "vision" for full backward compatibility -- see design
+    spec docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-
+    design.md section 4. Also returns "vision" if the cache file doesn't
+    exist at all -- callers (arbitrate_dnb_toc.py) only ever call this for
+    a (key, model) pair they already know has a cache file, but this keeps
+    the function total rather than raising on a caller's bug."""
+    path = cache_path(cache_directory, key, model)
+    if not path.exists():
+        return "vision"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data.get("kind", "vision")
 
 
 _VISION_TOC_EXTRACTION_PROMPT = """\

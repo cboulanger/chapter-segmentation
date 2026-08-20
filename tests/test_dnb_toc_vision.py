@@ -6,6 +6,7 @@ blank) PDF via the real pdftoppm binary -- poppler is already a documented
 project dependency (evaluation/README.md). vision_extract_toc_entries is
 tested with a mocked OpenAI-shaped client, no real network call."""
 
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -17,6 +18,7 @@ from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_vision import (
     _MAX_VISION_PAGES,
     cache_path,
+    load_cached_kind,
     load_cached_llm_entries,
     render_pages_to_images,
     versioned_cache_dir,
@@ -246,3 +248,34 @@ class TestVisionExtractTocEntries(unittest.IsolatedAsyncioTestCase):
             second_call_kwargs = client.chat.completions.create.call_args_list[1].kwargs
             self.assertEqual(first_call_kwargs["max_tokens"], 4096)
             self.assertEqual(second_call_kwargs["max_tokens"], 8192)
+
+
+class TestLoadCachedKind(unittest.TestCase):
+    def test_defaults_to_vision_when_kind_absent(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            path = cache_path(cache_dir, "book1", "model-a")
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps({"generated_at": 0, "entries": []}), encoding="utf-8")
+
+            self.assertEqual(load_cached_kind(cache_dir, "book1", "model-a"), "vision")
+
+    def test_returns_the_written_kind(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            entries = [TocEntry(title="X", printed_page_number=1, source_page_index=0)]
+            write_cached_llm_entries(cache_dir, "book2", "model-a", entries, kind="text")
+
+            self.assertEqual(load_cached_kind(cache_dir, "book2", "model-a"), "text")
+
+    def test_defaults_to_vision_for_a_missing_cache_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertEqual(load_cached_kind(Path(tmp), "book3", "model-a"), "vision")
+
+    def test_write_without_kind_argument_defaults_to_vision(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            entries = [TocEntry(title="X", printed_page_number=1, source_page_index=0)]
+            write_cached_llm_entries(cache_dir, "book4", "model-a", entries)
+
+            self.assertEqual(load_cached_kind(cache_dir, "book4", "model-a"), "vision")

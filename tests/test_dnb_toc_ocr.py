@@ -131,6 +131,13 @@ class TestResolveTessdataBestEnv(unittest.TestCase):
 
         self.assertIn("eng", str(ctx.exception))
 
+    def test_raises_a_distinct_message_when_the_directory_does_not_exist(self):
+        with patch.dict(os.environ, {"TESSDATA_BEST_DIR": "/nonexistent/tessdata_best"}, clear=False):
+            with self.assertRaises(RuntimeError) as ctx:
+                _resolve_tessdata_best_env()
+
+        self.assertIn("does not exist", str(ctx.exception))
+
 
 class TestOcrPagesToRowsTessdataWiring(unittest.TestCase):
     def test_passes_the_resolved_tessdata_env_through_to_ocrmypdf(self):

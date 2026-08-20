@@ -97,6 +97,8 @@ def _resolve_tessdata_best_env(languages: tuple[str, ...] = ("deu", "eng")) -> d
     directory = os.environ.get(_TESSDATA_BEST_DIR_ENV_VAR)
     if not directory:
         return None
+    if not Path(directory).is_dir():
+        raise RuntimeError(f"{_TESSDATA_BEST_DIR_ENV_VAR}={directory} does not exist or is not a directory")
     missing = [lang for lang in languages if not (Path(directory) / f"{lang}.traineddata").exists()]
     if missing:
         raise RuntimeError(

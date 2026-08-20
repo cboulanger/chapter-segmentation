@@ -358,14 +358,19 @@ options:
 ## `generate_dnb_toc_ground_truth.py`
 
 Generates bulk-tier `dnb-toc-only` ground truth by sending each book's page
-images to two independent vision-capable KISSKI models and writing
+images to two independent vision-capable KISSKI models (or, with
+`--text-endpoint`/`--text-config-file`, one vision-capable model paired
+with a text-only model fed freshly-OCR'd page text) and writing
 `.expected.json` only when they agree well enough -- see
-`evaluation/README.md`'s "Building dnb-toc-only ground truth".
+`evaluation/README.md`'s "Building dnb-toc-only ground truth" and design
+spec `docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md`.
 
 ```
 usage: generate_dnb_toc_ground_truth.py [-h] [--limit LIMIT]
                                         [--concurrency CONCURRENCY]
-                                        [--spot-check N] [--endpoint ALIAS]
+                                        [--spot-check N]
+                                        [--endpoint ALIAS | --config-file [PATH]]
+                                        [--text-endpoint ALIAS | --text-config-file [PATH]]
 
 Generates bulk-tier structured ground truth for dnb-toc-only (design spec
 docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md, which
@@ -399,11 +404,32 @@ options:
   --spot-check N        Instead of generating, sample N passing bulk-tier
                         books and walk through a visual Accept/Reject check
   --endpoint ALIAS      Use an explicit OpenAI-compatible endpoint instead of
-                        KISSKI auto-discovery -- pass exactly twice (the gate
-                        needs two independent reads), e.g. --endpoint MPCDF_A
-                        --endpoint MPCDF_B. Each ALIAS must have
-                        <ALIAS>_BASE_URL, <ALIAS>_API_KEY, <ALIAS>_MODEL set
-                        in the environment.
+                        KISSKI auto-discovery for the VISION side -- pass
+                        exactly twice for two independent vision reads (e.g.
+                        --endpoint MPCDF_A --endpoint MPCDF_B), or exactly
+                        once when paired with --text-endpoint/--text-config-
+                        file. Each ALIAS must have <ALIAS>_BASE_URL,
+                        <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment.
+  --config-file [PATH]  Same as --endpoint, but sources the vision endpoint(s)
+                        from a pasted-session-table file instead of env vars
+                        -- PATH defaults to .mpcdf-sessions.txt when omitted;
+                        must contain exactly 2 pasted session tables (two
+                        vision reads), or exactly 1 when paired with --text-
+                        endpoint/--text-config-file. See evaluation/hpc/llm-
+                        mpcdf.md.
+  --text-endpoint ALIAS
+                        Pair the vision endpoint (--endpoint or --config-file,
+                        exactly 1 either way) with a text-only endpoint fed
+                        freshly-OCR'd page text instead of a second vision
+                        read -- ALIAS must have <ALIAS>_BASE_URL,
+                        <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment.
+                        See design spec docs/superpowers/specs/2026-08-20-dnb-
+                        toc-vision-text-pairing-design.md.
+  --text-config-file [PATH]
+                        Same as --text-endpoint, but sources the text endpoint
+                        from a pasted-session-table file -- PATH defaults to
+                        .mpcdf-sessions.txt when omitted; must contain exactly
+                        1 pasted session table.
 ```
 
 ## `generate_public_evaluation_cache.py`

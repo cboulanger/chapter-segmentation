@@ -560,6 +560,243 @@ dot-leader TOC's title and page-number columns into separate blocks."
 
 ---
 
+## Task 2.5: Optional `tessdata_best` support for OCR quality
+
+Added after Task 2 landed, in response to a user request to use tesseract's
+higher-accuracy `tessdata_best` language models instead of whatever ships by
+default (`tessdata_fast`, on this machine's Homebrew `tesseract-lang`
+formula -- confirmed by inspection: Homebrew has no `tessdata_best` formula
+at all, so this is never present unless a human downloads it by hand from
+https://github.com/tesseract-ocr/tessdata_best per language). A prior
+investigation (`docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md`
+§1c) tested `tessdata_best` for a *different* downstream consumer (a fragile
+regex heuristic) and found it "a mixed, marginal improvement... not
+adopted" -- but `text_extract_toc_entries` (Task 3) feeds OCR'd text to an
+LLM instructed to read past OCR artifacts, a more tolerant consumer, so the
+tradeoff is worth re-offering as an opt-in here rather than assumed settled.
+
+Purely opt-in via a `TESSDATA_BEST_DIR` environment variable pointing at a
+directory of `.traineddata` files -- unset (the default) changes nothing,
+`ocr_pages_to_rows` behaves exactly as Task 2 built it. Set-but-invalid
+(missing a required language's file) raises immediately with a clear
+message, rather than either silently falling back or failing deep inside a
+cryptic tesseract subprocess error -- same "raise naming exactly what's
+wrong" convention `evaluation/inference_endpoints.py`'s
+`resolve_endpoint_from_env` already established for a similar
+env-var-driven, human-diagnosable setup step.
+
+**Files:**
+- Modify: `evaluation/dnb_toc_ocr.py`
+- Modify: `tests/test_dnb_toc_ocr.py`
+- Modify: `evaluation/README.md`
+
+- [ ] **Step 1: Write the failing tests**
+
+Change `tests/test_dnb_toc_ocr.py`'s imports from:
+
+```python
+import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import AsyncMock, MagicMock, patch
+
+from evaluation.dnb_toc_ocr import _rows_from_alto_xml, text_extract_toc_entries
+```
+
+to:
+
+```python
+import os
+import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import AsyncMock, MagicMock, patch
+
+from evaluation.dnb_toc_ocr import _resolve_tessdata_best_env, _rows_from_alto_xml, ocr_pages_to_rows, text_extract_toc_entries
+```
+
+Append this test class to the end of `tests/test_dnb_toc_ocr.py`:
+
+```python
+class TestResolveTessdataBestEnv(unittest.TestCase):
+    def test_returns_none_when_env_var_absent(self):
+        with patch.dict(os.environ, {}, clear=False):
+            os.environ.pop("TESSDATA_BEST_DIR", None)
+            self.assertIsNone(_resolve_tessdata_best_env())
+
+    def test_returns_tessdata_prefix_pointing_at_the_directory_when_all_languages_present(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "deu.traineddata").write_bytes(b"fake")
+            (Path(tmp) / "eng.traineddata").write_bytes(b"fake")
+            with patch.dict(os.environ, {"TESSDATA_BEST_DIR": tmp}, clear=False):
+                env = _resolve_tessdata_best_env()
+
+        self.assertIsNotNone(env)
+        self.assertEqual(env["TESSDATA_PREFIX"], tmp)
+
+    def test_raises_naming_the_missing_language_when_dir_is_incomplete(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "deu.traineddata").write_bytes(b"fake")
+            with patch.dict(os.environ, {"TESSDATA_BEST_DIR": tmp}, clear=False):
+                with self.assertRaises(RuntimeError) as ctx:
+                    _resolve_tessdata_best_env()
+
+        self.assertIn("eng", str(ctx.exception))
+
+
+class TestOcrPagesToRowsTessdataWiring(unittest.TestCase):
+    def test_passes_the_resolved_tessdata_env_through_to_ocrmypdf(self):
+        fake_env = {"TESSDATA_PREFIX": "/fake/tessdata_best"}
+        fake_result = MagicMock(returncode=0)
+        with patch("evaluation.dnb_toc_ocr._resolve_tessdata_best_env", return_value=fake_env), \
+             patch("evaluation.dnb_toc_ocr.subprocess.run", return_value=fake_result) as mock_run, \
+             patch("evaluation.dnb_toc_ocr.pdfalto_runner.ensure_alto_xml", return_value=Path("/fake/out.alto.xml")), \
+             patch("evaluation.dnb_toc_ocr._rows_from_alto_xml", return_value=["row"]):
+            ocr_pages_to_rows(Path("/fake/book.pdf"))
+
+        mock_run.assert_called_once()
+        self.assertEqual(mock_run.call_args.kwargs["env"], fake_env)
+
+    def test_passes_none_env_when_tessdata_best_is_not_configured(self):
+        fake_result = MagicMock(returncode=0)
+        with patch("evaluation.dnb_toc_ocr._resolve_tessdata_best_env", return_value=None), \
+             patch("evaluation.dnb_toc_ocr.subprocess.run", return_value=fake_result) as mock_run, \
+             patch("evaluation.dnb_toc_ocr.pdfalto_runner.ensure_alto_xml", return_value=Path("/fake/out.alto.xml")), \
+             patch("evaluation.dnb_toc_ocr._rows_from_alto_xml", return_value=["row"]):
+            ocr_pages_to_rows(Path("/fake/book.pdf"))
+
+        mock_run.assert_called_once()
+        self.assertIsNone(mock_run.call_args.kwargs["env"])
+```
+
+- [ ] **Step 2: Run the test to verify it fails**
+
+Run: `uv run pytest tests/test_dnb_toc_ocr.py -v`
+Expected: FAIL with `ImportError: cannot import name '_resolve_tessdata_best_env'`
+
+- [ ] **Step 3: Add `_resolve_tessdata_best_env` and wire it into `ocr_pages_to_rows`**
+
+In `evaluation/dnb_toc_ocr.py`, change the imports from:
+
+```python
+import subprocess
+import tempfile
+import xml.etree.ElementTree as ET
+from pathlib import Path
+from typing import Any
+```
+
+to:
+
+```python
+import os
+import subprocess
+import tempfile
+import xml.etree.ElementTree as ET
+from pathlib import Path
+from typing import Any
+```
+
+Add this constant and function directly above `def ocr_pages_to_rows`:
+
+```python
+_TESSDATA_BEST_DIR_ENV_VAR = "TESSDATA_BEST_DIR"
+
+
+def _resolve_tessdata_best_env(languages: tuple[str, ...] = ("deu", "eng")) -> dict[str, str] | None:
+    """Resolves an optional subprocess environment override pointing
+    ocrmypdf/tesseract at a tessdata_best directory instead of whatever
+    ships by default (Homebrew's tesseract-lang formula ships
+    tessdata_fast only -- there is no Homebrew formula for tessdata_best,
+    so this is opt-in via the TESSDATA_BEST_DIR environment variable after
+    a manual per-language download from
+    https://github.com/tesseract-ocr/tessdata_best -- see
+    evaluation/README.md's "Building dnb-toc-only ground truth"). Returns
+    None (no env override -- ocrmypdf uses whatever tessdata is already on
+    PATH/its default location) when the variable isn't set at all; purely
+    opt-in, no default guessed. When it IS set, validates the directory
+    actually contains every requested language's .traineddata file and
+    raises RuntimeError naming exactly what's missing if not -- a
+    misconfigured explicit request should fail loudly with an actionable
+    message, not silently fall back to the default or surface as a
+    cryptic tesseract error deep inside a subprocess (same
+    raise-naming-what's-wrong convention
+    evaluation/inference_endpoints.py's resolve_endpoint_from_env already
+    established for a similar env-var-driven setup step)."""
+    directory = os.environ.get(_TESSDATA_BEST_DIR_ENV_VAR)
+    if not directory:
+        return None
+    missing = [lang for lang in languages if not (Path(directory) / f"{lang}.traineddata").exists()]
+    if missing:
+        raise RuntimeError(
+            f"{_TESSDATA_BEST_DIR_ENV_VAR}={directory} is missing traineddata for: {', '.join(missing)} -- "
+            f"download from https://github.com/tesseract-ocr/tessdata_best"
+        )
+    return {**os.environ, "TESSDATA_PREFIX": directory}
+```
+
+Change `ocr_pages_to_rows`'s `subprocess.run` call from:
+
+```python
+        result = subprocess.run(
+            ["ocrmypdf", "--force-ocr", "-l", "deu+eng", str(pdf_path), str(ocr_pdf_path)],
+            capture_output=True, text=True,
+        )
+```
+
+to:
+
+```python
+        result = subprocess.run(
+            ["ocrmypdf", "--force-ocr", "-l", "deu+eng", str(pdf_path), str(ocr_pdf_path)],
+            capture_output=True, text=True, env=_resolve_tessdata_best_env(),
+        )
+```
+
+- [ ] **Step 4: Run the test to verify it passes**
+
+Run: `uv run pytest tests/test_dnb_toc_ocr.py -v`
+Expected: PASS (all tests, including the 4 pre-existing ones)
+
+- [ ] **Step 5: Document the setup step**
+
+In `evaluation/README.md`, in the "Building dnb-toc-only ground truth" section, insert this new paragraph directly after the existing bulk-tier paragraph that ends "...see this file's 'Cleaning a badly-scanned PDF' section for the install command." (i.e. right before the "**Eval tier**" heading). Insert:
+
+```
+The text-extraction side of a vision+text pairing (`--text-endpoint`/
+`--text-config-file`, `evaluation/dnb_toc_ocr.py`) OCRs each book's TOC
+pages via `ocrmypdf` -- by default using whatever tesseract language data
+is already installed (Homebrew's `tesseract-lang` formula ships
+`tessdata_fast`). For higher OCR accuracy, download `tessdata_best`'s
+`deu.traineddata`/`eng.traineddata` by hand from
+https://github.com/tesseract-ocr/tessdata_best into one directory and set
+`TESSDATA_BEST_DIR` to that directory's path -- picked up automatically,
+with no code change, the next time `ocr_pages_to_rows` runs. Unset (the
+default) uses the system's normal tessdata.
+```
+
+- [ ] **Step 6: Run the full test suite**
+
+Run: `uv run pytest -q`
+Expected: PASS, no regressions.
+
+- [ ] **Step 7: Commit**
+
+```bash
+git add evaluation/dnb_toc_ocr.py tests/test_dnb_toc_ocr.py evaluation/README.md
+git commit -m "feat: support an opt-in tessdata_best directory for OCR quality
+
+TESSDATA_BEST_DIR, when set, points ocrmypdf at higher-accuracy tesseract
+language data instead of the Homebrew default (tessdata_fast) -- a prior
+investigation found tessdata_best only marginally helped a fragile regex
+heuristic, but the text-extraction pairing feeds an LLM instructed to
+read past OCR artifacts, a more tolerant consumer, so it's worth
+re-offering as an opt-in. Unset changes nothing; set-but-incomplete
+raises immediately naming the missing language."
+```
+
+---
+
 ## Task 3: `evaluation/dnb_toc_ocr.py` — text extraction prompt and `text_extract_toc_entries`
 
 Adds the LLM-calling half of the module (spec §3): a text-reading variant of `_VISION_TOC_EXTRACTION_PROMPT` and `text_extract_toc_entries`, structurally parallel to `vision_extract_toc_entries` (`evaluation/dnb_toc_vision.py:194`).

@@ -8,12 +8,13 @@ only one of that module's tests that shells out to a real binary).
 text_extract_toc_entries is tested with ocr_pages_to_rows mocked out and a
 mocked OpenAI-shaped client, no real network call or OCR."""
 
+import os
 import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
-from evaluation.dnb_toc_ocr import _rows_from_alto_xml
+from evaluation.dnb_toc_ocr import _resolve_tessdata_best_env, _rows_from_alto_xml, ocr_pages_to_rows
 
 
 _ALTO_NS_URI = "http://www.loc.gov/standards/alto/ns-v3#"
@@ -103,3 +104,54 @@ class TestRowsFromAltoXml(unittest.TestCase):
             alto_path = _write_alto_fixture(Path(tmp) / "test.alto.xml")
             rows = _rows_from_alto_xml(alto_path)
             self.assertEqual(rows[2], "")
+
+
+class TestResolveTessdataBestEnv(unittest.TestCase):
+    def test_returns_none_when_env_var_absent(self):
+        with patch.dict(os.environ, {}, clear=False):
+            os.environ.pop("TESSDATA_BEST_DIR", None)
+            self.assertIsNone(_resolve_tessdata_best_env())
+
+    def test_returns_tessdata_prefix_pointing_at_the_directory_when_all_languages_present(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "deu.traineddata").write_bytes(b"fake")
+            (Path(tmp) / "eng.traineddata").write_bytes(b"fake")
+            with patch.dict(os.environ, {"TESSDATA_BEST_DIR": tmp}, clear=False):
+                env = _resolve_tessdata_best_env()
+
+        self.assertIsNotNone(env)
+        self.assertEqual(env["TESSDATA_PREFIX"], tmp)
+
+    def test_raises_naming_the_missing_language_when_dir_is_incomplete(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "deu.traineddata").write_bytes(b"fake")
+            with patch.dict(os.environ, {"TESSDATA_BEST_DIR": tmp}, clear=False):
+                with self.assertRaises(RuntimeError) as ctx:
+                    _resolve_tessdata_best_env()
+
+        self.assertIn("eng", str(ctx.exception))
+
+
+class TestOcrPagesToRowsTessdataWiring(unittest.TestCase):
+    def test_passes_the_resolved_tessdata_env_through_to_ocrmypdf(self):
+        fake_env = {"TESSDATA_PREFIX": "/fake/tessdata_best"}
+        fake_result = MagicMock(returncode=0)
+        with patch("evaluation.dnb_toc_ocr._resolve_tessdata_best_env", return_value=fake_env), \
+             patch("evaluation.dnb_toc_ocr.subprocess.run", return_value=fake_result) as mock_run, \
+             patch("evaluation.dnb_toc_ocr.pdfalto_runner.ensure_alto_xml", return_value=Path("/fake/out.alto.xml")), \
+             patch("evaluation.dnb_toc_ocr._rows_from_alto_xml", return_value=["row"]):
+            ocr_pages_to_rows(Path("/fake/book.pdf"))
+
+        mock_run.assert_called_once()
+        self.assertEqual(mock_run.call_args.kwargs["env"], fake_env)
+
+    def test_passes_none_env_when_tessdata_best_is_not_configured(self):
+        fake_result = MagicMock(returncode=0)
+        with patch("evaluation.dnb_toc_ocr._resolve_tessdata_best_env", return_value=None), \
+             patch("evaluation.dnb_toc_ocr.subprocess.run", return_value=fake_result) as mock_run, \
+             patch("evaluation.dnb_toc_ocr.pdfalto_runner.ensure_alto_xml", return_value=Path("/fake/out.alto.xml")), \
+             patch("evaluation.dnb_toc_ocr._rows_from_alto_xml", return_value=["row"]):
+            ocr_pages_to_rows(Path("/fake/book.pdf"))
+
+        mock_run.assert_called_once()
+        self.assertIsNone(mock_run.call_args.kwargs["env"])

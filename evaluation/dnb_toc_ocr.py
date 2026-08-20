@@ -9,6 +9,7 @@ its cache_path/load_cached_llm_entries/write_cached_llm_entries directly
 that module's own "kind" field for how a cached entry records which
 extraction path produced it)."""
 
+import os
 import subprocess
 import tempfile
 import xml.etree.ElementTree as ET
@@ -70,6 +71,41 @@ def _rows_from_alto_xml(alto_path: Path) -> list[str]:
     return page_rows
 
 
+_TESSDATA_BEST_DIR_ENV_VAR = "TESSDATA_BEST_DIR"
+
+
+def _resolve_tessdata_best_env(languages: tuple[str, ...] = ("deu", "eng")) -> dict[str, str] | None:
+    """Resolves an optional subprocess environment override pointing
+    ocrmypdf/tesseract at a tessdata_best directory instead of whatever
+    ships by default (Homebrew's tesseract-lang formula ships
+    tessdata_fast only -- there is no Homebrew formula for tessdata_best,
+    so this is opt-in via the TESSDATA_BEST_DIR environment variable after
+    a manual per-language download from
+    https://github.com/tesseract-ocr/tessdata_best -- see
+    evaluation/README.md's "Building dnb-toc-only ground truth"). Returns
+    None (no env override -- ocrmypdf uses whatever tessdata is already on
+    PATH/its default location) when the variable isn't set at all; purely
+    opt-in, no default guessed. When it IS set, validates the directory
+    actually contains every requested language's .traineddata file and
+    raises RuntimeError naming exactly what's missing if not -- a
+    misconfigured explicit request should fail loudly with an actionable
+    message, not silently fall back to the default or surface as a
+    cryptic tesseract error deep inside a subprocess (same
+    raise-naming-what's-wrong convention
+    evaluation/inference_endpoints.py's resolve_endpoint_from_env already
+    established for a similar env-var-driven setup step)."""
+    directory = os.environ.get(_TESSDATA_BEST_DIR_ENV_VAR)
+    if not directory:
+        return None
+    missing = [lang for lang in languages if not (Path(directory) / f"{lang}.traineddata").exists()]
+    if missing:
+        raise RuntimeError(
+            f"{_TESSDATA_BEST_DIR_ENV_VAR}={directory} is missing traineddata for: {', '.join(missing)} -- "
+            f"download from https://github.com/tesseract-ocr/tessdata_best"
+        )
+    return {**os.environ, "TESSDATA_PREFIX": directory}
+
+
 def ocr_pages_to_rows(pdf_path: Path, *, pdfalto_bin: str | None = None) -> list[str]:
     """Forces fresh OCR on pdf_path (ocrmypdf --force-ocr, unconditionally
     -- this corpus's PDFs are pre-filtered to 1-3 TOC pages, so re-OCRing
@@ -92,7 +128,7 @@ def ocr_pages_to_rows(pdf_path: Path, *, pdfalto_bin: str | None = None) -> list
         ocr_pdf_path = tmp_dir / f"{pdf_path.stem}.ocr.pdf"
         result = subprocess.run(
             ["ocrmypdf", "--force-ocr", "-l", "deu+eng", str(pdf_path), str(ocr_pdf_path)],
-            capture_output=True, text=True,
+            capture_output=True, text=True, env=_resolve_tessdata_best_env(),
         )
         if result.returncode != 0:
             raise RuntimeError(f"ocrmypdf failed on {pdf_path}: {result.stderr}")

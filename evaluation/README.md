@@ -109,6 +109,17 @@ covers resolving those instead of discarding them. Requires `pdftoppm`
 (poppler) on `PATH` -- see this file's "Cleaning a badly-scanned PDF" section
 for the install command.
 
+The text-extraction side of a vision+text pairing (`--text-endpoint`/
+`--text-config-file`, `evaluation/dnb_toc_ocr.py`) OCRs each book's TOC
+pages via `ocrmypdf` -- by default using whatever tesseract language data
+is already installed (Homebrew's `tesseract-lang` formula ships
+`tessdata_fast`). For higher OCR accuracy, download `tessdata_best`'s
+`deu.traineddata`/`eng.traineddata` by hand from
+https://github.com/tesseract-ocr/tessdata_best into one directory and set
+`TESSDATA_BEST_DIR` to that directory's path -- picked up automatically,
+with no code change, the next time `ocr_pages_to_rows` runs. Unset (the
+default) uses the system's normal tessdata.
+
 **Eval tier** (`"verified": true`, hand-transcribed, held out of the bulk
 tier and never drafted by either extractor) -- for every ID in
 `evaluation/corpus/dnb-toc-only/eval_tier_ids.json`:

@@ -11,6 +11,7 @@ from pathlib import Path
 from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_vision import write_cached_llm_entries
 from evaluation.scripts.arbitrate_dnb_toc import (
+    _cached_kinds_for_book,
     _cached_models_for_book,
     books_needing_arbitration,
     format_book_report,
@@ -99,7 +100,7 @@ class TestFormatBookReport(unittest.TestCase):
             "book2", "Some Title", Path("/tmp/book2.pdf"),
             {"model-a": [_entry("Einleitung", 9)]},
         )
-        self.assertIn("Only model-a returned usable output", report)
+        self.assertIn("Only vision: model-a returned usable output", report)
         self.assertIn("Einleitung", report)
 
     def test_more_than_two_models_falls_back_to_a_plain_per_model_listing(self):
@@ -125,6 +126,40 @@ class TestFormatBookReport(unittest.TestCase):
             {"model-a": [TocEntry(title="Mystery", printed_page_number=None, source_page_index=0)]},
         )
         self.assertIn("p.   ?", report)
+
+
+class TestFormatBookReportKindLabels(unittest.TestCase):
+    def test_kind_labels_distinguish_vision_from_text(self):
+        report = format_book_report(
+            "book5", "Some Title", Path("/tmp/book5.pdf"),
+            {
+                "model-a": [_entry("Einleitung", 9)],
+                "model-b": [_entry("Einleitung", 9)],
+            },
+            {"model-a": "vision", "model-b": "text"},
+        )
+        self.assertIn("vision: model-a", report)
+        self.assertIn("text (OCR'd): model-b", report)
+
+    def test_kind_defaults_to_vision_for_a_model_missing_from_the_kinds_map(self):
+        report = format_book_report(
+            "book6", "Some Title", Path("/tmp/book6.pdf"),
+            {"model-a": [_entry("Einleitung", 9)]},
+            {},
+        )
+        self.assertIn("Only vision: model-a returned usable output", report)
+
+
+class TestCachedKindsForBook(unittest.TestCase):
+    def test_reads_each_models_own_kind(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_directory = Path(tmp)
+            write_cached_llm_entries(cache_directory, "book1", "model-a", [_entry("X", 1)], kind="vision")
+            write_cached_llm_entries(cache_directory, "book1", "model-b", [_entry("Y", 2)], kind="text")
+
+            result = _cached_kinds_for_book(cache_directory, "book1")
+
+            self.assertEqual(result, {"model-a": "vision", "model-b": "text"})
 
 
 class TestRejectBook(unittest.TestCase):

@@ -20,7 +20,7 @@ from pathlib import Path
 
 from chapter_segmentation.segmentation import TocEntry
 from evaluation.dnb_toc_matching import diff_toc_entries
-from evaluation.dnb_toc_vision import load_cached_llm_entries, versioned_cache_dir
+from evaluation.dnb_toc_vision import load_cached_kind, load_cached_llm_entries, versioned_cache_dir
 from evaluation.harness import corpus_dir, llm_cache_dir, load_manifest_books
 from evaluation.scripts.select_dnb_toc_eval_sample import manifest_key
 
@@ -66,6 +66,18 @@ def _cached_models_for_book(cache_directory: Path, key: str) -> dict[str, list[T
     return result
 
 
+def _cached_kinds_for_book(cache_directory: Path, key: str) -> dict[str, str]:
+    """Every cached model's extraction "kind" ("vision"/"text") for one
+    book key -- same globbing convention as _cached_models_for_book, read
+    via load_cached_kind (evaluation/dnb_toc_vision.py). Used only to
+    label format_book_report's output (see its own docstring)."""
+    result: dict[str, str] = {}
+    for path in sorted(versioned_cache_dir(cache_directory).glob(f"{key}.*.json")):
+        model = path.name[len(key) + 1: -len(".json")]
+        result[model] = load_cached_kind(cache_directory, key, model)
+    return result
+
+
 def books_needing_arbitration(cdir: Path, cache_directory: Path) -> list[str]:
     """Book keys with cached model output, no .expected.json yet, and not
     already permanently rejected."""
@@ -85,25 +97,46 @@ def _format_entry(entry: TocEntry) -> str:
     return f"    p.{page!s:>4}  {entry.title}"
 
 
-def format_book_report(key: str, title: str, pdf_path: Path, models_to_entries: dict[str, list[TocEntry]]) -> str:
+def _kind_label(model: str, kind: str) -> str:
+    prefix = "vision" if kind == "vision" else "text (OCR'd)"
+    return f"{prefix}: {model}"
+
+
+def format_book_report(
+    key: str, title: str, pdf_path: Path, models_to_entries: dict[str, list[TocEntry]],
+    kinds: dict[str, str] | None = None,
+) -> str:
     """Human-readable diff for one book -- the actual disagreement, ready
     for Claude (or a human) to arbitrate. Handles the normal two-model
     case, the single-surviving-model case (the other model's response
     was empty/malformed), and defensively falls back to a plain per-model
-    listing for any other count."""
+    listing for any other count. Each model name in the rendered report is
+    prefixed with its extraction "kind" via _kind_label
+    (kinds.get(model, "vision")) -- e.g. "vision: Qwen/..." vs.
+    "text (OCR'd): meta-llama/..." -- see design spec
+    docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md
+    section 6: a mixed-source disagreement is legible to a human arbitrator
+    at a glance instead of looking like plain model disagreement. `kinds`
+    defaults every model to "vision" when omitted or when a model is
+    missing from it -- the pre-existing, all-vision behavior."""
+    kinds = kinds or {}
+
+    def label(model: str) -> str:
+        return _kind_label(model, kinds.get(model, "vision"))
+
     lines = [f"=== {key} -- {title} ===", f"PDF: {pdf_path}"]
     model_names = sorted(models_to_entries)
     if len(model_names) == 1:
         model = model_names[0]
         entries = models_to_entries[model]
-        lines.append(f"Only {model} returned usable output ({len(entries)} entries) -- verify directly against the page images:")
+        lines.append(f"Only {label(model)} returned usable output ({len(entries)} entries) -- verify directly against the page images:")
         for entry in entries:
             lines.append(_format_entry(entry))
         return "\n".join(lines)
     if len(model_names) != 2:
         lines.append(f"Expected 1 or 2 cached models, found {len(model_names)}: {model_names} -- review each list directly:")
         for model in model_names:
-            lines.append(f"  -- {model} ({len(models_to_entries[model])} entries) --")
+            lines.append(f"  -- {label(model)} ({len(models_to_entries[model])} entries) --")
             for entry in models_to_entries[model]:
                 lines.append(_format_entry(entry))
         return "\n".join(lines)
@@ -111,13 +144,13 @@ def format_book_report(key: str, title: str, pdf_path: Path, models_to_entries: 
     entries_a, entries_b = models_to_entries[model_a], models_to_entries[model_b]
     matched, only_a, only_b = diff_toc_entries(entries_a, entries_b)
     rate = len(matched) / max(len(entries_a), len(entries_b))
-    lines.append(f"{model_a}: {len(entries_a)} entries, {model_b}: {len(entries_b)} entries -- {len(matched)} matched, rate={rate:.2f}")
+    lines.append(f"{label(model_a)}: {len(entries_a)} entries, {label(model_b)}: {len(entries_b)} entries -- {len(matched)} matched, rate={rate:.2f}")
     if only_a:
-        lines.append(f"  Only in {model_a}:")
+        lines.append(f"  Only in {label(model_a)}:")
         for entry in only_a:
             lines.append(_format_entry(entry))
     if only_b:
-        lines.append(f"  Only in {model_b}:")
+        lines.append(f"  Only in {label(model_b)}:")
         for entry in only_b:
             lines.append(_format_entry(entry))
     return "\n".join(lines)
@@ -131,7 +164,8 @@ def _list(cdir: Path, cache_directory: Path) -> int:
     titles = {manifest_key(book): book.get("title", "") for book in load_manifest_books(_CORPUS_NAME)}
     for key in needing:
         models_to_entries = _cached_models_for_book(cache_directory, key)
-        print(format_book_report(key, titles.get(key, ""), cdir / f"{key}.pdf", models_to_entries))
+        kinds = _cached_kinds_for_book(cache_directory, key)
+        print(format_book_report(key, titles.get(key, ""), cdir / f"{key}.pdf", models_to_entries, kinds))
         print()
     return 0
 

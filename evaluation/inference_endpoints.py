@@ -19,6 +19,7 @@ import os
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Callable, Optional
 
 from openai import AsyncOpenAI
 
@@ -117,3 +118,33 @@ def resolve_endpoints_from_config_file(path: Path, *, timeout: float = DEFAULT_T
         client = AsyncOpenAI(base_url=session["base_url"], api_key=session["api_key"], timeout=timeout)
         endpoints.append(ModelEndpoint(label=label, model_id=session["model"], client=client))
     return endpoints
+
+
+class OpenAICompatibleLLMClient:
+    """Minimal LLMClient (see chapter_segmentation.llm.LLMClient) wrapping
+    an already-built AsyncOpenAI client -- callers construct the client
+    themselves (KISSKI's own base_url/api_key, or a ModelEndpoint's client
+    resolved above), so this class has no provider-specific knowledge at
+    all. Relocated here (2026-08-20, see design spec
+    docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md
+    section 2) from evaluation/refresh_llm_cache.py, its original home --
+    a pure move, not a behavior change: evaluation/dnb_toc_ocr.py's
+    text_extract_toc_entries needs the exact same LLMClient-shaped
+    adapter, and importing it from refresh_llm_cache.py (a script module)
+    would be backwards for a library module to depend on."""
+
+    def __init__(self, model: str, client: AsyncOpenAI):
+        self._client = client
+        self._model = model
+
+    async def generate(
+        self, prompt: str, *, max_tokens: int, temperature: float,
+        is_valid: Optional[Callable[[str], bool]] = None,
+    ) -> str:
+        response = await self._client.chat.completions.create(
+            model=self._model,
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=max_tokens,
+            temperature=temperature,
+        )
+        return response.choices[0].message.content or ""

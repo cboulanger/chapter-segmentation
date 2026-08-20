@@ -104,35 +104,12 @@ from openai import AsyncOpenAI
 from chapter_segmentation.segmentation import analyze_attachment_llm_only
 from evaluation.harness import available_public_books, list_corpora, llm_cache_dir, public_pages_for
 from evaluation.inference_endpoints import (
-    DEFAULT_SESSIONS_FILENAME, ModelEndpoint, resolve_endpoint_from_env, resolve_endpoints_from_config_file,
+    DEFAULT_SESSIONS_FILENAME, ModelEndpoint, OpenAICompatibleLLMClient, resolve_endpoint_from_env,
+    resolve_endpoints_from_config_file,
 )
 from evaluation.kisski import (
     DEFAULT_KISSKI_BASE_URL, KisskiModel, fetch_kisski_models, select_full_regen, select_gap_fill, select_top5,
 )
-
-
-class _OpenAICompatibleLLMClient:
-    """Minimal LLMClient (see chapter_segmentation.llm.LLMClient) wrapping
-    an already-built AsyncOpenAI client -- callers construct the client
-    themselves (KISSKI's own base_url/api_key, or a ModelEndpoint's
-    client from evaluation.inference_endpoints), so this class has no
-    provider-specific knowledge at all."""
-
-    def __init__(self, model: str, client: AsyncOpenAI):
-        self._client = client
-        self._model = model
-
-    async def generate(
-        self, prompt: str, *, max_tokens: int, temperature: float,
-        is_valid: Optional[Callable[[str], bool]] = None,
-    ) -> str:
-        response = await self._client.chat.completions.create(
-            model=self._model,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=max_tokens,
-            temperature=temperature,
-        )
-        return response.choices[0].message.content or ""
 
 
 def _fully_covered_model_ids(book_specs: list[tuple[Path, str]]) -> set[str]:
@@ -279,7 +256,7 @@ def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: l
     tmp_path.replace(cache_path)
 
 
-def _model_and_client_for_endpoint(endpoint: ModelEndpoint) -> tuple[KisskiModel, _OpenAICompatibleLLMClient]:
+def _model_and_client_for_endpoint(endpoint: ModelEndpoint) -> tuple[KisskiModel, OpenAICompatibleLLMClient]:
     """Wraps a resolved ModelEndpoint into the (model, llm_client) shape
     _run_book_for_model/_upsert_cache expect. demand=0 -- KisskiModel's
     own `demand` field has no meaning for an --endpoint-selected model
@@ -290,7 +267,7 @@ def _model_and_client_for_endpoint(endpoint: ModelEndpoint) -> tuple[KisskiModel
     type -- despite the name, it's just a model-identity-plus-demand
     record, not KISSKI-specific in shape."""
     model = KisskiModel(id=endpoint.model_id, name=endpoint.model_id, demand=0)
-    llm_client = _OpenAICompatibleLLMClient(model=endpoint.model_id, client=endpoint.client)
+    llm_client = OpenAICompatibleLLMClient(model=endpoint.model_id, client=endpoint.client)
     return model, llm_client
 
 
@@ -356,7 +333,7 @@ async def _main(
 
     print(f"Selected models: {[m.id for m in selected]}")
     for model in selected:
-        llm_client = _OpenAICompatibleLLMClient(model=model.id, client=AsyncOpenAI(base_url=base_url, api_key=api_key))
+        llm_client = OpenAICompatibleLLMClient(model=model.id, client=AsyncOpenAI(base_url=base_url, api_key=api_key))
         worker = functools.partial(_run_book_for_model, model=model, mode=mode, llm_client=llm_client)
         await _process_model(book_entries, concurrency, worker)
     return 0

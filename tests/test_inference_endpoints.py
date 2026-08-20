@@ -4,10 +4,11 @@ import os
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import AsyncMock, MagicMock, patch
 
 from evaluation.inference_endpoints import (
-    ModelEndpoint, load_mpcdf_sessions, resolve_endpoint_from_env, resolve_endpoints_from_config_file,
+    ModelEndpoint, OpenAICompatibleLLMClient, load_mpcdf_sessions, resolve_endpoint_from_env,
+    resolve_endpoints_from_config_file,
 )
 
 _NO_SESSION_FILE = Path("/nonexistent/mpcdf-sessions-test-isolation.txt")
@@ -140,6 +141,26 @@ class TestResolveEndpointsFromConfigFile(unittest.TestCase):
             path.write_text("")
             with self.assertRaises(ValueError):
                 resolve_endpoints_from_config_file(path)
+
+
+class TestOpenAICompatibleLLMClient(unittest.IsolatedAsyncioTestCase):
+    async def test_uses_the_given_client_not_a_new_one(self):
+        fake_client = MagicMock()
+        message = MagicMock()
+        message.content = "hello"
+        choice = MagicMock()
+        choice.message = message
+        response = MagicMock()
+        response.choices = [choice]
+        fake_client.chat.completions.create = AsyncMock(return_value=response)
+
+        llm_client = OpenAICompatibleLLMClient(model="model-x", client=fake_client)
+        result = await llm_client.generate("prompt", max_tokens=10, temperature=0.0)
+
+        self.assertEqual(result, "hello")
+        fake_client.chat.completions.create.assert_awaited_once_with(
+            model="model-x", messages=[{"role": "user", "content": "prompt"}], max_tokens=10, temperature=0.0,
+        )
 
 
 if __name__ == "__main__":

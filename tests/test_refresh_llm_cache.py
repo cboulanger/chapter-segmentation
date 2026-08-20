@@ -14,9 +14,8 @@ import unittest.mock
 from pathlib import Path
 from types import SimpleNamespace
 
-from evaluation.inference_endpoints import ModelEndpoint
+from evaluation.inference_endpoints import ModelEndpoint, OpenAICompatibleLLMClient
 from evaluation.refresh_llm_cache import (
-    _OpenAICompatibleLLMClient,
     _all_cached_model_ids,
     _call_with_retry,
     _fully_covered_model_ids,
@@ -29,26 +28,6 @@ from evaluation.refresh_llm_cache import (
 )
 
 
-class TestOpenAICompatibleLLMClient(unittest.IsolatedAsyncioTestCase):
-    async def test_uses_the_given_client_not_a_new_one(self):
-        fake_client = unittest.mock.MagicMock()
-        message = unittest.mock.MagicMock()
-        message.content = "hello"
-        choice = unittest.mock.MagicMock()
-        choice.message = message
-        response = unittest.mock.MagicMock()
-        response.choices = [choice]
-        fake_client.chat.completions.create = unittest.mock.AsyncMock(return_value=response)
-
-        llm_client = _OpenAICompatibleLLMClient(model="model-x", client=fake_client)
-        result = await llm_client.generate("prompt", max_tokens=10, temperature=0.0)
-
-        self.assertEqual(result, "hello")
-        fake_client.chat.completions.create.assert_awaited_once_with(
-            model="model-x", messages=[{"role": "user", "content": "prompt"}], max_tokens=10, temperature=0.0,
-        )
-
-
 class TestModelAndClientForEndpoint(unittest.TestCase):
     def test_wraps_endpoint_with_demand_zero_and_the_endpoints_own_client(self):
         fake_client = unittest.mock.MagicMock()
@@ -58,7 +37,7 @@ class TestModelAndClientForEndpoint(unittest.TestCase):
 
         self.assertEqual(model.id, "Qwen/Qwen3-VL-30B")
         self.assertEqual(model.demand, 0)
-        self.assertIsInstance(llm_client, _OpenAICompatibleLLMClient)
+        self.assertIsInstance(llm_client, OpenAICompatibleLLMClient)
         self.assertIs(llm_client._client, fake_client)
 
 
@@ -95,7 +74,7 @@ class TestMainEndpointBranch(unittest.IsolatedAsyncioTestCase):
         # -- assert the resolved endpoint's model_id actually reaches it.
         self.assertEqual(worker.keywords["model"].id, "Qwen/Qwen3-VL-30B")
         self.assertEqual(worker.keywords["mode"], "endpoint")
-        self.assertIsInstance(worker.keywords["llm_client"], _OpenAICompatibleLLMClient)
+        self.assertIsInstance(worker.keywords["llm_client"], OpenAICompatibleLLMClient)
         self.assertIs(worker.keywords["llm_client"]._client, fake_client)
 
     async def test_config_file_flag_bypasses_kisski_discovery_and_drives_the_resolved_model(self):

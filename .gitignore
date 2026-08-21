@@ -4,6 +4,7 @@ __pycache__/
 .pytest_cache/
 public/
 .env
-.mpcdf-sessions.txt
+.mpcdf-sessions*
 .DS_Store
 CLAUDE.local.md
+

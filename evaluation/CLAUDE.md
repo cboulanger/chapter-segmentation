@@ -7,7 +7,18 @@ the regression is tracked instead of silently re-discovered later.
 
 ## Document organization in this directory
 
-Four documents, four different lifetimes -- know which one to write to:
+Several documents, several different lifetimes -- know which one to write
+to. `README.md`/`RESULTS.md`/`EXPERIMENTS.md`/`CLAUDE.md` (this file)
+cover the main `chapter_segmentation` workflow (the pure heuristic, the
+strategy pipeline, and the standalone heuristic/outline/LLM strategies) --
+`open-access/` and `copyrighted-scans/` corpora. A not-yet-integrated
+experiment toward optimizing one *part* of that pipeline (the `dnb-toc-only`
+ground-truth generation pipeline, the layout-based TOC/chapter-first-page
+classifier pilot, the NuExtract fine-tuning pilot) instead gets its own
+file under `evaluation/experiments/`, kept separate so a reader working on
+the main workflow doesn't have to wade through experiments that don't
+affect it (and vice versa) -- see the `evaluation/experiments/` bullet
+below.
 
 - **`README.md`** — permanent reference: what the evaluation set is, its
   schema, how to fetch/add books, and how to run each evaluation
@@ -56,7 +67,23 @@ Four documents, four different lifetimes -- know which one to write to:
   heading here. Never trimmed or rewritten away once something lands here
   -- only appended to, as more of `RESULTS.md` gets superseded over time.
   Reading `RESULTS.md` and `EXPERIMENTS.md` together should never lose
-  information that was ever recorded in `RESULTS.md`.
+  information that was ever recorded in `RESULTS.md`. As of 2026-08-19
+  both files are scoped to the main workflow only (see above) --
+  `EXPERIMENTS.md` is currently empty, since nothing in `RESULTS.md` has
+  been superseded yet.
+- **`evaluation/experiments/<name>.md`** (one file per not-yet-integrated
+  experiment, e.g. `dnb-toc-ground-truth.md`, `toc-classifier-pilot.md`,
+  `nuextract-finetuning.md`) — each is self-contained: a "Current status"
+  section (the `RESULTS.md` role, current numbers and findings only) plus
+  a "History" section (the `EXPERIMENTS.md` role, the full write-up for
+  every superseded run/follow-up for that same experiment), both living in
+  one file rather than split across two, since a reader opening one of
+  these files is by definition interested in that experiment's whole
+  history, not skimming past it. Apply the exact same "when a new run's
+  numbers supersede an existing write-up, move the full text down into
+  'History' verbatim and leave a short summary in 'Current status'" rule
+  described above for `RESULTS.md`/`EXPERIMENTS.md`, just within the one
+  file instead of across two.
 - **`CLAUDE.md`** (this file) — permanent workflow reference for adding a
   new evaluation book by hand (ground-truth transcription, the helper
   script, verification steps, known failure modes in that *process*, not
@@ -201,8 +228,9 @@ Before anything else, pick one:
 classifier's training pool specifically** (as opposed to the text-heuristic
 accuracy harness), prefer scans, books with unnumbered first chapters, and
 books with weak title/body font contrast over another generic
-well-produced open-access book. A learning-curve check (`RESULTS.md`,
-"Follow-up: relaxing the per-book bar, and a model-architecture swap")
+well-produced open-access book. A learning-curve check
+(`evaluation/experiments/toc-classifier-pilot.md`, "Follow-up: relaxing
+the per-book bar, and a model-architecture swap")
 found `full_recall_fraction` flat across training-pool sizes 10-35 books --
 the classifier is saturated on the kind of book already well-represented in
 the corpus, so another book like those adds little signal; the
@@ -329,8 +357,10 @@ changes or a new evaluation book is added.
 
 **Before transcribing by hand, check whether a DNB-digitized TOC scan
 already exists** for this book: look in
-`evaluation/corpus/dnb-toc-only/manifest.json` (see
-`evaluation/scripts/fetch_dnb_toc_corpus.py` --
+`../dnb-toc-ground-truth/data/corpus/pilot/manifest.json` (a sibling
+checkout of the standalone dnb-toc-ground-truth repo -- see
+`DNB_TOC_CORPUS_DIR` in `evaluation/harness.py`'s `corpus_dir`; see also
+`cli/fetch_corpus.py` in that repo --
 `docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md`)
 for an entry with this book's ISBN, or query live:
 `curl -s "https://lobid.org/resources/search?q=isbn:<isbn>&format=json"`
@@ -503,71 +533,6 @@ evaluation set"), the filtered set can come back completely empty even
 though the book has a perfectly real, visually obvious TOC. There is no
 substitute for opening the PDF (see the visual-viewing note in Step 3 above)
 and confirming the exact page range by eye every time.
-
-## Arbitrating below-gate dnb-toc-only books
-
-`evaluation/scripts/generate_dnb_toc_ground_truth.py`'s two-vision-model
-gate discards a book outright when the two models disagree too much
-(below 0.90 agreement) or one of them fails outright -- but it never
-deletes either model's cached raw extraction
-(`evaluation/corpus/dnb-toc-only/llm-cache/<key>.<model>.json`). Rather
-than re-running the whole book from scratch or leaving it discarded,
-walk through the following after a generation run leaves books below
-the gate (design spec
-docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md):
-
-1. List every book still needing a decision:
-
-   ```bash
-   uv run python evaluation/scripts/arbitrate_dnb_toc.py
-   ```
-
-   This prints, per book: its title and PDF path, both models' entry
-   counts and agreement rate, and every entry each side found that the
-   other didn't (or, if only one model produced usable output, that
-   model's full list with a note to verify it directly).
-
-2. For each book, read the printed diff. The disagreement patterns
-   found in practice so far (`evaluation/RESULTS.md` § "dnb-toc-only
-   ground truth: two-vision-model gate") usually make the right call
-   obvious from the text alone: one side dropping real content, one
-   side including front/back matter or a part-divider that should have
-   been skipped, a two-line title wrongly split into two entries, or a
-   deeply nested TOC segmented at different granularities.
-
-3. When the text alone doesn't settle it, open the book's actual TOC
-   page images directly: use the `Read` tool on the PDF with a `pages`
-   parameter (1-based viewer pages, same convention as Step 3 above).
-
-4. Write the final `evaluation/corpus/dnb-toc-only/<key>.expected.json`
-   yourself -- same schema as a passing book
-   (`{"entries": [...], "verified": true, "source": "claude_arbitration"}`,
-   each entry via `evaluation.dnb_toc_matching.toc_entry_to_gt_dict`), but
-   with `"verified": true` rather than `false`: unlike the bulk-tier
-   gate's own output, this went through direct scrutiny (including the
-   images, when needed), the same standard `_spot_check`'s docstring in
-   `generate_dnb_toc_ground_truth.py` already treats as
-   "independently human-verified" -- so it's also correctly excluded
-   from that function's own sampling pool going forward. The
-   `"source": "claude_arbitration"` field (vs. the bulk gate's own
-   `"source": "bulk_gate"`) records that this entry's ground truth came
-   from an arbitrated review, not the automated agreement gate -- keep
-   this field whether the book was reconciled between the two models'
-   partial agreement or fully hand-transcribed from the page images
-   because neither model's output was usable.
-
-5. If a book is genuinely unrecoverable (both models hallucinate, the
-   scan itself is too degraded to read even directly), record that
-   instead of leaving it to resurface every run:
-
-   ```bash
-   uv run python evaluation/scripts/arbitrate_dnb_toc.py reject <key> "<short reason>"
-   ```
-
-   This writes to the committed
-   `evaluation/corpus/dnb-toc-only/arbitration-rejected.json` -- refuses
-   (rather than silently overwriting) if `<key>` is already present, so
-   re-running this step is safe.
 
 ## Known failure modes (found the hard way while building this evaluation set)
 

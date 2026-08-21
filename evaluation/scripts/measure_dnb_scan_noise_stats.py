@@ -14,9 +14,9 @@ Usage:
 
 The printed comparison table is the deliverable regardless of whether it
 leads to changing alto_scan_noise.py's constants -- paste it into
-evaluation/RESULTS.md by hand as a new follow-up subsection (this script
-does not write RESULTS.md itself, matching every other evaluation script
-in this directory)."""
+evaluation/experiments/toc-classifier-pilot.md by hand as a new follow-up
+subsection (this script does not write that file itself, matching every
+other evaluation script in this directory)."""
 
 import argparse
 import statistics
@@ -26,7 +26,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from evaluation.harness import corpus_dir, list_corpora, load_manifest_books
+from evaluation.harness import DNB_TOC_CORPUS_NAME, corpus_dir, list_corpora, load_manifest_books
 from evaluation.scripts.alto_scan_noise import _CONTRAST_ALPHA, _FONT_JITTER
 from evaluation.scripts.layout_features import extract_page_features
 from evaluation.scripts.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_binary
@@ -100,7 +100,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description=__doc__.split("\n\n")[0], formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--corpus", default="dnb-toc-only", help="Corpus to measure (default: dnb-toc-only)")
+    parser.add_argument(
+        "--corpus", default=DNB_TOC_CORPUS_NAME, help=f"Corpus to measure (default: {DNB_TOC_CORPUS_NAME})",
+    )
     parser.add_argument("--pdfalto-bin", help="Path to the pdfalto binary (see pdfalto_runner.py)")
     args = parser.parse_args()
 
@@ -112,10 +114,17 @@ def main() -> int:
     cdir = corpus_dir(args.corpus)
     cache_dir = cdir / ".layout-cache"
 
+    # dnb-toc-only moved to the standalone dnb-toc-ground-truth repo
+    # (2026-08-21 migration), which splits PDFs into their own pdf/
+    # subdirectory (see harness.corpus_dir's redirect for this corpus
+    # name) -- every other corpus here still keeps its PDF directly
+    # under the corpus root.
+    pdf_dir = cdir / "pdf" if args.corpus == DNB_TOC_CORPUS_NAME else cdir
+
     all_contrast: list[float] = []
     all_dispersion: list[float] = []
     for book in load_manifest_books(args.corpus):
-        pdf_path = cdir / book["filename"]
+        pdf_path = pdf_dir / book["filename"]
         if not pdf_path.exists():
             print(f"[skip] {book['filename']}: PDF not present locally")
             continue

@@ -24,6 +24,7 @@ caller with a pointer to that script.
 
 import hashlib
 import json
+import os
 from pathlib import Path
 from typing import Optional
 
@@ -37,6 +38,10 @@ from chapter_segmentation.segmentation import (
 EVAL_DIR = Path(__file__).resolve().parent
 CORPUS_ROOT = EVAL_DIR / "corpus"
 
+DNB_TOC_CORPUS_NAME = "dnb-toc-only"
+_DNB_TOC_CORPUS_DIR_ENV_VAR = "DNB_TOC_CORPUS_DIR"
+_DNB_TOC_CORPUS_DIR_DEFAULT = EVAL_DIR.parent.parent / "dnb-toc-ground-truth" / "data" / "corpus" / "pilot"
+
 
 def list_corpora(include_toc_only: bool = False) -> list[str]:
     """Sorted names of every subfolder under evaluation/corpus/ that has a
@@ -45,7 +50,14 @@ def list_corpora(include_toc_only: bool = False) -> list[str]:
     "toc_only": true (see dnb-toc-only/) is excluded unless
     include_toc_only=True: every existing caller assumes a corpus has
     fetchable PDFs and full .expected.json chapter fields, neither of
-    which a toc-only corpus has."""
+    which a toc-only corpus has.
+
+    dnb-toc-only itself moved to the standalone dnb-toc-ground-truth repo
+    (2026-08-21 migration; see corpus_dir()'s redirect) and its local
+    evaluation/corpus/dnb-toc-only/ folder is slated for deletion, so once
+    that happens the local scan above will no longer find it -- the check
+    below falls back to the redirected location so callers keep seeing it
+    listed as long as include_toc_only=True."""
     if not CORPUS_ROOT.is_dir():
         return []
     names = []
@@ -58,10 +70,21 @@ def list_corpora(include_toc_only: bool = False) -> list[str]:
             if manifest.get("toc_only"):
                 continue
         names.append(p.name)
+    if include_toc_only and DNB_TOC_CORPUS_NAME not in names:
+        if (corpus_dir(DNB_TOC_CORPUS_NAME) / "manifest.json").exists():
+            names.append(DNB_TOC_CORPUS_NAME)
     return sorted(names)
 
 
 def corpus_dir(corpus: str) -> Path:
+    # dnb-toc-only moved to the standalone dnb-toc-ground-truth repo
+    # (2026-08-21 migration) -- everything under evaluation/corpus/ still
+    # resolves normally; only this one corpus name is redirected to the
+    # sibling checkout's data/corpus/pilot/, via DNB_TOC_CORPUS_DIR (same
+    # override convention as PDFALTO_BIN) or the default sibling path.
+    if corpus == DNB_TOC_CORPUS_NAME:
+        override = os.environ.get(_DNB_TOC_CORPUS_DIR_ENV_VAR)
+        return Path(override) if override else _DNB_TOC_CORPUS_DIR_DEFAULT
     return CORPUS_ROOT / corpus
 
 

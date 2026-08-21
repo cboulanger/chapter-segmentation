@@ -358,14 +358,21 @@ options:
 ## `generate_dnb_toc_ground_truth.py`
 
 Generates bulk-tier `dnb-toc-only` ground truth by sending each book's page
-images to two independent vision-capable KISSKI models and writing
+images to two independent vision-capable models -- by default two
+auto-selected KISSKI models, or `--endpoint`/`--config-file` to target other
+OpenAI-compatible endpoints instead (e.g. an MPCDF session), or
+`--text-endpoint`/`--text-config-file` to pair one vision-capable model with
+a text-only model fed freshly-OCR'd page text -- and writing
 `.expected.json` only when they agree well enough -- see
-`evaluation/README.md`'s "Building dnb-toc-only ground truth".
+`evaluation/README.md`'s "Building dnb-toc-only ground truth" and design
+spec `docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md`.
 
 ```
 usage: generate_dnb_toc_ground_truth.py [-h] [--limit LIMIT]
                                         [--concurrency CONCURRENCY]
                                         [--spot-check N]
+                                        [--endpoint ALIAS | --config-file [PATH]]
+                                        [--text-endpoint ALIAS | --text-config-file [PATH]]
 
 Generates bulk-tier structured ground truth for dnb-toc-only (design spec
 docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md, which
@@ -373,12 +380,28 @@ supersedes the two-text-extractor design in
 docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md).
 For every manifest book not held out in eval_tier_ids.json (see
 select_dnb_toc_eval_sample.py and evaluation/README.md's "Building dnb-toc-
-only ground truth"), sends the book's page images to two independent vision-
-capable KISSKI models (evaluation.dnb_toc_vision.vision_extract_toc_entries)
+only ground truth"), not already carrying a `.expected.json` (bulk-gated or
+arbitrated), and not permanently rejected (arbitration-rejected.json), sends
+the book's page images to two independent vision-capable models
+(evaluation.dnb_toc_vision.vision_extract_toc_entries) -- by default two auto-
+selected KISSKI models, or --endpoint/--config-file to target other OpenAI-
+compatible endpoints instead (e.g. an MPCDF session, see evaluation/hpc/llm-
+mpcdf.md), or --text-endpoint/--text-config-file to pair one vision read with
+a text-only model fed freshly-OCR'd page text instead of a second vision read
+(evaluation.dnb_toc_ocr.text_extract_toc_entries, see
+docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md) --
 and writes <id>.expected.json with "verified": false only when they agree well
 enough (evaluation.dnb_toc_matching.gate_book, >=0.90 whole-book agreement).
 Books that don't clear the gate are skipped and reported, not partially
-written.
+written -- run evaluation/scripts/arbitrate_dnb_toc.py on them next. Skipping
+already-decided and rejected books means `--limit N` always means "the next N
+books that still need a decision," so repeated invocations advance through the
+corpus in batches instead of reprocessing the same prefix every time. A bulk-
+gate `.expected.json` written before the 2026-08-17 extraction-standard change
+(verbatim per-line extraction plus a "skip" flag, replacing outright omission
+of front/back matter and dividers -- see TocEntry.skip's docstring) counts as
+undecided again and gets regenerated; an arbitrated one never does (see
+`_is_stale_bulk_gate_entry`).
 
 options:
   -h, --help            show this help message and exit
@@ -388,6 +411,33 @@ options:
                         How many books to process concurrently (default: 4)
   --spot-check N        Instead of generating, sample N passing bulk-tier
                         books and walk through a visual Accept/Reject check
+  --endpoint ALIAS      Use an explicit OpenAI-compatible endpoint instead of
+                        KISSKI auto-discovery for the VISION side -- pass
+                        exactly twice for two independent vision reads (e.g.
+                        --endpoint MPCDF_A --endpoint MPCDF_B), or exactly
+                        once when paired with --text-endpoint/--text-config-
+                        file. Each ALIAS must have <ALIAS>_BASE_URL,
+                        <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment.
+  --config-file [PATH]  Same as --endpoint, but sources the vision endpoint(s)
+                        from a pasted-session-table file instead of env vars
+                        -- PATH defaults to .mpcdf-sessions.txt when omitted;
+                        must contain exactly 2 pasted session tables (two
+                        vision reads), or exactly 1 when paired with --text-
+                        endpoint/--text-config-file. See evaluation/hpc/llm-
+                        mpcdf.md.
+  --text-endpoint ALIAS
+                        Pair the vision endpoint (--endpoint or --config-file,
+                        exactly 1 either way) with a text-only endpoint fed
+                        freshly-OCR'd page text instead of a second vision
+                        read -- ALIAS must have <ALIAS>_BASE_URL,
+                        <ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment.
+                        See design spec docs/superpowers/specs/2026-08-20-dnb-
+                        toc-vision-text-pairing-design.md.
+  --text-config-file [PATH]
+                        Same as --text-endpoint, but sources the text endpoint
+                        from a pasted-session-table file -- PATH defaults to
+                        .mpcdf-sessions.txt when omitted; must contain exactly
+                        1 pasted session table.
 ```
 
 ## `generate_public_evaluation_cache.py`

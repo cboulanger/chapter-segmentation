@@ -67,6 +67,23 @@ extraction logic itself (prompt, max_tokens, page selection, ...) makes
 every existing cache entry potentially stale, not just the 5 models
 --mode top5 happens to touch. A cached model no longer offered by KISSKI is
 skipped with a warning (nothing to run it against).
+
+--endpoint ALIAS (repeatable): bypasses KISSKI discovery entirely and
+runs the corpus against the given OpenAI-compatible endpoint(s) instead
+-- e.g. an MPCDF LLM Inference Service session
+(https://llm.mpcdf.mpg.de). Each ALIAS must have <ALIAS>_BASE_URL,
+<ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment (see
+evaluation/inference_endpoints.py). Mutually exclusive with --mode and
+--config-file -- there's no discovery/demand concept for a model you
+deployed yourself, so top5/fill-gaps/full's sweep-a-shared-pool semantics
+don't apply; every given endpoint just runs once, unconditionally, over
+the corpus.
+
+--config-file [PATH]: same endpoint-bypass behavior as --endpoint, but
+sources every endpoint from a pasted-session-table file instead of env
+vars -- one endpoint per table, in file order (see
+evaluation/hpc/llm-mpcdf.md). PATH defaults to .mpcdf-sessions.txt when
+omitted. Mutually exclusive with --mode and --endpoint.
 """
 
 import argparse
@@ -82,31 +99,17 @@ from typing import Awaitable, Callable, Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from openai import AsyncOpenAI
+
 from chapter_segmentation.segmentation import analyze_attachment_llm_only
 from evaluation.harness import available_public_books, list_corpora, llm_cache_dir, public_pages_for
-from evaluation.kisski import DEFAULT_KISSKI_BASE_URL, fetch_kisski_models, select_full_regen, select_gap_fill, select_top5
-
-
-class _OpenAICompatibleLLMClient:
-    """Minimal LLMClient (see chapter_segmentation.llm.LLMClient) backed by
-    any OpenAI-compatible chat completions endpoint."""
-
-    def __init__(self, model: str, base_url: str, api_key: str):
-        from openai import AsyncOpenAI
-        self._client = AsyncOpenAI(base_url=base_url, api_key=api_key)
-        self._model = model
-
-    async def generate(
-        self, prompt: str, *, max_tokens: int, temperature: float,
-        is_valid: Optional[Callable[[str], bool]] = None,
-    ) -> str:
-        response = await self._client.chat.completions.create(
-            model=self._model,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=max_tokens,
-            temperature=temperature,
-        )
-        return response.choices[0].message.content or ""
+from evaluation.inference_endpoints import (
+    DEFAULT_SESSIONS_FILENAME, ModelEndpoint, OpenAICompatibleLLMClient, resolve_endpoint_from_env,
+    resolve_endpoints_from_config_file,
+)
+from evaluation.kisski import (
+    DEFAULT_KISSKI_BASE_URL, KisskiModel, fetch_kisski_models, select_full_regen, select_gap_fill, select_top5,
+)
 
 
 def _fully_covered_model_ids(book_specs: list[tuple[Path, str]]) -> set[str]:
@@ -253,8 +256,25 @@ def _upsert_cache(cache_dir: Path, manifest_key: str, model_id: str, chapters: l
     tmp_path.replace(cache_path)
 
 
-async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], clear: bool, concurrency: int) -> int:
-    api_key = os.environ["KISSKI_API_KEY"]
+def _model_and_client_for_endpoint(endpoint: ModelEndpoint) -> tuple[KisskiModel, OpenAICompatibleLLMClient]:
+    """Wraps a resolved ModelEndpoint into the (model, llm_client) shape
+    _run_book_for_model/_upsert_cache expect. demand=0 -- KisskiModel's
+    own `demand` field has no meaning for an --endpoint-selected model
+    (no shared pool, nothing to be busy relative to); 0 is also what
+    KisskiModel.availability reads as "available", the only sensible
+    default for a model you deployed yourself and know is up. Reuses
+    KisskiModel itself rather than inventing a second (id, name, demand)
+    type -- despite the name, it's just a model-identity-plus-demand
+    record, not KISSKI-specific in shape."""
+    model = KisskiModel(id=endpoint.model_id, name=endpoint.model_id, demand=0)
+    llm_client = OpenAICompatibleLLMClient(model=endpoint.model_id, client=endpoint.client)
+    return model, llm_client
+
+
+async def _main(
+    mode: Optional[str], endpoint_aliases: Optional[list[str]], config_file: Optional[Path], base_url: str,
+    limit: int, corpus: Optional[str], clear: bool, concurrency: int,
+) -> int:
     corpora = [corpus] if corpus else list_corpora()
     # (corpus, manifest_key, cache_dir) for every scorable book across every in-scope corpus.
     book_entries: list[tuple[str, str, Path]] = [
@@ -276,6 +296,20 @@ async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], cle
                 cleared += 1
         print(f"--clear: removed {cleared} cache file(s) across {len(corpora)} corpus/corpora before regenerating.")
 
+    if endpoint_aliases or config_file:
+        if config_file:
+            endpoints = resolve_endpoints_from_config_file(config_file)
+            print(f"Selected endpoints from {config_file}: {[e.label for e in endpoints]}")
+        else:
+            endpoints = [resolve_endpoint_from_env(alias) for alias in endpoint_aliases]
+            print(f"Selected endpoints: {endpoint_aliases}")
+        for endpoint in endpoints:
+            model, llm_client = _model_and_client_for_endpoint(endpoint)
+            worker = functools.partial(_run_book_for_model, model=model, mode="endpoint", llm_client=llm_client)
+            await _process_model(book_entries, concurrency, worker)
+        return 0
+
+    api_key = os.environ["KISSKI_API_KEY"]
     all_models = fetch_kisski_models(base_url, api_key)
     if mode == "top5":
         selected = select_top5(all_models, limit=limit)
@@ -299,7 +333,7 @@ async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], cle
 
     print(f"Selected models: {[m.id for m in selected]}")
     for model in selected:
-        llm_client = _OpenAICompatibleLLMClient(model=model.id, base_url=base_url, api_key=api_key)
+        llm_client = OpenAICompatibleLLMClient(model=model.id, client=AsyncOpenAI(base_url=base_url, api_key=api_key))
         worker = functools.partial(_run_book_for_model, model=model, mode=mode, llm_client=llm_client)
         await _process_model(book_entries, concurrency, worker)
     return 0
@@ -307,7 +341,25 @@ async def _main(mode: str, base_url: str, limit: int, corpus: Optional[str], cle
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--mode", choices=["top5", "fill-gaps", "full"], default="top5")
+    mode_group = parser.add_mutually_exclusive_group()
+    mode_group.add_argument("--mode", choices=["top5", "fill-gaps", "full"], default=None)
+    mode_group.add_argument(
+        "--endpoint", action="append", default=None, metavar="ALIAS",
+        help="Use one or more explicit OpenAI-compatible endpoints instead of KISSKI discovery -- repeatable, "
+             "e.g. --endpoint MPCDF_A --endpoint MPCDF_B. Each ALIAS must have <ALIAS>_BASE_URL, "
+             "<ALIAS>_API_KEY, <ALIAS>_MODEL set in the environment. Runs every given endpoint once over the "
+             "corpus (unconditionally, like --mode full); --mode's top5/fill-gaps/full sweep-a-shared-pool "
+             "semantics don't apply since there's no discovery involved -- you already know exactly which "
+             "model(s) you deployed.",
+    )
+    mode_group.add_argument(
+        "--config-file", nargs="?", const=DEFAULT_SESSIONS_FILENAME, default=None, metavar="PATH",
+        help="Use one or more explicit OpenAI-compatible endpoints sourced from a pasted-session-table file "
+             f"instead of KISSKI discovery -- PATH defaults to {DEFAULT_SESSIONS_FILENAME} when omitted. "
+             "Same run-every-endpoint-once semantics as --endpoint, just reading base_url/api_key/model from "
+             "the file's pasted MPCDF dashboard session tables (one per endpoint, in file order) instead of "
+             "<ALIAS>_BASE_URL/_API_KEY/_MODEL env vars -- see evaluation/hpc/llm-mpcdf.md.",
+    )
     parser.add_argument("--base-url", default=DEFAULT_KISSKI_BASE_URL)
     parser.add_argument(
         "--limit", type=int, default=5,
@@ -324,7 +376,11 @@ if __name__ == "__main__":
              "so this is a conservative default -- raise it if you don't observe 429s. Default 4.",
     )
     args = parser.parse_args()
+    if args.mode is None and not args.endpoint and not args.config_file:
+        args.mode = "top5"
     raise SystemExit(asyncio.run(_main(
-        mode=args.mode, base_url=args.base_url, limit=args.limit, corpus=args.corpus, clear=args.clear,
-        concurrency=args.concurrency,
+        mode=args.mode, endpoint_aliases=args.endpoint,
+        config_file=Path(args.config_file) if args.config_file else None,
+        base_url=args.base_url, limit=args.limit,
+        corpus=args.corpus, clear=args.clear, concurrency=args.concurrency,
     )))

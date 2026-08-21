@@ -3,7 +3,7 @@
 held-out eval split written by prepare_nuextract_finetune_data.py, via
 llama.cpp/GGUF only. See design spec
 docs/superpowers/specs/2026-08-10-nuextract2-finetuning-pilot-design.md
-and evaluation/RESULTS.md's transformers/MPS-vs-llama.cpp finding for
+and evaluation/experiments/nuextract-finetuning.md's transformers/MPS-vs-llama.cpp finding for
 why this never generates through transformers -- AutoProcessor is loaded
 here only to build the chat-template prompt string; all actual
 generation goes through llama_cpp.Llama.
@@ -19,8 +19,8 @@ fine-tuning pilot" section):
         --gguf-path evaluation/finetune/merged.Q4_K_M.gguf
 
 Run against the unmodified base model instead (a same-split, same-
-scoring-code sanity check against evaluation/RESULTS.md's full-corpus
-zero-shot number -- downloads the published GGUF if not already cached):
+scoring-code sanity check against evaluation/experiments/nuextract-finetuning.md's
+full-corpus zero-shot number -- downloads the published GGUF if not already cached):
 
     uv run python evaluation/scripts/evaluate_nuextract_finetune.py
 """

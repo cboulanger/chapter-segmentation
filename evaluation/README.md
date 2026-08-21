@@ -62,7 +62,8 @@ the `lobid-resources` API (see
 and `evaluation/scripts/fetch_dnb_toc_corpus.py`). It's for training and
 calibrating layout-only *parts* of the pipeline (currently the
 scan-noise constants in `evaluation/scripts/alto_scan_noise.py` --
-see `RESULTS.md`'s "real-scan measurement" follow-up) against real
+see `evaluation/experiments/toc-classifier-pilot.md`'s "real-scan
+measurement" follow-up) against real
 scanned TOC pages, not for evaluating chapter segmentation end-to-end --
 there is no surrounding book, no `.expected.json`, and no chapter
 boundaries to score. Its manifest sets `"toc_only": true` and is
@@ -79,8 +80,15 @@ for the full design (supersedes the two-text-extractor design in
 `docs/superpowers/specs/2026-08-15-dnb-toc-ground-truth-generation-design.md`).
 Two tiers, both writing
 `evaluation/corpus/dnb-toc-only/<id>.expected.json`
-(`{"entries": [{"title", "authors", "printed_page_number"}, ...],
-"verified": bool}`):
+(`{"entries": [{"title", "authors", "printed_page_number", "skip"}, ...],
+"verified": bool}`). `"skip"` (added 2026-08-17) marks an entry that isn't
+itself a real chapter -- a part/section divider, or front/back matter
+(preface, bibliography, index, ...) -- but every printed line still gets
+an entry either way; extraction is deliberately verbatim, not editorial,
+so two independent extractions of the same page can only disagree over
+what's actually printed, never over which lines "count" (see
+`TocEntry.skip`'s docstring in `src/chapter_segmentation/segmentation.py`
+for the full reasoning and the pre-2026-08-17 behavior this replaced):
 
 **Bulk tier** (`"verified": false`, no human review) --
 `evaluation/scripts/select_dnb_toc_eval_sample.py` first, then:
@@ -101,6 +109,44 @@ covers resolving those instead of discarding them. Requires `pdftoppm`
 (poppler) on `PATH` -- see this file's "Cleaning a badly-scanned PDF" section
 for the install command.
 
+**Pairing a vision endpoint with a text-only endpoint** (as an alternative
+to two vision reads -- see design spec
+`docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md`):
+a genuinely independent second vision-capable model is hard to find (most
+open VLMs share a Qwen backbone, and MPCDF's own launcher has repeatedly
+made others impractical -- see `evaluation/hpc/llm-mpcdf.md`), while
+strong, architecturally-independent TEXT-only models are far more
+plentiful. `--text-endpoint ALIAS` (or `--text-config-file`, same
+pasted-session-table mechanism as `--config-file`) pairs a single vision
+endpoint (`--endpoint`/`--config-file`, now given exactly once instead of
+twice) with a text-only endpoint fed the book's TOC pages OCR'd and
+reading-order-reconstructed by `evaluation/dnb_toc_ocr.py`
+(`ocr_pages_to_rows` + `text_extract_toc_entries`) instead of a second
+image read:
+
+```bash
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py \
+  --endpoint MPCDF_VISION --text-endpoint MPCDF_TEXT
+```
+
+`gate_book`/`arbitrate_dnb_toc.py` treat this exactly like two vision
+reads -- same 90% agreement threshold, same arbitration workflow -- except
+`arbitrate_dnb_toc.py`'s report labels each side by its cached extraction
+`"kind"` (`"vision: ..."` vs. `"text (OCR'd): ..."`), so a disagreement on
+the text side prompts checking OCR quality first, not just assuming the
+two models disagree. The tradeoff this accepts: a text-side read now also
+depends on this project's own OCR step being correct, unlike two direct
+image reads.
+
+`ocr_pages_to_rows` OCRs via `ocrmypdf` -- by default using whatever
+tesseract language data is already installed (Homebrew's `tesseract-lang`
+formula ships `tessdata_fast`). For higher OCR accuracy, download
+`tessdata_best`'s `deu.traineddata`/`eng.traineddata` by hand from
+https://github.com/tesseract-ocr/tessdata_best into one directory and set
+`TESSDATA_BEST_DIR` to that directory's path -- picked up automatically,
+with no code change, the next time `ocr_pages_to_rows` runs. Unset (the
+default) uses the system's normal tessdata.
+
 **Eval tier** (`"verified": true`, hand-transcribed, held out of the bulk
 tier and never drafted by either extractor) -- for every ID in
 `evaluation/corpus/dnb-toc-only/eval_tier_ids.json`:
@@ -113,7 +159,10 @@ tier and never drafted by either extractor) -- for every ID in
    full-book `.expected.json` would mark `skip: true` (bibliography,
    index headers, part dividers) -- this file measures extraction
    fidelity against what's printed, not "which of these are real
-   chapters."
+   chapters." Mark each such non-chapter line `"skip": true` in the entry
+   itself (real chapters get `"skip": false`) -- same field the bulk tier
+   now writes (above), so both tiers are directly comparable rather than
+   measuring different things.
 4. Save as `<id>.expected.json` with `"verified": true`.
 
 **Spot-checking the bulk tier's real precision:**

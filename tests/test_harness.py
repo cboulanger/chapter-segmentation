@@ -5,6 +5,7 @@ routing: healthy pages pass through, OCR-shaped pages come from the eval
 OCR cache, and a cache miss returns None (caller skips the book)."""
 
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -12,9 +13,12 @@ from unittest.mock import patch
 
 from chapter_segmentation.evidence.types import ChapterCandidate
 from evaluation.harness import (
+    DNB_TOC_CORPUS_NAME,
+    EVAL_DIR,
     analysis_pages_for,
     available_public_books,
     chapter_bounds_errors,
+    corpus_dir,
     list_corpora,
     outline_candidate_from_dict,
     outline_candidate_to_dict,
@@ -55,6 +59,59 @@ class TestListCorpora(unittest.TestCase):
             with patch("evaluation.harness.CORPUS_ROOT", root):
                 self.assertEqual(list_corpora(), ["corpus-a"])
                 self.assertEqual(list_corpora(include_toc_only=True), ["corpus-a", "dnb-toc-only"])
+
+    def test_includes_dnb_toc_only_via_redirect_when_local_dir_is_absent(self):
+        """Regression test for the state after Task 26 deletes
+        evaluation/corpus/dnb-toc-only/ locally: the normal scan below
+        no longer finds it, but corpus_dir()'s redirect still resolves to
+        real data in the sibling repo, so list_corpora(include_toc_only=True)
+        must still report it as existing."""
+        with tempfile.TemporaryDirectory() as tmp, tempfile.TemporaryDirectory() as redirected:
+            root = Path(tmp)
+            (root / "corpus-a").mkdir()
+            (root / "corpus-a" / "manifest.json").write_text('{"books": []}', encoding="utf-8")
+            # Deliberately no dnb-toc-only/ under root.
+            redirected_dir = Path(redirected)
+            redirected_dir.joinpath("manifest.json").write_text(
+                '{"toc_only": true, "books": []}', encoding="utf-8",
+            )
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch.dict(os.environ, {"DNB_TOC_CORPUS_DIR": str(redirected_dir)}):
+                self.assertEqual(list_corpora(), ["corpus-a"])
+                self.assertEqual(
+                    list_corpora(include_toc_only=True), ["corpus-a", DNB_TOC_CORPUS_NAME],
+                )
+
+    def test_does_not_include_dnb_toc_only_when_neither_local_nor_redirect_exists(self):
+        with tempfile.TemporaryDirectory() as tmp, tempfile.TemporaryDirectory() as redirected:
+            root = Path(tmp)
+            (root / "corpus-a").mkdir()
+            (root / "corpus-a" / "manifest.json").write_text('{"books": []}', encoding="utf-8")
+            # redirected dir exists but has no manifest.json in it.
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch.dict(os.environ, {"DNB_TOC_CORPUS_DIR": redirected}):
+                self.assertEqual(list_corpora(include_toc_only=True), ["corpus-a"])
+
+
+class TestCorpusDir(unittest.TestCase):
+    def test_env_var_override_wins_for_dnb_toc_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            override_dir = Path(tmp) / "custom-location"
+            with patch.dict(os.environ, {"DNB_TOC_CORPUS_DIR": str(override_dir)}):
+                self.assertEqual(corpus_dir(DNB_TOC_CORPUS_NAME), override_dir)
+
+    def test_default_sibling_path_when_env_var_unset(self):
+        with patch.dict(os.environ, {}, clear=True):
+            result = corpus_dir(DNB_TOC_CORPUS_NAME)
+        expected = EVAL_DIR.parent.parent / "dnb-toc-ground-truth" / "data" / "corpus" / "pilot"
+        self.assertEqual(result, expected)
+
+    def test_other_corpus_names_are_unaffected_by_the_redirect(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with patch("evaluation.harness.CORPUS_ROOT", root), \
+                 patch.dict(os.environ, {"DNB_TOC_CORPUS_DIR": "/should/not/be/used"}):
+                self.assertEqual(corpus_dir("some-other-corpus"), root / "some-other-corpus")
 
 
 class TestChapterBoundsErrors(unittest.TestCase):

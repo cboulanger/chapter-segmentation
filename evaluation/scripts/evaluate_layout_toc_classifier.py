@@ -22,8 +22,8 @@ any `recall_target` value found in this pilot's history, at a comparable
 or tighter candidate-fraction cost, with per-book candidate_fraction
 landing in a narrow band around the cap instead of ranging from under 2%
 to over 50% for a single global probability threshold -- see
-evaluation/RESULTS.md's "document-relative candidate-budget selection"
-follow-up for the full comparison. `--recall-target` (the pilot's
+evaluation/experiments/toc-classifier-pilot.md's "document-relative
+candidate-budget selection" follow-up for the full comparison. `--recall-target` (the pilot's
 original, training-quantile-calibrated absolute-threshold strategy) is
 kept as an explicit override for comparison/experimentation -- passing it
 switches back to that strategy and `--candidate-fraction-cap` is ignored.
@@ -66,8 +66,8 @@ _CANDIDATE_FRACTION_CAP = 0.15  # default selection strategy: document-relative 
 # (select_candidates_by_document_budget). Promoted to the default 2026-08-14 after reaching
 # equal-or-better full_recall_fraction than any recall_target value at a comparable or
 # tighter candidate cost, on both the full 89-book corpus and open-access alone, with no
-# per-corpus retuning needed -- see evaluation/RESULTS.md's "document-relative
-# candidate-budget selection" follow-up for the comparison this promotion is based on. 0.15
+# per-corpus retuning needed -- see evaluation/experiments/toc-classifier-pilot.md's
+# "document-relative candidate-budget selection" follow-up for the comparison this promotion is based on. 0.15
 # matches the pilot's own avg_candidate_fraction decision-bar budget.
 
 _RECALL_TARGET = 0.90  # legacy selection strategy, kept for comparison/experimentation --
@@ -87,8 +87,8 @@ _RECALL_TARGET = 0.90  # legacy selection strategy, kept for comparison/experime
 # though it stays comfortably inside the avg_candidate_fraction budget (7.2% vs. 15%). 0.90
 # was the default (before --candidate-fraction-cap's promotion above) because it's the first
 # point on the 17-feature curve that beats the baseline on both axes at once (67% full
-# recall, 9.0% candidates) -- see evaluation/RESULTS.md's "context/normalized features and
-# scan-noise augmentation" follow-up for the full sweep.
+# recall, 9.0% candidates) -- see evaluation/experiments/toc-classifier-pilot.md's
+# "context/normalized features and scan-noise augmentation" follow-up for the full sweep.
 
 _CHAPTER_FIRST_RECALL_TOLERANCE = 0.90  # per-book chapter_first recall needed to "pass" in
 # this script's own aggregate report -- NOT a knob a real consumer of the classifier would

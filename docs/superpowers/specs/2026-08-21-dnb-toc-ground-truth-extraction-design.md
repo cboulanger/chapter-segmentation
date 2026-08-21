@@ -260,6 +260,45 @@ is already scoped to dnb-toc). Internal module names likewise drop it
 (`vision.py` not `dnb_toc_vision.py`) since the package namespace
 (`dnb_toc_ground_truth`) already carries that context.
 
+## Top-level `README.md`
+
+The one file a stranger to this project opens first, so it carries the
+purpose statement `evaluation/CLAUDE.md`'s doc-organization note never
+had to spell out (it could assume the reader already knew this was part
+of `chapter-segmentation`). Two required parts:
+
+**Purpose.** This repo is a pilot case for generating structured,
+machine-checkable ground truth from openly available data — DNB's
+CC0-licensed "Kataloganreicherung" table-of-contents scans — using
+independent LLM reads gated against each other for agreement, with
+human/Claude arbitration for the disagreements. The output
+(`data/corpus/pilot/ground-truth/*.expected.json`) is meant as an input
+to *other* pipelines, not an end in itself — e.g. fine-tuning a smaller
+structured-extraction model (NuExtract), benchmarking chapter/TOC
+extraction heuristics, or training a lightweight classifier — each of
+which can consume this corpus without depending on this repo's own LLM
+pipeline. State plainly that the LLM-based generation pipeline is the
+means, not the point: the point is the ground-truth data itself, general
+enough to feed pipelines this repo doesn't build.
+
+**Setup instructions**, in the order a new clone actually needs them:
+1. `uv sync` (Python >=3.12, matching `chapter-segmentation`'s
+   convention)
+2. External binaries on `PATH` (or via `--<tool>-bin`/env var, same
+   convention as `PDFALTO_BIN`): `ocrmypdf` for the OCR-text extraction
+   path, and a sibling `pdfalto` checkout for ALTO reconstruction (link
+   to [kermitt2/pdfalto](https://github.com/kermitt2/pdfalto), same as
+   `chapter-segmentation`'s own note)
+3. Copy `.endpoints.dist` → `.endpoints` and `.config.dist` → `.config`,
+   fill in real endpoint credentials (either supported format) and
+   default model selections
+4. `uv run python cli/fetch_corpus.py --help` through to
+   `uv run python cli/generate_ground_truth.py --help` as a smoke check
+   that the install works, before pointing either script at a real
+   endpoint
+5. A pointer to `cli/README.md` for full flag reference and to
+   `data/corpus/pilot/README.md` for current corpus size/status
+
 ## Migration mechanics
 
 1. Create a git worktree off `dnb-toc-ground-truth-wip` to build the new

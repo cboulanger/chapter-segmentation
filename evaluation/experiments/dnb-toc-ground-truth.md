@@ -15,6 +15,428 @@ and dead ends behind the current numbers aren't lost.
 
 ## Current status
 
+Prior model-pairing search (KISSKI two-vision-model gate through
+`InternVL2_5-38B`, `Pixtral-12B-2409`, `GLM-4.5V`, `GLM-4.1V-9B-Thinking`,
+2026-08-16 to 2026-08-20) moved to "History" below -- see "Model-pairing
+search via MPCDF: KISSKI, InternVL, Pixtral, GLM-4.5V, GLM-4.1V-9B-Thinking".
+That search's own closing diagnosis (three independent constraints:
+architectural non-independence from Qwen, document-OCR specialization,
+and MPCDF-launcher infrastructure friction) is what motivated trying
+`mistralai/Mistral-Small-3.2-24B-Instruct-2506` next -- Mistral lineage
+(independent from Qwen), dense (fast to spin up, unlike GLM-4.5V), and
+usable in BOTH roles the pipeline supports: a second vision read
+(`vision_extract_toc_entries`), or the text-side of the
+vision+OCR'd-text pairing (`text_extract_toc_entries`, see
+`docs/superpowers/specs/2026-08-20-dnb-toc-vision-text-pairing-design.md`).
+
+**Root cause found: Mistral defaults `printed_page_number` to null far
+too often, in both pairing modes (2026-08-20).** First smoke tests of
+both new pairings (Qwen3-Omni + Mistral-vision; Qwen3-Omni +
+Mistral-text) scored ~0% auto-pass (0/10, 0/20, 0/5 across three
+batches) -- worse than every prior candidate's first attempt. Diffing
+the raw cached entries directly (not just the diff report) showed why:
+Mistral returned `printed_page_number: null` for the vast majority of
+entries even when titles matched Qwen's exactly and a real page number
+was clearly legible -- e.g. book `3878313810`, both models read
+identical titles ("Rückblicke", "Hans Georg Lehmann", ...) but Mistral's
+side carried `null` for every single one while Qwen's carried real page
+numbers (25, 37, ...). Since `align_toc_entries` deliberately never
+matches a null-page entry against a known-page one (a page number is
+the primary correctness signal the whole alignment design relies on),
+this alone collapsed the agreement rate on nearly every book, even ones
+where the underlying title-level reading was fine.
+
+In OCR-text mode specifically, the page number turned out to genuinely
+be *present* in the OCR'd text passed to Mistral, just glued onto the
+end of a wrapped multi-line title block with no separator (e.g. a block
+ending `"...in die\nThematik 9"` means page 9) -- a shape the original
+`_TEXT_TOC_EXTRACTION_PROMPT` never described. Both prompts
+(`evaluation/dnb_toc_vision.py`'s `_VISION_TOC_EXTRACTION_PROMPT` and
+`evaluation/dnb_toc_ocr.py`'s `_TEXT_TOC_EXTRACTION_PROMPT`) were
+strengthened to explicitly discourage defaulting to null and, for the
+text prompt, describe that specific artifact shape (commit `fe7878f`).
+Measured effect: page-number coverage rose from near-0% to 48-99%
+across a validation sample, and several vision+vision books that were
+previously stuck at 0.4-0.6 agreement rose to 0.70-0.99 -- real
+progress, though not a full fix (see "Repeated error patterns" below).
+
+**Two MPCDF infrastructure bugs found and fixed along the way:**
+
+- **A freshly-restarted Mistral session died mid-run, twice in one
+  evening**, each time after roughly 1-2 hours of its nominal 8h
+  allocation -- confirmed via the exact same signature the existing
+  "Dashboard 'Running' != API ready" finding in `evaluation/hpc/llm-mpcdf.md`
+  describes for a not-yet-loaded session, but here for a session that
+  *had* been serving real traffic and then silently stopped:
+  `/v1/models` starts returning the dashboard SPA's static
+  `index.html` (HTTP 200, not an error) while `/v1/chat/completions`
+  returns HTTP 405. Not yet root-caused on MPCDF's side; each time, the
+  fix was simply to restart the session and re-point the running
+  script's endpoint credentials at the new one.
+- **The `AsyncOpenAI` client's own `timeout=` parameter did not
+  reliably enforce for at least one real vision call.** A backfill batch
+  stalled with zero completions for 30+ minutes despite 4 healthy
+  `ESTABLISHED` connections and Mistral responding in 0.5s to a trivial
+  text-only probe. Reproduced directly: an isolated single
+  `vision_extract_toc_entries` call against one specific book hung past
+  120s wall-clock with `timeout=90.0` set on the client -- then, moments
+  later, a DIFFERENT (smaller) book on the *same* session completed
+  normally in 32s, ruling out a fully-dead session or pure GPU
+  contention as the sole explanation; the timeout simply didn't fire for
+  that one request. Mitigated with an explicit
+  `asyncio.wait_for(..., timeout=150.0)` wrapped around the whole
+  retry-wrapped call as a second, independent enforcement layer, since
+  relying on the SDK/httpx timeout alone proved insufficient for this
+  workload.
+
+**A third, subtler bug: two cached "models" can be the same model,
+making their agreement meaningless.** MPCDF's `Qwen/Qwen3-Omni-30B-A3B-Instruct`
+and the older KISSKI-era `qwen3-omni-30b-a3b-instruct` are literally the
+same underlying model, just labeled differently by the two inference
+providers -- but the pipeline's cache/arbitration logic identifies
+"which model" purely by this opaque literal ID string, with no
+canonicalization. Consequence: half of the first 10 "two-model
+disagreement" arbitration-queue entries actually sampled were Qwen
+compared against itself under its two labels, not against Mistral or
+any other model at all. Four of those five showed 0.96-1.00 "agreement"
+-- which sounds like confirmation, but isn't: one of them
+(`9783456859231`) was independently visually checked anyway and turned
+out to contain a real error ("Martin **Ruffer**", double-f) that BOTH
+labeled copies repeated identically, because it's one model's one
+mistake, read twice. The other three same-model "agreements" were
+reverted rather than trusted, and every book affected by this was
+routed back through the normal backfill process to get a genuine
+Mistral read before being trusted either way.
+
+**Full pre-existing arbitration-queue backlog cleared (2026-08-20/21).**
+Before this session, `arbitrate_dnb_toc.py` reported 403 books needing a
+decision -- but 379 of those (94%) turned out to have only ONE model's
+read ever cached (the historical single-attempt backlog this
+docstring's arbitration workflow always assumed would eventually get a
+second read), not a genuine two-model disagreement at all. A one-off
+backfill script (`backfill_arbitration.py`, not committed -- ad hoc for
+this session) targeted exactly this: for every such book, reuse whatever
+Qwen3-Omni-family read was already cached (under either ID string) and
+fetch a fresh Mistral-vision read, then re-gate. Across two full passes
+(interrupted in between by the first Mistral session death): 30 + 42 =
+**72 books cleared the gate automatically** once given a real second
+read, and 91 + 108 = **199 books genuinely disagreed and were hand-arbitrated**
+by four parallel Claude Code subagents per round, each opening the real
+PDF page images (never trusting the diff text alone) -- **zero
+rejections across all 199**; every TOC page turned out to be legible
+enough to transcribe confidently by hand. `dnb-toc-only` ground truth
+stood at roughly 300 books before this session, 603 after.
+
+### Repeated error patterns found this session
+
+Cataloguing what actually went wrong, and how often, across ~200
+hand-arbitrated books plus the earlier automated diffing -- useful for
+judging any future second-model candidate, and for knowing what a human/
+Claude reviewer should specifically look for.
+
+**Mistral-Small-3.2-24B-Instruct-2506:**
+
+- **Defaults page numbers to null instead of reading them** (see root
+  cause above) -- by far the single most frequent, most damaging defect,
+  in both vision and OCR-text mode. Partially fixed by the prompt change
+  above; residual cases still show up in arbitration (e.g. several books
+  in the second backfill round still needed Qwen's page numbers trusted
+  over Mistral's `null`).
+- **Splits a bare author-name line off into its own spurious,
+  page-number-less entry** instead of merging it into the following
+  title's `authors` field -- the single most repeated *structural*
+  defect across the whole arbitration pass, recurring in dozens of books
+  (`3451095149`, `3506743023`, `3515069747`, `3518076914`, `3518112120`,
+  `351828147X`, `3893540911`, `902797876X`, `3884745255`, `3928064983`,
+  `9780521760126`, and many more) -- almost always because the printed
+  layout puts the author's name on its own line directly above or below
+  the title, sharing that title's single page number.
+- **Confidently misread an entirely different page as the real TOC**
+  on at least one book (the "N-model" biomass-handbook case,
+  `9783658408275`): fabricated page numbers 1-11 by reading a summary
+  page, while Qwen's 220-entry list matched the real detailed table of
+  contents exactly.
+- **Malformed JSON output** (`JSONDecodeError`) recurred across several
+  independent books and batches (`9783825248512` and others) -- an
+  intermittent output-format failure, not tied to any one book's
+  content.
+- OCR-text mode specifically compounds all of the above with the
+  underlying OCR quality: this project's default `tessdata_fast`
+  (Homebrew's `tesseract-lang`; `tessdata_best` isn't installed) garbles
+  diacritics (ü→ii, ß→fs), mangles non-Latin scripts (Greek came back as
+  nonsense token runs), and sometimes drops or duplicates whole words.
+
+**Qwen3-Omni-30B-A3B-Instruct** (still the stronger of the two overall,
+consistent with the earlier InternVL/Pixtral comparisons, but not
+error-free):
+
+- **Fabricates a page number for a part/section divider** by copying
+  the page number of the chapter that follows it, rather than
+  recognizing the divider has none of its own -- found repeatedly
+  (`0262162334`: three Part headers given fabricated pages 23/101/253
+  that the real image shows as blank; `3190075603`: three more
+  divider/intro headers with cascaded-wrong pages).
+- **Silently drops real content** -- whole entries, occasionally whole
+  chapters -- with no error or warning: `0271012447` (missing three
+  entries entirely: "Eleonora Duse," "Duse and D'Annunzio," "Mental
+  Collapse in Italy"), `9781472442857` (dropped "Conversations in
+  Silence", p.229, entirely), `1566393477` (dropped a real run of
+  content that Mistral's fuller reading actually caught).
+- **Pulls non-TOC page furniture into the entry list** -- title-page
+  imprint lines (`3548351832`: "Ernest Borneman (Hrsg.)" and similar
+  treated as TOC entries), running headers/folios (`0521800277`'s
+  "[vii]"/"viii Contents").
+- Occasional plain word-level misreadings of names, same as any OCR/
+  vision read (e.g. within the same-model-duplicate case above), though
+  markedly less frequent than Mistral's.
+
+**Shared across both models -- the finding that matters most for how
+much to trust automated agreement:**
+
+- **Two independent reads can confidently agree on the exact same wrong
+  answer.** Confirmed directly at least twice: book `3520229056` scored
+  100% agreement between Qwen and Mistral, yet the real page image
+  showed both had the same two wrong page numbers ("Wirtschaft und
+  Gesellschaft im Rom der Kaiserzeit" is page 27, not the 17 both
+  models gave; "Personen- und Sachregister" is page 567, not 367 both
+  models gave). Book `990004330580206441` showed the identical page-
+  number cascade error shared between two labeled instances of Qwen
+  (see the same-model-duplicate finding above) that Mistral's
+  independent read did NOT share, and was correct instead. **Perfect
+  agreement between two reads is evidence, not proof** -- this is why
+  every arbitration pass in this session, including "clean" 100%-
+  agreement single-model or same-model-duplicate books, still opened the
+  real PDF page image rather than trusting the number alone.
+- **Two-line titles** (a short main title plus a longer subtitle/
+  continuation line, sharing one page number) get incorrectly split
+  into two entries by either model, in either direction, across many
+  books -- the single most common *title-shape* disagreement after the
+  author-line-split issue above.
+- **Alignment cascades**: because `align_toc_entries` is a greedy,
+  order-preserving match, one spurious extra or missing entry near the
+  top of a book's list can make everything after it look like a
+  disagreement in the automated diff even when the underlying readings
+  mostly agree -- several arbitrated books that looked like near-total
+  disagreement (`0271012447`, `3810001619`) turned out, on inspection,
+  to be a single misalignment near the start cascading through the rest.
+
+## History
+
+
+The subsection below is the first real smoke test's write-up, whose
+root-cause diagnosis (a genuine editorial granularity difference between
+the two models) was itself superseded by a more careful follow-up
+investigation that found the real cause was `gemma-4-31b-it` silently
+dropping content, not a deliberate judgment call -- see "Current status"
+above for the corrected diagnosis and the fix.
+
+### First real smoke test (2026-08-16) -- initial (incomplete) diagnosis
+
+Per `docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md` and
+`docs/superpowers/plans/2026-08-16-dnb-toc-vision-extraction.md`,
+`generate_dnb_toc_ground_truth.py` was migrated from a regex-heuristic +
+text-LLM gate to a two-independent-vision-model gate (each model reads
+the book's page images directly via `pdftoppm`, no OCR/text layer at
+all). First real run against the live corpus and live KISSKI models,
+after the migration and two follow-up robustness fixes (`max_tokens`
+escalation on truncated responses; `_select_best_models` now takes
+multiple candidates from one pattern before falling through):
+
+```
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
+
+Vision models used: qwen3-omni-30b-a3b-instruct, gemma-4-31b-it
+6/15 books passed the gate and got .expected.json written.
+  8 skipped: below_threshold
+  1 skipped: error: JSONDecodeError
+```
+
+**40% pass rate is much lower than the near-perfect results the design
+spec's own two-book prototype found** (18/18 and ~18/18 entries,
+§2.1). Root-caused by comparing the two models' cached raw responses
+directly for four `below_threshold` books:
+
+| Book | Pages | qwen entries | gemma entries |
+| --- | --- | --- | --- |
+| `0745309941` | 2 | 8 | 2 |
+| `3465016874` | 2 | 17 | 3 |
+| `3492038174` | 7 | 135 | 24 |
+| `3571092120` | 3 | 41 | 32 |
+
+`gemma-4-31b-it` isn't truncating -- confirmed directly for
+`3492038174` (the most extreme case): both models' entry lists end at
+the exact same final item (page 313, "Zur Gründung einer »Stiftung
+Weltethos«"), so gemma read every page and reached the true end of the
+document. **The two models are making a genuinely different editorial
+judgment about what counts as one "chapter" entry** on TOCs with deep
+hierarchical nesting (numbered theses/aphorisms, sub-points under a
+numbered heading): qwen extracts nearly every numbered sub-line as its
+own entry, gemma collapses them into far fewer higher-level entries.
+Where a TOC is flat (the design spec's two prototype books, and this
+run's simpler passing books), both models agree closely and the gate
+passes fine -- the mismatch is specific to densely-nested layouts.
+
+**This diagnosis turned out to be incomplete** -- see "Current status"
+above: comparing entry *page-number ranges* (not just
+counts) across all 15 books showed gemma's range started dramatically
+later than qwen's on 5 of 8 mismatched books, including flat, simple
+TOCs where no granularity judgment call was plausible (a clean 8-entry
+numbered list came back with only its last 2 entries) -- a real
+reliability gap in `gemma-4-31b-it` on this task, not a considered
+editorial choice. `3492038174`'s matching final entry was a coincidence
+of that book happening to also have a genuine granularity disagreement
+layered on top of the range problem, not evidence against it.
+
+### Model swap to qwen3.6 family (2026-08-16) -- pass rate 60%, before the granularity-prompt fix
+
+This subsection is the write-up of the run immediately after
+`_VISION_MODEL_PATTERNS`' second pattern was swapped from `gemma-4-31b-it`
+to the qwen3.6 family (fixing the content-dropping reliability gap above),
+but before `_VISION_TOC_EXTRACTION_PROMPT` was clarified to handle
+nested-TOC sub-points consistently -- that follow-up fix is what
+superseded this run's numbers.
+
+**Corrected root cause (of the first smoke test's 40%):** comparing entry
+page-number *ranges* (not just counts) across all 15 books showed
+`gemma-4-31b-it`'s range started dramatically later than `qwen3-omni`'s on
+5 of 8 mismatched books -- including a clean, flat 8-entry numbered list
+(`0745309941`) that came back with only its last 2 entries. This is a
+reliability gap in `gemma-4-31b-it` on this task (silently dropping the
+early portion of a multi-image request), not a considered editorial
+choice about chapter granularity. Spot-checked `qwen3.6-27b` directly
+(`vision_extract_toc_entries`, live KISSKI) against the same books: it
+correctly covered the full page range every time, matching
+`qwen3-omni`'s own range. `_VISION_MODEL_PATTERNS`' second pattern was
+changed from `gemma-<N>-` to `qwen<N>.<M>-` accordingly.
+
+**Re-run with the corrected model pair, same 15 books:**
+
+```
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
+
+Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.5-122b-a10b
+9/15 books passed the gate and got .expected.json written.
+  4 skipped: below_threshold
+  1 skipped: error: JSONDecodeError
+  1 skipped: error: ValueError
+```
+
+**Pass rate improved from 40% to 60%, and the improvement is for the
+right reason** -- confirmed by comparing page-number ranges again
+across all 15 books: every single book now shows matching or
+near-matching ranges between the two models, with zero "dropped early
+content" cases remaining. The 4 remaining `below_threshold` books
+(`3465016874`: 17 vs 14 entries; `3571092120`: 41 vs 33;
+`9783842331976`: 57 vs 12; and the still-failing `3492038174`, see
+below) all have matching ranges but differing entry *counts* -- this is
+the genuine chapter-granularity disagreement on densely-nested TOCs
+(numbered theses/sub-points under a numbered heading) originally
+(mis)diagnosed in the first run. This is a narrower, better-understood
+remaining problem than before: pipeline reliability is no longer in
+question, only how consistently the two models segment deeply nested
+TOC hierarchies into "one entry per chapter."
+
+The `1 error: ValueError` is new in this run: `3492038174` (the
+7-page, most deeply-nested book) got an *empty* response from
+`qwen3.5-122b-a10b` (`"No JSON array found in LLM response: ''"`) --
+not yet root-caused; may be specific to that model/book pair rather
+than the family generally, since `_VISION_MODEL_PATTERNS`' second
+pattern matches any `qwen<N>.<M>-` model and a busy-driven re-run could
+pick a different specific model next time. The pre-existing
+`1 error: JSONDecodeError` (`383050277X`) is unchanged from the first
+run -- still not root-caused, still survives the `max_tokens`
+escalation (so it's a genuinely malformed response shape, not
+truncation).
+
+**Open question, not yet resolved at the time:** whether to (a) tune the
+prompt to make "chapter" granularity more explicit/consistent on
+deeply-nested TOCs specifically, (b) accept a lower gate threshold for
+such books, or (c) accept the current ~60% pass rate as-is. Resolved by
+the granularity-prompt fix described in "Current status" above -- see
+there for what was tried and its effect.
+
+### Granularity-prompt fix and re-run (2026-08-16) -- pass rate 53%, before the arbitration tool
+
+This subsection is the write-up of the run
+immediately after `_VISION_TOC_EXTRACTION_PROMPT` was clarified to fix
+the nested-sub-point granularity problem, but before
+`arbitrate_dnb_toc.py` existed to resolve the books that still didn't
+clear the gate -- at this point in the investigation, a below-threshold
+book was still simply discarded.
+
+`_VISION_TOC_EXTRACTION_PROMPT` was clarified to explicitly call out
+that indented/numbered/lettered sub-points each carry their own page
+number and are their own entry, not to be collapsed into their parent
+heading. Clean re-run, same 15 books, fresh cache:
+
+```
+uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
+
+Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.6-35b-a3b
+8/15 books passed the gate and got .expected.json written.
+  5 skipped: below_threshold
+  2 skipped: error: ValueError
+```
+
+**The fix worked exactly as intended on the case it targeted**:
+`9783842331976` (the deeply-nested book previously diagnosed as 57 vs 12
+entries) now matches 56 of 57 entries (rate 0.98, PASS) -- the nesting
+instruction resolved that specific failure mode cleanly.
+
+**But the aggregate pass rate did not improve (53% vs the prior run's
+60%)**, because a different, previously-undiagnosed cluster of
+disagreements dominates the remaining 5 `below_threshold` books.
+Inspecting each below-threshold book's two entry lists side by side (not
+just counts) shows this is NOT the nesting problem recurring -- it's a
+mix of:
+
+- **Genuine content omission, reliability not editorial choice**:
+  `0745309941` -- `qwen3-omni` silently dropped one entire chapter
+  ("Gender, Migration and Cross-Ethnic Coalition Building", p.48) that
+  `qwen3.6` caught; a flat, simple 8-vs-9-entry book with no nesting at
+  all. Note the direction is reversed from the earlier gemma finding --
+  this time it's `qwen3-omni` that drops content, on a book unrelated to
+  granularity.
+- **Whether front/back matter should be its own entry at all**
+  (`380061832X`: `qwen3.6` added "Vorwort" and "Autorenverzeichnis" that
+  `qwen3-omni` correctly omitted per the "skip acknowledgements..."
+  instruction; `3823350242`: `qwen3-omni` included a bibliography-like
+  "Verzeichnis der Schriften von..." appendix entry that should have been
+  skipped). This is the same "bulk vs eval tier target definition"
+  question flagged as an open, undecided issue in the vision-extraction
+  implementation's final code review -- not a new problem, but now
+  visibly the dominant cause of gate failures.
+- **Two-line TOC entries (a title line plus a subtitle/continuation
+  line) being split into two entries by one model but correctly merged
+  by the other** (`3779912511`, `9783515114868`): one model sometimes
+  treats a part-header ("Geschichte der Pädagogik") and the chapter title
+  that follows it as two separate entries (one with `printed_page_number:
+  null`), while the other merges the header into the chapter's own title.
+  This is the mirror image of the nesting problem the prompt fix just
+  solved -- there, sub-points were wrongly merged into a parent; here,
+  a title and its own continuation are wrongly split apart.
+
+**The `2 error: ValueError` books both got an empty response** (`"No
+JSON array found in LLM response: ''"`) from one model:
+`qwen3.6-35b-a3b` on `3465016874`, and (no cache file written at all,
+implying the failure happened before any content came back)
+`qwen3.6-35b-a3b` on `3492038174` -- the same still-unresolved empty-
+response failure mode as previous runs, now hitting a different specific
+qwen3.6 sub-model (`_select_best_models` picks whichever qwen3.6 variant
+is least busy at request time, so the exact model varies run to run).
+The pre-existing `383050277X` `JSONDecodeError` from earlier runs did
+NOT recur this time -- it happened to pass cleanly (rate 1.00) in this
+run instead, consistent with it being a live-service flakiness case
+rather than a deterministic per-book failure.
+
+**Open question at the time:** whether to (a) fix the front/back-matter
+prompt-adherence gap, (b) build a way to resolve below-threshold books
+instead of discarding them, or (c) accept the current ~53% pass rate.
+Resolved by building the arbitration tool
+(`docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md`) --
+see "Current status" above for the result.
+
+### Model-pairing search via MPCDF: KISSKI, InternVL, Pixtral, GLM-4.5V, GLM-4.1V-9B-Thinking (2026-08-16 to 2026-08-20)
 
 Per `docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md` and
 `docs/superpowers/plans/2026-08-16-dnb-toc-vision-extraction.md`,
@@ -561,219 +983,3 @@ has failed a *different* one of these three, which is why the search has
 felt like it keeps finding new problems rather than converging --
 narrowing on any future candidate should check all three before spending
 a batch on it, not just the one that sank the previous attempt.
-
-## History
-
-
-The subsection below is the first real smoke test's write-up, whose
-root-cause diagnosis (a genuine editorial granularity difference between
-the two models) was itself superseded by a more careful follow-up
-investigation that found the real cause was `gemma-4-31b-it` silently
-dropping content, not a deliberate judgment call -- see "Current status"
-above for the corrected diagnosis and the fix.
-
-### First real smoke test (2026-08-16) -- initial (incomplete) diagnosis
-
-Per `docs/superpowers/specs/2026-08-16-dnb-toc-uniform-ocr-design.md` and
-`docs/superpowers/plans/2026-08-16-dnb-toc-vision-extraction.md`,
-`generate_dnb_toc_ground_truth.py` was migrated from a regex-heuristic +
-text-LLM gate to a two-independent-vision-model gate (each model reads
-the book's page images directly via `pdftoppm`, no OCR/text layer at
-all). First real run against the live corpus and live KISSKI models,
-after the migration and two follow-up robustness fixes (`max_tokens`
-escalation on truncated responses; `_select_best_models` now takes
-multiple candidates from one pattern before falling through):
-
-```
-uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
-
-Vision models used: qwen3-omni-30b-a3b-instruct, gemma-4-31b-it
-6/15 books passed the gate and got .expected.json written.
-  8 skipped: below_threshold
-  1 skipped: error: JSONDecodeError
-```
-
-**40% pass rate is much lower than the near-perfect results the design
-spec's own two-book prototype found** (18/18 and ~18/18 entries,
-§2.1). Root-caused by comparing the two models' cached raw responses
-directly for four `below_threshold` books:
-
-| Book | Pages | qwen entries | gemma entries |
-| --- | --- | --- | --- |
-| `0745309941` | 2 | 8 | 2 |
-| `3465016874` | 2 | 17 | 3 |
-| `3492038174` | 7 | 135 | 24 |
-| `3571092120` | 3 | 41 | 32 |
-
-`gemma-4-31b-it` isn't truncating -- confirmed directly for
-`3492038174` (the most extreme case): both models' entry lists end at
-the exact same final item (page 313, "Zur Gründung einer »Stiftung
-Weltethos«"), so gemma read every page and reached the true end of the
-document. **The two models are making a genuinely different editorial
-judgment about what counts as one "chapter" entry** on TOCs with deep
-hierarchical nesting (numbered theses/aphorisms, sub-points under a
-numbered heading): qwen extracts nearly every numbered sub-line as its
-own entry, gemma collapses them into far fewer higher-level entries.
-Where a TOC is flat (the design spec's two prototype books, and this
-run's simpler passing books), both models agree closely and the gate
-passes fine -- the mismatch is specific to densely-nested layouts.
-
-**This diagnosis turned out to be incomplete** -- see "Current status"
-above: comparing entry *page-number ranges* (not just
-counts) across all 15 books showed gemma's range started dramatically
-later than qwen's on 5 of 8 mismatched books, including flat, simple
-TOCs where no granularity judgment call was plausible (a clean 8-entry
-numbered list came back with only its last 2 entries) -- a real
-reliability gap in `gemma-4-31b-it` on this task, not a considered
-editorial choice. `3492038174`'s matching final entry was a coincidence
-of that book happening to also have a genuine granularity disagreement
-layered on top of the range problem, not evidence against it.
-
-### Model swap to qwen3.6 family (2026-08-16) -- pass rate 60%, before the granularity-prompt fix
-
-This subsection is the write-up of the run immediately after
-`_VISION_MODEL_PATTERNS`' second pattern was swapped from `gemma-4-31b-it`
-to the qwen3.6 family (fixing the content-dropping reliability gap above),
-but before `_VISION_TOC_EXTRACTION_PROMPT` was clarified to handle
-nested-TOC sub-points consistently -- that follow-up fix is what
-superseded this run's numbers.
-
-**Corrected root cause (of the first smoke test's 40%):** comparing entry
-page-number *ranges* (not just counts) across all 15 books showed
-`gemma-4-31b-it`'s range started dramatically later than `qwen3-omni`'s on
-5 of 8 mismatched books -- including a clean, flat 8-entry numbered list
-(`0745309941`) that came back with only its last 2 entries. This is a
-reliability gap in `gemma-4-31b-it` on this task (silently dropping the
-early portion of a multi-image request), not a considered editorial
-choice about chapter granularity. Spot-checked `qwen3.6-27b` directly
-(`vision_extract_toc_entries`, live KISSKI) against the same books: it
-correctly covered the full page range every time, matching
-`qwen3-omni`'s own range. `_VISION_MODEL_PATTERNS`' second pattern was
-changed from `gemma-<N>-` to `qwen<N>.<M>-` accordingly.
-
-**Re-run with the corrected model pair, same 15 books:**
-
-```
-uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
-
-Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.5-122b-a10b
-9/15 books passed the gate and got .expected.json written.
-  4 skipped: below_threshold
-  1 skipped: error: JSONDecodeError
-  1 skipped: error: ValueError
-```
-
-**Pass rate improved from 40% to 60%, and the improvement is for the
-right reason** -- confirmed by comparing page-number ranges again
-across all 15 books: every single book now shows matching or
-near-matching ranges between the two models, with zero "dropped early
-content" cases remaining. The 4 remaining `below_threshold` books
-(`3465016874`: 17 vs 14 entries; `3571092120`: 41 vs 33;
-`9783842331976`: 57 vs 12; and the still-failing `3492038174`, see
-below) all have matching ranges but differing entry *counts* -- this is
-the genuine chapter-granularity disagreement on densely-nested TOCs
-(numbered theses/sub-points under a numbered heading) originally
-(mis)diagnosed in the first run. This is a narrower, better-understood
-remaining problem than before: pipeline reliability is no longer in
-question, only how consistently the two models segment deeply nested
-TOC hierarchies into "one entry per chapter."
-
-The `1 error: ValueError` is new in this run: `3492038174` (the
-7-page, most deeply-nested book) got an *empty* response from
-`qwen3.5-122b-a10b` (`"No JSON array found in LLM response: ''"`) --
-not yet root-caused; may be specific to that model/book pair rather
-than the family generally, since `_VISION_MODEL_PATTERNS`' second
-pattern matches any `qwen<N>.<M>-` model and a busy-driven re-run could
-pick a different specific model next time. The pre-existing
-`1 error: JSONDecodeError` (`383050277X`) is unchanged from the first
-run -- still not root-caused, still survives the `max_tokens`
-escalation (so it's a genuinely malformed response shape, not
-truncation).
-
-**Open question, not yet resolved at the time:** whether to (a) tune the
-prompt to make "chapter" granularity more explicit/consistent on
-deeply-nested TOCs specifically, (b) accept a lower gate threshold for
-such books, or (c) accept the current ~60% pass rate as-is. Resolved by
-the granularity-prompt fix described in "Current status" above -- see
-there for what was tried and its effect.
-
-### Granularity-prompt fix and re-run (2026-08-16) -- pass rate 53%, before the arbitration tool
-
-This subsection is the write-up of the run
-immediately after `_VISION_TOC_EXTRACTION_PROMPT` was clarified to fix
-the nested-sub-point granularity problem, but before
-`arbitrate_dnb_toc.py` existed to resolve the books that still didn't
-clear the gate -- at this point in the investigation, a below-threshold
-book was still simply discarded.
-
-`_VISION_TOC_EXTRACTION_PROMPT` was clarified to explicitly call out
-that indented/numbered/lettered sub-points each carry their own page
-number and are their own entry, not to be collapsed into their parent
-heading. Clean re-run, same 15 books, fresh cache:
-
-```
-uv run python evaluation/scripts/generate_dnb_toc_ground_truth.py --limit 15 --concurrency 4
-
-Vision models used: qwen3-omni-30b-a3b-instruct, qwen3.6-35b-a3b
-8/15 books passed the gate and got .expected.json written.
-  5 skipped: below_threshold
-  2 skipped: error: ValueError
-```
-
-**The fix worked exactly as intended on the case it targeted**:
-`9783842331976` (the deeply-nested book previously diagnosed as 57 vs 12
-entries) now matches 56 of 57 entries (rate 0.98, PASS) -- the nesting
-instruction resolved that specific failure mode cleanly.
-
-**But the aggregate pass rate did not improve (53% vs the prior run's
-60%)**, because a different, previously-undiagnosed cluster of
-disagreements dominates the remaining 5 `below_threshold` books.
-Inspecting each below-threshold book's two entry lists side by side (not
-just counts) shows this is NOT the nesting problem recurring -- it's a
-mix of:
-
-- **Genuine content omission, reliability not editorial choice**:
-  `0745309941` -- `qwen3-omni` silently dropped one entire chapter
-  ("Gender, Migration and Cross-Ethnic Coalition Building", p.48) that
-  `qwen3.6` caught; a flat, simple 8-vs-9-entry book with no nesting at
-  all. Note the direction is reversed from the earlier gemma finding --
-  this time it's `qwen3-omni` that drops content, on a book unrelated to
-  granularity.
-- **Whether front/back matter should be its own entry at all**
-  (`380061832X`: `qwen3.6` added "Vorwort" and "Autorenverzeichnis" that
-  `qwen3-omni` correctly omitted per the "skip acknowledgements..."
-  instruction; `3823350242`: `qwen3-omni` included a bibliography-like
-  "Verzeichnis der Schriften von..." appendix entry that should have been
-  skipped). This is the same "bulk vs eval tier target definition"
-  question flagged as an open, undecided issue in the vision-extraction
-  implementation's final code review -- not a new problem, but now
-  visibly the dominant cause of gate failures.
-- **Two-line TOC entries (a title line plus a subtitle/continuation
-  line) being split into two entries by one model but correctly merged
-  by the other** (`3779912511`, `9783515114868`): one model sometimes
-  treats a part-header ("Geschichte der Pädagogik") and the chapter title
-  that follows it as two separate entries (one with `printed_page_number:
-  null`), while the other merges the header into the chapter's own title.
-  This is the mirror image of the nesting problem the prompt fix just
-  solved -- there, sub-points were wrongly merged into a parent; here,
-  a title and its own continuation are wrongly split apart.
-
-**The `2 error: ValueError` books both got an empty response** (`"No
-JSON array found in LLM response: ''"`) from one model:
-`qwen3.6-35b-a3b` on `3465016874`, and (no cache file written at all,
-implying the failure happened before any content came back)
-`qwen3.6-35b-a3b` on `3492038174` -- the same still-unresolved empty-
-response failure mode as previous runs, now hitting a different specific
-qwen3.6 sub-model (`_select_best_models` picks whichever qwen3.6 variant
-is least busy at request time, so the exact model varies run to run).
-The pre-existing `383050277X` `JSONDecodeError` from earlier runs did
-NOT recur this time -- it happened to pass cleanly (rate 1.00) in this
-run instead, consistent with it being a live-service flakiness case
-rather than a deterministic per-book failure.
-
-**Open question at the time:** whether to (a) fix the front/back-matter
-prompt-adherence gap, (b) build a way to resolve below-threshold books
-instead of discarding them, or (c) accept the current ~53% pass rate.
-Resolved by building the arbitration tool
-(`docs/superpowers/specs/2026-08-16-dnb-toc-arbitration-design.md`) --
-see "Current status" above for the result.

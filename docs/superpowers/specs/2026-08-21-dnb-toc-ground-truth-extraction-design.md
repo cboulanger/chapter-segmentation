@@ -60,6 +60,17 @@ Docs:
   Current-status/History split convention it already uses)
 - `evaluation/hpc/llm-mpcdf.md` → generalized, KISSKI-specific framing
   removed, moved under `docs/`
+- `evaluation/CLAUDE.md`'s **"Arbitrating below-gate dnb-toc-only books"**
+  section → becomes the new repo's own `CLAUDE.md`, adapted for the new
+  paths/CLI names (`cli/arbitrate.py` instead of
+  `evaluation/scripts/arbitrate_dnb_toc.py`,
+  `data/corpus/pilot/<key>.expected.json` instead of
+  `evaluation/corpus/dnb-toc-only/<key>.expected.json`, etc.) but
+  otherwise unchanged workflow guidance (list → read diff → arbitrate via
+  Read tool on page images → write `.expected.json` with
+  `"source": "claude_arbitration"` → `reject` for unrecoverable books).
+  The old repo's `evaluation/CLAUDE.md` loses this section entirely (see
+  "Old-repo CLAUDE.md updates" below) rather than keeping a stale copy.
 - Specs/plans scoped to this pipeline from `docs/superpowers/{specs,plans}/`:
   `2026-08-14-dnb-toc-corpus-acquisition{,-design}.md`,
   `2026-08-15-dnb-toc-ground-truth-generation{,-design}.md`,
@@ -99,6 +110,18 @@ no KISSKI-specific code remains to test.
 - `evaluation/scripts/add_toc_ground_truth.py` — operates across
   `pending`/`open-access`/`copyrighted-scans`, not DNB-specific
 - Everything else under `evaluation/`
+
+### Old-repo `CLAUDE.md` updates
+
+Beyond deleting the "Arbitrating below-gate dnb-toc-only books" section
+outright, `evaluation/CLAUDE.md`'s Step 1 ("Transcribe the table of
+contents") has a live cross-reference into the corpus that's moving —
+"check whether a DNB-digitized TOC scan already exists... look in
+`evaluation/corpus/dnb-toc-only/manifest.json`". That path gets
+repointed at the sibling-checkout location
+(`../dnb-toc-ground-truth/data/corpus/pilot/manifest.json`, same
+convention as the `--dnb-toc-corpus-dir` default below) rather than left
+dangling.
 
 ## Corpus access from `chapter-segmentation` after the move
 

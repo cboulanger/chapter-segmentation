@@ -20,10 +20,21 @@ behind the current numbers isn't lost.
   layout-only). See that repo's
   `docs/history/chapter-segmentation-layout-classifier-pilot.md` for a
   condensed history of this pilot's findings.
-- [`nuextract-finetuning.md`](nuextract-finetuning.md) -- whether a small,
+- **NuExtract-2.0-4B fine-tuning pilot** -- whether a small,
   locally-runnable extraction model (`NuExtract-2.0-4B`) can extract a
   book's table of contents directly, as a candidate alternative to the
-  LLM-strategy row in `evaluation/RESULTS.md`.
+  LLM-strategy row in `evaluation/RESULTS.md`. A zero-shot baseline plus a
+  LoRA fine-tuning pilot showed a promising but genuinely noisy signal
+  (aggregate f1 0.52 -> 0.59 on an 11-book held-out split, propped up by
+  big per-book wins alongside a new decoding-time repetition failure mode
+  on two others) and never reached a clean go/no-go decision before a
+  newer model, NuExtract3, superseded it as the more promising target.
+  All further NuExtract fine-tuning work (including this pilot's own
+  history) has moved to its own standalone repository,
+  [finetune-nuextract-toc](https://github.com/cboulanger/finetune-nuextract-toc),
+  which now fine-tunes NuExtract3 instead. See that repo's
+  `docs/history/chapter-segmentation-nuextract2-finetuning-pilot.md` for a
+  condensed history of this pilot's findings.
 - **dnb-toc-ground-truth** -- the LLM-gated ground-truth-generation
   pipeline for DNB table-of-contents scans has moved to its own
   standalone repository,

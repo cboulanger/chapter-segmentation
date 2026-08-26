@@ -13,8 +13,8 @@ cover the main `chapter_segmentation` workflow (the pure heuristic, the
 strategy pipeline, and the standalone heuristic/outline/LLM strategies) --
 `open-access/` and `copyrighted-scans/` corpora. A not-yet-integrated
 experiment toward optimizing one *part* of that pipeline (the `dnb-toc-only`
-ground-truth generation pipeline, the NuExtract fine-tuning pilot) instead
-gets its own file under `evaluation/experiments/`, kept separate so a
+ground-truth generation pipeline) instead gets its own file under
+`evaluation/experiments/`, kept separate so a
 reader working on the main workflow doesn't have to wade through
 experiments that don't affect it (and vice versa) -- see the
 `evaluation/experiments/` bullet below.
@@ -71,8 +71,7 @@ experiments that don't affect it (and vice versa) -- see the
   `EXPERIMENTS.md` is currently empty, since nothing in `RESULTS.md` has
   been superseded yet.
 - **`evaluation/experiments/<name>.md`** (one file per not-yet-integrated
-  experiment, e.g. `dnb-toc-ground-truth.md`,
-  `nuextract-finetuning.md`) — each is self-contained: a "Current status"
+  experiment, e.g. `dnb-toc-ground-truth.md`) — each is self-contained: a "Current status"
   section (the `RESULTS.md` role, current numbers and findings only) plus
   a "History" section (the `EXPERIMENTS.md` role, the full write-up for
   every superseded run/follow-up for that same experiment), both living in

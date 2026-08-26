@@ -19,9 +19,9 @@ heading text, the first time a section there needs to compress an old
 snapshot into a summary+link.
 
 For the not-yet-integrated experiments this file used to also cover
-(`dnb-toc-only` ground-truth generation and the NuExtract fine-tuning
-pilot), see their own dedicated files under `evaluation/experiments/`
-instead -- `evaluation/experiments/dnb-toc-ground-truth.md` and
-`evaluation/experiments/nuextract-finetuning.md` -- each of which now
-holds both its current status and its own full history in one place
-(moved there 2026-08-19, see `evaluation/RESULTS.md`'s "Scope" note).
+(`dnb-toc-only` ground-truth generation and, formerly, the NuExtract
+fine-tuning pilot), see `evaluation/experiments/README.md` for the
+current list -- each still-tracked experiment holds both its current
+status and its own full history in one place (moved there 2026-08-19,
+see `evaluation/RESULTS.md`'s "Scope" note); retired ones point onward to
+whichever standalone repository now owns that work.

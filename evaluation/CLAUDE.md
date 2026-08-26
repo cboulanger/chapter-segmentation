@@ -14,10 +14,10 @@ strategy pipeline, and the standalone heuristic/outline/LLM strategies) --
 `open-access/` and `copyrighted-scans/` corpora. A not-yet-integrated
 experiment toward optimizing one *part* of that pipeline (the `dnb-toc-only`
 ground-truth generation pipeline, the NuExtract fine-tuning pilot) instead
-gets its own file under `evaluation/experiments/`, kept separate so a reader working on
-the main workflow doesn't have to wade through experiments that don't
-affect it (and vice versa) -- see the `evaluation/experiments/` bullet
-below.
+gets its own file under `evaluation/experiments/`, kept separate so a
+reader working on the main workflow doesn't have to wade through
+experiments that don't affect it (and vice versa) -- see the
+`evaluation/experiments/` bullet below.
 
 - **`README.md`** — permanent reference: what the evaluation set is, its
   schema, how to fetch/add books, and how to run each evaluation

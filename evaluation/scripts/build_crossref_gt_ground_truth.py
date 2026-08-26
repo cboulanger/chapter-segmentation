@@ -37,11 +37,9 @@ manual curation later, rather than polluting the harness with unverified
 chapter boundaries.
 
 Migrated books land in evaluation/corpus/pending/, not open-access/ --
-confirmation + novelty give high GT confidence, but open-access/ is what
-this pilot's canonical numbers are measured against, so a human gets a
-chance to spot-check (or evaluate in isolation via
-evaluate_layout_toc_classifier.py's --corpora flag) before a book affects
-those numbers. See
+confirmation + novelty give high GT confidence, but a human still gets a
+chance to spot-check before a book is promoted into open-access/ and
+starts affecting evaluation numbers derived from that corpus. See
 docs/superpowers/specs/2026-08-11-crossref-gt-corpus-expansion-design.md.
 
 Usage:
@@ -189,11 +187,10 @@ class NoveltyBaseline:
 
 def _load_novelty_baseline(pdfalto_bin: str, novelty_percentile: float) -> NoveltyBaseline:
     """Loads the current evaluation/corpus/open-access/ corpus, fits a
-    StandardScaler on its full feature-row set (the same normalization
-    evaluate_layout_toc_classifier's own LogisticRegression classifier
-    uses, so novelty distances are computed in the same space it reasons
-    in), and returns the scaled chapter_first vectors plus the novelty
-    distance threshold derived from their own leave-one-out
+    StandardScaler on its full feature-row set (so novelty distances are
+    computed in a normalized space rather than raw, differently-scaled
+    feature units), and returns the scaled chapter_first vectors plus the
+    novelty distance threshold derived from their own leave-one-out
     nearest-neighbor distances."""
 
     def cache_dir_for(corpus: str) -> Path:

@@ -1,6 +1,8 @@
-"""Per-page geometric feature extraction from a pdfalto ALTO XML file --
-the classifier's input for
-docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md."""
+"""Per-page geometric feature extraction from a pdfalto ALTO XML file. Used
+by evaluation/scripts/build_crossref_gt_ground_truth.py's layout-feature
+novelty check (formerly also the input to a since-retired layout-only
+TOC/chapter-page classifier pilot -- see toc-page-classifier's
+docs/history/ for that pilot's findings, if relevant)."""
 
 import re
 import statistics

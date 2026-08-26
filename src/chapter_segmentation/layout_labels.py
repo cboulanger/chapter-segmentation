@@ -1,6 +1,7 @@
 """Per-page ground-truth labels (toc / chapter_first / other) derived from
-an .expected.json-shaped dict, for the layout-classifier pilot -- see
-docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md."""
+an .expected.json-shaped dict. Used by
+evaluation/scripts/layout_corpus.py's build_feature_table (in turn used by
+build_crossref_gt_ground_truth.py's novelty check)."""
 
 LABEL_TOC = "toc"
 LABEL_CHAPTER_FIRST = "chapter_first"

@@ -9,7 +9,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from evaluation.scripts.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_binary
+from chapter_segmentation.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_binary
 
 
 class TestResolvePdfaltoBinary(unittest.TestCase):
@@ -37,7 +37,7 @@ class TestEnsureAltoXml(unittest.TestCase):
                 return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
 
             with patch(
-                "evaluation.scripts.pdfalto_runner.subprocess.run", side_effect=fake_run
+                "chapter_segmentation.pdfalto_runner.subprocess.run", side_effect=fake_run
             ) as mock_run:
                 output_path = ensure_alto_xml(pdf_path, cache_dir, "pdfalto")
                 self.assertTrue(output_path.exists())
@@ -51,7 +51,7 @@ class TestEnsureAltoXml(unittest.TestCase):
             cache_dir.mkdir()
             (cache_dir / "book.alto.xml").write_text("<alto/>", encoding="utf-8")
 
-            with patch("evaluation.scripts.pdfalto_runner.subprocess.run") as mock_run:
+            with patch("chapter_segmentation.pdfalto_runner.subprocess.run") as mock_run:
                 output_path = ensure_alto_xml(pdf_path, cache_dir, "pdfalto")
                 self.assertTrue(output_path.exists())
                 mock_run.assert_not_called()
@@ -63,7 +63,7 @@ class TestEnsureAltoXml(unittest.TestCase):
             cache_dir = Path(tmp) / "cache"
 
             with patch(
-                "evaluation.scripts.pdfalto_runner.subprocess.run",
+                "chapter_segmentation.pdfalto_runner.subprocess.run",
                 return_value=subprocess.CompletedProcess([], 1, stdout="", stderr="boom"),
             ):
                 with self.assertRaises(RuntimeError):
@@ -81,7 +81,7 @@ class TestEnsureAltoXml(unittest.TestCase):
                 return subprocess.CompletedProcess(cmd, 1, stdout="", stderr="boom")
 
             with patch(
-                "evaluation.scripts.pdfalto_runner.subprocess.run", side_effect=fake_run
+                "chapter_segmentation.pdfalto_runner.subprocess.run", side_effect=fake_run
             ):
                 with self.assertRaises(RuntimeError):
                     ensure_alto_xml(pdf_path, cache_dir, "pdfalto")

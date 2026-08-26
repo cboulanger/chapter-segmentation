@@ -2,7 +2,7 @@
 
 import unittest
 
-from evaluation.scripts.layout_labels import LABEL_CHAPTER_FIRST, LABEL_OTHER, LABEL_TOC, page_labels
+from chapter_segmentation.layout_labels import LABEL_CHAPTER_FIRST, LABEL_OTHER, LABEL_TOC, page_labels
 
 
 class TestPageLabels(unittest.TestCase):

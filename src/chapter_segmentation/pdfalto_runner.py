@@ -1,8 +1,8 @@
 """Runs the pdfalto binary (https://github.com/kermitt2/pdfalto) against a
 PDF and caches its ALTO XML output -- not vendored, matching the Kreuzberg
 OCR sidecar precedent of treating an external tool as developer-provided,
-not bundled. See
-docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md."""
+not bundled. Used by evaluation/scripts/build_crossref_gt_ground_truth.py's
+layout-feature novelty check."""
 
 import os
 import subprocess

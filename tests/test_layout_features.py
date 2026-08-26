@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from evaluation.scripts.layout_features import (
+from chapter_segmentation.layout_features import (
     FEATURE_NAMES,
     PAGE_FEATURE_NAMES,
     _is_heading_line,

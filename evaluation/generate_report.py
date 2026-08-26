@@ -59,9 +59,13 @@ def _load_llm_cache(corpus: str, manifest_key: str) -> dict:
 
 
 def _load_classifier_results(corpus: str) -> dict | None:
-    """evaluation/corpus/<corpus>/classifier-results.json, written by
-    evaluate_layout_toc_classifier.py --save-results, or None if that
-    script has never been run (with --save-results) against this corpus."""
+    """evaluation/corpus/<corpus>/classifier-results.json, an optional
+    LOBO layout/TOC-classifier results file this repo no longer generates
+    (the pilot that produced it has been retired -- see
+    docs/superpowers/plans/2026-08-26-retire-toc-classifier-pilot.md).
+    Returns None if no such file is present for this corpus, which is
+    always the case now; kept only so an old, hand-placed results file
+    would still render if one existed."""
     path = corpus_dir(corpus) / "classifier-results.json"
     if not path.exists():
         return None
@@ -206,7 +210,7 @@ is at <a href="llm/index.html">llm/index.html</a>.</p>"""
             "note": (
                 "The layout/TOC classifier row/column above measures per-page "
                 "table-of-contents/chapter-opening-page classification recall via "
-                "leave-one-book-out cross-validation (evaluate_layout_toc_classifier.py) -- "
+                "leave-one-book-out cross-validation -- "
                 "a different methodology than the chapter-boundary precision/recall/F1 the "
                 "other rows measure, so it is not directly comparable to them."
             ),

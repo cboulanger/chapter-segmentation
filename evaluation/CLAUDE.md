@@ -469,9 +469,9 @@ print(f'{book}: {len(chapters)} chapters, {total} pages -> OK')
 ## Step 5: TOC ground truth
 
 `.expected.json` also carries an optional `"toc"` field, sibling to
-`"chapters"`, consumed by the standalone toc-page-classifier repo
-(github.com/cboulanger/toc-page-classifier) as one of its ground-truth
-sources:
+`"chapters"`, consumed by the standalone
+[toc-page-classifier](https://github.com/cboulanger/toc-page-classifier)
+repo as one of its ground-truth sources:
 
 ```json
 {"toc_start_index": 7, "toc_end_index": 8}

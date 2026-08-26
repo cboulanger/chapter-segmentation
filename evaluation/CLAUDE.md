@@ -13,9 +13,8 @@ cover the main `chapter_segmentation` workflow (the pure heuristic, the
 strategy pipeline, and the standalone heuristic/outline/LLM strategies) --
 `open-access/` and `copyrighted-scans/` corpora. A not-yet-integrated
 experiment toward optimizing one *part* of that pipeline (the `dnb-toc-only`
-ground-truth generation pipeline, the layout-based TOC/chapter-first-page
-classifier pilot, the NuExtract fine-tuning pilot) instead gets its own
-file under `evaluation/experiments/`, kept separate so a reader working on
+ground-truth generation pipeline, the NuExtract fine-tuning pilot) instead
+gets its own file under `evaluation/experiments/`, kept separate so a reader working on
 the main workflow doesn't have to wade through experiments that don't
 affect it (and vice versa) -- see the `evaluation/experiments/` bullet
 below.
@@ -72,7 +71,7 @@ below.
   `EXPERIMENTS.md` is currently empty, since nothing in `RESULTS.md` has
   been superseded yet.
 - **`evaluation/experiments/<name>.md`** (one file per not-yet-integrated
-  experiment, e.g. `dnb-toc-ground-truth.md`, `toc-classifier-pilot.md`,
+  experiment, e.g. `dnb-toc-ground-truth.md`,
   `nuextract-finetuning.md`) — each is self-contained: a "Current status"
   section (the `RESULTS.md` role, current numbers and findings only) plus
   a "History" section (the `EXPERIMENTS.md` role, the full write-up for
@@ -223,19 +222,6 @@ Before anything else, pick one:
   via Crossref/Unpaywall automatically. Only entries already in that
   corpus's committed `manifest.json` are supported (not
   `manifest.local.json` -- promote those by hand).
-
-**If the book is being added to grow the layout-based TOC/chapter-first-page
-classifier's training pool specifically** (as opposed to the text-heuristic
-accuracy harness), prefer scans, books with unnumbered first chapters, and
-books with weak title/body font contrast over another generic
-well-produced open-access book. A learning-curve check
-(`evaluation/experiments/toc-classifier-pilot.md`, "Follow-up: relaxing
-the per-book bar, and a model-architecture swap")
-found `full_recall_fraction` flat across training-pool sizes 10-35 books --
-the classifier is saturated on the kind of book already well-represented in
-the corpus, so another book like those adds little signal; the
-underrepresented templates it still struggles with are where new ground
-truth actually moves the numbers.
 
 Every path in this document below (`evaluation/<filename>`,
 `evaluation/manifest.local.json`, etc.) means
@@ -483,8 +469,9 @@ print(f'{book}: {len(chapters)} chapters, {total} pages -> OK')
 ## Step 5: TOC ground truth
 
 `.expected.json` also carries an optional `"toc"` field, sibling to
-`"chapters"`, used by the layout-based TOC-classifier pilot (see
-`docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md`):
+`"chapters"`, consumed by the standalone toc-page-classifier repo
+(github.com/cboulanger/toc-page-classifier) as one of its ground-truth
+sources:
 
 ```json
 {"toc_start_index": 7, "toc_end_index": 8}

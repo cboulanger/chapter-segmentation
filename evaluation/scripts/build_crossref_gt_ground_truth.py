@@ -438,7 +438,7 @@ def process_book(book: dict, dry_run: bool, novelty_baseline: NoveltyBaseline) -
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--dry-run", action="store_true", help="Report what would happen without writing files")
-    parser.add_argument("--pdfalto-bin", default=None, help="Path to the pdfalto binary (see pdfalto_runner.py)")
+    parser.add_argument("--pdfalto-bin", default=None, help="Path to the pdfalto binary (see chapter_segmentation/pdfalto_runner.py)")
     parser.add_argument(
         "--novelty-percentile",
         type=float,

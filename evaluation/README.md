@@ -57,14 +57,12 @@ see below):
 
 A fourth directory, **`dnb-toc-only/`** (1251 books), holds real
 DNB-digitized table-of-contents *scans* -- not full books -- sourced via
-the `lobid-resources` API (see
-`docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md`
-and `evaluation/scripts/fetch_dnb_toc_corpus.py`). It's for training and
-calibrating layout-only *parts* of the pipeline (currently the
-scan-noise constants in `evaluation/scripts/alto_scan_noise.py` --
-see `evaluation/experiments/toc-classifier-pilot.md`'s "real-scan
-measurement" follow-up) against real
-scanned TOC pages, not for evaluating chapter segmentation end-to-end --
+the `lobid-resources` API. It was for training and calibrating
+layout-only *parts* of the pipeline against real scanned TOC pages;
+its only prior consumer (`alto_scan_noise.py`'s scan-noise constants,
+part of the layout-based TOC-classifier pilot) has been retired along
+with that pilot, and this corpus currently has no other consumer in
+this repo. Not for evaluating chapter segmentation end-to-end --
 there is no surrounding book, no `.expected.json`, and no chapter
 boundaries to score. Its manifest sets `"toc_only": true` and is
 therefore excluded from `list_corpora()`'s default iteration (every

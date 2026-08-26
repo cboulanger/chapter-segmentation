@@ -18,12 +18,10 @@ superseded yet. Add a `## <heading>` here, matching `RESULTS.md`'s own
 heading text, the first time a section there needs to compress an old
 snapshot into a summary+link.
 
-For the three not-yet-integrated experiments this file used to also cover
-(`dnb-toc-only` ground-truth generation, the layout-based TOC/chapter-
-first-page classifier pilot, and the NuExtract fine-tuning pilot), see
-their own dedicated files under `evaluation/experiments/` instead --
-`evaluation/experiments/dnb-toc-ground-truth.md`,
-`evaluation/experiments/toc-classifier-pilot.md`, and
+For the not-yet-integrated experiments this file used to also cover
+(`dnb-toc-only` ground-truth generation and the NuExtract fine-tuning
+pilot), see their own dedicated files under `evaluation/experiments/`
+instead -- `evaluation/experiments/dnb-toc-ground-truth.md` and
 `evaluation/experiments/nuextract-finetuning.md` -- each of which now
 holds both its current status and its own full history in one place
 (moved there 2026-08-19, see `evaluation/RESULTS.md`'s "Scope" note).

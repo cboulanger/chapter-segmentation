@@ -9,12 +9,13 @@ it's a dump of `--help`, not a workflow guide. Regenerate an entry by running
 / `uv run review-stop --help` for `review_app.py`) whenever that script's
 arguments change.
 
-Four files in this directory are helper modules, not standalone scripts (no
+Two files in this directory are helper modules, not standalone scripts (no
 `argparse`, nothing to run directly): `ground_truth_helper.py` is a script
-itself but also somewhat unusual (see below); `layout_features.py`,
-`layout_labels.py`, and `pdfalto_runner.py` are pure library code imported by
-`evaluate_layout_toc_classifier.py` and `build_crossref_gt_ground_truth.py`.
-`__init__.py` is an empty package marker.
+itself but also somewhat unusual (see below); `layout_corpus.py` is pure
+library code imported by `build_crossref_gt_ground_truth.py` (it in turn
+imports `layout_features.py`/`layout_labels.py`/`pdfalto_runner.py`, which
+now live in `src/chapter_segmentation/` as shared library code, not in this
+directory). `__init__.py` is an empty package marker.
 
 ## `add_toc_ground_truth.py`
 
@@ -93,7 +94,8 @@ options:
   -h, --help            show this help message and exit
   --dry-run             Report what would happen without writing files
   --pdfalto-bin PDFALTO_BIN
-                        Path to the pdfalto binary (see pdfalto_runner.py)
+                        Path to the pdfalto binary (see
+                        chapter_segmentation/pdfalto_runner.py)
   --novelty-percentile NOVELTY_PERCENTILE
                         Percentile of the existing open-access chapter-first
                         corpus's own leave-one-out nearest-neighbor distances
@@ -221,66 +223,6 @@ usage: evaluate_chapter_segmentation_strategies.py [-h] [--no-crossref]
 options:
   -h, --help     show this help message and exit
   --no-crossref  Disable the Crossref lookup strategy
-```
-
-## `evaluate_layout_toc_classifier.py`
-
-Pilot: leave-one-book-out evaluation of a layout-geometry TOC/chapter-first-
-page classifier.
-
-```
-usage: evaluate_layout_toc_classifier.py [-h] [--pdfalto-bin PDFALTO_BIN]
-                                         [--recall-target RECALL_TARGET]
-                                         [--chapter-first-recall-tolerance CHAPTER_FIRST_RECALL_TOLERANCE]
-                                         [--corpora CORPORA]
-                                         [--scan-noise-augment]
-                                         [--candidate-fraction-cap CANDIDATE_FRACTION_CAP]
-                                         [--save-results]
-
-Pilot: leave-one-book-out evaluation of a layout-geometry TOC/ chapter-first-
-page classifier. See docs/superpowers/specs/2026-08-10-layout-based-toc-
-classifier-pilot-design.md.
-
-options:
-  -h, --help            show this help message and exit
-  --pdfalto-bin PDFALTO_BIN
-  --recall-target RECALL_TARGET
-                        Legacy selection strategy: per-fold threshold-
-                        calibration target -- how much recall on training
-                        positives to require before accepting a page as a
-                        candidate, applied as one absolute threshold to every
-                        held-out book. Passing this explicitly switches
-                        selection to this strategy and --candidate-fraction-
-                        cap is ignored -- omit both to use the default
-                        --candidate-fraction-cap strategy instead. (Historical
-                        default: 0.9.)
-  --chapter-first-recall-tolerance CHAPTER_FIRST_RECALL_TOLERANCE
-                        Per-book chapter_first recall required to count that
-                        book as 'fully recalled' in this script's own report.
-                        Does not affect which candidate pages are produced.
-                        Default: 0.9.
-  --corpora CORPORA     Comma-separated list of evaluation/corpus/
-                        subdirectories to load books from (e.g. 'open-
-                        access,pending' to include unreviewed candidates).
-                        Default: open-access,copyrighted-scans.
-  --scan-noise-augment  Augment each open-access book's training rows with a
-                        scan-noise-perturbed copy of its ALTO XML (cached as
-                        <key>.aug.alto.xml). Augmented rows are only ever used
-                        for training, never evaluated.
-  --candidate-fraction-cap CANDIDATE_FRACTION_CAP
-                        Default selection strategy: document-relative
-                        candidate selection -- rank each held-out book's own
-                        pages by max(prob_toc, prob_chapter_first) and take
-                        the top candidate_fraction_cap share as candidates,
-                        instead of a threshold calibrated once from training-
-                        positive quantiles. Ignored if --recall-target is
-                        explicitly set. Default: 0.15. See
-                        select_candidates_by_document_budget's docstring.
-  --save-results        Write per-book results to
-                        evaluation/corpus/<corpus>/classifier-results.json
-                        (split by each book's own corpus), for
-                        generate_report.py to fold into the published report.
-                        Default: off (stdout-only, current behavior).
 ```
 
 ## `fetch_crossref_gt_corpus.py`
@@ -485,30 +427,16 @@ options:
   --output OUTPUT  Write draft JSON here instead of stdout
 ```
 
-## `measure_dnb_scan_noise_stats.py`
+## `layout_corpus.py`
 
-Measures real font-size contrast/dispersion from the dnb-toc-only corpus's
-ALTO to calibrate alto_scan_noise.py's synthetic constants.
-
-```
-usage: measure_dnb_scan_noise_stats.py [-h] [--corpus CORPUS]
-                                       [--pdfalto-bin PDFALTO_BIN]
-
-Measures real font-size contrast and per-line dispersion from the
-dnb-toc-only corpus's ALTO output, to calibrate alto_scan_noise.py's
-hand-picked synthetic constants (_CONTRAST_ALPHA, _FONT_JITTER) against
-real scanned data -- see
-docs/superpowers/specs/2026-08-14-dnb-toc-corpus-acquisition-design.md
-section 3. Every page in this corpus is a confirmed TOC page by
-construction (DNB only digitizes the TOC itself), so no per-page
-labeling step is needed.
-
-options:
-  -h, --help            show this help message and exit
-  --corpus CORPUS       Corpus to measure (default: dnb-toc-only)
-  --pdfalto-bin PDFALTO_BIN
-                        Path to the pdfalto binary (see pdfalto_runner.py)
-```
+Not a standalone script (no `argparse`) -- evaluation-specific glue on top
+of `chapter_segmentation`'s pdfalto/layout-feature/layout-label library
+code. `load_book_corpus()` scans `evaluation/corpus/<corpus>/*.expected.json`
+for books with a usable `"toc"` field; `build_feature_table()` runs pdfalto
+over each book (cached) and joins the resulting per-page geometric features
+with per-page `toc`/`chapter_first`/`other` labels. Used by
+`build_crossref_gt_ground_truth.py`'s layout-feature novelty check (see that
+script's own section above).
 
 ## `ocr_evaluation_pdfs.py`
 

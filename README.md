@@ -49,10 +49,14 @@ includes mechanism/root-cause notes).
 ### Ongoing experiments
 
 Candidate improvements that haven't (yet) been folded into the main
-pipeline -- e.g. a layout-based TOC/chapter-page classifier, a small
-locally-runnable TOC-extraction model, and the ground-truth-generation
-pipeline for a new evaluation corpus -- are tracked as living documents in
-`evaluation/experiments/`, see that directory's README for an index.
+pipeline -- e.g. a small locally-runnable TOC-extraction model and the
+ground-truth-generation pipeline for a new evaluation corpus -- are
+tracked as living documents in `evaluation/experiments/`, see that
+directory's README for an index.
+
+A layout/text-based TOC-page classifier, the direct successor to an
+earlier in-repo pilot that never cleared its own decision bar, now lives
+at [toc-page-classifier](https://github.com/cboulanger/toc-page-classifier).
 
 ## Development
 

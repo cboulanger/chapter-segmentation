@@ -14,11 +14,9 @@ and `copyrighted-scans/` corpora) — the pure heuristic, the strategy
 pipeline, and the standalone heuristic/outline/LLM strategies it's built
 from. Experiments toward optimizing individual pieces of that pipeline
 that haven't been integrated yet (the `dnb-toc-only` ground-truth
-generation pipeline, the layout-based TOC/chapter-first-page classifier
-pilot, the NuExtract fine-tuning pilot) each have their own dedicated
-snapshot under `evaluation/experiments/` instead of living here — see
-`evaluation/experiments/dnb-toc-ground-truth.md`,
-`evaluation/experiments/toc-classifier-pilot.md`, and
+generation pipeline, the NuExtract fine-tuning pilot) each have their own
+dedicated snapshot under `evaluation/experiments/` instead of living here
+— see `evaluation/experiments/dnb-toc-ground-truth.md` and
 `evaluation/experiments/nuextract-finetuning.md`.
 
 > **Always-current numbers:** https://cboulanger.github.io/chapter-segmentation/ (auto-published from `evaluation/generate_report.py`, no hand-written analysis). This file adds mechanism/root-cause commentary the published page deliberately omits, and is only updated by hand.

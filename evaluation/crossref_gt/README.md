@@ -268,13 +268,11 @@ layout-feature **novelty check** (in addition to the existing
 offset-consensus/content-search confirmation), confirmed candidates land
 in `evaluation/corpus/pending/`, not `open-access/` -- see
 `docs/superpowers/specs/2026-08-11-crossref-gt-corpus-expansion-design.md`.
-Promoting a `pending/` book into `open-access/` (after reviewing it, or
-evaluating it in isolation via `evaluate_layout_toc_classifier.py
---corpora open-access,pending`) is still the manual step
-`evaluation/CLAUDE.md` already documents.
+Promoting a `pending/` book into `open-access/` (after reviewing it) is
+still the manual step `evaluation/CLAUDE.md` already documents.
 
 The novelty check requires a working `pdfalto` binary (see
-`evaluation/scripts/pdfalto_runner.py`) -- it's only invoked for a
+`src/chapter_segmentation/pdfalto_runner.py`) -- it's only invoked for a
 candidate that has *already* cleared the offset-consensus/content-search
 confirmation gate, so an environment without `pdfalto` installed can still
 run discovery and fetching end-to-end, and will even get partway through

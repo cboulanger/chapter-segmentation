@@ -68,13 +68,13 @@ from pypdf import PdfReader
 from rapidfuzz import fuzz
 from sklearn.preprocessing import StandardScaler
 
+from chapter_segmentation.layout_features import FEATURE_NAMES, extract_page_features
+from chapter_segmentation.layout_labels import LABEL_CHAPTER_FIRST
+from chapter_segmentation.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_binary
 from chapter_segmentation.segmentation import _parse_toc_page_number
 from evaluation.harness import chapter_bounds_errors
-from evaluation.scripts.evaluate_layout_toc_classifier import build_feature_table, load_book_corpus
 from evaluation.scripts.ground_truth_helper import extract_printed_number, find_toc_pages, toc_page_range
-from evaluation.scripts.layout_features import FEATURE_NAMES, extract_page_features
-from evaluation.scripts.layout_labels import LABEL_CHAPTER_FIRST
-from evaluation.scripts.pdfalto_runner import ensure_alto_xml, resolve_pdfalto_binary
+from evaluation.scripts.layout_corpus import build_feature_table, load_book_corpus
 
 _CROSSREF_DIR = Path(__file__).resolve().parent.parent / "crossref_gt"
 _OPEN_ACCESS_DIR = Path(__file__).resolve().parent.parent / "corpus" / "open-access"

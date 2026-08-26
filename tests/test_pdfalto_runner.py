@@ -1,7 +1,6 @@
-"""Unit tests for evaluation/scripts/pdfalto_runner.py's pure logic: binary
+"""Unit tests for chapter_segmentation.pdfalto_runner's pure logic: binary
 resolution and cache-hit/cache-miss behavior. Running the real pdfalto
-binary against a real PDF is exercised manually -- see
-docs/superpowers/specs/2026-08-10-layout-based-toc-classifier-pilot-design.md."""
+binary against a real PDF is exercised manually."""
 
 import subprocess
 import tempfile

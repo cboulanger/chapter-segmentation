@@ -242,8 +242,9 @@ def add_book_context_features(
         # earlier monotonic page_position_fraction: a fractional "closer to
         # page 1" feature learns to penalize genuine back-of-book TOCs
         # (rare in training data) hard enough to cancel out this feature's
-        # own signal when both are present -- see the 2026-08-13 pilot
-        # follow-up notes in evaluation/experiments/toc-classifier-pilot.md.
+        # own signal when both are present -- see toc-page-classifier's
+        # docs/history/chapter-segmentation-layout-classifier-pilot.md for
+        # the full investigation this was found in.
         out["edge_distance"] = min(page_index, total_pages - 1 - page_index)
         result[page_index] = out
     return result

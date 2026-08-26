@@ -1,4 +1,4 @@
-"""Unit tests for evaluation/scripts/layout_features.py's ALTO-XML-to-
+"""Unit tests for chapter_segmentation.layout_features's ALTO-XML-to-
 feature-vector parsing, against a small hand-built two-page fixture (one
 TOC-shaped page, one chapter-opening-shaped page) with hand-computed
 expected values."""

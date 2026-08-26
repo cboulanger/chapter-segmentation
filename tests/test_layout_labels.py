@@ -1,4 +1,4 @@
-"""Unit tests for evaluation/scripts/layout_labels.py's page_labels()."""
+"""Unit tests for chapter_segmentation.layout_labels's page_labels()."""
 
 import unittest
 

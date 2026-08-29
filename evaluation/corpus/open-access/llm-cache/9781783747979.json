@@ -2279,7 +2279,110 @@
       "elapsed_seconds": 0.2520153960000471,
       "demand_at_run": 0,
       "generated_at": "2026-08-17T03:52:43.702818+00:00"
+    },
+    "qwen3.8-27b": {
+      "chapters": [
+        {
+          "title": "How to Use this Cookbook",
+          "authors": [],
+          "pdf_start_index": 25,
+          "pdf_end_index": 25,
+          "citation_pages": "10-15",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Research Data Management Policy: The Holy Grail of Data Management Support?",
+          "authors": [],
+          "pdf_start_index": 30,
+          "pdf_end_index": 68,
+          "citation_pages": "16-1",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Introduction",
+          "authors": [
+            "Annemarie"
+          ],
+          "pdf_start_index": 69,
+          "pdf_end_index": 72,
+          "citation_pages": "2-49",
+          "confidence": 0.83,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engagement through Training",
+          "authors": [],
+          "pdf_start_index": 73,
+          "pdf_end_index": 86,
+          "citation_pages": "50-67",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Dedicated Events to Gauge Interest and Build Networks",
+          "authors": [
+            "Kerry Miller"
+          ],
+          "pdf_start_index": 87,
+          "pdf_end_index": 103,
+          "citation_pages": "68-89",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Networks of Data Champions",
+          "authors": [],
+          "pdf_start_index": 104,
+          "pdf_end_index": 128,
+          "citation_pages": "90-109",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Dedicated Consultants to Offer One-to-One Support with Data",
+          "authors": [
+            "Yan"
+          ],
+          "pdf_start_index": 129,
+          "pdf_end_index": 138,
+          "citation_pages": "110-125",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Interviews and Case Studies",
+          "authors": [],
+          "pdf_start_index": 140,
+          "pdf_end_index": 152,
+          "citation_pages": "126-133",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Engage with Senior Researchers through Archiving",
+          "authors": [],
+          "pdf_start_index": 153,
+          "pdf_end_index": 163,
+          "citation_pages": "134-148",
+          "confidence": 0.82,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 449.90463382300004,
+      "demand_at_run": 1,
+      "generated_at": "2026-08-29T10:20:46.810289+00:00"
     }
   },
-  "generated_at": "2026-08-17T03:52:43.702818+00:00"
+  "generated_at": "2026-08-29T10:20:46.810289+00:00"
 }

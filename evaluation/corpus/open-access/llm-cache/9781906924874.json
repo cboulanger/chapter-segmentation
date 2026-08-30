@@ -964,7 +964,13 @@
       "elapsed_seconds": 0.25149432100010927,
       "demand_at_run": 0,
       "generated_at": "2026-08-17T03:52:46.103710+00:00"
+    },
+    "qwen3.8-27b": {
+      "chapters": [],
+      "elapsed_seconds": 343.99309040800006,
+      "demand_at_run": 0,
+      "generated_at": "2026-08-30T09:11:09.322164+00:00"
     }
   },
-  "generated_at": "2026-08-17T03:52:46.103710+00:00"
+  "generated_at": "2026-08-30T09:11:09.322164+00:00"
 }

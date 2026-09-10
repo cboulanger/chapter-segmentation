@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T16:00:21.101248+00:00",
+  "generated_at": "2026-09-10T08:42:06.728463+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -1736,6 +1736,12 @@
       "elapsed_seconds": 716.0669534889998,
       "demand_at_run": 2,
       "generated_at": "2026-08-28T16:00:21.101248+00:00"
+    },
+    "glm-5.3-flash": {
+      "chapters": [],
+      "elapsed_seconds": 771.8385384119997,
+      "demand_at_run": 4,
+      "generated_at": "2026-09-10T08:42:06.728463+00:00"
     }
   }
 }

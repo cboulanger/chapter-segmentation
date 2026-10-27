@@ -2202,7 +2202,13 @@
       "elapsed_seconds": 120.21490183899999,
       "demand_at_run": 1,
       "generated_at": "2026-09-12T07:47:03.778506+00:00"
+    },
+    "eurollm-22b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 1.7512156209999716,
+      "demand_at_run": 0,
+      "generated_at": "2026-10-27T08:50:46.825786+00:00"
     }
   },
-  "generated_at": "2026-09-12T07:47:03.778506+00:00"
+  "generated_at": "2026-10-27T08:50:46.825786+00:00"
 }

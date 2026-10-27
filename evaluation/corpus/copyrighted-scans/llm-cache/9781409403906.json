@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T08:10:05.841417+00:00",
+  "generated_at": "2026-10-27T08:44:26.908091+00:00",
   "models": {
     "apertus-70b-instruct-2509": {
       "chapters": [
@@ -625,6 +625,12 @@
       "elapsed_seconds": 815.074868255,
       "demand_at_run": 4,
       "generated_at": "2026-09-10T08:10:05.841417+00:00"
+    },
+    "eurollm-22b-instruct-2512": {
+      "chapters": [],
+      "elapsed_seconds": 1.531895474999999,
+      "demand_at_run": 0,
+      "generated_at": "2026-10-27T08:44:26.908091+00:00"
     }
   }
 }

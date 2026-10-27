@@ -1114,7 +1114,167 @@
       "elapsed_seconds": 48.91918095400001,
       "demand_at_run": 1,
       "generated_at": "2026-09-12T07:52:52.964612+00:00"
+    },
+    "eurollm-22b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "4. Concepts of \"Russia\" and their Relation to the Border with China",
+          "authors": [
+            "Caroline Humphrey",
+            "Buryats"
+          ],
+          "pdf_start_index": 65,
+          "pdf_end_index": 80,
+          "citation_pages": "55-70",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "5. Chinese Migrants and Anti-Chinese Sentiments in Russian Society",
+          "authors": [
+            "Viktor Dyatlov",
+            "Bri"
+          ],
+          "pdf_start_index": 81,
+          "pdf_end_index": 97,
+          "citation_pages": "71-88",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "6. The Case of the Amur as a Cross-Border Zone of Illegality",
+          "authors": [
+            "Amur"
+          ],
+          "pdf_start_index": 99,
+          "pdf_end_index": 120,
+          "citation_pages": "89-110",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "7. Prostitution and the Transformation of the Chinese Trading Town of Ereen",
+          "authors": [],
+          "pdf_start_index": 121,
+          "pdf_end_index": 145,
+          "citation_pages": "111-136",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "8. Ritual, Memory and the Buriad Diaspora Notion of Home",
+          "authors": [
+            "Buriad Diaspora Notion",
+            "Sayana Namsaraeva \nNayan-Nava",
+            "Nayan-Nava",
+            "Bair Dugarov"
+          ],
+          "pdf_start_index": 147,
+          "pdf_end_index": 173,
+          "citation_pages": "137-164",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "9. Politicisation of Quasi-Indigenousness on the Russo-Chinese Frontier",
+          "authors": [
+            "Ivan Peshkov",
+            "Joseph Brodsky"
+          ],
+          "pdf_start_index": 175,
+          "pdf_end_index": 191,
+          "citation_pages": "165-182",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "10. People of the Border: The Destiny of the Shenehen Buryats",
+          "authors": [
+            "Marina Baldano"
+          ],
+          "pdf_start_index": 193,
+          "pdf_end_index": 208,
+          "citation_pages": "183-198",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "11. The Persistence of the Nation-State at the Chinese-Kazakh Border",
+          "authors": [
+            "Kazakh Border\nRoss Anthony",
+            "Anderson 1991",
+            "Gupta"
+          ],
+          "pdf_start_index": 209,
+          "pdf_end_index": 220,
+          "citation_pages": "199-210",
+          "confidence": 0.97,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "12. Neighbours and their Ruins: Remembering Foreign Presences in Mongolia",
+          "authors": [
+            "Ruins"
+          ],
+          "pdf_start_index": 221,
+          "pdf_end_index": 243,
+          "citation_pages": "211-234",
+          "confidence": 0.96,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Appendix 1: Border-Crossing Infrastructure: The Case of the Russian-Mongolian Border",
+          "authors": [],
+          "pdf_start_index": 245,
+          "pdf_end_index": 252,
+          "citation_pages": "235-242",
+          "confidence": 0.96,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        },
+        {
+          "title": "Appendix 2: Maps",
+          "authors": [
+            "Map",
+            "Philip Stickler"
+          ],
+          "pdf_start_index": 255,
+          "pdf_end_index": 255,
+          "citation_pages": "245-245",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Bibliography of Works Cited",
+          "authors": [
+            "N. I. 2007",
+            "Novosibirsk",
+            "James M. 2006",
+            "Alexseev",
+            "Mikhail A. 2006a"
+          ],
+          "pdf_start_index": 259,
+          "pdf_end_index": 264,
+          "citation_pages": "249-254",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 85.29072819600003,
+      "demand_at_run": 0,
+      "generated_at": "2026-10-27T08:55:11.830092+00:00"
     }
   },
-  "generated_at": "2026-09-12T07:52:52.964612+00:00"
+  "generated_at": "2026-10-27T08:55:11.830092+00:00"
 }

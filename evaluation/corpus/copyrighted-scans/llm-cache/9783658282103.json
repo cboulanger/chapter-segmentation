@@ -3667,7 +3667,287 @@
       "elapsed_seconds": 600.9940868689998,
       "demand_at_run": 4,
       "generated_at": "2026-09-10T08:38:14.175580+00:00"
+    },
+    "eurollm-22b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Max Weber 1864–1920",
+          "authors": [
+            "Max Weber",
+            "Sohn",
+            "Seine Studienjahre",
+            "Geschichte",
+            "bin Arbeit",
+            "Verkaufen ja Wohnung",
+            "Katze",
+            "Weihnachten \nGeschichte",
+            "Antworten",
+            "Verstehen daran Schicken",
+            "Freund Tisch Kö"
+          ],
+          "pdf_start_index": 119,
+          "pdf_end_index": 130,
+          "citation_pages": "114-125",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Max Webers Jugendbriefe",
+          "authors": [
+            "Max Webers Jugendbriefe",
+            "Max Weber",
+            "Jugendbriefe",
+            "Herausgegeben von Marianne Weber",
+            "J. C. B. Mohr",
+            "Paul Siebeck",
+            "Herausgeberin",
+            "zu danken",
+            "Erschrecken",
+            "Natürlich",
+            "Haus Weihnachten",
+            "schreiben Schlagen",
+            "Glauben"
+          ],
+          "pdf_start_index": 131,
+          "pdf_end_index": 132,
+          "citation_pages": "126-127",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Sammelrezension über Max Webers ‚Soziologische Grundbegriffe‘ und die ‚Rechtssoziologie‘",
+          "authors": [
+            "Max Webers",
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "Soziologie",
+            "Haus Holen Natürlich",
+            "Mit Holen",
+            "Vielleicht",
+            "Weihnachten Spielen",
+            "davon Schlafen \nErschrecken",
+            "Wohl"
+          ],
+          "pdf_start_index": 133,
+          "pdf_end_index": 134,
+          "citation_pages": "128-16",
+          "confidence": 0.94,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Rezension über Reinhard Bendix, Max Weber. An Intellectual Portrait",
+          "authors": [
+            "Max Weber",
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "Soziologie",
+            "Blau 9",
+            "Schlafen Sitzen",
+            "Erschrecken Scheinen",
+            "Später Haus",
+            "Vielleicht Hilfe"
+          ],
+          "pdf_start_index": 136,
+          "pdf_end_index": 142,
+          "citation_pages": "131-137",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Gegenstand und Methode der Soziologie. Talcott Parsons, Georges Gurvitch",
+          "authors": [
+            "Soziologie",
+            "Talcott Parsons",
+            "Georges Gurvitch",
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "Gehören",
+            "Weiß 9",
+            "Gar Trinken",
+            "bin Weihnachten",
+            "Sprechen",
+            "Allein",
+            "Lehrerin Brot",
+            "zum zwischen Blume"
+          ],
+          "pdf_start_index": 143,
+          "pdf_end_index": 155,
+          "citation_pages": "138-5",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Soziologie in Berlin um 1930",
+          "authors": [
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "Soziologie",
+            "René König Schriften",
+            "Hand 9",
+            "Kurz",
+            "zum Liegen",
+            "Braun",
+            "zwei los ihm",
+            "unter gab",
+            "Opa Weihnachten",
+            "Zeigen Schwester"
+          ],
+          "pdf_start_index": 185,
+          "pdf_end_index": 226,
+          "citation_pages": "181-222",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Die Juden und die Soziologie",
+          "authors": [
+            "Soziologie",
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "René König Schriften",
+            "Hand 9",
+            "Vergessen Schiff Gott",
+            "Weihnachten Zusammen",
+            "Eigentlich",
+            "Eigentlich ein",
+            "Sprechen Freund",
+            "Vielleicht von dafür",
+            "Erschrecken"
+          ],
+          "pdf_start_index": 227,
+          "pdf_end_index": 239,
+          "citation_pages": "223-238",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Epilog 1981",
+          "authors": [
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "Soziologie",
+            "René König Schriften",
+            "Hand 9",
+            "Zug Weihnachten Gefährlich",
+            "Noch",
+            "klettern ein schreiben",
+            "Hase"
+          ],
+          "pdf_start_index": 266,
+          "pdf_end_index": 273,
+          "citation_pages": "264-271",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vom vermeintlichen Ende der deutschen Soziologie vor der Machtergreifung des Nationalsozialismus",
+          "authors": [
+            "Soziologie",
+            "Nationalsozialismus",
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "Erschrecken",
+            "Acht Hören Schwester",
+            "Spielen \n",
+            "Zwei 9",
+            "Einfach Fuß 1958",
+            "Geschichte"
+          ],
+          "pdf_start_index": 274,
+          "pdf_end_index": 324,
+          "citation_pages": "272-322",
+          "confidence": 0.8,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Vorwort: In eigener Sache",
+          "authors": [
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "Soziologie",
+            "René König Schriften",
+            "Hand 9",
+            "Alt Treffen",
+            "Dabei\nAb",
+            "Erschrecken",
+            "dort auf",
+            "Weihnachten Waschen",
+            "Fahren",
+            "Wenn"
+          ],
+          "pdf_start_index": 325,
+          "pdf_end_index": 337,
+          "citation_pages": "323-335",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Kontinuität oder Unterbrechung? Ein neuer Blick auf ein altes Problem",
+          "authors": [
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "Soziologie",
+            "Tisch Gott",
+            "Lassen",
+            "Freude 1933"
+          ],
+          "pdf_start_index": 338,
+          "pdf_end_index": 393,
+          "citation_pages": "336-391",
+          "confidence": 0.99,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        },
+        {
+          "title": "Identität und Anpassung im Exil",
+          "authors": [
+            "Exil",
+            "Fachmedien Wiesbaden GmbH",
+            "ein Teil von Springer Nature \n",
+            "R. König",
+            "Soziologie",
+            "René König Schriften",
+            "Hand 9",
+            "ihm Jahr",
+            "Rad Warum",
+            "Mehr",
+            "denken ich",
+            "Weg rot klein",
+            "Dort Dorf Fuß Hund",
+            "Zug Tisch Erschrecken",
+            "Hoch"
+          ],
+          "pdf_start_index": 394,
+          "pdf_end_index": 403,
+          "citation_pages": "392-401",
+          "confidence": 1.0,
+          "page_mapping_confidence": "high",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 31.393582689,
+      "demand_at_run": 0,
+      "generated_at": "2026-10-27T08:47:22.521727+00:00"
     }
   },
-  "generated_at": "2026-09-10T08:38:14.175580+00:00"
+  "generated_at": "2026-10-27T08:47:22.521727+00:00"
 }

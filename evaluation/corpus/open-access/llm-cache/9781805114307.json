@@ -121,7 +121,27 @@
       "elapsed_seconds": 1.622535192999976,
       "demand_at_run": 1,
       "generated_at": "2026-09-12T07:48:29.933288+00:00"
+    },
+    "eurollm-22b-instruct-2512": {
+      "chapters": [
+        {
+          "title": "Active Speech",
+          "authors": [
+            "Deevy",
+            "St John Ervine  ’s \n"
+          ],
+          "pdf_start_index": 61,
+          "pdf_end_index": 343,
+          "citation_pages": "3-313",
+          "confidence": 1.0,
+          "page_mapping_confidence": "inferred",
+          "source": "llm"
+        }
+      ],
+      "elapsed_seconds": 2.6621842700000116,
+      "demand_at_run": 0,
+      "generated_at": "2026-10-27T08:53:22.316210+00:00"
     }
   },
-  "generated_at": "2026-09-12T07:48:29.933288+00:00"
+  "generated_at": "2026-10-27T08:53:22.316210+00:00"
 }
